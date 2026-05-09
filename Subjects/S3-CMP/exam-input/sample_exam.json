@@ -1,0 +1,14 @@
+{
+  "title": "中三級 CMP 考古題（示例）",
+  "questions": [
+    {
+      "markdown": "**(a)** 解釋 *CPU* 與 *RAM* 的分別。\n提供一個生活例子。",
+      "points": 6
+    },
+    {
+      "markdown": "寫出下列 Python 程式的輸出：\nprint(2 ** 3)\nprint(7 // 2)",
+      "points": 4
+    }
+  ]
+}
+

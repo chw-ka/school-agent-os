@@ -1,0 +1,13 @@
+{
+  "title": "中三 CMP 考古題",
+  "subtitle": "（請把你的題目貼到 questions[].markdown）",
+  "meta": {
+    "時間": "60 分鐘",
+    "滿分": "100 分"
+  },
+  "questions": [
+    { "marks": 0, "markdown": "（題目 1）" },
+    { "marks": 0, "markdown": "（題目 2）" }
+  ]
+}
+
