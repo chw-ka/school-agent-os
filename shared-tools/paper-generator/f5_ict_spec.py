@@ -8,11 +8,12 @@ _COMPARE = Path(__file__).resolve().parents[1] / "question-quality-check"
 if str(_COMPARE) not in sys.path:
     sys.path.insert(0, str(_COMPARE))
 
+from dse_ict_style import style_meta
 from exam_spec import build_spec, make_item
 
 # Correct option index (0=A … 3=D) per MCQ 1–30 — must match build_mcq_payload() order.
 F5_MCQ_CORRECT_INDEX: tuple[int, ...] = (
-    0, 0, 1, 1, 1, 3, 0, 1, 1, 0, 2, 1, 3, 1, 2, 3, 1, 0, 1, 1, 3, 3, 1, 1, 3, 1, 1, 3, 0, 3,
+    0, 0, 1, 1, 1, 2, 0, 1, 1, 0, 2, 0, 0, 1, 1, 2, 2, 0, 1, 1, 2, 3, 0, 1, 1, 0, 1, 3, 0, 2,
 )
 
 MCQ_CONCEPTS: tuple[list[str], ...] = (
@@ -27,25 +28,25 @@ MCQ_CONCEPTS: tuple[list[str], ...] = (
     ["軟件", "實用程式"],
     ["多媒體", "點陣圖"],
     ["多媒體", "壓縮"],
-    ["數據庫", "1NF"],
+    ["數據組織", "欄位"],
     ["數據控制", "有效性檢驗"],
     ["資訊處理", "數據與資訊"],
-    ["算法", "迴圈"],
-    ["算法", "排序"],
+    ["硬件", "RAM"],
+    ["硬件", "輸入裝置"],
     ["數據組織", "記錄"],
-    ["算法", "冒泡排序"],
-    ["數據結構", "隊列"],
+    ["數據控制", "奇偶檢測"],
+    ["資訊處理", "批次處理"],
     ["數據組織", "檔案存取"],
-    ["數據庫", "主鍵"],
-    ["數據庫", "外鍵"],
-    ["算法", "陣列"],
-    ["算法", "追蹤"],
-    ["數據庫", "正規化"],
-    ["算法", "搜尋"],
-    ["程式設計", "模組化"],
-    ["數據結構", "堆疊"],
-    ["程式設計", "函數"],
-    ["數據庫", "SQL"],
+    ["多媒體", "向量圖"],
+    ["軟件", "作業系統"],
+    ["資訊處理", "輸入處理輸出"],
+    ["多媒體", "影片檔案大小"],
+    ["數據組織", "檔案存取"],
+    ["軟件", "專用軟件"],
+    ["多媒體", "顏色深度"],
+    ["多媒體", "音訊"],
+    ["進制", "二進制"],
+    ["資訊處理", "資訊處理循環"],
 )
 
 
@@ -83,7 +84,7 @@ def _part_b_items(build_part_b) -> list[dict]:
             slice_text(336, 345),
             marks=10,
             title="算法追蹤",
-            concepts=["偽代碼", "陣列", "次大值"],
+            concepts=["算法", "偽代碼", "陣列", "次大值"],
         ),
     ]
 
@@ -110,7 +111,7 @@ def _part_c_items(build_part_c) -> list[dict]:
             slice_text(457, 470),
             marks=10,
             title="正規化與資料完整性",
-            concepts=["正規化", "1NF", "更新異常"],
+            concepts=["數據庫", "正規化", "1NF", "更新異常"],
         ),
         make_item(
             "c-sql-adv",
@@ -118,7 +119,7 @@ def _part_c_items(build_part_c) -> list[dict]:
             slice_text(482, 492),
             marks=10,
             title="進階 SQL",
-            concepts=["SQL", "GROUP BY", "UPDATE"],
+            concepts=["數據庫", "SQL", "GROUP BY", "UPDATE"],
         ),
     ]
 
@@ -160,11 +161,13 @@ def build_f5_ict_exam_spec(
             "subject": "資訊及通訊科技",
         },
         "curriculum_units": ["Core-A", "Core-B", "Core-D", "Module-A", "Module-C"],
+        **style_meta(),
         "concept_targets": {
-            "數據庫": {"min": 6, "max": 12},
-            "算法": {"min": 5, "max": 12},
+            "數據庫": {"min": 3, "max": 12},
+            "算法": {"min": 1, "max": 10},
             "試算表": {"min": 2, "max": 6},
-            "數據控制": {"min": 1, "max": 4},
+            "數據控制": {"min": 2, "max": 6},
+            "多媒體": {"min": 4, "max": 10},
         },
     }
     if mcq_answers:
