@@ -16,7 +16,7 @@ from answer_pattern_check import check_tf_sequence, has_pattern_issues
 TF_ITEMS: list[tuple[str, str]] = [
     ("外建函數庫跟 Python 一起安裝，完全不需要 pip。", "F"),
     ("課堂建議使用 playsound==1.2.2 以減少播放問題。", "T"),
-    ("`password.json` 是用來儲存同學遊戲分數的檔案。", "F"),
+    ("'password.json' 是用來儲存同學遊戲分數的檔案。", "F"),
     ("STT 程式使用 try…except 可處理聽不清或服務錯誤。", "T"),
     ("Vibe Coding 代表 AI 第一次就一定完美，不需要修改。", "F"),
 ]

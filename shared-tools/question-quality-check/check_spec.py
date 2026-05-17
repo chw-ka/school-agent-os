@@ -18,6 +18,7 @@ from concept_check import (
     format_concept_report,
 )
 from exam_spec import DuplicateEntry, DuplicateReport, load_spec, spec_items
+from format_check import FormatCheckResult, check_exam_format, check_spec_format, format_format_report
 from mcq_check import McqCheckResult, check_mcq, format_mcq_report
 from quality_lib import THRESH_DUPLICATE, discover_past_papers, infer_subject_subpath, text_similarity
 from spec_from_docx import docx_to_spec
@@ -31,6 +32,7 @@ class QuestionQualityReport:
     concepts: Optional[ConceptCheckResult] = None
     mcq: Optional[McqCheckResult] = None
     answer_patterns: Optional[AllAnswerPatternsResult] = None
+    format: Optional[FormatCheckResult] = None
 
     @property
     def has_duplicates(self) -> bool:
@@ -53,12 +55,17 @@ class QuestionQualityReport:
         return self.answer_patterns is not None and not self.answer_patterns.ok
 
     @property
+    def has_format_issues(self) -> bool:
+        return self.format is not None and not self.format.ok
+
+    @property
     def ok(self) -> bool:
         return (
             not self.has_duplicates
             and not self.has_concept_issues
             and not self.has_mcq_issues
             and not self.has_answer_pattern_issues
+            and not self.has_format_issues
         )
 
     @property
@@ -78,6 +85,8 @@ class QuestionQualityReport:
             d["mcq"] = self.mcq.to_dict()
         if self.answer_patterns is not None:
             d["answer_patterns"] = self.answer_patterns.to_dict()
+        if self.format is not None:
+            d["format"] = self.format.to_dict()
         return d
 
 
@@ -163,6 +172,7 @@ def run_question_check(
     threshold: float = THRESH_DUPLICATE,
     verify_concepts: bool = True,
     verify_mcq: bool = True,
+    verify_format: bool = True,
 ) -> QuestionQualityReport:
     candidate_spec_path = candidate_spec_path.expanduser().resolve()
     candidate = load_spec(candidate_spec_path)
@@ -256,6 +266,21 @@ def run_question_check(
         )
         quality.answer_patterns = check_all_answer_patterns(candidate)
 
+    if verify_format:
+        spec_fmt = check_spec_format(candidate)
+        docx_path = candidate_docx_path
+        if docx_path is None and candidate_spec_path.with_suffix(".docx").exists():
+            docx_path = candidate_spec_path.with_suffix(".docx")
+        if docx_path is not None and docx_path.exists():
+            docx_fmt = check_exam_format(docx_path)
+            quality.format = FormatCheckResult(
+                ok=spec_fmt.ok and docx_fmt.ok,
+                backtick_hits=list(dict.fromkeys(spec_fmt.backtick_hits + docx_fmt.backtick_hits)),
+                mcq_indent_issues=docx_fmt.mcq_indent_issues,
+            )
+        else:
+            quality.format = spec_fmt
+
     return quality
 
 
@@ -300,6 +325,8 @@ def format_quality_report_text(report: QuestionQualityReport) -> str:
         sections.extend(["", "=== MCQ answers (balance + pattern) ===", format_mcq_report(report.mcq)])
     if report.answer_patterns is not None:
         sections.extend(["", "=== All answer keys (randomness) ===", format_all_patterns_report(report.answer_patterns)])
+    if report.format is not None:
+        sections.extend(["", "=== Format (quotes + MCQ indent) ===", format_format_report(report.format)])
     sections.append("")
     sections.append(f"Overall: {'PASS' if report.ok else 'ISSUES FOUND'}")
     return "\n".join(sections)

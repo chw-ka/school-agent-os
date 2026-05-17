@@ -143,6 +143,54 @@ def is_ordered_combination_mcq(block_lines: list[str]) -> bool:
     return combo_opts >= 2
 
 
+def _is_micro_mcq_slot(block_lines: list[str]) -> bool:
+    """Two-paragraph slot: stem and options merged in the first paragraph."""
+    if is_ordered_combination_mcq(block_lines):
+        return False
+    return len(block_lines) <= 2
+
+
+def _is_compact_mcq_slot(block_lines: list[str]) -> bool:
+    """Three-paragraph slot: stem | options block | blank."""
+    if is_ordered_combination_mcq(block_lines):
+        return False
+    return len(block_lines) == 3
+
+
+def _compact_options_paragraph(options: list[str]) -> str:
+    return "\n".join(f"\t{_LETTERS[i]}.\t{options[i]}" for i in range(4))
+
+
+def _options_only_paragraph(options: list[str]) -> str:
+    return "\n" + _compact_options_paragraph(options)
+
+
+def _stem_line_from_prefix(prefix: list[str], block_lines: list[str]) -> str:
+    if prefix:
+        return prefix[0].split("\n", 1)[0]
+    return block_lines[0].split("\n", 1)[0]
+
+
+def _rebuild_micro_block(
+    block_lines: list[str],
+    prefix: list[str],
+    options: list[str],
+) -> list[str]:
+    stem = _stem_line_from_prefix(prefix, block_lines)
+    merged = f"{stem}\n{_compact_options_paragraph(options)}"
+    return [merged, ""][: len(block_lines)]
+
+
+def _rebuild_compact_block(
+    block_lines: list[str],
+    prefix: list[str],
+    options: list[str],
+) -> list[str]:
+    stem = _stem_line_from_prefix(prefix, block_lines)
+    merged = f"{stem}\n{_compact_options_paragraph(options)}"
+    return [merged, "", ""][: len(block_lines)]
+
+
 def _rebuild_block_preserve_layout(
     block_lines: list[str],
     prefix: list[str],
@@ -150,18 +198,22 @@ def _rebuild_block_preserve_layout(
     suffix: list[str],
 ) -> list[str]:
     """Write options back without shuffling; match original inline vs multiline layout."""
+    if _is_micro_mcq_slot(block_lines):
+        return _rebuild_micro_block(block_lines, prefix, options)
+    if _is_compact_mcq_slot(block_lines):
+        return _rebuild_compact_block(block_lines, prefix, options)
+
     stem_inline = _inline_stem_line(block_lines)
     if stem_inline is not None:
-        opts = "\n".join(f"\t{_LETTERS[i]}.\t{options[i]}" for i in range(4))
+        opts = _compact_options_paragraph(options)
         merged = f"{stem_inline}\n{opts}"
         new_lines = [merged]
         while len(new_lines) < len(block_lines):
             new_lines.append(block_lines[len(new_lines)] if block_lines[len(new_lines)] == "" else "")
         return new_lines[: len(block_lines)]
 
-    new_lines = list(prefix)
-    for i, text in enumerate(options):
-        new_lines.append(f"\t{_LETTERS[i]}.\t{text}")
+    stem = _stem_line_from_prefix(prefix, block_lines)
+    new_lines = [stem, _options_only_paragraph(options)]
     new_lines.extend(suffix)
     while len(new_lines) < len(block_lines):
         new_lines.append("")
@@ -175,6 +227,28 @@ def _inline_stem_line(block_lines: list[str]) -> Optional[str]:
     return None
 
 
+def _rebuild_combo_block(
+    block_lines: list[str],
+    prefix: list[str],
+    options: list[str],
+    suffix: list[str],
+) -> list[str]:
+    """Keep (1)(2)(3) sub-items; replace only A–D option lines."""
+    new_lines: list[str] = []
+    opt_i = 0
+    for line in block_lines:
+        if re.match(r"^\t?[ABCD]\.\t", line.strip()) or re.match(r"^[ABCD]\.\t", line):
+            if opt_i < 4:
+                lead = "\t" if line.startswith("\t") else ""
+                new_lines.append(f"{lead}{_LETTERS[opt_i]}.\t{options[opt_i]}")
+                opt_i += 1
+            continue
+        new_lines.append(line)
+    while len(new_lines) < len(block_lines):
+        new_lines.append(block_lines[len(new_lines)] if block_lines[len(new_lines)] == "" else "")
+    return new_lines[: len(block_lines)]
+
+
 def permute_mcq_block(
     block_lines: list[str],
     correct_index: int,
@@ -184,21 +258,28 @@ def permute_mcq_block(
 ) -> tuple[list[str], str]:
     """Shuffle A–D option order; return new block lines and new correct letter."""
     prefix, options, suffix = _parse_options(block_lines)
-    if not allow_shuffle or is_ordered_combination_mcq(block_lines):
-        if is_ordered_combination_mcq(block_lines):
-            stem_nums = _stem_subitem_numbers(block_lines)
-            options, correct_index = sort_combination_options(options, stem_nums, correct_index)
+    if is_ordered_combination_mcq(block_lines):
+        stem_nums = _stem_subitem_numbers(block_lines)
+        options, correct_index = sort_combination_options(options, stem_nums, correct_index)
         letter = _LETTERS[correct_index]
-        return _rebuild_block_preserve_layout(block_lines, prefix, options, suffix), letter
+        return _rebuild_combo_block(block_lines, prefix, options, suffix), letter
+
+    if not allow_shuffle:
+        return block_lines, _LETTERS[correct_index]
 
     order = [0, 1, 2, 3]
     rng.shuffle(order)
     shuffled = [options[i] for i in order]
     new_letter = _LETTERS[order.index(correct_index)]
 
+    if _is_micro_mcq_slot(block_lines):
+        return _rebuild_micro_block(block_lines, prefix, shuffled), new_letter
+    if _is_compact_mcq_slot(block_lines):
+        return _rebuild_compact_block(block_lines, prefix, shuffled), new_letter
+
     stem_inline = _inline_stem_line(block_lines)
     if stem_inline is not None:
-        opts = "\n".join(f"\t{_LETTERS[i]}.\t{shuffled[i]}" for i in range(4))
+        opts = _compact_options_paragraph(shuffled)
         merged = f"{stem_inline}\n{opts}"
         new_lines = [merged]
         while len(new_lines) < len(block_lines):

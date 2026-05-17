@@ -44,6 +44,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--strict", action="store_true")
     ap.add_argument("--skip-concepts", action="store_true")
     ap.add_argument("--skip-mcq", action="store_true")
+    ap.add_argument("--skip-format", action="store_true")
     args = ap.parse_args(argv)
 
     candidate = Path(args.candidate)
@@ -62,6 +63,7 @@ def main(argv: list[str] | None = None) -> int:
         threshold=THRESH_DUPLICATE,
         verify_concepts=not args.skip_concepts,
         verify_mcq=not args.skip_mcq,
+        verify_format=not args.skip_format,
     )
 
     print(format_quality_report_text(report))

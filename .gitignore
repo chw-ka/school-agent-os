@@ -16,3 +16,9 @@ __pycache__/
 **/~$*
 ~WRL*.tmp
 **/~WRL*.tmp
+
+# Large teaching media — keep locally, not in git
+*.mp4
+*.apk
+*.aia
+*.zip

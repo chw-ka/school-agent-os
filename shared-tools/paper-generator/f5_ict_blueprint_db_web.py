@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate F5 ICT exam (Database + Web electives blueprint) from 24_25 template layout.
+Generate F5 ICT exam (Database elective; no networking / HTML / web dev) from template layout.
 Always runs post-generation similarity check vs template + past 3 years.
 """
 from __future__ import annotations
@@ -12,8 +12,14 @@ from pathlib import Path
 
 from docx import Document
 
-from f5_ict_spec import build_f5_ict_exam_spec
+from f5_ict_spec import F5_MCQ_CORRECT_INDEX, build_f5_ict_exam_spec
 from post_check import repo_root, run_spec_check
+
+_FMT = Path(__file__).resolve().parents[1] / "paper-formatter"
+if str(_FMT) not in sys.path:
+    sys.path.insert(0, str(_FMT))
+from docx_inplace import ZhCoverPatch, apply_cmp_cover_zh_on_en_layout
+from mcq_answer_keys import build_random_mcq_key
 
 _QCHECK = Path(__file__).resolve().parents[1] / "question-quality-check"
 _PCHECK = Path(__file__).resolve().parents[1] / "paper-quality-check"
@@ -64,8 +70,8 @@ def opt(a: str, b: str, c: str, d: str) -> list[str]:
 def build_mcq_payload() -> list[list[str]]:
     o = opt
     rows: list[list[str]] = [
-        ["下列哪一項是十六進制 0x2A 的二進制表示？", ""] + o("0010 1010", "0011 1010", "0101 0101", "1010 0010"),
-        ["以 8 位元二進制補碼表示十進位 -1，下列哪一項正確？", ""] + o("0000 0001", "1000 0001", "1111 1111", "1111 1110"),
+        ["下列哪一項是二進制 1100 0101 的十六進制表示？", ""] + o("0xC5", "0xCA", "0xA5", "0x5C"),
+        ["以 8 位元二進制補碼表示十進位 -3，下列哪一項正確？", ""] + o("1111 1101", "1111 1111", "1000 0011", "0000 0011"),
         ["關於 ASCII 與 Unicode（UTF-8）儲存中文，下列敘述何者最恰當？", ""]
         + o("兩者均以 1 字節儲存每個中文字", "UTF-8 的中文字通常比 ASCII 編碼佔更多字節", "ASCII 可完整表示所有繁體中文字", "UTF-8 只能儲存英文字母"),
         ["一段未壓縮音訊：取樣頻率 44.1 kHz、取樣精度 16 bit、立體聲（2 聲道），長度 1 秒。下列何者最接近其檔案大小？", ""]
@@ -90,7 +96,7 @@ def build_mcq_payload() -> list[list[str]]:
             "在 CPU 與主記憶體之間提供較小但較快的暫存層以提升效能",
             "用作永久儲存作業系統與使用者文件",
             "負責把類比訊號轉為數位訊號",
-            "取代路由器進行封包轉送",
+            "只用作顯示輸出裝置",
         ),
     ]
     rows.extend(
@@ -104,36 +110,62 @@ def build_mcq_payload() -> list[list[str]]:
                 "",
             ]
             + o("只有 (1)", "只有 (1) 和 (3)", "只有 (2) 和 (3)", "(1)、(2) 和 (3)"),
-            ["下列哪一項最屬於實用程式（Utility）的典型用途？", ""] + o("編寫網頁", "磁碟重組或檔案壓縮等系統維護工作", "試算表繪圖", "資料庫正規化分析"),
-            ["在 TCP/IP 概念中，HTTP 主要工作層級最接近下列何者？", ""] + o("應用層協定", "網路層路由", "實體層訊號", "資料鏈結層訊框"),
-            ["下列哪一項最能描述 TCP 相對於 IP 的分工？", ""]
-            + o("TCP 負責可靠傳輸；IP 負責位址與路由", "TCP 負責硬體驅動；IP 負責顯示", "兩者完全相同", "IP 負責加密；TCP 負責壓縮"),
-            ["下列何者是合法 IPv6 位址的寫法？", ""] + o("192.168.0.1", "2001:0db8:0000:0000:0000:ff00:0042:8329", "GG::1", "256.1.1.1"),
+            ["下列哪一項最屬於實用程式（Utility）的典型用途？", ""]
+            + o("試算表繪製圖表", "磁碟重組或檔案壓縮等系統維護工作", "編寫 SQL 查詢", "管理使用者帳戶與檔案權限"),
             [
-                "電郵內容：「你的帳戶異常，請立即點擊連結重設密碼」，寄件者顯示為銀行但網址為短網址且與官方網域不符。下列何者最像網絡釣魚（Phishing）跡象？",
-                "",
-                "\t\t(1)\t要求緊急行動並提供可疑外部連結",
-                "\t\t(2)\t使用官方網域且提供可查證聯絡方式",
-                "\t\t(3)\t主旨清楚列出學校活動日程",
+                "一幅 800×600 像素的點陣圖，每像素以 24 bit 真彩色儲存（未壓縮）。下列何者最接近檔案大小？",
                 "",
             ]
-            + o("只有 (1)", "只有 (2)", "只有 (3)", "(1) 和 (2)"),
-            ["關於惡意軟件，下列配對何者最適當？", ""]
+            + o("約 1.4 MB", "約 14 MB", "約 140 KB", "約 4.8 MB"),
+            [
+                "關於有損與無損壓縮，下列敘述何者最恰當？",
+                "",
+            ]
             + o(
-                "蠕蟲：必須依附於試算表巨集且不能自我複製",
-                "病毒：常需依附宿主檔案；蠕蟲：常可自我複製並擴散",
-                "勒索軟件：只會加快 CPU 風扇",
-                "病毒：只感染路由器韌體且不影響檔案",
+                "有損壓縮可還原成與原檔完全相同",
+                "無損壓縮常用於 JPEG 相片以縮小檔案",
+                "有損壓縮可能犧牲部分畫質／音質以換取較小檔案",
+                "兩者均不能減少檔案大小",
             ),
             [
-                "考慮下列片段：",
-                "",
-                "\t\tFOR i ← 1 TO 3",
-                "\t\t\tFOR j ← 1 TO 2",
-                "\t\t\t\tOUTPUT i, j",
+                "資料表 Order(OrderID, CustomerName, ProductName, UnitPrice, Qty) 中，同一 CustomerName 對應多個 ProductName。"
+                "下列哪一項最可能違反第一正規化（1NF）？",
                 "",
             ]
-            + o("內層 OUTPUT 執行 3 次", "內層 OUTPUT 執行 5 次", "內層 OUTPUT 執行 6 次", "內層 OUTPUT 執行 9 次"),
+            + o(
+                "OrderID 為主鍵",
+                "同一列同時儲存多個產品名稱於一個儲存格（以逗號分隔）",
+                "UnitPrice 為數值型別",
+                "Qty 必須大於 0",
+            ),
+            [
+                "輸入學號時，系統只接受「一個英文字母 + 五個數字」的格式。這主要屬於哪類數據控制？",
+                "",
+                "\t\t(1)\t有效性檢驗",
+                "\t\t(2)\t奇偶檢測",
+                "\t\t(3)\t順序存取檔案",
+                "",
+            ]
+            + o("只有 (1)", "只有 (2)", "只有 (3)", "(1) 正確"),
+            [
+                "下列哪一項最能說明「資訊」相對於「數據」？",
+                "",
+            ]
+            + o(
+                "未經處理的原始符號或數值",
+                "經整理後對決策有幫助的內容",
+                "硬碟上的二進制位元",
+                "壓縮演算法中的位元組",
+            ),
+            [
+                "考慮下列片段（變數 count 初值為 0）：",
+                "",
+                "\t\tFOR k ← 1 TO 3",
+                "\t\t\tFOR m ← 1 TO 2",
+                "\t\t\t\tcount ← count + 1",
+                "",
+            ]
+            + o("迴圈結束後 count 為 3", "迴圈結束後 count 為 5", "迴圈結束後 count 為 6", "迴圈結束後 count 為 9"),
             [
                 "要找出一組數字中的第三大值，下列哪一種做法較符合「最直接」的解難方向？",
                 "",
@@ -143,28 +175,54 @@ def build_mcq_payload() -> list[list[str]]:
                 "",
             ]
             + o("只有 (1)", "只有 (2)", "只有 (3)", "(1) 較合理（視演算法而定）"),
-            ["下列哪一項最能描述免費軟件（Freeware）？", ""] + o("原始碼必定公開且可自由修改", "可免費使用但未必提供原始碼", "只能試用 30 天", "必須付費取得授權金鑰"),
-            ["「數碼足跡（Digital Footprint）」最主要是指？", ""] + o("鍵盤上的灰塵量", "使用者在網上活動留下的可追溯資料與紀錄", "螢幕解析度", "CPU 快取大小"),
-            ["下列哪一項最能描述共享軟件（Shareware）？", ""] + o("必定完全免費且無限制", "常以便攜式（試用後付費）模式出現", "等同開源軟件", "只能於伺服器端執行"),
-            ["下列哪一項最能描述開源軟件（Open-source）授權特點（一般情況）？", ""] + o("原始碼必定不可檢視", "通常允許檢視／修改與再分發（視授權條款而定）", "必定不能商業使用", "等同免費軟件"),
             [
-                "相對於 WPA2，WPA3 在 Wi‑Fi 安全上常見的改進敘述，下列何者較合理？",
+                "在數據組織層次中，「一筆記錄」是指？",
                 "",
-                "\t\t(1)\t更強的加密與金鑰交換機制（概念層面）",
-                "\t\t(2)\t保證任何情況下都不需要密碼",
-                "\t\t(3)\t只影響有線網路而不影響無線",
+            ]
+            + o("一個欄位內的單一數值", "由多個欄位值組成的一組相關資料", "整個資料庫的備份檔", "CPU 暫存器內容"),
+            [
+                "對 n 個未排序整數排序，下列配對何者最恰當？",
+                "",
+            ]
+            + o(
+                "冒泡排序：相鄰元素比較並交換",
+                "二分搜尋：把陣列由小至大排列",
+                "堆疊：先進先出（FIFO）",
+                "隊列：後進先出（LIFO）",
+            ),
+            [
+                "超級市場收銀處排隊，先來先服務。下列哪種資料結構最接近此操作？",
+                "",
+            ]
+            + o("堆疊（LIFO）", "隊列（FIFO）", "線性鏈表", "二分搜尋樹"),
+            [
+                "比較直接存取與順序存取檔案，下列敘述何者最恰當？",
+                "",
+            ]
+            + o(
+                "順序存取必須從頭開始逐一讀取直至目標記錄",
+                "直接存取可在已知索引下較快定位特定記錄",
+                "兩者均不能讀取文字檔",
+                "直接存取只能用於堆疊結構",
+            ),
+            [
+                "在關聯式資料庫中，主鍵（Primary Key）的主要作用是？",
+                "",
+                "\t\t(1)\t唯一識別每一筆記錄",
+                "\t\t(2)\t自動把兩個資料表合併",
+                "\t\t(3)\t保證所有欄位均為文字型別",
                 "",
             ]
             + o("只有 (1)", "只有 (2)", "只有 (3)", "(1) 正確"),
             [
-                "下列哪些屬於 VPN 的典型用途？",
+                "外鍵（Foreign Key）的主要用途是？",
                 "",
-                "\t\t(1)\t在公共網絡上建立加密通道連回內部網絡",
-                "\t\t(2)\t把螢幕亮度自動調到最大",
-                "\t\t(3)\t隱藏或改變對外連線路徑（視設定而定）",
+                "\t\t(1)\t建立資料表之間的參照完整性",
+                "\t\t(2)\t把資料表所有欄位加密",
+                "\t\t(3)\t取代主鍵成為唯一識別碼",
                 "",
             ]
-            + o("只有 (1)", "只有 (1) 和 (3)", "只有 (2)", "(1)、(2) 和 (3)"),
+            + o("只有 (1)", "只有 (1) 和 (3)", "只有 (2)", "(1) 正確"),
             [
                 "下列偽代碼用於找出陣列 L 的次大值（假設長度≥2 且存在次大值）：",
                 "\t",
@@ -176,63 +234,65 @@ def build_mcq_payload() -> list[list[str]]:
             [
                 "下列演算法的輸出是？",
                 "",
-                "\tX ← 2  ",
-                "\tY ← 0  ",
-                "\tWHILE X < 20 DO  ",
-                "\t\tY ← Y + X  ",
-                "\t\tX ← X * 2  ",
-                "\tOUTPUT Y  ",
+                "\tN ← 1  ",
+                "\tS ← 0  ",
+                "\tFOR i ← 1 TO 4  ",
+                "\t\tS ← S + N  ",
+                "\t\tN ← N + 2  ",
+                "\tOUTPUT S  ",
                 "",
             ]
-            + o("6", "14", "22", "30"),
+            + o("9", "16", "20", "25"),
             [
-                "瀏覽網站時，DNS／HTTP／TCP／IP 的分工，下列敘述何者較正確？",
+                "下列關於資料庫正規化的敘述，何者較正確？",
                 "",
-                "\t\t(1)\tDNS：把網域名稱解析為 IP",
-                "\t\t(2)\tHTTP：定義網頁資源的傳輸語意（應用層）",
-                "\t\t(3)\tTCP：提供可靠傳輸；IP：負責路由",
+                "\t\t(1)\t1NF 要求屬性值為不可再分的原子值",
+                "\t\t(2)\t2NF 消除非鍵屬性對候選鍵的部分函數相依",
+                "\t\t(3)\t3NF 消除遞移函數相依",
                 "\t\t（以上為一般課程描述，可能因教材用語略有差異）",
                 "\t\t（請以「最合理」為準選擇答案）",
                 "",
             ]
             + o("只有 (1)", "只有 (1) 和 (2)", "只有 (3)", "(1)、(2) 和 (3)"),
             [
-                "下列兩段程式碼同樣搜尋陣列，但哪一段通常執行時間較短？（P1：線性搜尋；P2：已排序陣列的二分搜尋）",
+                "在 n 個已排序元素中尋找特定值，下列哪種方法通常較有效率？",
                 "",
                 "",
             ]
-            + o("P1 較快", "P2 較快", "兩者相若", "無法比較"),
-            ["下列哪一項最屬於模組化（Modularisation）？", ""] + o("把所有程式寫在同一檔且不重複使用", "把問題拆成小模組分別設計與測試", "只使用一個變數名稱", "刪除所有註解"),
+            + o("線性搜尋", "二分搜尋", "冒泡排序", "逐一列印所有元素"),
+            ["在程式設計中，把重複使用的邏輯封裝成可獨立測試的小單元，最能體現哪項原則？", ""]
+            + o("循序結構", "模組化（Modularisation）", "無限迴圈", "單一巨型程式檔"),
             [
-                "某班要為下列分段評級程式設計測試數據，以覆蓋所有分支：",
+                "下列關於堆疊（Stack）資料結構，何者較正確？",
                 "",
-                "\t\tINPUT score",
-                "\t\tIF score > 80 THEN OUTPUT \"A\"",
-                "\t\tELSE IF score >= 50 THEN OUTPUT \"B\"",
-                "\t\tELSE OUTPUT \"F\"",
+                "\t\t(1)\t後進先出（LIFO）",
+                "\t\t(2)\tpush 把元素放到堆疊頂端",
+                "\t\t(3)\tpop 從堆疊頂端移除元素",
                 "",
-                "\t哪一組輸入分數最適合？",
+                "\t\t（請以「最合理」為準選擇答案）",
+                "",
                 "",
                 "",
             ]
-            + o("45, 60, 90", "40, 85", "50, 81", "30, 75, 80"),
-            ["在演算法設計中使用陣列的主要好處是？", ""] + o("減少記憶體使用量", "適合需要重複運算或儲存多個同類資料", "可儲存不同資料類型", "可提高運算速度"),
+            + o("只有 (1)", "只有 (1) 和 (2)", "只有 (3)", "(1)、(2) 和 (3)"),
+            ["下列哪一項最能說明程序設計中「函數（Function）」的用途？", ""]
+            + o("把程式拆成可重複呼叫的模組以提升可讀性與重用", "把所有變數改為全域變數", "刪除所有迴圈", "只能處理單一數值"),
             [
-                "某校網站使用子網域：",
+                "資料表 Book(ISBN, Title) 與 BookCopy(CopyID, ISBN, Shelf, Status)。",
                 "",
-                "\t\tlearn.school.edu.hk",
+                "\t\t要列出 Status =「在架」的書名 Title，",
                 "",
-                "\t\tshop.school.edu.hk",
+                "\t\t下列 SQL 概念組合何者最適合？",
                 "",
-                "\t\tmail.school.edu.hk",
-                "",
-                "\t最少需要註冊多少個網域名稱（domain name）？",
+                "\t\t(1)\tINNER JOIN Book 與 BookCopy",
+                "\t\t(2)\tWHERE Status = '在架'",
+                "\t\t(3)\tSELECT Title",
                 "",
             ]
-            + o("4", "3", "2", "1"),
+            + o("只有 (1)", "只有 (1) 和 (2)", "只有 (3)", "(1)、(2) 和 (3)"),
         ]
     )
-    expected = [6, 6, 6, 6, 6, 10, 8, 10, 6, 6, 6, 6, 10, 6, 10, 10, 6, 6, 6, 6, 10, 10, 9, 13, 12, 7, 6, 14, 6, 14]
+    expected = [6, 6, 6, 6, 6, 10, 8, 10, 6, 6, 6, 6, 10, 6, 10, 10, 6, 6, 6, 6, 6, 10, 10, 9, 13, 12, 7, 6, 14, 6, 14]
     if len(rows) != len(expected):
         raise RuntimeError(f"MCQ count mismatch {len(rows)} vs {len(expected)}")
     for i, (row, exp) in enumerate(zip(rows, expected, strict=True), start=1):
@@ -278,10 +338,10 @@ def build_part_b() -> list[str]:
         "規則：若 E2 為「VIP」且 D2>10，則總價為 C2*D2 的 8 折；否則為原價 C2*D2。\t(5 分)",
     )
     put(319, "(b)\t描述如何建立樞紐分析表：以「列」顯示產品類別；以「值」顯示總銷售額（對 F 欄總價求和）。\t(5 分)")
-    put(323, "2.\t網絡與保安\t(10 分)")
-    put(326, "(a)\t相對於 WPA2，WPA3 在 Wi‑Fi 安全性上的主要改進是什麼？（從加密強度／金鑰交換概念說明）\t(3 分)")
-    put(328, "(b)\t學生在家中上網，想安全存取學校內聯網資源。應建議使用哪種技術？說明其原理（加密通道／隧道）。\t(4 分)")
-    put(331, "(c)\t除上述技術外，提出兩項可提升家庭網絡安全的做法並解釋。\t(3 分)")
+    put(323, "2.\t數據控制與私隱\t(10 分)")
+    put(326, "(a)\t說明「有效性檢驗」與「奇偶檢測」的分別，並各舉一個輸入數據的例子。\t(3 分)")
+    put(328, "(b)\t比較「直接存取」與「順序存取」讀取檔案記錄的優缺點。\t(4 分)")
+    put(331, "(c)\t學校收集學生健康申報資料時，提出兩項保障數據私隱的做法。\t(3 分)")
     put(336, "3.\t算法追蹤\t(10 分)")
     put(
         338,
@@ -309,36 +369,52 @@ def build_part_c() -> list[str]:
     def put(i: int, s: str) -> None:
         lines[i - b] = s
 
-    put(423, "丙部 (40 分)：選修單元問答題（數據庫 + 網絡應用程式開發）")
+    put(423, "丙部 (40 分)：選修單元問答題（數據庫）")
     put(425, "選修 A：數據庫（Database）")
     put(
         427,
-        "某「網上課程報名系統」描述如下：一位學員可報名多個課程；一個課程亦可被多位學員報名。"
+        "某「社區中心活動報名系統」描述如下：一位會員可報名多個工作坊；一個工作坊亦可被多位會員報名。"
         "每次報名產生一筆報名記錄，包含報名日期與付款狀態。",
     )
     put(
         440,
-        "(a)\t繪製實體關係圖（ERD）：須包含「學員 Student」「課程 Course」「報名 Enrolment」三個實體，標示多對多並以關聯實體拆解；"
+        "(a)\t繪製實體關係圖（ERD）：須包含「會員 Member」「工作坊 Workshop」「報名 Registration」三個實體，標示多對多並以關聯實體拆解；"
         "並在圖中寫出主鍵（PK）與外鍵（FK）欄位名稱。\t(8 分)",
     )
     put(442, "(b)\t設資料表如下：")
-    put(444, "Student(StudentID, StudentName, JoinDate)")
-    put(445, "Course(CourseID, CourseName, Tutor, Fee)")
-    put(446, "Enrolment(EnrolmentID, StudentID, CourseID, EnrolmentDate, Status)")
-    put(450, "(i)\t寫出一條 SQL，列出所有報名了 Tutor = 'Peter' 的課程之學生姓名（StudentName）。\t(4 分)")
-    put(453, "(ii)\t寫出一條 SQL，找出報名人數 **超過 30** 的課程名稱（CourseName）及其報名人數。（需使用 COUNT、GROUP BY、HAVING）\t(6 分)")
-    put(455, "(iii)\t寫出一條 SQL，找出 **從未報名任何課程** 的學生姓名。（可用 NOT IN 或 NOT EXISTS）\t(6 分)")
-    put(457, "選修 B：網絡應用程式開發（Web Application Development）")
-    put(459, "1.\t註冊表單情境：使用者輸入「用戶名」「密碼」「確認密碼」後按提交。\t(10 分)")
-    put(461, "(a)\t「檢查密碼與確認密碼是否一致」應在客戶端、伺服器端，或兩者皆需要？說明優點與原因。\t(4 分)")
-    put(463, "(b)\t「檢查用戶名是否已被註冊」為何必須在伺服器端執行？\t(3 分)")
-    put(470, "(c)\t此類表單提交應使用 HTTP GET 還是 POST？為什麼？\t(3 分)")
-    put(482, "2.\t網頁編程實踐（BMI 小工具）\t(10 分)")
-    put(485, "考慮一段網頁包含：輸入框 id=`height`、id=`weight`，按鈕可觸發計算，結果顯示於 id=`result-display` 的 div。")
-    put(487, "(a)\t寫出 CSS：把 `#result-display` 的文字顏色設為紅色。\t(2 分)")
-    put(489, "(b)\t寫出 JavaScript：讀取兩個輸入框的數值，計算 BMI=體重/(身高米)^2（身高以米計），把結果寫入 `result-display`。\t(5 分)")
-    put(492, "(c)\t若要把計算結果儲存到伺服器：描述客戶端按「保存」後應傳送哪些資料；伺服器端（如 PHP）需做哪些步驟（連線資料庫、INSERT 等）。\t(3 分)")
+    put(444, "Member(MemberID, MemberName, JoinDate)")
+    put(445, "Workshop(WorkshopID, Title, Instructor, Fee)")
+    put(446, "Registration(RegID, MemberID, WorkshopID, RegDate, PayStatus)")
+    put(450, "(i)\t寫出一條 SQL，列出所有報名了 Instructor = 'Peter' 的工作坊之會員姓名（MemberName）。\t(4 分)")
+    put(453, "(ii)\t寫出一條 SQL，找出報名人數 **超過 30** 的工作坊名稱（Title）及其報名人數。（需使用 COUNT、GROUP BY、HAVING）\t(6 分)")
+    put(455, "(iii)\t寫出一條 SQL，找出 **從未報名任何工作坊** 的會員姓名。（可用 NOT IN 或 NOT EXISTS）\t(6 分)")
+    put(457, "2.\t正規化與資料完整性\t(10 分)")
+    put(459, "某社團登記表把「學號、姓名、社團名稱、社團會址、會費」全部放在同一工作表的一列中，且同一社團會址重複出現於多行。")
+    put(461, "(a)\t指出此設計違反哪一條正規化規則，並說明會造成什麼更新異常（update anomaly）。\t(5 分)")
+    put(463, "(b)\t建議如何拆分為至少兩個實體／資料表，並寫出各表的主要屬性。\t(5 分)")
+    put(470, "")
+    put(482, "3.\t進階 SQL 與資料操作\t(10 分)")
+    put(485, "沿用丙部選修 A 的 Member、Workshop、Registration 資料表。")
+    put(487, "(a)\t寫出一條 SQL，列出曾報名兩個或以上不同工作坊的會員姓名（需 DISTINCT／COUNT／GROUP BY／HAVING）。\t(5 分)")
+    put(489, "(b)\t寫出一條 SQL，把 WorkshopID = 'WS101' 且 PayStatus = '已付款' 的報名記錄 PayStatus 更新為「已確認」。（UPDATE … WHERE）\t(5 分)")
+    put(492, "")
     return lines
+
+
+def _apply_cover(doc: Document) -> None:
+    """Patch 24_25 EN-layout cover for 2025-2026 S5 ICT."""
+    cell = doc.tables[0].cell(0, 0)
+    instr = [cell.paragraphs[i].text for i in range(17, min(22, len(cell.paragraphs)))]
+    apply_cmp_cover_zh_on_en_layout(
+        cell,
+        ZhCoverPatch(
+            year_term="2025 – 2026 下學期考試",
+            level="中五級 資訊及通訊科技",
+            paper="試題簿",
+            total_line="總分：100",
+        ),
+        instructions=instr,
+    )
 
 
 def clear_answer_pages(doc: Document) -> None:
@@ -349,40 +425,57 @@ def clear_answer_pages(doc: Document) -> None:
         doc.paragraphs[635].text = note
 
 
-def generate(template: Path, output: Path, *, footer_meta: dict | None = None) -> None:
+def generate(
+    template: Path,
+    output: Path,
+    *,
+    footer_meta: dict | None = None,
+    rng: object | None = None,
+) -> tuple[list[list[str]], str]:
+    """Render DOCX; return (final MCQ rows, mcq answer key)."""
     shutil.copy(template, output)
     doc = Document(str(output))
-    # Cover: keep template table 0 unchanged (do not assign cell.text).
+    _apply_cover(doc)
     blocks = mcq_blocks(doc)
-    apply_mcq(doc, blocks, build_mcq_payload())
+    payload = build_mcq_payload()
+    block_map = {i + 1: row for i, row in enumerate(payload)}
+    shuffled, mcq_key = build_random_mcq_key(
+        block_map,
+        correct_indices=F5_MCQ_CORRECT_INDEX,
+        rng=rng,
+    )
+    apply_mcq(doc, blocks, [shuffled[i] for i in range(1, len(shuffled) + 1)])
     replace_span(doc, 313, 422, build_part_b())
     replace_span(doc, 423, 624, build_part_c())
     clear_answer_pages(doc)
     doc.save(str(output))
     if footer_meta:
         apply_footer_meta(output, footer_meta)
+    final_rows = [shuffled[i] for i in range(1, len(shuffled) + 1)]
+    return final_rows, mcq_key
 
 
 def main(argv: list[str] | None = None) -> int:
     root = repo_root()
-    default_out = root / "Subjects/PastPaper/CMP+ICT/2024-2025/2nd Term/F5 ICT"
+    default_out = root / "Subjects/PastPaper/CMP+ICT/2025-2026"
+    template_dir = root / "Subjects/PastPaper/CMP+ICT/2024-2025/2nd Term/F5 ICT"
     ap = argparse.ArgumentParser(
         description="F5 ICT blueprint: build exam spec → compare → optional DOCX render.",
     )
     ap.add_argument(
         "--template",
         type=Path,
-        default=default_out / "24_25_S5_ICT_Exam02.docx",
+        default=template_dir / "24_25_S5_ICT_Exam02.docx",
     )
     ap.add_argument(
         "--output",
         type=Path,
-        default=default_out / "25_26_S5_ICT_Exam02_Blueprint_DB-Web.docx",
+        default=default_out / "25_26_S5_ICT_Exam02.docx",
     )
     ap.add_argument(
         "--spec",
         type=Path,
-        default=default_out / "25_26_S5_ICT_Exam02_Blueprint_DB-Web.spec.json",
+        default=default_out / "25_26_S5_ICT_Exam02.spec.json",
         help="Exam spec JSON (primary artifact for compare)",
     )
     ap.add_argument("--subject", default="F5 ICT", help="Subject folder for past-paper scan")
@@ -411,49 +504,89 @@ def main(argv: list[str] | None = None) -> int:
     spec_path = args.spec.expanduser().resolve()
     dup_report = args.duplicate_report or spec_path.with_suffix(".duplicates.json")
 
-    spec = build_f5_ict_exam_spec()
-    save_spec(spec_path, spec)
-    print(f"Wrote spec: {spec_path}")
+    output.parent.mkdir(parents=True, exist_ok=True)
+    footer = {
+        "academic_year": "2025-2026",
+        "level": "中五級",
+        "term_exam": "下學期考試",
+        "subject": "資訊及通訊科技",
+    }
+    if args.skip_check:
+        mcq_rows, mcq_key = generate(template, output, footer_meta=footer)
+        spec = build_f5_ict_exam_spec(mcq_rows=mcq_rows, mcq_answers=mcq_key)
+        save_spec(spec_path, spec)
+        print(f"Wrote spec: {spec_path}")
+        print(f"Wrote DOCX: {output}")
+        return 0
 
-    check_code = 0
-    if not args.skip_check:
+    import random
+
+    check_code = 1
+    for attempt in range(1, 41):
+        mcq_rows, mcq_key = generate(
+            template, output, footer_meta=footer, rng=random.Random(2025_2026 + attempt)
+        )
+        spec = build_f5_ict_exam_spec(mcq_rows=mcq_rows, mcq_answers=mcq_key)
+        save_spec(spec_path, spec)
         check_code = run_spec_check(
             candidate_spec=spec_path,
             template=template,
+            candidate_docx=output,
             years=args.years,
             subject_subpath=args.subject,
             json_report=dup_report,
             strict=args.strict,
         )
+        if check_code == 0:
+            print(f"Wrote spec: {spec_path}")
+            print(f"Wrote DOCX: {output}")
+            print(f"MCQ key: {mcq_key} (attempt {attempt})")
+            break
+    else:
+        print("Could not pass spec duplicate check after 40 attempts.")
+        return check_code
 
-    should_render = args.render_anyway or args.render or (check_code == 0 and not args.skip_check)
-    if args.skip_check:
-        should_render = True
+    import importlib.util
 
-    if should_render:
-        output.parent.mkdir(parents=True, exist_ok=True)
-        generate(template, output, footer_meta=spec.get("meta", {}).get("footer"))
-        print(f"Wrote DOCX: {output}")
-        if not args.skip_check:
-            from footer import check_footer, format_footer_report
+    _qdir = Path(__file__).resolve().parents[1] / "question-quality-check"
+    _pdir = Path(__file__).resolve().parents[1] / "paper-quality-check"
+    if str(_qdir) not in sys.path:
+        sys.path.insert(0, str(_qdir))
+    if str(_pdir) not in sys.path:
+        sys.path.append(str(_pdir))
+    _qdocx = importlib.util.spec_from_file_location(
+        "qqc_check_docx", _qdir / "check_docx.py"
+    )
+    assert _qdocx and _qdocx.loader
+    _qmod = importlib.util.module_from_spec(_qdocx)
+    _qdocx.loader.exec_module(_qmod)
+    question_docx_main = _qmod.main
+    from check_paper import format_paper_report_text, report_exit_code, run_paper_check
 
-            footer_result = check_footer(
-                output,
-                expected_meta=spec.get("meta", {}).get("footer"),
-                template=template,
-            )
-            print("\n--- Footer banner check (rendered DOCX) ---")
-            print(format_footer_report(footer_result))
-            if not footer_result.ok:
-                print("Footer mismatch — update meta.footer or template footer, then re-render.")
-                if args.strict:
-                    return 2
-                if not args.render_anyway:
-                    return 1
-    elif check_code != 0:
-        print("DOCX not rendered (duplicates found). Fix spec / regenerate IDs, then re-run with --render.")
-
-    return check_code
+    docx_argv = [
+        "--candidate",
+        str(output),
+        "--candidate-spec",
+        str(spec_path),
+        "--template",
+        str(template),
+        "--subject",
+        args.subject,
+        "--years",
+        str(args.years),
+    ]
+    docx_code = int(question_docx_main(docx_argv))
+    p_report = run_paper_check(
+        output,
+        candidate_spec_path=spec_path,
+        template_docx_path=template,
+    )
+    print("\n--- Paper quality check (DOCX) ---")
+    print(format_paper_report_text(p_report))
+    final_code = max(check_code, docx_code, report_exit_code(p_report))
+    if final_code == 0:
+        print("All checks passed.")
+    return final_code
 
 
 if __name__ == "__main__":

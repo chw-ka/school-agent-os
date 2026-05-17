@@ -94,6 +94,43 @@ def _replace_block(doc: Document, start: int, end_excl: int, lines: list[str]) -
         )
 
 
+def _mcq_opts_compact(options: list[str]) -> str:
+    """Tab-indented A–D; each option on its own line."""
+    return "\n".join(f"\t{L}.\t{t}" for L, t in zip("ABCD", options))
+
+
+def _mcq_stem_and_opts(q: int, stem: str, options: list[str]) -> str:
+    return f"{q}.\t{stem}\n{_mcq_opts_compact(options)}"
+
+
+def _mcq_opts_paragraph(options: list[str]) -> str:
+    """Options-only paragraph: leading newline keeps tab before A. in Word."""
+    return "\n" + _mcq_opts_compact(options)
+
+
+def _mcq_compact(q: int, stem: str, options: list[str]) -> list[str]:
+    return [_mcq_stem_and_opts(q, stem, options), "", ""]
+
+
+def _mcq_micro(q: int, stem: str, options: list[str]) -> list[str]:
+    return [_mcq_stem_and_opts(q, stem, options), ""]
+
+
+def _mcq_spread(
+    q: int,
+    stem: str,
+    options: list[str],
+    *,
+    trailing_blank: bool = True,
+    extra_blanks: int = 0,
+) -> list[str]:
+    lines = [f"{q}.\t{stem}", _mcq_opts_paragraph(options)]
+    if trailing_blank:
+        lines.append("")
+    lines.extend([""] * extra_blanks)
+    return lines
+
+
 def _mcq_blocks() -> dict[int, list[str]]:
     """甲部 MCQ：情境題；函數名稱等留乙–戊。組合選項題（如 Q1）不打亂 A–D，其餘題打亂選項次序。"""
     return {
@@ -110,124 +147,111 @@ def _mcq_blocks() -> dict[int, list[str]]:
             "\tD.\t(1)、(2) 和 (3) 皆是",
             "",
         ],
-        2: [
-            "2.\t執行 `import cv2` 時出現 `ModuleNotFoundError`，較合理處理是？"
-            "\nA.\t刪除 Python\nB.\t用 pip 安裝套件\nC.\t改用 Word\nD.\t不用處理",
-            "",
-        ],
-        3: [
-            "3.\tAI 捏造看似可信但不存在的內容，較適合稱為？"
-            "\nA.\t快取\nB.\t降噪\nC.\t幻覺（Hallucination）\nD.\t迭代",
-            "",
-        ],
-        4: [
-            "4.\t用 AI 協助寫報告，下列哪項最符合「負責任使用」？"
-            "\nA.\t只貼 AI 答案\nB.\t完全不用工具\nC.\t假設 AI 永遠正確\nD.\t對照官方資料再寫",
-            "",
-        ],
-        5: [
-            "5.\t語音轉文字程式因網絡中斷崩潰，較應加入？"
-            "\nA.\ttry…except\nB.\tfor 迴圈\nC.\timport json\nD.\twhile True",
-            "",
-        ],
-        6: [
-            "6.\t要在影片追蹤足球，下列步驟次序最合理？"
-            "\nA.\tinit → selectROI → update\nB.\tselectROI → init → update\nC.\t只 update\nD.\t只 imread",
-            "",
-        ],
-        7: [
-            "7.\t人臉偵測誤判框太多，較合理調整是？\nA.\t降低 minNeighbors\nB.\t刪模型檔\nC.\t提高 minNeighbors\nD.\t播 mp3",
-            "",
-        ],
-        8: [
-            "8.\t使用生成式 AI 閱讀長 PDF 時，下列哪項較**不**合理？"
-            "\nA.\t提取日期\nB.\t整理要點\nC.\t翻譯關鍵字\nD.\t刪除同學檔案",
-            "",
-        ],
-        9: [
-            "9.\t`cv2.VideoCapture(0)` 的 0 在課堂實驗通常指？",
-            "\nA.\t預設鏡頭\nB.\t第 0 張圖\nC.\t第 0 秒\nD.\t靜音",
-            "",
-            "",
-            "",
-            "",
-        ],
-        10: [
-            "10.\tVibe Coding 下，學生最合適扮演？"
-            "\nA.\t抄襲 AI\nB.\t總監（構思、測試、修正）\nC.\t只畫圖\nD.\t只閱卷",
-            "",
-        ],
-        11: [
-            "11.\tAI 寫的遊戲太快，學生最應？"
-            "\nA.\t直接交卷\nB.\t刪除程式\nC.\t測試後請 AI 調整（迭代）\nD.\t改紙筆玩",
-            "",
-        ],
-        12: [
-            "12.\t拍照做人臉偵測前先把影像轉灰階，主要原因是？",
-            "",
-            "\tA.\t令相片變彩色",
-            "\tB.\t用來播放 mp3",
-            "\tC.\t用來翻譯句子",
-            "\tD.\t減少運算量、加快處理",
-            "",
-        ],
-        13: [
-            "13.\t即時鏡頭追蹤要較流暢，較宜選 KCF 而非 CSRT，因為？",
-            "",
-            "\tA.\tKCF 一般較快",
-            "\tB.\tKCF 一定較準確",
-            "\tC.\tCSRT 不能追蹤",
-            "\tD.\t兩者完全相同",
-            "",
-        ],
-        14: [
-            "14.\tGoogle 翻譯 API 顯示找不到憑證，較可能是？",
-            "\nA.\t未裝 tkinter\nB.\t未設定 password.json 路徑\nC.\t未灰階\nD.\t未圈選 ROI",
-            "",
-            "",
-            "",
-        ],
-        15: [
-            "15.\t要刪除專案內舊的 sound.mp3，較應使用？",
-            "\nA.\tgTTS\nB.\tdetectMultiScale\nC.\tos.remove\nD.\trecognize_google",
-            "",
-            "",
-            "",
-            "",
-        ],
-        16: [
-            "16.\t測驗程式把題目放在 quiz_data.json，主要是為了？",
-            "",
-            "\tA.\t不用寫任何程式",
-            "\tB.\t一定不會出錯",
-            "\tC.\t只能老師使用",
-            "\tD.\t程式與題目資料分開，方便更新題庫",
-            "",
-        ],
-        17: [
-            "17.\t製作有按鈕、選項的測驗視窗介面，較應使用？",
-            "\nA.\ttkinter\nB.\tgTTS\nC.\tHaar Cascade\nD.\tplaysound",
-            "",
-        ],
-        18: [
-            "18.\t追蹤準確度要求高、速度可慢，較應選哪種 tracker？",
-            "\nA.\tMOSSE\nB.\tCSRT\nC.\tKCF\nD.\t不用 tracker",
-            "",
-            "",
-            "",
-            "",
-            "",
-        ],
-        19: [
-            "19.\t把 AI 生成內容直接交功課且完全不註明，最違反？"
-            "\nA.\t檔名\nB.\t亮度\nC.\t學術誠信\nD.\t清潔",
-            "",
-        ],
-        20: [
-            "20.\t課堂鏡頭畫面全黑，較應先檢查？"
-            "\nA.\t是否已用 pip 安裝 gTTS\nB.\tJSON 格式\nC.\t是否已轉灰階\nD.\t鏡頭／VideoCapture 是否成功開啟",
-            "",
-        ],
+        2: _mcq_compact(
+            2,
+            "執行 import cv2 時出現 'ModuleNotFoundError'，較合理處理是？",
+            ["刪除 Python", "用 pip 安裝套件", "改用 Word", "不用處理"],
+        ),
+        3: _mcq_compact(
+            3,
+            "AI 捏造看似可信但不存在的內容，較適合稱為？",
+            ["快取", "降噪", "幻覺（Hallucination）", "迭代"],
+        ),
+        4: _mcq_compact(
+            4,
+            "用 AI 協助寫報告，下列哪項最符合「負責任使用」？",
+            ["只貼 AI 答案", "完全不用工具", "假設 AI 永遠正確", "對照官方資料再寫"],
+        ),
+        5: _mcq_compact(
+            5,
+            "語音轉文字程式因網絡中斷崩潰，較應加入？",
+            ["try…except", "for 迴圈", "import json", "while True"],
+        ),
+        6: _mcq_micro(
+            6,
+            "要在影片追蹤足球，下列步驟次序最合理？",
+            [
+                "init → selectROI → update",
+                "selectROI → init → update",
+                "只 update",
+                "只 imread",
+            ],
+        ),
+        7: _mcq_micro(
+            7,
+            "人臉偵測誤判框太多，較合理調整是？",
+            ["降低 minNeighbors", "刪模型檔", "提高 minNeighbors", "播 mp3"],
+        ),
+        8: _mcq_compact(
+            8,
+            "使用生成式 AI 閱讀長 PDF 時，下列哪項較**不**合理？",
+            ["提取日期", "整理要點", "翻譯關鍵字", "刪除同學檔案"],
+        ),
+        9: _mcq_spread(
+            9,
+            "'cv2.VideoCapture(0)' 的 0 在課堂實驗通常指？",
+            ["預設鏡頭", "第 0 張圖", "第 0 秒", "靜音"],
+        ),
+        10: _mcq_compact(
+            10,
+            "Vibe Coding 下，學生最合適扮演？",
+            ["抄襲 AI", "總監（構思、測試、修正）", "只畫圖", "只閱卷"],
+        ),
+        11: _mcq_compact(
+            11,
+            "AI 寫的遊戲太快，學生最應？",
+            ["直接交卷", "刪除程式", "測試後請 AI 調整（迭代）", "改紙筆玩"],
+        ),
+        12: _mcq_spread(
+            12,
+            "拍照做人臉偵測前先把影像轉灰階，主要原因是？",
+            ["令相片變彩色", "用來播放 mp3", "用來翻譯句子", "減少運算量、加快處理"],
+        ),
+        13: _mcq_spread(
+            13,
+            "即時鏡頭追蹤要較流暢，較宜選 KCF 而非 CSRT，因為？",
+            ["KCF 一般較快", "KCF 一定較準確", "CSRT 不能追蹤", "兩者完全相同"],
+        ),
+        14: _mcq_spread(
+            14,
+            "Google 翻譯 API 顯示找不到憑證，較可能是？",
+            ["未裝 tkinter", "未設定 password.json 路徑", "未灰階", "未圈選 ROI"],
+        ),
+        15: _mcq_spread(
+            15,
+            "要刪除專案內舊的 sound.mp3，較應使用？",
+            ["gTTS", "detectMultiScale", "os.remove", "recognize_google"],
+        ),
+        16: _mcq_spread(
+            16,
+            "測驗程式把題目放在 quiz_data.json，主要是為了？",
+            ["不用寫任何程式", "一定不會出錯", "只能老師使用", "程式與題目資料分開，方便更新題庫"],
+        ),
+        17: _mcq_spread(
+            17,
+            "製作有按鈕、選項的測驗視窗介面，較應使用？",
+            ["tkinter", "gTTS", "Haar Cascade", "playsound"],
+        ),
+        18: _mcq_spread(
+            18,
+            "追蹤準確度要求高、速度可慢，較應選哪種 tracker？",
+            ["MOSSE", "CSRT", "KCF", "不用 tracker"],
+        ),
+        19: _mcq_spread(
+            19,
+            "把 AI 生成內容直接交功課且完全不註明，最違反？",
+            ["檔名", "亮度", "清潔", "學術誠信"],
+        ),
+        20: _mcq_compact(
+            20,
+            "課堂鏡頭畫面全黑，較應先檢查？",
+            [
+                "是否已用 pip 安裝 gTTS",
+                "JSON 格式",
+                "是否已轉灰階",
+                "鏡頭／VideoCapture 是否成功開啟",
+            ],
+        ),
     }
 
 
@@ -359,7 +383,13 @@ def generate(template: Path, output: Path, meta: Meta) -> tuple[str, list[str], 
     fill_lines, fill_answers, bank_a, bank_b = build_shuffled_fill(_RNG)
 
     for q, (start, end) in MCQ_SPANS.items():
-        _replace_block(doc, start, end, blocks[q])
+        span = end - start
+        block = list(blocks[q])
+        if len(block) > span:
+            raise ValueError(f"MCQ#{q} needs ≤{span} lines, got {len(block)}")
+        if len(block) < span:
+            block.extend([""] * (span - len(block)))
+        _replace_block(doc, start, end, block)
 
     b = _section_b_paragraphs()
     set_paragraph_text_distribute(doc.paragraphs[107], "")

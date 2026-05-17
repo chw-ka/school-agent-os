@@ -139,14 +139,14 @@ def extract_lines(path: Path) -> list[str]:
         doc = Document(str(path))
         lines: list[str] = []
         for p in doc.paragraphs:
-            t = p.text.strip()
-            if t:
+            t = p.text.rstrip()
+            if t.strip():
                 lines.append(t)
         for tbl in doc.tables:
             for row in tbl.rows:
                 for cell in row.cells:
-                    t = cell.text.strip()
-                    if t:
+                    t = cell.text.rstrip()
+                    if t.strip():
                         lines.append(t)
         return _trim_exam_body(lines)
 

@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "25-26 S5 ICT Exam02",
+    "subject": "F5 ICT",
+    "level": "S5",
+    "total_marks": 100,
+    "academic_year": "2025-2026",
+    "footer": {
+      "academic_year": "2025-2026",
+      "level": "中五級",
+      "term_exam": "下學期考試",
+      "subject": "資訊及通訊科技"
+    },
+    "concept_targets": {
+      "數據庫": {
+        "min": 6,
+        "max": 12
+      },
+      "算法": {
+        "min": 4,
+        "max": 10
+      },
+      "試算表": {
+        "min": 2,
+        "max": 6
+      },
+      "資訊保安": {
+        "min": 2,
+        "max": 6
+      }
+    },
+    "mcq_answers": "DDACADABCAACABABBADDBBCCDCBDCD"
+  },
+  "items": [
+    {
+      "id": "mcq-01",
+      "section": "mcq",
+      "text": "下列哪一項是二進制 1100 0101 的十六進制表示？\n\n\tA.\t0xA5\n\tB.\t0xC5\n\tC.\t0x5C\n\tD.\t0xCA",
+      "marks": 1,
+      "concepts": [
+        "進制",
+        "十六進制"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-02",
+      "section": "mcq",
+      "text": "以 8 位元二進制補碼表示十進位 -3，下列哪一項正確？\n\n\tA.\t0000 0011\n\tB.\t1000 0011\n\tC.\t1111 1111\n\tD.\t1111 1101",
+      "marks": 1,
+      "concepts": [
+        "進制",
+        "二進制補碼"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-03",
+      "section": "mcq",
+      "text": "關於 ASCII 與 Unicode（UTF-8）儲存中文，下列敘述何者最恰當？\n\n\tA.\tUTF-8 的中文字通常比 ASCII 編碼佔更多字節\n\tB.\tASCII 可完整表示所有繁體中文字\n\tC.\t兩者均以 1 字節儲存每個中文字\n\tD.\tUTF-8 只能儲存英文字母",
+      "marks": 1,
+      "concepts": [
+        "字元編碼",
+        "UTF-8"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-04",
+      "section": "mcq",
+      "text": "一段未壓縮音訊：取樣頻率 44.1 kHz、取樣精度 16 bit、立體聲（2 聲道），長度 1 秒。下列何者最接近其檔案大小？\n\n\tA.\t約 352 KB\n\tB.\t約 88 KB\n\tC.\t約 176 KB\n\tD.\t約 705 KB",
+      "marks": 1,
+      "concepts": [
+        "多媒體",
+        "音訊檔案大小"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-05",
+      "section": "mcq",
+      "text": "在試算表中，VLOOKUP／XLOOKUP 的主要用途是？\n\n\tA.\t依關鍵值查找並傳回對應欄位\n\tB.\t將文字轉為日期格式\n\tC.\t計算滿足多條件的個數\n\tD.\t合併儲存格",
+      "marks": 1,
+      "concepts": [
+        "試算表",
+        "VLOOKUP"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-06",
+      "section": "mcq",
+      "text": "老師要統計「同時滿足：班別為甲班、分數>=60」的學生人數。下列哪個函數最適合？\n\n\t\t(1)\tCOUNT\n\t\t(2)\tCOUNTIF\n\t\t(3)\tCOUNTIFS\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (3)\n\tD.\t(3)（COUNTIFS）最貼切",
+      "marks": 1,
+      "concepts": [
+        "試算表",
+        "COUNTIFS"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-07",
+      "section": "mcq",
+      "text": "在馮·諾伊曼架構中，快取記憶體（Cache）的主要角色是？下列敘述何者正確？\n\n（提示：快取位於 CPU 與主記憶體之間，用較小但較快的記憶體暫存常用資料以提升效能。）\n\n\tA.\t在 CPU 與主記憶體之間提供較小但較快的暫存層以提升效能\n\tB.\t負責把類比訊號轉為數位訊號\n\tC.\t用作永久儲存作業系統與使用者文件\n\tD.\t只用作顯示輸出裝置",
+      "marks": 1,
+      "concepts": [
+        "硬件",
+        "快取記憶體"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-08",
+      "section": "mcq",
+      "text": "比較 SSD 與傳統 HDD，下列敘述何者正確？\n\n\t\t(1)\tSSD 通常較抗震\n\t\t(2)\tHDD 通常讀寫較快\n\t\t(3)\t相同容量下 SSD 通常較貴\n\n\tA.\t只有 (1)\n\tB.\t只有 (1) 和 (3)\n\tC.\t只有 (2) 和 (3)\n\tD.\t(1)、(2) 和 (3)",
+      "marks": 1,
+      "concepts": [
+        "硬件",
+        "SSD"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-09",
+      "section": "mcq",
+      "text": "下列哪一項最屬於實用程式（Utility）的典型用途？\n\n\tA.\t編寫 SQL 查詢\n\tB.\t試算表繪製圖表\n\tC.\t磁碟重組或檔案壓縮等系統維護工作\n\tD.\t掃描病毒定義更新",
+      "marks": 1,
+      "concepts": [
+        "軟件",
+        "實用程式"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-10",
+      "section": "mcq",
+      "text": "一幅 800×600 像素的點陣圖，每像素以 24 bit 真彩色儲存（未壓縮）。下列何者最接近檔案大小？\n\n\tA.\t約 1.4 MB\n\tB.\t約 140 KB\n\tC.\t約 4.8 MB\n\tD.\t約 14 MB",
+      "marks": 1,
+      "concepts": [
+        "多媒體",
+        "點陣圖"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-11",
+      "section": "mcq",
+      "text": "關於有損與無損壓縮，下列敘述何者最恰當？\n\n\tA.\t有損壓縮可能犧牲部分畫質／音質以換取較小檔案\n\tB.\t有損壓縮可還原成與原檔完全相同\n\tC.\t兩者均不能減少檔案大小\n\tD.\t無損壓縮常用於 JPEG 相片以縮小檔案",
+      "marks": 1,
+      "concepts": [
+        "多媒體",
+        "壓縮"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-12",
+      "section": "mcq",
+      "text": "資料表 Order(OrderID, CustomerName, ProductName, UnitPrice, Qty) 中，同一 CustomerName 對應多個 ProductName。下列哪一項最可能違反第一正規化（1NF）？\n\n\tA.\tOrderID 為主鍵\n\tB.\tUnitPrice 為數值型別\n\tC.\t同一列同時儲存多個產品名稱於一個儲存格（以逗號分隔）\n\tD.\tQty 必須大於 0",
+      "marks": 1,
+      "concepts": [
+        "數據庫",
+        "1NF"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-13",
+      "section": "mcq",
+      "text": "下列哪一項較屬於強密碼的特徵？\n\n\t\t(1)\t混合大小寫、數字與符號\n\t\t(2)\t使用學號作為密碼\n\t\t(3)\t與用戶名稱相同\n\n\tA.\t只有 (1)\n\tB.\t(1) 和 (2)\n\tC.\t只有 (2)\n\tD.\t只有 (3)",
+      "marks": 1,
+      "concepts": [
+        "資訊保安",
+        "強密碼"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-14",
+      "section": "mcq",
+      "text": "關於惡意軟件，下列配對何者最適當？\n\n\tA.\t木馬：常偽裝成正常程式誘使使用者執行\n\tB.\t病毒：常需依附宿主檔案；蠕蟲：常可自我複製並擴散\n\tC.\t勒索軟件：只會加快 CPU 風扇\n\tD.\t蠕蟲：必須依附於試算表巨集且不能自我複製",
+      "marks": 1,
+      "concepts": [
+        "資訊保安",
+        "惡意軟件"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-15",
+      "section": "mcq",
+      "text": "考慮下列片段（變數 count 初值為 0）：\n\n\t\tFOR k ← 1 TO 3\n\t\t\tFOR m ← 1 TO 2\n\t\t\t\tcount ← count + 1\n\n\tA.\t迴圈結束後 count 為 6\n\tB.\t迴圈結束後 count 為 3\n\tC.\t迴圈結束後 count 為 9\n\tD.\t迴圈結束後 count 為 5",
+      "marks": 1,
+      "concepts": [
+        "算法",
+        "迴圈"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-16",
+      "section": "mcq",
+      "text": "要找出一組數字中的第三大值，下列哪一種做法較符合「最直接」的解難方向？\n\n\t\t(1)\t先排序再取適當位置的值\n\t\t(2)\t把所有數字相加\n\t\t(3)\t只比較前兩個數字\n\n\tA.\t只有 (1)\n\tB.\t(1) 較合理（視演算法而定）\n\tC.\t只有 (2)\n\tD.\t只有 (3)",
+      "marks": 1,
+      "concepts": [
+        "算法",
+        "排序"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-17",
+      "section": "mcq",
+      "text": "下列哪一項最能描述免費軟件（Freeware）？\n\n\tA.\t只能試用 30 天\n\tB.\t可免費使用但未必提供原始碼\n\tC.\t必須付費取得授權金鑰\n\tD.\t原始碼必定公開且可自由修改",
+      "marks": 1,
+      "concepts": [
+        "軟件授權",
+        "免費軟件"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-18",
+      "section": "mcq",
+      "text": "「數碼足跡（Digital Footprint）」最主要是指？\n\n\tA.\t使用者在數碼服務中留下的可追溯資料與紀錄\n\tB.\tCPU 快取大小\n\tC.\t螢幕解析度\n\tD.\t鍵盤上的灰塵量",
+      "marks": 1,
+      "concepts": [
+        "資訊素養",
+        "數碼足跡"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-19",
+      "section": "mcq",
+      "text": "下列哪一項最能描述共享軟件（Shareware）？\n\n\tA.\t等同開源軟件\n\tB.\t必定完全免費且無限制\n\tC.\t只能於伺服器端執行\n\tD.\t常以便攜式（試用後付費）模式出現",
+      "marks": 1,
+      "concepts": [
+        "軟件授權",
+        "共享軟件"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-20",
+      "section": "mcq",
+      "text": "下列哪一項最能描述開源軟件（Open-source）授權特點（一般情況）？\n\n\tA.\t必定不能商業使用\n\tB.\t等同免費軟件\n\tC.\t原始碼必定不可檢視\n\tD.\t通常允許檢視／修改與再分發（視授權條款而定）",
+      "marks": 1,
+      "concepts": [
+        "軟件授權",
+        "開源軟件"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-21",
+      "section": "mcq",
+      "text": "在關聯式資料庫中，主鍵（Primary Key）的主要作用是？\n\n\t\t(1)\t唯一識別每一筆記錄\n\t\t(2)\t自動把兩個資料表合併\n\t\t(3)\t保證所有欄位均為文字型別\n\n\tA.\t只有 (1)\n\tB.\t(1) 正確\n\tC.\t只有 (2)\n\tD.\t只有 (3)",
+      "marks": 1,
+      "concepts": [
+        "數據庫",
+        "主鍵"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-22",
+      "section": "mcq",
+      "text": "外鍵（Foreign Key）的主要用途是？\n\n\t\t(1)\t建立資料表之間的參照完整性\n\t\t(2)\t把資料表所有欄位加密\n\t\t(3)\t取代主鍵成為唯一識別碼\n\n\tA.\t只有 (1)\n\tB.\t(1) 正確\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2)",
+      "marks": 1,
+      "concepts": [
+        "數據庫",
+        "外鍵"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-23",
+      "section": "mcq",
+      "text": "下列偽代碼用於找出陣列 L 的次大值（假設長度≥2 且存在次大值）：\n\t\n\n\t若 L = [10, 5, 20, 8, 20, 15]，迴圈結束後 second 的值是？\n\n\tA.\t20\n\tB.\t10\n\tC.\t15\n\tD.\t8",
+      "marks": 1,
+      "concepts": [
+        "算法",
+        "陣列"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-24",
+      "section": "mcq",
+      "text": "下列演算法的輸出是？\n\n\tN ← 1  \n\tS ← 0  \n\tFOR i ← 1 TO 4  \n\t\tS ← S + N  \n\t\tN ← N + 2  \n\tOUTPUT S  \n\n\tA.\t25\n\tB.\t20\n\tC.\t16\n\tD.\t9",
+      "marks": 1,
+      "concepts": [
+        "算法",
+        "追蹤"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-25",
+      "section": "mcq",
+      "text": "下列關於資料庫正規化的敘述，何者較正確？\n\n\t\t(1)\t1NF 要求屬性值為不可再分的原子值\n\t\t(2)\t2NF 消除非鍵屬性對候選鍵的部分函數相依\n\t\t(3)\t3NF 消除遞移函數相依\n\t\t（以上為一般課程描述，可能因教材用語略有差異）\n\t\t（請以「最合理」為準選擇答案）\n\n\tA.\t只有 (1)\n\tB.\t只有 (1) 和 (2)\n\tC.\t只有 (3)\n\tD.\t(1)、(2) 和 (3)",
+      "marks": 1,
+      "concepts": [
+        "數據庫",
+        "正規化"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-26",
+      "section": "mcq",
+      "text": "在 n 個已排序元素中尋找特定值，下列哪種方法通常較有效率？\n\n\n\tA.\t冒泡排序\n\tB.\t線性搜尋\n\tC.\t二分搜尋\n\tD.\t逐一列印所有元素",
+      "marks": 1,
+      "concepts": [
+        "算法",
+        "搜尋"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-27",
+      "section": "mcq",
+      "text": "在程式設計中，把重複使用的邏輯封裝成可獨立測試的小單元，最能體現哪項原則？\n\n\tA.\t無限迴圈\n\tB.\t模組化（Modularisation）\n\tC.\t循序結構\n\tD.\t單一巨型程式檔",
+      "marks": 1,
+      "concepts": [
+        "程式設計",
+        "模組化"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-28",
+      "section": "mcq",
+      "text": "下列關於堆疊（Stack）資料結構，何者較正確？\n\n\t\t(1)\t後進先出（LIFO）\n\t\t(2)\tpush 把元素放到堆疊頂端\n\t\t(3)\tpop 從堆疊頂端移除元素\n\n\t\t（請以「最合理」為準選擇答案）\n\n\n\n\tA.\t只有 (1)\n\tB.\t只有 (1) 和 (2)\n\tC.\t只有 (3)\n\tD.\t(1)、(2) 和 (3)",
+      "marks": 1,
+      "concepts": [
+        "數據結構",
+        "堆疊"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-29",
+      "section": "mcq",
+      "text": "下列哪一項最能說明程序設計中「函數（Function）」的用途？\n\n\tA.\t只能處理單一數值\n\tB.\t把所有變數改為全域變數\n\tC.\t把程式拆成可重複呼叫的模組以提升可讀性與重用\n\tD.\t刪除所有迴圈",
+      "marks": 1,
+      "concepts": [
+        "程式設計",
+        "函數"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-30",
+      "section": "mcq",
+      "text": "資料表 Book(ISBN, Title) 與 BookCopy(CopyID, ISBN, Shelf, Status)。\n\n\t\t要列出 Status =「在架」的書名 Title，\n\n\t\t下列 SQL 概念組合何者最適合？\n\n\t\t(1)\tINNER JOIN Book 與 BookCopy\n\t\t(2)\tWHERE Status = '在架'\n\t\t(3)\tSELECT Title\n\n\tA.\t只有 (1)\n\tB.\t只有 (1) 和 (2)\n\tC.\t只有 (3)\n\tD.\t(1)、(2) 和 (3)",
+      "marks": 1,
+      "concepts": [
+        "數據庫",
+        "SQL"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "b-01",
+      "section": "section_b",
+      "text": "「星晴網店」以試算表記錄訂單，欄位包括：A=訂單日期、B=產品類別、C=單價、D=數量、E=會員等級（VIP／一般）。F 欄為總價。請回答下列問題。\n\n\n(a)\t在 F2 寫出一條公式（可用 IF 與 AND），然後複製到 F3:F200。規則：若 E2 為「VIP」且 D2>10，則總價為 C2*D2 的 8 折；否則為原價 C2*D2。\t(5 分)\n\n\n(b)\t描述如何建立樞紐分析表：以「列」顯示產品類別；以「值」顯示總銷售額（對 F 欄總價求和）。\t(5 分)",
+      "marks": 10,
+      "title": "試算表",
+      "concepts": [
+        "試算表",
+        "IF",
+        "樞紐分析表"
+      ]
+    },
+    {
+      "id": "b-02",
+      "section": "section_b",
+      "text": "2.\t資訊保安與私隱\t(10 分)\n\n\n(a)\t列出強密碼的三項特徵，並說明為何「生日」不適合作密碼。\t(3 分)\n\n(b)\t比較「全備份」與「增量備份」：說明各自的備份範圍與還原時所需步驟。\t(4 分)\n\n\n(c)\t學校處理學生個人資料時，提出兩項符合私隱原則的做法並簡述原因。\t(3 分)",
+      "marks": 10,
+      "title": "資訊保安與私隱",
+      "concepts": [
+        "強密碼",
+        "備份",
+        "個人資料私隱"
+      ]
+    },
+    {
+      "id": "b-03",
+      "section": "section_b",
+      "text": "3.\t算法追蹤\t(10 分)\n\n考慮以下偽代碼（陣列 A 索引由 1 開始，長度 n≥2）：\nlargest ← A[1]\nsecond_largest ← A[1]\nFOR i ← 2 TO n\n    IF A[i] > largest THEN\n        second_largest ← largest\n        largest ← A[i]\n    ELSE IF A[i] > second_largest AND A[i] < largest THEN\n        second_largest ← A[i]\n    ENDIF\nENDFOR\n\n\n\n\n(a)\t設 A = [10, 5, 20, 8, 20, 15]（n=6）。完成追蹤表，展示迴圈每次迭代後 largest 與 second_largest 的值。\t(5 分)\n\n(b)\t若陣列中最大值出現多次（如上例的 20），此算法是否仍能正確找出「次大值」？解釋原因。\t(5 分)",
+      "marks": 10,
+      "title": "算法追蹤",
+      "concepts": [
+        "偽代碼",
+        "陣列",
+        "次大值"
+      ]
+    },
+    {
+      "id": "c-db",
+      "section": "section_c",
+      "text": "丙部 (40 分)：選修單元問答題（數據庫）\n\n選修 A：數據庫（Database）\n\n某「社區中心活動報名系統」描述如下：一位會員可報名多個工作坊；一個工作坊亦可被多位會員報名。每次報名產生一筆報名記錄，包含報名日期與付款狀態。\n\n\n\n\n\n\n\n\n\n\n\n\n(a)\t繪製實體關係圖（ERD）：須包含「會員 Member」「工作坊 Workshop」「報名 Registration」三個實體，標示多對多並以關聯實體拆解；並在圖中寫出主鍵（PK）與外鍵（FK）欄位名稱。\t(8 分)\n\n(b)\t設資料表如下：\n\nMember(MemberID, MemberName, JoinDate)\nWorkshop(WorkshopID, Title, Instructor, Fee)\nRegistration(RegID, MemberID, WorkshopID, RegDate, PayStatus)\n\n\n\n(i)\t寫出一條 SQL，列出所有報名了 Instructor = 'Peter' 的工作坊之會員姓名（MemberName）。\t(4 分)\n\n\n(ii)\t寫出一條 SQL，找出報名人數 **超過 30** 的工作坊名稱（Title）及其報名人數。（需使用 COUNT、GROUP BY、HAVING）\t(6 分)\n\n(iii)\t寫出一條 SQL，找出 **從未報名任何工作坊** 的會員姓名。（可用 NOT IN 或 NOT EXISTS）\t(6 分)",
+      "marks": 20,
+      "title": "選修A 數據庫",
+      "concepts": [
+        "ERD",
+        "SQL",
+        "數據庫"
+      ]
+    },
+    {
+      "id": "c-norm",
+      "section": "section_c",
+      "text": "2.\t正規化與資料完整性\t(10 分)\n\n某社團登記表把「學號、姓名、社團名稱、社團會址、會費」全部放在同一工作表的一列中，且同一社團會址重複出現於多行。\n\n(a)\t指出此設計違反哪一條正規化規則，並說明會造成什麼更新異常（update anomaly）。\t(5 分)\n\n(b)\t建議如何拆分為至少兩個實體／資料表，並寫出各表的主要屬性。\t(5 分)",
+      "marks": 10,
+      "title": "正規化與資料完整性",
+      "concepts": [
+        "正規化",
+        "1NF",
+        "更新異常"
+      ]
+    },
+    {
+      "id": "c-sql-adv",
+      "section": "section_c",
+      "text": "3.\t進階 SQL 與資料操作\t(10 分)\n\n\n沿用丙部選修 A 的 Member、Workshop、Registration 資料表。\n\n(a)\t寫出一條 SQL，列出曾報名兩個或以上不同工作坊的會員姓名（需 DISTINCT／COUNT／GROUP BY／HAVING）。\t(5 分)\n\n(b)\t寫出一條 SQL，把 WorkshopID = 'WS101' 且 PayStatus = '已付款' 的報名記錄 PayStatus 更新為「已確認」。（UPDATE … WHERE）\t(5 分)",
+      "marks": 10,
+      "title": "進階 SQL",
+      "concepts": [
+        "SQL",
+        "GROUP BY",
+        "UPDATE"
+      ]
+    }
+  ]
+}

@@ -9,6 +9,7 @@ from answer_pattern_check import (
     has_pattern_issues,
 )
 from concept_check import build_concept_distribution, check_concepts, compare_concept_distributions
+from format_check import check_exam_format, check_spec_format
 from mcq_check import apply_pattern_check, check_mcq_balance, mcq_answers_from_docx, parse_answer_letters
 from exam_spec import build_spec, make_item
 
@@ -102,6 +103,25 @@ def test_mcq_docx_s3() -> None:
     assert src_label == "docx.answer_key_line"
 
 
+def test_format_backticks_fail() -> None:
+    spec = build_spec(
+        {"subject": "test"},
+        [make_item("m1", "mcq", "use `backtick` here")],
+    )
+    result = check_spec_format(spec)
+    assert not result.ok
+    assert "`backtick`" in result.backtick_hits
+
+
+def test_format_backticks_pass() -> None:
+    spec = build_spec(
+        {"subject": "test"},
+        [make_item("m1", "mcq", "use 'single quotes' here")],
+    )
+    result = check_spec_format(spec)
+    assert result.ok
+
+
 def test_concept_match() -> None:
     cand = build_spec(
         {"subject": "test"},
@@ -116,6 +136,8 @@ def test_concept_match() -> None:
 
 
 if __name__ == "__main__":
+    test_format_backticks_fail()
+    test_format_backticks_pass()
     test_concept_distribution()
     test_mcq_balance_even()
     test_mcq_pattern_random_key()

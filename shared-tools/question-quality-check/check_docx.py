@@ -14,6 +14,7 @@ from concept_check import (
 )
 from exam_spec import load_spec
 from answer_pattern_check import check_all_answer_patterns, format_all_patterns_report
+from format_check import check_exam_format, format_format_report
 from mcq_check import check_mcq, format_mcq_report
 from quality_lib import THRESH_DUPLICATE, format_report_text, run_full_check, write_report_json
 from spec_from_docx import docx_to_spec
@@ -44,6 +45,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--fail-on-duplicate", action=argparse.BooleanOptionalAction, default=False)
     ap.add_argument("--skip-concepts", action="store_true")
     ap.add_argument("--skip-mcq", action="store_true")
+    ap.add_argument("--skip-format", action="store_true", help="Skip quote/indent format checks")
     args = ap.parse_args(argv)
 
     candidate = Path(args.candidate)
@@ -62,6 +64,13 @@ def main(argv: list[str] | None = None) -> int:
     print(format_report_text(report, min_similarity=args.min_similarity))
 
     exit_code = report.exit_code(fail_on_exact=args.fail_on_duplicate)
+
+    if not args.skip_format:
+        fmt = check_exam_format(candidate)
+        print("\n=== Format (quotes + MCQ indent) ===")
+        print(format_format_report(fmt))
+        if not fmt.ok and exit_code == 0:
+            exit_code = 1
 
     if not args.skip_mcq:
         cand_spec = None

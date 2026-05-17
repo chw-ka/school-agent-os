@@ -193,6 +193,19 @@ def _replace_footer_banner_in_xml(xml_bytes: bytes, new_banner: str) -> bytes:
     return ET.tostring(root, encoding="UTF-8", xml_declaration=True)
 
 
+def _inject_footer_banner_in_xml(xml_bytes: bytes, new_banner: str) -> bytes:
+    """Prepend banner when footer only has page-number runs (no existing banner text)."""
+    root = ET.fromstring(xml_bytes)
+    texts = [t for t in root.iter(W_T) if t.text is not None]
+    if not texts:
+        return xml_bytes
+    combined = "".join(t.text for t in texts)
+    if _PAGE_RE.sub("", combined).strip():
+        return xml_bytes
+    texts[0].text = new_banner + (texts[0].text or "")
+    return ET.tostring(root, encoding="UTF-8", xml_declaration=True)
+
+
 def apply_footer_meta(docx_path: Path, footer_meta: FooterMeta | dict[str, Any]) -> None:
     """Rewrite static footer banner in all footer parts; preserve page-number fields."""
     docx_path = docx_path.expanduser().resolve()
@@ -206,6 +219,7 @@ def apply_footer_meta(docx_path: Path, footer_meta: FooterMeta | dict[str, Any])
         payloads = {n: zin.read(n) for n in names}
 
     changed = False
+    banner_injected = False
     for name in _footer_xml_paths(docx_path):
         raw = payloads.get(name, b"")
         if not raw:
@@ -213,9 +227,15 @@ def apply_footer_meta(docx_path: Path, footer_meta: FooterMeta | dict[str, Any])
         joined = "".join(
             t.text for t in ET.fromstring(raw).iter(W_T) if t.text
         )
-        if not joined.strip() or _PAGE_RE.sub("", joined).strip() == "":
+        if not joined.strip():
             continue
-        payloads[name] = _replace_footer_banner_in_xml(raw, banner)
+        if _PAGE_RE.sub("", joined).strip() == "":
+            if banner_injected:
+                continue
+            payloads[name] = _inject_footer_banner_in_xml(raw, banner)
+            banner_injected = True
+        else:
+            payloads[name] = _replace_footer_banner_in_xml(raw, banner)
         changed = True
 
     if not changed:

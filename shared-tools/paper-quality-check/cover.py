@@ -72,12 +72,27 @@ def _para_text(cell, idx: int) -> str:
     return paras[idx].text.strip()
 
 
+def _uses_en_cover_layout(cell) -> bool:
+    """F5 ICT / 24_25 written templates: school@4, year@5, subject@7, paper@8."""
+    if len(cell.paragraphs) <= 8:
+        return False
+    paper = _para_text(cell, 8)
+    return bool(paper) and ("試題" in paper or "答題" in paper or "試卷" in paper)
+
+
 def extract_cover_fields(docx_path: Path) -> CoverFields:
     docx_path = docx_path.expanduser().resolve()
     doc = Document(str(docx_path))
     if not doc.tables:
         return CoverFields()
     cell = doc.tables[0].cell(0, 0)
+    if _uses_en_cover_layout(cell):
+        return CoverFields(
+            school=_para_text(cell, 4),
+            year_term=_para_text(cell, 5),
+            level=_para_text(cell, 7),
+            paper=_para_text(cell, 8),
+        )
     idx = _ZH_COVER_PARA
     return CoverFields(
         school=_para_text(cell, idx["school"]),
