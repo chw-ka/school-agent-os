@@ -1,0 +1,17 @@
+[
+    {
+        "question": "Python 的創始人是誰？",
+        "options": ["Guido van Rossum", "Elon Musk", "Bill Gates", "Mark Zuckerberg"],
+        "answer": "Guido van Rossum"
+    },
+    {
+        "question": "哪一個關鍵字用於定義 Python 函式？",
+        "options": ["func", "define", "def", "function"],
+        "answer": "def"
+    },
+    {
+        "question": "HTML 代表什麼？",
+        "options": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyperlink Text Management", "Home Tool Markup Language"],
+        "answer": "Hyper Text Markup Language"
+    }
+]

@@ -1,0 +1,350 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "25-26 S3 CMP Term 2 Written Exam",
+    "subject": "S3 CMP",
+    "level": "中三級",
+    "total_marks": 50,
+    "academic_year": "2025-2026",
+    "mcq_answers": "DACDBBACBBDABACDCADC",
+    "matching_answers": [
+      "ABCED",
+      "BDAEC"
+    ],
+    "tf_answers": "TFTFF",
+    "fill_answers": [
+      [
+        "gTTS",
+        "playsound",
+        "password.json",
+        "yue",
+        "SpeechRecognition"
+      ],
+      [
+        "opencv-python",
+        "quiz_data.json",
+        "高級程式員",
+        "cvtColor",
+        "xml"
+      ]
+    ],
+    "fill_word_banks": [
+      [
+        "yue",
+        "playsound",
+        "SpeechRecognition",
+        "gTTS",
+        "password.json"
+      ],
+      [
+        "quiz_data.json",
+        "opencv-python",
+        "cvtColor",
+        "xml",
+        "高級程式員"
+      ]
+    ],
+    "footer": {
+      "academic_year": "2025-2026",
+      "level": "中三級",
+      "term_exam": "下學期考試",
+      "subject": "電腦認知"
+    },
+    "concept_targets": {
+      "生成式AI": {
+        "min": 3,
+        "max": 5
+      },
+      "套件與pip": {
+        "min": 1,
+        "max": 3
+      },
+      "物件追蹤": {
+        "min": 3,
+        "max": 5
+      },
+      "OpenCV": {
+        "min": 4,
+        "max": 8
+      },
+      "Vibe Coding": {
+        "min": 3,
+        "max": 6
+      },
+      "程式結構": {
+        "min": 3,
+        "max": 6
+      },
+      "語音程式": {
+        "min": 4,
+        "max": 8
+      },
+      "Cloud API": {
+        "min": 2,
+        "max": 4
+      },
+      "學術誠信": {
+        "min": 1,
+        "max": 2
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "mcq-01",
+      "section": "mcq",
+      "text": "老師要求用生成式 AI 整理一份 PDF 通告重點，下列哪項較屬合理應用？\n(1)摘要 (2)問答 (3)檢查日期",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-02",
+      "section": "mcq",
+      "text": "執行 import cv2 時出現 ModuleNotFoundError，較合理處理是？",
+      "marks": 1,
+      "concepts": [
+        "套件與pip"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-03",
+      "section": "mcq",
+      "text": "AI 捏造看似可信但不存在的內容，較適合稱為？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-04",
+      "section": "mcq",
+      "text": "用 AI 協助寫報告，下列哪項最符合「負責任使用」？",
+      "marks": 1,
+      "concepts": [
+        "學術誠信"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-05",
+      "section": "mcq",
+      "text": "語音轉文字程式因網絡中斷崩潰，較應加入？",
+      "marks": 1,
+      "concepts": [
+        "語音程式"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-06",
+      "section": "mcq",
+      "text": "要在影片追蹤足球，下列步驟次序最合理？",
+      "marks": 1,
+      "concepts": [
+        "物件追蹤"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-07",
+      "section": "mcq",
+      "text": "人臉偵測誤判框太多，較合理調整是？",
+      "marks": 1,
+      "concepts": [
+        "OpenCV"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-08",
+      "section": "mcq",
+      "text": "使用生成式 AI 閱讀長 PDF 時，下列哪項較不合理？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-09",
+      "section": "mcq",
+      "text": "cv2.VideoCapture(0) 的 0 在課堂實驗通常指？",
+      "marks": 1,
+      "concepts": [
+        "OpenCV"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-10",
+      "section": "mcq",
+      "text": "Vibe Coding 下，學生最合適扮演？",
+      "marks": 1,
+      "concepts": [
+        "Vibe Coding"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-11",
+      "section": "mcq",
+      "text": "AI 寫的遊戲太快，學生最應？",
+      "marks": 1,
+      "concepts": [
+        "Vibe Coding"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-12",
+      "section": "mcq",
+      "text": "拍照做人臉偵測前先把影像轉灰階，主要原因是？",
+      "marks": 1,
+      "concepts": [
+        "OpenCV"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-13",
+      "section": "mcq",
+      "text": "即時鏡頭追蹤要較流暢，較宜選 KCF 而非 CSRT，因為？",
+      "marks": 1,
+      "concepts": [
+        "物件追蹤"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-14",
+      "section": "mcq",
+      "text": "Google 翻譯 API 顯示找不到憑證，較可能是？",
+      "marks": 1,
+      "concepts": [
+        "Cloud API"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-15",
+      "section": "mcq",
+      "text": "要刪除專案內舊的 sound.mp3，較應使用？",
+      "marks": 1,
+      "concepts": [
+        "程式結構"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-16",
+      "section": "mcq",
+      "text": "測驗程式把題目放在 quiz_data.json，主要是為了？",
+      "marks": 1,
+      "concepts": [
+        "程式結構"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-17",
+      "section": "mcq",
+      "text": "製作有按鈕、選項的測驗視窗介面，較應使用？",
+      "marks": 1,
+      "concepts": [
+        "程式結構"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-18",
+      "section": "mcq",
+      "text": "追蹤準確度要求高、速度可慢，較應選哪種 tracker？",
+      "marks": 1,
+      "concepts": [
+        "物件追蹤"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-19",
+      "section": "mcq",
+      "text": "把 AI 生成內容直接交功課且完全不註明，最違反？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-20",
+      "section": "mcq",
+      "text": "課堂鏡頭畫面全黑，較應先檢查？",
+      "marks": 1,
+      "concepts": [
+        "OpenCV"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "b-match-lib",
+      "section": "section_b",
+      "text": "乙部：函數庫配對",
+      "marks": 5,
+      "concepts": [
+        "語音程式"
+      ]
+    },
+    {
+      "id": "b-match-step",
+      "section": "section_b",
+      "text": "乙部：步驟配對",
+      "marks": 5,
+      "concepts": [
+        "物件追蹤"
+      ]
+    },
+    {
+      "id": "c-tf",
+      "section": "section_c",
+      "text": "丙部：是非題",
+      "marks": 5,
+      "concepts": [
+        "Vibe Coding",
+        "語音程式"
+      ]
+    },
+    {
+      "id": "d-fill-a",
+      "section": "section_d",
+      "text": "丁部：填充（語音）",
+      "marks": 5,
+      "concepts": [
+        "語音程式",
+        "Cloud API"
+      ]
+    },
+    {
+      "id": "d-fill-b",
+      "section": "section_d",
+      "text": "丁部：填充（OpenCV）",
+      "marks": 5,
+      "concepts": [
+        "OpenCV"
+      ]
+    },
+    {
+      "id": "e-sa",
+      "section": "section_e",
+      "text": "戊部：Vibe Coding 迭代",
+      "marks": 5,
+      "concepts": [
+        "Vibe Coding"
+      ]
+    }
+  ]
+}

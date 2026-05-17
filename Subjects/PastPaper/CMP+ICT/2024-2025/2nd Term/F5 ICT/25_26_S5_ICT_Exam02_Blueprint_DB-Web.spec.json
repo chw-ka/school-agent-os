@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "F5 ICT Exam02 Blueprint (Database + Web)",
+    "subject": "F5 ICT",
+    "level": "S5",
+    "total_marks": 100,
+    "academic_year": "2025-2026"
+  },
+  "items": [
+    {
+      "id": "mcq-01",
+      "section": "mcq",
+      "text": "下列哪一項是十六進制 0x2A 的二進制表示？\n\n\tA.\t0010 1010\n\tB.\t0011 1010\n\tC.\t0101 0101\n\tD.\t1010 0010",
+      "marks": 1
+    },
+    {
+      "id": "mcq-02",
+      "section": "mcq",
+      "text": "以 8 位元二進制補碼表示十進位 -1，下列哪一項正確？\n\n\tA.\t0000 0001\n\tB.\t1000 0001\n\tC.\t1111 1111\n\tD.\t1111 1110",
+      "marks": 1
+    },
+    {
+      "id": "mcq-03",
+      "section": "mcq",
+      "text": "關於 ASCII 與 Unicode（UTF-8）儲存中文，下列敘述何者最恰當？\n\n\tA.\t兩者均以 1 字節儲存每個中文字\n\tB.\tUTF-8 的中文字通常比 ASCII 編碼佔更多字節\n\tC.\tASCII 可完整表示所有繁體中文字\n\tD.\tUTF-8 只能儲存英文字母",
+      "marks": 1
+    },
+    {
+      "id": "mcq-04",
+      "section": "mcq",
+      "text": "一段未壓縮音訊：取樣頻率 44.1 kHz、取樣精度 16 bit、立體聲（2 聲道），長度 1 秒。下列何者最接近其檔案大小？\n\n\tA.\t約 88 KB\n\tB.\t約 176 KB\n\tC.\t約 352 KB\n\tD.\t約 705 KB",
+      "marks": 1
+    },
+    {
+      "id": "mcq-05",
+      "section": "mcq",
+      "text": "在試算表中，VLOOKUP／XLOOKUP 的主要用途是？\n\n\tA.\t合併儲存格\n\tB.\t依關鍵值查找並傳回對應欄位\n\tC.\t計算滿足多條件的個數\n\tD.\t將文字轉為日期格式",
+      "marks": 1
+    },
+    {
+      "id": "mcq-06",
+      "section": "mcq",
+      "text": "老師要統計「同時滿足：班別為甲班、分數>=60」的學生人數。下列哪個函數最適合？\n\n\t\t(1)\tCOUNT\n\t\t(2)\tCOUNTIF\n\t\t(3)\tCOUNTIFS\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (3)\n\tD.\t(3)（COUNTIFS）最貼切",
+      "marks": 1
+    },
+    {
+      "id": "mcq-07",
+      "section": "mcq",
+      "text": "在馮·諾伊曼架構中，快取記憶體（Cache）的主要角色是？下列敘述何者正確？\n\n（提示：快取位於 CPU 與主記憶體之間，用較小但較快的記憶體暫存常用資料以提升效能。）\n\n\tA.\t在 CPU 與主記憶體之間提供較小但較快的暫存層以提升效能\n\tB.\t用作永久儲存作業系統與使用者文件\n\tC.\t負責把類比訊號轉為數位訊號\n\tD.\t取代路由器進行封包轉送",
+      "marks": 1
+    },
+    {
+      "id": "mcq-08",
+      "section": "mcq",
+      "text": "比較 SSD 與傳統 HDD，下列敘述何者正確？\n\n\t\t(1)\tSSD 通常較抗震\n\t\t(2)\tHDD 通常讀寫較快\n\t\t(3)\t相同容量下 SSD 通常較貴\n\n\tA.\t只有 (1)\n\tB.\t只有 (1) 和 (3)\n\tC.\t只有 (2) 和 (3)\n\tD.\t(1)、(2) 和 (3)",
+      "marks": 1
+    },
+    {
+      "id": "mcq-09",
+      "section": "mcq",
+      "text": "下列哪一項最屬於實用程式（Utility）的典型用途？\n\n\tA.\t編寫網頁\n\tB.\t磁碟重組或檔案壓縮等系統維護工作\n\tC.\t試算表繪圖\n\tD.\t資料庫正規化分析",
+      "marks": 1
+    },
+    {
+      "id": "mcq-10",
+      "section": "mcq",
+      "text": "在 TCP/IP 概念中，HTTP 主要工作層級最接近下列何者？\n\n\tA.\t應用層協定\n\tB.\t網路層路由\n\tC.\t實體層訊號\n\tD.\t資料鏈結層訊框",
+      "marks": 1
+    },
+    {
+      "id": "mcq-11",
+      "section": "mcq",
+      "text": "下列哪一項最能描述 TCP 相對於 IP 的分工？\n\n\tA.\tTCP 負責可靠傳輸；IP 負責位址與路由\n\tB.\tTCP 負責硬體驅動；IP 負責顯示\n\tC.\t兩者完全相同\n\tD.\tIP 負責加密；TCP 負責壓縮",
+      "marks": 1
+    },
+    {
+      "id": "mcq-12",
+      "section": "mcq",
+      "text": "下列何者是合法 IPv6 位址的寫法？\n\n\tA.\t192.168.0.1\n\tB.\t2001:0db8:0000:0000:0000:ff00:0042:8329\n\tC.\tGG::1\n\tD.\t256.1.1.1",
+      "marks": 1
+    },
+    {
+      "id": "mcq-13",
+      "section": "mcq",
+      "text": "電郵內容：「你的帳戶異常，請立即點擊連結重設密碼」，寄件者顯示為銀行但網址為短網址且與官方網域不符。下列何者最像網絡釣魚（Phishing）跡象？\n\n\t\t(1)\t要求緊急行動並提供可疑外部連結\n\t\t(2)\t使用官方網域且提供可查證聯絡方式\n\t\t(3)\t主旨清楚列出學校活動日程\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (3)\n\tD.\t(1) 和 (2)",
+      "marks": 1
+    },
+    {
+      "id": "mcq-14",
+      "section": "mcq",
+      "text": "關於惡意軟件，下列配對何者最適當？\n\n\tA.\t蠕蟲：必須依附於試算表巨集且不能自我複製\n\tB.\t病毒：常需依附宿主檔案；蠕蟲：常可自我複製並擴散\n\tC.\t勒索軟件：只會加快 CPU 風扇\n\tD.\t病毒：只感染路由器韌體且不影響檔案",
+      "marks": 1
+    },
+    {
+      "id": "mcq-15",
+      "section": "mcq",
+      "text": "考慮下列片段：\n\n\t\tFOR i ← 1 TO 3\n\t\t\tFOR j ← 1 TO 2\n\t\t\t\tOUTPUT i, j\n\n\tA.\t內層 OUTPUT 執行 3 次\n\tB.\t內層 OUTPUT 執行 5 次\n\tC.\t內層 OUTPUT 執行 6 次\n\tD.\t內層 OUTPUT 執行 9 次",
+      "marks": 1
+    },
+    {
+      "id": "mcq-16",
+      "section": "mcq",
+      "text": "要找出一組數字中的第三大值，下列哪一種做法較符合「最直接」的解難方向？\n\n\t\t(1)\t先排序再取適當位置的值\n\t\t(2)\t把所有數字相加\n\t\t(3)\t只比較前兩個數字\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (3)\n\tD.\t(1) 較合理（視演算法而定）",
+      "marks": 1
+    },
+    {
+      "id": "mcq-17",
+      "section": "mcq",
+      "text": "下列哪一項最能描述免費軟件（Freeware）？\n\n\tA.\t原始碼必定公開且可自由修改\n\tB.\t可免費使用但未必提供原始碼\n\tC.\t只能試用 30 天\n\tD.\t必須付費取得授權金鑰",
+      "marks": 1
+    },
+    {
+      "id": "mcq-18",
+      "section": "mcq",
+      "text": "「數碼足跡（Digital Footprint）」最主要是指？\n\n\tA.\t鍵盤上的灰塵量\n\tB.\t使用者在網上活動留下的可追溯資料與紀錄\n\tC.\t螢幕解析度\n\tD.\tCPU 快取大小",
+      "marks": 1
+    },
+    {
+      "id": "mcq-19",
+      "section": "mcq",
+      "text": "下列哪一項最能描述共享軟件（Shareware）？\n\n\tA.\t必定完全免費且無限制\n\tB.\t常以便攜式（試用後付費）模式出現\n\tC.\t等同開源軟件\n\tD.\t只能於伺服器端執行",
+      "marks": 1
+    },
+    {
+      "id": "mcq-20",
+      "section": "mcq",
+      "text": "下列哪一項最能描述開源軟件（Open-source）授權特點（一般情況）？\n\n\tA.\t原始碼必定不可檢視\n\tB.\t通常允許檢視／修改與再分發（視授權條款而定）\n\tC.\t必定不能商業使用\n\tD.\t等同免費軟件",
+      "marks": 1
+    },
+    {
+      "id": "mcq-21",
+      "section": "mcq",
+      "text": "相對於 WPA2，WPA3 在 Wi‑Fi 安全上常見的改進敘述，下列何者較合理？\n\n\t\t(1)\t更強的加密與金鑰交換機制（概念層面）\n\t\t(2)\t保證任何情況下都不需要密碼\n\t\t(3)\t只影響有線網路而不影響無線\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (3)\n\tD.\t(1) 正確",
+      "marks": 1
+    },
+    {
+      "id": "mcq-22",
+      "section": "mcq",
+      "text": "下列哪些屬於 VPN 的典型用途？\n\n\t\t(1)\t在公共網絡上建立加密通道連回內部網絡\n\t\t(2)\t把螢幕亮度自動調到最大\n\t\t(3)\t隱藏或改變對外連線路徑（視設定而定）\n\n\tA.\t只有 (1)\n\tB.\t只有 (1) 和 (3)\n\tC.\t只有 (2)\n\tD.\t(1)、(2) 和 (3)",
+      "marks": 1
+    },
+    {
+      "id": "mcq-23",
+      "section": "mcq",
+      "text": "下列偽代碼用於找出陣列 L 的次大值（假設長度≥2 且存在次大值）：\n\t\n\n\t若 L = [10, 5, 20, 8, 20, 15]，迴圈結束後 second 的值是？\n\n\tA.\t10\n\tB.\t15\n\tC.\t20\n\tD.\t8",
+      "marks": 1
+    },
+    {
+      "id": "mcq-24",
+      "section": "mcq",
+      "text": "下列演算法的輸出是？\n\n\tX ← 2  \n\tY ← 0  \n\tWHILE X < 20 DO  \n\t\tY ← Y + X  \n\t\tX ← X * 2  \n\tOUTPUT Y  \n\n\tA.\t6\n\tB.\t14\n\tC.\t22\n\tD.\t30",
+      "marks": 1
+    },
+    {
+      "id": "mcq-25",
+      "section": "mcq",
+      "text": "瀏覽網站時，DNS／HTTP／TCP／IP 的分工，下列敘述何者較正確？\n\n\t\t(1)\tDNS：把網域名稱解析為 IP\n\t\t(2)\tHTTP：定義網頁資源的傳輸語意（應用層）\n\t\t(3)\tTCP：提供可靠傳輸；IP：負責路由\n\t\t（以上為一般課程描述，可能因教材用語略有差異）\n\t\t（請以「最合理」為準選擇答案）\n\n\tA.\t只有 (1)\n\tB.\t只有 (1) 和 (2)\n\tC.\t只有 (3)\n\tD.\t(1)、(2) 和 (3)",
+      "marks": 1
+    },
+    {
+      "id": "mcq-26",
+      "section": "mcq",
+      "text": "下列兩段程式碼同樣搜尋陣列，但哪一段通常執行時間較短？（P1：線性搜尋；P2：已排序陣列的二分搜尋）\n\n\n\tA.\tP1 較快\n\tB.\tP2 較快\n\tC.\t兩者相若\n\tD.\t無法比較",
+      "marks": 1
+    },
+    {
+      "id": "mcq-27",
+      "section": "mcq",
+      "text": "下列哪一項最屬於模組化（Modularisation）？\n\n\tA.\t把所有程式寫在同一檔且不重複使用\n\tB.\t把問題拆成小模組分別設計與測試\n\tC.\t只使用一個變數名稱\n\tD.\t刪除所有註解",
+      "marks": 1
+    },
+    {
+      "id": "mcq-28",
+      "section": "mcq",
+      "text": "某班要為下列分段評級程式設計測試數據，以覆蓋所有分支：\n\n\t\tINPUT score\n\t\tIF score > 80 THEN OUTPUT \"A\"\n\t\tELSE IF score >= 50 THEN OUTPUT \"B\"\n\t\tELSE OUTPUT \"F\"\n\n\t哪一組輸入分數最適合？\n\n\n\tA.\t45, 60, 90\n\tB.\t40, 85\n\tC.\t50, 81\n\tD.\t30, 75, 80",
+      "marks": 1
+    },
+    {
+      "id": "mcq-29",
+      "section": "mcq",
+      "text": "在演算法設計中使用陣列的主要好處是？\n\n\tA.\t減少記憶體使用量\n\tB.\t適合需要重複運算或儲存多個同類資料\n\tC.\t可儲存不同資料類型\n\tD.\t可提高運算速度",
+      "marks": 1
+    },
+    {
+      "id": "mcq-30",
+      "section": "mcq",
+      "text": "某校網站使用子網域：\n\n\t\tlearn.school.edu.hk\n\n\t\tshop.school.edu.hk\n\n\t\tmail.school.edu.hk\n\n\t最少需要註冊多少個網域名稱（domain name）？\n\n\tA.\t4\n\tB.\t3\n\tC.\t2\n\tD.\t1",
+      "marks": 1
+    },
+    {
+      "id": "b-01",
+      "section": "section_b",
+      "text": "「星晴網店」以試算表記錄訂單，欄位包括：A=訂單日期、B=產品類別、C=單價、D=數量、E=會員等級（VIP／一般）。F 欄為總價。請回答下列問題。\n\n\n(a)\t在 F2 寫出一條公式（可用 IF 與 AND），然後複製到 F3:F200。規則：若 E2 為「VIP」且 D2>10，則總價為 C2*D2 的 8 折；否則為原價 C2*D2。\t(5 分)\n\n\n(b)\t描述如何建立樞紐分析表：以「列」顯示產品類別；以「值」顯示總銷售額（對 F 欄總價求和）。\t(5 分)",
+      "marks": 10,
+      "title": "試算表"
+    },
+    {
+      "id": "b-02",
+      "section": "section_b",
+      "text": "2.\t網絡與保安\t(10 分)\n\n\n(a)\t相對於 WPA2，WPA3 在 Wi‑Fi 安全性上的主要改進是什麼？（從加密強度／金鑰交換概念說明）\t(3 分)\n\n(b)\t學生在家中上網，想安全存取學校內聯網資源。應建議使用哪種技術？說明其原理（加密通道／隧道）。\t(4 分)\n\n\n(c)\t除上述技術外，提出兩項可提升家庭網絡安全的做法並解釋。\t(3 分)",
+      "marks": 10,
+      "title": "網絡與保安"
+    },
+    {
+      "id": "b-03",
+      "section": "section_b",
+      "text": "3.\t算法追蹤\t(10 分)\n\n考慮以下偽代碼（陣列 A 索引由 1 開始，長度 n≥2）：\nlargest ← A[1]\nsecond_largest ← A[1]\nFOR i ← 2 TO n\n    IF A[i] > largest THEN\n        second_largest ← largest\n        largest ← A[i]\n    ELSE IF A[i] > second_largest AND A[i] < largest THEN\n        second_largest ← A[i]\n    ENDIF\nENDFOR\n\n\n\n\n(a)\t設 A = [10, 5, 20, 8, 20, 15]（n=6）。完成追蹤表，展示迴圈每次迭代後 largest 與 second_largest 的值。\t(5 分)\n\n(b)\t若陣列中最大值出現多次（如上例的 20），此算法是否仍能正確找出「次大值」？解釋原因。\t(5 分)",
+      "marks": 10,
+      "title": "算法追蹤"
+    },
+    {
+      "id": "c-db",
+      "section": "section_c",
+      "text": "丙部 (40 分)：選修單元問答題（數據庫 + 網絡應用程式開發）\n\n選修 A：數據庫（Database）\n\n某「網上課程報名系統」描述如下：一位學員可報名多個課程；一個課程亦可被多位學員報名。每次報名產生一筆報名記錄，包含報名日期與付款狀態。\n\n\n\n\n\n\n\n\n\n\n\n\n(a)\t繪製實體關係圖（ERD）：須包含「學員 Student」「課程 Course」「報名 Enrolment」三個實體，標示多對多並以關聯實體拆解；並在圖中寫出主鍵（PK）與外鍵（FK）欄位名稱。\t(8 分)\n\n(b)\t設資料表如下：\n\nStudent(StudentID, StudentName, JoinDate)\nCourse(CourseID, CourseName, Tutor, Fee)\nEnrolment(EnrolmentID, StudentID, CourseID, EnrolmentDate, Status)\n\n\n\n(i)\t寫出一條 SQL，列出所有報名了 Tutor = 'Peter' 的課程之學生姓名（StudentName）。\t(4 分)\n\n\n(ii)\t寫出一條 SQL，找出報名人數 **超過 30** 的課程名稱（CourseName）及其報名人數。（需使用 COUNT、GROUP BY、HAVING）\t(6 分)\n\n(iii)\t寫出一條 SQL，找出 **從未報名任何課程** 的學生姓名。（可用 NOT IN 或 NOT EXISTS）\t(6 分)",
+      "marks": 20,
+      "title": "選修A 數據庫"
+    },
+    {
+      "id": "c-web-1",
+      "section": "section_c",
+      "text": "選修 B：網絡應用程式開發（Web Application Development）\n\n1.\t註冊表單情境：使用者輸入「用戶名」「密碼」「確認密碼」後按提交。\t(10 分)\n\n(a)\t「檢查密碼與確認密碼是否一致」應在客戶端、伺服器端，或兩者皆需要？說明優點與原因。\t(4 分)\n\n(b)\t「檢查用戶名是否已被註冊」為何必須在伺服器端執行？\t(3 分)\n\n\n\n\n\n\n(c)\t此類表單提交應使用 HTTP GET 還是 POST？為什麼？\t(3 分)",
+      "marks": 10,
+      "title": "選修B 註冊表單"
+    },
+    {
+      "id": "c-web-2",
+      "section": "section_c",
+      "text": "2.\t網頁編程實踐（BMI 小工具）\t(10 分)\n\n\n考慮一段網頁包含：輸入框 id=`height`、id=`weight`，按鈕可觸發計算，結果顯示於 id=`result-display` 的 div。\n\n(a)\t寫出 CSS：把 `#result-display` 的文字顏色設為紅色。\t(2 分)\n\n(b)\t寫出 JavaScript：讀取兩個輸入框的數值，計算 BMI=體重/(身高米)^2（身高以米計），把結果寫入 `result-display`。\t(5 分)\n\n\n(c)\t若要把計算結果儲存到伺服器：描述客戶端按「保存」後應傳送哪些資料；伺服器端（如 PHP）需做哪些步驟（連線資料庫、INSERT 等）。\t(3 分)",
+      "marks": 10,
+      "title": "選修B BMI"
+    }
+  ]
+}

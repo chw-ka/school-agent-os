@@ -19,5 +19,5 @@
 3. 準備 Word 範本：
    - 參考 `templates/README.md` 放入 `templates/exam_template.docx`
 4. 產生試卷：
-   - `python shared-tools/formatter/exam_generator.py --help`
+   - `python shared-tools/paper-formatter/exam_generator.py --help`
 
