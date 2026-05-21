@@ -1,0 +1,1090 @@
+[
+  {
+    "question_number": "SectionA_Q1",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(40% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q2",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(42% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q3",
+    "answer_text": "C",
+    "source_page": 84,
+    "details": "(51% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q4",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(73% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q5",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(74% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q6",
+    "answer_text": "C",
+    "source_page": 84,
+    "details": "(59% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q7",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(50% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q8",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(79% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q9",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(59% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q10",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(59% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q11",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(52% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q12",
+    "answer_text": "C",
+    "source_page": 84,
+    "details": "(55% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q13",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(28% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q14",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(36% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q15",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(71% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q16",
+    "answer_text": "C",
+    "source_page": 84,
+    "details": "(88% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q17",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(72% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q18",
+    "answer_text": "C",
+    "source_page": 84,
+    "details": "(80% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q19",
+    "answer_text": "C",
+    "source_page": 84,
+    "details": "(82% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q20",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(87% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q21",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(37% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q22",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(89% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q23",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(88% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q24",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(35% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q25",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(59% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q26",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(57% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q27",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(69% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q28",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(58% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q29",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(48% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q30",
+    "answer_text": "D",
+    "source_page": 84,
+    "details": "(85% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q31",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(64% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q32",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(88% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q33",
+    "answer_text": "C",
+    "source_page": 84,
+    "details": "(68% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q34",
+    "answer_text": "C",
+    "source_page": 84,
+    "details": "(60% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q35",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(66% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q36",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(78% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q37",
+    "answer_text": "A",
+    "source_page": 84,
+    "details": "(71% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q38",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(94% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q39",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(65% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionA_Q40",
+    "answer_text": "B",
+    "source_page": 84,
+    "details": "(65% 學生選此答案)",
+    "answer_type": "multiple_choice_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(a)(i)",
+    "answer_text": "X: **數據機 / 路由器**\nZ: **網絡連接 / AP / 無線路由器**",
+    "source_page": 85,
+    "answer_type": "fill_in_the_blank_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(a)(ii)",
+    "answer_text": "• 打印機 / 儲存空間共享 / 硬體共享\n• 數據交換 (檔案共享) / 檔案共享",
+    "source_page": 85,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q1(b)(i)",
+    "answer_text": "• **重複使用** 手腕 / 手指 / 手部肌肉 / 手臂肌腱 進行數據輸入\n• **符合人體工學設計的默托 / 鼠標**",
+    "source_page": 85,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(b)(ii)",
+    "answer_text": "**有助護腕**",
+    "source_page": 85,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(c)",
+    "answer_text": "• **在使用過程中定期休息**\n• **保持良好的姿勢**\n• **使用防眩光屏幕濾鏡**\n• **調整或實體適應藍光**\n• **考慮視覺問題**\n• **使用符合人體工程學的鍵盤 / 鼠標**\n(只答「有綠色的物體，X，除非答案包括一些過濾的物體，如樹木等)",
+    "source_page": 85,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q1(d)(i)",
+    "answer_text": "• **過濾網絡流量**\n• **阻止未經授權的存取。**",
+    "source_page": 85,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(d)(ii)",
+    "answer_text": "SSL 協定在王太太 (客戶) 和網站之間所傳輸的 **信息 / 敏感數據**，例如用戶名和密碼、以及信用卡資料等。",
+    "source_page": 85,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q2(a)",
+    "answer_text": "• **用戶可以在圖書館的任何地方使用無線網絡，不受有線連線的限制。**\n• **網絡連接的數量較為靈活。**\n• **只允許 Wifi 設備使用網絡服務。**",
+    "source_page": 86,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q2(b)",
+    "answer_text": "• **RAM：較高，較高的數據傳輸率；較小的儲存空間；中央處理器可以直接讀取；保存中央處理器正在執行的程序／數據。**\n• **SSD：非揮發；較低的數據傳輸率；較小的存儲空間；中央處理器無法直接存取；保存較長期的儲存的程序／數據。**",
+    "source_page": 86,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q2(c)",
+    "answer_text": "• **5 GHZ：中央處理器的時鐘頻率**\n• **10 核心：中央處理器內約 10 個處理單元**",
+    "source_page": 86,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q2(d)",
+    "answer_text": "• **虛擬鍵盤、語音識別、手寫識別**\n• **其他：屏幕鍵盤、語音輸入、語音轉文本**",
+    "source_page": 86,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q2(e)",
+    "answer_text": "• **沒有 WIFI 時，可通過 SIM 卡接入互聯網。**\n• **重量輕以增加便攜性。**\n• **可拆卸的移動數據** (替代：通過 SIM 卡)。\n(X **更耗電量**)",
+    "source_page": 86,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q2(f)",
+    "answer_text": "當所有設備的操作系統使用相同的通訊協定進行數據通訊時，文件便可成功傳輸。\n(X **TCP/IP** (作為同一通訊協定的具體例子))",
+    "source_page": 86,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q3(a)(i)",
+    "answer_text": "**01000**",
+    "source_page": 86,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionB_Q3(a)(ii)",
+    "answer_text": "**1001**",
+    "source_page": 86,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionB_Q3(a)(iii)",
+    "answer_text": "**或 / OR** (I=1)",
+    "source_page": 86,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionB_Q3(b)",
+    "answer_text": "Flag ← **5**\n從 I 由 **1** 遞減至 **4** 執行\n   如果 Flag = **1** 則",
+    "source_page": 86,
+    "answer_type": "fill_in_the_blank_answer"
+  },
+  {
+    "question_number": "SectionB_Q3(c)",
+    "answer_text": "• **人們可能難以推進互聯網。(受傳播媒體 / 課件)**\n• **人們可能對操作電子設備來學習網上資料有困難。(數碼隔閡)**",
+    "source_page": 86,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q4(a)",
+    "answer_text": "• **設計 1：可以輸入 10 的倍數以外的分數。**\n  * 必須選擇一個科目 / 避免多個科目選擇。\n  * 每個搜尋框均可顯示單獨的科目。\n  * (佔用空間較少)\n• **設計 2：確保所輸入的分數為數字數據。**\n  * 可以輸入一個或多個科目。\n  * 可以一次過給所有選項。",
+    "source_page": 87,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q4(b)(i)",
+    "answer_text": "**10409**",
+    "source_page": 87,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionB_Q4(b)(ii)",
+    "answer_text": "• **重複輸入**\n• **由兩個不同的人輸入數字 / 打印出來以供核對**",
+    "source_page": 87,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q4(c)(i)",
+    "answer_text": "**IDNO + SUBJECT**",
+    "source_page": 87,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionB_Q4(c)(ii)",
+    "answer_text": "Chinese **70**\nEnglish **88**\nMathematics **90**\n(Group by (3 列的科目正確)\n平均值 (計算正確) + 其他 (欄目順序, 沒有額外欄目 / 符號, 配對正確)\n下列的順序不重要。\n--COUNTIF(D$2:D4,D4))",
+    "source_page": 87,
+    "answer_type": "table_output_answer"
+  },
+  {
+    "question_number": "SectionB_Q4(d)",
+    "answer_text": "**3**",
+    "source_page": 87,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionB_Q4(e)(i)",
+    "answer_text": "**2**",
+    "source_page": 87,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionB_Q4(e)(ii)",
+    "answer_text": "它會取得相同分數的學生有等相同的排名。\n(只提「相同分數」而不提「相同排名」)",
+    "source_page": 87,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q1(a)",
+    "answer_text": "**15 * 15 * 2 = 450 個位元**\n- 只有算式\n- 只有答案",
+    "source_page": 88,
+    "answer_type": "calculation_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(b)",
+    "answer_text": "**藍色 / B**",
+    "source_page": 88,
+    "answer_type": "fill_in_the_blank_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(c)(i)",
+    "answer_text": "**G G G G B Y Y Y Y Y Y Y Y Y Y**\n任何一個代碼",
+    "source_page": 88,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(c)(ii)",
+    "answer_text": "**100010 110001 101100**\n任何一組",
+    "source_page": 88,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(c)(iii)(1)",
+    "answer_text": "**6**\n(15 * 6 = 90)",
+    "source_page": 88,
+    "answer_type": "calculation_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(c)(iii)(2)",
+    "answer_text": "**沒有兩個相鄰像素的相同顏色**\n- 只有算式\n- 只有答案",
+    "source_page": 88,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q1(d)",
+    "answer_text": "**顯示處理器的運算能力 (中央處理器)**。因為該編碼方案在表示上需要額外運算。",
+    "source_page": 88,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "1(a)",
+    "answer_text": "**SELECT PNAME FROM PSTUD WHERE SID = 'S0013'**\n全對",
+    "source_page": 89,
+    "answer_type": "sql_answer"
+  },
+  {
+    "question_number": "1(b)",
+    "answer_text": "**SELECT COUNT(PID) FROM SCHOOL, PSTUD WHERE SCHOOL.SID = PSTUD.SID AND SNAME LIKE '%GOVERNMENT%'**\n或 COUNT(*)\n其他答案: SELECT COUNT(*) FROM PSTUD WHERE SID IN (SELECT SID FROM SCHOOL WHERE SNAME LIKE '%GOVERNMENT%')",
+    "source_page": 89,
+    "answer_type": "sql_answer"
+  },
+  {
+    "question_number": "1(c)",
+    "answer_text": "**SELECT PNAME FROM PSTUD P, MARK M WHERE P.PID = M.PID AND GP = 'J' AND SMARK >= 60**",
+    "source_page": 89,
+    "answer_type": "sql_answer"
+  },
+  {
+    "question_number": "1(d)",
+    "answer_text": "**找出在高級組沒有出戰比賽 (沒有分數) 的首次報名參賽學生。**\n(3 個中有 2 個)",
+    "source_page": 89,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "1(e)",
+    "answer_text": "**SUM(MARK)**\n**S.SID = P.SID AND P.PID = M.PID**\n**S.SID**",
+    "source_page": 89,
+    "answer_type": "sql_completion_answer"
+  },
+  {
+    "question_number": "1(f)",
+    "answer_text": "**SELECT SNAME FROM TM, SCHOOL S WHERE TM.SID = S.SID AND TOTAL IN (SELECT MAX(TOTAL) FROM TM)**\n其他答案: SELECT SNAME FROM SCHOOL WHERE SID IN (SELECT SID FROM TM WHERE TOTAL IN (SELECT MAX(TOTAL) FROM TM))\n選擇的數據庫受讀取\n正確使用 IN\nSELECT 框句 (3 個中有 2 個)",
+    "source_page": 89,
+    "answer_type": "sql_answer"
+  },
+  {
+    "question_number": "2(a)",
+    "answer_text": "**ITEMNO + DOB**\n**ITEMNO + DOR**",
+    "source_page": 90,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "2(b)(i)",
+    "answer_text": "**FINE CIR 的衍生屬性。FINE 可由 DOB 和 DOR 計算出來。**",
+    "source_page": 90,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "2(b)(ii)",
+    "answer_text": "**它可以提高查找的效率，因為在運行查詢時不需要每次都計算其值。**",
+    "source_page": 90,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "2(c)",
+    "answer_text": "ER diagram shows relationships between READER, CIR, BKCOPY, BOOK.\n**READER** to **CIR** is **1:M**.\n**CIR** to **BKCOPY** is **M:1**.\n**BKCOPY** to **BOOK** is **1:1** (or M:1).",
+    "source_page": 90,
+    "has_image": true,
+    "image_description": "一個實體關係圖，顯示 READER, CIR, BKCOPY, BOOK 四個實體方框，以及它們之間的關係。READER 和 CIR 之間是 'M' 對 '1'，CIR 和 BKCOPY 之間是 'M' 對 '1'，BKCOPY 和 BOOK 之間是 '1' 對 '1' 或 'M' 對 '1'。",
+    "answer_type": "diagram_completion_answer"
+  },
+  {
+    "question_number": "2(d)(i)",
+    "answer_text": "**這是因為 NAME 不是唯一的，兩個學生可能有相同的名字。**\n(只寫「實體完整性」)",
+    "source_page": 90,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "2(d)(ii)",
+    "answer_text": "**在 CIR 內有 30132 未被識別出來。**\n**參照完整性的概念**",
+    "source_page": 90,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "3(a)(i)",
+    "answer_text": "**UNIQUE**",
+    "source_page": 91,
+    "answer_type": "sql_completion_answer"
+  },
+  {
+    "question_number": "3(a)(ii)",
+    "answer_text": "• **沒有任何隊伍會留空/沒有獲得分數。**\n• **強制輸入一個可能不可行的值。**\n(例如: 總體或取消資格, 出賽前沒有分數)",
+    "source_page": 91,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "3(b)(i)",
+    "answer_text": "• **數據遺失** (所有輸入的數據將會丟棄)。\n• **更新輸入或輸入數據。**\n• **更新新數據庫表時需要設置索引。**\n• **參照完整性問題**",
+    "source_page": 91,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "3(b)(ii)",
+    "answer_text": "**FOREIGN**\n**REFERENCES**",
+    "source_page": 91,
+    "answer_type": "sql_completion_answer"
+  },
+  {
+    "question_number": "3(c)(i)",
+    "answer_text": "• **STUDID / 參照識別碼**\n• **ROLE / 隊伍中的角色** (True 代表隊長, False 代表隊員)\n(合理描述)",
+    "source_page": 91,
+    "has_image": true,
+    "image_description": "新的數據庫表設計，包含 TID, STUDENTID, ROLE 欄位，其中 STUDENTID 應為現存欄位，ROLE 為布爾類型欄位。",
+    "answer_type": "table_design_answer"
+  },
+  {
+    "question_number": "3(c)(ii)",
+    "answer_text": "• **沒有重複的欄位**\n• **沒有欠缺數值的欄位**\n• **沒有 (減少) 數據冗餘。**",
+    "source_page": 91,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "3(c)(iii)",
+    "answer_text": "• **需要的數據表**\n• **SQL 操作更少**\n• **操作數據表的效率更高。**",
+    "source_page": 91,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "3(d)",
+    "answer_text": "• **創建新的表格**\n• **減少不必要的列**\n• **隱藏示範、組別名單**\n• (每項一行，可附加/沒有學生姓名)\n• **清楚地繪製數據** (個人資料/冗餘數據)",
+    "source_page": 91,
+    "has_image": true,
+    "image_description": "一個比賽結果報告的重新設計，應包含次序、社、學號，並隱藏敏感私隱。",
+    "answer_type": "report_design_answer"
+  },
+  {
+    "question_number": "4(a)(i)",
+    "answer_text": "**數據庫/數據庫開發員/分析員**",
+    "source_page": 92,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "4(a)(ii)",
+    "answer_text": "• **模式分析**\n• **實體關係圖**\n• **DFD (數據流程圖)**\n• **用戶需求規格**\n(或相關的文件成果的示例)",
+    "source_page": 92,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "4(b)",
+    "answer_text": "• **具有不同數據格式的相同欄位** (MID)\n• **具有不同數據長度的相同欄位** (MID)\n• **具有不同數據類型的相同欄位** (GENDER)\n• **因重複儲存卡的重複會員** (即兩個原本的數據表中的同一個人)",
+    "source_page": 92,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "4(c)(i)",
+    "answer_text": "當數據表結構簡單時，它可以更容易執行。\n(更少的開發時間)",
+    "source_page": 92,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "4(c)(ii)",
+    "answer_text": "可以輕鬆或用數據提取工具完成。\n(編程靈活性)",
+    "source_page": 92,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "4(d)",
+    "answer_text": "• **讀取/清理數據**\n• **使用數據進行分析或統計。**\n• **利用銷售策略和改善業務。**\n(2 個理由 或 1 個理由 + 詳細說明)",
+    "source_page": 92,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "4(e)(i)",
+    "answer_text": "電話號碼是具有上下文含義的**自然碼 (natural key)**，它可能需要被改變。經不起時間的考驗。**代理鍵 (surrogate key)** (例如會員的身份證號碼) 應該更適合作為上下文中的主鍵碼。\n(X 電話號碼可能不會更改。/ 不能提供數據。)",
+    "source_page": 92,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "4(e)(ii)",
+    "answer_text": "• **如果有了數據後，它可以用於數據連接。**\n• **可以設置更多的吸引先進而專屬的性能。**\n• **可以更好地驗證數據。**",
+    "source_page": 92,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q1(a)(i)",
+    "answer_text": "Y: **路由器**\nX: **交換機**",
+    "source_page": 93,
+    "has_image": true,
+    "image_description": "一個網絡圖，顯示路由器的兩個界面，交換機，以及兩個網段。X 和 Y 處有空白。",
+    "answer_type": "fill_in_the_blank_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(a)(ii)",
+    "answer_text": "• **192.168.1.4**\n• **12.34.5.6**\n• **98.76.54.32**\n• **12.34.5.6**\n減少 IP 設定機會\n或手動 IP 設定的工作量 / 自動分配",
+    "source_page": 93,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(b)(i)",
+    "answer_text": "• **預設閘道**\n• **DNS 伺服器**\n• **IP**",
+    "source_page": 93,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q1(b)(ii)",
+    "answer_text": "• **因為路由器能夠建立互聯網**\n• **網橋行為: 因為有較豐富 IP 位址, 其他電腦便難以連接使用**\n• **NAS: 因為有較豐富 IP 位址, 其他電腦便難以連接使用**\n• **交換機: 方便管理及進行交換器設定修改**\n• **無線網絡連接點: 方便管理及進行無線網絡連接點設定修改**",
+    "source_page": 93,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q1(c)",
+    "answer_text": "• **採用 WPA2**\n• **採用 MAC 位址過濾**\n• **採用 VPN**\n• **密碼**\n• **隱藏 SSID**\n• **使用防火牆**",
+    "source_page": 93,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q1(d)(i)",
+    "answer_text": "• **測試電腦網絡卡是否運作正常**\n• **檢查本機網絡是否運作正常**",
+    "source_page": 93,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q1(d)(ii)",
+    "answer_text": "• **ping 192.168.1.1 以檢查分公司網絡是否正常**\n• **ping 210.0.0.123 以測試分公司是否能正常連接到互聯網**\n• **ping 網域以測試公司是否能夠正常運作**",
+    "source_page": 93,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q2(a)",
+    "answer_text": "• **設定簡單**\n• **不會受其他房間訊號干擾**",
+    "source_page": 94,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q2(b)",
+    "answer_text": "• **傳送數據量較高**\n• **遠緣距離較長**\n• **保安程度較高**",
+    "source_page": 94,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q2(c)",
+    "answer_text": "• **單向通訊模式: 客戶端把聲音數據單方向傳送到接收器 / 傳聲器**\n• **雙向通訊模式: 平板電腦除了傳送聲音以外, 亦會接收歌曲清單**\n(其他合理設備) (如過濾) 及有合理理由",
+    "source_page": 94,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q2(d)(i)",
+    "answer_text": "**500 x 8 / 400 = 10s**",
+    "source_page": 94,
+    "answer_type": "calculation_answer"
+  },
+  {
+    "question_number": "SectionB_Q2(d)(ii)",
+    "answer_text": "**1000 / 5 = 200 倍**",
+    "source_page": 94,
+    "answer_type": "calculation_answer"
+  },
+  {
+    "question_number": "SectionB_Q2(e)",
+    "answer_text": "• **在房間內: 應該用 5.0 GHz，因為串流 MV 需要較高數據傳送速度。**\n• **在場所內: 應該用 2.4 GHz，這讓能有較佳訊號穿透能力，較容易被障礙物阻擋，不會影響連接。**\n(5 & 2.4 GHz\n5 GHz 的理由\n2.4 GHz 的理由)",
+    "source_page": 94,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q2(f)",
+    "answer_text": "• **訪客 Wi-Fi 與點曲的系統採用相同頻率 (frequency) / 相同通道 (channel)**\n• **訪客的流動改變為點曲的網絡造成干擾**",
+    "source_page": 94,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q3(a)",
+    "answer_text": "• **防止未經授權連接**\n• **分類信息，防止攔截**",
+    "source_page": 95,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q3(b)",
+    "answer_text": "• **管理員: 192.168.10.125**\n• **電腦客: 255.255.255.192**\n• **訪客: 192.168.10.222**\n• **伺服器: 192.168.10.225**",
+    "source_page": 95,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q3(c)",
+    "answer_text": "• **網絡遷移**\n• **數據管理**\n• **執行保安政策**",
+    "source_page": 95,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionB_Q3(d)(i)",
+    "answer_text": "FolderA: 老師群組擁有權限 (讀取), 學生群組無權限 (讀取)\nFolderB: 老師群組擁有權限 (讀取, 寫入), 學生群組擁有權限 (讀取)",
+    "source_page": 95,
+    "has_image": true,
+    "image_description": "一個表格，顯示 FolderA 和 FolderB 對應老師群組和學生群組的讀取/寫入權限，標記為 `✓`。",
+    "answer_type": "table_completion_answer"
+  },
+  {
+    "question_number": "SectionB_Q3(d)(ii)",
+    "answer_text": "**一行或兩行相關**\n執行權限 / 完全控制",
+    "source_page": 95,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q3(e)(i)",
+    "answer_text": "RAID-0: 將兩個或以上的硬碟結合，分散儲存資料。\n將資料同時寫到硬碟，能提高寫操作速度。\nRAID-5: 利用三個或以上硬碟，將其中一個硬碟儲存在其他硬碟內的奇偶校驗控制，以作防數據遺失檢查。\n當其中一個硬碟損壞後，可利用其餘的硬碟作復原。\n(描述 + 好處)",
+    "source_page": 95,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionB_Q3(e)(ii)",
+    "answer_text": "**沒有。**",
+    "source_page": 95,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionB_Q3(e)(i) (cont)",
+    "answer_text": "優點: **能確保保護辦公室及 Wi-Fi 網絡的用戶免受外來攻擊**\n缺點: **未能同時以防火牆來抵抗來自實驗 Wi-Fi 用戶的攻擊**",
+    "source_page": 96,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionB_Q3(e)(ii)",
+    "answer_text": "• **DC 接收路由器: 由於路由路由提供統一的連接線，保安程度較高**\n• **DC 接收實驗室的交換機: DC 能讀取無線網絡的連結，保安程度高**\n• **DC 接收至實驗網絡的交換機: DC 能讀取伺服器內的，以減少連接提取距離**\n(加入防火牆及路由路由器正確處理伺服器\n路由路由器: 區分 Wi-Fi 及辦公室網絡\nDC 接收辦公室 3 台電腦及交換機\nDC 接收內部網絡)",
+    "source_page": 96,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q1(a)",
+    "answer_text": "選項 A: **數據機/軟體**\n  * 解像度: **模糊或不太清晰。**\n  * 頻道率: **頻率很低。**\n選項 B: **解像度: 圖像顯示很仔細 / 更細緻 / 更清晰。**\n  * 頻道率: **傳輸數據更流暢 / 更連貫。**\n(X 1747 kbps)",
+    "source_page": 97,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q1(b)",
+    "answer_text": "**500MB / 40 min * 500 * 1024 * 1024 * 8 / (40 * 60) / 1000 = 1747 kbps**",
+    "source_page": 97,
+    "answer_type": "calculation_answer"
+  },
+  {
+    "question_number": "SectionC_Q1(c)",
+    "answer_text": "• **它減少了您的家中網絡的網絡流量。(頻寬) / 可用資源配置。**\n• **它減少了家中的路由器傳播數據的工作量 (例如串流媒體設置、其他常見功能 (例如留言、點贊和分享))**\n• **它減少了家中的網絡負載 (例如串流媒體服務、支援協作) / 降低媒體伺服器成本。**\n• **如果裝置因要出現故障/關閉/停用，學生仍然可以使用視頻服務。**\n(2個理由或1個理由+詳細說明)",
+    "source_page": 97,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q1(d)",
+    "answer_text": "• **可以輸入大量的數據 / 不合理輸入的示例**\n• **解決問題的設計:**\n  * **使用單獨技術**\n  * **使用內置技術**\n  * **使用下拉式選單/滑塊列表**\n  * **使用按鈕顯示選項**\n  * **使用驗證檢查 / 檢查與變數文本框中的輸入**\n  * **使用程式代碼，以使用戶可以直接點擊默認選項**",
+    "source_page": 97,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionC_Q1(e)",
+    "answer_text": "**響應式網頁 / RWD**\n(更改網站或應用程序以適應屏幕 / 操作系統。)",
+    "source_page": 98,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionC_Q2(a)(i)",
+    "answer_text": "• **它不對平台/跨平台具有兼容性。**\n• **無需安裝。**\n• **自動儲存: 網站可以儲存比流動應用程式更多的材料。**\n• **內容可以輕鬆更新/維護。**",
+    "source_page": 98,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q2(a)(ii)",
+    "answer_text": "• **測試不同常見的瀏覽器所支援的 HTML 代碼。**\n• **測試不同常見的瀏覽器所支援的插件。**\n• **測試不同的操作系統和瀏覽器，然後針對檢測到的瀏覽器執行相應的程式碼。**",
+    "source_page": 98,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionC_Q2(a)(iii)",
+    "answer_text": "• **使用客戶端腳本記錄用戶的瀏覽時間。**\n• **一段時間後創建彈出式提示信息。**",
+    "source_page": 98,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionC_Q2(b)(i)",
+    "answer_text": "圖片的檔案大小將保持不變，因為 HTML 代碼不會影響原始像素。",
+    "source_page": 98,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q2(b)(ii)",
+    "answer_text": "**替代文本** (其他合理的答案)，**標題**",
+    "source_page": 98,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionC_Q2(b)(iii)",
+    "answer_text": "為那些物件創造連結地址。",
+    "source_page": 98,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q2(c)",
+    "answer_text": "• **客戶端腳本程式: 它在伺服器上的負載較少/快速回應。**\n• **伺服器端腳本程式: 學生會的表現可以立即保存在數據庫中 / 防止學生在客戶端腳本中侵權。**",
+    "source_page": 98,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q2(d)",
+    "answer_text": "• **happych.com.hk**\n• **happych.org**\n• **hkhappychs.edu** (其他合理的域名)",
+    "source_page": 98,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionC_Q2(e)",
+    "answer_text": "• **創建一個 URL 的二維碼。**\n• **應用「縮短網址服務」來創建更短的 URL。**",
+    "source_page": 98,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionC_Q3(a)(i)",
+    "answer_text": "**MIDI/RIFF**",
+    "source_page": 99,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionC_Q3(a)(ii)",
+    "answer_text": "**它較容易編輯**\n**除了鋼琴鍵盤外，它可以使用其他樂器聲音播放。**",
+    "source_page": 99,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q3(b)(i)",
+    "answer_text": "• **波幅/響度/音量大小, 相位 (音調/頻率), 音頻速度/速度, 頻道數量**\n• **取樣頻率 / 取樣大小 / 聲像 (panning) / 淡入淡出 / 長度**",
+    "source_page": 99,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionC_Q3(b)(ii)",
+    "answer_text": "• **「音頻」檔案大小較小**\n• **「音頻」壓縮: 較高的音頻質量 / 可以轉換成原本的檔案**",
+    "source_page": 99,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q3(c)(i)",
+    "answer_text": "**(22.05 x 1000) x 16 x (3 x 60) / 5 / 1024 / 8 = 1550KB**\n**Or (22.05 x 1000) x 16 x (3 x 60) / 5 / 1000 / 8 = 1588KB**",
+    "source_page": 99,
+    "answer_type": "calculation_answer"
+  },
+  {
+    "question_number": "SectionC_Q3(c)(ii)",
+    "answer_text": "• **使用兩個頻道，使音頻播放效果更像有現場的效果。**\n• **與較好音質的音頻解釋 / 音響 (surrounding sound) / 更真實 / 較豐富的聆聽感受。**\n(X 多頻道數量 / 可以更精確地顯示音色。\nX 縮短時間 / 較易編輯 / 更加仔細 / 接近原來的音頻。\nX 清晰的人聲 / 它可以轉換成原本的檔案 / 較平滑 (smoother))",
+    "source_page": 99,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q3(d)(i)",
+    "answer_text": "**1 Gbps / 800 kbps = 117.65 ~ 117**",
+    "source_page": 99,
+    "answer_type": "calculation_answer"
+  },
+  {
+    "question_number": "SectionC_Q3(d)(ii)",
+    "answer_text": "行程 1：**數據傳輸會減少一半 / 較短。**\n行程 2：**數據大小較小 (減少一半)。時間長度將會減少一半 / 較短。**",
+    "source_page": 99,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q4(a)",
+    "answer_text": "**D3**\n(1 個正確答案 -> 1\n2 個正確答案 -> 2\n3 個正確答案 -> 3\n4 個正確答案 -> 4\n備註: 忽略重複的答案)",
+    "source_page": 99,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionC_Q4(b)(i)",
+    "answer_text": "• **沒有輸入錯誤**\n• **介面方面使用**\n• **用戶易於使用**",
+    "source_page": 99,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionC_Q4(b)(ii)",
+    "answer_text": "• **它會顯示實習生的身份及加快數據的程序。**\n• **它會存取已獲取的選項 (選項)。提供瀏覽器和玩具開發。**\n• **它會存儲 (Statis) 資訊。檢查瀏覽器的身份。**",
+    "source_page": 99,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionC_Q4(c)",
+    "answer_text": "**TRUE**\n**4**\n(/ = / ≠\nALLCORRECT FALSE\n(不應是 FALSE))",
+    "source_page": 99,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q1(a)(i)",
+    "answer_text": "**2 / 4**",
+    "source_page": 100,
+    "answer_type": "algorithm_trace_answer"
+  },
+  {
+    "question_number": "SectionD_Q1(a)(ii)",
+    "answer_text": "**1 / 1**",
+    "source_page": 100,
+    "answer_type": "algorithm_trace_answer"
+  },
+  {
+    "question_number": "SectionD_Q1(b)",
+    "answer_text": "**P[i] >= s AND P[i] <= t**\n(兩者均沒有 '-' 號)",
+    "source_page": 100,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q1(c)(i)",
+    "answer_text": "**5**",
+    "source_page": 100,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionD_Q1(c)(ii)",
+    "answer_text": "**3**",
+    "source_page": 100,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionD_Q1(c)(iii)",
+    "answer_text": "**BS(t) / BS(a)**\n(BS[t] - BS[s] + 1)",
+    "source_page": 100,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q1(c)(iv)",
+    "answer_text": "**P[b] < t / count - 1**\n(t <= P[b])",
+    "source_page": 100,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q1(d)",
+    "answer_text": "（已完成的甘特圖）\n每個任務位於正確位置，並帶有輸入的箭頭（C 在 2 和 6 之間）",
+    "source_page": 100,
+    "has_image": true,
+    "image_description": "一個已完成的甘特圖，顯示各任務位於正確位置，並帶有輸入的箭頭（C 在 2 和 6 之間）。",
+    "answer_type": "gantt_chart_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q3(a)",
+    "answer_text": "**1111 1001 1001 1111**\n全對",
+    "source_page": 101,
+    "answer_type": "free_response_answer"
+  },
+  {
+    "question_number": "SectionD_Q3(b)(i)",
+    "answer_text": "**(i-1) * n + j**\n包含 (i-1)*n + j",
+    "source_page": 101,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q3(b)(ii)",
+    "answer_text": "**B[(i-1)*n + j]**",
+    "source_page": 101,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q3(c)(i)",
+    "answer_text": "**2**",
+    "source_page": 101,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionD_Q3(c)(ii)",
+    "answer_text": "**1001**",
+    "source_page": 101,
+    "answer_type": "short_answer"
+  },
+  {
+    "question_number": "SectionD_Q3(d)(i)",
+    "answer_text": "• **功能 / 物件為本**\n• **由上而下/由下而上的實現方法**\n• **或沒有採取任何決定**\n• **不包括多餘的**\n(其他合理答案)",
+    "source_page": 101,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionD_Q3(d)(ii)",
+    "answer_text": "• **編譯程式: 方便程式編寫員在程式開發過程中進行測試和檢錯。**\n• **執行時間短。**\n• **錯誤檢查更全面。**\n(其他合理答案)",
+    "source_page": 101,
+    "answer_type": "explanation"
+  },
+  {
+    "question_number": "SectionD_Q3(d)(iii)",
+    "answer_text": "• **縮短開發時間**\n• **只有較少可能出現的程式錯誤。**\n(其他合理答案)",
+    "source_page": 101,
+    "answer_type": "list_of_items"
+  },
+  {
+    "question_number": "SectionD_Q4(a)",
+    "answer_text": "（線條圖，顯示 Hcut(2,4)、Hcut(11,13) 和 Hcut(13,19) 後所切割的線）",
+    "source_page": 102,
+    "has_image": true,
+    "image_description": "一個數字軸 (1-20) 上，顯示 Hcut(2,4) 在 2-4 處劃線，Hcut(11,13) 在 11-13 處劃線，Hcut(13,19) 在 13-19 處劃線。11-13 和 13-19 之間有重疊。",
+    "answer_type": "drawing_answer"
+  },
+  {
+    "question_number": "SectionD_Q4(b)",
+    "answer_text": "**2, 9**",
+    "source_page": 102,
+    "answer_type": "fill_in_the_blank_answer"
+  },
+  {
+    "question_number": "SectionD_Q4(c)(i)",
+    "answer_text": "**e1 和 e2 的最大值**\n(a,b)",
+    "source_page": 102,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q4(c)(ii)",
+    "answer_text": "**s2 <= e1**\n(s2 < e1)",
+    "source_page": 102,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q4(c)(iii)",
+    "answer_text": "**i, j**\n**MH(L[i].s, L[i].e, L[j].s, L[j].e)**",
+    "source_page": 102,
+    "answer_type": "code_completion_answer"
+  },
+  {
+    "question_number": "SectionD_Q4(d)",
+    "answer_text": "用戶要求: **(A)**\n設計: **(C, D)**\n實施: **(E)**\n測試: **(B)**\n**(F)**",
+    "source_page": 102,
+    "has_image": true,
+    "image_description": "一個不完整的瀑布模型流程圖。從「用戶要求 (A)」開始，經過「設計」、「實施」到「測試」。圖中包含一個空白方框，需要填寫「測試」之後的階段。",
+    "answer_type": "diagram_completion_answer"
+  }
+]

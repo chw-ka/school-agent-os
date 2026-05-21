@@ -1,0 +1,178 @@
+[
+  {
+    "question_number": "1(a)",
+    "question_text": "列出每一級別的最低步數及相對應的獎勵分數，而獎勵分數介乎 5 至 10，包括首尾兩個。",
+    "question_type": "sql_query_creation",
+    "has_image": false
+  },
+  {
+    "question_number": "1(b)",
+    "question_text": "參加者於某一日步行了最少 10 000 步將會獲得一張獎狀。列出獲得獎狀的參加者數目。",
+    "question_type": "sql_query_creation",
+    "has_image": false
+  },
+  {
+    "question_number": "1(c)",
+    "question_text": "參加者可每日獲得獎勵分數。列出於會計部，即 DEPT = '會計'，所有參加者所獲得的總分。",
+    "question_type": "sql_query_creation",
+    "has_image": false
+  },
+  {
+    "question_number": "1(d)",
+    "question_text": "當部門內的任何一名參加者平均步行多於 9 000 步時，其部門將會獲得一個獎盃。列出這些部門。",
+    "question_type": "sql_query_creation",
+    "has_image": false
+  },
+  {
+    "question_number": "1(e)(i)",
+    "question_text": "以下 SQL 語句的目的是什麼？\nSELECT DISTINCT PID FROM READING WHERE STEP_QTY >= (SELECT STEP FROM READING WHERE RDATE = '20/03/2021')",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "1(e)(ii)",
+    "question_text": "舉出使用檢視的優點。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "1(e)(iii)",
+    "question_text": "考慮以下檢視 MYREAD。\nCREATE VIEW AS MYREAD\nSELECT MAX(STEP) AS MYSTEP FROM READING\nWHERE RDATE = '20/03/2021'\n利用 MYREAD 完成以下 SQL 語句，以便能產生與 (e)(i) 的結果相同。\nSELECT PID FROM READING\nWHERE ______________ >=\n(SELECT ______________ FROM MYREAD)",
+    "question_type": "sql_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "2(a)",
+    "question_text": "某旅遊巴士公司的項目團隊開發一個數據庫應用系統，以便收集及分析於旅遊巴士上記錄的數據，例如地理位置。\n此項開發中的一些階段如下所示：\n1. 要求收集\n2. 系統定義\n3. 原型\n4. 測試\n5. 操作維護\n為下列每一進程配對一個階段。\n定期建立數據備份。 ____ 階段\n檢測程式錯誤。 ____ 階段\n設計數據庫模式。 ____ 階段",
+    "question_type": "fill_in_the_blank",
+    "has_image": false
+  },
+  {
+    "question_number": "2(b)",
+    "question_text": "舉出一個例子說明為何項目團隊在完成第 4 階段測試後，可能重回之前的階段。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "2(c)",
+    "question_text": "指出以下樣本數據內，在測試中應可檢測到的兩個錯誤。",
+    "question_type": "free_response_with_diagram",
+    "has_image": true,
+    "image_description": "表格顯示 BUS (BNO, BSEAT) 和 BPOS (BNO, RTIME, LOC) 的樣本數據。"
+  },
+  {
+    "question_number": "2(d)(i)",
+    "question_text": "假設 BUS 和 BPOS 的數據如下：\n舉出一筆 BPOS 的新記錄，以展示下列各問題：\n(i) 參照完整性問題",
+    "question_type": "fill_in_the_blank_with_diagram",
+    "has_image": true,
+    "image_description": "表格顯示 BUS (BNO, BSEAT) 和 BPOS (BNO, RTIME, LOC) 的數據，以及一個空白表格用於填寫展示參照完整性問題的新 BPOS 記錄。"
+  },
+  {
+    "question_number": "2(d)(ii)",
+    "question_text": "假設 BUS 和 BPOS 的數據如下：\n舉出一筆 BPOS 的新記錄，以展示下列各問題：\n(ii) 實體完整性問題",
+    "question_type": "fill_in_the_blank_with_diagram",
+    "has_image": true,
+    "image_description": "表格顯示 BUS (BNO, BSEAT) 和 BPOS (BNO, RTIME, LOC) 的數據，以及一個空白表格用於填寫展示實體完整性問題的新 BPOS 記錄。"
+  },
+  {
+    "question_number": "2(e)",
+    "question_text": "此系統包含一個保安攝錄機的模組，拍攝車廂內乘客和車長的動態。車長每次開始一節執勤時，需要在此系統上輸入員工編號。之後，每一節便會錄製成一個視像檔案。\n數據庫應儲存車長的姓名和員工編號、視像的時間數 (日期和時間) 和檔案名稱。DRIVER 和 BVIDEO 分別儲存車長和視像的資料。完成以下數據庫設計，如不適用，請寫上「N/A」。\nDRIVER(_______, _______)\n主關鍵碼：_______\n外鍵碼：_______\nBVIDEO(_______, _______)\n主關鍵碼：_______\n外鍵碼：_______\n欄位的描述：\n_______ _______ _______ _______ _______ _______",
+    "question_type": "database_design_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "2(f)",
+    "question_text": "某團隊成員建議車長可觀看視像，以作培訓之用。舉出一個潛在數據私隱違規行為及對應的解決方案。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(a)(i)",
+    "question_text": "CREATE TABLE FORUM (\nFID INT,\nMDATE DATE NOT NULL,\nHOST CHAR(6) NOT NULL,\nPWD CHAR(12) UNIQUE,\nPRIMARY KEY (FID)\n)\n寫出以下每個欄位的一個潛在問題。\n(i) FID _______",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(a)(ii)",
+    "question_text": "CREATE TABLE FORUM (\nFID INT,\nMDATE DATE NOT NULL,\nHOST CHAR(6) NOT NULL,\nPWD CHAR(12) UNIQUE,\nPRIMARY KEY (FID)\n)\n寫出以下每個欄位的一個潛在問題。\n(ii) PWD _______",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(b)",
+    "question_text": "此數據庫的要求如下所述：\n在會場內，每個論壇會於一個或多個座談會上討論。每個座談會只討論一個議題。所有職員必須參加最少一個座談會，而每個座談會皆由一名職員主持。\nTF 和 ST 分別儲存議題和職員資料。完成以下此數據庫的實體關係圖。圖內不用畫上屬性。",
+    "question_type": "diagram_completion",
+    "has_image": true,
+    "image_description": "一個不完整的實體關係圖，包含 TF, FORUM, ST 三個實體方框，以及一個未連接的關係菱形，需要根據描述完成關係連接和基數。FORUM 實體與一個標記為 M 的關係菱形連接。"
+  },
+  {
+    "question_number": "3(c)",
+    "question_text": "該公司將聘請一些技術員為座談會提供技術支援。TECH 儲存技術員的資料。\nTECH 和 FORUM 的關係如下所示：\n現有兩個方法實現這個關係：\n方法 1: 建構只包含 TID 和 FID 組成的新數據庫表。\n方法 2: 於 FORUM 中添加 TID。\n說明為什麼方法 2 比方法 1 優勝。",
+    "question_type": "free_response",
+    "has_image": true,
+    "image_description": "一個實體關係圖，顯示 TECH (NAME, TID) 與 FORUM (HOST, PWD, MDATE, FID) 之間的「支援」關係，基數為 1:M。"
+  },
+  {
+    "question_number": "3(d)(i)",
+    "question_text": "ST 和 TECH 是兩個不同數據庫表，但擁有相同的結構。技術員是職員之一。\n(i) 描述如何轉移 TECH 內的記錄至 ST，而 TECH 將不再使用。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(d)(ii)",
+    "question_text": "(ii) 寫出一個 SQL 語句來移除 TECH。",
+    "question_type": "sql_query_creation",
+    "has_image": false
+  },
+  {
+    "question_number": "3(e)",
+    "question_text": "此公司需要具有特定日期範圍的座談會報告，報告內的資料應包含參加者數目或座談會日期，以升序或降序排列。\n建構一個用戶用戶的界面，以製作這些報告。在你的設計上加上適當的注解。",
+    "question_type": "interface_design",
+    "has_image": true,
+    "image_description": "一個空白的區域，用於設計用戶界面以製作座談會報告，並需要添加適當註解。"
+  },
+  {
+    "question_number": "4(a)",
+    "question_text": "ABC 公司通過其網上平台銷售各種限量商品。會員每次只能訂購一種商品。數據庫 PROD 和 ORD 分別用來儲存產品和訂購的資料。\n於下方寫上合適的欄位，以展示 PROD 和 ORD 內的數據相關性。\nMNAME 取決於 _______\nPCODE, NUM 取決於 _______\n_______ 取決於 MEMBERID\n_______ 取決於 SHOPID 和 NUM",
+    "question_type": "fill_in_the_blank_with_diagram",
+    "has_image": true,
+    "image_description": "表格顯示 PROD (PCODE, PNAME, PRICE, QUAN) 和 ORD (ORDERTIME, MEMBERID, MNAME, PCODE, NUM, SHOPID, SHOPADD) 的數據，以及部分記錄。問題要求填寫空白處以展示數據相關性。"
+  },
+  {
+    "question_number": "4(b)",
+    "question_text": "更改數據庫 ORD 以符合第三範式。指出相對應的主關鍵碼和外鍵碼，如不適用，請寫上「N/A」。\nORD(_______, _______, _______, PCODE, NUM)\n主關鍵碼: _______\n外鍵碼: PCODE 參照 PROD 的 PCODE\n外鍵碼: _______\n外鍵碼: _______",
+    "question_type": "database_normalization_completion",
+    "has_image": true,
+    "image_description": "空白的結構，用於填寫 ORD 表格符合第三範式後的主關鍵碼和外鍵碼。另外還有 MEMBER 和 SHOP 的空白表格，也需要填寫主關鍵碼。"
+  },
+  {
+    "question_number": "4(c)(i)",
+    "question_text": "會員總是搜尋一些幾乎售罄的商品。為了改善這些搜尋，向 PROD 內的 QUAN 建構一個索引。\n(i) 寫出一個 SQL 語句以建構此索引。",
+    "question_type": "sql_query_creation",
+    "has_image": false
+  },
+  {
+    "question_number": "4(c)(ii)",
+    "question_text": "(ii) 採用了這個索引後，該搜尋效率並沒有太大改善。簡略說明。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "4(d)(i)",
+    "question_text": "搜尋產品資料的查詢的負荷量。此公司計劃安裝數個獨立的伺服器，而各個伺服器皆儲存所有商品資料。\n(i) 指出上述計劃的一個好處。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "4(d)(ii)",
+    "question_text": "(ii) 預期會員經常訂購商品，而 PROD 內的數據之後會改變。描述此計劃內可能曾出現的問題。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "4(e)",
+    "question_text": "描述如何可使用數據開採幫助將宣傳信息傳送給會員。",
+    "question_type": "free_response",
+    "has_image": false
+  }
+]

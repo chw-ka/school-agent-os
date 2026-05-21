@@ -1,0 +1,200 @@
+[
+  {
+    "question_number": "1(a)(i)",
+    "question_text": "參考以下 P 的內容，求下列回傳值：\nF1(07:10, 14:25)",
+    "question_type": "free_response",
+    "has_image": true,
+    "image_description": "一個表格，顯示 P 陣列的內容，包含索引 1-7 和對應的時間值：\n1: 06:05\n2: 07:10\n3: 11:25\n4: 12:20\n5: 14:25\n6: 18:00\n7: 19:30"
+  },
+  {
+    "question_number": "1(a)(ii)",
+    "question_text": "參考以下 P 的內容，求下列回傳值：\nF1(11:25, 11:25)",
+    "question_type": "free_response",
+    "has_image": true,
+    "image_description": "一個表格，顯示 P 陣列的內容，包含索引 1-7 和對應的時間值：\n1: 06:05\n2: 07:10\n3: 11:25\n4: 12:20\n5: 14:25\n6: 18:00\n7: 19:30"
+  },
+  {
+    "question_number": "1(b)",
+    "question_text": "完成以下 F1 的偽代碼。\nF1(s, t)\ncount ← 0\n從 i 由 1 至 n 執行\n   如果 _______ AND _______ 則\n      count ← count + 1\n   結束如果\n結束執行\n回傳 count",
+    "question_type": "algorithm_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "1(b)(i)",
+    "question_text": "志明用對分搜尋來編寫子程式 BS，以找出在時間 t 出發的火車索引。\nBS(t)\na ← 1\ne ← n\nm ← (a+e)/2\n重複\n   如果 P[m] = t 則\n      退出子程式及回傳 m\n   否則\n      如果 t > P[m] 則\n         a ← m+1\n      否則\n         e ← m-1\n   結束如果\n回傳 m\n根據上述 P 的內容，BS(14:25) 的回傳值是什麼？",
+    "question_type": "algorithm_tracing",
+    "has_image": true,
+    "image_description": "P 陣列的內容：\n1: 06:05\n2: 07:10\n3: 11:25\n4: 12:20\n5: 14:25\n6: 18:00\n7: 19:30。\n上方提供了 BS 算法的偽代碼。"
+  },
+  {
+    "question_number": "1(b)(ii)",
+    "question_text": "執行 BS(19:30) 時，BS 的第 5 行 \"m ← (a+e)/2\" 會執行多少次？",
+    "question_type": "algorithm_tracing",
+    "has_image": true,
+    "image_description": "BS 算法的偽代碼。P 陣列內容與 1(b)(i) 相同。"
+  },
+  {
+    "question_number": "1(c)(iii)",
+    "question_text": "志明重寫 F1 為 F2。F2 是以線性搜尋找出在時間 t 出發的火車的索引，給定排序檔案在時間 t，是比 t 較早或較晚出發的火車數目。完成以下 F2 的偽代碼。\nF2(s, t)\ncount ← 0\n從 i 由 1 至 n 執行\n   如果 _______ 則\n      count ← count + 1\n   結束如果\n結束執行\n回傳 count",
+    "question_type": "algorithm_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "1(c)(iv)",
+    "question_text": "志明重寫 F1 為 F3。F3 是以兩次對分搜尋找出時間 a 至時間 t 出發的火車數目。包括首尾兩個時間。完成以下 F3 的偽代碼。\nF3(a, t)\nBS(t)\nBS(a)\ncount ← _______ - _______ + 1\n回傳 count",
+    "question_type": "algorithm_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "1(d)",
+    "question_text": "志明編寫 F4 以處理在時間 s 或時間 t 可能沒有火車出發的情況。根據上述 P 的內容。F4(12:00, 18:30) 傳回 3。完成以下 F4 的偽代碼。\nF4(s, t)\n   count ← F3(s, t)\n   a ← BS(s)\n   b ← F3(t)\n   如果 P[a] < s 則\n      count ← count - 1\n   結束如果\n   如果 _______ 則\n      count ← _______ - 1\n   結束如果\n回傳 count",
+    "question_type": "algorithm_completion",
+    "has_image": true,
+    "image_description": "P 陣列內容與 1(b)(i) 相同，以及 F4 算法的偽代碼。"
+  },
+  {
+    "question_number": "2(a)(i)",
+    "question_text": "假設 S 的初始內容是：\nS[i]：\n1: 蘋果\n2: 梨\n3: 梨\n4: 蘋果\n5: 蘋果\n6: 梨\n7: 梨\n8: 蘋果\n家族編寫子程式 CE(N) 的偽代碼：\nCE(N)\ncount ← 0\n從 i 由 1 至 k 執行\n   如果 S[i] 是空的 則\n      count ← count + 1\n   結束如果\n結束執行\n如果 count >= N 則\n   回傳 TRUE\n否則\n   回傳 FALSE\n假設 S 的初始內容如上。CE(3) 的回傳值是什麼？",
+    "question_type": "algorithm_tracing",
+    "has_image": true,
+    "image_description": "S 陣列的初始內容：\nS='蘋果', S='梨', S='梨', S='蘋果', S='蘋果', S='梨', S='梨', S='蘋果'。\n上方提供了 CE(N) 算法的偽代碼。"
+  },
+  {
+    "question_number": "2(a)(ii)",
+    "question_text": "使 CE(N) 傳回 FALSE 的最小 N 值。",
+    "question_type": "free_response",
+    "has_image": true,
+    "image_description": "S 陣列的初始內容和 CE(N) 算法的偽代碼，與 2(a)(i) 相同。"
+  },
+  {
+    "question_number": "2(b)(i)",
+    "question_text": "假設 S 的初始內容是：\nS[i]：\n1: 蘋果\n2: 梨\n3: 梨\n4: 蘋果\n5: 蘋果\n6: 梨\n7: 梨\n8: 蘋果\n執行 SC(梨, 4) 後，S 變成：\nS[i]：\n1: 蘋果\n2: 梨\n3: 梨\n4: 梨\n5: 蘋果\n6: 梨\n7: 梨\n8: 蘋果\n再次執行 SC(梅, 3) 和 SC(芒果, 1) 後，S 的內容是什麼？\nSC(T, N) 偽代碼：\n如果至少有少於 N 個區域是空的，SC 便只會傳回 -1；否則，SC 會由最小索引開始存放 N 個貨箱在空的區域內，並傳回 0。",
+    "question_type": "algorithm_tracing",
+    "has_image": true,
+    "image_description": "S 陣列的初始內容，以及執行 SC(梨, 4) 後的 S 陣列內容。一個示意圖顯示了 S 陣列中的貨箱分佈。還提供了 SC(T, N) 算法的文字描述。\n初始 S[i]：1:蘋果, 2:梨, 3:梨, 4:蘋果, 5:蘋果, 6:梨, 7:梨, 8:蘋果。\n執行 SC(梨, 4) 後 S[i]：1:蘋果, 2:梨, 3:梨, 4:梨, 5:蘋果, 6:梨, 7:梨, 8:蘋果。\n問題要求計算再次執行 SC(梅, 3) 和 SC(芒果, 1) 後 S 的內容。"
+  },
+  {
+    "question_number": "2(b)(ii)",
+    "question_text": "SC(梅, 9) 的回傳值是什麼？\nSC(T, N) 偽代碼：\n如果至少有少於 N 個區域是空的，SC 便只會傳回 -1；否則，SC 會由最小索引開始存放 N 個貨箱在空的區域內，並傳回 0。",
+    "question_type": "algorithm_tracing",
+    "has_image": true,
+    "image_description": "S 陣列的初始內容與 2(a)(i) 相同，以及 SC(T, N) 算法的文字描述。"
+  },
+  {
+    "question_number": "2(b)(iii)",
+    "question_text": "完成以下 SC 的偽代碼。\nSC(T, N)\ncount ← N\ni ← 0\n重複\n   i ← i + 1\n   如果 S[i] 是空的 則\n      S[i] ← T\n      count ← count - 1\n   結束如果\n直至 _______\n如果 count = 0 則\n   回傳 0\n否則\n   回傳 -1",
+    "question_type": "algorithm_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "2(c)",
+    "question_text": "家族在堆疊 a 內堆疊 b 貨箱。把 b 轉換子堆疊式 GET(T)，當中從頂部了一個一個的區域 T，可以用堆疊操作來達成所有：壓進和彈出貨箱。以下是一個例子：\n初始狀態：a 堆疊有3個貨箱，b 堆疊為空。\n獲取 GET(T) 後的狀態：a 堆疊有2個貨箱，b 堆疊有1個貨箱。\n家族使用以下堆疊操作：\n操作: push(X, T) 描述: 壓進一個 T 貨箱儲存在區域 X 內。\n操作: pop(X) 描述: 由區域 X 提取一個貨箱，並回傳此貨箱。\n完成以下 GET 的偽代碼。\nGET(T)\n   當 a 不是空的 執行\n      temp ← pop(a)\n      如果 temp = T 則\n         push(b, _______)\n         執行\n      否則\n         push(a, _______)\n   結束當",
+    "question_type": "algorithm_completion",
+    "has_image": true,
+    "image_description": "示意圖顯示堆疊 a (底部到頂部：蘋果, 梨, 蘋果) 和 b (空) 的初始狀態，以及執行 GET(蘋果) 後的狀態 (a: 蘋果, 梨; b: 蘋果)。\n提供了 push(X, T) 和 pop(X) 兩種堆疊操作的描述。下方是 GET(T) 算法的偽代碼，有空白處待完成。"
+  },
+  {
+    "question_number": "2(d)(i)",
+    "question_text": "家族在系統開發時有以下任務。\n任務表：\n任務 | 描述 | 持續時間 (日) | 依賴\nA | 開發 S | 3 | -\nB | 開發 P | 1 | A\nC | 開發 GET | 2 | A\nD | 開發 SC | 2 | B\nE | 系統測試 | 1 | B, C, D\n完成以下甘特圖。\n圖為一個有任務 A-E 的甘特圖，任務 A 持續 3 天，任務 B 持續 1 天，任務 C 持續 2 天，任務 D 持續 2 天，任務 E 持續 1 天。任務 B、C 依賴 A。任務 D 依賴 B。任務 E 依賴 B, C, D。\n請填寫甘特圖，顯示各任務的起始和結束日期。",
+    "question_type": "gantt_chart_completion",
+    "has_image": true,
+    "image_description": "一個表格列出了任務 A-E 的描述、持續時間和依賴關係。下方是一個部分空白的甘特圖，有日期（1-9）和任務行（任務 A, 任務 B, ...），需要填寫任務的進度條。"
+  },
+  {
+    "question_number": "2(d)(ii)",
+    "question_text": "完成所有任務最少需要多少日？",
+    "question_type": "free_response",
+    "has_image": true,
+    "image_description": "與 2(d)(i) 相同的任務表和甘特圖。"
+  },
+  {
+    "question_number": "3(a)",
+    "question_text": "A 是一個 m×n 二維陣列。莉莉以 A 來表示一幅圖片。白色像素和黑色像素分別用 '0' 和 '1' 表示。以下例子是一幅以 A 來表示的 5×4 圖片：\nA:  1 2 3 4\n1:  0 1 1 0\n2:  1 0 0 1\n3:  1 1 1 0\n4:  1 1 1 0\n5:  1 0 0 0\nB 是一個有 m×n 個元素的一維陣列。莉莉利用 B 把圖片拆及重新傳送。\n莉莉編寫了子程式 AtoB，將 A 轉換成 B。當中是把 A 內的數據由上至下逐行複製到 B。例如，上述的 A 會被轉換成以下 B：\nB[idx]：\n1-20: 0 1 1 0 1 0 0 1 1 1 1 0 1 1 1 0 1 0 0 0\n莉莉以 A 來表示以下圖片，寫出執行 AtoB 後 B 的內容。",
+    "question_type": "algorithm_tracing",
+    "has_image": true,
+    "image_description": "一個 5x4 的二維陣列 A 圖像（顯示為一個 'O' 形，像素值已給定）。下方是一個空白的一維陣列 B（索引 1-20），需要填寫執行 AtoB 後的內容。"
+  },
+  {
+    "question_number": "3(b)(i)",
+    "question_text": "完成以下 AtoB 的偽代碼，把 A 轉換成 B。\nAtoB\n從 i 由 1 至 m 執行\n   從 j 由 1 至 n 執行\n      B[_______] ← A[i,j]\n   結束執行\n結束執行",
+    "question_type": "algorithm_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "3(b)(ii)",
+    "question_text": "莉莉編寫了子程式 BtoA，把 B 轉換成原來的數據結構 A。完成以下 BtoA 的偽代碼。\nBtoA\n從 i 由 1 至 m 執行\n   從 j 由 1 至 n 執行\n      A[i,j] ← _______\n   結束執行\n結束執行",
+    "question_type": "algorithm_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "3(c)(i)",
+    "question_text": "A 和 P 均是全局程式。\n莉莉發現傳輸數據時，有部分單元會被錯誤傳送。她編寫了子程式 Add1 來偵測 P 一樣數值，其後可利用 P[i] 對 A 的第 i 個欄作錯誤校正。\nAdd1\ncount ← 0\n從 i 由 1 至 m 執行\n   從 j 由 1 至 n 執行\n      如果 A[j,i] = 1 則\n         count ← count + 1\n      結束如果\n   如果 (count/2) 的餘數 = 0 則\n      P[i] ← 1\n   否則\n      P[i] ← 0\n   結束如果\n結束執行\n假設 A 的內容是：\nA:  1 2 3 4\n1:  0 1 1 1\n2:  1 0 0 0\n3:  1 1 1 0\n4:  1 0 0 0\n5:  0 1 1 0\n執行 Add1 後 P 的內容是什麼？",
+    "question_type": "algorithm_tracing",
+    "has_image": true,
+    "image_description": "一個 5x4 的二維陣列 A 的內容。提供了 Add1 算法的偽代碼。下方是一個空白的一維陣列 P（索引 1-4），需要填寫執行 Add1 後的內容。"
+  },
+  {
+    "question_number": "3(c)(ii)",
+    "question_text": "假設 P 和 A 的內容是：\nP[i]: 1 0 1 0\nA:  1 2 3 4\n1:  0 1 1 0\n2:  1 0 1 1\n3:  1 0 1 0\n4:  1 0 0 0\n5:  0 0 0 0\nA 內哪個包含錯誤元素？",
+    "question_type": "free_response",
+    "has_image": true,
+    "image_description": "一個 5x4 的二維陣列 A 的內容和一個一維陣列 P 的內容。問題要求找出 A 中哪個元素包含錯誤。"
+  },
+  {
+    "question_number": "3(d)(i)",
+    "question_text": "莉莉考慮用結構化程式設計的物件導向來編寫這些子程式。舉出錯誤管理的一個主要原則。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(d)(ii)",
+    "question_text": "莉莉考慮使用解譯程式和編譯程式。舉出每個編譯程式的一個優點。\n解譯程式：\n編譯程式：",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(d)(iii)",
+    "question_text": "莉莉選擇利用型式庫，而不編寫自己的子程式，舉出兩個理由以支持她的選擇。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "4(a)",
+    "question_text": "小瑞開發一個程式來控制激光切割機切割金屬表面。\nHcut(s, e) 表示一條由位置 s 至位置 e 的線條，而 s < e。給定數字形式 Hcut(s, e) 來切割，例如，執行 Hcut(3,10) 和 Hcut(12,16) 會切割出下列兩條線。\n線條： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20\nHcut(3,10) 橫線從 3 到 10。\nHcut(12,16) 橫線從 12 到 16。\n畫出執行 Hcut(2,4)、Hcut(11,13) 和 Hcut(13,19) 後所切割的線。",
+    "question_type": "drawing_question",
+    "has_image": true,
+    "image_description": "示意圖顯示了激光切割機和切割表面。數字形式 Hcut(s, e) 的定義及其示例 Hcut(3,10) 和 Hcut(12,16) 的切割線。問題要求在提供的數軸上畫出 Hcut(2,4)、Hcut(11,13) 和 Hcut(13,19) 的切割線，數軸範圍為 1-20。"
+  },
+  {
+    "question_number": "4(b)",
+    "question_text": "小瑞發現執行 Hcut(3,10) 和 Hcut(8,16) 與執行 Hcut(3,16) 相同。\n線條： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20\nHcut(3,10) 橫線從 3 到 10。\nHcut(8,16) 橫線從 8 到 16。\n簡化執行 Hcut(2,7) 和 Hcut(6,9)，使 Hcut 只執行一次。\nHcut(_______)",
+    "question_type": "fill_in_the_blank",
+    "has_image": true,
+    "image_description": "示意圖顯示了 Hcut(3,10) 和 Hcut(8,16) 的切割線，以及它們合併為 Hcut(3,16) 的結果。問題要求簡化 Hcut(2,7) 和 Hcut(6,9) 為單個 Hcut 操作。"
+  },
+  {
+    "question_number": "4(c)(i)",
+    "question_text": "小瑞編寫子程式 MH(s1, e1, s2, e2)，其輸入參數為兩條重疊的線條 (s1,e1) 和 (s2,e2)。而它會傳回一條簡化了的線條。例如，MH(3, 10, 8, 16) 會傳回 (3,16)。完成以下 MH 的偽代碼。\nMH(s1, e1, s2, e2)\n   a ← s1 和 s2 的最小值\n   b ← _______\n   回傳 (a, b)",
+    "question_type": "algorithm_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "4(c)(ii)",
+    "question_text": "小瑞編寫子程式 CO 檢查兩條線條 (s1,e1) 和 (s2,e2) 是否重疊。完成以下 CO 的偽代碼。\nCO(s1, e1, s2, e2)\n   如果 (s1 <= e2) AND (_______) 則\n      回傳 TRUE\n   否則\n      回傳 FALSE",
+    "question_type": "algorithm_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "4(c)(iii)",
+    "question_text": "L 是一個線條的清單。L[i].s 表示第 i 個起點，內含一條線條 (L[i].s, L[i].e)。小瑞編寫以下偽代碼來合併所有 L 內重疊的線條。使用 MH, CO 來完成以下偽代碼。\n從 L 內任何 L[i] 和 L[j] 執行\n   如果 i <> j 則\n      如果 CO(L[i].s, L[i].e, L[j].s, L[j].e) 則\n         從 L 移除 L[_______] 和 L[_______]\n         將 _______ 插入 L\n      結束如果\n   結束如果",
+    "question_type": "algorithm_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "4(d)",
+    "question_text": "小瑞利用瀑布模式開發一個控制激光切割機的系統，當中包含下列要求：\n執行以下任務：\n(A) 收集用戶要求。\n(B) 進行用戶接受測試。\n(C) 編寫系統的流程圖。\n(D) 設定系統目標。\n(E) 編寫程式碼。\n需設有「維護」階段，以便執行以下任務：\n(F) 改變系統效能。\n需要把可能於「測試」階段內發現的程式錯誤糾除。\n完成以下瀑布模式。\n用戶要求: (A) -> 設計: -> 實施: -> 測試: -> _______ -> _______",
+    "question_type": "diagram_completion",
+    "has_image": true,
+    "image_description": "一個不完整的瀑布模型流程圖。從「用戶要求 (A)」開始，經過「設計」、「實施」到「測試」。圖中包含一個空白方框，需要填寫「測試」之後的階段。問題描述了瀑布模式下的各項任務和要求。"
+  }
+]

@@ -5,6 +5,7 @@ import base64
 import json
 import os
 import re
+import sys
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
@@ -13,6 +14,12 @@ from pathlib import Path
 from typing import Any, Literal
 
 import fitz
+
+_SHARED_TOOLS = Path(__file__).resolve().parents[1]
+if str(_SHARED_TOOLS) not in sys.path:
+    sys.path.insert(0, str(_SHARED_TOOLS))
+
+from repo_env import REPO_ROOT, load_repo_env
 
 RefineMode = Literal["text", "vision"]
 LlmProvider = Literal["gemini", "openai"]
@@ -34,6 +41,7 @@ class LlmConfig:
 
     @classmethod
     def from_env(cls, *, mode: RefineMode = "text", provider: str | None = None) -> "LlmConfig":
+        load_repo_env()
         chosen = (provider or os.environ.get("DSE_ICT_LLM_PROVIDER", "")).strip().lower()
         gemini_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY") or ""
         gemini_key = gemini_key.strip()
@@ -43,6 +51,7 @@ class LlmConfig:
             if not gemini_key:
                 raise RuntimeError(
                     "Gemini provider selected but GOOGLE_API_KEY / GEMINI_API_KEY is not set.\n"
+                    f"Add the key to {REPO_ROOT / '.env'} (see .env.example and docs/GOOGLE_API_KEY.md).\n"
                     "Get a free key at https://aistudio.google.com/apikey (no credit card for free tier)."
                 )
             model = os.environ.get("DSE_ICT_LLM_MODEL") or DEFAULT_GEMINI_MODEL
@@ -51,9 +60,10 @@ class LlmConfig:
         if not openai_key:
             raise RuntimeError(
                 "No LLM API key found.\n"
-                "  Hong Kong / free: set GOOGLE_API_KEY from https://aistudio.google.com/apikey\n"
-                "    and run with --provider gemini (or set DSE_ICT_LLM_PROVIDER=gemini)\n"
-                "  OpenAI-compatible: set OPENAI_API_KEY (+ optional OPENAI_BASE_URL)"
+                f"  Put keys in {REPO_ROOT / '.env'} (copy from .env.example; see docs/GOOGLE_API_KEY.md)\n"
+                "  Hong Kong / free: GOOGLE_API_KEY from https://aistudio.google.com/apikey\n"
+                "    then run with --provider gemini (or set DSE_ICT_LLM_PROVIDER=gemini)\n"
+                "  OpenAI-compatible: OPENAI_API_KEY (+ optional OPENAI_BASE_URL)"
             )
         base_url = os.environ.get("OPENAI_BASE_URL", DEFAULT_BASE_URL).strip()
         model = os.environ.get("DSE_ICT_LLM_MODEL")

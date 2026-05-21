@@ -1,0 +1,190 @@
+[
+  {
+    "question_number": "1(a)(i)",
+    "question_text": "列出來自學校編碼為「S0013」的學生姓名。",
+    "question_type": "short_answer",
+    "has_image": false,
+    "image_description": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。"
+  },
+  {
+    "question_number": "1(b)",
+    "question_text": "找出來自學校名稱包含「宜立」的學生總人數。",
+    "question": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。"
+  },
+  {
+    "question_number": "1(b)",
+    "question_text": "找出來自學校名稱包含「宜立」的學生總人數。",
+    "question_type": "short_answer",
+    "has_image": false,
+    "image_description": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。"
+  },
+  {
+    "question_number": "1(c)",
+    "question_text": "列出初級組得分 60 分或以上的學生姓名。",
+    "question_type": "short_answer",
+    "has_image": false,
+    "image_description": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。"
+  },
+  {
+    "question_number": "1(d)",
+    "question_text": "以下 SQL 語句的目的是什麼？\nSELECT PID, SNAME FROM PSTUD\nWHERE GP = 'S' AND FIRST = TRUE\nAND PID NOT IN (SELECT PID FROM MARK)",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "1(e)",
+    "question_text": "完成以下 SQL 語句，以列出每個學校的學生分數總和。\nSELECT S.SID, _______ AS TOTAL\nFROM SCHOOL S, PSTUD P, MARK M\nWHERE _______\nGROUP BY _______",
+    "question_type": "sql_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "1(f)",
+    "question_text": "若學校的學生分數總和為所有學校中最高者，將會獲得證書一張。寫出包含 TM 的 SQL 語句以找出獲得證書的學校名稱。",
+    "question_type": "sql_query_creation",
+    "has_image": false,
+    "image_description": "一個名為 TM 的表格，包含 SID (字符) 和 TOTAL (參數)。"
+  },
+  {
+    "question_number": "2(a)",
+    "question_text": "舉出 CIR 的兩個候選鍵。",
+    "sub_questions_list": [
+      "(1)",
+      "(2)"
+    ],
+    "question_type": "short_answer",
+    "has_image": false,
+    "image_description": "展示了 READER, BOOK, CIR, BKCOPY 四個數據庫表的結構和範例數據。"
+  },
+  {
+    "question_number": "2(b)(i)",
+    "question_text": "一個逾期位可被視為衍生性？簡略說明。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "2(b)(ii)",
+    "question_text": "舉出一個支持在數據庫內設有衍生性的理由。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "2(c)",
+    "question_text": "此數據庫的要求如下所述：\n每位讀者最多可以借閱 3 本書，有些讀者從來沒有在圖書館借閱書籍。\n有些書籍可能從來沒有被借出，有些書籍有多於一本。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。",
+    "question_type": "diagram_completion",
+    "has_image": true,
+    "image_description": "展示了 CIR, BKCOPY, READER, BOOK 四個實體方框，需要完成它們之間的關係圖。"
+  },
+  {
+    "question_number": "2(d)(i)",
+    "question_text": "在以下名情況下，解釋數據庫內的完整性問題。\n(i) 在 CIR 中 RID 被 NAME 取代。",
+    "question_type": "free_response",
+    "has_image": false,
+    "image_description": "展示了 READER 和 CIR 數據庫的範例數據。"
+  },
+  {
+    "question_number": "2(d)(ii)",
+    "question_text": "在 READER 中讀者「陳大文」的記錄被刪除。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(a)(i)",
+    "question_text": "完成以下 SQL 語句以防止在 SEQ 中輸入相的表演次序。\nCREATE TABLE TEAM (\nTID char(3) primary key,\nTNAME char(30),\nSEQ int,\nTMARK int NOT NULL,\n_____________\n)",
+    "question_type": "sql_completion",
+    "has_image": false,
+    "image_description": "展示了 SONG 和 TEAM 兩個數據庫表的結構和範例數據。"
+  },
+  {
+    "question_number": "3(a)(ii)",
+    "question_text": "在以上 SQL 語句內 TMARK 使用 NOT NULL 限制的優點和缺點是什麼？",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(b)(i)",
+    "question_text": "SONG 和 TEAM 已載有一組記錄，志偉有兩種方法，均利用 SID 把這兩個數據庫表連結起來。\n方法 1: 把 TEAM 刪除，然後再重新建立此數據庫表，並加入 SID。\n方法 2: 使用 SQL 語句來修改 TEAM 的結構。\n(i) 使用方法 1 的後果是什麼？",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(b)(ii)",
+    "question_text": "完成以下方法 2 的 SQL 語句。\nALTER TABLE TEAM\nADD column SID char(4)\nALTER TABLE TEAM\nADD _______________ key (SID) _______________",
+    "question_type": "sql_completion",
+    "has_image": false
+  },
+  {
+    "question_number": "3(c)(i)",
+    "question_text": "學生以三至四人一隊參加歌唱比賽，每隊只有一位隊長。志偉和莉莉有兩種不同的方法去儲存隊長和隊員的資料。\n莉莉建議在 TEAM 增加欄位，如下所示：\n(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。",
+    "question_type": "table_design",
+    "has_image": true,
+    "image_description": "展示了 STUDENT 和 TEAM 數據庫表的結構和範例數據，以及一個空白表格用於志偉建議的新數據庫表設計 (包含 TID, 描述，和新的布爾類型欄)。"
+  },
+  {
+    "question_number": "3(c)(ii)",
+    "question_text": "舉出志偉的建議勝於莉莉的建議的一個優點。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(c)(iii)",
+    "question_text": "舉出莉莉的建議勝於志偉的建議的一個優點。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "3(d)",
+    "question_text": "志偉打算在網上發布關於比賽結果的報告給公眾人士瀏覽，如下所示：\n莉莉改進這份報告，以符合以下要求：\n- 隱藏敏感私隱\n- 只顯示次序、社、學號\n- 設計今含有資料\n- 使讀者更容易讀\n(d) 重新設計這份報告，並在你的設計上加上適當的註解。",
+    "question_type": "report_design",
+    "has_image": true,
+    "image_description": "一個表格展示了比賽結果，包含表演次序、社、歌曲編碼、曲目、學生編號、學生姓名、電話、分數。問題要求重新設計此報告。"
+  },
+  {
+    "question_number": "4(a)(i)",
+    "question_text": "P 和 Q 是兩間大型連鎖店，最近 P 收購了 Q。它們的會員數據庫將於數據庫應用系統開發週期的其中一個階段內合併。\n(a) 子派負責大部分要求收集及分析階段的工作。\n(i) 子派應該是什麼數據庫的工作人員？",
+    "question_type": "short_answer",
+    "has_image": false
+  },
+  {
+    "question_number": "4(a)(ii)",
+    "question_text": "描述這階段的兩個交付成果。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "4(b)",
+    "question_text": "MEMP 和 MEMQ 擁有相同關的數據庫表，它們分別儲存 P 和 Q 的會員資料。\n舉出三例子以解釋為何會員編號需要獨特後。",
+    "question_type": "free_response",
+    "has_image": true,
+    "image_description": "展示了 MEMP 和 MEMQ 兩個數據庫表的結構和範例數據，包含 MID, NAME, GENDER, TEL。"
+  },
+  {
+    "question_number": "4(c)(i)",
+    "question_text": "子派考慮運用以下兩個方法，將兩個數據庫表合併。\n方法 1: 利用 SQL 語句來合併。\n方法 2: 以一般程式語言編寫一個程式，來進行合併。\n(i) 舉出方法 1 勝於方法 2 的一個優點。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "4(c)(ii)",
+    "question_text": "舉出方法 2 勝於方法 1 的一個優點。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "4(d)",
+    "question_text": "描述如何使用數據庫間來制定行銷策略。",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "4(e)(i)",
+    "question_text": "會員的電話號碼已在合併的數據庫中儲存。\n(i) 數據庫內的電話號碼是一個候選鍵而非主關鍵詞。為什麼？",
+    "question_type": "free_response",
+    "has_image": false
+  },
+  {
+    "question_number": "4(e)(ii)",
+    "question_text": "舉出在數據庫中，擁有多個電話號碼的兩個潛在好處。",
+    "question_type": "free_response",
+    "has_image": false
+  }
+]

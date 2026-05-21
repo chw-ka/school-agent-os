@@ -6,7 +6,11 @@ DSE 資訊及通訊科技（ICT）共用參考庫 — 適用於 F4–F6（S4–S
 
 ## 結構
 
-- `past-papers/`：DSE 官方歷屆卷 PDF（描述性檔名，例如 `DSE_ICT_2019_Paper2A_Database.pdf` = 卷二甲 數據庫）
+- `past-papers/`：DSE 官方歷屆卷 PDF（按年份子資料夾；描述性檔名）
+  - 2012–2023：`DSE_ICT_{year}_Paper1_MultipleChoice.pdf`、卷二 `Paper2A`–`Paper2D` 各選修冊
+  - 2024+：`Paper1A_MultipleChoice`、`Paper1B_CompulsoryStructured`
+  - 2025+：另加 `Paper2_Elective.pdf`（選修三選一合冊；舊制 2A–2D 分冊已停用）
+  - 整理工具：`python shared-tools/pdf-engine/build_dse_ict_question_bank.py --rename-only`
 - `question-bank/`：OCR 及結構化題目 JSON（**出卷參考時讀這裡，毋須每次 OCR**）
 - `edb/`：教育局課程及評估指引等官方文件
 

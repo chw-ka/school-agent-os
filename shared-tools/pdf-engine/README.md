@@ -50,7 +50,9 @@ python shared-tools/pdf-engine/build_dse_ict_question_bank.py --years 2019 2020 
 | `per.pdf` | `DSE_ICT_{year}_PerformanceReport.pdf` | 考生表現 |
 
 Paper 2A–2D are the **old elective booklets** (one per option), not compulsory modules A–E.
-From 2025 DSE onwards, Paper 2 is a single paper with three elective sections (數據庫 / 網絡應用程式開發 / 算法與程式編寫); see EDB C&A Guide §5.5.2.
+From 2025 DSE onwards, Paper 2 is a single paper with three elective sections (數據庫 / 網絡應用程式開發 / 算法與程式編寫); see EDB C&A Guide §5.5.2. Store as `DSE_ICT_{year}_Paper2_Elective.pdf`.
+
+Loose downloads named `2025-1A.pdf`, `2025-1B.pdf`, `2025-2.pdf` at the `past-papers/` root are moved into `{year}/` with descriptive names when you run `--rename-only`.
 
 ### Question bank layout
 
@@ -69,6 +71,8 @@ question-bank/
 Question `type` values: `mcq`, `structured`, `short_answer`, `long_answer`, `matching`, `true_false`, `fill_in`.
 
 ### LLM refinement (recommended for scanned papers)
+
+Setup (macOS / Windows / `.env`): **[docs/GOOGLE_API_KEY.md](../../docs/GOOGLE_API_KEY.md)**.
 
 OCR + rule parser gives a **draft** (`questions.json`). For usable reference text, run an LLM pass once and cache `questions_refined.json`:
 

@@ -1,0 +1,346 @@
+[
+  {
+    "question_number": "1(a)(i)",
+    "question_text": "如果一位員工在欄 D 或欄 E 所對應的數值為 1，他將被視為出席。而在這情況下，欄 F 會顯示數值 1。否則則顯示 0。\n在 F2 輸入公式，然後複製到 F3:F81。完成以下 F2 的公式。",
+    "answer_details": {
+      "type": "fill_in_the_blank_formula",
+      "prompt": "=IF(___________)"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(a)(ii)",
+    "question_text": "為了計算個別員工的總出席日數，在 B85 輸入公式`=SUMIF(A2:A81, \"S01\", F2:F81)`，然後複製到 B86、E85 和 E86。B85 的結果是正確的。在 D86、E85 和 E86 的終線網絡。在下方修正 E85 的公式：",
+    "answer_details": {
+      "type": "fill_in_the_blank_formula",
+      "prompt": "=SUMIF(___________)"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(a)(iii)",
+    "question_text": "除了核實欄位是否沒有留空，描述一個適合 D2:D81 內數據的有效性檢驗。",
+    "answer_details": {
+      "type": "explanation"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "1(d)(iv)",
+    "question_text": "A1:F1 是欄名。而 A2:F81 內的記錄已排序。在下方寫出此排序選項：",
+    "answer_details": {
+      "type": "table_completion",
+      "notes": "填寫排序欄位和次序",
+      "headers": ["欄名", "次序 (順序/倒序)"],
+      "rows_to_complete": ["首要排序方式", "次要排序方式"]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(i)",
+    "question_text": "A1:F81 內的數據被轉換成數據庫表 ATTEND。\n簡略說明為何 NAME 不可以作為主關鍵碼。",
+    "answer_details": {
+      "type": "explanation"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(ii)",
+    "question_text": "寫出 ATTEND 的主關鍵碼。",
+    "answer_details": {
+      "type": "short_answer"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(iii)",
+    "question_text": "根據此試算表內已知的首 8 筆記錄，執行以下 SQL 語句後的輸出是什麼？\n`SELECT EID, COUNT(*) FROM ATTEND\nWHERE SIGNIN + SIGNOUT = 1\nGROUP BY EID HAVING COUNT(*) > 1`",
+    "answer_details": {
+      "type": "sql_output_prediction",
+      "notes": "需要提供 SQL 查詢的輸出結果"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(iv)",
+    "question_text": "簡略說明為何不需要傳換和包括 A84:E86 內的數據在 ATTEND。",
+    "answer_details": {
+      "type": "explanation"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(i)",
+    "question_text": "家健計劃購買一台新電腦用作影片剪輯。以下是兩台電腦 P 和 Q 的規格：[規格表格]\n按照儲存設備的數據傳輸率，以降序方式排列 SSD、HDD 和 RAM。",
+    "answer_details": {
+      "type": "ordering",
+      "items_to_order": ["SSD", "HDD", "RAM"],
+      "order_type": "descending_data_transfer_rate"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(ii)",
+    "question_text": "除了數據傳輸率和儲存容量，描述 RAM 與 SSD 的一個功能上的分別。",
+    "answer_details": {
+      "type": "explanation"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(iii)",
+    "question_text": "家健認為 Q 較為適合用來渲染 4K 影像。舉出**兩個**支持他的理由。",
+    "answer_details": {
+      "type": "explanation_with_multiple_reasons",
+      "number_of_reasons": 2
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(b)(i)",
+    "question_text": "最後家健購買了 Q，並把它接駁到 LAN。\n估算在 LAN 中接收一個 5 GB 影像檔的所需時間。展示你的計算。",
+    "answer_details": {
+      "type": "calculation",
+      "notes": "需要展示計算過程"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(b)(ii)",
+    "question_text": "家健看見電腦內的抗電腦病毒軟件在兩個不同情況下顯示以下訊息。\n訊息 A: `警告！由於檔案含有病毒，故未能執行。C:\\game.exe`\n訊息 B: `警告！在掃描器掃描中發現病毒。C:\\game.exe C:\\programdraw.exe D:\\player.exe`\n解釋模式 (或批處理或實時處理) 最能描述在每個情況下的病毒掃描？簡略說明。",
+    "answer_details": {
+      "type": "explanation_and_identification",
+      "parts": [
+        {"name": "訊息 A", "description": "解釋掃描模式"},
+        {"name": "訊息 B", "description": "解釋掃描模式"}
+      ]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(c)",
+    "question_text": "當家健嘗試在一個網上系統更改密碼時，他的新密碼不符合系統的三個密碼要求，如下所示。填上餘下**兩個**要求。\n密碼要求:\n1. 最少有 10 個字符\n2. __________\n3. __________",
+    "answer_details": {
+      "type": "fill_in_the_blank_list",
+      "list_items_to_complete":[],
+      "notes": "根據提供的密碼嘗試（Tom1133）和第一項要求，推斷並填寫另外兩項密碼要求。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(d)",
+    "question_text": "家健在其工作上花大量時間使用鍵盤。舉出一個潛在健康威脅，並寫出除了定時休息外，一個能夠保障他健康的對應措施。",
+    "answer_details": {
+      "type": "explanation_and_solution",
+      "parts": [
+        {"name": "健康威脅", "description": "描述潛在的健康威脅"},
+        {"name": "對應措施", "description": "寫出除了定時休息外的保障健康的對應措施"}
+      ]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(a)(i)",
+    "question_text": "小麗使用有線連接她的多合一無線路由器連接至家中的桌上電腦和寬頻數據機。\n路由器背面有 5 個埠 (1-5)，如下所示：[路由器圖片，顯示埠 1-5 和 WAN]\n就以下各裝置，建議用作連接的一個埠。",
+    "answer_details": {
+      "type": "short_answer_fill_in_the_blank",
+      "items_to_connect": [
+        {"device": "桌上電腦", "prompt": "__________"},
+        {"device": "寬頻數據機", "prompt": "__________"}
+      ]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(a)(ii)",
+    "question_text": "除了寬頻外，寫出在路由器與電腦之間採用有線連接卻於無線連接的一個優點。",
+    "answer_details": {
+      "type": "explanation"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "3(b)",
+    "question_text": "小麗計劃透過互聯網傳送一個重要訊息給小明。當中使用了公開密碼匙的基礎建設 (PKI)，以保證訊息是由小麗發出。小麗和小明各有一對密碼匙 (即小麗的公開密碼匙、小麗的私人密碼匙、小明的公開密碼匙和小明的私人密碼匙)。寫出在傳遞時使用的密碼匙。\n小麗使用 __________ 簽署訊息。\n然後小明使用 __________ 核實訊息。",
+    "answer_details": {
+      "type": "fill_in_the_blank",
+      "prompts": [
+        {"role": "小麗", "action": "簽署訊息", "blank": "__________"},
+        {"role": "小明", "action": "核實訊息", "blank": "__________"}
+      ]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(c)",
+    "question_text": "小麗經常發送電郵。舉出在發送電郵時使用 HTML 格式而非純文字格式的**兩個**好處。",
+    "answer_details": {
+      "type": "explanation_with_multiple_reasons",
+      "number_of_reasons": 2
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(d)(i)",
+    "question_text": "小麗在學校工作。她開發一個網上系統，讓學生閱讀 PDF 格式的試卷。學生可以輸入科目及年份去揀選過往試卷。如下所示：[網上試卷系統介面圖片]\n重新設計網頁的佈局，以改善下列各項方便用戶的程度：\n* 揀選過往試卷\n* PDF 文件的導航\n* 閱覽 PDF 文件\n在你的設計上加上註解。",
+    "answer_details": {
+      "type": "design_task",
+      "notes": "需要重新設計網頁佈局並添加註解，以改善用戶體驗，涉及揀選過往試卷、PDF 文件導航和閱覽PDF文件。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "3(d)(ii)",
+    "question_text": "建議可保護過往試卷版權的**兩個**措施。",
+    "answer_details": {
+      "type": "explanation_with_multiple_reasons",
+      "number_of_reasons": 2
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(a)(i)",
+    "question_text": "顯示板包含 5×3 個黑白點，以位元模式來表示顯示圖像，而 1 和 0 分別代表黑點和白點。\n完成下列以位元模式 111 001 010 100 111 所表示的顯示圖像。首兩行已在畫好。\n[5x3 網格圖片，部分已填寫]",
+    "answer_details": {
+      "type": "image_completion",
+      "notes": "根據給定的位元模式完成 5x3 圖像的填色，其中 1 為黑點，0 為白點。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "4(a)(ii)-1",
+    "question_text": "在原本的位元模式最後方加上了一個偶數檢驗位。\n寫出能表示以下顯示圖像的位元模式 (16 位元)。\n[4x4 網格圖片]",
+    "answer_details": {
+      "type": "binary_representation",
+      "notes": "根據 4x4 圖像生成 16 位元模式，並考慮偶數檢驗位。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(a)(ii)-2",
+    "question_text": "此顯示板可以顯示多少個不同的圖像？",
+    "answer_details": {
+      "type": "calculation"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "4(b)(i)",
+    "question_text": "當一個顯示圖像改變，一些點會被切換 (即由黑變白或由白變黑)，這些點會被記錄。\n在以下例子中，被切換的點為 B3 和 C2。\n[圖片：原始 5x3 圖像 -> 下一個 5x3 圖像]\n寫出以下被切換的點。",
+    "answer_details": {
+      "type": "identify_changes",
+      "notes": "根據圖像變化，識別並寫出被切換的點。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(b)(ii)",
+    "question_text": "記錄一個點的位置 (例如 B3) 需要多少個位元？簡略說明。",
+    "answer_details": {
+      "type": "calculation_and_explanation"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(b)(iii)",
+    "question_text": "在下方繪製下一個顯示圖像，以需要最多位元來記錄被切換的點。\n[圖片：原始 5x3 圖像 -> 下一個 5x3 圖像 (繪圖目標)]",
+    "answer_details": {
+      "type": "image_drawing",
+      "notes": "根據題目要求繪製下一個顯示圖像。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(c)",
+    "question_text": "分別建議應用軟件和系統軟件在操作此顯示板時的一個功能。",
+    "answer_details": {
+      "type": "short_answer_comparison",
+      "parts": [
+        {"software_type": "應用軟件", "prompt": "__________"},
+        {"software_type": "系統軟件", "prompt": "__________"}
+      ]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "5(a)",
+    "question_text": "陣列 A 儲存了 6 個數。算法 ALG1 和 ALG2 分別驗證下列要求 (I) 和 (II)。\n(I) A 中的所有變數是正數。\n(II) A 中的變數是以升序排列。\n根據以上的要求，描述使用以下無效測試數據的目的：\n`情況 1: A=3, A=3, A=5, A=5, A=5, A=8`\n`目的:` __________\n`情況 2: A=-1, A=1, A=5, A=5, A=5, A=8`\n`目的:` __________",
+    "answer_details": {
+      "type": "fill_in_the_blank_explanation",
+      "prompts": [
+        {"scenario": "情況 1", "blank": "__________"},
+        {"scenario": "情況 2", "blank": "__________"}
+      ]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "5(b)",
+    "question_text": "如果 A 中的所有變數是正數，ALG1 便會輸出 TRUE，否則輸出 FALSE。完成以下 ALG1 的偽代碼。\n`P ← TRUE`\n`設 i 由 _________ 至 _________ 執行`\n  `如果 _________ 則`\n    `P ← FALSE`\n`輸出 P`",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "blanks": ["i_start", "i_end", "condition"]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "5(c)",
+    "question_text": "如果 A 中的變數是以升序排列，ALG2 便會輸出 TRUE，否則輸出 FALSE。完成以下 ALG2 的偽代碼。\n`S ← TRUE`\n`設 i 由 _________ 至 _________ 執行`\n  `如果 _________ 則`\n    `S ← FALSE`\n`輸出 S`",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "blanks": ["i_start", "i_end", "condition"]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "5(d)(i)",
+    "question_text": "下列是算法 ALG3。\n`行號 內容`\n`1    C ← 1`\n`2    M ← 1`\n`3    N ← A`\n`4    設 i 由 1 至 5 執行`\n`5      如果 A[i-1] = A[i] 則`\n`6        C ← C + 1`\n`7      否則`\n`8        C ← 1`\n`9      如果 C > M 則`\n`10       M ← C`\n`11       N ← A[i]`\n`12   輸出 N`\n假設 A 的初始內容為：\n`A=3, A=5, A=5, A=5, A=5, A=8`\n完成循環 (第 4 至 11 行) 的第一、第二和最後一次迭代後，C、M 和 N 的內容是甚麼？",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["C", "M", "N"],
+      "rows_to_complete": ["第一次迭代", "第二次迭代", "最後一次迭代"]
+    },
+    "points": 4,
+    "source": ""
+  },
+  {
+    "question_number": "5(d)(ii)",
+    "question_text": "ALG3 的目的是什麼？",
+    "answer_details": {
+      "type": "explanation"
+    },
+    "points": 2,
+    "source": ""
+  }
+]
