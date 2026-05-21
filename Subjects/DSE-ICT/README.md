@@ -13,7 +13,23 @@ DSE 資訊及通訊科技（ICT）共用參考庫 — 適用於 F4–F6（S4–S
 ## 建立題庫（一次性）
 
 ```bash
+pip install -r requirements-ocr.txt
 python shared-tools/pdf-engine/build_dse_ict_question_bank.py
 ```
 
-需安裝 Tesseract（`chi_tra` + `eng`）。詳見 `shared-tools/pdf-engine/README.md`。
+預設使用 **PaddleOCR**（適合掃描卷、繁體中文準確度優於 Tesseract）。詳見 `shared-tools/pdf-engine/README.md`。
+
+## 出卷用途
+
+結構化 JSON 係 **DSE 藍本抽題** 嘅來源（見 `shared-tools/paper-generator/F5_ICT_DSE_BLUEPRINT_FLOW.md`）。
+
+**現況（2026-05）：** 只有 `2019/Paper1_MultipleChoice/questions.json`；Paper2A Database 及其他年份仍待建立。
+
+若題目結構仍唔準（常見於雙欄 MCQ 掃描），可以 **一次性** 用 LLM 修正並快取：
+
+```bash
+set GOOGLE_API_KEY=your-key-from-aistudio
+python shared-tools/pdf-engine/refine_dse_ict_question_bank.py --years 2019 --slugs Paper1_MultipleChoice --provider gemini --mode vision
+```
+
+輸出 `questions_refined.json`；`needs_review=true` 的題目建議人手覆核後先用作出卷參考。

@@ -21,6 +21,8 @@ recipe  →  *.spec.json  →  question-quality-check  →  修 spec
 .venv/bin/python shared-tools/paper-generator/f5_ict_blueprint_db_web.py --render-anyway
 ```
 
+**規劃中（DSE 題庫藍本出卷）：** 見 [`F5_ICT_DSE_BLUEPRINT_FLOW.md`](F5_ICT_DSE_BLUEPRINT_FLOW.md) — 先補齊 `Subjects/DSE-ICT/question-bank/` 2019–2025。
+
 ## 新增 recipe
 
 1. 實作 `build_*_exam_spec() -> dict`（`question-quality-check/exam_spec.py`）

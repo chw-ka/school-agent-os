@@ -7,10 +7,19 @@ HKDSE / school PDF tools: OCR once, store structured questions for reuse.
 Official scanned papers live in `Subjects/DSE-ICT/past-papers/`.  
 Structured output goes to `Subjects/DSE-ICT/question-bank/`.
 
-### One-time setup
+### One-time setup (scanned PDFs)
 
-1. Install [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) with `chi_tra` + `eng` language packs.
-2. `pip install pymupdf` (see repo `requirements.txt`).
+For **scanned** DSE papers, use PaddleOCR (much better than Tesseract for Traditional Chinese):
+
+```bash
+pip install -r requirements-ocr.txt
+```
+
+This pins `paddlepaddle==2.6.2`, `paddleocr==2.7.3`, and `numpy<2` (required on Windows).
+
+Optional fallback: install [Tesseract](https://github.com/tesseract-ocr/tesseract) with `chi_tra+eng` and pass `--ocr tesseract`.
+
+Base deps: `pip install pymupdf` (see repo `requirements.txt`).
 
 ### Build the bank (OCR once)
 
@@ -20,6 +29,9 @@ python shared-tools/pdf-engine/build_dse_ict_question_bank.py --rename-only
 
 # OCR all papers → question-bank/{year}/{slug}/questions.json + ocr.txt
 python shared-tools/pdf-engine/build_dse_ict_question_bank.py
+
+# Default engine is PaddleOCR with scan preprocessing (denoise + contrast)
+python shared-tools/pdf-engine/build_dse_ict_question_bank.py --years 2019 --slugs Paper1_MultipleChoice --force
 
 # Subset
 python shared-tools/pdf-engine/build_dse_ict_question_bank.py --years 2019 2020 --slugs Paper1_MultipleChoice
@@ -55,6 +67,24 @@ question-bank/
 ```
 
 Question `type` values: `mcq`, `structured`, `short_answer`, `long_answer`, `matching`, `true_false`, `fill_in`.
+
+### LLM refinement (recommended for scanned papers)
+
+OCR + rule parser gives a **draft** (`questions.json`). For usable reference text, run an LLM pass once and cache `questions_refined.json`:
+
+```bash
+# Needs OPENAI_API_KEY (or compatible endpoint via OPENAI_BASE_URL)
+python shared-tools/pdf-engine/refine_dse_ict_question_bank.py --years 2019 --slugs Paper1_MultipleChoice
+
+# Hong Kong / free tier: Gemini API key from https://aistudio.google.com/apikey
+set GOOGLE_API_KEY=your-key
+python shared-tools/pdf-engine/refine_dse_ict_question_bank.py --years 2019 --slugs Paper1_MultipleChoice --provider gemini
+
+# Best accuracy on 2-column MCQ scans (more tokens; uses page images)
+python shared-tools/pdf-engine/refine_dse_ict_question_bank.py --years 2019 --slugs Paper1_MultipleChoice --mode vision --provider gemini
+```
+
+Each refined item includes `confidence` and `needs_review` — spot-check those before using in出卷. Load with `load_paper_spec(..., prefer_refined=True)`.
 
 ### Reuse without re-OCR
 

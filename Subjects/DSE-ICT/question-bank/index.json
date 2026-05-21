@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T05:46:52.318574+00:00",
+  "generated_at": "2026-05-21T08:21:36.140984+00:00",
   "past_papers_root": "Subjects/DSE-ICT/past-papers",
   "question_bank_root": "Subjects/DSE-ICT/question-bank",
   "papers": [
@@ -14,7 +14,7 @@
     {
       "year_label": "2012",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2012/DSE_ICT_2012_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -70,7 +70,7 @@
     {
       "year_label": "2013",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2013/DSE_ICT_2013_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -126,7 +126,7 @@
     {
       "year_label": "2014",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2014/DSE_ICT_2014_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -182,7 +182,7 @@
     {
       "year_label": "2015",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2015/DSE_ICT_2015_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -238,7 +238,7 @@
     {
       "year_label": "2016",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2016/DSE_ICT_2016_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -294,7 +294,7 @@
     {
       "year_label": "2017",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2017/DSE_ICT_2017_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -350,7 +350,7 @@
     {
       "year_label": "2018",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2018/DSE_ICT_2018_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -406,10 +406,10 @@
     {
       "year_label": "2019",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2019/DSE_ICT_2019_Paper1_MultipleChoice.pdf",
-      "questions_json": null,
-      "ocr_cache": null
+      "questions_json": "Subjects/DSE-ICT/question-bank/2019/Paper1_MultipleChoice/questions.json",
+      "ocr_cache": "Subjects/DSE-ICT/question-bank/2019/Paper1_MultipleChoice/ocr.txt"
     },
     {
       "year_label": "2019",
@@ -462,7 +462,7 @@
     {
       "year_label": "2020",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2020/DSE_ICT_2020_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -518,7 +518,7 @@
     {
       "year_label": "2021",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -574,7 +574,7 @@
     {
       "year_label": "2022",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2022/DSE_ICT_2022_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -630,7 +630,7 @@
     {
       "year_label": "2023",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/2023/DSE_ICT_2023_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -660,6 +660,62 @@
       "ocr_cache": null
     },
     {
+      "year_label": "2024",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_MarkingScheme.pdf",
+      "questions_json": "Subjects/DSE-ICT/question-bank/2024/MarkingScheme/questions.json",
+      "ocr_cache": "Subjects/DSE-ICT/question-bank/2024/MarkingScheme/ocr.txt"
+    },
+    {
+      "year_label": "2024",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper1_MultipleChoice.pdf",
+      "questions_json": "Subjects/DSE-ICT/question-bank/2024/Paper1_MultipleChoice/questions.json",
+      "ocr_cache": "Subjects/DSE-ICT/question-bank/2024/Paper1_MultipleChoice/ocr.txt"
+    },
+    {
+      "year_label": "2024",
+      "paper_slug": "Paper1B_CompulsoryStructured",
+      "paper_label": "Paper 1B — Compulsory Part structured (必修部分 乙丙部)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper1B_CompulsoryStructured.pdf",
+      "questions_json": "Subjects/DSE-ICT/question-bank/2024/Paper1B_CompulsoryStructured/questions.json",
+      "ocr_cache": "Subjects/DSE-ICT/question-bank/2024/Paper1B_CompulsoryStructured/ocr.txt"
+    },
+    {
+      "year_label": "2024",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper2A_Database.pdf",
+      "questions_json": "Subjects/DSE-ICT/question-bank/2024/Paper2A_Database/questions.json",
+      "ocr_cache": "Subjects/DSE-ICT/question-bank/2024/Paper2A_Database/ocr.txt"
+    },
+    {
+      "year_label": "2024",
+      "paper_slug": "Paper2A_MarkingScheme",
+      "paper_label": "Paper2A_MarkingScheme",
+      "pdf": "Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper2A_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2024",
+      "paper_slug": "Paper2D_MarkingScheme",
+      "paper_label": "Paper2D_MarkingScheme",
+      "pdf": "Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper2D_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2024",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": "Subjects/DSE-ICT/question-bank/2024/Paper2D_SoftwareDevelopment/questions.json",
+      "ocr_cache": "Subjects/DSE-ICT/question-bank/2024/Paper2D_SoftwareDevelopment/ocr.txt"
+    },
+    {
       "year_label": "Practice",
       "paper_slug": "MarkingScheme",
       "paper_label": "Marking Scheme (評卷參考)",
@@ -670,7 +726,7 @@
     {
       "year_label": "Practice",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/Practice-Paper/DSE_ICT_Practice_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -710,7 +766,7 @@
     {
       "year_label": "Sample",
       "paper_slug": "Paper1_MultipleChoice",
-      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
       "pdf": "Subjects/DSE-ICT/past-papers/Sample-Paper/DSE_ICT_Sample_Paper1_MultipleChoice.pdf",
       "questions_json": null,
       "ocr_cache": null
@@ -748,5 +804,60 @@
       "ocr_cache": null
     }
   ],
-  "by_type": {}
+  "by_type": {
+    "mcq": [
+      "2019-Paper1_MultipleChoice-Q01",
+      "2019-Paper1_MultipleChoice-Q02",
+      "2019-Paper1_MultipleChoice-Q03",
+      "2019-Paper1_MultipleChoice-Q04",
+      "2019-Paper1_MultipleChoice-Q05",
+      "2019-Paper1_MultipleChoice-Q06",
+      "2019-Paper1_MultipleChoice-Q07",
+      "2019-Paper1_MultipleChoice-Q08",
+      "2019-Paper1_MultipleChoice-Q09",
+      "2019-Paper1_MultipleChoice-Q10",
+      "2019-Paper1_MultipleChoice-Q11",
+      "2019-Paper1_MultipleChoice-Q12",
+      "2019-Paper1_MultipleChoice-Q13",
+      "2019-Paper1_MultipleChoice-Q14",
+      "2019-Paper1_MultipleChoice-Q15",
+      "2019-Paper1_MultipleChoice-Q16",
+      "2019-Paper1_MultipleChoice-Q17",
+      "2019-Paper1_MultipleChoice-Q18",
+      "2019-Paper1_MultipleChoice-Q19",
+      "2019-Paper1_MultipleChoice-Q20",
+      "2019-Paper1_MultipleChoice-Q21",
+      "2019-Paper1_MultipleChoice-Q22",
+      "2019-Paper1_MultipleChoice-Q23",
+      "2019-Paper1_MultipleChoice-Q24",
+      "2024-Paper1_MultipleChoice-Q01",
+      "2024-Paper1_MultipleChoice-Q02",
+      "2024-Paper1_MultipleChoice-Q03",
+      "2024-Paper1_MultipleChoice-Q04",
+      "2024-Paper1_MultipleChoice-Q05",
+      "2024-Paper1_MultipleChoice-Q06",
+      "2024-Paper1_MultipleChoice-Q07",
+      "2024-Paper1_MultipleChoice-Q08",
+      "2024-Paper1_MultipleChoice-Q09",
+      "2024-Paper1_MultipleChoice-Q10",
+      "2024-Paper1_MultipleChoice-Q11",
+      "2024-Paper1_MultipleChoice-Q12",
+      "2024-Paper1_MultipleChoice-Q13",
+      "2024-Paper1_MultipleChoice-Q14",
+      "2024-Paper1_MultipleChoice-Q15",
+      "2024-Paper1_MultipleChoice-Q16",
+      "2024-Paper1_MultipleChoice-Q17",
+      "2024-Paper1_MultipleChoice-Q18",
+      "2024-Paper1_MultipleChoice-Q19",
+      "2024-Paper1_MultipleChoice-Q20",
+      "2024-Paper1_MultipleChoice-Q21",
+      "2024-Paper1_MultipleChoice-Q22",
+      "2024-Paper1_MultipleChoice-Q23",
+      "2024-Paper1_MultipleChoice-Q24",
+      "2024-Paper1_MultipleChoice-Q25",
+      "2024-Paper1_MultipleChoice-Q26",
+      "2024-Paper1_MultipleChoice-Q27",
+      "2024-Paper1_MultipleChoice-Q28"
+    ]
+  }
 }

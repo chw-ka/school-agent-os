@@ -1,0 +1,6 @@
+{
+  "engine": "paddle",
+  "scale": 3.0,
+  "preprocess": true,
+  "pdf_mtime": 1741941935.2383723
+}

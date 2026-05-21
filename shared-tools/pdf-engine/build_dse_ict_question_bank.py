@@ -71,6 +71,8 @@ def process_paper(
     bank_root: Path,
     force: bool = False,
     skip_ocr: bool = False,
+    ocr_engine: str | None = None,
+    ocr_preprocess: bool = True,
 ) -> dict | None:
     spec_path, ocr_path, out_dir = _bank_paths(bank_root, year_label, slug)
     if spec_path.exists() and not force and not skip_ocr:
@@ -86,7 +88,14 @@ def process_paper(
         if skip_ocr:
             text = ocr_path.read_text(encoding="utf-8")
         else:
-            text = load_or_ocr(pdf_path, ocr_path, slug=slug, force=force)
+            text = load_or_ocr(
+                pdf_path,
+                ocr_path,
+                slug=slug,
+                force=force,
+                engine=ocr_engine,
+                preprocess=ocr_preprocess,
+            )
     else:
         # Performance report — skip question extraction
         return None
@@ -202,6 +211,17 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--years", nargs="*", help="Limit to year labels e.g. 2019 2020 or Practice Sample")
     ap.add_argument("--slugs", nargs="*", help="Limit to paper slugs e.g. Paper1_MultipleChoice")
     ap.add_argument("--force", action="store_true", help="Re-OCR and rebuild JSON")
+    ap.add_argument(
+        "--ocr",
+        choices=["paddle", "tesseract"],
+        default=None,
+        help="OCR engine (default: paddle, or env DSE_ICT_OCR_ENGINE)",
+    )
+    ap.add_argument(
+        "--no-preprocess",
+        action="store_true",
+        help="Skip scan denoise/contrast step before OCR",
+    )
     ap.add_argument("--skip-ocr", action="store_true", help="Rebuild JSON from existing ocr.txt only")
     ap.add_argument("--index-only", action="store_true", help="Only refresh question-bank/index.json")
     args = ap.parse_args(argv)
@@ -237,6 +257,8 @@ def main(argv: list[str] | None = None) -> int:
                     bank_root=bank_root,
                     force=args.force,
                     skip_ocr=args.skip_ocr,
+                    ocr_engine=args.ocr,
+                    ocr_preprocess=not args.no_preprocess,
                 )
             except FileNotFoundError as e:
                 print(f"  skip: {e}")

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "year_label": "2024",
+    "paper_slug": "MarkingScheme",
+    "paper_label": "Marking Scheme (評卷參考)",
+    "source_pdf": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_MarkingScheme.pdf",
+    "ocr_cache": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/question-bank/2024/MarkingScheme/ocr.txt"
+  },
+  "items": [],
+  "paper": {
+    "id": "2024-MarkingScheme",
+    "mcq_answers": {}
+  }
+}

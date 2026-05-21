@@ -16,8 +16,12 @@ def load_index(bank_root: Path | None = None) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def load_paper_spec(year_label: str, slug: str, *, bank_root: Path | None = None) -> dict | None:
+def load_paper_spec(year_label: str, slug: str, *, bank_root: Path | None = None, prefer_refined: bool = False) -> dict | None:
     root = (bank_root or DEFAULT_BANK).expanduser().resolve()
+    if prefer_refined:
+        refined = root / year_label / slug / "questions_refined.json"
+        if refined.exists():
+            return json.loads(refined.read_text(encoding="utf-8"))
     path = root / year_label / slug / "questions.json"
     if not path.exists():
         return None

@@ -1,0 +1,10 @@
+# OCR stack for scanned DSE / school exam PDFs (Traditional Chinese + English).
+# Install: pip install -r requirements-ocr.txt
+#
+# Default engine is PaddleOCR (see shared-tools/pdf-engine/dse_ict_ocr.py).
+# Pin numpy<2 — PaddleOCR 2.x and OpenCV wheels require NumPy 1.x on Windows.
+
+numpy>=1.24,<2
+opencv-python-headless>=4.8,<4.12
+paddlepaddle==2.6.2
+paddleocr==2.7.3

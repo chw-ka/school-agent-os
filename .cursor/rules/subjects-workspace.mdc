@@ -1,0 +1,24 @@
+---
+description: Subjects folder layout and naming when adding teaching materials
+globs: Subjects/**
+alwaysApply: false
+---
+
+# Subjects workspace
+
+## Folder layout
+
+- One workspace per form + subject: `S2-CMP/`, `S3-CMP/`, `S5-ICT/`, `S6-ICT/`
+- Cross-form DSE refs: `DSE-ICT/` only (not duplicated per form)
+- `past-papers/{YYYY-YYYY}/Term {01|02}/WrittenExam|PracticalAssessment|PracticalMock/`
+- Agent specs: `past-papers/.../_generation/` or `exam-input/` — git only
+
+## Naming
+
+- Exam files: `{YY}_{YY}_S{form}_{CMP|ICT}_...` (e.g. `24_25_S3_CMP_Term1_WrittenExam.docx`)
+
+## Storage tiers
+
+- Commit active teaching materials needed at home (see `Subjects/STORAGE.md`)
+- Do not commit marksheets, grades, or bulk named student submissions
+- Never write to panel share `S:\...\08_Others` without user permission

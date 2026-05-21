@@ -18,7 +18,8 @@ PAPER_SLUGS: dict[str, str] = {
 # Pre-2025 Paper 2 = elective part (one booklet per option). See HKEAA sample papers
 # and EDB C&A Guide elective modules A–D (2012–2024 syllabus).
 PAPER_LABELS: dict[str, str] = {
-    "Paper1_MultipleChoice": "Paper 1 — Compulsory Part (必修部分)",
+    "Paper1_MultipleChoice": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
+    "Paper1B_CompulsoryStructured": "Paper 1B — Compulsory Part structured (必修部分 乙丙部)",
     "Paper2A_Database": "Paper 2A — Database (數據庫)",
     "Paper2B_DataCommunicationsNetworking": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
     "Paper2C_MultimediaWebsiteConstruction": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
@@ -38,6 +39,7 @@ SLUG_LEGACY_ALIASES: dict[str, str] = {
 QUESTION_PAPERS = frozenset(
     {
         "Paper1_MultipleChoice",
+        "Paper1B_CompulsoryStructured",
         "Paper2A_Database",
         "Paper2B_DataCommunicationsNetworking",
         "Paper2C_MultimediaWebsiteConstruction",
@@ -67,6 +69,18 @@ def paper_slug_from_name(name: str) -> str | None:
 
 def descriptive_pdf_name(*, label: str, slug: str) -> str:
     return f"DSE_ICT_{label}_{slug}.pdf"
+
+
+def past_paper_folder(year_label: str) -> str:
+    if year_label == "Practice":
+        return "Practice-Paper"
+    if year_label == "Sample":
+        return "Sample-Paper"
+    return year_label
+
+
+def past_paper_pdf_path(past_root: Path, year_label: str, slug: str) -> Path:
+    return past_root / past_paper_folder(year_label) / descriptive_pdf_name(label=year_label, slug=slug)
 
 
 def fix_paper2_slug_renames(root: Path) -> list[tuple[Path, Path]]:

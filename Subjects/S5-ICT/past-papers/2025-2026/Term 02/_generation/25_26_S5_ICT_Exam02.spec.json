@@ -55,13 +55,13 @@
         "max": 10
       }
     },
-    "mcq_answers": "DACADDBBACBBAABDDCCBDCBCBAADCD"
+    "mcq_answers": "DDBCADDBACACACBDCBCBDCAABACDBD"
   },
   "items": [
     {
       "id": "mcq-01",
       "section": "mcq",
-      "text": "下列哪一項是二進制 1100 0101 的十六進制表示？\n\n\tA.\t0x5C\n\tB.\t0xCA\n\tC.\t0xA5\n\tD.\t0xC5",
+      "text": "下列哪一項是二進制 1100 0101 的十六進制表示？\n\n\tA.\t0xA5\n\tB.\t0x5C\n\tC.\t0xCA\n\tD.\t0xC5",
       "marks": 1,
       "concepts": [
         "進制",
@@ -72,46 +72,46 @@
     {
       "id": "mcq-02",
       "section": "mcq",
-      "text": "以 8 位元二進制補碼表示十進位 -3，下列哪項正確？\n\n\tA.\t1111 1101\n\tB.\t1111 1111\n\tC.\t1000 0011\n\tD.\t0000 0011",
+      "text": "以 8 位元二進制補碼表示十進位 -3，下列哪項正確？\n\n\tA.\t0000 0011\n\tB.\t1000 0011\n\tC.\t1111 1111\n\tD.\t1111 1101",
       "marks": 1,
       "concepts": [
         "進制",
         "二進制補碼"
       ],
-      "answer": "A"
+      "answer": "D"
     },
     {
       "id": "mcq-03",
       "section": "mcq",
-      "text": "下列哪句關於 ASCII 與 Unicode（UTF-8）儲存中文，何者正確？\n\n\tA.\tUTF-8 只能儲存英文字母\n\tB.\tASCII 可完整表示所有繁體中文字\n\tC.\tUTF-8 的中文字通常比 ASCII 編碼佔更多字節\n\tD.\t兩者均以 1 字節儲存每個中文字",
+      "text": "下列哪句關於 ASCII 與 Unicode（UTF-8）儲存中文，何者正確？\n\n\tA.\t兩者均以 1 字節儲存每個中文字\n\tB.\tUTF-8 的中文字通常比 ASCII 編碼佔更多字節\n\tC.\tUTF-8 只能儲存英文字母\n\tD.\tASCII 可完整表示所有繁體中文字",
       "marks": 1,
       "concepts": [
         "字元編碼",
         "UTF-8"
       ],
-      "answer": "C"
+      "answer": "B"
     },
     {
       "id": "mcq-04",
       "section": "mcq",
-      "text": "一段未壓縮音訊：取樣頻率 44.1 kHz、取樣精度 16 bit、立體聲（2 聲道），長度 1 秒。下列何者最接近其檔案大小？\n\n\tA.\t約 176 KB\n\tB.\t約 705 KB\n\tC.\t約 352 KB\n\tD.\t約 88 KB",
+      "text": "一段未壓縮音訊：取樣頻率 44.1 kHz、取樣精度 16 bit、立體聲（2 聲道），長度 1 秒。下列何者最接近其檔案大小？\n\n\tA.\t約 352 KB\n\tB.\t約 88 KB\n\tC.\t約 176 KB\n\tD.\t約 705 KB",
       "marks": 1,
       "concepts": [
         "多媒體",
         "音訊檔案大小"
       ],
-      "answer": "A"
+      "answer": "C"
     },
     {
       "id": "mcq-05",
       "section": "mcq",
-      "text": "在試算表中，VLOOKUP／XLOOKUP 的主要用途是？\n\n\tA.\t計算滿足多條件的個數\n\tB.\t將文字轉為日期格式\n\tC.\t合併儲存格\n\tD.\t依關鍵值查找並傳回對應欄位",
+      "text": "在試算表中，VLOOKUP／XLOOKUP 的主要用途是？\n\n\tA.\t依關鍵值查找並傳回對應欄位\n\tB.\t將文字轉為日期格式\n\tC.\t計算滿足多條件的個數\n\tD.\t合併儲存格",
       "marks": 1,
       "concepts": [
         "試算表",
         "VLOOKUP"
       ],
-      "answer": "D"
+      "answer": "A"
     },
     {
       "id": "mcq-06",
@@ -127,13 +127,13 @@
     {
       "id": "mcq-07",
       "section": "mcq",
-      "text": "下列哪句關於快取記憶體（Cache）是正確的？\n\n（提示：快取位於 CPU 與主記憶體之間，用較小但較快的記憶體暫存常用資料以提升效能。）\n\n\tA.\t只用作顯示輸出裝置\n\tB.\t在 CPU 與主記憶體之間提供較小但較快的暫存層以提升效能\n\tC.\t用作永久儲存作業系統與使用者文件\n\tD.\t負責把類比訊號轉為數位訊號",
+      "text": "下列哪句關於快取記憶體（Cache）是正確的？\n\n（提示：快取位於 CPU 與主記憶體之間，用較小但較快的記憶體暫存常用資料以提升效能。）\n\n\tA.\t用作永久儲存作業系統與使用者文件\n\tB.\t只用作顯示輸出裝置\n\tC.\t負責把類比訊號轉為數位訊號\n\tD.\t在 CPU 與主記憶體之間提供較小但較快的暫存層以提升效能",
       "marks": 1,
       "concepts": [
         "硬件",
         "快取記憶體"
       ],
-      "answer": "B"
+      "answer": "D"
     },
     {
       "id": "mcq-08",
@@ -149,7 +149,7 @@
     {
       "id": "mcq-09",
       "section": "mcq",
-      "text": "下列哪項最屬於實用程式（Utility）的典型用途？\n\n\tA.\t磁碟重組或檔案壓縮等系統維護工作\n\tB.\t試算表繪製圖表\n\tC.\t編輯數碼影片特效\n\tD.\t管理使用者帳戶與檔案權限",
+      "text": "下列哪項最屬於實用程式（Utility）的典型用途？\n\n\tA.\t磁碟重組或檔案壓縮等系統維護工作\n\tB.\t編輯數碼影片特效\n\tC.\t試算表繪製圖表\n\tD.\t管理使用者帳戶與檔案權限",
       "marks": 1,
       "concepts": [
         "軟件",
@@ -160,7 +160,7 @@
     {
       "id": "mcq-10",
       "section": "mcq",
-      "text": "一幅 800×600 像素的點陣圖，每像素以 24 bit 真彩色儲存（未壓縮）。下列何者最接近檔案大小？\n\n\tA.\t約 4.8 MB\n\tB.\t約 140 KB\n\tC.\t約 1.4 MB\n\tD.\t約 14 MB",
+      "text": "一幅 800×600 像素的點陣圖，每像素以 24 bit 真彩色儲存（未壓縮）。下列何者最接近檔案大小？\n\n\tA.\t約 4.8 MB\n\tB.\t約 14 MB\n\tC.\t約 1.4 MB\n\tD.\t約 140 KB",
       "marks": 1,
       "concepts": [
         "多媒體",
@@ -171,24 +171,24 @@
     {
       "id": "mcq-11",
       "section": "mcq",
-      "text": "下列哪句關於有損與無損壓縮，何者正確？\n\n\tA.\t兩者均不能減少檔案大小\n\tB.\t有損壓縮可能犧牲部分畫質／音質以換取較小檔案\n\tC.\t無損壓縮常用於 JPEG 相片以縮小檔案\n\tD.\t有損壓縮可還原成與原檔完全相同",
+      "text": "下列哪句關於有損與無損壓縮，何者正確？\n\n\tA.\t有損壓縮可能犧牲部分畫質／音質以換取較小檔案\n\tB.\t兩者均不能減少檔案大小\n\tC.\t有損壓縮可還原成與原檔完全相同\n\tD.\t無損壓縮常用於 JPEG 相片以縮小檔案",
       "marks": 1,
       "concepts": [
         "多媒體",
         "壓縮"
       ],
-      "answer": "B"
+      "answer": "A"
     },
     {
       "id": "mcq-12",
       "section": "mcq",
-      "text": "下列哪句關於「欄位（Field）」是正確的？\n\n\tA.\tCPU 內的快取行\n\tB.\t儲存同一類資料的最小單位\n\tC.\t整個資料庫的備份檔\n\tD.\t由多個欄位組成的一筆記錄",
+      "text": "下列哪句關於「欄位（Field）」是正確的？\n\n\tA.\t由多個欄位組成的一筆記錄\n\tB.\t整個資料庫的備份檔\n\tC.\t儲存同一類資料的最小單位\n\tD.\tCPU 內的快取行",
       "marks": 1,
       "concepts": [
         "數據組織",
         "欄位"
       ],
-      "answer": "B"
+      "answer": "C"
     },
     {
       "id": "mcq-13",
@@ -204,13 +204,13 @@
     {
       "id": "mcq-14",
       "section": "mcq",
-      "text": "下列哪句關於「資訊」與「數據」是正確的？\n\n\tA.\t經整理後對決策有幫助的內容\n\tB.\t未經處理的原始符號或數值\n\tC.\t壓縮演算法中的位元組\n\tD.\t硬碟上的二進制位元",
+      "text": "下列哪句關於「資訊」與「數據」是正確的？\n\n\tA.\t壓縮演算法中的位元組\n\tB.\t硬碟上的二進制位元\n\tC.\t經整理後對決策有幫助的內容\n\tD.\t未經處理的原始符號或數值",
       "marks": 1,
       "concepts": [
         "資訊處理",
         "數據與資訊"
       ],
-      "answer": "A"
+      "answer": "C"
     },
     {
       "id": "mcq-15",
@@ -237,29 +237,29 @@
     {
       "id": "mcq-17",
       "section": "mcq",
-      "text": "下列哪句關於「一筆記錄」是正確的？\n\n\tA.\t由多個欄位值組成的一組相關資料\n\tB.\t一個欄位內的單一數值\n\tC.\tCPU 暫存器內容\n\tD.\t整個資料庫的備份檔",
+      "text": "下列哪句關於「一筆記錄」是正確的？\n\n\tA.\tCPU 暫存器內容\n\tB.\t一個欄位內的單一數值\n\tC.\t整個資料庫的備份檔\n\tD.\t由多個欄位值組成的一組相關資料",
       "marks": 1,
       "concepts": [
         "數據組織",
         "記錄"
       ],
-      "answer": "D"
+      "answer": "C"
     },
     {
       "id": "mcq-18",
       "section": "mcq",
-      "text": "傳輸資料時加入校驗位，使每個字節中 1 的個數維持偶數。下列哪句關於此做法是正確的？\n\n\tA.\t這屬於有效性檢驗\n\tB.\t這屬於檔案備份\n\tC.\t這屬於奇偶檢測\n\tD.\t這屬於資料壓縮",
+      "text": "傳輸資料時加入校驗位，使每個字節中 1 的個數維持偶數。下列哪句關於此做法是正確的？\n\n\tA.\t這屬於有效性檢驗\n\tB.\t這屬於奇偶檢測\n\tC.\t這屬於檔案備份\n\tD.\t這屬於資料壓縮",
       "marks": 1,
       "concepts": [
         "數據控制",
         "奇偶檢測"
       ],
-      "answer": "C"
+      "answer": "B"
     },
     {
       "id": "mcq-19",
       "section": "mcq",
-      "text": "下列哪項處理方式最符合「累積一整批訂單後在深夜統一結算」？\n\n\tA.\t感應器即時回饋\n\tB.\t互動式處理\n\tC.\t批次處理\n\tD.\t即時處理",
+      "text": "下列哪項處理方式最符合「累積一整批訂單後在深夜統一結算」？\n\n\tA.\t感應器即時回饋\n\tB.\t即時處理\n\tC.\t批次處理\n\tD.\t互動式處理",
       "marks": 1,
       "concepts": [
         "資訊處理",
@@ -270,7 +270,7 @@
     {
       "id": "mcq-20",
       "section": "mcq",
-      "text": "比較直接存取與順序存取檔案，下列哪句是正確的？\n\n\tA.\t順序存取必須從頭開始逐一讀取直至目標記錄\n\tB.\t直接存取可在已知索引下較快定位特定記錄\n\tC.\t兩者均不能讀取文字檔\n\tD.\t直接存取只能用於堆疊結構",
+      "text": "比較直接存取與順序存取檔案，下列哪句是正確的？\n\n\tA.\t兩者均不能讀取文字檔\n\tB.\t直接存取可在已知索引下較快定位特定記錄\n\tC.\t順序存取必須從頭開始逐一讀取直至目標記錄\n\tD.\t直接存取只能用於堆疊結構",
       "marks": 1,
       "concepts": [
         "數據組織",
@@ -303,24 +303,24 @@
     {
       "id": "mcq-23",
       "section": "mcq",
-      "text": "細看以下流程：學校以問卷收集學生意見，再人手輸入試算表分析。\n\n下列哪句最恰當描述此資訊處理流程？\n\n\n\tA.\t只屬輸出階段\n\tB.\t問卷輸入屬輸入；試算表分析屬處理\n\tC.\t沒有處理階段\n\tD.\t不需收集數據",
+      "text": "細看以下流程：學校以問卷收集學生意見，再人手輸入試算表分析。\n\n下列哪句最恰當描述此資訊處理流程？\n\n\n\tA.\t問卷輸入屬輸入；試算表分析屬處理\n\tB.\t沒有處理階段\n\tC.\t不需收集數據\n\tD.\t只屬輸出階段",
       "marks": 1,
       "concepts": [
         "資訊處理",
         "輸入處理輸出"
       ],
-      "answer": "B"
+      "answer": "A"
     },
     {
       "id": "mcq-24",
       "section": "mcq",
-      "text": "一段短片：\n\n\t\t解析度 640×480\n\t\t幀率 25 fps\n\t\t每幀未壓縮約 1 MB\n\t\t長度 2 秒\n\n\t下列何者最接近未壓縮檔案大小？\n\n\tA.\t約 100 MB\n\tB.\t約 25 MB\n\tC.\t約 50 MB\n\tD.\t約 200 MB",
+      "text": "一段短片：\n\n\t\t解析度 640×480\n\t\t幀率 25 fps\n\t\t每幀未壓縮約 1 MB\n\t\t長度 2 秒\n\n\t下列何者最接近未壓縮檔案大小？\n\n\tA.\t約 50 MB\n\tB.\t約 200 MB\n\tC.\t約 100 MB\n\tD.\t約 25 MB",
       "marks": 1,
       "concepts": [
         "多媒體",
         "影片檔案大小"
       ],
-      "answer": "C"
+      "answer": "A"
     },
     {
       "id": "mcq-25",
@@ -336,7 +336,7 @@
     {
       "id": "mcq-26",
       "section": "mcq",
-      "text": "下列哪項最屬於「專用軟件」？\n\n\n\tA.\t醫院掛號系統\n\tB.\t網頁瀏覽器\n\tC.\t試算表\n\tD.\t文字處理器",
+      "text": "下列哪項最屬於「專用軟件」？\n\n\n\tA.\t醫院掛號系統\n\tB.\t文字處理器\n\tC.\t試算表\n\tD.\t網頁瀏覽器",
       "marks": 1,
       "concepts": [
         "軟件",
@@ -347,13 +347,13 @@
     {
       "id": "mcq-27",
       "section": "mcq",
-      "text": "一幅點陣圖每像素以 8 bit 儲存顏色。下列哪項正確？\n\n\tA.\t256\n\tB.\t65536\n\tC.\t16\n\tD.\t16777216",
+      "text": "一幅點陣圖每像素以 8 bit 儲存顏色。下列哪項正確？\n\n\tA.\t16\n\tB.\t65536\n\tC.\t256\n\tD.\t16777216",
       "marks": 1,
       "concepts": [
         "多媒體",
         "顏色深度"
       ],
-      "answer": "A"
+      "answer": "C"
     },
     {
       "id": "mcq-28",
@@ -369,13 +369,13 @@
     {
       "id": "mcq-29",
       "section": "mcq",
-      "text": "下列哪項是十進位 10 的二進制表示？\n\n\tA.\t0011\n\tB.\t1100\n\tC.\t1010\n\tD.\t1001",
+      "text": "下列哪項是十進位 10 的二進制表示？\n\n\tA.\t1001\n\tB.\t1010\n\tC.\t0011\n\tD.\t1100",
       "marks": 1,
       "concepts": [
         "進制",
         "二進制"
       ],
-      "answer": "C"
+      "answer": "B"
     },
     {
       "id": "mcq-30",
@@ -391,76 +391,169 @@
     {
       "id": "b-01",
       "section": "section_b",
-      "text": "「星晴網店」以試算表記錄訂單，欄位包括：A=訂單日期、B=產品類別、C=單價、D=數量、E=會員等級（VIP／一般）。F 欄為總價。請回答下列問題。\n\n\n\t(a)\t在 F2 寫出一條公式（可用 IF 與 AND），然後複製到 F3:F200。規則：若 E2 為「VIP」且 D2>10，則總價為 C2*D2 的 8 折；否則為原價 C2*D2。\t(5 分)\n\t\t\t\t\t\n\n\t(b)\t描述如何建立樞紐分析表：以「列」顯示產品類別；以「值」顯示總銷售額（對 F 欄求 SUM）。\t(5 分)",
-      "marks": 10,
+      "text": "「星晴網店」以試算表記錄訂單，欄位包括：A=訂單日期、B=產品類別、C=單價、D=數量、E=會員等級（VIP／一般）。F 欄為總價。資料如下：\n\n\n\t(a)\t在 F2 寫出一條公式，然後複製到 F3:F200。規則：若 E2 為「VIP」且 D2>10，則總價為 C2*D2 的 8 折；否則為原價 C2*D2。\t(1 分)\n\t\t\t\t\t\n\n\t(b)\t在 H2 寫出一條公式（可用 COUNTIFS），然後複製到 H3:H6，分別統計 VIP 訂單數、一般訂單數、總訂單數及總銷售額。寫出 H2 的公式。\t(3 分)",
+      "marks": 4,
       "title": "試算表",
       "concepts": [
         "試算表",
         "IF",
-        "樞紐分析表"
+        "COUNTIFS"
       ]
     },
     {
       "id": "b-02",
       "section": "section_b",
-      "text": "2.\t數據控制與私隱\t(10 分)\n\n\n\t(a)\t列出「有效性檢驗」與「奇偶檢測」的分別，並各舉一個輸入數據的例子。\t(3 分)\n\t\t\t\t\t\n\t(b)\t比較「直接存取」與「順序存取」讀取檔案記錄的優缺點。\t(4 分)\n\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t(c)\t學校收集學生健康申報資料時，提出兩項保障數據私隱的做法。\t(3 分)",
-      "marks": 10,
-      "title": "數據控制與私隱",
+      "text": "完成下表，為網上商店登記欄位選擇適當的數據有效性檢驗。\t(3 分)\n\n\n\t(b)\t試算表可設定數據有效性以減少輸入錯誤。\n\n\t\t(i)\t說明「數據有效性檢驗」與「奇偶檢測」的分別。\t(1 分)\n\t\t\t\t\t\n\n\t\t(ii)\t為電郵欄建議一種有效性規則並舉例。\t(1 分)",
+      "marks": 5,
+      "title": "數據有效性",
       "concepts": [
         "有效性檢驗",
-        "檔案存取",
-        "數據私隱"
+        "奇偶檢測"
       ]
     },
     {
       "id": "b-03",
       "section": "section_b",
-      "text": "3.\t算法追蹤\t(10 分)\n\n考慮以下偽代碼（陣列 A 索引由 1 開始，長度 n≥2）：\n\n\t\tlargest ← A[1]\n\t\tsecond_largest ← A[1]\n\t\tFOR i ← 2 TO n\n\t\t    IF A[i] > largest THEN\n\t\t\t        second_largest ← largest\n\t\t\t        largest ← A[i]\n\t\t    ELSE IF A[i] > second_largest AND A[i] < largest THEN\n\t\t\t        second_largest ← A[i]\n\t\t    ENDIF\n\t\tENDFOR\n\n\n\n\n\t(a)\t設 A = [10, 5, 20, 8, 20, 15]（n=6）。完成追蹤表，展示每次迭代後 largest 與 second_largest 的值。\t(5 分)\n\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\t(b)\t若陣列中最大值出現多次（如上例的 20），此算法是否仍能正確找出「次大值」？解釋你的答案。\t(5 分)",
-      "marks": 10,
+      "text": "志文把一段 250 MB 的評審短片上載至校內伺服器，並以電郵通知評審下載。\n\n\t(a)\t上載頻寬為 200 Mbps。估算上載 40 段相同短片所需的最短時間。展示你的計算。\t(2 分)\n\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\n\t(b)\t志文以電郵方式將以下訊息發送給評審：\n\n\t\t(i)\t評審輸入 URL 亦能下載同一檔案。為什麼？\t(1 分)\nhttp://203.186.200.12/ict2026/demo.zip\n\t\t\t\t\t\n\n\t\t(ii)\t使用附有超連結的電郵，而非直接附加檔案，有什麼優點？\t(1 分)",
+      "marks": 4,
+      "title": "多媒體與檔案傳送",
+      "concepts": [
+        "多媒體",
+        "檔案大小",
+        "網絡傳輸"
+      ]
+    },
+    {
+      "id": "b-04",
+      "section": "section_b",
+      "text": "考慮陣列 A（索引由 1 開始，n≥6）及以下偽代碼：\n\n\n\t執行下列算法：\n\n\t\tlargest ← A[1]\n\t\tsecond_largest ← A[1]\n\t\tFOR i ← 2 TO n\n\t\t    IF A[i] > largest THEN\n\t\t\t        second_largest ← largest; largest ← A[i]\n\t\t    ENDIF\n\n\t(a)\t設 A = [10, 5, 20, 8, 20, 15]。完成追蹤表，展示每次迭代後 largest 與 second_largest。\t(2 分)\n\t\t\t\t\t\n\n\n\t(b)\t若最大值出現多次，此算法能否正確找出次大值？解釋。\t(2 分)\n\t\t\t\t\t\n\n\t請在答案中說明重複最大值對 second_largest 的影響。",
+      "marks": 4,
       "title": "算法追蹤",
       "concepts": [
         "算法",
         "偽代碼",
-        "陣列",
-        "次大值"
+        "陣列"
       ]
     },
     {
-      "id": "c-db",
+      "id": "b-05",
+      "section": "section_b",
+      "text": "學校圖書館以電子化系統儲存學生借閱記錄。\n\n\n\n\n\n\n\n\t系統可以「直接存取」或「順序存取」記錄檔。\n\n\t(a)\t比較直接存取與順序存取讀取記錄的優缺點。\t(2 分)\n\t\t\t\t\t\n\n\t(b)\t若記錄按學號排序，查找特定學號時哪種方式較適合？舉一項應用例子。\t(2 分)",
+      "marks": 4,
+      "title": "檔案存取",
+      "concepts": [
+        "檔案存取",
+        "直接存取",
+        "順序存取"
+      ]
+    },
+    {
+      "id": "b-06",
+      "section": "section_b",
+      "text": "阿文與同學建立網上商店，以表格收集顧客資料（姓名、電話、電郵等），並把資料儲存至 CUSTOMER 資料表。\n\n\t(a)\t試指出使用網上表格相對紙本表格的兩項好處。\t(2 分)\n\n\t\t\t\t\t\n\n\t(b)\t為電話及電郵欄各建議一種數據有效性檢驗方法，並舉例。\t(2 分)\n\t(i)\t電話號碼\n\t\t\t\t\t\n\n\t\t(ii)\t電郵地址\n\n\n\t以下是 CUSTOMER 資料表部分記錄：\n\n\n\t(c)\tPHONE 欄應使用哪種資料類型？為什麼？\t(2 分)\n\n\t\t\t\t\t\n\n\t(d)\t執行以下 SQL 後的輸出是什麼？\t(1 分)\n\t\t\t\t\t\n\t\t\tSELECT CNAME FROM CUSTOMER WHERE LAST_ORDER < '2026-04-01';\n\n\n\t(e)\t寫出一條 SQL，列出所有於 6 月下單的客戶名稱。\t(2 分)",
+      "marks": 9,
+      "title": "網上商店與 SQL",
+      "concepts": [
+        "數據庫",
+        "SQL",
+        "有效性檢驗",
+        "資料類型"
+      ]
+    },
+    {
+      "id": "c-01",
       "section": "section_c",
-      "text": "丙部 (40 分)：選修單元問答題（數據庫）\n\n某「社區中心活動報名系統」描述如下：一位會員可報名多個工作坊；一個工作坊亦可被多位會員報名。每次報名產生一筆報名記錄，包含報名日期與付款狀態。\n\n\t繪製實體關係圖（ERD）：須包含「會員 Member」「工作坊 Workshop」「報名 Registration」三個實體，標示多對多並以關聯實體拆解；並在圖中寫出主鍵（PK）與外鍵（FK）欄位名稱。\t(8 分)\n\n\t\t\n\n\n\n\n\n\n\n\n\n\n設 Member、Workshop、Registration 資料表如下：\n\n\t(b)\t根據以下資料表：\n\n\t\t\tMember(MemberID, MemberName, JoinDate)\n\t\t\tWorkshop(WorkshopID, Title, Instructor, Fee)\n\t\t\tRegistration(RegID, MemberID, WorkshopID, RegDate, PayStatus)\n\n\n\n\t\t(i)\t寫出一條 SQL，列出所有報名了 Instructor = 'Peter' 的工作坊之會員姓名（MemberName）。\t(4 分)\n\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t(ii)\t寫出一條 SQL，找出報名人數超過 30 的工作坊名稱（Title）及其報名人數。（需使用 COUNT、GROUP BY、HAVING）\t(6 分)\n\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t(iii)\t寫出一條 SQL，找出從未報名任何工作坊的會員姓名。（可用 NOT IN 或 NOT EXISTS）\t(6 分)",
-      "marks": 20,
-      "title": "選修A 數據庫",
+      "text": "某社區中心活動報名系統：一位會員可報名多個工作坊；一個工作坊可被多位會員報名。每次報名產生一筆記錄（報名日期、付款狀態）。\n\n\t繪製實體關係圖（ERD），標示 Member、Workshop、Registration 及主鍵／外鍵。\t(4 分)",
+      "marks": 4,
+      "title": "ERD",
       "concepts": [
         "ERD",
-        "SQL",
         "數據庫"
       ]
     },
     {
-      "id": "c-norm",
+      "id": "c-02",
       "section": "section_c",
-      "text": "2.\t正規化與資料完整性\t(10 分)\n\n某社團登記表把「學號、姓名、社團名稱、社團會址、會費」全部放在同一工作表的一列中，且同一社團會址重複出現於多行。\n\n\t(a)\t指出此設計違反哪一條正規化規則，並說明會造成什麼更新異常（update anomaly）。\t(5 分)\n\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\t(b)\t建議如何拆分為至少兩個實體／資料表，並寫出各表的主要屬性。\t(5 分)",
-      "marks": 10,
-      "title": "正規化與資料完整性",
+      "text": "某活動中心使用 BOOKSALE 資料表記錄商品銷售。\n\n\t(a)\t補充以下 SQL，使 SALEID 不可重複。\t(1 分)\n\n\t\t\tCREATE TABLE BOOKSALE (\n\t\t\t\t    SALEID CHAR(8)\t\t\t\t,\n\t\t\t\t    TITLE VARCHAR(50),\n\t\t\t\t    PRICE INTEGER\n\t\t\t)\n\n\t(b)\t以下記錄將插入 BOOKSALE。\t(1 分)\n\n\n\t\t\tINSERT INTO BOOKSALE VALUES (                                )\n\n\t寫出此 SQL 語句中未填寫的部分。",
+      "marks": 2,
+      "title": "CREATE / INSERT",
       "concepts": [
         "數據庫",
-        "正規化",
-        "1NF",
-        "更新異常"
+        "SQL"
       ]
     },
     {
-      "id": "c-sql-adv",
+      "id": "c-03",
       "section": "section_c",
-      "text": "3.\t進階 SQL 與資料操作\t(10 分)\n\n\n\t沿用上述 Member、Workshop、Registration 資料表。\n\n\t(a)\t寫出一條 SQL，列出曾報名兩個或以上不同工作坊的會員姓名（需 DISTINCT／COUNT／GROUP BY／HAVING）。\t(5 分)\n\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\t(b)\t寫出一條 SQL，把 WorkshopID = 'WS101' 且 PayStatus = '已付款' 的報名記錄 PayStatus 更新為「已確認」。（UPDATE … WHERE）\t(5 分)",
-      "marks": 10,
-      "title": "進階 SQL",
+      "text": "Sales2023 與 Sales2024 結構相同，部分記錄如下：\n\n\t\tSales2023\t\tSales2024\n\n\t(a)\t執行以下 SQL 後會列出多少筆記錄？\t(1 分)\n\n\t\t\tSELECT *\n\t\t\tFROM Sales2023\n\t\t\tUNION\n\t\t\tSELECT PID, SID, AMT\n\t\t\tFROM Sales2024;\n\n\t\t\t\t\t\t\t\n\t(b)\t列出執行以下 SQL 後 Sales2023 內被更新的記錄。\t(2 分)\n\n\t\t\tUPDATE Sales2023\n\t\t\tSET AMT = 0\n\t\t\tWHERE AMT > 0 AND\n\t\t\t\t    (EXISTS\n\t\t\t\t\t        (SELECT * FROM Sales2024\n\t\t\t\t\t         WHERE Sales2023.PID = Sales2024.PID\n\t\t\t\t\t\t\t           AND Sales2024.AMT = 0);",
+      "marks": 3,
+      "title": "UNION / UPDATE",
       "concepts": [
         "數據庫",
         "SQL",
-        "GROUP BY",
-        "UPDATE"
+        "UNION"
+      ]
+    },
+    {
+      "id": "c-04",
+      "section": "section_c",
+      "text": "某校以單一表格儲存學生比賽成績（學號、姓名、比賽、分數）。以下為示例：\n\n\n\t學校欲建立第三範式（3NF）模式，草擬如下：\n\n\t\tSTUDENT(SID, SNAME)\n\t\tEVENT(EID, ENAME)\n\t\tTASK(\t\t\t\t\t\t\t\t\t\t\t\t  )\n\t\tSCOREBOARD(\t\t\t\t\t\t\t\t\t\t   )\n\n\t寫出未填寫部分，並在主鍵下加底線。\t(3 分)",
+      "marks": 3,
+      "title": "第三範式",
+      "concepts": [
+        "數據庫",
+        "正規化",
+        "3NF"
+      ]
+    },
+    {
+      "id": "c-05",
+      "section": "section_c",
+      "text": "某健身中心資料庫包含 ROOM 及 BOOKING 資料表：\n\nROOM\n\nBOOKING\n\n\t(a)\t寫出 MID 欄的合適數據類型並簡略說明。\t(1 分)\n\n\t\t\t\t\t\t\t\n\n\t(b)\t為以下任務寫出 SQL：\n\n\t\t(i)\t列出預約編號以「B12」開頭的記錄，按日期升序。\t(2 分)\n\n\t\t\t\t\t\t\t\n\n\n\t\t(ii)\t列出 2026-06-18 預約的所有活動室名稱。\t(2 分)\n\n\t\t\t\t\t\t\t\n\n\n\t\t(iii)\t列出曾預約容量少於 30 的活動室之會員編號（不重複）。\t(3 分)\n\n\t\t\t\t\t\t\t\n\n\n\n\n\n\t(c)\t簡述以下 SQL 的用途。\t(2 分)\n\n\t\t\tSELECT RID FROM ROOM\n\t\t\tMINUS\n\t\t\tSELECT RID FROM BOOKING;\n\n\t\t\t\t\t\t\t\n\n\n\n\t(d)\t簡述非規範化 ROOM 與 BOOKING 的一個方法。\t(1 分)",
+      "marks": 11,
+      "title": "ROOM / BOOKING",
+      "concepts": [
+        "數據庫",
+        "SQL",
+        "MINUS"
+      ]
+    },
+    {
+      "id": "c-06",
+      "section": "section_c",
+      "text": "考慮 Member 與 Registration 資料表，以下 SQL 逐步執行：\n\n\n\t設初始結果為空。\n\n\n\t(a)\t第一次 JOIN 後結果包含哪些 MemberID？\t(1 分)\n\n\n\t\t(ii)\t加入 GROUP BY 後結果如何變化？\t(1 分)\n\n\n\t\t(iii)\t加入 HAVING COUNT(*) > 1 後最終結果是什麼？\t(1 分)\n\n\n\t(b)\t此查詢找出哪類會員？\t(1 分)\n\n\n\t(c)\t若改為 LEFT JOIN，結果有何不同？簡述。\t(1 分)",
+      "marks": 5,
+      "title": "SQL 查詢追蹤",
+      "concepts": [
+        "數據庫",
+        "SQL",
+        "JOIN",
+        "GROUP BY"
+      ]
+    },
+    {
+      "id": "c-07",
+      "section": "section_c",
+      "text": "銀行轉帳系統使用交易（Transaction）確保資料一致。常用子句如下：\n\n\n\t(a)\t寫出 BEGIN…COMMIT 與 ROLLBACK 的用途各一項。\t(1 分)\n\n\t\t\tUPDATE Account SET Balance = Balance - 100 WHERE ID = 'A1';\n\n\n\t(b)\t若第二步 UPDATE 失敗，應執行哪個子句？為什麼？\t(1 分)\n\n\n\t試描述如何確保兩個 UPDATE 同時成功或同時失敗。\n\n\t\t\tBEGIN TRANSACTION\n\t\t\tUPDATE Account SET Balance = Balance - 100 WHERE ID = 'A1';\n\t\t\tUPDATE Account SET Balance = Balance + 100 WHERE ID = 'B2';\n\t\t\tIF @@ERROR <> 0\n\t\t\t    ROLLBACK\n\t\t\tELSE\n\t\t\t    COMMIT\n\n\n\t(c)\t寫出 TRANSFER(A, B, AMOUNT) 的偽代碼，使用 BEGIN/COMMIT/ROLLBACK。\t(3 分)\n\n\t\t\tTRANSFER(A, B, AMOUNT)\n\n\t(d)\t說明若無交易控制，轉帳中斷可能造成什麼資料不一致。\t(4 分)",
+      "marks": 9,
+      "title": "交易控制",
+      "concepts": [
+        "數據庫",
+        "Transaction",
+        "COMMIT",
+        "ROLLBACK"
+      ]
+    },
+    {
+      "id": "c-08",
+      "section": "section_c",
+      "text": "某校以 ATTENDANCE 資料表記錄點名（StudentID, DayNo, Status）。當中：\n\nStatus = 'P' 表示出席，'A' 表示缺席。\n系統要找出連續兩天缺席的學生。\n\n\t以下為 3 位學生、4 天的示例：\n\n\t\tATTENDANCE\n\n\t老師設計 warn(s) 檢查學生 s 是否連續兩天缺席：\n\n\t\twarn(s)\n\t\t10  t ← 1\n\t\t20  WHILE t < 4 DO\n\t\t30      IF Status[t-1,s] = 'A' AND Status[t,s] = 'A' THEN\n\t\t40          顯示 \"學生 s 連續缺席：第 (t-1) 天及第 t 天\"\n\t\t50      t ← t + 1\n\n\t(a)\t根據上表，列出 warn(1) 的輸出。\t(2 分)\n\n\t(b)\t若改為 5 天點名，應修改哪一行？寫出改動。\t(2 分)\n\n\t\t\t\t\t\t\t\n\n\n\t(c)\t若要檢查「連續缺席三天」，應如何修改判斷條件？簡述。\t(2 分)",
+      "marks": 6,
+      "title": "點名資料庫",
+      "concepts": [
+        "數據庫",
+        "SQL",
+        "算法"
       ]
     }
   ]

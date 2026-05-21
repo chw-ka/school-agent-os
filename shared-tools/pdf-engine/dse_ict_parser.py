@@ -27,7 +27,10 @@ def _is_option_line_ocr(t: str) -> bool:
     if is_option_line(t):
         return True
     s = t.lstrip()
-    return bool(re.match(r"^[ABCD][\.\)、\s]", s))
+    if re.match(r"^[ABCD][\.\)、\s]", s):
+        return True
+    # OCR often splits "A." onto its own line or drops the dot
+    return bool(re.match(r"^[ABCD]\.?$", s))
 
 
 def parse_mcq_questions(lines: list[str], *, paper_id: str) -> list[dict[str, Any]]:

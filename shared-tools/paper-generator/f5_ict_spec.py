@@ -65,26 +65,50 @@ def _part_b_items(build_part_b) -> list[dict]:
         make_item(
             "b-01",
             "section_b",
-            slice_text(313, 321),
-            marks=10,
+            slice_text(313, 322),
+            marks=4,
             title="試算表",
-            concepts=["試算表", "IF", "樞紐分析表"],
+            concepts=["試算表", "IF", "COUNTIFS"],
         ),
         make_item(
             "b-02",
             "section_b",
-            slice_text(323, 334),
-            marks=10,
-            title="數據控制與私隱",
-            concepts=["有效性檢驗", "檔案存取", "數據私隱"],
+            slice_text(323, 335),
+            marks=5,
+            title="數據有效性",
+            concepts=["有效性檢驗", "奇偶檢測"],
         ),
         make_item(
             "b-03",
             "section_b",
-            slice_text(336, 360),
-            marks=10,
+            slice_text(336, 353),
+            marks=4,
+            title="多媒體與檔案傳送",
+            concepts=["多媒體", "檔案大小", "網絡傳輸"],
+        ),
+        make_item(
+            "b-04",
+            "section_b",
+            slice_text(354, 376),
+            marks=4,
             title="算法追蹤",
-            concepts=["算法", "偽代碼", "陣列", "次大值"],
+            concepts=["算法", "偽代碼", "陣列"],
+        ),
+        make_item(
+            "b-05",
+            "section_b",
+            slice_text(377, 393),
+            marks=4,
+            title="檔案存取",
+            concepts=["檔案存取", "直接存取", "順序存取"],
+        ),
+        make_item(
+            "b-06",
+            "section_b",
+            slice_text(394, 422),
+            marks=9,
+            title="網上商店與 SQL",
+            concepts=["數據庫", "SQL", "有效性檢驗", "資料類型"],
         ),
     ]
 
@@ -98,28 +122,68 @@ def _part_c_items(build_part_c) -> list[dict]:
 
     return [
         make_item(
-            "c-db",
+            "c-01",
             "section_c",
-            slice_text(423, 456),
-            marks=20,
-            title="選修A 數據庫",
-            concepts=["ERD", "SQL", "數據庫"],
+            slice_text(425, 439),
+            marks=4,
+            title="ERD",
+            concepts=["ERD", "數據庫"],
         ),
         make_item(
-            "c-norm",
+            "c-02",
             "section_c",
-            slice_text(458, 468),
-            marks=10,
-            title="正規化與資料完整性",
-            concepts=["數據庫", "正規化", "1NF", "更新異常"],
+            slice_text(440, 456),
+            marks=2,
+            title="CREATE / INSERT",
+            concepts=["數據庫", "SQL"],
         ),
         make_item(
-            "c-sql-adv",
+            "c-03",
             "section_c",
-            slice_text(482, 493),
-            marks=10,
-            title="進階 SQL",
-            concepts=["數據庫", "SQL", "GROUP BY", "UPDATE"],
+            slice_text(457, 481),
+            marks=3,
+            title="UNION / UPDATE",
+            concepts=["數據庫", "SQL", "UNION"],
+        ),
+        make_item(
+            "c-04",
+            "section_c",
+            slice_text(482, 495),
+            marks=3,
+            title="第三範式",
+            concepts=["數據庫", "正規化", "3NF"],
+        ),
+        make_item(
+            "c-05",
+            "section_c",
+            slice_text(496, 540),
+            marks=11,
+            title="ROOM / BOOKING",
+            concepts=["數據庫", "SQL", "MINUS"],
+        ),
+        make_item(
+            "c-06",
+            "section_c",
+            slice_text(541, 565),
+            marks=5,
+            title="SQL 查詢追蹤",
+            concepts=["數據庫", "SQL", "JOIN", "GROUP BY"],
+        ),
+        make_item(
+            "c-07",
+            "section_c",
+            slice_text(566, 594),
+            marks=9,
+            title="交易控制",
+            concepts=["數據庫", "Transaction", "COMMIT", "ROLLBACK"],
+        ),
+        make_item(
+            "c-08",
+            "section_c",
+            slice_text(595, 624),
+            marks=6,
+            title="點名資料庫",
+            concepts=["數據庫", "SQL", "算法"],
         ),
     ]
 
@@ -129,7 +193,12 @@ def build_f5_ict_exam_spec(
     mcq_rows: list[list[str]] | None = None,
     mcq_answers: str | None = None,
 ) -> dict:
-    from f5_ict_blueprint_db_web import build_mcq_payload, build_part_b, build_part_c
+    _fmt = Path(__file__).resolve().parents[1] / "paper-formatter"
+    if str(_fmt) not in sys.path:
+        sys.path.insert(0, str(_fmt))
+    from f5_ict_written_content import build_part_b, build_part_c
+
+    from f5_ict_blueprint_db_web import build_mcq_payload
 
     rows = mcq_rows if mcq_rows is not None else build_mcq_payload()
     items: list[dict] = []

@@ -8,7 +8,7 @@
       "Subjects/DSE-ICT/past-papers/2022",
       "Subjects/DSE-ICT/past-papers/2023"
     ],
-    "extraction": "Tesseract OCR (chi_tra+eng) on scanned PDFs; stems/phrasing manually curated",
+    "extraction": "PaddleOCR (chinese_cht) with scan preprocessing; stems/phrasing manually curated",
     "pages_ocrd": 119,
     "note": "DSE papers include Core C (網絡) and Core E (社會影響) items absent from your S5 scope — filter by unit when applying."
   },

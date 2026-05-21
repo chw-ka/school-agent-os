@@ -25,14 +25,21 @@ def marks(m: int, *, spaced: bool = True) -> str:
     return f"({m} 分)" if spaced else f"({m}分)"
 
 
-def subpart(label: str, text: str, points: int | None = None, *, depth: int = 1) -> str:
+def subpart(
+    label: str,
+    text: str,
+    points: int | None = None,
+    *,
+    depth: int = 1,
+    spaced_marks: bool = True,
+) -> str:
     """
     Format a sub-question line: ``\\t(a)\\t...\\t(N 分)``.
 
     ``depth`` controls leading tabs (1 → ``\\t(a)``, 2 → ``\\t\\t(i)``).
     """
     lead = "\t" * depth
-    suffix = f"\t{marks(points)}" if points is not None else ""
+    suffix = f"\t{marks(points, spaced=spaced_marks)}" if points is not None else ""
     return f"{lead}({label})\t{text}{suffix}"
 
 
@@ -41,10 +48,10 @@ def topic_header(number: str, title: str, points: int) -> str:
     return f"{number}\t{title}\t{marks(points)}"
 
 
-def stem(text: str, points: int | None = None, *, spaced_marks: bool = False) -> str:
-    """Single-line stem with one leading tab (ERD / instruction lines)."""
+def stem(text: str, points: int | None = None, *, spaced_marks: bool = False, depth: int = 1) -> str:
+    """Single-line stem with leading tab(s) (ERD / instruction lines)."""
     suffix = f"\t{marks(points, spaced=spaced_marks)}" if points is not None else ""
-    return f"\t{text}{suffix}"
+    return f"{'\t' * depth}{text}{suffix}"
 
 
 def code_line(text: str, *, depth: int = 2) -> str:

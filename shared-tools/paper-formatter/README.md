@@ -13,6 +13,8 @@ Word 試卷排版、由 JSON/spec 填入範本、封面／頁尾套用。
 - `generate_f5_ict_blueprint_exam.py` — 轉發至 `../paper-generator/f5_ict_blueprint_db_web.py`
 - `docx_inplace.py` — 封面、段落、頁尾文字
 - `written_layout.py` — 乙部／丙部短答、長答排版 helper（subpart、answer blank、replace_span）
+- `f5_ict_written_content.py` — 25-26 S5 ICT 六題乙部／八題丙部段落內容
+- `f5_ict_tables.py` — 範本表格填入與清除未使用表格
 
 ## 舊名稱
 

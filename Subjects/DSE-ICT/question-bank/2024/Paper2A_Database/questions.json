@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "year_label": "2024",
+    "paper_slug": "Paper2A_Database",
+    "paper_label": "Paper 2A — Database (數據庫)",
+    "source_pdf": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper2A_Database.pdf",
+    "question_count": 0,
+    "ocr_cache": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/question-bank/2024/Paper2A_Database/ocr.txt"
+  },
+  "items": [],
+  "paper": {
+    "id": "2024-Paper2A_Database",
+    "questions": []
+  }
+}

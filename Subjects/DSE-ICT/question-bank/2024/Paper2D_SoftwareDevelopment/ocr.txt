@@ -1,0 +1,264 @@
+(i家健編寫子程式 PlayPL 來播放在播放清單內的所有歌曲
+piaySong（A長curr]） 是另一個子程式 ，播放儲存在 Alsurr] 的歌曲 白完成以
+pIayEL 的偽代碼
+playP!
+設 主由 1至 執行
+Curr 小 fir津t
+如果 Cu上r
+Curr
+playSong（A丨ａurr]]
+公 分
+lbj 家健以另 一個方法實現隊列 使用了以下全程變量
+寫放邊界以外的答案，將不予詳閱
+描外 寫放塞界
+song 陣列，用來實現隊列：其索引是由●至6
+Next 陣列：用作儲存 SOng內下一首歌曲的索引；如果 SongIi] 是 以
+播放清單內最後一首歌曲·則Next長i] 儲存
+整數藥量 用作儲存第一首歌的索引
+宰不子話
+寫放邊界以外的答案 將不子評開
+2024-DSE-ICT2D-4 T
+
+請在此貼上電腦條碼
+在以下例子中 歌曲依次序列出是奔 跑 士 小 型 星和字母歌
+Song[i] 字母歌 巴士 I 星 星
+Nextli]
+ft
+家健重新編寫 子程式 playPL 完成以下 p!ayPL 的傷代碼
+playPL
+curr
+執行
+playsong（song[curr]]
+curr
+分)
+lij 參考以上例子 將歌曲微 笑加 到播放清單的末端 完成以下 Next
+SongIi] 字母 歌 巴士 跑 微笑
+Nextli]
+It
+(1 分)
+(iij 家健編寫子程式 insert （sg1 把新歌 sg 加人至播放清單的開端 完成以下
+insert（sg] 的偽代碼
+insert丨sg]
+Song Inew p0s] sg
+Next [new pos]
+分
+寫放邊界以外的答案 將不予評閱
+2024-DSE-ICT2D-5
+
+志明記錄了他使用手提電話的每日用量”泣以分鐘為單位 ·他使用陣列工 儲存
+的每日用量 內的數值已排序 使 空L11 T121 小 空長N一1] TINI
+laj 志明設計子程式 bsearch（tar! 利用對分檢索傳回 Tipos] tar 時的 Pos
+bsearchltar] 的偽代碼是
+行號 容
+bsearch丨ta北]
+left
+right
+pos
+當 (pos 二 ANI lleft right] 執行
+id 小 [（left right] 2I 的整數部分
+如果 （TImid] 七碼上]
+mi
+姐果 （T[m主d] tar]
+left 重id 十
+如果 [TImid? 二 七a上] 則
+right mid 一 1
+傳回 pos
+寫放邊界以外的答案
+假設 N 和 的內容是
+T1主] 15 60 75 140 240 300
+執行 bsearch（進40] 在首三次執行第 行後 left 和 right 的數值是什麼
+完成下表
+left right
+第一次
+第二次 閱
+第三次
+(2 分
+(i) 對某些 ta工 的數值 bsearchltar] 傳回 -1·歲伊麼?
+(I分)
+寫放邊界以外的答案 將不子詳閣
+2024-DSE-ICT2D-6 74
+
+請在此貼上 電腦條碼
+(b) 志明透過修改 bsearth [tar] 來設計 newsearchl Itar] 他修改了第5行丶以及
+新增了第 行的語句 newsearch [tar] 的偽代碼是
+行號 內容
+newsearchltar]
+一nm寸調
+left 一
+right
+pos
+當 （left right] 執行
+mnid 一 [lleft 十 right] 中 21 的整數部分
+如果 (r [mid] tar] 則
+小 mig
+right mid
+如果 (Imid] a北 貝
+left mid
+如果 ITlmia]
+放塞界以外
+right mid
+傳回 D05
+假設 的內容是
+的答案
+N 7 和
+空[主] 15 45 150 150 150 240 300
+將不子話 執行 newsearch （150] 在首三次執行第 行後 left r主ght 和 pos 的數值
+是什麼 完成 下表
+left r主ght pos
+次
+第二次
+第三次
+(3 分
+寫放邊界以外的答案 將不 子部閱
+2024-DSE-ICT2D-7
+
+lij newsearch（149] 在第 14 行會傳回 在此傳回前 1eft 租 right 的數值
+是什麼
+Left! right
+2 分)
+(志明修改了 newsearchltar] 的第 14 行， 宮會傳麵 T丨k] 七a工 時最小
+的 k 白 完成以 下第 14
+I) 第14行 傳回
+分)
+2 countlp] 是一個子程式 傳回使用手提電話每日用量達 分鐘或以上
+的日數夕 利用 newsearcl 完成以 countip] 的偽代碼
+Count ip!
+傳回
+放邊界以外的答案生將不子謙闊
+放 放
+2 分 邊
+lcj lij 志明選擇使用編譯程式而不是解譯程式去編寫程式 舉出兩個支持他選擇的 外
+理由
+的答案力將不予誣闊
+[2 分)
+(銷) 執行他的程式時會使用連接程式和載人程式口 描逮連接程式和載人程式的功
+能
+連接程式
+載人程式
+已分)
+寫放邊界以外的答案 將不予評閱
+2024-DSE-ICT2D-8
+
+麗珊管理 一個包合多 個排序子程式的項自
+laj 麗珊編寫了排序程式 MySort 麵 二是一個附有 n.個元素的陣列 MySort 的偽
+代碼是
+行號 內容
+Mysort
+設 一 至 執行
+設 由1 至 執行
+如果 CLj1 二 C!j+1]
+duei C[i+1]
+c[i+1]6 c[j]
+cTj] 中 temp
+輸出 外循環
+以下列 的初始內容執行 MySort
+CIk] 36 55
+寫
+填寫首兩次執行第 行後 C[11 和 C[2] 的內容
+C！1] CI21
+第
+(3
+i MySort 是什 麼類型的排序算法
+寫放邊界以外的答案 將不予評閱
+2024-DSE-ICT2D9
+
+麗珊編寫另一個排序子程式 MS 將Ａ和B 這兩個臨排序的陣列合餅， 煎將它儲
+存在Ａ內口 和且 分別是 和 內的元素數目 和寸是整數變量
+以下是一個例子 執行循環前各變量的內容是
+AEk]
+B[k]
+在首兩輪循環後各變量的內容是
+第一輪
+AI k]
+BIk]
+寫放邊界以外的答案，將不予評闊
+寫放邊界以外的答案丶收
+第二輪·
+AEk] 3
+BIkI
+完成以下 的偽代碼
+將不予話
+MS
+行號 力容
+MS
+閱
+執行
+如果 AFI [A丨i1 Bij]]
+A長i+j]
+否則
+A[i+j]
+分
+寫放邊界以外的答案 將不子評閉
+2024-DSE-ICT2D-10 18
+
+現有以下 個任務
+任務 持續時間（日 依賴
+寸 B.D
+C,D
+li 完成以 下甘特圖
+任務 A
+任務
+任務
+任務
+任務
+放邊界以外
+3 分
+日 i) 如果任務 不再依賴任務B 完成所有任務最少需要多少日?
+的 I分)
+會進行驗收測試和單元測試口 她應該先進行哪種
+(i) 麗珊完成任務 的程式後
+測試？ 加以說明
+評
+闊
+已分
+寫放邊界以外的答案 將不予評閱
+2024-DSE-ICT2D-1]
+
+小芬編寫程式來模擬一個3x3 單元格的棋盤游戲 每一單元格內都有 一個字符
+b丶Ｌ·Ａ°捲·重f墓丶煎或 Z°她用陣列 代表棋盤 BD長i,j長 儲存棋盤上對應單元格
+內的字符 BD!1,1] 代表棋盤的左上角°字符 工儲存在 BD丨x,y] 內 、和 Y是變
+量°在以下例子
+BI
+玩家可以利用以 下四個互換：上·右丶下和左 把字符 2 與其中 一個相鄰字符互換
+放邊界以外
+邊界以外
+小芬編寫子程式 SwapbDfdir! 去進行這些互換 下表顯示每個互換對應的 dir 數
+的答
+安 的答案丶
+互換 dir
+上右下 將不予話
+閱
+la] 以下順序執行三個互換 SwapBD（1] SwapbD!0] 和 SwapBD（1） 填上 BD 的最終
+內容
+的初始內容 BD的最終內容
+(2 分)
+寫放邊界以外的答案 將不予評閱
+2024-DSE-ICT2D-12 81
+
+(b) 完成以下部分 swapBD'dir] 的偽代碼
+如果
+如果 斯 輸出 黃上 ：互換不成功
+否則
+BDIx,y]
+如果 dir 二1 則
+如果 則 輸出 右 互換不成功
+否則
+BDIx, y+l] 小
+4分) F
+寫
+放邊
+會被推人堆暨 內 例如 順序執行 SWapBD（3] 和
+界以外
+執行每個互換後 dir History
+SWapBD（1] 後 History 的內容是
+的答 頂端
+將不予評
+閱 loj 小芬編寫子程式 resetBD 利用 History 來重置 BD 至它的初始內容
+假設 History 的內容是
+頂端
+寫出 resetBD 內將會執行 swapBD 的序列
+sWapBD（ SWapBD（
+SwapBDt
+(2 分)
+寫放邊界以外的答案 將不 予評閱
+2024-DSE-ICT2D-13

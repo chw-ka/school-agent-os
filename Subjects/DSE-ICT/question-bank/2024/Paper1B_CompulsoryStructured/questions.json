@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "year_label": "2024",
+    "paper_slug": "Paper1B_CompulsoryStructured",
+    "paper_label": "Paper 1B — Compulsory Part structured (必修部分 乙丙部)",
+    "source_pdf": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper1B_CompulsoryStructured.pdf",
+    "question_count": 0,
+    "ocr_cache": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/question-bank/2024/Paper1B_CompulsoryStructured/ocr.txt"
+  },
+  "items": [],
+  "paper": {
+    "id": "2024-Paper1B_CompulsoryStructured",
+    "questions": []
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "year_label": "2019",
+    "paper_slug": "Paper1_MultipleChoice",
+    "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+    "source_pdf": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/past-papers/2019/DSE_ICT_2019_Paper1_MultipleChoice.pdf",
+    "question_count": 24,
+    "ocr_cache": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/question-bank/2019/Paper1_MultipleChoice/ocr.txt"
+  },
+  "items": [
+    {
+      "id": "2019-Paper1_MultipleChoice-Q01",
+      "section": "mcq",
+      "text": "下列的原始檔案大小均為 10MB 在一般情況下把它們轉換 哪一個轉換後的檔案\n大小是最小的?\n原伯描宏 轉換後的檔系\nA lesA.MP4 IcstA.AVI\nB. lcstB.MP3 IcstBWAT",
+      "marks": 1,
+      "number": 1,
+      "stem": "下列的原始檔案大小均為 10MB 在一般情況下把它們轉換 哪一個轉換後的檔案\n大小是最小的?\n原伯描宏 轉換後的檔系\nA lesA.MP4 IcstA.AVI",
+      "options": {
+        "B": "lcstB.MP3 IcstBWAT"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q02",
+      "section": "mcq",
+      "text": "fesiC.BMP IcstC.JPG\nlcstD:GIT IcstD.BMP\n參考以下數據庫表 STUDENT 回答題 6和7\nSTUDENT\nNANI II eAs8\nJohn OH 18110 1A\nMar L 0954 2c\nPeter Wong 17623 38\nGreg LI 06308\nSTUDENT 中的 SID 可能是什麼數據類型?\n( 整數\n宇符\n布爾\nA 尺有\nB. 尺有 2",
+      "marks": 1,
+      "number": 2,
+      "stem": "fesiC.BMP IcstC.JPG\nlcstD:GIT IcstD.BMP\n參考以下數據庫表 STUDENT 回答題 6和7\nSTUDENT\nNANI II eAs8\nJohn OH 18110 1A\nMar L 0954 2c\nPeter Wong 17623 38\nGreg LI 06308\nSTUDENT 中的 SID 可能是什麼數據類型?\n( 整數\n宇符\n布爾\nA 尺有",
+      "options": {
+        "B": "尺有 2"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q03",
+      "section": "mcq",
+      "text": "C 尺有 山和3\nO. 尺有\n香 STUDENT 匯出至試算表 哪項試算表功能可產生與在 DBMS 工具下執行下列 sOL\n指令後的輸出相攸?\nSELECT CLASS COUNTI+]\nFROM STUDENT\nGROUP BI CLAS8\n排序\nB 在公式內使用儲存格參照\nC. 物件連接與嵌入",
+      "marks": 1,
+      "number": 3,
+      "stem": "C 尺有 山和3\nO. 尺有\n香 STUDENT 匯出至試算表 哪項試算表功能可產生與在 DBMS 工具下執行下列 sOL\n指令後的輸出相攸?\nSELECT CLASS COUNTI+]\nFROM STUDENT\nGROUP BI CLAS8\n排序\nB 在公式內使用儲存格參照",
+      "options": {
+        "C": "物件連接與嵌入"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q04",
+      "section": "mcq",
+      "text": "小芳建立了 200 頁的報告 下列哪些文舊處理的操作可減少所用的頁數?\n更改文本內的行距\n2 更改文本的對齊規則\n3 更改頁面的是距\n建立合超連結的 目錄\n上 尺有 山和3\n尺有 0和(\nC 尺有 和b\nD 尺有 (2 和4\n2019-DSEICTIA-3\nProvided by dse.life\n(RFID 讀取機 芝芝的職 員證內有\n辦公室的門上裝置了射頻識別 RFID\n她的個人資料估 700 人辦公室時 標形\n存容意為2K日香 該職員證可儲存\n節的記錄便會連立立儲存在她的廠員 證內 多小筆記錄7\nI 50\n8位元的數據 而最後的 個位元為意遇檢驗位。\n一 某裝置在網絡內發送 它是哪 一個呢? 下列已接收\n的數據中 生其中一個有錯誤\nA 00100010\nB. 1111 0000\nC. 0011 0OT\nD. 1010 0111",
+      "marks": 1,
+      "number": 4,
+      "stem": "小芳建立了 200 頁的報告 下列哪些文舊處理的操作可減少所用的頁數?\n更改文本內的行距\n2 更改文本的對齊規則\n3 更改頁面的是距\n建立合超連結的 目錄\n上 尺有 山和3\n尺有 0和(\nC 尺有 和b\nD 尺有 (2 和4\n2019-DSEICTIA-3\nProvided by dse.life\n(RFID 讀取機 芝芝的職 員證內有\n辦公室的門上裝置了射頻識別 RFID\n她的個人資料估 700 人辦公室時 標形\n存容意為2K日香 該職員證可儲存\n節的記錄便會連立立儲存在她的廠員 證內 多小筆記錄7\nI 50\n8位元的數據 而最後的 個位元為意遇檢驗位。\n一 某裝置在網絡內發送 它是哪 一個呢? 下列已接收\n的數據中 生其中一個有錯誤\nA 00100010",
+      "options": {
+        "B": "1111 0000",
+        "C": "0011 0OT",
+        "D": "1010 0111"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q05",
+      "section": "mcq",
+      "text": "細看以下網上登記表格\n用戶名稱\n（最少 個宇符\n密碼\n再次輸人密碼\n此網上登記會涉及下列哪 些] 項目\n數據驗證\n2 數據壓縮\n3 數據有效性檢驗\n巴 又有\n尺有\nD. 又有 凹和3",
+      "marks": 1,
+      "number": 5,
+      "stem": "細看以下網上登記表格\n用戶名稱\n（最少 個宇符\n密碼\n再次輸人密碼\n此網上登記會涉及下列哪 些] 項目\n數據驗證\n2 數據壓縮\n3 數據有效性檢驗\n巴 又有\n尺有",
+      "options": {
+        "D": "又有 凹和3"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q06",
+      "section": "mcq",
+      "text": "12 個P 位址 TPv6] 包括 8組以冒映分隔的 4位十六進制數字 如以下例子所示:\n2001:08AB:2347:AFF0:1234:CC23:98D2:1A45\n此P編址可有多少個位址?\nA.\nB.\nC.",
+      "marks": 1,
+      "number": 6,
+      "stem": "12 個P 位址 TPv6] 包括 8組以冒映分隔的 4位十六進制數字 如以下例子所示:\n2001:08AB:2347:AFF0:1234:CC23:98D2:1A45\n此P編址可有多少個位址?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": ""
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q07",
+      "section": "mcq",
+      "text": "20I9-DSE-TCTTA-4\nProvided by dse.life\n下列哪項是戰作自動放映演示時最不重要的?\n範本\n版麵配置\n插人圖片\n索引\n小珊打算購買一合新電腦作視像編輯之用 般而言 下列哪項是她考慮時最不重\n要的因素?\n計算能力\nB. RAM 大小",
+      "marks": 1,
+      "number": 7,
+      "stem": "20I9-DSE-TCTTA-4\nProvided by dse.life\n下列哪項是戰作自動放映演示時最不重要的?\n範本\n版麵配置\n插人圖片\n索引\n小珊打算購買一合新電腦作視像編輯之用 般而言 下列哪項是她考慮時最不重\n要的因素?\n計算能力",
+      "options": {
+        "B": "RAM 大小"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q08",
+      "section": "mcq",
+      "text": "USB 埠的數目\n硬碟儲存容量\n6 下列哪句關放CPU內的累加器是正確的?\n它被算術及邏輯運算部件ALU作為計算之用\n巴 它被控制部件(CO用作暫存記憶體位址\n它儲存下一個執行指令的記憶體位址\n它控製在匯流排的數據流動°\nHi2\n降低在桌上電腦內 CPU 的時鐘比率會有什麼可能的結果?\n耗用較少電量\n增加運算的準確度·\n增強 WiFi連接的性能。\n加強對電腦遭黑客人使的防護\n志偉有一張音樂會電子人場券 如下所示：\n下列哪項（些） 關放電子人場券上的條碼的句子是正確的?\n即使條碼的一部分損毀 ，條碼上的資料仍可被解碼\n每次尺能把一種數據類型編碼， 例如數字數據\n3) 條碼最多可在三個方向成功掃描\n尺有\nB 尺有\nC 尺有 0和\nD 尺有 2)和 (3\nProvided bV dse.life\n下列哪個系統依賴網絡連接?\n實時系統\n單戶作業系統\n成批工作處理系統\n分佈式處理系統\n把下列各項按數據傳輸速率以遞增方式排列\n9\n仙固態硬碟 (SSD\n021 快取記憶體\n3 RAM\n030\n0eb\no,eu\n300\n下列哪些是典型電腦操作系統的主要網絡功能?\n20\n允許電腦之間的通訊\n控製兩合電腦之間連接的網絡頻寬\n2 以保護電腦免被未經授權存取\n可提供一些網絡安全措施\n尺有0和心2\nB. 尺有0和3",
+      "marks": 1,
+      "number": 8,
+      "stem": "USB 埠的數目\n硬碟儲存容量\n6 下列哪句關放CPU內的累加器是正確的?\n它被算術及邏輯運算部件ALU作為計算之用\n巴 它被控制部件(CO用作暫存記憶體位址\n它儲存下一個執行指令的記憶體位址\n它控製在匯流排的數據流動°\nHi2\n降低在桌上電腦內 CPU 的時鐘比率會有什麼可能的結果?\n耗用較少電量\n增加運算的準確度·\n增強 WiFi連接的性能。\n加強對電腦遭黑客人使的防護\n志偉有一張音樂會電子人場券 如下所示：\n下列哪項（些） 關放電子人場券上的條碼的句子是正確的?\n即使條碼的一部分損毀 ，條碼上的資料仍可被解碼\n每次尺能把一種數據類型編碼， 例如數字數據\n3) 條碼最多可在三個方向成功掃描\n尺有\nB 尺有\nC 尺有 0和\nD 尺有 2)和 (3\nProvided bV dse.life\n下列哪個系統依賴網絡連接?\n實時系統\n單戶作業系統\n成批工作處理系統\n分佈式處理系統\n把下列各項按數據傳輸速率以遞增方式排列\n9\n仙固態硬碟 (SSD\n021 快取記憶體\n3 RAM\n030\n0eb\no,eu\n300\n下列哪些是典型電腦操作系統的主要網絡功能?\n20\n允許電腦之間的通訊\n控製兩合電腦之間連接的網絡頻寬\n2 以保護電腦免被未經授權存取\n可提供一些網絡安全措施\n尺有0和心2",
+      "options": {
+        "B": "尺有0和3"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q09",
+      "section": "mcq",
+      "text": "以下是某校園的典型電腦網絡\n21\n互聯網\nX和Y是什麼?\nA. 交換器 網絡界麵卡\nB. 無綜網絡接達點 (AP 網絡界面卡\nC. 路由器 無綜網絡接達點 AP)",
+      "marks": 1,
+      "number": 9,
+      "stem": "以下是某校園的典型電腦網絡\n21\n互聯網\nX和Y是什麼?",
+      "options": {
+        "A": "交換器 網絡界麵卡",
+        "B": "無綜網絡接達點 (AP 網絡界面卡",
+        "C": "路由器 無綜網絡接達點 AP)"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q10",
+      "section": "mcq",
+      "text": "O. 交換器 路由器\nProvided by dse.life\n22 下列哪些是 LAN勝放 WAN 的優點?\n數據傳輸速率載高\n12) 網絡覆蓋較大\n設置成本較低\n貝有 和2\nB 尺有 心山和3\nC. 尺有 2和3",
+      "marks": 1,
+      "number": 10,
+      "stem": "O. 交換器 路由器\nProvided by dse.life\n22 下列哪些是 LAN勝放 WAN 的優點?\n數據傳輸速率載高\n12) 網絡覆蓋較大\n設置成本較低\n貝有 和2\nB 尺有 心山和3",
+      "options": {
+        "C": "尺有 2和3"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q11",
+      "section": "mcq",
+      "text": "23 以下兩個 URL均可用來接達同一個網站:\nhttp:/1202.8.88.243 *http:l/www.hkedcity.net\n下列哪項 （些） 關放這兩個 URL的句子是正確的?\nDNS 伺服器可能把 www. Hkedeity:net' 202.8.88:24°°\n2 UJRL必須包含 HTTP\n日經P位址接達的網頁較為安全\nA 尺有0\nB. 尺有 2",
+      "marks": 1,
+      "number": 11,
+      "stem": "23 以下兩個 URL均可用來接達同一個網站:\nhttp:/1202.8.88.243 *http:l/www.hkedcity.net\n下列哪項 （些） 關放這兩個 URL的句子是正確的?\nDNS 伺服器可能把 www. Hkedeity:net' 202.8.88:24°°\n2 UJRL必須包含 HTTP\n日經P位址接達的網頁較為安全\nA 尺有0",
+      "options": {
+        "B": "尺有 2"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q12",
+      "section": "mcq",
+      "text": "尺有 (和0\nD. 尺有",
+      "marks": 1,
+      "number": 12,
+      "stem": "尺有 (和0",
+      "options": {
+        "D": "尺有"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q13",
+      "section": "mcq",
+      "text": "以專綜而非覽頻用作網絡連接的優點是什麼?\n連接更可靠\n2) 成本載低\n3) 頻寬有保證\nA 尺有0\nB. 尺有 2",
+      "marks": 1,
+      "number": 13,
+      "stem": "以專綜而非覽頻用作網絡連接的優點是什麼?\n連接更可靠\n2) 成本載低\n3) 頻寬有保證\nA 尺有0",
+      "options": {
+        "B": "尺有 2"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q14",
+      "section": "mcq",
+      "text": "25. 在 HTML 中日下列哪些是表 (TABLE) 的屬性?\n儲存格內容的 URI\n2 儲存格之間的間距\n3 儲存格內容的媒體類型\n背景顏色\n尺有0和3\nBI 尺有（ 山和“\n兄有 日和3\n尺有 圓和4\nProvided by dse.life\nL6. 以下哪項活動會經互聯網傳輸最少數據?\n向S0位收件人寄出一個附有2MB聲音檔案的10KB 電郵·\n利用網上工具上載及轉換 10MB 麵像馬JPGI 格式0\n更新10KB網頁：內含超連結指向一個2GB檔案·\nD 利用串流技術網上觀看 500MB的60分鐘視像\n27 下列哪項\n（些） 關放串流技術的句子是正確的?\n可以觀看音樂表演直播\n2 不能使用 HTTP\n網上非法發放電影可受控製\n尺有0\n尺有\nC. 尺有 0)和O",
+      "marks": 1,
+      "number": 14,
+      "stem": "25. 在 HTML 中日下列哪些是表 (TABLE) 的屬性?\n儲存格內容的 URI\n2 儲存格之間的間距\n3 儲存格內容的媒體類型\n背景顏色\n尺有0和3\nBI 尺有（ 山和“\n兄有 日和3\n尺有 圓和4\nProvided by dse.life\nL6. 以下哪項活動會經互聯網傳輸最少數據?\n向S0位收件人寄出一個附有2MB聲音檔案的10KB 電郵·\n利用網上工具上載及轉換 10MB 麵像馬JPGI 格式0\n更新10KB網頁：內含超連結指向一個2GB檔案·\nD 利用串流技術網上觀看 500MB的60分鐘視像\n27 下列哪項\n（些） 關放串流技術的句子是正確的?\n可以觀看音樂表演直播\n2 不能使用 HTTP\n網上非法發放電影可受控製\n尺有0\n尺有",
+      "options": {
+        "C": "尺有 0)和O"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q15",
+      "section": "mcq",
+      "text": "N. 尺有 ②和\n28 測試下列算法段的邊際個案是什麼?\n輸人月\n如果A>5\nB不10\n否則 日人 20\n輸出 AIB\n2)\n10\n20\n(A尺有 ０和②\nB. 尺有 白和A",
+      "marks": 1,
+      "number": 15,
+      "stem": "N. 尺有 ②和\n28 測試下列算法段的邊際個案是什麼?\n輸人月\n如果A>5\nB不10\n否則 日人 20\n輸出 AIB\n2)\n10\n20\n(A尺有 ０和②",
+      "options": {
+        "B": "尺有 白和A"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q16",
+      "section": "mcq",
+      "text": "尺有 包·3和4\nD. 0O·3和0",
+      "marks": 1,
+      "number": 16,
+      "stem": "尺有 包·3和4",
+      "options": {
+        "D": "0O·3和0"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q17",
+      "section": "mcq",
+      "text": "29 age 是整數變熏 Isstudent\n是布爾變量。下列哪些布用算式會產生相同結果?\n3)人lage>25） O O! NOT lage lage 大251 AND OR 25] CIsstudent （Isstudent Tsstudent. TRUE FALSEI]\nTRUE]\n尺有山和2\nB. 尺有（ 0和3\nC. 尺有心和日",
+      "marks": 1,
+      "number": 17,
+      "stem": "29 age 是整數變熏 Isstudent\n是布爾變量。下列哪些布用算式會產生相同結果?\n3)人lage>25） O O! NOT lage lage 大251 AND OR 25] CIsstudent （Isstudent Tsstudent. TRUE FALSEI]\nTRUE]\n尺有山和2",
+      "options": {
+        "B": "尺有（ 0和3",
+        "C": "尺有心和日"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q18",
+      "section": "mcq",
+      "text": "Provided by dse.life\n以下算法的輸出是什麼?\nLENGTH\nHEIGHT 5\nAREA LENGTH HEIGHT\nLENGTH\nHEIGHT\n輸出 AREA\nA\nB. 20\nC. 20",
+      "marks": 1,
+      "number": 18,
+      "stem": "Provided by dse.life\n以下算法的輸出是什麼?\nLENGTH\nHEIGHT 5\nAREA LENGTH HEIGHT\nLENGTH\nHEIGHT\n輸出 AREA\nA",
+      "options": {
+        "B": "20",
+        "C": "20"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q19",
+      "section": "mcq",
+      "text": "N是一個陣列 NI NE2] NI3] 和 NI4I 分別儲存了 1丶3、5和7。下列算\n法的輸出是什麼?\nAND NIi1] KJ 執行\nNIi] NIi-]]\nN[i] 今K\n輸出 NI4]\n.\n32. 細看以下算法\n介\n重種\n謝出 日\n直至 H0\n輸出 日 會被執行多少次?\nC.",
+      "marks": 1,
+      "number": 19,
+      "stem": "N是一個陣列 NI NE2] NI3] 和 NI4I 分別儲存了 1丶3、5和7。下列算\n法的輸出是什麼?\nAND NIi1] KJ 執行\nNIi] NIi-]]\nN[i] 今K\n輸出 NI4]\n.\n32. 細看以下算法\n介\n重種\n謝出 日\n直至 H0\n輸出 日 會被執行多少次?",
+      "options": {
+        "C": ""
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q20",
+      "section": "mcq",
+      "text": "Provided by dse.life\n3 丫是一個陣列 下列算法的輸出是什麼?\nYIU]- 小4\n般K由1至5執行\nYIkt1] Yik] 十k\n輸出 Y16]\n10\n19\nC. 15",
+      "marks": 1,
+      "number": 20,
+      "stem": "Provided by dse.life\n3 丫是一個陣列 下列算法的輸出是什麼?\nYIU]- 小4\n般K由1至5執行\nYIkt1] Yik] 十k\n輸出 Y16]\n10\n19",
+      "options": {
+        "C": "15"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q21",
+      "section": "mcq",
+      "text": "34. 細看以下流程圖的一部分\n輸出 A\n有多少個 IAJ 會被輸出?\nABC 咖啡店為顧客提供免費 WiFi 詳情如下\nABC咖啡店\n-30分鐘一節的免費 WiFi服務\nSsID:abc： 密碼 ：YW$1818abc\n非加密連接\n最高頻寬 128 Kbps\n顧客不應使用此 WiFI 連接進行網上銀行服務 原因是\n免費時段太短\nSSID太短而易放被猜到\n通過此連接傳輸的數據沒有加密\n最高的頻覽還是太低\nProvided bV dse.life\n讓公思人士瀏覽 烏保障他的知識產權\n香港公開密碼匙的基礎建設 PK\n保密插口層 (8SL\n數碼證書\nD 數碼水印\n2) 提供更多免賣 WiF熱點 BYOD 的措施 以取代桌上電腦\n為每名市民提供多放一個免費電郵戶口口\n尺有0\nB. 尺有 (2)\nC. 尺有 仙和3\nD. 尺有 心和3",
+      "marks": 1,
+      "number": 21,
+      "stem": "34. 細看以下流程圖的一部分\n輸出 A\n有多少個 IAJ 會被輸出?\nABC 咖啡店為顧客提供免費 WiFi 詳情如下\nABC咖啡店\n-30分鐘一節的免費 WiFi服務\nSsID:abc： 密碼 ：YW$1818abc\n非加密連接\n最高頻寬 128 Kbps\n顧客不應使用此 WiFI 連接進行網上銀行服務 原因是\n免費時段太短\nSSID太短而易放被猜到\n通過此連接傳輸的數據沒有加密\n最高的頻覽還是太低\nProvided bV dse.life\n讓公思人士瀏覽 烏保障他的知識產權\n香港公開密碼匙的基礎建設 PK\n保密插口層 (8SL\n數碼證書\nD 數碼水印\n2) 提供更多免賣 WiF熱點 BYOD 的措施 以取代桌上電腦\n為每名市民提供多放一個免費電郵戶口口\n尺有0",
+      "options": {
+        "B": "尺有 (2)",
+        "C": "尺有 仙和3",
+        "D": "尺有 心和3"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q22",
+      "section": "mcq",
+      "text": "李小姐發現公司的檔案伺服器被勒索軟件感染丶一些重要文件檔案均已被加密而\n無法開& 東她應如何處理?\n嘗試把加密檔案放置放另一個檔案伺服器內開殿\n就此事件向警方報案\n3] 交付贖金以取得密碼\n日有\nB. 尺有",
+      "marks": 1,
+      "number": 22,
+      "stem": "李小姐發現公司的檔案伺服器被勒索軟件感染丶一些重要文件檔案均已被加密而\n無法開& 東她應如何處理?\n嘗試把加密檔案放置放另一個檔案伺服器內開殿\n就此事件向警方報案\n3] 交付贖金以取得密碼\n日有",
+      "options": {
+        "B": "尺有"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q23",
+      "section": "mcq",
+      "text": "尺有 山和3\nD. 日有 四和3",
+      "marks": 1,
+      "number": 23,
+      "stem": "尺有 山和3",
+      "options": {
+        "D": "日有 四和3"
+      }
+    },
+    {
+      "id": "2019-Paper1_MultipleChoice-Q24",
+      "section": "mcq",
+      "text": "為什麽有人開發開放源碼軟件?\n他們想出售軟件賺取更多金錢\n2 他們想更多人使用他們的軟件\n3] 他們想擁有軟件的版權\n尺有\n巴 尺有\n尺有 1和3\nD. 尺有 2和",
+      "marks": 1,
+      "number": 24,
+      "stem": "為什麽有人開發開放源碼軟件?\n他們想出售軟件賺取更多金錢\n2 他們想更多人使用他們的軟件\n3] 他們想擁有軟件的版權\n尺有\n巴 尺有\n尺有 1和3",
+      "options": {
+        "D": "尺有 2和"
+      }
+    }
+  ],
+  "paper": {
+    "id": "2019-Paper1_MultipleChoice",
+    "questions": [
+      {
+        "id": "2019-Paper1_MultipleChoice-Q01",
+        "type": "mcq",
+        "number": 1,
+        "section": "甲部",
+        "stem": "下列的原始檔案大小均為 10MB 在一般情況下把它們轉換 哪一個轉換後的檔案\n大小是最小的?\n原伯描宏 轉換後的檔系\nA lesA.MP4 IcstA.AVI",
+        "options": {
+          "B": "lcstB.MP3 IcstBWAT"
+        },
+        "marks": 1,
+        "text": "下列的原始檔案大小均為 10MB 在一般情況下把它們轉換 哪一個轉換後的檔案\n大小是最小的?\n原伯描宏 轉換後的檔系\nA lesA.MP4 IcstA.AVI\nB. lcstB.MP3 IcstBWAT"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q02",
+        "type": "mcq",
+        "number": 2,
+        "section": "甲部",
+        "stem": "fesiC.BMP IcstC.JPG\nlcstD:GIT IcstD.BMP\n參考以下數據庫表 STUDENT 回答題 6和7\nSTUDENT\nNANI II eAs8\nJohn OH 18110 1A\nMar L 0954 2c\nPeter Wong 17623 38\nGreg LI 06308\nSTUDENT 中的 SID 可能是什麼數據類型?\n( 整數\n宇符\n布爾\nA 尺有",
+        "options": {
+          "B": "尺有 2"
+        },
+        "marks": 1,
+        "text": "fesiC.BMP IcstC.JPG\nlcstD:GIT IcstD.BMP\n參考以下數據庫表 STUDENT 回答題 6和7\nSTUDENT\nNANI II eAs8\nJohn OH 18110 1A\nMar L 0954 2c\nPeter Wong 17623 38\nGreg LI 06308\nSTUDENT 中的 SID 可能是什麼數據類型?\n( 整數\n宇符\n布爾\nA 尺有\nB. 尺有 2"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q03",
+        "type": "mcq",
+        "number": 3,
+        "section": "甲部",
+        "stem": "C 尺有 山和3\nO. 尺有\n香 STUDENT 匯出至試算表 哪項試算表功能可產生與在 DBMS 工具下執行下列 sOL\n指令後的輸出相攸?\nSELECT CLASS COUNTI+]\nFROM STUDENT\nGROUP BI CLAS8\n排序\nB 在公式內使用儲存格參照",
+        "options": {
+          "C": "物件連接與嵌入"
+        },
+        "marks": 1,
+        "text": "C 尺有 山和3\nO. 尺有\n香 STUDENT 匯出至試算表 哪項試算表功能可產生與在 DBMS 工具下執行下列 sOL\n指令後的輸出相攸?\nSELECT CLASS COUNTI+]\nFROM STUDENT\nGROUP BI CLAS8\n排序\nB 在公式內使用儲存格參照\nC. 物件連接與嵌入"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q04",
+        "type": "mcq",
+        "number": 4,
+        "section": "甲部",
+        "stem": "小芳建立了 200 頁的報告 下列哪些文舊處理的操作可減少所用的頁數?\n更改文本內的行距\n2 更改文本的對齊規則\n3 更改頁面的是距\n建立合超連結的 目錄\n上 尺有 山和3\n尺有 0和(\nC 尺有 和b\nD 尺有 (2 和4\n2019-DSEICTIA-3\nProvided by dse.life\n(RFID 讀取機 芝芝的職 員證內有\n辦公室的門上裝置了射頻識別 RFID\n她的個人資料估 700 人辦公室時 標形\n存容意為2K日香 該職員證可儲存\n節的記錄便會連立立儲存在她的廠員 證內 多小筆記錄7\nI 50\n8位元的數據 而最後的 個位元為意遇檢驗位。\n一 某裝置在網絡內發送 它是哪 一個呢? 下列已接收\n的數據中 生其中一個有錯誤\nA 00100010",
+        "options": {
+          "B": "1111 0000",
+          "C": "0011 0OT",
+          "D": "1010 0111"
+        },
+        "marks": 1,
+        "text": "小芳建立了 200 頁的報告 下列哪些文舊處理的操作可減少所用的頁數?\n更改文本內的行距\n2 更改文本的對齊規則\n3 更改頁面的是距\n建立合超連結的 目錄\n上 尺有 山和3\n尺有 0和(\nC 尺有 和b\nD 尺有 (2 和4\n2019-DSEICTIA-3\nProvided by dse.life\n(RFID 讀取機 芝芝的職 員證內有\n辦公室的門上裝置了射頻識別 RFID\n她的個人資料估 700 人辦公室時 標形\n存容意為2K日香 該職員證可儲存\n節的記錄便會連立立儲存在她的廠員 證內 多小筆記錄7\nI 50\n8位元的數據 而最後的 個位元為意遇檢驗位。\n一 某裝置在網絡內發送 它是哪 一個呢? 下列已接收\n的數據中 生其中一個有錯誤\nA 00100010\nB. 1111 0000\nC. 0011 0OT\nD. 1010 0111"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q05",
+        "type": "mcq",
+        "number": 5,
+        "section": "甲部",
+        "stem": "細看以下網上登記表格\n用戶名稱\n（最少 個宇符\n密碼\n再次輸人密碼\n此網上登記會涉及下列哪 些] 項目\n數據驗證\n2 數據壓縮\n3 數據有效性檢驗\n巴 又有\n尺有",
+        "options": {
+          "D": "又有 凹和3"
+        },
+        "marks": 1,
+        "text": "細看以下網上登記表格\n用戶名稱\n（最少 個宇符\n密碼\n再次輸人密碼\n此網上登記會涉及下列哪 些] 項目\n數據驗證\n2 數據壓縮\n3 數據有效性檢驗\n巴 又有\n尺有\nD. 又有 凹和3"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q06",
+        "type": "mcq",
+        "number": 6,
+        "section": "甲部",
+        "stem": "12 個P 位址 TPv6] 包括 8組以冒映分隔的 4位十六進制數字 如以下例子所示:\n2001:08AB:2347:AFF0:1234:CC23:98D2:1A45\n此P編址可有多少個位址?",
+        "options": {
+          "A": "",
+          "B": "",
+          "C": ""
+        },
+        "marks": 1,
+        "text": "12 個P 位址 TPv6] 包括 8組以冒映分隔的 4位十六進制數字 如以下例子所示:\n2001:08AB:2347:AFF0:1234:CC23:98D2:1A45\n此P編址可有多少個位址?\nA.\nB.\nC."
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q07",
+        "type": "mcq",
+        "number": 7,
+        "section": "甲部",
+        "stem": "20I9-DSE-TCTTA-4\nProvided by dse.life\n下列哪項是戰作自動放映演示時最不重要的?\n範本\n版麵配置\n插人圖片\n索引\n小珊打算購買一合新電腦作視像編輯之用 般而言 下列哪項是她考慮時最不重\n要的因素?\n計算能力",
+        "options": {
+          "B": "RAM 大小"
+        },
+        "marks": 1,
+        "text": "20I9-DSE-TCTTA-4\nProvided by dse.life\n下列哪項是戰作自動放映演示時最不重要的?\n範本\n版麵配置\n插人圖片\n索引\n小珊打算購買一合新電腦作視像編輯之用 般而言 下列哪項是她考慮時最不重\n要的因素?\n計算能力\nB. RAM 大小"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q08",
+        "type": "mcq",
+        "number": 8,
+        "section": "甲部",
+        "stem": "USB 埠的數目\n硬碟儲存容量\n6 下列哪句關放CPU內的累加器是正確的?\n它被算術及邏輯運算部件ALU作為計算之用\n巴 它被控制部件(CO用作暫存記憶體位址\n它儲存下一個執行指令的記憶體位址\n它控製在匯流排的數據流動°\nHi2\n降低在桌上電腦內 CPU 的時鐘比率會有什麼可能的結果?\n耗用較少電量\n增加運算的準確度·\n增強 WiFi連接的性能。\n加強對電腦遭黑客人使的防護\n志偉有一張音樂會電子人場券 如下所示：\n下列哪項（些） 關放電子人場券上的條碼的句子是正確的?\n即使條碼的一部分損毀 ，條碼上的資料仍可被解碼\n每次尺能把一種數據類型編碼， 例如數字數據\n3) 條碼最多可在三個方向成功掃描\n尺有\nB 尺有\nC 尺有 0和\nD 尺有 2)和 (3\nProvided bV dse.life\n下列哪個系統依賴網絡連接?\n實時系統\n單戶作業系統\n成批工作處理系統\n分佈式處理系統\n把下列各項按數據傳輸速率以遞增方式排列\n9\n仙固態硬碟 (SSD\n021 快取記憶體\n3 RAM\n030\n0eb\no,eu\n300\n下列哪些是典型電腦操作系統的主要網絡功能?\n20\n允許電腦之間的通訊\n控製兩合電腦之間連接的網絡頻寬\n2 以保護電腦免被未經授權存取\n可提供一些網絡安全措施\n尺有0和心2",
+        "options": {
+          "B": "尺有0和3"
+        },
+        "marks": 1,
+        "text": "USB 埠的數目\n硬碟儲存容量\n6 下列哪句關放CPU內的累加器是正確的?\n它被算術及邏輯運算部件ALU作為計算之用\n巴 它被控制部件(CO用作暫存記憶體位址\n它儲存下一個執行指令的記憶體位址\n它控製在匯流排的數據流動°\nHi2\n降低在桌上電腦內 CPU 的時鐘比率會有什麼可能的結果?\n耗用較少電量\n增加運算的準確度·\n增強 WiFi連接的性能。\n加強對電腦遭黑客人使的防護\n志偉有一張音樂會電子人場券 如下所示：\n下列哪項（些） 關放電子人場券上的條碼的句子是正確的?\n即使條碼的一部分損毀 ，條碼上的資料仍可被解碼\n每次尺能把一種數據類型編碼， 例如數字數據\n3) 條碼最多可在三個方向成功掃描\n尺有\nB 尺有\nC 尺有 0和\nD 尺有 2)和 (3\nProvided bV dse.life\n下列哪個系統依賴網絡連接?\n實時系統\n單戶作業系統\n成批工作處理系統\n分佈式處理系統\n把下列各項按數據傳輸速率以遞增方式排列\n9\n仙固態硬碟 (SSD\n021 快取記憶體\n3 RAM\n030\n0eb\no,eu\n300\n下列哪些是典型電腦操作系統的主要網絡功能?\n20\n允許電腦之間的通訊\n控製兩合電腦之間連接的網絡頻寬\n2 以保護電腦免被未經授權存取\n可提供一些網絡安全措施\n尺有0和心2\nB. 尺有0和3"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q09",
+        "type": "mcq",
+        "number": 9,
+        "section": "甲部",
+        "stem": "以下是某校園的典型電腦網絡\n21\n互聯網\nX和Y是什麼?",
+        "options": {
+          "A": "交換器 網絡界麵卡",
+          "B": "無綜網絡接達點 (AP 網絡界面卡",
+          "C": "路由器 無綜網絡接達點 AP)"
+        },
+        "marks": 1,
+        "text": "以下是某校園的典型電腦網絡\n21\n互聯網\nX和Y是什麼?\nA. 交換器 網絡界麵卡\nB. 無綜網絡接達點 (AP 網絡界面卡\nC. 路由器 無綜網絡接達點 AP)"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q10",
+        "type": "mcq",
+        "number": 10,
+        "section": "甲部",
+        "stem": "O. 交換器 路由器\nProvided by dse.life\n22 下列哪些是 LAN勝放 WAN 的優點?\n數據傳輸速率載高\n12) 網絡覆蓋較大\n設置成本較低\n貝有 和2\nB 尺有 心山和3",
+        "options": {
+          "C": "尺有 2和3"
+        },
+        "marks": 1,
+        "text": "O. 交換器 路由器\nProvided by dse.life\n22 下列哪些是 LAN勝放 WAN 的優點?\n數據傳輸速率載高\n12) 網絡覆蓋較大\n設置成本較低\n貝有 和2\nB 尺有 心山和3\nC. 尺有 2和3"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q11",
+        "type": "mcq",
+        "number": 11,
+        "section": "甲部",
+        "stem": "23 以下兩個 URL均可用來接達同一個網站:\nhttp:/1202.8.88.243 *http:l/www.hkedcity.net\n下列哪項 （些） 關放這兩個 URL的句子是正確的?\nDNS 伺服器可能把 www. Hkedeity:net' 202.8.88:24°°\n2 UJRL必須包含 HTTP\n日經P位址接達的網頁較為安全\nA 尺有0",
+        "options": {
+          "B": "尺有 2"
+        },
+        "marks": 1,
+        "text": "23 以下兩個 URL均可用來接達同一個網站:\nhttp:/1202.8.88.243 *http:l/www.hkedcity.net\n下列哪項 （些） 關放這兩個 URL的句子是正確的?\nDNS 伺服器可能把 www. Hkedeity:net' 202.8.88:24°°\n2 UJRL必須包含 HTTP\n日經P位址接達的網頁較為安全\nA 尺有0\nB. 尺有 2"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q12",
+        "type": "mcq",
+        "number": 12,
+        "section": "甲部",
+        "stem": "尺有 (和0",
+        "options": {
+          "D": "尺有"
+        },
+        "marks": 1,
+        "text": "尺有 (和0\nD. 尺有"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q13",
+        "type": "mcq",
+        "number": 13,
+        "section": "甲部",
+        "stem": "以專綜而非覽頻用作網絡連接的優點是什麼?\n連接更可靠\n2) 成本載低\n3) 頻寬有保證\nA 尺有0",
+        "options": {
+          "B": "尺有 2"
+        },
+        "marks": 1,
+        "text": "以專綜而非覽頻用作網絡連接的優點是什麼?\n連接更可靠\n2) 成本載低\n3) 頻寬有保證\nA 尺有0\nB. 尺有 2"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q14",
+        "type": "mcq",
+        "number": 14,
+        "section": "甲部",
+        "stem": "25. 在 HTML 中日下列哪些是表 (TABLE) 的屬性?\n儲存格內容的 URI\n2 儲存格之間的間距\n3 儲存格內容的媒體類型\n背景顏色\n尺有0和3\nBI 尺有（ 山和“\n兄有 日和3\n尺有 圓和4\nProvided by dse.life\nL6. 以下哪項活動會經互聯網傳輸最少數據?\n向S0位收件人寄出一個附有2MB聲音檔案的10KB 電郵·\n利用網上工具上載及轉換 10MB 麵像馬JPGI 格式0\n更新10KB網頁：內含超連結指向一個2GB檔案·\nD 利用串流技術網上觀看 500MB的60分鐘視像\n27 下列哪項\n（些） 關放串流技術的句子是正確的?\n可以觀看音樂表演直播\n2 不能使用 HTTP\n網上非法發放電影可受控製\n尺有0\n尺有",
+        "options": {
+          "C": "尺有 0)和O"
+        },
+        "marks": 1,
+        "text": "25. 在 HTML 中日下列哪些是表 (TABLE) 的屬性?\n儲存格內容的 URI\n2 儲存格之間的間距\n3 儲存格內容的媒體類型\n背景顏色\n尺有0和3\nBI 尺有（ 山和“\n兄有 日和3\n尺有 圓和4\nProvided by dse.life\nL6. 以下哪項活動會經互聯網傳輸最少數據?\n向S0位收件人寄出一個附有2MB聲音檔案的10KB 電郵·\n利用網上工具上載及轉換 10MB 麵像馬JPGI 格式0\n更新10KB網頁：內含超連結指向一個2GB檔案·\nD 利用串流技術網上觀看 500MB的60分鐘視像\n27 下列哪項\n（些） 關放串流技術的句子是正確的?\n可以觀看音樂表演直播\n2 不能使用 HTTP\n網上非法發放電影可受控製\n尺有0\n尺有\nC. 尺有 0)和O"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q15",
+        "type": "mcq",
+        "number": 15,
+        "section": "甲部",
+        "stem": "N. 尺有 ②和\n28 測試下列算法段的邊際個案是什麼?\n輸人月\n如果A>5\nB不10\n否則 日人 20\n輸出 AIB\n2)\n10\n20\n(A尺有 ０和②",
+        "options": {
+          "B": "尺有 白和A"
+        },
+        "marks": 1,
+        "text": "N. 尺有 ②和\n28 測試下列算法段的邊際個案是什麼?\n輸人月\n如果A>5\nB不10\n否則 日人 20\n輸出 AIB\n2)\n10\n20\n(A尺有 ０和②\nB. 尺有 白和A"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q16",
+        "type": "mcq",
+        "number": 16,
+        "section": "甲部",
+        "stem": "尺有 包·3和4",
+        "options": {
+          "D": "0O·3和0"
+        },
+        "marks": 1,
+        "text": "尺有 包·3和4\nD. 0O·3和0"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q17",
+        "type": "mcq",
+        "number": 17,
+        "section": "甲部",
+        "stem": "29 age 是整數變熏 Isstudent\n是布爾變量。下列哪些布用算式會產生相同結果?\n3)人lage>25） O O! NOT lage lage 大251 AND OR 25] CIsstudent （Isstudent Tsstudent. TRUE FALSEI]\nTRUE]\n尺有山和2",
+        "options": {
+          "B": "尺有（ 0和3",
+          "C": "尺有心和日"
+        },
+        "marks": 1,
+        "text": "29 age 是整數變熏 Isstudent\n是布爾變量。下列哪些布用算式會產生相同結果?\n3)人lage>25） O O! NOT lage lage 大251 AND OR 25] CIsstudent （Isstudent Tsstudent. TRUE FALSEI]\nTRUE]\n尺有山和2\nB. 尺有（ 0和3\nC. 尺有心和日"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q18",
+        "type": "mcq",
+        "number": 18,
+        "section": "甲部",
+        "stem": "Provided by dse.life\n以下算法的輸出是什麼?\nLENGTH\nHEIGHT 5\nAREA LENGTH HEIGHT\nLENGTH\nHEIGHT\n輸出 AREA\nA",
+        "options": {
+          "B": "20",
+          "C": "20"
+        },
+        "marks": 1,
+        "text": "Provided by dse.life\n以下算法的輸出是什麼?\nLENGTH\nHEIGHT 5\nAREA LENGTH HEIGHT\nLENGTH\nHEIGHT\n輸出 AREA\nA\nB. 20\nC. 20"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q19",
+        "type": "mcq",
+        "number": 19,
+        "section": "甲部",
+        "stem": "N是一個陣列 NI NE2] NI3] 和 NI4I 分別儲存了 1丶3、5和7。下列算\n法的輸出是什麼?\nAND NIi1] KJ 執行\nNIi] NIi-]]\nN[i] 今K\n輸出 NI4]\n.\n32. 細看以下算法\n介\n重種\n謝出 日\n直至 H0\n輸出 日 會被執行多少次?",
+        "options": {
+          "C": ""
+        },
+        "marks": 1,
+        "text": "N是一個陣列 NI NE2] NI3] 和 NI4I 分別儲存了 1丶3、5和7。下列算\n法的輸出是什麼?\nAND NIi1] KJ 執行\nNIi] NIi-]]\nN[i] 今K\n輸出 NI4]\n.\n32. 細看以下算法\n介\n重種\n謝出 日\n直至 H0\n輸出 日 會被執行多少次?\nC."
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q20",
+        "type": "mcq",
+        "number": 20,
+        "section": "甲部",
+        "stem": "Provided by dse.life\n3 丫是一個陣列 下列算法的輸出是什麼?\nYIU]- 小4\n般K由1至5執行\nYIkt1] Yik] 十k\n輸出 Y16]\n10\n19",
+        "options": {
+          "C": "15"
+        },
+        "marks": 1,
+        "text": "Provided by dse.life\n3 丫是一個陣列 下列算法的輸出是什麼?\nYIU]- 小4\n般K由1至5執行\nYIkt1] Yik] 十k\n輸出 Y16]\n10\n19\nC. 15"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q21",
+        "type": "mcq",
+        "number": 21,
+        "section": "甲部",
+        "stem": "34. 細看以下流程圖的一部分\n輸出 A\n有多少個 IAJ 會被輸出?\nABC 咖啡店為顧客提供免費 WiFi 詳情如下\nABC咖啡店\n-30分鐘一節的免費 WiFi服務\nSsID:abc： 密碼 ：YW$1818abc\n非加密連接\n最高頻寬 128 Kbps\n顧客不應使用此 WiFI 連接進行網上銀行服務 原因是\n免費時段太短\nSSID太短而易放被猜到\n通過此連接傳輸的數據沒有加密\n最高的頻覽還是太低\nProvided bV dse.life\n讓公思人士瀏覽 烏保障他的知識產權\n香港公開密碼匙的基礎建設 PK\n保密插口層 (8SL\n數碼證書\nD 數碼水印\n2) 提供更多免賣 WiF熱點 BYOD 的措施 以取代桌上電腦\n為每名市民提供多放一個免費電郵戶口口\n尺有0",
+        "options": {
+          "B": "尺有 (2)",
+          "C": "尺有 仙和3",
+          "D": "尺有 心和3"
+        },
+        "marks": 1,
+        "text": "34. 細看以下流程圖的一部分\n輸出 A\n有多少個 IAJ 會被輸出?\nABC 咖啡店為顧客提供免費 WiFi 詳情如下\nABC咖啡店\n-30分鐘一節的免費 WiFi服務\nSsID:abc： 密碼 ：YW$1818abc\n非加密連接\n最高頻寬 128 Kbps\n顧客不應使用此 WiFI 連接進行網上銀行服務 原因是\n免費時段太短\nSSID太短而易放被猜到\n通過此連接傳輸的數據沒有加密\n最高的頻覽還是太低\nProvided bV dse.life\n讓公思人士瀏覽 烏保障他的知識產權\n香港公開密碼匙的基礎建設 PK\n保密插口層 (8SL\n數碼證書\nD 數碼水印\n2) 提供更多免賣 WiF熱點 BYOD 的措施 以取代桌上電腦\n為每名市民提供多放一個免費電郵戶口口\n尺有0\nB. 尺有 (2)\nC. 尺有 仙和3\nD. 尺有 心和3"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q22",
+        "type": "mcq",
+        "number": 22,
+        "section": "甲部",
+        "stem": "李小姐發現公司的檔案伺服器被勒索軟件感染丶一些重要文件檔案均已被加密而\n無法開& 東她應如何處理?\n嘗試把加密檔案放置放另一個檔案伺服器內開殿\n就此事件向警方報案\n3] 交付贖金以取得密碼\n日有",
+        "options": {
+          "B": "尺有"
+        },
+        "marks": 1,
+        "text": "李小姐發現公司的檔案伺服器被勒索軟件感染丶一些重要文件檔案均已被加密而\n無法開& 東她應如何處理?\n嘗試把加密檔案放置放另一個檔案伺服器內開殿\n就此事件向警方報案\n3] 交付贖金以取得密碼\n日有\nB. 尺有"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q23",
+        "type": "mcq",
+        "number": 23,
+        "section": "甲部",
+        "stem": "尺有 山和3",
+        "options": {
+          "D": "日有 四和3"
+        },
+        "marks": 1,
+        "text": "尺有 山和3\nD. 日有 四和3"
+      },
+      {
+        "id": "2019-Paper1_MultipleChoice-Q24",
+        "type": "mcq",
+        "number": 24,
+        "section": "甲部",
+        "stem": "為什麽有人開發開放源碼軟件?\n他們想出售軟件賺取更多金錢\n2 他們想更多人使用他們的軟件\n3] 他們想擁有軟件的版權\n尺有\n巴 尺有\n尺有 1和3",
+        "options": {
+          "D": "尺有 2和"
+        },
+        "marks": 1,
+        "text": "為什麽有人開發開放源碼軟件?\n他們想出售軟件賺取更多金錢\n2 他們想更多人使用他們的軟件\n3] 他們想擁有軟件的版權\n尺有\n巴 尺有\n尺有 1和3\nD. 尺有 2和"
+      }
+    ]
+  }
+}

@@ -33,6 +33,12 @@
 - Do not upload, paste, or exfiltrate identifiable student data.
 - When sharing examples, use synthetic / anonymized data by default.
 
+### Panel Share & Git (Teaching Materials)
+- **Git repo** = portable copy for home (no `S:` off-campus). Commit + push materials needed at home.
+- **Panel share** (`S:\02_Teaching and Learning\03_Key Learning Areas\Technology\08_Others`) = school-only department archive.
+- **Never write to the panel share without explicit user permission.**
+- See `Subjects/STORAGE.md` and skill `panel-storage-sync`.
+
 ## School-Agent-OS Constitution (.cursorrules)
 You are a senior AI assistant serving a school. You have education-domain expertise and strong administrative automation capabilities. Your primary duty is to help staff and teachers deliver accurate, consistent outputs with minimal manual effort.
 
@@ -62,4 +68,10 @@ You are a senior AI assistant serving a school. You have education-domain expert
 - When handling student grades or personal data, **do not exfiltrate**.
 - Process sensitive data **locally only**.
 - Do not paste full student lists, IDs, or grade tables into external systems.
+
+### Panel Share & Git (Teaching Materials)
+- **Git repo** is the portable copy for home (no `S:` access off-campus). Commit + push materials needed at home.
+- **Panel share** (`S:\02_Teaching and Learning\03_Key Learning Areas\Technology\08_Others`) is school-only; department archive and publish target.
+- **Never write to the panel share without explicit user permission.**
+- **Never commit** marksheets, grades, or bulk student submissions. See `Subjects/STORAGE.md` and skill `panel-storage-sync`.
 
