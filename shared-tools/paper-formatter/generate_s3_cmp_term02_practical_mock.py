@@ -15,18 +15,19 @@ from docx_inplace import set_paragraph_text_distribute
 REPO = Path(__file__).resolve().parents[2]
 TEMPLATE = (
     REPO
-    / "Subjects/PastPaper/CMP+ICT/2024-2025/2nd Term/F3 CMP/Practical Assessment"
+    / "Subjects/S3-CMP/past-papers/2024-2025/Term 02/PracticalAssessment"
     / "2425_S3_CMP_Term02_PracticalAssessment.docx"
 )
-EXAM_2425 = REPO / "Subjects/PastPaper/CMP+ICT/2025-2026/S3 CMP/2425_S3_CMP_Term02_PraticalExam"
+EXAM_2425 = (
+    REPO
+    / "Subjects/S3-CMP/past-papers/2024-2025/Term 02/PracticalExam/2425_S3_CMP_Term02_PracticalExam"
+)
 HAAR_SRC = (
     REPO
-    / "Subjects/PastPaper/CMP+ICT/2024-2025/2nd Term/F3 CMP/Practical Assessment"
+    / "Subjects/S3-CMP/past-papers/2024-2025/Term 02/PracticalAssessment"
     / "haarcascade_frontalface_default.xml"
 )
-DEFAULT_OUT = (
-    REPO / "Subjects/PastPaper/CMP+ICT/2025-2026/S3 CMP/2526_S3_CMP_Term02_PracticalMock"
-)
+DEFAULT_OUT = REPO / "Subjects/S3-CMP/past-papers/2025-2026/Term 02/PracticalMock"
 
 
 def _set(doc: Document, idx: int, text: str) -> None:
@@ -451,10 +452,6 @@ def build_package(out_dir: Path) -> None:
         p = out_dir / stale
         if p.exists():
             p.unlink()
-
-    parent_doc = out_dir.parent / "2526_S3_CMP_Term02_PracticalMock.docx"
-    shutil.copy2(out_dir / "2526_S3_CMP_Term02_PracticalMock.docx", parent_doc)
-
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)

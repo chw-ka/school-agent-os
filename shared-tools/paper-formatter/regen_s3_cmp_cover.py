@@ -12,7 +12,7 @@ from docx_inplace import ZhCoverPatch, regenerate_cmp_zh_cover_from_en_reference
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_REFERENCE = (
     _REPO_ROOT
-    / "Subjects/PastPaper/CMP+ICT/2024-2025/2nd Term/F3 CMP"
+    / "Subjects/S3-CMP/past-papers/2024-2025/Term 02/WrittenExam"
     / "24_25_S3_CMP_Term2_WrittenExam.docx"
 )
 

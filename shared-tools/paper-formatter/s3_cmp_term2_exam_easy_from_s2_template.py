@@ -27,8 +27,14 @@ from tf_fill_layout import build_shuffled_fill, build_shuffled_tf
 _RNG = random.Random(20260517)
 
 REPO = Path(__file__).resolve().parents[2]
-S2_TEMPLATE = REPO / "Subjects/PastPaper/CMP+ICT/2025-2026/S2 CMP/25_26_S2_CMP_Term02_Exam.docx"
-DEFAULT_OUT = REPO / "Subjects/PastPaper/CMP+ICT/2025-2026/S3 CMP/25_26_S3_CMP_Term02_Exam.docx"
+S2_TEMPLATE = (
+    REPO
+    / "Subjects/S2-CMP/past-papers/2025-2026/Term 02/WrittenExam/25_26_S2_CMP_Term02_Exam.docx"
+)
+DEFAULT_OUT = (
+    REPO
+    / "Subjects/S3-CMP/past-papers/2025-2026/Term 02/WrittenExam/25_26_S3_CMP_Term02_Exam.docx"
+)
 
 # Paragraph spans for MCQ blocks (from 25_26_S2_CMP_Term02_Exam.docx).
 MCQ_SPANS: dict[int, tuple[int, int]] = {

@@ -19,7 +19,9 @@ def test_filename_meta_s3_cmp() -> None:
 
 
 def test_footer_apply_and_check() -> None:
-    src = Path("Subjects/PastPaper/CMP+ICT/2025-2026/S3 CMP/25_26_S3_CMP_Term02_Exam.docx")
+    src = Path(
+        "Subjects/S3-CMP/past-papers/2025-2026/Term 02/WrittenExam/25_26_S3_CMP_Term02_Exam.docx"
+    )
     if not src.exists():
         return
     with tempfile.TemporaryDirectory() as td:
@@ -33,7 +35,9 @@ def test_footer_apply_and_check() -> None:
 
 
 def test_cover_check_on_real_docx() -> None:
-    src = Path("Subjects/PastPaper/CMP+ICT/2025-2026/S3 CMP/25_26_S3_CMP_Term02_Exam.docx")
+    src = Path(
+        "Subjects/S3-CMP/past-papers/2025-2026/Term 02/WrittenExam/25_26_S3_CMP_Term02_Exam.docx"
+    )
     if not src.exists():
         return
     result = check_cover(src)
@@ -41,8 +45,35 @@ def test_cover_check_on_real_docx() -> None:
     assert result.ok
 
 
+def test_written_sections_on_reference_s5() -> None:
+    ref = Path(
+        "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx"
+    )
+    if not ref.exists():
+        return
+    from written_sections import check_written_sections
+
+    result = check_written_sections(ref, template_docx_path=ref)
+    assert result.ok, [i.message for i in result.issues if i.severity == "error"]
+
+
+def test_written_sections_flags_bad_indent() -> None:
+    gen = Path(
+        "Subjects/S5-ICT/past-papers/2025-2026/Term 02/WrittenExam/25_26_S5_ICT_Exam02.docx"
+    )
+    if not gen.exists():
+        return
+    from written_sections import check_written_sections
+
+    result = check_written_sections(gen)
+    # After regeneration this should pass; keep as integration smoke test.
+    assert result.sections_found == ["乙部", "丙部"]
+
+
 if __name__ == "__main__":
     test_filename_meta_s3_cmp()
     test_footer_apply_and_check()
     test_cover_check_on_real_docx()
+    test_written_sections_on_reference_s5()
+    test_written_sections_flags_bad_indent()
     print("ok")

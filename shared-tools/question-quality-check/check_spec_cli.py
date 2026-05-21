@@ -34,7 +34,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "--past-papers-root",
         type=Path,
-        default=_repo_root() / "Subjects" / "PastPaper" / "CMP+ICT",
+        default=_repo_root() / "Subjects",
     )
     ap.add_argument("--years", type=int, default=3)
     ap.add_argument("--subject", help='e.g. "F5 ICT"')

@@ -1,51 +1,50 @@
 #!/usr/bin/env python3
-"""OCR scanned HKDSE ICT past papers and extract terminology / phrasing hints."""
+"""Extract HKDSE ICT terminology / phrasing from cached question-bank OCR.
+
+Run once:
+  python shared-tools/pdf-engine/build_dse_ict_question_bank.py
+
+Then this script reads cached OCR text (no re-OCR, no token waste).
+"""
 from __future__ import annotations
 
 import argparse
 import json
 import re
-import subprocess
-import tempfile
+import sys
 from collections import Counter
 from pathlib import Path
 
-import fitz
+_PDF_ENGINE = Path(__file__).resolve().parents[1] / "pdf-engine"
+if str(_PDF_ENGINE) not in sys.path:
+    sys.path.insert(0, str(_PDF_ENGINE))
 
-DEFAULT_ROOT = Path(__file__).resolve().parents[2] / "Subjects/PastPaper/ICT"
+from dse_ict_ocr import load_or_ocr  # noqa: E402
+from dse_ict_question_bank import collect_bank_text  # noqa: E402
+
+REPO = Path(__file__).resolve().parents[2]
+DEFAULT_ROOT = REPO / "Subjects/DSE-ICT/past-papers"
+DEFAULT_BANK = REPO / "Subjects/DSE-ICT/question-bank"
 DEFAULT_YEARS = [2019, 2020, 2021, 2022, 2023]
-LANG = "chi_tra+eng"
+DEFAULT_SLUGS = [
+    "Paper1_MultipleChoice",
+    "Paper2A_Database",
+    "Paper2B_DataCommunicationsNetworking",
+]
 
 
-def ocr_page(pdf_path: Path, page_no: int, scale: float = 2.2) -> str:
-    doc = fitz.open(pdf_path)
-    page = doc[page_no]
-    pix = page.get_pixmap(matrix=fitz.Matrix(scale, scale))
-    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
-        img = Path(f.name)
-    pix.save(str(img))
-    r = subprocess.run(
-        ["tesseract", str(img), "stdout", "-l", LANG, "--psm", "6"],
-        capture_output=True,
-        text=True,
-    )
-    img.unlink(missing_ok=True)
-    return r.stdout if r.returncode == 0 else ""
-
-
-def collect_text(root: Path, years: list[int], parts: list[str]) -> str:
+def ocr_collect_live(root: Path, bank: Path, years: list[int], slugs: list[str]) -> str:
     chunks: list[str] = []
     for year in years:
-        for part in parts:
-            p = root / str(year) / part
-            if not p.exists():
+        label = str(year)
+        for slug in slugs:
+            pdf = root / label / f"DSE_ICT_{label}_{slug}.pdf"
+            if not pdf.exists():
                 continue
-            doc = fitz.open(p)
-            end = min(doc.page_count, 14 if part == "p1.pdf" else 8)
-            for pn in range(2, end):
-                t = ocr_page(p, pn)
-                if len(t.strip()) > 50:
-                    chunks.append(t)
+            cache = bank / label / slug / "ocr.txt"
+            text = load_or_ocr(pdf, cache, slug=slug)
+            if len(text.strip()) > 50:
+                chunks.append(text)
     return "\n".join(chunks)
 
 
@@ -76,22 +75,43 @@ def extract_patterns(text: str) -> dict:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--root", type=Path, default=DEFAULT_ROOT)
+    ap.add_argument("--bank", type=Path, default=DEFAULT_BANK)
     ap.add_argument("--years", type=int, nargs="+", default=DEFAULT_YEARS)
-    ap.add_argument("--parts", nargs="+", default=["p1.pdf", "p2a.pdf", "p2b.pdf"])
+    ap.add_argument("--slugs", nargs="+", default=DEFAULT_SLUGS)
     ap.add_argument(
         "--out",
         type=Path,
         default=Path(__file__).parent / "dse_ict_ocr_extract.json",
     )
     ap.add_argument("--raw", type=Path, help="Optional path to write raw OCR text")
+    ap.add_argument("--force-ocr", action="store_true", help="Ignore question-bank cache")
     args = ap.parse_args(argv)
 
-    text = collect_text(args.root.expanduser().resolve(), args.years, args.parts)
+    year_labels = [str(y) for y in args.years]
+    if args.force_ocr:
+        text = ocr_collect_live(
+            args.root.expanduser().resolve(),
+            args.bank.expanduser().resolve(),
+            args.years,
+            args.slugs,
+        )
+    else:
+        text = collect_bank_text(year_labels, args.slugs, bank_root=args.bank)
+        if len(text.strip()) < 100:
+            print("Question bank cache empty — run build_dse_ict_question_bank.py first.")
+            print("Falling back to live OCR...")
+            text = ocr_collect_live(
+                args.root.expanduser().resolve(),
+                args.bank.expanduser().resolve(),
+                args.years,
+                args.slugs,
+            )
+
     if args.raw:
         args.raw.write_text(text, encoding="utf-8")
     out = {
         "source_years": args.years,
-        "source_parts": args.parts,
+        "source_slugs": args.slugs,
         **extract_patterns(text),
     }
     args.out.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")

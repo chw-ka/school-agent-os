@@ -393,12 +393,18 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Generate S2 CMP Term2 exam from 24-25 template.")
     ap.add_argument(
         "--template",
-        default="/Users/warren_chan/Projects/school-agent-os/Subjects/PastPaper/CMP+ICT/2024-2025/2nd Term/F2 CMP/24_25_S2_CMP_Term02_Exam.docx",
+        default=str(
+            Path(__file__).resolve().parents[2]
+            / "Subjects/S2-CMP/past-papers/2024-2025/Term 02/WrittenExam/24_25_S2_CMP_Term02_Exam.docx"
+        ),
         help="Source template docx",
     )
     ap.add_argument(
         "--output",
-        default="/Users/warren_chan/Projects/school-agent-os/Subjects/PastPaper/CMP+ICT/2025-2026/S2 CMP/25_26_S2_CMP_Term02_Exam.docx",
+        default=str(
+            Path(__file__).resolve().parents[2]
+            / "Subjects/S2-CMP/past-papers/2025-2026/Term 02/WrittenExam/25_26_S2_CMP_Term02_Exam.docx"
+        ),
         help="Output docx path",
     )
     ap.add_argument("--date", default="__________")

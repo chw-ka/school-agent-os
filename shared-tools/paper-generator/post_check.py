@@ -47,7 +47,7 @@ def run_spec_check(
     )
     from check_paper import format_paper_report_text, run_paper_check
 
-    root = past_papers_root or (repo_root() / "Subjects" / "PastPaper" / "CMP+ICT")
+    root = past_papers_root or (repo_root() / "Subjects")
     spec_path = candidate_spec.expanduser().resolve()
     docx_path = candidate_docx.expanduser().resolve() if candidate_docx else None
     if docx_path is None and spec_path.with_suffix(".docx").exists():

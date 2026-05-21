@@ -81,7 +81,7 @@ def _part_b_items(build_part_b) -> list[dict]:
         make_item(
             "b-03",
             "section_b",
-            slice_text(336, 345),
+            slice_text(336, 360),
             marks=10,
             title="算法追蹤",
             concepts=["算法", "偽代碼", "陣列", "次大值"],
@@ -100,7 +100,7 @@ def _part_c_items(build_part_c) -> list[dict]:
         make_item(
             "c-db",
             "section_c",
-            slice_text(423, 455),
+            slice_text(423, 456),
             marks=20,
             title="選修A 數據庫",
             concepts=["ERD", "SQL", "數據庫"],
@@ -108,7 +108,7 @@ def _part_c_items(build_part_c) -> list[dict]:
         make_item(
             "c-norm",
             "section_c",
-            slice_text(457, 470),
+            slice_text(458, 468),
             marks=10,
             title="正規化與資料完整性",
             concepts=["數據庫", "正規化", "1NF", "更新異常"],
@@ -116,7 +116,7 @@ def _part_c_items(build_part_c) -> list[dict]:
         make_item(
             "c-sql-adv",
             "section_c",
-            slice_text(482, 492),
+            slice_text(482, 493),
             marks=10,
             title="進階 SQL",
             concepts=["數據庫", "SQL", "GROUP BY", "UPDATE"],

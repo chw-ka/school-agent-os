@@ -2,11 +2,11 @@
   "meta": {
     "title": "HKDSE ICT terminology & question phrasing (2019–2023)",
     "sources": [
-      "Subjects/PastPaper/ICT/2019",
-      "Subjects/PastPaper/ICT/2020",
-      "Subjects/PastPaper/ICT/2021",
-      "Subjects/PastPaper/ICT/2022",
-      "Subjects/PastPaper/ICT/2023"
+      "Subjects/DSE-ICT/past-papers/2019",
+      "Subjects/DSE-ICT/past-papers/2020",
+      "Subjects/DSE-ICT/past-papers/2021",
+      "Subjects/DSE-ICT/past-papers/2022",
+      "Subjects/DSE-ICT/past-papers/2023"
     ],
     "extraction": "Tesseract OCR (chi_tra+eng) on scanned PDFs; stems/phrasing manually curated",
     "pages_ocrd": 119,

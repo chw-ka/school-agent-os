@@ -463,6 +463,18 @@ def discover_past_papers(
             year_dirs.append((y, p))
 
     if not year_dirs:
+        past_paper_roots = sorted({p for p in root.rglob("past-papers") if p.is_dir()})
+        if past_paper_roots:
+            year_dirs = []
+            for ppr in past_paper_roots:
+                for p in sorted(ppr.iterdir()):
+                    if not p.is_dir():
+                        continue
+                    y = parse_academic_year(p.name)
+                    if y is not None:
+                        year_dirs.append((y, p))
+
+    if not year_dirs:
         candidates = _filter_exam_files(root.rglob("*"))
     else:
         year_dirs.sort(key=lambda x: -x[0])
@@ -509,7 +521,15 @@ def _filter_exam_files(paths: Iterable[Path]) -> list[Path]:
 def infer_subject_subpath(path: Path) -> Optional[str]:
     parts = path.parts
     for part in parts:
-        if re.match(r"^F[2-6]\s", part) or part in ("F5 ICT", "S2 CMP", "S3 CMP"):
+        m = re.match(r"^S([2-6])-(CMP|ICT)$", part, re.I)
+        if m:
+            return f"S{m.group(1)}-{m.group(2).upper()}"
+        if re.match(r"^F[2-6]\s", part) or re.match(r"^S[2-6]\s", part) or part in (
+            "F5 ICT",
+            "S5 ICT",
+            "S2 CMP",
+            "S3 CMP",
+        ):
             return part
     return None
 

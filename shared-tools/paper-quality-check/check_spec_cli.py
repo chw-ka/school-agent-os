@@ -22,6 +22,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--strict", action="store_true")
     ap.add_argument("--skip-footer", action="store_true")
     ap.add_argument("--skip-cover", action="store_true")
+    ap.add_argument("--skip-written", action="store_true", help="Skip 乙部/丙部 layout checks")
     args = ap.parse_args(argv)
 
     spec_path = Path(args.candidate_spec).expanduser().resolve()
@@ -36,6 +37,7 @@ def main(argv: list[str] | None = None) -> int:
         template_docx_path=Path(args.template) if args.template else None,
         verify_footer=not args.skip_footer,
         verify_cover=not args.skip_cover,
+        verify_written=not args.skip_written,
     )
     print(format_paper_report_text(report))
     if args.json:

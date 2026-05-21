@@ -19,8 +19,19 @@ from post_check import repo_root, run_spec_check
 _FMT = Path(__file__).resolve().parents[1] / "paper-formatter"
 if str(_FMT) not in sys.path:
     sys.path.insert(0, str(_FMT))
-from docx_inplace import ZhCoverPatch, apply_cmp_cover_zh_on_en_layout
+from docx_inplace import ZhCoverPatch, apply_cmp_cover_zh_on_en_layout, set_paragraph_text_distribute
 from mcq_answer_keys import build_random_mcq_key
+from written_layout import (
+    ANSWER_BLANK,
+    ANSWER_BLANK_LONG,
+    DIAGRAM_BLANK,
+    code_line,
+    replace_span,
+    sql_line,
+    stem,
+    subpart,
+    topic_header,
+)
 
 _QCHECK = Path(__file__).resolve().parents[1] / "question-quality-check"
 _PCHECK = Path(__file__).resolve().parents[1] / "paper-quality-check"
@@ -313,15 +324,7 @@ def apply_mcq(doc: Document, blocks: list[tuple[int, int]], payload: list[list[s
         if span != len(lines):
             raise RuntimeError(f"span {span} != payload {len(lines)} at {start}")
         for j, text in enumerate(lines):
-            doc.paragraphs[start + j].text = text
-
-
-def replace_span(doc: Document, start: int, end_inclusive: int, lines: list[str]) -> None:
-    span = end_inclusive - start + 1
-    if len(lines) != span:
-        raise RuntimeError(f"replace_span {start}-{end_inclusive} need {span} lines got {len(lines)}")
-    for k, text in enumerate(lines):
-        doc.paragraphs[start + k].text = text
+            set_paragraph_text_distribute(doc.paragraphs[start + j], text)
 
 
 def build_part_b() -> list[str]:
@@ -331,38 +334,76 @@ def build_part_b() -> list[str]:
     def put(offset: int, s: str) -> None:
         lines[offset - base] = s
 
+    # Q1 — spreadsheet (template slots 313–322)
     put(
         313,
-        "「星晴網店」以試算表記錄訂單，欄位包括：A=訂單日期、B=產品類別、C=單價、D=數量、E=會員等級（VIP／一般）。"
-        "F 欄為總價。請回答下列問題。",
+        "「星晴網店」以試算表記錄訂單，欄位包括：A=訂單日期、B=產品類別、C=單價、D=數量、"
+        "E=會員等級（VIP／一般）。F 欄為總價。請回答下列問題。",
     )
     put(
         316,
-        "(a)\t在 F2 寫出一條公式（可用 IF 與 AND），然後複製到 F3:F200。"
-        "規則：若 E2 為「VIP」且 D2>10，則總價為 C2*D2 的 8 折；否則為原價 C2*D2。\t(5 分)",
+        subpart(
+            "a",
+            "在 F2 寫出一條公式（可用 IF 與 AND），然後複製到 F3:F200。"
+            "規則：若 E2 為「VIP」且 D2>10，則總價為 C2*D2 的 8 折；否則為原價 C2*D2。",
+            5,
+        ),
     )
-    put(319, "(b)\t描述如何建立樞紐分析表：以「列」顯示產品類別；以「值」顯示總銷售額（對 F 欄求 SUM）。\t(5 分)")
-    put(323, "2.\t數據控制與私隱\t(10 分)")
-    put(326, "(a)\t列出「有效性檢驗」與「奇偶檢測」的分別，並各舉一個輸入數據的例子。\t(3 分)")
-    put(328, "(b)\t比較「直接存取」與「順序存取」讀取檔案記錄的優缺點。\t(4 分)")
-    put(331, "(c)\t學校收集學生健康申報資料時，提出兩項保障數據私隱的做法。\t(3 分)")
-    put(336, "3.\t算法追蹤\t(10 分)")
+    put(317, ANSWER_BLANK)
     put(
-        338,
-        "考慮以下偽代碼（陣列 A 索引由 1 開始，長度 n≥2）：\n"
-        "largest ← A[1]\n"
-        "second_largest ← A[1]\n"
-        "FOR i ← 2 TO n\n"
-        "    IF A[i] > largest THEN\n"
-        "        second_largest ← largest\n"
-        "        largest ← A[i]\n"
-        "    ELSE IF A[i] > second_largest AND A[i] < largest THEN\n"
-        "        second_largest ← A[i]\n"
-        "    ENDIF\n"
-        "ENDFOR",
+        319,
+        subpart(
+            "b",
+            "描述如何建立樞紐分析表：以「列」顯示產品類別；以「值」顯示總銷售額（對 F 欄求 SUM）。",
+            5,
+        ),
     )
-    put(343, "(a)\t設 A = [10, 5, 20, 8, 20, 15]（n=6）。完成追蹤表，展示每次迭代後 largest 與 second_largest 的值。\t(5 分)")
-    put(345, "(b)\t若陣列中最大值出現多次（如上例的 20），此算法是否仍能正確找出「次大值」？解釋你的答案。\t(5 分)")
+    put(320, ANSWER_BLANK)
+
+    # Q2 — data control & privacy (323–334)
+    put(323, topic_header("2.", "數據控制與私隱", 10))
+    put(326, subpart("a", "列出「有效性檢驗」與「奇偶檢測」的分別，並各舉一個輸入數據的例子。", 3))
+    put(327, ANSWER_BLANK)
+    put(328, subpart("b", "比較「直接存取」與「順序存取」讀取檔案記錄的優缺點。", 4))
+    put(329, ANSWER_BLANK)
+    put(330, ANSWER_BLANK_LONG)
+    put(331, subpart("c", "學校收集學生健康申報資料時，提出兩項保障數據私隱的做法。", 3))
+    put(332, ANSWER_BLANK)
+    put(333, ANSWER_BLANK)
+
+    # Q3 — algorithm trace (336–360)
+    put(336, topic_header("3.", "算法追蹤", 10))
+    put(338, "考慮以下偽代碼（陣列 A 索引由 1 開始，長度 n≥2）：")
+    put(340, code_line("largest ← A[1]"))
+    put(341, code_line("second_largest ← A[1]"))
+    put(342, code_line("FOR i ← 2 TO n"))
+    put(343, code_line("    IF A[i] > largest THEN", depth=2))
+    put(344, code_line("        second_largest ← largest", depth=3))
+    put(345, code_line("        largest ← A[i]", depth=3))
+    put(346, code_line("    ELSE IF A[i] > second_largest AND A[i] < largest THEN", depth=2))
+    put(347, code_line("        second_largest ← A[i]", depth=3))
+    put(348, code_line("    ENDIF", depth=2))
+    put(349, code_line("ENDFOR"))
+    put(
+        354,
+        subpart(
+            "a",
+            "設 A = [10, 5, 20, 8, 20, 15]（n=6）。完成追蹤表，展示每次迭代後 largest 與 second_largest 的值。",
+            5,
+        ),
+    )
+    put(355, ANSWER_BLANK)
+    put(356, ANSWER_BLANK_LONG)
+    put(
+        358,
+        subpart(
+            "b",
+            "若陣列中最大值出現多次（如上例的 20），此算法是否仍能正確找出「次大值」？解釋你的答案。",
+            5,
+        ),
+    )
+    put(359, ANSWER_BLANK)
+    put(360, ANSWER_BLANK_LONG)
     return lines
 
 
@@ -374,34 +415,107 @@ def build_part_c() -> list[str]:
         lines[i - b] = s
 
     put(423, "丙部 (40 分)：選修單元問答題（數據庫）")
-    put(425, "選修 A：數據庫（Database）")
     put(
-        427,
+        425,
         "某「社區中心活動報名系統」描述如下：一位會員可報名多個工作坊；一個工作坊亦可被多位會員報名。"
         "每次報名產生一筆報名記錄，包含報名日期與付款狀態。",
     )
     put(
-        440,
-        "(a)\t繪製實體關係圖（ERD）：須包含「會員 Member」「工作坊 Workshop」「報名 Registration」三個實體，標示多對多並以關聯實體拆解；"
-        "並在圖中寫出主鍵（PK）與外鍵（FK）欄位名稱。\t(8 分)",
+        427,
+        stem(
+            "繪製實體關係圖（ERD）：須包含「會員 Member」「工作坊 Workshop」「報名 Registration」三個實體，"
+            "標示多對多並以關聯實體拆解；並在圖中寫出主鍵（PK）與外鍵（FK）欄位名稱。",
+            8,
+            spaced_marks=True,
+        ),
     )
-    put(442, "(b)\t設資料表如下：")
-    put(444, "Member(MemberID, MemberName, JoinDate)")
-    put(445, "Workshop(WorkshopID, Title, Instructor, Fee)")
-    put(446, "Registration(RegID, MemberID, WorkshopID, RegDate, PayStatus)")
-    put(450, "(i)\t寫出一條 SQL，列出所有報名了 Instructor = 'Peter' 的工作坊之會員姓名（MemberName）。\t(4 分)")
-    put(453, "(ii)\t寫出一條 SQL，找出報名人數 **超過 30** 的工作坊名稱（Title）及其報名人數。（需使用 COUNT、GROUP BY、HAVING）\t(6 分)")
-    put(455, "(iii)\t寫出一條 SQL，找出 **從未報名任何工作坊** 的會員姓名。（可用 NOT IN 或 NOT EXISTS）\t(6 分)")
-    put(457, "2.\t正規化與資料完整性\t(10 分)")
-    put(459, "某社團登記表把「學號、姓名、社團名稱、社團會址、會費」全部放在同一工作表的一列中，且同一社團會址重複出現於多行。")
-    put(461, "(a)\t指出此設計違反哪一條正規化規則，並說明會造成什麼更新異常（update anomaly）。\t(5 分)")
-    put(463, "(b)\t建議如何拆分為至少兩個實體／資料表，並寫出各表的主要屬性。\t(5 分)")
-    put(470, "")
-    put(482, "3.\t進階 SQL 與資料操作\t(10 分)")
-    put(485, "沿用丙部選修 A 的 Member、Workshop、Registration 資料表。")
-    put(487, "(a)\t寫出一條 SQL，列出曾報名兩個或以上不同工作坊的會員姓名（需 DISTINCT／COUNT／GROUP BY／HAVING）。\t(5 分)")
-    put(489, "(b)\t寫出一條 SQL，把 WorkshopID = 'WS101' 且 PayStatus = '已付款' 的報名記錄 PayStatus 更新為「已確認」。（UPDATE … WHERE）\t(5 分)")
-    put(492, "")
+    put(429, DIAGRAM_BLANK)
+
+    put(440, "設 Member、Workshop、Registration 資料表如下：")
+    put(442, subpart("b", "根據以下資料表："))
+    put(444, sql_line("Member(MemberID, MemberName, JoinDate)"))
+    put(445, sql_line("Workshop(WorkshopID, Title, Instructor, Fee)"))
+    put(446, sql_line("Registration(RegID, MemberID, WorkshopID, RegDate, PayStatus)"))
+    put(
+        450,
+        subpart(
+            "i",
+            "寫出一條 SQL，列出所有報名了 Instructor = 'Peter' 的工作坊之會員姓名（MemberName）。",
+            4,
+            depth=2,
+        ),
+    )
+    put(451, ANSWER_BLANK)
+    put(452, ANSWER_BLANK_LONG)
+    put(
+        453,
+        subpart(
+            "ii",
+            "寫出一條 SQL，找出報名人數超過 30 的工作坊名稱（Title）及其報名人數。"
+            "（需使用 COUNT、GROUP BY、HAVING）",
+            6,
+            depth=2,
+        ),
+    )
+    put(454, ANSWER_BLANK)
+    put(455, ANSWER_BLANK_LONG)
+    put(
+        456,
+        subpart(
+            "iii",
+            "寫出一條 SQL，找出從未報名任何工作坊的會員姓名。（可用 NOT IN 或 NOT EXISTS）",
+            6,
+            depth=2,
+        ),
+    )
+
+    put(458, topic_header("2.", "正規化與資料完整性", 10))
+    put(
+        460,
+        "某社團登記表把「學號、姓名、社團名稱、社團會址、會費」全部放在同一工作表的一列中，"
+        "且同一社團會址重複出現於多行。",
+    )
+    put(
+        462,
+        subpart(
+            "a",
+            "指出此設計違反哪一條正規化規則，並說明會造成什麼更新異常（update anomaly）。",
+            5,
+        ),
+    )
+    put(463, ANSWER_BLANK)
+    put(464, ANSWER_BLANK_LONG)
+    put(
+        466,
+        subpart("b", "建議如何拆分為至少兩個實體／資料表，並寫出各表的主要屬性。", 5),
+    )
+    put(467, ANSWER_BLANK)
+    put(468, ANSWER_BLANK_LONG)
+
+    put(482, topic_header("3.", "進階 SQL 與資料操作", 10))
+    put(485, stem("沿用上述 Member、Workshop、Registration 資料表。"))
+    put(
+        487,
+        subpart(
+            "a",
+            "寫出一條 SQL，列出曾報名兩個或以上不同工作坊的會員姓名"
+            "（需 DISTINCT／COUNT／GROUP BY／HAVING）。",
+            5,
+        ),
+    )
+    put(488, ANSWER_BLANK)
+    put(489, ANSWER_BLANK_LONG)
+    put(
+        491,
+        subpart(
+            "b",
+            "寫出一條 SQL，把 WorkshopID = 'WS101' 且 PayStatus = '已付款' 的報名記錄 "
+            "PayStatus 更新為「已確認」。（UPDATE … WHERE）",
+            5,
+        ),
+    )
+    put(492, ANSWER_BLANK)
+    put(493, ANSWER_BLANK_LONG)
     return lines
 
 
@@ -461,25 +575,25 @@ def generate(
 
 def main(argv: list[str] | None = None) -> int:
     root = repo_root()
-    default_out = root / "Subjects/PastPaper/CMP+ICT/2025-2026"
-    template_dir = root / "Subjects/PastPaper/CMP+ICT/2024-2025/2nd Term/F5 ICT"
+    default_out = root / "Subjects/S5-ICT/past-papers/2025-2026/Term 02"
+    template_dir = root / "Subjects/S5-ICT/past-papers/2024-2025/Term 02"
     ap = argparse.ArgumentParser(
         description="F5 ICT blueprint: build exam spec → compare → optional DOCX render.",
     )
     ap.add_argument(
         "--template",
         type=Path,
-        default=template_dir / "24_25_S5_ICT_Exam02.docx",
+        default=template_dir / "WrittenExam/24_25_S5_ICT_Exam02.docx",
     )
     ap.add_argument(
         "--output",
         type=Path,
-        default=default_out / "25_26_S5_ICT_Exam02.docx",
+        default=default_out / "WrittenExam/25_26_S5_ICT_Exam02.docx",
     )
     ap.add_argument(
         "--spec",
         type=Path,
-        default=default_out / "25_26_S5_ICT_Exam02.spec.json",
+        default=default_out / "_generation/25_26_S5_ICT_Exam02.spec.json",
         help="Exam spec JSON (primary artifact for compare)",
     )
     ap.add_argument("--subject", default="F5 ICT", help="Subject folder for past-paper scan")

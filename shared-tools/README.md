@@ -31,7 +31,7 @@ paper-generator  →  *.spec.json  →  question-quality-check
 | 目錄 | 用途 |
 |------|------|
 | `data-processor/` | 資料處理 |
-| `pdf-engine/` | PDF 相關 |
+| `pdf-engine/` | PDF OCR、DSE ICT 題庫 (`build_dse_ict_question_bank.py`) |
 
 ## 舊目錄名稱
 

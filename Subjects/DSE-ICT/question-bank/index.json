@@ -1,0 +1,752 @@
+{
+  "generated_at": "2026-05-21T05:46:52.318574+00:00",
+  "past_papers_root": "Subjects/DSE-ICT/past-papers",
+  "question_bank_root": "Subjects/DSE-ICT/question-bank",
+  "papers": [
+    {
+      "year_label": "2012",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2012/DSE_ICT_2012_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2012",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2012/DSE_ICT_2012_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2012",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2012/DSE_ICT_2012_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2012",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2012/DSE_ICT_2012_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2012",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2012/DSE_ICT_2012_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2012",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2012/DSE_ICT_2012_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2012",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2012/DSE_ICT_2012_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2013",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2013/DSE_ICT_2013_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2013",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2013/DSE_ICT_2013_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2013",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2013/DSE_ICT_2013_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2013",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2013/DSE_ICT_2013_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2013",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2013/DSE_ICT_2013_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2013",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2013/DSE_ICT_2013_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2013",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2013/DSE_ICT_2013_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2014",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2014/DSE_ICT_2014_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2014",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2014/DSE_ICT_2014_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2014",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2014/DSE_ICT_2014_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2014",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2014/DSE_ICT_2014_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2014",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2014/DSE_ICT_2014_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2014",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2014/DSE_ICT_2014_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2014",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2014/DSE_ICT_2014_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2015",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2015/DSE_ICT_2015_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2015",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2015/DSE_ICT_2015_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2015",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2015/DSE_ICT_2015_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2015",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2015/DSE_ICT_2015_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2015",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2015/DSE_ICT_2015_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2015",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2015/DSE_ICT_2015_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2015",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2015/DSE_ICT_2015_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2016",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2016/DSE_ICT_2016_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2016",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2016/DSE_ICT_2016_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2016",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2016/DSE_ICT_2016_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2016",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2016/DSE_ICT_2016_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2016",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2016/DSE_ICT_2016_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2016",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2016/DSE_ICT_2016_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2016",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2016/DSE_ICT_2016_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2017",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2017/DSE_ICT_2017_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2017",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2017/DSE_ICT_2017_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2017",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2017/DSE_ICT_2017_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2017",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2017/DSE_ICT_2017_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2017",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2017/DSE_ICT_2017_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2017",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2017/DSE_ICT_2017_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2017",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2017/DSE_ICT_2017_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2018",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2018/DSE_ICT_2018_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2018",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2018/DSE_ICT_2018_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2018",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2018/DSE_ICT_2018_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2018",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2018/DSE_ICT_2018_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2018",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2018/DSE_ICT_2018_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2018",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2018/DSE_ICT_2018_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2018",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2018/DSE_ICT_2018_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2019",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2019/DSE_ICT_2019_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2019",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2019/DSE_ICT_2019_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2019",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2019/DSE_ICT_2019_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2019",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2019/DSE_ICT_2019_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2019",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2019/DSE_ICT_2019_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2019",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2019/DSE_ICT_2019_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2019",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2019/DSE_ICT_2019_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2020",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2020/DSE_ICT_2020_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2020",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2020/DSE_ICT_2020_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2020",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2020/DSE_ICT_2020_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2020",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2020/DSE_ICT_2020_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2020",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2020/DSE_ICT_2020_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2020",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2020/DSE_ICT_2020_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2020",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2020/DSE_ICT_2020_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2021",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2021",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2021",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2021",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2021",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2021",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2021",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2022",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2022/DSE_ICT_2022_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2022",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2022/DSE_ICT_2022_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2022",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2022/DSE_ICT_2022_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2022",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2022/DSE_ICT_2022_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2022",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2022/DSE_ICT_2022_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2022",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2022/DSE_ICT_2022_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2022",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2022/DSE_ICT_2022_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2023",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2023/DSE_ICT_2023_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2023",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2023/DSE_ICT_2023_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2023",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2023/DSE_ICT_2023_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2023",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2023/DSE_ICT_2023_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "2023",
+      "paper_slug": "PerformanceReport",
+      "paper_label": "Performance Report (考生表現)",
+      "pdf": "Subjects/DSE-ICT/past-papers/2023/DSE_ICT_2023_PerformanceReport.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Practice",
+      "paper_slug": "MarkingScheme",
+      "paper_label": "Marking Scheme (評卷參考)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Practice-Paper/DSE_ICT_Practice_MarkingScheme.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Practice",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Practice-Paper/DSE_ICT_Practice_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Practice",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Practice-Paper/DSE_ICT_Practice_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Practice",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Practice-Paper/DSE_ICT_Practice_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Practice",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Practice-Paper/DSE_ICT_Practice_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Practice",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Practice-Paper/DSE_ICT_Practice_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Sample",
+      "paper_slug": "Paper1_MultipleChoice",
+      "paper_label": "Paper 1 — Compulsory Part (必修部分)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Sample-Paper/DSE_ICT_Sample_Paper1_MultipleChoice.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Sample",
+      "paper_slug": "Paper2A_Database",
+      "paper_label": "Paper 2A — Database (數據庫)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Sample-Paper/DSE_ICT_Sample_Paper2A_Database.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Sample",
+      "paper_slug": "Paper2B_DataCommunicationsNetworking",
+      "paper_label": "Paper 2B — Data Communications and Networking (數據通訊及建網)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Sample-Paper/DSE_ICT_Sample_Paper2B_DataCommunicationsNetworking.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Sample",
+      "paper_slug": "Paper2C_MultimediaWebsiteConstruction",
+      "paper_label": "Paper 2C — Multimedia Production and Website Construction (多媒體製作及網站建構)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Sample-Paper/DSE_ICT_Sample_Paper2C_MultimediaWebsiteConstruction.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    },
+    {
+      "year_label": "Sample",
+      "paper_slug": "Paper2D_SoftwareDevelopment",
+      "paper_label": "Paper 2D — Software Development (軟件開發)",
+      "pdf": "Subjects/DSE-ICT/past-papers/Sample-Paper/DSE_ICT_Sample_Paper2D_SoftwareDevelopment.pdf",
+      "questions_json": null,
+      "ocr_cache": null
+    }
+  ],
+  "by_type": {}
+}

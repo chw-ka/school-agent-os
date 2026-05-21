@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>第五章 任務三 — 遊戲展示</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Python 與人工智能 · 第五章 任務三</h1>
+    <p class="sub">選擇作品後會在本機以 Python 開啟視窗遊戲（tkinter）。請保持此分頁與伺服器運行。</p>
+    <p class="path" id="rootPath"></p>
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="搜尋姓名或班號…" autocomplete="off" />
+      <span class="count" id="count"></span>
+    </div>
+  </header>
+
+  <main>
+    <ul class="grid" id="grid"></ul>
+    <p class="empty" id="empty" hidden>沒有找到 .py 檔案。請確認遊戲資料夾路徑正確。</p>
+  </main>
+
+  <footer>
+    <small>僅供本機或內網使用；啟動遊戲即在本機執行學生程式碼。</small>
+  </footer>
+
+  <script>
+    const grid = document.getElementById("grid");
+    const q = document.getElementById("q");
+    const count = document.getElementById("count");
+    const empty = document.getElementById("empty");
+    const rootPath = document.getElementById("rootPath");
+
+    let allGames = [];
+
+    function esc(s) {
+      const d = document.createElement("div");
+      d.textContent = s;
+      return d.innerHTML;
+    }
+
+    let viewGames = [];
+
+    function render(list) {
+      viewGames = list;
+      grid.innerHTML = "";
+      empty.hidden = list.length > 0;
+      count.textContent = list.length + " 個遊戲";
+      list.forEach((g, idx) => {
+        const li = document.createElement("li");
+        li.className = "card";
+        li.innerHTML =
+          '<div class="card-title">' + esc(g.title) + "</div>" +
+          '<div class="card-file">' + esc(g.filename) + "</div>" +
+          '<button type="button" class="play" data-idx="' + idx + '">開啟遊戲</button>';
+        grid.appendChild(li);
+      });
+      grid.querySelectorAll(".play").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const idx = parseInt(btn.getAttribute("data-idx"), 10);
+          const rel = viewGames[idx] && viewGames[idx].relpath;
+          if (!rel) return;
+          btn.disabled = true;
+          try {
+            const r = await fetch("/api/launch", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ relpath: rel }),
+            });
+            const j = await r.json();
+            if (!j.ok) alert(j.error || "無法啟動");
+          } catch (e) {
+            alert("連線失敗：請確認 python app.py 仍在運行");
+          }
+          btn.disabled = false;
+        });
+      });
+    }
+
+    function filter() {
+      const t = q.value.trim().toLowerCase();
+      if (!t) return render(allGames);
+      const f = allGames.filter(
+        (g) =>
+          g.title.toLowerCase().includes(t) ||
+          g.filename.toLowerCase().includes(t)
+      );
+      render(f);
+    }
+
+    q.addEventListener("input", filter);
+
+    fetch("/api/games")
+      .then((r) => r.json())
+      .then((data) => {
+        rootPath.textContent = "資料夾：" + data.root;
+        allGames = data.games || [];
+        render(allGames);
+      })
+      .catch(() => {
+        rootPath.textContent = "無法載入列表";
+        empty.hidden = false;
+      });
+  </script>
+</body>
+</html>

@@ -95,7 +95,9 @@ def test_mcq_parse_key_line() -> None:
 
 
 def test_mcq_docx_s3() -> None:
-    src = Path("Subjects/PastPaper/CMP+ICT/2025-2026/S3 CMP/25_26_S3_CMP_Term02_Exam.docx")
+    src = Path(
+        "Subjects/S3-CMP/past-papers/2025-2026/Term 02/WrittenExam/25_26_S3_CMP_Term02_Exam.docx"
+    )
     if not src.exists():
         return
     letters, src_label = mcq_answers_from_docx(src)
