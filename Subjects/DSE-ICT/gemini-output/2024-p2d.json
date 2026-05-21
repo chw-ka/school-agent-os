@@ -1,0 +1,416 @@
+[
+  {
+    "question_number": "1(a)(i)",
+    "question_text": "假設 A、first 和 size 的初始內容是：\nA[i]：[小帽子, 微笑, 小蜜蜂, 奔跑, 小貓, 字母歌, 小星呈]\nfirst = 4, size = 3\n播放清單的歌曲依次序排列是小貓、字母歌和小星呈。\n家健編寫子程式 deq。如果播放清單不是空的，deq 便會移除播放清單中的第一首歌曲。deq 的偽代碼是：\n```\n如果 size = 0 則\n  輸出「播放清單是空的！」\n否則\n  first ← ((first + 1) % 7)\n  size ← size - 1\n```\n寫出每次執行 deq 後 first 和 size 的數值。",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["", "first", "size"],
+      "rows_to_complete": [
+        {"label": "第一次執行 deq 後", "values": ["", 5, 2]},
+        {"label": "第二次執行 deq 後", "values": ["", 6, 1]}
+      ],
+      "notes": "根據 deq 子程式的偽代碼：\n1.  **初始狀態**：`first = 4`，`size = 3`。\n2.  **第一次執行 deq**：\n    *   `size` 不為 0。\n    *   `first` 更新為 `((4 + 1) % 7) = 5`。\n    *   `size` 更新為 `3 - 1 = 2`。\n3.  **第二次執行 deq**：\n    *   `size` 不為 0。\n    *   `first` 更新為 `((5 + 1) % 7) = 6`。\n    *   `size` 更新為 `2 - 1 = 1`。"
+    },
+    "points": 3,
+    "source": "1"
+  },
+  {
+    "question_number": "1(a)(ii)",
+    "question_text": "家健編寫一個子程式 enq(K) 把新歌 K 加入 A 內。完成以下 enq 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "A[ ((first + size) % 7) ] ← K",
+        "如果 size < 7 則",
+        "  size ← size + 1",
+        "否則",
+        "  first ← ((first + 1) % 7)",
+        "  // size 保持不變，因為移除一個並添加一個"
+      ],
+      "notes": "enq(K) 子程式用於將新歌曲 K 加入到環形佇列 A 的末端。\n1.  新歌曲 K 應插入到 `first + size` 處，並由於是環形緩衝區，需取模 `7`，即 `A[ ((first + size) % 7) ] ← K`。\n2.  如果佇列未滿 (`size < 7`)，則 `size` 增加 `1` (`size ← size + 1`)。\n3.  如果佇列已滿 (`size = 7`)，則最舊的歌曲會被新歌曲覆蓋。為此，`first` 應向前移動一個位置 (`first ← ((first + 1) % 7)`)，而 `size` 保持不變，因為一個元素被替換了。"
+    },
+    "points": 3,
+    "source": "2"
+  },
+  {
+    "question_number": "1(a)(iii)",
+    "question_text": "家健編寫子程式 playPL 來播放播放清單內的所有歌曲。playSong(A[curr]) 是另一個子程式，播放儲存在 A[curr] 的歌曲。完成以下 playPL 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "playPL",
+        "  設 i 由 0 至 size - 1 執行",
+        "    curr ← (first + i) % 7",
+        "    playSong(A[curr])"
+      ],
+      "notes": "playPL 子程式應遍歷播放清單中的所有歌曲並播放它們。\n1.  循環應從 `0` 到 `size - 1`，因為 `i` 代表從 `first` 開始的偏移量。\n2.  每首歌曲的實際索引 `curr` 應為 `(first + i) % 7`，以處理環形緩衝區的繞回情況。\n3.  然後呼叫 `playSong(A[curr])` 播放該歌曲。"
+    },
+    "points": 3,
+    "source": "3"
+  },
+  {
+    "question_number": "1(b)(i)",
+    "question_text": "家健以另一個方法實現播放清單，使用了以下全程變量：\nSong: 陣列，用來實現陣列，其索引是由 0 至 6\nNext: 陣列，用作儲存 Song 內下一首歌曲的索引；如果 Song[i] 是播放清單內最後一首歌曲，則 Next[i] 儲存 -1\nft: 整數變量，用作儲存第一首歌曲索引\n家健重新編寫子程式 playPL。完成以下 playPL 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "playPL",
+        "  curr ← ft",
+        "  當 curr <> -1 執行",
+        "    playSong(Song[curr])",
+        "    curr ← Next[curr]"
+      ],
+      "notes": "這種實現方式使用 `Song` 陣列儲存歌曲，`Next` 陣列儲存下一首歌曲的索引，`ft` 儲存播放清單的第一首歌曲的索引。這本質上是一個鏈表。\n1.  `curr` 應從 `ft` (播放清單的第一首歌曲索引) 開始。\n2.  循環應持續到 `curr` 為 `-1` (表示鏈表結束)。\n3.  在循環中，播放 `Song[curr]`，然後 `curr` 更新為 `Next[curr]`，以移動到下一首歌曲。"
+    },
+    "points": 3,
+    "source": "4"
+  },
+  {
+    "question_number": "1(b)(ii)",
+    "question_text": "參考以上例子，將歌曲微笑加入播放清單的末端。完成以下 Next。",
+    "answer_details": {
+      "type": "fill_in_the_blank_array",
+      "array_name": "Next",
+      "indices_to_fill": {
+        "0": 3,
+        "4": -1
+      },
+      "notes": "根據提供的例子：\n*   初始 `Song` 陣列包含 `字母歌` (索引 0)、`巴士` (索引 1)、`奔跑` (索引 2)、`小星呈` (索引 3)。\n*   初始 `Next` 陣列為 `[3, 1, 0, -1, ..., ..., ...]`。\n*   `ft = 2`，所以播放順序是 `奔跑 (2) -> 字母歌 (0) -> 巴士 (1) -> 小星呈 (3)`。\n*   `小星呈` (索引 3) 是最後一首歌，`Next` 為 `-1`。\n*   將 `微笑` (假設在索引 4) 加入播放清單的末端：\n    *   `小星呈` (索引 3) 不再是最後一首歌，`Next` 應指向 `微笑` 的索引，即 `4`。\n    *   `微笑` (索引 4) 成為新的最後一首歌，`Next` 應為 `-1`。\n*   題目要求填寫 `Next` 和 `Next`：\n    *   `Next` 保持不變，仍為 `3`。\n    *   `Next` 變為 `-1`。"
+    },
+    "points": 1,
+    "source": "4"
+  },
+  {
+    "question_number": "1(b)(iii)",
+    "question_text": "家健編寫子程式 insert(sg) 把新歌 sg 加入至播放清單的開端。完成以下 insert(sg) 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "insert(sg)",
+        "  new_pos ← <找一個可用的空位索引>",
+        "  Song[new_pos] ← sg",
+        "  Next[new_pos] ← ft",
+        "  ft ← new_pos"
+      ],
+      "notes": "insert(sg) 子程式應將新歌曲 `sg` 加入到播放清單的開端。\n1.  首先，需要為新歌曲 `sg` 找到一個可用的索引 `new_pos`，並將 `sg` 存入 `Song[new_pos]`。\n2.  新歌曲應該指向原來的播放清單開端，所以 `Next[new_pos] ← ft`。\n3.  新歌曲成為新的播放清單開端，所以 `ft ← new_pos`。"
+    },
+    "points": 2,
+    "source": "4"
+  },
+  {
+    "question_number": "2(a)(i)",
+    "question_text": "志明設計了他使用手提電話的每日用量，並以分鐘為單位。他使用陣列 T 儲存 N 日的每日用量。T 內的數值已排序，使 T ≤ T ≤ ... ≤ T[N]。\n志明設計子程式 bsearch(tar)，利用對分檢索尋回 T[pos] = tar 時的 pos。bsearch(tar) 的偽代碼是：\n```\nbsearch(tar)\n  left ← 1\n  right ← N\n  pos ← -1\n  當 (left <= right) 執行\n    mid ← ((left + right) / 2) 的整數部分\n    如果 T[mid] = tar 則\n      pos ← mid\n    如果 T[mid] < tar 則\n      left ← mid + 1\n    如果 T[mid] > tar 則\n      right ← mid - 1\n  傳回 pos\n```\n假設 N = 7 和 T 的內容是：\nT[i]：[-, 45, 50, 60, 75, 140, 300] (索引 1-7)\n執行 bsearch(140)。在三次執行行第 6 行後 left 和 right 的數值是什麼？完成下表。",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["", "left", "right"],
+      "rows_to_complete": [
+        {"label": "第一次", "values":""},
+        {"label": "第二次", "values":""},
+        {"label": "第三次", "values":""}
+      ],
+      "notes": "追蹤 bsearch(140) 的執行，T 陣列為 `[-, 45, 50, 60, 75, 140, 300]`，N=7。\n*   **初始**：`left = 1`, `right = 7`, `pos = -1`。\n*   **第一次執行行 6 (mid 計算)**：\n    *   `mid = (1 + 7) // 2 = 4`。\n    *   `T = 75`。 `75 < 140` 為真，執行 `left ← mid + 1`，即 `left = 5`。\n    *   此時，`left = 5`, `right = 7`。\n*   **第二次執行行 6 (mid 計算)**：\n    *   `mid = (5 + 7) // 2 = 6`。\n    *   `T = 140`。 `140 = 140` 為真，執行 `pos ← mid`，即 `pos = 6`。\n    *   `140 < 140` 為假，`140 > 140` 為假。`left` 和 `right` 不變。\n    *   此時，`left = 5`, `right = 7`。\n*   **第三次執行行 6 (mid 計算)**：\n    *   `mid = (5 + 7) // 2 = 6`。\n    *   `T = 140`。 `140 = 140` 為真，執行 `pos ← mid`，即 `pos = 6`。\n    *   `140 < 140` 為假，`140 > 140` 為假。`left` 和 `right` 不變。\n    *   此時，`left = 5`, `right = 7`。"
+    },
+    "points": 2,
+    "source": "5"
+  },
+  {
+    "question_number": "2(a)(ii)",
+    "question_text": "對某些 tar 的數值 bsearch(tar) 傳回 -1 為什麼？",
+    "answer_details": {
+      "type": "explanation",
+      "notes": "bsearch(tar) 傳回 `-1` 表示在陣列 `T` 中沒有找到目標值 `tar`。\n這發生在 `當 (left <= right)` 循環終止時，`pos` 變量從未被更新（因為 `T[mid]` 從未等於 `tar`），其值仍為初始值 `-1`。循環終止的條件是 `left` 最終變得大於 `right`。"
+    },
+    "points": 1,
+    "source": "5"
+  },
+  {
+    "question_number": "2(b)(i)",
+    "question_text": "志明透過修改 bsearch(tar) 來設計 newsearch(tar)，他修改了第 5 行，以及新增了第 9 行的話句。newsearch(tar) 的偽代碼是：\n```\nnewsearch(tar)\n  left ← 1\n  right ← N\n  pos ← -1\n  當 (left <= right) 執行\n    mid ← ((left + right) / 2) 的整數部分\n    如果 T[mid] = tar 則\n      pos ← mid\n    如果 T[mid] < tar 則\n      left ← mid + 1\n    如果 T[mid] > tar 則\n      right ← mid - 1\n  傳回 pos\n```\n假設 N = 7 和 T 的內容是：\nT[i]：[-, 45, 45, 150, 150, 150, 240, 300] (索引 1-7)\n執行 newsearch(150)。在三次執行行第 6 行後 left、right 和 pos 的數值是什麼？完成下表。",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["", "left", "right", "pos"],
+      "rows_to_complete": [
+        {"label": "第一次", "values":""},
+        {"label": "第二次", "values":""},
+        {"label": "第三次", "values":""}
+      ],
+      "notes": "追蹤 newsearch(150) 的執行，T 陣列為 `[-, 45, 45, 150, 150, 150, 240, 300]`，N=7。\n*   **初始**：`left = 1`, `right = 7`, `pos = -1`。\n*   **第一次執行行 6 (mid 計算)**：\n    *   `mid = (1 + 7) // 2 = 4`。\n    *   `T = 150`。 `150 = 150` 為真，執行 `pos ← mid`，即 `pos = 4`。\n    *   `150 < 150` 為假，`150 > 150` 為假。`left` 和 `right` 不變。\n    *   此時，`left = 1`, `right = 7`, `pos = 4`。\n*   **第二次執行行 6 (mid 計算)**：\n    *   `mid = (1 + 7) // 2 = 4`。\n    *   `T = 150`。 `150 = 150` 為真，執行 `pos ← mid`，即 `pos = 4`。\n    *   `left` 和 `right` 不變。\n    *   此時，`left = 1`, `right = 7`, `pos = 4`。\n*   **第三次執行行 6 (mid 計算)**：\n    *   `mid = (1 + 7) // 2 = 4`。\n    *   `T = 150`。 `150 = 150` 為真，執行 `pos ← mid`，即 `pos = 4`。\n    *   `left` 和 `right` 不變。\n    *   此時，`left = 1`, `right = 7`, `pos = 4`。\n\n**重要提示**：題目給出的表格範例第一行 `left=5, right=7, pos=-1` 與 `newsearch` 偽代碼及 `T` 陣列的邏輯不符。在此，我選擇根據提供的偽代碼和 `T` 陣列邏輯進行推導，以確保答案的內部一致性，而不是盲從一個可能不一致的範例起始行。這將導致與範例表格提供的起始值不同，但更符合程式邏輯。"
+    },
+    "points": 3,
+    "source": "6"
+  },
+  {
+    "question_number": "2(b)(ii)",
+    "question_text": "newsearch(149) 在第 12 行會傳回 -1。在此傳回前 left 和 right 的數值是什麼？",
+    "answer_details": {
+      "type": "short_answer",
+      "prompt": "left: 7, right: 6",
+      "notes": "根據 newsearch 偽代碼，當 `tar = 149` 且 `T` 陣列為 `[-, 45, 50, 60, 75, 140, 300]` (延續 2(a) 的 T 陣列，因為 2(b)(ii) 的結果與 2(b)(i) 的 T 陣列不一致)：\n1.  **初始**：`left = 1`, `right = 7`。\n2.  `mid = 4` (`T = 75`)。 `75 < 149`。 `left = 5`。\n3.  `mid = 6` (`T = 140`)。 `140 < 149`。 `left = 7`。\n4.  `mid = 7` (`T = 300`)。 `300 > 149`。 `right = 6`。\n5.  此時，`left = 7`, `right = 6`。條件 `left <= right` (`7 <= 6`) 為假，循環終止。\n6.  在返回 `pos` (此時為 `-1`) 之前，`left` 和 `right` 的值分別是 `7` 和 `6`。"
+    },
+    "points": 2,
+    "source": "7"
+  },
+  {
+    "question_number": "2(b)(iii)",
+    "question_text": "志明修改了 newsearch(tar) 的第 14 行，它會傳回 T[k] >= tar 時最小的 k。完成以下第 14 行。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "第 14 行: 傳回 left"
+      ],
+      "notes": "如果 `newsearch(tar)` 修改為傳回 `T[k] >= tar` 時最小的 `k`，那麼在二分搜尋循環結束時，`left` 變量將指向第一個大於或等於 `tar` 的元素的索引。因此，應傳回 `left`。"
+    },
+    "points": 1,
+    "source": "7"
+  },
+  {
+    "question_number": "2(c)(i)",
+    "question_text": "count(p) 是一個子程式，傳回使用手提電話每日用量達 p 分鐘或以上的日數。利用 newsearch 完成以下 count(p) 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "count(p)",
+        "  return N - newsearch(p) + 1"
+      ],
+      "notes": "根據 2(b)(iii) 的修改，`newsearch(p)` 將傳回陣列 `T` 中第一個大於或等於 `p` 的元素的索引 (假設是 `k`)。\n*   如果 `newsearch(p)` 傳回 `k` (1-based 索引)，那麼從 `k` 到 `N` 共有 `N - k + 1` 個元素滿足條件 (即每日用量達 `p` 分鐘或以上)。"
+    },
+    "points": 2,
+    "source": "7"
+  },
+  {
+    "question_number": "2(c)(ii)",
+    "question_text": "志明選擇使用編譯程式而不是解釋程式去編寫程式。舉出兩個支持他選擇的理由。",
+    "answer_details": {
+      "type": "explanation_with_multiple_reasons",
+      "number_of_reasons": 2,
+      "reasons": [
+        "**執行速度更快**：編譯程式將整個原始碼一次性轉換為機器碼，生成可執行文件，執行時不需要額外的翻譯步驟，因此運行速度通常比解釋程式更快。",
+        "**更好的效能優化**：編譯器在轉換程式碼的過程中，可以進行各種優化，生成更高效、更精簡的機器碼，從而提高程式的執行效能。",
+        "**獨立執行**：編譯後生成的執行檔可以脫離開發環境獨立運行，無需安裝編譯器或解釋器，方便程式的分發和部署。",
+        "**原始碼保護**：分發的是編譯後的機器碼，而非原始碼，這有助於保護程式設計者的智慧財產權。",
+        "**錯誤提前檢測**：編譯器會在程式執行前檢查語法錯誤和許多邏輯錯誤，有助於在開發階段及早發現和修正問題。"
+      ]
+    },
+    "points": 2,
+    "source": "7"
+  },
+  {
+    "question_number": "2(d)",
+    "question_text": "執行他的程式時會使用連接程式和載入程式。簡述連接程式和載入程式的功能。",
+    "answer_details": {
+      "type": "short_answer",
+      "parts": [
+        {"name": "連接程式 (Linker)", "description": "連接程式的功能是將編譯器或組譯器生成的**一個或多個目標程式（Object files）**，以及程式中使用的**函式庫（Libraries）**，連結（Link）起來，解析所有外部引用（External References），並最終生成一個**單一的、可執行的程式（Executable program）** 。"},
+        {"name": "載入程式 (Loader)", "description": "載入程式的功能是將**可執行的程式**從輔助儲存裝置（例如硬碟）**載入到電腦的主記憶體（RAM）中**，並為其分配必要的資源，初始化執行環境，以便中央處理器（CPU）可以開始執行該程式 。"}
+      ]
+    },
+    "points": 2,
+    "source": "7"
+  },
+  {
+    "question_number": "3(a)(i)",
+    "question_text": "麗麗管理一個包含多個排序程式的項目。\n麗麗編寫了排序程式 MySort，而 C 是一個附有 n 個元素的陣列。MySort 的偽代碼是：\n```\nMySort\n  for i 由 1 至 n 執行\n    for j 由 1 至 n-i 執行\n      if C[j] > C[j+1] 則\n        temp ← C[j]\n        C[j] ← C[j+1]\n        C[j+1] ← temp\n  輸出「外圈循環 」, i\n```\n以下列 C 的初始內容執行 MySort：\nC[k]：[-, 36, 29, 18, 55] (索引 1-4, n=4)\n填寫首兩次執行第 8 行後 C 和 C 的內容。",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["", "C", "C"],
+      "rows_to_complete": [
+        {"label": "第一次", "values": ""},
+        {"label": "第二次", "values": ""}
+      ],
+      "notes": "追蹤 MySort 程式執行，C 陣列為 `[-, 36, 29, 18, 55]`，n=4。\n*   **初始**：`C = [-, 36, 29, 18, 55]`。\n*   **i = 1 (第一次外圈循環)**：\n    *   `j = 1`：`C=36, C=29`。`36 > 29` 為真，交換。`C = [-, 29, 36, 18, 55]`。\n    *   `j = 2`：`C=36, C=18`。`36 > 18` 為真，交換。`C = [-, 29, 18, 36, 55]`。\n    *   `j = 3`：`C=36, C=55`。`36 > 55` 為假，不交換。\n    *   **第 8 行輸出「外圈循環 1」後**：`C=29, C=18`。\n*   **i = 2 (第二次外圈循環)**：\n    *   `j = 1`：`C=29, C=18`。`29 > 18` 為真，交換。`C = [-, 18, 29, 36, 55]`。\n    *   `j = 2`：`C=29, C=36`。`29 > 36` 為假，不交換。\n    *   **第 8 行輸出「外圈循環 2」後**：`C=18, C=29`。"
+    },
+    "points": 3,
+    "source": "8"
+  },
+  {
+    "question_number": "3(a)(ii)",
+    "question_text": "MySort 是什麼類型的排序法？",
+    "answer_details": {
+      "type": "short_answer",
+      "prompt": "冒泡排序 (Bubble Sort)",
+      "notes": "MySort 演算法的特徵是重複遍歷列表，比較每對相鄰元素，並交換它們，直到較大的元素“浮”到末尾。這正是冒泡排序 (Bubble Sort) 的工作原理。"
+    },
+    "points": 1,
+    "source": "8"
+  },
+  {
+    "question_number": "3(b)",
+    "question_text": "麗麗編寫另一個排序程式 MS，將 A 和 B 這兩個已排序的陣列合併，並將它儲存在 A 內。m 和 n 分別是 A 和 B 內的元素數目。i 和 j 是變數數量。\n以下是一個例子，而 m=6 和 n=3。執行循環前各變量的內容是：\nA[k]：[-, 3, 6, 10, 31, 35, 42, -, -, -] (索引 1-9)\nB[k]：[-, 2, 4, 40] (索引 1-3)\ni=6, j=3\n在首兩輪循環後各變量的內容是：\n第一輪：i=5, j=3\n第二輪：i=5, j=2\n完成以下 MS 的偽代碼。\n```\nMS\n1   i ← m\n2   j ← n\n3   k ← m + n\n4   當 (i > 0 AND j > 0) 執行\n5     如果 A[i] > B[j] 則\n6       A[k] ← A[i]\n7       i ← i - 1\n8     否則\n9       A[k] ← B[j]\n10      j ← j - 1\n11    k ← k - 1\n12  當 (i > 0) 執行\n13    A[k] ← A[i]\n14    i ← i - 1\n15    k ← k - 1\n16  當 (j > 0) 執行\n17    A[k] ← B[j]\n18    j ← j - 1\n19    k ← k - 1\n```",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "MS",
+        "  i ← m",
+        "  j ← n",
+        "  k ← m + n",
+        "  當 (i > 0 AND j > 0) 執行",
+        "    如果 A[i] > B[j] 則",
+        "      A[k] ← A[i]",
+        "      i ← i - 1",
+        "    否則",
+        "      A[k] ← B[j]",
+        "      j ← j - 1",
+        "    k ← k - 1",
+        "  當 (i > 0) 執行",
+        "    A[k] ← A[i]",
+        "    i ← i - 1",
+        "    k ← k - 1",
+        "  當 (j > 0) 執行",
+        "    A[k] ← B[j]",
+        "    j ← j - 1",
+        "    k ← k - 1"
+      ],
+      "notes": "MS 程式的目的是將兩個已排序的陣列 A 和 B 合併到陣列 A 中。這是一個典型的合併排序子程序，從陣列的末端開始填充。\n1.  **初始化**：`i` 指向 A 的最後一個元素，`j` 指向 B 的最後一個元素，`k` 指向合併後陣列 A 的最後一個可用位置。\n2.  **主循環** (`當 (i > 0 AND j > 0) 執行`)：比較 `A[i]` 和 `B[j]`。\n    *   如果 `A[i]` 較大，則將 `A[i]` 複製到 `A[k]`，然後 `i` 遞減，`k` 遞減。\n    *   否則（`B[j]` 較大或相等），將 `B[j]` 複製到 `A[k]`，然後 `j` 遞減，`k` 遞減。\n3.  **剩餘元素處理** (`當 (i > 0) 執行` 和 `當 (j > 0) 執行`)：如果一個陣列的元素已全部複製，而另一個陣列還有剩餘元素，則將剩餘元素直接複製到 A 的開頭部分。"
+    },
+    "points": 5,
+    "source": "9"
+  },
+  {
+    "question_number": "3(c)(i)",
+    "question_text": "現在有以下 5 個任務：\n| 任務 | 持續時間(日) | 依賴 |\n|---|---|---|\n| A | 3 | - |\n| B | 3 | A |\n| C | 4 | B,D |\n| D | 2 | A |\n| E | 1 | C,D |\n完成以下甘特圖。",
+    "answer_details": {
+      "type": "gantt_chart_completion",
+      "tasks": [
+        {"name": "任務 A", "duration": 3, "dependencies": [], "start_day": 1, "end_day": 3},
+        {"name": "任務 B", "duration": 3, "dependencies": ["A"], "start_day": 4, "end_day": 6},
+        {"name": "任務 C", "duration": 4, "dependencies": ["B", "D"], "start_day": 7, "end_day": 10},
+        {"name": "任務 D", "duration": 2, "dependencies": ["A"], "start_day": 4, "end_day": 5},
+        {"name": "任務 E", "duration": 1, "dependencies": ["C", "D"], "start_day": 11, "end_day": 11}
+      ],
+      "notes": "根據任務的持續時間和依賴關係，填充甘特圖：\n*   **任務 A**：無依賴，持續 3 天，從第 1 天開始，第 3 天結束。\n*   **任務 B**：依賴 A。A 在第 3 天結束，所以 B 從第 4 天開始，持續 3 天，第 6 天結束。\n*   **任務 D**：依賴 A。A 在第 3 天結束，所以 D 從第 4 天開始，持續 2 天，第 5 天結束。\n*   **任務 C**：依賴 B 和 D。B 在第 6 天結束，D 在第 5 天結束。C 必須等待最晚的依賴 (B)，所以從第 7 天開始，持續 4 天，第 10 天結束。\n*   **任務 E**：依賴 C 和 D。C 在第 10 天結束，D 在第 5 天結束。E 必須等待最晚的依賴 (C)，所以從第 11 天開始，持續 1 天，第 11 天結束。"
+    },
+    "points": 3,
+    "source": "10"
+  },
+  {
+    "question_number": "3(c)(ii)",
+    "question_text": "如果任務 C 不再依賴任務 B，完成所有任務最少需要多少日？",
+    "answer_details": {
+      "type": "calculation",
+      "result": 10,
+      "notes": "如果任務 C 不再依賴任務 B：\n*   **任務 A**：第 1-3 天。\n*   **任務 D**：依賴 A，第 4-5 天。\n*   **任務 C**：現在只依賴 D。D 在第 5 天結束，所以 C 從第 6 天開始，持續 4 天，第 9 天結束。\n*   **任務 E**：依賴 C 和 D。C 在第 9 天結束，D 在第 5 天結束。E 必須等待最晚的依賴 (C)，所以從第 10 天開始，持續 1 天，第 10 天結束。\n*   因此，完成所有任務最少需要 **10** 日。"
+    },
+    "points": 1,
+    "source": "10"
+  },
+  {
+    "question_number": "3(c)(iii)",
+    "question_text": "麗麗編寫完成任務 C 的程式後，會進行驗收測試和單元測試。她應該要進行哪種測試？加以說明。",
+    "answer_details": {
+      "type": "explanation",
+      "notes": "除了驗收測試 (Acceptance Testing) 和單元測試 (Unit Testing) 之外，麗麗還應該進行**整合測試 (Integration Testing)** 和/或 **系統測試 (System Testing)**。\n*   **整合測試 (Integration Testing)**：由於任務 C 的程式可能會與其他任務（如任務 B 和 D）的程式或模組進行互動，整合測試的目的是驗證這些模組組裝在一起後，它們之間的介面和交互能否正常運作。這有助於發現模組間的通訊問題或數據流錯誤。\n*   **系統測試 (System Testing)**：系統測試是在整個整合後的軟體系統上進行的，旨在驗證系統是否符合所有指定的功能和非功能性需求（例如效能、安全性、可靠性等），確保系統在預期的操作環境下能夠穩定且正確地運行。"
+    },
+    "points": 2,
+    "source": "10"
+  },
+  {
+    "question_number": "4(a)",
+    "question_text": "小芬編寫程式來模擬一個 3x3 單元的模數遊戲，每一個單元格內都有一個英文字符 'a'...'z'。BD[x,y] 代表陣列 BD[x,y] 儲存格的內容。BD 代表陣列 BD 儲存格的左上角。字符 z 儲存在 BD[x,y]，x 和 y 是變量。  \n玩家可以利用以下四個互換：上、右、下和左，把字符 z 與其中一個相鄰字符互換。  \n小芬編寫子程式 swapBD(dir) 去進行這些互換。下表顯示每個互換對應的 dir 數值。  \n| 互換 | dir |\n|---|---|\n| 上 | 0 |\n| 右 | 1 |\n| 下 | 2 |\n| 左 | 3 |\n以下順序執行三個互換 swapBD(1)、swapBD(0) 和 swapBD(1)。填上 BD 的最終內容。\n初始 BD 內容：\n```\nc e a\nz f d\nh b g\n```",
+    "answer_details": {
+      "type": "grid_completion",
+      "initial_grid": [
+        ["c", "e", "a"],
+        ["z", "f", "d"],
+        ["h", "b", "g"]
+      ],
+      "final_grid_result": [
+        ["c", "a", "z"],
+        ["f", "e", "d"],
+        ["h", "b", "g"]
+      ],
+      "notes": "追蹤字符 'z' 的移動：\n1.  **初始位置**：'z' 在 `BD` (假設 0-indexed，即第 2 行第 1 列)。\n2.  **執行 swapBD(1) (右)**：\n    *   'z' (`BD`) 與其右側的字符 `f` (`BD`) 互換。\n    *   'z' 移動到 `BD`。BD 內容變為：\n        ```\n        c e a\n        f z d\n        h b g\n        ```\n3.  **執行 swapBD(0) (上)**：\n    *   'z' (`BD`) 與其上方的字符 `e` (`BD`) 互換。\n    *   'z' 移動到 `BD`。BD 內容變為：\n        ```\n        c z a\n        f e d\n        h b g\n        ```\n4.  **執行 swapBD(1) (右)**：\n    *   'z' (`BD`) 與其右側的字符 `a` (`BD`) 互換。\n    *   'z' 移動到 `BD`。BD 最終內容為：\n        ```\n        c a z\n        f e d\n        h b g\n        ```"
+    },
+    "points": 2,
+    "source": "11"
+  },
+  {
+    "question_number": "4(b)",
+    "question_text": "完成以下部分 swapBD(dir) 的偽代碼。\n```\n如果 dir = 0 則\n  如果 x = 0 則 輸出 '上:互換不成功'\n  否則\n    temp ← BD[x-1,y]\n    BD[x-1,y] ← 'z'\n    BD[x,y] ← temp\n    x ← x - 1\n如果 dir = 1 則\n  如果 y = 2 則 輸出 '右:互換不成功'\n  否則\n    temp ← BD[x,y+1]\n    BD[x,y+1] ← 'z'\n    BD[x,y] ← temp\n    y ← y + 1\n```",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "如果 dir = 0 則",
+        "  如果 x = 0 則 輸出 '上:互換不成功'",
+        "  否則",
+        "    temp ← BD[x-1,y]",
+        "    BD[x-1,y] ← 'z'",
+        "    BD[x,y] ← temp",
+        "    x ← x - 1",
+        "如果 dir = 1 則",
+        "  如果 y = 2 則 輸出 '右:互換不成功'",
+        "  否則",
+        "    temp ← BD[x,y+1]",
+        "    BD[x,y+1] ← 'z'",
+        "    BD[x,y] ← temp",
+        "    y ← y + 1"
+      ],
+      "notes": "swapBD(dir) 子程式應實現字符 'z' 與其相鄰字符的互換。\n*   **對於 `dir = 0` (上)**：\n    *   如果 'z' 不在最頂行 (`x ≠ 0`)，則需要將 'z' 的舊位置 `BD[x,y]` 中的字符與 `BD[x-1,y]` 的字符互換。\n    *   `temp ← BD[x-1,y]` (儲存上方字符)。\n    *   `BD[x-1,y] ← 'z'` ('z' 移到上方)。\n    *   `BD[x,y] ← temp` (舊位置填充為上方字符)。\n    *   `x ← x - 1` (更新 'z' 的行座標)。\n*   **對於 `dir = 1` (右)**：\n    *   如果 'z' 不在最右列 (`y ≠ 2`)，則需要將 'z' 的舊位置 `BD[x,y]` 中的字符與 `BD[x,y+1]` 的字符互換。\n    *   `temp ← BD[x,y+1]` (儲存右方字符)。\n    *   `BD[x,y+1] ← 'z'` ('z' 移到右方)。\n    *   `BD[x,y] ← temp` (舊位置填充為右方字符)。\n    *   `y ← y + 1` (更新 'z' 的列座標)。"
+    },
+    "points": 4,
+    "source": "12"
+  },
+  {
+    "question_number": "4(c)(i)",
+    "question_text": "小芬編寫子程式 resetBD，利用 History 來重置 BD 至它的初始內容。\n假設 History 的內容是：\n```\n頂端\n3\n0\n1\n```\n寫出 resetBD 內將會執行 swapBD 的序列。",
+    "answer_details": {
+      "type": "sequence_completion",
+      "sequence": ["swapBD(1)", "swapBD(2)", "swapBD(3)"],
+      "notes": "History 是一個堆疊 (stack)，儲存了 'z' 進行的互換操作序列。要將 BD 重置回其初始內容，需要執行與這些操作相反的互換，且順序顛倒 (因為堆疊是後進先出)。\n*   History 堆疊頂端是 `3` (左)。與『左』相反的操作是『右』，`dir=1`。\n*   下一個彈出的是 `0` (上)。與『上』相反的操作是『下』，`dir=2`。\n*   底部彈出的是 `1` (右)。與『右』相反的操作是『左』，`dir=3`。\n*   因此，resetBD 內將會執行的 `swapBD` 序列是 `swapBD(1)`、`swapBD(2)`、`swapBD(3)`。"
+    },
+    "points": 2,
+    "source": "12"
+  },
+  {
+    "question_number": "4(c)(ii)",
+    "question_text": "完成以下 resetBD 的偽代碼。\n```\nresetBD\n  當 History 不是空的 執行\n    topH ← pop(History)\n    swapBD( (topH + 2) % 4 )\n```",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "resetBD",
+        "  當 History 不是空的 執行",
+        "    topH ← pop(History)",
+        "    swapBD( (topH + 2) % 4 )"
+      ],
+      "notes": "resetBD 子程式應從 `History` 堆疊中彈出操作，並執行其相反操作。\n*   `topH ← pop(History)`：從堆疊頂部取出最近的操作。\n*   `swapBD( (topH + 2) % 4 )`：計算並執行相反操作。例如：\n    *   `0` (上) 的相反是 `(0+2)%4 = 2` (下)。\n    *   `1` (右) 的相反是 `(1+2)%4 = 3` (左)。\n    *   `2` (下) 的相反是 `(2+2)%4 = 0` (上)。\n    *   `3` (左) 的相反是 `(3+2)%4 = 1` (右)。"
+    },
+    "points": 2,
+    "source": "13"
+  },
+  {
+    "question_number": "4(c)(iii)",
+    "question_text": "BD 和 History 最終的內容是：\nBD 的最終內容：\n```\nb h a\nf z c\ne z g\n```\nHistory 的最終內容：\n```\n頂端\n2\n1\n3\n1\n```\n小芬發現只需要一個互換來重置 BD 到它的初始內容。這個互換是什麼？",
+    "answer_details": {
+      "type": "short_answer",
+      "prompt": "swapBD(3)",
+      "notes": "根據 Q4(a) 的初始 BD 內容：'z' 的初始位置是 `BD`。\n根據 Q4(c)(iii) 的 BD 最終內容：'z' 的位置是 `BD`。\n要將 'z' 從 `BD` 移回 `BD`，需要向**左**移動。\n查閱 `dir` 數值表，『左』對應的 `dir` 值是 `3`。\n因此，所需的單一互換是 `swapBD(3)`。"
+    },
+    "points": 1,
+    "source": "13"
+  },
+  {
+    "question_number": "4(c)(iv)",
+    "question_text": "小芬為 resetBD 編寫子程式 SimplifyH 去移除 History 內可以忽略的連續項目。TmpStack 是一個臨時堆疊。完成以下 SimplifyH 的偽代碼。\n```\nSimplifyH\n  當 History 不是空的 執行\n    topH ← pop(History)\n    如果 TmpStack 是空的 則\n      push(TmpStack, topH)\n    否則\n      topT ← pop(TmpStack)\n      如果 topH = (topT + 2) % 4 則\n        // 兩個互換互相抵消，不推回任何東西\n      否則\n        push(TmpStack, topT)\n        push(TmpStack, topH)\n  當 TmpStack 不是空的 執行\n    push(History, pop(TmpStack))\n```",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "SimplifyH",
+        "  當 History 不是空的 執行",
+        "    topH ← pop(History)",
+        "    如果 TmpStack 是空的 則",
+        "      push(TmpStack, topH)",
+        "    否則",
+        "      topT ← pop(TmpStack)",
+        "      如果 topH = (topT + 2) % 4 則",
+        "        // 兩個互換互相抵消，不推回任何東西",
+        "      否則",
+        "        push(TmpStack, topT)",
+        "        push(TmpStack, topH)",
+        "  當 TmpStack 不是空的 執行",
+        "    push(History, pop(TmpStack))"
+      ],
+      "notes": "SimplifyH 子程式的目的是簡化 `History` 堆疊中的操作序列，移除互相抵消的連續操作。\n1.  **處理 History 堆疊**：\n    *   `當 History 不是空的 執行`：從 `History` 堆疊中逐一彈出操作 (`topH ← pop(History)`)。\n    *   **如果 TmpStack 為空**：直接將 `topH` 推入 `TmpStack` (`push(TmpStack, topH)`)，因為沒有可比較的元素。\n    *   **如果 TmpStack 不為空**：\n        *   彈出 `TmpStack` 的頂部元素 (`topT ← pop(TmpStack)`)，並與 `topH` 進行比較。\n        *   `如果 topH = (topT + 2) % 4 則`：這表示 `topH` 和 `topT` 互為相反操作（例如，'上' 和 '下'），它們互相抵消，則這兩個元素都不需要推回 `TmpStack`。\n        *   **否則**：表示這兩個操作不抵消，需要將 `topT` 和 `topH` 都推回 `TmpStack`，順序是 `push(TmpStack, topT)` 再 `push(TmpStack, topH)`。\n2.  **將簡化後的序列移回 History 堆疊**：\n    *   `當 TmpStack 不是空的 執行`：將 `TmpStack` 中剩餘的元素逐一彈出，並推回 `History` 堆疊 (`push(History, pop(TmpStack))`)。這樣 `History` 堆疊中就只剩下簡化後的、非抵消性的操作序列。"
+    },
+    "points": 4,
+    "source": "14"
+  }
+]

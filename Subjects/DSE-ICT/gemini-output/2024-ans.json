@@ -1,0 +1,1800 @@
+[
+  {
+    "question_number": "1",
+    "question_text": "8 位元二進制補碼的範圍是什麼？",
+    "options": [
+      "A. -2^7 至 2^7",
+      "B. -2^7 至 2^7 - 1",
+      "C. -2^7 + 1 至 2^7",
+      "D. -2^7 + 1 至 2^7 - 1"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "2",
+    "question_text": "某教師傳送給學生的筆記是 PDF 格式，而不是 DOCX 格式。為什麼？",
+    "statements": [
+      "(1) 筆記的版面在不同操作系統閱覽也是相同",
+      "(2) DOCX 檔案可能帶有病毒",
+      "(3) 可包含網頁的超連結"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "A",
+    "source": ""
+  },
+  {
+    "question_number": "3",
+    "question_text": "以下哪個/些是圖像檔案格式？",
+    "statements": [
+      "(1) mov",
+      "(2) png",
+      "(3) ai"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "4",
+    "question_text": "以下試算表記錄了學校的設備：\n| A | 類型 | B | 數量 | C | 位置 |\n|---|---|---|---|---|---|\n| 1 | 打印機 A | 打印機 | 1 | 101 號房 |\n| 2 | 打印機 B | 打印機 | 1 | 106 號房 |\n| 3 | 掃描器型號 1 | 掃描器 | 2 | 106 號房 |\n| 4 | 3D 打印機 X | 打印機 | 1 | 電腦室 |\n| 5 | 打印機 A | 打印機 | 1 | 401 號房 |\n| 6 | PC 型號 Q | 電腦 | 40 | 電腦室 |\n| : | : | : | : | : | : |\n以下哪項可幫助顯示同一類型裝置的總數？",
+    "options": [
+      "A. 多工作紙",
+      "B. 排序",
+      "C. 樞紐分析表",
+      "D. 「假設」分析"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "5",
+    "question_text": "某文檔包含英文、繁體中文和簡體中文字符。應使用以下哪個/些字符集？",
+    "statements": [
+      "(1) UTF-8",
+      "(2) ASCII",
+      "(3) GB 碼"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "A",
+    "source": ""
+  },
+  {
+    "question_number": "6",
+    "question_text": "某網絡卡有一個由 6 組 2 位元的十六進制數字組成的 MAC 位址，如下列例子所示：00:0A:95:9D:67:16\n此格式可以表示多少個可能的位址？",
+    "options": [
+      "A. 2^6",
+      "B. 2^8",
+      "C. 2^24",
+      "D. 2^48"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "7",
+    "question_text": "以下哪句是正確的？",
+    "options": [
+      "A. 物件連接是用來調整數據庫報告的版面。",
+      "B. 數據庫內的查詢是用來提取數據庫中的資訊。",
+      "C. 數據庫內的報告是用來幫助用戶儲存數據。",
+      "D. 物件嵌入是用來執行應用程式。"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "8",
+    "question_text": "使用表格把數據輸入至數據庫的優點是什麼？",
+    "options": [
+      "A. 數據的儲存量較小",
+      "B. 數據篩選較快",
+      "C. 方便數據輸入",
+      "D. 執行 SQL 較快"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "9",
+    "question_text": "使用網上演示工具來製作演示的優點是什麼？",
+    "statements": [
+      "(1) 演示的檔案大小比演示軟件製作的為小",
+      "(2) 用戶可同時互相協作以製作同一個演示",
+      "(3) 可以為最新的功能用來製作演示"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. (1)、(2) 和 (3)"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "10",
+    "question_text": "志明考慮在文書處理中使用「目錄」功能。為什麼？",
+    "statements": [
+      "(1) 它會自動產生標題的超連結",
+      "(2) 它提高文件的可讀性",
+      "(3) 它會協助更新頁碼"
+    ],
+    "options": [
+      "A. 只有 (1) 和 (2)",
+      "B. 只有 (1) 和 (3)",
+      "C. 只有 (2) 和 (3)",
+      "D. (1)、(2) 和 (3)"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "11",
+    "question_text": "參考以下試算表，回答第 11 和 12 題。\n| A | Choice | B | Point |\n|---|---|---|---|\n| 1 | | | |\n| 2 | P | 3 |\n| 3 | P | 3 |\n| 4 | Q | 0 |\n| 5 | Q | 0 |\n| 6 | Q | 0 |\n| 7 | R | 0 |\n以下兩個公式的結果是什麼？ `=COUNT(B2:B7)` `=RANK(3, B2:B7)`",
+    "options": [
+      "A. 3, 3",
+      "B. 3, 2",
+      "C. 6, 1",
+      "D. 6, 2"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "12",
+    "question_text": "此試算表轉換成數據庫表。以下那些 SQL 語句產生相同的結果？",
+    "statements": [
+      "(1) SELECT COUNT(*) FROM ABC WHERE Choice <> 'P' GROUP BY Choice",
+      "(2) SELECT SUM(Point) FROM ABC WHERE Choice <> 'Q'",
+      "(3) SELECT COUNT(*) FROM ABC WHERE Choice = 'P'"
+    ],
+    "options": [
+      "A. 只有 (1) 和 (2)",
+      "B. 只有 (1) 和 (3)",
+      "C. 只有 (2) 和 (3)",
+      "D. (1)、(2) 和 (3)"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "13",
+    "question_text": "以下哪個/些體育學會的會員資料可定義為布爾數據類型？",
+    "statements": [
+      "(1) VIP 會員",
+      "(2) 銀行帳戶號碼",
+      "(3) 教育水平"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "A",
+    "source": ""
+  },
+  {
+    "question_number": "14",
+    "question_text": "以下哪項以二進制補碼表示的 8 位元數字的加法運算，會引致溢錯誤？",
+    "options": [
+      "A. 1001 1100 + 1100 1110",
+      "B. 1001 1100 + 1111 0111",
+      "C. 0010 0110 + 1111 0111",
+      "D. 0010 0110 + 1110 1100"
+    ],
+    "correct_answer": "A",
+    "source": ""
+  },
+  {
+    "question_number": "15",
+    "question_text": "以下哪項**不是**常用於連接家用鐳射打印機的方法？",
+    "options": [
+      "A. 藍牙",
+      "B. USB 電纜",
+      "C. Wifi",
+      "D. 光纖"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "16",
+    "question_text": "小芬在桌上電腦進行文書處理時出現了電源故障。部分工作中的數據能夠復原，為什麼？",
+    "statements": [
+      "(1) 這些工作中的數據儲存在硬碟內",
+      "(2) 這些工作中的數據儲存在 RAM 內",
+      "(3) 這些工作中的數據儲存在 ROM 內"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "A",
+    "source": ""
+  },
+  {
+    "question_number": "17",
+    "question_text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述是合理的？",
+    "options": [
+      "A. P 容許操作系統和視像鏡頭互動",
+      "B. Q 可以在不同操作系統中執行",
+      "C. P 控制同時使用用戶的數量",
+      "D. Q 控制使用打印機的用戶權限"
+    ],
+    "correct_answer": "A",
+    "source": ""
+  },
+  {
+    "question_number": "18",
+    "question_text": "芝芝發現她的電腦感染了勒索軟件，她應該立刻如何處理？",
+    "options": [
+      "A. 執行抗病毒程式去掃描及清除病毒",
+      "B. 安裝防火牆去封鎖未經授權存取",
+      "C. 移除網絡連接，並關閉電腦",
+      "D. 格式化硬碟"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "19",
+    "question_text": "用作啟動電腦的啟動程式通常儲存在哪個地方？",
+    "options": [
+      "A. CPU",
+      "B. RAM",
+      "C. ROM",
+      "D. SSD"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "20",
+    "question_text": "以下哪項關於快取記憶體的句子是正確的？",
+    "options": [
+      "A. 它是 ROM 的一種",
+      "B. 它只在 CPU 內找到",
+      "C. 它儲存經常使用的數據和指令",
+      "D. 快取記憶體的數據存取速度比 RAM 的為低"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "21",
+    "question_text": "以下哪些是操作系統的功能？",
+    "statements": [
+      "(1) 與其他裝置互動和便利輸入/輸出的操作",
+      "(2) 播放視像檔案",
+      "(3) 便利電腦連接網絡"
+    ],
+    "options": [
+      "A. 只有 (1) 和 (2)",
+      "B. 只有 (1) 和 (3)",
+      "C. 只有 (2) 和 (3)",
+      "D. (1)、(2) 和 (3)"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "22",
+    "question_text": "以下哪些會暫存數據或指令？",
+    "statements": [
+      "(1) 累加器",
+      "(2) 指令寄存器",
+      "(3) 記憶體位址寄存器"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (1) 和 (2)",
+      "C. 只有 (2) 和 (3)",
+      "D. (1)、(2) 和 (3)"
+    ],
+    "correct_answer": "A",
+    "source": ""
+  },
+  {
+    "question_number": "23",
+    "question_text": "小吳為學校註冊了域名 abc.edu.hk，她可以使用以下哪個/些 URL？",
+    "statements": [
+      "(1) http://abc.hk",
+      "(2) http://hk.abc.edu",
+      "(3) http://hk.abc.hk"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "24",
+    "question_text": "音頻串流服務中通常涉及以下哪個/些協定？",
+    "statements": [
+      "(1) FTP",
+      "(2) DNS",
+      "(3) IP"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "25",
+    "question_text": "在以下網絡圖內 X 的主要功能是什麼？ (圖示：一個網絡圖，其中有課室和教師室的網絡，透過 Y 連接到 X，X 再連接到互聯網)",
+    "options": [
+      "A. 把伺服器連接至多部工作站",
+      "B. 控制已連接的裝置的存取權限",
+      "C. 把多個網絡連接起來",
+      "D. 把多個網絡連接起來"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "26",
+    "question_text": "國明建立一個讓朋友瀏覽的網站，以下哪些是他應該關注的事項？",
+    "statements": [
+      "(1) 所採用多媒體元素的檔案大小",
+      "(2) 朋友電腦的儲存容量",
+      "(3) 網頁方便用戶的程度"
+    ],
+    "options": [
+      "A. 只有 (1) 和 (2)",
+      "B. 只有 (1) 和 (3)",
+      "C. 只有 (2) 和 (3)",
+      "D. (1)、(2) 和 (3)"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "27",
+    "question_text": "在以下算法，S 的最終值大於 15。N 的最小可能輸入值是什麼？\n```\n輸入 N\nS ← 0\n設 i 由 1 至 N 執行\n  S ← S + i\n```",
+    "options": [
+      "A. 5",
+      "B. 6",
+      "C. 7",
+      "D. 8"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "28",
+    "question_text": "以下算法的輸出是什麼？\n```\nP ← 9\nQ ← 7\nR ← 4\n如果 P > Q + R 則\n  如果 Q > 2*R 則\n    X ← 10\n  否則\n    X ← 20\n否則\n  如果 Q > 2*R 則\n    X ← 30\n  否則\n    X ← 40\n輸出 X\n```",
+    "options": [
+      "A. 10",
+      "B. 20",
+      "C. 30",
+      "D. 40"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "29",
+    "question_text": "以下算法的輸出是什麼？\n```\nM ← 1\n重複\n  M ← M + 1\n直至 NOT (M > 3)\n輸出 M\n```",
+    "options": [
+      "A. 2",
+      "B. 3",
+      "C. 4",
+      "D. 沒有輸出"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "30",
+    "question_text": "以下算法的輸出是什麼？\n```\nS ← 0\nN ← 1\n重複\n  S ← S + N\n  N ← N + 2\n直至 N > 6\n輸出 S\n```",
+    "options": [
+      "A. 3",
+      "B. 4",
+      "C. 9",
+      "D. 16"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "31",
+    "question_text": "參考下列從陣列 A 中搜尋一個數值的算法，回答第 31 和 32 題。\n```\ni ← 1\nFLAG ← FALSE\n輸入 N\n當 (i <= 10) 循環部分 FLAG 執行\n  如果 A[i] = N 則\n    FLAG ← TRUE\n  否則\n    i ← i + 1\n如果 FLAG 則\n  輸出 i\n否則\n  輸出 '沒有出現'\n```\n上列遺漏部分是什麼？",
+    "options": [
+      "A. OR",
+      "B. AND",
+      "C. OR NOT",
+      "D. AND NOT"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "32",
+    "question_text": "使用變量 FLAG 的目的是什麼？",
+    "options": [
+      "A. 儲存找到的數值的位置",
+      "B. 儲存配對次數",
+      "C. 作為判斷索引",
+      "D. 控制循環"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "33",
+    "question_text": "以下哪些是在編寫程式時使用模組的優點？",
+    "statements": [
+      "(1) 有些模組可以重用",
+      "(2) 較容易進行程式除錯",
+      "(3) 較快定義問題"
+    ],
+    "options": [
+      "A. 只有 (1) 和 (2)",
+      "B. 只有 (1) 和 (3)",
+      "C. 只有 (2) 和 (3)",
+      "D. (1)、(2) 和 (3)"
+    ],
+    "correct_answer": "A",
+    "source": ""
+  },
+  {
+    "question_number": "34",
+    "question_text": "以下哪項是用作過濾傳入和傳出的網絡流量？",
+    "options": [
+      "A. 間諜軟件",
+      "B. 保安圍欄",
+      "C. 防火牆",
+      "D. 數碼簽署"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "35",
+    "question_text": "下列在登入網上商店的畫面中所展示的任務有什麼目的？ (圖示：一個網上商店登入畫面，顯示驗證碼輸入框)",
+    "statements": [
+      "(1) 檢驗登入資料是正確無誤",
+      "(2) 核實登入是由真人執行",
+      "(3) 確保登入裝置僅配了觸式屏幕"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "36",
+    "question_text": "當家健在某網站進行用戶登記時，他收到一封由網站寄出的電郵，內附一個鏈碼，讓他輸入。這個鏈碼的目的是什麼？",
+    "statements": [
+      "(1) 核實他的身份",
+      "(2) 確保該電郵不是垃圾電郵",
+      "(3) 確保網站和他的客戶 SSL 的保護"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "A",
+    "source": ""
+  },
+  {
+    "question_number": "37",
+    "question_text": "莉莉是一名攝影師，她與志明和志偉分享相片。以下哪項/些行動很可能侵犯她的知識產權？",
+    "statements": [
+      "(1) 莉莉透過點對點檔案分享 (BT) 把相片分享給志明和志偉",
+      "(2) 志明把相片賣給廣告公司",
+      "(3) 志明以非法複製的軟件修改這些相片"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. 只有 (2) 和 (3)"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "38",
+    "question_text": "以下哪個/些關於開放源碼軟件的句子是正確的？",
+    "statements": [
+      "(1) 每個人都可以使用和修改源碼",
+      "(2) 軟件開發者有責任提供軟件更新",
+      "(3) 每個人都可以更改軟件名稱和重新分發軟件"
+    ],
+    "options": [
+      "A. 只有 (1)",
+      "B. 只有 (2)",
+      "C. 只有 (1) 和 (3)",
+      "D. (1)、(2) 和 (3)"
+    ],
+    "correct_answer": "C",
+    "source": ""
+  },
+  {
+    "question_number": "39",
+    "question_text": "使用以下電腦需要作出什麼符合人體工學的改良？ (圖示：一個人坐在電腦前)",
+    "options": [
+      "A. 安裝軌跡球",
+      "B. 安裝觸式屏幕",
+      "C. 用較小的桌子",
+      "D. 在座椅上安裝手托"
+    ],
+    "correct_answer": "D",
+    "source": ""
+  },
+  {
+    "question_number": "40",
+    "question_text": "以下哪些是 PKI 的主要功用？",
+    "statements": [
+      "(1) 確保在互聯網上傳輸的數據完整性",
+      "(2) 支援較長的密碼",
+      "(3) 支援數據加密"
+    ],
+    "options": [
+      "A. 只有 (1) 和 (2)",
+      "B. 只有 (1) 和 (3)",
+      "C. 只有 (2) 和 (3)",
+      "D. (1)、(2) 和 (3)"
+    ],
+    "correct_answer": "B",
+    "source": ""
+  },
+  {
+    "question_number": "1(a)(i)",
+    "question_text": "如果一位員工在欄 D 或欄 E 所對應的數值為 1，他將被視為出席。而在這情況下，欄 F 會顯示數值 1。否則則顯示 0。\n在 F2 輸入公式，然後複製到 F3:F81。完成以下 F2 的公式。",
+    "answer_details": {
+      "type": "fill_in_the_blank_formula",
+      "prompt": "=IF(___________)",
+      "correct_formula_options": [
+        "IF(D2+E2>=1, 1, 0)",
+        "OR(D2>=1,E2>=1)",
+        "OR(D2,E2)",
+        "NOT(D2+E2=0)",
+        "NOT(AND(D2=0,E2=0))",
+        "NOT(AND(NOT(D2), NOT(E2)))"
+      ],
+      "notes": "這是 Excel 或試算表中的條件判斷公式，用來判斷員工是否出席。只要 D2 或 E2 任一個為 1，就代表出席 (F2 顯示 1)，否則為 0。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(a)(ii)",
+    "question_text": "為了計算個別員工的總出席日數，在 B85 輸入公式`=SUMIF(A2:A81, \"S01\", F2:F81)`，然後複製到 B86、E85 和 E86。B85 的結果是正確的。在 D86、E85 和 E86 的終線網絡。在下方修正 E85 的公式：",
+    "answer_details": {
+      "type": "fill_in_the_blank_formula",
+      "prompt": "=SUMIF(___________)",
+      "correct_formula": "=SUMIF($A$2:$A$81, A85, $F$2:$F$81)",
+      "notes": "修正 E85 的公式以正確計算總出席日數。關鍵在於使用絕對引用 `$` 來固定數據範圍 `A2:A81` 和 `F2:F81`，以便在複製公式時這些範圍不會改變。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(a)(iii)",
+    "question_text": "除了核實欄位是否沒有留空，描述一個適合 D2:D81 內數據的有效性檢驗。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer": "檢查是否 1 或 0 / 確保資料必須為整數 / 檢查資料是否在 0 和 1 之間",
+      "notes": "對於 D2:D81 欄位，其數值應僅限於 0 或 1。因此，有效的數據性檢驗可以是檢查輸入值是否為 1 或 0，或確保其為整數，並在 0 到 1 的範圍內。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "1(a)(iv)",
+    "question_text": "A1:F1 是欄名。而 A2:F81 內的記錄已排序。在下方寫出此排序選項：",
+    "answer_details": {
+      "type": "table_completion",
+      "notes": "根據來源，排序選項包括 `DATE/C1` 和 `NAME/S1`，均為順序排序。",
+      "headers": ["欄名", "次序 (順序/倒序)"],
+      "rows_to_complete": [
+        {"column_name": "DATE/C1", "order": "順序"},
+        {"column_name": "NAME/S1", "order": "順序"}
+      ]
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(i)",
+    "question_text": "A1:F81 內的數據被轉換成數據庫表 ATTEND。\n簡略說明為何 NAME 不可以作為主關鍵碼。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer": "它不是唯一的。",
+      "notes": "NAME 欄位不能作為 ATTEND 表的主關鍵碼，因為姓名可能存在重複，無法唯一識別每一條記錄。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(ii)",
+    "question_text": "寫出 ATTEND 的主關鍵碼。",
+    "answer_details": {
+      "type": "short_answer",
+      "expected_answer_options": [
+        "EID + Date",
+        "SID + Date"
+      ],
+      "notes": "ATTEND 表的主關鍵碼需要能夠唯一識別每個員工在特定日期的出席記錄。將員工識別碼 (EID 或 SID) 和日期 (Date) 組合起來作為複合主關鍵碼可以實現這一點。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(iii)",
+    "question_text": "根據此試算表內已知的首 8 筆記錄，執行以下 SQL 語句後的輸出是什麼？\n`SELECT EID, COUNT(*) FROM ATTEND\nWHERE SIGNIN + SIGNOUT = 1\nGROUP BY EID HAVING COUNT(*) > 1`",
+    "answer_details": {
+      "type": "sql_output_prediction",
+      "expected_output": "SID 2",
+      "notes": "此 SQL 語句會選取 `SIGNIN + SIGNOUT = 1` 的記錄 (即只有 SIGNIN 或只有 SIGNOUT，表示單次出入)。然後按 EID 分組，並篩選出 COUNT(*) > 1 的 EID，即那些有超過一次單次出入記錄的 EID。根據首 8 筆記錄的具體數據，來源給出的答案是 `SID 2`。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(iv)",
+    "question_text": "簡略說明為何不需要傳換和包括 A84:E86 內的數據在 ATTEND。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer": "A84:E86 中的數據是從其他數據衍生出來的總結 (多餘的)。/ A1:F81 中的數據是原始數據 (原始數據)。",
+      "notes": "A84:E86 區域的數據（例如員工總出席日數）是從 A1:F81 區域的原始數據計算得出的總結性數據。在數據庫設計中，通常只儲存原始數據，而計算結果可以在需要時透過查詢（如 SUMIF）來生成，避免數據冗餘和不一致。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "1(a)",
+    "question_text": "除了 SID 外，寫出 STAFF 的一個主關鍵碼。",
+    "answer_details": {
+      "type": "short_answer",
+      "expected_answer": "HKID",
+      "notes": "除了員工識別碼 (SID)，香港身份證號碼 (HKID) 也可以作為 STAFF 表的主關鍵碼，因為它能唯一識別每位員工。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)",
+    "question_text": "列出曾進入識別碼為「L502」的房間的員工識別碼，然後按 TDATE 升序排列。",
+    "answer_details": {
+      "type": "sql_query_construction",
+      "expected_sql_query": "SELECT SID FROM TRAN WHERE RID = 'L502' ORDER BY TDATE",
+      "notes": "此 SQL 查詢從 `TRAN` 表中選取 `RID` 為 'L502' 的員工識別碼 (`SID`)，並按 `TDATE` (交易日期) 升序排列。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(c)",
+    "question_text": "列出普遍進入名稱包含「實驗室」的房間的員工姓名。",
+    "answer_details": {
+      "type": "sql_query_construction",
+      "expected_sql_query_options": [
+        "SELECT SNAME FROM STAFF S, ROOM R, TRAN T WHERE S.SID = T.SID AND R.RID = T.RID AND R.SNAME LIKE '%Lab%'",
+        "SELECT SNAME FROM STAFF WHERE SID IN (SELECT SID FROM TRAN WHERE RID IN (SELECT RID FROM ROOM WHERE RNAME LIKE '%Lab%'))"
+      ],
+      "notes": "此 SQL 查詢需要聯接 `STAFF`、`ROOM` 和 `TRAN` 表。它首先找出房間名稱 (`RNAME`) 包含「Lab」的房間，然後找出這些房間的所有交易記錄，最後從 `STAFF` 表中選取對應的員工姓名 (`SNAME`)。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(d)",
+    "question_text": "列出未曾進入任何房間的員工姓名。\n`SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________`",
+    "answer_details": {
+      "type": "sql_query_completion",
+      "prompt": "`SELECT SNAME FROM STAFF S LEFT JOIN TRAN T ON S.SID = T.SID WHERE T.SID IS NULL`",
+      "notes": "此 SQL 語句使用 `LEFT JOIN` 將 `STAFF` 表與 `TRAN` 表連接。`LEFT JOIN` 會保留 `STAFF` 表的所有記錄。如果 `TRAN` 表中沒有匹配的記錄，則 `TRAN` 表的欄位會顯示 `NULL`。因此，`WHERE T.SID IS NULL` 條件會篩選出那些在 `TRAN` 表中沒有任何進入記錄的員工。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "1(e)",
+    "question_text": "有些房間在 TRAN 內有超過 100 筆進入記錄。列出它們的房間類型。",
+    "answer_details": {
+      "type": "sql_query_construction",
+      "expected_sql_query_options": [
+        "SELECT DISTINCT RTYPE FROM ROOM R, TRAN T WHERE R.RID = T.RID GROUP BY R.RID HAVING COUNT(*) > 100",
+        "SELECT DISTINCT RTYPE FROM ROOM WHERE RID IN (SELECT RID FROM TRAN GROUP BY RID HAVING COUNT(*) > 100)"
+      ],
+      "notes": "此 SQL 查詢會先從 `TRAN` 表中按 `RID` 分組，並計算每個房間的記錄數。然後篩選出記錄數超過 100 的房間 (`HAVING COUNT(*) > 100`)。最後，從 `ROOM` 表中選取這些房間的房間類型 (`RTYPE`)。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "1(f)",
+    "question_text": "完成以下 SQL 語句，於 STAFF 內增加一個欄 MOB，以儲存員工的手提電話號碼。\n`ADD _________`",
+    "answer_details": {
+      "type": "sql_alter_table_completion",
+      "prompt": "`ALTER TABLE STAFF ADD MOB CHAR(8)`",
+      "notes": "要向現有表 `STAFF` 添加一個名為 `MOB` 的新欄位，可以使用 `ALTER TABLE` 語句。`CHAR(8)` 表示該欄位將儲存 8 個字符的固定長度字串，適用於手提電話號碼。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(g)",
+    "question_text": "以下 SQL 語句的目的是什麼？\n`SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '28/7/2023'`",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer": "列出於 2023 年 7 月 28 日未進入任何房間的物理系教職員工。",
+      "notes": "此 SQL 語句的目的是找出所有**物理部門**的員工中，**有進入記錄**但**在 2023 年 7 月 28 日沒有進入記錄**的員工 `SID`。它首先篩選出物理部門且有進入記錄的員工 `SID`，然後使用 `MINUS` 運算符減去在指定日期有進入記錄的員工 `SID`，從而得到在該日期沒有進入記錄的物理部門員工。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(i)",
+    "question_text": "家健計劃購買一台新電腦用作影片剪輯。以下是兩台電腦 P 和 Q 的規格：[規格表格]\n按照儲存設備的數據傳輸率，以降序方式排列 SSD、HDD 和 RAM。",
+    "answer_details": {
+      "type": "ordering",
+      "items_to_order": ["RAM", "SSD", "HDD"],
+      "order_type": "descending_data_transfer_rate",
+      "notes": "數據傳輸率通常是 RAM 最快，其次是 SSD，最後是 HDD。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(ii)",
+    "question_text": "除了數據傳輸率和儲存容量，描述 RAM 與 SSD 的一個功能上的分別。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer_options": [
+        "RAM 是易失性的而 SSD 是非易失性的。",
+        "RAM 是主記憶體而 SSD 是輔助儲存器。"
+      ],
+      "notes": "**RAM (隨機存取記憶體)** 是**易失性**的，斷電後數據會丟失，主要作為 **主記憶體** 供 CPU 快速存取工作中的數據和程式。而 **SSD (固態硬碟)** 是 **非易失性** 的，斷電後數據仍能保留，主要作為 **輔助儲存器** 儲存操作系統、應用程式和文件。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(iii)",
+    "question_text": "家健認為 Q 較為適合用來渲染 4K 影像。舉出**兩個**支持他的理由。",
+    "answer_details": {
+      "type": "explanation_with_multiple_reasons",
+      "number_of_reasons": 2,
+      "expected_reasons": [
+        "Q 所配置的 CPU 處理能力較高，因為它有較高的時鐘頻率。",
+        "Q 所配置的獨立 GPU 擁有專屬記憶體，能夠更有效渲染圖像。"
+      ],
+      "notes": "渲染 4K 影像需要強大的處理能力：\n1.  **CPU 處理能力**：**電腦 Q 配置的 CPU 處理能力較高**，通常意味著更高的時鐘頻率和/或更多的核心，這對於複雜的影像渲染任務至關重要。\n2.  **獨立 GPU**：**電腦 Q 擁有獨立的 GPU (圖形處理單元)**，並配備專屬記憶體。GPU 在處理圖形和平行運算方面效率更高，能夠極大地加速影像渲染過程，尤其是在處理 4K 等高解析度內容時。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(b)(i)",
+    "question_text": "最後家健購買了 Q，並把它接駁到 LAN。\n估算在 LAN 中接收一個 5 GB 影像檔的所需時間。展示你的計算。",
+    "answer_details": {
+      "type": "calculation",
+      "expected_calculation_options": [
+        "5 x 1024 x 1024 x 1024 x 8 / 1000 x 1000 x 1000 = 42.9 秒",
+        "5 x 1000 x 1000 x 1000 x 8 / 1000 x 1000 x 1000 = 40 秒"
+      ],
+      "notes": "這是一個網絡傳輸時間的計算。假設 LAN 的速度為 1 Gbps (Gigabit per second) = 1000 Mbps = 10^9 bits/second。\n*   文件大小：5 GB。\n*   1 GB = 1024^3 Bytes (電腦科學定義) 或 1000^3 Bytes (SI 定義)。\n*   1 Byte = 8 bits。\n*   計算所需總位元數：5 GB * 8 bits/Byte。\n*   所需時間 = 總位元數 / 網絡速度。\n*   **使用 1024 作為換算**：`5 * 1024^3 Bytes * 8 bits/Byte / (1000 * 1000 * 1000 bits/sec) ≈ 42.9 秒`。\n*   **使用 1000 作為換算**：`5 * 1000^3 Bytes * 8 bits/Byte / (1000 * 1000 * 1000 bits/sec) = 40 秒`。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(b)(ii)",
+    "question_text": "家健看見電腦內的抗電腦病毒軟件在兩個不同情況下顯示以下訊息。\n訊息 A: `警告！由於檔案含有病毒，故未能執行。C:\\game.exe`\n訊息 B: `警告！在掃描器掃描中發現病毒。C:\\game.exe C:\\programdraw.exe D:\\player.exe`\n解釋模式 (或批處理或實時處理) 最能描述在每個情況下的病毒掃描？簡略說明。",
+    "answer_details": {
+      "type": "explanation_and_identification",
+      "parts": [
+        {"name": "訊息 A", "description": "**實時處理 (Real-time processing)**。病毒掃描是在程序執行時即時進行的，發現病毒後立即阻止程序執行。"},
+        {"name": "訊息 B", "description": "**批處理 (Batch processing)**。病毒掃描是在背景執行，通常是預定的掃描或用戶手動觸發的掃描，然後一次性顯示多個發現病毒的結果。"}
+      ],
+      "notes": "病毒掃描可以採用不同的處理模式：\n*   **實時處理**：在文件被存取、打開或執行時即時進行掃描。如果發現威脅，會立即阻止操作並發出警告。\n*   **批處理**：通常在預設時間或用戶指令下，對指定的文件或整個系統進行掃描。掃描過程可能在背景運行，並在完成後彙報所有發現的威脅。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(c)",
+    "question_text": "當家健嘗試在一個網上系統更改密碼時，他的新密碼不符合系統的三個密碼要求，如下所示。填上餘下**兩個**要求。\n密碼要求:\n1. 最少有 10 個字符\n2. __________\n3. __________",
+    "answer_details": {
+      "type": "fill_in_the_blank_list",
+      "list_items_to_complete": [
+        "必須包含大寫字母、小寫字母、數字及符號的組合。",
+        "禁止以用戶名作為密碼一部份。"
+      ],
+      "notes": "強密碼通常需要包含多種字符類型，以增加破解難度，並避免使用容易被猜測的個人信息。常見的密碼要求包括：\n1.  **字符長度**：至少 8-12 個字符（題目已給出 10 個）。\n2.  **字符複雜度**：**必須包含大寫字母、小寫字母、數字及符號的組合**。\n3.  **避免個人信息**：**禁止以用戶名、姓名、生日等容易被猜測的信息作為密碼一部份**。\n4.  **避免常見模式**：避免使用連續數字、字母或常見詞語。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(d)",
+    "question_text": "當家健在其工作上花大量時間使用鍵盤。舉出一個潛在健康威脅，並寫出除了定時休息外，一個能夠保障他健康的對應措施。",
+    "answer_details": {
+      "type": "explanation_and_solution",
+      "parts": [
+        {"name": "健康威脅", "description": "**重複性勞損 (RSI)** / 腕管綜合症 / 手腕痛 / 手部痛 / 手指痛。"},
+        {"name": "對應措施", "description": "除了定時休息外，可以**保持手部自然位置的人體工學鍵盤** / **使用矽膠腕托**。"}
+      ],
+      "notes": "長時間重複使用鍵盤和滑鼠可能導致多種健康問題。最常見的是重複性勞損 (RSI)，包括腕管綜合症，表現為手腕、手指疼痛或麻木。\n除了定時休息，其他預防措施包括使用符合人體工學的設備，如**人體工學鍵盤**或**腕托**，以確保手腕和手保持自然、放鬆的姿勢。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(a)(i)",
+    "question_text": "小麗使用有線連接她的多合一無線路由器連接至家中的桌上電腦和寬頻數據機。\n路由器背面有 5 個埠 (1-5)，如下所示：[路由器圖片，顯示埠 1-5 和 WAN]\n就以下各裝置，建議用作連接的一個埠。",
+    "answer_details": {
+      "type": "short_answer_fill_in_the_blank",
+      "items_to_connect": [
+        {"device": "桌上電腦", "prompt": "1-4 (任何一個)"},
+        {"device": "寬頻數據機", "prompt": "WAN"}
+      ],
+      "notes": "路由器通常有兩類埠：\n*   **LAN 埠 (1-4/5)**：用於連接本地網絡中的設備，如桌上電腦、遊戲機、網絡印表機等。\n*   **WAN 埠 (通常顏色不同或標示為 WAN)**：用於連接外部網絡，即連接寬頻數據機以獲取網際網路連接。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(a)(ii)",
+    "question_text": "除了寬頻外，寫出在路由器與電腦之間採用有線連接卻於無線連接的一個優點。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer_options": [
+        "網絡連接較穩定",
+        "提供較高的保安"
+      ],
+      "notes": "相比無線連接，有線連接（如乙太網線）具有多個優點：\n1.  **網絡連接較穩定**：有線連接受干擾較少，傳輸信號更穩定，不易出現斷線或速度波動。\n2.  **提供較高的保安**：有線連接不易被未經授權的設備截取或入侵，安全性通常優於無線網絡。\n3.  **速度更快**：通常能提供更高的數據傳輸速度（雖然題目要求除了寬頻）。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "3(b)",
+    "question_text": "小麗計劃透過互聯網傳送一個重要訊息給小明。當中使用了公開密碼匙的基礎建設 (PKI)，以保證訊息是由小麗發出。小麗和小明各有一對密碼匙 (即小麗的公開密碼匙、小麗的私人密碼匙、小明的公開密碼匙和小明的私人密碼匙)。寫出在傳遞時使用的密碼匙。\n小麗使用 __________ 簽署訊息。\n然後小明使用 __________ 核實訊息。",
+    "answer_details": {
+      "type": "fill_in_the_blank",
+      "prompts": [
+        {"role": "小麗", "action": "簽署訊息", "blank": "小麗的私人密碼匙"},
+        {"role": "小明", "action": "核實訊息", "blank": "小麗的公開密碼匙"}
+      ],
+      "notes": "在 PKI 中，為了保證訊息的**發送者身份（不可否認性）**：\n1.  **簽署**：發送者 (小麗) 使用自己的**私人密碼匙**對訊息進行數位簽署。\n2.  **核實**：接收者 (小明) 使用發送者 (小麗) 的**公開密碼匙**來核實簽署，確認訊息確實來自小麗，且未被篡改。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(c)",
+    "question_text": "小麗經常發送電郵。舉出在發送電郵時使用 HTML 格式而非純文字格式的**兩個**好處。",
+    "answer_details": {
+      "type": "explanation_with_multiple_reasons",
+      "number_of_reasons": 2,
+      "expected_reasons": [
+        "可以定義格式 / HTML 格式可以包含多媒體 / 超連結。",
+        "純文字格式不可以定義格式 / 包含多媒體 / 超連結。"
+      ],
+      "notes": "HTML 格式的電子郵件相較於純文字有以下好處：\n1.  **豐富的格式和內容**：**HTML 格式可以定義文字的樣式、顏色、字體大小，並且可以包含圖片、音頻、視頻等多媒體元素，以及網頁超連結**。\n2.  **更具視覺吸引力**：透過排版和多媒體，HTML 郵件更具視覺吸引力，能傳達更豐富的信息，適用於廣告、新聞簡報等。\n純文字郵件則無法實現這些功能，內容單一，僅限於文字。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(d)(i)",
+    "question_text": "小麗在學校工作。她開發一個網上系統，讓學生閱讀 PDF 格式的試卷。學生可以輸入科目及年份去揀選過往試卷。如下所示：[網上試卷系統介面圖片]\n重新設計網頁的佈局，以改善下列各項方便用戶的程度：\n* 揀選過往試卷\n* PDF 文件的導航\n* 閱覽 PDF 文件\n在你的設計上加上註解。",
+    "answer_details": {
+      "type": "design_task",
+      "notes": "此題需要**重新設計網頁的佈局**，以提高用戶體驗。關鍵點在於如何優化試卷的選擇、PDF 導航和閱覽功能。\n\n**設計建議（需以圖示輔助，並加註解）：**\n1.  **揀選過往試卷（優化選擇）**：\n    *   **科目及年份下拉式選單**：使用直觀的下拉式選單或單選按鈕，讓學生快速選擇科目和年份，而非輸入框。可增加「熱門」或「最新」試卷區塊。\n    *   **搜索功能**：增加一個搜索框，讓學生可以輸入關鍵字（如「卷一」、「MC」）來查找試卷。\n2.  **PDF 文件的導航（優化導航）**：\n    *   **內置導航工具**：在 PDF 閱覽器中提供清晰的頁碼、上一頁/下一頁按鈕、頁數輸入框、**縮圖導航**或**目錄功能**，方便學生快速跳轉。\n    *   **書籤/標記功能**：允許學生為重要頁面添加書籤，便於回顧。\n3.  **閱覽 PDF 文件（優化閱覽）**：\n    *   **全螢幕模式**：提供**全螢幕模式**選項，減少干擾，最大化閱覽空間。\n    *   **放大/縮小功能**：提供直觀的放大/縮小按鈕或滑桿，方便學生調整顯示大小。\n    *   **筆記/高亮功能**：若條件允許，可提供在 PDF 上做筆記或高亮的功能。\n\n**示例佈局：**\n*   **左側邊欄**：科目/年份選單，搜索框。下方顯示最近瀏覽記錄。\n*   **中間主區域**：大的 PDF 閱覽器，上方或下方配備導航工具條（頁碼、縮放、縮圖按鈕、全螢幕按鈕）。\n*   **右側邊欄**（可選）：PDF 內容目錄或書籤列表。\n\n**註解**：在設計圖上標註各區塊的功能，例如：「選擇科目和年份，點擊「搜尋」顯示結果」、「此處為 PDF 頁碼顯示及跳轉」、「提供縮放和全螢幕按鈕，優化閱讀體驗」。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "3(d)(ii)",
+    "question_text": "建議可保護過往試卷版權的**兩個**措施。",
+    "answer_details": {
+      "type": "explanation_with_multiple_reasons",
+      "number_of_reasons": 2,
+      "expected_reasons": [
+        "加上浮水印 / 文件的數碼簽署 (或顯示擁有人)",
+        "以加密形式儲存 PDF / 登入 (存取限制)",
+        "停用 畫面擷取 / 滑鼠右鍵 / 下載 / 儲存 功能 (用戶端功能)"
+      ],
+      "notes": "保護過往試卷版權的措施可以從技術和管理兩方面考慮：\n1.  **技術保護**：\n    *   **加上浮水印**：在 PDF 文件中添加學校名稱、年份或「版權所有」等**浮水印**，讓未經授權的複製難以使用。\n    *   **數碼簽署**：使用**數碼簽署**證明文件的來源和完整性，防止篡改。\n    *   **加密儲存**：將 PDF 文件**以加密形式儲存**，只有授權用戶才能解密和瀏覽。\n    *   **限制用戶端功能**：在網頁閱覽器中**停用畫面擷取、滑鼠右鍵、下載或儲存功能**，增加複製難度。\n2.  **管理/存取控制**：\n    *   **登入及權限管理**：實施**登入驗證**，限制只有授權的學生或教職員才能存取試卷。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(a)(i)",
+    "question_text": "顯示板包含 5×3 個黑白點，以位元模式來表示顯示圖像，而 1 和 0 分別代表黑點和白點。\n完成下列以位元模式 111 001 010 100 111 所表示的顯示圖像。首兩行已在畫好。\n[5x3 網格圖片，部分已填寫]",
+    "answer_details": {
+      "type": "image_completion",
+      "initial_image_description": "5x3 網格，第一行 (101) 和第二行 (101) 已畫好。",
+      "bit_pattern_to_complete": "111001010100111",
+      "notes": "根據提供的位元模式 `111 001 010 100 111`，將其轉換為 5x3 網格中的黑點 (1) 和白點 (0)。\n*   第 1 行: `111` (三個黑點)\n*   第 2 行: `001` (兩個白點，一個黑點)\n*   第 3 行: `010` (一個白點，一個黑點，一個白點)\n*   第 4 行: `100` (一個黑點，兩個白點)\n*   第 5 行: `111` (三個黑點)\n\n**預期完成的圖像如下 (將 1 視為黑色方塊，0 視為白色方塊):**\n```\n\n\n\n\n\n```\n（注意，題目中來源的圖片示例似乎與『首兩行已畫好』的文字描述有點出入，來源圖中顯示首兩行是『101, 101』，但給定的位元模式是以 `111` 開頭。我將基於題目文字描述 `111 001 010 100 111` 來畫出完整的 5x3 圖像，假設『首兩行已畫好』是這個模式的一部分，而非獨立的起始圖。）\n\n**若依據來源圖片的範例『101, 101』作為前兩行，則剩下 15-6=9 個位元 `100111011`。** 來源提供的答案示意圖為：\n```\n\n\n\n\n\n```\n這與給定的位元模式 `111 001 010 100 111` 不符。**我將優先依據給定的位元模式 `111 001 010 100 111` 進行轉換，並指出來源圖例與文本描述的歧義**。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "4(a)(ii)-1",
+    "question_text": "在原本的位元模式最後方加上了一個偶數檢驗位。\n寫出能表示以下顯示圖像的位元模式 (16 位元)。\n[4x4 網格圖片]",
+    "answer_details": {
+      "type": "binary_representation",
+      "expected_answer": "101 111 001 101 1",
+      "notes": "這是一個 4x4 網格，共 16 個點。如果加上偶數檢驗位，則整個 16 位元串中 1 的數量必須是偶數。根據來源提供的答案，15 位元的圖像數據加上最後一個檢驗位，構成 16 位元。圖像的位元模式是 `101 111 001 101`，其 1 的數量是 `3+3+2+3 = 11` (奇數)。因此，檢驗位應為 `1`，使得總 1 的數量為 12 (偶數)。最終模式為 `101 111 001 101 1`。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(a)(ii)-2",
+    "question_text": "此顯示板可以顯示多少個不同的圖像？",
+    "answer_details": {
+      "type": "calculation",
+      "expected_answer_options": [
+        "2^15",
+        "32768"
+      ],
+      "notes": "顯示板是 5x3 個點，總共有 15 個點。每個點可以是黑 (1) 或白 (0)，因此每個點有 2 種狀態。15 個點獨立變化，可以表示 `2^15` 種不同的圖像。`2^15 = 32768`。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "4(b)(i)",
+    "question_text": "當一個顯示圖像改變，一些點會被切換 (即由黑變白或由白變黑)，這些點會被記錄。\n在以下例子中，被切換的點為 B3 和 C2。\n[圖片：原始 5x3 圖像 -> 下一個 5x3 圖像]\n寫出以下被切換的點。",
+    "answer_details": {
+      "type": "identify_changes",
+      "expected_answer_options": [
+        "A2",
+        "B1",
+        "C1",
+        "C2"
+      ],
+      "notes": "根據圖像變化的前後對比，找出顏色發生變化的點。來源給出的答案是 `A2, B1, C1, C2` (其中任意兩項)。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(b)(ii)",
+    "question_text": "記錄一個點的位置 (例如 B3) 需要多少個位元？簡略說明。",
+    "answer_details": {
+      "type": "calculation_and_explanation",
+      "expected_answer": "4 位元。",
+      "explanation": "顯示板有 5x3 = 15 個不同的點。要唯一識別 15 個點中的任意一個，至少需要 `ceil(log2(15))` 個位元。`2^3 = 8` 不夠，`2^4 = 16` 夠。因此，最少需要 **4 位元** 來記錄一個點的位置。\n\n（根據來源，其說明為『4 位元: 2^4 >= 15 個被切換的位置。』）"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(b)(iii)",
+    "question_text": "在下方繪製下一個顯示圖像，以需要最多位元來記錄被切換的點。\n[圖片：原始 5x3 圖像 -> 下一個 5x3 圖像 (繪圖目標)]",
+    "answer_details": {
+      "type": "image_drawing",
+      "notes": "此題需要繪製一個圖像。其目的是測試理解如何產生圖像變化，並最大化切換點的數量。  \n**目標**：繪製一個 5x3 圖像，使其與原始圖像相比，有最多的點被切換（即由黑變白，或由白變黑）。這意味著所有 15 個點都改變顏色。  \n**預期圖像**：與原始圖像的每個點顏色都相反的圖像。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(c)",
+    "question_text": "分別建議應用軟件和系統軟件在操作此顯示板時的一個功能。",
+    "answer_details": {
+      "type": "short_answer_comparison",
+      "parts": [
+        {"software_type": "應用軟件", "prompt": "**能夠讓用戶管理 / 更改 / 修改 / 顯示在顯示板上的圖像 / 圖像規律 / 色彩。**"},
+        {"software_type": "系統軟件", "prompt": "**驅動程式 / 監控作業系統和顯示板溝通 / 控制 / 連接 / 監控。**"}
+      ],
+      "notes": "1.  **應用軟件 (Application Software)**：直接為用戶提供特定功能，例如繪圖工具、圖像編輯器等，允許用戶**管理、修改或顯示顯示板上的圖像，設定圖像規律或色彩**。\n2.  **系統軟件 (System Software)**：提供電腦系統運作的基礎環境，例如操作系統、驅動程式等。在顯示板操作中，**驅動程式**是系統軟件的一部分，它負責**監控作業系統與顯示板之間的溝通，控制顯示板的連接和基本運作**。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "5(a)",
+    "question_text": "陣列 A 儲存了 6 個數。算法 ALG1 和 ALG2 分別驗證下列要求 (I) 和 (II)。\n(I) A 中的所有變數是正數。\n(II) A 中的變數是以升序排列。\n根據以上的要求，描述使用以下無效測試數據的目的：\n`情況 1: A=3, A=3, A=5, A=5, A=5, A=8`\n`目的:` __________\n`情況 2: A=-1, A=1, A=5, A=5, A=5, A=8`\n`目的:` __________",
+    "answer_details": {
+      "type": "fill_in_the_blank_explanation",
+      "prompts": [
+        {"scenario": "情況 1", "blank": "檢查 ALG2 檢驗 A 中所有數數都是以升序排列。"},
+        {"scenario": "情況 2", "blank": "檢查 ALG1 檢驗 A 中所有數數都是正數。"}
+      ],
+      "notes": "1.  **情況 1 (`A=3, A=3, A=5, A=5, A=5, A=8`)**：這個數據是**以升序排列**的。其目的是**測試 ALG2**，確認它能正確判斷一個升序排列的陣列。\n2.  **情況 2 (`A=-1, A=1, A=5, A=5, A=5, A=8`)**：這個數據**包含負數 (-1)**。其目的是**測試 ALG1**，確認它能正確判斷陣列中是否所有數都是正數（這裡會判斷為假）。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "5(b)",
+    "question_text": "如果 A 中的所有變數是正數，ALG1 便會輸出 TRUE，否則輸出 FALSE。完成以下 ALG1 的偽代碼。\n`P ← TRUE`\n`設 i 由 _________ 至 _________ 執行`\n  `如果 _________ 則`\n    `P ← FALSE`\n`輸出 P`",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "P ← TRUE",
+        "設 i 由 0 至 5 執行",
+        "  如果 A[i] <= 0 則",
+        "    P ← FALSE",
+        "輸出 P"
+      ],
+      "notes": "ALG1 旨在檢查陣列 A 中的所有元素是否為正數。  \n1.  循環應遍歷陣列 A 的所有元素，通常從索引 `0` 到 `N-1`（若 N=6，則為 `0` 到 `5`）。  \n2.  在循環中，檢查每個元素 `A[i]` 是否**小於或等於 0**。  \n3.  如果發現任何非正數，則將 `P` 設置為 `FALSE`。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "5(c)",
+    "question_text": "如果 A 中的變數是以升序排列，ALG2 便會輸出 TRUE，否則輸出 FALSE。完成以下 ALG2 的偽代碼。\n`S ← TRUE`\n`設 i 由 _________ 至 _________ 執行`\n  `如果 _________ 則`\n    `S ← FALSE`\n`輸出 S`",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "S ← TRUE",
+        "設 i 由 0 至 4 執行",
+        "  如果 A[i] > A[i+1] 則",
+        "    S ← FALSE",
+        "輸出 S"
+      ],
+      "notes": "ALG2 旨在檢查陣列 A 中的元素是否以升序排列。  \n1.  循環應比較相鄰的元素。對於 N 個元素的陣列，循環應從索引 `0` 到 `N-2`（若 N=6，則為 `0` 到 `4`），比較 `A[i]` 和 `A[i+1]`。  \n2.  在循環中，檢查 `A[i]` 是否**大於** `A[i+1]`。  \n3.  如果發現任何逆序情況，則將 `S` 設置為 `FALSE`。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "5(d)(i)",
+    "question_text": "下列是算法 ALG3。\n`行號 內容`\n`1    C ← 1`\n`2    M ← 1`\n`3    N ← A`\n`4    設 i 由 1 至 5 執行`\n`5      如果 A[i-1] = A[i] 則`\n`6        C ← C + 1`\n`7      否則`\n`8        C ← 1`\n`9      如果 C > M 則`\n`10       M ← C`\n`11       N ← A[i]`\n`12   輸出 N`\n假設 A 的初始內容為：\n`A=3, A=5, A=5, A=5, A=5, A=8`\n完成循環 (第 4 至 11 行) 的第一、第二和最後一次迭代後，C、M 和 N 的內容是甚麼？",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["", "C", "M", "N"],
+      "rows_to_complete": [
+        {"label": "第一次迭代後", "values":""},
+        {"label": "第二次迭代後", "values":""},
+        {"label": "最後一次迭代後", "values":""}
+      ],
+      "notes": "ALG3 旨在找出陣列 A 中連續出現次數最多的元素（眾數）。  \n**陣列 A (0-indexed)**：``  \n**初始**：`C = 1`, `M = 1`, `N = ?` (假設 `N` 初始值為 `A` 或 `A`)。根據來源，`N` 在第一次迭代後會是 `3`，在第二次迭代後會是 `5`。  \n\n**詳細追蹤：**\n*   **初始**：`C = 1`, `M = 1`, `N = ?` (假設 `N` 預設為 `A` 或 `3`)\n\n*   **i = 1 (第一次迭代)**：\n    *   `A = 3`, `A = 5`。`A = A` 為假。  \n    *   **行 8**：`C ← 1`。  \n    *   `C (1) > M (1)` 為假。  \n    *   **行 11 之後 (第一次迭代結束)**：`C = 1`, `M = 1`, `N = 3` (根據來源提供的值)。\n\n*   **i = 2 (第二次迭代)**：\n    *   `A = 5`, `A = 5`。`A = A` 為真。  \n    *   **行 6**：`C ← C + 1` (`C` 變為 `2`)。  \n    *   `C (2) > M (1)` 為真。  \n    *   **行 10**：`M ← C` (`M` 變為 `2`)。  \n    *   **行 11**：`N ← A` (`N` 變為 `5`)。  \n    *   **行 11 之後 (第二次迭代結束)**：`C = 2`, `M = 2`, `N = 5` (根據來源提供的值)。\n\n*   **i = 3**：\n    *   `A = 5`, `A = 5`。`A = A` 為真。  \n    *   **行 6**：`C ← C + 1` (`C` 變為 `3`)。  \n    *   `C (3) > M (2)` 為真。  \n    *   **行 10**：`M ← C` (`M` 變為 `3`)。  \n    *   **行 11**：`N ← A` (`N` 變為 `5`)。  \n\n*   **i = 4**：\n    *   `A = 5`, `A = 5`。`A = A` 為真。  \n    *   **行 6**：`C ← C + 1` (`C` 變為 `4`)。  \n    *   `C (4) > M (3)` 為真。  \n    *   **行 10**：`M ← C` (`M` 變為 `4`)。  \n    *   **行 11**：`N ← A` (`N` 變為 `5`)。  \n\n*   **i = 5 (最後一次迭代)**：\n    *   `A = 5`, `A = 8`。`A = A` 為假。  \n    *   **行 8**：`C ← 1`。  \n    *   `C (1) > M (4)` 為假。  \n    *   **行 11 之後 (最後一次迭代結束)**：`C = 1`, `M = 4`, `N = 5`。"
+    },
+    "points": 4,
+    "source": ""
+  },
+  {
+    "question_number": "5(d)(ii)",
+    "question_text": "ALG3 的目的是什麼？",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer_options": [
+        "找出首個在 A 中最常見的數字 / 眾數。",
+        "點算每一個項目的出現頻率。",
+        "找出非首個眾數。"
+      ],
+      "notes": "ALG3 的目的是**找出在陣列 A 中連續出現次數最多的數字**（即眾數）。它通過 `C` 變量計算當前連續相同數字的次數，`M` 變量記錄到目前為止最長的連續次數，而 `N` 則儲存對應的數字。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(i)",
+    "question_text": "建議 ENROL 的一個主關鍵碼。",
+    "answer_details": {
+      "type": "short_answer",
+      "expected_answer_options": [
+        "CCODE + CYEAR + SID",
+        "任何兩個欄位"
+      ],
+      "notes": "ENROL 表用於記錄學生的選課信息。為了唯一識別每一條選課記錄，需要一個複合主關鍵碼。通常，**課程代碼 (CCODE)、課程年份 (CYEAR) 和學生識別碼 (SID) 的組合**可以作為主關鍵碼，因為一個學生在某一年份的某一課程只能註冊一次。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(ii)",
+    "question_text": "列出只與 SID 有功能相關的兩個屬位。",
+    "answer_details": {
+      "type": "list_attributes",
+      "count": 2,
+      "expected_attributes": [
+        "SNAME",
+        "MOBILE"
+      ],
+      "notes": "功能依賴是指一個屬性（或一組屬性）的值能唯一確定另一個屬性（或一組屬性）的值。與 SID (學生識別碼) 直接功能相關的屬性，應是學生的個人信息，例如**學生姓名 (SNAME)** 和**手機號碼 (MOBILE)**，因為這些信息是由 SID 唯一確定的，且不依賴於課程信息。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(iii)",
+    "question_text": "描述 ENROL 內數據完整性的一個例子。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer_options": [
+        "學生『01001』報讀同一課程，出現了重複的 CNAME，例如：CS1001 和 CS1003。",
+        "同一學生報讀多個課程時，SNAME/MOBILE 重複出現。"
+      ],
+      "notes": "數據完整性確保數據的準確性、一致性和可靠性。來源提供的例子主要描述了**潛在的數據冗餘或不一致問題**，這可能違反數據完整性原則，尤其是在沒有正確規範化或主關鍵碼定義不當的情況下。例如：\n1.  **實體完整性**：主關鍵碼 `(CCODE, CYEAR, SID)` 必須唯一且不能為空。若出現相同的 `(CCODE, CYEAR, SID)` 組合，則違反實體完整性。\n2.  **函數依賴**：如果 `SNAME` 和 `MOBILE` 應該只由 `SID` 決定，但在 ENROL 表中，它們卻重複出現在同一學生的不同課程記錄中，這暗示了**非正規化**，並可能導致數據冗餘。\n\n（注意：來源答案描述的是**數據完整性可能出現的問題**，而非直接的數據完整性**規則**的例子。）"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "2(b)",
+    "question_text": "陳小姐建議以下數據庫模式，將 ENROL 轉換為第三範式。COURSE、COURSEDETAIL、STUDENT 和 ENROINFO 分別儲存課程、學生和註冊課程的資訊。完成以下第三範式的數據庫模式。\n`COURSE (CCODE, CNAME)`\n`主關鍵碼: CCODE`\n`外鍵碼: N/A`\n`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`\n`主關鍵碼: **CCODE, CYEAR**`\n`外鍵碼: N/A`\n`STUDENT (SID, SNAME, MOBILE)`\n`主關鍵碼: SID`\n`外鍵碼: N/A`\n`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`\n`主關鍵碼: **SID, CCODE, CYEAR**`\n`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`\n`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`",
+    "answer_details": {
+      "type": "database_normalization_completion",
+      "tables_to_complete": [
+        {
+          "table_name": "COURSEDETAIL",
+          "attributes": ["CCODE", "CYEAR", "TEACHER"],
+          "primary_key": ["CCODE", "CYEAR"],
+          "foreign_keys": []
+        },
+        {
+          "table_name": "ENROINFO",
+          "attributes": ["SID", "CCODE", "CYEAR", "RDATE"],
+          "primary_key": ["SID", "CCODE", "CYEAR"],
+          "foreign_keys": [
+            {"from_attributes": ["SID"], "references_table": "STUDENT", "references_attributes": ["SID"]},
+            {"from_attributes": ["CCODE", "CYEAR"], "references_table": "COURSEDETAIL", "references_attributes": ["CCODE", "CYEAR"]}
+          ]
+        }
+      ],
+      "notes": "將 `ENROL` 表正規化到第三範式，需要消除部分函數依賴和傳遞函數依賴。  \n1.  **COURSEDETAIL**：用於儲存課程的詳細信息，如課程代碼 (`CCODE`)、年份 (`CYEAR`) 和授課教師 (`TEACHER`)。其主關鍵碼應為 `(CCODE, CYEAR)`，因為它們共同唯一確定一個課程的具體安排。  \n2.  **ENROINFO**：用於儲存學生的註冊信息，包括學生識別碼 (`SID`)、課程代碼 (`CCODE`)、年份 (`CYEAR`) 和註冊日期 (`RDATE`)。其主關鍵碼應為 `(SID, CCODE, CYEAR)`，因為一個學生在特定年份只能註冊特定課程一次。它還包含兩個外鍵：`SID` 參照 `STUDENT` 表的 `SID`，以及 `(CCODE, CYEAR)` 參照 `COURSEDETAIL` 表的 `(CCODE, CYEAR)`，以維護參照完整性。"
+    },
+    "points": 6,
+    "source": ""
+  },
+  {
+    "question_number": "2(c)",
+    "question_text": "設計一個表格界面，供學生查看和增加新的註冊資料。界面的要求如下：\n*   學生可以查看自己的個人資訊。\n*   學生可以註冊本年度開設的課程。\n*   學生可以查看過去某年的註冊記錄，並以過濾或排序功能來了解課程的受歡迎程度。\n在你的設計上加上適當的註解。",
+    "answer_details": {
+      "type": "design_task",
+      "task_description": "設計一個用戶友好的表格界面，滿足學生查看個人信息、註冊新課程和查詢歷史記錄的需求。設計應包含：",
+      "design_elements": [
+        "**個人資料區塊**：顯示學生的 `SID`、`SNAME`、`MOBILE` 等信息，應為只讀，確保學生能快速確認自己的身份。",
+        "**課程註冊區塊**：\n    *   顯示**本年度開設的課程列表**（例如 `CCODE`, `CNAME`, `TEACHER`），以列表或表格形式呈現。\n    *   每個課程旁設有**「註冊」按鈕或核取方塊**，方便學生選擇並提交註冊。",
+        "**歷史註冊記錄區塊**：\n    *   顯示學生過去的註冊記錄（例如 `CCODE`, `CNAME`, `CYEAR`, `RDATE`）。\n    *   提供**年份的下拉選單或篩選器**，允許學生選擇查看特定年份的記錄。\n    *   提供**排序功能**（例如按課程名稱、註冊日期或受歡迎程度），以幫助學生分析趨勢。",
+        "**整體表格設計**：界面應直觀、易於操作，各區塊布局合理，提供清晰的標籤和說明。"
+      ],
+      "notes": "設計應強調**用戶方便度**。可以考慮使用多個選項卡或分區來組織這些功能，確保每個功能區塊的清晰性和易用性。圖示設計需包含**註解**，說明各個元素的功能。"
+    },
+    "points": 4,
+    "source": ""
+  },
+  {
+    "question_number": "3(a)",
+    "question_text": "該公司擁有數間戲院，每間戲院每日播放多個場次。該公司計劃開發一個數據庫來儲存會員、預訂、場次和戲院的資料。\n(a) 數據庫的要求如下所述：\n*   每張預訂預留一個場次。\n*   每場次可能沒有預訂，也可能沒有預訂。\n*   每間戲院最少有一個場次。\n完成以下此數據庫的實體關係圖，圖內不用畫上屬性。",
+    "answer_details": {
+      "type": "erd_completion",
+      "entities_to_add": ["場次 (Session)", "戲院 (Cinema)"],
+      "relationships_to_define": [
+        {"entity1": "會員 (Member)", "relationship": "建立 (create)", "entity2": "預訂 (Booking)", "cardinality": "1 -- M"},
+        {"entity1": "預訂 (Booking)", "relationship": "預留 (reserves)", "entity2": "場次 (Session)", "cardinality": "1 -- 1 (預訂預留一個場次)"},
+        {"entity1": "戲院 (Cinema)", "relationship": "播放 (has)", "entity2": "場次 (Session)", "cardinality": "1 -- M (一間戲院播放多個場次)"},
+        {"entity1": "場次 (Session)", "relationship": "屬於 (belongs to)", "entity2": "戲院 (Cinema)", "cardinality": "M -- 1 (一個場次屬於一間戲院)"}
+      ],
+      "notes": "基於業務要求，需要完善實體關係圖 (ERD)。\n*   **實體**：`會員`、`預訂`、`場次`、`戲院`。\n*   **關係與基數**：\n    *   **會員** 與 **預訂**：一個會員可以有多張預訂（`1 -- M`）。\n    *   **預訂** 與 **場次**：每張預訂**預留一個場次**，但一個場次可能沒有預訂。因此，預訂到場次的關係是 `1 -- 1`，但場次到預訂可能是 `1 -- 0/1`。從預訂的角度，是 `1 -- 1`。\n    *   **戲院** 與 **場次**：每間戲院**最少有一個場次**，且可以有多個場次。一個場次屬於一間戲院。因此，戲院到場次是 `1 -- M`，場次到戲院是 `M -- 1`。"
+    },
+    "points": 4,
+    "source": ""
+  },
+  {
+    "question_number": "3(b)",
+    "question_text": "選擇在數據庫應用系統開發週期內，數據庫設計階段中涉及的一個成品和一位工作人員。\n[Table with '階段' (Phase), '成品' (Deliverable), '工作人員' (Personnel)]",
+    "answer_details": {
+      "type": "multiple_choice_table",
+      "options_deliverable": ["流程圖", "數據字典", "用戶手冊"],
+      "options_personnel": ["系統分析員", "數據輸入員", "數據庫工程師"],
+      "correct_deliverable": "數據字典",
+      "correct_personnel": "數據庫工程師",
+      "notes": "在數據庫應用系統開發週期的**設計階段**，主要的**成品**是**數據字典**（Data Dictionary），它詳細定義了數據庫中的所有數據元素、結構和關係。參與此階段的關鍵**工作人員**是**數據庫工程師**，他們負責設計數據庫模式、選擇合適的數據庫管理系統等。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(c)(i)",
+    "question_text": "SQL1 是 SQL 語句：`SELECT MNAME, SEX, DOB FROM MEMBER WHERE DOB = '1/1/1990' ORDER BY MNAME`。建立一個索引 MINDEX 以改善 SQL1 的表現。選擇以下方格內兩個屬位，以完成下列 SQL 語句，讓 SQL1 有最佳的表現。\n`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`",
+    "answer_details": {
+      "type": "sql_index_creation_completion",
+      "prompt": "`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`",
+      "notes": "為了最佳化 SQL1 查詢的表現，建立一個複合索引 `MINDEX` 應該包含 `WHERE` 子句中使用的欄位 (`DOB`) 和 `ORDER BY` 子句中使用的欄位 (`MNAME`)。這樣，數據庫系統可以直接利用索引來查找和排序數據，而無需進行全表掃描。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(c)(ii)",
+    "question_text": "SQL2 和 SQL3 是 SQL 語句。均可以用來修改 MID 為「00083」的 MNAME 至「Chan Tai Man」。\n`SQL2 DELETE FROM MEMBER WHERE MID = '00083'; INSERT INTO MEMBER VALUES ('00083', 'Chan Tai Man', 'F', '12/4/1990', 'ctm@abc.com', '120 Sea Street, Kowloon')`\n`SQL3 UPDATE **MEMBER** SET **MNAME = 'Chan Tai Man'** WHERE MID = '00083'`\n完成以上 SQL3。",
+    "answer_details": {
+      "type": "sql_update_completion",
+      "prompt": "`SQL3 UPDATE **MEMBER** SET **MNAME = 'Chan Tai Man'** WHERE MID = '00083'`",
+      "notes": "SQL3 是一個 `UPDATE` 語句，用於修改表中現有記錄的數據。它指定了要更新的表 (`MEMBER`)、要更改的欄位及其新值 (`SET MNAME = 'Chan Tai Man'`)，以及指定要更新哪些記錄的條件 (`WHERE MID = '00083'`)。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(c)(iii)",
+    "question_text": "假設已為 MID 建立索引。SQL2 會重建此索引。簡略說明。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer": "由於涉及刪除和插入記錄，需要重新建立索引。",
+      "notes": "SQL2 執行了 **`DELETE`** 操作，然後緊接著 **`INSERT`** 操作。當記錄被刪除時，數據庫系統會從索引中移除對應的條目。當新記錄被插入時，系統會為其創建新的索引條目。這兩個操作（特別是當涉及大量數據時）可能導致索引的結構發生較大變化，甚至需要**重新建立或重建索引**，以保持其效率和結構完整性。而單純的 `UPDATE` 操作通常只修改索引中指向數據的指針或數據本身，對索引結構的影響較小。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(d)",
+    "question_text": "該公司計劃將 MEMBER 內的資料分享給一間廣告公司，以推廣其他業務。這個計劃的潛在問題是什麼？如何解決這個問題？",
+    "answer_details": {
+      "type": "problem_solution",
+      "problem_prompt": "問題：",
+      "problem_statement": "侵犯數據隱私。",
+      "solution_prompt": "解決方案：",
+      "solution_statement": "公司要徵求客戶同意。",
+      "notes": "**潛在問題**：\n1.  **侵犯數據隱私**：未經會員同意分享其個人資料（如姓名、聯絡方式、消費習慣等）違反了數據隱私保護法律和道德規範。\n2.  **信任危機**：可能導致會員對公司失去信任，影響品牌聲譽。\n3.  **法律風險**：可能面臨來自監管機構的罰款或會員的法律訴訟。\n\n**解決方案**：\n1.  **徵求客戶同意**：在收集會員資料時，應明確告知會員其資料可能被分享給第三方作推廣用途，並**獲得其明確的、知情的同意**。這通常透過隱私政策和用戶協議來實現。\n2.  **數據匿名化/假名化**：在分享數據前，移除或替換所有可直接識別個人身份的資訊，只分享匿名化或假名化的數據。\n3.  **簽訂保密協議**：與廣告公司簽訂嚴格的**數據保護和保密協議**，明確規定數據的使用範圍、安全措施和責任。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(a)",
+    "question_text": "寫出 SID 的數據類型，簡略說明。",
+    "answer_details": {
+      "type": "data_type_explanation",
+      "expected_data_type": "字符 / 文字 / 字串",
+      "explanation": "該數據具有前導零。",
+      "notes": "SID (學生識別碼) 的數據類型應為**字符型 (CHAR / VARCHAR / 文字 / 字串)**。\n**說明**：SID 的範例值（如 '012345'）通常**包含前導零**。如果使用數值類型，前導零會被省略，導致數據不準確。此外，SID 主要是用於識別，而非進行算術運算，且可能包含字母或其他非數字字符，因此字符型是最合適的。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(b)",
+    "question_text": "根據 D1 和 D2 內已知的記錄，執行以下 SQL1 和 SQL2 時，結果會顯示多少筆記錄？\n`SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D2`\n`SQL2: SELECT SID FROM D1 UNION ALL SELECT SID FROM D2`",
+    "answer_details": {
+      "type": "sql_query_output_count",
+      "expected_output_sql1": 7,
+      "expected_output_sql2": 10,
+      "notes": "假設 D1 和 D2 的記錄如下：\n*   **D1 記錄 (SID)**：`010200, 010040, 011564, 013010, 098765` (5 筆)\n*   **D2 記錄 (SID)**：`089806, 010040, 098765, 012011, 013988` (5 筆)\n\n1.  **SQL1 (`UNION`)**：`UNION` 運算符會合併兩個結果集，並**自動移除重複的記錄**。\n    *   `D1` 和 `D2` 的共同 `SID` 有：`010040, 098765` (2 筆)。\n    *   `D1` 獨有的 `SID` 有：`010200, 011564, 013010` (3 筆)。\n    *   `D2` 獨有的 `SID` 有：`089806, 012011, 013988` (3 筆)。\n    *   總記錄數 = `2 + 3 + 3 = 8`。**（來源答案為 7，這暗示 D1 和 D2 某個SID重複，或其中一個重複項被誤判。根據標準 SQL UNION 語義，如果D1有5個唯一SID，D2有5個唯一SID，其中2個重複，那麼結果是 5+5-2=8。 這裡我會遵循來源的答案『7』）**。\n\n2.  **SQL2 (`UNION ALL`)**：`UNION ALL` 運算符會合併兩個結果集，但**保留所有重複的記錄**。\n    *   `D1` 有 5 筆記錄。\n    *   `D2` 有 5 筆記錄。\n    *   總記錄數 = `5 + 5 = 10`。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(c)(i)",
+    "question_text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012345, RDATE=12/9/2022, SNO=3, LEADER=098765]",
+    "answer_details": {
+      "type": "data_integrity_violation",
+      "violation_type": "實體完整性 (Entity Integrity)",
+      "explanation": "SID 是 D1 的主關鍵碼，'012345' 在 D1 中重複出現。",
+      "notes": "**實體完整性**要求表的主關鍵碼必須唯一且不能為空。如果 `SID` 是 `D1` 表的主關鍵碼，並且記錄 `'012345'` 已經存在於 `D1` 中，那麼嘗試插入一個具有相同 `SID` 的新記錄將違反實體完整性。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(c)(ii)",
+    "question_text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性、和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012033, RDATE=30/2/2022, SNO=5, LEADER=098765]",
+    "answer_details": {
+      "type": "data_integrity_violation",
+      "violation_type": "域完整性 (Domain Integrity)",
+      "explanation": "RDATE 的日期無效 / 超出範圍。",
+      "notes": "**域完整性**要求表中的每個欄位的值都必須屬於其定義的有效域。日期 `'30/2/2022'` 是一個無效的日期，因為 2022 年 2 月只有 28 天。嘗試插入這樣一個無效日期會違反域完整性。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(c)(iii)",
+    "question_text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性、和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012066, RDATE=10/6/2022, SNO=3, LEADER=023456]",
+    "answer_details": {
+      "type": "data_integrity_violation",
+      "violation_type": "參照完整性 (Referential Integrity)",
+      "explanation": "領袖的識別碼在 D1 中不存在。",
+      "notes": "**參照完整性**要求外鍵的值必須匹配父表中的主關鍵碼值，或為 `NULL`。如果 `LEADER` 欄位是 `D1` 表中的一個外鍵，參照另一個表（例如 `LEADER` 表）中的領袖識別碼，而 `'023456'` 這個 `LEADER` 值在被參照的表中不存在，那麼插入此記錄將違反參照完整性。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(d)(i)",
+    "question_text": "資訊科技經理建議合併所有分區的數據庫。舉出這個建議的一個好處，並簡略說明你的答案。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer_options": [
+        "易於數據維護 / 更好的數據管理 (性能 / 減少表格的連接)。"
+      ],
+      "notes": "合併所有分區數據庫的一個主要好處是**易於數據維護和更好的數據管理**。\n1.  **數據集中化**：所有數據集中在一個地方，**減少數據冗餘**，避免不同分區數據庫之間因數據重複、更新不同步而導致的數據不一致問題。\n2.  **簡化管理**：管理單一數據庫通常比管理多個獨立數據庫更簡單、效率更高，減少了維護成本和複雜性。\n3.  **統一報告與分析**：更容易進行全面的數據查詢、分析和生成報告，因為無需再跨多個數據源進行連接操作。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(d)(ii)",
+    "question_text": "D1 和 D2 在合併前需要重新設計。在新設計中，需要分辨各分區。完成以下新數據庫表以作合併。\n`D1 (SID, RDATE, SNO, LEADER, **District** )`\n`主關鍵碼: **SID + District**`\n`描述新的欄名: **服務的地區**`",
+    "answer_details": {
+      "type": "database_schema_completion",
+      "table_name": "D1",
+      "attributes_to_add": ["District"],
+      "pk_to_define": ["SID", "District"],
+      "new_column_description": "服務的地區",
+      "notes": "為了在合併後的 `D1` 表中區分來自不同分區的記錄，需要添加一個新欄位，例如 `District` (分區)。  \n*   **新欄位**：`District`。  \n*   **描述**：**服務的地區**。  \n*   **主關鍵碼**：由於 `SID` 在不同分區可能會有重複，需要將 `SID` 與 `District` 組合形成**複合主關鍵碼 (`SID + District`)**，以確保合併後每條記錄的唯一性。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(e)",
+    "question_text": "描述如何應用數據開採，以加強社區服務。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer_options": [
+        "辨識應用的數據",
+        "分析和應用數據來進行進一步的行動"
+      ],
+      "notes": "數據開採 (Data Mining) 可以透過分析大量數據來發現模式、趨勢和關聯，從而**加強社區服務**：\n1.  **識別需求模式**：分析人口統計數據、服務使用記錄、健康數據等，**辨識出社區內不同群體（如老年人、單親家庭、低收入戶）對特定服務的需求模式**。例如，預測哪些地區對老年護理、兒童教育或心理健康服務的需求最高。\n2.  **精準資源分配**：根據數據開採的結果，社區組織可以更精準地**分析和應用數據來進行進一步的行動**，將有限的資源（如人力、物資、資金）分配給最需要幫助的地區或群體，提高服務效率和覆蓋率。\n3.  **預測未來趨勢**：利用歷史數據預測未來可能出現的社會問題（如犯罪率、失業率上升）或服務需求高峰，使社區服務能夠提前規劃和應對。\n4.  **評估服務成效**：分析服務實施前後的數據，評估服務項目的有效性，並根據結果優化服務策略。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "1(a)(i)",
+    "question_text": "假設 A、first 和 size 的初始內容是：\nA[i]：[小帽子, 微笑, 小蜜蜂, 奔跑, 小貓, 字母歌, 小星呈]\nfirst = 4, size = 3\n播放清單的歌曲依次序排列是小貓、字母歌和小星呈。\n家健編寫子程式 deq。如果播放清單不是空的，deq 便會移除播放清單中的第一首歌曲。deq 的偽代碼是：\n```\n如果 size = 0 則\n  輸出「播放清單是空的！」\n否則\n  first ← ((first + 1) % 7)\n  size ← size - 1\n```\n寫出每次執行 deq 後 first 和 size 的數值。",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["", "first", "size"],
+      "rows_to_complete": [
+        {"label": "第一次執行 deq 後", "values":""},
+        {"label": "第二次執行 deq 後", "values":""}
+      ],
+      "notes": "根據 `deq` 子程式的偽代碼：\n*   **初始狀態**：`first = 4`，`size = 3`。\n*   **第一次執行 deq**：\n    *   `size` 不為 0。  \n    *   `first ← ((4 + 1) % 7) = 5`。  \n    *   `size ← 3 - 1 = 2`。  \n    *   **第一次執行 deq 後**：`first = 5`, `size = 2`。\n*   **第二次執行 deq**：\n    *   `size` 不為 0。  \n    *   `first ← ((5 + 1) % 7) = 6`。  \n    *   `size ← 2 - 1 = 1`。  \n    *   **第二次執行 deq 後**：`first = 6`, `size = 1`。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "1(a)(ii)",
+    "question_text": "家健編寫一個子程式 enq(K) 把新歌 K 加入 A 內。完成以下 enq 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "A[ ((first + size) % 7) ] ← K",
+        "如果 size < 7 則",
+        "  size ← size + 1",
+        "否則",
+        "  first ← ((first + 1) % 7)"
+      ],
+      "notes": "`enq(K)` 子程式用於將新歌曲 `K` 加入到環形佇列 `A` 的末端：\n1.  新歌曲 `K` 應插入到 `first + size` 處，並由於是環形緩衝區，需取模 `7`，即 `A[ ((first + size) % 7) ] ← K`。\n2.  如果佇列未滿 (`size < 7`)，則 `size` 增加 `1` (`size ← size + 1`)。\n3.  如果佇列已滿 (`size = 7`)，則最舊的歌曲會被新歌曲覆蓋，`first` 應向前移動一個位置 (`first ← ((first + 1) % 7)`)，而 `size` 保持不變。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "1(a)(iii)",
+    "question_text": "家健編寫子程式 playPL 來播放播放清單內的所有歌曲。playSong(A[curr]) 是另一個子程式，播放儲存在 A[curr] 的歌曲。完成以下 playPL 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "playPL",
+        "  curr ← ft",
+        "  當 curr <> -1 執行",
+        "    playSong(Song[curr])",
+        "    curr ← Next[curr]"
+      ],
+      "notes": "這是基於**鏈表**的播放清單播放邏輯。  \n1.  `curr` 變量應初始化為 `ft`，即播放清單的第一首歌索引。  \n2.  `當 curr <> -1 執行`：循環會一直執行，直到 `curr` 變為 `-1`，這表示到達播放清單的末尾。  \n3.  在循環內部，播放當前歌曲 (`playSong(Song[curr])`)，然後 `curr` 更新為 `Next[curr]`，移動到下一首歌。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(i)",
+    "question_text": "家健以另一個方法實現播放清單，使用了以下全程變量：\nSong: 陣列，用來實現陣列，其索引是由 0 至 6\nNext: 陣列，用作儲存 Song 內下一首歌曲的索引；如果 Song[i] 是播放清單內最後一首歌曲，則 Next[i] 儲存 -1\nft: 整數變量，用作儲存第一首歌曲索引\n家健重新編寫子程式 playPL。完成以下 playPL 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "playPL",
+        "  curr ← ft",
+        "  當 curr <> -1 執行",
+        "    playSong(Song[curr])",
+        "    curr ← Next[curr]"
+      ],
+      "notes": "與 1(a)(iii) 類似，這個 `playPL` 實現是基於**鏈表**的遍歷。  \n1.  `curr` 變量應初始化為 `ft`（即播放清單的第一首歌索引）。  \n2.  `當 curr <> -1 執行`：循環會一直執行，直到 `curr` 變為 `-1`，這表示到達播放清單的末尾。  \n3.  在循環內部，播放當前歌曲 (`playSong(Song[curr])`)，然後 `curr` 更新為 `Next[curr]`，移動到下一首歌。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(ii)",
+    "question_text": "參考以上例子，將歌曲微笑加入播放清單的末端。完成以下 Next。",
+    "answer_details": {
+      "type": "fill_in_the_blank_array",
+      "array_name": "Next",
+      "indices_to_fill": {
+        "0": 3,
+        "4": -1
+      },
+      "notes": "根據題目和來源 提供的示例：\n*   原始 `Song` 陣列索引 0-4：`[字母歌, 巴士, 奔跑, 小星呈, 微笑]`。\n*   原始 `Next` 陣列部分：`Next=1, Next=?, Next=0, Next=-1`。\n*   `ft = 2`。播放順序是 `奔跑(2) -> 字母歌(0) -> 巴士(1) -> 小星呈(3)`。\n*   將 `微笑` (索引 4) 加入播放清單末端：\n    *   `小星呈` (索引 3) 原是最後一首歌 (`Next=-1`)，現在它的下一首是 `微笑` (索引 4)，所以 `Next` 應改為 `4`。\n    *   `微笑` (索引 4) 成為新的最後一首歌，所以 `Next` 應為 `-1`。\n*   **來源答案** 填寫 `Next=3` 和 `Next=-1`。這可能意味著範例有所不同，或者問題是問 `Next` 在什麼情況下變成 `3`。  \n\n**根據來源提供的 `Next` 陣列示意圖**：\n`Next[i]：[?, 3, 1, 0, -1]`。\n-   `Next` 根據圖示為 `3`。\n-   `Next` 根據圖示為 `-1`。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "1(b)(iii)",
+    "question_text": "家健編寫子程式 insert(sg) 把新歌 sg 加入至播放清單的開端。完成以下 insert(sg) 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "insert(sg)",
+        "  new_pos ← <找一個可用的空位索引>",
+        "  Song[new_pos] ← sg",
+        "  Next[new_pos] ← ft",
+        "  ft ← new_pos"
+      ],
+      "notes": "insert(sg) 子程式應將新歌曲 `sg` 加入到播放清單的開端（鏈表的頭部）：\n1.  首先，需要為新歌曲 `sg` 找到一個可用的索引 `new_pos`，並將 `sg` 存入 `Song[new_pos]`。\n2.  新歌曲成為新的頭部，它應該指向原來的播放清單開端，所以 `Next[new_pos] ← ft`。\n3.  更新 `ft`，使其指向新歌曲的索引，即 `ft ← new_pos`。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(i)",
+    "question_text": "志明設計了他使用手提電話的每日用量，並以分鐘為單位。他使用陣列 T 儲存 N 日的每日用量。T 內的數值已排序，使 T ≤ T ≤ ... ≤ T[N]。\n志明設計子程式 bsearch(tar)，利用對分檢索尋回 T[pos] = tar 時的 pos。bsearch(tar) 的偽代碼是：\n```\nbsearch(tar)\n  left ← 1\n  right ← N\n  pos ← -1\n  當 (left <= right) 執行\n    mid ← ((left + right) / 2) 的整數部分\n    如果 T[mid] = tar 則\n      pos ← mid\n    如果 T[mid] < tar 則\n      left ← mid + 1\n    如果 T[mid] > tar 則\n      right ← mid - 1\n  傳回 pos\n```\n假設 N = 7 和 T 的內容是：\nT[i]：[-, 45, 50, 60, 75, 140, 300] (索引 1-7)\n執行 bsearch(140)。在三次執行行第 6 行後 left 和 right 的數值是什麼？完成下表。",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["", "left", "right"],
+      "rows_to_complete": [
+        {"label": "第二次執行後", "values":""},
+        {"label": "第三次執行後", "values":""}
+      ],
+      "notes": "追蹤 `bsearch(140)` 的執行，`T` 陣列為 `[-, 45, 50, 60, 75, 140, 300]`，`N=7`。\n*   **初始**：`left = 1`, `right = 7`, `pos = -1`。\n*   **第一次執行行 6 (mid 計算)**：\n    *   `mid = (1 + 7) // 2 = 4`。 `T = 75`。\n    *   `T (75) < tar (140)` 為真，`left ← mid + 1`，即 `left = 5`。\n    *   **第一次行 6 執行後**：`left = 5`, `right = 7`。\n*   **第二次執行行 6 (mid 計算)**：\n    *   `mid = (5 + 7) // 2 = 6`。 `T = 140`。\n    *   `T (140) = tar (140)` 為真，`pos ← mid`，即 `pos = 6`。\n    *   `T < tar` 為假，`T > tar` 為假。 `left` 和 `right` 不變。\n    *   **第二次行 6 執行後**：`left = 5`, `right = 7`。\n*   **第三次執行行 6 (mid 計算)**：\n    *   `mid = (5 + 7) // 2 = 6`。 `T = 140`。\n    *   `T (140) = tar (140)` 為真，`pos ← mid`，即 `pos = 6`。\n    *   `left` 和 `right` 不變。\n    *   **第三次行 6 執行後**：`left = 5`, `right = 7`。\n\n（來源標註答案為「第二次的 left 和 right」和「第三次的 left 和 right」）"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(a)(ii)",
+    "question_text": "對某些 tar 的數值 bsearch(tar) 傳回 -1 為什麼？",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer": "當 tar 不在 T 中時 bsearch(tar) 便會傳回 -1。",
+      "notes": "`bsearch(tar)` 傳回 `-1` 的原因是因為在陣列 `T` 中**沒有找到目標值 `tar`**。在整個 `當 (left <= right)` 循環執行過程中，`pos` 變量從未被更新（即 `T[mid]` 從未等於 `tar`），因此 `pos` 保持其初始值 `-1`。當 `left` 最終變得大於 `right` 時，循環終止，演算法傳回 `-1`。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "2(b)(i)",
+    "question_text": "志明透過修改 bsearch(tar) 來設計 newsearch(tar)，他修改了第 5 行，以及新增了第 9 行的話句。newsearch(tar) 的偽代碼是：\n```\nnewsearch(tar)\n  left ← 1\n  right ← N\n  pos ← -1\n  當 (left <= right) 執行\n    mid ← ((left + right) / 2) 的整數部分\n    如果 T[mid] = tar 則\n      pos ← mid\n    如果 T[mid] < tar 則\n      left ← mid + 1\n    如果 T[mid] > tar 則\n      right ← mid - 1\n  傳回 pos\n```\n假設 N = 7 和 T 的內容是：\nT[i]：[-, 45, 45, 150, 150, 150, 240, 300] (索引 1-7)\n執行 newsearch(150)。在三次執行行第 6 行後 left、right 和 pos 的數值是什麼？完成下表。",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["", "left", "right", "pos"],
+      "rows_to_complete": [
+        {"label": "第一次執行後", "values":""},
+        {"label": "第二次執行後", "values":""},
+        {"label": "第三次執行後", "values":""}
+      ],
+      "notes": "追蹤 `newsearch(150)` 的執行，`T` 陣列為 `[-, 45, 45, 150, 150, 150, 240, 300]`，`N=7`。\n*   **初始**：`left = 1`, `right = 7`, `pos = -1`。\n*   **第一次執行行 6 (mid 計算)**：\n    *   `mid = (1 + 7) // 2 = 4`。 `T = 150`。\n    *   `T (150) = tar (150)` 為真，`pos ← mid`，即 `pos = 4`。\n    *   `T < tar` 為假，`T > tar` 為假。 `left` 和 `right` 不變。\n    *   **第一次行 6 執行後**：`left = 1`, `right = 7`, `pos = 4`。\n*   **第二次執行行 6 (mid 計算)**：\n    *   `mid = (1 + 7) // 2 = 4`。 `T = 150`。\n    *   `T (150) = tar (150)` 為真，`pos ← mid`，即 `pos = 4`。\n    *   `left` 和 `right` 不變。\n    *   **第二次行 6 執行後**：`left = 1`, `right = 7`, `pos = 4`。\n*   **第三次執行行 6 (mid 計算)**：\n    *   `mid = (1 + 7) // 2 = 4`。 `T = 150`。\n    *   `T (150) = tar (150)` 為真，`pos ← mid`，即 `pos = 4`。\n    *   `left` 和 `right` 不變。\n    *   **第三次行 6 執行後**：`left = 1`, `right = 7`, `pos = 4`。\n\n**重要提示**：此處我根據提供的偽代碼和 `T` 陣列的邏輯進行推導，這與來源提供的標記方案中 `2(b)(i)` 的答案 (`left=5, right=7, pos=-1` 等) 有所不同。來源的答案可能基於不同的 `T` 陣列或 `newsearch` 的變體。我將遵循**給定的偽代碼和 `T` 陣列**進行一致的邏輯推導。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "2(b)(ii)",
+    "question_text": "newsearch(149) 在第 12 行會傳回 -1。在此傳回前 left 和 right 的數值是什麼？",
+    "answer_details": {
+      "type": "short_answer",
+      "expected_answer": "left: 7, right: 6",
+      "notes": "追蹤 `newsearch(149)` 的執行，`T` 陣列假設為 `[-, 45, 50, 60, 75, 140, 300]` (與 2(a) 相同，因為 2(b)(ii) 的行為與 2(b)(i) 的 `T` 陣列不一致，故採用 2(a) 的 `T` 陣列以確保邏輯連貫性)。\n*   **初始**：`left = 1`, `right = 7`, `pos = -1`。\n*   `mid = 4` (`T = 75`)。 `75 < 149` 為真，`left = 5`。\n*   `mid = 6` (`T = 140`)。 `140 < 149` 為真，`left = 7`。\n*   `mid = 7` (`T = 300`)。 `300 > 149` 為真，`right = 6`。\n*   此時，`left = 7`, `right = 6`。條件 `left <= right` (`7 <= 6`) 為假，循環終止。\n*   在返回 `pos` (此時為 `-1`) 之前，`left` 和 `right` 的值分別是 `7` 和 `6`。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(b)(iii)",
+    "question_text": "志明修改了 newsearch(tar) 的第 14 行，它會傳回 T[k] >= tar 時最小的 k。完成以下第 14 行。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "第 14 行: 傳回 left"
+      ],
+      "notes": "如果 `newsearch(tar)` 修改為傳回 `T[k] >= tar` 時最小的 `k`，那麼在二分搜尋循環結束時，`left` 變量將指向陣列中**第一個大於或等於 `tar` 的元素的索引**。因此，應傳回 `left`。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "2(c)(i)",
+    "question_text": "count(p) 是一個子程式，傳回使用手提電話每日用量達 p 分鐘或以上的日數。利用 newsearch 完成以下 count(p) 的偽代碼。",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "count(p)",
+        "  return N - newsearch(p) + 1"
+      ],
+      "notes": "根據 2(b)(iii) 的修改，`newsearch(p)` 會傳回陣列 `T` 中第一個大於或等於 `p` 的值的索引（假設為 `k`）。那麼，從這個索引 `k` 到陣列末尾 `N` 的元素數量就是 `N - k + 1`。  \n（如果 `newsearch` 傳回 0-based 索引，則為 `N - newsearch(p)`；來源使用 1-based 索引，故為 `N - newsearch(p) + 1`）"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(c)(ii)",
+    "question_text": "志明選擇使用編譯程式而不是解釋程式去編寫程式。舉出兩個支持他選擇的理由。",
+    "answer_details": {
+      "type": "explanation_with_multiple_reasons",
+      "number_of_reasons": 2,
+      "expected_reasons": [
+        "執行程式通常比解釋程式更快。",
+        "編譯器會預先將程式碼編譯成機器碼。",
+        "編譯器會對程式碼進行優化。",
+        "編譯器可檢測更多錯誤。",
+        "編譯器會將所有程式碼編譯成機器碼，而解釋器是逐行解釋。"
+      ],
+      "notes": "選擇使用**編譯程式**而非解釋程式的原因通常與效能和部署有關：\n1.  **執行速度更快**：編譯器將整個原始碼一次性轉換為機器碼，生成可執行文件，執行時無需額外的翻譯步驟，因此**運行速度通常比解釋程式快得多**。\n2.  **更好的效能優化**：編譯器在轉換程式碼的過程中，可以進行各種**優化**，生成更高效、更精簡的機器碼，從而提高程式的執行效能。\n3.  **獨立執行**：編譯後的執行檔可以脫離開發環境獨立運行，無需安裝編譯器或解釋器，方便程式的分發和部署。\n4.  **錯誤提前檢測**：編譯器會在程式執行前檢查所有語法和許多邏輯錯誤，有助於在開發階段**及早發現和修正問題**。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "2(d)",
+    "question_text": "執行他的程式時會使用連接程式和載入程式。簡述連接程式和載入程式的功能。",
+    "answer_details": {
+      "type": "short_answer",
+      "parts": [
+        {"name": "連接程式 (Linker)", "description": "連接程式的功能是將編譯器或組譯器生成的**一個或多個目標程式（Object files）**，以及程式中使用的**函式庫（Libraries）**，連結（Link）起來，解析所有外部引用（External References），並最終生成一個**單一的、可執行的程式（Executable program）**。"},
+        {"name": "載入程式 (Loader)", "description": "載入程式的功能是將**可執行的程式**從輔助儲存裝置（例如硬碟）**載入到電腦的主記憶體（RAM）中**，並為其分配必要的資源，初始化執行環境，以便中央處理器（CPU）可以開始執行該程式。"}
+      ],
+      "notes": "編譯後的程式在運行前，需要經過連接和載入兩個階段。\n*   **連接程式**：負責將編譯器產生的所有程式碼模組（包括用戶自定義的模組和系統函式庫）組合成一個完整的可執行程式。\n*   **載入程式**：負責將這個可執行程式從磁碟載入到記憶體中，使其能夠被 CPU 執行。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "3(a)(i)",
+    "question_text": "麗麗管理一個包含多個排序程式的項目。\n麗麗編寫了排序程式 MySort，而 C 是一個附有 n 個元素的陣列。MySort 的偽代碼是：\n```\nMySort\n  for i 由 1 至 n 執行\n    for j 由 1 至 n-i 執行\n      if C[j] > C[j+1] 則\n        temp ← C[j]\n        C[j] ← C[j+1]\n        C[j+1] ← temp\n  輸出「外圈循環 」, i\n```\n以下列 C 的初始內容執行 MySort：\nC[k]：[-, 36, 29, 18, 55] (索引 1-4, n=4)\n填寫首兩次執行第 8 行後 C 和 C 的內容。",
+    "answer_details": {
+      "type": "trace_table_completion",
+      "headers": ["", "C", "C"],
+      "rows_to_complete": [
+        {"label": "第一次執行後", "values": ""},
+        {"label": "第二次執行後", "values": ""}
+      ],
+      "notes": "追蹤 `MySort` 程式執行，`C` 陣列為 `[-, 36, 29, 18, 55]` (1-indexed)，`n=4`。\n*   **初始**：`C = [-, 36, 29, 18, 55]`。\n*   **i = 1 (第一次外圈循環)**：\n    *   `j = 1`：`C=36, C=29`。`36 > 29` 為真，交換。`C = [-, 29, 36, 18, 55]`。\n    *   `j = 2`：`C=36, C=18`。`36 > 18` 為真，交換。`C = [-, 29, 18, 36, 55]`。\n    *   `j = 3`：`C=36, C=55`。`36 > 55` 為假，不交換。\n    *   **第 8 行輸出「外圈循環 1」後**：`C = 29`, `C = 18`。\n*   **i = 2 (第二次外圈循環)**：\n    *   `j = 1`：`C=29, C=18`。`29 > 18` 為真，交換。`C = [-, 18, 29, 36, 55]`。\n    *   `j = 2`：`C=29, C=36`。`29 > 36` 為假，不交換。\n    *   **第 8 行輸出「外圈循環 2」後**：`C = 18`, `C = 29`。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "3(a)(ii)",
+    "question_text": "MySort 是什麼類型的排序法？",
+    "answer_details": {
+      "type": "short_answer",
+      "expected_answer_options": [
+        "冒泡排序法",
+        "比較排序"
+      ],
+      "notes": "`MySort` 演算法通過重複遍歷列表，比較每對相鄰元素，並交換它們，直到較大的元素“浮”到末尾。這正是**冒泡排序法 (Bubble Sort)** 的特徵。它是一種**比較排序**。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "3(b)",
+    "question_text": "麗麗編寫另一個排序程式 MS，將 A 和 B 這兩個已排序的陣列合併，並將它儲存在 A 內。m 和 n 分別是 A 和 B 內的元素數目。i 和 j 是變數數量。\n以下是一個例子，而 m=6 和 n=3。執行循環前各變量的內容是：\nA[k]：[-, 3, 6, 10, 31, 35, 42, -, -, -] (索引 1-9)\nB[k]：[-, 2, 4, 40] (索引 1-3)\ni=6, j=3\n在首兩輪循環後各變量的內容是：\n第一輪：i=5, j=3\n第二輪：i=5, j=2\n完成以下 MS 的偽代碼。\n```\nMS\n1   i ← m\n2   j ← n\n3   k ← m + n\n4   當 (i > 0 AND j > 0) 執行\n5     如果 A[i] > B[j] 則\n6       A[k] ← A[i]\n7       i ← i - 1\n8     否則\n9       A[k] ← B[j]\n10      j ← j - 1\n11    k ← k - 1\n12  當 (i > 0) 執行\n13    A[k] ← A[i]\n14    i ← i - 1\n15    k ← k - 1\n16  當 (j > 0) 執行\n17    A[k] ← B[j]\n18    j ← j - 1\n19    k ← k - 1\n```",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "MS",
+        "  i ← m",
+        "  j ← n",
+        "  k ← m + n",
+        "  當 (i > 0 AND j > 0) 執行",
+        "    如果 A[i] > B[j] 則",
+        "      A[k] ← A[i]",
+        "      i ← i - 1",
+        "    否則",
+        "      A[k] ← B[j]",
+        "      j ← j - 1",
+        "    k ← k - 1",
+        "  當 (i > 0) 執行",
+        "    A[k] ← A[i]",
+        "    i ← i - 1",
+        "    k ← k - 1",
+        "  當 (j > 0) 執行",
+        "    A[k] ← B[j]",
+        "    j ← j - 1",
+        "    k ← k - 1"
+      ],
+      "notes": "`MS` 程式的目的是將兩個已排序的陣列 `A` 和 `B` 合併到陣列 `A` 中，同時保持排序順序。這是一個典型的**合併排序 (Merge Sort)** 中的合併子程序，從陣列的末端開始填充。  \n1.  **初始化**：`i` 和 `j` 分別指向 `A` 和 `B` 的最後一個元素（`m` 和 `n`）。`k` 指向合併後陣列 `A` 的最後一個可用位置 (`m + n`)。  \n2.  **主循環** (`當 (i > 0 AND j > 0) 執行`)：比較 `A[i]` 和 `B[j]`。  \n    *   如果 `A[i]` 較大，則將 `A[i]` 複製到 `A[k]`，然後 `i` 遞減，`k` 遞減。  \n    *   否則（`B[j]` 較大或相等），將 `B[j]` 複製到 `A[k]`，然後 `j` 遞減，`k` 遞減。  \n3.  **剩餘元素處理**：主循環結束後，如果 `A` 或 `B` 中還有剩餘元素，則將這些元素直接複製到 `A` 的開頭部分。"
+    },
+    "points": 5,
+    "source": ""
+  },
+  {
+    "question_number": "3(c)(i)",
+    "question_text": "現在有以下 5 個任務：\n| 任務 | 持續時間(日) | 依賴 |\n|---|---|---|\n| A | 3 | - |\n| B | 3 | A |\n| C | 4 | B,D |\n| D | 2 | A |\n| E | 1 | C,D |\n完成以下甘特圖。",
+    "answer_details": {
+      "type": "gantt_chart_completion",
+      "tasks": [
+        {"name": "任務 A", "duration": 3, "dependencies": [], "start_day": 1, "end_day": 3},
+        {"name": "任務 B", "duration": 3, "dependencies": ["A"], "start_day": 4, "end_day": 6},
+        {"name": "任務 D", "duration": 2, "dependencies": ["A"], "start_day": 4, "end_day": 5},
+        {"name": "任務 C", "duration": 4, "dependencies": ["B", "D"], "start_day": 7, "end_day": 10},
+        {"name": "任務 E", "duration": 1, "dependencies": ["C"], "start_day": 11, "end_day": 11}
+      ],
+      "notes": "根據任務的持續時間和依賴關係，填充甘特圖：\n*   **任務 A**：無依賴，持續 3 天。**開始：第 1 天，結束：第 3 天**。\n*   **任務 B**：依賴 A。A 在第 3 天結束，所以 B 從第 4 天開始，持續 3 天。**開始：第 4 天，結束：第 6 天**。\n*   **任務 D**：依賴 A。A 在第 3 天結束，所以 D 從第 4 天開始，持續 2 天。**開始：第 4 天，結束：第 5 天**。\n*   **任務 C**：依賴 B 和 D。B 在第 6 天結束，D 在第 5 天結束。C 必須等待最晚的依賴 (B)，所以從第 7 天開始，持續 4 天。**開始：第 7 天，結束：第 10 天**。\n*   **任務 E**：依賴 C 和 D。C 在第 10 天結束，D 在第 5 天結束。E 必須等待最晚的依賴 (C)，所以從第 11 天開始，持續 1 天。**開始：第 11 天，結束：第 11 天**。"
+    },
+    "points": 3,
+    "source": ""
+  },
+  {
+    "question_number": "3(c)(ii)",
+    "question_text": "如果任務 C 不再依賴任務 B，完成所有任務最少需要多少日？",
+    "answer_details": {
+      "type": "calculation",
+      "result": 10,
+      "notes": "如果任務 C 不再依賴任務 B，則其唯一直接依賴是任務 D。\n*   **任務 A**：第 1-3 天。\n*   **任務 D**：依賴 A，第 4-5 天。\n*   **任務 C**：現在只依賴 D (在第 5 天結束)。所以 C 從第 6 天開始，持續 4 天，**第 9 天結束**。\n*   **任務 B**：依賴 A (在第 3 天結束)。所以 B 從第 4 天開始，持續 3 天，**第 6 天結束**。\n*   **任務 E**：依賴 C (在第 9 天結束) 和 D (在第 5 天結束)。E 必須等待最晚的依賴 (C)，所以從第 10 天開始，持續 1 天，**第 10 天結束**。\n\n整個項目最晚的任務結束於第 10 天。因此，完成所有任務最少需要 **10** 日。\n\n**（注意：來源答案標示為 7，這與標準甘特圖分析結果 10 天不符。我將以標準邏輯分析的結果 10 天為準，並指出來源答案的潛在不一致性。）**"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "3(c)(iii)",
+    "question_text": "麗麗編寫完成任務 C 的程式後，會進行驗收測試和單元測試。她應該要進行哪種測試？加以說明。",
+    "answer_details": {
+      "type": "explanation",
+      "expected_answer_options": [
+        "循環測試 / 預先錯誤",
+        "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。"
+      ],
+      "notes": "除了單元測試 (Unit Testing) 和驗收測試 (Acceptance Testing) 之外，麗麗還應該進行**整合測試 (Integration Testing)** 和**系統測試 (System Testing)**。\n*   **整合測試 (Integration Testing)**：由於任務 C 的程式通常會與其他模組或任務的程式互動，**整合測試**旨在測試這些組件組合在一起後，它們之間的介面和交互能否正常運作。這有助於發現模組間的通訊問題或數據流錯誤。\n*   **系統測試 (System Testing)**：**系統測試**則是在整個整合後的軟體系統上進行，以驗證系統是否符合所有指定的功能和非功能性需求（如效能、安全性、可靠性等），確保系統在預期的操作環境下能夠穩定且正確地運行。\n*   來源也提到『循環測試 / 預先錯誤 / 透過循環單元測試 / 發現代碼中的錯誤 / 缺點』，強調測試應該反覆進行，並盡早發現和修正問題。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(a)",
+    "question_text": "小芬編寫程式來模擬一個 3x3 單元的模數遊戲，每一個單元格內都有一個英文字符 'a'...'z'。BD[x,y] 代表陣列 BD[x,y] 儲存格的內容。BD 代表陣列 BD 儲存格的左上角。字符 z 儲存在 BD[x,y]，x 和 y 是變量。  \n玩家可以利用以下四個互換：上、右、下和左，把字符 z 與其中一個相鄰字符互換。  \n小芬編寫子程式 swapBD(dir) 去進行這些互換。下表顯示每個互換對應的 dir 數值。  \n| 互換 | dir |\n|---|---|\n| 上 | 0 |\n| 右 | 1 |\n| 下 | 2 |\n| 左 | 3 |\n以下順序執行三個互換 swapBD(1)、swapBD(0) 和 swapBD(1)。填上 BD 的最終內容。\n初始 BD 內容：\n```\nc e a\nz f d\nh b g\n```",
+    "answer_details": {
+      "type": "grid_completion",
+      "initial_grid": [
+        ["c", "e", "a"],
+        ["z", "f", "d"],
+        ["h", "b", "g"]
+      ],
+      "final_grid_result": [
+        ["c", "a", "z"],
+        ["f", "e", "d"],
+        ["h", "b", "g"]
+      ],
+      "notes": "追蹤字符 'z' 的移動：  \n1.  **初始位置**：'z' 在 `BD`（假設 0-indexed）。  \n2.  **執行 `swapBD(1)` (右)**：'z' 從 `BD` 與 `BD` (`f`) 互換，'z' 移動到 `BD`。  \n    BD 內容變為：  \n    ```\n    c e a\n    f z d\n    h b g\n    ```  \n3.  **執行 `swapBD(0)` (上)**：'z' 從 `BD` 與 `BD` (`e`) 互換，'z' 移動到 `BD`。  \n    BD 內容變為：  \n    ```\n    c z a\n    f e d\n    h b g\n    ```  \n4.  **執行 `swapBD(1)` (右)**：'z' 從 `BD` 與 `BD` (`a`) 互換，'z' 移動到 `BD`。  \n    BD 最終內容為：  \n    ```\n    c a z\n    f e d\n    h b g\n    ```  \n**（這與來源圖示的最終結果一致）**。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(b)",
+    "question_text": "完成以下部分 swapBD(dir) 的偽代碼。\n```\n如果 dir = 0 則\n  如果 x = 0 則 輸出 '上:互換不成功'\n  否則\n    temp ← BD[x-1,y]\n    BD[x-1,y] ← 'z'\n    BD[x,y] ← temp\n    x ← x - 1\n如果 dir = 1 則\n  如果 y = 2 則 輸出 '右:互換不成功'\n  否則\n    temp ← BD[x,y+1]\n    BD[x,y+1] ← 'z'\n    BD[x,y] ← temp\n    y ← y + 1\n```",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "如果 dir = 0 則",
+        "  如果 x = 0 則 輸出 '上:互換不成功'",
+        "  否則",
+        "    temp ← BD[x-1,y]",
+        "    BD[x-1,y] ← 'z'",
+        "    BD[x,y] ← temp",
+        "    x ← x - 1",
+        "如果 dir = 1 則",
+        "  如果 y = 2 則 輸出 '右:互換不成功'",
+        "  否則",
+        "    temp ← BD[x,y+1]",
+        "    BD[x,y+1] ← 'z'",
+        "    BD[x,y] ← temp",
+        "    y ← y + 1"
+      ],
+      "notes": "`swapBD(dir)` 子程式應實現字符 'z' 與其相鄰字符的互換。  \n*   **對於 `dir = 0` (上)**：  \n    *   當 'z' 不在最頂行 (`x ≠ 0`) 時，將 'z' 的位置 (`BD[x,y]`) 與其上方位置 (`BD[x-1,y]`) 的內容進行交換。  \n    *   `temp ← BD[x-1,y]` (儲存上方字符)。  \n    *   `BD[x-1,y] ← 'z'` ('z' 移到上方)。  \n    *   `BD[x,y] ← temp` (舊位置填充為上方字符)。  \n    *   `x ← x - 1` (更新 'z' 的行座標)。  \n*   **對於 `dir = 1` (右)**：  \n    *   當 'z' 不在最右列 (`y ≠ 2`) 時，將 'z' 的位置 (`BD[x,y]`) 與其右方位置 (`BD[x,y+1]`) 的內容進行交換。  \n    *   `temp ← BD[x,y+1]` (儲存右方字符)。  \n    *   `BD[x,y+1] ← 'z'` ('z' 移到右方)。  \n    *   `BD[x,y] ← temp` (舊位置填充為右方字符)。  \n    *   `y ← y + 1` (更新 'z' 的列座標)。"
+    },
+    "points": 4,
+    "source": ""
+  },
+  {
+    "question_number": "4(c)(i)",
+    "question_text": "小芬編寫子程式 resetBD，利用 History 來重置 BD 至它的初始內容。\n假設 History 的內容是：\n```\n頂端\n3\n0\n1\n```\n寫出 resetBD 內將會執行 swapBD 的序列。",
+    "answer_details": {
+      "type": "sequence_completion",
+      "sequence": ["swapBD(1)", "swapBD(2)", "swapBD(3)"],
+      "notes": "`History` 是一個**堆疊 (stack)**，記錄了 'z' 進行的互換操作序列。要重置 `BD` 到初始狀態，需要以**相反的順序**執行與原始操作**相反的互換**。\n*   **彈出 `3` (左)**：與『左』相反的操作是『右』，`dir=1`。所以執行 `swapBD(1)`。\n*   **彈出 `0` (上)**：與『上』相反的操作是『下』，`dir=2`。所以執行 `swapBD(2)`。\n*   **彈出 `1` (右)**：與『右』相反的操作是『左』，`dir=3`。所以執行 `swapBD(3)`。\n*   因此，`resetBD` 內將會執行的 `swapBD` 序列是 `swapBD(1)`、`swapBD(2)`、`swapBD(3)`。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(c)(ii)",
+    "question_text": "完成以下 resetBD 的偽代碼。\n```\nresetBD\n  當 History 不是空的 執行\n    topH ← pop(History)\n    swapBD( (topH + 2) % 4 )\n```",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "resetBD",
+        "  當 History 不是空的 執行",
+        "    topH ← pop(History)",
+        "    swapBD( (topH + 2) % 4 )"
+      ],
+      "notes": "`resetBD` 子程式應從 `History` 堆疊中彈出操作，並執行其相反操作。\n*   `topH ← pop(History)`：從堆疊頂部取出最近的操作。\n*   `swapBD( (topH + 2) % 4 )`：這是一個計算相反操作的通用公式：\n    *   `dir=0` (上) 的相反是 `(0+2)%4 = 2` (下)。\n    *   `dir=1` (右) 的相反是 `(1+2)%4 = 3` (左)。\n    *   `dir=2` (下) 的相反是 `(2+2)%4 = 0` (上)。\n    *   `dir=3` (左) 的相反是 `(3+2)%4 = 1` (右)。"
+    },
+    "points": 2,
+    "source": ""
+  },
+  {
+    "question_number": "4(c)(iii)",
+    "question_text": "BD 和 History 最終的內容是：\nBD 的最終內容：\n```\nb h a\nf z c\ne z g\n```\nHistory 的最終內容：\n```\n頂端\n2\n1\n3\n1\n```\n小芬發現只需要一個互換來重置 BD 到它的初始內容。這個互換是什麼？",
+    "answer_details": {
+      "type": "short_answer",
+      "expected_answer": "swapBD(0)",
+      "notes": "根據 Q4(a) 的**初始 BD 內容**，字符 'z' 的初始位置是 `BD`。  \n**然而**，題目在 4(c)(iii) 中提供的 **BD 最終內容** `b h a / f z c / e z g` 似乎存在問題，它顯示了**兩個 'z' 字符**，這與遊戲規則（只有一個 'z'）不符，並且 'z' 的位置（`BD` 和 `BD`）與 Q4(a) 執行完所有操作後的 'z' 位置 `BD` 也不同。  \n\n**根據來源答案 `0`**，這表示 `swapBD(0)` (上)。這暗示 'z' 的當前位置在 `BD` (初始位置)，而它需要向上移動。這與題目提供的『最終內容』和『初始內容』之間的關係不明確。\n\n**若忽略 `BD` 最終內容中的錯誤，並假設問題是問**：從 `z` 的**某個位置**，執行一個 `swapBD(0)` 就能回到 `BD`（其初始位置）。那麼 `z` 必須在 `BD`。但這也與上述 `History` 序列執行後的 `z` 位置不符。  \n\n**由於來源答案明確給出 `0`，我將遵循此答案，但請注意問題描述和給定 `BD` 內容的**顯著歧義和潛在錯誤**。"
+    },
+    "points": 1,
+    "source": ""
+  },
+  {
+    "question_number": "4(c)(iv)",
+    "question_text": "小芬為 resetBD 編寫子程式 SimplifyH 去移除 History 內可以忽略的連續項目。TmpStack 是一個臨時堆疊。完成以下 SimplifyH 的偽代碼。\n```\nSimplifyH\n  當 History 不是空的 執行\n    topH ← pop(History)\n    如果 TmpStack 是空的 則\n      push(TmpStack, topH)\n    否則\n      topT ← pop(TmpStack)\n      如果 topH = (topT + 2) % 4 則\n        // 兩個互換互相抵消，不推回任何東西\n      否則\n        push(TmpStack, topT)\n        push(TmpStack, topH)\n  當 TmpStack 不是空的 執行\n    push(History, pop(TmpStack))\n```",
+    "answer_details": {
+      "type": "pseudocode_completion",
+      "pseudocode_structure": [
+        "SimplifyH",
+        "  當 History 不是空的 執行",
+        "    topH ← pop(History)",
+        "    如果 TmpStack 是空的 則",
+        "      push(TmpStack, topH)",
+        "    否則",
+        "      topT ← pop(TmpStack)",
+        "      如果 topH = (topT + 2) % 4 則",
+        "        // 兩個互換互相抵消，不推回任何東西",
+        "      否則",
+        "        push(TmpStack, topT)",
+        "        push(TmpStack, topH)",
+        "  當 TmpStack 不是空的 執行",
+        "    push(History, pop(TmpStack))"
+      ],
+      "notes": "`SimplifyH` 子程式的目的是簡化 `History` 堆疊中的操作序列，**移除互相抵消的連續操作**。  \n1.  **處理 `History` 堆疊**：\n    *   `當 History 不是空的 執行`：從 `History` 堆疊中逐一彈出操作 (`topH ← pop(History)`)。  \n    *   **如果 `TmpStack` 為空**：直接將 `topH` 推入 `TmpStack` (`push(TmpStack, topH)`)，因為沒有可比較的元素。  \n    *   **如果 `TmpStack` 不為空**：  \n        *   彈出 `TmpStack` 的頂部元素 (`topT ← pop(TmpStack)`)，並與 `topH` 進行比較。  \n        *   `如果 topH = (topT + 2) % 4 則`：這表示 `topH` 和 `topT` 互為相反操作（例如，'上' 和 '下'），它們互相抵消，則這兩個元素都不需要推回 `TmpStack`。  \n        *   **否則**：表示這兩個操作不抵消，需要將 `topT` 和 `topH` 都按順序推回 `TmpStack` (`push(TmpStack, topT)`, `push(TmpStack, topH)`)。  \n2.  **將簡化後的序列移回 `History` 堆疊**：  \n    *   `當 TmpStack 不是空的 執行`：將 `TmpStack` 中剩餘的元素逐一彈出，並推回 `History` 堆疊 (`push(History, pop(TmpStack))`)。這樣 `History` 堆疊中就只剩下簡化後的、非抵消性的操作序列。"
+    },
+    "points": 4,
+    "source": ""
+  }
+]
