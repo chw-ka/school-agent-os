@@ -47,6 +47,7 @@ class QuestionQualityReport:
     mcq: Optional[McqCheckResult] = None
     answer_patterns: Optional[AllAnswerPatternsResult] = None
     format: Optional[FormatCheckResult] = None
+    concept_conflicts: Optional[ConceptConflictResult] = None
 
     @property
     def has_duplicates(self) -> bool:
@@ -61,6 +62,10 @@ class QuestionQualityReport:
         if not self.concepts.core_sequence_ok:
             return True
         return not self.concepts.distribution_ok
+
+    @property
+    def has_concept_conflict_issues(self) -> bool:
+        return self.concept_conflicts is not None and not self.concept_conflicts.ok
 
     @property
     def has_mcq_issues(self) -> bool:
@@ -390,6 +395,7 @@ def format_spec_report_text(report: DuplicateReport) -> str:
         f"Rule: similarity > {pct}% → duplicate (cross-id matching)",
         f"Cross-section within exam: similarity > {int(THRESH_INTRA_CROSS * 100)}% also flagged",
         f"Also checks rendered DOCX for 甲–戊 overlap and MCQ answer leaks",
+        f"Spec also checks cross-section concept conflicts (same topic in 甲 + 乙–戊)",
         f"Duplicates: {len(report.duplicates)}",
         f"IDs to regenerate: {', '.join(report.regenerate_ids) or '(none)'}",
         "",
@@ -423,6 +429,14 @@ def format_quality_report_text(report: QuestionQualityReport) -> str:
         sections.extend(["", "=== All answer keys (randomness) ===", format_all_patterns_report(report.answer_patterns)])
     if report.format is not None:
         sections.extend(["", "=== Format (quotes + MCQ indent) ===", format_format_report(report.format)])
+    if report.concept_conflicts is not None:
+        sections.extend(
+            [
+                "",
+                "=== Concept conflicts (cross-section) ===",
+                format_concept_conflict_report(report.concept_conflicts),
+            ]
+        )
     sections.append("")
     sections.append(f"Overall: {'PASS' if report.ok else 'ISSUES FOUND'}")
     return "\n".join(sections)
