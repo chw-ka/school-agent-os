@@ -12,6 +12,7 @@ from concept_check import (
     format_concept_report,
     format_distribution_report,
 )
+from concept_conflict_check import check_concept_conflicts, format_concept_conflict_report
 from exam_spec import load_spec
 from answer_pattern_check import check_all_answer_patterns, format_all_patterns_report
 from format_check import check_exam_format, format_format_report
@@ -130,6 +131,12 @@ def main(argv: list[str] | None = None) -> int:
                 print(format_distribution_report(dist))
                 if not dist.ok and exit_code == 0:
                     exit_code = 1
+
+            conflict_result = check_concept_conflicts(candidate_spec)
+            print("\n=== Concept conflicts (cross-section) ===")
+            print(format_concept_conflict_report(conflict_result))
+            if not conflict_result.ok and exit_code == 0:
+                exit_code = 1
 
     if args.json:
         write_report_json(report, args.json)

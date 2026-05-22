@@ -183,6 +183,90 @@ def test_intra_exam_cross_section_overlap() -> None:
     assert overlaps, "expected cross-section thematic overlap"
 
 
+def test_concept_conflict_hallucination_mcq_and_later_sections() -> None:
+    from concept_conflict_check import check_concept_conflicts
+
+    spec = build_spec(
+        {"subject": "test"},
+        [
+            make_item(
+                "mcq-02",
+                "mcq",
+                "根據筆記，下列哪一項最能描述「幻覺（Hallucination）」？",
+                answer="B",
+            ),
+            make_item(
+                "c-tf-03",
+                "section_c",
+                "生成式 AI 的「幻覺」是指 AI 故意說謊來欺騙人類。",
+                answer="F",
+            ),
+            make_item(
+                "d-fill-a-03",
+                "section_d",
+                "當 AI 提供虛假資訊時，稱為「 ________ 」。",
+                answer="幻覺",
+            ),
+        ],
+    )
+    result = check_concept_conflicts(spec)
+    assert not result.ok
+    assert any(c.topic_id == "hallucination" for c in result.conflicts)
+
+
+def test_concept_conflict_tm_testing_mcq_and_sa() -> None:
+    from concept_conflict_check import check_concept_conflicts
+
+    spec = build_spec(
+        {"subject": "test"},
+        [
+            make_item(
+                "mcq-19",
+                "mcq",
+                "訓練後要『充分測試』模型準確性，下列哪一項是最主要原因？",
+                answer="A",
+            ),
+            make_item(
+                "e-sa-01",
+                "section_e",
+                "為什麼在 Teachable Machine 完成訓練後，必須先進行「充分測試」？",
+            ),
+        ],
+    )
+    result = check_concept_conflicts(spec)
+    assert not result.ok
+    assert any(c.topic_id == "tm_testing" for c in result.conflicts)
+
+
+def test_concept_conflict_diversified_pass() -> None:
+    from concept_conflict_check import check_concept_conflicts
+
+    spec = build_spec(
+        {"subject": "test"},
+        [
+            make_item(
+                "mcq-02",
+                "mcq",
+                "根據筆記，下列哪一項最能描述「幻覺（Hallucination）」？",
+                answer="B",
+            ),
+            make_item(
+                "d-fill-a-01",
+                "section_d",
+                "把長篇文章濃縮成精簡重點，稱為「 ________ 」。",
+                answer="摘要",
+            ),
+            make_item(
+                "e-sa-01",
+                "section_e",
+                "請說明 R-I-C-C-O 中 R 和 C（背景）可以如何設定。",
+            ),
+        ],
+    )
+    result = check_concept_conflicts(spec)
+    assert result.ok
+
+
 if __name__ == "__main__":
     test_format_backticks_fail()
     test_format_backticks_pass()
@@ -197,4 +281,7 @@ if __name__ == "__main__":
     test_concept_match()
     test_intra_exam_vibe_coding_leak()
     test_intra_exam_cross_section_overlap()
+    test_concept_conflict_hallucination_mcq_and_later_sections()
+    test_concept_conflict_tm_testing_mcq_and_sa()
+    test_concept_conflict_diversified_pass()
     print("ok")
