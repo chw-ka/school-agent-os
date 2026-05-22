@@ -144,10 +144,35 @@ def _part_c_items(build_part_c) -> list[dict]:
     ]
 
 
+def _written_items_from_picks(picks: dict[str, dict]) -> list[dict]:
+    order = [sid for sid, *_ in __import__(
+        "f5_ict_written_from_dse", fromlist=["WRITTEN_SLOT_PLAN"]
+    ).WRITTEN_SLOT_PLAN]
+    items: list[dict] = []
+    for slot_id in order:
+        p = picks[slot_id]
+        items.append(
+            make_item(
+                slot_id,
+                p["section"],
+                p["text"],
+                marks=p["marks"],
+                title=p.get("title"),
+                concepts=p.get("concepts"),
+                dse_source=p.get("dse_source"),
+                dse_sources=p.get("dse_sources"),
+                mix_years=p.get("mix_years"),
+                composition=p.get("composition"),
+            )
+        )
+    return items
+
+
 def build_f5_ict_exam_spec(
     *,
     mcq_rows: list[list[str]] | None = None,
     mcq_answers: str | None = None,
+    written_picks: dict[str, dict] | None = None,
 ) -> dict:
     _fmt = Path(__file__).resolve().parents[1] / "paper-formatter"
     if str(_fmt) not in sys.path:
@@ -173,8 +198,11 @@ def build_f5_ict_exam_spec(
                 answer=answer,
             )
         )
-    items.extend(_part_b_items(build_part_b))
-    items.extend(_part_c_items(build_part_c))
+    if written_picks:
+        items.extend(_written_items_from_picks(written_picks))
+    else:
+        items.extend(_part_b_items(build_part_b))
+        items.extend(_part_c_items(build_part_c))
     meta: dict = {
         "title": "25-26 S5 ICT Exam02",
         "subject": "F5 ICT",

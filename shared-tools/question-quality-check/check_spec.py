@@ -6,6 +6,7 @@ Question-level quality checks on exam specs (JSON):
 """
 from __future__ import annotations
 
+import json
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Optional
@@ -151,6 +152,83 @@ def compare_spec_to_spec(
         if key not in best or d.similarity > best[key].similarity:
             best[key] = d
     return sorted(best.values(), key=lambda x: (-x.similarity, x.candidate_id))
+
+
+DSE_ICT_BANK_MCQ_SLUGS = ("Paper1_MultipleChoice", "Paper1A_MultipleChoice")
+DSE_ICT_BANK_WRITTEN_SLUGS = (
+    "Paper1B_CompulsoryStructured",
+    "Paper2A_Database",
+    "Paper2_Elective",
+    "Paper2D_SoftwareDevelopment",
+)
+
+
+def _load_dse_ict_bank_items(
+    slugs: tuple[str, ...],
+    *,
+    years: tuple[str, ...] = ("2021", "2022", "2023", "2024", "2025"),
+    bank_root: Path | None = None,
+) -> list[dict]:
+    root = bank_root or Path(__file__).resolve().parents[2] / "Subjects/DSE-ICT/question-bank"
+    items: list[dict] = []
+    for year in years:
+        for slug in slugs:
+            path = root / year / slug / "questions.json"
+            if not path.exists():
+                continue
+            data = json.loads(path.read_text(encoding="utf-8"))
+            items.extend(data.get("items", []))
+    return items
+
+
+def load_dse_ict_bank_mcq_spec(
+    *,
+    years: tuple[str, ...] = ("2021", "2022", "2023", "2024", "2025"),
+    bank_root: Path | None = None,
+) -> dict:
+    """Merge DSE Paper1 MCQ question-bank JSON into one spec-shaped dict."""
+    items = _load_dse_ict_bank_items(DSE_ICT_BANK_MCQ_SLUGS, years=years, bank_root=bank_root)
+    return {"meta": {"source": "DSE-ICT/question-bank (MCQ)"}, "items": items}
+
+
+def load_dse_ict_bank_written_spec(
+    *,
+    years: tuple[str, ...] = ("2021", "2022", "2023", "2024", "2025"),
+    bank_root: Path | None = None,
+) -> dict:
+    """Merge DSE Paper1B / Paper2 written question-bank JSON into one spec-shaped dict."""
+    items = _load_dse_ict_bank_items(DSE_ICT_BANK_WRITTEN_SLUGS, years=years, bank_root=bank_root)
+    return {"meta": {"source": "DSE-ICT/question-bank (written)"}, "items": items}
+
+
+def load_dse_ict_bank_spec(
+    *,
+    years: tuple[str, ...] = ("2021", "2022", "2023", "2024", "2025"),
+    bank_root: Path | None = None,
+) -> dict:
+    """MCQ + 乙丙 structured bank merged for duplicate / similarity checks."""
+    mcq = load_dse_ict_bank_mcq_spec(years=years, bank_root=bank_root)
+    written = load_dse_ict_bank_written_spec(years=years, bank_root=bank_root)
+    return {
+        "meta": {"source": "DSE-ICT/question-bank"},
+        "items": mcq["items"] + written["items"],
+    }
+
+
+def compare_spec_to_dse_bank(
+    candidate: dict,
+    *,
+    threshold: float = THRESH_DUPLICATE,
+    bank_root: Path | None = None,
+) -> list[DuplicateEntry]:
+    """Flag exam items too close to DSE question-bank (MCQ + 乙丙 written)."""
+    ref = load_dse_ict_bank_spec(bank_root=bank_root)
+    return compare_spec_to_spec(
+        candidate,
+        ref,
+        reference_path="DSE-ICT/question-bank",
+        threshold=threshold,
+    )
 
 
 def compare_intra_spec(
@@ -317,6 +395,11 @@ def run_question_check(
         dup_report.duplicates.extend(
             compare_spec_to_spec(candidate, ref_spec, reference_path=label, threshold=threshold)
         )
+    meta = candidate.get("meta") or {}
+    if meta.get("dse_sources") or meta.get("style_guide"):
+        dup_report.duplicates.extend(compare_spec_to_dse_bank(candidate, threshold=threshold))
+        if "DSE-ICT/question-bank" not in dup_report.references_checked:
+            dup_report.references_checked.append("DSE-ICT/question-bank")
     dup_report.duplicates.extend(compare_intra_spec(candidate, threshold=threshold))
     docx_path = candidate_docx_path
     if docx_path is None and candidate_spec_path.with_suffix(".docx").exists():

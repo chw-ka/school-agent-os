@@ -1,0 +1,178 @@
+{
+  "threshold": 0.6,
+  "mcq_total": 30,
+  "mcq_over_threshold": 15,
+  "mcq_ok_count": 15,
+  "mcq_hits": [
+    {
+      "slot": "mcq-03",
+      "similarity": 0.8624,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ36"
+    },
+    {
+      "slot": "mcq-04",
+      "similarity": 0.92,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ20"
+    },
+    {
+      "slot": "mcq-05",
+      "similarity": 0.9804,
+      "bank_id": "2025-Paper1A_MultipleChoice-6"
+    },
+    {
+      "slot": "mcq-07",
+      "similarity": 0.8451,
+      "bank_id": "2021-Paper1_MultipleChoice-19"
+    },
+    {
+      "slot": "mcq-09",
+      "similarity": 0.875,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ5"
+    },
+    {
+      "slot": "mcq-10",
+      "similarity": 0.8621,
+      "bank_id": "2021-Paper1_MultipleChoice-31"
+    },
+    {
+      "slot": "mcq-11",
+      "similarity": 0.6957,
+      "bank_id": "2024-Paper1_MultipleChoice-19"
+    },
+    {
+      "slot": "mcq-12",
+      "similarity": 0.9429,
+      "bank_id": "2021-Paper1_MultipleChoice-21"
+    },
+    {
+      "slot": "mcq-14",
+      "similarity": 0.9655,
+      "bank_id": "2021-Paper1_MultipleChoice-18-Page-5-problem-18"
+    },
+    {
+      "slot": "mcq-16",
+      "similarity": 0.7556,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ21"
+    },
+    {
+      "slot": "mcq-17",
+      "similarity": 0.7481,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ19"
+    },
+    {
+      "slot": "mcq-18",
+      "similarity": 0.9851,
+      "bank_id": "2024-Paper1_MultipleChoice-17"
+    },
+    {
+      "slot": "mcq-19",
+      "similarity": 0.9744,
+      "bank_id": "2024-Paper1_MultipleChoice-20"
+    },
+    {
+      "slot": "mcq-20",
+      "similarity": 0.9846,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ17"
+    },
+    {
+      "slot": "mcq-26",
+      "similarity": 0.9474,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ6"
+    }
+  ],
+  "written_total": 13,
+  "written_source_over_threshold": 2,
+  "written_source_hits": [
+    {
+      "slot": "b-02",
+      "similarity": 0.7802,
+      "bank_id": "2024-Paper1B_CompulsoryStructured-1-a-iii"
+    },
+    {
+      "slot": "b-06",
+      "similarity": 0.7193,
+      "bank_id": "2024-Paper1B_CompulsoryStructured-1-b-ii"
+    }
+  ],
+  "written_bank_best_over_threshold": 0,
+  "written_bank_best_hits": [],
+  "over_threshold": 15,
+  "ok_count": 15,
+  "hits": [
+    {
+      "slot": "mcq-03",
+      "similarity": 0.8624,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ36"
+    },
+    {
+      "slot": "mcq-04",
+      "similarity": 0.92,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ20"
+    },
+    {
+      "slot": "mcq-05",
+      "similarity": 0.9804,
+      "bank_id": "2025-Paper1A_MultipleChoice-6"
+    },
+    {
+      "slot": "mcq-07",
+      "similarity": 0.8451,
+      "bank_id": "2021-Paper1_MultipleChoice-19"
+    },
+    {
+      "slot": "mcq-09",
+      "similarity": 0.875,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ5"
+    },
+    {
+      "slot": "mcq-10",
+      "similarity": 0.8621,
+      "bank_id": "2021-Paper1_MultipleChoice-31"
+    },
+    {
+      "slot": "mcq-11",
+      "similarity": 0.6957,
+      "bank_id": "2024-Paper1_MultipleChoice-19"
+    },
+    {
+      "slot": "mcq-12",
+      "similarity": 0.9429,
+      "bank_id": "2021-Paper1_MultipleChoice-21"
+    },
+    {
+      "slot": "mcq-14",
+      "similarity": 0.9655,
+      "bank_id": "2021-Paper1_MultipleChoice-18-Page-5-problem-18"
+    },
+    {
+      "slot": "mcq-16",
+      "similarity": 0.7556,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ21"
+    },
+    {
+      "slot": "mcq-17",
+      "similarity": 0.7481,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ19"
+    },
+    {
+      "slot": "mcq-18",
+      "similarity": 0.9851,
+      "bank_id": "2024-Paper1_MultipleChoice-17"
+    },
+    {
+      "slot": "mcq-19",
+      "similarity": 0.9744,
+      "bank_id": "2024-Paper1_MultipleChoice-20"
+    },
+    {
+      "slot": "mcq-20",
+      "similarity": 0.9846,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ17"
+    },
+    {
+      "slot": "mcq-26",
+      "similarity": 0.9474,
+      "bank_id": "2022-Paper1_MultipleChoice-AQ6"
+    }
+  ]
+}

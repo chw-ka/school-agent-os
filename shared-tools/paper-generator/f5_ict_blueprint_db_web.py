@@ -119,7 +119,7 @@ def build_mcq_payload() -> list[list[str]]:
                 "\t\t(3)\t相同容量下 SSD 通常較貴",
                 "",
             ]
-            + o("只有 (1)", "只有 (1) 和 (3)", "只有 (2) 和 (3)", "(1)、(2) 和 (3)"),
+            + o("只有 (1)", "只有 (2)", "只有 (1) 和 (3)", "只有 (2) 和 (3)"),
             ["下列哪項最屬於實用程式（Utility）的典型用途？", ""]
             + o("試算表繪製圖表", "磁碟重組或檔案壓縮等系統維護工作", "編輯數碼影片特效", "管理使用者帳戶與檔案權限"),
             [
@@ -355,12 +355,17 @@ def generate(
     *,
     footer_meta: dict | None = None,
     rng: object | None = None,
+    mcq_payload: list[list[str]] | None = None,
+    mcq_correct_indices: tuple[int, ...] | None = None,
 ) -> tuple[list[list[str]], str]:
     """Render DOCX; return (final MCQ rows, mcq answer key)."""
     import random as _random
 
     rng_obj = rng if isinstance(rng, _random.Random) else _random.Random(252602)
-    payload, correct_indices, _prov = build_mcq_payload_from_bank(rng_obj)
+    if mcq_payload is not None and mcq_correct_indices is not None:
+        payload, correct_indices = mcq_payload, mcq_correct_indices
+    else:
+        payload, correct_indices, _prov = build_mcq_payload_from_bank(rng_obj)
     shutil.copy(template, output)
     doc = Document(str(output))
     _apply_cover(doc)

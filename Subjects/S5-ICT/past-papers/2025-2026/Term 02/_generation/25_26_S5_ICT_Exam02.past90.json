@@ -1,0 +1,15 @@
+{
+  "threshold": 0.9,
+  "candidate": "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2025-2026\\Term 02\\WrittenExam\\25_26_S5_ICT_Exam02.docx",
+  "total_spec_items": 32,
+  "spec_items_ge90": 0,
+  "spec_items_80_89": 0,
+  "mcq_total": 30,
+  "mcq_ge90": 0,
+  "written_total": 2,
+  "written_ge90": 0,
+  "line_hits_ge90": 9,
+  "matches_ge90": [],
+  "mcq_matches": [],
+  "written_matches": []
+}

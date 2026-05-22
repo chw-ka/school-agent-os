@@ -107,11 +107,18 @@ def _is_all_combination_option(text: str, stem_nums: frozenset[int]) -> bool:
 
 
 def _combo_option_sort_key(text: str, stem_nums: frozenset[int]) -> tuple:
-    """(tier, nums): tier 0 = 單項/部分組合按 (1)<(1,2)<(2,3)；tier 1 = 皆是（最後）。"""
+    """
+    Canonical A→D for (1)(2)(3) combo MCQ:
+      tier 0 — singles: 只有 (1), 只有 (2), 只有 (3)
+      tier 1 — pairs:   只有 (1) 和 (3), 只有 (2) 和 (3), …
+      tier 2 — all:     (1)、(2) 和 (3) 皆是
+    """
     nums = _option_number_tuple(text)
     if _is_all_combination_option(text, stem_nums):
-        return (1, nums)
-    return (0, nums)
+        return (2, nums)
+    if len(nums) == 1:
+        return (0, nums)
+    return (1, nums)
 
 
 def sort_combination_options(

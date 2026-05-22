@@ -41,8 +41,11 @@ When changing slot concepts, keep **both** block order and template **span** con
 
 - Year pool: **2021–2025** (ignore 2019–2020 unless user says otherwise)
 - Exclude Core C / Module B networking-heavy items
-- **Intra-exam dedup**: same stem / >72% similarity forbidden
+- **Bank + past papers**: stem similarity **must be ≤ 60%** vs DSE question-bank and vs school past papers (past papers = reference only; same concept, different scenario/wording)
+- **Intra-exam dedup**: same stem / >60% similarity forbidden
+- Picker keeps **DSE phrasing** (no school prefixes); varies **numbers**; **flip** (`是`↔`不是`); **single ↔ combo**; **reframe**（例：「X 重要，這是因為」→「以下哪一步驟可以…？」+ 流程名稱選項）. Target bank similarity ≤ 60% where feasible
 - Combo MCQ format: `\t\t(1)\t…`, `\t\t(2)\t…`, `\t\t(3)\t…` before options
+- Quality-check: `run_question_check` also compares spec to `DSE-ICT/question-bank` when `meta.dse_sources` is set
 
 ## Template tables (DOCX render)
 

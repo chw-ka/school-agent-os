@@ -4,6 +4,12 @@ from __future__ import annotations
 
 from written_layout import ANSWER_BLANK, ANSWER_BLANK_LONG, code_line, sql_line, stem, subpart
 
+try:
+    from f5_ict_written_from_dse import scenario_override
+except ImportError:
+    def scenario_override(_slot_id: str, default: str) -> str:  # type: ignore[misc]
+        return default
+
 
 def build_part_b() -> list[str]:
     """Return 110 lines for paragraphs 313–422 inclusive."""
@@ -16,8 +22,11 @@ def build_part_b() -> list[str]:
     # --- B1: spreadsheet — charity sale (4 marks) ---
     put(
         313,
-        "「煦風書社」以試算表記錄義賣收入。欄位：A=日期、B=商品、C=單價、D=數量、"
-        "E=會員（Y／N）、F=總價。部分資料如下：",
+        scenario_override(
+            "b-01",
+            "「煦風書社」以試算表記錄義賣收入。欄位：A=日期、B=商品、C=單價、D=數量、"
+            "E=會員（Y／N）、F=總價。部分資料如下：",
+        ),
     )
     put(
         316,
@@ -41,7 +50,13 @@ def build_part_b() -> list[str]:
     put(320, ANSWER_BLANK)
 
     # --- B2: data validation table (5 marks) ---
-    put(323, stem("完成下表，為網上報名欄位選擇適當的數據有效性檢驗。", 3, spaced_marks=True))
+    put(
+        323,
+        scenario_override(
+            "b-02",
+            stem("完成下表，為網上報名欄位選擇適當的數據有效性檢驗。", 3, spaced_marks=True),
+        ),
+    )
     put(326, subpart("b", "試算表可設定數據有效性以減少輸入錯誤。"))
     put(328, subpart("i", "說明「數據有效性檢驗」與「奇偶檢測」的分別。", 1, depth=2))
     put(329, ANSWER_BLANK)
@@ -51,7 +66,10 @@ def build_part_b() -> list[str]:
     # --- B3: multimedia file size (4 marks) — Core A, no networking ---
     put(
         336,
-        "攝影學會以未壓縮 BMP 儲存活動相片：每張 1600×1200 像素、24 bit 真彩色。",
+        scenario_override(
+            "b-03",
+            "攝影學會以未壓縮 BMP 儲存活動相片：每張 1600×1200 像素、24 bit 真彩色。",
+        ),
     )
     put(
         338,
@@ -70,7 +88,13 @@ def build_part_b() -> list[str]:
     put(350, ANSWER_BLANK)
 
     # --- B4: linear search trace — Core D / Module C (4 marks) ---
-    put(354, "考慮陣列 A（索引由 1 開始，n=6）及以下搜尋算法（尋找值 key）：")
+    put(
+        354,
+        scenario_override(
+            "b-04",
+            "考慮陣列 A（索引由 1 開始，n=6）及以下搜尋算法（尋找值 key）：",
+        ),
+    )
     put(357, stem("執行下列算法："))
     put(359, code_line("found ← FALSE"))
     put(360, code_line("i ← 1"))
@@ -92,7 +116,10 @@ def build_part_b() -> list[str]:
     put(373, stem("請在答案中說明此算法屬「線性搜尋」的原因。"))
 
     # --- B5: file access (4 marks) ---
-    put(377, "校園相簿系統以索引檔記錄每張相片的編號與儲存位置。")
+    put(
+        377,
+        scenario_override("b-05", "校園相簿系統以索引檔記錄每張相片的編號與儲存位置。"),
+    )
     put(385, stem("系統可以「直接存取」或「順序存取」索引檔。"))
     put(387, subpart("a", "比較兩種方式查找特定相片編號的優缺點。", 2, spaced_marks=True))
     put(388, ANSWER_BLANK)
@@ -106,8 +133,11 @@ def build_part_b() -> list[str]:
     # --- B6: ORDER / CLIENT database (9 marks) — Module A intro ---
     put(
         394,
-        "「綠途生活」網店以網上表格收集訂單，並把資料匯入 ORDER 資料表"
-        "（OID、CNAME、PHONE、EMAIL、ORDER_DATE）。",
+        scenario_override(
+            "b-06",
+            "「綠途生活」網店以網上表格收集訂單，並把資料匯入 ORDER 資料表"
+            "（OID、CNAME、PHONE、EMAIL、ORDER_DATE）。",
+        ),
     )
     put(396, subpart("a", "試指出使用網上表格相對紙本表格的兩項好處。", 2, spaced_marks=True))
     put(398, ANSWER_BLANK)
@@ -148,8 +178,11 @@ def build_part_c() -> list[str]:
     # C1 — ERD cinema booking (4 marks) — blueprint: 2024 Paper2A
     put(
         425,
-        "某院線公司開發會員預訂系統：每位會員可建立多張預訂；每張預訂對應一個場次；"
-        "每間戲院每日有多個場次。",
+        scenario_override(
+            "c-01",
+            "某院線公司開發會員預訂系統：每位會員可建立多張預訂；每張預訂對應一個場次；"
+            "每間戲院每日有多個場次。",
+        ),
     )
     put(
         427,
@@ -162,7 +195,7 @@ def build_part_c() -> list[str]:
     put(429, "\t\t")
 
     # C2 — CREATE / INSERT (2 marks)
-    put(440, "某社企使用 MOVIE 資料表記錄租借影碟。")
+    put(440, scenario_override("c-02", "某社企使用 MOVIE 資料表記錄租借影碟。"))
     put(442, subpart("a", "補充以下 SQL，使 MID 不可重複。", 1, spaced_marks=True))
     put(444, sql_line("CREATE TABLE MOVIE ("))
     put(445, sql_line("    MID CHAR(6)\t\t\t\t,", depth=4))
@@ -174,7 +207,7 @@ def build_part_c() -> list[str]:
     put(455, stem("寫出此 SQL 語句中未填寫的部分。"))
 
     # C3 — UNION / UPDATE (3 marks)
-    put(457, "Order2024 與 Order2025 結構相同，部分記錄如下：")
+    put(457, scenario_override("c-03", "Order2024 與 Order2025 結構相同，部分記錄如下："))
     put(459, "\t\tOrder2024\t\tOrder2025")
     put(461, subpart("a", "執行以下 SQL 後會列出多少筆記錄？", 1, spaced_marks=True))
     put(463, sql_line("SELECT *"))
@@ -195,7 +228,7 @@ def build_part_c() -> list[str]:
     # C4 — removed (was 3NF sports, 3 marks) — slots left blank for template span
 
     # C5 — FACILITY / RESERVE (11 marks)
-    put(496, "某社區中心資料庫包含 FACILITY 及 RESERVE 資料表：")
+    put(496, scenario_override("c-05", "某社區中心資料庫包含 FACILITY 及 RESERVE 資料表："))
     put(498, "FACILITY")
     put(500, "RESERVE")
     put(502, subpart("a", "寫出 MEMID 欄的合適數據類型並簡略說明。", 1, spaced_marks=True))
@@ -233,7 +266,7 @@ def build_part_c() -> list[str]:
     put(536, subpart("d", "簡述非規範化 FACILITY 與 RESERVE 的一個方法。", 1, spaced_marks=True))
 
     # C6 — SQL trace (5 marks)
-    put(541, "考慮 Member 與 Enrol 資料表，以下 SQL 逐步執行：")
+    put(541, scenario_override("c-06", "考慮 Member 與 Enrol 資料表，以下 SQL 逐步執行："))
     put(544, stem("設初始結果為空。"))
     put(547, subpart("a", "第一次 JOIN 後結果包含哪些 MemberID？", 1, spaced_marks=True))
     put(550, subpart("ii", "加入 GROUP BY 後結果如何變化？", 1, depth=2, spaced_marks=True))
@@ -242,9 +275,15 @@ def build_part_c() -> list[str]:
     put(559, subpart("c", "若改為 LEFT JOIN，結果有何不同？簡述。", 1, spaced_marks=True))
 
     # C7 — transactions (9 marks)
-    put(566, "校園一卡通系統使用交易（Transaction）確保扣款一致。常用子句如下：")
+    put(
+        566,
+        scenario_override(
+            "c-07",
+            "校園一卡通系統使用交易（Transaction）確保扣款一致。常用子句如下：",
+        ),
+    )
     put(569, subpart("a", "寫出 BEGIN…COMMIT 與 ROLLBACK 的用途各一項。", 1, spaced_marks=True))
-    put(571, sql_line("UPDATE Wallet SET Balance = Balance - 50 WHERE SID = 'S001';"))
+    put(571, sql_line("UPDATE Account SET Balance = Balance - 30 WHERE StudentID = 'S002';"))
     put(574, subpart("b", "若第二步 UPDATE 失敗，應執行哪個子句？為什麼？", 1, spaced_marks=True))
     put(577, stem("試描述如何確保兩個 UPDATE 同時成功或同時失敗。"))
     put(579, sql_line("BEGIN TRANSACTION"))
@@ -259,7 +298,13 @@ def build_part_c() -> list[str]:
     put(592, subpart("d", "說明若無交易控制，扣款中斷可能造成什麼資料不一致。", 4, spaced_marks=True))
 
     # C8 — stack / Module C (6 marks)
-    put(595, "某程式以堆疊（Stack）儲存運算元，以下為初始狀態及 PUSH／POP 操作：")
+    put(
+        595,
+        scenario_override(
+            "c-08",
+            "某程式以堆疊（Stack）儲存運算元，以下為初始狀態及 PUSH／POP 操作：",
+        ),
+    )
     put(597, "堆疊底在左，頂端在右。")
     put(598, "完成下表（首四步）後，繼續追蹤 PUSH 2、POP、POP。")
     put(600, stem("操作序列：PUSH 3；PUSH 7；POP；PUSH 2；POP；POP"))

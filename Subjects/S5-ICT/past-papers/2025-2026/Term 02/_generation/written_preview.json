@@ -1,0 +1,237 @@
+{
+  "count": 13,
+  "items": [
+    {
+      "slot": "b-01",
+      "dse_source": "2023-Paper1B_CompulsoryStructured-BQ2-b",
+      "dse_sources": [
+        "2023-Paper1B_CompulsoryStructured-BQ2-b",
+        "2024-Paper1B_CompulsoryStructured-1-a-i",
+        "2025-Paper1B_CompulsoryStructured-1-b"
+      ],
+      "dse_year": "2023+2024+2025",
+      "mix_years": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper1B_CompulsoryStructured",
+      "preview": "(b) 在 Sheet5 內，在 B5 輸入公式 =VLOOKUP(A5, Sheet1!A5:B2, 5, false)，然後複製到 B5:B12。但發現並不是所有社名稱能正確顯示。寫出 B5 正確"
+    },
+    {
+      "slot": "b-02",
+      "dse_source": "2024-Paper1B_CompulsoryStructured-1-a-iii",
+      "dse_sources": [
+        "2024-Paper1B_CompulsoryStructured-1-a-iii",
+        "2025-Paper1B_CompulsoryStructured-2-a"
+      ],
+      "dse_year": "2024+2025",
+      "mix_years": [
+        "2024",
+        "2025"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper1B_CompulsoryStructured",
+      "preview": "除了核實欄位是否沒有留空，描述一個適合 D6:D79 內數據的有效性檢驗。",
+      "source_similarity": 0.7802,
+      "over_threshold": true
+    },
+    {
+      "slot": "b-03",
+      "dse_source": "2021-Paper1B_CompulsoryStructured-1B-10-Q1-a",
+      "dse_sources": [
+        "2021-Paper1B_CompulsoryStructured-1B-10-Q1-a",
+        "2023-Paper1B_CompulsoryStructured-BQ1-c-ii",
+        "2022-Paper1B_CompulsoryStructured-BQ1-b",
+        "2021-Paper1B_CompulsoryStructured-1B-11-Q1-c-ii"
+      ],
+      "dse_year": "2021+2022+2023",
+      "mix_years": [
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper1B_CompulsoryStructured",
+      "preview": "一個顯示板由 9x9 像素組成，如下所示："
+    },
+    {
+      "slot": "b-04",
+      "dse_source": "2022-Paper1B_CompulsoryStructured-BQ5-a",
+      "dse_sources": [
+        "2022-Paper1B_CompulsoryStructured-BQ5-a",
+        "2024-Paper1B_CompulsoryStructured-5-a",
+        "2022-Paper1B_CompulsoryStructured-BQ5-g"
+      ],
+      "dse_year": "2022+2024",
+      "mix_years": [
+        "2022",
+        "2024"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper1B_CompulsoryStructured",
+      "preview": "莉莉設計附有陣列 A 的子程式。她考慮算法 ALG1, ALG6 和 ALG2。"
+    },
+    {
+      "slot": "b-05",
+      "dse_source": "2022-Paper1B_CompulsoryStructured-BQ4-c-i",
+      "dse_sources": [
+        "2022-Paper1B_CompulsoryStructured-BQ4-c-i",
+        "2025-Paper1B_CompulsoryStructured-3-b-i",
+        "2022-Paper1B_CompulsoryStructured-BQ1-d"
+      ],
+      "dse_year": "2022+2025",
+      "mix_years": [
+        "2022",
+        "2025"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper1B_CompulsoryStructured",
+      "preview": "志偉開發使用聊天機械人應用程式的登入版面。"
+    },
+    {
+      "slot": "b-06",
+      "dse_source": "2024-Paper1B_CompulsoryStructured-1-b-ii",
+      "dse_sources": [
+        "2024-Paper1B_CompulsoryStructured-1-b-ii",
+        "2022-Paper1B_CompulsoryStructured-BQ2-d-i"
+      ],
+      "dse_year": "2022+2024",
+      "mix_years": [
+        "2022",
+        "2024"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper1B_CompulsoryStructured",
+      "preview": "寫出 ATTEND 的主關鍵碼。",
+      "source_similarity": 0.7193,
+      "over_threshold": true
+    },
+    {
+      "slot": "c-01",
+      "dse_source": "2024-Paper2A_Database-4-c-ii",
+      "dse_sources": [
+        "2024-Paper2A_Database-4-c-ii",
+        "2023-Paper2A_Database-4-c",
+        "2021-Paper2A_Database-3-a-i",
+        "2025-Paper2_Elective-4"
+      ],
+      "dse_year": "2021+2023+2024+2025",
+      "mix_years": [
+        "2021",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2A_Database",
+      "preview": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。試寫出該完整性問題，並簡要說明你的答案。"
+    },
+    {
+      "slot": "c-02",
+      "dse_source": "2022-Paper2A_Database-4-c-i",
+      "dse_sources": [
+        "2022-Paper2A_Database-4-c-i",
+        "2021-Paper2A_Database-1-f"
+      ],
+      "dse_year": "2021+2022",
+      "mix_years": [
+        "2021",
+        "2022"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2A_Database",
+      "preview": "會員總是搜尋一些幾乎售罄的商品。為了改善這些搜尋，向 PROD 內的 QUAN 建構一個索引。"
+    },
+    {
+      "slot": "c-03",
+      "dse_source": "2025-Paper2_Elective-3-a",
+      "dse_sources": [
+        "2025-Paper2_Elective-3-a",
+        "2022-Paper2A_Database-1-b"
+      ],
+      "dse_year": "2022+2025",
+      "mix_years": [
+        "2022",
+        "2025"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2_Elective",
+      "preview": "以下輸入表格使用一SQL語句將一筆記錄插入 CUS內。 寫出此 SQL語句中未填寫的部分。"
+    },
+    {
+      "slot": "c-05",
+      "dse_source": "2024-Paper2A_Database-3-c-i",
+      "dse_sources": [
+        "2024-Paper2A_Database-3-c-i",
+        "2023-Paper2A_Database-1-e-ii",
+        "2025-Paper2_Elective-5-d",
+        "2021-Paper2A_Database-3-a-ii"
+      ],
+      "dse_year": "2021+2023+2024+2025",
+      "mix_years": [
+        "2021",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2A_Database",
+      "preview": "SQL1 是 SQL 語句：'SELECT MNAME, SEX, DOB FROM MEMBER WHERE DOB = '1/1/1994' ORDER BY MNAME'。建立一個索引 MIND"
+    },
+    {
+      "slot": "c-06",
+      "dse_source": "2024-Paper2A_Database-1-c",
+      "dse_sources": [
+        "2024-Paper2A_Database-1-c",
+        "2023-Paper2A_Database-3-d-iii",
+        "2025-Paper2_Elective-3-b",
+        "2022-Paper2A_Database-3-d-ii"
+      ],
+      "dse_year": "2022+2023+2024+2025",
+      "mix_years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2A_Database",
+      "preview": "列出普遍進入名稱包含「實驗室」的房間的員工姓名。"
+    },
+    {
+      "slot": "c-07",
+      "dse_source": "2024-Paper2A_Database-4-d-i",
+      "dse_sources": [
+        "2024-Paper2A_Database-4-d-i",
+        "2022-Paper2A_Database-1-c"
+      ],
+      "dse_year": "2022+2024",
+      "mix_years": [
+        "2022",
+        "2024"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2A_Database",
+      "preview": "資訊科技經理建議合併所有分區的數據庫。舉出這個建議的一個好處，並簡要說明你的答案。"
+    },
+    {
+      "slot": "c-08",
+      "dse_source": "2021-Paper2D_SoftwareDevelopment-3-a",
+      "dse_sources": [
+        "2021-Paper2D_SoftwareDevelopment-3-a",
+        "2021-Paper2D_SoftwareDevelopment-2-b-i",
+        "2022-Paper2D_SoftwareDevelopment-2-b-ii"
+      ],
+      "dse_year": "2021+2022",
+      "mix_years": [
+        "2021",
+        "2022"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2D_SoftwareDevelopment",
+      "preview": "A 是一個 m×n 二維陣列。莉莉以 A 來表示一幅圖片。白色像素和黑色像素分別用 '0' 和 '1' 表示。以下例子是一幅以 A 來表示的 4x4 圖片："
+    }
+  ]
+}
