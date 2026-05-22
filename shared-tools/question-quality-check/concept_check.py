@@ -1,6 +1,7 @@
 """Verify assessed concepts align between candidate and reference exam specs."""
 from __future__ import annotations
 
+import re
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Optional
@@ -108,6 +109,7 @@ class ConceptCheckResult:
     mismatches: list[ConceptMismatch] = field(default_factory=list)
     skipped_slots: int = 0
     distribution: Optional[ConceptDistributionReport] = None
+    core_sequence_errors: list[str] = field(default_factory=list)
 
     @property
     def distribution_ok(self) -> bool:
@@ -115,13 +117,18 @@ class ConceptCheckResult:
             return True
         return self.distribution.ok
 
+    @property
+    def core_sequence_ok(self) -> bool:
+        return not self.core_sequence_errors
+
     def to_dict(self) -> dict:
         d: dict[str, Any] = {
-            "ok": self.ok,
+            "ok": self.ok and self.core_sequence_ok,
             "checked_slots": self.checked_slots,
             "skipped_slots": self.skipped_slots,
             "mismatch_count": len(self.mismatches),
             "mismatches": [asdict(m) for m in self.mismatches],
+            "core_sequence_errors": self.core_sequence_errors,
         }
         if self.distribution is not None:
             d["distribution"] = self.distribution.to_dict()
@@ -314,6 +321,76 @@ def _pair_items(cand: list[ExamItem], ref: list[ExamItem]) -> list[tuple[str, Ex
     return pairs
 
 
+def check_mcq_core_sequence(spec: dict) -> list[str]:
+    """Verify MCQ slots follow meta.mcq_core_sequence and concepts map to each core."""
+    meta = spec.get("meta") or {}
+    expected = meta.get("mcq_core_sequence")
+    if not expected:
+        return []
+
+    import sys
+    from pathlib import Path as _Path
+
+    pg = _Path(__file__).resolve().parents[1] / "paper-generator"
+    if str(pg) not in sys.path:
+        sys.path.insert(0, str(pg))
+    from mcq_core_plan import CONCEPT_TO_CORE, ELECTIVE_EC_CONCEPTS
+
+    mcq_items = sorted(
+        (it for it in spec_items(spec) if it.section == "mcq"),
+        key=lambda x: x.id,
+    )
+    errors: list[str] = []
+    if len(mcq_items) != len(expected):
+        errors.append(f"Expected {len(expected)} MCQs, found {len(mcq_items)}")
+    for i, (item, exp_core) in enumerate(zip(mcq_items, expected, strict=False), start=1):
+        got = item.meta.get("core")
+        if not got:
+            errors.append(f"MCQ-{i:02d} ({item.id}): missing core metadata")
+        elif got != exp_core:
+            errors.append(f"MCQ-{i:02d}: expected Core {exp_core}, got Core {got}")
+        ec_hits = [c for c in item_concepts(item) if c in ELECTIVE_EC_CONCEPTS]
+        if ec_hits:
+            compulsory_mapped = {
+                CONCEPT_TO_CORE[c]
+                for c in item_concepts(item)
+                if CONCEPT_TO_CORE.get(c) in ("A", "B", "D")
+            }
+            if not compulsory_mapped:
+                errors.append(
+                    f"MCQ-{i:02d}: elective EC concept(s) {ec_hits!r} — not compulsory 甲部 content"
+                )
+        for concept in item_concepts(item):
+            mapped = CONCEPT_TO_CORE.get(concept)
+            if mapped and mapped != exp_core:
+                errors.append(
+                    f"MCQ-{i:02d}: concept {concept!r} is Core {mapped}, slot expects Core {exp_core}"
+                )
+    # Drop errors where another concept in the same slot maps to the expected core
+    filtered: list[str] = []
+    for err in errors:
+        if "concept" not in err or "slot expects Core" not in err:
+            filtered.append(err)
+            continue
+        m = re.search(r"MCQ-(\d+): concept", err)
+        if not m:
+            filtered.append(err)
+            continue
+        slot_i = int(m.group(1))
+        item = mcq_items[slot_i - 1] if slot_i <= len(mcq_items) else None
+        exp_core = expected[slot_i - 1] if slot_i <= len(expected) else None
+        if item and exp_core:
+            mapped_cores = {
+                CONCEPT_TO_CORE[c]
+                for c in item_concepts(item)
+                if c in CONCEPT_TO_CORE
+            }
+            if exp_core in mapped_cores:
+                continue
+        filtered.append(err)
+    return filtered
+
+
 def check_concepts(
     candidate_spec: dict,
     reference_spec: dict,
@@ -352,6 +429,8 @@ def check_concepts(
     if include_distribution:
         distribution = compare_concept_distributions(candidate_spec, reference_spec)
 
+    core_errors = check_mcq_core_sequence(candidate_spec)
+
     return ConceptCheckResult(
         candidate=candidate_label,
         reference=reference_label,
@@ -360,6 +439,7 @@ def check_concepts(
         mismatches=mismatches,
         skipped_slots=skipped,
         distribution=distribution,
+        core_sequence_errors=core_errors,
     )
 
 
@@ -397,5 +477,10 @@ def format_concept_report(result: ConceptCheckResult) -> str:
 
     if result.distribution is not None:
         lines.extend(["", format_distribution_report(result.distribution)])
+
+    if result.core_sequence_errors:
+        lines.extend(["", "MCQ core sequence (A→B→D): FAILED"])
+        for err in result.core_sequence_errors:
+            lines.append(f"  {err}")
 
     return "\n".join(lines)

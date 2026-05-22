@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from copy import deepcopy
 from dataclasses import dataclass
-from typing import Optional, Sequence
+from typing import Iterable, Optional, Sequence
 
 # Chinese CMP cover (table 0, cell 0,0) — 20 paragraphs in 24_25 templates.
 ZH_COVER_PARA = {
@@ -156,6 +156,45 @@ def apply_cmp_cover_zh(cover_cell, patch: ZhCoverPatch) -> None:
     _para_map_set(paras, idx, "duration", patch.duration_line)
     _para_map_set(paras, idx, "pages", patch.pages_line)
     _para_map_set(paras, idx, "total", patch.total_line)
+
+
+def clear_table_cells(table) -> None:
+    """Blank every cell while preserving table dimensions and styles."""
+    for row in table.rows:
+        for cell in row.cells:
+            for p in cell.paragraphs:
+                set_paragraph_text_distribute(p, "")
+
+
+def clear_all_tables_except(
+    doc,
+    keep_indices: Iterable[int] = (0,),
+) -> None:
+    """
+    Blank all tables before writing new question content.
+
+    Default keeps index 0 (cover). Other tables are cleared; populate only those
+    required by the current paper via apply_*_table_content().
+    """
+    keep = set(keep_indices)
+    for i, table in enumerate(doc.tables):
+        if i in keep:
+            continue
+        clear_table_cells(table)
+
+
+def delete_table(table) -> None:
+    """Remove a table element from the document body."""
+    element = table._element
+    element.getparent().remove(element)
+
+
+def delete_tables_except(doc, keep_indices: Iterable[int]) -> None:
+    """Physically remove tables not in keep_indices (delete high indices first)."""
+    keep = set(keep_indices)
+    for i in range(len(doc.tables) - 1, -1, -1):
+        if i not in keep:
+            delete_table(doc.tables[i])
 
 
 def apply_cmp_cover_zh_on_en_layout(

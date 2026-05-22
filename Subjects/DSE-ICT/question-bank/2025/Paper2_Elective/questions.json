@@ -1,0 +1,4444 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "import_source": "gemini-output",
+    "imported_at": "2026-05-22T01:32:30.239611+00:00",
+    "year_label": "2025",
+    "paper_slug": "Paper2_Elective",
+    "paper_label": "Paper 2 — Elective sections (選修部分，2025+ 三選一)",
+    "source_pdf": "Subjects/DSE-ICT/past-papers/2025/DSE_ICT_2025_Paper2_Elective.pdf",
+    "question_count": 53,
+    "gemini_source_files": [
+      "2025-p2.json"
+    ],
+    "curriculum_guide": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+    "syllabus_retagged_at": "2026-05-22T03:38:00.122665+00:00",
+    "syllabus_revision": "2021"
+  },
+  "items": [
+    {
+      "id": "2025-Paper2_Elective-1-a",
+      "section": "section_b",
+      "text": "以下是此數據庫的部分實體關係圖。繪製此數據庫的實體關係圖,圖內不用畫上屬性。",
+      "number": "1(a)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 4.0,
+      "source_page": 2,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "1",
+          "page": 2,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "以下是此數據庫的部分實體關係圖。繪製此數據庫的實體關係圖,圖內不用畫上屬性。",
+              "marks": 4
+            },
+            {
+              "part_label": "b",
+              "question_text": "描述在數據庫管理系統內啟用回滾的一個好處。",
+              "marks": 2
+            }
+          ]
+        },
+        "part": {
+          "part_label": "a",
+          "question_text": "以下是此數據庫的部分實體關係圖。繪製此數據庫的實體關係圖,圖內不用畫上屬性。",
+          "marks": 4
+        },
+        "question_number": "1(a)",
+        "question_text": "以下是此數據庫的部分實體關係圖。繪製此數據庫的實體關係圖,圖內不用畫上屬性。",
+        "marks": 4,
+        "page": 2,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-1-b",
+      "section": "section_b",
+      "text": "描述在數據庫管理系統內啟用回滾的一個好處。",
+      "number": "1(b)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "source_page": 2,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "1",
+          "page": 2,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "以下是此數據庫的部分實體關係圖。繪製此數據庫的實體關係圖,圖內不用畫上屬性。",
+              "marks": 4
+            },
+            {
+              "part_label": "b",
+              "question_text": "描述在數據庫管理系統內啟用回滾的一個好處。",
+              "marks": 2
+            }
+          ]
+        },
+        "part": {
+          "part_label": "b",
+          "question_text": "描述在數據庫管理系統內啟用回滾的一個好處。",
+          "marks": 2
+        },
+        "question_number": "1(b)",
+        "question_text": "描述在數據庫管理系統內啟用回滾的一個好處。",
+        "marks": 2,
+        "page": 2,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-2-a",
+      "section": "section_b",
+      "text": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T2",
+      "number": "2(a)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "硬件",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 1.0,
+      "source_page": 3,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "2",
+          "page": 3,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T2",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "列出執行以下SQL語句後T1 內更新了的記錄。 UPDATE T1 SET T1.AMT = 0 WHERE T1.AMT > 0 AND (EXISTS (SELECT * FROM T2 WHERE T1.CID = T2.CID AND T2.AMT = 0));",
+              "marks": 2
+            }
+          ]
+        },
+        "part": {
+          "part_label": "a",
+          "question_text": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T2",
+          "marks": 1
+        },
+        "question_number": "2(a)",
+        "question_text": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T2",
+        "marks": 1,
+        "page": 3,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-2-b",
+      "section": "section_b",
+      "text": "列出執行以下SQL語句後T1 內更新了的記錄。 UPDATE T1 SET T1.AMT = 0 WHERE T1.AMT > 0 AND (EXISTS (SELECT * FROM T2 WHERE T1.CID = T2.CID AND T2.AMT = 0));",
+      "number": "2(b)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "source_page": 3,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "2",
+          "page": 3,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T2",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "列出執行以下SQL語句後T1 內更新了的記錄。 UPDATE T1 SET T1.AMT = 0 WHERE T1.AMT > 0 AND (EXISTS (SELECT * FROM T2 WHERE T1.CID = T2.CID AND T2.AMT = 0));",
+              "marks": 2
+            }
+          ]
+        },
+        "part": {
+          "part_label": "b",
+          "question_text": "列出執行以下SQL語句後T1 內更新了的記錄。 UPDATE T1 SET T1.AMT = 0 WHERE T1.AMT > 0 AND (EXISTS (SELECT * FROM T2 WHERE T1.CID = T2.CID AND T2.AMT = 0));",
+          "marks": 2
+        },
+        "question_number": "2(b)",
+        "question_text": "列出執行以下SQL語句後T1 內更新了的記錄。 UPDATE T1 SET T1.AMT = 0 WHERE T1.AMT > 0 AND (EXISTS (SELECT * FROM T2 WHERE T1.CID = T2.CID AND T2.AMT = 0));",
+        "marks": 2,
+        "page": 3,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-3-a",
+      "section": "section_b",
+      "text": "以下輸入表格使用一SQL語句將一筆記錄插入 CUS內。 寫出此 SQL語句中未填寫的部分。",
+      "number": "3(a)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 1.0,
+      "source_page": 4,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "3",
+          "page": 4,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "以下輸入表格使用一SQL語句將一筆記錄插入 CUS內。 寫出此 SQL語句中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "一名顧客可以有多個戶口。以下採用了一SQL語句來找出顧客「蘇小明」的總戶口結餘。 寫出此SQL語句。",
+              "marks": 3
+            }
+          ]
+        },
+        "part": {
+          "part_label": "a",
+          "question_text": "以下輸入表格使用一SQL語句將一筆記錄插入 CUS內。 寫出此 SQL語句中未填寫的部分。",
+          "marks": 1
+        },
+        "question_number": "3(a)",
+        "question_text": "以下輸入表格使用一SQL語句將一筆記錄插入 CUS內。 寫出此 SQL語句中未填寫的部分。",
+        "marks": 1,
+        "page": 4,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-3-b",
+      "section": "section_b",
+      "text": "一名顧客可以有多個戶口。以下採用了一SQL語句來找出顧客「蘇小明」的總戶口結餘。 寫出此SQL語句。",
+      "number": "3(b)",
+      "concepts": [
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 3.0,
+      "source_page": 4,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "3",
+          "page": 4,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "以下輸入表格使用一SQL語句將一筆記錄插入 CUS內。 寫出此 SQL語句中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "一名顧客可以有多個戶口。以下採用了一SQL語句來找出顧客「蘇小明」的總戶口結餘。 寫出此SQL語句。",
+              "marks": 3
+            }
+          ]
+        },
+        "part": {
+          "part_label": "b",
+          "question_text": "一名顧客可以有多個戶口。以下採用了一SQL語句來找出顧客「蘇小明」的總戶口結餘。 寫出此SQL語句。",
+          "marks": 3
+        },
+        "question_number": "3(b)",
+        "question_text": "一名顧客可以有多個戶口。以下採用了一SQL語句來找出顧客「蘇小明」的總戶口結餘。 寫出此SQL語句。",
+        "marks": 3,
+        "page": 4,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-4",
+      "section": "section_b",
+      "text": "以下草擬了第三範式的新數據庫模式。數據庫表 HW 是儲存功課的資料,而數據庫表 STMARK 是儲存學生分數的資料。 寫出此模式中未填寫的部分,並在主關鍵碼加上底線。",
+      "number": "4",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 4.0,
+      "source_page": 5,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "section": "甲部 數據庫",
+        "question_number": "4",
+        "page": 5,
+        "question_text": "以下草擬了第三範式的新數據庫模式。數據庫表 HW 是儲存功課的資料,而數據庫表 STMARK 是儲存學生分數的資料。 寫出此模式中未填寫的部分,並在主關鍵碼加上底線。",
+        "marks": 4
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-5-a",
+      "section": "section_b",
+      "text": "寫出GID的數據類型 x。簡略說明。",
+      "number": "5(a)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 1.0,
+      "source_page": 6,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "5",
+          "page": 6,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出GID的數據類型 x。簡略說明。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "為以下任務寫出 SQL語句。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "簡略描述非規範化RM和BK的一個方法。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出執行(i)內的方法的一個好處。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "a",
+          "question_text": "寫出GID的數據類型 x。簡略說明。",
+          "marks": 1
+        },
+        "question_number": "5(a)",
+        "question_text": "寫出GID的數據類型 x。簡略說明。",
+        "marks": 1,
+        "page": 6,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-5-b-i",
+      "section": "section_b",
+      "text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+      "number": "5(b)(i)",
+      "concepts": [
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "source_page": 6,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "5",
+          "page": 6,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出GID的數據類型 x。簡略說明。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "為以下任務寫出 SQL語句。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "簡略描述非規範化RM和BK的一個方法。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出執行(i)內的方法的一個好處。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+          "marks": 2
+        },
+        "question_number": "5(b)(i)",
+        "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+        "marks": 2,
+        "page": 6,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-5-b-ii",
+      "section": "section_b",
+      "text": "列出於26-3-2025 被預訂的酒店房間房號。",
+      "number": "5(b)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "source_page": 6,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "5",
+          "page": 6,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出GID的數據類型 x。簡略說明。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "為以下任務寫出 SQL語句。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "簡略描述非規範化RM和BK的一個方法。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出執行(i)內的方法的一個好處。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+          "marks": 2
+        },
+        "question_number": "5(b)(ii)",
+        "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+        "marks": 2,
+        "page": 6,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-5-b-iii",
+      "section": "section_b",
+      "text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+      "number": "5(b)(iii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 3.0,
+      "source_page": 6,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "5",
+          "page": 6,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出GID的數據類型 x。簡略說明。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "為以下任務寫出 SQL語句。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "簡略描述非規範化RM和BK的一個方法。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出執行(i)內的方法的一個好處。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "iii",
+          "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+          "marks": 3
+        },
+        "question_number": "5(b)(iii)",
+        "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+        "marks": 3,
+        "page": 6,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-5-c",
+      "section": "section_b",
+      "text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+      "number": "5(c)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "source_page": 6,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "5",
+          "page": 6,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出GID的數據類型 x。簡略說明。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "為以下任務寫出 SQL語句。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "簡略描述非規範化RM和BK的一個方法。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出執行(i)內的方法的一個好處。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "c",
+          "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+          "marks": 2
+        },
+        "question_number": "5(c)",
+        "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+        "marks": 2,
+        "page": 6,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-5-d",
+      "section": "section_b",
+      "text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+      "number": "5(d)",
+      "concepts": [
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 1.0,
+      "source_page": 6,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "5",
+          "page": 6,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出GID的數據類型 x。簡略說明。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "為以下任務寫出 SQL語句。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "簡略描述非規範化RM和BK的一個方法。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出執行(i)內的方法的一個好處。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "d",
+          "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+          "marks": 1
+        },
+        "question_number": "5(d)",
+        "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+        "marks": 1,
+        "page": 6,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-5-e-i",
+      "section": "section_b",
+      "text": "簡略描述非規範化RM和BK的一個方法。",
+      "number": "5(e)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 1.0,
+      "source_page": 6,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "5",
+          "page": 6,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出GID的數據類型 x。簡略說明。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "為以下任務寫出 SQL語句。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "簡略描述非規範化RM和BK的一個方法。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出執行(i)內的方法的一個好處。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "簡略描述非規範化RM和BK的一個方法。",
+          "marks": 1
+        },
+        "question_number": "5(e)(i)",
+        "question_text": "簡略描述非規範化RM和BK的一個方法。",
+        "marks": 1,
+        "page": 6,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-5-e-ii",
+      "section": "section_b",
+      "text": "舉出執行(i)內的方法的一個好處。",
+      "number": "5(e)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 1.0,
+      "source_page": 6,
+      "elective_section": "甲部 數據庫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "甲部 數據庫",
+          "question_number": "5",
+          "page": 6,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出GID的數據類型 x。簡略說明。",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "question_text": "為以下任務寫出 SQL語句。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+                  "marks": 2
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "簡略描述非規範化RM和BK的一個方法。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出執行(i)內的方法的一個好處。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "舉出執行(i)內的方法的一個好處。",
+          "marks": 1
+        },
+        "question_number": "5(e)(ii)",
+        "question_text": "舉出執行(i)內的方法的一個好處。",
+        "marks": 1,
+        "page": 6,
+        "section": "甲部 數據庫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-6-a",
+      "section": "section_b",
+      "text": "為此網頁草擬一個包含三種不同類型的輸入控制而又方便用戶使用的設計。在你的設計上加上適當的注解。",
+      "number": "6(a)",
+      "concepts": [
+        "網頁創作"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 3.0,
+      "source_page": 7,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "6",
+          "page": 7,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "為此網頁草擬一個包含三種不同類型的輸入控制而又方便用戶使用的設計。在你的設計上加上適當的注解。",
+              "marks": 3
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "志偉決定使用外部樣式(external)的CSS。舉出支持他的一個理由。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "志偉決定在一些網頁中使用行內樣式(inline)的CSS。舉出支持他的一個理由。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "a",
+          "question_text": "為此網頁草擬一個包含三種不同類型的輸入控制而又方便用戶使用的設計。在你的設計上加上適當的注解。",
+          "marks": 3
+        },
+        "question_number": "6(a)",
+        "question_text": "為此網頁草擬一個包含三種不同類型的輸入控制而又方便用戶使用的設計。在你的設計上加上適當的注解。",
+        "marks": 3,
+        "page": 7,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-6-b-i",
+      "section": "section_b",
+      "text": "志偉決定使用外部樣式(external)的CSS。舉出支持他的一個理由。",
+      "number": "6(b)(i)",
+      "concepts": [
+        "網頁創作"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 7,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "6",
+          "page": 7,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "為此網頁草擬一個包含三種不同類型的輸入控制而又方便用戶使用的設計。在你的設計上加上適當的注解。",
+              "marks": 3
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "志偉決定使用外部樣式(external)的CSS。舉出支持他的一個理由。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "志偉決定在一些網頁中使用行內樣式(inline)的CSS。舉出支持他的一個理由。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "志偉決定使用外部樣式(external)的CSS。舉出支持他的一個理由。",
+          "marks": 1
+        },
+        "question_number": "6(b)(i)",
+        "question_text": "志偉決定使用外部樣式(external)的CSS。舉出支持他的一個理由。",
+        "marks": 1,
+        "page": 7,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-6-b-ii",
+      "section": "section_b",
+      "text": "志偉決定在一些網頁中使用行內樣式(inline)的CSS。舉出支持他的一個理由。",
+      "number": "6(b)(ii)",
+      "concepts": [
+        "網頁創作"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 7,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "6",
+          "page": 7,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "為此網頁草擬一個包含三種不同類型的輸入控制而又方便用戶使用的設計。在你的設計上加上適當的注解。",
+              "marks": 3
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "志偉決定使用外部樣式(external)的CSS。舉出支持他的一個理由。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "志偉決定在一些網頁中使用行內樣式(inline)的CSS。舉出支持他的一個理由。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "志偉決定在一些網頁中使用行內樣式(inline)的CSS。舉出支持他的一個理由。",
+          "marks": 1
+        },
+        "question_number": "6(b)(ii)",
+        "question_text": "志偉決定在一些網頁中使用行內樣式(inline)的CSS。舉出支持他的一個理由。",
+        "marks": 1,
+        "page": 7,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-7-a-i",
+      "section": "section_b",
+      "text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+      "number": "7(a)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 8,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "7",
+          "page": 8,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出方法1勝於方法2的一個優點。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出方法2勝於方法1的一個優點。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+          "marks": 1
+        },
+        "question_number": "7(a)(i)",
+        "question_text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+        "marks": 1,
+        "page": 8,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-7-a-ii",
+      "section": "section_b",
+      "text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+      "number": "7(a)(ii)",
+      "concepts": [
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 8,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "7",
+          "page": 8,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出方法1勝於方法2的一個優點。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出方法2勝於方法1的一個優點。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+          "marks": 1
+        },
+        "question_number": "7(a)(ii)",
+        "question_text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+        "marks": 1,
+        "page": 8,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-7-a-iii",
+      "section": "section_b",
+      "text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+      "number": "7(a)(iii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 8,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "7",
+          "page": 8,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出方法1勝於方法2的一個優點。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出方法2勝於方法1的一個優點。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "iii",
+          "question_text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+          "marks": 1
+        },
+        "question_number": "7(a)(iii)",
+        "question_text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+        "marks": 1,
+        "page": 8,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-7-b-i",
+      "section": "section_b",
+      "text": "舉出方法1勝於方法2的一個優點。",
+      "number": "7(b)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 8,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "7",
+          "page": 8,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出方法1勝於方法2的一個優點。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出方法2勝於方法1的一個優點。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "舉出方法1勝於方法2的一個優點。",
+          "marks": 1
+        },
+        "question_number": "7(b)(i)",
+        "question_text": "舉出方法1勝於方法2的一個優點。",
+        "marks": 1,
+        "page": 8,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-7-b-ii",
+      "section": "section_b",
+      "text": "舉出方法2勝於方法1的一個優點。",
+      "number": "7(b)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 8,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "7",
+          "page": 8,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "舉出方法1勝於方法2的一個優點。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "舉出方法2勝於方法1的一個優點。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "舉出方法2勝於方法1的一個優點。",
+          "marks": 1
+        },
+        "question_number": "7(b)(ii)",
+        "question_text": "舉出方法2勝於方法1的一個優點。",
+        "marks": 1,
+        "page": 8,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-8-a-i",
+      "section": "section_b",
+      "text": "A1應擁有由(1)至(5)哪一個功能?",
+      "number": "8(a)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 9,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "8",
+          "page": 9,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "A1應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "A2應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出以下每個裝置的名稱及其由(1)至(5)對應的功能。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "B1",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "B2",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "B3",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "A1應擁有由(1)至(5)哪一個功能?",
+          "marks": 1
+        },
+        "question_number": "8(a)(i)",
+        "question_text": "A1應擁有由(1)至(5)哪一個功能?",
+        "marks": 1,
+        "page": 9,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-8-a-ii",
+      "section": "section_b",
+      "text": "A2應擁有由(1)至(5)哪一個功能?",
+      "number": "8(a)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 9,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "8",
+          "page": 9,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "A1應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "A2應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出以下每個裝置的名稱及其由(1)至(5)對應的功能。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "B1",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "B2",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "B3",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "A2應擁有由(1)至(5)哪一個功能?",
+          "marks": 1
+        },
+        "question_number": "8(a)(ii)",
+        "question_text": "A2應擁有由(1)至(5)哪一個功能?",
+        "marks": 1,
+        "page": 9,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-8-b-i",
+      "section": "section_b",
+      "text": "B1",
+      "number": "8(b)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 9,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "8",
+          "page": 9,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "A1應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "A2應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出以下每個裝置的名稱及其由(1)至(5)對應的功能。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "B1",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "B2",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "B3",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "B1",
+          "marks": 1
+        },
+        "question_number": "8(b)(i)",
+        "question_text": "B1",
+        "marks": 1,
+        "page": 9,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-8-b-ii",
+      "section": "section_b",
+      "text": "B2",
+      "number": "8(b)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 9,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "8",
+          "page": 9,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "A1應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "A2應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出以下每個裝置的名稱及其由(1)至(5)對應的功能。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "B1",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "B2",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "B3",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "B2",
+          "marks": 1
+        },
+        "question_number": "8(b)(ii)",
+        "question_text": "B2",
+        "marks": 1,
+        "page": 9,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-8-b-iii",
+      "section": "section_b",
+      "text": "B3",
+      "number": "8(b)(iii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 9,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "8",
+          "page": 9,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "A1應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "A2應擁有由(1)至(5)哪一個功能?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出以下每個裝置的名稱及其由(1)至(5)對應的功能。",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "B1",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "B2",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "B3",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        "part": {
+          "part_label": "iii",
+          "question_text": "B3",
+          "marks": 1
+        },
+        "question_number": "8(b)(iii)",
+        "question_text": "B3",
+        "marks": 1,
+        "page": 9,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-a-i",
+      "section": "section_b",
+      "text": "網頁內表格的背景顏色是什麼?",
+      "number": "9(a)(i)",
+      "concepts": [
+        "網頁創作"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "網頁內表格的背景顏色是什麼?",
+          "marks": 1
+        },
+        "question_number": "9(a)(i)",
+        "question_text": "網頁內表格的背景顏色是什麼?",
+        "marks": 1,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-a-ii",
+      "section": "section_b",
+      "text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+      "number": "9(a)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+          "marks": 1
+        },
+        "question_number": "9(a)(ii)",
+        "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+        "marks": 1,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-a-iii",
+      "section": "section_b",
+      "text": "在第100行 onload的作用是什麼?",
+      "number": "9(a)(iii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "iii",
+          "question_text": "在第100行 onload的作用是什麼?",
+          "marks": 1
+        },
+        "question_number": "9(a)(iii)",
+        "question_text": "在第100行 onload的作用是什麼?",
+        "marks": 1,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-b-i",
+      "section": "section_b",
+      "text": "寫出第16行中未填寫的部分。",
+      "number": "9(b)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "寫出第16行中未填寫的部分。",
+          "marks": 1
+        },
+        "question_number": "9(b)(i)",
+        "question_text": "寫出第16行中未填寫的部分。",
+        "marks": 1,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-b-ii",
+      "section": "section_b",
+      "text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+      "number": "9(b)(ii)",
+      "concepts": [
+        "字元編碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+          "marks": 1
+        },
+        "question_number": "9(b)(ii)",
+        "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+        "marks": 1,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-c",
+      "section": "section_b",
+      "text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+      "number": "9(c)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 2.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "c",
+          "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+          "marks": 2
+        },
+        "question_number": "9(c)",
+        "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+        "marks": 2,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-d",
+      "section": "section_b",
+      "text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+      "number": "9(d)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "網頁創作"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "d",
+          "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+          "marks": 1
+        },
+        "question_number": "9(d)",
+        "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+        "marks": 1,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-e",
+      "section": "section_b",
+      "text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+      "number": "9(e)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 2.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "e",
+          "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+          "marks": 2
+        },
+        "question_number": "9(e)",
+        "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+        "marks": 2,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-f",
+      "section": "section_b",
+      "text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+      "number": "9(f)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 2.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "f",
+          "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+          "marks": 2
+        },
+        "question_number": "9(f)",
+        "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+        "marks": 2,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-g",
+      "section": "section_b",
+      "text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+      "number": "9(g)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 2.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "g",
+          "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+          "marks": 2
+        },
+        "question_number": "9(g)",
+        "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+        "marks": 2,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-9-h",
+      "section": "section_b",
+      "text": "刪除第260 行會有什麼潛在問題?",
+      "number": "9(h)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修B-網絡應用程式開發",
+      "marks": 1.0,
+      "source_page": 10,
+      "elective_section": "乙部 網絡應用程式開發",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "乙部 網絡應用程式開發",
+          "question_number": "9",
+          "page": 10,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "網頁內表格的背景顏色是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "iii",
+                  "question_text": "在第100行 onload的作用是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "寫出第16行中未填寫的部分。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+              "marks": 2
+            },
+            {
+              "part_label": "d",
+              "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+              "marks": 1
+            },
+            {
+              "part_label": "e",
+              "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "f",
+              "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "g",
+              "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "h",
+              "question_text": "刪除第260 行會有什麼潛在問題?",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "h",
+          "question_text": "刪除第260 行會有什麼潛在問題?",
+          "marks": 1
+        },
+        "question_number": "9(h)",
+        "question_text": "刪除第260 行會有什麼潛在問題?",
+        "marks": 1,
+        "page": 10,
+        "section": "乙部 網絡應用程式開發"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-10-a",
+      "section": "section_b",
+      "text": "第一次執行第6行後,i和s的值是什麼?",
+      "number": "10(a)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 1.0,
+      "source_page": 14,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "10",
+          "page": 14,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "第一次執行第6行後,i和s的值是什麼?",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "s的值是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "X[i]和X[s]的值是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "這是哪一種排序算法?",
+              "marks": 1
+            },
+            {
+              "part_label": "d",
+              "question_text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "a",
+          "question_text": "第一次執行第6行後,i和s的值是什麼?",
+          "marks": 1
+        },
+        "question_number": "10(a)",
+        "question_text": "第一次執行第6行後,i和s的值是什麼?",
+        "marks": 1,
+        "page": 14,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-10-b-i",
+      "section": "section_b",
+      "text": "s的值是什麼?",
+      "number": "10(b)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 1.0,
+      "source_page": 14,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "10",
+          "page": 14,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "第一次執行第6行後,i和s的值是什麼?",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "s的值是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "X[i]和X[s]的值是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "這是哪一種排序算法?",
+              "marks": 1
+            },
+            {
+              "part_label": "d",
+              "question_text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "s的值是什麼?",
+          "marks": 1
+        },
+        "question_number": "10(b)(i)",
+        "question_text": "s的值是什麼?",
+        "marks": 1,
+        "page": 14,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-10-b-ii",
+      "section": "section_b",
+      "text": "X[i]和X[s]的值是什麼?",
+      "number": "10(b)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 1.0,
+      "source_page": 14,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "10",
+          "page": 14,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "第一次執行第6行後,i和s的值是什麼?",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "s的值是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "X[i]和X[s]的值是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "這是哪一種排序算法?",
+              "marks": 1
+            },
+            {
+              "part_label": "d",
+              "question_text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "X[i]和X[s]的值是什麼?",
+          "marks": 1
+        },
+        "question_number": "10(b)(ii)",
+        "question_text": "X[i]和X[s]的值是什麼?",
+        "marks": 1,
+        "page": 14,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-10-c",
+      "section": "section_b",
+      "text": "這是哪一種排序算法?",
+      "number": "10(c)",
+      "concepts": [
+        "試算表",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 1.0,
+      "source_page": 14,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "10",
+          "page": 14,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "第一次執行第6行後,i和s的值是什麼?",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "s的值是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "X[i]和X[s]的值是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "這是哪一種排序算法?",
+              "marks": 1
+            },
+            {
+              "part_label": "d",
+              "question_text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "c",
+          "question_text": "這是哪一種排序算法?",
+          "marks": 1
+        },
+        "question_number": "10(c)",
+        "question_text": "這是哪一種排序算法?",
+        "marks": 1,
+        "page": 14,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-10-d",
+      "section": "section_b",
+      "text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+      "number": "10(d)",
+      "concepts": [
+        "試算表",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 1.0,
+      "source_page": 14,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "10",
+          "page": 14,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "第一次執行第6行後,i和s的值是什麼?",
+              "marks": 1
+            },
+            {
+              "part_label": "b",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "s的值是什麼?",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "X[i]和X[s]的值是什麼?",
+                  "marks": 1
+                }
+              ]
+            },
+            {
+              "part_label": "c",
+              "question_text": "這是哪一種排序算法?",
+              "marks": 1
+            },
+            {
+              "part_label": "d",
+              "question_text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+              "marks": 1
+            }
+          ]
+        },
+        "part": {
+          "part_label": "d",
+          "question_text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+          "marks": 1
+        },
+        "question_number": "10(d)",
+        "question_text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+        "marks": 1,
+        "page": 14,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-11-a",
+      "section": "section_b",
+      "text": "使用一個子程式將P和Q合併為按升序排列的陣列R。寫出此偽代碼中未填寫的部分。",
+      "number": "11(a)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 2.0,
+      "source_page": 15,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "11",
+          "page": 15,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "使用一個子程式將P和Q合併為按升序排列的陣列R。寫出此偽代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "b",
+              "question_text": "使用另一個子程式以對分檢索搜尋R是否包含num。寫出此偽代碼中未填寫的部分。",
+              "marks": 3
+            }
+          ]
+        },
+        "part": {
+          "part_label": "a",
+          "question_text": "使用一個子程式將P和Q合併為按升序排列的陣列R。寫出此偽代碼中未填寫的部分。",
+          "marks": 2
+        },
+        "question_number": "11(a)",
+        "question_text": "使用一個子程式將P和Q合併為按升序排列的陣列R。寫出此偽代碼中未填寫的部分。",
+        "marks": 2,
+        "page": 15,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-11-b",
+      "section": "section_b",
+      "text": "使用另一個子程式以對分檢索搜尋R是否包含num。寫出此偽代碼中未填寫的部分。",
+      "number": "11(b)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 3.0,
+      "source_page": 15,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "11",
+          "page": 15,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "使用一個子程式將P和Q合併為按升序排列的陣列R。寫出此偽代碼中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "b",
+              "question_text": "使用另一個子程式以對分檢索搜尋R是否包含num。寫出此偽代碼中未填寫的部分。",
+              "marks": 3
+            }
+          ]
+        },
+        "part": {
+          "part_label": "b",
+          "question_text": "使用另一個子程式以對分檢索搜尋R是否包含num。寫出此偽代碼中未填寫的部分。",
+          "marks": 3
+        },
+        "question_number": "11(b)",
+        "question_text": "使用另一個子程式以對分檢索搜尋R是否包含num。寫出此偽代碼中未填寫的部分。",
+        "marks": 3,
+        "page": 15,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-12-a",
+      "section": "section_b",
+      "text": "寫出第30和第40行中未填寫的部分。",
+      "number": "12(a)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 2.0,
+      "source_page": 16,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "12",
+          "page": 16,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出第30和第40行中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "b",
+              "question_text": "假設 N 是一個全程變量。請以Python、C++或Pascal 編寫 hints(t,k),並在答案中寫出所採用的程式編寫語言。",
+              "marks": 3
+            }
+          ]
+        },
+        "part": {
+          "part_label": "a",
+          "question_text": "寫出第30和第40行中未填寫的部分。",
+          "marks": 2
+        },
+        "question_number": "12(a)",
+        "question_text": "寫出第30和第40行中未填寫的部分。",
+        "marks": 2,
+        "page": 16,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-12-b",
+      "section": "section_b",
+      "text": "假設 N 是一個全程變量。請以Python、C++或Pascal 編寫 hints(t,k),並在答案中寫出所採用的程式編寫語言。",
+      "number": "12(b)",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 3.0,
+      "source_page": 16,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "12",
+          "page": 16,
+          "parts": [
+            {
+              "part_label": "a",
+              "question_text": "寫出第30和第40行中未填寫的部分。",
+              "marks": 2
+            },
+            {
+              "part_label": "b",
+              "question_text": "假設 N 是一個全程變量。請以Python、C++或Pascal 編寫 hints(t,k),並在答案中寫出所採用的程式編寫語言。",
+              "marks": 3
+            }
+          ]
+        },
+        "part": {
+          "part_label": "b",
+          "question_text": "假設 N 是一個全程變量。請以Python、C++或Pascal 編寫 hints(t,k),並在答案中寫出所採用的程式編寫語言。",
+          "marks": 3
+        },
+        "question_number": "12(b)",
+        "question_text": "假設 N 是一個全程變量。請以Python、C++或Pascal 編寫 hints(t,k),並在答案中寫出所採用的程式編寫語言。",
+        "marks": 3,
+        "page": 16,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-13-a-i",
+      "section": "section_b",
+      "text": "根據以上例子,寫出 findZone(6)的傳回值。",
+      "number": "13(a)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 1.0,
+      "source_page": 18,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "13",
+          "page": 18,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "根據以上例子,寫出 findZone(6)的傳回值。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "寫出 findZone 中未填寫的部分。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出 comZone 中未填寫的部分。",
+              "marks": 4
+            },
+            {
+              "part_label": "c",
+              "question_text": "寫出 splitZone 中未填寫的部分。",
+              "marks": 5
+            },
+            {
+              "part_label": "d",
+              "question_text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+              "marks": 2
+            }
+          ]
+        },
+        "part": {
+          "part_label": "i",
+          "question_text": "根據以上例子,寫出 findZone(6)的傳回值。",
+          "marks": 1
+        },
+        "question_number": "13(a)(i)",
+        "question_text": "根據以上例子,寫出 findZone(6)的傳回值。",
+        "marks": 1,
+        "page": 18,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-13-a-ii",
+      "section": "section_b",
+      "text": "寫出 findZone 中未填寫的部分。",
+      "number": "13(a)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 3.0,
+      "source_page": 18,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "13",
+          "page": 18,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "根據以上例子,寫出 findZone(6)的傳回值。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "寫出 findZone 中未填寫的部分。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出 comZone 中未填寫的部分。",
+              "marks": 4
+            },
+            {
+              "part_label": "c",
+              "question_text": "寫出 splitZone 中未填寫的部分。",
+              "marks": 5
+            },
+            {
+              "part_label": "d",
+              "question_text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+              "marks": 2
+            }
+          ]
+        },
+        "part": {
+          "part_label": "ii",
+          "question_text": "寫出 findZone 中未填寫的部分。",
+          "marks": 3
+        },
+        "question_number": "13(a)(ii)",
+        "question_text": "寫出 findZone 中未填寫的部分。",
+        "marks": 3,
+        "page": 18,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-13-b",
+      "section": "section_b",
+      "text": "寫出 comZone 中未填寫的部分。",
+      "number": "13(b)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 4.0,
+      "source_page": 18,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "13",
+          "page": 18,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "根據以上例子,寫出 findZone(6)的傳回值。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "寫出 findZone 中未填寫的部分。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出 comZone 中未填寫的部分。",
+              "marks": 4
+            },
+            {
+              "part_label": "c",
+              "question_text": "寫出 splitZone 中未填寫的部分。",
+              "marks": 5
+            },
+            {
+              "part_label": "d",
+              "question_text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+              "marks": 2
+            }
+          ]
+        },
+        "part": {
+          "part_label": "b",
+          "question_text": "寫出 comZone 中未填寫的部分。",
+          "marks": 4
+        },
+        "question_number": "13(b)",
+        "question_text": "寫出 comZone 中未填寫的部分。",
+        "marks": 4,
+        "page": 18,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-13-c",
+      "section": "section_b",
+      "text": "寫出 splitZone 中未填寫的部分。",
+      "number": "13(c)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 5.0,
+      "source_page": 18,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "13",
+          "page": 18,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "根據以上例子,寫出 findZone(6)的傳回值。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "寫出 findZone 中未填寫的部分。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出 comZone 中未填寫的部分。",
+              "marks": 4
+            },
+            {
+              "part_label": "c",
+              "question_text": "寫出 splitZone 中未填寫的部分。",
+              "marks": 5
+            },
+            {
+              "part_label": "d",
+              "question_text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+              "marks": 2
+            }
+          ]
+        },
+        "part": {
+          "part_label": "c",
+          "question_text": "寫出 splitZone 中未填寫的部分。",
+          "marks": 5
+        },
+        "question_number": "13(c)",
+        "question_text": "寫出 splitZone 中未填寫的部分。",
+        "marks": 5,
+        "page": 18,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2025-Paper2_Elective-13-d",
+      "section": "section_b",
+      "text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+      "number": "13(d)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "marks": 2.0,
+      "source_page": 18,
+      "elective_section": "丙部 算法與程式編寫",
+      "gemini_source": "2025-p2.json",
+      "gemini_raw": {
+        "parent": {
+          "section": "丙部 算法與程式編寫",
+          "question_number": "13",
+          "page": 18,
+          "parts": [
+            {
+              "part_label": "a",
+              "sub_parts": [
+                {
+                  "part_label": "i",
+                  "question_text": "根據以上例子,寫出 findZone(6)的傳回值。",
+                  "marks": 1
+                },
+                {
+                  "part_label": "ii",
+                  "question_text": "寫出 findZone 中未填寫的部分。",
+                  "marks": 3
+                }
+              ]
+            },
+            {
+              "part_label": "b",
+              "question_text": "寫出 comZone 中未填寫的部分。",
+              "marks": 4
+            },
+            {
+              "part_label": "c",
+              "question_text": "寫出 splitZone 中未填寫的部分。",
+              "marks": 5
+            },
+            {
+              "part_label": "d",
+              "question_text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+              "marks": 2
+            }
+          ]
+        },
+        "part": {
+          "part_label": "d",
+          "question_text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+          "marks": 2
+        },
+        "question_number": "13(d)",
+        "question_text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+        "marks": 2,
+        "page": 18,
+        "section": "丙部 算法與程式編寫"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    }
+  ],
+  "paper": {
+    "id": "2025-Paper2_Elective",
+    "questions": [
+      {
+        "id": "2025-Paper2_Elective-1-a",
+        "type": "section_b",
+        "number": "1(a)",
+        "section": "section_b",
+        "text": "以下是此數據庫的部分實體關係圖。繪製此數據庫的實體關係圖,圖內不用畫上屬性。",
+        "marks": 4.0,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-1-b",
+        "type": "section_b",
+        "number": "1(b)",
+        "section": "section_b",
+        "text": "描述在數據庫管理系統內啟用回滾的一個好處。",
+        "marks": 2.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-2-a",
+        "type": "section_b",
+        "number": "2(a)",
+        "section": "section_b",
+        "text": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T2",
+        "marks": 1.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "硬件",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-2-b",
+        "type": "section_b",
+        "number": "2(b)",
+        "section": "section_b",
+        "text": "列出執行以下SQL語句後T1 內更新了的記錄。 UPDATE T1 SET T1.AMT = 0 WHERE T1.AMT > 0 AND (EXISTS (SELECT * FROM T2 WHERE T1.CID = T2.CID AND T2.AMT = 0));",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "硬件"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-3-a",
+        "type": "section_b",
+        "number": "3(a)",
+        "section": "section_b",
+        "text": "以下輸入表格使用一SQL語句將一筆記錄插入 CUS內。 寫出此 SQL語句中未填寫的部分。",
+        "marks": 1.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-3-b",
+        "type": "section_b",
+        "number": "3(b)",
+        "section": "section_b",
+        "text": "一名顧客可以有多個戶口。以下採用了一SQL語句來找出顧客「蘇小明」的總戶口結餘。 寫出此SQL語句。",
+        "marks": 3.0,
+        "concepts": [
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-4",
+        "type": "section_b",
+        "number": "4",
+        "section": "section_b",
+        "text": "以下草擬了第三範式的新數據庫模式。數據庫表 HW 是儲存功課的資料,而數據庫表 STMARK 是儲存學生分數的資料。 寫出此模式中未填寫的部分,並在主關鍵碼加上底線。",
+        "marks": 4.0,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-5-a",
+        "type": "section_b",
+        "number": "5(a)",
+        "section": "section_b",
+        "text": "寫出GID的數據類型 x。簡略說明。",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-5-b-i",
+        "type": "section_b",
+        "number": "5(b)(i)",
+        "section": "section_b",
+        "text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+        "marks": 2.0,
+        "concepts": [
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-5-b-ii",
+        "type": "section_b",
+        "number": "5(b)(ii)",
+        "section": "section_b",
+        "text": "列出於26-3-2025 被預訂的酒店房間房號。",
+        "marks": 2.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-5-b-iii",
+        "type": "section_b",
+        "number": "5(b)(iii)",
+        "section": "section_b",
+        "text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+        "marks": 3.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-5-c",
+        "type": "section_b",
+        "number": "5(c)",
+        "section": "section_b",
+        "text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "硬件"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-5-d",
+        "type": "section_b",
+        "number": "5(d)",
+        "section": "section_b",
+        "text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+        "marks": 1.0,
+        "concepts": [
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-5-e-i",
+        "type": "section_b",
+        "number": "5(e)(i)",
+        "section": "section_b",
+        "text": "簡略描述非規範化RM和BK的一個方法。",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-5-e-ii",
+        "type": "section_b",
+        "number": "5(e)(ii)",
+        "section": "section_b",
+        "text": "舉出執行(i)內的方法的一個好處。",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-6-a",
+        "type": "section_b",
+        "number": "6(a)",
+        "section": "section_b",
+        "text": "為此網頁草擬一個包含三種不同類型的輸入控制而又方便用戶使用的設計。在你的設計上加上適當的注解。",
+        "marks": 3.0,
+        "concepts": [
+          "網頁創作"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-6-b-i",
+        "type": "section_b",
+        "number": "6(b)(i)",
+        "section": "section_b",
+        "text": "志偉決定使用外部樣式(external)的CSS。舉出支持他的一個理由。",
+        "marks": 1.0,
+        "concepts": [
+          "網頁創作"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-6-b-ii",
+        "type": "section_b",
+        "number": "6(b)(ii)",
+        "section": "section_b",
+        "text": "志偉決定在一些網頁中使用行內樣式(inline)的CSS。舉出支持他的一個理由。",
+        "marks": 1.0,
+        "concepts": [
+          "網頁創作"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-7-a-i",
+        "type": "section_b",
+        "number": "7(a)(i)",
+        "section": "section_b",
+        "text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-7-a-ii",
+        "type": "section_b",
+        "number": "7(a)(ii)",
+        "section": "section_b",
+        "text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+        "marks": 1.0,
+        "concepts": [
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-7-a-iii",
+        "type": "section_b",
+        "number": "7(a)(iii)",
+        "section": "section_b",
+        "text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-7-b-i",
+        "type": "section_b",
+        "number": "7(b)(i)",
+        "section": "section_b",
+        "text": "舉出方法1勝於方法2的一個優點。",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-7-b-ii",
+        "type": "section_b",
+        "number": "7(b)(ii)",
+        "section": "section_b",
+        "text": "舉出方法2勝於方法1的一個優點。",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-8-a-i",
+        "type": "section_b",
+        "number": "8(a)(i)",
+        "section": "section_b",
+        "text": "A1應擁有由(1)至(5)哪一個功能?",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-8-a-ii",
+        "type": "section_b",
+        "number": "8(a)(ii)",
+        "section": "section_b",
+        "text": "A2應擁有由(1)至(5)哪一個功能?",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-8-b-i",
+        "type": "section_b",
+        "number": "8(b)(i)",
+        "section": "section_b",
+        "text": "B1",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-8-b-ii",
+        "type": "section_b",
+        "number": "8(b)(ii)",
+        "section": "section_b",
+        "text": "B2",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-8-b-iii",
+        "type": "section_b",
+        "number": "8(b)(iii)",
+        "section": "section_b",
+        "text": "B3",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-a-i",
+        "type": "section_b",
+        "number": "9(a)(i)",
+        "section": "section_b",
+        "text": "網頁內表格的背景顏色是什麼?",
+        "marks": 1.0,
+        "concepts": [
+          "網頁創作"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-a-ii",
+        "type": "section_b",
+        "number": "9(a)(ii)",
+        "section": "section_b",
+        "text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-a-iii",
+        "type": "section_b",
+        "number": "9(a)(iii)",
+        "section": "section_b",
+        "text": "在第100行 onload的作用是什麼?",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-b-i",
+        "type": "section_b",
+        "number": "9(b)(i)",
+        "section": "section_b",
+        "text": "寫出第16行中未填寫的部分。",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-b-ii",
+        "type": "section_b",
+        "number": "9(b)(ii)",
+        "section": "section_b",
+        "text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+        "marks": 1.0,
+        "concepts": [
+          "字元編碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-c",
+        "type": "section_b",
+        "number": "9(c)",
+        "section": "section_b",
+        "text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+        "marks": 2.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-d",
+        "type": "section_b",
+        "number": "9(d)",
+        "section": "section_b",
+        "text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+        "marks": 1.0,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "網頁創作"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-e",
+        "type": "section_b",
+        "number": "9(e)",
+        "section": "section_b",
+        "text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+        "marks": 2.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-f",
+        "type": "section_b",
+        "number": "9(f)",
+        "section": "section_b",
+        "text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-g",
+        "type": "section_b",
+        "number": "9(g)",
+        "section": "section_b",
+        "text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+        "marks": 2.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-9-h",
+        "type": "section_b",
+        "number": "9(h)",
+        "section": "section_b",
+        "text": "刪除第260 行會有什麼潛在問題?",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-10-a",
+        "type": "section_b",
+        "number": "10(a)",
+        "section": "section_b",
+        "text": "第一次執行第6行後,i和s的值是什麼?",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-10-b-i",
+        "type": "section_b",
+        "number": "10(b)(i)",
+        "section": "section_b",
+        "text": "s的值是什麼?",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-10-b-ii",
+        "type": "section_b",
+        "number": "10(b)(ii)",
+        "section": "section_b",
+        "text": "X[i]和X[s]的值是什麼?",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-10-c",
+        "type": "section_b",
+        "number": "10(c)",
+        "section": "section_b",
+        "text": "這是哪一種排序算法?",
+        "marks": 1.0,
+        "concepts": [
+          "試算表",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-10-d",
+        "type": "section_b",
+        "number": "10(d)",
+        "section": "section_b",
+        "text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+        "marks": 1.0,
+        "concepts": [
+          "試算表",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-11-a",
+        "type": "section_b",
+        "number": "11(a)",
+        "section": "section_b",
+        "text": "使用一個子程式將P和Q合併為按升序排列的陣列R。寫出此偽代碼中未填寫的部分。",
+        "marks": 2.0,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-11-b",
+        "type": "section_b",
+        "number": "11(b)",
+        "section": "section_b",
+        "text": "使用另一個子程式以對分檢索搜尋R是否包含num。寫出此偽代碼中未填寫的部分。",
+        "marks": 3.0,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-12-a",
+        "type": "section_b",
+        "number": "12(a)",
+        "section": "section_b",
+        "text": "寫出第30和第40行中未填寫的部分。",
+        "marks": 2.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-12-b",
+        "type": "section_b",
+        "number": "12(b)",
+        "section": "section_b",
+        "text": "假設 N 是一個全程變量。請以Python、C++或Pascal 編寫 hints(t,k),並在答案中寫出所採用的程式編寫語言。",
+        "marks": 3.0,
+        "concepts": [
+          "試算表"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-13-a-i",
+        "type": "section_b",
+        "number": "13(a)(i)",
+        "section": "section_b",
+        "text": "根據以上例子,寫出 findZone(6)的傳回值。",
+        "marks": 1.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-13-a-ii",
+        "type": "section_b",
+        "number": "13(a)(ii)",
+        "section": "section_b",
+        "text": "寫出 findZone 中未填寫的部分。",
+        "marks": 3.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-13-b",
+        "type": "section_b",
+        "number": "13(b)",
+        "section": "section_b",
+        "text": "寫出 comZone 中未填寫的部分。",
+        "marks": 4.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-13-c",
+        "type": "section_b",
+        "number": "13(c)",
+        "section": "section_b",
+        "text": "寫出 splitZone 中未填寫的部分。",
+        "marks": 5.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2025-Paper2_Elective-13-d",
+        "type": "section_b",
+        "number": "13(d)",
+        "section": "section_b",
+        "text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+        "marks": 2.0,
+        "concepts": [],
+        "syllabus_status": "current"
+      }
+    ]
+  }
+}

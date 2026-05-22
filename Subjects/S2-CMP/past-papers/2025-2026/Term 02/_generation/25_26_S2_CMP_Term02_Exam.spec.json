@@ -1,0 +1,451 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "25-26 S2 CMP Term 2 Written Exam",
+    "subject": "S2 CMP",
+    "level": "中二級",
+    "total_marks": 50,
+    "academic_year": "2025-2026",
+    "mcq_answers": "ABBCCAADDACABDDBBDCC",
+    "matching_answers": [
+      "BEDCA",
+      "ADBCE"
+    ],
+    "tf_answers": "FFTTF",
+    "fill_answers": [
+      [
+        "創意寫作",
+        "摘要",
+        "背景",
+        "角色",
+        "問答遊戲"
+      ],
+      [
+        "指令",
+        "TMIC",
+        "閃卡",
+        "私隱",
+        "積木"
+      ]
+    ],
+    "fill_word_banks": [
+      [
+        "角色",
+        "摘要",
+        "問答遊戲",
+        "背景",
+        "創意寫作"
+      ],
+      [
+        "閃卡",
+        "指令",
+        "積木",
+        "私隱",
+        "TMIC"
+      ]
+    ],
+    "footer": {
+      "academic_year": "2025-2026",
+      "level": "中二級",
+      "term_exam": "下學期考試",
+      "subject": "電腦認知"
+    },
+    "concept_targets": {
+      "生成式AI": {
+        "min": 8,
+        "max": 20
+      },
+      "提示語工程": {
+        "min": 3,
+        "max": 8
+      },
+      "Teachable Machine": {
+        "min": 6,
+        "max": 14
+      },
+      "學術誠信": {
+        "min": 0,
+        "max": 3
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "mcq-01",
+      "section": "mcq",
+      "text": "下列哪些是生成式人工智能較常見的「服務／應用」例子？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-02",
+      "section": "mcq",
+      "text": "根據筆記，下列哪一項最能描述「幻覺（Hallucination）」？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-03",
+      "section": "mcq",
+      "text": "確認 AI 資訊是否可信時，筆記建議的做法不包括下列哪一項？",
+      "marks": 1,
+      "concepts": [
+        "學術誠信"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-04",
+      "section": "mcq",
+      "text": "下列哪一項屬於「語意轉換」？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-05",
+      "section": "mcq",
+      "text": "「限制（Constraint）」最常做的事是？",
+      "marks": 1,
+      "concepts": [
+        "提示語工程"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-06",
+      "section": "mcq",
+      "text": "下列哪一項屬於「輸出格式（Output）」的要求？",
+      "marks": 1,
+      "concepts": [
+        "提示語工程"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-07",
+      "section": "mcq",
+      "text": "AI 可以協助閱讀 PDF／Word，下列哪一項不是筆記所列的核心功能？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-08",
+      "section": "mcq",
+      "text": "Teachable Machine 訓練手勢模型，官方網址是哪一個？",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-09",
+      "section": "mcq",
+      "text": "下列哪一句最能描述「圖像識別」？",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-10",
+      "section": "mcq",
+      "text": "「文生圖」，下列哪一項正確？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-11",
+      "section": "mcq",
+      "text": "下列哪一項屬於「圖生圖／影像編輯」方向的應用？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-12",
+      "section": "mcq",
+      "text": "AI 並不像人類一樣真正理解，其主要運作方式較接近下列哪一項？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "mcq-13",
+      "section": "mcq",
+      "text": "筆記提及可用哪些做法來核對 AI 的回答？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-14",
+      "section": "mcq",
+      "text": "Teachable Machine 訓練流程中，訓練模型之前應完成？",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-15",
+      "section": "mcq",
+      "text": "機器學習用於圖像辨識的主要原因是？",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-16",
+      "section": "mcq",
+      "text": "關於生成式 AI「謬誤與真相」，下列敘述哪一項較符合「真相」？",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-17",
+      "section": "mcq",
+      "text": "最不符合 Teachable Machine 影像分類訓練的正確做法？",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "mcq-18",
+      "section": "mcq",
+      "text": "Teachable Machine 建立兩種手勢控制遊戲角色，最合理組合？",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "mcq-19",
+      "section": "mcq",
+      "text": "訓練後要『充分測試』模型準確性，最主要原因是？",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "mcq-20",
+      "section": "mcq",
+      "text": "完成訓練後『記下可分享的連結』的主要用途是？",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "b-match-ricco",
+      "section": "section_b",
+      "text": "乙部：RICCO 配對",
+      "marks": 5,
+      "concepts": [
+        "提示語工程"
+      ]
+    },
+    {
+      "id": "b-match-term",
+      "section": "section_b",
+      "text": "乙部：術語配對",
+      "marks": 5,
+      "concepts": [
+        "生成式AI"
+      ]
+    },
+    {
+      "id": "c-tf-01",
+      "section": "section_c",
+      "text": "Teachable Machine 必須另外安裝軟件才能使用，不能用瀏覽器開啟。",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "F"
+    },
+    {
+      "id": "c-tf-02",
+      "section": "section_c",
+      "text": "「文生圖」只能修改現有相片，不能憑空生成全新影像。",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "F"
+    },
+    {
+      "id": "c-tf-03",
+      "section": "section_c",
+      "text": "「語意轉換」是指把文章改寫成不同語氣或風格，而非單純縮短字數。",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "T"
+    },
+    {
+      "id": "c-tf-04",
+      "section": "section_c",
+      "text": "「圖生圖」通常需要上載現有相片，再依指示修改或二次創作。",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "T"
+    },
+    {
+      "id": "c-tf-05",
+      "section": "section_c",
+      "text": "把 AI 生成內容直接交功課而完全不註明，仍符合學術誠信。",
+      "marks": 1,
+      "concepts": [
+        "學術誠信"
+      ],
+      "answer": "F"
+    },
+    {
+      "id": "d-fill-a-01",
+      "section": "section_d",
+      "text": "依故事情節發想並撰寫開頭，屬於「 ________ 」應用。",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "創意寫作"
+    },
+    {
+      "id": "d-fill-a-02",
+      "section": "section_d",
+      "text": "筆記列出文本生成四大應用之一，把長篇文章濃縮成精簡重點，稱為「 ________ 」。",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "摘要"
+    },
+    {
+      "id": "d-fill-a-03",
+      "section": "section_d",
+      "text": "把 PDF 通告內容提供給 AI 作分析依據，是設定「 ________ 」(Context)。",
+      "marks": 1,
+      "concepts": [
+        "提示語工程"
+      ],
+      "answer": "背景"
+    },
+    {
+      "id": "d-fill-a-04",
+      "section": "section_d",
+      "text": "在 R-I-C-C-O 中，要求 AI 扮演特定身分是設定「 ________ 」(Role)。",
+      "marks": 1,
+      "concepts": [
+        "提示語工程"
+      ],
+      "answer": "角色"
+    },
+    {
+      "id": "d-fill-a-05",
+      "section": "section_d",
+      "text": "把重點製作成互動練習題，屬於「 ________ 」應用。",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "問答遊戲"
+    },
+    {
+      "id": "d-fill-b-01",
+      "section": "section_d",
+      "text": "在 R-I-C-C-O 中，清楚說明要完成甚麼任務，是「 ________ 」(Instruction)。",
+      "marks": 1,
+      "concepts": [
+        "提示語工程"
+      ],
+      "answer": "指令"
+    },
+    {
+      "id": "d-fill-b-02",
+      "section": "section_d",
+      "text": "在 App Inventor 載入 Teachable Machine 模型，需使用 ________ 擴充元件。",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "TMIC"
+    },
+    {
+      "id": "d-fill-b-03",
+      "section": "section_d",
+      "text": "把 PDF 重點製成方便溫習的小卡片，稱為「 ________ 」。",
+      "marks": 1,
+      "concepts": [
+        "生成式AI"
+      ],
+      "answer": "閃卡"
+    },
+    {
+      "id": "d-fill-b-04",
+      "section": "section_d",
+      "text": "使用 AI 時不應輸入地址或電話，以保障個人 ________ 。",
+      "marks": 1,
+      "concepts": [
+        "學術誠信"
+      ],
+      "answer": "私隱"
+    },
+    {
+      "id": "d-fill-b-05",
+      "section": "section_d",
+      "text": "App Inventor 以拖拉 ________ 方式組合程式邏輯。",
+      "marks": 1,
+      "concepts": [
+        "Teachable Machine"
+      ],
+      "answer": "積木"
+    },
+    {
+      "id": "e-sa-01",
+      "section": "section_e",
+      "text": "老師要求你用生成式 AI 整理一份 PDF 戶外考察通告的重點。請分別說明在 R-I-C-C-O 提示語中，「R（角色）」和「C（背景）」可以如何設定；並解釋為何還需要設定「C（限制）」。(5分)",
+      "marks": 5,
+      "concepts": [
+        "提示語工程"
+      ]
+    }
+  ]
+}

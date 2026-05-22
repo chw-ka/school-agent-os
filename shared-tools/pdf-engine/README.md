@@ -90,6 +90,22 @@ python shared-tools/pdf-engine/refine_dse_ict_question_bank.py --years 2019 --sl
 
 Each refined item includes `confidence` and `needs_review` — spot-check those before using in出卷. Load with `load_paper_spec(..., prefer_refined=True)`.
 
+### Import Gemini JSON (`gemini-output/`)
+
+If papers were extracted to JSON elsewhere (text-only, often no images), import into the bank:
+
+```bash
+python shared-tools/pdf-engine/import_gemini_question_bank.py
+python shared-tools/pdf-engine/import_gemini_question_bank.py --years 2024 --force
+```
+
+Preserves full `gemini_raw`, adds concept/curriculum tags, merges marking-scheme answers, and writes `[圖片描述]` placeholders where diagrams are missing. **Also runs `apply_support_to_item()`** to embed `support_content` (pseudocode from `algorithm_code`, ASCII tables/diagrams) into `text`/`stem`.
+
+Back-fill existing bank: `python shared-tools/pdf-engine/enrich_dse_ict_support_content.py`  
+Logic: `dse_ict_support_content.py` (shared with `f5_ict_from_dse.py` paper generator).
+
+Full workflow, file naming, split rules, and coverage status: **`Subjects/DSE-ICT/README.md`** (方法 B).
+
 ### Reuse without re-OCR
 
 ```python

@@ -1,0 +1,3373 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "import_source": "gemini-output",
+    "imported_at": "2026-05-22T00:23:37.836934+00:00",
+    "year_label": "2021",
+    "paper_slug": "Paper1_MultipleChoice",
+    "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
+    "source_pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_Paper1_MultipleChoice.pdf",
+    "question_count": 40,
+    "gemini_source_files": [
+      "2021-p1.json"
+    ],
+    "curriculum_guide": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+    "syllabus_retagged_at": "2026-05-22T03:37:59.946353+00:00",
+    "syllabus_revision": "2021",
+    "support_enriched_at": "2026-05-22T04:32:46.247181+00:00"
+  },
+  "items": [
+    {
+      "id": "2021-Paper1_MultipleChoice-1",
+      "section": "mcq",
+      "text": "下列哪項在文字處理軟件內可有效地格式化一份文件？\n以內置使用的文檔範本大小設定或預設值\n使用樣式來自動調整它的表示\n使用自動校正功能\n以內置使用的文檔範本大小設定或預設值\n使用樣式來自動調整它的表示\n使用自動校正功能\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+      "number": "1",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "下列哪項在文字處理軟件內可有效地格式化一份文件？\n以內置使用的文檔範本大小設定或預設值\n使用樣式來自動調整它的表示\n使用自動校正功能",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "只有 (1) (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1",
+        "question_text": "下列哪項在文字處理軟件內可有效地格式化一份文件？",
+        "sub_questions_list": [
+          "以內置使用的文檔範本大小設定或預設值",
+          "使用樣式來自動調整它的表示",
+          "使用自動校正功能"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "以內置使用的文檔範本大小設定或預設值",
+          "使用樣式來自動調整它的表示",
+          "使用自動校正功能"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-2",
+      "section": "mcq",
+      "text": "下列哪個以 8 位元二進制補碼表示數字的加法運算，會引至上溢錯誤？\nA. 0000 0010 + 0011 1100\nB. 0100 0010 + 0000 0001\nC. 1001 1100 + 1111 0110\nD. 1011 1010 + 1100 0100",
+      "number": "2",
+      "concepts": [
+        "進制",
+        "二進制補碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "下列哪個以 8 位元二進制補碼表示數字的加法運算，會引至上溢錯誤？",
+      "options": {
+        "A": "0000 0010 + 0011 1100",
+        "B": "0100 0010 + 0000 0001",
+        "C": "1001 1100 + 1111 0110",
+        "D": "1011 1010 + 1100 0100"
+      },
+      "question_type": "multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "2",
+        "question_text": "下列哪個以 8 位元二進制補碼表示數字的加法運算，會引至上溢錯誤？",
+        "options": {
+          "A": "0000 0010 + 0011 1100",
+          "B": "0100 0010 + 0000 0001",
+          "C": "1001 1100 + 1111 0110",
+          "D": "1011 1010 + 1100 0100"
+        },
+        "question_type": "multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-3",
+      "section": "mcq",
+      "text": "字符「X」和「Z」的 ASCII 編碼以十六進制表示，分別為_______和_______。\nA. 3A\nB. 58\nC. 5E\nD. 59",
+      "number": "3",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "字元編碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "字符「X」和「Z」的 ASCII 編碼以十六進制表示，分別為_______和_______。",
+      "options": {
+        "A": "3A",
+        "B": "58",
+        "C": "5E",
+        "D": "59"
+      },
+      "question_type": "multiple_choice_fill_in_blank",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "3",
+        "question_text": "字符「X」和「Z」的 ASCII 編碼以十六進制表示，分別為_______和_______。",
+        "options": {
+          "A": "3A",
+          "B": "58",
+          "C": "5E",
+          "D": "59"
+        },
+        "question_type": "multiple_choice_fill_in_blank",
+        "has_image": false
+      },
+      "syllabus_status": "out_of_syllabus",
+      "syllabus_revision": "2021",
+      "out_of_syllabus_reasons": [
+        "specific ASCII code recall (not required in 2021 syllabus)"
+      ]
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-4",
+      "section": "mcq",
+      "text": "在數據庫軟件內詮釋數據庫表時，用戶通常應設定什麼？\n每個欄的數據類型\n每個欄的數據長口\n主關鍵字\n每個欄的數據類型\n每個欄的數據長口\n主關鍵字\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+      "number": "4",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "在數據庫軟件內詮釋數據庫表時，用戶通常應設定什麼？\n每個欄的數據類型\n每個欄的數據長口\n主關鍵字",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "只有 (1) (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "4",
+        "question_text": "在數據庫軟件內詮釋數據庫表時，用戶通常應設定什麼？",
+        "sub_questions_list": [
+          "每個欄的數據類型",
+          "每個欄的數據長口",
+          "主關鍵字"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "每個欄的數據類型",
+          "每個欄的數據長口",
+          "主關鍵字"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-5",
+      "section": "mcq",
+      "text": "小芬使用 WAV 格式而非 MP3 格式來錄製音樂聲演。這樣有什麼好處？\n存放檔的檔案大小較大。\n音質會較佳。\n沒有錄平台問題。\n存放檔的檔案大小較大。\n音質會較佳。\n沒有錄平台問題。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "5",
+      "concepts": [
+        "多媒體",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "小芬使用 WAV 格式而非 MP3 格式來錄製音樂聲演。這樣有什麼好處？\n存放檔的檔案大小較大。\n音質會較佳。\n沒有錄平台問題。",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "5",
+        "question_text": "小芬使用 WAV 格式而非 MP3 格式來錄製音樂聲演。這樣有什麼好處？",
+        "sub_questions_list": [
+          "存放檔的檔案大小較大。",
+          "音質會較佳。",
+          "沒有錄平台問題。"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "存放檔的檔案大小較大。",
+          "音質會較佳。",
+          "沒有錄平台問題。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-6",
+      "section": "mcq",
+      "text": "子堯使用簡報軟件中的「目錄」功能，如下所示。需插入一個新簡報，_______。\n[表格式意] 一張表格，包含「目錄」和「頁碼」兩欄，以及「主題約詁」(1)、 「主要內容」(5)、「背景」(12) 等行。\nA. 子堯須輸入公式來計算頁碼\nB. 子堯須在目錄內輸入章節名稱\nC. 頁碼會自動更新\nD. 新簡報會被插入為最後的一章",
+      "number": "6",
+      "concepts": [
+        "試算表",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "子堯使用簡報軟件中的「目錄」功能，如下所示。需插入一個新簡報，_______。",
+      "options": {
+        "A": "子堯須輸入公式來計算頁碼",
+        "B": "子堯須在目錄內輸入章節名稱",
+        "C": "頁碼會自動更新",
+        "D": "新簡報會被插入為最後的一章"
+      },
+      "question_type": "multiple_choice",
+      "has_image": true,
+      "image_description": "一張表格，包含「目錄」和「頁碼」兩欄，以及「主題約詁」(1)、 「主要內容」(5)、「背景」(12) 等行。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "6",
+        "question_text": "子堯使用簡報軟件中的「目錄」功能，如下所示。需插入一個新簡報，_______。",
+        "options": {
+          "A": "子堯須輸入公式來計算頁碼",
+          "B": "子堯須在目錄內輸入章節名稱",
+          "C": "頁碼會自動更新",
+          "D": "新簡報會被插入為最後的一章"
+        },
+        "question_type": "multiple_choice",
+        "has_image": true,
+        "image_description": "一張表格，包含「目錄」和「頁碼」兩欄，以及「主題約詁」(1)、 「主要內容」(5)、「背景」(12) 等行。"
+      },
+      "syllabus_status": "out_of_syllabus",
+      "syllabus_revision": "2021",
+      "out_of_syllabus_reasons": [
+        "演示／簡報軟件功能（2021 修訂後 A-d 已刪減）",
+        "文書／簡報「目錄」功能（舊 A-d 軟件操作）"
+      ],
+      "support_content": {
+        "lines": [
+          "[表格式意] 一張表格，包含「目錄」和「頁碼」兩欄，以及「主題約詁」(1)、 「主要內容」(5)、「背景」(12) 等行。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-7",
+      "section": "mcq",
+      "text": "若要在演示檔案內加入轉變幻燈，下列哪句是正確的？\n演示的檔案大小增加。\n演示內的投影幻燈會增加。\n未能把視覺效果附有旁白的投影片。\n演示的檔案大小增加。\n演示內的投影幻燈會增加。\n未能把視覺效果附有旁白的投影片。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "7",
+      "concepts": [
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "若要在演示檔案內加入轉變幻燈，下列哪句是正確的？\n演示的檔案大小增加。\n演示內的投影幻燈會增加。\n未能把視覺效果附有旁白的投影片。",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "7",
+        "question_text": "若要在演示檔案內加入轉變幻燈，下列哪句是正確的？",
+        "sub_questions_list": [
+          "演示的檔案大小增加。",
+          "演示內的投影幻燈會增加。",
+          "未能把視覺效果附有旁白的投影片。"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "out_of_syllabus",
+      "syllabus_revision": "2021",
+      "out_of_syllabus_reasons": [
+        "演示／簡報軟件功能（2021 修訂後 A-d 已刪減）"
+      ],
+      "support_content": {
+        "lines": [
+          "演示的檔案大小增加。",
+          "演示內的投影幻燈會增加。",
+          "未能把視覺效果附有旁白的投影片。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-8",
+      "section": "mcq",
+      "text": "劉到是市場部經理。她計劃向每週客戶發出邀請函。她將會從客戶數據庫擷取數據。她應進行什麼資訊處理功能？\n篩選\n郵件合併\n「假設」分析\n篩選\n郵件合併\n「假設」分析\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+      "number": "8",
+      "concepts": [
+        "試算表",
+        "資訊處理"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "劉到是市場部經理。她計劃向每週客戶發出邀請函。她將會從客戶數據庫擷取數據。她應進行什麼資訊處理功能？\n篩選\n郵件合併\n「假設」分析",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "只有 (1) (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "8",
+        "question_text": "劉到是市場部經理。她計劃向每週客戶發出邀請函。她將會從客戶數據庫擷取數據。她應進行什麼資訊處理功能？",
+        "sub_questions_list": [
+          "篩選",
+          "郵件合併",
+          "「假設」分析"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "out_of_syllabus",
+      "syllabus_revision": "2021",
+      "out_of_syllabus_reasons": [
+        "文書處理軟件功能（2021 修訂後 A-d 已刪減）"
+      ],
+      "support_content": {
+        "lines": [
+          "篩選",
+          "郵件合併",
+          "「假設」分析"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-9",
+      "section": "mcq",
+      "text": "在網上系統內要求用戶輸入密碼兩次的目的是什麼？\nA. 驗證有效性檢驗\nB. 數據掩飾\nC. 數據校驗\nD. 數據預備\n\n[圖片描述] 一個網頁表單，包含「用戶名稱」、「密碼」、「重新輸入密碼」欄位，以及「提交」和「重置」按鈕。",
+      "number": "9",
+      "concepts": [
+        "數據控制",
+        "有效性檢驗",
+        "數據組織",
+        "檔案存取",
+        "網頁創作",
+        "奇偶檢測"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；C-互聯網及其應用",
+      "marks": 1,
+      "stem": "在網上系統內要求用戶輸入密碼兩次的目的是什麼？",
+      "options": {
+        "A": "驗證有效性檢驗",
+        "B": "數據掩飾",
+        "C": "數據校驗",
+        "D": "數據預備"
+      },
+      "question_type": "multiple_choice",
+      "has_image": true,
+      "image_description": "一個網頁表單，包含「用戶名稱」、「密碼」、「重新輸入密碼」欄位，以及「提交」和「重置」按鈕。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "9",
+        "question_text": "在網上系統內要求用戶輸入密碼兩次的目的是什麼？",
+        "options": {
+          "A": "驗證有效性檢驗",
+          "B": "數據掩飾",
+          "C": "數據校驗",
+          "D": "數據預備"
+        },
+        "question_type": "multiple_choice",
+        "has_image": true,
+        "image_description": "一個網頁表單，包含「用戶名稱」、「密碼」、「重新輸入密碼」欄位，以及「提交」和「重置」按鈕。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-10",
+      "section": "mcq",
+      "text": "志明打算利用物件連結，把 X.jpg 和 Y.xlsx 的內容加入至 Z.docx 內。下列哪句關於軟件連結與嵌入 (OLE) 的句子是正確的？\nA. OLE 不能應用於 X 的檔案格式。\nB. 在志明行動前，X 的檔案大小將會小於 Z 的。\nC. 若明完成某行動後，Z 的檔案大小將會大於 Y 的。\nD. 改變 Y 內的數據可影響隨後 Z 的列印本。",
+      "number": "10",
+      "concepts": [
+        "多媒體",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "志明打算利用物件連結，把 X.jpg 和 Y.xlsx 的內容加入至 Z.docx 內。下列哪句關於軟件連結與嵌入 (OLE) 的句子是正確的？",
+      "options": {
+        "A": "OLE 不能應用於 X 的檔案格式。",
+        "B": "在志明行動前，X 的檔案大小將會小於 Z 的。",
+        "C": "若明完成某行動後，Z 的檔案大小將會大於 Y 的。",
+        "D": "改變 Y 內的數據可影響隨後 Z 的列印本。"
+      },
+      "question_type": "multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "10",
+        "question_text": "志明打算利用物件連結，把 X.jpg 和 Y.xlsx 的內容加入至 Z.docx 內。下列哪句關於軟件連結與嵌入 (OLE) 的句子是正確的？",
+        "options": {
+          "A": "OLE 不能應用於 X 的檔案格式。",
+          "B": "在志明行動前，X 的檔案大小將會小於 Z 的。",
+          "C": "若明完成某行動後，Z 的檔案大小將會大於 Y 的。",
+          "D": "改變 Y 內的數據可影響隨後 Z 的列印本。"
+        },
+        "question_type": "multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "out_of_syllabus",
+      "syllabus_revision": "2021",
+      "out_of_syllabus_reasons": [
+        "文書處理軟件功能（2021 修訂後 A-d 已刪減）",
+        "OLE 物件連結與嵌入"
+      ]
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-11",
+      "section": "mcq",
+      "text": "在數據庫軟件內使用表格來輸入數據的主要優點是什麼？\n減少輸入錯誤。\n縮短 SQL 語句的執行時間。\n需要較少儲存空間。\n減少輸入錯誤。\n縮短 SQL 語句的執行時間。\n需要較少儲存空間。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "11",
+      "concepts": [
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "在數據庫軟件內使用表格來輸入數據的主要優點是什麼？\n減少輸入錯誤。\n縮短 SQL 語句的執行時間。\n需要較少儲存空間。",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "11",
+        "question_text": "在數據庫軟件內使用表格來輸入數據的主要優點是什麼？",
+        "sub_questions_list": [
+          "減少輸入錯誤。",
+          "縮短 SQL 語句的執行時間。",
+          "需要較少儲存空間。"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "減少輸入錯誤。",
+          "縮短 SQL 語句的執行時間。",
+          "需要較少儲存空間。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-12",
+      "section": "mcq",
+      "text": "下圖顯示了「輸入—處理—輸出」周期的基本概念。X 和 Y 是什麼？\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\nA. X: 統一碼, Y: 二進制數字\nB. X: 互聯網, Y: 網絡設備\nC. X: 程式, Y: 儲存器\nD. X: 數據庫, Y: 變數",
+      "number": "12",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "下圖顯示了「輸入—處理—輸出」周期的基本概念。X 和 Y 是什麼？",
+      "options": {
+        "A": "X: 統一碼, Y: 二進制數字",
+        "B": "X: 互聯網, Y: 網絡設備",
+        "C": "X: 程式, Y: 儲存器",
+        "D": "X: 數據庫, Y: 變數"
+      },
+      "question_type": "multiple_choice",
+      "has_image": true,
+      "image_description": "一個流程圖，顯示「輸入」->「處理」->「輸出」。標記為「X」的箭頭從「處理」指向「輸入」。標記為「Y」的箭頭從「處理」指向「輸出」。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "12",
+        "question_text": "下圖顯示了「輸入—處理—輸出」周期的基本概念。X 和 Y 是什麼？",
+        "options": {
+          "A": "X: 統一碼, Y: 二進制數字",
+          "B": "X: 互聯網, Y: 網絡設備",
+          "C": "X: 程式, Y: 儲存器",
+          "D": "X: 數據庫, Y: 變數"
+        },
+        "question_type": "multiple_choice",
+        "has_image": true,
+        "image_description": "一個流程圖，顯示「輸入」->「處理」->「輸出」。標記為「X」的箭頭從「處理」指向「輸入」。標記為「Y」的箭頭從「處理」指向「輸出」。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出"
+        ],
+        "sources": [
+          "image_description.diagram"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-15",
+      "section": "mcq",
+      "text": "小華使用試算表儲存數節關於網上會議的記錄，如下所示：\n她打算跟請輯分析表，以找出每名參加者曾參與會議的次數。\n「參加者」應置於下列哪項？\n篩選\n識別\n總和\n值\n[表格式意] 一個試算表片段，顯示會議記錄（日期、參加者、時間、持續時間、IP 地址、類型、備註）和一個空白表格，用於「出席者」和「次數」。\n她打算跟請輯分析表，以找出每名參加者曾參與會議的次數。\n「參加者」應置於下列哪項？\n篩選\n識別\n總和\n值\nA. 只有 (1)\nB. 只有 (4)\nC. 只有 (1) 和 (2)\nD. 只有 (3) 和 (4)",
+      "number": "15",
+      "concepts": [
+        "試算表",
+        "數據組織",
+        "檔案存取",
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；C-互聯網及其應用",
+      "marks": 1,
+      "stem": "小華使用試算表儲存數節關於網上會議的記錄，如下所示：\n她打算跟請輯分析表，以找出每名參加者曾參與會議的次數。\n「參加者」應置於下列哪項？\n篩選\n識別\n總和\n值",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (4)",
+        "C": "只有 (1) 和 (2)",
+        "D": "只有 (3) 和 (4)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": true,
+      "image_description": "一個試算表片段，顯示會議記錄（日期、參加者、時間、持續時間、IP 地址、類型、備註）和一個空白表格，用於「出席者」和「次數」。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "15",
+        "question_text": "小華使用試算表儲存數節關於網上會議的記錄，如下所示：\n她打算跟請輯分析表，以找出每名參加者曾參與會議的次數。\n「參加者」應置於下列哪項？",
+        "sub_questions_list": [
+          "篩選",
+          "識別",
+          "總和",
+          "值"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (4)",
+          "C": "只有 (1) 和 (2)",
+          "D": "只有 (3) 和 (4)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": true,
+        "image_description": "一個試算表片段，顯示會議記錄（日期、參加者、時間、持續時間、IP 地址、類型、備註）和一個空白表格，用於「出席者」和「次數」。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個試算表片段，顯示會議記錄（日期、參加者、時間、持續時間、IP 地址、類型、備註）和一個空白表格，用於「出席者」和「次數」。",
+          "她打算跟請輯分析表，以找出每名參加者曾參與會議的次數。",
+          "「參加者」應置於下列哪項？",
+          "篩選",
+          "識別",
+          "總和",
+          "值"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-16",
+      "section": "mcq",
+      "text": "下列哪項可以是傳播文件和圖片的掃描器的規格？\n支援 802.11n\n支援彩色\n內置 2GB RAM\n支援 802.11n\n支援彩色\n內置 2GB RAM\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+      "number": "16",
+      "concepts": [
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "marks": 1,
+      "stem": "下列哪項可以是傳播文件和圖片的掃描器的規格？\n支援 802.11n\n支援彩色\n內置 2GB RAM",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "只有 (1) (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "16",
+        "question_text": "下列哪項可以是傳播文件和圖片的掃描器的規格？",
+        "sub_questions_list": [
+          "支援 802.11n",
+          "支援彩色",
+          "內置 2GB RAM"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "支援 802.11n",
+          "支援彩色",
+          "內置 2GB RAM"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-17-Page-4",
+      "section": "mcq",
+      "text": "下列哪項需要驅動程式？\n編輯文字處理文件\n連接一部打印機\n移除一個軟件包\n編輯文字處理文件\n連接一部打印機\n移除一個軟件包\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "17 (Page 4)",
+      "concepts": [
+        "軟件",
+        "作業系統"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "marks": 1,
+      "stem": "下列哪項需要驅動程式？\n編輯文字處理文件\n連接一部打印機\n移除一個軟件包",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "17 (Page 4)",
+        "question_text": "下列哪項需要驅動程式？",
+        "sub_questions_list": [
+          "編輯文字處理文件",
+          "連接一部打印機",
+          "移除一個軟件包"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "編輯文字處理文件",
+          "連接一部打印機",
+          "移除一個軟件包"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-18-Page-5-first-multiple-choice",
+      "section": "mcq",
+      "text": "小強和家人在客廳裡連線了一部電腦系統，與他的朋友及一人一起玩網上足球遊戲。這應會涉及下列哪項通訊模式？\n線上互動處理\n數據緩衝處理\n即時處理\n線上互動處理\n數據緩衝處理\n即時處理\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "18 (Page 5, first multiple choice)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "小強和家人在客廳裡連線了一部電腦系統，與他的朋友及一人一起玩網上足球遊戲。這應會涉及下列哪項通訊模式？\n線上互動處理\n數據緩衝處理\n即時處理",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "18 (Page 5, first multiple choice)",
+        "question_text": "小強和家人在客廳裡連線了一部電腦系統，與他的朋友及一人一起玩網上足球遊戲。這應會涉及下列哪項通訊模式？",
+        "sub_questions_list": [
+          "線上互動處理",
+          "數據緩衝處理",
+          "即時處理"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "線上互動處理",
+          "數據緩衝處理",
+          "即時處理"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-17-Page-5-problem-17",
+      "section": "mcq",
+      "text": "思明有一台桌上電腦，內設一個 500GB SSD 和一個 2TB 硬碟機，為什麼操作系統會被安裝在 SSD 而非硬碟機內？\nA. 操作系統是並不屬於應用軟件。\nB. 硬碟操作系統的檔案是經常使用的。\nC. 硬碟操作系統的儲存大小是少於 500 GB。\nD. 硬碟機價錢比硬碟機內便宜。",
+      "number": "17 (Page 5, problem 17)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "硬件",
+        "軟件",
+        "作業系統"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎",
+      "marks": 1,
+      "stem": "思明有一台桌上電腦，內設一個 500GB SSD 和一個 2TB 硬碟機，為什麼操作系統會被安裝在 SSD 而非硬碟機內？",
+      "options": {
+        "A": "操作系統是並不屬於應用軟件。",
+        "B": "硬碟操作系統的檔案是經常使用的。",
+        "C": "硬碟操作系統的儲存大小是少於 500 GB。",
+        "D": "硬碟機價錢比硬碟機內便宜。"
+      },
+      "question_type": "multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "17 (Page 5, problem 17)",
+        "question_text": "思明有一台桌上電腦，內設一個 500GB SSD 和一個 2TB 硬碟機，為什麼操作系統會被安裝在 SSD 而非硬碟機內？",
+        "options": {
+          "A": "操作系統是並不屬於應用軟件。",
+          "B": "硬碟操作系統的檔案是經常使用的。",
+          "C": "硬碟操作系統的儲存大小是少於 500 GB。",
+          "D": "硬碟機價錢比硬碟機內便宜。"
+        },
+        "question_type": "multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-18-Page-5-problem-18",
+      "section": "mcq",
+      "text": "下列哪項是 CPU 的短期發展？\nA. 預裝操作系統\nB. 減少處理器作數量\nC. 增加時鐘頻率\nD. 增加耗電量",
+      "number": "18 (Page 5, problem 18)",
+      "concepts": [
+        "硬件",
+        "軟件",
+        "作業系統"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "marks": 1,
+      "stem": "下列哪項是 CPU 的短期發展？",
+      "options": {
+        "A": "預裝操作系統",
+        "B": "減少處理器作數量",
+        "C": "增加時鐘頻率",
+        "D": "增加耗電量"
+      },
+      "question_type": "multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "18 (Page 5, problem 18)",
+        "question_text": "下列哪項是 CPU 的短期發展？",
+        "options": {
+          "A": "預裝操作系統",
+          "B": "減少處理器作數量",
+          "C": "增加時鐘頻率",
+          "D": "增加耗電量"
+        },
+        "question_type": "multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-19",
+      "section": "mcq",
+      "text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項是最不重要的因素？\nA. SSD 的儲存大小\nB. RAM 的儲存大小\nC. ROM 的儲存大小\nD. CPU 的時鐘頻率",
+      "number": "19",
+      "concepts": [
+        "多媒體",
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎",
+      "marks": 1,
+      "stem": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項是最不重要的因素？",
+      "options": {
+        "A": "SSD 的儲存大小",
+        "B": "RAM 的儲存大小",
+        "C": "ROM 的儲存大小",
+        "D": "CPU 的時鐘頻率"
+      },
+      "question_type": "multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "19",
+        "question_text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項是最不重要的因素？",
+        "options": {
+          "A": "SSD 的儲存大小",
+          "B": "RAM 的儲存大小",
+          "C": "ROM 的儲存大小",
+          "D": "CPU 的時鐘頻率"
+        },
+        "question_type": "multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-20",
+      "section": "mcq",
+      "text": "以電子書閱讀器而非平板電腦來閱讀電子書的好處是什麼？\n耗電量較低\n重量較輕\n計算能力較高\n耗電量較低\n重量較輕\n計算能力較高\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+      "number": "20",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "以電子書閱讀器而非平板電腦來閱讀電子書的好處是什麼？\n耗電量較低\n重量較輕\n計算能力較高",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "只有 (1) (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "20",
+        "question_text": "以電子書閱讀器而非平板電腦來閱讀電子書的好處是什麼？",
+        "sub_questions_list": [
+          "耗電量較低",
+          "重量較輕",
+          "計算能力較高"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "耗電量較低",
+          "重量較輕",
+          "計算能力較高"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-21",
+      "section": "mcq",
+      "text": "在 CPU 內執行編碼語言指令「載入 1060」時，下列哪項部件會因此指令解碼？\nA. 匯流排\nB. 暫存器\nC. ALU\nD. CU",
+      "number": "21",
+      "concepts": [
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "marks": 1,
+      "stem": "在 CPU 內執行編碼語言指令「載入 1060」時，下列哪項部件會因此指令解碼？",
+      "options": {
+        "A": "匯流排",
+        "B": "暫存器",
+        "C": "ALU",
+        "D": "CU"
+      },
+      "question_type": "multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "21",
+        "question_text": "在 CPU 內執行編碼語言指令「載入 1060」時，下列哪項部件會因此指令解碼？",
+        "options": {
+          "A": "匯流排",
+          "B": "暫存器",
+          "C": "ALU",
+          "D": "CU"
+        },
+        "question_type": "multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-22",
+      "section": "mcq",
+      "text": "下列哪項在連接有線 LAN 時是常用的？\n防火牆\n寬頻調機\n路由器\n防火牆\n寬頻調機\n路由器\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "22",
+      "concepts": [
+        "網絡",
+        "網絡保安",
+        "資訊保安"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "下列哪項在連接有線 LAN 時是常用的？\n防火牆\n寬頻調機\n路由器",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "22",
+        "question_text": "下列哪項在連接有線 LAN 時是常用的？",
+        "sub_questions_list": [
+          "防火牆",
+          "寬頻調機",
+          "路由器"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "防火牆",
+          "寬頻調機",
+          "路由器"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-23",
+      "section": "mcq",
+      "text": "下列哪項不是多媒體檔案格式？\nA. ZIP\nB. MP3\nC. MPEG\nD. PNG",
+      "number": "23",
+      "concepts": [
+        "多媒體",
+        "數據組織",
+        "檔案存取",
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；C-互聯網及其應用",
+      "marks": 1,
+      "stem": "下列哪項不是多媒體檔案格式？",
+      "options": {
+        "A": "ZIP",
+        "B": "MP3",
+        "C": "MPEG",
+        "D": "PNG"
+      },
+      "question_type": "multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "23",
+        "question_text": "下列哪項不是多媒體檔案格式？",
+        "options": {
+          "A": "ZIP",
+          "B": "MP3",
+          "C": "MPEG",
+          "D": "PNG"
+        },
+        "question_type": "multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-24",
+      "section": "mcq",
+      "text": "某超級市場將會提供一個網上平台，讓顧客購買食物。當設計其用戶界面時，應考慮下列哪項？\n字型大小\n顏色\n語音\n字型大小\n顏色\n語音\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+      "number": "24",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "某超級市場將會提供一個網上平台，讓顧客購買食物。當設計其用戶界面時，應考慮下列哪項？\n字型大小\n顏色\n語音",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "只有 (1) (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "24",
+        "question_text": "某超級市場將會提供一個網上平台，讓顧客購買食物。當設計其用戶界面時，應考慮下列哪項？",
+        "sub_questions_list": [
+          "字型大小",
+          "顏色",
+          "語音"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "字型大小",
+          "顏色",
+          "語音"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-25",
+      "section": "mcq",
+      "text": "莉莉在她的辦公室可利用其流動電話從控制室中連接 Wi-Fi 網絡的電腦。這應會涉及下列哪項？\nLAN\n互聯網\n無線網絡接點\nLAN\n互聯網\n無線網絡接點\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "25",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "莉莉在她的辦公室可利用其流動電話從控制室中連接 Wi-Fi 網絡的電腦。這應會涉及下列哪項？\nLAN\n互聯網\n無線網絡接點",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "25",
+        "question_text": "莉莉在她的辦公室可利用其流動電話從控制室中連接 Wi-Fi 網絡的電腦。這應會涉及下列哪項？",
+        "sub_questions_list": [
+          "LAN",
+          "互聯網",
+          "無線網絡接點"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "LAN",
+          "互聯網",
+          "無線網絡接點"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-26",
+      "section": "mcq",
+      "text": "李太太為她的辦公室內工作的員工租用網上檔案儲存服務，而不設立檔案伺服器。為什麼？\n辦公室的互聯網連線的頻寬不足。\n辦公室內包攬額外技術人員。\n在增加儲存容量時較有彈性。\n辦公室的互聯網連線的頻寬不足。\n辦公室內包攬額外技術人員。\n在增加儲存容量時較有彈性。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "26",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "網絡",
+        "網絡應用",
+        "客戶機伺服器"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；C-互聯網及其應用",
+      "marks": 1,
+      "stem": "李太太為她的辦公室內工作的員工租用網上檔案儲存服務，而不設立檔案伺服器。為什麼？\n辦公室的互聯網連線的頻寬不足。\n辦公室內包攬額外技術人員。\n在增加儲存容量時較有彈性。",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "26",
+        "question_text": "李太太為她的辦公室內工作的員工租用網上檔案儲存服務，而不設立檔案伺服器。為什麼？",
+        "sub_questions_list": [
+          "辦公室的互聯網連線的頻寬不足。",
+          "辦公室內包攬額外技術人員。",
+          "在增加儲存容量時較有彈性。"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "辦公室的互聯網連線的頻寬不足。",
+          "辦公室內包攬額外技術人員。",
+          "在增加儲存容量時較有彈性。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-27",
+      "section": "mcq",
+      "text": "下列哪項關於 HTTP 是正確的？\n它是用於傳送加密文本文件。\n它是用於確認 URL 為 IP 位址。\n它是用於快儲存瀏覽歷史。\n它是用於傳送加密文本文件。\n它是用於確認 URL 為 IP 位址。\n它是用於快儲存瀏覽歷史。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "27",
+      "concepts": [
+        "網絡",
+        "網絡保安",
+        "資訊保安"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "下列哪項關於 HTTP 是正確的？\n它是用於傳送加密文本文件。\n它是用於確認 URL 為 IP 位址。\n它是用於快儲存瀏覽歷史。",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "27",
+        "question_text": "下列哪項關於 HTTP 是正確的？",
+        "sub_questions_list": [
+          "它是用於傳送加密文本文件。",
+          "它是用於確認 URL 為 IP 位址。",
+          "它是用於快儲存瀏覽歷史。"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "它是用於傳送加密文本文件。",
+          "它是用於確認 URL 為 IP 位址。",
+          "它是用於快儲存瀏覽歷史。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-28",
+      "section": "mcq",
+      "text": "雖然學校課後已安裝了一個有線網絡，但學校還是安裝了一個連接至此網絡的無線網絡接點。為什麼？\n學生可在課堂上使用平板電腦。\n網絡可每天 24 小時使用。\n網絡連接的數據傳輸率較高。\n學生可在課堂上使用平板電腦。\n網絡可每天 24 小時使用。\n網絡連接的數據傳輸率較高。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "28",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "雖然學校課後已安裝了一個有線網絡，但學校還是安裝了一個連接至此網絡的無線網絡接點。為什麼？\n學生可在課堂上使用平板電腦。\n網絡可每天 24 小時使用。\n網絡連接的數據傳輸率較高。",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "28",
+        "question_text": "雖然學校課後已安裝了一個有線網絡，但學校還是安裝了一個連接至此網絡的無線網絡接點。為什麼？",
+        "sub_questions_list": [
+          "學生可在課堂上使用平板電腦。",
+          "網絡可每天 24 小時使用。",
+          "網絡連接的數據傳輸率較高。"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "學生可在課堂上使用平板電腦。",
+          "網絡可每天 24 小時使用。",
+          "網絡連接的數據傳輸率較高。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-29",
+      "section": "mcq",
+      "text": "下列算法的輸出是什麼？\nX ← 9　Y ← 2\n重複\n   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分\n直至 X = 0\nA. 10\nB. 111\nC. 101\nD. 1001",
+      "number": "29",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "下列算法的輸出是什麼？",
+      "options": {
+        "A": "10",
+        "B": "111",
+        "C": "101",
+        "D": "1001"
+      },
+      "question_type": "algorithm_tracing_multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "29",
+        "question_text": "下列算法的輸出是什麼？",
+        "algorithm_code": "X ← 9\nY ← 2\n重複\n   輸出 (X / Y) 的整數\n   X ← (X / Y) 的整數部分\n直至 X = 0",
+        "options": {
+          "A": "10",
+          "B": "111",
+          "C": "101",
+          "D": "1001"
+        },
+        "question_type": "algorithm_tracing_multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "X ← 9　Y ← 2",
+          "重複",
+          "   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分",
+          "直至 X = 0"
+        ],
+        "sources": [
+          "static_template:remainder_output_2021_q29"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-30",
+      "section": "mcq",
+      "text": "編寫了程式碼後，根據經驗程序，應執行下列哪項？\n檢查問題裡的輸入和輸出的要求。\n選擇個案來測試此程式。\n檢視測試數據。\n檢查問題裡的輸入和輸出的要求。\n選擇個案來測試此程式。\n檢視測試數據。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "30",
+      "concepts": [
+        "程式測試"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "編寫了程式碼後，根據經驗程序，應執行下列哪項？\n檢查問題裡的輸入和輸出的要求。\n選擇個案來測試此程式。\n檢視測試數據。",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "30",
+        "question_text": "編寫了程式碼後，根據經驗程序，應執行下列哪項？",
+        "sub_questions_list": [
+          "檢查問題裡的輸入和輸出的要求。",
+          "選擇個案來測試此程式。",
+          "檢視測試數據。"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "檢查問題裡的輸入和輸出的要求。",
+          "選擇個案來測試此程式。",
+          "檢視測試數據。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-31",
+      "section": "mcq",
+      "text": "假設 X = 5, Y = 6 和 Z = 7。下列哪項布爾算式的結果是「真」？\nA. ((X < 0) AND (Y > 6)) AND (Z > 10)\nB. ((X < 0) OR (Y < 6)) AND (Z > 10)\nC. ((X < 0) OR (Y > 6)) AND (Z > 10)\nD. ((X < 0) OR (Y < 6)) OR (Z > 10)",
+      "number": "31",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "假設 X = 5, Y = 6 和 Z = 7。下列哪項布爾算式的結果是「真」？",
+      "options": {
+        "A": "((X < 0) AND (Y > 6)) AND (Z > 10)",
+        "B": "((X < 0) OR (Y < 6)) AND (Z > 10)",
+        "C": "((X < 0) OR (Y > 6)) AND (Z > 10)",
+        "D": "((X < 0) OR (Y < 6)) OR (Z > 10)"
+      },
+      "question_type": "multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "31",
+        "question_text": "假設 X = 5, Y = 6 和 Z = 7。下列哪項布爾算式的結果是「真」？",
+        "options": {
+          "A": "((X < 0) AND (Y > 6)) AND (Z > 10)",
+          "B": "((X < 0) OR (Y < 6)) AND (Z > 10)",
+          "C": "((X < 0) OR (Y > 6)) AND (Z > 10)",
+          "D": "((X < 0) OR (Y < 6)) OR (Z > 10)"
+        },
+        "question_type": "multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-32",
+      "section": "mcq",
+      "text": "以陣列 P 的初始值進行，下列算法的輸出是什麼？\nX ← 9　Y ← 2\n重複\n   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分\n直至 X = 0\nA. 0100\nB. 0110\nC. 0000\nD. 1001",
+      "number": "32",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "以陣列 P 的初始值進行，下列算法的輸出是什麼？",
+      "options": {
+        "A": "0100",
+        "B": "0110",
+        "C": "0000",
+        "D": "1001"
+      },
+      "question_type": "algorithm_tracing_multiple_choice",
+      "has_image": true,
+      "image_description": "一個數組 P 的初始值：。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "32",
+        "question_text": "以陣列 P 的初始值進行，下列算法的輸出是什麼？",
+        "algorithm_code": "Q ← 0\n從 i 由 1 至 4 執行\n   如果 P[i] = 1 則\n      Q ← 1 - Q\n   結束如果\n結束執行\n輸出 Q",
+        "options": {
+          "A": "0100",
+          "B": "0110",
+          "C": "0000",
+          "D": "1001"
+        },
+        "question_type": "algorithm_tracing_multiple_choice",
+        "has_image": true,
+        "image_description": "一個數組 P 的初始值：。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "X ← 9　Y ← 2",
+          "重複",
+          "   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分",
+          "直至 X = 0"
+        ],
+        "sources": [
+          "static_template:remainder_output_2021_q29"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-33",
+      "section": "mcq",
+      "text": "下列算法的輸出是什麼？\nsum ← 0\nj ← 12\n重複\n   sum ← sum + 1\n   j ← j - 2\n直至 j < 6\n輸出 sum\nA. 7\nB. 6\nC. 5\nD. 4",
+      "number": "33",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "下列算法的輸出是什麼？",
+      "options": {
+        "A": "7",
+        "B": "6",
+        "C": "5",
+        "D": "4"
+      },
+      "question_type": "algorithm_tracing_multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "33",
+        "question_text": "下列算法的輸出是什麼？",
+        "algorithm_code": "sum ← 0\nj ← 12\n重複\n   sum ← sum + 1\n   j ← j - 2\n直至 j < 6\n輸出 sum",
+        "options": {
+          "A": "7",
+          "B": "6",
+          "C": "5",
+          "D": "4"
+        },
+        "question_type": "algorithm_tracing_multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "sum ← 0",
+          "j ← 12",
+          "重複",
+          "   sum ← sum + 1",
+          "   j ← j - 2",
+          "直至 j < 6",
+          "輸出 sum"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-34",
+      "section": "mcq",
+      "text": "下列算法的輸出是什麼？\n設 A 由 1 至 5 執行\n   A[i] ← i\nS ← 0\ni ← 1\n當 i > S 執行\n   S ← S + A[i]*A[i+1]\n   i ← i + 1\n輸出 S\nA. 60\nB. 26\nC. 6\nD. 2",
+      "number": "34",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "下列算法的輸出是什麼？",
+      "options": {
+        "A": "60",
+        "B": "26",
+        "C": "6",
+        "D": "2"
+      },
+      "question_type": "algorithm_tracing_multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "34",
+        "question_text": "下列算法的輸出是什麼？",
+        "algorithm_code": "設 A 由 1 至 5 執行\n   A[i] ← i\nS ← 0\ni ← 1\n當 i > S 執行\n   S ← S + A[i]*A[i+1]\n   i ← i + 1\n輸出 S",
+        "options": {
+          "A": "60",
+          "B": "26",
+          "C": "6",
+          "D": "2"
+        },
+        "question_type": "algorithm_tracing_multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "設 A 由 1 至 5 執行",
+          "   A[i] ← i",
+          "S ← 0",
+          "i ← 1",
+          "當 i > S 執行",
+          "   S ← S + A[i]*A[i+1]",
+          "   i ← i + 1",
+          "輸出 S"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-35",
+      "section": "mcq",
+      "text": "下列算法的輸出是什麼？\nX ← 9　Y ← 2\n重複\n   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分\n直至 X = 0\nA. 10\nB. 6\nC. 4\nD. 2",
+      "number": "35",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "下列算法的輸出是什麼？",
+      "options": {
+        "A": "10",
+        "B": "6",
+        "C": "4",
+        "D": "2"
+      },
+      "question_type": "algorithm_tracing_multiple_choice",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "35",
+        "question_text": "下列算法的輸出是什麼？",
+        "algorithm_code": "X ← 5\nY ← 5\nH ← 2\n當 H > 0 執行\n   X ← X + Y\n   Y ← Y - 3\n   X ← X - Y\n   H ← H - 1\n輸出 Y",
+        "options": {
+          "A": "10",
+          "B": "6",
+          "C": "4",
+          "D": "2"
+        },
+        "question_type": "algorithm_tracing_multiple_choice",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "X ← 9　Y ← 2",
+          "重複",
+          "   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分",
+          "直至 X = 0"
+        ],
+        "sources": [
+          "static_template:remainder_output_2021_q29"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-36",
+      "section": "mcq",
+      "text": "關華使用開放源碼軟件時可做什麼？\n使用軟件前向軟件開發商尋求批准。\n修改源碼自用。\n大幅修改源碼，並擁有整個軟件的版權。\n使用軟件前向軟件開發商尋求批准。\n修改源碼自用。\n大幅修改源碼，並擁有整個軟件的版權。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "36",
+      "concepts": [
+        "社會影響",
+        "道德議題"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "E-資訊及通訊科技對社會的影響",
+      "marks": 1,
+      "stem": "關華使用開放源碼軟件時可做什麼？\n使用軟件前向軟件開發商尋求批准。\n修改源碼自用。\n大幅修改源碼，並擁有整個軟件的版權。",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "36",
+        "question_text": "關華使用開放源碼軟件時可做什麼？",
+        "sub_questions_list": [
+          "使用軟件前向軟件開發商尋求批准。",
+          "修改源碼自用。",
+          "大幅修改源碼，並擁有整個軟件的版權。"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "使用軟件前向軟件開發商尋求批准。",
+          "修改源碼自用。",
+          "大幅修改源碼，並擁有整個軟件的版權。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-37",
+      "section": "mcq",
+      "text": "使用互聯網上的資訊來編寫一份報告前應考慮什麼？\n互聯網上有許多資訊不可靠。\n互聯網上絕大部分資訊是免費的。\n很多網站透過社交媒體獲取個人資料。\n互聯網上有許多資訊不可靠。\n互聯網上絕大部分資訊是免費的。\n很多網站透過社交媒體獲取個人資料。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "37",
+      "concepts": [
+        "網頁創作"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "使用互聯網上的資訊來編寫一份報告前應考慮什麼？\n互聯網上有許多資訊不可靠。\n互聯網上絕大部分資訊是免費的。\n很多網站透過社交媒體獲取個人資料。",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "37",
+        "question_text": "使用互聯網上的資訊來編寫一份報告前應考慮什麼？",
+        "sub_questions_list": [
+          "互聯網上有許多資訊不可靠。",
+          "互聯網上絕大部分資訊是免費的。",
+          "很多網站透過社交媒體獲取個人資料。"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "互聯網上有許多資訊不可靠。",
+          "互聯網上絕大部分資訊是免費的。",
+          "很多網站透過社交媒體獲取個人資料。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-38",
+      "section": "mcq",
+      "text": "下列哪項可縮窄社會內的數碼隔閡？\n向學生提供電腦以供學習\n在餐廳內提供自助點餐機\n在店舖內以電子付款取代現金付款\n向學生提供電腦以供學習\n在餐廳內提供自助點餐機\n在店舖內以電子付款取代現金付款\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "38",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "下列哪項可縮窄社會內的數碼隔閡？\n向學生提供電腦以供學習\n在餐廳內提供自助點餐機\n在店舖內以電子付款取代現金付款",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "38",
+        "question_text": "下列哪項可縮窄社會內的數碼隔閡？",
+        "sub_questions_list": [
+          "向學生提供電腦以供學習",
+          "在餐廳內提供自助點餐機",
+          "在店舖內以電子付款取代現金付款"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "向學生提供電腦以供學習",
+          "在餐廳內提供自助點餐機",
+          "在店舖內以電子付款取代現金付款"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-39",
+      "section": "mcq",
+      "text": "下列哪項互聯網活動很可能侵犯了版權？\n從一張電影 DVD 擷取了現象，並把它上載至互聯網。\n經點對點網絡，從以等網絡 (p2p) 軟件與朋友分享。\n在互聯網上複製網頁文章，以用作出版書籍。\n從一張電影 DVD 擷取了現象，並把它上載至互聯網。\n經點對點網絡，從以等網絡 (p2p) 軟件與朋友分享。\n在互聯網上複製網頁文章，以用作出版書籍。\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+      "number": "39",
+      "concepts": [
+        "網頁創作",
+        "社會影響",
+        "道德議題"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用；E-資訊及通訊科技對社會的影響",
+      "marks": 1,
+      "stem": "下列哪項互聯網活動很可能侵犯了版權？\n從一張電影 DVD 擷取了現象，並把它上載至互聯網。\n經點對點網絡，從以等網絡 (p2p) 軟件與朋友分享。\n在互聯網上複製網頁文章，以用作出版書籍。",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "只有 (1) (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "39",
+        "question_text": "下列哪項互聯網活動很可能侵犯了版權？",
+        "sub_questions_list": [
+          "從一張電影 DVD 擷取了現象，並把它上載至互聯網。",
+          "經點對點網絡，從以等網絡 (p2p) 軟件與朋友分享。",
+          "在互聯網上複製網頁文章，以用作出版書籍。"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "從一張電影 DVD 擷取了現象，並把它上載至互聯網。",
+          "經點對點網絡，從以等網絡 (p2p) 軟件與朋友分享。",
+          "在互聯網上複製網頁文章，以用作出版書籍。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2021-Paper1_MultipleChoice-40",
+      "section": "mcq",
+      "text": "下列哪項是在網上系統中驗證用戶身份的常見措施？\nDNS\n密碼\n防火牆\nDNS\n密碼\n防火牆\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "number": "40",
+      "concepts": [
+        "數據控制",
+        "有效性檢驗",
+        "網絡",
+        "網絡保安",
+        "資訊保安",
+        "奇偶檢測"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；C-互聯網及其應用",
+      "marks": 1,
+      "stem": "下列哪項是在網上系統中驗證用戶身份的常見措施？\nDNS\n密碼\n防火牆",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "question_type": "multiple_choice_with_sub_statements",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "40",
+        "question_text": "下列哪項是在網上系統中驗證用戶身份的常見措施？",
+        "sub_questions_list": [
+          "DNS",
+          "密碼",
+          "防火牆"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "question_type": "multiple_choice_with_sub_statements",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "DNS",
+          "密碼",
+          "防火牆"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    }
+  ],
+  "paper": {
+    "id": "2021-Paper1_MultipleChoice",
+    "questions": [
+      {
+        "id": "2021-Paper1_MultipleChoice-1",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "1",
+        "section": "mcq",
+        "text": "下列哪項在文字處理軟件內可有效地格式化一份文件？\n以內置使用的文檔範本大小設定或預設值\n使用樣式來自動調整它的表示\n使用自動校正功能\n以內置使用的文檔範本大小設定或預設值\n使用樣式來自動調整它的表示\n使用自動校正功能\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "stem": "下列哪項在文字處理軟件內可有效地格式化一份文件？\n以內置使用的文檔範本大小設定或預設值\n使用樣式來自動調整它的表示\n使用自動校正功能",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "以內置使用的文檔範本大小設定或預設值",
+            "使用樣式來自動調整它的表示",
+            "使用自動校正功能"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-2",
+        "type": "multiple_choice",
+        "number": "2",
+        "section": "mcq",
+        "text": "下列哪個以 8 位元二進制補碼表示數字的加法運算，會引至上溢錯誤？\nA. 0000 0010 + 0011 1100\nB. 0100 0010 + 0000 0001\nC. 1001 1100 + 1111 0110\nD. 1011 1010 + 1100 0100",
+        "marks": 1,
+        "concepts": [
+          "進制",
+          "二進制補碼"
+        ],
+        "options": {
+          "A": "0000 0010 + 0011 1100",
+          "B": "0100 0010 + 0000 0001",
+          "C": "1001 1100 + 1111 0110",
+          "D": "1011 1010 + 1100 0100"
+        },
+        "stem": "下列哪個以 8 位元二進制補碼表示數字的加法運算，會引至上溢錯誤？",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-3",
+        "type": "multiple_choice_fill_in_blank",
+        "number": "3",
+        "section": "mcq",
+        "text": "字符「X」和「Z」的 ASCII 編碼以十六進制表示，分別為_______和_______。\nA. 3A\nB. 58\nC. 5E\nD. 59",
+        "marks": 1,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "字元編碼"
+        ],
+        "options": {
+          "A": "3A",
+          "B": "58",
+          "C": "5E",
+          "D": "59"
+        },
+        "stem": "字符「X」和「Z」的 ASCII 編碼以十六進制表示，分別為_______和_______。",
+        "syllabus_status": "out_of_syllabus"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-4",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "4",
+        "section": "mcq",
+        "text": "在數據庫軟件內詮釋數據庫表時，用戶通常應設定什麼？\n每個欄的數據類型\n每個欄的數據長口\n主關鍵字\n每個欄的數據類型\n每個欄的數據長口\n主關鍵字\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "數據組織",
+          "檔案存取"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "stem": "在數據庫軟件內詮釋數據庫表時，用戶通常應設定什麼？\n每個欄的數據類型\n每個欄的數據長口\n主關鍵字",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "每個欄的數據類型",
+            "每個欄的數據長口",
+            "主關鍵字"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-5",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "5",
+        "section": "mcq",
+        "text": "小芬使用 WAV 格式而非 MP3 格式來錄製音樂聲演。這樣有什麼好處？\n存放檔的檔案大小較大。\n音質會較佳。\n沒有錄平台問題。\n存放檔的檔案大小較大。\n音質會較佳。\n沒有錄平台問題。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "多媒體",
+          "數據組織",
+          "檔案存取"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "小芬使用 WAV 格式而非 MP3 格式來錄製音樂聲演。這樣有什麼好處？\n存放檔的檔案大小較大。\n音質會較佳。\n沒有錄平台問題。",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "存放檔的檔案大小較大。",
+            "音質會較佳。",
+            "沒有錄平台問題。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-6",
+        "type": "multiple_choice",
+        "number": "6",
+        "section": "mcq",
+        "text": "子堯使用簡報軟件中的「目錄」功能，如下所示。需插入一個新簡報，_______。\n[表格式意] 一張表格，包含「目錄」和「頁碼」兩欄，以及「主題約詁」(1)、 「主要內容」(5)、「背景」(12) 等行。\nA. 子堯須輸入公式來計算頁碼\nB. 子堯須在目錄內輸入章節名稱\nC. 頁碼會自動更新\nD. 新簡報會被插入為最後的一章",
+        "marks": 1,
+        "concepts": [
+          "試算表",
+          "數據組織",
+          "檔案存取"
+        ],
+        "options": {
+          "A": "子堯須輸入公式來計算頁碼",
+          "B": "子堯須在目錄內輸入章節名稱",
+          "C": "頁碼會自動更新",
+          "D": "新簡報會被插入為最後的一章"
+        },
+        "stem": "子堯使用簡報軟件中的「目錄」功能，如下所示。需插入一個新簡報，_______。",
+        "syllabus_status": "out_of_syllabus",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一張表格，包含「目錄」和「頁碼」兩欄，以及「主題約詁」(1)、 「主要內容」(5)、「背景」(12) 等行。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-7",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "7",
+        "section": "mcq",
+        "text": "若要在演示檔案內加入轉變幻燈，下列哪句是正確的？\n演示的檔案大小增加。\n演示內的投影幻燈會增加。\n未能把視覺效果附有旁白的投影片。\n演示的檔案大小增加。\n演示內的投影幻燈會增加。\n未能把視覺效果附有旁白的投影片。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "數據組織",
+          "檔案存取"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "若要在演示檔案內加入轉變幻燈，下列哪句是正確的？\n演示的檔案大小增加。\n演示內的投影幻燈會增加。\n未能把視覺效果附有旁白的投影片。",
+        "syllabus_status": "out_of_syllabus",
+        "support_content": {
+          "lines": [
+            "演示的檔案大小增加。",
+            "演示內的投影幻燈會增加。",
+            "未能把視覺效果附有旁白的投影片。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-8",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "8",
+        "section": "mcq",
+        "text": "劉到是市場部經理。她計劃向每週客戶發出邀請函。她將會從客戶數據庫擷取數據。她應進行什麼資訊處理功能？\n篩選\n郵件合併\n「假設」分析\n篩選\n郵件合併\n「假設」分析\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "試算表",
+          "資訊處理"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "stem": "劉到是市場部經理。她計劃向每週客戶發出邀請函。她將會從客戶數據庫擷取數據。她應進行什麼資訊處理功能？\n篩選\n郵件合併\n「假設」分析",
+        "syllabus_status": "out_of_syllabus",
+        "support_content": {
+          "lines": [
+            "篩選",
+            "郵件合併",
+            "「假設」分析"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-9",
+        "type": "multiple_choice",
+        "number": "9",
+        "section": "mcq",
+        "text": "在網上系統內要求用戶輸入密碼兩次的目的是什麼？\nA. 驗證有效性檢驗\nB. 數據掩飾\nC. 數據校驗\nD. 數據預備\n\n[圖片描述] 一個網頁表單，包含「用戶名稱」、「密碼」、「重新輸入密碼」欄位，以及「提交」和「重置」按鈕。",
+        "marks": 1,
+        "concepts": [
+          "數據控制",
+          "有效性檢驗",
+          "數據組織",
+          "檔案存取",
+          "網頁創作",
+          "奇偶檢測"
+        ],
+        "options": {
+          "A": "驗證有效性檢驗",
+          "B": "數據掩飾",
+          "C": "數據校驗",
+          "D": "數據預備"
+        },
+        "stem": "在網上系統內要求用戶輸入密碼兩次的目的是什麼？",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-10",
+        "type": "multiple_choice",
+        "number": "10",
+        "section": "mcq",
+        "text": "志明打算利用物件連結，把 X.jpg 和 Y.xlsx 的內容加入至 Z.docx 內。下列哪句關於軟件連結與嵌入 (OLE) 的句子是正確的？\nA. OLE 不能應用於 X 的檔案格式。\nB. 在志明行動前，X 的檔案大小將會小於 Z 的。\nC. 若明完成某行動後，Z 的檔案大小將會大於 Y 的。\nD. 改變 Y 內的數據可影響隨後 Z 的列印本。",
+        "marks": 1,
+        "concepts": [
+          "多媒體",
+          "數據組織",
+          "檔案存取"
+        ],
+        "options": {
+          "A": "OLE 不能應用於 X 的檔案格式。",
+          "B": "在志明行動前，X 的檔案大小將會小於 Z 的。",
+          "C": "若明完成某行動後，Z 的檔案大小將會大於 Y 的。",
+          "D": "改變 Y 內的數據可影響隨後 Z 的列印本。"
+        },
+        "stem": "志明打算利用物件連結，把 X.jpg 和 Y.xlsx 的內容加入至 Z.docx 內。下列哪句關於軟件連結與嵌入 (OLE) 的句子是正確的？",
+        "syllabus_status": "out_of_syllabus"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-11",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "11",
+        "section": "mcq",
+        "text": "在數據庫軟件內使用表格來輸入數據的主要優點是什麼？\n減少輸入錯誤。\n縮短 SQL 語句的執行時間。\n需要較少儲存空間。\n減少輸入錯誤。\n縮短 SQL 語句的執行時間。\n需要較少儲存空間。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "SQL",
+          "數據庫"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "在數據庫軟件內使用表格來輸入數據的主要優點是什麼？\n減少輸入錯誤。\n縮短 SQL 語句的執行時間。\n需要較少儲存空間。",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "減少輸入錯誤。",
+            "縮短 SQL 語句的執行時間。",
+            "需要較少儲存空間。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-12",
+        "type": "multiple_choice",
+        "number": "12",
+        "section": "mcq",
+        "text": "下圖顯示了「輸入—處理—輸出」周期的基本概念。X 和 Y 是什麼？\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\nA. X: 統一碼, Y: 二進制數字\nB. X: 互聯網, Y: 網絡設備\nC. X: 程式, Y: 儲存器\nD. X: 數據庫, Y: 變數",
+        "marks": 1,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "X: 統一碼, Y: 二進制數字",
+          "B": "X: 互聯網, Y: 網絡設備",
+          "C": "X: 程式, Y: 儲存器",
+          "D": "X: 數據庫, Y: 變數"
+        },
+        "stem": "下圖顯示了「輸入—處理—輸出」周期的基本概念。X 和 Y 是什麼？",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出"
+          ],
+          "sources": [
+            "image_description.diagram"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.246353+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-15",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "15",
+        "section": "mcq",
+        "text": "小華使用試算表儲存數節關於網上會議的記錄，如下所示：\n她打算跟請輯分析表，以找出每名參加者曾參與會議的次數。\n「參加者」應置於下列哪項？\n篩選\n識別\n總和\n值\n[表格式意] 一個試算表片段，顯示會議記錄（日期、參加者、時間、持續時間、IP 地址、類型、備註）和一個空白表格，用於「出席者」和「次數」。\n她打算跟請輯分析表，以找出每名參加者曾參與會議的次數。\n「參加者」應置於下列哪項？\n篩選\n識別\n總和\n值\nA. 只有 (1)\nB. 只有 (4)\nC. 只有 (1) 和 (2)\nD. 只有 (3) 和 (4)",
+        "marks": 1,
+        "concepts": [
+          "試算表",
+          "數據組織",
+          "檔案存取",
+          "網絡"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (4)",
+          "C": "只有 (1) 和 (2)",
+          "D": "只有 (3) 和 (4)"
+        },
+        "stem": "小華使用試算表儲存數節關於網上會議的記錄，如下所示：\n她打算跟請輯分析表，以找出每名參加者曾參與會議的次數。\n「參加者」應置於下列哪項？\n篩選\n識別\n總和\n值",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個試算表片段，顯示會議記錄（日期、參加者、時間、持續時間、IP 地址、類型、備註）和一個空白表格，用於「出席者」和「次數」。",
+            "她打算跟請輯分析表，以找出每名參加者曾參與會議的次數。",
+            "「參加者」應置於下列哪項？",
+            "篩選",
+            "識別",
+            "總和",
+            "值"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-16",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "16",
+        "section": "mcq",
+        "text": "下列哪項可以是傳播文件和圖片的掃描器的規格？\n支援 802.11n\n支援彩色\n內置 2GB RAM\n支援 802.11n\n支援彩色\n內置 2GB RAM\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "硬件"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "stem": "下列哪項可以是傳播文件和圖片的掃描器的規格？\n支援 802.11n\n支援彩色\n內置 2GB RAM",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "支援 802.11n",
+            "支援彩色",
+            "內置 2GB RAM"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-17-Page-4",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "17 (Page 4)",
+        "section": "mcq",
+        "text": "下列哪項需要驅動程式？\n編輯文字處理文件\n連接一部打印機\n移除一個軟件包\n編輯文字處理文件\n連接一部打印機\n移除一個軟件包\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "軟件",
+          "作業系統"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "下列哪項需要驅動程式？\n編輯文字處理文件\n連接一部打印機\n移除一個軟件包",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "編輯文字處理文件",
+            "連接一部打印機",
+            "移除一個軟件包"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-18-Page-5-first-multiple-choice",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "18 (Page 5, first multiple choice)",
+        "section": "mcq",
+        "text": "小強和家人在客廳裡連線了一部電腦系統，與他的朋友及一人一起玩網上足球遊戲。這應會涉及下列哪項通訊模式？\n線上互動處理\n數據緩衝處理\n即時處理\n線上互動處理\n數據緩衝處理\n即時處理\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "小強和家人在客廳裡連線了一部電腦系統，與他的朋友及一人一起玩網上足球遊戲。這應會涉及下列哪項通訊模式？\n線上互動處理\n數據緩衝處理\n即時處理",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "線上互動處理",
+            "數據緩衝處理",
+            "即時處理"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-17-Page-5-problem-17",
+        "type": "multiple_choice",
+        "number": "17 (Page 5, problem 17)",
+        "section": "mcq",
+        "text": "思明有一台桌上電腦，內設一個 500GB SSD 和一個 2TB 硬碟機，為什麼操作系統會被安裝在 SSD 而非硬碟機內？\nA. 操作系統是並不屬於應用軟件。\nB. 硬碟操作系統的檔案是經常使用的。\nC. 硬碟操作系統的儲存大小是少於 500 GB。\nD. 硬碟機價錢比硬碟機內便宜。",
+        "marks": 1,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "硬件",
+          "軟件",
+          "作業系統"
+        ],
+        "options": {
+          "A": "操作系統是並不屬於應用軟件。",
+          "B": "硬碟操作系統的檔案是經常使用的。",
+          "C": "硬碟操作系統的儲存大小是少於 500 GB。",
+          "D": "硬碟機價錢比硬碟機內便宜。"
+        },
+        "stem": "思明有一台桌上電腦，內設一個 500GB SSD 和一個 2TB 硬碟機，為什麼操作系統會被安裝在 SSD 而非硬碟機內？",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-18-Page-5-problem-18",
+        "type": "multiple_choice",
+        "number": "18 (Page 5, problem 18)",
+        "section": "mcq",
+        "text": "下列哪項是 CPU 的短期發展？\nA. 預裝操作系統\nB. 減少處理器作數量\nC. 增加時鐘頻率\nD. 增加耗電量",
+        "marks": 1,
+        "concepts": [
+          "硬件",
+          "軟件",
+          "作業系統"
+        ],
+        "options": {
+          "A": "預裝操作系統",
+          "B": "減少處理器作數量",
+          "C": "增加時鐘頻率",
+          "D": "增加耗電量"
+        },
+        "stem": "下列哪項是 CPU 的短期發展？",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-19",
+        "type": "multiple_choice",
+        "number": "19",
+        "section": "mcq",
+        "text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項是最不重要的因素？\nA. SSD 的儲存大小\nB. RAM 的儲存大小\nC. ROM 的儲存大小\nD. CPU 的時鐘頻率",
+        "marks": 1,
+        "concepts": [
+          "多媒體",
+          "硬件"
+        ],
+        "options": {
+          "A": "SSD 的儲存大小",
+          "B": "RAM 的儲存大小",
+          "C": "ROM 的儲存大小",
+          "D": "CPU 的時鐘頻率"
+        },
+        "stem": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項是最不重要的因素？",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-20",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "20",
+        "section": "mcq",
+        "text": "以電子書閱讀器而非平板電腦來閱讀電子書的好處是什麼？\n耗電量較低\n重量較輕\n計算能力較高\n耗電量較低\n重量較輕\n計算能力較高\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "stem": "以電子書閱讀器而非平板電腦來閱讀電子書的好處是什麼？\n耗電量較低\n重量較輕\n計算能力較高",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "耗電量較低",
+            "重量較輕",
+            "計算能力較高"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-21",
+        "type": "multiple_choice",
+        "number": "21",
+        "section": "mcq",
+        "text": "在 CPU 內執行編碼語言指令「載入 1060」時，下列哪項部件會因此指令解碼？\nA. 匯流排\nB. 暫存器\nC. ALU\nD. CU",
+        "marks": 1,
+        "concepts": [
+          "硬件"
+        ],
+        "options": {
+          "A": "匯流排",
+          "B": "暫存器",
+          "C": "ALU",
+          "D": "CU"
+        },
+        "stem": "在 CPU 內執行編碼語言指令「載入 1060」時，下列哪項部件會因此指令解碼？",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-22",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "22",
+        "section": "mcq",
+        "text": "下列哪項在連接有線 LAN 時是常用的？\n防火牆\n寬頻調機\n路由器\n防火牆\n寬頻調機\n路由器\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "網絡",
+          "網絡保安",
+          "資訊保安"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "下列哪項在連接有線 LAN 時是常用的？\n防火牆\n寬頻調機\n路由器",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "防火牆",
+            "寬頻調機",
+            "路由器"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-23",
+        "type": "multiple_choice",
+        "number": "23",
+        "section": "mcq",
+        "text": "下列哪項不是多媒體檔案格式？\nA. ZIP\nB. MP3\nC. MPEG\nD. PNG",
+        "marks": 1,
+        "concepts": [
+          "多媒體",
+          "數據組織",
+          "檔案存取",
+          "網絡"
+        ],
+        "options": {
+          "A": "ZIP",
+          "B": "MP3",
+          "C": "MPEG",
+          "D": "PNG"
+        },
+        "stem": "下列哪項不是多媒體檔案格式？",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-24",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "24",
+        "section": "mcq",
+        "text": "某超級市場將會提供一個網上平台，讓顧客購買食物。當設計其用戶界面時，應考慮下列哪項？\n字型大小\n顏色\n語音\n字型大小\n顏色\n語音\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "stem": "某超級市場將會提供一個網上平台，讓顧客購買食物。當設計其用戶界面時，應考慮下列哪項？\n字型大小\n顏色\n語音",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "字型大小",
+            "顏色",
+            "語音"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-25",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "25",
+        "section": "mcq",
+        "text": "莉莉在她的辦公室可利用其流動電話從控制室中連接 Wi-Fi 網絡的電腦。這應會涉及下列哪項？\nLAN\n互聯網\n無線網絡接點\nLAN\n互聯網\n無線網絡接點\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "網絡"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "莉莉在她的辦公室可利用其流動電話從控制室中連接 Wi-Fi 網絡的電腦。這應會涉及下列哪項？\nLAN\n互聯網\n無線網絡接點",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "LAN",
+            "互聯網",
+            "無線網絡接點"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-26",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "26",
+        "section": "mcq",
+        "text": "李太太為她的辦公室內工作的員工租用網上檔案儲存服務，而不設立檔案伺服器。為什麼？\n辦公室的互聯網連線的頻寬不足。\n辦公室內包攬額外技術人員。\n在增加儲存容量時較有彈性。\n辦公室的互聯網連線的頻寬不足。\n辦公室內包攬額外技術人員。\n在增加儲存容量時較有彈性。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "網絡",
+          "網絡應用",
+          "客戶機伺服器"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "李太太為她的辦公室內工作的員工租用網上檔案儲存服務，而不設立檔案伺服器。為什麼？\n辦公室的互聯網連線的頻寬不足。\n辦公室內包攬額外技術人員。\n在增加儲存容量時較有彈性。",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "辦公室的互聯網連線的頻寬不足。",
+            "辦公室內包攬額外技術人員。",
+            "在增加儲存容量時較有彈性。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-27",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "27",
+        "section": "mcq",
+        "text": "下列哪項關於 HTTP 是正確的？\n它是用於傳送加密文本文件。\n它是用於確認 URL 為 IP 位址。\n它是用於快儲存瀏覽歷史。\n它是用於傳送加密文本文件。\n它是用於確認 URL 為 IP 位址。\n它是用於快儲存瀏覽歷史。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "網絡",
+          "網絡保安",
+          "資訊保安"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "下列哪項關於 HTTP 是正確的？\n它是用於傳送加密文本文件。\n它是用於確認 URL 為 IP 位址。\n它是用於快儲存瀏覽歷史。",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "它是用於傳送加密文本文件。",
+            "它是用於確認 URL 為 IP 位址。",
+            "它是用於快儲存瀏覽歷史。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-28",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "28",
+        "section": "mcq",
+        "text": "雖然學校課後已安裝了一個有線網絡，但學校還是安裝了一個連接至此網絡的無線網絡接點。為什麼？\n學生可在課堂上使用平板電腦。\n網絡可每天 24 小時使用。\n網絡連接的數據傳輸率較高。\n學生可在課堂上使用平板電腦。\n網絡可每天 24 小時使用。\n網絡連接的數據傳輸率較高。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "雖然學校課後已安裝了一個有線網絡，但學校還是安裝了一個連接至此網絡的無線網絡接點。為什麼？\n學生可在課堂上使用平板電腦。\n網絡可每天 24 小時使用。\n網絡連接的數據傳輸率較高。",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "學生可在課堂上使用平板電腦。",
+            "網絡可每天 24 小時使用。",
+            "網絡連接的數據傳輸率較高。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-29",
+        "type": "algorithm_tracing_multiple_choice",
+        "number": "29",
+        "section": "mcq",
+        "text": "下列算法的輸出是什麼？\nX ← 9　Y ← 2\n重複\n   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分\n直至 X = 0\nA. 10\nB. 111\nC. 101\nD. 1001",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "10",
+          "B": "111",
+          "C": "101",
+          "D": "1001"
+        },
+        "stem": "下列算法的輸出是什麼？",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "X ← 9　Y ← 2",
+            "重複",
+            "   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分",
+            "直至 X = 0"
+          ],
+          "sources": [
+            "static_template:remainder_output_2021_q29"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-30",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "30",
+        "section": "mcq",
+        "text": "編寫了程式碼後，根據經驗程序，應執行下列哪項？\n檢查問題裡的輸入和輸出的要求。\n選擇個案來測試此程式。\n檢視測試數據。\n檢查問題裡的輸入和輸出的要求。\n選擇個案來測試此程式。\n檢視測試數據。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "程式測試"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "編寫了程式碼後，根據經驗程序，應執行下列哪項？\n檢查問題裡的輸入和輸出的要求。\n選擇個案來測試此程式。\n檢視測試數據。",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "檢查問題裡的輸入和輸出的要求。",
+            "選擇個案來測試此程式。",
+            "檢視測試數據。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-31",
+        "type": "multiple_choice",
+        "number": "31",
+        "section": "mcq",
+        "text": "假設 X = 5, Y = 6 和 Z = 7。下列哪項布爾算式的結果是「真」？\nA. ((X < 0) AND (Y > 6)) AND (Z > 10)\nB. ((X < 0) OR (Y < 6)) AND (Z > 10)\nC. ((X < 0) OR (Y > 6)) AND (Z > 10)\nD. ((X < 0) OR (Y < 6)) OR (Z > 10)",
+        "marks": 1,
+        "concepts": [
+          "試算表"
+        ],
+        "options": {
+          "A": "((X < 0) AND (Y > 6)) AND (Z > 10)",
+          "B": "((X < 0) OR (Y < 6)) AND (Z > 10)",
+          "C": "((X < 0) OR (Y > 6)) AND (Z > 10)",
+          "D": "((X < 0) OR (Y < 6)) OR (Z > 10)"
+        },
+        "stem": "假設 X = 5, Y = 6 和 Z = 7。下列哪項布爾算式的結果是「真」？",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-32",
+        "type": "algorithm_tracing_multiple_choice",
+        "number": "32",
+        "section": "mcq",
+        "text": "以陣列 P 的初始值進行，下列算法的輸出是什麼？\nX ← 9　Y ← 2\n重複\n   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分\n直至 X = 0\nA. 0100\nB. 0110\nC. 0000\nD. 1001",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "0100",
+          "B": "0110",
+          "C": "0000",
+          "D": "1001"
+        },
+        "stem": "以陣列 P 的初始值進行，下列算法的輸出是什麼？",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "X ← 9　Y ← 2",
+            "重複",
+            "   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分",
+            "直至 X = 0"
+          ],
+          "sources": [
+            "static_template:remainder_output_2021_q29"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-33",
+        "type": "algorithm_tracing_multiple_choice",
+        "number": "33",
+        "section": "mcq",
+        "text": "下列算法的輸出是什麼？\nsum ← 0\nj ← 12\n重複\n   sum ← sum + 1\n   j ← j - 2\n直至 j < 6\n輸出 sum\nA. 7\nB. 6\nC. 5\nD. 4",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "7",
+          "B": "6",
+          "C": "5",
+          "D": "4"
+        },
+        "stem": "下列算法的輸出是什麼？",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "sum ← 0",
+            "j ← 12",
+            "重複",
+            "   sum ← sum + 1",
+            "   j ← j - 2",
+            "直至 j < 6",
+            "輸出 sum"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-34",
+        "type": "algorithm_tracing_multiple_choice",
+        "number": "34",
+        "section": "mcq",
+        "text": "下列算法的輸出是什麼？\n設 A 由 1 至 5 執行\n   A[i] ← i\nS ← 0\ni ← 1\n當 i > S 執行\n   S ← S + A[i]*A[i+1]\n   i ← i + 1\n輸出 S\nA. 60\nB. 26\nC. 6\nD. 2",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "60",
+          "B": "26",
+          "C": "6",
+          "D": "2"
+        },
+        "stem": "下列算法的輸出是什麼？",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "設 A 由 1 至 5 執行",
+            "   A[i] ← i",
+            "S ← 0",
+            "i ← 1",
+            "當 i > S 執行",
+            "   S ← S + A[i]*A[i+1]",
+            "   i ← i + 1",
+            "輸出 S"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-35",
+        "type": "algorithm_tracing_multiple_choice",
+        "number": "35",
+        "section": "mcq",
+        "text": "下列算法的輸出是什麼？\nX ← 9　Y ← 2\n重複\n   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分\n直至 X = 0\nA. 10\nB. 6\nC. 4\nD. 2",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "10",
+          "B": "6",
+          "C": "4",
+          "D": "2"
+        },
+        "stem": "下列算法的輸出是什麼？",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "X ← 9　Y ← 2",
+            "重複",
+            "   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分",
+            "直至 X = 0"
+          ],
+          "sources": [
+            "static_template:remainder_output_2021_q29"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-36",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "36",
+        "section": "mcq",
+        "text": "關華使用開放源碼軟件時可做什麼？\n使用軟件前向軟件開發商尋求批准。\n修改源碼自用。\n大幅修改源碼，並擁有整個軟件的版權。\n使用軟件前向軟件開發商尋求批准。\n修改源碼自用。\n大幅修改源碼，並擁有整個軟件的版權。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "社會影響",
+          "道德議題"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "關華使用開放源碼軟件時可做什麼？\n使用軟件前向軟件開發商尋求批准。\n修改源碼自用。\n大幅修改源碼，並擁有整個軟件的版權。",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "使用軟件前向軟件開發商尋求批准。",
+            "修改源碼自用。",
+            "大幅修改源碼，並擁有整個軟件的版權。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-37",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "37",
+        "section": "mcq",
+        "text": "使用互聯網上的資訊來編寫一份報告前應考慮什麼？\n互聯網上有許多資訊不可靠。\n互聯網上絕大部分資訊是免費的。\n很多網站透過社交媒體獲取個人資料。\n互聯網上有許多資訊不可靠。\n互聯網上絕大部分資訊是免費的。\n很多網站透過社交媒體獲取個人資料。\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "網頁創作"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "使用互聯網上的資訊來編寫一份報告前應考慮什麼？\n互聯網上有許多資訊不可靠。\n互聯網上絕大部分資訊是免費的。\n很多網站透過社交媒體獲取個人資料。",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "互聯網上有許多資訊不可靠。",
+            "互聯網上絕大部分資訊是免費的。",
+            "很多網站透過社交媒體獲取個人資料。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-38",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "38",
+        "section": "mcq",
+        "text": "下列哪項可縮窄社會內的數碼隔閡？\n向學生提供電腦以供學習\n在餐廳內提供自助點餐機\n在店舖內以電子付款取代現金付款\n向學生提供電腦以供學習\n在餐廳內提供自助點餐機\n在店舖內以電子付款取代現金付款\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "下列哪項可縮窄社會內的數碼隔閡？\n向學生提供電腦以供學習\n在餐廳內提供自助點餐機\n在店舖內以電子付款取代現金付款",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "向學生提供電腦以供學習",
+            "在餐廳內提供自助點餐機",
+            "在店舖內以電子付款取代現金付款"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-39",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "39",
+        "section": "mcq",
+        "text": "下列哪項互聯網活動很可能侵犯了版權？\n從一張電影 DVD 擷取了現象，並把它上載至互聯網。\n經點對點網絡，從以等網絡 (p2p) 軟件與朋友分享。\n在互聯網上複製網頁文章，以用作出版書籍。\n從一張電影 DVD 擷取了現象，並把它上載至互聯網。\n經點對點網絡，從以等網絡 (p2p) 軟件與朋友分享。\n在互聯網上複製網頁文章，以用作出版書籍。\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (1) (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "網頁創作",
+          "社會影響",
+          "道德議題"
+        ],
+        "options": {
+          "A": "只有 (1) 和 (2)",
+          "B": "只有 (1) 和 (3)",
+          "C": "只有 (2) 和 (3)",
+          "D": "只有 (1) (2) 和 (3)"
+        },
+        "stem": "下列哪項互聯網活動很可能侵犯了版權？\n從一張電影 DVD 擷取了現象，並把它上載至互聯網。\n經點對點網絡，從以等網絡 (p2p) 軟件與朋友分享。\n在互聯網上複製網頁文章，以用作出版書籍。",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "從一張電影 DVD 擷取了現象，並把它上載至互聯網。",
+            "經點對點網絡，從以等網絡 (p2p) 軟件與朋友分享。",
+            "在互聯網上複製網頁文章，以用作出版書籍。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1_MultipleChoice-40",
+        "type": "multiple_choice_with_sub_statements",
+        "number": "40",
+        "section": "mcq",
+        "text": "下列哪項是在網上系統中驗證用戶身份的常見措施？\nDNS\n密碼\n防火牆\nDNS\n密碼\n防火牆\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+        "marks": 1,
+        "concepts": [
+          "數據控制",
+          "有效性檢驗",
+          "網絡",
+          "網絡保安",
+          "資訊保安",
+          "奇偶檢測"
+        ],
+        "options": {
+          "A": "只有 (1)",
+          "B": "只有 (2)",
+          "C": "只有 (1) 和 (3)",
+          "D": "只有 (2) 和 (3)"
+        },
+        "stem": "下列哪項是在網上系統中驗證用戶身份的常見措施？\nDNS\n密碼\n防火牆",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "DNS",
+            "密碼",
+            "防火牆"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.247181+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      }
+    ]
+  }
+}

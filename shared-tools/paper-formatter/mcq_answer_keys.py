@@ -223,7 +223,9 @@ def _rebuild_block_preserve_layout(
 def _inline_stem_line(block_lines: list[str]) -> Optional[str]:
     for line in block_lines:
         if re.search(r"[ABCD]\.\t", line) and "\n" in line:
-            return line.split("\n", 1)[0]
+            stem = line.split("\n", 1)[0]
+            if re.match(r"\d+\.", stem.strip()):
+                return stem
     return None
 
 

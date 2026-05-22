@@ -1,0 +1,2387 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "import_source": "gemini-output",
+    "imported_at": "2026-05-22T01:32:30.244910+00:00",
+    "year_label": "2026",
+    "paper_slug": "Paper1A_MultipleChoice",
+    "paper_label": "Paper 1A — Compulsory Part MCQ (必修部分 甲部)",
+    "source_pdf": "Subjects/DSE-ICT/past-papers/2026/DSE_ICT_2026_Paper1A_MultipleChoice.pdf",
+    "question_count": 40,
+    "gemini_source_files": [
+      "2026-p1a.json"
+    ],
+    "curriculum_guide": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+    "syllabus_retagged_at": "2026-05-22T03:38:00.134291+00:00",
+    "syllabus_revision": "2021",
+    "support_enriched_at": "2026-05-22T04:32:46.373335+00:00"
+  },
+  "items": [
+    {
+      "id": "2026-Paper1A_MultipleChoice-1",
+      "section": "mcq",
+      "text": "下列哪項不是網上商店的數據驗證示例?\nA. 客戶在建立帳戶時輸入兩次密碼\nB. 兩名職員獨立輸入同一組數據至數據庫\nC. 一名職員將其他職員輸入的數據與原始數據進行核對\nD. 電腦程式根據日曆規則檢查輸入日期",
+      "number": "1",
+      "concepts": [
+        "數據控制",
+        "有效性檢驗",
+        "奇偶檢測"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "下列哪項不是網上商店的數據驗證示例?",
+      "options": {
+        "A": "客戶在建立帳戶時輸入兩次密碼",
+        "B": "兩名職員獨立輸入同一組數據至數據庫",
+        "C": "一名職員將其他職員輸入的數據與原始數據進行核對",
+        "D": "電腦程式根據日曆規則檢查輸入日期"
+      },
+      "source_page": 2,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "1",
+        "page": 2,
+        "question_text": "下列哪項不是網上商店的數據驗證示例?",
+        "options": {
+          "A": "客戶在建立帳戶時輸入兩次密碼",
+          "B": "兩名職員獨立輸入同一組數據至數據庫",
+          "C": "一名職員將其他職員輸入的數據與原始數據進行核對",
+          "D": "電腦程式根據日曆規則檢查輸入日期"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-2",
+      "section": "mcq",
+      "text": "下列哪個/些是使用統一碼而不使用 ASCII的優點?\n(1) 統一碼包含更多語言字符,例如日文字符\n(2) 統一碼比ASCII佔用較少儲存空間\n(3) 統一碼包含符號「@」和「&」\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+      "number": "2",
+      "concepts": [
+        "字元編碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "下列哪個/些是使用統一碼而不使用 ASCII的優點?\n(1) 統一碼包含更多語言字符,例如日文字符\n(2) 統一碼比ASCII佔用較少儲存空間\n(3) 統一碼包含符號「@」和「&」",
+      "options": {
+        "A": "只有(1)",
+        "B": "只有(2)",
+        "C": "只有(1)和(3)",
+        "D": "只有(2)和(3)"
+      },
+      "source_page": 2,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "2",
+        "page": 2,
+        "question_text": "下列哪個/些是使用統一碼而不使用 ASCII的優點?\n(1) 統一碼包含更多語言字符,例如日文字符\n(2) 統一碼比ASCII佔用較少儲存空間\n(3) 統一碼包含符號「@」和「&」",
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-3",
+      "section": "mcq",
+      "text": "與 H.264 相比,H.265是一種用於MP4的較佳視像壓縮標準。下列哪句陳述是正確的?\nA. H.264 不支援視像串流\nB. 使用H.265 的檔案大小通常較小\nC. H.265 較佳,是因為它是一種開放源碼編碼解碼器\nD. 使用H.265 需要 GPU",
+      "number": "3",
+      "concepts": [
+        "多媒體",
+        "數據組織",
+        "檔案存取",
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎",
+      "marks": 1,
+      "stem": "與 H.264 相比,H.265是一種用於MP4的較佳視像壓縮標準。下列哪句陳述是正確的?",
+      "options": {
+        "A": "H.264 不支援視像串流",
+        "B": "使用H.265 的檔案大小通常較小",
+        "C": "H.265 較佳,是因為它是一種開放源碼編碼解碼器",
+        "D": "使用H.265 需要 GPU"
+      },
+      "source_page": 2,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "3",
+        "page": 2,
+        "question_text": "與 H.264 相比,H.265是一種用於MP4的較佳視像壓縮標準。下列哪句陳述是正確的?",
+        "options": {
+          "A": "H.264 不支援視像串流",
+          "B": "使用H.265 的檔案大小通常較小",
+          "C": "H.265 較佳,是因為它是一種開放源碼編碼解碼器",
+          "D": "使用H.265 需要 GPU"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-4",
+      "section": "mcq",
+      "text": "某電腦系統使用20個位元來儲存每個用戶編號,其中最後一個位元是奇偶檢驗位。該系統最多可以支援多少個用戶編號?\nA. 19^2\nB. 20^2\nC. 2^19\nD. 2^20",
+      "number": "4",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "奇偶檢測",
+        "有效性檢驗"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "某電腦系統使用20個位元來儲存每個用戶編號,其中最後一個位元是奇偶檢驗位。該系統最多可以支援多少個用戶編號?",
+      "options": {
+        "A": "19^2",
+        "B": "20^2",
+        "C": "2^19",
+        "D": "2^20"
+      },
+      "source_page": 2,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "4",
+        "page": 2,
+        "question_text": "某電腦系統使用20個位元來儲存每個用戶編號,其中最後一個位元是奇偶檢驗位。該系統最多可以支援多少個用戶編號?",
+        "options": {
+          "A": "19^2",
+          "B": "20^2",
+          "C": "2^19",
+          "D": "2^20"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-5",
+      "section": "mcq",
+      "text": "將下列使用二進制補碼表示的8位元數字乘以-1後,哪個會出現溢出誤差?\nA. 1000 0000\nB. 1111 1111\nC. 0000 0000\nD. 0111 1111",
+      "number": "5",
+      "concepts": [
+        "進制",
+        "二進制補碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "將下列使用二進制補碼表示的8位元數字乘以-1後,哪個會出現溢出誤差?",
+      "options": {
+        "A": "1000 0000",
+        "B": "1111 1111",
+        "C": "0000 0000",
+        "D": "0111 1111"
+      },
+      "source_page": 2,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "5",
+        "page": 2,
+        "question_text": "將下列使用二進制補碼表示的8位元數字乘以-1後,哪個會出現溢出誤差?",
+        "options": {
+          "A": "1000 0000",
+          "B": "1111 1111",
+          "C": "0000 0000",
+          "D": "0111 1111"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-6",
+      "section": "mcq",
+      "text": "C2 的公式會被複製到C3:C5,以計算每個學社在運動會中的名次,得分最高的學社名次是1。C2的公式是什麼?\nA. RANK(B2, B$2:B$5, 0)\nB. RANK(B2, B$2:B$5, 2)\nC. RANK(B2, $B2:$B5, 0)\nD. RANK(B2, $B2:$B5, 2)",
+      "number": "6",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "C2 的公式會被複製到C3:C5,以計算每個學社在運動會中的名次,得分最高的學社名次是1。C2的公式是什麼?",
+      "options": {
+        "A": "RANK(B2, B$2:B$5, 0)",
+        "B": "RANK(B2, B$2:B$5, 2)",
+        "C": "RANK(B2, $B2:$B5, 0)",
+        "D": "RANK(B2, $B2:$B5, 2)"
+      },
+      "source_page": 3,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "6",
+        "page": 3,
+        "question_text": "C2 的公式會被複製到C3:C5,以計算每個學社在運動會中的名次,得分最高的學社名次是1。C2的公式是什麼?",
+        "options": {
+          "A": "RANK(B2, B$2:B$5, 0)",
+          "B": "RANK(B2, B$2:B$5, 2)",
+          "C": "RANK(B2, $B2:$B5, 0)",
+          "D": "RANK(B2, $B2:$B5, 2)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-7",
+      "section": "mcq",
+      "text": "以下樞紐分析表利用一彙總函數,將以上數據建立摘要: 此彙總函數是什麼?\nA. 乘積\nB. 加總\nC. 最大\nD. 平均值",
+      "number": "7",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "以下樞紐分析表利用一彙總函數,將以上數據建立摘要: 此彙總函數是什麼?",
+      "options": {
+        "A": "乘積",
+        "B": "加總",
+        "C": "最大",
+        "D": "平均值"
+      },
+      "source_page": 3,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "7",
+        "page": 3,
+        "question_text": "以下樞紐分析表利用一彙總函數,將以上數據建立摘要: 此彙總函數是什麼?",
+        "options": {
+          "A": "乘積",
+          "B": "加總",
+          "C": "最大",
+          "D": "平均值"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-8",
+      "section": "mcq",
+      "text": "某公司採用全新的設計和資訊架構來建立其網站。會涉及下列哪些步驟?\n(1) 數據分析\n(2) 數據組織\n(3) 數據表示\nA. 只有(1)和(2)\nB. 只有(1)和(3)\nC. 只有(2)和(3)\nD. (1)、(2)和(3)",
+      "number": "8",
+      "concepts": [
+        "網頁創作"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "某公司採用全新的設計和資訊架構來建立其網站。會涉及下列哪些步驟?\n(1) 數據分析\n(2) 數據組織\n(3) 數據表示",
+      "options": {
+        "A": "只有(1)和(2)",
+        "B": "只有(1)和(3)",
+        "C": "只有(2)和(3)",
+        "D": "(1)、(2)和(3)"
+      },
+      "source_page": 3,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "8",
+        "page": 3,
+        "question_text": "某公司採用全新的設計和資訊架構來建立其網站。會涉及下列哪些步驟?\n(1) 數據分析\n(2) 數據組織\n(3) 數據表示",
+        "options": {
+          "A": "只有(1)和(2)",
+          "B": "只有(1)和(3)",
+          "C": "只有(2)和(3)",
+          "D": "(1)、(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-9",
+      "section": "mcq",
+      "text": "執行以下 SQL語句後,會有多少筆記錄輸出? SELECT AWARD FROM MEM WHERE CAT LIKE 'M%' GROUP BY AWARD HAVING SUM(POINT) > 4\nA. 0\nB. 1\nC. 2\nD. 3",
+      "number": "9",
+      "concepts": [
+        "多媒體",
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "硬件",
+        "科技創新"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎；E-資訊及通訊科技對社會的影響",
+      "marks": 1,
+      "stem": "執行以下 SQL語句後,會有多少筆記錄輸出? SELECT AWARD FROM MEM WHERE CAT LIKE 'M%' GROUP BY AWARD HAVING SUM(POINT) > 4",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "source_page": 4,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "9",
+        "page": 4,
+        "question_text": "執行以下 SQL語句後,會有多少筆記錄輸出? SELECT AWARD FROM MEM WHERE CAT LIKE 'M%' GROUP BY AWARD HAVING SUM(POINT) > 4",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "2",
+          "D": "3"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-10",
+      "section": "mcq",
+      "text": "下列哪項是在資訊處理中使用數據控制的主要目的?\nA. 簡化資訊處理\nB. 確保數據完整性\nC. 消除對數據保安的依賴\nD. 提升數據壓縮的效率",
+      "number": "10",
+      "concepts": [
+        "多媒體",
+        "資訊處理",
+        "數據控制",
+        "有效性檢驗"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "下列哪項是在資訊處理中使用數據控制的主要目的?",
+      "options": {
+        "A": "簡化資訊處理",
+        "B": "確保數據完整性",
+        "C": "消除對數據保安的依賴",
+        "D": "提升數據壓縮的效率"
+      },
+      "source_page": 4,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "10",
+        "page": 4,
+        "question_text": "下列哪項是在資訊處理中使用數據控制的主要目的?",
+        "options": {
+          "A": "簡化資訊處理",
+          "B": "確保數據完整性",
+          "C": "消除對數據保安的依賴",
+          "D": "提升數據壓縮的效率"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-11",
+      "section": "mcq",
+      "text": "一台電腦包含CPU和GPU。下列哪句關於CPU和GPU的陳述是最恰當的?\nA. 兩者都有多個可以執行指令的核心\nB. 兩者都主要針對圖形渲染進行優化\nC. 兩者經常一同用於執行數據分析的任務\nD. CPU是用於多工處理,而GPU是用於單工處理",
+      "number": "11",
+      "concepts": [
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "marks": 1,
+      "stem": "一台電腦包含CPU和GPU。下列哪句關於CPU和GPU的陳述是最恰當的?",
+      "options": {
+        "A": "兩者都有多個可以執行指令的核心",
+        "B": "兩者都主要針對圖形渲染進行優化",
+        "C": "兩者經常一同用於執行數據分析的任務",
+        "D": "CPU是用於多工處理,而GPU是用於單工處理"
+      },
+      "source_page": 4,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "11",
+        "page": 4,
+        "question_text": "一台電腦包含CPU和GPU。下列哪句關於CPU和GPU的陳述是最恰當的?",
+        "options": {
+          "A": "兩者都有多個可以執行指令的核心",
+          "B": "兩者都主要針對圖形渲染進行優化",
+          "C": "兩者經常一同用於執行數據分析的任務",
+          "D": "CPU是用於多工處理,而GPU是用於單工處理"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-12",
+      "section": "mcq",
+      "text": "下列哪項/些對「提取一譯碼一執行」周期的陳述是正確的?\n(1) 程式指令會被翻譯成機器碼以執行程式\n(2) 程式指令會被分成多個部分,供不同 CPU 部件處理\n(3) CPU 內寄存器是用於控制處理器的操作\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+      "number": "12",
+      "concepts": [
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "marks": 1,
+      "stem": "下列哪項/些對「提取一譯碼一執行」周期的陳述是正確的?\n(1) 程式指令會被翻譯成機器碼以執行程式\n(2) 程式指令會被分成多個部分,供不同 CPU 部件處理\n(3) CPU 內寄存器是用於控制處理器的操作",
+      "options": {
+        "A": "只有(1)",
+        "B": "只有(2)",
+        "C": "只有(1)和(3)",
+        "D": "只有(2)和(3)"
+      },
+      "source_page": 4,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "12",
+        "page": 4,
+        "question_text": "下列哪項/些對「提取一譯碼一執行」周期的陳述是正確的?\n(1) 程式指令會被翻譯成機器碼以執行程式\n(2) 程式指令會被分成多個部分,供不同 CPU 部件處理\n(3) CPU 內寄存器是用於控制處理器的操作",
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-13",
+      "section": "mcq",
+      "text": "下列哪項最能描述並行式處理系統?\nA. 它在夜間利用閒置系統資源處理數據\nB. 它處理輸入數據後立即產生輸出\nC. 它同時處理一個程式的不同任務\nD. 它同時處理多個用戶的任務",
+      "number": "13",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "下列哪項最能描述並行式處理系統?",
+      "options": {
+        "A": "它在夜間利用閒置系統資源處理數據",
+        "B": "它處理輸入數據後立即產生輸出",
+        "C": "它同時處理一個程式的不同任務",
+        "D": "它同時處理多個用戶的任務"
+      },
+      "source_page": 4,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "13",
+        "page": 4,
+        "question_text": "下列哪項最能描述並行式處理系統?",
+        "options": {
+          "A": "它在夜間利用閒置系統資源處理數據",
+          "B": "它處理輸入數據後立即產生輸出",
+          "C": "它同時處理一個程式的不同任務",
+          "D": "它同時處理多個用戶的任務"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-14",
+      "section": "mcq",
+      "text": "成批處理適用於\nA. ATM(自動櫃員機)現金提款\nB. 處理火警警報\nC. 售賣電影門票\nD. 計算學生考試成績",
+      "number": "14",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "成批處理適用於",
+      "options": {
+        "A": "ATM(自動櫃員機)現金提款",
+        "B": "處理火警警報",
+        "C": "售賣電影門票",
+        "D": "計算學生考試成績"
+      },
+      "source_page": 5,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "14",
+        "page": 5,
+        "question_text": "成批處理適用於",
+        "options": {
+          "A": "ATM(自動櫃員機)現金提款",
+          "B": "處理火警警報",
+          "C": "售賣電影門票",
+          "D": "計算學生考試成績"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-15",
+      "section": "mcq",
+      "text": "你在電腦內的操作系統上進行重大升級前,首先應該做什麼?\nA. 建立新的檔案系統,如NTFS 和 FAT32\nB. 將電腦內的重要檔案進行備份\nC. 更新主要輸入和輸出設備的驅動程式\nD. 中斷互聯網連線以避免任何未經授權存取",
+      "number": "15",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "軟件",
+        "作業系統",
+        "網絡保安",
+        "資訊保安"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎；C-互聯網及其應用",
+      "marks": 1,
+      "stem": "你在電腦內的操作系統上進行重大升級前,首先應該做什麼?",
+      "options": {
+        "A": "建立新的檔案系統,如NTFS 和 FAT32",
+        "B": "將電腦內的重要檔案進行備份",
+        "C": "更新主要輸入和輸出設備的驅動程式",
+        "D": "中斷互聯網連線以避免任何未經授權存取"
+      },
+      "source_page": 5,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "15",
+        "page": 5,
+        "question_text": "你在電腦內的操作系統上進行重大升級前,首先應該做什麼?",
+        "options": {
+          "A": "建立新的檔案系統,如NTFS 和 FAT32",
+          "B": "將電腦內的重要檔案進行備份",
+          "C": "更新主要輸入和輸出設備的驅動程式",
+          "D": "中斷互聯網連線以避免任何未經授權存取"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-16",
+      "section": "mcq",
+      "text": "某公司製造可穿戴的人工智能眼鏡。下列眼鏡內哪一個組件儲存系統啟動程式?\nA. 擴增實境(AR)組件\nB. GPU\nC. RAM\nD. ROM",
+      "number": "16",
+      "concepts": [
+        "硬件",
+        "科技創新"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎；E-資訊及通訊科技對社會的影響",
+      "marks": 1,
+      "stem": "某公司製造可穿戴的人工智能眼鏡。下列眼鏡內哪一個組件儲存系統啟動程式?",
+      "options": {
+        "A": "擴增實境(AR)組件",
+        "B": "GPU",
+        "C": "RAM",
+        "D": "ROM"
+      },
+      "source_page": 5,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "16",
+        "page": 5,
+        "question_text": "某公司製造可穿戴的人工智能眼鏡。下列眼鏡內哪一個組件儲存系統啟動程式?",
+        "options": {
+          "A": "擴增實境(AR)組件",
+          "B": "GPU",
+          "C": "RAM",
+          "D": "ROM"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-17",
+      "section": "mcq",
+      "text": "下列哪些最能描述交換器的功能?\n(1) 它防止在數據傳輸時有數據衝突\n(2) 它根據 MAC位址將數據定向到各裝置\n(3) 它將 LAN 直接連接到 WAN\nA. 只有(1)和(2)\nB. 只有(1)和(3)\nC. 只有(2)和(3)\nD. (1)、(2)和(3)",
+      "number": "17",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "下列哪些最能描述交換器的功能?\n(1) 它防止在數據傳輸時有數據衝突\n(2) 它根據 MAC位址將數據定向到各裝置\n(3) 它將 LAN 直接連接到 WAN",
+      "options": {
+        "A": "只有(1)和(2)",
+        "B": "只有(1)和(3)",
+        "C": "只有(2)和(3)",
+        "D": "(1)、(2)和(3)"
+      },
+      "source_page": 5,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "17",
+        "page": 5,
+        "question_text": "下列哪些最能描述交換器的功能?\n(1) 它防止在數據傳輸時有數據衝突\n(2) 它根據 MAC位址將數據定向到各裝置\n(3) 它將 LAN 直接連接到 WAN",
+        "options": {
+          "A": "只有(1)和(2)",
+          "B": "只有(1)和(3)",
+          "C": "只有(2)和(3)",
+          "D": "(1)、(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-18",
+      "section": "mcq",
+      "text": "流動裝置連接至一個 Wi-Fi 網絡,但其連接速度很慢。下列哪項是可能的原因?\nA. 此網絡不提供漫遊服務\nB. 此網絡中使用了雙頻無線路由器\nC. 該流動裝置內沒有網絡界面卡\nD. 此網絡中有許多用戶同時在線",
+      "number": "18",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "流動裝置連接至一個 Wi-Fi 網絡,但其連接速度很慢。下列哪項是可能的原因?",
+      "options": {
+        "A": "此網絡不提供漫遊服務",
+        "B": "此網絡中使用了雙頻無線路由器",
+        "C": "該流動裝置內沒有網絡界面卡",
+        "D": "此網絡中有許多用戶同時在線"
+      },
+      "source_page": 5,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "18",
+        "page": 5,
+        "question_text": "流動裝置連接至一個 Wi-Fi 網絡,但其連接速度很慢。下列哪項是可能的原因?",
+        "options": {
+          "A": "此網絡不提供漫遊服務",
+          "B": "此網絡中使用了雙頻無線路由器",
+          "C": "該流動裝置內沒有網絡界面卡",
+          "D": "此網絡中有許多用戶同時在線"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-19",
+      "section": "mcq",
+      "text": "小珊使用藍牙而非 Wi-Fi 來把裝置連接至電腦。下列哪項是可能的原因?\nA. 藍牙提供更大的網絡覆蓋範圍\nB. 藍牙支援更高的數據傳輸速率\nC. 藍牙有更低的耗電量\nD. 藍牙可阻隔周邊裝置的干擾",
+      "number": "19",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "小珊使用藍牙而非 Wi-Fi 來把裝置連接至電腦。下列哪項是可能的原因?",
+      "options": {
+        "A": "藍牙提供更大的網絡覆蓋範圍",
+        "B": "藍牙支援更高的數據傳輸速率",
+        "C": "藍牙有更低的耗電量",
+        "D": "藍牙可阻隔周邊裝置的干擾"
+      },
+      "source_page": 5,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "19",
+        "page": 5,
+        "question_text": "小珊使用藍牙而非 Wi-Fi 來把裝置連接至電腦。下列哪項是可能的原因?",
+        "options": {
+          "A": "藍牙提供更大的網絡覆蓋範圍",
+          "B": "藍牙支援更高的數據傳輸速率",
+          "C": "藍牙有更低的耗電量",
+          "D": "藍牙可阻隔周邊裝置的干擾"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-20",
+      "section": "mcq",
+      "text": "在互聯網上,數據在傳送前會分成數據包,當中會涉及下列哪個通訊協定?\nA. IP\nB. HTTPS\nC. TCP\nD. DNS",
+      "number": "20",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "在互聯網上,數據在傳送前會分成數據包,當中會涉及下列哪個通訊協定?",
+      "options": {
+        "A": "IP",
+        "B": "HTTPS",
+        "C": "TCP",
+        "D": "DNS"
+      },
+      "source_page": 6,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "20",
+        "page": 6,
+        "question_text": "在互聯網上,數據在傳送前會分成數據包,當中會涉及下列哪個通訊協定?",
+        "options": {
+          "A": "IP",
+          "B": "HTTPS",
+          "C": "TCP",
+          "D": "DNS"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-21",
+      "section": "mcq",
+      "text": "下列哪項最能描述防火牆的作用?\nA. 透過掃瞄所有進入網絡的數據來保護電腦免受病毒感染\nB. 在數據傳輸時使用PKI進行數據加密\nC. 提供一次性密碼來驗證用戶身份\nD. 防止在未經授權存取下的網絡連接",
+      "number": "21",
+      "concepts": [
+        "數據控制",
+        "有效性檢驗",
+        "網絡保安",
+        "資訊保安",
+        "奇偶檢測"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；C-互聯網及其應用",
+      "marks": 1,
+      "stem": "下列哪項最能描述防火牆的作用?",
+      "options": {
+        "A": "透過掃瞄所有進入網絡的數據來保護電腦免受病毒感染",
+        "B": "在數據傳輸時使用PKI進行數據加密",
+        "C": "提供一次性密碼來驗證用戶身份",
+        "D": "防止在未經授權存取下的網絡連接"
+      },
+      "source_page": 6,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "21",
+        "page": 6,
+        "question_text": "下列哪項最能描述防火牆的作用?",
+        "options": {
+          "A": "透過掃瞄所有進入網絡的數據來保護電腦免受病毒感染",
+          "B": "在數據傳輸時使用PKI進行數據加密",
+          "C": "提供一次性密碼來驗證用戶身份",
+          "D": "防止在未經授權存取下的網絡連接"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-22",
+      "section": "mcq",
+      "text": "下列哪些行為有可能被視作不道德?\n(1) 某學生在未有註明出處下,使用他人的程式段參加編程比賽\n(2) 某公司查看員工透過公司電腦網絡瀏覽網頁的URL\n(3) 某公司移除從網上下載的圖像內的數碼水印,並把它們上載至其網站\nA. 只有(1)和(2)\nB. 只有(1)和(3)\nC. 只有(2)和(3)\nD. (1)、(2)和(3)",
+      "number": "22",
+      "concepts": [
+        "網絡",
+        "網頁創作",
+        "社會影響",
+        "道德議題"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用；E-資訊及通訊科技對社會的影響",
+      "marks": 1,
+      "stem": "下列哪些行為有可能被視作不道德?\n(1) 某學生在未有註明出處下,使用他人的程式段參加編程比賽\n(2) 某公司查看員工透過公司電腦網絡瀏覽網頁的URL\n(3) 某公司移除從網上下載的圖像內的數碼水印,並把它們上載至其網站",
+      "options": {
+        "A": "只有(1)和(2)",
+        "B": "只有(1)和(3)",
+        "C": "只有(2)和(3)",
+        "D": "(1)、(2)和(3)"
+      },
+      "source_page": 6,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "22",
+        "page": 6,
+        "question_text": "下列哪些行為有可能被視作不道德?\n(1) 某學生在未有註明出處下,使用他人的程式段參加編程比賽\n(2) 某公司查看員工透過公司電腦網絡瀏覽網頁的URL\n(3) 某公司移除從網上下載的圖像內的數碼水印,並把它們上載至其網站",
+        "options": {
+          "A": "只有(1)和(2)",
+          "B": "只有(1)和(3)",
+          "C": "只有(2)和(3)",
+          "D": "(1)、(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-23",
+      "section": "mcq",
+      "text": "該公司應該執行下列哪項/些來避免此非法行為?\n(1) 使用VPN 加強網絡保安\n(2) 實時監察客戶數據的存取\n(3) 在每個連接上使用 PKI\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+      "number": "23",
+      "concepts": [
+        "軟件",
+        "作業系統",
+        "網絡保安",
+        "資訊保安"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎；C-互聯網及其應用",
+      "marks": 1,
+      "stem": "該公司應該執行下列哪項/些來避免此非法行為?\n(1) 使用VPN 加強網絡保安\n(2) 實時監察客戶數據的存取\n(3) 在每個連接上使用 PKI",
+      "options": {
+        "A": "只有(1)",
+        "B": "只有(2)",
+        "C": "只有(1)和(3)",
+        "D": "只有(2)和(3)"
+      },
+      "source_page": 6,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "23",
+        "page": 6,
+        "question_text": "該公司應該執行下列哪項/些來避免此非法行為?\n(1) 使用VPN 加強網絡保安\n(2) 實時監察客戶數據的存取\n(3) 在每個連接上使用 PKI",
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-24",
+      "section": "mcq",
+      "text": "下列哪些陳述是正確的?\n(1) 安裝間諜軟件會導致網上活動遭到未經授權監控\n(2) 仿冒詐騙可以透過多種渠道進行,包括電郵、社交媒體和 SMS\n(3) 開啟濫發郵件的唯一風險是受到廣告的騷擾\nA. 只有(1)和(2)\nB. 只有(1)和(3)\nC. 只有(2)和(3)\nD. (1)、(2)和(3)",
+      "number": "24",
+      "concepts": [
+        "網絡保安",
+        "資訊保安"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "下列哪些陳述是正確的?\n(1) 安裝間諜軟件會導致網上活動遭到未經授權監控\n(2) 仿冒詐騙可以透過多種渠道進行,包括電郵、社交媒體和 SMS\n(3) 開啟濫發郵件的唯一風險是受到廣告的騷擾",
+      "options": {
+        "A": "只有(1)和(2)",
+        "B": "只有(1)和(3)",
+        "C": "只有(2)和(3)",
+        "D": "(1)、(2)和(3)"
+      },
+      "source_page": 6,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "24",
+        "page": 6,
+        "question_text": "下列哪些陳述是正確的?\n(1) 安裝間諜軟件會導致網上活動遭到未經授權監控\n(2) 仿冒詐騙可以透過多種渠道進行,包括電郵、社交媒體和 SMS\n(3) 開啟濫發郵件的唯一風險是受到廣告的騷擾",
+        "options": {
+          "A": "只有(1)和(2)",
+          "B": "只有(1)和(3)",
+          "C": "只有(2)和(3)",
+          "D": "(1)、(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-25",
+      "section": "mcq",
+      "text": "網上購物商店使用SSL 建立了一個網站。使用SSL的主要目的是什麼?\nA. 節省開發時間,並優化網頁設計\nB. 驗證用戶身份\nC. 將DoS攻擊帶來的影響減至最少\nD. 將經互聯網傳輸的數據加密",
+      "number": "25",
+      "concepts": [
+        "數據控制",
+        "有效性檢驗",
+        "網絡保安",
+        "資訊保安",
+        "網頁創作",
+        "奇偶檢測"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；C-互聯網及其應用",
+      "marks": 1,
+      "stem": "網上購物商店使用SSL 建立了一個網站。使用SSL的主要目的是什麼?",
+      "options": {
+        "A": "節省開發時間,並優化網頁設計",
+        "B": "驗證用戶身份",
+        "C": "將DoS攻擊帶來的影響減至最少",
+        "D": "將經互聯網傳輸的數據加密"
+      },
+      "source_page": 7,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "25",
+        "page": 7,
+        "question_text": "網上購物商店使用SSL 建立了一個網站。使用SSL的主要目的是什麼?",
+        "options": {
+          "A": "節省開發時間,並優化網頁設計",
+          "B": "驗證用戶身份",
+          "C": "將DoS攻擊帶來的影響減至最少",
+          "D": "將經互聯網傳輸的數據加密"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-26",
+      "section": "mcq",
+      "text": "假設 X = -3, Y = 1和z = 4。下列哪個布爾算式結果是 false?\nA. (Y < Z) or (Y > X and X > Z)\nB. (Y < Z) or (Y > X or X > Z)\nC. (X + Y < -2 and Y - X = Z) and (X > Z)\nD. (X + Y < -2 or Y - X = Z) or (X > Z)",
+      "number": "26",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "marks": 1,
+      "stem": "假設 X = -3, Y = 1和z = 4。下列哪個布爾算式結果是 false?",
+      "options": {
+        "A": "(Y < Z) or (Y > X and X > Z)",
+        "B": "(Y < Z) or (Y > X or X > Z)",
+        "C": "(X + Y < -2 and Y - X = Z) and (X > Z)",
+        "D": "(X + Y < -2 or Y - X = Z) or (X > Z)"
+      },
+      "source_page": 7,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "26",
+        "page": 7,
+        "question_text": "假設 X = -3, Y = 1和z = 4。下列哪個布爾算式結果是 false?",
+        "options": {
+          "A": "(Y < Z) or (Y > X and X > Z)",
+          "B": "(Y < Z) or (Y > X or X > Z)",
+          "C": "(X + Y < -2 and Y - X = Z) and (X > Z)",
+          "D": "(X + Y < -2 or Y - X = Z) or (X > Z)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-27",
+      "section": "mcq",
+      "text": "下列算法的輸出是什麼?\nX ← 6\nY ← 13\n當X >= 1\n Y ← Y - 3\n X ← Y - X\n輸出 Y\nX ← 9　Y ← 2\n重複\n   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分\n直至 X = 0\nA. 1\nB. 4\nC. 7\nD. 10",
+      "number": "27",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "下列算法的輸出是什麼?\nX ← 6\nY ← 13\n當X >= 1\n Y ← Y - 3\n X ← Y - X\n輸出 Y",
+      "options": {
+        "A": "1",
+        "B": "4",
+        "C": "7",
+        "D": "10"
+      },
+      "source_page": 7,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "27",
+        "page": 7,
+        "question_text": "下列算法的輸出是什麼?\nX ← 6\nY ← 13\n當X >= 1\n Y ← Y - 3\n X ← Y - X\n輸出 Y",
+        "options": {
+          "A": "1",
+          "B": "4",
+          "C": "7",
+          "D": "10"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "X ← 9　Y ← 2",
+          "重複",
+          "   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分",
+          "直至 X = 0"
+        ],
+        "sources": [
+          "static_template:remainder_output_2021_q29"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.373335+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-28",
+      "section": "mcq",
+      "text": "執行下列算法後,ch內哪個/些值是「K」?\nN ← 4\n設i由0至N\n ch[i] ← ch[i+1]\n 如果 ch[i] = 'C'\n  ch[i] ← 'K'\n(1) ch[1]\n(2) ch[2]\n(3) ch[3]\nN ← 4\n設i由0至N\nch[i] ← ch[i+1]\n如果 ch[i] = 'C'\nch[i] ← 'K'\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+      "number": "28",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "執行下列算法後,ch內哪個/些值是「K」?\nN ← 4\n設i由0至N\n ch[i] ← ch[i+1]\n 如果 ch[i] = 'C'\n  ch[i] ← 'K'\n(1) ch[1]\n(2) ch[2]\n(3) ch[3]",
+      "options": {
+        "A": "只有(1)",
+        "B": "只有(2)",
+        "C": "只有(1)和(3)",
+        "D": "只有(2)和(3)"
+      },
+      "source_page": 7,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "28",
+        "page": 7,
+        "question_text": "執行下列算法後,ch內哪個/些值是「K」?\nN ← 4\n設i由0至N\n ch[i] ← ch[i+1]\n 如果 ch[i] = 'C'\n  ch[i] ← 'K'\n(1) ch[1]\n(2) ch[2]\n(3) ch[3]",
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "N ← 4",
+          "設i由0至N",
+          "ch[i] ← ch[i+1]",
+          "如果 ch[i] = 'C'",
+          "ch[i] ← 'K'"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.373335+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-29",
+      "section": "mcq",
+      "text": "細看以下算法: 輸入N 如果N > 90 輸出 'A' 否則如果N > 70 輸出 'B' 否則 輸出 'C' 下列哪組數據最適合用來測試此算法?\nA. 100 90 65 50 40 30\nB. 99 89 79 69 59 0\nC. 95 85 75 65 55 0\nD. 95 90 80 70 60 50",
+      "number": "29",
+      "concepts": [
+        "算法",
+        "偽代碼",
+        "程式測試"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "細看以下算法: 輸入N 如果N > 90 輸出 'A' 否則如果N > 70 輸出 'B' 否則 輸出 'C' 下列哪組數據最適合用來測試此算法?",
+      "options": {
+        "A": "100 90 65 50 40 30",
+        "B": "99 89 79 69 59 0",
+        "C": "95 85 75 65 55 0",
+        "D": "95 90 80 70 60 50"
+      },
+      "source_page": 8,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "29",
+        "page": 8,
+        "question_text": "細看以下算法: 輸入N 如果N > 90 輸出 'A' 否則如果N > 70 輸出 'B' 否則 輸出 'C' 下列哪組數據最適合用來測試此算法?",
+        "options": {
+          "A": "100 90 65 50 40 30",
+          "B": "99 89 79 69 59 0",
+          "C": "95 85 75 65 55 0",
+          "D": "95 90 80 70 60 50"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-30",
+      "section": "mcq",
+      "text": "執行下列算法後, sum的值是什麼?\n設i由0至10\n N[i] ← i\n設i由0至8\n N[i] ← N[i+2] - N[i+1]\nsum ← 0\n設i由0至10\n sum ← sum + N[i]\n設i由0至10\nN[i] ← i\n設i由0至8\nN[i] ← N[i+2] - N[i+1]\nsum ← 0\nsum ← sum + N[i]\nA. 10\nB. 27\nC. 28\nD. 29",
+      "number": "30",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "執行下列算法後, sum的值是什麼?\n設i由0至10\n N[i] ← i\n設i由0至8\n N[i] ← N[i+2] - N[i+1]\nsum ← 0\n設i由0至10\n sum ← sum + N[i]",
+      "options": {
+        "A": "10",
+        "B": "27",
+        "C": "28",
+        "D": "29"
+      },
+      "source_page": 8,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "30",
+        "page": 8,
+        "question_text": "執行下列算法後, sum的值是什麼?\n設i由0至10\n N[i] ← i\n設i由0至8\n N[i] ← N[i+2] - N[i+1]\nsum ← 0\n設i由0至10\n sum ← sum + N[i]",
+        "options": {
+          "A": "10",
+          "B": "27",
+          "C": "28",
+          "D": "29"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "設i由0至10",
+          "N[i] ← i",
+          "設i由0至8",
+          "N[i] ← N[i+2] - N[i+1]",
+          "sum ← 0",
+          "sum ← sum + N[i]"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.373335+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-31",
+      "section": "mcq",
+      "text": "在以下算法中,P、Q和R是整數變量。 如果P >= Q 如果(R > P and Q > R) X ← 10 否則 X ← 20 否則 如果(P = Q and Q = R) X ← 30 否則 X ← 40 此算法可生成多少個不同的x值?\nA. 1\nB. 2\nC. 3\nD. 4",
+      "number": "31",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "在以下算法中,P、Q和R是整數變量。 如果P >= Q 如果(R > P and Q > R) X ← 10 否則 X ← 20 否則 如果(P = Q and Q = R) X ← 30 否則 X ← 40 此算法可生成多少個不同的x值?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "source_page": 8,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "31",
+        "page": 8,
+        "question_text": "在以下算法中,P、Q和R是整數變量。 如果P >= Q 如果(R > P and Q > R) X ← 10 否則 X ← 20 否則 如果(P = Q and Q = R) X ← 30 否則 X ← 40 此算法可生成多少個不同的x值?",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-32",
+      "section": "mcq",
+      "text": "版本2內未填寫的部分會是什麼?\nA. {'(1)': 'k ← 9', '(2)': 'k < 20'}\nB. {'(1)': 'k ← 9', '(2)': 'k <= 20'}\nC. {'(1)': 'k ← 10', '(2)': 'k < 20'}\nD. {'(1)': 'k ← 10', '(2)': 'k <= 20'}",
+      "number": "32",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "版本2內未填寫的部分會是什麼?",
+      "options": {
+        "A": "{'(1)': 'k ← 9', '(2)': 'k < 20'}",
+        "B": "{'(1)': 'k ← 9', '(2)': 'k <= 20'}",
+        "C": "{'(1)': 'k ← 10', '(2)': 'k < 20'}",
+        "D": "{'(1)': 'k ← 10', '(2)': 'k <= 20'}"
+      },
+      "source_page": 9,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "32",
+        "page": 9,
+        "question_text": "版本2內未填寫的部分會是什麼?",
+        "options": {
+          "A": {
+            "(1)": "k ← 9",
+            "(2)": "k < 20"
+          },
+          "B": {
+            "(1)": "k ← 9",
+            "(2)": "k <= 20"
+          },
+          "C": {
+            "(1)": "k ← 10",
+            "(2)": "k < 20"
+          },
+          "D": {
+            "(1)": "k ← 10",
+            "(2)": "k <= 20"
+          }
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-33",
+      "section": "mcq",
+      "text": "以下算法會輸出多少個「$」?\nx ← 40\ny ← 10\n當(x > 20 and y < 20)\n 輸出 '$'\n x ← x - 5\n y ← y + 1\nx ← 40\ny ← 10\n當(x > 20 and y < 20)\n輸出 '$'\nx ← x - 5\ny ← y + 1\nA. 2\nB. 3\nC. 4\nD. 5",
+      "number": "33",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "以下算法會輸出多少個「$」?\nx ← 40\ny ← 10\n當(x > 20 and y < 20)\n 輸出 '$'\n x ← x - 5\n y ← y + 1",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "source_page": 9,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "33",
+        "page": 9,
+        "question_text": "以下算法會輸出多少個「$」?\nx ← 40\ny ← 10\n當(x > 20 and y < 20)\n 輸出 '$'\n x ← x - 5\n y ← y + 1",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "x ← 40",
+          "y ← 10",
+          "當(x > 20 and y < 20)",
+          "輸出 '$'",
+          "x ← x - 5",
+          "y ← y + 1"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.373335+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      }
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-34",
+      "section": "mcq",
+      "text": "下列哪句/些作為語句 x會導致算法進入無限循環?\n(1) s ← s + 6\n(2) s ← s + s\n(3) s ← -2 * s\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+      "number": "34",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "下列哪句/些作為語句 x會導致算法進入無限循環?\n(1) s ← s + 6\n(2) s ← s + s\n(3) s ← -2 * s",
+      "options": {
+        "A": "只有(1)",
+        "B": "只有(2)",
+        "C": "只有(1)和(3)",
+        "D": "只有(2)和(3)"
+      },
+      "source_page": 9,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "34",
+        "page": 9,
+        "question_text": "下列哪句/些作為語句 x會導致算法進入無限循環?\n(1) s ← s + 6\n(2) s ← s + s\n(3) s ← -2 * s",
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-35",
+      "section": "mcq",
+      "text": "執行以下程式段後,n的值是什麼?\nA. -1\nB. 0\nC. 1\nD. 2",
+      "number": "35",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "執行以下程式段後,n的值是什麼?",
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "source_page": 10,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "35",
+        "page": 10,
+        "question_text": "執行以下程式段後,n的值是什麼?",
+        "options": {
+          "A": "-1",
+          "B": "0",
+          "C": "1",
+          "D": "2"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-36",
+      "section": "mcq",
+      "text": "初始時, a = 48 和b = 18。執行以下程式段後,a的值是什麼?\nA. 0\nB. 2\nC. 6\nD. 12",
+      "number": "36",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-甲部",
+      "marks": 1,
+      "stem": "初始時, a = 48 和b = 18。執行以下程式段後,a的值是什麼?",
+      "options": {
+        "A": "0",
+        "B": "2",
+        "C": "6",
+        "D": "12"
+      },
+      "source_page": 10,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "36",
+        "page": 10,
+        "question_text": "初始時, a = 48 和b = 18。執行以下程式段後,a的值是什麼?",
+        "options": {
+          "A": "0",
+          "B": "2",
+          "C": "6",
+          "D": "12"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-37",
+      "section": "mcq",
+      "text": "下列哪項是正確的?\nA. 第1行有語法錯誤\nB. 第3行有邏輯錯誤\nC. 第8行有運行錯誤\nD. 以上皆不是",
+      "number": "37",
+      "concepts": [
+        "程式測試"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "下列哪項是正確的?",
+      "options": {
+        "A": "第1行有語法錯誤",
+        "B": "第3行有邏輯錯誤",
+        "C": "第8行有運行錯誤",
+        "D": "以上皆不是"
+      },
+      "source_page": 11,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "37",
+        "page": 11,
+        "question_text": "下列哪項是正確的?",
+        "options": {
+          "A": "第1行有語法錯誤",
+          "B": "第3行有邏輯錯誤",
+          "C": "第8行有運行錯誤",
+          "D": "以上皆不是"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-38",
+      "section": "mcq",
+      "text": "下列哪項是正確的?\nA. 第7行有語法錯誤\nB. 第7行有邏輯錯誤\nC. 第7行有運行錯誤\nD. 以上皆不是",
+      "number": "38",
+      "concepts": [
+        "程式測試"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "marks": 1,
+      "stem": "下列哪項是正確的?",
+      "options": {
+        "A": "第7行有語法錯誤",
+        "B": "第7行有邏輯錯誤",
+        "C": "第7行有運行錯誤",
+        "D": "以上皆不是"
+      },
+      "source_page": 11,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "38",
+        "page": 11,
+        "question_text": "下列哪項是正確的?",
+        "options": {
+          "A": "第7行有語法錯誤",
+          "B": "第7行有邏輯錯誤",
+          "C": "第7行有運行錯誤",
+          "D": "以上皆不是"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-39",
+      "section": "mcq",
+      "text": "下列哪項是正確的?\nA. ISP 提供數碼證書,以保障互聯網連接的安全\nB. HTTPS 協定只應用於互聯網\nC. TCP/IP 協定只應用於互聯網\nD. 可信賴的HTTPS連接應當有一張數碼證書",
+      "number": "39",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "marks": 1,
+      "stem": "下列哪項是正確的?",
+      "options": {
+        "A": "ISP 提供數碼證書,以保障互聯網連接的安全",
+        "B": "HTTPS 協定只應用於互聯網",
+        "C": "TCP/IP 協定只應用於互聯網",
+        "D": "可信賴的HTTPS連接應當有一張數碼證書"
+      },
+      "source_page": 11,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "39",
+        "page": 11,
+        "question_text": "下列哪項是正確的?",
+        "options": {
+          "A": "ISP 提供數碼證書,以保障互聯網連接的安全",
+          "B": "HTTPS 協定只應用於互聯網",
+          "C": "TCP/IP 協定只應用於互聯網",
+          "D": "可信賴的HTTPS連接應當有一張數碼證書"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2026-Paper1A_MultipleChoice-40",
+      "section": "mcq",
+      "text": "志明開發了一個開放源碼軟件。下列哪項/些是正確的?\n(1) 志明放棄了該軟件的版權\n(2) 志明可以出售該軟件的副本\n(3) 用戶必需獲取志明的批准才可修改源碼\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+      "number": "40",
+      "concepts": [
+        "社會影響",
+        "道德議題"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "E-資訊及通訊科技對社會的影響",
+      "marks": 1,
+      "stem": "志明開發了一個開放源碼軟件。下列哪項/些是正確的?\n(1) 志明放棄了該軟件的版權\n(2) 志明可以出售該軟件的副本\n(3) 用戶必需獲取志明的批准才可修改源碼",
+      "options": {
+        "A": "只有(1)",
+        "B": "只有(2)",
+        "C": "只有(1)和(3)",
+        "D": "只有(2)和(3)"
+      },
+      "source_page": 11,
+      "gemini_source": "2026-p1a.json",
+      "gemini_raw": {
+        "question_number": "40",
+        "page": 11,
+        "question_text": "志明開發了一個開放源碼軟件。下列哪項/些是正確的?\n(1) 志明放棄了該軟件的版權\n(2) 志明可以出售該軟件的副本\n(3) 用戶必需獲取志明的批准才可修改源碼",
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    }
+  ],
+  "paper": {
+    "id": "2026-Paper1A_MultipleChoice",
+    "questions": [
+      {
+        "id": "2026-Paper1A_MultipleChoice-1",
+        "type": "mcq",
+        "number": "1",
+        "section": "mcq",
+        "text": "下列哪項不是網上商店的數據驗證示例?\nA. 客戶在建立帳戶時輸入兩次密碼\nB. 兩名職員獨立輸入同一組數據至數據庫\nC. 一名職員將其他職員輸入的數據與原始數據進行核對\nD. 電腦程式根據日曆規則檢查輸入日期",
+        "marks": 1,
+        "concepts": [
+          "數據控制",
+          "有效性檢驗",
+          "奇偶檢測"
+        ],
+        "options": {
+          "A": "客戶在建立帳戶時輸入兩次密碼",
+          "B": "兩名職員獨立輸入同一組數據至數據庫",
+          "C": "一名職員將其他職員輸入的數據與原始數據進行核對",
+          "D": "電腦程式根據日曆規則檢查輸入日期"
+        },
+        "stem": "下列哪項不是網上商店的數據驗證示例?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-2",
+        "type": "mcq",
+        "number": "2",
+        "section": "mcq",
+        "text": "下列哪個/些是使用統一碼而不使用 ASCII的優點?\n(1) 統一碼包含更多語言字符,例如日文字符\n(2) 統一碼比ASCII佔用較少儲存空間\n(3) 統一碼包含符號「@」和「&」\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "字元編碼"
+        ],
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        },
+        "stem": "下列哪個/些是使用統一碼而不使用 ASCII的優點?\n(1) 統一碼包含更多語言字符,例如日文字符\n(2) 統一碼比ASCII佔用較少儲存空間\n(3) 統一碼包含符號「@」和「&」",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-3",
+        "type": "mcq",
+        "number": "3",
+        "section": "mcq",
+        "text": "與 H.264 相比,H.265是一種用於MP4的較佳視像壓縮標準。下列哪句陳述是正確的?\nA. H.264 不支援視像串流\nB. 使用H.265 的檔案大小通常較小\nC. H.265 較佳,是因為它是一種開放源碼編碼解碼器\nD. 使用H.265 需要 GPU",
+        "marks": 1,
+        "concepts": [
+          "多媒體",
+          "數據組織",
+          "檔案存取",
+          "硬件"
+        ],
+        "options": {
+          "A": "H.264 不支援視像串流",
+          "B": "使用H.265 的檔案大小通常較小",
+          "C": "H.265 較佳,是因為它是一種開放源碼編碼解碼器",
+          "D": "使用H.265 需要 GPU"
+        },
+        "stem": "與 H.264 相比,H.265是一種用於MP4的較佳視像壓縮標準。下列哪句陳述是正確的?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-4",
+        "type": "mcq",
+        "number": "4",
+        "section": "mcq",
+        "text": "某電腦系統使用20個位元來儲存每個用戶編號,其中最後一個位元是奇偶檢驗位。該系統最多可以支援多少個用戶編號?\nA. 19^2\nB. 20^2\nC. 2^19\nD. 2^20",
+        "marks": 1,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "奇偶檢測",
+          "有效性檢驗"
+        ],
+        "options": {
+          "A": "19^2",
+          "B": "20^2",
+          "C": "2^19",
+          "D": "2^20"
+        },
+        "stem": "某電腦系統使用20個位元來儲存每個用戶編號,其中最後一個位元是奇偶檢驗位。該系統最多可以支援多少個用戶編號?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-5",
+        "type": "mcq",
+        "number": "5",
+        "section": "mcq",
+        "text": "將下列使用二進制補碼表示的8位元數字乘以-1後,哪個會出現溢出誤差?\nA. 1000 0000\nB. 1111 1111\nC. 0000 0000\nD. 0111 1111",
+        "marks": 1,
+        "concepts": [
+          "進制",
+          "二進制補碼"
+        ],
+        "options": {
+          "A": "1000 0000",
+          "B": "1111 1111",
+          "C": "0000 0000",
+          "D": "0111 1111"
+        },
+        "stem": "將下列使用二進制補碼表示的8位元數字乘以-1後,哪個會出現溢出誤差?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-6",
+        "type": "mcq",
+        "number": "6",
+        "section": "mcq",
+        "text": "C2 的公式會被複製到C3:C5,以計算每個學社在運動會中的名次,得分最高的學社名次是1。C2的公式是什麼?\nA. RANK(B2, B$2:B$5, 0)\nB. RANK(B2, B$2:B$5, 2)\nC. RANK(B2, $B2:$B5, 0)\nD. RANK(B2, $B2:$B5, 2)",
+        "marks": 1,
+        "concepts": [
+          "試算表"
+        ],
+        "options": {
+          "A": "RANK(B2, B$2:B$5, 0)",
+          "B": "RANK(B2, B$2:B$5, 2)",
+          "C": "RANK(B2, $B2:$B5, 0)",
+          "D": "RANK(B2, $B2:$B5, 2)"
+        },
+        "stem": "C2 的公式會被複製到C3:C5,以計算每個學社在運動會中的名次,得分最高的學社名次是1。C2的公式是什麼?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-7",
+        "type": "mcq",
+        "number": "7",
+        "section": "mcq",
+        "text": "以下樞紐分析表利用一彙總函數,將以上數據建立摘要: 此彙總函數是什麼?\nA. 乘積\nB. 加總\nC. 最大\nD. 平均值",
+        "marks": 1,
+        "concepts": [
+          "試算表"
+        ],
+        "options": {
+          "A": "乘積",
+          "B": "加總",
+          "C": "最大",
+          "D": "平均值"
+        },
+        "stem": "以下樞紐分析表利用一彙總函數,將以上數據建立摘要: 此彙總函數是什麼?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-8",
+        "type": "mcq",
+        "number": "8",
+        "section": "mcq",
+        "text": "某公司採用全新的設計和資訊架構來建立其網站。會涉及下列哪些步驟?\n(1) 數據分析\n(2) 數據組織\n(3) 數據表示\nA. 只有(1)和(2)\nB. 只有(1)和(3)\nC. 只有(2)和(3)\nD. (1)、(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "網頁創作"
+        ],
+        "options": {
+          "A": "只有(1)和(2)",
+          "B": "只有(1)和(3)",
+          "C": "只有(2)和(3)",
+          "D": "(1)、(2)和(3)"
+        },
+        "stem": "某公司採用全新的設計和資訊架構來建立其網站。會涉及下列哪些步驟?\n(1) 數據分析\n(2) 數據組織\n(3) 數據表示",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-9",
+        "type": "mcq",
+        "number": "9",
+        "section": "mcq",
+        "text": "執行以下 SQL語句後,會有多少筆記錄輸出? SELECT AWARD FROM MEM WHERE CAT LIKE 'M%' GROUP BY AWARD HAVING SUM(POINT) > 4\nA. 0\nB. 1\nC. 2\nD. 3",
+        "marks": 1,
+        "concepts": [
+          "多媒體",
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "硬件",
+          "科技創新"
+        ],
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "2",
+          "D": "3"
+        },
+        "stem": "執行以下 SQL語句後,會有多少筆記錄輸出? SELECT AWARD FROM MEM WHERE CAT LIKE 'M%' GROUP BY AWARD HAVING SUM(POINT) > 4",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-10",
+        "type": "mcq",
+        "number": "10",
+        "section": "mcq",
+        "text": "下列哪項是在資訊處理中使用數據控制的主要目的?\nA. 簡化資訊處理\nB. 確保數據完整性\nC. 消除對數據保安的依賴\nD. 提升數據壓縮的效率",
+        "marks": 1,
+        "concepts": [
+          "多媒體",
+          "資訊處理",
+          "數據控制",
+          "有效性檢驗"
+        ],
+        "options": {
+          "A": "簡化資訊處理",
+          "B": "確保數據完整性",
+          "C": "消除對數據保安的依賴",
+          "D": "提升數據壓縮的效率"
+        },
+        "stem": "下列哪項是在資訊處理中使用數據控制的主要目的?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-11",
+        "type": "mcq",
+        "number": "11",
+        "section": "mcq",
+        "text": "一台電腦包含CPU和GPU。下列哪句關於CPU和GPU的陳述是最恰當的?\nA. 兩者都有多個可以執行指令的核心\nB. 兩者都主要針對圖形渲染進行優化\nC. 兩者經常一同用於執行數據分析的任務\nD. CPU是用於多工處理,而GPU是用於單工處理",
+        "marks": 1,
+        "concepts": [
+          "硬件"
+        ],
+        "options": {
+          "A": "兩者都有多個可以執行指令的核心",
+          "B": "兩者都主要針對圖形渲染進行優化",
+          "C": "兩者經常一同用於執行數據分析的任務",
+          "D": "CPU是用於多工處理,而GPU是用於單工處理"
+        },
+        "stem": "一台電腦包含CPU和GPU。下列哪句關於CPU和GPU的陳述是最恰當的?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-12",
+        "type": "mcq",
+        "number": "12",
+        "section": "mcq",
+        "text": "下列哪項/些對「提取一譯碼一執行」周期的陳述是正確的?\n(1) 程式指令會被翻譯成機器碼以執行程式\n(2) 程式指令會被分成多個部分,供不同 CPU 部件處理\n(3) CPU 內寄存器是用於控制處理器的操作\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "硬件"
+        ],
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        },
+        "stem": "下列哪項/些對「提取一譯碼一執行」周期的陳述是正確的?\n(1) 程式指令會被翻譯成機器碼以執行程式\n(2) 程式指令會被分成多個部分,供不同 CPU 部件處理\n(3) CPU 內寄存器是用於控制處理器的操作",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-13",
+        "type": "mcq",
+        "number": "13",
+        "section": "mcq",
+        "text": "下列哪項最能描述並行式處理系統?\nA. 它在夜間利用閒置系統資源處理數據\nB. 它處理輸入數據後立即產生輸出\nC. 它同時處理一個程式的不同任務\nD. 它同時處理多個用戶的任務",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "它在夜間利用閒置系統資源處理數據",
+          "B": "它處理輸入數據後立即產生輸出",
+          "C": "它同時處理一個程式的不同任務",
+          "D": "它同時處理多個用戶的任務"
+        },
+        "stem": "下列哪項最能描述並行式處理系統?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-14",
+        "type": "mcq",
+        "number": "14",
+        "section": "mcq",
+        "text": "成批處理適用於\nA. ATM(自動櫃員機)現金提款\nB. 處理火警警報\nC. 售賣電影門票\nD. 計算學生考試成績",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "ATM(自動櫃員機)現金提款",
+          "B": "處理火警警報",
+          "C": "售賣電影門票",
+          "D": "計算學生考試成績"
+        },
+        "stem": "成批處理適用於",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-15",
+        "type": "mcq",
+        "number": "15",
+        "section": "mcq",
+        "text": "你在電腦內的操作系統上進行重大升級前,首先應該做什麼?\nA. 建立新的檔案系統,如NTFS 和 FAT32\nB. 將電腦內的重要檔案進行備份\nC. 更新主要輸入和輸出設備的驅動程式\nD. 中斷互聯網連線以避免任何未經授權存取",
+        "marks": 1,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "軟件",
+          "作業系統",
+          "網絡保安",
+          "資訊保安"
+        ],
+        "options": {
+          "A": "建立新的檔案系統,如NTFS 和 FAT32",
+          "B": "將電腦內的重要檔案進行備份",
+          "C": "更新主要輸入和輸出設備的驅動程式",
+          "D": "中斷互聯網連線以避免任何未經授權存取"
+        },
+        "stem": "你在電腦內的操作系統上進行重大升級前,首先應該做什麼?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-16",
+        "type": "mcq",
+        "number": "16",
+        "section": "mcq",
+        "text": "某公司製造可穿戴的人工智能眼鏡。下列眼鏡內哪一個組件儲存系統啟動程式?\nA. 擴增實境(AR)組件\nB. GPU\nC. RAM\nD. ROM",
+        "marks": 1,
+        "concepts": [
+          "硬件",
+          "科技創新"
+        ],
+        "options": {
+          "A": "擴增實境(AR)組件",
+          "B": "GPU",
+          "C": "RAM",
+          "D": "ROM"
+        },
+        "stem": "某公司製造可穿戴的人工智能眼鏡。下列眼鏡內哪一個組件儲存系統啟動程式?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-17",
+        "type": "mcq",
+        "number": "17",
+        "section": "mcq",
+        "text": "下列哪些最能描述交換器的功能?\n(1) 它防止在數據傳輸時有數據衝突\n(2) 它根據 MAC位址將數據定向到各裝置\n(3) 它將 LAN 直接連接到 WAN\nA. 只有(1)和(2)\nB. 只有(1)和(3)\nC. 只有(2)和(3)\nD. (1)、(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "網絡"
+        ],
+        "options": {
+          "A": "只有(1)和(2)",
+          "B": "只有(1)和(3)",
+          "C": "只有(2)和(3)",
+          "D": "(1)、(2)和(3)"
+        },
+        "stem": "下列哪些最能描述交換器的功能?\n(1) 它防止在數據傳輸時有數據衝突\n(2) 它根據 MAC位址將數據定向到各裝置\n(3) 它將 LAN 直接連接到 WAN",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-18",
+        "type": "mcq",
+        "number": "18",
+        "section": "mcq",
+        "text": "流動裝置連接至一個 Wi-Fi 網絡,但其連接速度很慢。下列哪項是可能的原因?\nA. 此網絡不提供漫遊服務\nB. 此網絡中使用了雙頻無線路由器\nC. 該流動裝置內沒有網絡界面卡\nD. 此網絡中有許多用戶同時在線",
+        "marks": 1,
+        "concepts": [
+          "網絡"
+        ],
+        "options": {
+          "A": "此網絡不提供漫遊服務",
+          "B": "此網絡中使用了雙頻無線路由器",
+          "C": "該流動裝置內沒有網絡界面卡",
+          "D": "此網絡中有許多用戶同時在線"
+        },
+        "stem": "流動裝置連接至一個 Wi-Fi 網絡,但其連接速度很慢。下列哪項是可能的原因?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-19",
+        "type": "mcq",
+        "number": "19",
+        "section": "mcq",
+        "text": "小珊使用藍牙而非 Wi-Fi 來把裝置連接至電腦。下列哪項是可能的原因?\nA. 藍牙提供更大的網絡覆蓋範圍\nB. 藍牙支援更高的數據傳輸速率\nC. 藍牙有更低的耗電量\nD. 藍牙可阻隔周邊裝置的干擾",
+        "marks": 1,
+        "concepts": [
+          "網絡"
+        ],
+        "options": {
+          "A": "藍牙提供更大的網絡覆蓋範圍",
+          "B": "藍牙支援更高的數據傳輸速率",
+          "C": "藍牙有更低的耗電量",
+          "D": "藍牙可阻隔周邊裝置的干擾"
+        },
+        "stem": "小珊使用藍牙而非 Wi-Fi 來把裝置連接至電腦。下列哪項是可能的原因?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-20",
+        "type": "mcq",
+        "number": "20",
+        "section": "mcq",
+        "text": "在互聯網上,數據在傳送前會分成數據包,當中會涉及下列哪個通訊協定?\nA. IP\nB. HTTPS\nC. TCP\nD. DNS",
+        "marks": 1,
+        "concepts": [
+          "網絡"
+        ],
+        "options": {
+          "A": "IP",
+          "B": "HTTPS",
+          "C": "TCP",
+          "D": "DNS"
+        },
+        "stem": "在互聯網上,數據在傳送前會分成數據包,當中會涉及下列哪個通訊協定?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-21",
+        "type": "mcq",
+        "number": "21",
+        "section": "mcq",
+        "text": "下列哪項最能描述防火牆的作用?\nA. 透過掃瞄所有進入網絡的數據來保護電腦免受病毒感染\nB. 在數據傳輸時使用PKI進行數據加密\nC. 提供一次性密碼來驗證用戶身份\nD. 防止在未經授權存取下的網絡連接",
+        "marks": 1,
+        "concepts": [
+          "數據控制",
+          "有效性檢驗",
+          "網絡保安",
+          "資訊保安",
+          "奇偶檢測"
+        ],
+        "options": {
+          "A": "透過掃瞄所有進入網絡的數據來保護電腦免受病毒感染",
+          "B": "在數據傳輸時使用PKI進行數據加密",
+          "C": "提供一次性密碼來驗證用戶身份",
+          "D": "防止在未經授權存取下的網絡連接"
+        },
+        "stem": "下列哪項最能描述防火牆的作用?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-22",
+        "type": "mcq",
+        "number": "22",
+        "section": "mcq",
+        "text": "下列哪些行為有可能被視作不道德?\n(1) 某學生在未有註明出處下,使用他人的程式段參加編程比賽\n(2) 某公司查看員工透過公司電腦網絡瀏覽網頁的URL\n(3) 某公司移除從網上下載的圖像內的數碼水印,並把它們上載至其網站\nA. 只有(1)和(2)\nB. 只有(1)和(3)\nC. 只有(2)和(3)\nD. (1)、(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "網絡",
+          "網頁創作",
+          "社會影響",
+          "道德議題"
+        ],
+        "options": {
+          "A": "只有(1)和(2)",
+          "B": "只有(1)和(3)",
+          "C": "只有(2)和(3)",
+          "D": "(1)、(2)和(3)"
+        },
+        "stem": "下列哪些行為有可能被視作不道德?\n(1) 某學生在未有註明出處下,使用他人的程式段參加編程比賽\n(2) 某公司查看員工透過公司電腦網絡瀏覽網頁的URL\n(3) 某公司移除從網上下載的圖像內的數碼水印,並把它們上載至其網站",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-23",
+        "type": "mcq",
+        "number": "23",
+        "section": "mcq",
+        "text": "該公司應該執行下列哪項/些來避免此非法行為?\n(1) 使用VPN 加強網絡保安\n(2) 實時監察客戶數據的存取\n(3) 在每個連接上使用 PKI\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "軟件",
+          "作業系統",
+          "網絡保安",
+          "資訊保安"
+        ],
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        },
+        "stem": "該公司應該執行下列哪項/些來避免此非法行為?\n(1) 使用VPN 加強網絡保安\n(2) 實時監察客戶數據的存取\n(3) 在每個連接上使用 PKI",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-24",
+        "type": "mcq",
+        "number": "24",
+        "section": "mcq",
+        "text": "下列哪些陳述是正確的?\n(1) 安裝間諜軟件會導致網上活動遭到未經授權監控\n(2) 仿冒詐騙可以透過多種渠道進行,包括電郵、社交媒體和 SMS\n(3) 開啟濫發郵件的唯一風險是受到廣告的騷擾\nA. 只有(1)和(2)\nB. 只有(1)和(3)\nC. 只有(2)和(3)\nD. (1)、(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "網絡保安",
+          "資訊保安"
+        ],
+        "options": {
+          "A": "只有(1)和(2)",
+          "B": "只有(1)和(3)",
+          "C": "只有(2)和(3)",
+          "D": "(1)、(2)和(3)"
+        },
+        "stem": "下列哪些陳述是正確的?\n(1) 安裝間諜軟件會導致網上活動遭到未經授權監控\n(2) 仿冒詐騙可以透過多種渠道進行,包括電郵、社交媒體和 SMS\n(3) 開啟濫發郵件的唯一風險是受到廣告的騷擾",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-25",
+        "type": "mcq",
+        "number": "25",
+        "section": "mcq",
+        "text": "網上購物商店使用SSL 建立了一個網站。使用SSL的主要目的是什麼?\nA. 節省開發時間,並優化網頁設計\nB. 驗證用戶身份\nC. 將DoS攻擊帶來的影響減至最少\nD. 將經互聯網傳輸的數據加密",
+        "marks": 1,
+        "concepts": [
+          "數據控制",
+          "有效性檢驗",
+          "網絡保安",
+          "資訊保安",
+          "網頁創作",
+          "奇偶檢測"
+        ],
+        "options": {
+          "A": "節省開發時間,並優化網頁設計",
+          "B": "驗證用戶身份",
+          "C": "將DoS攻擊帶來的影響減至最少",
+          "D": "將經互聯網傳輸的數據加密"
+        },
+        "stem": "網上購物商店使用SSL 建立了一個網站。使用SSL的主要目的是什麼?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-26",
+        "type": "mcq",
+        "number": "26",
+        "section": "mcq",
+        "text": "假設 X = -3, Y = 1和z = 4。下列哪個布爾算式結果是 false?\nA. (Y < Z) or (Y > X and X > Z)\nB. (Y < Z) or (Y > X or X > Z)\nC. (X + Y < -2 and Y - X = Z) and (X > Z)\nD. (X + Y < -2 or Y - X = Z) or (X > Z)",
+        "marks": 1,
+        "concepts": [
+          "試算表"
+        ],
+        "options": {
+          "A": "(Y < Z) or (Y > X and X > Z)",
+          "B": "(Y < Z) or (Y > X or X > Z)",
+          "C": "(X + Y < -2 and Y - X = Z) and (X > Z)",
+          "D": "(X + Y < -2 or Y - X = Z) or (X > Z)"
+        },
+        "stem": "假設 X = -3, Y = 1和z = 4。下列哪個布爾算式結果是 false?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-27",
+        "type": "mcq",
+        "number": "27",
+        "section": "mcq",
+        "text": "下列算法的輸出是什麼?\nX ← 6\nY ← 13\n當X >= 1\n Y ← Y - 3\n X ← Y - X\n輸出 Y\nX ← 9　Y ← 2\n重複\n   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分\n直至 X = 0\nA. 1\nB. 4\nC. 7\nD. 10",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "1",
+          "B": "4",
+          "C": "7",
+          "D": "10"
+        },
+        "stem": "下列算法的輸出是什麼?\nX ← 6\nY ← 13\n當X >= 1\n Y ← Y - 3\n X ← Y - X\n輸出 Y",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "X ← 9　Y ← 2",
+            "重複",
+            "   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分",
+            "直至 X = 0"
+          ],
+          "sources": [
+            "static_template:remainder_output_2021_q29"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.373335+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-28",
+        "type": "mcq",
+        "number": "28",
+        "section": "mcq",
+        "text": "執行下列算法後,ch內哪個/些值是「K」?\nN ← 4\n設i由0至N\n ch[i] ← ch[i+1]\n 如果 ch[i] = 'C'\n  ch[i] ← 'K'\n(1) ch[1]\n(2) ch[2]\n(3) ch[3]\nN ← 4\n設i由0至N\nch[i] ← ch[i+1]\n如果 ch[i] = 'C'\nch[i] ← 'K'\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        },
+        "stem": "執行下列算法後,ch內哪個/些值是「K」?\nN ← 4\n設i由0至N\n ch[i] ← ch[i+1]\n 如果 ch[i] = 'C'\n  ch[i] ← 'K'\n(1) ch[1]\n(2) ch[2]\n(3) ch[3]",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "N ← 4",
+            "設i由0至N",
+            "ch[i] ← ch[i+1]",
+            "如果 ch[i] = 'C'",
+            "ch[i] ← 'K'"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.373335+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-29",
+        "type": "mcq",
+        "number": "29",
+        "section": "mcq",
+        "text": "細看以下算法: 輸入N 如果N > 90 輸出 'A' 否則如果N > 70 輸出 'B' 否則 輸出 'C' 下列哪組數據最適合用來測試此算法?\nA. 100 90 65 50 40 30\nB. 99 89 79 69 59 0\nC. 95 85 75 65 55 0\nD. 95 90 80 70 60 50",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼",
+          "程式測試"
+        ],
+        "options": {
+          "A": "100 90 65 50 40 30",
+          "B": "99 89 79 69 59 0",
+          "C": "95 85 75 65 55 0",
+          "D": "95 90 80 70 60 50"
+        },
+        "stem": "細看以下算法: 輸入N 如果N > 90 輸出 'A' 否則如果N > 70 輸出 'B' 否則 輸出 'C' 下列哪組數據最適合用來測試此算法?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-30",
+        "type": "mcq",
+        "number": "30",
+        "section": "mcq",
+        "text": "執行下列算法後, sum的值是什麼?\n設i由0至10\n N[i] ← i\n設i由0至8\n N[i] ← N[i+2] - N[i+1]\nsum ← 0\n設i由0至10\n sum ← sum + N[i]\n設i由0至10\nN[i] ← i\n設i由0至8\nN[i] ← N[i+2] - N[i+1]\nsum ← 0\nsum ← sum + N[i]\nA. 10\nB. 27\nC. 28\nD. 29",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "10",
+          "B": "27",
+          "C": "28",
+          "D": "29"
+        },
+        "stem": "執行下列算法後, sum的值是什麼?\n設i由0至10\n N[i] ← i\n設i由0至8\n N[i] ← N[i+2] - N[i+1]\nsum ← 0\n設i由0至10\n sum ← sum + N[i]",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "設i由0至10",
+            "N[i] ← i",
+            "設i由0至8",
+            "N[i] ← N[i+2] - N[i+1]",
+            "sum ← 0",
+            "sum ← sum + N[i]"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.373335+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-31",
+        "type": "mcq",
+        "number": "31",
+        "section": "mcq",
+        "text": "在以下算法中,P、Q和R是整數變量。 如果P >= Q 如果(R > P and Q > R) X ← 10 否則 X ← 20 否則 如果(P = Q and Q = R) X ← 30 否則 X ← 40 此算法可生成多少個不同的x值?\nA. 1\nB. 2\nC. 3\nD. 4",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "stem": "在以下算法中,P、Q和R是整數變量。 如果P >= Q 如果(R > P and Q > R) X ← 10 否則 X ← 20 否則 如果(P = Q and Q = R) X ← 30 否則 X ← 40 此算法可生成多少個不同的x值?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-32",
+        "type": "mcq",
+        "number": "32",
+        "section": "mcq",
+        "text": "版本2內未填寫的部分會是什麼?\nA. {'(1)': 'k ← 9', '(2)': 'k < 20'}\nB. {'(1)': 'k ← 9', '(2)': 'k <= 20'}\nC. {'(1)': 'k ← 10', '(2)': 'k < 20'}\nD. {'(1)': 'k ← 10', '(2)': 'k <= 20'}",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "{'(1)': 'k ← 9', '(2)': 'k < 20'}",
+          "B": "{'(1)': 'k ← 9', '(2)': 'k <= 20'}",
+          "C": "{'(1)': 'k ← 10', '(2)': 'k < 20'}",
+          "D": "{'(1)': 'k ← 10', '(2)': 'k <= 20'}"
+        },
+        "stem": "版本2內未填寫的部分會是什麼?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-33",
+        "type": "mcq",
+        "number": "33",
+        "section": "mcq",
+        "text": "以下算法會輸出多少個「$」?\nx ← 40\ny ← 10\n當(x > 20 and y < 20)\n 輸出 '$'\n x ← x - 5\n y ← y + 1\nx ← 40\ny ← 10\n當(x > 20 and y < 20)\n輸出 '$'\nx ← x - 5\ny ← y + 1\nA. 2\nB. 3\nC. 4\nD. 5",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "stem": "以下算法會輸出多少個「$」?\nx ← 40\ny ← 10\n當(x > 20 and y < 20)\n 輸出 '$'\n x ← x - 5\n y ← y + 1",
+        "syllabus_status": "current",
+        "support_content": {
+          "lines": [
+            "x ← 40",
+            "y ← 10",
+            "當(x > 20 and y < 20)",
+            "輸出 '$'",
+            "x ← x - 5",
+            "y ← y + 1"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.373335+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-34",
+        "type": "mcq",
+        "number": "34",
+        "section": "mcq",
+        "text": "下列哪句/些作為語句 x會導致算法進入無限循環?\n(1) s ← s + 6\n(2) s ← s + s\n(3) s ← -2 * s\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        },
+        "stem": "下列哪句/些作為語句 x會導致算法進入無限循環?\n(1) s ← s + 6\n(2) s ← s + s\n(3) s ← -2 * s",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-35",
+        "type": "mcq",
+        "number": "35",
+        "section": "mcq",
+        "text": "執行以下程式段後,n的值是什麼?\nA. -1\nB. 0\nC. 1\nD. 2",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "-1",
+          "B": "0",
+          "C": "1",
+          "D": "2"
+        },
+        "stem": "執行以下程式段後,n的值是什麼?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-36",
+        "type": "mcq",
+        "number": "36",
+        "section": "mcq",
+        "text": "初始時, a = 48 和b = 18。執行以下程式段後,a的值是什麼?\nA. 0\nB. 2\nC. 6\nD. 12",
+        "marks": 1,
+        "concepts": [],
+        "options": {
+          "A": "0",
+          "B": "2",
+          "C": "6",
+          "D": "12"
+        },
+        "stem": "初始時, a = 48 和b = 18。執行以下程式段後,a的值是什麼?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-37",
+        "type": "mcq",
+        "number": "37",
+        "section": "mcq",
+        "text": "下列哪項是正確的?\nA. 第1行有語法錯誤\nB. 第3行有邏輯錯誤\nC. 第8行有運行錯誤\nD. 以上皆不是",
+        "marks": 1,
+        "concepts": [
+          "程式測試"
+        ],
+        "options": {
+          "A": "第1行有語法錯誤",
+          "B": "第3行有邏輯錯誤",
+          "C": "第8行有運行錯誤",
+          "D": "以上皆不是"
+        },
+        "stem": "下列哪項是正確的?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-38",
+        "type": "mcq",
+        "number": "38",
+        "section": "mcq",
+        "text": "下列哪項是正確的?\nA. 第7行有語法錯誤\nB. 第7行有邏輯錯誤\nC. 第7行有運行錯誤\nD. 以上皆不是",
+        "marks": 1,
+        "concepts": [
+          "程式測試"
+        ],
+        "options": {
+          "A": "第7行有語法錯誤",
+          "B": "第7行有邏輯錯誤",
+          "C": "第7行有運行錯誤",
+          "D": "以上皆不是"
+        },
+        "stem": "下列哪項是正確的?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-39",
+        "type": "mcq",
+        "number": "39",
+        "section": "mcq",
+        "text": "下列哪項是正確的?\nA. ISP 提供數碼證書,以保障互聯網連接的安全\nB. HTTPS 協定只應用於互聯網\nC. TCP/IP 協定只應用於互聯網\nD. 可信賴的HTTPS連接應當有一張數碼證書",
+        "marks": 1,
+        "concepts": [
+          "網絡"
+        ],
+        "options": {
+          "A": "ISP 提供數碼證書,以保障互聯網連接的安全",
+          "B": "HTTPS 協定只應用於互聯網",
+          "C": "TCP/IP 協定只應用於互聯網",
+          "D": "可信賴的HTTPS連接應當有一張數碼證書"
+        },
+        "stem": "下列哪項是正確的?",
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2026-Paper1A_MultipleChoice-40",
+        "type": "mcq",
+        "number": "40",
+        "section": "mcq",
+        "text": "志明開發了一個開放源碼軟件。下列哪項/些是正確的?\n(1) 志明放棄了該軟件的版權\n(2) 志明可以出售該軟件的副本\n(3) 用戶必需獲取志明的批准才可修改源碼\nA. 只有(1)\nB. 只有(2)\nC. 只有(1)和(3)\nD. 只有(2)和(3)",
+        "marks": 1,
+        "concepts": [
+          "社會影響",
+          "道德議題"
+        ],
+        "options": {
+          "A": "只有(1)",
+          "B": "只有(2)",
+          "C": "只有(1)和(3)",
+          "D": "只有(2)和(3)"
+        },
+        "stem": "志明開發了一個開放源碼軟件。下列哪項/些是正確的?\n(1) 志明放棄了該軟件的版權\n(2) 志明可以出售該軟件的副本\n(3) 用戶必需獲取志明的批准才可修改源碼",
+        "syllabus_status": "current"
+      }
+    ]
+  }
+}

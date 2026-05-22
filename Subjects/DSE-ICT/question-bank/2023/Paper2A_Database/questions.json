@@ -1,0 +1,1311 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "import_source": "gemini-output",
+    "imported_at": "2026-05-22T00:23:37.880210+00:00",
+    "year_label": "2023",
+    "paper_slug": "Paper2A_Database",
+    "paper_label": "Paper 2A — Database (數據庫)",
+    "source_pdf": "Subjects/DSE-ICT/past-papers/2023/DSE_ICT_2023_Paper2A_Database.pdf",
+    "question_count": 23,
+    "gemini_source_files": [
+      "2023-p2a.json"
+    ],
+    "curriculum_guide": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+    "syllabus_retagged_at": "2026-05-22T03:38:00.040743+00:00",
+    "syllabus_revision": "2021",
+    "support_enriched_at": "2026-05-22T04:32:46.313287+00:00"
+  },
+  "items": [
+    {
+      "id": "2023-Paper2A_Database-1-a",
+      "section": "section_b",
+      "text": "列出擁有積分多於 20 的館卡會員的駕照號碼，然後按 JDATE 降序排列。",
+      "number": "1(a)",
+      "concepts": [
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_query_creation",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(a)",
+        "question_text": "列出擁有積分多於 20 的館卡會員的駕照號碼，然後按 JDATE 降序排列。",
+        "question_type": "sql_query_creation",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper2A_Database-1-b",
+      "section": "section_b",
+      "text": "列出曾於 2022 年 9 月預約健身中心服務的會員的識別碼。相同識別碼不需重複列出。",
+      "number": "1(b)",
+      "concepts": [
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_query_creation",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(b)",
+        "question_text": "列出曾於 2022 年 9 月預約健身中心服務的會員的識別碼。相同識別碼不需重複列出。",
+        "question_type": "sql_query_creation",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper2A_Database-1-c",
+      "section": "section_b",
+      "text": "列出沒有預約記錄的會員的識別碼和其入會日期。",
+      "number": "1(c)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_query_creation",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(c)",
+        "question_text": "列出沒有預約記錄的會員的識別碼和其入會日期。",
+        "question_type": "sql_query_creation",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper2A_Database-1-d",
+      "section": "section_b",
+      "text": "列出於 30/09/2022 有多於 500 預約記錄的健身中心的識別碼。",
+      "number": "1(d)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_query_creation",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(d)",
+        "question_text": "列出於 30/09/2022 有多於 500 預約記錄的健身中心的識別碼。",
+        "question_type": "sql_query_creation",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper2A_Database-1-e-i",
+      "section": "section_b",
+      "text": "以下 SQL 語句的目的是什麼？\nCREATE VIEW V1 AS\nSELECT M1.MID, COUNT(M1.MID) AS REFERRAL\nFROM MEMBER M1, MEMBER M2\nWHERE M1.MID = M2.REFER\nGROUP BY M1.MID",
+      "number": "1(e)(i)",
+      "concepts": [
+        "試算表",
+        "SQL",
+        "數據庫",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(e)(i)",
+        "question_text": "以下 SQL 語句的目的是什麼？\nCREATE VIEW V1 AS\nSELECT M1.MID, COUNT(M1.MID) AS REFERRAL\nFROM MEMBER M1, MEMBER M2\nWHERE M1.MID = M2.REFER\nGROUP BY M1.MID",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "CREATE VIEW V1 AS",
+          "SELECT M1.MID, COUNT(M1.MID) AS REFERRAL",
+          "FROM MEMBER M1, MEMBER M2",
+          "WHERE M1.MID = M2.REFER",
+          "GROUP BY M1.MID"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.312948+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "以下 SQL 語句的目的是什麼？\nCREATE VIEW V1 AS\nSELECT M1.MID, COUNT(M1.MID) AS REFERRAL\nFROM MEMBER M1, MEMBER M2\nWHERE M1.MID = M2.REFER\nGROUP BY M1.MID"
+    },
+    {
+      "id": "2023-Paper2A_Database-1-e-ii",
+      "section": "section_b",
+      "text": "公司決定贈送 10 點積給介紹多於 5 人入會的會員。完成以下 SQL 語句可以達到此目的。\nUPDATE _______\nSET _______\nWHERE MID IN (SELECT MID FROM V1 WHERE REFERRAL > 5)",
+      "number": "1(e)(ii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_completion",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(e)(ii)",
+        "question_text": "公司決定贈送 10 點積給介紹多於 5 人入會的會員。完成以下 SQL 語句可以達到此目的。\nUPDATE _______\nSET _______\nWHERE MID IN (SELECT MID FROM V1 WHERE REFERRAL > 5)",
+        "question_type": "sql_completion",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "UPDATE _______",
+          "SET _______",
+          "WHERE MID IN (SELECT MID FROM V1 WHERE REFERRAL > 5)"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "公司決定贈送 10 點積給介紹多於 5 人入會的會員。完成以下 SQL 語句可以達到此目的。\nUPDATE _______\nSET _______\nWHERE MID IN (SELECT MID FROM V1 WHERE REFERRAL > 5)"
+    },
+    {
+      "id": "2023-Paper2A_Database-1-e-iii",
+      "section": "section_b",
+      "text": "寫出以下 SQL 語句來列出沒有介紹任何入會者的會員識別碼。\nSELECT MID FROM _______\nMINUS\nSELECT MID FROM _______",
+      "number": "1(e)(iii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_completion",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(e)(iii)",
+        "question_text": "寫出以下 SQL 語句來列出沒有介紹任何入會者的會員識別碼。\nSELECT MID FROM _______\nMINUS\nSELECT MID FROM _______",
+        "question_type": "sql_completion",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "SELECT MID FROM _______",
+          "MINUS"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "寫出以下 SQL 語句來列出沒有介紹任何入會者的會員識別碼。\nSELECT MID FROM _______\nMINUS\nSELECT MID FROM _______"
+    },
+    {
+      "id": "2023-Paper2A_Database-2-a",
+      "section": "section_b",
+      "text": "志明帶領一個項目團隊開發一個數據庫系統，讓學生選擇他們的選修科目。每名學生選擇三個科目，因應著分流而選科目。\n(a) 數據庫應用系統的開發週期的主要階段是\n(1) 要求收集及分析\n(2) 應用及數據庫設計\n(3) 實施\n(4) 轉換及載入\n(5) 數據的轉換\n(6) 測試\n(7) 終作維護\n在開發過程中，為下列各任務配對一個階段。\n任務:\n  設計數據庫模式\n  預備測試案例\n  定義問題描述\n階段:\n  _______ (設計數據庫模式)\n  _______ (預備測試案例)\n  _______ (定義問題描述)",
+      "number": "2(a)",
+      "concepts": [
+        "程式測試"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "matching_fill_in_blank",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(a)",
+        "question_text": "志明帶領一個項目團隊開發一個數據庫系統，讓學生選擇他們的選修科目。每名學生選擇三個科目，因應著分流而選科目。\n(a) 數據庫應用系統的開發週期的主要階段是\n(1) 要求收集及分析\n(2) 應用及數據庫設計\n(3) 實施\n(4) 轉換及載入\n(5) 數據的轉換\n(6) 測試\n(7) 終作維護\n在開發過程中，為下列各任務配對一個階段。\n任務:\n  設計數據庫模式\n  預備測試案例\n  定義問題描述\n階段:\n  _______ (設計數據庫模式)\n  _______ (預備測試案例)\n  _______ (定義問題描述)",
+        "question_type": "matching_fill_in_blank",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(a) 數據庫應用系統的開發週期的主要階段是"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "志明帶領一個項目團隊開發一個數據庫系統，讓學生選擇他們的選修科目。每名學生選擇三個科目，因應著分流而選科目。\n(a) 數據庫應用系統的開發週期的主要階段是\n(1) 要求收集及分析\n(2) 應用及數據庫設計\n(3) 實施\n(4) 轉換及載入\n(5) 數據的轉換\n(6) 測試\n(7) 終作維護\n在開發過程中，為下列各任務配對一個階段。\n任務:\n  設計數據庫模式\n  預備測試案例\n  定義問題描述\n階段:\n  _______ (設計數據庫模式)\n  _______ (預備測試案例)\n  _______ (定義問題描述)"
+    },
+    {
+      "id": "2023-Paper2A_Database-2-b",
+      "section": "section_b",
+      "text": "完成下表內的數據庫限制，以作數據檢驗。\n[表格式意] 一個表格，包含「欄名」、「驗證數據」、「數據限制」三列，以及「PREF1」、「YR」、「SNO」三行。其中一些單元格已填寫，例如「PREF1」的「驗證數據」為「9」，「數據限制」為「1. 數據範圍」。需要填充空白部分，例如「YR」的「…\n\n[圖片描述] 一個表格，包含「欄名」、「驗證數據」、「數據限制」三列，以及「PREF1」、「YR」、「SNO」三行。其中一些單元格已填寫，例如「PREF1」的「驗證數據」為「9」，「數據限制」為「1. 數據範圍」。需要填充空白部分，例如「YR」的「驗證數據」為「\"YY22\"」，「數據限制」為「2. 數據_______」，以及「SNO」的「驗證數據」為「空值」，「數據限制」為「3. _______」和「4. _______」。",
+      "number": "2(b)",
+      "concepts": [
+        "數據控制",
+        "有效性檢驗",
+        "數據組織",
+        "檔案存取",
+        "奇偶檢測"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "table_completion",
+      "has_image": true,
+      "image_description": "一個表格，包含「欄名」、「驗證數據」、「數據限制」三列，以及「PREF1」、「YR」、「SNO」三行。其中一些單元格已填寫，例如「PREF1」的「驗證數據」為「9」，「數據限制」為「1. 數據範圍」。需要填充空白部分，例如「YR」的「驗證數據」為「\"YY22\"」，「數據限制」為「2. 數據_______」，以及「SNO」的「驗證數據」為「空值」，「數據限制」為「3. _______」和「4. _______」。",
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(b)",
+        "question_text": "完成下表內的數據庫限制，以作數據檢驗。",
+        "question_type": "table_completion",
+        "has_image": true,
+        "image_description": "一個表格，包含「欄名」、「驗證數據」、「數據限制」三列，以及「PREF1」、「YR」、「SNO」三行。其中一些單元格已填寫，例如「PREF1」的「驗證數據」為「9」，「數據限制」為「1. 數據範圍」。需要填充空白部分，例如「YR」的「驗證數據」為「\"YY22\"」，「數據限制」為「2. 數據_______」，以及「SNO」的「驗證數據」為「空值」，「數據限制」為「3. _______」和「4. _______」。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個表格，包含「欄名」、「驗證數據」、「數據限制」三列，以及「PREF1」、「YR」、「SNO」三行。其中一些單元格已填寫，例如「PREF1」的「驗證數據」為「9」，「數據限制」為「1. 數據範圍」。需要填充空白部分，例如「YR」的「…"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "完成下表內的數據庫限制，以作數據檢驗。"
+    },
+    {
+      "id": "2023-Paper2A_Database-2-c",
+      "section": "section_b",
+      "text": "設計一個界面給學生檢視其個人資料，查看過往幾年的受歡迎程度，和選擇三個科目及其優次。在你的設計上加上適當的註釋。",
+      "number": "2(c)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "interface_design",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(c)",
+        "question_text": "設計一個界面給學生檢視其個人資料，查看過往幾年的受歡迎程度，和選擇三個科目及其優次。在你的設計上加上適當的註釋。",
+        "question_type": "interface_design",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper2A_Database-2-d",
+      "section": "section_b",
+      "text": "在數據庫系統中，一位老師因教學應用建立數據檢視 (view 1, view 2, ..., view n) 和獨立與 CHOICE 相同數據庫結構的工作表 (choice 1, choice 2, ..., choice n)。view x 僅包含學生 i，view i 包含學生 i 的個人資料和科目的受歡迎程度。choice i 儲存學生 i 的選擇。該老師將按這工作表更新 ELECTIVE。\n在下方格加上剔號，以指示相應的存取權限。\n[表格式意] 一個流程圖，顯示「view 1」連接到「學生 1」和「choice 1」，「view 2」連接到「學生 2」和「choice 2」，直到「view n」連接到「學生 n」和「choice n」。所有「choice」最終由「老師」更新到…\n在下方格加上剔號，以指示相應的存取權限。\n\n[圖片描述] 一個流程圖，顯示「view 1」連接到「學生 1」和「choice 1」，「view 2」連接到「學生 2」和「choice 2」，直到「view n」連接到「學生 n」和「choice n」。所有「choice」最終由「老師」更新到「ELECTIVE」。下方有一個表格，包含「數據庫物件」（view 1, choice 1, ELECTIVE）和「學生 1」、「老師」的「讀」、「寫」權限列，需要填寫核取方塊。",
+      "number": "2(d)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "table_completion_with_diagram",
+      "has_image": true,
+      "image_description": "一個流程圖，顯示「view 1」連接到「學生 1」和「choice 1」，「view 2」連接到「學生 2」和「choice 2」，直到「view n」連接到「學生 n」和「choice n」。所有「choice」最終由「老師」更新到「ELECTIVE」。下方有一個表格，包含「數據庫物件」（view 1, choice 1, ELECTIVE）和「學生 1」、「老師」的「讀」、「寫」權限列，需要填寫核取方塊。",
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(d)",
+        "question_text": "在數據庫系統中，一位老師因教學應用建立數據檢視 (view 1, view 2, ..., view n) 和獨立與 CHOICE 相同數據庫結構的工作表 (choice 1, choice 2, ..., choice n)。view x 僅包含學生 i，view i 包含學生 i 的個人資料和科目的受歡迎程度。choice i 儲存學生 i 的選擇。該老師將按這工作表更新 ELECTIVE。\n在下方格加上剔號，以指示相應的存取權限。",
+        "question_type": "table_completion_with_diagram",
+        "has_image": true,
+        "image_description": "一個流程圖，顯示「view 1」連接到「學生 1」和「choice 1」，「view 2」連接到「學生 2」和「choice 2」，直到「view n」連接到「學生 n」和「choice n」。所有「choice」最終由「老師」更新到「ELECTIVE」。下方有一個表格，包含「數據庫物件」（view 1, choice 1, ELECTIVE）和「學生 1」、「老師」的「讀」、「寫」權限列，需要填寫核取方塊。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個流程圖，顯示「view 1」連接到「學生 1」和「choice 1」，「view 2」連接到「學生 2」和「choice 2」，直到「view n」連接到「學生 n」和「choice n」。所有「choice」最終由「老師」更新到…",
+          "在下方格加上剔號，以指示相應的存取權限。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "在數據庫系統中，一位老師因教學應用建立數據檢視 (view 1, view 2, ..., view n) 和獨立與 CHOICE 相同數據庫結構的工作表 (choice 1, choice 2, ..., choice n)。view x 僅包含學生 i，view i 包含學生 i 的個人資料和科目的受歡迎程度。choice i 儲存學生 i 的選擇。該老師將按這工作表更新 ELECTIVE。\n在下方格加上剔號，以指示相應的存取權限。"
+    },
+    {
+      "id": "2023-Paper2A_Database-3-a",
+      "section": "section_b",
+      "text": "哪個屬性可被視為衍生性？舉出使用衍生性的一個好處。",
+      "number": "3(a)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(a)",
+        "question_text": "哪個屬性可被視為衍生性？舉出使用衍生性的一個好處。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper2A_Database-3-b",
+      "section": "section_b",
+      "text": "此數據庫的要求如下所述：\n診所內，每名醫生身邊一至三名護士共事。每名護士會跟一名醫生共事，或不會與醫生共事。每名病人和每名醫生最少會在 VREC 內有一筆記錄。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。\n\n[圖片描述] 一個不完整的實體關係圖，包含「NURSE」、「DOCTOR」、「VREC」、「PATIENT」四個實體方框，以及一個未標記的關係菱形，需要根據描述完成關係連接和基數。其中 VREC 與 PATIENT 之間已標記 '1'。",
+      "number": "3(b)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "diagram_completion",
+      "has_image": true,
+      "image_description": "一個不完整的實體關係圖，包含「NURSE」、「DOCTOR」、「VREC」、「PATIENT」四個實體方框，以及一個未標記的關係菱形，需要根據描述完成關係連接和基數。其中 VREC 與 PATIENT 之間已標記 '1'。",
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(b)",
+        "question_text": "此數據庫的要求如下所述：\n診所內，每名醫生身邊一至三名護士共事。每名護士會跟一名醫生共事，或不會與醫生共事。每名病人和每名醫生最少會在 VREC 內有一筆記錄。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。",
+        "question_type": "diagram_completion",
+        "has_image": true,
+        "image_description": "一個不完整的實體關係圖，包含「NURSE」、「DOCTOR」、「VREC」、「PATIENT」四個實體方框，以及一個未標記的關係菱形，需要根據描述完成關係連接和基數。其中 VREC 與 PATIENT 之間已標記 '1'。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "診所內，每名醫生身邊一至三名護士共事。每名護士會跟一名醫生共事，或不會與醫生共事。每名病人和每名醫生最少會在 VREC 內有一筆記錄。",
+          "完成以下此數據庫的實體關係圖。圖內不用畫上屬性。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "此數據庫的要求如下所述：\n診所內，每名醫生身邊一至三名護士共事。每名護士會跟一名醫生共事，或不會與醫生共事。每名病人和每名醫生最少會在 VREC 內有一筆記錄。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。"
+    },
+    {
+      "id": "2023-Paper2A_Database-3-c",
+      "section": "section_b",
+      "text": "診所決定合併 NURSE 和 DOCTOR。部份數據單記錄如下：\n(NURSE table: NID, HKID, DEPNO, SID, 主關鍵碼: NID)\n(DOCTOR table: DID, HKID, DEPNO, SID, 主關鍵碼: DID)\n舉出於合併時會出現的兩個問題，並從每個問題建議一個解決方法。\n[表格式意] 兩個表格，分別顯示 NURSE 和 DOCTOR 的部分數據，包含 HKID, DEPNO, SID 等欄位。問題要求識別合併時的兩個問題及其解決方法。\n(NURSE table: NID, HKID, DEPNO, SID, 主關鍵碼: NID)\n(DOCTOR table: DID, HKID, DEPNO, SID, 主關鍵碼: DID)\n舉出於合併時會出現的兩個問題，並從每個問題建議一個解決方法。\n\n[圖片描述] 兩個表格，分別顯示 NURSE 和 DOCTOR 的部分數據，包含 HKID, DEPNO, SID 等欄位。問題要求識別合併時的兩個問題及其解決方法。",
+      "number": "3(c)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response_with_diagram",
+      "has_image": true,
+      "image_description": "兩個表格，分別顯示 NURSE 和 DOCTOR 的部分數據，包含 HKID, DEPNO, SID 等欄位。問題要求識別合併時的兩個問題及其解決方法。",
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(c)",
+        "question_text": "診所決定合併 NURSE 和 DOCTOR。部份數據單記錄如下：\n(NURSE table: NID, HKID, DEPNO, SID, 主關鍵碼: NID)\n(DOCTOR table: DID, HKID, DEPNO, SID, 主關鍵碼: DID)\n舉出於合併時會出現的兩個問題，並從每個問題建議一個解決方法。",
+        "question_type": "free_response_with_diagram",
+        "has_image": true,
+        "image_description": "兩個表格，分別顯示 NURSE 和 DOCTOR 的部分數據，包含 HKID, DEPNO, SID 等欄位。問題要求識別合併時的兩個問題及其解決方法。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 兩個表格，分別顯示 NURSE 和 DOCTOR 的部分數據，包含 HKID, DEPNO, SID 等欄位。問題要求識別合併時的兩個問題及其解決方法。",
+          "(NURSE table: NID, HKID, DEPNO, SID, 主關鍵碼: NID)",
+          "(DOCTOR table: DID, HKID, DEPNO, SID, 主關鍵碼: DID)",
+          "舉出於合併時會出現的兩個問題，並從每個問題建議一個解決方法。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "診所決定合併 NURSE 和 DOCTOR。部份數據單記錄如下：\n(NURSE table: NID, HKID, DEPNO, SID, 主關鍵碼: NID)\n(DOCTOR table: DID, HKID, DEPNO, SID, 主關鍵碼: DID)\n舉出於合併時會出現的兩個問題，並從每個問題建議一個解決方法。"
+    },
+    {
+      "id": "2023-Paper2A_Database-3-d-i",
+      "section": "section_b",
+      "text": "診所使用一個新數據庫表 STAFF 來儲存 NURSE 和 DOCTOR 合併後的數據，從而以下任務：\n任務 1: 建立貼有相關屬性的 STAFF\n任務 2: ?\n任務 3: ?\n任務 4: 移除 DOCTOR 和 NURSE\n(i) 任務 2 涉及 NURSE, DOCTOR 和 STAFF。簡略說明任務 2。",
+      "number": "3(d)(i)",
+      "concepts": [
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(d)(i)",
+        "question_text": "診所使用一個新數據庫表 STAFF 來儲存 NURSE 和 DOCTOR 合併後的數據，從而以下任務：\n任務 1: 建立貼有相關屬性的 STAFF\n任務 2: ?\n任務 3: ?\n任務 4: 移除 DOCTOR 和 NURSE\n(i) 任務 2 涉及 NURSE, DOCTOR 和 STAFF。簡略說明任務 2。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "任務 1: 建立貼有相關屬性的 STAFF",
+          "任務 2: ?",
+          "任務 3: ?",
+          "任務 4: 移除 DOCTOR 和 NURSE",
+          "(i) 任務 2 涉及 NURSE, DOCTOR 和 STAFF。簡略說明任務 2。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "診所使用一個新數據庫表 STAFF 來儲存 NURSE 和 DOCTOR 合併後的數據，從而以下任務：\n任務 1: 建立貼有相關屬性的 STAFF\n任務 2: ?\n任務 3: ?\n任務 4: 移除 DOCTOR 和 NURSE\n(i) 任務 2 涉及 NURSE, DOCTOR 和 STAFF。簡略說明任務 2。"
+    },
+    {
+      "id": "2023-Paper2A_Database-3-d-ii",
+      "section": "section_b",
+      "text": "任務 3 涉及 VREC。簡略說明任務 3。",
+      "number": "3(d)(ii)",
+      "concepts": [
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(d)(ii)",
+        "question_text": "任務 3 涉及 VREC。簡略說明任務 3。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper2A_Database-3-d-iii",
+      "section": "section_b",
+      "text": "現有以下兩個建議方法，可於任務 4 內移除 DOCTOR：\n方法 1: DELETE FROM DOCTOR\n方法 2: DROP TABLE DOCTOR\n以上兩個方法的主要分別是什麼？",
+      "number": "3(d)(iii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(d)(iii)",
+        "question_text": "現有以下兩個建議方法，可於任務 4 內移除 DOCTOR：\n方法 1: DELETE FROM DOCTOR\n方法 2: DROP TABLE DOCTOR\n以上兩個方法的主要分別是什麼？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "方法 1: DELETE FROM DOCTOR",
+          "方法 2: DROP TABLE DOCTOR",
+          "以上兩個方法的主要分別是什麼？"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "現有以下兩個建議方法，可於任務 4 內移除 DOCTOR：\n方法 1: DELETE FROM DOCTOR\n方法 2: DROP TABLE DOCTOR\n以上兩個方法的主要分別是什麼？"
+    },
+    {
+      "id": "2023-Paper2A_Database-4-a",
+      "section": "section_b",
+      "text": "電影中心透過自動售票機於大堂內售賣戲票。電影中心內有兩間戲院，已使用數據庫表 TINFO 來儲存資料。\n(TINFO table: MTID, MNAME, MTIME, CID, CTYPE, TN, SNO)\n於下方寫上合適的欄位，以展示 TINFO 內的數據相關性。\nMNAME 取決於 _______ \nCID 取決於 CID。\n[表格式意] 一個表格，描述 TINFO 數據庫的欄位（MTID, MNAME, MTIME, CID, CTYPE, TN, SNO）及其例子。下方有空白處，需要填寫「MNAME 取決於 __________」和「CID 取決於 CID」的相關欄位。\n(TINFO table: MTID, MNAME, MTIME, CID, CTYPE, TN, SNO)\n於下方寫上合適的欄位，以展示 TINFO 內的數據相關性。\nMNAME 取決於 _______\nCID 取決於 CID。\n\n[圖片描述] 一個表格，描述 TINFO 數據庫的欄位（MTID, MNAME, MTIME, CID, CTYPE, TN, SNO）及其例子。下方有空白處，需要填寫「MNAME 取決於 __________」和「CID 取決於 CID」的相關欄位。",
+      "number": "4(a)",
+      "concepts": [
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "fill_in_the_blank_with_diagram",
+      "has_image": true,
+      "image_description": "一個表格，描述 TINFO 數據庫的欄位（MTID, MNAME, MTIME, CID, CTYPE, TN, SNO）及其例子。下方有空白處，需要填寫「MNAME 取決於 __________」和「CID 取決於 CID」的相關欄位。",
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(a)",
+        "question_text": "電影中心透過自動售票機於大堂內售賣戲票。電影中心內有兩間戲院，已使用數據庫表 TINFO 來儲存資料。\n(TINFO table: MTID, MNAME, MTIME, CID, CTYPE, TN, SNO)\n於下方寫上合適的欄位，以展示 TINFO 內的數據相關性。\nMNAME 取決於 _______ \nCID 取決於 CID。",
+        "question_type": "fill_in_the_blank_with_diagram",
+        "has_image": true,
+        "image_description": "一個表格，描述 TINFO 數據庫的欄位（MTID, MNAME, MTIME, CID, CTYPE, TN, SNO）及其例子。下方有空白處，需要填寫「MNAME 取決於 __________」和「CID 取決於 CID」的相關欄位。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個表格，描述 TINFO 數據庫的欄位（MTID, MNAME, MTIME, CID, CTYPE, TN, SNO）及其例子。下方有空白處，需要填寫「MNAME 取決於 __________」和「CID 取決於 CID」的相關欄位。",
+          "(TINFO table: MTID, MNAME, MTIME, CID, CTYPE, TN, SNO)",
+          "於下方寫上合適的欄位，以展示 TINFO 內的數據相關性。",
+          "MNAME 取決於 _______",
+          "CID 取決於 CID。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "電影中心透過自動售票機於大堂內售賣戲票。電影中心內有兩間戲院，已使用數據庫表 TINFO 來儲存資料。\n(TINFO table: MTID, MNAME, MTIME, CID, CTYPE, TN, SNO)\n於下方寫上合適的欄位，以展示 TINFO 內的數據相關性。\nMNAME 取決於 _______ \nCID 取決於 CID。"
+    },
+    {
+      "id": "2023-Paper2A_Database-4-b-i",
+      "section": "section_b",
+      "text": "電影中心提供貴賓戲票，其座位編號為 1 至 10。運用集合函數完成以下 SQL 語句，以列出每個場編號已售出貴賓戲票的數量。\nSELECT CID, MTIME, _______ FROM TINFO WHERE SNO <= 10 GROUP BY CID, MTIME",
+      "number": "4(b)(i)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_completion",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(b)(i)",
+        "question_text": "電影中心提供貴賓戲票，其座位編號為 1 至 10。運用集合函數完成以下 SQL 語句，以列出每個場編號已售出貴賓戲票的數量。\nSELECT CID, MTIME, _______ FROM TINFO WHERE SNO <= 10 GROUP BY CID, MTIME",
+        "question_type": "sql_completion",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "SELECT CID, MTIME, _______ FROM TINFO WHERE SNO <= 10 GROUP BY CID, MTIME"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "電影中心提供貴賓戲票，其座位編號為 1 至 10。運用集合函數完成以下 SQL 語句，以列出每個場編號已售出貴賓戲票的數量。\nSELECT CID, MTIME, _______ FROM TINFO WHERE SNO <= 10 GROUP BY CID, MTIME"
+    },
+    {
+      "id": "2023-Paper2A_Database-4-b-ii",
+      "section": "section_b",
+      "text": "寫出在 TINFO 的 CID 和 MTIME 上建構索引「SHOWTIME」的 SQL 語句。",
+      "number": "4(b)(ii)",
+      "concepts": [
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_query_creation",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(b)(ii)",
+        "question_text": "寫出在 TINFO 的 CID 和 MTIME 上建構索引「SHOWTIME」的 SQL 語句。",
+        "question_type": "sql_query_creation",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper2A_Database-4-b-iii",
+      "section": "section_b",
+      "text": "舉出使用索引「SHOWTIME」的一個好處。",
+      "number": "4(b)(iii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(b)(iii)",
+        "question_text": "舉出使用索引「SHOWTIME」的一個好處。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper2A_Database-4-c",
+      "section": "section_b",
+      "text": "完成以下數據模式以符合第二範式。指出相對應的主關鍵碼和外鍵碼。\nMOVIE(MID, _______)\n主關鍵碼: MID\nCINEMA(_______, TN)\n主關鍵碼: _______ \nTICKET(MID, MTIME, _______)\n主關鍵碼: _______ + _______ \n外鍵碼: MID 參照 MOVIE 的 MID\n外鍵碼: _______ 參照 _______ 的 _______\nMOVIE(MID, _______)\n主關鍵碼: MID\nCINEMA(_______, TN)\n主關鍵碼: _______\nTICKET(MID, MTIME, _______)\n主關鍵碼: _______ + _______\n外鍵碼: MID 參照 MOVIE 的 MID\n外鍵碼: _______ 參照 _______ 的 _______",
+      "number": "4(c)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "data_model_completion",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(c)",
+        "question_text": "完成以下數據模式以符合第二範式。指出相對應的主關鍵碼和外鍵碼。\nMOVIE(MID, _______)\n主關鍵碼: MID\nCINEMA(_______, TN)\n主關鍵碼: _______ \nTICKET(MID, MTIME, _______)\n主關鍵碼: _______ + _______ \n外鍵碼: MID 參照 MOVIE 的 MID\n外鍵碼: _______ 參照 _______ 的 _______",
+        "question_type": "data_model_completion",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "MOVIE(MID, _______)",
+          "主關鍵碼: MID",
+          "CINEMA(_______, TN)",
+          "主關鍵碼: _______",
+          "TICKET(MID, MTIME, _______)",
+          "主關鍵碼: _______ + _______",
+          "外鍵碼: MID 參照 MOVIE 的 MID",
+          "外鍵碼: _______ 參照 _______ 的 _______"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "完成以下數據模式以符合第二範式。指出相對應的主關鍵碼和外鍵碼。\nMOVIE(MID, _______)\n主關鍵碼: MID\nCINEMA(_______, TN)\n主關鍵碼: _______ \nTICKET(MID, MTIME, _______)\n主關鍵碼: _______ + _______ \n外鍵碼: MID 參照 MOVIE 的 MID\n外鍵碼: _______ 參照 _______ 的 _______"
+    },
+    {
+      "id": "2023-Paper2A_Database-4-d",
+      "section": "section_b",
+      "text": "電影中心於數據庫中儲存會員的個人資料。建議兩個與數據庫安全有關的方法以保護這些資料。",
+      "number": "4(d)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(d)",
+        "question_text": "電影中心於數據庫中儲存會員的個人資料。建議兩個與數據庫安全有關的方法以保護這些資料。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    }
+  ],
+  "paper": {
+    "id": "2023-Paper2A_Database",
+    "questions": [
+      {
+        "id": "2023-Paper2A_Database-1-a",
+        "type": "sql_query_creation",
+        "number": "1(a)",
+        "section": "section_b",
+        "text": "列出擁有積分多於 20 的館卡會員的駕照號碼，然後按 JDATE 降序排列。",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper2A_Database-1-b",
+        "type": "sql_query_creation",
+        "number": "1(b)",
+        "section": "section_b",
+        "text": "列出曾於 2022 年 9 月預約健身中心服務的會員的識別碼。相同識別碼不需重複列出。",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper2A_Database-1-c",
+        "type": "sql_query_creation",
+        "number": "1(c)",
+        "section": "section_b",
+        "text": "列出沒有預約記錄的會員的識別碼和其入會日期。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper2A_Database-1-d",
+        "type": "sql_query_creation",
+        "number": "1(d)",
+        "section": "section_b",
+        "text": "列出於 30/09/2022 有多於 500 預約記錄的健身中心的識別碼。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper2A_Database-1-e-i",
+        "type": "free_response",
+        "number": "1(e)(i)",
+        "section": "section_b",
+        "text": "以下 SQL 語句的目的是什麼？\nCREATE VIEW V1 AS\nSELECT M1.MID, COUNT(M1.MID) AS REFERRAL\nFROM MEMBER M1, MEMBER M2\nWHERE M1.MID = M2.REFER\nGROUP BY M1.MID",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "SQL",
+          "數據庫",
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "以下 SQL 語句的目的是什麼？\nCREATE VIEW V1 AS\nSELECT M1.MID, COUNT(M1.MID) AS REFERRAL\nFROM MEMBER M1, MEMBER M2\nWHERE M1.MID = M2.REFER\nGROUP BY M1.MID",
+        "support_content": {
+          "lines": [
+            "CREATE VIEW V1 AS",
+            "SELECT M1.MID, COUNT(M1.MID) AS REFERRAL",
+            "FROM MEMBER M1, MEMBER M2",
+            "WHERE M1.MID = M2.REFER",
+            "GROUP BY M1.MID"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.312948+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-1-e-ii",
+        "type": "sql_completion",
+        "number": "1(e)(ii)",
+        "section": "section_b",
+        "text": "公司決定贈送 10 點積給介紹多於 5 人入會的會員。完成以下 SQL 語句可以達到此目的。\nUPDATE _______\nSET _______\nWHERE MID IN (SELECT MID FROM V1 WHERE REFERRAL > 5)",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "公司決定贈送 10 點積給介紹多於 5 人入會的會員。完成以下 SQL 語句可以達到此目的。\nUPDATE _______\nSET _______\nWHERE MID IN (SELECT MID FROM V1 WHERE REFERRAL > 5)",
+        "support_content": {
+          "lines": [
+            "UPDATE _______",
+            "SET _______",
+            "WHERE MID IN (SELECT MID FROM V1 WHERE REFERRAL > 5)"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-1-e-iii",
+        "type": "sql_completion",
+        "number": "1(e)(iii)",
+        "section": "section_b",
+        "text": "寫出以下 SQL 語句來列出沒有介紹任何入會者的會員識別碼。\nSELECT MID FROM _______\nMINUS\nSELECT MID FROM _______",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "寫出以下 SQL 語句來列出沒有介紹任何入會者的會員識別碼。\nSELECT MID FROM _______\nMINUS\nSELECT MID FROM _______",
+        "support_content": {
+          "lines": [
+            "SELECT MID FROM _______",
+            "MINUS"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-2-a",
+        "type": "matching_fill_in_blank",
+        "number": "2(a)",
+        "section": "section_b",
+        "text": "志明帶領一個項目團隊開發一個數據庫系統，讓學生選擇他們的選修科目。每名學生選擇三個科目，因應著分流而選科目。\n(a) 數據庫應用系統的開發週期的主要階段是\n(1) 要求收集及分析\n(2) 應用及數據庫設計\n(3) 實施\n(4) 轉換及載入\n(5) 數據的轉換\n(6) 測試\n(7) 終作維護\n在開發過程中，為下列各任務配對一個階段。\n任務:\n  設計數據庫模式\n  預備測試案例\n  定義問題描述\n階段:\n  _______ (設計數據庫模式)\n  _______ (預備測試案例)\n  _______ (定義問題描述)",
+        "marks": null,
+        "concepts": [
+          "程式測試"
+        ],
+        "syllabus_status": "current",
+        "stem": "志明帶領一個項目團隊開發一個數據庫系統，讓學生選擇他們的選修科目。每名學生選擇三個科目，因應著分流而選科目。\n(a) 數據庫應用系統的開發週期的主要階段是\n(1) 要求收集及分析\n(2) 應用及數據庫設計\n(3) 實施\n(4) 轉換及載入\n(5) 數據的轉換\n(6) 測試\n(7) 終作維護\n在開發過程中，為下列各任務配對一個階段。\n任務:\n  設計數據庫模式\n  預備測試案例\n  定義問題描述\n階段:\n  _______ (設計數據庫模式)\n  _______ (預備測試案例)\n  _______ (定義問題描述)",
+        "support_content": {
+          "lines": [
+            "(a) 數據庫應用系統的開發週期的主要階段是"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-2-b",
+        "type": "table_completion",
+        "number": "2(b)",
+        "section": "section_b",
+        "text": "完成下表內的數據庫限制，以作數據檢驗。\n[表格式意] 一個表格，包含「欄名」、「驗證數據」、「數據限制」三列，以及「PREF1」、「YR」、「SNO」三行。其中一些單元格已填寫，例如「PREF1」的「驗證數據」為「9」，「數據限制」為「1. 數據範圍」。需要填充空白部分，例如「YR」的「…\n\n[圖片描述] 一個表格，包含「欄名」、「驗證數據」、「數據限制」三列，以及「PREF1」、「YR」、「SNO」三行。其中一些單元格已填寫，例如「PREF1」的「驗證數據」為「9」，「數據限制」為「1. 數據範圍」。需要填充空白部分，例如「YR」的「驗證數據」為「\"YY22\"」，「數據限制」為「2. 數據_______」，以及「SNO」的「驗證數據」為「空值」，「數據限制」為「3. _______」和「4. _______」。",
+        "marks": null,
+        "concepts": [
+          "數據控制",
+          "有效性檢驗",
+          "數據組織",
+          "檔案存取",
+          "奇偶檢測"
+        ],
+        "syllabus_status": "current",
+        "stem": "完成下表內的數據庫限制，以作數據檢驗。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個表格，包含「欄名」、「驗證數據」、「數據限制」三列，以及「PREF1」、「YR」、「SNO」三行。其中一些單元格已填寫，例如「PREF1」的「驗證數據」為「9」，「數據限制」為「1. 數據範圍」。需要填充空白部分，例如「YR」的「…"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-2-c",
+        "type": "interface_design",
+        "number": "2(c)",
+        "section": "section_b",
+        "text": "設計一個界面給學生檢視其個人資料，查看過往幾年的受歡迎程度，和選擇三個科目及其優次。在你的設計上加上適當的註釋。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper2A_Database-2-d",
+        "type": "table_completion_with_diagram",
+        "number": "2(d)",
+        "section": "section_b",
+        "text": "在數據庫系統中，一位老師因教學應用建立數據檢視 (view 1, view 2, ..., view n) 和獨立與 CHOICE 相同數據庫結構的工作表 (choice 1, choice 2, ..., choice n)。view x 僅包含學生 i，view i 包含學生 i 的個人資料和科目的受歡迎程度。choice i 儲存學生 i 的選擇。該老師將按這工作表更新 ELECTIVE。\n在下方格加上剔號，以指示相應的存取權限。\n[表格式意] 一個流程圖，顯示「view 1」連接到「學生 1」和「choice 1」，「view 2」連接到「學生 2」和「choice 2」，直到「view n」連接到「學生 n」和「choice n」。所有「choice」最終由「老師」更新到…\n在下方格加上剔號，以指示相應的存取權限。\n\n[圖片描述] 一個流程圖，顯示「view 1」連接到「學生 1」和「choice 1」，「view 2」連接到「學生 2」和「choice 2」，直到「view n」連接到「學生 n」和「choice n」。所有「choice」最終由「老師」更新到「ELECTIVE」。下方有一個表格，包含「數據庫物件」（view 1, choice 1, ELECTIVE）和「學生 1」、「老師」的「讀」、「寫」權限列，需要填寫核取方塊。",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "在數據庫系統中，一位老師因教學應用建立數據檢視 (view 1, view 2, ..., view n) 和獨立與 CHOICE 相同數據庫結構的工作表 (choice 1, choice 2, ..., choice n)。view x 僅包含學生 i，view i 包含學生 i 的個人資料和科目的受歡迎程度。choice i 儲存學生 i 的選擇。該老師將按這工作表更新 ELECTIVE。\n在下方格加上剔號，以指示相應的存取權限。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個流程圖，顯示「view 1」連接到「學生 1」和「choice 1」，「view 2」連接到「學生 2」和「choice 2」，直到「view n」連接到「學生 n」和「choice n」。所有「choice」最終由「老師」更新到…",
+            "在下方格加上剔號，以指示相應的存取權限。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-3-a",
+        "type": "free_response",
+        "number": "3(a)",
+        "section": "section_b",
+        "text": "哪個屬性可被視為衍生性？舉出使用衍生性的一個好處。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper2A_Database-3-b",
+        "type": "diagram_completion",
+        "number": "3(b)",
+        "section": "section_b",
+        "text": "此數據庫的要求如下所述：\n診所內，每名醫生身邊一至三名護士共事。每名護士會跟一名醫生共事，或不會與醫生共事。每名病人和每名醫生最少會在 VREC 內有一筆記錄。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。\n\n[圖片描述] 一個不完整的實體關係圖，包含「NURSE」、「DOCTOR」、「VREC」、「PATIENT」四個實體方框，以及一個未標記的關係菱形，需要根據描述完成關係連接和基數。其中 VREC 與 PATIENT 之間已標記 '1'。",
+        "marks": null,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "此數據庫的要求如下所述：\n診所內，每名醫生身邊一至三名護士共事。每名護士會跟一名醫生共事，或不會與醫生共事。每名病人和每名醫生最少會在 VREC 內有一筆記錄。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。",
+        "support_content": {
+          "lines": [
+            "診所內，每名醫生身邊一至三名護士共事。每名護士會跟一名醫生共事，或不會與醫生共事。每名病人和每名醫生最少會在 VREC 內有一筆記錄。",
+            "完成以下此數據庫的實體關係圖。圖內不用畫上屬性。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-3-c",
+        "type": "free_response_with_diagram",
+        "number": "3(c)",
+        "section": "section_b",
+        "text": "診所決定合併 NURSE 和 DOCTOR。部份數據單記錄如下：\n(NURSE table: NID, HKID, DEPNO, SID, 主關鍵碼: NID)\n(DOCTOR table: DID, HKID, DEPNO, SID, 主關鍵碼: DID)\n舉出於合併時會出現的兩個問題，並從每個問題建議一個解決方法。\n[表格式意] 兩個表格，分別顯示 NURSE 和 DOCTOR 的部分數據，包含 HKID, DEPNO, SID 等欄位。問題要求識別合併時的兩個問題及其解決方法。\n(NURSE table: NID, HKID, DEPNO, SID, 主關鍵碼: NID)\n(DOCTOR table: DID, HKID, DEPNO, SID, 主關鍵碼: DID)\n舉出於合併時會出現的兩個問題，並從每個問題建議一個解決方法。\n\n[圖片描述] 兩個表格，分別顯示 NURSE 和 DOCTOR 的部分數據，包含 HKID, DEPNO, SID 等欄位。問題要求識別合併時的兩個問題及其解決方法。",
+        "marks": null,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "診所決定合併 NURSE 和 DOCTOR。部份數據單記錄如下：\n(NURSE table: NID, HKID, DEPNO, SID, 主關鍵碼: NID)\n(DOCTOR table: DID, HKID, DEPNO, SID, 主關鍵碼: DID)\n舉出於合併時會出現的兩個問題，並從每個問題建議一個解決方法。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 兩個表格，分別顯示 NURSE 和 DOCTOR 的部分數據，包含 HKID, DEPNO, SID 等欄位。問題要求識別合併時的兩個問題及其解決方法。",
+            "(NURSE table: NID, HKID, DEPNO, SID, 主關鍵碼: NID)",
+            "(DOCTOR table: DID, HKID, DEPNO, SID, 主關鍵碼: DID)",
+            "舉出於合併時會出現的兩個問題，並從每個問題建議一個解決方法。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-3-d-i",
+        "type": "free_response",
+        "number": "3(d)(i)",
+        "section": "section_b",
+        "text": "診所使用一個新數據庫表 STAFF 來儲存 NURSE 和 DOCTOR 合併後的數據，從而以下任務：\n任務 1: 建立貼有相關屬性的 STAFF\n任務 2: ?\n任務 3: ?\n任務 4: 移除 DOCTOR 和 NURSE\n(i) 任務 2 涉及 NURSE, DOCTOR 和 STAFF。簡略說明任務 2。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "診所使用一個新數據庫表 STAFF 來儲存 NURSE 和 DOCTOR 合併後的數據，從而以下任務：\n任務 1: 建立貼有相關屬性的 STAFF\n任務 2: ?\n任務 3: ?\n任務 4: 移除 DOCTOR 和 NURSE\n(i) 任務 2 涉及 NURSE, DOCTOR 和 STAFF。簡略說明任務 2。",
+        "support_content": {
+          "lines": [
+            "任務 1: 建立貼有相關屬性的 STAFF",
+            "任務 2: ?",
+            "任務 3: ?",
+            "任務 4: 移除 DOCTOR 和 NURSE",
+            "(i) 任務 2 涉及 NURSE, DOCTOR 和 STAFF。簡略說明任務 2。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-3-d-ii",
+        "type": "free_response",
+        "number": "3(d)(ii)",
+        "section": "section_b",
+        "text": "任務 3 涉及 VREC。簡略說明任務 3。",
+        "marks": null,
+        "concepts": [
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper2A_Database-3-d-iii",
+        "type": "free_response",
+        "number": "3(d)(iii)",
+        "section": "section_b",
+        "text": "現有以下兩個建議方法，可於任務 4 內移除 DOCTOR：\n方法 1: DELETE FROM DOCTOR\n方法 2: DROP TABLE DOCTOR\n以上兩個方法的主要分別是什麼？",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "現有以下兩個建議方法，可於任務 4 內移除 DOCTOR：\n方法 1: DELETE FROM DOCTOR\n方法 2: DROP TABLE DOCTOR\n以上兩個方法的主要分別是什麼？",
+        "support_content": {
+          "lines": [
+            "方法 1: DELETE FROM DOCTOR",
+            "方法 2: DROP TABLE DOCTOR",
+            "以上兩個方法的主要分別是什麼？"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-4-a",
+        "type": "fill_in_the_blank_with_diagram",
+        "number": "4(a)",
+        "section": "section_b",
+        "text": "電影中心透過自動售票機於大堂內售賣戲票。電影中心內有兩間戲院，已使用數據庫表 TINFO 來儲存資料。\n(TINFO table: MTID, MNAME, MTIME, CID, CTYPE, TN, SNO)\n於下方寫上合適的欄位，以展示 TINFO 內的數據相關性。\nMNAME 取決於 _______ \nCID 取決於 CID。\n[表格式意] 一個表格，描述 TINFO 數據庫的欄位（MTID, MNAME, MTIME, CID, CTYPE, TN, SNO）及其例子。下方有空白處，需要填寫「MNAME 取決於 __________」和「CID 取決於 CID」的相關欄位。\n(TINFO table: MTID, MNAME, MTIME, CID, CTYPE, TN, SNO)\n於下方寫上合適的欄位，以展示 TINFO 內的數據相關性。\nMNAME 取決於 _______\nCID 取決於 CID。\n\n[圖片描述] 一個表格，描述 TINFO 數據庫的欄位（MTID, MNAME, MTIME, CID, CTYPE, TN, SNO）及其例子。下方有空白處，需要填寫「MNAME 取決於 __________」和「CID 取決於 CID」的相關欄位。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "電影中心透過自動售票機於大堂內售賣戲票。電影中心內有兩間戲院，已使用數據庫表 TINFO 來儲存資料。\n(TINFO table: MTID, MNAME, MTIME, CID, CTYPE, TN, SNO)\n於下方寫上合適的欄位，以展示 TINFO 內的數據相關性。\nMNAME 取決於 _______ \nCID 取決於 CID。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個表格，描述 TINFO 數據庫的欄位（MTID, MNAME, MTIME, CID, CTYPE, TN, SNO）及其例子。下方有空白處，需要填寫「MNAME 取決於 __________」和「CID 取決於 CID」的相關欄位。",
+            "(TINFO table: MTID, MNAME, MTIME, CID, CTYPE, TN, SNO)",
+            "於下方寫上合適的欄位，以展示 TINFO 內的數據相關性。",
+            "MNAME 取決於 _______",
+            "CID 取決於 CID。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-4-b-i",
+        "type": "sql_completion",
+        "number": "4(b)(i)",
+        "section": "section_b",
+        "text": "電影中心提供貴賓戲票，其座位編號為 1 至 10。運用集合函數完成以下 SQL 語句，以列出每個場編號已售出貴賓戲票的數量。\nSELECT CID, MTIME, _______ FROM TINFO WHERE SNO <= 10 GROUP BY CID, MTIME",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "電影中心提供貴賓戲票，其座位編號為 1 至 10。運用集合函數完成以下 SQL 語句，以列出每個場編號已售出貴賓戲票的數量。\nSELECT CID, MTIME, _______ FROM TINFO WHERE SNO <= 10 GROUP BY CID, MTIME",
+        "support_content": {
+          "lines": [
+            "SELECT CID, MTIME, _______ FROM TINFO WHERE SNO <= 10 GROUP BY CID, MTIME"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-4-b-ii",
+        "type": "sql_query_creation",
+        "number": "4(b)(ii)",
+        "section": "section_b",
+        "text": "寫出在 TINFO 的 CID 和 MTIME 上建構索引「SHOWTIME」的 SQL 語句。",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper2A_Database-4-b-iii",
+        "type": "free_response",
+        "number": "4(b)(iii)",
+        "section": "section_b",
+        "text": "舉出使用索引「SHOWTIME」的一個好處。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper2A_Database-4-c",
+        "type": "data_model_completion",
+        "number": "4(c)",
+        "section": "section_b",
+        "text": "完成以下數據模式以符合第二範式。指出相對應的主關鍵碼和外鍵碼。\nMOVIE(MID, _______)\n主關鍵碼: MID\nCINEMA(_______, TN)\n主關鍵碼: _______ \nTICKET(MID, MTIME, _______)\n主關鍵碼: _______ + _______ \n外鍵碼: MID 參照 MOVIE 的 MID\n外鍵碼: _______ 參照 _______ 的 _______\nMOVIE(MID, _______)\n主關鍵碼: MID\nCINEMA(_______, TN)\n主關鍵碼: _______\nTICKET(MID, MTIME, _______)\n主關鍵碼: _______ + _______\n外鍵碼: MID 參照 MOVIE 的 MID\n外鍵碼: _______ 參照 _______ 的 _______",
+        "marks": null,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化"
+        ],
+        "syllabus_status": "current",
+        "stem": "完成以下數據模式以符合第二範式。指出相對應的主關鍵碼和外鍵碼。\nMOVIE(MID, _______)\n主關鍵碼: MID\nCINEMA(_______, TN)\n主關鍵碼: _______ \nTICKET(MID, MTIME, _______)\n主關鍵碼: _______ + _______ \n外鍵碼: MID 參照 MOVIE 的 MID\n外鍵碼: _______ 參照 _______ 的 _______",
+        "support_content": {
+          "lines": [
+            "MOVIE(MID, _______)",
+            "主關鍵碼: MID",
+            "CINEMA(_______, TN)",
+            "主關鍵碼: _______",
+            "TICKET(MID, MTIME, _______)",
+            "主關鍵碼: _______ + _______",
+            "外鍵碼: MID 參照 MOVIE 的 MID",
+            "外鍵碼: _______ 參照 _______ 的 _______"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.313287+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper2A_Database-4-d",
+        "type": "free_response",
+        "number": "4(d)",
+        "section": "section_b",
+        "text": "電影中心於數據庫中儲存會員的個人資料。建議兩個與數據庫安全有關的方法以保護這些資料。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      }
+    ]
+  }
+}

@@ -137,6 +137,52 @@ def test_concept_match() -> None:
     assert result.ok
 
 
+def test_intra_exam_vibe_coding_leak() -> None:
+    """S3 CMP pattern: MCQ#10 answer «總監» appears in 丁部 fill stem."""
+    from quality_lib import compare_intra_exam_lines
+
+    lines = [
+        "甲部 – 多項選擇題",
+        "10.\tVibe Coding 下，學生最合適扮演？",
+        "A.\t抄襲 AI",
+        "B.\t總監（構思、測試、修正）",
+        "C.\t只畫圖",
+        "D.\t只閱卷",
+        "乙部 – 配對題",
+        "丙部 – 是非題",
+        "丁部 – 填充題",
+        "Vibe Coding 中，AI 像________，學生像總監。",
+        "戊部 – 短答題",
+        "根據筆記，Vibe Coding 為什麼需要「迭代（Iteration）」？請舉一個例子說明。",
+    ]
+    mcq_key = ["B"]
+    matches = compare_intra_exam_lines(lines, mcq_answers=mcq_key)
+    leaks = [m for m in matches if m.match_type == "answer_leak"]
+    assert leaks, "expected MCQ answer leak into fill blank"
+    assert any("丁" in m.reference_label for m in leaks)
+
+
+def test_intra_exam_cross_section_overlap() -> None:
+    from quality_lib import compare_intra_exam_lines
+
+    lines = [
+        "甲部 – 多項選擇題",
+        "10.\tVibe Coding 下，學生最合適扮演？",
+        "A.\tA",
+        "B.\tB",
+        "C.\tC",
+        "D.\tD",
+        "乙部 – 配對題",
+        "丙部 – 是非題",
+        "丁部 – 填充題",
+        "Vibe Coding 中，AI 像________，學生像總監。",
+        "戊部 – 短答題",
+    ]
+    matches = compare_intra_exam_lines(lines, mcq_answers=["B"])
+    overlaps = [m for m in matches if m.match_type == "intra_exam"]
+    assert overlaps, "expected cross-section thematic overlap"
+
+
 if __name__ == "__main__":
     test_format_backticks_fail()
     test_format_backticks_pass()
@@ -149,4 +195,6 @@ if __name__ == "__main__":
     test_mcq_docx_s3()
     test_concept_mismatch()
     test_concept_match()
+    test_intra_exam_vibe_coding_leak()
+    test_intra_exam_cross_section_overlap()
     print("ok")

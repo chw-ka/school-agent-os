@@ -1,0 +1,330 @@
+[
+    {
+        "section": "甲部 數據庫",
+        "question_number": "1",
+        "page": 2,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "就以下每個 MSHIP 的主關鍵碼,寫出此數據庫的限制。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "在以下每一個情況中,舉出其完整性問題,並提出一個解決方案。",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "一個新學會剛剛成立,並有一名學生參加這個學會。首先在 MSHIP 內插入一筆記錄,然後在 CLUB 內插入另一筆記錄。",
+                        "marks": 2
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "陳大文參加了游泳學會,成為為期兩年的會員。採用以下SQL語句來插入記錄。 INSERT INTO MSHIP (SID, CID, MYEAR) VALUES (20251234, 10, '2025-2026')",
+                        "marks": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "甲部 數據庫",
+        "question_number": "2",
+        "page": 3,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "某數碼音樂網站建立一個數據庫來儲存會員、音樂人和歌曲的資料。音樂人可以把他們的歌曲上載至網站,而會員可以追蹤他們喜愛的音樂人。 每一首歌曲由一位音樂人上載,並會由一位或多位音樂人演唱。 以下是此數據庫的部分實體關係圖。繪製此數據庫的實體關係圖,圖內不用畫上屬性。",
+                "marks": 5
+            },
+            {
+                "part_label": "b",
+                "question_text": "某公司採用以下數據庫表來儲存員工和項目的資料。每一個項目有多名員工參與,而每名員工可能參與多個項目。",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "草擬一個第三範式的新數據庫模式,並在主關鍵碼上加上底線。",
+                        "marks": 2
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "以下有兩個替代的設計: 寫出最合適的設計來完成以下每項工作,並簡略說明你的答案。 (1) 列出員工編號為「S35」的員工參與的項目編碼。 (2) 列出參與CMS項目的員工編號。 (3) 列出只參與一個項目的員工編號。",
+                        "marks": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "甲部 數據庫",
+        "question_number": "3",
+        "page": 4,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "為以下任務寫出SQL語句。",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "列出於14-2-2026 有預訂的會員姓名和電話號碼。",
+                        "marks": 2
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "列出從未有被預訂的餐廳識別碼。",
+                        "marks": 2
+                    },
+                    {
+                        "part_label": "iii",
+                        "question_text": "建立檢視 VIP,列出多於10次按預訂到場的會員識別碼。",
+                        "marks": 3
+                    },
+                    {
+                        "part_label": "iv",
+                        "question_text": "莉莉的會員識別碼是C122。她根據以下要求找尋餐廳。 • 她曾經有按預訂到場的餐廳 • 金會員給予的用餐評分的平均值大過4 列出滿足所有要求的餐廳識別碼和名稱。",
+                        "marks": 5
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "question_text": "以下SQL語句列出餐廳識別碼和每間餐廳被預訂次數。 寫出此 SQL 語句中未填寫的部分。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "section": "乙部 網絡應用程式開發",
+        "question_number": "4",
+        "page": 5,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "在第14和16行中 pw1 和pw2的輸入類型不應該是text。正確的輸入類型是什麼?",
+                "marks": 1
+            },
+            {
+                "part_label": "b",
+                "question_text": "chk2 會在哪些情況下被執行?",
+                "marks": 1
+            },
+            {
+                "part_label": "c",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "當兩個輸入密碼不匹配時會有提示訊息顯示。 寫出第26行中未填寫的部分。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "重寫第33行,以確保在執行 submit.php 之前必須勾選該複選框。",
+                        "marks": 2
+                    }
+                ]
+            },
+            {
+                "part_label": "d",
+                "question_text": "簡略說明成功註冊後可怎樣使用曲奇。",
+                "marks": 1
+            }
+        ]
+    },
+    {
+        "section": "乙部 網絡應用程式開發",
+        "question_number": "5",
+        "page": 6,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "李先生考慮在此網絡中安裝以下設備。舉出支持安裝每個設備的一個理由。",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "代理伺服器",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "網間連接器",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "iii",
+                        "question_text": "網域控制器",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "question_text": "舉出除了連接流動裝置至網絡外,與網絡接達點有關的兩個功能。",
+                "marks": 2
+            },
+            {
+                "part_label": "c",
+                "question_text": "為什麼應該把動態IP 位址和靜態 IP 位址分別指派給訪客流動裝置和職員電腦?",
+                "marks": 2
+            },
+            {
+                "part_label": "d",
+                "question_text": "當訪客瀏覽包含以下腳本的網頁時,每個腳本會在哪個設備上運行?",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "<?php echo \"<h1>您好!</h1>\"; ?>",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "<script> alert(\"您好!\"); </script>",
+                        "marks": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "乙部 網絡應用程式開發",
+        "question_number": "6",
+        "page": 7,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "舉出在網頁內使用GET 的兩個優點。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "在第15行: (i) 沒有採用外部樣式(external)的CSS。採用了什麼類型的CSS? (ii) 舉出使用此類型CSS的一個好處。 (iii) 該顏色編碼是怎樣代表顏色?",
+                "marks": 3
+            },
+            {
+                "part_label": "c",
+                "question_text": "index.html 內 label 的背景顏色是什麼?",
+                "marks": 1
+            },
+            {
+                "part_label": "d",
+                "question_text": "使用 mysqli_num_rows() 和 highlight,寫出 getrace.php 中未填寫的部分。",
+                "marks": 7
+            },
+            {
+                "part_label": "e",
+                "question_text": "雖然PHP會在腳本終結時自動關閉數據庫連接,明確地使用 mysqli_close() 來關閉數據庫連接是一個良好習慣。為什麼?",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "section": "丙部 算法與程式編寫",
+        "question_number": "7",
+        "page": 10,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "假設只有5個t和d的數值,如以上樣本數據展示。寫出排序後首3個t和d的數值。",
+                "marks": 1
+            },
+            {
+                "part_label": "b",
+                "question_text": "以下程式段是以選擇排序法來進行此排序。寫出程式段中未填寫的部分。",
+                "marks": 3
+            },
+            {
+                "part_label": "c",
+                "question_text": "一個配備此聲音傳感器的系統在設有嘈雜機器的工廠內安裝。描述如何利用聲音傳感器所收集的數據來保護工廠工人,免受聽力傷害。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "section": "丙部 算法與程式編寫",
+        "question_number": "8",
+        "page": 12,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "建議另一個作為空指示標的數值。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "根據以上例子,此鏈表中儲存了多少個英文名?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "iii",
+                        "question_text": "根據以上例子,並假設在n[8]儲存了「Fan」,執行ap('Mia',8)。以下(al)和(a2)是什麼?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "iv",
+                        "question_text": "寫出以下偽代碼中未填寫的部分。",
+                        "marks": 2
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "假設隊列初始時是空的。舉出順序執行 enq(18)、enq(12)、deq()、enq(6)和deq()後的隊列。",
+                        "marks": 2
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "子程式 fn(K)是用來把K添加至隊列的隊首之前。寫出以下偽代碼中未填寫的部分。",
+                        "marks": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "丙部 算法與程式編寫",
+        "question_number": "9",
+        "page": 14,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "寫出 sv內的數值。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "寫出 max(sv)傳回的數值。",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "question_text": "子程式 build_sv是用來建立 sv。寫出以下偽代碼中未填寫的部分。",
+                "marks": 3
+            },
+            {
+                "part_label": "c",
+                "question_text": "使用 max(sv),寫出以下偽代碼中未填寫的部分。",
+                "marks": 3
+            },
+            {
+                "part_label": "d",
+                "question_text": "寫出以下偽代碼中未填寫的部分。",
+                "marks": 3
+            },
+            {
+                "part_label": "e",
+                "question_text": "子程式 max_seaview(p,q,H)是用來嘗試找出在此土地上可容許矗立此新大廈的所有位置,並傳回擁有海景單元的最大數量。寫出以下偽代碼中未填寫的部分。",
+                "marks": 3
+            }
+        ]
+    }
+]

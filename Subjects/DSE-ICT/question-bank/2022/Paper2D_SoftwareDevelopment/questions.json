@@ -1,0 +1,2455 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "import_source": "gemini-output",
+    "imported_at": "2026-05-22T00:23:37.864293+00:00",
+    "year_label": "2022",
+    "paper_slug": "Paper2D_SoftwareDevelopment",
+    "paper_label": "Paper 2D — Software Development (軟件開發)",
+    "source_pdf": "Subjects/DSE-ICT/past-papers/2022/DSE_ICT_2022_Paper2D_SoftwareDevelopment.pdf",
+    "question_count": 33,
+    "gemini_source_files": [
+      "2022-p2d.json"
+    ],
+    "curriculum_guide": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+    "syllabus_retagged_at": "2026-05-22T03:38:00.001053+00:00",
+    "syllabus_revision": "2021",
+    "support_enriched_at": "2026-05-22T04:32:46.290276+00:00"
+  },
+  "items": [
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-1-a",
+      "section": "section_b",
+      "text": "抹窗機在其初始狀態下執行 TR, MF, MF, TR, TR, TR, MF 後的路徑和最終狀態。\n\n[圖片描述] 一個 8x6 的網格圖，顯示抹窗機的初始狀態 (C，面向右)。問題要求繪製執行特定子程式後的路徑和最終狀態。上方還有一個例子展示 MF, MF, TR, MF 後的路徑。",
+      "number": "1(a)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_tracing_with_diagram",
+      "has_image": true,
+      "image_description": "一個 8x6 的網格圖，顯示抹窗機的初始狀態 (C，面向右)。問題要求繪製執行特定子程式後的路徑和最終狀態。上方還有一個例子展示 MF, MF, TR, MF 後的路徑。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "1(a)",
+        "question_text": "抹窗機在其初始狀態下執行 TR, MF, MF, TR, TR, TR, MF 後的路徑和最終狀態。",
+        "question_type": "algorithm_tracing_with_diagram",
+        "has_image": true,
+        "image_description": "一個 8x6 的網格圖，顯示抹窗機的初始狀態 (C，面向右)。問題要求繪製執行特定子程式後的路徑和最終狀態。上方還有一個例子展示 MF, MF, TR, MF 後的路徑。",
+        "subprogram_details": [
+          {
+            "name": "MF",
+            "description": "向前移動 1 單位"
+          },
+          {
+            "name": "TR",
+            "description": "順時針旋轉 90 度"
+          }
+        ]
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-1-b-i",
+      "section": "section_b",
+      "text": "志明編寫額外兩個子程式程式控制抹窗機：FD(N) 描述 向前移動 N 單位，TL 描述 逆時針旋轉 90 度。完成以下 FD(N) 的偽代碼。\n設 i 由 1 至 _______ 執行 MF",
+      "number": "1(b)(i)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "1(b)(i)",
+        "question_text": "志明編寫額外兩個子程式程式控制抹窗機：FD(N) 描述 向前移動 N 單位，TL 描述 逆時針旋轉 90 度。完成以下 FD(N) 的偽代碼。",
+        "algorithm_code": "設 i 由 1 至 _______ 執行 MF",
+        "question_type": "algorithm_completion",
+        "has_image": false,
+        "subprogram_details": [
+          {
+            "name": "FD(N)",
+            "description": "向前移動 N 單位"
+          },
+          {
+            "name": "TL",
+            "description": "逆時針旋轉 90 度"
+          }
+        ]
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "設 i 由 1 至 _______ 執行 MF"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "志明編寫額外兩個子程式程式控制抹窗機：FD(N) 描述 向前移動 N 單位，TL 描述 逆時針旋轉 90 度。完成以下 FD(N) 的偽代碼。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-1-b-ii",
+      "section": "section_b",
+      "text": "完成以下 TL 的偽代碼。\n設 i 由 1 至 _______ 執行 TR",
+      "number": "1(b)(ii)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "1(b)(ii)",
+        "question_text": "完成以下 TL 的偽代碼。",
+        "algorithm_code": "設 i 由 1 至 _______ 執行 TR",
+        "question_type": "algorithm_completion",
+        "has_image": false,
+        "subprogram_details": [
+          {
+            "name": "FD(N)",
+            "description": "向前移動 N 單位"
+          },
+          {
+            "name": "TL",
+            "description": "逆時針旋轉 90 度"
+          }
+        ]
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "設 i 由 1 至 _______ 執行 TR"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "完成以下 TL 的偽代碼。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-1-c",
+      "section": "section_b",
+      "text": "上圖圖示抹窗機在其初始狀態下執行 ProA 後的路徑和最終狀態。編寫 ProA 的偽代碼。\n\n[圖片描述] 一個 8x6 的網格圖，顯示抹窗機從初始狀態 C (位置和航向) 執行 ProA 後的路徑和最終狀態。路徑為先向左移動 5 單位，然後向下移動 4 單位，再向右移動 5 單位，最後向上移動 4 單位，回到初始列但位置不同。",
+      "number": "1(c)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_writing_with_diagram",
+      "has_image": true,
+      "image_description": "一個 8x6 的網格圖，顯示抹窗機從初始狀態 C (位置和航向) 執行 ProA 後的路徑和最終狀態。路徑為先向左移動 5 單位，然後向下移動 4 單位，再向右移動 5 單位，最後向上移動 4 單位，回到初始列但位置不同。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "1(c)",
+        "question_text": "上圖圖示抹窗機在其初始狀態下執行 ProA 後的路徑和最終狀態。編寫 ProA 的偽代碼。",
+        "question_type": "algorithm_writing_with_diagram",
+        "has_image": true,
+        "image_description": "一個 8x6 的網格圖，顯示抹窗機從初始狀態 C (位置和航向) 執行 ProA 後的路徑和最終狀態。路徑為先向左移動 5 單位，然後向下移動 4 單位，再向右移動 5 單位，最後向上移動 4 單位，回到初始列但位置不同。",
+        "algorithm_code": ""
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-1-d",
+      "section": "section_b",
+      "text": "上圖圖示抹窗機在其初始狀態下執行 ProB 後的路徑和最終狀態，抹窗機最終返回其初始狀態。完成以下 ProB 的偽代碼。\n設 i 由 1 至 2 執行\n   _______\n   MF\n   _______\n   FD(5)\n\n[圖片描述] 一個 8x6 的網格圖，顯示抹窗機從初始狀態 C (位置和航向) 執行 ProB 後的路徑和最終狀態。路徑為先向下移動 2 單位，然後向左移動 2 單位，再向上移動 2 單位，最後向右移動 2 單位，回到初始位置和航向。圖中有多個方格被標記為移動路徑。",
+      "number": "1(d)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion_with_diagram",
+      "has_image": true,
+      "image_description": "一個 8x6 的網格圖，顯示抹窗機從初始狀態 C (位置和航向) 執行 ProB 後的路徑和最終狀態。路徑為先向下移動 2 單位，然後向左移動 2 單位，再向上移動 2 單位，最後向右移動 2 單位，回到初始位置和航向。圖中有多個方格被標記為移動路徑。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "1(d)",
+        "question_text": "上圖圖示抹窗機在其初始狀態下執行 ProB 後的路徑和最終狀態，抹窗機最終返回其初始狀態。完成以下 ProB 的偽代碼。",
+        "question_type": "algorithm_completion_with_diagram",
+        "has_image": true,
+        "image_description": "一個 8x6 的網格圖，顯示抹窗機從初始狀態 C (位置和航向) 執行 ProB 後的路徑和最終狀態。路徑為先向下移動 2 單位，然後向左移動 2 單位，再向上移動 2 單位，最後向右移動 2 單位，回到初始位置和航向。圖中有多個方格被標記為移動路徑。",
+        "algorithm_code": "設 i 由 1 至 2 執行\n   _______\n   MF\n   _______\n   FD(5)"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "設 i 由 1 至 2 執行",
+          "   _______",
+          "   MF",
+          "   _______",
+          "   FD(5)"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "上圖圖示抹窗機在其初始狀態下執行 ProB 後的路徑和最終狀態，抹窗機最終返回其初始狀態。完成以下 ProB 的偽代碼。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-1-e-i",
+      "section": "section_b",
+      "text": "志明編寫子程式控制抹窗機返回其初始狀態。他假設 D = 3，並使用 X 和 Y 來編寫子程式 ProC，以控制抹窗機返回其初始狀態。編寫 ProC 的偽代碼。\n\n[圖片描述] 一個 8x6 的網格圖，顯示抹窗機的當前狀態 (X=3, Y=2, D=3，即位於 (3,2) 並面向左)。圖中還顯示了 X, Y, D 變量的描述和方向編碼。",
+      "number": "1(e)(i)",
+      "concepts": [
+        "試算表",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_writing_with_diagram",
+      "has_image": true,
+      "image_description": "一個 8x6 的網格圖，顯示抹窗機的當前狀態 (X=3, Y=2, D=3，即位於 (3,2) 並面向左)。圖中還顯示了 X, Y, D 變量的描述和方向編碼。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "1(e)(i)",
+        "question_text": "志明編寫子程式控制抹窗機返回其初始狀態。他假設 D = 3，並使用 X 和 Y 來編寫子程式 ProC，以控制抹窗機返回其初始狀態。編寫 ProC 的偽代碼。",
+        "question_type": "algorithm_writing_with_diagram",
+        "has_image": true,
+        "image_description": "一個 8x6 的網格圖，顯示抹窗機的當前狀態 (X=3, Y=2, D=3，即位於 (3,2) 並面向左)。圖中還顯示了 X, Y, D 變量的描述和方向編碼。",
+        "table_details": {
+          "headers": [
+            "變量",
+            "描述"
+          ],
+          "rows": [
+            [
+              "X",
+              "與初始狀態的水平距離"
+            ],
+            [
+              "Y",
+              "與初始狀態的垂直距離"
+            ],
+            [
+              "D",
+              "整數值表示抹窗機的當前方向：0 = ⬆️ ; 1 = ➡️ ; 2 = ⬇️ ; 3 = ⬅️"
+            ]
+          ]
+        },
+        "algorithm_code": ""
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-1-e-ii",
+      "section": "section_b",
+      "text": "他編寫子程式 ProD，不論 D 的數值是什麼 (由 0 至 3)，皆可控制抹窗機返回其初始狀態。完成以下 ProD 的偽代碼。\n設 i 由 _______ 至 _______ 執行 ProC",
+      "number": "1(e)(ii)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "1(e)(ii)",
+        "question_text": "他編寫子程式 ProD，不論 D 的數值是什麼 (由 0 至 3)，皆可控制抹窗機返回其初始狀態。完成以下 ProD 的偽代碼。",
+        "question_type": "algorithm_completion",
+        "has_image": false,
+        "algorithm_code": "設 i 由 _______ 至 _______ 執行 ProC"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "設 i 由 _______ 至 _______ 執行 ProC"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "他編寫子程式 ProD，不論 D 的數值是什麼 (由 0 至 3)，皆可控制抹窗機返回其初始狀態。完成以下 ProD 的偽代碼。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-1-f",
+      "section": "section_b",
+      "text": "這些子程式可利用低級語言或高級語言來開發，舉出使用這兩類語言的優點各一個。",
+      "number": "1(f)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "1(f)",
+        "question_text": "這些子程式可利用低級語言或高級語言來開發，舉出使用這兩類語言的優點各一個。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-2-a-i",
+      "section": "section_b",
+      "text": "小芬建立一個堆疊 S，而變量 N 儲存 S 內元素的數量。她使用以下子程式。寫出執行以下偽代碼後 N 和 X 的值。\nclear(S)\npush(S, 2)\npush(S, 5)\nX ← pop(S)\nN = _______ X = _______",
+      "number": "2(a)(i)",
+      "concepts": [
+        "算法",
+        "偽代碼",
+        "堆疊",
+        "佇列",
+        "鏈表"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_tracing_with_table",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "2(a)(i)",
+        "question_text": "小芬建立一個堆疊 S，而變量 N 儲存 S 內元素的數量。她使用以下子程式。寫出執行以下偽代碼後 N 和 X 的值。",
+        "algorithm_code": "clear(S)\npush(S, 2)\npush(S, 5)\nX ← pop(S)\nN = _______ X = _______",
+        "question_type": "algorithm_tracing_with_table",
+        "has_image": false,
+        "table_details": {
+          "headers": [
+            "子程式",
+            "描述"
+          ],
+          "rows": [
+            [
+              "clear(S)",
+              "移除 S 中的所有元素。"
+            ],
+            [
+              "isEmpty(S)",
+              "如果 S 是空的，傳回 TRUE，否則傳回 FALSE。"
+            ],
+            [
+              "push(S, K)",
+              "把項目 K 添加至 S，成為其頂端元素。"
+            ],
+            [
+              "pop(S)",
+              "移除並傳回 S 內的頂端元素。"
+            ]
+          ]
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "clear(S)",
+          "push(S, 2)",
+          "push(S, 5)",
+          "X ← pop(S)",
+          "N = _______ X = _______"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "小芬建立一個堆疊 S，而變量 N 儲存 S 內元素的數量。她使用以下子程式。寫出執行以下偽代碼後 N 和 X 的值。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-2-a-ii",
+      "section": "section_b",
+      "text": "編寫 isEmpty(S) 的偽代碼。",
+      "number": "2(a)(ii)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_writing",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "2(a)(ii)",
+        "question_text": "編寫 isEmpty(S) 的偽代碼。",
+        "question_type": "algorithm_writing",
+        "has_image": false,
+        "algorithm_code": ""
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-2-b-i",
+      "section": "section_b",
+      "text": "A 是一個僅包含 5 個元素的陣列，用作儲存非負整數和至少一個 '+' 字符。小芬編寫子程式 Sub1 的偽代碼。以下 A 的初始內容為例，Sub1 的傳回值是 3。\n對以下 A 的初始內容，寫出 Sub1 的傳回值。\nSub1\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n結束執行\n回傳 pop(S)\n對以下 A 的初始內容，寫出 Sub1 的傳回值。\n\n[圖片描述] 一個表格顯示陣列 A 的初始內容。偽代碼 Sub1 處理堆疊 S。",
+      "number": "2(b)(i)",
+      "concepts": [
+        "算法",
+        "偽代碼",
+        "堆疊",
+        "佇列",
+        "鏈表"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_tracing_with_diagram",
+      "has_image": true,
+      "image_description": "一個表格顯示陣列 A 的初始內容。偽代碼 Sub1 處理堆疊 S。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "2(b)(i)",
+        "question_text": "A 是一個僅包含 5 個元素的陣列，用作儲存非負整數和至少一個 '+' 字符。小芬編寫子程式 Sub1 的偽代碼。以下 A 的初始內容為例，Sub1 的傳回值是 3。\n對以下 A 的初始內容，寫出 Sub1 的傳回值。",
+        "question_type": "algorithm_tracing_with_diagram",
+        "has_image": true,
+        "image_description": "一個表格顯示陣列 A 的初始內容。偽代碼 Sub1 處理堆疊 S。",
+        "table_details": {
+          "headers": [
+            "A[i]"
+          ],
+          "rows": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "+",
+              "+"
+            ]
+          ]
+        },
+        "algorithm_code": "Sub1\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n結束執行\n回傳 pop(S)"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "Sub1",
+          "clear(S)",
+          "從 i 由 1 至 5 執行",
+          "   如果 A[i] <> '+' 則",
+          "      push(S, A[i])",
+          "   否則",
+          "      B ← pop(S)",
+          "      C ← pop(S)",
+          "      push(S, B+C)",
+          "結束執行",
+          "回傳 pop(S)",
+          "對以下 A 的初始內容，寫出 Sub1 的傳回值。"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "A 是一個僅包含 5 個元素的陣列，用作儲存非負整數和至少一個 '+' 字符。小芬編寫子程式 Sub1 的偽代碼。以下 A 的初始內容為例，Sub1 的傳回值是 3。\n對以下 A 的初始內容，寫出 Sub1 的傳回值。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-2-b-ii",
+      "section": "section_b",
+      "text": "對以下 A 的初始內容，寫出 Sub1 的傳回值。\nSub1\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n結束執行\n回傳 pop(S)\n\n[圖片描述] 一個表格顯示陣列 A 的初始內容。偽代碼 Sub1 處理堆疊 S。",
+      "number": "2(b)(ii)",
+      "concepts": [
+        "算法",
+        "偽代碼",
+        "堆疊",
+        "佇列",
+        "鏈表"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_tracing_with_diagram",
+      "has_image": true,
+      "image_description": "一個表格顯示陣列 A 的初始內容。偽代碼 Sub1 處理堆疊 S。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "2(b)(ii)",
+        "question_text": "對以下 A 的初始內容，寫出 Sub1 的傳回值。",
+        "question_type": "algorithm_tracing_with_diagram",
+        "has_image": true,
+        "image_description": "一個表格顯示陣列 A 的初始內容。偽代碼 Sub1 處理堆疊 S。",
+        "table_details": {
+          "headers": [
+            "A[i]"
+          ],
+          "rows": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            [
+              "1",
+              "2",
+              "3",
+              "+",
+              "4"
+            ]
+          ]
+        },
+        "algorithm_code": "Sub1\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n結束執行\n回傳 pop(S)"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "Sub1",
+          "clear(S)",
+          "從 i 由 1 至 5 執行",
+          "   如果 A[i] <> '+' 則",
+          "      push(S, A[i])",
+          "   否則",
+          "      B ← pop(S)",
+          "      C ← pop(S)",
+          "      push(S, B+C)",
+          "結束執行",
+          "回傳 pop(S)"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "對以下 A 的初始內容，寫出 Sub1 的傳回值。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-2-c-i",
+      "section": "section_b",
+      "text": "小芬重寫 Sub1 的最後一句，經修改後為 Sub2。完成以下 A 的初始內容，使 Sub2 傳回 -1。\nSub2\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n   結束如果\n結束執行\n如果 N = 1 則\n   回傳 pop(S)\n否則\n   回傳 -1\n\n[圖片描述] 一個表格顯示陣列 A 的部分初始內容。偽代碼 Sub2 處理堆疊 S。",
+      "number": "2(c)(i)",
+      "concepts": [
+        "算法",
+        "偽代碼",
+        "堆疊",
+        "佇列",
+        "鏈表"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion_with_diagram",
+      "has_image": true,
+      "image_description": "一個表格顯示陣列 A 的部分初始內容。偽代碼 Sub2 處理堆疊 S。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "2(c)(i)",
+        "question_text": "小芬重寫 Sub1 的最後一句，經修改後為 Sub2。完成以下 A 的初始內容，使 Sub2 傳回 -1。",
+        "question_type": "algorithm_completion_with_diagram",
+        "has_image": true,
+        "image_description": "一個表格顯示陣列 A 的部分初始內容。偽代碼 Sub2 處理堆疊 S。",
+        "table_details": {
+          "headers": [
+            "A[i]"
+          ],
+          "rows": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "",
+              ""
+            ]
+          ]
+        },
+        "algorithm_code": "Sub2\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n   結束如果\n結束執行\n如果 N = 1 則\n   回傳 pop(S)\n否則\n   回傳 -1"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "Sub2",
+          "clear(S)",
+          "從 i 由 1 至 5 執行",
+          "   如果 A[i] <> '+' 則",
+          "      push(S, A[i])",
+          "   否則",
+          "      B ← pop(S)",
+          "      C ← pop(S)",
+          "      push(S, B+C)",
+          "   結束如果",
+          "結束執行",
+          "如果 N = 1 則",
+          "   回傳 pop(S)",
+          "否則",
+          "   回傳 -1"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "小芬重寫 Sub1 的最後一句，經修改後為 Sub2。完成以下 A 的初始內容，使 Sub2 傳回 -1。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-2-c-ii",
+      "section": "section_b",
+      "text": "當 pop(S) 以空的 S 運行時，Sub2 會出現問題。完成以下 A 的初始內容，令到這個問題出現。\nSub2\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n   結束如果\n結束執行\n如果 N = 1 則\n   回傳 pop(S)\n否則\n   回傳 -1\n\n[圖片描述] 一個表格顯示陣列 A 的部分初始內容。偽代碼 Sub2 處理堆疊 S。",
+      "number": "2(c)(ii)",
+      "concepts": [
+        "算法",
+        "偽代碼",
+        "堆疊",
+        "佇列",
+        "鏈表"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion_with_diagram",
+      "has_image": true,
+      "image_description": "一個表格顯示陣列 A 的部分初始內容。偽代碼 Sub2 處理堆疊 S。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "2(c)(ii)",
+        "question_text": "當 pop(S) 以空的 S 運行時，Sub2 會出現問題。完成以下 A 的初始內容，令到這個問題出現。",
+        "question_type": "algorithm_completion_with_diagram",
+        "has_image": true,
+        "image_description": "一個表格顯示陣列 A 的部分初始內容。偽代碼 Sub2 處理堆疊 S。",
+        "table_details": {
+          "headers": [
+            "A[i]"
+          ],
+          "rows": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            [
+              "1",
+              "1",
+              "1",
+              "",
+              ""
+            ]
+          ]
+        },
+        "algorithm_code": "Sub2\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n   結束如果\n結束執行\n如果 N = 1 則\n   回傳 pop(S)\n否則\n   回傳 -1"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "Sub2",
+          "clear(S)",
+          "從 i 由 1 至 5 執行",
+          "   如果 A[i] <> '+' 則",
+          "      push(S, A[i])",
+          "   否則",
+          "      B ← pop(S)",
+          "      C ← pop(S)",
+          "      push(S, B+C)",
+          "   結束如果",
+          "結束執行",
+          "如果 N = 1 則",
+          "   回傳 pop(S)",
+          "否則",
+          "   回傳 -1"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "當 pop(S) 以空的 S 運行時，Sub2 會出現問題。完成以下 A 的初始內容，令到這個問題出現。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-2-d",
+      "section": "section_b",
+      "text": "小芬利用一個布爾變量 flag 將 Sub2 修改為 Sub3，以解決 (c)(ii) 的問題。完成以下 Sub3。\nSub3\nclear(S)\nflag ← TRUE\n從 i 由 1 至 5 執行\n   如果 _______ 則\n      如果 A[i] <> '+' 則\n         push(S, A[i])\n      否則\n         B ← pop(S)\n         C ← pop(S)\n         push(S, B+C)\n      結束如果\n   否則\n      flag ← FALSE\n   結束如果\n結束執行\n如果 N = 1 則\n   回傳 pop(S)\n否則\n   回傳 -1",
+      "number": "2(d)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "2(d)",
+        "question_text": "小芬利用一個布爾變量 flag 將 Sub2 修改為 Sub3，以解決 (c)(ii) 的問題。完成以下 Sub3。",
+        "question_type": "algorithm_completion",
+        "has_image": false,
+        "algorithm_code": "Sub3\nclear(S)\nflag ← TRUE\n從 i 由 1 至 5 執行\n   如果 _______ 則\n      如果 A[i] <> '+' 則\n         push(S, A[i])\n      否則\n         B ← pop(S)\n         C ← pop(S)\n         push(S, B+C)\n      結束如果\n   否則\n      flag ← FALSE\n   結束如果\n結束執行\n如果 N = 1 則\n   回傳 pop(S)\n否則\n   回傳 -1"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "Sub3",
+          "clear(S)",
+          "flag ← TRUE",
+          "從 i 由 1 至 5 執行",
+          "   如果 _______ 則",
+          "      如果 A[i] <> '+' 則",
+          "         push(S, A[i])",
+          "      否則",
+          "         B ← pop(S)",
+          "         C ← pop(S)",
+          "         push(S, B+C)",
+          "      結束如果",
+          "   否則",
+          "      flag ← FALSE",
+          "   結束如果",
+          "結束執行",
+          "如果 N = 1 則",
+          "   回傳 pop(S)",
+          "否則",
+          "   回傳 -1"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "小芬利用一個布爾變量 flag 將 Sub2 修改為 Sub3，以解決 (c)(ii) 的問題。完成以下 Sub3。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-2-e-i",
+      "section": "section_b",
+      "text": "小芬在開發資訊系統時須執行以下任務。她為這項開發草擬了以下甘特圖。寫出圖中的兩個主要錯誤及其對應的修正。\n[表格式意] 一個甘特圖，顯示了任務 A-H 在 10 天時間內的安排。圖上方有一個表格，列出任務、持續時間(日)和依賴。\n\n[圖片描述] 一個甘特圖，顯示了任務 A-H 在 10 天時間內的安排。圖上方有一個表格，列出任務、持續時間(日)和依賴。",
+      "number": "2(e)(i)",
+      "concepts": [
+        "資訊處理"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "gantt_chart_analysis",
+      "has_image": true,
+      "image_description": "一個甘特圖，顯示了任務 A-H 在 10 天時間內的安排。圖上方有一個表格，列出任務、持續時間(日)和依賴。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "2(e)(i)",
+        "question_text": "小芬在開發資訊系統時須執行以下任務。她為這項開發草擬了以下甘特圖。寫出圖中的兩個主要錯誤及其對應的修正。",
+        "question_type": "gantt_chart_analysis",
+        "has_image": true,
+        "image_description": "一個甘特圖，顯示了任務 A-H 在 10 天時間內的安排。圖上方有一個表格，列出任務、持續時間(日)和依賴。",
+        "gantt_chart_details": {
+          "tasks": [
+            {
+              "name": "A",
+              "duration": 2,
+              "dependencies": []
+            },
+            {
+              "name": "B",
+              "duration": 2,
+              "dependencies": []
+            },
+            {
+              "name": "C",
+              "duration": 2,
+              "dependencies": []
+            },
+            {
+              "name": "D",
+              "duration": 2,
+              "dependencies": []
+            },
+            {
+              "name": "E",
+              "duration": 1,
+              "dependencies": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            },
+            {
+              "name": "F",
+              "duration": 1,
+              "dependencies": [
+                "E"
+              ]
+            },
+            {
+              "name": "G",
+              "duration": 1,
+              "dependencies": [
+                "A"
+              ]
+            },
+            {
+              "name": "H",
+              "duration": 1,
+              "dependencies": [
+                "E",
+                "F",
+                "G"
+              ]
+            }
+          ],
+          "chart_visualization": [
+            {
+              "task": "A",
+              "start_day": 1,
+              "end_day": 2
+            },
+            {
+              "task": "B",
+              "start_day": 1,
+              "end_day": 2
+            },
+            {
+              "task": "C",
+              "start_day": 3,
+              "end_day": 4
+            },
+            {
+              "task": "D",
+              "start_day": 3,
+              "end_day": 4
+            },
+            {
+              "task": "E",
+              "start_day": 5,
+              "end_day": 5
+            },
+            {
+              "task": "F",
+              "start_day": 6,
+              "end_day": 6
+            },
+            {
+              "task": "G",
+              "start_day": 7,
+              "end_day": 7
+            },
+            {
+              "task": "H",
+              "start_day": 8,
+              "end_day": 8
+            }
+          ]
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個甘特圖，顯示了任務 A-H 在 10 天時間內的安排。圖上方有一個表格，列出任務、持續時間(日)和依賴。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "小芬在開發資訊系統時須執行以下任務。她為這項開發草擬了以下甘特圖。寫出圖中的兩個主要錯誤及其對應的修正。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-2-e-ii",
+      "section": "section_b",
+      "text": "小芬決定使用編譯程式而不是解譯程式來開發系統。舉出一個理由以支持她的決定。",
+      "number": "2(e)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "2(e)(ii)",
+        "question_text": "小芬決定使用編譯程式而不是解譯程式來開發系統。舉出一個理由以支持她的決定。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-3-a",
+      "section": "section_b",
+      "text": "李小姐開發一個應用程式來管理座位。該座位表由 5 排組成，而每排有 8 個座位。SP [i,j] 儲存座位 [i,j] 的元素。例如，班號為 12 的學生坐在第 2 排的第 4 個座位。李小姐使用陣列 SP[i,j] 來儲存座位在第 1 排第 J 個座位的學生班號。因此 SP = 12。寫出在 SP 中儲存班號 23 的元素索引。\n[表格式意] 一個 5x8 的表格，顯示了座位號碼 (1-40)。表格的行標記為 '排' (1-5)，列標記為 '班' (1-8)。\n\n[圖片描述] 一個 5x8 的表格，顯示了座位號碼 (1-40)。表格的行標記為 '排' (1-5)，列標記為 '班' (1-8)。",
+      "number": "3(a)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "short_answer_with_diagram",
+      "has_image": true,
+      "image_description": "一個 5x8 的表格，顯示了座位號碼 (1-40)。表格的行標記為 '排' (1-5)，列標記為 '班' (1-8)。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "3(a)",
+        "question_text": "李小姐開發一個應用程式來管理座位。該座位表由 5 排組成，而每排有 8 個座位。SP [i,j] 儲存座位 [i,j] 的元素。例如，班號為 12 的學生坐在第 2 排的第 4 個座位。李小姐使用陣列 SP[i,j] 來儲存座位在第 1 排第 J 個座位的學生班號。因此 SP = 12。寫出在 SP 中儲存班號 23 的元素索引。",
+        "question_type": "short_answer_with_diagram",
+        "has_image": true,
+        "image_description": "一個 5x8 的表格，顯示了座位號碼 (1-40)。表格的行標記為 '排' (1-5)，列標記為 '班' (1-8)。",
+        "table_details": {
+          "headers": [
+            "",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "rows": [
+            [
+              "5",
+              "16",
+              "24",
+              "32",
+              "40",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "4",
+              "15",
+              "23",
+              "31",
+              "39",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "3",
+              "14",
+              "22",
+              "30",
+              "38",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "2",
+              "13",
+              "21",
+              "29",
+              "37",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "1",
+              "12",
+              "20",
+              "28",
+              "36",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "11",
+              "19",
+              "27",
+              "35",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "10",
+              "18",
+              "26",
+              "34",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "9",
+              "17",
+              "25",
+              "33",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個 5x8 的表格，顯示了座位號碼 (1-40)。表格的行標記為 '排' (1-5)，列標記為 '班' (1-8)。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "李小姐開發一個應用程式來管理座位。該座位表由 5 排組成，而每排有 8 個座位。SP [i,j] 儲存座位 [i,j] 的元素。例如，班號為 12 的學生坐在第 2 排的第 4 個座位。李小姐使用陣列 SP[i,j] 來儲存座位在第 1 排第 J 個座位的學生班號。因此 SP = 12。寫出在 SP 中儲存班號 23 的元素索引。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-3-b",
+      "section": "section_b",
+      "text": "AssignCN 是一個子程式，根據上述座位表，將班號儲存在 SP 內。完成以下 AssignCN 的偽代碼。\nAssignCN\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      SP[i,j] ← _______",
+      "number": "3(b)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "3(b)",
+        "question_text": "AssignCN 是一個子程式，根據上述座位表，將班號儲存在 SP 內。完成以下 AssignCN 的偽代碼。",
+        "question_type": "algorithm_completion",
+        "has_image": false,
+        "algorithm_code": "AssignCN\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      SP[i,j] ← _______"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "AssignCN",
+          "從 i 由 1 至 5 執行",
+          "   從 j 由 1 至 8 執行",
+          "      SP[i,j] ← _______"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "AssignCN 是一個子程式，根據上述座位表，將班號儲存在 SP 內。完成以下 AssignCN 的偽代碼。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-3-c",
+      "section": "section_b",
+      "text": "李小姐編寫子程式 ArrangeSeat 的偽代碼，為學生隨機重新安排座位。假設 rand 傳回一個介乎 0 到 0.99 之間的隨機數，包括首尾兩個。使用 rand 重寫第 5 行。\nArrangeSeat\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      s ← 一個由 1 至 8 的隨機整數，包括首尾兩個\n      t ← 一個由 1 至 8 的隨機整數，包括首尾兩個\n      將 SP[i,j] 和 SP[i,t] 互換\ns ← _______",
+      "number": "3(c)",
+      "concepts": [
+        "試算表",
+        "算法",
+        "偽代碼",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "3(c)",
+        "question_text": "李小姐編寫子程式 ArrangeSeat 的偽代碼，為學生隨機重新安排座位。假設 rand 傳回一個介乎 0 到 0.99 之間的隨機數，包括首尾兩個。使用 rand 重寫第 5 行。",
+        "question_type": "algorithm_completion",
+        "has_image": false,
+        "algorithm_code": "ArrangeSeat\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      s ← 一個由 1 至 8 的隨機整數，包括首尾兩個\n      t ← 一個由 1 至 8 的隨機整數，包括首尾兩個\n      將 SP[i,j] 和 SP[i,t] 互換\ns ← _______"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "ArrangeSeat",
+          "從 i 由 1 至 5 執行",
+          "   從 j 由 1 至 8 執行",
+          "      s ← 一個由 1 至 8 的隨機整數，包括首尾兩個",
+          "      t ← 一個由 1 至 8 的隨機整數，包括首尾兩個",
+          "      將 SP[i,j] 和 SP[i,t] 互換",
+          "s ← _______"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "李小姐編寫子程式 ArrangeSeat 的偽代碼，為學生隨機重新安排座位。假設 rand 傳回一個介乎 0 到 0.99 之間的隨機數，包括首尾兩個。使用 rand 重寫第 5 行。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-3-d-i",
+      "section": "section_b",
+      "text": "李小姐編寫了一個子程式 FindStudent(k)，使用線性搜索來查找班號為 k 的學生的排號和座位編號。完成以下 FindStudent(k) 的偽代碼。\nFindStudent(k)\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      如果 _______ 則\n         輸出 i, j\n      結束如果\n   結束執行",
+      "number": "3(d)(i)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "3(d)(i)",
+        "question_text": "李小姐編寫了一個子程式 FindStudent(k)，使用線性搜索來查找班號為 k 的學生的排號和座位編號。完成以下 FindStudent(k) 的偽代碼。",
+        "question_type": "algorithm_completion",
+        "has_image": false,
+        "algorithm_code": "FindStudent(k)\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      如果 _______ 則\n         輸出 i, j\n      結束如果\n   結束執行"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "FindStudent(k)",
+          "從 i 由 1 至 5 執行",
+          "   從 j 由 1 至 8 執行",
+          "      如果 _______ 則",
+          "         輸出 i, j",
+          "      結束如果",
+          "   結束執行"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "李小姐編寫了一個子程式 FindStudent(k)，使用線性搜索來查找班號為 k 的學生的排號和座位編號。完成以下 FindStudent(k) 的偽代碼。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-3-d-ii",
+      "section": "section_b",
+      "text": "FindStudent(k) 中的「如果」語句會被執行固定的次數。建議算法內的一項改進，以提高其效率。",
+      "number": "3(d)(ii)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "3(d)(ii)",
+        "question_text": "FindStudent(k) 中的「如果」語句會被執行固定的次數。建議算法內的一項改進，以提高其效率。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-3-d-iii",
+      "section": "section_b",
+      "text": "在 (d)(i) 中，李小姐不選用對分搜索。為什麼？簡略說明。",
+      "number": "3(d)(iii)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "3(d)(iii)",
+        "question_text": "在 (d)(i) 中，李小姐不選用對分搜索。為什麼？簡略說明。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-3-e",
+      "section": "section_b",
+      "text": "李小姐編寫了一個子程式 CheckNeighbour 來檢查是否有兩個相連班號的學生坐在：1. 相同的排號和相連的座位編號，或 2. 相連的排號和相同的座位編號。完成以下 CheckNeighbour 的偽代碼。\nCheckNeighbour\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      如果 j < _______ 則\n         如果 (SP[i,j]+1 = SP[i,j+1]) OR (SP[i,j] – 1 = SP[i,j+1]) 則\n            輸出 '排號相同'\n         結束如果\n      結束如果\n      如果 i < _______ 則\n         如果 _______ 則\n            輸出 '座位編號相同'\n         結束如果\n      結束如果\n   結束執行",
+      "number": "3(e)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_completion",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "3(e)",
+        "question_text": "李小姐編寫了一個子程式 CheckNeighbour 來檢查是否有兩個相連班號的學生坐在：1. 相同的排號和相連的座位編號，或 2. 相連的排號和相同的座位編號。完成以下 CheckNeighbour 的偽代碼。",
+        "question_type": "algorithm_completion",
+        "has_image": false,
+        "algorithm_code": "CheckNeighbour\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      如果 j < _______ 則\n         如果 (SP[i,j]+1 = SP[i,j+1]) OR (SP[i,j] – 1 = SP[i,j+1]) 則\n            輸出 '排號相同'\n         結束如果\n      結束如果\n      如果 i < _______ 則\n         如果 _______ 則\n            輸出 '座位編號相同'\n         結束如果\n      結束如果\n   結束執行"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "CheckNeighbour",
+          "從 i 由 1 至 5 執行",
+          "   從 j 由 1 至 8 執行",
+          "      如果 j < _______ 則",
+          "         如果 (SP[i,j]+1 = SP[i,j+1]) OR (SP[i,j] – 1 = SP[i,j+1]) 則",
+          "            輸出 '排號相同'",
+          "         結束如果",
+          "      結束如果",
+          "      如果 i < _______ 則",
+          "         如果 _______ 則",
+          "            輸出 '座位編號相同'",
+          "         結束如果",
+          "      結束如果",
+          "   結束執行"
+        ],
+        "sources": [
+          "gemini_raw.algorithm_code"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "李小姐編寫了一個子程式 CheckNeighbour 來檢查是否有兩個相連班號的學生坐在：1. 相同的排號和相連的座位編號，或 2. 相連的排號和相同的座位編號。完成以下 CheckNeighbour 的偽代碼。"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-3-f",
+      "section": "section_b",
+      "text": "李小姐計劃在 100 所學校實施應用程式。但是，她決定先在數所學校實施一個學年。舉出兩個理由以支持她的決定。",
+      "number": "3(f)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "3(f)",
+        "question_text": "李小姐計劃在 100 所學校實施應用程式。但是，她決定先在數所學校實施一個學年。舉出兩個理由以支持她的決定。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-4",
+      "section": "section_b",
+      "text": "子程式 FillNo 將數字 1 至 9 按順時方向螺旋地分配到二維陣列 A[i,j] 內，如下所示：\nA:  1 2 3\n    8 9 4\n    7 6 5\n志偉編寫 FillNo 的偽代碼：\n1. 將 A 中的所有元素初始化為 0\n2. X ← 1\n3. Y ← 1\n4. D ← 1\n5. DX ← 0\n6. DY ← 1\n7. 從 k 由 1 至 9 執行\n8.    A[X, Y] ← k\n9.    如果 (X+DX > 3) OR (X+DX < 1) OR (Y+DY > 3) OR (Y+DY < 1) OR (A[X+DX, Y+DY] > 0) 則\n10.      D ← D + 1\n11.      D ← (D/4) 的餘數\n12.      如果 D = 0 則 DX ← 0 DY ← 1\n13.      否則 如果 D = 1 則 DX ← 1 DY ← 0\n14.      否則 如果 D = 2 則 DX ← 0 DY ← -1\n15.      否則 DX ← -1 DY ← 0\n16.   X ← X + DX\n17.   Y ← Y + DY\n結束執行\nA:  1 2 3\n8 9 4\n7 6 5\n志偉編寫 FillNo 的偽代碼：\n1. 將 A 中的所有元素初始化為 0\n2. X ← 1\n3. Y ← 1\n4. D ← 1\n5. DX ← 0\n6. DY ← 1\n7. 從 k 由 1 至 9 執行\n8.    A[X, Y] ← k\n9.    如果 (X+DX > 3) OR (X+DX < 1) OR (Y+DY > 3) OR (Y+DY < 1) OR (A[X+DX, Y+DY] > 0) 則\n10.      D ← D + 1\n11.      D ← (D/4) 的餘數\n12.      如果 D = 0 則 DX ← 0 DY ← 1\n13.      否則 如果 D = 1 則 DX ← 1 DY ← 0\n14.      否則 如果 D = 2 則 DX ← 0 DY ← -1\n15.      否則 DX ← -1 DY ← 0\n16.   X ← X + DX\n17.   Y ← Y + DY\n結束執行\n\n[圖片描述] 一個 3x3 的二維陣列 A，顯示數字 1-9 以順時針螺旋方式填充。下方為 FillNo 算法的偽代碼。",
+      "number": "4",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_description_with_diagram",
+      "has_image": true,
+      "image_description": "一個 3x3 的二維陣列 A，顯示數字 1-9 以順時針螺旋方式填充。下方為 FillNo 算法的偽代碼。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "4",
+        "question_text": "子程式 FillNo 將數字 1 至 9 按順時方向螺旋地分配到二維陣列 A[i,j] 內，如下所示：\nA:  1 2 3\n    8 9 4\n    7 6 5\n志偉編寫 FillNo 的偽代碼：\n1. 將 A 中的所有元素初始化為 0\n2. X ← 1\n3. Y ← 1\n4. D ← 1\n5. DX ← 0\n6. DY ← 1\n7. 從 k 由 1 至 9 執行\n8.    A[X, Y] ← k\n9.    如果 (X+DX > 3) OR (X+DX < 1) OR (Y+DY > 3) OR (Y+DY < 1) OR (A[X+DX, Y+DY] > 0) 則\n10.      D ← D + 1\n11.      D ← (D/4) 的餘數\n12.      如果 D = 0 則 DX ← 0 DY ← 1\n13.      否則 如果 D = 1 則 DX ← 1 DY ← 0\n14.      否則 如果 D = 2 則 DX ← 0 DY ← -1\n15.      否則 DX ← -1 DY ← 0\n16.   X ← X + DX\n17.   Y ← Y + DY\n結束執行",
+        "question_type": "algorithm_description_with_diagram",
+        "has_image": true,
+        "image_description": "一個 3x3 的二維陣列 A，顯示數字 1-9 以順時針螺旋方式填充。下方為 FillNo 算法的偽代碼。",
+        "table_details": {
+          "headers": [
+            "A"
+          ],
+          "rows": [
+            [
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "8",
+              "9",
+              "4"
+            ],
+            [
+              "7",
+              "6",
+              "5"
+            ]
+          ]
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "A:  1 2 3",
+          "8 9 4",
+          "7 6 5",
+          "志偉編寫 FillNo 的偽代碼：",
+          "1. 將 A 中的所有元素初始化為 0",
+          "2. X ← 1",
+          "3. Y ← 1",
+          "4. D ← 1",
+          "5. DX ← 0",
+          "6. DY ← 1",
+          "7. 從 k 由 1 至 9 執行",
+          "8.    A[X, Y] ← k",
+          "9.    如果 (X+DX > 3) OR (X+DX < 1) OR (Y+DY > 3) OR (Y+DY < 1) OR (A[X+DX, Y+DY] > 0) 則",
+          "10.      D ← D + 1",
+          "11.      D ← (D/4) 的餘數",
+          "12.      如果 D = 0 則 DX ← 0 DY ← 1",
+          "13.      否則 如果 D = 1 則 DX ← 1 DY ← 0",
+          "14.      否則 如果 D = 2 則 DX ← 0 DY ← -1",
+          "15.      否則 DX ← -1 DY ← 0",
+          "16.   X ← X + DX",
+          "17.   Y ← Y + DY",
+          "結束執行"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "子程式 FillNo 將數字 1 至 9 按順時方向螺旋地分配到二維陣列 A[i,j] 內，如下所示：\nA:  1 2 3\n    8 9 4\n    7 6 5\n志偉編寫 FillNo 的偽代碼：\n1. 將 A 中的所有元素初始化為 0\n2. X ← 1\n3. Y ← 1\n4. D ← 1\n5. DX ← 0\n6. DY ← 1\n7. 從 k 由 1 至 9 執行\n8.    A[X, Y] ← k\n9.    如果 (X+DX > 3) OR (X+DX < 1) OR (Y+DY > 3) OR (Y+DY < 1) OR (A[X+DX, Y+DY] > 0) 則\n10.      D ← D + 1\n11.      D ← (D/4) 的餘數\n12.      如果 D = 0 則 DX ← 0 DY ← 1\n13.      否則 如果 D = 1 則 DX ← 1 DY ← 0\n14.      否則 如果 D = 2 則 DX ← 0 DY ← -1\n15.      否則 DX ← -1 DY ← 0\n16.   X ← X + DX\n17.   Y ← Y + DY\n結束執行"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-4-a",
+      "section": "section_b",
+      "text": "若對 FillNo 作出以下修改，寫出執行 FillNo 後 A 內所儲存的數字。\n第 8 行改為：A[4-X, 4-Y] ← k\n第 10 行改為：(X+DX > 3) or (A[4-X-DX, 4-Y-DY] > 0) 則\n\n[圖片描述] 一個空的 3x3 網格，用於填寫修改後 FillNo 算法執行的結果。",
+      "number": "4(a)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_tracing_with_diagram",
+      "has_image": true,
+      "image_description": "一個空的 3x3 網格，用於填寫修改後 FillNo 算法執行的結果。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "4(a)",
+        "question_text": "若對 FillNo 作出以下修改，寫出執行 FillNo 後 A 內所儲存的數字。\n第 8 行改為：A[4-X, 4-Y] ← k\n第 10 行改為：(X+DX > 3) or (A[4-X-DX, 4-Y-DY] > 0) 則",
+        "question_type": "algorithm_tracing_with_diagram",
+        "has_image": true,
+        "image_description": "一個空的 3x3 網格，用於填寫修改後 FillNo 算法執行的結果。",
+        "algorithm_modifications": [
+          {
+            "line": 8,
+            "change": "A[4-X, 4-Y] ← k"
+          },
+          {
+            "line": 10,
+            "change": "(X+DX > 3) or (A[4-X-DX, 4-Y-DY] > 0) 則"
+          }
+        ]
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "第 8 行改為：A[4-X, 4-Y] ← k",
+          "第 10 行改為：(X+DX > 3) or (A[4-X-DX, 4-Y-DY] > 0) 則"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "若對 FillNo 作出以下修改，寫出執行 FillNo 後 A 內所儲存的數字。\n第 8 行改為：A[4-X, 4-Y] ← k\n第 10 行改為：(X+DX > 3) or (A[4-X-DX, 4-Y-DY] > 0) 則"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-4-b-i",
+      "section": "section_b",
+      "text": "按以下每個情況，將 FillNo 作出修改，使它能將以下數字分配到陣列 A 內。修改第 8 和 第 10 行。\n\n[圖片描述] 一個 3x3 的二維陣列 A，顯示數字 1-9 以另一種螺旋方式填充。問題要求修改 FillNo 算法的第 8 和第 10 行。",
+      "number": "4(b)(i)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_modification_with_diagram",
+      "has_image": true,
+      "image_description": "一個 3x3 的二維陣列 A，顯示數字 1-9 以另一種螺旋方式填充。問題要求修改 FillNo 算法的第 8 和第 10 行。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "4(b)(i)",
+        "question_text": "按以下每個情況，將 FillNo 作出修改，使它能將以下數字分配到陣列 A 內。修改第 8 和 第 10 行。",
+        "question_type": "algorithm_modification_with_diagram",
+        "has_image": true,
+        "image_description": "一個 3x3 的二維陣列 A，顯示數字 1-9 以另一種螺旋方式填充。問題要求修改 FillNo 算法的第 8 和第 10 行。",
+        "table_details": {
+          "headers": [
+            "A"
+          ],
+          "rows": [
+            [
+              "1",
+              "8",
+              "7"
+            ],
+            [
+              "2",
+              "9",
+              "6"
+            ],
+            [
+              "3",
+              "4",
+              "5"
+            ]
+          ]
+        },
+        "algorithm_modifications": [
+          {
+            "line": 8,
+            "change": ""
+          },
+          {
+            "line": 10,
+            "change": ""
+          }
+        ]
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-4-b-ii",
+      "section": "section_b",
+      "text": "只修改其中一行，使 FillNo 能將以下數字分配到陣列 A 內。\n\n[圖片描述] 一個 3x3 的二維陣列 A，顯示數字 1-9 以另一種螺旋方式填充。問題要求指出需修改 FillNo 算法的哪一行。",
+      "number": "4(b)(ii)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "algorithm_modification_with_diagram",
+      "has_image": true,
+      "image_description": "一個 3x3 的二維陣列 A，顯示數字 1-9 以另一種螺旋方式填充。問題要求指出需修改 FillNo 算法的哪一行。",
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "4(b)(ii)",
+        "question_text": "只修改其中一行，使 FillNo 能將以下數字分配到陣列 A 內。",
+        "question_type": "algorithm_modification_with_diagram",
+        "has_image": true,
+        "image_description": "一個 3x3 的二維陣列 A，顯示數字 1-9 以另一種螺旋方式填充。問題要求指出需修改 FillNo 算法的哪一行。",
+        "table_details": {
+          "headers": [
+            "A"
+          ],
+          "rows": [
+            [
+              "9",
+              "8",
+              "7"
+            ],
+            [
+              "2",
+              "1",
+              "6"
+            ],
+            [
+              "3",
+              "4",
+              "5"
+            ]
+          ]
+        }
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-4-c-i",
+      "section": "section_b",
+      "text": "志偉計劃使用過程語言或物件導向語言來實現 FillNo。建議選擇編譯程式和編寫語言的兩個準則。",
+      "number": "4(c)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "4(c)(i)",
+        "question_text": "志偉計劃使用過程語言或物件導向語言來實現 FillNo。建議選擇編譯程式和編寫語言的兩個準則。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-4-c-ii",
+      "section": "section_b",
+      "text": "除物件的概念外，舉出物件導向語言的兩項特徵。",
+      "number": "4(c)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "4(c)(ii)",
+        "question_text": "除物件的概念外，舉出物件導向語言的兩項特徵。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-4-d-i",
+      "section": "section_b",
+      "text": "志偉將子程式整合至資訊系統。志偉已完成系統測試。為什麼他還要進行用戶驗收測試呢？舉出兩個原因。",
+      "number": "4(d)(i)",
+      "concepts": [
+        "資訊處理",
+        "算法",
+        "偽代碼",
+        "程式測試"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "4(d)(i)",
+        "question_text": "志偉將子程式整合至資訊系統。志偉已完成系統測試。為什麼他還要進行用戶驗收測試呢？舉出兩個原因。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2022-Paper2D_SoftwareDevelopment-4-d-ii",
+      "section": "section_b",
+      "text": "為什麼系統文件編製在系統開發時是十分重要的？舉出兩個原因。",
+      "number": "4(d)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修C-算法與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2022-p2d.json",
+      "gemini_raw": {
+        "question_number": "4(d)(ii)",
+        "question_text": "為什麼系統文件編製在系統開發時是十分重要的？舉出兩個原因。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    }
+  ],
+  "paper": {
+    "id": "2022-Paper2D_SoftwareDevelopment",
+    "questions": [
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-1-a",
+        "type": "algorithm_tracing_with_diagram",
+        "number": "1(a)",
+        "section": "section_b",
+        "text": "抹窗機在其初始狀態下執行 TR, MF, MF, TR, TR, TR, MF 後的路徑和最終狀態。\n\n[圖片描述] 一個 8x6 的網格圖，顯示抹窗機的初始狀態 (C，面向右)。問題要求繪製執行特定子程式後的路徑和最終狀態。上方還有一個例子展示 MF, MF, TR, MF 後的路徑。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-1-b-i",
+        "type": "algorithm_completion",
+        "number": "1(b)(i)",
+        "section": "section_b",
+        "text": "志明編寫額外兩個子程式程式控制抹窗機：FD(N) 描述 向前移動 N 單位，TL 描述 逆時針旋轉 90 度。完成以下 FD(N) 的偽代碼。\n設 i 由 1 至 _______ 執行 MF",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "志明編寫額外兩個子程式程式控制抹窗機：FD(N) 描述 向前移動 N 單位，TL 描述 逆時針旋轉 90 度。完成以下 FD(N) 的偽代碼。",
+        "support_content": {
+          "lines": [
+            "設 i 由 1 至 _______ 執行 MF"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-1-b-ii",
+        "type": "algorithm_completion",
+        "number": "1(b)(ii)",
+        "section": "section_b",
+        "text": "完成以下 TL 的偽代碼。\n設 i 由 1 至 _______ 執行 TR",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "完成以下 TL 的偽代碼。",
+        "support_content": {
+          "lines": [
+            "設 i 由 1 至 _______ 執行 TR"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-1-c",
+        "type": "algorithm_writing_with_diagram",
+        "number": "1(c)",
+        "section": "section_b",
+        "text": "上圖圖示抹窗機在其初始狀態下執行 ProA 後的路徑和最終狀態。編寫 ProA 的偽代碼。\n\n[圖片描述] 一個 8x6 的網格圖，顯示抹窗機從初始狀態 C (位置和航向) 執行 ProA 後的路徑和最終狀態。路徑為先向左移動 5 單位，然後向下移動 4 單位，再向右移動 5 單位，最後向上移動 4 單位，回到初始列但位置不同。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-1-d",
+        "type": "algorithm_completion_with_diagram",
+        "number": "1(d)",
+        "section": "section_b",
+        "text": "上圖圖示抹窗機在其初始狀態下執行 ProB 後的路徑和最終狀態，抹窗機最終返回其初始狀態。完成以下 ProB 的偽代碼。\n設 i 由 1 至 2 執行\n   _______\n   MF\n   _______\n   FD(5)\n\n[圖片描述] 一個 8x6 的網格圖，顯示抹窗機從初始狀態 C (位置和航向) 執行 ProB 後的路徑和最終狀態。路徑為先向下移動 2 單位，然後向左移動 2 單位，再向上移動 2 單位，最後向右移動 2 單位，回到初始位置和航向。圖中有多個方格被標記為移動路徑。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "上圖圖示抹窗機在其初始狀態下執行 ProB 後的路徑和最終狀態，抹窗機最終返回其初始狀態。完成以下 ProB 的偽代碼。",
+        "support_content": {
+          "lines": [
+            "設 i 由 1 至 2 執行",
+            "   _______",
+            "   MF",
+            "   _______",
+            "   FD(5)"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-1-e-i",
+        "type": "algorithm_writing_with_diagram",
+        "number": "1(e)(i)",
+        "section": "section_b",
+        "text": "志明編寫子程式控制抹窗機返回其初始狀態。他假設 D = 3，並使用 X 和 Y 來編寫子程式 ProC，以控制抹窗機返回其初始狀態。編寫 ProC 的偽代碼。\n\n[圖片描述] 一個 8x6 的網格圖，顯示抹窗機的當前狀態 (X=3, Y=2, D=3，即位於 (3,2) 並面向左)。圖中還顯示了 X, Y, D 變量的描述和方向編碼。",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-1-e-ii",
+        "type": "algorithm_completion",
+        "number": "1(e)(ii)",
+        "section": "section_b",
+        "text": "他編寫子程式 ProD，不論 D 的數值是什麼 (由 0 至 3)，皆可控制抹窗機返回其初始狀態。完成以下 ProD 的偽代碼。\n設 i 由 _______ 至 _______ 執行 ProC",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "他編寫子程式 ProD，不論 D 的數值是什麼 (由 0 至 3)，皆可控制抹窗機返回其初始狀態。完成以下 ProD 的偽代碼。",
+        "support_content": {
+          "lines": [
+            "設 i 由 _______ 至 _______ 執行 ProC"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-1-f",
+        "type": "free_response",
+        "number": "1(f)",
+        "section": "section_b",
+        "text": "這些子程式可利用低級語言或高級語言來開發，舉出使用這兩類語言的優點各一個。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-2-a-i",
+        "type": "algorithm_tracing_with_table",
+        "number": "2(a)(i)",
+        "section": "section_b",
+        "text": "小芬建立一個堆疊 S，而變量 N 儲存 S 內元素的數量。她使用以下子程式。寫出執行以下偽代碼後 N 和 X 的值。\nclear(S)\npush(S, 2)\npush(S, 5)\nX ← pop(S)\nN = _______ X = _______",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼",
+          "堆疊",
+          "佇列",
+          "鏈表"
+        ],
+        "syllabus_status": "current",
+        "stem": "小芬建立一個堆疊 S，而變量 N 儲存 S 內元素的數量。她使用以下子程式。寫出執行以下偽代碼後 N 和 X 的值。",
+        "support_content": {
+          "lines": [
+            "clear(S)",
+            "push(S, 2)",
+            "push(S, 5)",
+            "X ← pop(S)",
+            "N = _______ X = _______"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-2-a-ii",
+        "type": "algorithm_writing",
+        "number": "2(a)(ii)",
+        "section": "section_b",
+        "text": "編寫 isEmpty(S) 的偽代碼。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-2-b-i",
+        "type": "algorithm_tracing_with_diagram",
+        "number": "2(b)(i)",
+        "section": "section_b",
+        "text": "A 是一個僅包含 5 個元素的陣列，用作儲存非負整數和至少一個 '+' 字符。小芬編寫子程式 Sub1 的偽代碼。以下 A 的初始內容為例，Sub1 的傳回值是 3。\n對以下 A 的初始內容，寫出 Sub1 的傳回值。\nSub1\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n結束執行\n回傳 pop(S)\n對以下 A 的初始內容，寫出 Sub1 的傳回值。\n\n[圖片描述] 一個表格顯示陣列 A 的初始內容。偽代碼 Sub1 處理堆疊 S。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼",
+          "堆疊",
+          "佇列",
+          "鏈表"
+        ],
+        "syllabus_status": "current",
+        "stem": "A 是一個僅包含 5 個元素的陣列，用作儲存非負整數和至少一個 '+' 字符。小芬編寫子程式 Sub1 的偽代碼。以下 A 的初始內容為例，Sub1 的傳回值是 3。\n對以下 A 的初始內容，寫出 Sub1 的傳回值。",
+        "support_content": {
+          "lines": [
+            "Sub1",
+            "clear(S)",
+            "從 i 由 1 至 5 執行",
+            "   如果 A[i] <> '+' 則",
+            "      push(S, A[i])",
+            "   否則",
+            "      B ← pop(S)",
+            "      C ← pop(S)",
+            "      push(S, B+C)",
+            "結束執行",
+            "回傳 pop(S)",
+            "對以下 A 的初始內容，寫出 Sub1 的傳回值。"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-2-b-ii",
+        "type": "algorithm_tracing_with_diagram",
+        "number": "2(b)(ii)",
+        "section": "section_b",
+        "text": "對以下 A 的初始內容，寫出 Sub1 的傳回值。\nSub1\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n結束執行\n回傳 pop(S)\n\n[圖片描述] 一個表格顯示陣列 A 的初始內容。偽代碼 Sub1 處理堆疊 S。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼",
+          "堆疊",
+          "佇列",
+          "鏈表"
+        ],
+        "syllabus_status": "current",
+        "stem": "對以下 A 的初始內容，寫出 Sub1 的傳回值。",
+        "support_content": {
+          "lines": [
+            "Sub1",
+            "clear(S)",
+            "從 i 由 1 至 5 執行",
+            "   如果 A[i] <> '+' 則",
+            "      push(S, A[i])",
+            "   否則",
+            "      B ← pop(S)",
+            "      C ← pop(S)",
+            "      push(S, B+C)",
+            "結束執行",
+            "回傳 pop(S)"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-2-c-i",
+        "type": "algorithm_completion_with_diagram",
+        "number": "2(c)(i)",
+        "section": "section_b",
+        "text": "小芬重寫 Sub1 的最後一句，經修改後為 Sub2。完成以下 A 的初始內容，使 Sub2 傳回 -1。\nSub2\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n   結束如果\n結束執行\n如果 N = 1 則\n   回傳 pop(S)\n否則\n   回傳 -1\n\n[圖片描述] 一個表格顯示陣列 A 的部分初始內容。偽代碼 Sub2 處理堆疊 S。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼",
+          "堆疊",
+          "佇列",
+          "鏈表"
+        ],
+        "syllabus_status": "current",
+        "stem": "小芬重寫 Sub1 的最後一句，經修改後為 Sub2。完成以下 A 的初始內容，使 Sub2 傳回 -1。",
+        "support_content": {
+          "lines": [
+            "Sub2",
+            "clear(S)",
+            "從 i 由 1 至 5 執行",
+            "   如果 A[i] <> '+' 則",
+            "      push(S, A[i])",
+            "   否則",
+            "      B ← pop(S)",
+            "      C ← pop(S)",
+            "      push(S, B+C)",
+            "   結束如果",
+            "結束執行",
+            "如果 N = 1 則",
+            "   回傳 pop(S)",
+            "否則",
+            "   回傳 -1"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-2-c-ii",
+        "type": "algorithm_completion_with_diagram",
+        "number": "2(c)(ii)",
+        "section": "section_b",
+        "text": "當 pop(S) 以空的 S 運行時，Sub2 會出現問題。完成以下 A 的初始內容，令到這個問題出現。\nSub2\nclear(S)\n從 i 由 1 至 5 執行\n   如果 A[i] <> '+' 則\n      push(S, A[i])\n   否則\n      B ← pop(S)\n      C ← pop(S)\n      push(S, B+C)\n   結束如果\n結束執行\n如果 N = 1 則\n   回傳 pop(S)\n否則\n   回傳 -1\n\n[圖片描述] 一個表格顯示陣列 A 的部分初始內容。偽代碼 Sub2 處理堆疊 S。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼",
+          "堆疊",
+          "佇列",
+          "鏈表"
+        ],
+        "syllabus_status": "current",
+        "stem": "當 pop(S) 以空的 S 運行時，Sub2 會出現問題。完成以下 A 的初始內容，令到這個問題出現。",
+        "support_content": {
+          "lines": [
+            "Sub2",
+            "clear(S)",
+            "從 i 由 1 至 5 執行",
+            "   如果 A[i] <> '+' 則",
+            "      push(S, A[i])",
+            "   否則",
+            "      B ← pop(S)",
+            "      C ← pop(S)",
+            "      push(S, B+C)",
+            "   結束如果",
+            "結束執行",
+            "如果 N = 1 則",
+            "   回傳 pop(S)",
+            "否則",
+            "   回傳 -1"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-2-d",
+        "type": "algorithm_completion",
+        "number": "2(d)",
+        "section": "section_b",
+        "text": "小芬利用一個布爾變量 flag 將 Sub2 修改為 Sub3，以解決 (c)(ii) 的問題。完成以下 Sub3。\nSub3\nclear(S)\nflag ← TRUE\n從 i 由 1 至 5 執行\n   如果 _______ 則\n      如果 A[i] <> '+' 則\n         push(S, A[i])\n      否則\n         B ← pop(S)\n         C ← pop(S)\n         push(S, B+C)\n      結束如果\n   否則\n      flag ← FALSE\n   結束如果\n結束執行\n如果 N = 1 則\n   回傳 pop(S)\n否則\n   回傳 -1",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "小芬利用一個布爾變量 flag 將 Sub2 修改為 Sub3，以解決 (c)(ii) 的問題。完成以下 Sub3。",
+        "support_content": {
+          "lines": [
+            "Sub3",
+            "clear(S)",
+            "flag ← TRUE",
+            "從 i 由 1 至 5 執行",
+            "   如果 _______ 則",
+            "      如果 A[i] <> '+' 則",
+            "         push(S, A[i])",
+            "      否則",
+            "         B ← pop(S)",
+            "         C ← pop(S)",
+            "         push(S, B+C)",
+            "      結束如果",
+            "   否則",
+            "      flag ← FALSE",
+            "   結束如果",
+            "結束執行",
+            "如果 N = 1 則",
+            "   回傳 pop(S)",
+            "否則",
+            "   回傳 -1"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-2-e-i",
+        "type": "gantt_chart_analysis",
+        "number": "2(e)(i)",
+        "section": "section_b",
+        "text": "小芬在開發資訊系統時須執行以下任務。她為這項開發草擬了以下甘特圖。寫出圖中的兩個主要錯誤及其對應的修正。\n[表格式意] 一個甘特圖，顯示了任務 A-H 在 10 天時間內的安排。圖上方有一個表格，列出任務、持續時間(日)和依賴。\n\n[圖片描述] 一個甘特圖，顯示了任務 A-H 在 10 天時間內的安排。圖上方有一個表格，列出任務、持續時間(日)和依賴。",
+        "marks": null,
+        "concepts": [
+          "資訊處理"
+        ],
+        "syllabus_status": "current",
+        "stem": "小芬在開發資訊系統時須執行以下任務。她為這項開發草擬了以下甘特圖。寫出圖中的兩個主要錯誤及其對應的修正。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個甘特圖，顯示了任務 A-H 在 10 天時間內的安排。圖上方有一個表格，列出任務、持續時間(日)和依賴。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-2-e-ii",
+        "type": "free_response",
+        "number": "2(e)(ii)",
+        "section": "section_b",
+        "text": "小芬決定使用編譯程式而不是解譯程式來開發系統。舉出一個理由以支持她的決定。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-3-a",
+        "type": "short_answer_with_diagram",
+        "number": "3(a)",
+        "section": "section_b",
+        "text": "李小姐開發一個應用程式來管理座位。該座位表由 5 排組成，而每排有 8 個座位。SP [i,j] 儲存座位 [i,j] 的元素。例如，班號為 12 的學生坐在第 2 排的第 4 個座位。李小姐使用陣列 SP[i,j] 來儲存座位在第 1 排第 J 個座位的學生班號。因此 SP = 12。寫出在 SP 中儲存班號 23 的元素索引。\n[表格式意] 一個 5x8 的表格，顯示了座位號碼 (1-40)。表格的行標記為 '排' (1-5)，列標記為 '班' (1-8)。\n\n[圖片描述] 一個 5x8 的表格，顯示了座位號碼 (1-40)。表格的行標記為 '排' (1-5)，列標記為 '班' (1-8)。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "李小姐開發一個應用程式來管理座位。該座位表由 5 排組成，而每排有 8 個座位。SP [i,j] 儲存座位 [i,j] 的元素。例如，班號為 12 的學生坐在第 2 排的第 4 個座位。李小姐使用陣列 SP[i,j] 來儲存座位在第 1 排第 J 個座位的學生班號。因此 SP = 12。寫出在 SP 中儲存班號 23 的元素索引。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個 5x8 的表格，顯示了座位號碼 (1-40)。表格的行標記為 '排' (1-5)，列標記為 '班' (1-8)。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-3-b",
+        "type": "algorithm_completion",
+        "number": "3(b)",
+        "section": "section_b",
+        "text": "AssignCN 是一個子程式，根據上述座位表，將班號儲存在 SP 內。完成以下 AssignCN 的偽代碼。\nAssignCN\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      SP[i,j] ← _______",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "AssignCN 是一個子程式，根據上述座位表，將班號儲存在 SP 內。完成以下 AssignCN 的偽代碼。",
+        "support_content": {
+          "lines": [
+            "AssignCN",
+            "從 i 由 1 至 5 執行",
+            "   從 j 由 1 至 8 執行",
+            "      SP[i,j] ← _______"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-3-c",
+        "type": "algorithm_completion",
+        "number": "3(c)",
+        "section": "section_b",
+        "text": "李小姐編寫子程式 ArrangeSeat 的偽代碼，為學生隨機重新安排座位。假設 rand 傳回一個介乎 0 到 0.99 之間的隨機數，包括首尾兩個。使用 rand 重寫第 5 行。\nArrangeSeat\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      s ← 一個由 1 至 8 的隨機整數，包括首尾兩個\n      t ← 一個由 1 至 8 的隨機整數，包括首尾兩個\n      將 SP[i,j] 和 SP[i,t] 互換\ns ← _______",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "算法",
+          "偽代碼",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "李小姐編寫子程式 ArrangeSeat 的偽代碼，為學生隨機重新安排座位。假設 rand 傳回一個介乎 0 到 0.99 之間的隨機數，包括首尾兩個。使用 rand 重寫第 5 行。",
+        "support_content": {
+          "lines": [
+            "ArrangeSeat",
+            "從 i 由 1 至 5 執行",
+            "   從 j 由 1 至 8 執行",
+            "      s ← 一個由 1 至 8 的隨機整數，包括首尾兩個",
+            "      t ← 一個由 1 至 8 的隨機整數，包括首尾兩個",
+            "      將 SP[i,j] 和 SP[i,t] 互換",
+            "s ← _______"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-3-d-i",
+        "type": "algorithm_completion",
+        "number": "3(d)(i)",
+        "section": "section_b",
+        "text": "李小姐編寫了一個子程式 FindStudent(k)，使用線性搜索來查找班號為 k 的學生的排號和座位編號。完成以下 FindStudent(k) 的偽代碼。\nFindStudent(k)\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      如果 _______ 則\n         輸出 i, j\n      結束如果\n   結束執行",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "李小姐編寫了一個子程式 FindStudent(k)，使用線性搜索來查找班號為 k 的學生的排號和座位編號。完成以下 FindStudent(k) 的偽代碼。",
+        "support_content": {
+          "lines": [
+            "FindStudent(k)",
+            "從 i 由 1 至 5 執行",
+            "   從 j 由 1 至 8 執行",
+            "      如果 _______ 則",
+            "         輸出 i, j",
+            "      結束如果",
+            "   結束執行"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-3-d-ii",
+        "type": "free_response",
+        "number": "3(d)(ii)",
+        "section": "section_b",
+        "text": "FindStudent(k) 中的「如果」語句會被執行固定的次數。建議算法內的一項改進，以提高其效率。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-3-d-iii",
+        "type": "free_response",
+        "number": "3(d)(iii)",
+        "section": "section_b",
+        "text": "在 (d)(i) 中，李小姐不選用對分搜索。為什麼？簡略說明。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-3-e",
+        "type": "algorithm_completion",
+        "number": "3(e)",
+        "section": "section_b",
+        "text": "李小姐編寫了一個子程式 CheckNeighbour 來檢查是否有兩個相連班號的學生坐在：1. 相同的排號和相連的座位編號，或 2. 相連的排號和相同的座位編號。完成以下 CheckNeighbour 的偽代碼。\nCheckNeighbour\n從 i 由 1 至 5 執行\n   從 j 由 1 至 8 執行\n      如果 j < _______ 則\n         如果 (SP[i,j]+1 = SP[i,j+1]) OR (SP[i,j] – 1 = SP[i,j+1]) 則\n            輸出 '排號相同'\n         結束如果\n      結束如果\n      如果 i < _______ 則\n         如果 _______ 則\n            輸出 '座位編號相同'\n         結束如果\n      結束如果\n   結束執行",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "李小姐編寫了一個子程式 CheckNeighbour 來檢查是否有兩個相連班號的學生坐在：1. 相同的排號和相連的座位編號，或 2. 相連的排號和相同的座位編號。完成以下 CheckNeighbour 的偽代碼。",
+        "support_content": {
+          "lines": [
+            "CheckNeighbour",
+            "從 i 由 1 至 5 執行",
+            "   從 j 由 1 至 8 執行",
+            "      如果 j < _______ 則",
+            "         如果 (SP[i,j]+1 = SP[i,j+1]) OR (SP[i,j] – 1 = SP[i,j+1]) 則",
+            "            輸出 '排號相同'",
+            "         結束如果",
+            "      結束如果",
+            "      如果 i < _______ 則",
+            "         如果 _______ 則",
+            "            輸出 '座位編號相同'",
+            "         結束如果",
+            "      結束如果",
+            "   結束執行"
+          ],
+          "sources": [
+            "gemini_raw.algorithm_code"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-3-f",
+        "type": "free_response",
+        "number": "3(f)",
+        "section": "section_b",
+        "text": "李小姐計劃在 100 所學校實施應用程式。但是，她決定先在數所學校實施一個學年。舉出兩個理由以支持她的決定。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-4",
+        "type": "algorithm_description_with_diagram",
+        "number": "4",
+        "section": "section_b",
+        "text": "子程式 FillNo 將數字 1 至 9 按順時方向螺旋地分配到二維陣列 A[i,j] 內，如下所示：\nA:  1 2 3\n    8 9 4\n    7 6 5\n志偉編寫 FillNo 的偽代碼：\n1. 將 A 中的所有元素初始化為 0\n2. X ← 1\n3. Y ← 1\n4. D ← 1\n5. DX ← 0\n6. DY ← 1\n7. 從 k 由 1 至 9 執行\n8.    A[X, Y] ← k\n9.    如果 (X+DX > 3) OR (X+DX < 1) OR (Y+DY > 3) OR (Y+DY < 1) OR (A[X+DX, Y+DY] > 0) 則\n10.      D ← D + 1\n11.      D ← (D/4) 的餘數\n12.      如果 D = 0 則 DX ← 0 DY ← 1\n13.      否則 如果 D = 1 則 DX ← 1 DY ← 0\n14.      否則 如果 D = 2 則 DX ← 0 DY ← -1\n15.      否則 DX ← -1 DY ← 0\n16.   X ← X + DX\n17.   Y ← Y + DY\n結束執行\nA:  1 2 3\n8 9 4\n7 6 5\n志偉編寫 FillNo 的偽代碼：\n1. 將 A 中的所有元素初始化為 0\n2. X ← 1\n3. Y ← 1\n4. D ← 1\n5. DX ← 0\n6. DY ← 1\n7. 從 k 由 1 至 9 執行\n8.    A[X, Y] ← k\n9.    如果 (X+DX > 3) OR (X+DX < 1) OR (Y+DY > 3) OR (Y+DY < 1) OR (A[X+DX, Y+DY] > 0) 則\n10.      D ← D + 1\n11.      D ← (D/4) 的餘數\n12.      如果 D = 0 則 DX ← 0 DY ← 1\n13.      否則 如果 D = 1 則 DX ← 1 DY ← 0\n14.      否則 如果 D = 2 則 DX ← 0 DY ← -1\n15.      否則 DX ← -1 DY ← 0\n16.   X ← X + DX\n17.   Y ← Y + DY\n結束執行\n\n[圖片描述] 一個 3x3 的二維陣列 A，顯示數字 1-9 以順時針螺旋方式填充。下方為 FillNo 算法的偽代碼。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "子程式 FillNo 將數字 1 至 9 按順時方向螺旋地分配到二維陣列 A[i,j] 內，如下所示：\nA:  1 2 3\n    8 9 4\n    7 6 5\n志偉編寫 FillNo 的偽代碼：\n1. 將 A 中的所有元素初始化為 0\n2. X ← 1\n3. Y ← 1\n4. D ← 1\n5. DX ← 0\n6. DY ← 1\n7. 從 k 由 1 至 9 執行\n8.    A[X, Y] ← k\n9.    如果 (X+DX > 3) OR (X+DX < 1) OR (Y+DY > 3) OR (Y+DY < 1) OR (A[X+DX, Y+DY] > 0) 則\n10.      D ← D + 1\n11.      D ← (D/4) 的餘數\n12.      如果 D = 0 則 DX ← 0 DY ← 1\n13.      否則 如果 D = 1 則 DX ← 1 DY ← 0\n14.      否則 如果 D = 2 則 DX ← 0 DY ← -1\n15.      否則 DX ← -1 DY ← 0\n16.   X ← X + DX\n17.   Y ← Y + DY\n結束執行",
+        "support_content": {
+          "lines": [
+            "A:  1 2 3",
+            "8 9 4",
+            "7 6 5",
+            "志偉編寫 FillNo 的偽代碼：",
+            "1. 將 A 中的所有元素初始化為 0",
+            "2. X ← 1",
+            "3. Y ← 1",
+            "4. D ← 1",
+            "5. DX ← 0",
+            "6. DY ← 1",
+            "7. 從 k 由 1 至 9 執行",
+            "8.    A[X, Y] ← k",
+            "9.    如果 (X+DX > 3) OR (X+DX < 1) OR (Y+DY > 3) OR (Y+DY < 1) OR (A[X+DX, Y+DY] > 0) 則",
+            "10.      D ← D + 1",
+            "11.      D ← (D/4) 的餘數",
+            "12.      如果 D = 0 則 DX ← 0 DY ← 1",
+            "13.      否則 如果 D = 1 則 DX ← 1 DY ← 0",
+            "14.      否則 如果 D = 2 則 DX ← 0 DY ← -1",
+            "15.      否則 DX ← -1 DY ← 0",
+            "16.   X ← X + DX",
+            "17.   Y ← Y + DY",
+            "結束執行"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-4-a",
+        "type": "algorithm_tracing_with_diagram",
+        "number": "4(a)",
+        "section": "section_b",
+        "text": "若對 FillNo 作出以下修改，寫出執行 FillNo 後 A 內所儲存的數字。\n第 8 行改為：A[4-X, 4-Y] ← k\n第 10 行改為：(X+DX > 3) or (A[4-X-DX, 4-Y-DY] > 0) 則\n\n[圖片描述] 一個空的 3x3 網格，用於填寫修改後 FillNo 算法執行的結果。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "若對 FillNo 作出以下修改，寫出執行 FillNo 後 A 內所儲存的數字。\n第 8 行改為：A[4-X, 4-Y] ← k\n第 10 行改為：(X+DX > 3) or (A[4-X-DX, 4-Y-DY] > 0) 則",
+        "support_content": {
+          "lines": [
+            "第 8 行改為：A[4-X, 4-Y] ← k",
+            "第 10 行改為：(X+DX > 3) or (A[4-X-DX, 4-Y-DY] > 0) 則"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.290276+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-4-b-i",
+        "type": "algorithm_modification_with_diagram",
+        "number": "4(b)(i)",
+        "section": "section_b",
+        "text": "按以下每個情況，將 FillNo 作出修改，使它能將以下數字分配到陣列 A 內。修改第 8 和 第 10 行。\n\n[圖片描述] 一個 3x3 的二維陣列 A，顯示數字 1-9 以另一種螺旋方式填充。問題要求修改 FillNo 算法的第 8 和第 10 行。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-4-b-ii",
+        "type": "algorithm_modification_with_diagram",
+        "number": "4(b)(ii)",
+        "section": "section_b",
+        "text": "只修改其中一行，使 FillNo 能將以下數字分配到陣列 A 內。\n\n[圖片描述] 一個 3x3 的二維陣列 A，顯示數字 1-9 以另一種螺旋方式填充。問題要求指出需修改 FillNo 算法的哪一行。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-4-c-i",
+        "type": "free_response",
+        "number": "4(c)(i)",
+        "section": "section_b",
+        "text": "志偉計劃使用過程語言或物件導向語言來實現 FillNo。建議選擇編譯程式和編寫語言的兩個準則。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-4-c-ii",
+        "type": "free_response",
+        "number": "4(c)(ii)",
+        "section": "section_b",
+        "text": "除物件的概念外，舉出物件導向語言的兩項特徵。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-4-d-i",
+        "type": "free_response",
+        "number": "4(d)(i)",
+        "section": "section_b",
+        "text": "志偉將子程式整合至資訊系統。志偉已完成系統測試。為什麼他還要進行用戶驗收測試呢？舉出兩個原因。",
+        "marks": null,
+        "concepts": [
+          "資訊處理",
+          "算法",
+          "偽代碼",
+          "程式測試"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2022-Paper2D_SoftwareDevelopment-4-d-ii",
+        "type": "free_response",
+        "number": "4(d)(ii)",
+        "section": "section_b",
+        "text": "為什麼系統文件編製在系統開發時是十分重要的？舉出兩個原因。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      }
+    ]
+  }
+}

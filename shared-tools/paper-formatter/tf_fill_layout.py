@@ -33,7 +33,7 @@ FILL_BLOCK_B: list[tuple[str, str]] = [
     ("電腦視覺常用 OpenCV，安裝指令為 pip install ________。", "opencv-python"),
     ("人臉模型 Haar Cascade 的副檔名是 ________。", "xml"),
     ("把彩色影像轉灰階使用 cv2.________()。", "cvtColor"),
-    ("Vibe Coding 中，AI 像________，學生像總監。", "高級程式員"),
+    ("在 Vibe Coding 中，AI 編程助手常被比喻為 ________。", "高級程式員"),
     ("測驗程式從 ________ 檔讀取題目（分開資料與程式）。", "quiz_data.json"),
 ]
 

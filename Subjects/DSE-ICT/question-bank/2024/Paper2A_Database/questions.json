@@ -2,16 +2,1812 @@
   "version": 1,
   "meta": {
     "source": "dse-ict-question-bank",
+    "import_source": "gemini-output",
+    "imported_at": "2026-05-22T00:23:37.903120+00:00",
     "year_label": "2024",
     "paper_slug": "Paper2A_Database",
     "paper_label": "Paper 2A — Database (數據庫)",
-    "source_pdf": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper2A_Database.pdf",
-    "question_count": 0,
-    "ocr_cache": "C:/Users/localadmin/Projects/school-agent-os/Subjects/DSE-ICT/question-bank/2024/Paper2A_Database/ocr.txt"
+    "source_pdf": "Subjects/DSE-ICT/past-papers/2024/DSE_ICT_2024_Paper2A_Database.pdf",
+    "question_count": 26,
+    "gemini_source_files": [
+      "2024-p2a.json"
+    ],
+    "curriculum_guide": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+    "syllabus_retagged_at": "2026-05-22T03:38:00.090016+00:00",
+    "syllabus_revision": "2021",
+    "support_enriched_at": "2026-05-22T04:32:46.348708+00:00"
   },
-  "items": [],
+  "items": [
+    {
+      "id": "2024-Paper2A_Database-1-a",
+      "section": "section_b",
+      "text": "除了 SID 外，寫出 STAFF 的一個主關鍵碼。\n\n{\n  \"type\": \"short_answer\",\n  \"notes\": \"預期回答 STAFF 表中除了 SID 之外，能唯一識別員工記錄的主關鍵碼，例如 HKID (香港身份證號碼)。\"\n}",
+      "number": "1(a)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 1.0,
+      "answer_details": {
+        "type": "short_answer",
+        "notes": "預期回答 STAFF 表中除了 SID 之外，能唯一識別員工記錄的主關鍵碼，例如 HKID (香港身份證號碼)。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(a)",
+        "question_text": "除了 SID 外，寫出 STAFF 的一個主關鍵碼。",
+        "answer_details": {
+          "type": "short_answer",
+          "notes": "預期回答 STAFF 表中除了 SID 之外，能唯一識別員工記錄的主關鍵碼，例如 HKID (香港身份證號碼)。"
+        },
+        "points": 1,
+        "source": "1"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-1-b",
+      "section": "section_b",
+      "text": "列出曾進入識別碼為「L502」的房間的員工識別碼，然後按 TDATE 升序排列。\n\n{\n  \"type\": \"sql_query_construction\",\n  \"notes\": \"預期編寫一個 SQL 查詢，從 TRAN 表中選擇進入 RID 為 'L502' 的員工 SID，並按 TDATE 升序排列。\"\n}",
+      "number": "1(b)",
+      "concepts": [
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "sql_query_construction",
+        "notes": "預期編寫一個 SQL 查詢，從 TRAN 表中選擇進入 RID 為 'L502' 的員工 SID，並按 TDATE 升序排列。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(b)",
+        "question_text": "列出曾進入識別碼為「L502」的房間的員工識別碼，然後按 TDATE 升序排列。",
+        "answer_details": {
+          "type": "sql_query_construction",
+          "notes": "預期編寫一個 SQL 查詢，從 TRAN 表中選擇進入 RID 為 'L502' 的員工 SID，並按 TDATE 升序排列。"
+        },
+        "points": 2,
+        "source": "1"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-1-c",
+      "section": "section_b",
+      "text": "列出普遍進入名稱包含「實驗室」的房間的員工姓名。\n\n{\n  \"type\": \"sql_query_construction\",\n  \"notes\": \"預期編寫一個 SQL 查詢，聯接 STAFF、ROOM 和 TRAN 表，找出進入過房間名稱 (RNAME) 包含「實驗室」的員工姓名 (SNAME)。\"\n}",
+      "number": "1(c)",
+      "concepts": [
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "sql_query_construction",
+        "notes": "預期編寫一個 SQL 查詢，聯接 STAFF、ROOM 和 TRAN 表，找出進入過房間名稱 (RNAME) 包含「實驗室」的員工姓名 (SNAME)。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(c)",
+        "question_text": "列出普遍進入名稱包含「實驗室」的房間的員工姓名。",
+        "answer_details": {
+          "type": "sql_query_construction",
+          "notes": "預期編寫一個 SQL 查詢，聯接 STAFF、ROOM 和 TRAN 表，找出進入過房間名稱 (RNAME) 包含「實驗室」的員工姓名 (SNAME)。"
+        },
+        "points": 2,
+        "source": "2"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-1-d",
+      "section": "section_b",
+      "text": "列出未曾進入任何房間的員工姓名。\n`SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________`\n\n{\n  \"type\": \"sql_query_completion\",\n  \"prompt\": \"`SELECT SNAME FROM STAFF LEFT JOIN TRAN ON STAFF.SID = TRAN.SID WHERE TRAN.SID IS NULL`\",\n  \"notes\": \"預期填寫 `LEFT JOIN` 語句，以找出 STAFF 表中在 TRAN 表中沒有對應記錄的員工姓名。\"\n}",
+      "number": "1(d)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 3.0,
+      "answer_details": {
+        "type": "sql_query_completion",
+        "prompt": "`SELECT SNAME FROM STAFF LEFT JOIN TRAN ON STAFF.SID = TRAN.SID WHERE TRAN.SID IS NULL`",
+        "notes": "預期填寫 `LEFT JOIN` 語句，以找出 STAFF 表中在 TRAN 表中沒有對應記錄的員工姓名。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(d)",
+        "question_text": "列出未曾進入任何房間的員工姓名。\n`SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________`",
+        "answer_details": {
+          "type": "sql_query_completion",
+          "prompt": "`SELECT SNAME FROM STAFF LEFT JOIN TRAN ON STAFF.SID = TRAN.SID WHERE TRAN.SID IS NULL`",
+          "notes": "預期填寫 `LEFT JOIN` 語句，以找出 STAFF 表中在 TRAN 表中沒有對應記錄的員工姓名。"
+        },
+        "points": 3,
+        "source": "2"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "`SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________`"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "列出未曾進入任何房間的員工姓名。\n`SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________`"
+    },
+    {
+      "id": "2024-Paper2A_Database-1-e",
+      "section": "section_b",
+      "text": "有些房間在 TRAN 內有超過 100 筆進入記錄。列出它們的房間類型。\n\n{\n  \"type\": \"sql_query_construction\",\n  \"notes\": \"預期編寫一個 SQL 查詢，計算每個房間 (RID) 在 TRAN 表中的記錄數量，篩選出超過 100 筆的房間，然後從 ROOM 表中獲取其房間類型 (RTYPE)。\"\n}",
+      "number": "1(e)",
+      "concepts": [
+        "試算表",
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 3.0,
+      "answer_details": {
+        "type": "sql_query_construction",
+        "notes": "預期編寫一個 SQL 查詢，計算每個房間 (RID) 在 TRAN 表中的記錄數量，篩選出超過 100 筆的房間，然後從 ROOM 表中獲取其房間類型 (RTYPE)。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(e)",
+        "question_text": "有些房間在 TRAN 內有超過 100 筆進入記錄。列出它們的房間類型。",
+        "answer_details": {
+          "type": "sql_query_construction",
+          "notes": "預期編寫一個 SQL 查詢，計算每個房間 (RID) 在 TRAN 表中的記錄數量，篩選出超過 100 筆的房間，然後從 ROOM 表中獲取其房間類型 (RTYPE)。"
+        },
+        "points": 3,
+        "source": "2"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-1-f",
+      "section": "section_b",
+      "text": "完成以下 SQL 語句，於 STAFF 內增加一個欄 MOB，以儲存員工的手提電話號碼。\n`ADD _________`\n\n{\n  \"type\": \"sql_alter_table_completion\",\n  \"prompt\": \"`ALTER TABLE STAFF ADD MOB CHAR(8)`\",\n  \"notes\": \"預期完成 `ALTER TABLE` 語句，為 STAFF 表添加一個名為 MOB (手提電話號碼) 的欄位，數據類型為 CHAR(8)。\"\n}",
+      "number": "1(f)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "硬件",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "sql_alter_table_completion",
+        "prompt": "`ALTER TABLE STAFF ADD MOB CHAR(8)`",
+        "notes": "預期完成 `ALTER TABLE` 語句，為 STAFF 表添加一個名為 MOB (手提電話號碼) 的欄位，數據類型為 CHAR(8)。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(f)",
+        "question_text": "完成以下 SQL 語句，於 STAFF 內增加一個欄 MOB，以儲存員工的手提電話號碼。\n`ADD _________`",
+        "answer_details": {
+          "type": "sql_alter_table_completion",
+          "prompt": "`ALTER TABLE STAFF ADD MOB CHAR(8)`",
+          "notes": "預期完成 `ALTER TABLE` 語句，為 STAFF 表添加一個名為 MOB (手提電話號碼) 的欄位，數據類型為 CHAR(8)。"
+        },
+        "points": 2,
+        "source": "3"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "`ADD _________`"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "完成以下 SQL 語句，於 STAFF 內增加一個欄 MOB，以儲存員工的手提電話號碼。\n`ADD _________`"
+    },
+    {
+      "id": "2024-Paper2A_Database-1-g",
+      "section": "section_b",
+      "text": "以下 SQL 語句的目的是什麼？\n`SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '28/7/2023'`\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"此 SQL 語句的目的是找出所有**物理部門**的員工中，**有進入記錄**但**在 2023 年 7 月 28 日沒有進入記錄**的員工 SID。它首先篩選出物理部門有進入記錄的員工，然後減去在特定日期有進入記錄的員工，從而得到在該日期沒有進入記錄的物理部門員工。\"\n}",
+      "number": "1(g)",
+      "concepts": [
+        "試算表",
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "硬件",
+        "網絡"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "explanation",
+        "notes": "此 SQL 語句的目的是找出所有**物理部門**的員工中，**有進入記錄**但**在 2023 年 7 月 28 日沒有進入記錄**的員工 SID。它首先篩選出物理部門有進入記錄的員工，然後減去在特定日期有進入記錄的員工，從而得到在該日期沒有進入記錄的物理部門員工。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(g)",
+        "question_text": "以下 SQL 語句的目的是什麼？\n`SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '28/7/2023'`",
+        "answer_details": {
+          "type": "explanation",
+          "notes": "此 SQL 語句的目的是找出所有**物理部門**的員工中，**有進入記錄**但**在 2023 年 7 月 28 日沒有進入記錄**的員工 SID。它首先篩選出物理部門有進入記錄的員工，然後減去在特定日期有進入記錄的員工，從而得到在該日期沒有進入記錄的物理部門員工。"
+        },
+        "points": 2,
+        "source": "3"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "`SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '28/7/2023'`"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "以下 SQL 語句的目的是什麼？\n`SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '28/7/2023'`"
+    },
+    {
+      "id": "2024-Paper2A_Database-2-a-i",
+      "section": "section_b",
+      "text": "建議 ENROL 的一個主關鍵碼。\n\n{\n  \"type\": \"short_answer\",\n  \"notes\": \"ENROL 表的主關鍵碼應能唯一識別每一筆選課記錄。由於不同年份開設的相同課程可能由不同老師教授，且學生可以在不同年份選修相同課程，一個複合主關鍵碼更為合適。例如：**(CCODE, CYEAR, SID)**。\"\n}",
+      "number": "2(a)(i)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "short_answer",
+        "notes": "ENROL 表的主關鍵碼應能唯一識別每一筆選課記錄。由於不同年份開設的相同課程可能由不同老師教授，且學生可以在不同年份選修相同課程，一個複合主關鍵碼更為合適。例如：**(CCODE, CYEAR, SID)**。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(a)(i)",
+        "question_text": "建議 ENROL 的一個主關鍵碼。",
+        "answer_details": {
+          "type": "short_answer",
+          "notes": "ENROL 表的主關鍵碼應能唯一識別每一筆選課記錄。由於不同年份開設的相同課程可能由不同老師教授，且學生可以在不同年份選修相同課程，一個複合主關鍵碼更為合適。例如：**(CCODE, CYEAR, SID)**。"
+        },
+        "points": 2,
+        "source": "4"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-2-a-ii",
+      "section": "section_b",
+      "text": "列出只與 SID 有功能相關的兩個屬位。\n\n{\n  \"type\": \"list_attributes\",\n  \"count\": 2,\n  \"notes\": \"預期從 ENROL 表中列出只依賴於 SID (學生識別碼) 的兩個屬性，例如 **SNAME (學生姓名)** 和 **MOBILE (學生手提電話號碼)**。\"\n}",
+      "number": "2(a)(ii)",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "list_attributes",
+        "count": 2,
+        "notes": "預期從 ENROL 表中列出只依賴於 SID (學生識別碼) 的兩個屬性，例如 **SNAME (學生姓名)** 和 **MOBILE (學生手提電話號碼)**。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(a)(ii)",
+        "question_text": "列出只與 SID 有功能相關的兩個屬位。",
+        "answer_details": {
+          "type": "list_attributes",
+          "count": 2,
+          "notes": "預期從 ENROL 表中列出只依賴於 SID (學生識別碼) 的兩個屬性，例如 **SNAME (學生姓名)** 和 **MOBILE (學生手提電話號碼)**。"
+        },
+        "points": 2,
+        "source": "4"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-2-a-iii",
+      "section": "section_b",
+      "text": "描述 ENROL 內數據完整性的一個例子。\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"ENROL 內的數據完整性例子包括：**實體完整性** (主關鍵碼 CCODE, CYEAR, SID 必須唯一且不能為空)；**域完整性** (例如 CYEAR 必須是年份格式，SID 必須符合特定長度格式)；**參照完整性** (如果 ENROL 參考了 COURSE 或 STUDENT 表，那麼 CCODE 或 SID 必須在被參考表中存在)。\"\n}",
+      "number": "2(a)(iii)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "網絡",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 1.0,
+      "answer_details": {
+        "type": "explanation",
+        "notes": "ENROL 內的數據完整性例子包括：**實體完整性** (主關鍵碼 CCODE, CYEAR, SID 必須唯一且不能為空)；**域完整性** (例如 CYEAR 必須是年份格式，SID 必須符合特定長度格式)；**參照完整性** (如果 ENROL 參考了 COURSE 或 STUDENT 表，那麼 CCODE 或 SID 必須在被參考表中存在)。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(a)(iii)",
+        "question_text": "描述 ENROL 內數據完整性的一個例子。",
+        "answer_details": {
+          "type": "explanation",
+          "notes": "ENROL 內的數據完整性例子包括：**實體完整性** (主關鍵碼 CCODE, CYEAR, SID 必須唯一且不能為空)；**域完整性** (例如 CYEAR 必須是年份格式，SID 必須符合特定長度格式)；**參照完整性** (如果 ENROL 參考了 COURSE 或 STUDENT 表，那麼 CCODE 或 SID 必須在被參考表中存在)。"
+        },
+        "points": 1,
+        "source": "4"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-2-b",
+      "section": "section_b",
+      "text": "陳小姐建議以下數據庫模式，將 ENROL 轉換為第三範式。COURSE、COURSEDETAIL、STUDENT 和 ENROINFO 分別儲存課程、學生和註冊課程的資訊。完成以下第三範式的數據庫模式。\n`COURSE (CCODE, CNAME)`\n`主關鍵碼: CCODE`\n`外鍵碼: N/A`\n`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`\n`主關鍵碼: **CCODE, CYEAR**`\n`外鍵碼: N/A`\n`STUDENT (SID, SNAME, MOBILE)`\n`主關鍵碼: SID`\n`外鍵碼: N/A`\n`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`\n`主關鍵碼: **SID, CCODE, CYEAR**`\n`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`\n`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`\n`COURSE (CCODE, CNAME)`\n`主關鍵碼: CCODE`\n`外鍵碼: N/A`\n`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`\n`主關鍵碼: **CCODE, CYEAR**`\n`STUDENT (SID, SNAME, MOBILE)`\n`主關鍵碼: SID`\n`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`\n`主關鍵碼: **SID, CCODE, CYEAR**`\n`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`\n`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`\n\n{\n  \"type\": \"database_normalization_completion\",\n  \"tables\": [\n    {\n      \"name\": \"COURSEDETAIL\",\n      \"attributes\": [\n        \"CCODE\",\n        \"CYEAR\",\n        \"TEACHER\"\n      ],\n      \"primary_key\": [\n        \"CCODE\",\n        \"CYEAR\"\n      ]\n    },\n    {\n      \"name\": \"ENROINFO\",\n      \"attributes\": [\n        \"SID\",\n        \"CCODE\",\n        \"CYEAR\",\n        \"RDATE\"\n      ],\n      \"primary_key\": [\n        \"SID\",\n        \"CCODE\",\n        \"CYEAR\"\n      ],\n      \"foreign_keys\": [\n        {\n          \"from_attributes\": [\n            \"SID\"\n          ],\n          \"references_table\": \"STUDENT\",\n          \"references_attributes\": [\n            \"SID\"\n          ]\n        },\n        {\n          \"from_attributes\": [\n            \"CCODE\",\n            \"CYEAR\"\n          ],\n          \"references_table\": \"COURSEDETAIL\",\n          \"references_attributes\": [\n            \"CCODE\",\n            \"CYEAR\"\n          ]\n        }\n      ]\n    }\n  ],\n  \"notes\": \"預期完成 COURSEDETAIL 和 ENROINFO 表的結構，包括屬性、主關鍵碼和外鍵，以達到第三範式。COURSEDETAIL 應包含課程代碼、年份和教師，ENROINFO 應包含學生、課程和年份的組合以及註冊日期。\"\n}",
+      "number": "2(b)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "硬件",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 6.0,
+      "answer_details": {
+        "type": "database_normalization_completion",
+        "tables": [
+          {
+            "name": "COURSEDETAIL",
+            "attributes": [
+              "CCODE",
+              "CYEAR",
+              "TEACHER"
+            ],
+            "primary_key": [
+              "CCODE",
+              "CYEAR"
+            ]
+          },
+          {
+            "name": "ENROINFO",
+            "attributes": [
+              "SID",
+              "CCODE",
+              "CYEAR",
+              "RDATE"
+            ],
+            "primary_key": [
+              "SID",
+              "CCODE",
+              "CYEAR"
+            ],
+            "foreign_keys": [
+              {
+                "from_attributes": [
+                  "SID"
+                ],
+                "references_table": "STUDENT",
+                "references_attributes": [
+                  "SID"
+                ]
+              },
+              {
+                "from_attributes": [
+                  "CCODE",
+                  "CYEAR"
+                ],
+                "references_table": "COURSEDETAIL",
+                "references_attributes": [
+                  "CCODE",
+                  "CYEAR"
+                ]
+              }
+            ]
+          }
+        ],
+        "notes": "預期完成 COURSEDETAIL 和 ENROINFO 表的結構，包括屬性、主關鍵碼和外鍵，以達到第三範式。COURSEDETAIL 應包含課程代碼、年份和教師，ENROINFO 應包含學生、課程和年份的組合以及註冊日期。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(b)",
+        "question_text": "陳小姐建議以下數據庫模式，將 ENROL 轉換為第三範式。COURSE、COURSEDETAIL、STUDENT 和 ENROINFO 分別儲存課程、學生和註冊課程的資訊。完成以下第三範式的數據庫模式。\n`COURSE (CCODE, CNAME)`\n`主關鍵碼: CCODE`\n`外鍵碼: N/A`\n`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`\n`主關鍵碼: **CCODE, CYEAR**`\n`外鍵碼: N/A`\n`STUDENT (SID, SNAME, MOBILE)`\n`主關鍵碼: SID`\n`外鍵碼: N/A`\n`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`\n`主關鍵碼: **SID, CCODE, CYEAR**`\n`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`\n`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`",
+        "answer_details": {
+          "type": "database_normalization_completion",
+          "tables": [
+            {
+              "name": "COURSEDETAIL",
+              "attributes": [
+                "CCODE",
+                "CYEAR",
+                "TEACHER"
+              ],
+              "primary_key": [
+                "CCODE",
+                "CYEAR"
+              ]
+            },
+            {
+              "name": "ENROINFO",
+              "attributes": [
+                "SID",
+                "CCODE",
+                "CYEAR",
+                "RDATE"
+              ],
+              "primary_key": [
+                "SID",
+                "CCODE",
+                "CYEAR"
+              ],
+              "foreign_keys": [
+                {
+                  "from_attributes": [
+                    "SID"
+                  ],
+                  "references_table": "STUDENT",
+                  "references_attributes": [
+                    "SID"
+                  ]
+                },
+                {
+                  "from_attributes": [
+                    "CCODE",
+                    "CYEAR"
+                  ],
+                  "references_table": "COURSEDETAIL",
+                  "references_attributes": [
+                    "CCODE",
+                    "CYEAR"
+                  ]
+                }
+              ]
+            }
+          ],
+          "notes": "預期完成 COURSEDETAIL 和 ENROINFO 表的結構，包括屬性、主關鍵碼和外鍵，以達到第三範式。COURSEDETAIL 應包含課程代碼、年份和教師，ENROINFO 應包含學生、課程和年份的組合以及註冊日期。"
+        },
+        "points": 6,
+        "source": "5"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "`COURSE (CCODE, CNAME)`",
+          "`主關鍵碼: CCODE`",
+          "`外鍵碼: N/A`",
+          "`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`",
+          "`主關鍵碼: **CCODE, CYEAR**`",
+          "`STUDENT (SID, SNAME, MOBILE)`",
+          "`主關鍵碼: SID`",
+          "`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`",
+          "`主關鍵碼: **SID, CCODE, CYEAR**`",
+          "`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`",
+          "`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "陳小姐建議以下數據庫模式，將 ENROL 轉換為第三範式。COURSE、COURSEDETAIL、STUDENT 和 ENROINFO 分別儲存課程、學生和註冊課程的資訊。完成以下第三範式的數據庫模式。\n`COURSE (CCODE, CNAME)`\n`主關鍵碼: CCODE`\n`外鍵碼: N/A`\n`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`\n`主關鍵碼: **CCODE, CYEAR**`\n`外鍵碼: N/A`\n`STUDENT (SID, SNAME, MOBILE)`\n`主關鍵碼: SID`\n`外鍵碼: N/A`\n`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`\n`主關鍵碼: **SID, CCODE, CYEAR**`\n`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`\n`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`"
+    },
+    {
+      "id": "2024-Paper2A_Database-2-c",
+      "section": "section_b",
+      "text": "設計一個表格界面，供學生查看和增加新的註冊資料。界面的要求如下：\n*   學生可以查看自己的個人資訊。\n*   學生可以註冊本年度開設的課程。\n*   學生可以查看過去某年的註冊記錄，並以過濾或排序功能來了解課程的受歡迎程度。\n在你的設計上加上適當的註解。\n\n{\n  \"type\": \"design_task\",\n  \"task\": \"設計一個學生表格界面。界面應包含：\\n1.  **個人資訊區塊**：顯示學生的 SID、姓名、聯絡電話等。可能是只讀欄位。\\n2.  **課程註冊區塊**：顯示本年度開設的課程列表（CCODE, CNAME, TEACHER, CYEAR），讓學生選擇課程進行註冊。可能包含一個「註冊」按鈕。\\n3.  **歷史註冊記錄區塊**：顯示學生過去的註冊詳情 (CCODE, CNAME, CYEAR, RDATE)。此區塊應提供：\\n    *   **年份過濾器**：一個下拉選單或輸入框，讓學生選擇查看特定年份的註冊記錄。\\n    *   **排序選項**：允許學生根據課程名稱、註冊日期或受歡迎程度（需要額外邏輯或數據）排序。\\n    *   **搜索功能**：允許學生按課程名稱搜索。\\n\\n**註解**：每個區塊的功能和交互方式應明確標註，例如「此處顯示學生個人資料，僅供參考」、「點擊課程名稱可查看詳細信息」或「使用下拉選單過濾歷史記錄」。\"\n}",
+      "number": "2(c)",
+      "concepts": [
+        "試算表",
+        "數據組織",
+        "檔案存取",
+        "算法",
+        "偽代碼",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 4.0,
+      "answer_details": {
+        "type": "design_task",
+        "task": "設計一個學生表格界面。界面應包含：\n1.  **個人資訊區塊**：顯示學生的 SID、姓名、聯絡電話等。可能是只讀欄位。\n2.  **課程註冊區塊**：顯示本年度開設的課程列表（CCODE, CNAME, TEACHER, CYEAR），讓學生選擇課程進行註冊。可能包含一個「註冊」按鈕。\n3.  **歷史註冊記錄區塊**：顯示學生過去的註冊詳情 (CCODE, CNAME, CYEAR, RDATE)。此區塊應提供：\n    *   **年份過濾器**：一個下拉選單或輸入框，讓學生選擇查看特定年份的註冊記錄。\n    *   **排序選項**：允許學生根據課程名稱、註冊日期或受歡迎程度（需要額外邏輯或數據）排序。\n    *   **搜索功能**：允許學生按課程名稱搜索。\n\n**註解**：每個區塊的功能和交互方式應明確標註，例如「此處顯示學生個人資料，僅供參考」、「點擊課程名稱可查看詳細信息」或「使用下拉選單過濾歷史記錄」。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(c)",
+        "question_text": "設計一個表格界面，供學生查看和增加新的註冊資料。界面的要求如下：\n*   學生可以查看自己的個人資訊。\n*   學生可以註冊本年度開設的課程。\n*   學生可以查看過去某年的註冊記錄，並以過濾或排序功能來了解課程的受歡迎程度。\n在你的設計上加上適當的註解。",
+        "answer_details": {
+          "type": "design_task",
+          "task": "設計一個學生表格界面。界面應包含：\n1.  **個人資訊區塊**：顯示學生的 SID、姓名、聯絡電話等。可能是只讀欄位。\n2.  **課程註冊區塊**：顯示本年度開設的課程列表（CCODE, CNAME, TEACHER, CYEAR），讓學生選擇課程進行註冊。可能包含一個「註冊」按鈕。\n3.  **歷史註冊記錄區塊**：顯示學生過去的註冊詳情 (CCODE, CNAME, CYEAR, RDATE)。此區塊應提供：\n    *   **年份過濾器**：一個下拉選單或輸入框，讓學生選擇查看特定年份的註冊記錄。\n    *   **排序選項**：允許學生根據課程名稱、註冊日期或受歡迎程度（需要額外邏輯或數據）排序。\n    *   **搜索功能**：允許學生按課程名稱搜索。\n\n**註解**：每個區塊的功能和交互方式應明確標註，例如「此處顯示學生個人資料，僅供參考」、「點擊課程名稱可查看詳細信息」或「使用下拉選單過濾歷史記錄」。"
+        },
+        "points": 4,
+        "source": "6"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "*   學生可以查看自己的個人資訊。",
+          "*   學生可以註冊本年度開設的課程。",
+          "*   學生可以查看過去某年的註冊記錄，並以過濾或排序功能來了解課程的受歡迎程度。",
+          "在你的設計上加上適當的註解。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "設計一個表格界面，供學生查看和增加新的註冊資料。界面的要求如下：\n*   學生可以查看自己的個人資訊。\n*   學生可以註冊本年度開設的課程。\n*   學生可以查看過去某年的註冊記錄，並以過濾或排序功能來了解課程的受歡迎程度。\n在你的設計上加上適當的註解。"
+    },
+    {
+      "id": "2024-Paper2A_Database-3-a",
+      "section": "section_b",
+      "text": "該公司擁有數間戲院，每間戲院每日播放多個場次。該公司計劃開發一個數據庫來儲存會員、預訂、場次和戲院的資料。\n(a) 數據庫的要求如下所述：\n*   每張預訂預留一個場次。\n*   每場次可能沒有預訂，也可能沒有預訂。\n*   每間戲院最少有一個場次。\n完成以下此數據庫的實體關係圖，圖內不用畫上屬性。\n\n{\n  \"type\": \"erd_completion\",\n  \"entities_to_add\": [\n    \"場次\",\n    \"戲院\"\n  ],\n  \"relationships_to_define\": [\n    {\n      \"entity1\": \"會員\",\n      \"relationship\": \"建立\",\n      \"entity2\": \"預訂\",\n      \"cardinality\": \"1 -- M\"\n    },\n    {\n      \"entity1\": \"預訂\",\n      \"relationship\": \"預留\",\n      \"entity2\": \"場次\",\n      \"cardinality\": \"1 -- 1 (預訂預留一個場次)\"\n    },\n    {\n      \"entity1\": \"場次\",\n      \"relationship\": \"屬於\",\n      \"entity2\": \"戲院\",\n      \"cardinality\": \"M -- 1 (一間戲院有多個場次，每個場次屬於一間戲院)\"\n    }\n  ],\n  \"notes\": \"預期根據業務規則，完成 ERD 中的 '場次' 和 '戲院' 實體，並繪製它們與 '會員' 和 '預訂' 實體之間的關係，明確標示基數。特別注意「每張預訂預留一個場次」代表預訂和場次之間是1對1，且場次是預訂的子集，而「每場次可能沒有預訂，也可能沒有預訂」表示預訂是可選的。另外「每間戲院最少有一個場次」表示戲院和場次之間戲院必須有場次，場次必須屬於一個戲院。\"\n}",
+      "number": "3(a)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "網絡",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 4.0,
+      "answer_details": {
+        "type": "erd_completion",
+        "entities_to_add": [
+          "場次",
+          "戲院"
+        ],
+        "relationships_to_define": [
+          {
+            "entity1": "會員",
+            "relationship": "建立",
+            "entity2": "預訂",
+            "cardinality": "1 -- M"
+          },
+          {
+            "entity1": "預訂",
+            "relationship": "預留",
+            "entity2": "場次",
+            "cardinality": "1 -- 1 (預訂預留一個場次)"
+          },
+          {
+            "entity1": "場次",
+            "relationship": "屬於",
+            "entity2": "戲院",
+            "cardinality": "M -- 1 (一間戲院有多個場次，每個場次屬於一間戲院)"
+          }
+        ],
+        "notes": "預期根據業務規則，完成 ERD 中的 '場次' 和 '戲院' 實體，並繪製它們與 '會員' 和 '預訂' 實體之間的關係，明確標示基數。特別注意「每張預訂預留一個場次」代表預訂和場次之間是1對1，且場次是預訂的子集，而「每場次可能沒有預訂，也可能沒有預訂」表示預訂是可選的。另外「每間戲院最少有一個場次」表示戲院和場次之間戲院必須有場次，場次必須屬於一個戲院。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(a)",
+        "question_text": "該公司擁有數間戲院，每間戲院每日播放多個場次。該公司計劃開發一個數據庫來儲存會員、預訂、場次和戲院的資料。\n(a) 數據庫的要求如下所述：\n*   每張預訂預留一個場次。\n*   每場次可能沒有預訂，也可能沒有預訂。\n*   每間戲院最少有一個場次。\n完成以下此數據庫的實體關係圖，圖內不用畫上屬性。",
+        "answer_details": {
+          "type": "erd_completion",
+          "entities_to_add": [
+            "場次",
+            "戲院"
+          ],
+          "relationships_to_define": [
+            {
+              "entity1": "會員",
+              "relationship": "建立",
+              "entity2": "預訂",
+              "cardinality": "1 -- M"
+            },
+            {
+              "entity1": "預訂",
+              "relationship": "預留",
+              "entity2": "場次",
+              "cardinality": "1 -- 1 (預訂預留一個場次)"
+            },
+            {
+              "entity1": "場次",
+              "relationship": "屬於",
+              "entity2": "戲院",
+              "cardinality": "M -- 1 (一間戲院有多個場次，每個場次屬於一間戲院)"
+            }
+          ],
+          "notes": "預期根據業務規則，完成 ERD 中的 '場次' 和 '戲院' 實體，並繪製它們與 '會員' 和 '預訂' 實體之間的關係，明確標示基數。特別注意「每張預訂預留一個場次」代表預訂和場次之間是1對1，且場次是預訂的子集，而「每場次可能沒有預訂，也可能沒有預訂」表示預訂是可選的。另外「每間戲院最少有一個場次」表示戲院和場次之間戲院必須有場次，場次必須屬於一個戲院。"
+        },
+        "points": 4,
+        "source": "7"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(a) 數據庫的要求如下所述：",
+          "*   每張預訂預留一個場次。",
+          "*   每場次可能沒有預訂，也可能沒有預訂。",
+          "*   每間戲院最少有一個場次。",
+          "完成以下此數據庫的實體關係圖，圖內不用畫上屬性。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "該公司擁有數間戲院，每間戲院每日播放多個場次。該公司計劃開發一個數據庫來儲存會員、預訂、場次和戲院的資料。\n(a) 數據庫的要求如下所述：\n*   每張預訂預留一個場次。\n*   每場次可能沒有預訂，也可能沒有預訂。\n*   每間戲院最少有一個場次。\n完成以下此數據庫的實體關係圖，圖內不用畫上屬性。"
+    },
+    {
+      "id": "2024-Paper2A_Database-3-b",
+      "section": "section_b",
+      "text": "選擇在數據庫應用系統開發週期內，數據庫設計階段中涉及的一個成品和一位工作人員。\n[Table with '階段' (Phase), '成品' (Deliverable), '工作人員' (Personnel)]\n\n{\n  \"type\": \"multiple_choice_table\",\n  \"options_deliverable\": [\n    \"流程圖\",\n    \"數據字典\",\n    \"用戶手冊\"\n  ],\n  \"options_personnel\": [\n    \"系統分析員\",\n    \"數據輸入員\",\n    \"數據庫工程師\"\n  ],\n  \"notes\": \"在數據庫設計階段，典型的**成品**是**數據字典** (Data Dictionary) 或**流程圖** (Flowchart)，而主要**工作人員**是**數據庫工程師** (Database Engineer) 或**系統分析員** (System Analyst)。\"\n}",
+      "number": "3(b)",
+      "concepts": [
+        "網絡",
+        "算法",
+        "偽代碼",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "multiple_choice_table",
+        "options_deliverable": [
+          "流程圖",
+          "數據字典",
+          "用戶手冊"
+        ],
+        "options_personnel": [
+          "系統分析員",
+          "數據輸入員",
+          "數據庫工程師"
+        ],
+        "notes": "在數據庫設計階段，典型的**成品**是**數據字典** (Data Dictionary) 或**流程圖** (Flowchart)，而主要**工作人員**是**數據庫工程師** (Database Engineer) 或**系統分析員** (System Analyst)。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(b)",
+        "question_text": "選擇在數據庫應用系統開發週期內，數據庫設計階段中涉及的一個成品和一位工作人員。\n[Table with '階段' (Phase), '成品' (Deliverable), '工作人員' (Personnel)]",
+        "answer_details": {
+          "type": "multiple_choice_table",
+          "options_deliverable": [
+            "流程圖",
+            "數據字典",
+            "用戶手冊"
+          ],
+          "options_personnel": [
+            "系統分析員",
+            "數據輸入員",
+            "數據庫工程師"
+          ],
+          "notes": "在數據庫設計階段，典型的**成品**是**數據字典** (Data Dictionary) 或**流程圖** (Flowchart)，而主要**工作人員**是**數據庫工程師** (Database Engineer) 或**系統分析員** (System Analyst)。"
+        },
+        "points": 2,
+        "source": "8"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-3-c-i",
+      "section": "section_b",
+      "text": "SQL1 是 SQL 語句：`SELECT MNAME, SEX, DOB FROM MEMBER WHERE DOB = '1/1/1990' ORDER BY MNAME`。建立一個索引 MINDEX 以改善 SQL1 的表現。選擇以下方格內兩個屬位，以完成下列 SQL 語句，讓 SQL1 有最佳的表現。\n`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`\n\n{\n  \"type\": \"sql_index_creation_completion\",\n  \"prompt\": \"`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`\",\n  \"notes\": \"為了優化 SQL1，索引應包含 `WHERE` 子句中使用的欄位 (DOB) 和 `ORDER BY` 子句中使用的欄位 (MNAME)。因此，最能優化表現的索引屬性是 **DOB** 和 **MNAME**。\"\n}",
+      "number": "3(c)(i)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "sql_index_creation_completion",
+        "prompt": "`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`",
+        "notes": "為了優化 SQL1，索引應包含 `WHERE` 子句中使用的欄位 (DOB) 和 `ORDER BY` 子句中使用的欄位 (MNAME)。因此，最能優化表現的索引屬性是 **DOB** 和 **MNAME**。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(c)(i)",
+        "question_text": "SQL1 是 SQL 語句：`SELECT MNAME, SEX, DOB FROM MEMBER WHERE DOB = '1/1/1990' ORDER BY MNAME`。建立一個索引 MINDEX 以改善 SQL1 的表現。選擇以下方格內兩個屬位，以完成下列 SQL 語句，讓 SQL1 有最佳的表現。\n`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`",
+        "answer_details": {
+          "type": "sql_index_creation_completion",
+          "prompt": "`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`",
+          "notes": "為了優化 SQL1，索引應包含 `WHERE` 子句中使用的欄位 (DOB) 和 `ORDER BY` 子句中使用的欄位 (MNAME)。因此，最能優化表現的索引屬性是 **DOB** 和 **MNAME**。"
+        },
+        "points": 2,
+        "source": "8"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "SQL1 是 SQL 語句：`SELECT MNAME, SEX, DOB FROM MEMBER WHERE DOB = '1/1/1990' ORDER BY MNAME`。建立一個索引 MINDEX 以改善 SQL1 的表現。選擇以下方格內兩個屬位，以完成下列 SQL 語句，讓 SQL1 有最佳的表現。\n`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`"
+    },
+    {
+      "id": "2024-Paper2A_Database-3-c-ii",
+      "section": "section_b",
+      "text": "SQL2 和 SQL3 是 SQL 語句。均可以用來修改 MID 為「00083」的 MNAME 至「Chan Tai Man」。\n`SQL2 DELETE FROM MEMBER WHERE MID = '00083'; INSERT INTO MEMBER VALUES ('00083', 'Chan Tai Man', 'F', '12/4/1990', 'ctm@abc.com', '120 Sea Street, Kowloon')`\n`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`\n完成以上 SQL3。\n\n{\n  \"type\": \"sql_update_completion\",\n  \"prompt\": \"`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`\",\n  \"notes\": \"預期完成 `UPDATE` 語句，將 MID 為 '00083' 的會員的 MNAME 更新為 'Chan Tai Man'。\"\n}",
+      "number": "3(c)(ii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "硬件",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "sql_update_completion",
+        "prompt": "`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`",
+        "notes": "預期完成 `UPDATE` 語句，將 MID 為 '00083' 的會員的 MNAME 更新為 'Chan Tai Man'。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(c)(ii)",
+        "question_text": "SQL2 和 SQL3 是 SQL 語句。均可以用來修改 MID 為「00083」的 MNAME 至「Chan Tai Man」。\n`SQL2 DELETE FROM MEMBER WHERE MID = '00083'; INSERT INTO MEMBER VALUES ('00083', 'Chan Tai Man', 'F', '12/4/1990', 'ctm@abc.com', '120 Sea Street, Kowloon')`\n`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`\n完成以上 SQL3。",
+        "answer_details": {
+          "type": "sql_update_completion",
+          "prompt": "`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`",
+          "notes": "預期完成 `UPDATE` 語句，將 MID 為 '00083' 的會員的 MNAME 更新為 'Chan Tai Man'。"
+        },
+        "points": 2,
+        "source": "9"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "`SQL2 DELETE FROM MEMBER WHERE MID = '00083'; INSERT INTO MEMBER VALUES ('00083', 'Chan Tai Man', 'F', '12/4/1990', 'ctm@abc.com', '120 Sea Street, Kowloon')`",
+          "`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`",
+          "完成以上 SQL3。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "SQL2 和 SQL3 是 SQL 語句。均可以用來修改 MID 為「00083」的 MNAME 至「Chan Tai Man」。\n`SQL2 DELETE FROM MEMBER WHERE MID = '00083'; INSERT INTO MEMBER VALUES ('00083', 'Chan Tai Man', 'F', '12/4/1990', 'ctm@abc.com', '120 Sea Street, Kowloon')`\n`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`\n完成以上 SQL3。"
+    },
+    {
+      "id": "2024-Paper2A_Database-3-c-iii",
+      "section": "section_b",
+      "text": "假設已為 MID 建立索引。SQL2 會重建此索引。簡略說明。\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"SQL2 語句執行了**刪除 (DELETE)** 操作，然後再進行**插入 (INSERT)** 操作。當記錄被刪除時，數據庫系統會從索引中移除對應的條目；當新記錄被插入時，系統會為其創建新的索引條目。這兩個操作（尤其是在許多記錄或索引碎片化時）比單純的 `UPDATE` 操作可能導致更顯著的索引維護開銷，甚至觸發索引的重新組織或重建，以保持其效率和結構完整性。而 `UPDATE` 操作通常只涉及修改現有索引條目的指針或內容，較少引起全面重建。\"\n}",
+      "number": "3(c)(iii)",
+      "concepts": [
+        "試算表",
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "網絡"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "explanation",
+        "notes": "SQL2 語句執行了**刪除 (DELETE)** 操作，然後再進行**插入 (INSERT)** 操作。當記錄被刪除時，數據庫系統會從索引中移除對應的條目；當新記錄被插入時，系統會為其創建新的索引條目。這兩個操作（尤其是在許多記錄或索引碎片化時）比單純的 `UPDATE` 操作可能導致更顯著的索引維護開銷，甚至觸發索引的重新組織或重建，以保持其效率和結構完整性。而 `UPDATE` 操作通常只涉及修改現有索引條目的指針或內容，較少引起全面重建。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(c)(iii)",
+        "question_text": "假設已為 MID 建立索引。SQL2 會重建此索引。簡略說明。",
+        "answer_details": {
+          "type": "explanation",
+          "notes": "SQL2 語句執行了**刪除 (DELETE)** 操作，然後再進行**插入 (INSERT)** 操作。當記錄被刪除時，數據庫系統會從索引中移除對應的條目；當新記錄被插入時，系統會為其創建新的索引條目。這兩個操作（尤其是在許多記錄或索引碎片化時）比單純的 `UPDATE` 操作可能導致更顯著的索引維護開銷，甚至觸發索引的重新組織或重建，以保持其效率和結構完整性。而 `UPDATE` 操作通常只涉及修改現有索引條目的指針或內容，較少引起全面重建。"
+        },
+        "points": 2,
+        "source": "9"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-3-d",
+      "section": "section_b",
+      "text": "該公司計劃將 MEMBER 內的資料分享給一間廣告公司，以推廣其他業務。這個計劃的潛在問題是什麼？如何解決這個問題？\n\n{\n  \"type\": \"problem_solution\",\n  \"problem_prompt\": \"問題：\",\n  \"solution_prompt\": \"解決方案：\",\n  \"notes\": \"**問題**：潛在的**私隱侵犯**是主要問題。未經會員同意分享其個人資料（如姓名、聯絡方式、住址等）會違反私隱條例，並可能導致會員對公司失去信任，甚至面臨法律訴訟。此外，數據洩露或濫用的風險也會增加。\\n\\n**解決方案**：\\n1.  **獲取明確同意**：在收集會員資料時，應明確告知會員其資料可能被分享給第三方作推廣用途，並取得他們的**書面或電子同意**。\\n2.  **數據匿名化/假名化**：在分享數據前，移除或替換所有可直接識別個人身份的資訊（如姓名、MID、地址），只分享匿名化或假名化的數據，例如只分享人口統計資料或購買行為模式，而不涉及具體個人身份。\\n3.  **簽訂保密協議**：與廣告公司簽訂嚴格的**數據保護和保密協議**，明確規定數據的使用範圍、安全措施和責任。\"\n}",
+      "number": "3(d)",
+      "concepts": [
+        "硬件",
+        "網絡保安",
+        "資訊保安"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "problem_solution",
+        "problem_prompt": "問題：",
+        "solution_prompt": "解決方案：",
+        "notes": "**問題**：潛在的**私隱侵犯**是主要問題。未經會員同意分享其個人資料（如姓名、聯絡方式、住址等）會違反私隱條例，並可能導致會員對公司失去信任，甚至面臨法律訴訟。此外，數據洩露或濫用的風險也會增加。\n\n**解決方案**：\n1.  **獲取明確同意**：在收集會員資料時，應明確告知會員其資料可能被分享給第三方作推廣用途，並取得他們的**書面或電子同意**。\n2.  **數據匿名化/假名化**：在分享數據前，移除或替換所有可直接識別個人身份的資訊（如姓名、MID、地址），只分享匿名化或假名化的數據，例如只分享人口統計資料或購買行為模式，而不涉及具體個人身份。\n3.  **簽訂保密協議**：與廣告公司簽訂嚴格的**數據保護和保密協議**，明確規定數據的使用範圍、安全措施和責任。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(d)",
+        "question_text": "該公司計劃將 MEMBER 內的資料分享給一間廣告公司，以推廣其他業務。這個計劃的潛在問題是什麼？如何解決這個問題？",
+        "answer_details": {
+          "type": "problem_solution",
+          "problem_prompt": "問題：",
+          "solution_prompt": "解決方案：",
+          "notes": "**問題**：潛在的**私隱侵犯**是主要問題。未經會員同意分享其個人資料（如姓名、聯絡方式、住址等）會違反私隱條例，並可能導致會員對公司失去信任，甚至面臨法律訴訟。此外，數據洩露或濫用的風險也會增加。\n\n**解決方案**：\n1.  **獲取明確同意**：在收集會員資料時，應明確告知會員其資料可能被分享給第三方作推廣用途，並取得他們的**書面或電子同意**。\n2.  **數據匿名化/假名化**：在分享數據前，移除或替換所有可直接識別個人身份的資訊（如姓名、MID、地址），只分享匿名化或假名化的數據，例如只分享人口統計資料或購買行為模式，而不涉及具體個人身份。\n3.  **簽訂保密協議**：與廣告公司簽訂嚴格的**數據保護和保密協議**，明確規定數據的使用範圍、安全措施和責任。"
+        },
+        "points": 2,
+        "source": "10"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-4-a",
+      "section": "section_b",
+      "text": "寫出 SID 的數據類型，簡略說明。\n\n{\n  \"type\": \"data_type_explanation\",\n  \"notes\": \"SID (學生識別碼) 的數據類型應為**字串/字符型 (CHAR/VARCHAR)**。\\n\\n**說明**：\\n*   SID 的範例值 '012345' 包含**前導零**。如果使用數值類型，前導零會被省略。\\n*   SID 通常用於識別，而非進行算術運算。\\n*   SID 可能包含字母或特殊符號 (儘管此例未顯示)，這也需要字串類型來儲存。\"\n}",
+      "number": "4(a)",
+      "concepts": [
+        "網絡",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "data_type_explanation",
+        "notes": "SID (學生識別碼) 的數據類型應為**字串/字符型 (CHAR/VARCHAR)**。\n\n**說明**：\n*   SID 的範例值 '012345' 包含**前導零**。如果使用數值類型，前導零會被省略。\n*   SID 通常用於識別，而非進行算術運算。\n*   SID 可能包含字母或特殊符號 (儘管此例未顯示)，這也需要字串類型來儲存。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(a)",
+        "question_text": "寫出 SID 的數據類型，簡略說明。",
+        "answer_details": {
+          "type": "data_type_explanation",
+          "notes": "SID (學生識別碼) 的數據類型應為**字串/字符型 (CHAR/VARCHAR)**。\n\n**說明**：\n*   SID 的範例值 '012345' 包含**前導零**。如果使用數值類型，前導零會被省略。\n*   SID 通常用於識別，而非進行算術運算。\n*   SID 可能包含字母或特殊符號 (儘管此例未顯示)，這也需要字串類型來儲存。"
+        },
+        "points": 2,
+        "source": "11"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-4-b",
+      "section": "section_b",
+      "text": "根據 D1 和 D2 內已知的記錄，執行以下 SQL1 和 SQL2 時，結果會顯示多少筆記錄？\n`SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D2`\n`SQL2: SELECT SID FROM D1 UNION ALL SELECT SID FROM D2`\n\n{\n  \"type\": \"sql_query_output_count\",\n  \"notes\": \"**D1 記錄：** SID: 010200, 010040, 011564, 013010, 098765\\n**D2 記錄：** SID: 089806, 010040, 098765, 012011, 013988\\n\\n**SQL1 (UNION)**：`UNION` 操作會合併結果並**移除重複的 SID**。\\n  *   D1 和 D2 共同的 SID 有：010040, 098765。\\n  *   D1 獨有的 SID：010200, 011564, 013010。\\n  *   D2 獨有的 SID：089806, 012011, 013988。\\n  *   因此，結果將包含 3 (D1 獨有) + 3 (D2 獨有) + 2 (共同，只算一次) = **8 筆記錄**。\\n\\n**SQL2 (UNION ALL)**：`UNION ALL` 操作會合併結果並**保留所有重複的 SID**。\\n  *   D1 有 5 筆記錄。\\n  *   D2 有 5 筆記錄。\\n  *   因此，結果將包含 5 + 5 = **10 筆記錄**。\\n\\n**SQL1:** 8\\n**SQL2:** 10\"\n}",
+      "number": "4(b)",
+      "concepts": [
+        "試算表",
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "硬件"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "sql_query_output_count",
+        "notes": "**D1 記錄：** SID: 010200, 010040, 011564, 013010, 098765\n**D2 記錄：** SID: 089806, 010040, 098765, 012011, 013988\n\n**SQL1 (UNION)**：`UNION` 操作會合併結果並**移除重複的 SID**。\n  *   D1 和 D2 共同的 SID 有：010040, 098765。\n  *   D1 獨有的 SID：010200, 011564, 013010。\n  *   D2 獨有的 SID：089806, 012011, 013988。\n  *   因此，結果將包含 3 (D1 獨有) + 3 (D2 獨有) + 2 (共同，只算一次) = **8 筆記錄**。\n\n**SQL2 (UNION ALL)**：`UNION ALL` 操作會合併結果並**保留所有重複的 SID**。\n  *   D1 有 5 筆記錄。\n  *   D2 有 5 筆記錄。\n  *   因此，結果將包含 5 + 5 = **10 筆記錄**。\n\n**SQL1:** 8\n**SQL2:** 10"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(b)",
+        "question_text": "根據 D1 和 D2 內已知的記錄，執行以下 SQL1 和 SQL2 時，結果會顯示多少筆記錄？\n`SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D2`\n`SQL2: SELECT SID FROM D1 UNION ALL SELECT SID FROM D2`",
+        "answer_details": {
+          "type": "sql_query_output_count",
+          "notes": "**D1 記錄：** SID: 010200, 010040, 011564, 013010, 098765\n**D2 記錄：** SID: 089806, 010040, 098765, 012011, 013988\n\n**SQL1 (UNION)**：`UNION` 操作會合併結果並**移除重複的 SID**。\n  *   D1 和 D2 共同的 SID 有：010040, 098765。\n  *   D1 獨有的 SID：010200, 011564, 013010。\n  *   D2 獨有的 SID：089806, 012011, 013988。\n  *   因此，結果將包含 3 (D1 獨有) + 3 (D2 獨有) + 2 (共同，只算一次) = **8 筆記錄**。\n\n**SQL2 (UNION ALL)**：`UNION ALL` 操作會合併結果並**保留所有重複的 SID**。\n  *   D1 有 5 筆記錄。\n  *   D2 有 5 筆記錄。\n  *   因此，結果將包含 5 + 5 = **10 筆記錄**。\n\n**SQL1:** 8\n**SQL2:** 10"
+        },
+        "points": 2,
+        "source": "11"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "`SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D2`",
+          "`SQL2: SELECT SID FROM D1 UNION ALL SELECT SID FROM D2`"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "根據 D1 和 D2 內已知的記錄，執行以下 SQL1 和 SQL2 時，結果會顯示多少筆記錄？\n`SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D2`\n`SQL2: SELECT SID FROM D1 UNION ALL SELECT SID FROM D2`"
+    },
+    {
+      "id": "2024-Paper2A_Database-4-c-i",
+      "section": "section_b",
+      "text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012345, RDATE=12/9/2022, SNO=3, LEADER=098765]\n\n{\n  \"type\": \"data_integrity_violation\",\n  \"notes\": \"**完整性問題：實體完整性 (Entity Integrity)**\\n**說明**：D1 表的主關鍵碼是 SID。記錄 'SID=012345' 已經存在於 D1 表中。嘗試插入一個具有相同 SID 的新記錄會違反實體完整性原則，因為主關鍵碼的值必須是唯一的，以確保每條記錄的唯一性。\"\n}",
+      "number": "4(c)(i)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "ERD",
+        "正規化",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "data_integrity_violation",
+        "notes": "**完整性問題：實體完整性 (Entity Integrity)**\n**說明**：D1 表的主關鍵碼是 SID。記錄 'SID=012345' 已經存在於 D1 表中。嘗試插入一個具有相同 SID 的新記錄會違反實體完整性原則，因為主關鍵碼的值必須是唯一的，以確保每條記錄的唯一性。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(c)(i)",
+        "question_text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012345, RDATE=12/9/2022, SNO=3, LEADER=098765]",
+        "answer_details": {
+          "type": "data_integrity_violation",
+          "notes": "**完整性問題：實體完整性 (Entity Integrity)**\n**說明**：D1 表的主關鍵碼是 SID。記錄 'SID=012345' 已經存在於 D1 表中。嘗試插入一個具有相同 SID 的新記錄會違反實體完整性原則，因為主關鍵碼的值必須是唯一的，以確保每條記錄的唯一性。"
+        },
+        "points": 2,
+        "source": "12"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-4-c-ii",
+      "section": "section_b",
+      "text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012033, RDATE=30/2/2022, SNO=5, LEADER=098765]\n\n{\n  \"type\": \"data_integrity_violation\",\n  \"notes\": \"**完整性問題：域完整性 (Domain Integrity)**\\n**說明**：RDATE 欄位儲存日期。日期 '30/2/2022' 是無效的，因為 2022 年 2 月只有 28 天。嘗試插入一個不在 RDATE 欄位定義域範圍內的日期值會違反域完整性。\"\n}",
+      "number": "4(c)(ii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "ERD",
+        "正規化",
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "data_integrity_violation",
+        "notes": "**完整性問題：域完整性 (Domain Integrity)**\n**說明**：RDATE 欄位儲存日期。日期 '30/2/2022' 是無效的，因為 2022 年 2 月只有 28 天。嘗試插入一個不在 RDATE 欄位定義域範圍內的日期值會違反域完整性。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(c)(ii)",
+        "question_text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012033, RDATE=30/2/2022, SNO=5, LEADER=098765]",
+        "answer_details": {
+          "type": "data_integrity_violation",
+          "notes": "**完整性問題：域完整性 (Domain Integrity)**\n**說明**：RDATE 欄位儲存日期。日期 '30/2/2022' 是無效的，因為 2022 年 2 月只有 28 天。嘗試插入一個不在 RDATE 欄位定義域範圍內的日期值會違反域完整性。"
+        },
+        "points": 2,
+        "source": "12"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-4-c-iii",
+      "section": "section_b",
+      "text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012066, RDATE=10/6/2022, SNO=3, LEADER=023456]\n\n{\n  \"type\": \"data_integrity_violation\",\n  \"notes\": \"**完整性問題：參照完整性 (Referential Integrity)**\\n**說明**：LEADER 欄位可能是一個外鍵，參照另一個表（例如 LEADER 表或 STUDENT 表）中的領導者識別碼。如果 '023456' 這個 LEADER 值在被參照的表中不存在，那麼嘗試插入此記錄將違反參照完整性，因為它引用了一個不存在的父記錄。\"\n}",
+      "number": "4(c)(iii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "ERD",
+        "正規化",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "data_integrity_violation",
+        "notes": "**完整性問題：參照完整性 (Referential Integrity)**\n**說明**：LEADER 欄位可能是一個外鍵，參照另一個表（例如 LEADER 表或 STUDENT 表）中的領導者識別碼。如果 '023456' 這個 LEADER 值在被參照的表中不存在，那麼嘗試插入此記錄將違反參照完整性，因為它引用了一個不存在的父記錄。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(c)(iii)",
+        "question_text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012066, RDATE=10/6/2022, SNO=3, LEADER=023456]",
+        "answer_details": {
+          "type": "data_integrity_violation",
+          "notes": "**完整性問題：參照完整性 (Referential Integrity)**\n**說明**：LEADER 欄位可能是一個外鍵，參照另一個表（例如 LEADER 表或 STUDENT 表）中的領導者識別碼。如果 '023456' 這個 LEADER 值在被參照的表中不存在，那麼嘗試插入此記錄將違反參照完整性，因為它引用了一個不存在的父記錄。"
+        },
+        "points": 2,
+        "source": "12"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-4-d-i",
+      "section": "section_b",
+      "text": "資訊科技經理建議合併所有分區的數據庫。舉出這個建議的一個好處，並簡略說明你的答案。\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"合併所有分區數據庫的一個好處是**提高數據一致性 (Data Consistency)**。透過將所有數據儲存在一個中央數據庫中，可以避免不同分區數據庫之間因數據重複、更新不同步而導致的數據不一致問題。這有助於確保所有用戶都能訪問到最新、最準確的數據，簡化數據管理和報告，並減少數據冗餘。\"\n}",
+      "number": "4(d)(i)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "網絡"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "explanation",
+        "notes": "合併所有分區數據庫的一個好處是**提高數據一致性 (Data Consistency)**。透過將所有數據儲存在一個中央數據庫中，可以避免不同分區數據庫之間因數據重複、更新不同步而導致的數據不一致問題。這有助於確保所有用戶都能訪問到最新、最準確的數據，簡化數據管理和報告，並減少數據冗餘。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(d)(i)",
+        "question_text": "資訊科技經理建議合併所有分區的數據庫。舉出這個建議的一個好處，並簡略說明你的答案。",
+        "answer_details": {
+          "type": "explanation",
+          "notes": "合併所有分區數據庫的一個好處是**提高數據一致性 (Data Consistency)**。透過將所有數據儲存在一個中央數據庫中，可以避免不同分區數據庫之間因數據重複、更新不同步而導致的數據不一致問題。這有助於確保所有用戶都能訪問到最新、最準確的數據，簡化數據管理和報告，並減少數據冗餘。"
+        },
+        "points": 2,
+        "source": "13"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2024-Paper2A_Database-4-d-ii",
+      "section": "section_b",
+      "text": "D1 和 D2 在合併前需要重新設計。在新設計中，需要分辨各分區。完成以下新數據庫表以作合併。\n`D1 (SID, RDATE, SNO, LEADER, **DIVISION_ID** )`\n`主關鍵碼: **SID, DIVISION_ID**`\n`描述新的欄名: **用來標識學生來自哪個分區。**`\n\n{\n  \"type\": \"database_schema_completion\",\n  \"table_name\": \"D1\",\n  \"attributes_to_add\": [\n    \"DIVISION_ID\"\n  ],\n  \"pk_to_define\": [\n    \"SID\",\n    \"DIVISION_ID\"\n  ],\n  \"new_column_description\": \"用來標識學生來自哪個分區。\",\n  \"notes\": \"預期添加一個新欄位，例如 **DIVISION_ID** (分區識別碼)，以區分來自 D1 和 D2 的記錄。主關鍵碼需要包含 **SID** 和 **DIVISION_ID**，以確保合併後的記錄唯一性。新欄位的目的是**標識學生所屬的分區**。\"\n}",
+      "number": "4(d)(ii)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "數據組織",
+        "檔案存取",
+        "網絡"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "database_schema_completion",
+        "table_name": "D1",
+        "attributes_to_add": [
+          "DIVISION_ID"
+        ],
+        "pk_to_define": [
+          "SID",
+          "DIVISION_ID"
+        ],
+        "new_column_description": "用來標識學生來自哪個分區。",
+        "notes": "預期添加一個新欄位，例如 **DIVISION_ID** (分區識別碼)，以區分來自 D1 和 D2 的記錄。主關鍵碼需要包含 **SID** 和 **DIVISION_ID**，以確保合併後的記錄唯一性。新欄位的目的是**標識學生所屬的分區**。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(d)(ii)",
+        "question_text": "D1 和 D2 在合併前需要重新設計。在新設計中，需要分辨各分區。完成以下新數據庫表以作合併。\n`D1 (SID, RDATE, SNO, LEADER, **DIVISION_ID** )`\n`主關鍵碼: **SID, DIVISION_ID**`\n`描述新的欄名: **用來標識學生來自哪個分區。**`",
+        "answer_details": {
+          "type": "database_schema_completion",
+          "table_name": "D1",
+          "attributes_to_add": [
+            "DIVISION_ID"
+          ],
+          "pk_to_define": [
+            "SID",
+            "DIVISION_ID"
+          ],
+          "new_column_description": "用來標識學生來自哪個分區。",
+          "notes": "預期添加一個新欄位，例如 **DIVISION_ID** (分區識別碼)，以區分來自 D1 和 D2 的記錄。主關鍵碼需要包含 **SID** 和 **DIVISION_ID**，以確保合併後的記錄唯一性。新欄位的目的是**標識學生所屬的分區**。"
+        },
+        "points": 2,
+        "source": "13"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "`D1 (SID, RDATE, SNO, LEADER, **DIVISION_ID** )`",
+          "`主關鍵碼: **SID, DIVISION_ID**`",
+          "`描述新的欄名: **用來標識學生來自哪個分區。**`"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "D1 和 D2 在合併前需要重新設計。在新設計中，需要分辨各分區。完成以下新數據庫表以作合併。\n`D1 (SID, RDATE, SNO, LEADER, **DIVISION_ID** )`\n`主關鍵碼: **SID, DIVISION_ID**`\n`描述新的欄名: **用來標識學生來自哪個分區。**`"
+    },
+    {
+      "id": "2024-Paper2A_Database-4-e",
+      "section": "section_b",
+      "text": "描述如何應用數據開採，以加強社區服務。\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"數據開採 (Data Mining) 可以透過以下方式加強社區服務：\\n1.  **識別服務需求模式**：分析大量社區數據（如人口統計、服務使用記錄、健康數據等），找出特定社區或人群的服務需求模式。例如，識別哪些地區的老年人口對特定醫療服務需求更高。\\n2.  **精準資源分配**：根據數據開採結果，社區組織可以更有效地分配資源，將服務導向最需要的群體或地區，避免資源浪費。\\n3.  **預測未來趨勢**：利用歷史數據預測未來可能出現的社區問題或服務需求，例如預測在某些季節哪類疾病的發病率會增加，從而提前做好預防工作。\\n4.  **評估服務成效**：分析服務提供前後的數據，評估服務的效果，並根據結果優化服務策略。\\n\\n透過這些應用，數據開採能夠幫助社區服務提供者更深入了解社區需求，做出更明智的決策，從而提升服務的效率和質量。\"\n}",
+      "number": "4(e)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "網絡"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "marks": 2.0,
+      "answer_details": {
+        "type": "explanation",
+        "notes": "數據開採 (Data Mining) 可以透過以下方式加強社區服務：\n1.  **識別服務需求模式**：分析大量社區數據（如人口統計、服務使用記錄、健康數據等），找出特定社區或人群的服務需求模式。例如，識別哪些地區的老年人口對特定醫療服務需求更高。\n2.  **精準資源分配**：根據數據開採結果，社區組織可以更有效地分配資源，將服務導向最需要的群體或地區，避免資源浪費。\n3.  **預測未來趨勢**：利用歷史數據預測未來可能出現的社區問題或服務需求，例如預測在某些季節哪類疾病的發病率會增加，從而提前做好預防工作。\n4.  **評估服務成效**：分析服務提供前後的數據，評估服務的效果，並根據結果優化服務策略。\n\n透過這些應用，數據開採能夠幫助社區服務提供者更深入了解社區需求，做出更明智的決策，從而提升服務的效率和質量。"
+      },
+      "gemini_source": "2024-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(e)",
+        "question_text": "描述如何應用數據開採，以加強社區服務。",
+        "answer_details": {
+          "type": "explanation",
+          "notes": "數據開採 (Data Mining) 可以透過以下方式加強社區服務：\n1.  **識別服務需求模式**：分析大量社區數據（如人口統計、服務使用記錄、健康數據等），找出特定社區或人群的服務需求模式。例如，識別哪些地區的老年人口對特定醫療服務需求更高。\n2.  **精準資源分配**：根據數據開採結果，社區組織可以更有效地分配資源，將服務導向最需要的群體或地區，避免資源浪費。\n3.  **預測未來趨勢**：利用歷史數據預測未來可能出現的社區問題或服務需求，例如預測在某些季節哪類疾病的發病率會增加，從而提前做好預防工作。\n4.  **評估服務成效**：分析服務提供前後的數據，評估服務的效果，並根據結果優化服務策略。\n\n透過這些應用，數據開採能夠幫助社區服務提供者更深入了解社區需求，做出更明智的決策，從而提升服務的效率和質量。"
+        },
+        "points": 2,
+        "source": "13"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    }
+  ],
   "paper": {
     "id": "2024-Paper2A_Database",
-    "questions": []
+    "questions": [
+      {
+        "id": "2024-Paper2A_Database-1-a",
+        "type": "section_b",
+        "number": "1(a)",
+        "section": "section_b",
+        "text": "除了 SID 外，寫出 STAFF 的一個主關鍵碼。\n\n{\n  \"type\": \"short_answer\",\n  \"notes\": \"預期回答 STAFF 表中除了 SID 之外，能唯一識別員工記錄的主關鍵碼，例如 HKID (香港身份證號碼)。\"\n}",
+        "marks": 1.0,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-1-b",
+        "type": "section_b",
+        "number": "1(b)",
+        "section": "section_b",
+        "text": "列出曾進入識別碼為「L502」的房間的員工識別碼，然後按 TDATE 升序排列。\n\n{\n  \"type\": \"sql_query_construction\",\n  \"notes\": \"預期編寫一個 SQL 查詢，從 TRAN 表中選擇進入 RID 為 'L502' 的員工 SID，並按 TDATE 升序排列。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-1-c",
+        "type": "section_b",
+        "number": "1(c)",
+        "section": "section_b",
+        "text": "列出普遍進入名稱包含「實驗室」的房間的員工姓名。\n\n{\n  \"type\": \"sql_query_construction\",\n  \"notes\": \"預期編寫一個 SQL 查詢，聯接 STAFF、ROOM 和 TRAN 表，找出進入過房間名稱 (RNAME) 包含「實驗室」的員工姓名 (SNAME)。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-1-d",
+        "type": "section_b",
+        "number": "1(d)",
+        "section": "section_b",
+        "text": "列出未曾進入任何房間的員工姓名。\n`SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________`\n\n{\n  \"type\": \"sql_query_completion\",\n  \"prompt\": \"`SELECT SNAME FROM STAFF LEFT JOIN TRAN ON STAFF.SID = TRAN.SID WHERE TRAN.SID IS NULL`\",\n  \"notes\": \"預期填寫 `LEFT JOIN` 語句，以找出 STAFF 表中在 TRAN 表中沒有對應記錄的員工姓名。\"\n}",
+        "marks": 3.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "列出未曾進入任何房間的員工姓名。\n`SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________`",
+        "support_content": {
+          "lines": [
+            "`SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________`"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-1-e",
+        "type": "section_b",
+        "number": "1(e)",
+        "section": "section_b",
+        "text": "有些房間在 TRAN 內有超過 100 筆進入記錄。列出它們的房間類型。\n\n{\n  \"type\": \"sql_query_construction\",\n  \"notes\": \"預期編寫一個 SQL 查詢，計算每個房間 (RID) 在 TRAN 表中的記錄數量，篩選出超過 100 筆的房間，然後從 ROOM 表中獲取其房間類型 (RTYPE)。\"\n}",
+        "marks": 3.0,
+        "concepts": [
+          "試算表",
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-1-f",
+        "type": "section_b",
+        "number": "1(f)",
+        "section": "section_b",
+        "text": "完成以下 SQL 語句，於 STAFF 內增加一個欄 MOB，以儲存員工的手提電話號碼。\n`ADD _________`\n\n{\n  \"type\": \"sql_alter_table_completion\",\n  \"prompt\": \"`ALTER TABLE STAFF ADD MOB CHAR(8)`\",\n  \"notes\": \"預期完成 `ALTER TABLE` 語句，為 STAFF 表添加一個名為 MOB (手提電話號碼) 的欄位，數據類型為 CHAR(8)。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "硬件",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "完成以下 SQL 語句，於 STAFF 內增加一個欄 MOB，以儲存員工的手提電話號碼。\n`ADD _________`",
+        "support_content": {
+          "lines": [
+            "`ADD _________`"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-1-g",
+        "type": "section_b",
+        "number": "1(g)",
+        "section": "section_b",
+        "text": "以下 SQL 語句的目的是什麼？\n`SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '28/7/2023'`\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"此 SQL 語句的目的是找出所有**物理部門**的員工中，**有進入記錄**但**在 2023 年 7 月 28 日沒有進入記錄**的員工 SID。它首先篩選出物理部門有進入記錄的員工，然後減去在特定日期有進入記錄的員工，從而得到在該日期沒有進入記錄的物理部門員工。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "試算表",
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "硬件",
+          "網絡"
+        ],
+        "syllabus_status": "current",
+        "stem": "以下 SQL 語句的目的是什麼？\n`SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '28/7/2023'`",
+        "support_content": {
+          "lines": [
+            "`SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '28/7/2023'`"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-2-a-i",
+        "type": "section_b",
+        "number": "2(a)(i)",
+        "section": "section_b",
+        "text": "建議 ENROL 的一個主關鍵碼。\n\n{\n  \"type\": \"short_answer\",\n  \"notes\": \"ENROL 表的主關鍵碼應能唯一識別每一筆選課記錄。由於不同年份開設的相同課程可能由不同老師教授，且學生可以在不同年份選修相同課程，一個複合主關鍵碼更為合適。例如：**(CCODE, CYEAR, SID)**。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-2-a-ii",
+        "type": "section_b",
+        "number": "2(a)(ii)",
+        "section": "section_b",
+        "text": "列出只與 SID 有功能相關的兩個屬位。\n\n{\n  \"type\": \"list_attributes\",\n  \"count\": 2,\n  \"notes\": \"預期從 ENROL 表中列出只依賴於 SID (學生識別碼) 的兩個屬性，例如 **SNAME (學生姓名)** 和 **MOBILE (學生手提電話號碼)**。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "試算表"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-2-a-iii",
+        "type": "section_b",
+        "number": "2(a)(iii)",
+        "section": "section_b",
+        "text": "描述 ENROL 內數據完整性的一個例子。\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"ENROL 內的數據完整性例子包括：**實體完整性** (主關鍵碼 CCODE, CYEAR, SID 必須唯一且不能為空)；**域完整性** (例如 CYEAR 必須是年份格式，SID 必須符合特定長度格式)；**參照完整性** (如果 ENROL 參考了 COURSE 或 STUDENT 表，那麼 CCODE 或 SID 必須在被參考表中存在)。\"\n}",
+        "marks": 1.0,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "網絡",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-2-b",
+        "type": "section_b",
+        "number": "2(b)",
+        "section": "section_b",
+        "text": "陳小姐建議以下數據庫模式，將 ENROL 轉換為第三範式。COURSE、COURSEDETAIL、STUDENT 和 ENROINFO 分別儲存課程、學生和註冊課程的資訊。完成以下第三範式的數據庫模式。\n`COURSE (CCODE, CNAME)`\n`主關鍵碼: CCODE`\n`外鍵碼: N/A`\n`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`\n`主關鍵碼: **CCODE, CYEAR**`\n`外鍵碼: N/A`\n`STUDENT (SID, SNAME, MOBILE)`\n`主關鍵碼: SID`\n`外鍵碼: N/A`\n`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`\n`主關鍵碼: **SID, CCODE, CYEAR**`\n`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`\n`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`\n`COURSE (CCODE, CNAME)`\n`主關鍵碼: CCODE`\n`外鍵碼: N/A`\n`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`\n`主關鍵碼: **CCODE, CYEAR**`\n`STUDENT (SID, SNAME, MOBILE)`\n`主關鍵碼: SID`\n`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`\n`主關鍵碼: **SID, CCODE, CYEAR**`\n`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`\n`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`\n\n{\n  \"type\": \"database_normalization_completion\",\n  \"tables\": [\n    {\n      \"name\": \"COURSEDETAIL\",\n      \"attributes\": [\n        \"CCODE\",\n        \"CYEAR\",\n        \"TEACHER\"\n      ],\n      \"primary_key\": [\n        \"CCODE\",\n        \"CYEAR\"\n      ]\n    },\n    {\n      \"name\": \"ENROINFO\",\n      \"attributes\": [\n        \"SID\",\n        \"CCODE\",\n        \"CYEAR\",\n        \"RDATE\"\n      ],\n      \"primary_key\": [\n        \"SID\",\n        \"CCODE\",\n        \"CYEAR\"\n      ],\n      \"foreign_keys\": [\n        {\n          \"from_attributes\": [\n            \"SID\"\n          ],\n          \"references_table\": \"STUDENT\",\n          \"references_attributes\": [\n            \"SID\"\n          ]\n        },\n        {\n          \"from_attributes\": [\n            \"CCODE\",\n            \"CYEAR\"\n          ],\n          \"references_table\": \"COURSEDETAIL\",\n          \"references_attributes\": [\n            \"CCODE\",\n            \"CYEAR\"\n          ]\n        }\n      ]\n    }\n  ],\n  \"notes\": \"預期完成 COURSEDETAIL 和 ENROINFO 表的結構，包括屬性、主關鍵碼和外鍵，以達到第三範式。COURSEDETAIL 應包含課程代碼、年份和教師，ENROINFO 應包含學生、課程和年份的組合以及註冊日期。\"\n}",
+        "marks": 6.0,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "硬件",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "陳小姐建議以下數據庫模式，將 ENROL 轉換為第三範式。COURSE、COURSEDETAIL、STUDENT 和 ENROINFO 分別儲存課程、學生和註冊課程的資訊。完成以下第三範式的數據庫模式。\n`COURSE (CCODE, CNAME)`\n`主關鍵碼: CCODE`\n`外鍵碼: N/A`\n`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`\n`主關鍵碼: **CCODE, CYEAR**`\n`外鍵碼: N/A`\n`STUDENT (SID, SNAME, MOBILE)`\n`主關鍵碼: SID`\n`外鍵碼: N/A`\n`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`\n`主關鍵碼: **SID, CCODE, CYEAR**`\n`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`\n`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`",
+        "support_content": {
+          "lines": [
+            "`COURSE (CCODE, CNAME)`",
+            "`主關鍵碼: CCODE`",
+            "`外鍵碼: N/A`",
+            "`COURSEDETAIL(**CCODE** , **CYEAR** , **TEACHER** )`",
+            "`主關鍵碼: **CCODE, CYEAR**`",
+            "`STUDENT (SID, SNAME, MOBILE)`",
+            "`主關鍵碼: SID`",
+            "`ENROINFO( **SID** , **CCODE** , **CYEAR** , **RDATE** )`",
+            "`主關鍵碼: **SID, CCODE, CYEAR**`",
+            "`外鍵碼: **SID** 參照 **STUDENT** 的 **SID**`",
+            "`外鍵碼: **CCODE, CYEAR** 參照 **COURSEDETAIL** 的 **CCODE, CYEAR**`"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-2-c",
+        "type": "section_b",
+        "number": "2(c)",
+        "section": "section_b",
+        "text": "設計一個表格界面，供學生查看和增加新的註冊資料。界面的要求如下：\n*   學生可以查看自己的個人資訊。\n*   學生可以註冊本年度開設的課程。\n*   學生可以查看過去某年的註冊記錄，並以過濾或排序功能來了解課程的受歡迎程度。\n在你的設計上加上適當的註解。\n\n{\n  \"type\": \"design_task\",\n  \"task\": \"設計一個學生表格界面。界面應包含：\\n1.  **個人資訊區塊**：顯示學生的 SID、姓名、聯絡電話等。可能是只讀欄位。\\n2.  **課程註冊區塊**：顯示本年度開設的課程列表（CCODE, CNAME, TEACHER, CYEAR），讓學生選擇課程進行註冊。可能包含一個「註冊」按鈕。\\n3.  **歷史註冊記錄區塊**：顯示學生過去的註冊詳情 (CCODE, CNAME, CYEAR, RDATE)。此區塊應提供：\\n    *   **年份過濾器**：一個下拉選單或輸入框，讓學生選擇查看特定年份的註冊記錄。\\n    *   **排序選項**：允許學生根據課程名稱、註冊日期或受歡迎程度（需要額外邏輯或數據）排序。\\n    *   **搜索功能**：允許學生按課程名稱搜索。\\n\\n**註解**：每個區塊的功能和交互方式應明確標註，例如「此處顯示學生個人資料，僅供參考」、「點擊課程名稱可查看詳細信息」或「使用下拉選單過濾歷史記錄」。\"\n}",
+        "marks": 4.0,
+        "concepts": [
+          "試算表",
+          "數據組織",
+          "檔案存取",
+          "算法",
+          "偽代碼",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "設計一個表格界面，供學生查看和增加新的註冊資料。界面的要求如下：\n*   學生可以查看自己的個人資訊。\n*   學生可以註冊本年度開設的課程。\n*   學生可以查看過去某年的註冊記錄，並以過濾或排序功能來了解課程的受歡迎程度。\n在你的設計上加上適當的註解。",
+        "support_content": {
+          "lines": [
+            "*   學生可以查看自己的個人資訊。",
+            "*   學生可以註冊本年度開設的課程。",
+            "*   學生可以查看過去某年的註冊記錄，並以過濾或排序功能來了解課程的受歡迎程度。",
+            "在你的設計上加上適當的註解。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-3-a",
+        "type": "section_b",
+        "number": "3(a)",
+        "section": "section_b",
+        "text": "該公司擁有數間戲院，每間戲院每日播放多個場次。該公司計劃開發一個數據庫來儲存會員、預訂、場次和戲院的資料。\n(a) 數據庫的要求如下所述：\n*   每張預訂預留一個場次。\n*   每場次可能沒有預訂，也可能沒有預訂。\n*   每間戲院最少有一個場次。\n完成以下此數據庫的實體關係圖，圖內不用畫上屬性。\n\n{\n  \"type\": \"erd_completion\",\n  \"entities_to_add\": [\n    \"場次\",\n    \"戲院\"\n  ],\n  \"relationships_to_define\": [\n    {\n      \"entity1\": \"會員\",\n      \"relationship\": \"建立\",\n      \"entity2\": \"預訂\",\n      \"cardinality\": \"1 -- M\"\n    },\n    {\n      \"entity1\": \"預訂\",\n      \"relationship\": \"預留\",\n      \"entity2\": \"場次\",\n      \"cardinality\": \"1 -- 1 (預訂預留一個場次)\"\n    },\n    {\n      \"entity1\": \"場次\",\n      \"relationship\": \"屬於\",\n      \"entity2\": \"戲院\",\n      \"cardinality\": \"M -- 1 (一間戲院有多個場次，每個場次屬於一間戲院)\"\n    }\n  ],\n  \"notes\": \"預期根據業務規則，完成 ERD 中的 '場次' 和 '戲院' 實體，並繪製它們與 '會員' 和 '預訂' 實體之間的關係，明確標示基數。特別注意「每張預訂預留一個場次」代表預訂和場次之間是1對1，且場次是預訂的子集，而「每場次可能沒有預訂，也可能沒有預訂」表示預訂是可選的。另外「每間戲院最少有一個場次」表示戲院和場次之間戲院必須有場次，場次必須屬於一個戲院。\"\n}",
+        "marks": 4.0,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "網絡",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "該公司擁有數間戲院，每間戲院每日播放多個場次。該公司計劃開發一個數據庫來儲存會員、預訂、場次和戲院的資料。\n(a) 數據庫的要求如下所述：\n*   每張預訂預留一個場次。\n*   每場次可能沒有預訂，也可能沒有預訂。\n*   每間戲院最少有一個場次。\n完成以下此數據庫的實體關係圖，圖內不用畫上屬性。",
+        "support_content": {
+          "lines": [
+            "(a) 數據庫的要求如下所述：",
+            "*   每張預訂預留一個場次。",
+            "*   每場次可能沒有預訂，也可能沒有預訂。",
+            "*   每間戲院最少有一個場次。",
+            "完成以下此數據庫的實體關係圖，圖內不用畫上屬性。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-3-b",
+        "type": "section_b",
+        "number": "3(b)",
+        "section": "section_b",
+        "text": "選擇在數據庫應用系統開發週期內，數據庫設計階段中涉及的一個成品和一位工作人員。\n[Table with '階段' (Phase), '成品' (Deliverable), '工作人員' (Personnel)]\n\n{\n  \"type\": \"multiple_choice_table\",\n  \"options_deliverable\": [\n    \"流程圖\",\n    \"數據字典\",\n    \"用戶手冊\"\n  ],\n  \"options_personnel\": [\n    \"系統分析員\",\n    \"數據輸入員\",\n    \"數據庫工程師\"\n  ],\n  \"notes\": \"在數據庫設計階段，典型的**成品**是**數據字典** (Data Dictionary) 或**流程圖** (Flowchart)，而主要**工作人員**是**數據庫工程師** (Database Engineer) 或**系統分析員** (System Analyst)。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "網絡",
+          "算法",
+          "偽代碼",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-3-c-i",
+        "type": "section_b",
+        "number": "3(c)(i)",
+        "section": "section_b",
+        "text": "SQL1 是 SQL 語句：`SELECT MNAME, SEX, DOB FROM MEMBER WHERE DOB = '1/1/1990' ORDER BY MNAME`。建立一個索引 MINDEX 以改善 SQL1 的表現。選擇以下方格內兩個屬位，以完成下列 SQL 語句，讓 SQL1 有最佳的表現。\n`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`\n\n{\n  \"type\": \"sql_index_creation_completion\",\n  \"prompt\": \"`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`\",\n  \"notes\": \"為了優化 SQL1，索引應包含 `WHERE` 子句中使用的欄位 (DOB) 和 `ORDER BY` 子句中使用的欄位 (MNAME)。因此，最能優化表現的索引屬性是 **DOB** 和 **MNAME**。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "SQL1 是 SQL 語句：`SELECT MNAME, SEX, DOB FROM MEMBER WHERE DOB = '1/1/1990' ORDER BY MNAME`。建立一個索引 MINDEX 以改善 SQL1 的表現。選擇以下方格內兩個屬位，以完成下列 SQL 語句，讓 SQL1 有最佳的表現。\n`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`",
+        "support_content": {
+          "lines": [
+            "`CREATE INDEX MINDEX ON MEMBER( **DOB** , **MNAME** )`"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-3-c-ii",
+        "type": "section_b",
+        "number": "3(c)(ii)",
+        "section": "section_b",
+        "text": "SQL2 和 SQL3 是 SQL 語句。均可以用來修改 MID 為「00083」的 MNAME 至「Chan Tai Man」。\n`SQL2 DELETE FROM MEMBER WHERE MID = '00083'; INSERT INTO MEMBER VALUES ('00083', 'Chan Tai Man', 'F', '12/4/1990', 'ctm@abc.com', '120 Sea Street, Kowloon')`\n`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`\n完成以上 SQL3。\n\n{\n  \"type\": \"sql_update_completion\",\n  \"prompt\": \"`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`\",\n  \"notes\": \"預期完成 `UPDATE` 語句，將 MID 為 '00083' 的會員的 MNAME 更新為 'Chan Tai Man'。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "硬件",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "SQL2 和 SQL3 是 SQL 語句。均可以用來修改 MID 為「00083」的 MNAME 至「Chan Tai Man」。\n`SQL2 DELETE FROM MEMBER WHERE MID = '00083'; INSERT INTO MEMBER VALUES ('00083', 'Chan Tai Man', 'F', '12/4/1990', 'ctm@abc.com', '120 Sea Street, Kowloon')`\n`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`\n完成以上 SQL3。",
+        "support_content": {
+          "lines": [
+            "`SQL2 DELETE FROM MEMBER WHERE MID = '00083'; INSERT INTO MEMBER VALUES ('00083', 'Chan Tai Man', 'F', '12/4/1990', 'ctm@abc.com', '120 Sea Street, Kowloon')`",
+            "`SQL3 UPDATE MEMBER SET MNAME = 'Chan Tai Man' WHERE MID = '00083'`",
+            "完成以上 SQL3。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-3-c-iii",
+        "type": "section_b",
+        "number": "3(c)(iii)",
+        "section": "section_b",
+        "text": "假設已為 MID 建立索引。SQL2 會重建此索引。簡略說明。\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"SQL2 語句執行了**刪除 (DELETE)** 操作，然後再進行**插入 (INSERT)** 操作。當記錄被刪除時，數據庫系統會從索引中移除對應的條目；當新記錄被插入時，系統會為其創建新的索引條目。這兩個操作（尤其是在許多記錄或索引碎片化時）比單純的 `UPDATE` 操作可能導致更顯著的索引維護開銷，甚至觸發索引的重新組織或重建，以保持其效率和結構完整性。而 `UPDATE` 操作通常只涉及修改現有索引條目的指針或內容，較少引起全面重建。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "試算表",
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "網絡"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-3-d",
+        "type": "section_b",
+        "number": "3(d)",
+        "section": "section_b",
+        "text": "該公司計劃將 MEMBER 內的資料分享給一間廣告公司，以推廣其他業務。這個計劃的潛在問題是什麼？如何解決這個問題？\n\n{\n  \"type\": \"problem_solution\",\n  \"problem_prompt\": \"問題：\",\n  \"solution_prompt\": \"解決方案：\",\n  \"notes\": \"**問題**：潛在的**私隱侵犯**是主要問題。未經會員同意分享其個人資料（如姓名、聯絡方式、住址等）會違反私隱條例，並可能導致會員對公司失去信任，甚至面臨法律訴訟。此外，數據洩露或濫用的風險也會增加。\\n\\n**解決方案**：\\n1.  **獲取明確同意**：在收集會員資料時，應明確告知會員其資料可能被分享給第三方作推廣用途，並取得他們的**書面或電子同意**。\\n2.  **數據匿名化/假名化**：在分享數據前，移除或替換所有可直接識別個人身份的資訊（如姓名、MID、地址），只分享匿名化或假名化的數據，例如只分享人口統計資料或購買行為模式，而不涉及具體個人身份。\\n3.  **簽訂保密協議**：與廣告公司簽訂嚴格的**數據保護和保密協議**，明確規定數據的使用範圍、安全措施和責任。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "硬件",
+          "網絡保安",
+          "資訊保安"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-4-a",
+        "type": "section_b",
+        "number": "4(a)",
+        "section": "section_b",
+        "text": "寫出 SID 的數據類型，簡略說明。\n\n{\n  \"type\": \"data_type_explanation\",\n  \"notes\": \"SID (學生識別碼) 的數據類型應為**字串/字符型 (CHAR/VARCHAR)**。\\n\\n**說明**：\\n*   SID 的範例值 '012345' 包含**前導零**。如果使用數值類型，前導零會被省略。\\n*   SID 通常用於識別，而非進行算術運算。\\n*   SID 可能包含字母或特殊符號 (儘管此例未顯示)，這也需要字串類型來儲存。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "網絡",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-4-b",
+        "type": "section_b",
+        "number": "4(b)",
+        "section": "section_b",
+        "text": "根據 D1 和 D2 內已知的記錄，執行以下 SQL1 和 SQL2 時，結果會顯示多少筆記錄？\n`SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D2`\n`SQL2: SELECT SID FROM D1 UNION ALL SELECT SID FROM D2`\n\n{\n  \"type\": \"sql_query_output_count\",\n  \"notes\": \"**D1 記錄：** SID: 010200, 010040, 011564, 013010, 098765\\n**D2 記錄：** SID: 089806, 010040, 098765, 012011, 013988\\n\\n**SQL1 (UNION)**：`UNION` 操作會合併結果並**移除重複的 SID**。\\n  *   D1 和 D2 共同的 SID 有：010040, 098765。\\n  *   D1 獨有的 SID：010200, 011564, 013010。\\n  *   D2 獨有的 SID：089806, 012011, 013988。\\n  *   因此，結果將包含 3 (D1 獨有) + 3 (D2 獨有) + 2 (共同，只算一次) = **8 筆記錄**。\\n\\n**SQL2 (UNION ALL)**：`UNION ALL` 操作會合併結果並**保留所有重複的 SID**。\\n  *   D1 有 5 筆記錄。\\n  *   D2 有 5 筆記錄。\\n  *   因此，結果將包含 5 + 5 = **10 筆記錄**。\\n\\n**SQL1:** 8\\n**SQL2:** 10\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "試算表",
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "根據 D1 和 D2 內已知的記錄，執行以下 SQL1 和 SQL2 時，結果會顯示多少筆記錄？\n`SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D2`\n`SQL2: SELECT SID FROM D1 UNION ALL SELECT SID FROM D2`",
+        "support_content": {
+          "lines": [
+            "`SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D2`",
+            "`SQL2: SELECT SID FROM D1 UNION ALL SELECT SID FROM D2`"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-4-c-i",
+        "type": "section_b",
+        "number": "4(c)(i)",
+        "section": "section_b",
+        "text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012345, RDATE=12/9/2022, SNO=3, LEADER=098765]\n\n{\n  \"type\": \"data_integrity_violation\",\n  \"notes\": \"**完整性問題：實體完整性 (Entity Integrity)**\\n**說明**：D1 表的主關鍵碼是 SID。記錄 'SID=012345' 已經存在於 D1 表中。嘗試插入一個具有相同 SID 的新記錄會違反實體完整性原則，因為主關鍵碼的值必須是唯一的，以確保每條記錄的唯一性。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "ERD",
+          "正規化",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-4-c-ii",
+        "type": "section_b",
+        "number": "4(c)(ii)",
+        "section": "section_b",
+        "text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012033, RDATE=30/2/2022, SNO=5, LEADER=098765]\n\n{\n  \"type\": \"data_integrity_violation\",\n  \"notes\": \"**完整性問題：域完整性 (Domain Integrity)**\\n**說明**：RDATE 欄位儲存日期。日期 '30/2/2022' 是無效的，因為 2022 年 2 月只有 28 天。嘗試插入一個不在 RDATE 欄位定義域範圍內的日期值會違反域完整性。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "ERD",
+          "正規化",
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-4-c-iii",
+        "type": "section_b",
+        "number": "4(c)(iii)",
+        "section": "section_b",
+        "text": "在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=012066, RDATE=10/6/2022, SNO=3, LEADER=023456]\n\n{\n  \"type\": \"data_integrity_violation\",\n  \"notes\": \"**完整性問題：參照完整性 (Referential Integrity)**\\n**說明**：LEADER 欄位可能是一個外鍵，參照另一個表（例如 LEADER 表或 STUDENT 表）中的領導者識別碼。如果 '023456' 這個 LEADER 值在被參照的表中不存在，那麼嘗試插入此記錄將違反參照完整性，因為它引用了一個不存在的父記錄。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "ERD",
+          "正規化",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-4-d-i",
+        "type": "section_b",
+        "number": "4(d)(i)",
+        "section": "section_b",
+        "text": "資訊科技經理建議合併所有分區的數據庫。舉出這個建議的一個好處，並簡略說明你的答案。\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"合併所有分區數據庫的一個好處是**提高數據一致性 (Data Consistency)**。透過將所有數據儲存在一個中央數據庫中，可以避免不同分區數據庫之間因數據重複、更新不同步而導致的數據不一致問題。這有助於確保所有用戶都能訪問到最新、最準確的數據，簡化數據管理和報告，並減少數據冗餘。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "網絡"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2024-Paper2A_Database-4-d-ii",
+        "type": "section_b",
+        "number": "4(d)(ii)",
+        "section": "section_b",
+        "text": "D1 和 D2 在合併前需要重新設計。在新設計中，需要分辨各分區。完成以下新數據庫表以作合併。\n`D1 (SID, RDATE, SNO, LEADER, **DIVISION_ID** )`\n`主關鍵碼: **SID, DIVISION_ID**`\n`描述新的欄名: **用來標識學生來自哪個分區。**`\n\n{\n  \"type\": \"database_schema_completion\",\n  \"table_name\": \"D1\",\n  \"attributes_to_add\": [\n    \"DIVISION_ID\"\n  ],\n  \"pk_to_define\": [\n    \"SID\",\n    \"DIVISION_ID\"\n  ],\n  \"new_column_description\": \"用來標識學生來自哪個分區。\",\n  \"notes\": \"預期添加一個新欄位，例如 **DIVISION_ID** (分區識別碼)，以區分來自 D1 和 D2 的記錄。主關鍵碼需要包含 **SID** 和 **DIVISION_ID**，以確保合併後的記錄唯一性。新欄位的目的是**標識學生所屬的分區**。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "數據組織",
+          "檔案存取",
+          "網絡"
+        ],
+        "syllabus_status": "current",
+        "stem": "D1 和 D2 在合併前需要重新設計。在新設計中，需要分辨各分區。完成以下新數據庫表以作合併。\n`D1 (SID, RDATE, SNO, LEADER, **DIVISION_ID** )`\n`主關鍵碼: **SID, DIVISION_ID**`\n`描述新的欄名: **用來標識學生來自哪個分區。**`",
+        "support_content": {
+          "lines": [
+            "`D1 (SID, RDATE, SNO, LEADER, **DIVISION_ID** )`",
+            "`主關鍵碼: **SID, DIVISION_ID**`",
+            "`描述新的欄名: **用來標識學生來自哪個分區。**`"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.348708+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2024-Paper2A_Database-4-e",
+        "type": "section_b",
+        "number": "4(e)",
+        "section": "section_b",
+        "text": "描述如何應用數據開採，以加強社區服務。\n\n{\n  \"type\": \"explanation\",\n  \"notes\": \"數據開採 (Data Mining) 可以透過以下方式加強社區服務：\\n1.  **識別服務需求模式**：分析大量社區數據（如人口統計、服務使用記錄、健康數據等），找出特定社區或人群的服務需求模式。例如，識別哪些地區的老年人口對特定醫療服務需求更高。\\n2.  **精準資源分配**：根據數據開採結果，社區組織可以更有效地分配資源，將服務導向最需要的群體或地區，避免資源浪費。\\n3.  **預測未來趨勢**：利用歷史數據預測未來可能出現的社區問題或服務需求，例如預測在某些季節哪類疾病的發病率會增加，從而提前做好預防工作。\\n4.  **評估服務成效**：分析服務提供前後的數據，評估服務的效果，並根據結果優化服務策略。\\n\\n透過這些應用，數據開採能夠幫助社區服務提供者更深入了解社區需求，做出更明智的決策，從而提升服務的效率和質量。\"\n}",
+        "marks": 2.0,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "網絡"
+        ],
+        "syllabus_status": "current"
+      }
+    ]
   }
 }

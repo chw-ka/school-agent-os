@@ -1,0 +1,1713 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "import_source": "gemini-output",
+    "imported_at": "2026-05-22T00:23:37.834928+00:00",
+    "year_label": "2021",
+    "paper_slug": "Paper1B_CompulsoryStructured",
+    "paper_label": "Paper 1B — Compulsory Part structured (必修部分 乙丙部)",
+    "source_pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_Paper1B_CompulsoryStructured.pdf",
+    "question_count": 33,
+    "gemini_source_files": [
+      "2021-p1.json"
+    ],
+    "curriculum_guide": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+    "syllabus_retagged_at": "2026-05-22T03:37:59.951353+00:00",
+    "syllabus_revision": "2021",
+    "support_enriched_at": "2026-05-22T04:32:46.254383+00:00"
+  },
+  "items": [
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-2-Q1-a-i",
+      "section": "section_b",
+      "text": "X 和 Z 均為網絡設備。平板電腦透過接到 Z 以線連接互聯網。X 和 Z 是什麼？\n\n[圖片描述] 一個網絡圖，顯示平板電腦、未知設備 X、未知設備 Z、互聯網、打印機和王太太的桌上電腦。連接方式顯示為無線或有線。有空白處供填寫 X 和 Z。",
+      "number": "1B-2_Q1(a)(i)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "fill_in_blank_with_diagram",
+      "has_image": true,
+      "image_description": "一個網絡圖，顯示平板電腦、未知設備 X、未知設備 Z、互聯網、打印機和王太太的桌上電腦。連接方式顯示為無線或有線。有空白處供填寫 X 和 Z。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-2_Q1(a)(i)",
+        "question_text": "X 和 Z 均為網絡設備。平板電腦透過接到 Z 以線連接互聯網。X 和 Z 是什麼？",
+        "question_type": "fill_in_blank_with_diagram",
+        "has_image": true,
+        "image_description": "一個網絡圖，顯示平板電腦、未知設備 X、未知設備 Z、互聯網、打印機和王太太的桌上電腦。連接方式顯示為無線或有線。有空白處供填寫 X 和 Z。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-2-Q1-a-ii",
+      "section": "section_b",
+      "text": "參考上圖，除接連互聯網外，舉出其他使用此網絡的兩個用途。\n\n[圖片描述] 與 Q1(a)(i) 相同的網絡圖。",
+      "number": "1B-2_Q1(a)(ii)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response_with_diagram",
+      "has_image": true,
+      "image_description": "與 Q1(a)(i) 相同的網絡圖。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-2_Q1(a)(ii)",
+        "question_text": "參考上圖，除接連互聯網外，舉出其他使用此網絡的兩個用途。",
+        "question_type": "free_response_with_diagram",
+        "has_image": true,
+        "image_description": "與 Q1(a)(i) 相同的網絡圖。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-2-Q1-b-i",
+      "section": "section_b",
+      "text": "王太太每天使用她的桌上電腦超過 6 個小時。舉出既使用滑鼠可動計劃避免造成的傷害。",
+      "number": "1B-2_Q1(b)(i)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-2_Q1(b)(i)",
+        "question_text": "王太太每天使用她的桌上電腦超過 6 個小時。舉出既使用滑鼠可動計劃避免造成的傷害。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-2-Q1-b-ii",
+      "section": "section_b",
+      "text": "建議一項產品，以減少此傷害。",
+      "number": "1B-2_Q1(b)(ii)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-2_Q1(b)(ii)",
+        "question_text": "建議一項產品，以減少此傷害。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-3-Q1-c",
+      "section": "section_b",
+      "text": "志偉每天使用平板電腦 4 個小時。為志偉提供實踐良好做法，以減少對他膝造的傷害。",
+      "number": "1B-3_Q1(c)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-3_Q1(c)",
+        "question_text": "志偉每天使用平板電腦 4 個小時。為志偉提供實踐良好做法，以減少對他膝造的傷害。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-3-Q1-d-i",
+      "section": "section_b",
+      "text": "王太太在一家超級市場的網站上購買食物。此網站使用防火牆和 SSL 技術來保障其網上服務安全。防火牆如何提供保障網上服務安全？",
+      "number": "1B-3_Q1(d)(i)",
+      "concepts": [
+        "網絡保安",
+        "資訊保安",
+        "網頁創作"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-3_Q1(d)(i)",
+        "question_text": "王太太在一家超級市場的網站上購買食物。此網站使用防火牆和 SSL 技術來保障其網上服務安全。防火牆如何提供保障網上服務安全？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-3-Q1-d-ii",
+      "section": "section_b",
+      "text": "SSL 技術如何支援保障網上服務安全？",
+      "number": "1B-3_Q1(d)(ii)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-3_Q1(d)(ii)",
+        "question_text": "SSL 技術如何支援保障網上服務安全？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-4-Q2-a",
+      "section": "section_b",
+      "text": "某學校圖書館有一組無線網絡。舉出在此圖書館使用無線網絡而非有線網絡的兩個好處。",
+      "number": "1B-4_Q2(a)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-4_Q2(a)",
+        "question_text": "某學校圖書館有一組無線網絡。舉出在此圖書館使用無線網絡而非有線網絡的兩個好處。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-4-Q2-b",
+      "section": "section_b",
+      "text": "學校購買了 P 和 Q 兩種數量的平板電腦，以供學生使用。其規格如下：\n描述 RAM 和 SSD 之間於特性上的兩個差異。\n[表格式意] 一張表格，比較平板電腦 P 和平板電腦 Q 的規格，包括 CPU、RAM、儲存設備、屏幕解像度、連接方式和其他細節。\n描述 RAM 和 SSD 之間於特性上的兩個差異。\n\n[圖片描述] 一張表格，比較平板電腦 P 和平板電腦 Q 的規格，包括 CPU、RAM、儲存設備、屏幕解像度、連接方式和其他細節。",
+      "number": "1B-4_Q2(b)",
+      "concepts": [
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "question_type": "free_response_with_diagram",
+      "has_image": true,
+      "image_description": "一張表格，比較平板電腦 P 和平板電腦 Q 的規格，包括 CPU、RAM、儲存設備、屏幕解像度、連接方式和其他細節。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-4_Q2(b)",
+        "question_text": "學校購買了 P 和 Q 兩種數量的平板電腦，以供學生使用。其規格如下：\n描述 RAM 和 SSD 之間於特性上的兩個差異。",
+        "question_type": "free_response_with_diagram",
+        "has_image": true,
+        "image_description": "一張表格，比較平板電腦 P 和平板電腦 Q 的規格，包括 CPU、RAM、儲存設備、屏幕解像度、連接方式和其他細節。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一張表格，比較平板電腦 P 和平板電腦 Q 的規格，包括 CPU、RAM、儲存設備、屏幕解像度、連接方式和其他細節。",
+          "描述 RAM 和 SSD 之間於特性上的兩個差異。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.253384+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "學校購買了 P 和 Q 兩種數量的平板電腦，以供學生使用。其規格如下：\n描述 RAM 和 SSD 之間於特性上的兩個差異。"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-5-Q2-c",
+      "section": "section_b",
+      "text": "P 的 CPU 規格是 5GHz 和 10 核心。描述它們分別代表什麼。",
+      "number": "1B-5_Q2(c)",
+      "concepts": [
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-5_Q2(c)",
+        "question_text": "P 的 CPU 規格是 5GHz 和 10 核心。描述它們分別代表什麼。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-5-Q2-d",
+      "section": "section_b",
+      "text": "建議用戶在沒有額外裝置情況下，於 Q 上輸入文本的兩種方式。",
+      "number": "1B-5_Q2(d)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-5_Q2(d)",
+        "question_text": "建議用戶在沒有額外裝置情況下，於 Q 上輸入文本的兩種方式。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-5-Q2-e",
+      "section": "section_b",
+      "text": "學生選用 Q 而不是 P 於街上進行調查。舉出兩個理由以支持他們的選擇。",
+      "number": "1B-5_Q2(e)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-5_Q2(e)",
+        "question_text": "學生選用 Q 而不是 P 於街上進行調查。舉出兩個理由以支持他們的選擇。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-5-Q2-f",
+      "section": "section_b",
+      "text": "學校的檔案伺服器、P 和 Q 安裝了不同的操作系統，但檔案卻可在各裝置之間透過此網絡互布落過。為什麼？",
+      "number": "1B-5_Q2(f)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "軟件",
+        "作業系統",
+        "網絡應用",
+        "客戶機伺服器"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-5_Q2(f)",
+        "question_text": "學校的檔案伺服器、P 和 Q 安裝了不同的操作系統，但檔案卻可在各裝置之間透過此網絡互布落過。為什麼？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-6-Q3-a-i",
+      "section": "section_b",
+      "text": "志明設計了一個算法來加密二進制數字的陣列 A，如下所示：\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n直至 I = 1\n假設 A 的初始內容是：\n執行此算法後 A 的內容是什麼？\nI ← 5\n重複\nI ← I - 1\nA[I] ← 1 - A[I]\n直至 I = 1\n假設 A 的初始內容是：\n執行此算法後 A 的內容是什麼？\n\n[圖片描述] 一個初始數組 A：，以及一個空白數組，用於算法執行後的結果。",
+      "number": "1B-6_Q3(a)(i)",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "試算表",
+        "網絡保安",
+        "資訊保安",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；C-互聯網及其應用；D-計算思維與程式編寫",
+      "question_type": "algorithm_tracing_with_diagram",
+      "has_image": true,
+      "image_description": "一個初始數組 A：，以及一個空白數組，用於算法執行後的結果。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-6_Q3(a)(i)",
+        "question_text": "志明設計了一個算法來加密二進制數字的陣列 A，如下所示：\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n直至 I = 1\n假設 A 的初始內容是：\n執行此算法後 A 的內容是什麼？",
+        "question_type": "algorithm_tracing_with_diagram",
+        "has_image": true,
+        "image_description": "一個初始數組 A：，以及一個空白數組，用於算法執行後的結果。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "I ← 5",
+          "重複",
+          "I ← I - 1",
+          "A[I] ← 1 - A[I]",
+          "直至 I = 1",
+          "假設 A 的初始內容是：",
+          "執行此算法後 A 的內容是什麼？"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.253384+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "志明設計了一個算法來加密二進制數字的陣列 A，如下所示：\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n直至 I = 1\n假設 A 的初始內容是：\n執行此算法後 A 的內容是什麼？"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-6-Q3-a-ii",
+      "section": "section_b",
+      "text": "假設執行此算法後 A 的內容是：\nA 的初始內容是什麼？\n\n[圖片描述] 一個結果數組 A：，以及一個空白數組，用於 A 的初始內容。",
+      "number": "1B-6_Q3(a)(ii)",
+      "concepts": [
+        "試算表",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；D-計算思維與程式編寫",
+      "question_type": "algorithm_tracing_with_diagram",
+      "has_image": true,
+      "image_description": "一個結果數組 A：，以及一個空白數組，用於 A 的初始內容。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-6_Q3(a)(ii)",
+        "question_text": "假設執行此算法後 A 的內容是：\nA 的初始內容是什麼？",
+        "question_type": "algorithm_tracing_with_diagram",
+        "has_image": true,
+        "image_description": "一個結果數組 A：，以及一個空白數組，用於 A 的初始內容。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "A 的初始內容是什麼？"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.253384+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "假設執行此算法後 A 的內容是：\nA 的初始內容是什麼？"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-6-Q3-a-iii",
+      "section": "section_b",
+      "text": "如果 A 的初始內容中的所有數值均為 1，則該算法無法正常終止。修改該算法，使其可以正常終止。\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n[BLANK] 至至 I = 1\nI ← 5\n重複\nI ← I - 1\nA[I] ← 1 - A[I]\n\n[圖片描述] 算法中「直至 I = 1」旁邊的空白部分，暗示需要在此處進行修改。",
+      "number": "1B-6_Q3(a)(iii)",
+      "concepts": [
+        "網絡",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用；D-計算思維與程式編寫",
+      "question_type": "algorithm_completion_with_diagram",
+      "has_image": true,
+      "image_description": "算法中「直至 I = 1」旁邊的空白部分，暗示需要在此處進行修改。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-6_Q3(a)(iii)",
+        "question_text": "如果 A 的初始內容中的所有數值均為 1，則該算法無法正常終止。修改該算法，使其可以正常終止。\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n[BLANK] 至至 I = 1",
+        "question_type": "algorithm_completion_with_diagram",
+        "has_image": true,
+        "image_description": "算法中「直至 I = 1」旁邊的空白部分，暗示需要在此處進行修改。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "I ← 5",
+          "重複",
+          "I ← I - 1",
+          "A[I] ← 1 - A[I]"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "如果 A 的初始內容中的所有數值均為 1，則該算法無法正常終止。修改該算法，使其可以正常終止。\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n[BLANK] 至至 I = 1"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-6-Q3-b",
+      "section": "section_b",
+      "text": "志明會將 (a)(iii) 內的算法為另一個可行算法。完成以下算法。\nFlag ← 1\n從 I 由 ___ 遞減至 1 執行\n   如果 Flag = ___ 則\n      A[I] ← 1 - A[I]\n   否則\n      Flag ← 0\n   結束如果\nFlag ← 1\n從 I 由 ___ 遞減至 1 執行\n如果 Flag = ___ 則\nA[I] ← 1 - A[I]\n否則\nFlag ← 0\n結束如果",
+      "number": "1B-6_Q3(b)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "question_type": "algorithm_completion",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-6_Q3(b)",
+        "question_text": "志明會將 (a)(iii) 內的算法為另一個可行算法。完成以下算法。\nFlag ← 1\n從 I 由 ___ 遞減至 1 執行\n   如果 Flag = ___ 則\n      A[I] ← 1 - A[I]\n   否則\n      Flag ← 0\n   結束如果",
+        "question_type": "algorithm_completion",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "Flag ← 1",
+          "從 I 由 ___ 遞減至 1 執行",
+          "如果 Flag = ___ 則",
+          "A[I] ← 1 - A[I]",
+          "否則",
+          "Flag ← 0",
+          "結束如果"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "志明會將 (a)(iii) 內的算法為另一個可行算法。完成以下算法。\nFlag ← 1\n從 I 由 ___ 遞減至 1 執行\n   如果 Flag = ___ 則\n      A[I] ← 1 - A[I]\n   否則\n      Flag ← 0\n   結束如果"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-7-Q3-c",
+      "section": "section_b",
+      "text": "志明計劃在網站上載電腦學習材料，讓社會人士自學。舉出在社會電子學習活動的兩個限制。",
+      "number": "1B-7_Q3(c)",
+      "concepts": [
+        "網頁創作"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-7_Q3(c)",
+        "question_text": "志明計劃在網站上載電腦學習材料，讓社會人士自學。舉出在社會電子學習活動的兩個限制。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-7-Q4-a",
+      "section": "section_b",
+      "text": "李小姐有以下在網頁上搜尋學生考試分數的設計。\n哪個設計較佳？舉出兩個理由以支持你的答案。\n\n[圖片描述] 兩種用於搜尋學生考試分數的 UI 設計（「設計 1」和「設計 2」）。設計 1 使用分數和科目下拉菜單。設計 2 使用分數滑塊/輸入、科目下拉菜單和特定科目的複選框。",
+      "number": "1B-7_Q4(a)",
+      "concepts": [
+        "網頁創作",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用；D-計算思維與程式編寫",
+      "question_type": "free_response_with_diagram",
+      "has_image": true,
+      "image_description": "兩種用於搜尋學生考試分數的 UI 設計（「設計 1」和「設計 2」）。設計 1 使用分數和科目下拉菜單。設計 2 使用分數滑塊/輸入、科目下拉菜單和特定科目的複選框。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-7_Q4(a)",
+        "question_text": "李小姐有以下在網頁上搜尋學生考試分數的設計。\n哪個設計較佳？舉出兩個理由以支持你的答案。",
+        "question_type": "free_response_with_diagram",
+        "has_image": true,
+        "image_description": "兩種用於搜尋學生考試分數的 UI 設計（「設計 1」和「設計 2」）。設計 1 使用分數和科目下拉菜單。設計 2 使用分數滑塊/輸入、科目下拉菜單和特定科目的複選框。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "哪個設計較佳？舉出兩個理由以支持你的答案。"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "李小姐有以下在網頁上搜尋學生考試分數的設計。\n哪個設計較佳？舉出兩個理由以支持你的答案。"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-8-Q4-b-i",
+      "section": "section_b",
+      "text": "李小姐設計了數據庫表 SCORE，用於儲存學生的考試分數。下面列出了 SCORE 的一部分記錄：\nIDNO 內的數字是學生編號；學生編號內所有數字的總和可被 7 整除。例如，在 IDNO 中，數字 10204 是有效的，因為 1 + 0 + 2 + 0 + 4 = 7。這是可被 7 整除。\n數字 46300、10409 或 10205，哪一個在 IDNO 是有效的？\n[表格式意] 一張名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。\nIDNO 內的數字是學生編號；學生編號內所有數字的總和可被 7 整除。例如，在 IDNO 中，數字 10204 是有效的，因為 1 + 0 + 2 + 0 + 4 = 7。這是可被 7 整除。\n數字 46300、10409 或 10205，哪一個在 IDNO 是有效的？\n\n[圖片描述] 一張名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。",
+      "number": "1B-8_Q4(b)(i)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；E-資訊及通訊科技對社會的影響",
+      "question_type": "short_answer_with_diagram",
+      "has_image": true,
+      "image_description": "一張名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-8_Q4(b)(i)",
+        "question_text": "李小姐設計了數據庫表 SCORE，用於儲存學生的考試分數。下面列出了 SCORE 的一部分記錄：\nIDNO 內的數字是學生編號；學生編號內所有數字的總和可被 7 整除。例如，在 IDNO 中，數字 10204 是有效的，因為 1 + 0 + 2 + 0 + 4 = 7。這是可被 7 整除。\n數字 46300、10409 或 10205，哪一個在 IDNO 是有效的？",
+        "question_type": "short_answer_with_diagram",
+        "has_image": true,
+        "image_description": "一張名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一張名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。",
+          "IDNO 內的數字是學生編號；學生編號內所有數字的總和可被 7 整除。例如，在 IDNO 中，數字 10204 是有效的，因為 1 + 0 + 2 + 0 + 4 = 7。這是可被 7 整除。",
+          "數字 46300、10409 或 10205，哪一個在 IDNO 是有效的？"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "李小姐設計了數據庫表 SCORE，用於儲存學生的考試分數。下面列出了 SCORE 的一部分記錄：\nIDNO 內的數字是學生編號；學生編號內所有數字的總和可被 7 整除。例如，在 IDNO 中，數字 10204 是有效的，因為 1 + 0 + 2 + 0 + 4 = 7。這是可被 7 整除。\n數字 46300、10409 或 10205，哪一個在 IDNO 是有效的？"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-8-Q4-b-ii",
+      "section": "section_b",
+      "text": "在 IDNO 中，數字 22032 被錯誤地輸入為 22102。建議一項對 IDNO 驗證檢查。",
+      "number": "1B-8_Q4(b)(ii)",
+      "concepts": [
+        "數據控制",
+        "有效性檢驗",
+        "奇偶檢測"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-8_Q4(b)(ii)",
+        "question_text": "在 IDNO 中，數字 22032 被錯誤地輸入為 22102。建議一項對 IDNO 驗證檢查。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-8-Q4-c-i",
+      "section": "section_b",
+      "text": "參考 SCORE 內的 6 筆記錄。舉出 SCORE 的主關鍵字。\n[表格式意] 與 Q4(b)(i) 相同的名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。\n\n[圖片描述] 與 Q4(b)(i) 相同的名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。",
+      "number": "1B-8_Q4(c)(i)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；E-資訊及通訊科技對社會的影響",
+      "question_type": "short_answer_with_diagram",
+      "has_image": true,
+      "image_description": "與 Q4(b)(i) 相同的名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-8_Q4(c)(i)",
+        "question_text": "參考 SCORE 內的 6 筆記錄。舉出 SCORE 的主關鍵字。",
+        "question_type": "short_answer_with_diagram",
+        "has_image": true,
+        "image_description": "與 Q4(b)(i) 相同的名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 與 Q4(b)(i) 相同的名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "參考 SCORE 內的 6 筆記錄。舉出 SCORE 的主關鍵字。"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-8-Q4-c-ii",
+      "section": "section_b",
+      "text": "執行以下 SQL 語句後的輸出是什麼？ SELECT SUBJECT, AVG(MARK) FROM SCORE GROUP BY SUBJECT\n[表格式意] SCORE 表格下方有一個空白表格，用於 SQL 查詢的輸出。\n\n[圖片描述] SCORE 表格下方有一個空白表格，用於 SQL 查詢的輸出。",
+      "number": "1B-8_Q4(c)(ii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "硬件",
+        "科技創新"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎；E-資訊及通訊科技對社會的影響",
+      "question_type": "sql_output_with_diagram",
+      "has_image": true,
+      "image_description": "SCORE 表格下方有一個空白表格，用於 SQL 查詢的輸出。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-8_Q4(c)(ii)",
+        "question_text": "執行以下 SQL 語句後的輸出是什麼？ SELECT SUBJECT, AVG(MARK) FROM SCORE GROUP BY SUBJECT",
+        "question_type": "sql_output_with_diagram",
+        "has_image": true,
+        "image_description": "SCORE 表格下方有一個空白表格，用於 SQL 查詢的輸出。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] SCORE 表格下方有一個空白表格，用於 SQL 查詢的輸出。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "執行以下 SQL 語句後的輸出是什麼？ SELECT SUBJECT, AVG(MARK) FROM SCORE GROUP BY SUBJECT"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-9-Q4-d",
+      "section": "section_b",
+      "text": "李小姐計劃找出 1A 班學生在每個學科的排名。她將 SCORE 中的數據複製到試算表中，並按 SUBJECT 的升序及可按 MARK 的降序對數據進行排序。如下所示：\n李小姐在 F2 輸入公式 =COUNTIF(D$2:D2,D2)，並複製到 F3:F91，寫出在 F4 的公式和顯示值。\n[表格式意] 一個試算表表格（IDNO、ENAME、CLASS、SUBJECT、MARK、RANK1、RANK2），包含示例數據和一些空白單元格。\n李小姐在 F2 輸入公式 =COUNTIF(D$2:D2,D2)，並複製到 F3:F91，寫出在 F4 的公式和顯示值。\n\n[圖片描述] 一個試算表表格（IDNO、ENAME、CLASS、SUBJECT、MARK、RANK1、RANK2），包含示例數據和一些空白單元格。",
+      "number": "1B-9_Q4(d)",
+      "concepts": [
+        "試算表",
+        "算法",
+        "偽代碼",
+        "科技創新"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；D-計算思維與程式編寫；E-資訊及通訊科技對社會的影響",
+      "question_type": "spreadsheet_formula_with_diagram",
+      "has_image": true,
+      "image_description": "一個試算表表格（IDNO、ENAME、CLASS、SUBJECT、MARK、RANK1、RANK2），包含示例數據和一些空白單元格。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-9_Q4(d)",
+        "question_text": "李小姐計劃找出 1A 班學生在每個學科的排名。她將 SCORE 中的數據複製到試算表中，並按 SUBJECT 的升序及可按 MARK 的降序對數據進行排序。如下所示：\n李小姐在 F2 輸入公式 =COUNTIF(D$2:D2,D2)，並複製到 F3:F91，寫出在 F4 的公式和顯示值。",
+        "question_type": "spreadsheet_formula_with_diagram",
+        "has_image": true,
+        "image_description": "一個試算表表格（IDNO、ENAME、CLASS、SUBJECT、MARK、RANK1、RANK2），包含示例數據和一些空白單元格。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個試算表表格（IDNO、ENAME、CLASS、SUBJECT、MARK、RANK1、RANK2），包含示例數據和一些空白單元格。",
+          "李小姐在 F2 輸入公式 =COUNTIF(D$2:D2,D2)，並複製到 F3:F91，寫出在 F4 的公式和顯示值。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "李小姐計劃找出 1A 班學生在每個學科的排名。她將 SCORE 中的數據複製到試算表中，並按 SUBJECT 的升序及可按 MARK 的降序對數據進行排序。如下所示：\n李小姐在 F2 輸入公式 =COUNTIF(D$2:D2,D2)，並複製到 F3:F91，寫出在 F4 的公式和顯示值。"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-9-Q4-e-i",
+      "section": "section_b",
+      "text": "李小姐在 G2 中輸入數值 1。她在 G3 輸入公式 =IF(E2=E3,G2,F3)，並複製到 G4:G91。寫出在 G4 的顯示值。\n[表格式意] 與 Q4(d) 相同的試算表表格。\n\n[圖片描述] 與 Q4(d) 相同的試算表表格。",
+      "number": "1B-9_Q4(e)(i)",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "spreadsheet_formula_tracing_with_diagram",
+      "has_image": true,
+      "image_description": "與 Q4(d) 相同的試算表表格。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-9_Q4(e)(i)",
+        "question_text": "李小姐在 G2 中輸入數值 1。她在 G3 輸入公式 =IF(E2=E3,G2,F3)，並複製到 G4:G91。寫出在 G4 的顯示值。",
+        "question_type": "spreadsheet_formula_tracing_with_diagram",
+        "has_image": true,
+        "image_description": "與 Q4(d) 相同的試算表表格。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 與 Q4(d) 相同的試算表表格。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "李小姐在 G2 中輸入數值 1。她在 G3 輸入公式 =IF(E2=E3,G2,F3)，並複製到 G4:G91。寫出在 G4 的顯示值。"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-9-Q4-e-ii",
+      "section": "section_b",
+      "text": "描述欄 G 內的公式的目的。\n[表格式意] 與 Q4(d) 相同的試算表表格。\n\n[圖片描述] 與 Q4(d) 相同的試算表表格。",
+      "number": "1B-9_Q4(e)(ii)",
+      "concepts": [
+        "試算表",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "free_response_with_diagram",
+      "has_image": true,
+      "image_description": "與 Q4(d) 相同的試算表表格。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-9_Q4(e)(ii)",
+        "question_text": "描述欄 G 內的公式的目的。",
+        "question_type": "free_response_with_diagram",
+        "has_image": true,
+        "image_description": "與 Q4(d) 相同的試算表表格。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 與 Q4(d) 相同的試算表表格。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "描述欄 G 內的公式的目的。"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-10-Q1-a",
+      "section": "section_b",
+      "text": "一個顯示板由 15 × 15 像素組成，如下所示：\n每個像素所顯示的顏色，由一個 2 位元代碼表示。如下所示：\n顯示板上的像素需要多少個位元來表示？顯示你的計算。\n[表格式意] 一個 15x15 像素網格和一個表格，顯示顏色代碼：紅色 (R) = 00，綠色 (G) = 01，藍色 (B) = 10，黃色 (Y) = 11。\n每個像素所顯示的顏色，由一個 2 位元代碼表示。如下所示：\n顯示板上的像素需要多少個位元來表示？顯示你的計算。\n\n[圖片描述] 一個 15x15 像素網格和一個表格，顯示顏色代碼：紅色 (R) = 00，綠色 (G) = 01，藍色 (B) = 10，黃色 (Y) = 11。",
+      "number": "1B-10_Q1(a)",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "多媒體"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "calculation_with_diagram",
+      "has_image": true,
+      "image_description": "一個 15x15 像素網格和一個表格，顯示顏色代碼：紅色 (R) = 00，綠色 (G) = 01，藍色 (B) = 10，黃色 (Y) = 11。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-10_Q1(a)",
+        "question_text": "一個顯示板由 15 × 15 像素組成，如下所示：\n每個像素所顯示的顏色，由一個 2 位元代碼表示。如下所示：\n顯示板上的像素需要多少個位元來表示？顯示你的計算。",
+        "question_type": "calculation_with_diagram",
+        "has_image": true,
+        "image_description": "一個 15x15 像素網格和一個表格，顯示顏色代碼：紅色 (R) = 00，綠色 (G) = 01，藍色 (B) = 10，黃色 (Y) = 11。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個 15x15 像素網格和一個表格，顯示顏色代碼：紅色 (R) = 00，綠色 (G) = 01，藍色 (B) = 10，黃色 (Y) = 11。",
+          "每個像素所顯示的顏色，由一個 2 位元代碼表示。如下所示：",
+          "顯示板上的像素需要多少個位元來表示？顯示你的計算。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "一個顯示板由 15 × 15 像素組成，如下所示：\n每個像素所顯示的顏色，由一個 2 位元代碼表示。如下所示：\n顯示板上的像素需要多少個位元來表示？顯示你的計算。"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-10-Q1-b",
+      "section": "section_b",
+      "text": "麗琪採用一個編碼方案，在顯示板上每一列由一組或多組位元模式來表示。每個位元模式由 6 個位元所組成。首 2 個位元表示顏色，餘下的 4 個位元表示該顏色的連續像素數目 (以二進制表示)。例如，位元模式 110100 表示 4 個連續的黃色像素：\n寫出位元模式 100001 所表示的像素。\n\n[圖片描述] 一個示例，顯示「11, 0100」代表 4 個黃色像素。空白處用於填寫「100001」所代表的顏色和像素數量。",
+      "number": "1B-10_Q1(b)",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "多媒體"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "encoding_interpretation_with_diagram",
+      "has_image": true,
+      "image_description": "一個示例，顯示「11, 0100」代表 4 個黃色像素。空白處用於填寫「100001」所代表的顏色和像素數量。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-10_Q1(b)",
+        "question_text": "麗琪採用一個編碼方案，在顯示板上每一列由一組或多組位元模式來表示。每個位元模式由 6 個位元所組成。首 2 個位元表示顏色，餘下的 4 個位元表示該顏色的連續像素數目 (以二進制表示)。例如，位元模式 110100 表示 4 個連續的黃色像素：\n寫出位元模式 100001 所表示的像素。",
+        "question_type": "encoding_interpretation_with_diagram",
+        "has_image": true,
+        "image_description": "一個示例，顯示「11, 0100」代表 4 個黃色像素。空白處用於填寫「100001」所代表的顏色和像素數量。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "寫出位元模式 100001 所表示的像素。"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "麗琪採用一個編碼方案，在顯示板上每一列由一組或多組位元模式來表示。每個位元模式由 6 個位元所組成。首 2 個位元表示顏色，餘下的 4 個位元表示該顏色的連續像素數目 (以二進制表示)。例如，位元模式 110100 表示 4 個連續的黃色像素：\n寫出位元模式 100001 所表示的像素。"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-10-Q1-c-i",
+      "section": "section_b",
+      "text": "例如，而位元模式 110100 和 001011 表示以下一列 15 個像素：\n寫出以下三個位元模式所表示的像素。\nGiven: 010100 100001 111010\n\n[圖片描述] 一行 15 個像素，顯示 YYYY RRRR RRRRRRR。一行空白像素，根據給定的位元模式填寫。",
+      "number": "1B-10_Q1(c)(i)",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "多媒體"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "encoding_interpretation_with_diagram",
+      "has_image": true,
+      "image_description": "一行 15 個像素，顯示 YYYY RRRR RRRRRRR。一行空白像素，根據給定的位元模式填寫。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-10_Q1(c)(i)",
+        "question_text": "例如，而位元模式 110100 和 001011 表示以下一列 15 個像素：\n寫出以下三個位元模式所表示的像素。\nGiven: 010100 100001 111010",
+        "question_type": "encoding_interpretation_with_diagram",
+        "has_image": true,
+        "image_description": "一行 15 個像素，顯示 YYYY RRRR RRRRRRR。一行空白像素，根據給定的位元模式填寫。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "寫出以下三個位元模式所表示的像素。",
+          "Given: 010100 100001 111010"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "例如，而位元模式 110100 和 001011 表示以下一列 15 個像素：\n寫出以下三個位元模式所表示的像素。\nGiven: 010100 100001 111010"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-11-Q1-c-ii",
+      "section": "section_b",
+      "text": "寫出以下表示以下一列像素的位元模式。\nGiven: BBBBYBBBBBBBBBB\n\n[圖片描述] 一行像素，顯示 BBBBYBBBBBBBBBB。空白處用於填寫相應的位元模式。",
+      "number": "1B-11_Q1(c)(ii)",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "多媒體"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "encoding_creation_with_diagram",
+      "has_image": true,
+      "image_description": "一行像素，顯示 BBBBYBBBBBBBBBB。空白處用於填寫相應的位元模式。",
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-11_Q1(c)(ii)",
+        "question_text": "寫出以下表示以下一列像素的位元模式。\nGiven: BBBBYBBBBBBBBBB",
+        "question_type": "encoding_creation_with_diagram",
+        "has_image": true,
+        "image_description": "一行像素，顯示 BBBBYBBBBBBBBBB。空白處用於填寫相應的位元模式。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "Given: BBBBYBBBBBBBBBB"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "寫出以下表示以下一列像素的位元模式。\nGiven: BBBBYBBBBBBBBBB"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-11-Q1-c-iii-1",
+      "section": "section_b",
+      "text": "根據此編碼方案，在以下各種情況下，一列 15 個像素需要多少個位元來表示？所有像素均是紅色。",
+      "number": "1B-11_Q1(c)(iii)(1)",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "多媒體"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "calculation_based_on_encoding",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-11_Q1(c)(iii)(1)",
+        "question_text": "根據此編碼方案，在以下各種情況下，一列 15 個像素需要多少個位元來表示？所有像素均是紅色。",
+        "question_type": "calculation_based_on_encoding",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-11-Q1-c-iii-2",
+      "section": "section_b",
+      "text": "根據此編碼方案，在以下各種情況下，一列 15 個像素需要多少個位元來表示？沒有兩個相鄰像素是相同顏色。",
+      "number": "1B-11_Q1(c)(iii)(2)",
+      "concepts": [
+        "進制",
+        "二進制補碼",
+        "多媒體"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "calculation_based_on_encoding",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-11_Q1(c)(iii)(2)",
+        "question_text": "根據此編碼方案，在以下各種情況下，一列 15 個像素需要多少個位元來表示？沒有兩個相鄰像素是相同顏色。",
+        "question_type": "calculation_based_on_encoding",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper1B_CompulsoryStructured-1B-11-Q1-d",
+      "section": "section_b",
+      "text": "除儲存大小外，還須考慮使用什麼電腦資源來實施該編碼方案？簡略說明。",
+      "number": "1B-11_Q1(d)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p1.json",
+      "gemini_raw": {
+        "question_number": "1B-11_Q1(d)",
+        "question_text": "除儲存大小外，還須考慮使用什麼電腦資源來實施該編碼方案？簡略說明。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    }
+  ],
+  "paper": {
+    "id": "2021-Paper1B_CompulsoryStructured",
+    "questions": [
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-2-Q1-a-i",
+        "type": "fill_in_blank_with_diagram",
+        "number": "1B-2_Q1(a)(i)",
+        "section": "section_b",
+        "text": "X 和 Z 均為網絡設備。平板電腦透過接到 Z 以線連接互聯網。X 和 Z 是什麼？\n\n[圖片描述] 一個網絡圖，顯示平板電腦、未知設備 X、未知設備 Z、互聯網、打印機和王太太的桌上電腦。連接方式顯示為無線或有線。有空白處供填寫 X 和 Z。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-2-Q1-a-ii",
+        "type": "free_response_with_diagram",
+        "number": "1B-2_Q1(a)(ii)",
+        "section": "section_b",
+        "text": "參考上圖，除接連互聯網外，舉出其他使用此網絡的兩個用途。\n\n[圖片描述] 與 Q1(a)(i) 相同的網絡圖。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-2-Q1-b-i",
+        "type": "free_response",
+        "number": "1B-2_Q1(b)(i)",
+        "section": "section_b",
+        "text": "王太太每天使用她的桌上電腦超過 6 個小時。舉出既使用滑鼠可動計劃避免造成的傷害。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-2-Q1-b-ii",
+        "type": "free_response",
+        "number": "1B-2_Q1(b)(ii)",
+        "section": "section_b",
+        "text": "建議一項產品，以減少此傷害。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-3-Q1-c",
+        "type": "free_response",
+        "number": "1B-3_Q1(c)",
+        "section": "section_b",
+        "text": "志偉每天使用平板電腦 4 個小時。為志偉提供實踐良好做法，以減少對他膝造的傷害。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-3-Q1-d-i",
+        "type": "free_response",
+        "number": "1B-3_Q1(d)(i)",
+        "section": "section_b",
+        "text": "王太太在一家超級市場的網站上購買食物。此網站使用防火牆和 SSL 技術來保障其網上服務安全。防火牆如何提供保障網上服務安全？",
+        "marks": null,
+        "concepts": [
+          "網絡保安",
+          "資訊保安",
+          "網頁創作"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-3-Q1-d-ii",
+        "type": "free_response",
+        "number": "1B-3_Q1(d)(ii)",
+        "section": "section_b",
+        "text": "SSL 技術如何支援保障網上服務安全？",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-4-Q2-a",
+        "type": "free_response",
+        "number": "1B-4_Q2(a)",
+        "section": "section_b",
+        "text": "某學校圖書館有一組無線網絡。舉出在此圖書館使用無線網絡而非有線網絡的兩個好處。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-4-Q2-b",
+        "type": "free_response_with_diagram",
+        "number": "1B-4_Q2(b)",
+        "section": "section_b",
+        "text": "學校購買了 P 和 Q 兩種數量的平板電腦，以供學生使用。其規格如下：\n描述 RAM 和 SSD 之間於特性上的兩個差異。\n[表格式意] 一張表格，比較平板電腦 P 和平板電腦 Q 的規格，包括 CPU、RAM、儲存設備、屏幕解像度、連接方式和其他細節。\n描述 RAM 和 SSD 之間於特性上的兩個差異。\n\n[圖片描述] 一張表格，比較平板電腦 P 和平板電腦 Q 的規格，包括 CPU、RAM、儲存設備、屏幕解像度、連接方式和其他細節。",
+        "marks": null,
+        "concepts": [
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "學校購買了 P 和 Q 兩種數量的平板電腦，以供學生使用。其規格如下：\n描述 RAM 和 SSD 之間於特性上的兩個差異。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一張表格，比較平板電腦 P 和平板電腦 Q 的規格，包括 CPU、RAM、儲存設備、屏幕解像度、連接方式和其他細節。",
+            "描述 RAM 和 SSD 之間於特性上的兩個差異。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.253384+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-5-Q2-c",
+        "type": "free_response",
+        "number": "1B-5_Q2(c)",
+        "section": "section_b",
+        "text": "P 的 CPU 規格是 5GHz 和 10 核心。描述它們分別代表什麼。",
+        "marks": null,
+        "concepts": [
+          "硬件"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-5-Q2-d",
+        "type": "free_response",
+        "number": "1B-5_Q2(d)",
+        "section": "section_b",
+        "text": "建議用戶在沒有額外裝置情況下，於 Q 上輸入文本的兩種方式。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-5-Q2-e",
+        "type": "free_response",
+        "number": "1B-5_Q2(e)",
+        "section": "section_b",
+        "text": "學生選用 Q 而不是 P 於街上進行調查。舉出兩個理由以支持他們的選擇。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-5-Q2-f",
+        "type": "free_response",
+        "number": "1B-5_Q2(f)",
+        "section": "section_b",
+        "text": "學校的檔案伺服器、P 和 Q 安裝了不同的操作系統，但檔案卻可在各裝置之間透過此網絡互布落過。為什麼？",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "軟件",
+          "作業系統",
+          "網絡應用",
+          "客戶機伺服器"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-6-Q3-a-i",
+        "type": "algorithm_tracing_with_diagram",
+        "number": "1B-6_Q3(a)(i)",
+        "section": "section_b",
+        "text": "志明設計了一個算法來加密二進制數字的陣列 A，如下所示：\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n直至 I = 1\n假設 A 的初始內容是：\n執行此算法後 A 的內容是什麼？\nI ← 5\n重複\nI ← I - 1\nA[I] ← 1 - A[I]\n直至 I = 1\n假設 A 的初始內容是：\n執行此算法後 A 的內容是什麼？\n\n[圖片描述] 一個初始數組 A：，以及一個空白數組，用於算法執行後的結果。",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "試算表",
+          "網絡保安",
+          "資訊保安",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "志明設計了一個算法來加密二進制數字的陣列 A，如下所示：\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n直至 I = 1\n假設 A 的初始內容是：\n執行此算法後 A 的內容是什麼？",
+        "support_content": {
+          "lines": [
+            "I ← 5",
+            "重複",
+            "I ← I - 1",
+            "A[I] ← 1 - A[I]",
+            "直至 I = 1",
+            "假設 A 的初始內容是：",
+            "執行此算法後 A 的內容是什麼？"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.253384+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-6-Q3-a-ii",
+        "type": "algorithm_tracing_with_diagram",
+        "number": "1B-6_Q3(a)(ii)",
+        "section": "section_b",
+        "text": "假設執行此算法後 A 的內容是：\nA 的初始內容是什麼？\n\n[圖片描述] 一個結果數組 A：，以及一個空白數組，用於 A 的初始內容。",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "假設執行此算法後 A 的內容是：\nA 的初始內容是什麼？",
+        "support_content": {
+          "lines": [
+            "A 的初始內容是什麼？"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.253384+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-6-Q3-a-iii",
+        "type": "algorithm_completion_with_diagram",
+        "number": "1B-6_Q3(a)(iii)",
+        "section": "section_b",
+        "text": "如果 A 的初始內容中的所有數值均為 1，則該算法無法正常終止。修改該算法，使其可以正常終止。\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n[BLANK] 至至 I = 1\nI ← 5\n重複\nI ← I - 1\nA[I] ← 1 - A[I]\n\n[圖片描述] 算法中「直至 I = 1」旁邊的空白部分，暗示需要在此處進行修改。",
+        "marks": null,
+        "concepts": [
+          "網絡",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "如果 A 的初始內容中的所有數值均為 1，則該算法無法正常終止。修改該算法，使其可以正常終止。\nI ← 5\n重複\n   I ← I - 1\n   A[I] ← 1 - A[I]\n[BLANK] 至至 I = 1",
+        "support_content": {
+          "lines": [
+            "I ← 5",
+            "重複",
+            "I ← I - 1",
+            "A[I] ← 1 - A[I]"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-6-Q3-b",
+        "type": "algorithm_completion",
+        "number": "1B-6_Q3(b)",
+        "section": "section_b",
+        "text": "志明會將 (a)(iii) 內的算法為另一個可行算法。完成以下算法。\nFlag ← 1\n從 I 由 ___ 遞減至 1 執行\n   如果 Flag = ___ 則\n      A[I] ← 1 - A[I]\n   否則\n      Flag ← 0\n   結束如果\nFlag ← 1\n從 I 由 ___ 遞減至 1 執行\n如果 Flag = ___ 則\nA[I] ← 1 - A[I]\n否則\nFlag ← 0\n結束如果",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "志明會將 (a)(iii) 內的算法為另一個可行算法。完成以下算法。\nFlag ← 1\n從 I 由 ___ 遞減至 1 執行\n   如果 Flag = ___ 則\n      A[I] ← 1 - A[I]\n   否則\n      Flag ← 0\n   結束如果",
+        "support_content": {
+          "lines": [
+            "Flag ← 1",
+            "從 I 由 ___ 遞減至 1 執行",
+            "如果 Flag = ___ 則",
+            "A[I] ← 1 - A[I]",
+            "否則",
+            "Flag ← 0",
+            "結束如果"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-7-Q3-c",
+        "type": "free_response",
+        "number": "1B-7_Q3(c)",
+        "section": "section_b",
+        "text": "志明計劃在網站上載電腦學習材料，讓社會人士自學。舉出在社會電子學習活動的兩個限制。",
+        "marks": null,
+        "concepts": [
+          "網頁創作"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-7-Q4-a",
+        "type": "free_response_with_diagram",
+        "number": "1B-7_Q4(a)",
+        "section": "section_b",
+        "text": "李小姐有以下在網頁上搜尋學生考試分數的設計。\n哪個設計較佳？舉出兩個理由以支持你的答案。\n\n[圖片描述] 兩種用於搜尋學生考試分數的 UI 設計（「設計 1」和「設計 2」）。設計 1 使用分數和科目下拉菜單。設計 2 使用分數滑塊/輸入、科目下拉菜單和特定科目的複選框。",
+        "marks": null,
+        "concepts": [
+          "網頁創作",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "李小姐有以下在網頁上搜尋學生考試分數的設計。\n哪個設計較佳？舉出兩個理由以支持你的答案。",
+        "support_content": {
+          "lines": [
+            "哪個設計較佳？舉出兩個理由以支持你的答案。"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-8-Q4-b-i",
+        "type": "short_answer_with_diagram",
+        "number": "1B-8_Q4(b)(i)",
+        "section": "section_b",
+        "text": "李小姐設計了數據庫表 SCORE，用於儲存學生的考試分數。下面列出了 SCORE 的一部分記錄：\nIDNO 內的數字是學生編號；學生編號內所有數字的總和可被 7 整除。例如，在 IDNO 中，數字 10204 是有效的，因為 1 + 0 + 2 + 0 + 4 = 7。這是可被 7 整除。\n數字 46300、10409 或 10205，哪一個在 IDNO 是有效的？\n[表格式意] 一張名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。\nIDNO 內的數字是學生編號；學生編號內所有數字的總和可被 7 整除。例如，在 IDNO 中，數字 10204 是有效的，因為 1 + 0 + 2 + 0 + 4 = 7。這是可被 7 整除。\n數字 46300、10409 或 10205，哪一個在 IDNO 是有效的？\n\n[圖片描述] 一張名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "李小姐設計了數據庫表 SCORE，用於儲存學生的考試分數。下面列出了 SCORE 的一部分記錄：\nIDNO 內的數字是學生編號；學生編號內所有數字的總和可被 7 整除。例如，在 IDNO 中，數字 10204 是有效的，因為 1 + 0 + 2 + 0 + 4 = 7。這是可被 7 整除。\n數字 46300、10409 或 10205，哪一個在 IDNO 是有效的？",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一張名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。",
+            "IDNO 內的數字是學生編號；學生編號內所有數字的總和可被 7 整除。例如，在 IDNO 中，數字 10204 是有效的，因為 1 + 0 + 2 + 0 + 4 = 7。這是可被 7 整除。",
+            "數字 46300、10409 或 10205，哪一個在 IDNO 是有效的？"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-8-Q4-b-ii",
+        "type": "free_response",
+        "number": "1B-8_Q4(b)(ii)",
+        "section": "section_b",
+        "text": "在 IDNO 中，數字 22032 被錯誤地輸入為 22102。建議一項對 IDNO 驗證檢查。",
+        "marks": null,
+        "concepts": [
+          "數據控制",
+          "有效性檢驗",
+          "奇偶檢測"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-8-Q4-c-i",
+        "type": "short_answer_with_diagram",
+        "number": "1B-8_Q4(c)(i)",
+        "section": "section_b",
+        "text": "參考 SCORE 內的 6 筆記錄。舉出 SCORE 的主關鍵字。\n[表格式意] 與 Q4(b)(i) 相同的名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。\n\n[圖片描述] 與 Q4(b)(i) 相同的名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。",
+        "marks": null,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "參考 SCORE 內的 6 筆記錄。舉出 SCORE 的主關鍵字。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 與 Q4(b)(i) 相同的名為 SCORE 的表格，包含 IDNO、SNAME、CLASS、SUBJECT、MARK 欄位和示例數據。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-8-Q4-c-ii",
+        "type": "sql_output_with_diagram",
+        "number": "1B-8_Q4(c)(ii)",
+        "section": "section_b",
+        "text": "執行以下 SQL 語句後的輸出是什麼？ SELECT SUBJECT, AVG(MARK) FROM SCORE GROUP BY SUBJECT\n[表格式意] SCORE 表格下方有一個空白表格，用於 SQL 查詢的輸出。\n\n[圖片描述] SCORE 表格下方有一個空白表格，用於 SQL 查詢的輸出。",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "硬件",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "執行以下 SQL 語句後的輸出是什麼？ SELECT SUBJECT, AVG(MARK) FROM SCORE GROUP BY SUBJECT",
+        "support_content": {
+          "lines": [
+            "[表格式意] SCORE 表格下方有一個空白表格，用於 SQL 查詢的輸出。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-9-Q4-d",
+        "type": "spreadsheet_formula_with_diagram",
+        "number": "1B-9_Q4(d)",
+        "section": "section_b",
+        "text": "李小姐計劃找出 1A 班學生在每個學科的排名。她將 SCORE 中的數據複製到試算表中，並按 SUBJECT 的升序及可按 MARK 的降序對數據進行排序。如下所示：\n李小姐在 F2 輸入公式 =COUNTIF(D$2:D2,D2)，並複製到 F3:F91，寫出在 F4 的公式和顯示值。\n[表格式意] 一個試算表表格（IDNO、ENAME、CLASS、SUBJECT、MARK、RANK1、RANK2），包含示例數據和一些空白單元格。\n李小姐在 F2 輸入公式 =COUNTIF(D$2:D2,D2)，並複製到 F3:F91，寫出在 F4 的公式和顯示值。\n\n[圖片描述] 一個試算表表格（IDNO、ENAME、CLASS、SUBJECT、MARK、RANK1、RANK2），包含示例數據和一些空白單元格。",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "算法",
+          "偽代碼",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "李小姐計劃找出 1A 班學生在每個學科的排名。她將 SCORE 中的數據複製到試算表中，並按 SUBJECT 的升序及可按 MARK 的降序對數據進行排序。如下所示：\n李小姐在 F2 輸入公式 =COUNTIF(D$2:D2,D2)，並複製到 F3:F91，寫出在 F4 的公式和顯示值。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個試算表表格（IDNO、ENAME、CLASS、SUBJECT、MARK、RANK1、RANK2），包含示例數據和一些空白單元格。",
+            "李小姐在 F2 輸入公式 =COUNTIF(D$2:D2,D2)，並複製到 F3:F91，寫出在 F4 的公式和顯示值。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-9-Q4-e-i",
+        "type": "spreadsheet_formula_tracing_with_diagram",
+        "number": "1B-9_Q4(e)(i)",
+        "section": "section_b",
+        "text": "李小姐在 G2 中輸入數值 1。她在 G3 輸入公式 =IF(E2=E3,G2,F3)，並複製到 G4:G91。寫出在 G4 的顯示值。\n[表格式意] 與 Q4(d) 相同的試算表表格。\n\n[圖片描述] 與 Q4(d) 相同的試算表表格。",
+        "marks": null,
+        "concepts": [
+          "試算表"
+        ],
+        "syllabus_status": "current",
+        "stem": "李小姐在 G2 中輸入數值 1。她在 G3 輸入公式 =IF(E2=E3,G2,F3)，並複製到 G4:G91。寫出在 G4 的顯示值。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 與 Q4(d) 相同的試算表表格。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-9-Q4-e-ii",
+        "type": "free_response_with_diagram",
+        "number": "1B-9_Q4(e)(ii)",
+        "section": "section_b",
+        "text": "描述欄 G 內的公式的目的。\n[表格式意] 與 Q4(d) 相同的試算表表格。\n\n[圖片描述] 與 Q4(d) 相同的試算表表格。",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "描述欄 G 內的公式的目的。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 與 Q4(d) 相同的試算表表格。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-10-Q1-a",
+        "type": "calculation_with_diagram",
+        "number": "1B-10_Q1(a)",
+        "section": "section_b",
+        "text": "一個顯示板由 15 × 15 像素組成，如下所示：\n每個像素所顯示的顏色，由一個 2 位元代碼表示。如下所示：\n顯示板上的像素需要多少個位元來表示？顯示你的計算。\n[表格式意] 一個 15x15 像素網格和一個表格，顯示顏色代碼：紅色 (R) = 00，綠色 (G) = 01，藍色 (B) = 10，黃色 (Y) = 11。\n每個像素所顯示的顏色，由一個 2 位元代碼表示。如下所示：\n顯示板上的像素需要多少個位元來表示？顯示你的計算。\n\n[圖片描述] 一個 15x15 像素網格和一個表格，顯示顏色代碼：紅色 (R) = 00，綠色 (G) = 01，藍色 (B) = 10，黃色 (Y) = 11。",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "多媒體"
+        ],
+        "syllabus_status": "current",
+        "stem": "一個顯示板由 15 × 15 像素組成，如下所示：\n每個像素所顯示的顏色，由一個 2 位元代碼表示。如下所示：\n顯示板上的像素需要多少個位元來表示？顯示你的計算。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個 15x15 像素網格和一個表格，顯示顏色代碼：紅色 (R) = 00，綠色 (G) = 01，藍色 (B) = 10，黃色 (Y) = 11。",
+            "每個像素所顯示的顏色，由一個 2 位元代碼表示。如下所示：",
+            "顯示板上的像素需要多少個位元來表示？顯示你的計算。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-10-Q1-b",
+        "type": "encoding_interpretation_with_diagram",
+        "number": "1B-10_Q1(b)",
+        "section": "section_b",
+        "text": "麗琪採用一個編碼方案，在顯示板上每一列由一組或多組位元模式來表示。每個位元模式由 6 個位元所組成。首 2 個位元表示顏色，餘下的 4 個位元表示該顏色的連續像素數目 (以二進制表示)。例如，位元模式 110100 表示 4 個連續的黃色像素：\n寫出位元模式 100001 所表示的像素。\n\n[圖片描述] 一個示例，顯示「11, 0100」代表 4 個黃色像素。空白處用於填寫「100001」所代表的顏色和像素數量。",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "多媒體"
+        ],
+        "syllabus_status": "current",
+        "stem": "麗琪採用一個編碼方案，在顯示板上每一列由一組或多組位元模式來表示。每個位元模式由 6 個位元所組成。首 2 個位元表示顏色，餘下的 4 個位元表示該顏色的連續像素數目 (以二進制表示)。例如，位元模式 110100 表示 4 個連續的黃色像素：\n寫出位元模式 100001 所表示的像素。",
+        "support_content": {
+          "lines": [
+            "寫出位元模式 100001 所表示的像素。"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-10-Q1-c-i",
+        "type": "encoding_interpretation_with_diagram",
+        "number": "1B-10_Q1(c)(i)",
+        "section": "section_b",
+        "text": "例如，而位元模式 110100 和 001011 表示以下一列 15 個像素：\n寫出以下三個位元模式所表示的像素。\nGiven: 010100 100001 111010\n\n[圖片描述] 一行 15 個像素，顯示 YYYY RRRR RRRRRRR。一行空白像素，根據給定的位元模式填寫。",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "多媒體"
+        ],
+        "syllabus_status": "current",
+        "stem": "例如，而位元模式 110100 和 001011 表示以下一列 15 個像素：\n寫出以下三個位元模式所表示的像素。\nGiven: 010100 100001 111010",
+        "support_content": {
+          "lines": [
+            "寫出以下三個位元模式所表示的像素。",
+            "Given: 010100 100001 111010"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-11-Q1-c-ii",
+        "type": "encoding_creation_with_diagram",
+        "number": "1B-11_Q1(c)(ii)",
+        "section": "section_b",
+        "text": "寫出以下表示以下一列像素的位元模式。\nGiven: BBBBYBBBBBBBBBB\n\n[圖片描述] 一行像素，顯示 BBBBYBBBBBBBBBB。空白處用於填寫相應的位元模式。",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "多媒體"
+        ],
+        "syllabus_status": "current",
+        "stem": "寫出以下表示以下一列像素的位元模式。\nGiven: BBBBYBBBBBBBBBB",
+        "support_content": {
+          "lines": [
+            "Given: BBBBYBBBBBBBBBB"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.254383+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-11-Q1-c-iii-1",
+        "type": "calculation_based_on_encoding",
+        "number": "1B-11_Q1(c)(iii)(1)",
+        "section": "section_b",
+        "text": "根據此編碼方案，在以下各種情況下，一列 15 個像素需要多少個位元來表示？所有像素均是紅色。",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "多媒體"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-11-Q1-c-iii-2",
+        "type": "calculation_based_on_encoding",
+        "number": "1B-11_Q1(c)(iii)(2)",
+        "section": "section_b",
+        "text": "根據此編碼方案，在以下各種情況下，一列 15 個像素需要多少個位元來表示？沒有兩個相鄰像素是相同顏色。",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼",
+          "多媒體"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper1B_CompulsoryStructured-1B-11-Q1-d",
+        "type": "free_response",
+        "number": "1B-11_Q1(d)",
+        "section": "section_b",
+        "text": "除儲存大小外，還須考慮使用什麼電腦資源來實施該編碼方案？簡略說明。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      }
+    ]
+  }
+}

@@ -1,0 +1,213 @@
+[
+    {
+        "question_number": "1",
+        "page": 2,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "假設欄C時數的平均值已計算及儲存在B1內。如果欄C的數值大過 B1 的數值,欄D的相對儲存格會儲存「X」,否則儲存「Y」。在D4 輸入公式,然後複製到其後的儲存格。寫出D4的公式。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "為了找出電郵地址的用戶名稱,在E4輸入公式,然後複製到其後的儲存格。已知 FIND(\"@\",B4)得出5,寫出E4的公式。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "2",
+        "page": 2,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "舉出使用人面辨識勝於使用密碼來登入電腦系統的兩個優點。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "近來很多學生使用生成式人工智能工具如 DeepSeek 來學習。舉出學生使用這種學習方式的兩個潛在問題。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "3",
+        "page": 3,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "志明上載 300個 MP3檔案至雲端儲存,每個檔案大小為4MB。估算上載速度為60Mbps時,所需的上載時間。",
+                "marks": 1
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "志明在上載前把所有MP3檔案壓縮成一個ZIP檔案。此 ZIP 檔案大小僅比 MP3檔案的總檔案大小略小。為什麼?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "除了檔案大小較小之外,舉出使用此 ZIP 檔案的兩個優點。",
+                        "marks": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question_number": "4",
+        "page": 4,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "ch[0], ch[1],..., ch[9]的初始值是0。以Python、C++ 或Pascal 完成以下的程式段,使其能夠輸入及記錄 500個投票。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "執行(a) 的程式段後,只有一首歌曲獲得最多票數。以Python、C++或 Pascal 編寫一程式段來找出最多票數的歌曲編號,並儲存在m內。",
+                "marks": 3
+            }
+        ]
+    },
+    {
+        "question_number": "5",
+        "page": 5,
+        "question_text": "A和B是兩個陣列。A的初始內容是: i 0 1 2 3 4 5 6 7 A[i] 2 0 2 6 0 4 2 4 寫出執行以下程式段後B的內容。",
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "[Python 版本] for i in range(0, 4): B[i] = A[i] + A[i+1]",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "[Python 版本] for i in range(0, 4): B[i] = A[A[i] + A[i+1] - 1]",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "6",
+        "page": 6,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "說明發佈此名單的潛在問題。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "寫出把此檔案儲存在雲端儲存而非本地電腦的一個優點和一個缺點。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "7",
+        "page": 7,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "電腦內的RAM已從DDR4 提升至DDR5。舉出此升級的兩項改進之處。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "除了RAM之外,哪兩個硬體部件需要升級?簡略說明。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "8",
+        "page": 8,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "建議兩個對「數量」作出的有效性檢驗。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "建議一項網頁設計讓學生驗證所有輸入數據。",
+                "marks": 1
+            },
+            {
+                "part_label": "c",
+                "question_text": "輸入數據會透過互聯網傳送到伺服器。描述數據是如何以數據包和通訊協定來傳輸。",
+                "marks": 3
+            },
+            {
+                "part_label": "d",
+                "question_text": "該網頁並不方便用戶輸入數據,也未能容許同一時間預訂多種類型的設備。重新設計網頁以修正這些問題,並適當地加入註解。",
+                "marks": 3
+            },
+            {
+                "part_label": "e",
+                "question_text": "描述兩種有效措施,以防禦此預訂系統遭受DDoS(分布式拒絕服務)攻擊。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "9",
+        "page": 10,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "執行以下 SQL語句後的輸出是什麼? SELECT SID, AVG(TS) FROM QUIZ GROUP BY SID HAVING AVG(TS) > 30",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "下面草擬的SQL語句是用來找出每科的最大耗時。指出和修正此SQL語句內的兩個錯誤。 SELECT MAX(*) FROM QUIZ GROUP BY SJ",
+                "marks": 2
+            },
+            {
+                "part_label": "c",
+                "question_text": "某程式從 QUIZ 中提取數據,並將它相應地儲存在三個陣列 SID、SJ和TS中。整數變量n已儲存了 QUIZ 內記錄的總數。以Python、C++ 或Pascal 編寫一個程式段來顯示科目 ICT 的平均耗時。",
+                "marks": 4
+            },
+            {
+                "part_label": "d",
+                "question_text": "公司將該系統設為開放源碼軟件。舉出此做法的一個優點和一個缺點。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "10",
+        "page": 12,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "假設 cmax = 20,現有5個貨箱,它們的重量均是7。需要多少個貨櫃?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "在編寫程式碼時,為什麼使用常數 cmax 而不是20?",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "question_text": "假設 load 和s內的初始值為0。以Python、C++或Pascal 編寫以上算法的程式段。",
+                "marks": 4
+            },
+            {
+                "part_label": "c",
+                "question_text": "使用以下新增的變量,以Python、C++或Pascal 編寫一個程式段,為重量k的新貨箱列印目標貨櫃編號,若未能找到目標貨櫃,列印下一個空的貨櫃編號。",
+                "marks": 4
+            }
+        ]
+    }
+]

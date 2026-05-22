@@ -1,0 +1,1516 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "import_source": "gemini-output",
+    "imported_at": "2026-05-22T00:23:37.841568+00:00",
+    "year_label": "2021",
+    "paper_slug": "Paper2A_Database",
+    "paper_label": "Paper 2A — Database (數據庫)",
+    "source_pdf": "Subjects/DSE-ICT/past-papers/2021/DSE_ICT_2021_Paper2A_Database.pdf",
+    "question_count": 29,
+    "gemini_source_files": [
+      "2021-p2a.json"
+    ],
+    "curriculum_guide": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+    "syllabus_retagged_at": "2026-05-22T03:37:59.956169+00:00",
+    "syllabus_revision": "2021",
+    "support_enriched_at": "2026-05-22T04:32:46.258381+00:00"
+  },
+  "items": [
+    {
+      "id": "2021-Paper2A_Database-1-a-i",
+      "section": "section_b",
+      "text": "列出來自學校編碼為「S0013」的學生姓名。\n\n[圖片描述] 展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+      "number": "1(a)(i)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "short_answer",
+      "has_image": false,
+      "image_description": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(a)(i)",
+        "question_text": "列出來自學校編碼為「S0013」的學生姓名。",
+        "question_type": "short_answer",
+        "has_image": false,
+        "image_description": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-1-b",
+      "section": "section_b",
+      "text": "找出來自學校名稱包含「宜立」的學生總人數。",
+      "number": "1(b)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(b)",
+        "question_text": "找出來自學校名稱包含「宜立」的學生總人數。",
+        "question": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-1-b",
+      "section": "section_b",
+      "text": "找出來自學校名稱包含「宜立」的學生總人數。\n\n[圖片描述] 展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+      "number": "1(b)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "short_answer",
+      "has_image": false,
+      "image_description": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(b)",
+        "question_text": "找出來自學校名稱包含「宜立」的學生總人數。",
+        "question_type": "short_answer",
+        "has_image": false,
+        "image_description": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-1-c",
+      "section": "section_b",
+      "text": "列出初級組得分 60 分或以上的學生姓名。\n\n[圖片描述] 展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+      "number": "1(c)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "short_answer",
+      "has_image": false,
+      "image_description": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(c)",
+        "question_text": "列出初級組得分 60 分或以上的學生姓名。",
+        "question_type": "short_answer",
+        "has_image": false,
+        "image_description": "展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-1-d",
+      "section": "section_b",
+      "text": "以下 SQL 語句的目的是什麼？\nSELECT PID, SNAME FROM PSTUD\nWHERE GP = 'S' AND FIRST = TRUE\nAND PID NOT IN (SELECT PID FROM MARK)",
+      "number": "1(d)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "硬件",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(d)",
+        "question_text": "以下 SQL 語句的目的是什麼？\nSELECT PID, SNAME FROM PSTUD\nWHERE GP = 'S' AND FIRST = TRUE\nAND PID NOT IN (SELECT PID FROM MARK)",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "SELECT PID, SNAME FROM PSTUD",
+          "WHERE GP = 'S' AND FIRST = TRUE",
+          "AND PID NOT IN (SELECT PID FROM MARK)"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "以下 SQL 語句的目的是什麼？\nSELECT PID, SNAME FROM PSTUD\nWHERE GP = 'S' AND FIRST = TRUE\nAND PID NOT IN (SELECT PID FROM MARK)"
+    },
+    {
+      "id": "2021-Paper2A_Database-1-e",
+      "section": "section_b",
+      "text": "完成以下 SQL 語句，以列出每個學校的學生分數總和。\nSELECT S.SID, _______ AS TOTAL\nFROM SCHOOL S, PSTUD P, MARK M\nWHERE _______\nGROUP BY _______",
+      "number": "1(e)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "硬件",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_completion",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(e)",
+        "question_text": "完成以下 SQL 語句，以列出每個學校的學生分數總和。\nSELECT S.SID, _______ AS TOTAL\nFROM SCHOOL S, PSTUD P, MARK M\nWHERE _______\nGROUP BY _______",
+        "question_type": "sql_completion",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "SELECT S.SID, _______ AS TOTAL",
+          "FROM SCHOOL S, PSTUD P, MARK M",
+          "WHERE _______",
+          "GROUP BY _______"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "完成以下 SQL 語句，以列出每個學校的學生分數總和。\nSELECT S.SID, _______ AS TOTAL\nFROM SCHOOL S, PSTUD P, MARK M\nWHERE _______\nGROUP BY _______"
+    },
+    {
+      "id": "2021-Paper2A_Database-1-f",
+      "section": "section_b",
+      "text": "若學校的學生分數總和為所有學校中最高者，將會獲得證書一張。寫出包含 TM 的 SQL 語句以找出獲得證書的學校名稱。\n[表格式意] 一個名為 TM 的表格，包含 SID (字符) 和 TOTAL (參數)。\n\n[圖片描述] 一個名為 TM 的表格，包含 SID (字符) 和 TOTAL (參數)。",
+      "number": "1(f)",
+      "concepts": [
+        "SQL",
+        "數據庫"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_query_creation",
+      "has_image": false,
+      "image_description": "一個名為 TM 的表格，包含 SID (字符) 和 TOTAL (參數)。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "1(f)",
+        "question_text": "若學校的學生分數總和為所有學校中最高者，將會獲得證書一張。寫出包含 TM 的 SQL 語句以找出獲得證書的學校名稱。",
+        "question_type": "sql_query_creation",
+        "has_image": false,
+        "image_description": "一個名為 TM 的表格，包含 SID (字符) 和 TOTAL (參數)。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個名為 TM 的表格，包含 SID (字符) 和 TOTAL (參數)。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "若學校的學生分數總和為所有學校中最高者，將會獲得證書一張。寫出包含 TM 的 SQL 語句以找出獲得證書的學校名稱。"
+    },
+    {
+      "id": "2021-Paper2A_Database-2-a",
+      "section": "section_b",
+      "text": "舉出 CIR 的兩個候選鍵。\n(1)\n(2)\n\n[圖片描述] 展示了 READER, BOOK, CIR, BKCOPY 四個數據庫表的結構和範例數據。",
+      "number": "2(a)",
+      "concepts": [
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "short_answer",
+      "has_image": false,
+      "image_description": "展示了 READER, BOOK, CIR, BKCOPY 四個數據庫表的結構和範例數據。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(a)",
+        "question_text": "舉出 CIR 的兩個候選鍵。",
+        "sub_questions_list": [
+          "(1)",
+          "(2)"
+        ],
+        "question_type": "short_answer",
+        "has_image": false,
+        "image_description": "展示了 READER, BOOK, CIR, BKCOPY 四個數據庫表的結構和範例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-2-b-i",
+      "section": "section_b",
+      "text": "一個逾期位可被視為衍生性？簡略說明。",
+      "number": "2(b)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(b)(i)",
+        "question_text": "一個逾期位可被視為衍生性？簡略說明。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-2-b-ii",
+      "section": "section_b",
+      "text": "舉出一個支持在數據庫內設有衍生性的理由。",
+      "number": "2(b)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(b)(ii)",
+        "question_text": "舉出一個支持在數據庫內設有衍生性的理由。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-2-c",
+      "section": "section_b",
+      "text": "此數據庫的要求如下所述：\n每位讀者最多可以借閱 3 本書，有些讀者從來沒有在圖書館借閱書籍。\n有些書籍可能從來沒有被借出，有些書籍有多於一本。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。\n\n[圖片描述] 展示了 CIR, BKCOPY, READER, BOOK 四個實體方框，需要完成它們之間的關係圖。",
+      "number": "2(c)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "diagram_completion",
+      "has_image": true,
+      "image_description": "展示了 CIR, BKCOPY, READER, BOOK 四個實體方框，需要完成它們之間的關係圖。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(c)",
+        "question_text": "此數據庫的要求如下所述：\n每位讀者最多可以借閱 3 本書，有些讀者從來沒有在圖書館借閱書籍。\n有些書籍可能從來沒有被借出，有些書籍有多於一本。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。",
+        "question_type": "diagram_completion",
+        "has_image": true,
+        "image_description": "展示了 CIR, BKCOPY, READER, BOOK 四個實體方框，需要完成它們之間的關係圖。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "每位讀者最多可以借閱 3 本書，有些讀者從來沒有在圖書館借閱書籍。",
+          "有些書籍可能從來沒有被借出，有些書籍有多於一本。",
+          "完成以下此數據庫的實體關係圖。圖內不用畫上屬性。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "此數據庫的要求如下所述：\n每位讀者最多可以借閱 3 本書，有些讀者從來沒有在圖書館借閱書籍。\n有些書籍可能從來沒有被借出，有些書籍有多於一本。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。"
+    },
+    {
+      "id": "2021-Paper2A_Database-2-d-i",
+      "section": "section_b",
+      "text": "在以下名情況下，解釋數據庫內的完整性問題。\n(i) 在 CIR 中 RID 被 NAME 取代。\n\n[圖片描述] 展示了 READER 和 CIR 數據庫的範例數據。",
+      "number": "2(d)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "image_description": "展示了 READER 和 CIR 數據庫的範例數據。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(d)(i)",
+        "question_text": "在以下名情況下，解釋數據庫內的完整性問題。\n(i) 在 CIR 中 RID 被 NAME 取代。",
+        "question_type": "free_response",
+        "has_image": false,
+        "image_description": "展示了 READER 和 CIR 數據庫的範例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(i) 在 CIR 中 RID 被 NAME 取代。"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "在以下名情況下，解釋數據庫內的完整性問題。\n(i) 在 CIR 中 RID 被 NAME 取代。"
+    },
+    {
+      "id": "2021-Paper2A_Database-2-d-ii",
+      "section": "section_b",
+      "text": "在 READER 中讀者「陳大文」的記錄被刪除。",
+      "number": "2(d)(ii)",
+      "concepts": [
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "2(d)(ii)",
+        "question_text": "在 READER 中讀者「陳大文」的記錄被刪除。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-3-a-i",
+      "section": "section_b",
+      "text": "完成以下 SQL 語句以防止在 SEQ 中輸入相的表演次序。\nCREATE TABLE TEAM (\nTID char(3) primary key,\nTNAME char(30),\nSEQ int,\nTMARK int NOT NULL,\n_____________\n)\n\n[圖片描述] 展示了 SONG 和 TEAM 兩個數據庫表的結構和範例數據。",
+      "number": "3(a)(i)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_completion",
+      "has_image": false,
+      "image_description": "展示了 SONG 和 TEAM 兩個數據庫表的結構和範例數據。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(a)(i)",
+        "question_text": "完成以下 SQL 語句以防止在 SEQ 中輸入相的表演次序。\nCREATE TABLE TEAM (\nTID char(3) primary key,\nTNAME char(30),\nSEQ int,\nTMARK int NOT NULL,\n_____________\n)",
+        "question_type": "sql_completion",
+        "has_image": false,
+        "image_description": "展示了 SONG 和 TEAM 兩個數據庫表的結構和範例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "CREATE TABLE TEAM (",
+          "TID char(3) primary key,",
+          "TNAME char(30),",
+          "SEQ int,",
+          "TMARK int NOT NULL,",
+          "_____________",
+          ")"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "完成以下 SQL 語句以防止在 SEQ 中輸入相的表演次序。\nCREATE TABLE TEAM (\nTID char(3) primary key,\nTNAME char(30),\nSEQ int,\nTMARK int NOT NULL,\n_____________\n)"
+    },
+    {
+      "id": "2021-Paper2A_Database-3-a-ii",
+      "section": "section_b",
+      "text": "在以上 SQL 語句內 TMARK 使用 NOT NULL 限制的優點和缺點是什麼？",
+      "number": "3(a)(ii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(a)(ii)",
+        "question_text": "在以上 SQL 語句內 TMARK 使用 NOT NULL 限制的優點和缺點是什麼？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-3-b-i",
+      "section": "section_b",
+      "text": "SONG 和 TEAM 已載有一組記錄，志偉有兩種方法，均利用 SID 把這兩個數據庫表連結起來。\n方法 1: 把 TEAM 刪除，然後再重新建立此數據庫表，並加入 SID。\n方法 2: 使用 SQL 語句來修改 TEAM 的結構。\n(i) 使用方法 1 的後果是什麼？",
+      "number": "3(b)(i)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(b)(i)",
+        "question_text": "SONG 和 TEAM 已載有一組記錄，志偉有兩種方法，均利用 SID 把這兩個數據庫表連結起來。\n方法 1: 把 TEAM 刪除，然後再重新建立此數據庫表，並加入 SID。\n方法 2: 使用 SQL 語句來修改 TEAM 的結構。\n(i) 使用方法 1 的後果是什麼？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "方法 1: 把 TEAM 刪除，然後再重新建立此數據庫表，並加入 SID。",
+          "方法 2: 使用 SQL 語句來修改 TEAM 的結構。",
+          "(i) 使用方法 1 的後果是什麼？"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "SONG 和 TEAM 已載有一組記錄，志偉有兩種方法，均利用 SID 把這兩個數據庫表連結起來。\n方法 1: 把 TEAM 刪除，然後再重新建立此數據庫表，並加入 SID。\n方法 2: 使用 SQL 語句來修改 TEAM 的結構。\n(i) 使用方法 1 的後果是什麼？"
+    },
+    {
+      "id": "2021-Paper2A_Database-3-b-ii",
+      "section": "section_b",
+      "text": "完成以下方法 2 的 SQL 語句。\nALTER TABLE TEAM\nADD column SID char(4)\nALTER TABLE TEAM\nADD _______________ key (SID) _______________\nALTER TABLE TEAM\nADD column SID char(4)\nADD _______________ key (SID) _______________",
+      "number": "3(b)(ii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "科技創新"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "sql_completion",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(b)(ii)",
+        "question_text": "完成以下方法 2 的 SQL 語句。\nALTER TABLE TEAM\nADD column SID char(4)\nALTER TABLE TEAM\nADD _______________ key (SID) _______________",
+        "question_type": "sql_completion",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "ALTER TABLE TEAM",
+          "ADD column SID char(4)",
+          "ADD _______________ key (SID) _______________"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "完成以下方法 2 的 SQL 語句。\nALTER TABLE TEAM\nADD column SID char(4)\nALTER TABLE TEAM\nADD _______________ key (SID) _______________"
+    },
+    {
+      "id": "2021-Paper2A_Database-3-c-i",
+      "section": "section_b",
+      "text": "學生以三至四人一隊參加歌唱比賽，每隊只有一位隊長。志偉和莉莉有兩種不同的方法去儲存隊長和隊員的資料。\n莉莉建議在 TEAM 增加欄位，如下所示：\n(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。\n[表格式意] 展示了 STUDENT 和 TEAM 數據庫表的結構和範例數據，以及一個空白表格用於志偉建議的新數據庫表設計 (包含 TID, 描述，和新的布爾類型欄)。\n莉莉建議在 TEAM 增加欄位，如下所示：\n(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。\n\n[圖片描述] 展示了 STUDENT 和 TEAM 數據庫表的結構和範例數據，以及一個空白表格用於志偉建議的新數據庫表設計 (包含 TID, 描述，和新的布爾類型欄)。",
+      "number": "3(c)(i)",
+      "concepts": [
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "table_design",
+      "has_image": true,
+      "image_description": "展示了 STUDENT 和 TEAM 數據庫表的結構和範例數據，以及一個空白表格用於志偉建議的新數據庫表設計 (包含 TID, 描述，和新的布爾類型欄)。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(c)(i)",
+        "question_text": "學生以三至四人一隊參加歌唱比賽，每隊只有一位隊長。志偉和莉莉有兩種不同的方法去儲存隊長和隊員的資料。\n莉莉建議在 TEAM 增加欄位，如下所示：\n(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。",
+        "question_type": "table_design",
+        "has_image": true,
+        "image_description": "展示了 STUDENT 和 TEAM 數據庫表的結構和範例數據，以及一個空白表格用於志偉建議的新數據庫表設計 (包含 TID, 描述，和新的布爾類型欄)。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 展示了 STUDENT 和 TEAM 數據庫表的結構和範例數據，以及一個空白表格用於志偉建議的新數據庫表設計 (包含 TID, 描述，和新的布爾類型欄)。",
+          "莉莉建議在 TEAM 增加欄位，如下所示：",
+          "(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "學生以三至四人一隊參加歌唱比賽，每隊只有一位隊長。志偉和莉莉有兩種不同的方法去儲存隊長和隊員的資料。\n莉莉建議在 TEAM 增加欄位，如下所示：\n(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。"
+    },
+    {
+      "id": "2021-Paper2A_Database-3-c-ii",
+      "section": "section_b",
+      "text": "舉出志偉的建議勝於莉莉的建議的一個優點。",
+      "number": "3(c)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(c)(ii)",
+        "question_text": "舉出志偉的建議勝於莉莉的建議的一個優點。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-3-c-iii",
+      "section": "section_b",
+      "text": "舉出莉莉的建議勝於志偉的建議的一個優點。",
+      "number": "3(c)(iii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(c)(iii)",
+        "question_text": "舉出莉莉的建議勝於志偉的建議的一個優點。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-3-d",
+      "section": "section_b",
+      "text": "志偉打算在網上發布關於比賽結果的報告給公眾人士瀏覽，如下所示：\n莉莉改進這份報告，以符合以下要求：\n- 隱藏敏感私隱\n- 只顯示次序、社、學號\n- 設計今含有資料\n- 使讀者更容易讀\n(d) 重新設計這份報告，並在你的設計上加上適當的註解。\n[表格式意] 一個表格展示了比賽結果，包含表演次序、社、歌曲編碼、曲目、學生編號、學生姓名、電話、分數。問題要求重新設計此報告。\n莉莉改進這份報告，以符合以下要求：\n- 隱藏敏感私隱\n- 只顯示次序、社、學號\n- 設計今含有資料\n- 使讀者更容易讀\n(d) 重新設計這份報告，並在你的設計上加上適當的註解。\n\n[圖片描述] 一個表格展示了比賽結果，包含表演次序、社、歌曲編碼、曲目、學生編號、學生姓名、電話、分數。問題要求重新設計此報告。",
+      "number": "3(d)",
+      "concepts": [
+        "網絡保安",
+        "資訊保安"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "report_design",
+      "has_image": true,
+      "image_description": "一個表格展示了比賽結果，包含表演次序、社、歌曲編碼、曲目、學生編號、學生姓名、電話、分數。問題要求重新設計此報告。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "3(d)",
+        "question_text": "志偉打算在網上發布關於比賽結果的報告給公眾人士瀏覽，如下所示：\n莉莉改進這份報告，以符合以下要求：\n- 隱藏敏感私隱\n- 只顯示次序、社、學號\n- 設計今含有資料\n- 使讀者更容易讀\n(d) 重新設計這份報告，並在你的設計上加上適當的註解。",
+        "question_type": "report_design",
+        "has_image": true,
+        "image_description": "一個表格展示了比賽結果，包含表演次序、社、歌曲編碼、曲目、學生編號、學生姓名、電話、分數。問題要求重新設計此報告。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個表格展示了比賽結果，包含表演次序、社、歌曲編碼、曲目、學生編號、學生姓名、電話、分數。問題要求重新設計此報告。",
+          "莉莉改進這份報告，以符合以下要求：",
+          "- 隱藏敏感私隱",
+          "- 只顯示次序、社、學號",
+          "- 設計今含有資料",
+          "- 使讀者更容易讀",
+          "(d) 重新設計這份報告，並在你的設計上加上適當的註解。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "志偉打算在網上發布關於比賽結果的報告給公眾人士瀏覽，如下所示：\n莉莉改進這份報告，以符合以下要求：\n- 隱藏敏感私隱\n- 只顯示次序、社、學號\n- 設計今含有資料\n- 使讀者更容易讀\n(d) 重新設計這份報告，並在你的設計上加上適當的註解。"
+    },
+    {
+      "id": "2021-Paper2A_Database-4-a-i",
+      "section": "section_b",
+      "text": "P 和 Q 是兩間大型連鎖店，最近 P 收購了 Q。它們的會員數據庫將於數據庫應用系統開發週期的其中一個階段內合併。\n(a) 子派負責大部分要求收集及分析階段的工作。\n(i) 子派應該是什麼數據庫的工作人員？",
+      "number": "4(a)(i)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "short_answer",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(a)(i)",
+        "question_text": "P 和 Q 是兩間大型連鎖店，最近 P 收購了 Q。它們的會員數據庫將於數據庫應用系統開發週期的其中一個階段內合併。\n(a) 子派負責大部分要求收集及分析階段的工作。\n(i) 子派應該是什麼數據庫的工作人員？",
+        "question_type": "short_answer",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(a) 子派負責大部分要求收集及分析階段的工作。",
+          "(i) 子派應該是什麼數據庫的工作人員？"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "P 和 Q 是兩間大型連鎖店，最近 P 收購了 Q。它們的會員數據庫將於數據庫應用系統開發週期的其中一個階段內合併。\n(a) 子派負責大部分要求收集及分析階段的工作。\n(i) 子派應該是什麼數據庫的工作人員？"
+    },
+    {
+      "id": "2021-Paper2A_Database-4-a-ii",
+      "section": "section_b",
+      "text": "描述這階段的兩個交付成果。",
+      "number": "4(a)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(a)(ii)",
+        "question_text": "描述這階段的兩個交付成果。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-4-b",
+      "section": "section_b",
+      "text": "MEMP 和 MEMQ 擁有相同關的數據庫表，它們分別儲存 P 和 Q 的會員資料。\n舉出三例子以解釋為何會員編號需要獨特後。\n\n[圖片描述] 展示了 MEMP 和 MEMQ 兩個數據庫表的結構和範例數據，包含 MID, NAME, GENDER, TEL。",
+      "number": "4(b)",
+      "concepts": [
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": true,
+      "image_description": "展示了 MEMP 和 MEMQ 兩個數據庫表的結構和範例數據，包含 MID, NAME, GENDER, TEL。",
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(b)",
+        "question_text": "MEMP 和 MEMQ 擁有相同關的數據庫表，它們分別儲存 P 和 Q 的會員資料。\n舉出三例子以解釋為何會員編號需要獨特後。",
+        "question_type": "free_response",
+        "has_image": true,
+        "image_description": "展示了 MEMP 和 MEMQ 兩個數據庫表的結構和範例數據，包含 MID, NAME, GENDER, TEL。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "舉出三例子以解釋為何會員編號需要獨特後。"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "MEMP 和 MEMQ 擁有相同關的數據庫表，它們分別儲存 P 和 Q 的會員資料。\n舉出三例子以解釋為何會員編號需要獨特後。"
+    },
+    {
+      "id": "2021-Paper2A_Database-4-c-i",
+      "section": "section_b",
+      "text": "子派考慮運用以下兩個方法，將兩個數據庫表合併。\n方法 1: 利用 SQL 語句來合併。\n方法 2: 以一般程式語言編寫一個程式，來進行合併。\n(i) 舉出方法 1 勝於方法 2 的一個優點。",
+      "number": "4(c)(i)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(c)(i)",
+        "question_text": "子派考慮運用以下兩個方法，將兩個數據庫表合併。\n方法 1: 利用 SQL 語句來合併。\n方法 2: 以一般程式語言編寫一個程式，來進行合併。\n(i) 舉出方法 1 勝於方法 2 的一個優點。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "方法 1: 利用 SQL 語句來合併。",
+          "方法 2: 以一般程式語言編寫一個程式，來進行合併。",
+          "(i) 舉出方法 1 勝於方法 2 的一個優點。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "子派考慮運用以下兩個方法，將兩個數據庫表合併。\n方法 1: 利用 SQL 語句來合併。\n方法 2: 以一般程式語言編寫一個程式，來進行合併。\n(i) 舉出方法 1 勝於方法 2 的一個優點。"
+    },
+    {
+      "id": "2021-Paper2A_Database-4-c-ii",
+      "section": "section_b",
+      "text": "舉出方法 2 勝於方法 1 的一個優點。",
+      "number": "4(c)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(c)(ii)",
+        "question_text": "舉出方法 2 勝於方法 1 的一個優點。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-4-d",
+      "section": "section_b",
+      "text": "描述如何使用數據庫間來制定行銷策略。",
+      "number": "4(d)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(d)",
+        "question_text": "描述如何使用數據庫間來制定行銷策略。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2021-Paper2A_Database-4-e-i",
+      "section": "section_b",
+      "text": "會員的電話號碼已在合併的數據庫中儲存。\n(i) 數據庫內的電話號碼是一個候選鍵而非主關鍵詞。為什麼？",
+      "number": "4(e)(i)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化"
+      ],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(e)(i)",
+        "question_text": "會員的電話號碼已在合併的數據庫中儲存。\n(i) 數據庫內的電話號碼是一個候選鍵而非主關鍵詞。為什麼？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(i) 數據庫內的電話號碼是一個候選鍵而非主關鍵詞。為什麼？"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "會員的電話號碼已在合併的數據庫中儲存。\n(i) 數據庫內的電話號碼是一個候選鍵而非主關鍵詞。為什麼？"
+    },
+    {
+      "id": "2021-Paper2A_Database-4-e-ii",
+      "section": "section_b",
+      "text": "舉出在數據庫中，擁有多個電話號碼的兩個潛在好處。",
+      "number": "4(e)(ii)",
+      "concepts": [],
+      "curriculum_part": "elective",
+      "curriculum_unit": "選修A-數據庫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2021-p2a.json",
+      "gemini_raw": {
+        "question_number": "4(e)(ii)",
+        "question_text": "舉出在數據庫中，擁有多個電話號碼的兩個潛在好處。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    }
+  ],
+  "paper": {
+    "id": "2021-Paper2A_Database",
+    "questions": [
+      {
+        "id": "2021-Paper2A_Database-1-a-i",
+        "type": "short_answer",
+        "number": "1(a)(i)",
+        "section": "section_b",
+        "text": "列出來自學校編碼為「S0013」的學生姓名。\n\n[圖片描述] 展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-1-b",
+        "type": "section_b",
+        "number": "1(b)",
+        "section": "section_b",
+        "text": "找出來自學校名稱包含「宜立」的學生總人數。\n\n[圖片描述] 展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-1-b",
+        "type": "short_answer",
+        "number": "1(b)",
+        "section": "section_b",
+        "text": "找出來自學校名稱包含「宜立」的學生總人數。\n\n[圖片描述] 展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-1-c",
+        "type": "short_answer",
+        "number": "1(c)",
+        "section": "section_b",
+        "text": "列出初級組得分 60 分或以上的學生姓名。\n\n[圖片描述] 展示了 SCHOOL, PSTUD, MARK 三個數據庫表的結構及範例數據。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-1-d",
+        "type": "free_response",
+        "number": "1(d)",
+        "section": "section_b",
+        "text": "以下 SQL 語句的目的是什麼？\nSELECT PID, SNAME FROM PSTUD\nWHERE GP = 'S' AND FIRST = TRUE\nAND PID NOT IN (SELECT PID FROM MARK)",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "硬件",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "以下 SQL 語句的目的是什麼？\nSELECT PID, SNAME FROM PSTUD\nWHERE GP = 'S' AND FIRST = TRUE\nAND PID NOT IN (SELECT PID FROM MARK)",
+        "support_content": {
+          "lines": [
+            "SELECT PID, SNAME FROM PSTUD",
+            "WHERE GP = 'S' AND FIRST = TRUE",
+            "AND PID NOT IN (SELECT PID FROM MARK)"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-1-e",
+        "type": "sql_completion",
+        "number": "1(e)",
+        "section": "section_b",
+        "text": "完成以下 SQL 語句，以列出每個學校的學生分數總和。\nSELECT S.SID, _______ AS TOTAL\nFROM SCHOOL S, PSTUD P, MARK M\nWHERE _______\nGROUP BY _______",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "硬件",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "完成以下 SQL 語句，以列出每個學校的學生分數總和。\nSELECT S.SID, _______ AS TOTAL\nFROM SCHOOL S, PSTUD P, MARK M\nWHERE _______\nGROUP BY _______",
+        "support_content": {
+          "lines": [
+            "SELECT S.SID, _______ AS TOTAL",
+            "FROM SCHOOL S, PSTUD P, MARK M",
+            "WHERE _______",
+            "GROUP BY _______"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-1-f",
+        "type": "sql_query_creation",
+        "number": "1(f)",
+        "section": "section_b",
+        "text": "若學校的學生分數總和為所有學校中最高者，將會獲得證書一張。寫出包含 TM 的 SQL 語句以找出獲得證書的學校名稱。\n[表格式意] 一個名為 TM 的表格，包含 SID (字符) 和 TOTAL (參數)。\n\n[圖片描述] 一個名為 TM 的表格，包含 SID (字符) 和 TOTAL (參數)。",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫"
+        ],
+        "syllabus_status": "current",
+        "stem": "若學校的學生分數總和為所有學校中最高者，將會獲得證書一張。寫出包含 TM 的 SQL 語句以找出獲得證書的學校名稱。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個名為 TM 的表格，包含 SID (字符) 和 TOTAL (參數)。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-2-a",
+        "type": "short_answer",
+        "number": "2(a)",
+        "section": "section_b",
+        "text": "舉出 CIR 的兩個候選鍵。\n(1)\n(2)\n\n[圖片描述] 展示了 READER, BOOK, CIR, BKCOPY 四個數據庫表的結構和範例數據。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-2-b-i",
+        "type": "free_response",
+        "number": "2(b)(i)",
+        "section": "section_b",
+        "text": "一個逾期位可被視為衍生性？簡略說明。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-2-b-ii",
+        "type": "free_response",
+        "number": "2(b)(ii)",
+        "section": "section_b",
+        "text": "舉出一個支持在數據庫內設有衍生性的理由。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-2-c",
+        "type": "diagram_completion",
+        "number": "2(c)",
+        "section": "section_b",
+        "text": "此數據庫的要求如下所述：\n每位讀者最多可以借閱 3 本書，有些讀者從來沒有在圖書館借閱書籍。\n有些書籍可能從來沒有被借出，有些書籍有多於一本。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。\n\n[圖片描述] 展示了 CIR, BKCOPY, READER, BOOK 四個實體方框，需要完成它們之間的關係圖。",
+        "marks": null,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化"
+        ],
+        "syllabus_status": "current",
+        "stem": "此數據庫的要求如下所述：\n每位讀者最多可以借閱 3 本書，有些讀者從來沒有在圖書館借閱書籍。\n有些書籍可能從來沒有被借出，有些書籍有多於一本。\n完成以下此數據庫的實體關係圖。圖內不用畫上屬性。",
+        "support_content": {
+          "lines": [
+            "每位讀者最多可以借閱 3 本書，有些讀者從來沒有在圖書館借閱書籍。",
+            "有些書籍可能從來沒有被借出，有些書籍有多於一本。",
+            "完成以下此數據庫的實體關係圖。圖內不用畫上屬性。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-2-d-i",
+        "type": "free_response",
+        "number": "2(d)(i)",
+        "section": "section_b",
+        "text": "在以下名情況下，解釋數據庫內的完整性問題。\n(i) 在 CIR 中 RID 被 NAME 取代。\n\n[圖片描述] 展示了 READER 和 CIR 數據庫的範例數據。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current",
+        "stem": "在以下名情況下，解釋數據庫內的完整性問題。\n(i) 在 CIR 中 RID 被 NAME 取代。",
+        "support_content": {
+          "lines": [
+            "(i) 在 CIR 中 RID 被 NAME 取代。"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-2-d-ii",
+        "type": "free_response",
+        "number": "2(d)(ii)",
+        "section": "section_b",
+        "text": "在 READER 中讀者「陳大文」的記錄被刪除。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-3-a-i",
+        "type": "sql_completion",
+        "number": "3(a)(i)",
+        "section": "section_b",
+        "text": "完成以下 SQL 語句以防止在 SEQ 中輸入相的表演次序。\nCREATE TABLE TEAM (\nTID char(3) primary key,\nTNAME char(30),\nSEQ int,\nTMARK int NOT NULL,\n_____________\n)\n\n[圖片描述] 展示了 SONG 和 TEAM 兩個數據庫表的結構和範例數據。",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "完成以下 SQL 語句以防止在 SEQ 中輸入相的表演次序。\nCREATE TABLE TEAM (\nTID char(3) primary key,\nTNAME char(30),\nSEQ int,\nTMARK int NOT NULL,\n_____________\n)",
+        "support_content": {
+          "lines": [
+            "CREATE TABLE TEAM (",
+            "TID char(3) primary key,",
+            "TNAME char(30),",
+            "SEQ int,",
+            "TMARK int NOT NULL,",
+            "_____________",
+            ")"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-3-a-ii",
+        "type": "free_response",
+        "number": "3(a)(ii)",
+        "section": "section_b",
+        "text": "在以上 SQL 語句內 TMARK 使用 NOT NULL 限制的優點和缺點是什麼？",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "科技創新"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-3-b-i",
+        "type": "free_response",
+        "number": "3(b)(i)",
+        "section": "section_b",
+        "text": "SONG 和 TEAM 已載有一組記錄，志偉有兩種方法，均利用 SID 把這兩個數據庫表連結起來。\n方法 1: 把 TEAM 刪除，然後再重新建立此數據庫表，並加入 SID。\n方法 2: 使用 SQL 語句來修改 TEAM 的結構。\n(i) 使用方法 1 的後果是什麼？",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "SONG 和 TEAM 已載有一組記錄，志偉有兩種方法，均利用 SID 把這兩個數據庫表連結起來。\n方法 1: 把 TEAM 刪除，然後再重新建立此數據庫表，並加入 SID。\n方法 2: 使用 SQL 語句來修改 TEAM 的結構。\n(i) 使用方法 1 的後果是什麼？",
+        "support_content": {
+          "lines": [
+            "方法 1: 把 TEAM 刪除，然後再重新建立此數據庫表，並加入 SID。",
+            "方法 2: 使用 SQL 語句來修改 TEAM 的結構。",
+            "(i) 使用方法 1 的後果是什麼？"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-3-b-ii",
+        "type": "sql_completion",
+        "number": "3(b)(ii)",
+        "section": "section_b",
+        "text": "完成以下方法 2 的 SQL 語句。\nALTER TABLE TEAM\nADD column SID char(4)\nALTER TABLE TEAM\nADD _______________ key (SID) _______________\nALTER TABLE TEAM\nADD column SID char(4)\nADD _______________ key (SID) _______________",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "完成以下方法 2 的 SQL 語句。\nALTER TABLE TEAM\nADD column SID char(4)\nALTER TABLE TEAM\nADD _______________ key (SID) _______________",
+        "support_content": {
+          "lines": [
+            "ALTER TABLE TEAM",
+            "ADD column SID char(4)",
+            "ADD _______________ key (SID) _______________"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-3-c-i",
+        "type": "table_design",
+        "number": "3(c)(i)",
+        "section": "section_b",
+        "text": "學生以三至四人一隊參加歌唱比賽，每隊只有一位隊長。志偉和莉莉有兩種不同的方法去儲存隊長和隊員的資料。\n莉莉建議在 TEAM 增加欄位，如下所示：\n(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。\n[表格式意] 展示了 STUDENT 和 TEAM 數據庫表的結構和範例數據，以及一個空白表格用於志偉建議的新數據庫表設計 (包含 TID, 描述，和新的布爾類型欄)。\n莉莉建議在 TEAM 增加欄位，如下所示：\n(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。\n\n[圖片描述] 展示了 STUDENT 和 TEAM 數據庫表的結構和範例數據，以及一個空白表格用於志偉建議的新數據庫表設計 (包含 TID, 描述，和新的布爾類型欄)。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "學生以三至四人一隊參加歌唱比賽，每隊只有一位隊長。志偉和莉莉有兩種不同的方法去儲存隊長和隊員的資料。\n莉莉建議在 TEAM 增加欄位，如下所示：\n(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 展示了 STUDENT 和 TEAM 數據庫表的結構和範例數據，以及一個空白表格用於志偉建議的新數據庫表設計 (包含 TID, 描述，和新的布爾類型欄)。",
+            "莉莉建議在 TEAM 增加欄位，如下所示：",
+            "(i) 志偉建議以一個新數據庫表儲存隊員的資料。表內包含 TID、一個現存的欄和一個新的布爾類型欄。完成以下由志偉建議的數據庫表的設計。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-3-c-ii",
+        "type": "free_response",
+        "number": "3(c)(ii)",
+        "section": "section_b",
+        "text": "舉出志偉的建議勝於莉莉的建議的一個優點。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-3-c-iii",
+        "type": "free_response",
+        "number": "3(c)(iii)",
+        "section": "section_b",
+        "text": "舉出莉莉的建議勝於志偉的建議的一個優點。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-3-d",
+        "type": "report_design",
+        "number": "3(d)",
+        "section": "section_b",
+        "text": "志偉打算在網上發布關於比賽結果的報告給公眾人士瀏覽，如下所示：\n莉莉改進這份報告，以符合以下要求：\n- 隱藏敏感私隱\n- 只顯示次序、社、學號\n- 設計今含有資料\n- 使讀者更容易讀\n(d) 重新設計這份報告，並在你的設計上加上適當的註解。\n[表格式意] 一個表格展示了比賽結果，包含表演次序、社、歌曲編碼、曲目、學生編號、學生姓名、電話、分數。問題要求重新設計此報告。\n莉莉改進這份報告，以符合以下要求：\n- 隱藏敏感私隱\n- 只顯示次序、社、學號\n- 設計今含有資料\n- 使讀者更容易讀\n(d) 重新設計這份報告，並在你的設計上加上適當的註解。\n\n[圖片描述] 一個表格展示了比賽結果，包含表演次序、社、歌曲編碼、曲目、學生編號、學生姓名、電話、分數。問題要求重新設計此報告。",
+        "marks": null,
+        "concepts": [
+          "網絡保安",
+          "資訊保安"
+        ],
+        "syllabus_status": "current",
+        "stem": "志偉打算在網上發布關於比賽結果的報告給公眾人士瀏覽，如下所示：\n莉莉改進這份報告，以符合以下要求：\n- 隱藏敏感私隱\n- 只顯示次序、社、學號\n- 設計今含有資料\n- 使讀者更容易讀\n(d) 重新設計這份報告，並在你的設計上加上適當的註解。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個表格展示了比賽結果，包含表演次序、社、歌曲編碼、曲目、學生編號、學生姓名、電話、分數。問題要求重新設計此報告。",
+            "莉莉改進這份報告，以符合以下要求：",
+            "- 隱藏敏感私隱",
+            "- 只顯示次序、社、學號",
+            "- 設計今含有資料",
+            "- 使讀者更容易讀",
+            "(d) 重新設計這份報告，並在你的設計上加上適當的註解。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-4-a-i",
+        "type": "short_answer",
+        "number": "4(a)(i)",
+        "section": "section_b",
+        "text": "P 和 Q 是兩間大型連鎖店，最近 P 收購了 Q。它們的會員數據庫將於數據庫應用系統開發週期的其中一個階段內合併。\n(a) 子派負責大部分要求收集及分析階段的工作。\n(i) 子派應該是什麼數據庫的工作人員？",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current",
+        "stem": "P 和 Q 是兩間大型連鎖店，最近 P 收購了 Q。它們的會員數據庫將於數據庫應用系統開發週期的其中一個階段內合併。\n(a) 子派負責大部分要求收集及分析階段的工作。\n(i) 子派應該是什麼數據庫的工作人員？",
+        "support_content": {
+          "lines": [
+            "(a) 子派負責大部分要求收集及分析階段的工作。",
+            "(i) 子派應該是什麼數據庫的工作人員？"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-4-a-ii",
+        "type": "free_response",
+        "number": "4(a)(ii)",
+        "section": "section_b",
+        "text": "描述這階段的兩個交付成果。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-4-b",
+        "type": "free_response",
+        "number": "4(b)",
+        "section": "section_b",
+        "text": "MEMP 和 MEMQ 擁有相同關的數據庫表，它們分別儲存 P 和 Q 的會員資料。\n舉出三例子以解釋為何會員編號需要獨特後。\n\n[圖片描述] 展示了 MEMP 和 MEMQ 兩個數據庫表的結構和範例數據，包含 MID, NAME, GENDER, TEL。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "MEMP 和 MEMQ 擁有相同關的數據庫表，它們分別儲存 P 和 Q 的會員資料。\n舉出三例子以解釋為何會員編號需要獨特後。",
+        "support_content": {
+          "lines": [
+            "舉出三例子以解釋為何會員編號需要獨特後。"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-4-c-i",
+        "type": "free_response",
+        "number": "4(c)(i)",
+        "section": "section_b",
+        "text": "子派考慮運用以下兩個方法，將兩個數據庫表合併。\n方法 1: 利用 SQL 語句來合併。\n方法 2: 以一般程式語言編寫一個程式，來進行合併。\n(i) 舉出方法 1 勝於方法 2 的一個優點。",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "子派考慮運用以下兩個方法，將兩個數據庫表合併。\n方法 1: 利用 SQL 語句來合併。\n方法 2: 以一般程式語言編寫一個程式，來進行合併。\n(i) 舉出方法 1 勝於方法 2 的一個優點。",
+        "support_content": {
+          "lines": [
+            "方法 1: 利用 SQL 語句來合併。",
+            "方法 2: 以一般程式語言編寫一個程式，來進行合併。",
+            "(i) 舉出方法 1 勝於方法 2 的一個優點。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-4-c-ii",
+        "type": "free_response",
+        "number": "4(c)(ii)",
+        "section": "section_b",
+        "text": "舉出方法 2 勝於方法 1 的一個優點。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-4-d",
+        "type": "free_response",
+        "number": "4(d)",
+        "section": "section_b",
+        "text": "描述如何使用數據庫間來制定行銷策略。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2021-Paper2A_Database-4-e-i",
+        "type": "free_response",
+        "number": "4(e)(i)",
+        "section": "section_b",
+        "text": "會員的電話號碼已在合併的數據庫中儲存。\n(i) 數據庫內的電話號碼是一個候選鍵而非主關鍵詞。為什麼？",
+        "marks": null,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化"
+        ],
+        "syllabus_status": "current",
+        "stem": "會員的電話號碼已在合併的數據庫中儲存。\n(i) 數據庫內的電話號碼是一個候選鍵而非主關鍵詞。為什麼？",
+        "support_content": {
+          "lines": [
+            "(i) 數據庫內的電話號碼是一個候選鍵而非主關鍵詞。為什麼？"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.258381+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2021-Paper2A_Database-4-e-ii",
+        "type": "free_response",
+        "number": "4(e)(ii)",
+        "section": "section_b",
+        "text": "舉出在數據庫中，擁有多個電話號碼的兩個潛在好處。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      }
+    ]
+  }
+}

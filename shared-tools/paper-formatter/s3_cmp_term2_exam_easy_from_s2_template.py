@@ -432,6 +432,7 @@ def generate(template: Path, output: Path, meta: Meta) -> tuple[str, list[str], 
         spec_path,
         mcq_key=mcq_key,
         matching_answers=matching_keys,
+        tf_lines=tf_lines,
         tf_answers=tf_key,
         fill_answers=fill_answers,
         fill_word_banks=[bank_a, bank_b],
@@ -445,6 +446,7 @@ def _save_spec_and_apply_footer(
     *,
     mcq_key: str,
     matching_answers: list[str],
+    tf_lines: list[str],
     tf_answers: str,
     fill_answers: list[list[str]],
     fill_word_banks: list[list[str]],
@@ -459,6 +461,7 @@ def _save_spec_and_apply_footer(
     spec = build_s3_cmp_term2_exam_spec(
         mcq_answers=mcq_key,
         matching_answers=matching_answers,
+        tf_lines=tf_lines,
         tf_answers=tf_answers,
         fill_answers=fill_answers,
         fill_word_banks=fill_word_banks,
@@ -470,15 +473,16 @@ def _save_spec_and_apply_footer(
 
 
 def _run_quality_check(docx_path: Path, spec_path: Path) -> int:
+    import os
+    import subprocess
     import sys
 
     root = Path(__file__).resolve().parents[1]
-    for pkg in ("question-quality-check", "paper-quality-check"):
-        sys.path.insert(0, str(root / pkg))
-    from check_docx import main as question_docx_main
-    from check_paper import format_paper_report_text, report_exit_code, run_paper_check
-
-    argv = [
+    env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
+    py = sys.executable
+    q_cmd = [
+        py,
+        str(root / "question-quality-check" / "check_docx.py"),
         "--candidate",
         str(docx_path.resolve()),
         "--candidate-spec",
@@ -488,11 +492,18 @@ def _run_quality_check(docx_path: Path, spec_path: Path) -> int:
         "--years",
         "3",
     ]
-    code = int(question_docx_main(argv))
-    p_report = run_paper_check(docx_path, candidate_spec_path=spec_path)
-    print("\n=== Paper quality (footer + cover) ===")
-    print(format_paper_report_text(p_report))
-    return max(code, report_exit_code(p_report))
+    q = subprocess.run(q_cmd, cwd=str(root), env=env)
+    p_cmd = [
+        py,
+        str(root / "paper-quality-check" / "check_docx.py"),
+        "--candidate",
+        str(docx_path.resolve()),
+        "--candidate-spec",
+        str(spec_path.resolve()),
+        "--skip-written",
+    ]
+    p = subprocess.run(p_cmd, cwd=str(root), env=env)
+    return max(q.returncode, p.returncode)
 
 
 def main() -> int:
@@ -519,6 +530,11 @@ def main() -> int:
             print("Quality checks reported issues (see above).", file=sys.stderr)
             return code
         print("Quality checks: all passed.")
+    gen_dir = ns.output.parent.parent / "_generation"
+    gen_dir.mkdir(parents=True, exist_ok=True)
+    gen_spec = gen_dir / spec_path.name
+    gen_spec.write_text(spec_path.read_text(encoding="utf-8"), encoding="utf-8")
+    print(f"Copied spec: {gen_spec}")
     return 0
 
 

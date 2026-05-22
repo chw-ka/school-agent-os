@@ -104,21 +104,105 @@ def _mcq_items(mcq_answers: str) -> list[dict]:
     return items
 
 
-def _section_items() -> list[dict]:
-    return [
+def _concepts_for_tf(stmt: str) -> list[str]:
+    if "Vibe Coding" in stmt:
+        return ["Vibe Coding"]
+    if "pip" in stmt:
+        return ["套件與pip"]
+    if "password.json" in stmt:
+        return ["Cloud API"]
+    return ["語音程式"]
+
+
+def _concepts_for_fill(answer: str) -> list[str]:
+    if answer == "password.json":
+        return ["Cloud API"]
+    if answer in {"gTTS", "playsound", "SpeechRecognition", "yue"}:
+        return ["語音程式"]
+    if answer == "opencv-python":
+        return ["OpenCV", "套件與pip"]
+    if answer in {"xml", "cvtColor"}:
+        return ["OpenCV"]
+    if answer == "quiz_data.json":
+        return ["程式結構"]
+    if answer == "高級程式員":
+        return ["Vibe Coding"]
+    return ["OpenCV"]
+
+
+def _section_items(
+    *,
+    tf_lines: list[str],
+    tf_answers: str,
+    fill_answers: list[list[str]],
+) -> list[dict]:
+    fmt_dir = Path(__file__).resolve().parent
+    if str(fmt_dir) not in sys.path:
+        sys.path.insert(0, str(fmt_dir))
+    from tf_fill_layout import FILL_BLOCK_A, FILL_BLOCK_B
+
+    if len(tf_lines) != len(tf_answers):
+        raise RuntimeError("T/F statement count must match answer key length")
+
+    fill_a_by_answer = {a: q for q, a in FILL_BLOCK_A}
+    fill_b_by_answer = {a: q for q, a in FILL_BLOCK_B}
+    fill_a = [fill_a_by_answer[w] for w in fill_answers[0] if w in fill_a_by_answer]
+    fill_b = [fill_b_by_answer[w] for w in fill_answers[1] if w in fill_b_by_answer]
+
+    items: list[dict] = [
         make_item("b-match-lib", "section_b", "乙部：函數庫配對", marks=5, concepts=["語音程式"]),
         make_item("b-match-step", "section_b", "乙部：步驟配對", marks=5, concepts=["物件追蹤"]),
-        make_item("c-tf", "section_c", "丙部：是非題", marks=5, concepts=["Vibe Coding", "語音程式"]),
-        make_item("d-fill-a", "section_d", "丁部：填充（語音）", marks=5, concepts=["語音程式", "Cloud API"]),
-        make_item("d-fill-b", "section_d", "丁部：填充（OpenCV）", marks=5, concepts=["OpenCV"]),
-        make_item("e-sa", "section_e", "戊部：Vibe Coding 迭代", marks=5, concepts=["Vibe Coding"]),
     ]
+    for i, stmt in enumerate(tf_lines, start=1):
+        items.append(
+            make_item(
+                f"c-tf-{i:02d}",
+                "section_c",
+                stmt,
+                marks=1,
+                concepts=_concepts_for_tf(stmt),
+                answer=tf_answers[i - 1],
+            )
+        )
+    for i, (prompt, ans) in enumerate(zip(fill_a, fill_answers[0], strict=True), start=1):
+        items.append(
+            make_item(
+                f"d-fill-a-{i:02d}",
+                "section_d",
+                prompt,
+                marks=1,
+                concepts=_concepts_for_fill(ans),
+                answer=ans,
+            )
+        )
+    for i, (prompt, ans) in enumerate(zip(fill_b, fill_answers[1], strict=True), start=1):
+        items.append(
+            make_item(
+                f"d-fill-b-{i:02d}",
+                "section_d",
+                prompt,
+                marks=1,
+                concepts=_concepts_for_fill(ans),
+                answer=ans,
+            )
+        )
+    items.append(
+        make_item(
+            "e-sa-01",
+            "section_e",
+            "根據筆記，Vibe Coding 為什麼需要「迭代（Iteration）」？請舉一個例子說明。",
+            marks=5,
+            concepts=["Vibe Coding"],
+        )
+    )
+    return items
 
 
 def build_s3_cmp_term2_exam_spec(
     *,
     mcq_answers: str,
     matching_answers: list[str],
+    tf_lines: list[str],
     tf_answers: str,
     fill_answers: list[list[str]],
     fill_word_banks: list[list[str]],
@@ -143,5 +227,6 @@ def build_s3_cmp_term2_exam_spec(
             },
             "concept_targets": CONCEPT_TARGETS,
         },
-        _mcq_items(mcq_answers) + _section_items(),
+        _mcq_items(mcq_answers)
+        + _section_items(tf_lines=tf_lines, tf_answers=tf_answers, fill_answers=fill_answers),
     )

@@ -1,0 +1,156 @@
+{
+  "seed": 252602,
+  "count": 30,
+  "items": [
+    {
+      "provenance": "2024-Paper1_MultipleChoice-1",
+      "correct_index": 1,
+      "preview": "8 位元二進制補碼的範圍是什麼？"
+    },
+    {
+      "provenance": "2022-Paper1_MultipleChoice-AQ5",
+      "correct_index": 3,
+      "preview": "需要多少位元才態表示一個 8x8 的黑白像素圖像？"
+    },
+    {
+      "provenance": "2023-Paper1_MultipleChoice-AQ11",
+      "correct_index": 1,
+      "preview": "為什麼字元在電腦內需要以一些例如 ASCII 的字符集來表示？\n標準化數據的表示\n加強數據加密\n電腦內的數據是以二進制數字來儲存的"
+    },
+    {
+      "provenance": "2024-Paper1_MultipleChoice-21",
+      "correct_index": 1,
+      "preview": "以下哪些是操作系統的功能？\n(1) 與其他裝置互動和便利輸入/輸出的操作\n(2) 播放視像檔案\n(3) 便利電腦連接網絡"
+    },
+    {
+      "provenance": "2023-Paper1_MultipleChoice-AQ10",
+      "correct_index": 0,
+      "preview": "在以下試算表的 B6 內，輸入了一條基於 B2:B4 來計算班費的公式。同學希望可以縮減學業預算來限制班費為 $1,000。\n當使用「目標搜尋」功能來作「假設」"
+    },
+    {
+      "provenance": "2024-Paper1_MultipleChoice-12",
+      "correct_index": 1,
+      "preview": "此試算表轉換成數據庫表。以下那些 SQL 語句產生相同的結果？\n(1) SELECT COUNT(*) FROM ABC WHERE Choice <> 'P'"
+    },
+    {
+      "provenance": "2021-Paper1_MultipleChoice-16",
+      "correct_index": 0,
+      "preview": "下列哪項可以是傳播文件和圖片的掃描器的規格？\n支援 802.11n\n支援彩色\n內置 2GB RAM"
+    },
+    {
+      "provenance": "2024-Paper1_MultipleChoice-16",
+      "correct_index": 0,
+      "preview": "小芬在桌上電腦進行文書處理時出現了電源故障。部分工作中的數據能夠復原，為什麼？\n(1) 這些工作中的數據儲存在硬碟內\n(2) 這些工作中的數據儲存在 RAM 內"
+    },
+    {
+      "provenance": "2021-Paper1_MultipleChoice-17-Page-4",
+      "correct_index": 0,
+      "preview": "下列哪項需要驅動程式？\n編輯文字處理文件\n連接一部打印機\n移除一個軟件包"
+    },
+    {
+      "provenance": "2021-Paper1_MultipleChoice-23",
+      "correct_index": 0,
+      "preview": "下列哪項不是多媒體檔案格式？"
+    },
+    {
+      "provenance": "2022-Paper1_MultipleChoice-AQ27",
+      "correct_index": 0,
+      "preview": "芝利利用電腦觀看串流視像，她應考慮下列哪個/些項目？\n網絡頻寬\n抗電腦病毒軟件\n硬碟容量"
+    },
+    {
+      "provenance": "2021-Paper1_MultipleChoice-6",
+      "correct_index": 0,
+      "preview": "子堯使用簡報軟件中的「目錄」功能，如下所示。需插入一個新簡報，_______。"
+    },
+    {
+      "provenance": "2022-Paper1_MultipleChoice-AQ1",
+      "correct_index": 0,
+      "preview": "電腦接收了三組數據序列如下，每組序列包含一個奇偶檢驗，發現其中兩組序列在傳送時損壞了。\n第一組：0101 0111\n第二組：1101 0101\n第三組：1110"
+    },
+    {
+      "provenance": "2023-Paper1_MultipleChoice-AQ7",
+      "correct_index": 1,
+      "preview": "某照片的 BMP 圖像的大小較其 JPG 圖像的更大，原因是_______。\nBMP 圖像是未經壓縮的\nBMP 表示點陣圖像\nBMP 圖像不能在瀏覽器上顯示"
+    },
+    {
+      "provenance": "2021-Paper1_MultipleChoice-21",
+      "correct_index": 0,
+      "preview": "在 CPU 內執行編碼語言指令「載入 1060」時，下列哪項部件會因此指令解碼？"
+    },
+    {
+      "provenance": "2024-Paper1_MultipleChoice-22",
+      "correct_index": 0,
+      "preview": "以下哪些會暫存數據或指令？\n(1) 累加器\n(2) 指令寄存器\n(3) 記憶體位址寄存器"
+    },
+    {
+      "provenance": "2021-Paper1_MultipleChoice-4",
+      "correct_index": 0,
+      "preview": "在數據庫軟件內詮釋數據庫表時，用戶通常應設定什麼？\n每個欄的數據類型\n每個欄的數據長口\n主關鍵字"
+    },
+    {
+      "provenance": "2023-Paper1_MultipleChoice-AQ34",
+      "correct_index": 1,
+      "preview": "為什麼要預備合適的測試數據？\n偵測算法中的錯誤\n測試是否能處理異常的輸入數據\n驗證特定輸入數據的預期結果"
+    },
+    {
+      "provenance": "2021-Paper1_MultipleChoice-34",
+      "correct_index": 0,
+      "preview": "下列算法的輸出是什麼？"
+    },
+    {
+      "provenance": "2022-Paper1_MultipleChoice-AQ10",
+      "correct_index": 3,
+      "preview": "在以下試算表的 B6 內，輸入了一條基於 B2:B4 來計算班費的公式。同學希望可以縮減學業預算來限制班費為 $1,000。\n當使用「目標搜尋」功能來作「假設」"
+    },
+    {
+      "provenance": "2023-Paper1_MultipleChoice-AQ5",
+      "correct_index": 0,
+      "preview": "需要多少位元才態表示一個 8x8 的黑白像素圖像？"
+    },
+    {
+      "provenance": "2022-Paper1_MultipleChoice-AQ21",
+      "correct_index": 3,
+      "preview": "在一般情況下，P、Q 和 R 會是什麼？"
+    },
+    {
+      "provenance": "2022-Paper1_MultipleChoice-AQ25",
+      "correct_index": 3,
+      "preview": "在電腦網絡上使用光纖，原因是_______。\n它同時支援有線和無線連接\n它的數據傳輸率很高\n它支援長距離的連接"
+    },
+    {
+      "provenance": "2023-Paper1_MultipleChoice-AQ20",
+      "correct_index": 2,
+      "preview": "有一百個 300GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 2TB 硬碟來儲存所有視像檔案呢？"
+    },
+    {
+      "provenance": "2022-Paper1_MultipleChoice-AQ2",
+      "correct_index": 3,
+      "preview": "某超級市場使用數據庫表 FRUIT 儲存水果名稱 FNAME 和相關的庫存量 QTY，下列哪項最能描述以下查詢的結果？\nSELECT FNAME\nFROM FR"
+    },
+    {
+      "provenance": "2022-Paper1_MultipleChoice-AQ19",
+      "correct_index": 2,
+      "preview": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。這是實時處理系統，原因是因為_______。"
+    },
+    {
+      "provenance": "2022-Paper1_MultipleChoice-AQ20",
+      "correct_index": 0,
+      "preview": "有一百個 300GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 2TB 硬碟來儲存所有視像檔案呢？"
+    },
+    {
+      "provenance": "2021-Paper1_MultipleChoice-19",
+      "correct_index": 0,
+      "preview": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項是最不重要的因素？"
+    },
+    {
+      "provenance": "2024-Paper1_MultipleChoice-14",
+      "correct_index": 0,
+      "preview": "以下哪項以二進制補碼表示的 8 位元數字的加法運算，會引致溢錯誤？"
+    },
+    {
+      "provenance": "2021-Paper1_MultipleChoice-24",
+      "correct_index": 0,
+      "preview": "某超級市場將會提供一個網上平台，讓顧客購買食物。當設計其用戶界面時，應考慮下列哪項？\n字型大小\n顏色\n語音"
+    }
+  ]
+}

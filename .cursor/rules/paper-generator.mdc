@@ -1,0 +1,65 @@
+---
+description: School exam paper generation — mandatory quality-check and MCQ concept ordering
+globs: shared-tools/paper-generator/**,Subjects/**/past-papers/**/_generation/**
+alwaysApply: false
+---
+
+# Paper generator rules
+
+## Mandatory quality-check
+
+Every exam **generate** (spec + DOCX) **must** run the full check pipeline before treating output as final:
+
+1. `question-quality-check` — duplicates (template + past 3 years **PDF/DOCX** + **intra-exam** MCQ), concepts, MCQ key, format
+2. `paper-quality-check` — footer, cover, 乙／丙 structure
+
+**Do not** use `--skip-check` when generating deliverable exam papers unless the user explicitly asks for a draft-only run.
+
+Default command (F5 ICT example):
+
+```bash
+python shared-tools/paper-generator/f5_ict_blueprint_db_web.py
+```
+
+Inspect `*_generation/*.spec.duplicates.json` when check exit code ≠ 0.
+
+## MCQ concept ordering (Core A → B → D blocks)
+
+S5 ICT Term2 MCQ (30) must follow **blocked** compulsory cores (EDB C&A Guide topic order within each block):
+
+- Pattern: **Core A ×10 → Core B ×10 → Core D ×10**
+- Core A = 資訊處理（A-a 簡介 → A-b 數據組織/控制 → A-c 數據表示 → A-d 數據操縱）
+- Core B = 電腦系統基礎（B-a 硬件 → B-b 軟件/OS）
+- Core D = 計算思維（D-a 問題分析 → D-b 算法 → D-c 程式開發 → D-d 測試）
+- **EC elective** concepts（堆疊、佇列、鏈表…）= Module C — **not** 甲部 MCQ targets
+
+Implementation: `mcq_core_plan.py` + `Subjects/DSE-ICT/question-bank/curriculum_concepts.json`; picker in `f5_ict_from_dse.py`; validated in `question-quality-check/concept_check.py`.
+
+When changing slot concepts, keep **both** block order and template **span** constraints (combo `(1)(2)(3)` only in span ≥10 slots).
+
+## DSE bank pick rules (F5 ICT)
+
+- Year pool: **2021–2025** (ignore 2019–2020 unless user says otherwise)
+- Exclude Core C / Module B networking-heavy items
+- **Intra-exam dedup**: same stem / >72% similarity forbidden
+- Combo MCQ format: `\t\t(1)\t…`, `\t\t(2)\t…`, `\t\t(3)\t…` before options
+
+## Template tables (DOCX render)
+
+When writing into a **prior-year layout template**:
+
+1. **Clear** all non-cover tables (`clear_all_body_tables_before_write`)
+2. **Populate** only tables the current paper needs (`apply_f5_ict_table_content`) — uses template indices
+3. **Delete** unused template tables physically (`remove_unused_f5_ict_tables` / `F5_ICT_REQUIRED_TABLES`)
+
+Do not leave blank template tables from last year — remove them after populate (delete last so indices stay stable during apply).
+
+## Exam structure (F5 ICT Term 2)
+
+| Section | DSE equivalent | Format |
+|---------|----------------|--------|
+| 甲部 | Paper 1A | MCQ (Core A/B/D only) |
+| 乙部 | Paper 1B | Structured — no MCQ |
+| 丙部 | Paper 2 (Module A + C) | Structured — **no MCQ** |
+
+MCQ bank picker uses `Paper1_MultipleChoice` only — never Paper 2 elective JSON for MCQ slots.

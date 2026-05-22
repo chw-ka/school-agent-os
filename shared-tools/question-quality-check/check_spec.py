@@ -14,13 +14,22 @@ from answer_pattern_check import AllAnswerPatternsResult, check_all_answer_patte
 from concept_check import (
     ConceptCheckResult,
     check_concepts as run_concept_check,
+    check_mcq_core_sequence,
     compare_concept_distributions,
     format_concept_report,
 )
 from exam_spec import DuplicateEntry, DuplicateReport, load_spec, spec_items
 from format_check import FormatCheckResult, check_exam_format, check_spec_format, format_format_report
 from mcq_check import McqCheckResult, check_mcq, format_mcq_report
-from quality_lib import THRESH_DUPLICATE, discover_past_papers, infer_subject_subpath, text_similarity
+from quality_lib import (
+    THRESH_DUPLICATE,
+    THRESH_INTRA_CROSS,
+    _is_section_header,
+    compare_intra_exam,
+    discover_past_papers,
+    infer_subject_subpath,
+    text_similarity,
+)
 from spec_from_docx import docx_to_spec
 
 
@@ -43,6 +52,8 @@ class QuestionQualityReport:
         if self.concepts is None:
             return False
         if not self.concepts.ok:
+            return True
+        if not self.concepts.core_sequence_ok:
             return True
         return not self.concepts.distribution_ok
 
@@ -127,6 +138,69 @@ def compare_spec_to_spec(
         if key not in best or d.similarity > best[key].similarity:
             best[key] = d
     return sorted(best.values(), key=lambda x: (-x.similarity, x.candidate_id))
+
+
+def compare_intra_spec(
+    candidate: dict,
+    *,
+    threshold: float = THRESH_DUPLICATE,
+) -> list[DuplicateEntry]:
+    """Detect duplicate question pairs within the same exam spec (all sections)."""
+    cand_items = spec_items(candidate)
+    out: list[DuplicateEntry] = []
+    for i, a in enumerate(cand_items):
+        for b in cand_items[i + 1 :]:
+            if _is_section_header(a.text) or _is_section_header(b.text):
+                continue
+            if a.id.startswith("d-fill-") and b.id.startswith("d-fill-"):
+                continue
+            cross = a.section != b.section
+            thresh = THRESH_INTRA_CROSS if cross else threshold
+            sim = text_similarity(a.text, b.text)
+            if sim > thresh:
+                out.append(
+                    DuplicateEntry(
+                        candidate_id=a.id,
+                        reference="(within exam)",
+                        reference_id=b.id,
+                        similarity=sim,
+                        match_type="intra_spec" if not cross else "intra_cross_section",
+                        candidate_text=a.text[:200],
+                        reference_text=b.text[:200],
+                    )
+                )
+    return sorted(out, key=lambda x: (-x.similarity, x.candidate_id))
+
+
+def compare_intra_exam_docx(
+    docx_path: Path,
+    spec: Optional[dict] = None,
+) -> list[DuplicateEntry]:
+    """Intra-exam overlap / answer leaks from rendered DOCX (甲–戊)."""
+    mcq_answers: Optional[list[str]] = None
+    if spec is not None:
+        from mcq_check import mcq_answers_from_spec
+
+        entries, _ = mcq_answers_from_spec(spec)
+        if entries:
+            mcq_answers = [e.letter for e in entries]
+
+    out: list[DuplicateEntry] = []
+    for m in compare_intra_exam(docx_path, mcq_answers=mcq_answers):
+        if m.match_type == "error":
+            continue
+        out.append(
+            DuplicateEntry(
+                candidate_id=m.candidate_label,
+                reference="(within exam)",
+                reference_id=m.reference_label,
+                similarity=m.similarity,
+                match_type=m.match_type,
+                candidate_text=m.candidate_snippet[:200],
+                reference_text=m.reference_snippet[:200],
+            )
+        )
+    return out
 
 
 def run_spec_check(
@@ -229,6 +303,12 @@ def run_question_check(
         dup_report.duplicates.extend(
             compare_spec_to_spec(candidate, ref_spec, reference_path=label, threshold=threshold)
         )
+    dup_report.duplicates.extend(compare_intra_spec(candidate, threshold=threshold))
+    docx_path = candidate_docx_path
+    if docx_path is None and candidate_spec_path.with_suffix(".docx").exists():
+        docx_path = candidate_spec_path.with_suffix(".docx")
+    if docx_path is not None and docx_path.exists():
+        dup_report.duplicates.extend(compare_intra_exam_docx(docx_path, candidate))
     dup_report.duplicates.sort(key=lambda d: (-d.similarity, d.candidate_id))
 
     quality = QuestionQualityReport(
@@ -247,12 +327,14 @@ def run_question_check(
             )
         else:
             dist = compare_concept_distributions(candidate, None)
-            if dist.candidate.items_with_concepts > 0 or candidate.get("meta", {}).get("concept_targets"):
+            core_errors = check_mcq_core_sequence(candidate)
+            if dist.candidate.items_with_concepts > 0 or candidate.get("meta", {}).get("concept_targets") or core_errors:
                 quality.concepts = ConceptCheckResult(
                     candidate=str(candidate_spec_path),
                     reference="",
                     ok=True,
                     distribution=dist,
+                    core_sequence_errors=core_errors,
                 )
 
     if verify_mcq:
@@ -294,6 +376,8 @@ def format_spec_report_text(report: DuplicateReport) -> str:
         f"Candidate spec: {report.candidate}",
         f"References checked: {len(report.references_checked)}",
         f"Rule: similarity > {pct}% → duplicate (cross-id matching)",
+        f"Cross-section within exam: similarity > {int(THRESH_INTRA_CROSS * 100)}% also flagged",
+        f"Also checks rendered DOCX for 甲–戊 overlap and MCQ answer leaks",
         f"Duplicates: {len(report.duplicates)}",
         f"IDs to regenerate: {', '.join(report.regenerate_ids) or '(none)'}",
         "",

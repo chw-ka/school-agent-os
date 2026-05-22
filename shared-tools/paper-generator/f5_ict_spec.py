@@ -10,44 +10,8 @@ if str(_COMPARE) not in sys.path:
 
 from dse_ict_style import style_meta
 from exam_spec import build_spec, make_item
-
-# Correct option index (0=A … 3=D) per MCQ 1–30 — must match build_mcq_payload() order.
-F5_MCQ_CORRECT_INDEX: tuple[int, ...] = (
-    0, 0, 1, 1, 1, 2, 0, 1, 1, 0, 2, 0, 0, 1, 1, 2, 2, 0, 1, 1, 2, 3, 0, 1, 1, 0, 1, 3, 0, 2,
-)
-
-MCQ_CONCEPTS: tuple[list[str], ...] = (
-    ["進制", "十六進制"],
-    ["進制", "二進制補碼"],
-    ["字元編碼", "UTF-8"],
-    ["多媒體", "音訊檔案大小"],
-    ["試算表", "VLOOKUP"],
-    ["試算表", "COUNTIFS"],
-    ["硬件", "快取記憶體"],
-    ["硬件", "SSD"],
-    ["軟件", "實用程式"],
-    ["多媒體", "點陣圖"],
-    ["多媒體", "壓縮"],
-    ["數據組織", "欄位"],
-    ["數據控制", "有效性檢驗"],
-    ["資訊處理", "數據與資訊"],
-    ["硬件", "RAM"],
-    ["硬件", "輸入裝置"],
-    ["數據組織", "記錄"],
-    ["數據控制", "奇偶檢測"],
-    ["資訊處理", "批次處理"],
-    ["數據組織", "檔案存取"],
-    ["多媒體", "向量圖"],
-    ["軟件", "作業系統"],
-    ["資訊處理", "輸入處理輸出"],
-    ["多媒體", "影片檔案大小"],
-    ["數據組織", "檔案存取"],
-    ["軟件", "專用軟件"],
-    ["多媒體", "顏色深度"],
-    ["多媒體", "音訊"],
-    ["進制", "二進制"],
-    ["資訊處理", "資訊處理循環"],
-)
+from mcq_core_plan import MCQ_SLOT_CONCEPTS as MCQ_CONCEPTS
+from mcq_core_plan import MCQ_CORE_SEQUENCE, MCQ_SLOT_PLAN
 
 
 def _join_lines(lines: list[str]) -> str:
@@ -67,7 +31,7 @@ def _part_b_items(build_part_b) -> list[dict]:
             "section_b",
             slice_text(313, 322),
             marks=4,
-            title="試算表",
+            title="試算表（義賣）",
             concepts=["試算表", "IF", "COUNTIFS"],
         ),
         make_item(
@@ -83,15 +47,15 @@ def _part_b_items(build_part_b) -> list[dict]:
             "section_b",
             slice_text(336, 353),
             marks=4,
-            title="多媒體與檔案傳送",
-            concepts=["多媒體", "檔案大小", "網絡傳輸"],
+            title="多媒體檔案大小",
+            concepts=["多媒體", "點陣圖", "壓縮"],
         ),
         make_item(
             "b-04",
             "section_b",
             slice_text(354, 376),
             marks=4,
-            title="算法追蹤",
+            title="線性搜尋",
             concepts=["算法", "偽代碼", "陣列"],
         ),
         make_item(
@@ -99,7 +63,7 @@ def _part_b_items(build_part_b) -> list[dict]:
             "section_b",
             slice_text(377, 393),
             marks=4,
-            title="檔案存取",
+            title="索引檔存取",
             concepts=["檔案存取", "直接存取", "順序存取"],
         ),
         make_item(
@@ -107,7 +71,7 @@ def _part_b_items(build_part_b) -> list[dict]:
             "section_b",
             slice_text(394, 422),
             marks=9,
-            title="網上商店與 SQL",
+            title="網店訂單與 SQL",
             concepts=["數據庫", "SQL", "有效性檢驗", "資料類型"],
         ),
     ]
@@ -126,7 +90,7 @@ def _part_c_items(build_part_c) -> list[dict]:
             "section_c",
             slice_text(425, 439),
             marks=4,
-            title="ERD",
+            title="戲院預訂 ERD",
             concepts=["ERD", "數據庫"],
         ),
         make_item(
@@ -146,19 +110,11 @@ def _part_c_items(build_part_c) -> list[dict]:
             concepts=["數據庫", "SQL", "UNION"],
         ),
         make_item(
-            "c-04",
-            "section_c",
-            slice_text(482, 495),
-            marks=3,
-            title="第三範式",
-            concepts=["數據庫", "正規化", "3NF"],
-        ),
-        make_item(
             "c-05",
             "section_c",
             slice_text(496, 540),
             marks=11,
-            title="ROOM / BOOKING",
+            title="FACILITY / RESERVE",
             concepts=["數據庫", "SQL", "MINUS"],
         ),
         make_item(
@@ -174,7 +130,7 @@ def _part_c_items(build_part_c) -> list[dict]:
             "section_c",
             slice_text(566, 594),
             marks=9,
-            title="交易控制",
+            title="一卡通交易",
             concepts=["數據庫", "Transaction", "COMMIT", "ROLLBACK"],
         ),
         make_item(
@@ -182,8 +138,8 @@ def _part_c_items(build_part_c) -> list[dict]:
             "section_c",
             slice_text(595, 624),
             marks=6,
-            title="點名資料庫",
-            concepts=["數據庫", "SQL", "算法"],
+            title="堆疊操作",
+            concepts=["算法", "堆疊", "偽代碼"],
         ),
     ]
 
@@ -204,7 +160,8 @@ def build_f5_ict_exam_spec(
     items: list[dict] = []
     for i, row in enumerate(rows, start=1):
         answer = mcq_answers[i - 1] if mcq_answers and i <= len(mcq_answers) else None
-        concepts = list(MCQ_CONCEPTS[i - 1]) if i <= len(MCQ_CONCEPTS) else []
+        core, concepts = MCQ_SLOT_PLAN[i - 1] if i <= len(MCQ_SLOT_PLAN) else ("", [])
+        concepts = list(concepts)
         items.append(
             make_item(
                 f"mcq-{i:02d}",
@@ -212,6 +169,7 @@ def build_f5_ict_exam_spec(
                 _join_lines(row),
                 marks=1,
                 concepts=concepts,
+                core=core,
                 answer=answer,
             )
         )
@@ -230,12 +188,18 @@ def build_f5_ict_exam_spec(
             "subject": "資訊及通訊科技",
         },
         "curriculum_units": ["Core-A", "Core-B", "Core-D", "Module-A", "Module-C"],
+        "mcq_core_sequence": list(MCQ_CORE_SEQUENCE),
+        "exam_structure": {
+            "section_a": "MCQ — compulsory Core A/B/D only (DSE Paper 1A style)",
+            "section_b": "Structured — compulsory (DSE Paper 1B style)",
+            "section_c": "Structured — elective Module A + C (DSE Paper 2); no MCQ",
+        },
         **style_meta(),
         "concept_targets": {
             "數據庫": {"min": 3, "max": 12},
-            "算法": {"min": 1, "max": 10},
+            "算法": {"min": 8, "max": 14},
             "試算表": {"min": 2, "max": 6},
-            "數據控制": {"min": 2, "max": 6},
+            "數據控制": {"min": 1, "max": 6},
             "多媒體": {"min": 4, "max": 10},
         },
     }

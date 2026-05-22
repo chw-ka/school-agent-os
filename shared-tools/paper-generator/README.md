@@ -14,12 +14,19 @@ recipe  →  *.spec.json  →  question-quality-check  →  修 spec
 
 `post_check.py` 會依序執行 **question-quality-check** 與 **paper-quality-check**。
 
+寫入 DOCX 時：**清空**非封面 table → **填入**所需 table → **刪除** template 剩餘 table（`F5_ICT_REQUIRED_TABLES`）。
+
+**試卷結構：** 甲部 MCQ（Core A/B/D）；乙、丙部只出結構題／問答。**丙部（Paper 2 / Module）不設 MC 題。**
+
 ## F5 ICT 範例
 
 ```bash
-.venv/bin/python shared-tools/paper-generator/f5_ict_blueprint_db_web.py
-.venv/bin/python shared-tools/paper-generator/f5_ict_blueprint_db_web.py --render-anyway
+python shared-tools/paper-generator/f5_ict_blueprint_db_web.py
 ```
+
+每次 generate **必須**跑完整 quality-check（duplicates、concepts、MCQ core A→B→D 順序、answer key、format）。不可略過檢查。
+
+MCQ core 規劃：`shared-tools/paper-generator/mcq_core_plan.py`（A ×10 → B ×10 → D ×10；細分 concept 順序見 `curriculum_concepts.json`）。
 
 **規劃中（DSE 題庫藍本出卷）：** 見 [`F5_ICT_DSE_BLUEPRINT_FLOW.md`](F5_ICT_DSE_BLUEPRINT_FLOW.md) — 先補齊 `Subjects/DSE-ICT/question-bank/` 2019–2025。
 

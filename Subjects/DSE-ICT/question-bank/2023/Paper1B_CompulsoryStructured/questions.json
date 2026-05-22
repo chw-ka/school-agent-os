@@ -1,0 +1,1968 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "dse-ict-question-bank",
+    "import_source": "gemini-output",
+    "imported_at": "2026-05-22T00:23:37.872317+00:00",
+    "year_label": "2023",
+    "paper_slug": "Paper1B_CompulsoryStructured",
+    "paper_label": "Paper 1B — Compulsory Part structured (必修部分 乙丙部)",
+    "source_pdf": "Subjects/DSE-ICT/past-papers/2023/DSE_ICT_2023_Paper1B_CompulsoryStructured.pdf",
+    "question_count": 36,
+    "gemini_source_files": [
+      "2023-p1.json"
+    ],
+    "curriculum_guide": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+    "syllabus_retagged_at": "2026-05-22T03:38:00.035198+00:00",
+    "syllabus_revision": "2021",
+    "support_enriched_at": "2026-05-22T04:32:46.309940+00:00"
+  },
+  "items": [
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ1-a-i",
+      "section": "section_b",
+      "text": "志明決定選購一台四核心 CPU 而不是雙核心 CPU 的電腦。\n(a) (i) 為何志明作出這個決定？",
+      "number": "SectionB_Q1(a)(i)",
+      "concepts": [
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q1(a)(i)",
+        "question_text": "志明決定選購一台四核心 CPU 而不是雙核心 CPU 的電腦。\n(a) (i) 為何志明作出這個決定？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(a) (i) 為何志明作出這個決定？"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "志明決定選購一台四核心 CPU 而不是雙核心 CPU 的電腦。\n(a) (i) 為何志明作出這個決定？"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ1-a-ii",
+      "section": "section_b",
+      "text": "建議他可考慮的另一個 CPU 技術規格。",
+      "number": "SectionB_Q1(a)(ii)",
+      "concepts": [
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q1(a)(ii)",
+        "question_text": "建議他可考慮的另一個 CPU 技術規格。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ1-b",
+      "section": "section_b",
+      "text": "志明會使用該電腦來編輯和渲染視像。除了 CPU 外，舉出兩個他需要考慮的硬件部件，簡略說明。",
+      "number": "SectionB_Q1(b)",
+      "concepts": [
+        "多媒體",
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q1(b)",
+        "question_text": "志明會使用該電腦來編輯和渲染視像。除了 CPU 外，舉出兩個他需要考慮的硬件部件，簡略說明。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ1-c-i",
+      "section": "section_b",
+      "text": "志明購買的新電腦已預先安裝了操作系統。\n(i) 除了檔案管理外，列出操作系統常見的兩個功能。",
+      "number": "SectionB_Q1(c)(i)",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "軟件",
+        "作業系統"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q1(c)(i)",
+        "question_text": "志明購買的新電腦已預先安裝了操作系統。\n(i) 除了檔案管理外，列出操作系統常見的兩個功能。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(i) 除了檔案管理外，列出操作系統常見的兩個功能。"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "志明購買的新電腦已預先安裝了操作系統。\n(i) 除了檔案管理外，列出操作系統常見的兩個功能。"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ1-c-ii",
+      "section": "section_b",
+      "text": "(ii) 他使用免費雲端儲存來儲存視像檔案。相對於便攜式硬碟，舉出使用雲端儲存的一個優點和一個缺點。",
+      "number": "SectionB_Q1(c)(ii)",
+      "concepts": [
+        "多媒體",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q1(c)(ii)",
+        "question_text": "(ii) 他使用免費雲端儲存來儲存視像檔案。相對於便攜式硬碟，舉出使用雲端儲存的一個優點和一個缺點。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ1-d",
+      "section": "section_b",
+      "text": "志明考慮安裝開放源碼軟件和免費軟件。舉出它們之間的兩個分別。",
+      "number": "SectionB_Q1(d)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q1(d)",
+        "question_text": "志明考慮安裝開放源碼軟件和免費軟件。舉出它們之間的兩個分別。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ1-e",
+      "section": "section_b",
+      "text": "志明安裝應用軟件時，出現以下的對話框：\n服務條款\n安裝此應用軟件前，你必須閱讀及接受以下的服務條款：\n1. 本協議規範你使用這服務。\n2. ...\n...\n□ 本人同意以上服務條款。\n舉出一項關於私隱的服務條款。描述志明接受此項條款時可能遇到的一個潛在風險。\n\n[圖片描述] 一個對話框，顯示「服務條款」和一個「本人同意以上服務條款」的核取方塊。",
+      "number": "SectionB_Q1(e)",
+      "concepts": [
+        "網絡保安",
+        "資訊保安"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "question_type": "free_response_with_diagram",
+      "has_image": true,
+      "image_description": "一個對話框，顯示「服務條款」和一個「本人同意以上服務條款」的核取方塊。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q1(e)",
+        "question_text": "志明安裝應用軟件時，出現以下的對話框：\n服務條款\n安裝此應用軟件前，你必須閱讀及接受以下的服務條款：\n1. 本協議規範你使用這服務。\n2. ...\n...\n□ 本人同意以上服務條款。\n舉出一項關於私隱的服務條款。描述志明接受此項條款時可能遇到的一個潛在風險。",
+        "question_type": "free_response_with_diagram",
+        "has_image": true,
+        "image_description": "一個對話框，顯示「服務條款」和一個「本人同意以上服務條款」的核取方塊。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "服務條款",
+          "安裝此應用軟件前，你必須閱讀及接受以下的服務條款：",
+          "1. 本協議規範你使用這服務。",
+          "2. ...",
+          "...",
+          "□ 本人同意以上服務條款。",
+          "舉出一項關於私隱的服務條款。描述志明接受此項條款時可能遇到的一個潛在風險。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "志明安裝應用軟件時，出現以下的對話框：\n服務條款\n安裝此應用軟件前，你必須閱讀及接受以下的服務條款：\n1. 本協議規範你使用這服務。\n2. ...\n...\n□ 本人同意以上服務條款。\n舉出一項關於私隱的服務條款。描述志明接受此項條款時可能遇到的一個潛在風險。"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ2-a",
+      "section": "section_b",
+      "text": "一個試算表檔案包含工作紙 Sheet1 和 Sheet2，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 A 儲存了社編碼 (HCODE)，而欄 B 儲存了社名稱 (HOUSE)。部分數據顯示如下：\n(a) 在 Sheet2 內，最後得分 FS 是在欄 D 至 F 三個評分中最高兩個評分的平均數。G2 的公式會被複製到 G3:G8。寫出 G2 的公式。\n[表格式意] 兩個試算表表格：「Sheet1」包含 HCODE 和 HOUSE，「Sheet2」包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。表格中包含範例數據。\n(a) 在 Sheet2 內，最後得分 FS 是在欄 D 至 F 三個評分中最高兩個評分的平均數。G2 的公式會被複製到 G3:G8。寫出 G2 的公式。\n\n[圖片描述] 兩個試算表表格：「Sheet1」包含 HCODE 和 HOUSE，「Sheet2」包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。表格中包含範例數據。",
+      "number": "SectionB_Q2(a)",
+      "concepts": [
+        "試算表",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "spreadsheet_formula",
+      "has_image": true,
+      "image_description": "兩個試算表表格：「Sheet1」包含 HCODE 和 HOUSE，「Sheet2」包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。表格中包含範例數據。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q2(a)",
+        "question_text": "一個試算表檔案包含工作紙 Sheet1 和 Sheet2，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 A 儲存了社編碼 (HCODE)，而欄 B 儲存了社名稱 (HOUSE)。部分數據顯示如下：\n(a) 在 Sheet2 內，最後得分 FS 是在欄 D 至 F 三個評分中最高兩個評分的平均數。G2 的公式會被複製到 G3:G8。寫出 G2 的公式。",
+        "question_type": "spreadsheet_formula",
+        "has_image": true,
+        "image_description": "兩個試算表表格：「Sheet1」包含 HCODE 和 HOUSE，「Sheet2」包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。表格中包含範例數據。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 兩個試算表表格：「Sheet1」包含 HCODE 和 HOUSE，「Sheet2」包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。表格中包含範例數據。",
+          "(a) 在 Sheet2 內，最後得分 FS 是在欄 D 至 F 三個評分中最高兩個評分的平均數。G2 的公式會被複製到 G3:G8。寫出 G2 的公式。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "一個試算表檔案包含工作紙 Sheet1 和 Sheet2，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 A 儲存了社編碼 (HCODE)，而欄 B 儲存了社名稱 (HOUSE)。部分數據顯示如下：\n(a) 在 Sheet2 內，最後得分 FS 是在欄 D 至 F 三個評分中最高兩個評分的平均數。G2 的公式會被複製到 G3:G8。寫出 G2 的公式。"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ2-b",
+      "section": "section_b",
+      "text": "(b) 在 Sheet2 內，在 B2 輸入公式 =VLOOKUP(A2, Sheet1!A2:B5, 2, false)，然後複製到 B3:B8。但發現並不是所有社名稱能正確顯示。寫出 B2 正確的公式。\n[表格式意] 一個試算表表格，顯示 Sheet1 和 Sheet2 的數據。Sheet1 包含 HCODE 和 HOUSE。Sheet2 包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。問題要求寫出 B2 的正確 VLOOK…\n\n[圖片描述] 一個試算表表格，顯示 Sheet1 和 Sheet2 的數據。Sheet1 包含 HCODE 和 HOUSE。Sheet2 包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。問題要求寫出 B2 的正確 VLOOKUP 公式。",
+      "number": "SectionB_Q2(b)",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "spreadsheet_formula",
+      "has_image": true,
+      "image_description": "一個試算表表格，顯示 Sheet1 和 Sheet2 的數據。Sheet1 包含 HCODE 和 HOUSE。Sheet2 包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。問題要求寫出 B2 的正確 VLOOKUP 公式。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q2(b)",
+        "question_text": "(b) 在 Sheet2 內，在 B2 輸入公式 =VLOOKUP(A2, Sheet1!A2:B5, 2, false)，然後複製到 B3:B8。但發現並不是所有社名稱能正確顯示。寫出 B2 正確的公式。",
+        "question_type": "spreadsheet_formula",
+        "has_image": true,
+        "image_description": "一個試算表表格，顯示 Sheet1 和 Sheet2 的數據。Sheet1 包含 HCODE 和 HOUSE。Sheet2 包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。問題要求寫出 B2 的正確 VLOOKUP 公式。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個試算表表格，顯示 Sheet1 和 Sheet2 的數據。Sheet1 包含 HCODE 和 HOUSE。Sheet2 包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。問題要求寫出 B2 的正確 VLOOK…"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(b) 在 Sheet2 內，在 B2 輸入公式 =VLOOKUP(A2, Sheet1!A2:B5, 2, false)，然後複製到 B3:B8。但發現並不是所有社名稱能正確顯示。寫出 B2 正確的公式。"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ2-c-i",
+      "section": "section_b",
+      "text": "(c) 在 Sheet2 內，為顯示每個社的參賽者人數，她建立了個樞紐分析圖。\n(i) 完成下列部分以建立此樞紐分析圖。\n[表格式意] 一個長條圖，顯示不同 HCODE (藍、黃、紅、綠) 的「參賽者人數」。下方有一個空白表格，包含「列」和「值」兩欄，待填寫。\n(i) 完成下列部分以建立此樞紐分析圖。\n\n[圖片描述] 一個長條圖，顯示不同 HCODE (藍、黃、紅、綠) 的「參賽者人數」。下方有一個空白表格，包含「列」和「值」兩欄，待填寫。",
+      "number": "SectionB_Q2(c)(i)",
+      "concepts": [
+        "試算表",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "fill_in_the_blank_table_with_diagram",
+      "has_image": true,
+      "image_description": "一個長條圖，顯示不同 HCODE (藍、黃、紅、綠) 的「參賽者人數」。下方有一個空白表格，包含「列」和「值」兩欄，待填寫。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q2(c)(i)",
+        "question_text": "(c) 在 Sheet2 內，為顯示每個社的參賽者人數，她建立了個樞紐分析圖。\n(i) 完成下列部分以建立此樞紐分析圖。",
+        "question_type": "fill_in_the_blank_table_with_diagram",
+        "has_image": true,
+        "image_description": "一個長條圖，顯示不同 HCODE (藍、黃、紅、綠) 的「參賽者人數」。下方有一個空白表格，包含「列」和「值」兩欄，待填寫。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個長條圖，顯示不同 HCODE (藍、黃、紅、綠) 的「參賽者人數」。下方有一個空白表格，包含「列」和「值」兩欄，待填寫。",
+          "(i) 完成下列部分以建立此樞紐分析圖。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(c) 在 Sheet2 內，為顯示每個社的參賽者人數，她建立了個樞紐分析圖。\n(i) 完成下列部分以建立此樞紐分析圖。"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ2-c-ii",
+      "section": "section_b",
+      "text": "(ii) 樞紐分析圖可由兩個方法插入文件內，分別為連結和嵌入。舉出每個方法的一個優點。",
+      "number": "SectionB_Q2(c)(ii)",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q2(c)(ii)",
+        "question_text": "(ii) 樞紐分析圖可由兩個方法插入文件內，分別為連結和嵌入。舉出每個方法的一個優點。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "out_of_syllabus",
+      "syllabus_revision": "2021",
+      "out_of_syllabus_reasons": [
+        "文書處理軟件功能（2021 修訂後 A-d 已刪減）"
+      ]
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ2-d-i",
+      "section": "section_b",
+      "text": "(d) Sheet2 轉換成數據庫表 TB2。\n(i) 建議 TB2 的主關鍵碼：",
+      "number": "SectionB_Q2(d)(i)",
+      "concepts": [
+        "ERD",
+        "數據庫",
+        "正規化",
+        "數據組織",
+        "檔案存取"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q2(d)(i)",
+        "question_text": "(d) Sheet2 轉換成數據庫表 TB2。\n(i) 建議 TB2 的主關鍵碼：",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(i) 建議 TB2 的主關鍵碼："
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(d) Sheet2 轉換成數據庫表 TB2。\n(i) 建議 TB2 的主關鍵碼："
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ2-d-ii",
+      "section": "section_b",
+      "text": "(ii) 根據 Sheet2 內的資料，執行以下 SQL 語句後的輸出是什麼？\nSELECT HCODE, MAX(FS)\nFROM TB2\nGROUP BY HCODE\n[表格式意] 一個空白表格，包含「HCODE」和「MAX(FS)」兩欄，用於顯示 SQL 查詢的輸出。\nSELECT HCODE, MAX(FS)\nFROM TB2\nGROUP BY HCODE\n\n[圖片描述] 一個空白表格，包含「HCODE」和「MAX(FS)」兩欄，用於顯示 SQL 查詢的輸出。",
+      "number": "SectionB_Q2(d)(ii)",
+      "concepts": [
+        "SQL",
+        "數據庫",
+        "數據組織",
+        "檔案存取",
+        "硬件"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；B-電腦系統基礎",
+      "question_type": "sql_output",
+      "has_image": true,
+      "image_description": "一個空白表格，包含「HCODE」和「MAX(FS)」兩欄，用於顯示 SQL 查詢的輸出。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q2(d)(ii)",
+        "question_text": "(ii) 根據 Sheet2 內的資料，執行以下 SQL 語句後的輸出是什麼？\nSELECT HCODE, MAX(FS)\nFROM TB2\nGROUP BY HCODE",
+        "question_type": "sql_output",
+        "has_image": true,
+        "image_description": "一個空白表格，包含「HCODE」和「MAX(FS)」兩欄，用於顯示 SQL 查詢的輸出。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個空白表格，包含「HCODE」和「MAX(FS)」兩欄，用於顯示 SQL 查詢的輸出。",
+          "SELECT HCODE, MAX(FS)",
+          "FROM TB2",
+          "GROUP BY HCODE"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(ii) 根據 Sheet2 內的資料，執行以下 SQL 語句後的輸出是什麼？\nSELECT HCODE, MAX(FS)\nFROM TB2\nGROUP BY HCODE"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ2-e",
+      "section": "section_b",
+      "text": "你會建議使用試算表數據庫去處理歌唱比賽的數據？簡略說明。",
+      "number": "SectionB_Q2(e)",
+      "concepts": [
+        "試算表"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q2(e)",
+        "question_text": "你會建議使用試算表數據庫去處理歌唱比賽的數據？簡略說明。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ3-Algorithm-Description",
+      "section": "section_b",
+      "text": "小芬編寫了程式，用以下偽代碼排列 A 排序。\nALG\n1 I ← 1\n2 j ← 2\n3 當 j <= 5 執行\n4   如果 A[j] < A[j-1] 則\n5     j ← j - 1\n6     j ← j + 1\n7 否則\n8   交換 A[j] 和 A[j-1] 的內容\n9   I ← I - 1\n10   如果 I = 0 則\n11     I ← 1",
+      "number": "SectionB_Q3_Algorithm_Description",
+      "concepts": [
+        "試算表",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；D-計算思維與程式編寫",
+      "question_type": "algorithm_code_only",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q3_Algorithm_Description",
+        "question_text": "小芬編寫了程式，用以下偽代碼排列 A 排序。\nALG\n1 I ← 1\n2 j ← 2\n3 當 j <= 5 執行\n4   如果 A[j] < A[j-1] 則\n5     j ← j - 1\n6     j ← j + 1\n7 否則\n8   交換 A[j] 和 A[j-1] 的內容\n9   I ← I - 1\n10   如果 I = 0 則\n11     I ← 1",
+        "question_type": "algorithm_code_only",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "ALG",
+          "1 I ← 1",
+          "2 j ← 2",
+          "3 當 j <= 5 執行",
+          "4   如果 A[j] < A[j-1] 則",
+          "5     j ← j - 1",
+          "6     j ← j + 1",
+          "7 否則",
+          "8   交換 A[j] 和 A[j-1] 的內容",
+          "9   I ← I - 1",
+          "10   如果 I = 0 則",
+          "11     I ← 1"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "小芬編寫了程式，用以下偽代碼排列 A 排序。\nALG\n1 I ← 1\n2 j ← 2\n3 當 j <= 5 執行\n4   如果 A[j] < A[j-1] 則\n5     j ← j - 1\n6     j ← j + 1\n7 否則\n8   交換 A[j] 和 A[j-1] 的內容\n9   I ← I - 1\n10   如果 I = 0 則\n11     I ← 1"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ3-a-i",
+      "section": "section_b",
+      "text": "(a) 假設 A 的初始內容是：\nTEMP 是一個變量。完成以下偽代碼表示第 8 行。\n[表格式意] 一個表格顯示陣列 A (A-A) 的初始值 (4, 3, 1, 8, 6)。提供了空白處用於完成偽代碼表示第 8 行的交換內容。\nTEMP 是一個變量。完成以下偽代碼表示第 8 行。\n\n[圖片描述] 一個表格顯示陣列 A (A-A) 的初始值 (4, 3, 1, 8, 6)。提供了空白處用於完成偽代碼表示第 8 行的交換內容。",
+      "number": "SectionB_Q3(a)(i)",
+      "concepts": [
+        "試算表",
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理；D-計算思維與程式編寫",
+      "question_type": "algorithm_completion_with_diagram",
+      "has_image": true,
+      "image_description": "一個表格顯示陣列 A (A-A) 的初始值 (4, 3, 1, 8, 6)。提供了空白處用於完成偽代碼表示第 8 行的交換內容。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q3(a)(i)",
+        "question_text": "(a) 假設 A 的初始內容是：\nTEMP 是一個變量。完成以下偽代碼表示第 8 行。",
+        "question_type": "algorithm_completion_with_diagram",
+        "has_image": true,
+        "image_description": "一個表格顯示陣列 A (A-A) 的初始值 (4, 3, 1, 8, 6)。提供了空白處用於完成偽代碼表示第 8 行的交換內容。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個表格顯示陣列 A (A-A) 的初始值 (4, 3, 1, 8, 6)。提供了空白處用於完成偽代碼表示第 8 行的交換內容。",
+          "TEMP 是一個變量。完成以下偽代碼表示第 8 行。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(a) 假設 A 的初始內容是：\nTEMP 是一個變量。完成以下偽代碼表示第 8 行。"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ3-a-ii",
+      "section": "section_b",
+      "text": "完成循環 (第 3 至 11 行) 的第一、第二和第三次迭代後，A，i 和 j 的內容是什麼？\n[表格式意] 三個空白表格，分別用於填寫第一、第二和第三次迭代後陣列 A (A-A)、i 和 j 的內容。\n\n[圖片描述] 三個空白表格，分別用於填寫第一、第二和第三次迭代後陣列 A (A-A)、i 和 j 的內容。",
+      "number": "SectionB_Q3(a)(ii)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "question_type": "algorithm_tracing_with_diagram",
+      "has_image": true,
+      "image_description": "三個空白表格，分別用於填寫第一、第二和第三次迭代後陣列 A (A-A)、i 和 j 的內容。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q3(a)(ii)",
+        "question_text": "完成循環 (第 3 至 11 行) 的第一、第二和第三次迭代後，A，i 和 j 的內容是什麼？",
+        "question_type": "algorithm_tracing_with_diagram",
+        "has_image": true,
+        "image_description": "三個空白表格，分別用於填寫第一、第二和第三次迭代後陣列 A (A-A)、i 和 j 的內容。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 三個空白表格，分別用於填寫第一、第二和第三次迭代後陣列 A (A-A)、i 和 j 的內容。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "完成循環 (第 3 至 11 行) 的第一、第二和第三次迭代後，A，i 和 j 的內容是什麼？"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ3-b",
+      "section": "section_b",
+      "text": "以下組合 1 和組合 2 是兩組數值，作為 A 的初始內容。第 8 行於兩個組合分別啟動約少次？\n[表格式意] 兩個表格，顯示組合 1 (A-A = 2, 3, 5, 7, 9) 和組合 2 (A-A = 9, 7, 5, 3, 2) 的初始陣列 A 內容。需要填寫第 8 行被啟動的次數。\n\n[圖片描述] 兩個表格，顯示組合 1 (A-A = 2, 3, 5, 7, 9) 和組合 2 (A-A = 9, 7, 5, 3, 2) 的初始陣列 A 內容。需要填寫第 8 行被啟動的次數。",
+      "number": "SectionB_Q3(b)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "question_type": "algorithm_tracing_with_diagram",
+      "has_image": true,
+      "image_description": "兩個表格，顯示組合 1 (A-A = 2, 3, 5, 7, 9) 和組合 2 (A-A = 9, 7, 5, 3, 2) 的初始陣列 A 內容。需要填寫第 8 行被啟動的次數。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q3(b)",
+        "question_text": "以下組合 1 和組合 2 是兩組數值，作為 A 的初始內容。第 8 行於兩個組合分別啟動約少次？",
+        "question_type": "algorithm_tracing_with_diagram",
+        "has_image": true,
+        "image_description": "兩個表格，顯示組合 1 (A-A = 2, 3, 5, 7, 9) 和組合 2 (A-A = 9, 7, 5, 3, 2) 的初始陣列 A 內容。需要填寫第 8 行被啟動的次數。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 兩個表格，顯示組合 1 (A-A = 2, 3, 5, 7, 9) 和組合 2 (A-A = 9, 7, 5, 3, 2) 的初始陣列 A 內容。需要填寫第 8 行被啟動的次數。"
+        ],
+        "sources": [
+          "image_description.table_hint"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "以下組合 1 和組合 2 是兩組數值，作為 A 的初始內容。第 8 行於兩個組合分別啟動約少次？"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ3-c",
+      "section": "section_b",
+      "text": "在第 10 行，若「I ← 0」改為「i <= 0」，子程式的結果會不會改變。為什麼？",
+      "number": "SectionB_Q3(c)",
+      "concepts": [
+        "算法",
+        "偽代碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q3(c)",
+        "question_text": "在第 10 行，若「I ← 0」改為「i <= 0」，子程式的結果會不會改變。為什麼？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ3-d",
+      "section": "section_b",
+      "text": "以下三組測試數據，作為 A 的初始內容。選擇兩項去測試子程式，並簡略說明。",
+      "number": "SectionB_Q3(d)",
+      "concepts": [
+        "算法",
+        "偽代碼",
+        "程式測試"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "D-計算思維與程式編寫",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q3(d)",
+        "question_text": "以下三組測試數據，作為 A 的初始內容。選擇兩項去測試子程式，並簡略說明。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ4-a-i",
+      "section": "section_b",
+      "text": "國華在購物中心經營一間玩具店。\n(a) (i) 國華在玩具店建立一個電腦網絡。\n寫出兩個有線網絡的傳輸媒介。",
+      "number": "SectionB_Q4(a)(i)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q4(a)(i)",
+        "question_text": "國華在購物中心經營一間玩具店。\n(a) (i) 國華在玩具店建立一個電腦網絡。\n寫出兩個有線網絡的傳輸媒介。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(a) (i) 國華在玩具店建立一個電腦網絡。",
+          "寫出兩個有線網絡的傳輸媒介。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "國華在購物中心經營一間玩具店。\n(a) (i) 國華在玩具店建立一個電腦網絡。\n寫出兩個有線網絡的傳輸媒介。"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ4-a-ii",
+      "section": "section_b",
+      "text": "(ii) 國華在網絡中使用交換器而非路由器，舉出一個原因。",
+      "number": "SectionB_Q4(a)(ii)",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q4(a)(ii)",
+        "question_text": "(ii) 國華在網絡中使用交換器而非路由器，舉出一個原因。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ4-b",
+      "section": "section_b",
+      "text": "(b) 國華考慮將玩具店從實體店轉為網店。舉出這個改變的一個好處和一個壞處，並簡略說明。",
+      "number": "SectionB_Q4(b)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q4(b)",
+        "question_text": "(b) 國華考慮將玩具店從實體店轉為網店。舉出這個改變的一個好處和一個壞處，並簡略說明。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ4-c-i",
+      "section": "section_b",
+      "text": "(c) 國華建立了 mytoyshop.com 讓顧客訂購玩具。他考慮提供 HTTPS 連接，URL 為 https://mytoyshop.com。\n(i) 在國華能夠實施 HTTPS 連接前，他需要申請和取得什麼？",
+      "number": "SectionB_Q4(c)(i)",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q4(c)(i)",
+        "question_text": "(c) 國華建立了 mytoyshop.com 讓顧客訂購玩具。他考慮提供 HTTPS 連接，URL 為 https://mytoyshop.com。\n(i) 在國華能夠實施 HTTPS 連接前，他需要申請和取得什麼？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(i) 在國華能夠實施 HTTPS 連接前，他需要申請和取得什麼？"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(c) 國華建立了 mytoyshop.com 讓顧客訂購玩具。他考慮提供 HTTPS 連接，URL 為 https://mytoyshop.com。\n(i) 在國華能夠實施 HTTPS 連接前，他需要申請和取得什麼？"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ4-c-ii",
+      "section": "section_b",
+      "text": "(ii) 網站內使用了公開及私人密碼匙加密系統。公匙和私匙應分別能使用？\n公匙：\n私匙：",
+      "number": "SectionB_Q4(c)(ii)",
+      "concepts": [
+        "網絡保安",
+        "資訊保安",
+        "網頁創作"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q4(c)(ii)",
+        "question_text": "(ii) 網站內使用了公開及私人密碼匙加密系統。公匙和私匙應分別能使用？\n公匙：\n私匙：",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "公匙：",
+          "私匙："
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(ii) 網站內使用了公開及私人密碼匙加密系統。公匙和私匙應分別能使用？\n公匙：\n私匙："
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ4-d-i",
+      "section": "section_b",
+      "text": "國華利用機械人處理貨板玩具。機械人以 5 位元指令控制，以下圖顯示部分指令：\n指令 延遲 00000\n停止 01111\n順時轉 90° 01001\n逆時轉 90° 10000\n向前行 10101\n向後行一步 10111\n(i) 數據傳輸時有機會出現一個錯誤的位元，簡略描述如何查找出此錯誤。\n[表格式意] 一個表格，顯示指令（延遲、停止、順時轉 90°、逆時轉 90°、向前行、向後行一步）及其對應的 5 位元二進制代碼。\n指令 延遲 00000\n停止 01111\n順時轉 90° 01001\n逆時轉 90° 10000\n向前行 10101\n向後行一步 10111\n(i) 數據傳輸時有機會出現一個錯誤的位元，簡略描述如何查找出此錯誤。\n\n[圖片描述] 一個表格，顯示指令（延遲、停止、順時轉 90°、逆時轉 90°、向前行、向後行一步）及其對應的 5 位元二進制代碼。",
+      "number": "SectionB_Q4(d)(i)",
+      "concepts": [
+        "進制",
+        "二進制補碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "free_response_with_diagram",
+      "has_image": true,
+      "image_description": "一個表格，顯示指令（延遲、停止、順時轉 90°、逆時轉 90°、向前行、向後行一步）及其對應的 5 位元二進制代碼。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q4(d)(i)",
+        "question_text": "國華利用機械人處理貨板玩具。機械人以 5 位元指令控制，以下圖顯示部分指令：\n指令 延遲 00000\n停止 01111\n順時轉 90° 01001\n逆時轉 90° 10000\n向前行 10101\n向後行一步 10111\n(i) 數據傳輸時有機會出現一個錯誤的位元，簡略描述如何查找出此錯誤。",
+        "question_type": "free_response_with_diagram",
+        "has_image": true,
+        "image_description": "一個表格，顯示指令（延遲、停止、順時轉 90°、逆時轉 90°、向前行、向後行一步）及其對應的 5 位元二進制代碼。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個表格，顯示指令（延遲、停止、順時轉 90°、逆時轉 90°、向前行、向後行一步）及其對應的 5 位元二進制代碼。",
+          "指令 延遲 00000",
+          "停止 01111",
+          "順時轉 90° 01001",
+          "逆時轉 90° 10000",
+          "向前行 10101",
+          "向後行一步 10111",
+          "(i) 數據傳輸時有機會出現一個錯誤的位元，簡略描述如何查找出此錯誤。"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "國華利用機械人處理貨板玩具。機械人以 5 位元指令控制，以下圖顯示部分指令：\n指令 延遲 00000\n停止 01111\n順時轉 90° 01001\n逆時轉 90° 10000\n向前行 10101\n向後行一步 10111\n(i) 數據傳輸時有機會出現一個錯誤的位元，簡略描述如何查找出此錯誤。"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ4-d-ii",
+      "section": "section_b",
+      "text": "國華考慮使用 2 位元指令來控制機械人，如下所示：\n指令 延遲 00\n停止 01\n順時轉 90° 10\n向前行一步 11\n於下方寫出五個 2 位元指令，以執行「向後行一步」的行動。\n21 ____ ____ ____ ____ 00\n[表格式意] 一個表格，顯示指令（延遲、停止、順時轉 90°、向前行一步）及其對應的 2 位元二進制代碼。下方有空白處，需要填寫五個 2 位元指令來執行「向後行一步」。\n指令 延遲 00\n停止 01\n順時轉 90° 10\n向前行一步 11\n於下方寫出五個 2 位元指令，以執行「向後行一步」的行動。\n21 ____ ____ ____ ____ 00\n\n[圖片描述] 一個表格，顯示指令（延遲、停止、順時轉 90°、向前行一步）及其對應的 2 位元二進制代碼。下方有空白處，需要填寫五個 2 位元指令來執行「向後行一步」。",
+      "number": "SectionB_Q4(d)(ii)",
+      "concepts": [
+        "進制",
+        "二進制補碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "encoding_creation_with_diagram",
+      "has_image": true,
+      "image_description": "一個表格，顯示指令（延遲、停止、順時轉 90°、向前行一步）及其對應的 2 位元二進制代碼。下方有空白處，需要填寫五個 2 位元指令來執行「向後行一步」。",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q4(d)(ii)",
+        "question_text": "國華考慮使用 2 位元指令來控制機械人，如下所示：\n指令 延遲 00\n停止 01\n順時轉 90° 10\n向前行一步 11\n於下方寫出五個 2 位元指令，以執行「向後行一步」的行動。\n21 ____ ____ ____ ____ 00",
+        "question_type": "encoding_creation_with_diagram",
+        "has_image": true,
+        "image_description": "一個表格，顯示指令（延遲、停止、順時轉 90°、向前行一步）及其對應的 2 位元二進制代碼。下方有空白處，需要填寫五個 2 位元指令來執行「向後行一步」。"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "[表格式意] 一個表格，顯示指令（延遲、停止、順時轉 90°、向前行一步）及其對應的 2 位元二進制代碼。下方有空白處，需要填寫五個 2 位元指令來執行「向後行一步」。",
+          "指令 延遲 00",
+          "停止 01",
+          "順時轉 90° 10",
+          "向前行一步 11",
+          "於下方寫出五個 2 位元指令，以執行「向後行一步」的行動。",
+          "21 ____ ____ ____ ____ 00"
+        ],
+        "sources": [
+          "image_description.table_hint",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "needs_review",
+        "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "國華考慮使用 2 位元指令來控制機械人，如下所示：\n指令 延遲 00\n停止 01\n順時轉 90° 10\n向前行一步 11\n於下方寫出五個 2 位元指令，以執行「向後行一步」的行動。\n21 ____ ____ ____ ____ 00"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ4-d-iii",
+      "section": "section_b",
+      "text": "使用 2 位元指令而不是 5 位元指令來控制此機械人有什麼好處？",
+      "number": "SectionB_Q4(d)(iii)",
+      "concepts": [
+        "進制",
+        "二進制補碼"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "A-資訊處理",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q4(d)(iii)",
+        "question_text": "使用 2 位元指令而不是 5 位元指令來控制此機械人有什麼好處？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ5-a-i",
+      "section": "section_b",
+      "text": "志偉獨營一間健身中心，並考慮以下三個方法去識別會員：\n(1) 智能卡\n(2) 印有二維碼的牌卡\n(3) 安裝在會員手機內的流動應用程式\n(a) (i) 舉出 (1) 勝於 (2) 的一個優點。",
+      "number": "SectionB_Q5(a)(i)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q5(a)(i)",
+        "question_text": "志偉獨營一間健身中心，並考慮以下三個方法去識別會員：\n(1) 智能卡\n(2) 印有二維碼的牌卡\n(3) 安裝在會員手機內的流動應用程式\n(a) (i) 舉出 (1) 勝於 (2) 的一個優點。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ5-a-ii",
+      "section": "section_b",
+      "text": "(ii) 舉出 (2) 勝於 (1) 的一個優點。",
+      "number": "SectionB_Q5(a)(ii)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q5(a)(ii)",
+        "question_text": "(ii) 舉出 (2) 勝於 (1) 的一個優點。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ5-a-iii",
+      "section": "section_b",
+      "text": "(iii) 舉出 (3) 勝於 (1) 和 (2) 的一個優點。",
+      "number": "SectionB_Q5(a)(iii)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q5(a)(iii)",
+        "question_text": "(iii) 舉出 (3) 勝於 (1) 和 (2) 的一個優點。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ5-b-i",
+      "section": "section_b",
+      "text": "(b) 志偉打算為每位會員提供一個裝置，讓會員監測自己的心跳率。該裝置連接到伺服器，以集齊可追蹤會員的心跳率。每個裝置保持讀取和監控心跳率於一個數碼儀器內。志偉亦會建議機械性設計的裝置。\n(i) 這個安排是...離線處理系統，還是實時處理系統？簡略說明。",
+      "number": "SectionB_Q5(b)(i)",
+      "concepts": [
+        "軟件",
+        "作業系統",
+        "網絡應用",
+        "客戶機伺服器"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "B-電腦系統基礎",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q5(b)(i)",
+        "question_text": "(b) 志偉打算為每位會員提供一個裝置，讓會員監測自己的心跳率。該裝置連接到伺服器，以集齊可追蹤會員的心跳率。每個裝置保持讀取和監控心跳率於一個數碼儀器內。志偉亦會建議機械性設計的裝置。\n(i) 這個安排是...離線處理系統，還是實時處理系統？簡略說明。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(i) 這個安排是...離線處理系統，還是實時處理系統？簡略說明。"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.309940+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(b) 志偉打算為每位會員提供一個裝置，讓會員監測自己的心跳率。該裝置連接到伺服器，以集齊可追蹤會員的心跳率。每個裝置保持讀取和監控心跳率於一個數碼儀器內。志偉亦會建議機械性設計的裝置。\n(i) 這個安排是...離線處理系統，還是實時處理系統？簡略說明。"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ5-b-ii",
+      "section": "section_b",
+      "text": "(ii) 每個數據塊為 2 KB。健身中心網絡頻寬為 10 Mbps。當 200 名會員同時上載他們的數據燈時，共需時多久？顯示你的計算。",
+      "number": "SectionB_Q5(b)(ii)",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "question_type": "calculation",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q5(b)(ii)",
+        "question_text": "(ii) 每個數據塊為 2 KB。健身中心網絡頻寬為 10 Mbps。當 200 名會員同時上載他們的數據燈時，共需時多久？顯示你的計算。",
+        "question_type": "calculation",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ5-c-i",
+      "section": "section_b",
+      "text": "(c) 健身中心提供現場直播健身課堂讓會員在家中上課。\n(i) 一位會員投訴就算其寬頻連接有足夠頻寬作串流播放，串流質素亦總是不相稱。為什麼？",
+      "number": "SectionB_Q5(c)(i)",
+      "concepts": [
+        "網絡"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "C-互聯網及其應用",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q5(c)(i)",
+        "question_text": "(c) 健身中心提供現場直播健身課堂讓會員在家中上課。\n(i) 一位會員投訴就算其寬頻連接有足夠頻寬作串流播放，串流質素亦總是不相稱。為什麼？",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "(i) 一位會員投訴就算其寬頻連接有足夠頻寬作串流播放，串流質素亦總是不相稱。為什麼？"
+        ],
+        "sources": [
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.309940+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(c) 健身中心提供現場直播健身課堂讓會員在家中上課。\n(i) 一位會員投訴就算其寬頻連接有足夠頻寬作串流播放，串流質素亦總是不相稱。為什麼？"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ5-c-ii",
+      "section": "section_b",
+      "text": "(ii) 志偉決定錄影該課堂供會員下載。除解決 (c)(i) 的問題外，舉出他決定的另一個好處。",
+      "number": "SectionB_Q5(c)(ii)",
+      "concepts": [],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "必修部分-乙丙部",
+      "question_type": "free_response",
+      "has_image": false,
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q5(c)(ii)",
+        "question_text": "(ii) 志偉決定錄影該課堂供會員下載。除解決 (c)(i) 的問題外，舉出他決定的另一個好處。",
+        "question_type": "free_response",
+        "has_image": false
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021"
+    },
+    {
+      "id": "2023-Paper1B_CompulsoryStructured-BQ5-d",
+      "section": "section_b",
+      "text": "(d) 志偉收到一個電郵如下：\n致：gurus@HIKSAR.com.hk\n主題：來自香港特區政府\n閱讀完成以下內容：\n閱後連結\n簡略說明為什麼它很可能是一封釣魚電郵。描述志偉按下該連結後會帶來什麼損害。\n\n[圖片描述] 一個電郵內容的截圖，包含發送者、主題、正文（閱讀完成以下內容：閱後連結）",
+      "number": "SectionB_Q5(d)",
+      "concepts": [
+        "科技創新"
+      ],
+      "curriculum_part": "compulsory",
+      "curriculum_unit": "E-資訊及通訊科技對社會的影響",
+      "question_type": "free_response_with_diagram",
+      "has_image": true,
+      "image_description": "一個電郵內容的截圖，包含發送者、主題、正文（閱讀完成以下內容：閱後連結）",
+      "gemini_source": "2023-p1.json",
+      "gemini_raw": {
+        "question_number": "SectionB_Q5(d)",
+        "question_text": "(d) 志偉收到一個電郵如下：\n致：gurus@HIKSAR.com.hk\n主題：來自香港特區政府\n閱讀完成以下內容：\n閱後連結\n簡略說明為什麼它很可能是一封釣魚電郵。描述志偉按下該連結後會帶來什麼損害。",
+        "question_type": "free_response_with_diagram",
+        "has_image": true,
+        "image_description": "一個電郵內容的截圖，包含發送者、主題、正文（閱讀完成以下內容：閱後連結）"
+      },
+      "syllabus_status": "current",
+      "syllabus_revision": "2021",
+      "support_content": {
+        "lines": [
+          "致：gurus@HIKSAR.com.hk",
+          "主題：來自香港特區政府",
+          "閱讀完成以下內容：",
+          "閱後連結",
+          "簡略說明為什麼它很可能是一封釣魚電郵。描述志偉按下該連結後會帶來什麼損害。"
+        ],
+        "sources": [
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation",
+          "question_text.continuation"
+        ],
+        "status": "auto",
+        "supplemented_at": "2026-05-22T04:32:46.309940+00:00",
+        "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+      },
+      "stem": "(d) 志偉收到一個電郵如下：\n致：gurus@HIKSAR.com.hk\n主題：來自香港特區政府\n閱讀完成以下內容：\n閱後連結\n簡略說明為什麼它很可能是一封釣魚電郵。描述志偉按下該連結後會帶來什麼損害。"
+    }
+  ],
+  "paper": {
+    "id": "2023-Paper1B_CompulsoryStructured",
+    "questions": [
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ1-a-i",
+        "type": "free_response",
+        "number": "SectionB_Q1(a)(i)",
+        "section": "section_b",
+        "text": "志明決定選購一台四核心 CPU 而不是雙核心 CPU 的電腦。\n(a) (i) 為何志明作出這個決定？",
+        "marks": null,
+        "concepts": [
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "志明決定選購一台四核心 CPU 而不是雙核心 CPU 的電腦。\n(a) (i) 為何志明作出這個決定？",
+        "support_content": {
+          "lines": [
+            "(a) (i) 為何志明作出這個決定？"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ1-a-ii",
+        "type": "free_response",
+        "number": "SectionB_Q1(a)(ii)",
+        "section": "section_b",
+        "text": "建議他可考慮的另一個 CPU 技術規格。",
+        "marks": null,
+        "concepts": [
+          "硬件"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ1-b",
+        "type": "free_response",
+        "number": "SectionB_Q1(b)",
+        "section": "section_b",
+        "text": "志明會使用該電腦來編輯和渲染視像。除了 CPU 外，舉出兩個他需要考慮的硬件部件，簡略說明。",
+        "marks": null,
+        "concepts": [
+          "多媒體",
+          "硬件"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ1-c-i",
+        "type": "free_response",
+        "number": "SectionB_Q1(c)(i)",
+        "section": "section_b",
+        "text": "志明購買的新電腦已預先安裝了操作系統。\n(i) 除了檔案管理外，列出操作系統常見的兩個功能。",
+        "marks": null,
+        "concepts": [
+          "數據組織",
+          "檔案存取",
+          "軟件",
+          "作業系統"
+        ],
+        "syllabus_status": "current",
+        "stem": "志明購買的新電腦已預先安裝了操作系統。\n(i) 除了檔案管理外，列出操作系統常見的兩個功能。",
+        "support_content": {
+          "lines": [
+            "(i) 除了檔案管理外，列出操作系統常見的兩個功能。"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ1-c-ii",
+        "type": "free_response",
+        "number": "SectionB_Q1(c)(ii)",
+        "section": "section_b",
+        "text": "(ii) 他使用免費雲端儲存來儲存視像檔案。相對於便攜式硬碟，舉出使用雲端儲存的一個優點和一個缺點。",
+        "marks": null,
+        "concepts": [
+          "多媒體",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ1-d",
+        "type": "free_response",
+        "number": "SectionB_Q1(d)",
+        "section": "section_b",
+        "text": "志明考慮安裝開放源碼軟件和免費軟件。舉出它們之間的兩個分別。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ1-e",
+        "type": "free_response_with_diagram",
+        "number": "SectionB_Q1(e)",
+        "section": "section_b",
+        "text": "志明安裝應用軟件時，出現以下的對話框：\n服務條款\n安裝此應用軟件前，你必須閱讀及接受以下的服務條款：\n1. 本協議規範你使用這服務。\n2. ...\n...\n□ 本人同意以上服務條款。\n舉出一項關於私隱的服務條款。描述志明接受此項條款時可能遇到的一個潛在風險。\n\n[圖片描述] 一個對話框，顯示「服務條款」和一個「本人同意以上服務條款」的核取方塊。",
+        "marks": null,
+        "concepts": [
+          "網絡保安",
+          "資訊保安"
+        ],
+        "syllabus_status": "current",
+        "stem": "志明安裝應用軟件時，出現以下的對話框：\n服務條款\n安裝此應用軟件前，你必須閱讀及接受以下的服務條款：\n1. 本協議規範你使用這服務。\n2. ...\n...\n□ 本人同意以上服務條款。\n舉出一項關於私隱的服務條款。描述志明接受此項條款時可能遇到的一個潛在風險。",
+        "support_content": {
+          "lines": [
+            "服務條款",
+            "安裝此應用軟件前，你必須閱讀及接受以下的服務條款：",
+            "1. 本協議規範你使用這服務。",
+            "2. ...",
+            "...",
+            "□ 本人同意以上服務條款。",
+            "舉出一項關於私隱的服務條款。描述志明接受此項條款時可能遇到的一個潛在風險。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ2-a",
+        "type": "spreadsheet_formula",
+        "number": "SectionB_Q2(a)",
+        "section": "section_b",
+        "text": "一個試算表檔案包含工作紙 Sheet1 和 Sheet2，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 A 儲存了社編碼 (HCODE)，而欄 B 儲存了社名稱 (HOUSE)。部分數據顯示如下：\n(a) 在 Sheet2 內，最後得分 FS 是在欄 D 至 F 三個評分中最高兩個評分的平均數。G2 的公式會被複製到 G3:G8。寫出 G2 的公式。\n[表格式意] 兩個試算表表格：「Sheet1」包含 HCODE 和 HOUSE，「Sheet2」包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。表格中包含範例數據。\n(a) 在 Sheet2 內，最後得分 FS 是在欄 D 至 F 三個評分中最高兩個評分的平均數。G2 的公式會被複製到 G3:G8。寫出 G2 的公式。\n\n[圖片描述] 兩個試算表表格：「Sheet1」包含 HCODE 和 HOUSE，「Sheet2」包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。表格中包含範例數據。",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "一個試算表檔案包含工作紙 Sheet1 和 Sheet2，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 A 儲存了社編碼 (HCODE)，而欄 B 儲存了社名稱 (HOUSE)。部分數據顯示如下：\n(a) 在 Sheet2 內，最後得分 FS 是在欄 D 至 F 三個評分中最高兩個評分的平均數。G2 的公式會被複製到 G3:G8。寫出 G2 的公式。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 兩個試算表表格：「Sheet1」包含 HCODE 和 HOUSE，「Sheet2」包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。表格中包含範例數據。",
+            "(a) 在 Sheet2 內，最後得分 FS 是在欄 D 至 F 三個評分中最高兩個評分的平均數。G2 的公式會被複製到 G3:G8。寫出 G2 的公式。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ2-b",
+        "type": "spreadsheet_formula",
+        "number": "SectionB_Q2(b)",
+        "section": "section_b",
+        "text": "(b) 在 Sheet2 內，在 B2 輸入公式 =VLOOKUP(A2, Sheet1!A2:B5, 2, false)，然後複製到 B3:B8。但發現並不是所有社名稱能正確顯示。寫出 B2 正確的公式。\n[表格式意] 一個試算表表格，顯示 Sheet1 和 Sheet2 的數據。Sheet1 包含 HCODE 和 HOUSE。Sheet2 包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。問題要求寫出 B2 的正確 VLOOK…\n\n[圖片描述] 一個試算表表格，顯示 Sheet1 和 Sheet2 的數據。Sheet1 包含 HCODE 和 HOUSE。Sheet2 包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。問題要求寫出 B2 的正確 VLOOKUP 公式。",
+        "marks": null,
+        "concepts": [
+          "試算表"
+        ],
+        "syllabus_status": "current",
+        "stem": "(b) 在 Sheet2 內，在 B2 輸入公式 =VLOOKUP(A2, Sheet1!A2:B5, 2, false)，然後複製到 B3:B8。但發現並不是所有社名稱能正確顯示。寫出 B2 正確的公式。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個試算表表格，顯示 Sheet1 和 Sheet2 的數據。Sheet1 包含 HCODE 和 HOUSE。Sheet2 包含 HCODE、HOUSE、參賽者編號、評分一、評分二、評分三、FS。問題要求寫出 B2 的正確 VLOOK…"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ2-c-i",
+        "type": "fill_in_the_blank_table_with_diagram",
+        "number": "SectionB_Q2(c)(i)",
+        "section": "section_b",
+        "text": "(c) 在 Sheet2 內，為顯示每個社的參賽者人數，她建立了個樞紐分析圖。\n(i) 完成下列部分以建立此樞紐分析圖。\n[表格式意] 一個長條圖，顯示不同 HCODE (藍、黃、紅、綠) 的「參賽者人數」。下方有一個空白表格，包含「列」和「值」兩欄，待填寫。\n(i) 完成下列部分以建立此樞紐分析圖。\n\n[圖片描述] 一個長條圖，顯示不同 HCODE (藍、黃、紅、綠) 的「參賽者人數」。下方有一個空白表格，包含「列」和「值」兩欄，待填寫。",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "(c) 在 Sheet2 內，為顯示每個社的參賽者人數，她建立了個樞紐分析圖。\n(i) 完成下列部分以建立此樞紐分析圖。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個長條圖，顯示不同 HCODE (藍、黃、紅、綠) 的「參賽者人數」。下方有一個空白表格，包含「列」和「值」兩欄，待填寫。",
+            "(i) 完成下列部分以建立此樞紐分析圖。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ2-c-ii",
+        "type": "free_response",
+        "number": "SectionB_Q2(c)(ii)",
+        "section": "section_b",
+        "text": "(ii) 樞紐分析圖可由兩個方法插入文件內，分別為連結和嵌入。舉出每個方法的一個優點。",
+        "marks": null,
+        "concepts": [
+          "試算表"
+        ],
+        "syllabus_status": "out_of_syllabus"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ2-d-i",
+        "type": "free_response",
+        "number": "SectionB_Q2(d)(i)",
+        "section": "section_b",
+        "text": "(d) Sheet2 轉換成數據庫表 TB2。\n(i) 建議 TB2 的主關鍵碼：",
+        "marks": null,
+        "concepts": [
+          "ERD",
+          "數據庫",
+          "正規化",
+          "數據組織",
+          "檔案存取"
+        ],
+        "syllabus_status": "current",
+        "stem": "(d) Sheet2 轉換成數據庫表 TB2。\n(i) 建議 TB2 的主關鍵碼：",
+        "support_content": {
+          "lines": [
+            "(i) 建議 TB2 的主關鍵碼："
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ2-d-ii",
+        "type": "sql_output",
+        "number": "SectionB_Q2(d)(ii)",
+        "section": "section_b",
+        "text": "(ii) 根據 Sheet2 內的資料，執行以下 SQL 語句後的輸出是什麼？\nSELECT HCODE, MAX(FS)\nFROM TB2\nGROUP BY HCODE\n[表格式意] 一個空白表格，包含「HCODE」和「MAX(FS)」兩欄，用於顯示 SQL 查詢的輸出。\nSELECT HCODE, MAX(FS)\nFROM TB2\nGROUP BY HCODE\n\n[圖片描述] 一個空白表格，包含「HCODE」和「MAX(FS)」兩欄，用於顯示 SQL 查詢的輸出。",
+        "marks": null,
+        "concepts": [
+          "SQL",
+          "數據庫",
+          "數據組織",
+          "檔案存取",
+          "硬件"
+        ],
+        "syllabus_status": "current",
+        "stem": "(ii) 根據 Sheet2 內的資料，執行以下 SQL 語句後的輸出是什麼？\nSELECT HCODE, MAX(FS)\nFROM TB2\nGROUP BY HCODE",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個空白表格，包含「HCODE」和「MAX(FS)」兩欄，用於顯示 SQL 查詢的輸出。",
+            "SELECT HCODE, MAX(FS)",
+            "FROM TB2",
+            "GROUP BY HCODE"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ2-e",
+        "type": "free_response",
+        "number": "SectionB_Q2(e)",
+        "section": "section_b",
+        "text": "你會建議使用試算表數據庫去處理歌唱比賽的數據？簡略說明。",
+        "marks": null,
+        "concepts": [
+          "試算表"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ3-Algorithm-Description",
+        "type": "algorithm_code_only",
+        "number": "SectionB_Q3_Algorithm_Description",
+        "section": "section_b",
+        "text": "小芬編寫了程式，用以下偽代碼排列 A 排序。\nALG\n1 I ← 1\n2 j ← 2\n3 當 j <= 5 執行\n4   如果 A[j] < A[j-1] 則\n5     j ← j - 1\n6     j ← j + 1\n7 否則\n8   交換 A[j] 和 A[j-1] 的內容\n9   I ← I - 1\n10   如果 I = 0 則\n11     I ← 1",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "小芬編寫了程式，用以下偽代碼排列 A 排序。\nALG\n1 I ← 1\n2 j ← 2\n3 當 j <= 5 執行\n4   如果 A[j] < A[j-1] 則\n5     j ← j - 1\n6     j ← j + 1\n7 否則\n8   交換 A[j] 和 A[j-1] 的內容\n9   I ← I - 1\n10   如果 I = 0 則\n11     I ← 1",
+        "support_content": {
+          "lines": [
+            "ALG",
+            "1 I ← 1",
+            "2 j ← 2",
+            "3 當 j <= 5 執行",
+            "4   如果 A[j] < A[j-1] 則",
+            "5     j ← j - 1",
+            "6     j ← j + 1",
+            "7 否則",
+            "8   交換 A[j] 和 A[j-1] 的內容",
+            "9   I ← I - 1",
+            "10   如果 I = 0 則",
+            "11     I ← 1"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ3-a-i",
+        "type": "algorithm_completion_with_diagram",
+        "number": "SectionB_Q3(a)(i)",
+        "section": "section_b",
+        "text": "(a) 假設 A 的初始內容是：\nTEMP 是一個變量。完成以下偽代碼表示第 8 行。\n[表格式意] 一個表格顯示陣列 A (A-A) 的初始值 (4, 3, 1, 8, 6)。提供了空白處用於完成偽代碼表示第 8 行的交換內容。\nTEMP 是一個變量。完成以下偽代碼表示第 8 行。\n\n[圖片描述] 一個表格顯示陣列 A (A-A) 的初始值 (4, 3, 1, 8, 6)。提供了空白處用於完成偽代碼表示第 8 行的交換內容。",
+        "marks": null,
+        "concepts": [
+          "試算表",
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "(a) 假設 A 的初始內容是：\nTEMP 是一個變量。完成以下偽代碼表示第 8 行。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個表格顯示陣列 A (A-A) 的初始值 (4, 3, 1, 8, 6)。提供了空白處用於完成偽代碼表示第 8 行的交換內容。",
+            "TEMP 是一個變量。完成以下偽代碼表示第 8 行。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ3-a-ii",
+        "type": "algorithm_tracing_with_diagram",
+        "number": "SectionB_Q3(a)(ii)",
+        "section": "section_b",
+        "text": "完成循環 (第 3 至 11 行) 的第一、第二和第三次迭代後，A，i 和 j 的內容是什麼？\n[表格式意] 三個空白表格，分別用於填寫第一、第二和第三次迭代後陣列 A (A-A)、i 和 j 的內容。\n\n[圖片描述] 三個空白表格，分別用於填寫第一、第二和第三次迭代後陣列 A (A-A)、i 和 j 的內容。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "完成循環 (第 3 至 11 行) 的第一、第二和第三次迭代後，A，i 和 j 的內容是什麼？",
+        "support_content": {
+          "lines": [
+            "[表格式意] 三個空白表格，分別用於填寫第一、第二和第三次迭代後陣列 A (A-A)、i 和 j 的內容。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ3-b",
+        "type": "algorithm_tracing_with_diagram",
+        "number": "SectionB_Q3(b)",
+        "section": "section_b",
+        "text": "以下組合 1 和組合 2 是兩組數值，作為 A 的初始內容。第 8 行於兩個組合分別啟動約少次？\n[表格式意] 兩個表格，顯示組合 1 (A-A = 2, 3, 5, 7, 9) 和組合 2 (A-A = 9, 7, 5, 3, 2) 的初始陣列 A 內容。需要填寫第 8 行被啟動的次數。\n\n[圖片描述] 兩個表格，顯示組合 1 (A-A = 2, 3, 5, 7, 9) 和組合 2 (A-A = 9, 7, 5, 3, 2) 的初始陣列 A 內容。需要填寫第 8 行被啟動的次數。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "以下組合 1 和組合 2 是兩組數值，作為 A 的初始內容。第 8 行於兩個組合分別啟動約少次？",
+        "support_content": {
+          "lines": [
+            "[表格式意] 兩個表格，顯示組合 1 (A-A = 2, 3, 5, 7, 9) 和組合 2 (A-A = 9, 7, 5, 3, 2) 的初始陣列 A 內容。需要填寫第 8 行被啟動的次數。"
+          ],
+          "sources": [
+            "image_description.table_hint"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ3-c",
+        "type": "free_response",
+        "number": "SectionB_Q3(c)",
+        "section": "section_b",
+        "text": "在第 10 行，若「I ← 0」改為「i <= 0」，子程式的結果會不會改變。為什麼？",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ3-d",
+        "type": "free_response",
+        "number": "SectionB_Q3(d)",
+        "section": "section_b",
+        "text": "以下三組測試數據，作為 A 的初始內容。選擇兩項去測試子程式，並簡略說明。",
+        "marks": null,
+        "concepts": [
+          "算法",
+          "偽代碼",
+          "程式測試"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ4-a-i",
+        "type": "free_response",
+        "number": "SectionB_Q4(a)(i)",
+        "section": "section_b",
+        "text": "國華在購物中心經營一間玩具店。\n(a) (i) 國華在玩具店建立一個電腦網絡。\n寫出兩個有線網絡的傳輸媒介。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current",
+        "stem": "國華在購物中心經營一間玩具店。\n(a) (i) 國華在玩具店建立一個電腦網絡。\n寫出兩個有線網絡的傳輸媒介。",
+        "support_content": {
+          "lines": [
+            "(a) (i) 國華在玩具店建立一個電腦網絡。",
+            "寫出兩個有線網絡的傳輸媒介。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ4-a-ii",
+        "type": "free_response",
+        "number": "SectionB_Q4(a)(ii)",
+        "section": "section_b",
+        "text": "(ii) 國華在網絡中使用交換器而非路由器，舉出一個原因。",
+        "marks": null,
+        "concepts": [
+          "網絡"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ4-b",
+        "type": "free_response",
+        "number": "SectionB_Q4(b)",
+        "section": "section_b",
+        "text": "(b) 國華考慮將玩具店從實體店轉為網店。舉出這個改變的一個好處和一個壞處，並簡略說明。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ4-c-i",
+        "type": "free_response",
+        "number": "SectionB_Q4(c)(i)",
+        "section": "section_b",
+        "text": "(c) 國華建立了 mytoyshop.com 讓顧客訂購玩具。他考慮提供 HTTPS 連接，URL 為 https://mytoyshop.com。\n(i) 在國華能夠實施 HTTPS 連接前，他需要申請和取得什麼？",
+        "marks": null,
+        "concepts": [
+          "網絡"
+        ],
+        "syllabus_status": "current",
+        "stem": "(c) 國華建立了 mytoyshop.com 讓顧客訂購玩具。他考慮提供 HTTPS 連接，URL 為 https://mytoyshop.com。\n(i) 在國華能夠實施 HTTPS 連接前，他需要申請和取得什麼？",
+        "support_content": {
+          "lines": [
+            "(i) 在國華能夠實施 HTTPS 連接前，他需要申請和取得什麼？"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ4-c-ii",
+        "type": "free_response",
+        "number": "SectionB_Q4(c)(ii)",
+        "section": "section_b",
+        "text": "(ii) 網站內使用了公開及私人密碼匙加密系統。公匙和私匙應分別能使用？\n公匙：\n私匙：",
+        "marks": null,
+        "concepts": [
+          "網絡保安",
+          "資訊保安",
+          "網頁創作"
+        ],
+        "syllabus_status": "current",
+        "stem": "(ii) 網站內使用了公開及私人密碼匙加密系統。公匙和私匙應分別能使用？\n公匙：\n私匙：",
+        "support_content": {
+          "lines": [
+            "公匙：",
+            "私匙："
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ4-d-i",
+        "type": "free_response_with_diagram",
+        "number": "SectionB_Q4(d)(i)",
+        "section": "section_b",
+        "text": "國華利用機械人處理貨板玩具。機械人以 5 位元指令控制，以下圖顯示部分指令：\n指令 延遲 00000\n停止 01111\n順時轉 90° 01001\n逆時轉 90° 10000\n向前行 10101\n向後行一步 10111\n(i) 數據傳輸時有機會出現一個錯誤的位元，簡略描述如何查找出此錯誤。\n[表格式意] 一個表格，顯示指令（延遲、停止、順時轉 90°、逆時轉 90°、向前行、向後行一步）及其對應的 5 位元二進制代碼。\n指令 延遲 00000\n停止 01111\n順時轉 90° 01001\n逆時轉 90° 10000\n向前行 10101\n向後行一步 10111\n(i) 數據傳輸時有機會出現一個錯誤的位元，簡略描述如何查找出此錯誤。\n\n[圖片描述] 一個表格，顯示指令（延遲、停止、順時轉 90°、逆時轉 90°、向前行、向後行一步）及其對應的 5 位元二進制代碼。",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "國華利用機械人處理貨板玩具。機械人以 5 位元指令控制，以下圖顯示部分指令：\n指令 延遲 00000\n停止 01111\n順時轉 90° 01001\n逆時轉 90° 10000\n向前行 10101\n向後行一步 10111\n(i) 數據傳輸時有機會出現一個錯誤的位元，簡略描述如何查找出此錯誤。",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個表格，顯示指令（延遲、停止、順時轉 90°、逆時轉 90°、向前行、向後行一步）及其對應的 5 位元二進制代碼。",
+            "指令 延遲 00000",
+            "停止 01111",
+            "順時轉 90° 01001",
+            "逆時轉 90° 10000",
+            "向前行 10101",
+            "向後行一步 10111",
+            "(i) 數據傳輸時有機會出現一個錯誤的位元，簡略描述如何查找出此錯誤。"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ4-d-ii",
+        "type": "encoding_creation_with_diagram",
+        "number": "SectionB_Q4(d)(ii)",
+        "section": "section_b",
+        "text": "國華考慮使用 2 位元指令來控制機械人，如下所示：\n指令 延遲 00\n停止 01\n順時轉 90° 10\n向前行一步 11\n於下方寫出五個 2 位元指令，以執行「向後行一步」的行動。\n21 ____ ____ ____ ____ 00\n[表格式意] 一個表格，顯示指令（延遲、停止、順時轉 90°、向前行一步）及其對應的 2 位元二進制代碼。下方有空白處，需要填寫五個 2 位元指令來執行「向後行一步」。\n指令 延遲 00\n停止 01\n順時轉 90° 10\n向前行一步 11\n於下方寫出五個 2 位元指令，以執行「向後行一步」的行動。\n21 ____ ____ ____ ____ 00\n\n[圖片描述] 一個表格，顯示指令（延遲、停止、順時轉 90°、向前行一步）及其對應的 2 位元二進制代碼。下方有空白處，需要填寫五個 2 位元指令來執行「向後行一步」。",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼"
+        ],
+        "syllabus_status": "current",
+        "stem": "國華考慮使用 2 位元指令來控制機械人，如下所示：\n指令 延遲 00\n停止 01\n順時轉 90° 10\n向前行一步 11\n於下方寫出五個 2 位元指令，以執行「向後行一步」的行動。\n21 ____ ____ ____ ____ 00",
+        "support_content": {
+          "lines": [
+            "[表格式意] 一個表格，顯示指令（延遲、停止、順時轉 90°、向前行一步）及其對應的 2 位元二進制代碼。下方有空白處，需要填寫五個 2 位元指令來執行「向後行一步」。",
+            "指令 延遲 00",
+            "停止 01",
+            "順時轉 90° 10",
+            "向前行一步 11",
+            "於下方寫出五個 2 位元指令，以執行「向後行一步」的行動。",
+            "21 ____ ____ ____ ____ 00"
+          ],
+          "sources": [
+            "image_description.table_hint",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "needs_review",
+          "supplemented_at": "2026-05-22T04:32:46.308943+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ4-d-iii",
+        "type": "free_response",
+        "number": "SectionB_Q4(d)(iii)",
+        "section": "section_b",
+        "text": "使用 2 位元指令而不是 5 位元指令來控制此機械人有什麼好處？",
+        "marks": null,
+        "concepts": [
+          "進制",
+          "二進制補碼"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ5-a-i",
+        "type": "free_response",
+        "number": "SectionB_Q5(a)(i)",
+        "section": "section_b",
+        "text": "志偉獨營一間健身中心，並考慮以下三個方法去識別會員：\n(1) 智能卡\n(2) 印有二維碼的牌卡\n(3) 安裝在會員手機內的流動應用程式\n(a) (i) 舉出 (1) 勝於 (2) 的一個優點。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ5-a-ii",
+        "type": "free_response",
+        "number": "SectionB_Q5(a)(ii)",
+        "section": "section_b",
+        "text": "(ii) 舉出 (2) 勝於 (1) 的一個優點。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ5-a-iii",
+        "type": "free_response",
+        "number": "SectionB_Q5(a)(iii)",
+        "section": "section_b",
+        "text": "(iii) 舉出 (3) 勝於 (1) 和 (2) 的一個優點。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ5-b-i",
+        "type": "free_response",
+        "number": "SectionB_Q5(b)(i)",
+        "section": "section_b",
+        "text": "(b) 志偉打算為每位會員提供一個裝置，讓會員監測自己的心跳率。該裝置連接到伺服器，以集齊可追蹤會員的心跳率。每個裝置保持讀取和監控心跳率於一個數碼儀器內。志偉亦會建議機械性設計的裝置。\n(i) 這個安排是...離線處理系統，還是實時處理系統？簡略說明。",
+        "marks": null,
+        "concepts": [
+          "軟件",
+          "作業系統",
+          "網絡應用",
+          "客戶機伺服器"
+        ],
+        "syllabus_status": "current",
+        "stem": "(b) 志偉打算為每位會員提供一個裝置，讓會員監測自己的心跳率。該裝置連接到伺服器，以集齊可追蹤會員的心跳率。每個裝置保持讀取和監控心跳率於一個數碼儀器內。志偉亦會建議機械性設計的裝置。\n(i) 這個安排是...離線處理系統，還是實時處理系統？簡略說明。",
+        "support_content": {
+          "lines": [
+            "(i) 這個安排是...離線處理系統，還是實時處理系統？簡略說明。"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.309940+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ5-b-ii",
+        "type": "calculation",
+        "number": "SectionB_Q5(b)(ii)",
+        "section": "section_b",
+        "text": "(ii) 每個數據塊為 2 KB。健身中心網絡頻寬為 10 Mbps。當 200 名會員同時上載他們的數據燈時，共需時多久？顯示你的計算。",
+        "marks": null,
+        "concepts": [
+          "網絡"
+        ],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ5-c-i",
+        "type": "free_response",
+        "number": "SectionB_Q5(c)(i)",
+        "section": "section_b",
+        "text": "(c) 健身中心提供現場直播健身課堂讓會員在家中上課。\n(i) 一位會員投訴就算其寬頻連接有足夠頻寬作串流播放，串流質素亦總是不相稱。為什麼？",
+        "marks": null,
+        "concepts": [
+          "網絡"
+        ],
+        "syllabus_status": "current",
+        "stem": "(c) 健身中心提供現場直播健身課堂讓會員在家中上課。\n(i) 一位會員投訴就算其寬頻連接有足夠頻寬作串流播放，串流質素亦總是不相稱。為什麼？",
+        "support_content": {
+          "lines": [
+            "(i) 一位會員投訴就算其寬頻連接有足夠頻寬作串流播放，串流質素亦總是不相稱。為什麼？"
+          ],
+          "sources": [
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.309940+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ5-c-ii",
+        "type": "free_response",
+        "number": "SectionB_Q5(c)(ii)",
+        "section": "section_b",
+        "text": "(ii) 志偉決定錄影該課堂供會員下載。除解決 (c)(i) 的問題外，舉出他決定的另一個好處。",
+        "marks": null,
+        "concepts": [],
+        "syllabus_status": "current"
+      },
+      {
+        "id": "2023-Paper1B_CompulsoryStructured-BQ5-d",
+        "type": "free_response_with_diagram",
+        "number": "SectionB_Q5(d)",
+        "section": "section_b",
+        "text": "(d) 志偉收到一個電郵如下：\n致：gurus@HIKSAR.com.hk\n主題：來自香港特區政府\n閱讀完成以下內容：\n閱後連結\n簡略說明為什麼它很可能是一封釣魚電郵。描述志偉按下該連結後會帶來什麼損害。\n\n[圖片描述] 一個電郵內容的截圖，包含發送者、主題、正文（閱讀完成以下內容：閱後連結）",
+        "marks": null,
+        "concepts": [
+          "科技創新"
+        ],
+        "syllabus_status": "current",
+        "stem": "(d) 志偉收到一個電郵如下：\n致：gurus@HIKSAR.com.hk\n主題：來自香港特區政府\n閱讀完成以下內容：\n閱後連結\n簡略說明為什麼它很可能是一封釣魚電郵。描述志偉按下該連結後會帶來什麼損害。",
+        "support_content": {
+          "lines": [
+            "致：gurus@HIKSAR.com.hk",
+            "主題：來自香港特區政府",
+            "閱讀完成以下內容：",
+            "閱後連結",
+            "簡略說明為什麼它很可能是一封釣魚電郵。描述志偉按下該連結後會帶來什麼損害。"
+          ],
+          "sources": [
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation",
+            "question_text.continuation"
+          ],
+          "status": "auto",
+          "supplemented_at": "2026-05-22T04:32:46.309940+00:00",
+          "note": "Auto-filled middle content (algorithm/table/diagram). Verify against PDF before publishing."
+        }
+      }
+    ]
+  }
+}

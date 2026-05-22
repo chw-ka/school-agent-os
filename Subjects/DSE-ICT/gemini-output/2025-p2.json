@@ -1,0 +1,410 @@
+[
+    {
+        "section": "甲部 數據庫",
+        "question_number": "1",
+        "page": 2,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "以下是此數據庫的部分實體關係圖。繪製此數據庫的實體關係圖,圖內不用畫上屬性。",
+                "marks": 4
+            },
+            {
+                "part_label": "b",
+                "question_text": "描述在數據庫管理系統內啟用回滾的一個好處。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "section": "甲部 數據庫",
+        "question_number": "2",
+        "page": 3,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T2",
+                "marks": 1
+            },
+            {
+                "part_label": "b",
+                "question_text": "列出執行以下SQL語句後T1 內更新了的記錄。 UPDATE T1 SET T1.AMT = 0 WHERE T1.AMT > 0 AND (EXISTS (SELECT * FROM T2 WHERE T1.CID = T2.CID AND T2.AMT = 0));",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "section": "甲部 數據庫",
+        "question_number": "3",
+        "page": 4,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "以下輸入表格使用一SQL語句將一筆記錄插入 CUS內。 寫出此 SQL語句中未填寫的部分。",
+                "marks": 1
+            },
+            {
+                "part_label": "b",
+                "question_text": "一名顧客可以有多個戶口。以下採用了一SQL語句來找出顧客「蘇小明」的總戶口結餘。 寫出此SQL語句。",
+                "marks": 3
+            }
+        ]
+    },
+    {
+        "section": "甲部 數據庫",
+        "question_number": "4",
+        "page": 5,
+        "question_text": "以下草擬了第三範式的新數據庫模式。數據庫表 HW 是儲存功課的資料,而數據庫表 STMARK 是儲存學生分數的資料。 寫出此模式中未填寫的部分,並在主關鍵碼加上底線。",
+        "marks": 4
+    },
+    {
+        "section": "甲部 數據庫",
+        "question_number": "5",
+        "page": 6,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "寫出GID的數據類型 x。簡略說明。",
+                "marks": 1
+            },
+            {
+                "part_label": "b",
+                "question_text": "為以下任務寫出 SQL語句。",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "列出預訂識別碼首三個字符為「B88」的預訂記錄,並按SD降序排列。",
+                        "marks": 2
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "列出於26-3-2025 被預訂的酒店房間房號。",
+                        "marks": 2
+                    },
+                    {
+                        "part_label": "iii",
+                        "question_text": "列出曾經預訂最高房價的酒店房間的住客識別碼。",
+                        "marks": 3
+                    }
+                ]
+            },
+            {
+                "part_label": "c",
+                "question_text": "簡略描述以下SQL語句的用途。 SELECT RN FROM RM MINUS SELECT RN FROM BK",
+                "marks": 2
+            },
+            {
+                "part_label": "d",
+                "question_text": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R0068\", \"12345\", \"15-8-2025\", \"12-8-2025\")",
+                "marks": 1
+            },
+            {
+                "part_label": "e",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "簡略描述非規範化RM和BK的一個方法。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "舉出執行(i)內的方法的一個好處。",
+                        "marks": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "乙部 網絡應用程式開發",
+        "question_number": "6",
+        "page": 7,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "為此網頁草擬一個包含三種不同類型的輸入控制而又方便用戶使用的設計。在你的設計上加上適當的注解。",
+                "marks": 3
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "志偉決定使用外部樣式(external)的CSS。舉出支持他的一個理由。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "志偉決定在一些網頁中使用行內樣式(inline)的CSS。舉出支持他的一個理由。",
+                        "marks": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "乙部 網絡應用程式開發",
+        "question_number": "7",
+        "page": 8,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "舉出將資料夾學校的讀取和寫入權授予所有用戶的一個風險。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "已將檔案訂購表格.docx 的讀取和寫入權授予所有家長。如果之後只將資料夾公告的讀取權授予所有家長,會有什麼事情發生?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "iii",
+                        "question_text": "麗珊應該怎樣做才確保學生只能查看儲存在資料夾 班別 內自己的相片?",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "舉出方法1勝於方法2的一個優點。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "舉出方法2勝於方法1的一個優點。",
+                        "marks": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "乙部 網絡應用程式開發",
+        "question_number": "8",
+        "page": 9,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "A1應擁有由(1)至(5)哪一個功能?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "A2應擁有由(1)至(5)哪一個功能?",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "question_text": "寫出以下每個裝置的名稱及其由(1)至(5)對應的功能。",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "B1",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "B2",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "iii",
+                        "question_text": "B3",
+                        "marks": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "乙部 網絡應用程式開發",
+        "question_number": "9",
+        "page": 10,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "網頁內表格的背景顏色是什麼?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "請修改第103行,將表格內「組別:」的字體大小更改為16px。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "iii",
+                        "question_text": "在第100行 onload的作用是什麼?",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "寫出第16行中未填寫的部分。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "已知字符「A」的ASCII碼是65。寫出第18行中未填寫的部分。",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "c",
+                "question_text": "第203至205行的代碼有什麼作用?執行第204行會有什麼事情發生?",
+                "marks": 2
+            },
+            {
+                "part_label": "d",
+                "question_text": "此網頁展示了功課記錄,並以 DUEDATE 升序排列。寫出第206行中未填寫的部分。",
+                "marks": 1
+            },
+            {
+                "part_label": "e",
+                "question_text": "志明打算在 ITEMS 內將「研習」以灰色突出顯示。他以下列代碼取替第220行。寫出此代碼中未填寫的部分。",
+                "marks": 2
+            },
+            {
+                "part_label": "f",
+                "question_text": "志明打算當查詢結果內沒有記錄時顯示「沒有功課」。他從第242行插入以下代碼。利用函數 mysqli_num_rows(),寫出此代碼中未填寫的部分。",
+                "marks": 2
+            },
+            {
+                "part_label": "g",
+                "question_text": "志明打算數算1A組別的研習數量。他從第251行插入以下代碼。寫出此代碼中未填寫的部分。",
+                "marks": 2
+            },
+            {
+                "part_label": "h",
+                "question_text": "刪除第260 行會有什麼潛在問題?",
+                "marks": 1
+            }
+        ]
+    },
+    {
+        "section": "丙部 算法與程式編寫",
+        "question_number": "10",
+        "page": 14,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "第一次執行第6行後,i和s的值是什麼?",
+                "marks": 1
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "s的值是什麼?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "X[i]和X[s]的值是什麼?",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "c",
+                "question_text": "這是哪一種排序算法?",
+                "marks": 1
+            },
+            {
+                "part_label": "d",
+                "question_text": "簡略描述為了反轉排序順序對算法所需要的修改。",
+                "marks": 1
+            }
+        ]
+    },
+    {
+        "section": "丙部 算法與程式編寫",
+        "question_number": "11",
+        "page": 15,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "使用一個子程式將P和Q合併為按升序排列的陣列R。寫出此偽代碼中未填寫的部分。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "使用另一個子程式以對分檢索搜尋R是否包含num。寫出此偽代碼中未填寫的部分。",
+                "marks": 3
+            }
+        ]
+    },
+    {
+        "section": "丙部 算法與程式編寫",
+        "question_number": "12",
+        "page": 16,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "寫出第30和第40行中未填寫的部分。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "假設 N 是一個全程變量。請以Python、C++或Pascal 編寫 hints(t,k),並在答案中寫出所採用的程式編寫語言。",
+                "marks": 3
+            }
+        ]
+    },
+    {
+        "section": "丙部 算法與程式編寫",
+        "question_number": "13",
+        "page": 18,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "根據以上例子,寫出 findZone(6)的傳回值。",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "寫出 findZone 中未填寫的部分。",
+                        "marks": 3
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "question_text": "寫出 comZone 中未填寫的部分。",
+                "marks": 4
+            },
+            {
+                "part_label": "c",
+                "question_text": "寫出 splitZone 中未填寫的部分。",
+                "marks": 5
+            },
+            {
+                "part_label": "d",
+                "question_text": "描述可用作估算被佔用座位的數量的兩個不同傳感器。",
+                "marks": 2
+            }
+        ]
+    }
+]

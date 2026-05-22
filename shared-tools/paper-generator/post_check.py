@@ -33,6 +33,7 @@ def run_spec_check(
     skip_footer: bool = False,
     skip_cover: bool = False,
     skip_mcq: bool = False,
+    extra_reference_docx: list[Path] | None = None,
 ) -> int:
     """
     Full pre-render check: question (duplicates, concepts, answers) + paper (footer/cover if DOCX).
@@ -62,6 +63,7 @@ def run_spec_check(
         subject_subpath=subject_subpath,
         verify_concepts=not skip_concepts,
         verify_mcq=not skip_mcq,
+        extra_reference_docx=extra_reference_docx,
     )
 
     print("\n--- Question quality check (spec) ---")

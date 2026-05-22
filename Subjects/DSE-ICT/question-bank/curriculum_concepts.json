@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "source": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+  "curriculum_effective": "2025-2026",
+  "notes": "Concept tags align with EDB HKDSE ICT C&A Guide (2021 revision). Old DSE papers (2012–2024) map electives: 2A→數據庫, 2B→數據通訊/建網, 2C→多媒體/網站, 2D→軟件開發/算法.",
+  "syllabus_revision": "2021",
+  "syllabus_effective_hkdse_from": "2025",
+  "out_of_syllabus_rules": [
+    {
+      "id": "word-processing-apps",
+      "label": "文書處理軟件功能（2021 修訂後 A-d 已刪減）",
+      "keywords": ["文書處理", "Word", "郵件合併", "mail merge", "OLE", "物件連結", "物件連結與嵌入", "嵌入"],
+      "unless_keywords": ["RAM", "ROM", "硬碟", "電源故障", "復原", "儲存在"],
+      "concepts": ["文書處理", "郵件合併", "OLE"]
+    },
+    {
+      "id": "presentation-software",
+      "label": "演示／簡報軟件功能（2021 修訂後 A-d 已刪減）",
+      "keywords": ["演示軟件", "簡報軟件", "投影片", "轉換幻燈", "網上演示工具", "PowerPoint", "旁白", "配色方案", "投影片的佈局", "投影片的次序"],
+      "concepts": ["演示軟件", "網上演示"]
+    },
+    {
+      "id": "word-toc-feature",
+      "label": "文書／簡報「目錄」功能（舊 A-d 軟件操作）",
+      "keywords": ["「目錄」功能", "目錄」功能", "目錄內輸入章節"],
+      "concepts": ["文書處理", "演示軟件"]
+    },
+    {
+      "id": "ole-objects",
+      "label": "OLE 物件連結與嵌入",
+      "keywords": ["OLE", "物件連結", "連結與嵌入"],
+      "concepts": ["OLE"]
+    }
+  ],
+  "compulsory_units": {
+    "A": {
+      "label": "資訊處理",
+      "topics": {
+        "A-a": "資訊處理簡介",
+        "A-b": "數據組織及數據控制",
+        "A-c": "數據表示",
+        "A-d": "數據操縱和分析"
+      }
+    },
+    "B": {
+      "label": "電腦系統基礎",
+      "topics": {
+        "B-a": "基本機器組織",
+        "B-b": "系統軟件"
+      }
+    },
+    "C": {
+      "label": "互聯網及其應用",
+      "topics": {
+        "C-a": "建網及互聯網基本知識",
+        "C-b": "互聯網服務及應用",
+        "C-c": "初級網頁創作",
+        "C-d": "網上威脅及保安"
+      }
+    },
+    "D": {
+      "label": "計算思維與程式編寫",
+      "topics": {
+        "D-a": "問題建構和分析",
+        "D-b": "算法設計",
+        "D-c": "程式開發",
+        "D-d": "程式測試和除錯"
+      }
+    },
+    "E": {
+      "label": "資訊及通訊科技對社會的影響",
+      "topics": {
+        "E-a": "科技創新",
+        "E-b": "健康及道德議題",
+        "E-c": "知識產權"
+      }
+    }
+  },
+  "elective_options": {
+    "EA": {
+      "label": "數據庫",
+      "legacy_paper": "Paper2A_Database",
+      "topics": {
+        "EA-a": "關聯式數據庫概念",
+        "EA-b": "結構化查詢語言",
+        "EA-c": "數據庫設計方法"
+      }
+    },
+    "EB": {
+      "label": "網絡應用程式開發",
+      "legacy_paper": "Paper2B_DataCommunicationsNetworking",
+      "topics": {
+        "EB-a": "網絡服務與實施",
+        "EB-b": "網絡編程與應用"
+      }
+    },
+    "EC": {
+      "label": "算法與程式編寫",
+      "legacy_paper": "Paper2D_SoftwareDevelopment",
+      "topics": {
+        "EC-a": "程式編寫",
+        "EC-b": "程式編寫在現實生活的應用"
+      }
+    }
+  },
+  "legacy_elective_map": {
+    "Paper2A_Database": "EA",
+    "Paper2B_DataCommunicationsNetworking": "EB",
+    "Paper2C_MultimediaWebsiteConstruction": "EB",
+    "Paper2D_SoftwareDevelopment": "EC"
+  },
+  "keyword_concepts": [
+    {"keywords": ["二進制", "十六進制", "補碼", "進制", "上溢", "位元"], "concepts": ["進制", "二進制補碼"], "unit": "A", "topic": "A-c"},
+    {"keywords": ["ASCII", "UTF-8", "字符集", "GB 碼", "Unicode", "Big-5"], "concepts": ["字元編碼"], "unit": "A", "topic": "A-c"},
+    {"keywords": ["bmp", "png", "jpg", "wav", "mp3", "avi", "點陣", "向量", "顏色深度", "像素", "解析度", "壓縮", "多媒體", "視像", "音訊"], "concepts": ["多媒體"], "unit": "A", "topic": "A-c"},
+    {"keywords": ["試算表", "公式", "VLOOKUP", "COUNT", "SUMIF", "RANK", "IF(", "樞紐", "假設", "排序", "篩選"], "concepts": ["試算表"], "unit": "A", "topic": "A-d"},
+    {"keywords": ["SQL", "SELECT", "INSERT", "UPDATE", "DELETE", "GROUP BY", "JOIN", "VIEW", "INDEX"], "concepts": ["SQL", "數據庫"], "unit": "A", "topic": "A-d"},
+    {"keywords": ["主關鍵", "外鍵", "ERD", "實體關係", "正規化", "3NF", "參照完整性", "實體完整性", "冗餘"], "concepts": ["ERD", "數據庫", "正規化"], "unit": "EA", "topic": "EA-c"},
+    {"keywords": ["資訊處理", "資訊系統", "資訊處理循環", "輸入處理輸出", "批次處理", "數據與資訊"], "concepts": ["資訊處理"], "unit": "A", "topic": "A-a"},
+    {"keywords": ["數據控制", "有效性檢驗", "數據驗證", "驗證"], "concepts": ["數據控制", "有效性檢驗"], "unit": "A", "topic": "A-b"},
+    {"keywords": ["奇偶", "parity", "奇偶檢驗", "奇偶校驗"], "concepts": ["奇偶檢測", "有效性檢驗"], "unit": "A", "topic": "A-b"},
+    {"keywords": ["直接存取", "順序存取", "檔案", "記錄", "欄", "數據庫表"], "concepts": ["數據組織", "檔案存取"], "unit": "A", "topic": "A-b"},
+    {"keywords": ["RAM", "ROM", "快取", "SSD", "HDD", "CPU", "GPU", "匯流排", "寄存器", "主記憶", "儲存設備"], "concepts": ["硬件"], "unit": "B", "topic": "B-a"},
+    {"keywords": ["操作系統", "驅動", "實用程式", "批次", "實時", "并行", "分布式", "虛擬"], "concepts": ["軟件", "作業系統"], "unit": "B", "topic": "B-b"},
+    {"keywords": ["LAN", "WAN", "MAC", "IP", "IPv4", "IPv6", "TCP", "DNS", "HTTP", "HTTPS", "URL", "路由器", "交換器", "Wi-Fi", "藍牙", "頻寬", "Mbps"], "concepts": ["網絡"], "unit": "C", "topic": "C-a"},
+    {"keywords": ["防火牆", "病毒", "勒索", "木馬", "間諜", "私隱", "加密", "VPN", "WPA", "認證", "授權"], "concepts": ["網絡保安", "資訊保安"], "unit": "C", "topic": "C-d"},
+    {"keywords": ["HTML", "CSS", "網頁", "超連結", "網站"], "concepts": ["網頁創作"], "unit": "C", "topic": "C-c"},
+    {"keywords": ["偽代碼", "算法", "流程圖", "陣列", "排序", "搜尋", "對分", "線性", "冒泡", "迭代", "子程式", "模組", "問題分解"], "concepts": ["算法", "偽代碼"], "unit": "D", "topic": "D-b"},
+    {"keywords": ["堆疊", "stack", "push", "pop", "佇列", "queue", "鏈表", "鏈列", "linked list"], "concepts": ["堆疊", "佇列", "鏈表"], "unit": "EC", "topic": "EC-a"},
+    {"keywords": ["測試", "除錯", "邊界", "語法錯誤", "邏輯錯誤"], "concepts": ["程式測試"], "unit": "D", "topic": "D-d"},
+    {"keywords": ["資訊素養", "知識產權", "版權", "道德", "人機工程", "RSI", "公平存取"], "concepts": ["社會影響", "道德議題"], "unit": "E", "topic": "E-b"},
+    {"keywords": ["人工智能", "AI", "物聯網", "IoT", "3D 打印", "AR", "VR"], "concepts": ["科技創新"], "unit": "E", "topic": "E-a"},
+    {"keywords": ["DHCP", "伺服器", "客戶機", "GET", "POST", "腳本"], "concepts": ["網絡應用", "客戶機伺服器"], "unit": "EB", "topic": "EB-a"},
+    {"keywords": ["Transaction", "COMMIT", "ROLLBACK"], "concepts": ["數據庫", "Transaction"], "unit": "EA", "topic": "EA-b"}
+  ],
+  "concept_to_unit": {
+    "資訊處理": "A", "數據與資訊": "A", "資訊處理循環": "A", "輸入處理輸出": "A", "批次處理": "A",
+    "數據組織": "A", "欄位": "A", "記錄": "A", "檔案存取": "A", "直接存取": "A", "順序存取": "A",
+    "有效性檢驗": "A", "奇偶檢測": "A", "數據控制": "A",
+    "進制": "A", "十六進制": "A", "二進制補碼": "A", "字元編碼": "A", "UTF-8": "A",
+    "多媒體": "A", "音訊": "A", "點陣圖": "A", "向量圖": "A", "壓縮": "A", "顏色深度": "A",
+    "試算表": "A", "VLOOKUP": "A", "COUNTIFS": "A", "SQL": "A",
+    "硬件": "B", "快取記憶體": "B", "SSD": "B", "RAM": "B", "輸入裝置": "B", "輸出裝置": "B",
+    "軟件": "B", "實用程式": "B", "作業系統": "B", "專用軟件": "B", "驅動程式": "B",
+    "問題分析": "D", "子問題": "D", "算法": "D", "偽代碼": "D", "流程圖": "D",
+    "迴圈": "D", "迭代": "D", "排序": "D", "搜尋": "D", "線性搜尋": "D", "陣列": "D", "變量": "D", "模組": "D",
+    "程式測試": "D", "除錯": "D", "邊界值": "D", "語法錯誤": "D", "邏輯錯誤": "D", "二進制": "D", "布爾邏輯": "D",
+    "堆疊": "EC", "佇列": "EC", "鏈列": "EC", "鏈表": "EC", "遞歸": "EC", "動態規劃": "EC",
+    "網絡": "C", "網絡保安": "C", "網頁創作": "C", "ERD": "EA", "數據庫": "EA", "正規化": "EA"
+  },
+  "mcq_compulsory_slot_order": [
+    {"slot": 1, "core": "A", "topic": "A-a", "concepts": ["資訊處理", "數據與資訊", "資訊處理循環"]},
+    {"slot": 2, "core": "A", "topic": "A-a", "concepts": ["資訊處理", "輸入處理輸出", "批次處理"]},
+    {"slot": 3, "core": "A", "topic": "A-b", "concepts": ["數據組織", "欄位", "記錄"]},
+    {"slot": 4, "core": "A", "topic": "A-b", "concepts": ["數據組織", "檔案存取", "直接存取"]},
+    {"slot": 5, "core": "A", "topic": "A-b", "concepts": ["數據控制", "有效性檢驗", "奇偶檢測"]},
+    {"slot": 6, "core": "A", "topic": "A-c", "concepts": ["進制", "十六進制", "二進制補碼"]},
+    {"slot": 7, "core": "A", "topic": "A-c", "concepts": ["字元編碼", "UTF-8"]},
+    {"slot": 8, "core": "A", "topic": "A-c", "concepts": ["多媒體", "點陣圖", "向量圖"]},
+    {"slot": 9, "core": "A", "topic": "A-c", "concepts": ["多媒體", "壓縮", "顏色深度"]},
+    {"slot": 10, "core": "A", "topic": "A-d", "concepts": ["試算表", "VLOOKUP", "COUNTIFS"]},
+    {"slot": 11, "core": "B", "topic": "B-a", "concepts": ["硬件", "RAM", "快取記憶體"]},
+    {"slot": 12, "core": "B", "topic": "B-a", "concepts": ["硬件", "SSD"]},
+    {"slot": 13, "core": "B", "topic": "B-a", "concepts": ["硬件", "輸入裝置"]},
+    {"slot": 14, "core": "B", "topic": "B-a", "concepts": ["硬件", "RAM", "快取記憶體"]},
+    {"slot": 15, "core": "B", "topic": "B-a", "concepts": ["硬件", "SSD", "輸出裝置"]},
+    {"slot": 16, "core": "B", "topic": "B-b", "concepts": ["軟件", "作業系統", "驅動程式"]},
+    {"slot": 17, "core": "B", "topic": "B-b", "concepts": ["軟件", "實用程式"]},
+    {"slot": 18, "core": "B", "topic": "B-b", "concepts": ["軟件", "專用軟件"]},
+    {"slot": 19, "core": "B", "topic": "B-b", "concepts": ["軟件", "作業系統", "實用程式"]},
+    {"slot": 20, "core": "B", "topic": "B-a", "concepts": ["硬件", "輸入裝置", "RAM"]},
+    {"slot": 21, "core": "D", "topic": "D-a", "concepts": ["問題分析", "算法", "子問題"]},
+    {"slot": 22, "core": "D", "topic": "D-b", "concepts": ["算法", "偽代碼", "流程圖"]},
+    {"slot": 23, "core": "D", "topic": "D-b", "concepts": ["迴圈", "算法", "迭代"]},
+    {"slot": 24, "core": "D", "topic": "D-b", "concepts": ["排序", "算法", "陣列"]},
+    {"slot": 25, "core": "D", "topic": "D-b", "concepts": ["搜尋", "算法", "線性搜尋"]},
+    {"slot": 26, "core": "D", "topic": "D-c", "concepts": ["算法", "陣列", "變量"]},
+    {"slot": 27, "core": "D", "topic": "D-c", "concepts": ["進制", "二進制", "布爾邏輯"]},
+    {"slot": 28, "core": "D", "topic": "D-d", "concepts": ["程式測試", "除錯", "邊界值"]},
+    {"slot": 29, "core": "D", "topic": "D-d", "concepts": ["程式測試", "語法錯誤", "邏輯錯誤"]},
+    {"slot": 30, "core": "D", "topic": "D-b", "concepts": ["算法", "偽代碼", "模組"]}
+  ]
+}

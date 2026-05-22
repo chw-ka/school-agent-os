@@ -1,16 +1,17 @@
 {
   "question": {
-    "ok": true,
-    "candidate": "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json",
+    "ok": false,
+    "candidate": "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2025-2026\\Term 02\\_generation\\25_26_S5_ICT_Exam02.spec.json",
     "threshold": 0.6,
     "duplicates": {
       "threshold": 0.6,
-      "candidate": "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json",
+      "candidate": "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2025-2026\\Term 02\\_generation\\25_26_S5_ICT_Exam02.spec.json",
       "has_duplicates": false,
       "regenerate_ids": [],
       "references_checked": [
-        "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx",
-        "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/23_24_S5_ICT_Exam02.docx"
+        "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2024-2025\\Term 02\\WrittenExam\\24_25_S5_ICT_Exam02.docx",
+        "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2024-2025\\Term 02\\WrittenExam\\24_25_S5_ICT_Exam02.pdf",
+        "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2024-2025\\Term 02\\WrittenExam\\23_24_S5_ICT_Exam02.pdf"
       ],
       "duplicate_count": 0,
       "duplicates": []
@@ -21,132 +22,179 @@
       "skipped_slots": 30,
       "mismatch_count": 0,
       "mismatches": [],
+      "core_sequence_errors": [],
       "distribution": {
-        "ok": true,
+        "ok": false,
         "candidate": {
-          "total_items": 36,
-          "items_with_concepts": 36,
+          "total_items": 43,
+          "items_with_concepts": 43,
           "items_without_concepts": 0,
           "concept_counts": {
-            "數據庫": 6,
-            "算法": 6,
-            "SQL": 3,
+            "算法": 9,
+            "數據庫": 7,
+            "硬件": 6,
+            "SQL": 5,
+            "偽代碼": 4,
+            "軟件": 4,
+            "RAM": 3,
             "多媒體": 3,
-            "試算表": 3,
-            "1NF": 2,
+            "有效性檢驗": 3,
+            "陣列": 3,
+            "COUNTIFS": 2,
+            "SSD": 2,
+            "作業系統": 2,
+            "壓縮": 2,
+            "奇偶檢測": 2,
+            "實用程式": 2,
+            "快取記憶體": 2,
             "數據組織": 2,
-            "數據結構": 2,
-            "有效性檢驗": 2,
             "檔案存取": 2,
-            "正規化": 2,
-            "硬件": 2,
-            "程式設計": 2,
+            "直接存取": 2,
+            "程式測試": 2,
+            "試算表": 2,
+            "資訊處理": 2,
+            "輸入裝置": 2,
             "進制": 2,
-            "陣列": 2,
-            "COUNTIFS": 1,
+            "點陣圖": 2,
+            "COMMIT": 1,
             "ERD": 1,
             "GROUP BY": 1,
             "IF": 1,
-            "SSD": 1,
-            "UPDATE": 1,
+            "JOIN": 1,
+            "MINUS": 1,
+            "ROLLBACK": 1,
+            "Transaction": 1,
+            "UNION": 1,
             "UTF-8": 1,
             "VLOOKUP": 1,
-            "主鍵": 1,
+            "二進制": 1,
             "二進制補碼": 1,
-            "偽代碼": 1,
-            "冒泡排序": 1,
-            "函數": 1,
             "十六進制": 1,
+            "向量圖": 1,
+            "問題分析": 1,
             "堆疊": 1,
-            "壓縮": 1,
-            "外鍵": 1,
+            "子問題": 1,
             "字元編碼": 1,
-            "實用程式": 1,
-            "快取記憶體": 1,
+            "專用軟件": 1,
+            "布爾邏輯": 1,
+            "批次處理": 1,
             "排序": 1,
             "搜尋": 1,
             "數據控制": 1,
-            "數據私隱": 1,
             "數據與資訊": 1,
-            "更新異常": 1,
-            "樞紐分析表": 1,
-            "模組化": 1,
-            "次大值": 1,
+            "模組": 1,
+            "欄位": 1,
+            "流程圖": 1,
+            "線性搜尋": 1,
             "記錄": 1,
-            "資訊處理": 1,
-            "軟件": 1,
+            "語法錯誤": 1,
+            "變量": 1,
+            "資料類型": 1,
+            "資訊處理循環": 1,
+            "輸入處理輸出": 1,
+            "輸出裝置": 1,
+            "迭代": 1,
             "迴圈": 1,
-            "追蹤": 1,
-            "隊列": 1,
-            "音訊檔案大小": 1,
-            "點陣圖": 1
+            "邊界值": 1,
+            "邏輯錯誤": 1,
+            "除錯": 1,
+            "順序存取": 1,
+            "顏色深度": 1,
+            "驅動程式": 1
           },
           "by_section": {
             "mcq": {
-              "算法": 6,
-              "數據庫": 5,
-              "多媒體": 3,
+              "算法": 7,
+              "硬件": 6,
+              "軟件": 4,
+              "RAM": 3,
+              "SSD": 2,
+              "作業系統": 2,
+              "偽代碼": 2,
+              "多媒體": 2,
+              "實用程式": 2,
+              "快取記憶體": 2,
               "數據組織": 2,
-              "數據結構": 2,
-              "硬件": 2,
-              "程式設計": 2,
-              "試算表": 2,
+              "程式測試": 2,
+              "資訊處理": 2,
+              "輸入裝置": 2,
               "進制": 2,
-              "1NF": 1,
+              "陣列": 2,
               "COUNTIFS": 1,
-              "SQL": 1,
-              "SSD": 1,
               "UTF-8": 1,
               "VLOOKUP": 1,
-              "主鍵": 1,
+              "二進制": 1,
               "二進制補碼": 1,
-              "冒泡排序": 1,
-              "函數": 1,
               "十六進制": 1,
-              "堆疊": 1,
+              "向量圖": 1,
+              "問題分析": 1,
               "壓縮": 1,
-              "外鍵": 1,
+              "奇偶檢測": 1,
+              "子問題": 1,
               "字元編碼": 1,
-              "實用程式": 1,
-              "快取記憶體": 1,
+              "專用軟件": 1,
+              "布爾邏輯": 1,
+              "批次處理": 1,
               "排序": 1,
               "搜尋": 1,
               "數據控制": 1,
               "數據與資訊": 1,
               "有效性檢驗": 1,
-              "模組化": 1,
+              "模組": 1,
               "檔案存取": 1,
-              "正規化": 1,
+              "欄位": 1,
+              "流程圖": 1,
+              "直接存取": 1,
+              "線性搜尋": 1,
               "記錄": 1,
-              "資訊處理": 1,
-              "軟件": 1,
+              "試算表": 1,
+              "語法錯誤": 1,
+              "變量": 1,
+              "資訊處理循環": 1,
+              "輸入處理輸出": 1,
+              "輸出裝置": 1,
+              "迭代": 1,
               "迴圈": 1,
-              "追蹤": 1,
-              "陣列": 1,
-              "隊列": 1,
-              "音訊檔案大小": 1,
+              "邊界值": 1,
+              "邏輯錯誤": 1,
+              "除錯": 1,
+              "顏色深度": 1,
+              "驅動程式": 1,
               "點陣圖": 1
             },
             "section_b": {
+              "有效性檢驗": 2,
+              "COUNTIFS": 1,
               "IF": 1,
+              "SQL": 1,
               "偽代碼": 1,
-              "數據私隱": 1,
-              "有效性檢驗": 1,
-              "樞紐分析表": 1,
+              "壓縮": 1,
+              "多媒體": 1,
+              "奇偶檢測": 1,
+              "數據庫": 1,
               "檔案存取": 1,
-              "次大值": 1,
+              "直接存取": 1,
+              "算法": 1,
               "試算表": 1,
-              "陣列": 1
+              "資料類型": 1,
+              "陣列": 1,
+              "順序存取": 1,
+              "點陣圖": 1
             },
             "section_c": {
-              "SQL": 2,
-              "1NF": 1,
+              "數據庫": 6,
+              "SQL": 4,
+              "COMMIT": 1,
               "ERD": 1,
               "GROUP BY": 1,
-              "UPDATE": 1,
-              "數據庫": 1,
-              "更新異常": 1,
-              "正規化": 1
+              "JOIN": 1,
+              "MINUS": 1,
+              "ROLLBACK": 1,
+              "Transaction": 1,
+              "UNION": 1,
+              "偽代碼": 1,
+              "堆疊": 1,
+              "算法": 1
             }
           }
         },
@@ -172,78 +220,129 @@
           "丙部#2"
         ],
         "extra_in_candidate": [
+          "資訊處理",
+          "數據與資訊",
+          "資訊處理循環",
+          "輸入處理輸出",
+          "批次處理",
+          "數據組織",
+          "欄位",
+          "記錄",
+          "檔案存取",
+          "直接存取",
+          "數據控制",
+          "有效性檢驗",
+          "奇偶檢測",
           "進制",
           "十六進制",
           "二進制補碼",
           "字元編碼",
           "UTF-8",
           "多媒體",
-          "音訊檔案大小",
+          "點陣圖",
+          "向量圖",
+          "壓縮",
+          "顏色深度",
           "試算表",
           "VLOOKUP",
           "COUNTIFS",
           "硬件",
+          "RAM",
           "快取記憶體",
           "SSD",
+          "輸入裝置",
+          "輸出裝置",
           "軟件",
+          "作業系統",
+          "驅動程式",
           "實用程式",
-          "點陣圖",
-          "壓縮",
-          "數據庫",
-          "1NF",
-          "數據控制",
-          "有效性檢驗",
-          "資訊處理",
-          "數據與資訊",
+          "專用軟件",
+          "問題分析",
           "算法",
-          "迴圈",
-          "排序",
-          "數據組織",
-          "記錄",
-          "冒泡排序",
-          "數據結構",
-          "隊列",
-          "檔案存取",
-          "主鍵",
-          "外鍵",
-          "陣列",
-          "追蹤",
-          "正規化",
-          "搜尋",
-          "程式設計",
-          "模組化",
-          "堆疊",
-          "函數",
-          "SQL",
-          "IF",
-          "樞紐分析表",
-          "數據私隱",
+          "子問題",
           "偽代碼",
-          "次大值",
+          "流程圖",
+          "迴圈",
+          "迭代",
+          "排序",
+          "陣列",
+          "搜尋",
+          "線性搜尋",
+          "變量",
+          "二進制",
+          "布爾邏輯",
+          "程式測試",
+          "除錯",
+          "邊界值",
+          "語法錯誤",
+          "邏輯錯誤",
+          "模組",
+          "IF",
+          "順序存取",
+          "數據庫",
+          "SQL",
+          "資料類型",
           "ERD",
-          "更新異常",
+          "UNION",
+          "MINUS",
+          "JOIN",
           "GROUP BY",
-          "UPDATE"
+          "Transaction",
+          "COMMIT",
+          "ROLLBACK",
+          "堆疊"
         ],
         "deltas": [
           {
-            "concept": "數據庫",
-            "candidate": 6,
+            "concept": "算法",
+            "candidate": 9,
             "reference": 0,
-            "delta": 6,
-            "target_min": 6,
+            "delta": 9,
+            "target_min": 8,
+            "target_max": 14
+          },
+          {
+            "concept": "數據庫",
+            "candidate": 7,
+            "reference": 0,
+            "delta": 7,
+            "target_min": 3,
             "target_max": 12
           },
           {
-            "concept": "算法",
+            "concept": "硬件",
             "candidate": 6,
             "reference": 0,
             "delta": 6,
-            "target_min": 5,
-            "target_max": 12
+            "target_min": null,
+            "target_max": null
           },
           {
             "concept": "SQL",
+            "candidate": 5,
+            "reference": 0,
+            "delta": 5,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "偽代碼",
+            "candidate": 4,
+            "reference": 0,
+            "delta": 4,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "軟件",
+            "candidate": 4,
+            "reference": 0,
+            "delta": 4,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "RAM",
             "candidate": 3,
             "reference": 0,
             "delta": 3,
@@ -255,19 +354,75 @@
             "candidate": 3,
             "reference": 0,
             "delta": 3,
+            "target_min": 4,
+            "target_max": 10
+          },
+          {
+            "concept": "有效性檢驗",
+            "candidate": 3,
+            "reference": 0,
+            "delta": 3,
             "target_min": null,
             "target_max": null
           },
           {
-            "concept": "試算表",
+            "concept": "陣列",
             "candidate": 3,
             "reference": 0,
             "delta": 3,
-            "target_min": 2,
-            "target_max": 6
+            "target_min": null,
+            "target_max": null
           },
           {
-            "concept": "1NF",
+            "concept": "COUNTIFS",
+            "candidate": 2,
+            "reference": 0,
+            "delta": 2,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "SSD",
+            "candidate": 2,
+            "reference": 0,
+            "delta": 2,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "作業系統",
+            "candidate": 2,
+            "reference": 0,
+            "delta": 2,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "壓縮",
+            "candidate": 2,
+            "reference": 0,
+            "delta": 2,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "奇偶檢測",
+            "candidate": 2,
+            "reference": 0,
+            "delta": 2,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "實用程式",
+            "candidate": 2,
+            "reference": 0,
+            "delta": 2,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "快取記憶體",
             "candidate": 2,
             "reference": 0,
             "delta": 2,
@@ -283,22 +438,6 @@
             "target_max": null
           },
           {
-            "concept": "數據結構",
-            "candidate": 2,
-            "reference": 0,
-            "delta": 2,
-            "target_min": null,
-            "target_max": null
-          },
-          {
-            "concept": "有效性檢驗",
-            "candidate": 2,
-            "reference": 0,
-            "delta": 2,
-            "target_min": null,
-            "target_max": null
-          },
-          {
             "concept": "檔案存取",
             "candidate": 2,
             "reference": 0,
@@ -307,7 +446,7 @@
             "target_max": null
           },
           {
-            "concept": "正規化",
+            "concept": "直接存取",
             "candidate": 2,
             "reference": 0,
             "delta": 2,
@@ -315,7 +454,7 @@
             "target_max": null
           },
           {
-            "concept": "硬件",
+            "concept": "程式測試",
             "candidate": 2,
             "reference": 0,
             "delta": 2,
@@ -323,7 +462,23 @@
             "target_max": null
           },
           {
-            "concept": "程式設計",
+            "concept": "試算表",
+            "candidate": 2,
+            "reference": 0,
+            "delta": 2,
+            "target_min": 2,
+            "target_max": 6
+          },
+          {
+            "concept": "資訊處理",
+            "candidate": 2,
+            "reference": 0,
+            "delta": 2,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "輸入裝置",
             "candidate": 2,
             "reference": 0,
             "delta": 2,
@@ -339,7 +494,7 @@
             "target_max": null
           },
           {
-            "concept": "陣列",
+            "concept": "點陣圖",
             "candidate": 2,
             "reference": 0,
             "delta": 2,
@@ -347,7 +502,7 @@
             "target_max": null
           },
           {
-            "concept": "COUNTIFS",
+            "concept": "COMMIT",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -379,7 +534,7 @@
             "target_max": null
           },
           {
-            "concept": "SSD",
+            "concept": "JOIN",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -387,7 +542,31 @@
             "target_max": null
           },
           {
-            "concept": "UPDATE",
+            "concept": "MINUS",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "ROLLBACK",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "Transaction",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "UNION",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -411,7 +590,7 @@
             "target_max": null
           },
           {
-            "concept": "主鍵",
+            "concept": "二進制",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -427,31 +606,23 @@
             "target_max": null
           },
           {
-            "concept": "偽代碼",
-            "candidate": 1,
-            "reference": 0,
-            "delta": 1,
-            "target_min": null,
-            "target_max": null
-          },
-          {
-            "concept": "冒泡排序",
-            "candidate": 1,
-            "reference": 0,
-            "delta": 1,
-            "target_min": null,
-            "target_max": null
-          },
-          {
-            "concept": "函數",
-            "candidate": 1,
-            "reference": 0,
-            "delta": 1,
-            "target_min": null,
-            "target_max": null
-          },
-          {
             "concept": "十六進制",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "向量圖",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "問題分析",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -467,15 +638,7 @@
             "target_max": null
           },
           {
-            "concept": "壓縮",
-            "candidate": 1,
-            "reference": 0,
-            "delta": 1,
-            "target_min": null,
-            "target_max": null
-          },
-          {
-            "concept": "外鍵",
+            "concept": "子問題",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -491,7 +654,7 @@
             "target_max": null
           },
           {
-            "concept": "實用程式",
+            "concept": "專用軟件",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -499,7 +662,15 @@
             "target_max": null
           },
           {
-            "concept": "快取記憶體",
+            "concept": "布爾邏輯",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "批次處理",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -528,15 +699,7 @@
             "reference": 0,
             "delta": 1,
             "target_min": 1,
-            "target_max": 4
-          },
-          {
-            "concept": "數據私隱",
-            "candidate": 1,
-            "reference": 0,
-            "delta": 1,
-            "target_min": null,
-            "target_max": null
+            "target_max": 6
           },
           {
             "concept": "數據與資訊",
@@ -547,7 +710,7 @@
             "target_max": null
           },
           {
-            "concept": "更新異常",
+            "concept": "模組",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -555,7 +718,7 @@
             "target_max": null
           },
           {
-            "concept": "樞紐分析表",
+            "concept": "欄位",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -563,7 +726,7 @@
             "target_max": null
           },
           {
-            "concept": "模組化",
+            "concept": "流程圖",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -571,7 +734,7 @@
             "target_max": null
           },
           {
-            "concept": "次大值",
+            "concept": "線性搜尋",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -587,7 +750,7 @@
             "target_max": null
           },
           {
-            "concept": "資訊處理",
+            "concept": "語法錯誤",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -595,7 +758,47 @@
             "target_max": null
           },
           {
-            "concept": "軟件",
+            "concept": "變量",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "資料類型",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "資訊處理循環",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "輸入處理輸出",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "輸出裝置",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "迭代",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -611,7 +814,7 @@
             "target_max": null
           },
           {
-            "concept": "追蹤",
+            "concept": "邊界值",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -619,7 +822,7 @@
             "target_max": null
           },
           {
-            "concept": "隊列",
+            "concept": "邏輯錯誤",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -627,7 +830,7 @@
             "target_max": null
           },
           {
-            "concept": "音訊檔案大小",
+            "concept": "除錯",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -635,7 +838,23 @@
             "target_max": null
           },
           {
-            "concept": "點陣圖",
+            "concept": "順序存取",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "顏色深度",
+            "candidate": 1,
+            "reference": 0,
+            "delta": 1,
+            "target_min": null,
+            "target_max": null
+          },
+          {
+            "concept": "驅動程式",
             "candidate": 1,
             "reference": 0,
             "delta": 1,
@@ -659,7 +878,9 @@
             "target_max": null
           }
         ],
-        "target_violations": []
+        "target_violations": [
+          "多媒體"
+        ]
       }
     },
     "mcq": {
@@ -670,10 +891,10 @@
       "total_mcq": 30,
       "answers_found": 30,
       "counts": {
-        "A": 8,
-        "B": 7,
-        "C": 7,
-        "D": 8
+        "A": 7,
+        "B": 8,
+        "C": 8,
+        "D": 7
       },
       "expected_per_letter": [
         7,
@@ -681,36 +902,36 @@
       ],
       "spread": 1,
       "answers": [
-        "A",
-        "B",
-        "A",
-        "D",
-        "A",
-        "D",
-        "C",
-        "B",
-        "D",
-        "C",
-        "C",
-        "B",
-        "B",
-        "A",
-        "C",
-        "B",
-        "C",
-        "A",
-        "A",
         "C",
         "B",
         "B",
         "D",
+        "C",
         "A",
         "D",
+        "B",
+        "C",
+        "A",
         "D",
         "C",
+        "A",
+        "C",
+        "A",
+        "A",
+        "B",
+        "D",
+        "D",
+        "B",
+        "B",
+        "C",
+        "C",
+        "B",
+        "D",
+        "B",
         "D",
         "A",
-        "D"
+        "C",
+        "A"
       ],
       "issues": [],
       "pattern_issues": []
@@ -722,36 +943,36 @@
           "section": "mcq",
           "ok": true,
           "values": [
-            "A",
-            "B",
-            "A",
-            "D",
-            "A",
-            "D",
-            "C",
-            "B",
-            "D",
-            "C",
-            "C",
-            "B",
-            "B",
-            "A",
-            "C",
-            "B",
-            "C",
-            "A",
-            "A",
             "C",
             "B",
             "B",
             "D",
+            "C",
             "A",
             "D",
+            "B",
+            "C",
+            "A",
             "D",
             "C",
+            "A",
+            "C",
+            "A",
+            "A",
+            "B",
+            "D",
+            "D",
+            "B",
+            "B",
+            "C",
+            "C",
+            "B",
+            "D",
+            "B",
             "D",
             "A",
-            "D"
+            "C",
+            "A"
           ],
           "issues": []
         }
@@ -765,7 +986,7 @@
   },
   "paper": {
     "ok": true,
-    "candidate": "Subjects/S5-ICT/past-papers/2025-2026/Term 02/WrittenExam/25_26_S5_ICT_Exam02.docx",
+    "candidate": "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2025-2026\\Term 02\\WrittenExam\\25_26_S5_ICT_Exam02.docx",
     "footer": {
       "ok": true,
       "expected": "2025-2026 中五級下學期考試-資訊及通訊科技",
@@ -774,7 +995,7 @@
     },
     "cover": {
       "ok": true,
-      "candidate": "Subjects/S5-ICT/past-papers/2025-2026/Term 02/WrittenExam/25_26_S5_ICT_Exam02.docx",
+      "candidate": "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2025-2026\\Term 02\\WrittenExam\\25_26_S5_ICT_Exam02.docx",
       "inferred_from": "25_26_S5_ICT_Exam02.spec.json",
       "expected": {
         "school": "迦密聖道中學",
@@ -789,6 +1010,23 @@
         "paper": "試題簿"
       },
       "issues": []
+    },
+    "written": {
+      "ok": true,
+      "sections_found": [
+        "乙部",
+        "丙部"
+      ],
+      "part_b_paragraphs": 112,
+      "part_c_paragraphs": 338,
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "missing_answer_blank",
+          "message": "乙部: marked sub-part at paragraph 400 is not followed by a tab-only answer blank line.",
+          "paragraph": 400
+        }
+      ]
     }
   }
 }

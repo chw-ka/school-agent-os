@@ -1,0 +1,246 @@
+[
+    {
+        "question_number": "1",
+        "page": 2,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "為了計算學生在三次測驗的平均分,在F2輸入公式,然後複製到F3:F36。寫出F2的公式。",
+                "marks": 1
+            },
+            {
+                "part_label": "b",
+                "question_text": "為了在H2:H6 內儲存取得少於或等於30、50、75、90及100分的學生數目,在H2輸入公式,然後複製到H3:H6。寫出 H2的公式。",
+                "marks": 3
+            }
+        ]
+    },
+    {
+        "question_number": "2",
+        "page": 2,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "當小芬登入一電腦系統,她將會收到一個一次性密碼作身分驗證。舉出一次性密碼的兩項特徵。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "小芬寄給志强一個文件檔。描述他們如何使用公開密碼匙的基礎建設(PKI),以確保只有志强能夠開啟及閱讀此檔案。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "3",
+        "page": 3,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "假設每張相片的大小是5MB,而上載的頻寬是100Mbps。估算上載200 張相片的最短時間。展示你的計算。",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "芝芝發現於瀏覽器內輸入以下URL也可下載同一個檔案。為什麼? http://202.8.88.24/ihouse/Amy2504/photos.zip",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "舉出使用附件勝於超連結傳送此檔案的一個優點。",
+                        "marks": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question_number": "4",
+        "page": 4,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "相片下載時間會否縮短?為什麼?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "所顯示的相片會否失真?為什麼?",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "question_text": "莉莉在郊野公園內安裝一個附有攝像鏡頭的人工智能(AI)系統,以探測火災。她需要挑選相片樣本來訓練此AI系統。舉出莉莉應考慮的兩個因素。",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "5",
+        "page": 4,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "完成下表中可提升桌上電腦的硬件規格。",
+                "marks": 3
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "此驅動程式的主要功能是什麼?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "使用最新版本的驅動程式有什麼好處?",
+                        "marks": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question_number": "6",
+        "page": 5,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "執行以下程式段後,s2的內容是什麼?",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "question_text": "執行以下程式段後,s2的內容是什麼?",
+                "marks": 2
+            }
+        ]
+    },
+    {
+        "question_number": "7",
+        "page": 6,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "建議一個用作輸入「班別」資料比使用文本框較佳的表格元素,並簡略說明。",
+                        "marks": 2
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "一名學生可能會輸入多項服務。李老師發現某些欄位無需重複輸入。這些欄位是什麼?建議一個改良此表格設計的方法。",
+                        "marks": 2
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "舉出兩個支持他的理由。",
+                        "marks": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question_number": "8",
+        "page": 8,
+        "parts": [
+            {
+                "part_label": "a",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "根據以下滑板選手C的分數,寫出執行該程式後變量的數值。",
+                        "marks": 2
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "FS 應是什麼數據類型?為什麼?",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "「如果 JS[i] > JS[Smax]」會被執行多少次?",
+                        "marks": 1
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "在循環中使用「N」而不使用「5」的好處是什麼?",
+                        "marks": 1
+                    }
+                ]
+            },
+            {
+                "part_label": "c",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "假設滑行後評判所給予的五個分數儲存在JS[1]、JS[2]、JS[3]、JS[4] 和 JS[5]內。使用已提供的變量,以Python、C++或Pascal 編寫一程式段來計算Smax、Smin和FS。",
+                        "marks": 5
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "完成以下程式段,以確保評判輸入的分數(sc)是有效的,即 0 ≤ sc ≤ 100。",
+                        "marks": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "question_number": "9",
+        "page": 10,
+        "parts": [
+            {
+                "part_label": "a",
+                "question_text": "此系統可支援最多的學生數目是多少?",
+                "marks": 2
+            },
+            {
+                "part_label": "b",
+                "sub_parts": [
+                    {
+                        "part_label": "i",
+                        "question_text": "「4B115」和「2C180」是有效的用戶名稱嗎?簡略說明。就有效的用戶名稱,展示檢查數位的計算。",
+                        "marks": 3
+                    },
+                    {
+                        "part_label": "ii",
+                        "question_text": "使用此檢查數位有什麼限制?用一個例子說明你的答案。",
+                        "marks": 2
+                    }
+                ]
+            },
+            {
+                "part_label": "c",
+                "question_text": "然而,第130行之後的偽代碼有四個錯誤。填寫下表以展示每個錯誤的位置及其改正。其中一個改正已提供。",
+                "marks": 3
+            },
+            {
+                "part_label": "d",
+                "question_text": "張老師打算在校內下載和安裝一個免費文書處理軟件。他閱讀其使用條款後,決定放棄這次安裝。舉出兩個支持他的理由。",
+                "marks": 2
+            }
+        ]
+    }
+]

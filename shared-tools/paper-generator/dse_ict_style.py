@@ -25,7 +25,13 @@ def style_meta() -> dict[str, Any]:
     g = load_style_guide()
     return {
         "style_guide": str(STYLE_GUIDE_PATH.relative_to(STYLE_GUIDE_PATH.parents[2])),
-        "dse_sources": g["meta"]["sources"],
+        "dse_sources": [
+            "Subjects/DSE-ICT/past-papers/2021",
+            "Subjects/DSE-ICT/past-papers/2022",
+            "Subjects/DSE-ICT/past-papers/2023",
+            "Subjects/DSE-ICT/past-papers/2024",
+            "Subjects/DSE-ICT/past-papers/2025",
+        ],
         "mcq_curriculum_units": ["Core-A", "Core-B", "Core-D"],
-        "phrasing": "HKDSE ICT 2019–2023 (OCR-curated)",
+        "phrasing": "HKDSE ICT 2021–2025 (question-bank blueprint)",
     }

@@ -21,6 +21,15 @@ except ImportError as e:  # pragma: no cover
 
 # Similarity **>** this value ⇒ duplicate (「多於 60%」)
 THRESH_DUPLICATE = 0.60
+# Cross-section pairs (e.g. 甲部 MCQ vs 丁部填充) — lower bar; near-paraphrase leaks answers
+THRESH_INTRA_CROSS = 0.48
+
+SECTION_BOUNDARIES: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ("乙部", ("丙部",)),
+    ("丙部", ("丁部",)),
+    ("丁部", ("戊部",)),
+    ("戊部", ("試卷完", "附表", "下期考試答案")),
+)
 
 STOP_MARKERS = ("試卷完", "附表", "下期考試答案", "本擬題稿", "2024-2025 年度", "－　試卷完")
 
@@ -219,7 +228,7 @@ def extract_written_units(lines: list[str]) -> list[dict]:
     units: list[dict] = []
     uid = 0
 
-    for sec_name, end_kws in (("乙部", ("丙部",)), ("丙部", ("試卷完", "附表"))):
+    for sec_name, end_kws in SECTION_BOUNDARIES:
         sec_lines = _section_lines(lines, sec_name, end_kws)
         if not sec_lines:
             continue
@@ -324,6 +333,253 @@ def _is_boilerplate_line(t: str) -> bool:
     return False
 
 
+def _section_label(sec_name: str) -> str:
+    return sec_name[0] if sec_name else "?"
+
+
+def _mcq_key_from_lines(
+    lines: list[str],
+    *,
+    expected_count: int,
+    letters: tuple[str, ...] = ("A", "B", "C", "D"),
+) -> list[str]:
+    """Parse MCQ answer-key line near the end of the exam body."""
+    candidates: list[tuple[int, str]] = []
+    key_re = re.compile(r"^[ABCD](?:\s*[ABCD])+\s*$", re.IGNORECASE)
+    for line in lines:
+        compact = re.sub(r"\s+", "", line)
+        if len(compact) < 8 or not all(c.upper() in letters for c in compact):
+            continue
+        if key_re.match(line.strip()) or len(compact) >= 10:
+            candidates.append((len(compact), line))
+    if not candidates:
+        return []
+    candidates.sort(key=lambda x: -x[0])
+    parsed: list[str] = []
+    for ch in candidates[0][1].upper():
+        if ch in letters:
+            parsed.append(ch)
+    if expected_count and len(parsed) > expected_count:
+        parsed = parsed[:expected_count]
+    return parsed
+
+
+def _parse_mcq_option_text(full: str, letter: str) -> str:
+    target = letter.strip().upper()
+    for line in full.splitlines():
+        s = line.lstrip()
+        if len(s) >= 2 and s[0] == target and s[1] == ".":
+            return s[2:].strip()
+    return ""
+
+
+_ANSWER_LEAK_STOP = frozenset(
+    {
+        "只有",
+        "可以",
+        "應該",
+        "使用",
+        "程式",
+        "下列",
+        "哪項",
+        "較合",
+        "合理",
+        "是否",
+        "需要",
+        "不能",
+        "完全",
+        "通常",
+        "主要",
+        "為了",
+        "因為",
+        "例如",
+        "課堂",
+        "學生",
+        "老師",
+        "同學",
+        "測驗",
+        "功能",
+        "步驟",
+        "影像",
+        "語音",
+        "文字",
+        "檔案",
+        "模型",
+        "播放",
+        "轉成",
+        "轉為",
+        "改成",
+        "刪除",
+        "安裝",
+        "設定",
+        "調整",
+        "測試",
+        "修改",
+        "完美",
+        "一次",
+    }
+)
+
+
+def _token_is_question_topic(token: str, text: str) -> bool:
+    """Token names the skill being tested (not an leaked answer)."""
+    if f"「{token}" in text or f"{token}（" in text:
+        return True
+    return False
+
+
+def _is_section_header(text: str) -> bool:
+    s = text.strip()
+    return bool(re.match(r"^[甲乙丙丁戊]部[：:–\-]", s)) and len(s) < 48
+
+
+def _answer_leak_tokens(answer_text: str) -> list[str]:
+    tokens = re.findall(r"[\u4e00-\u9fff]{2,}", answer_text)
+    out: list[str] = []
+    for token in tokens:
+        if token in _ANSWER_LEAK_STOP:
+            continue
+        if len(token) < 2:
+            continue
+        if token not in out:
+            out.append(token)
+    return out
+
+
+def extract_comparable_units(lines: list[str]) -> list[dict]:
+    """
+    Comparable question units for intra-exam duplicate / answer-leak checks.
+    Covers 甲部 MCQ stems plus 乙–戊 substantive prompts (T/F, fill, short answer).
+    """
+    units: list[dict] = []
+    for m in extract_mcq_stems(lines):
+        units.append(
+            {
+                "label": f"甲#{m['index']}",
+                "text": m["stem"],
+                "full": m["full"],
+                "kind": "mcq",
+            }
+        )
+
+    for sec_name, end_kws in SECTION_BOUNDARIES:
+        sec_lines = _section_lines(lines, sec_name, end_kws)
+        if not sec_lines:
+            continue
+        sec_tag = _section_label(sec_name)
+        uid = 0
+        for t in sec_lines:
+            if _is_boilerplate_line(t):
+                continue
+            norm = normalize_text(t)
+            if len(norm) < 12:
+                continue
+
+            kind = "written"
+            if "________" in t or re.search(r"_{3,}", t):
+                kind = "fill"
+            elif sec_name == "丙部" and (t.endswith("。") or len(t) > 28):
+                kind = "tf"
+            elif sec_name == "戊部" and ("？" in t or "?" in t):
+                kind = "sa"
+            elif re.match(r"^\d+\.\s", t):
+                kind = "written"
+            elif sec_name == "乙部":
+                continue
+            else:
+                continue
+
+            uid += 1
+            units.append(
+                {
+                    "label": f"{sec_tag}#{uid}",
+                    "text": t.strip(),
+                    "kind": kind,
+                    "section": sec_name,
+                }
+            )
+    return units
+
+
+def compare_intra_exam_lines(
+    lines: list[str],
+    *,
+    mcq_answers: Optional[list[str]] = None,
+    threshold_same: float = THRESH_DUPLICATE,
+    threshold_cross: float = THRESH_INTRA_CROSS,
+) -> list[Match]:
+    """Detect repeated / leaking content within one exam paper."""
+    units = extract_comparable_units(lines)
+    mcq_stems = extract_mcq_stems(lines)
+    matches: list[Match] = []
+
+    for i, a in enumerate(units):
+        for b in units[i + 1 :]:
+            if a.get("kind") == "fill" and b.get("kind") == "fill":
+                continue
+            cross = a.get("kind") != b.get("kind")
+            thresh = threshold_cross if cross else threshold_same
+            sim = text_similarity(a["text"], b["text"])
+            if sim > thresh:
+                matches.append(
+                    Match(
+                        reference="(within exam)",
+                        match_type="intra_exam",
+                        similarity=sim,
+                        candidate_label=a["label"],
+                        reference_label=b["label"],
+                        candidate_snippet=a["text"].replace("\n", " ")[:160],
+                        reference_snippet=b["text"].replace("\n", " ")[:160],
+                    )
+                )
+
+    if mcq_answers and len(mcq_answers) == len(mcq_stems):
+        mcq_by_label = {f"甲#{m['index']}": m for m in mcq_stems}
+        for m, letter in zip(mcq_stems, mcq_answers, strict=True):
+            opt = _parse_mcq_option_text(m["full"], letter)
+            if not opt:
+                continue
+            for token in _answer_leak_tokens(opt):
+                for u in units:
+                    if u.get("kind") == "mcq":
+                        continue
+                    if token not in u["text"]:
+                        continue
+                    if _token_is_question_topic(token, u["text"]):
+                        continue
+                    matches.append(
+                        Match(
+                            reference="(within exam)",
+                            match_type="answer_leak",
+                            similarity=1.0,
+                            candidate_label=f"甲#{m['index']}({letter})",
+                            reference_label=u["label"],
+                            candidate_snippet=f"MCQ answer «{token}» from: {opt[:80]}",
+                            reference_snippet=u["text"].replace("\n", " ")[:160],
+                        )
+                    )
+                    break
+
+    best: dict[tuple, Match] = {}
+    for m in matches:
+        key = (m.match_type, m.candidate_label, m.reference_label)
+        if key not in best or m.similarity > best[key].similarity:
+            best[key] = m
+    return sorted(best.values(), key=lambda x: (-x.similarity, x.candidate_label))
+
+
+def compare_intra_exam(
+    candidate_path: Path,
+    *,
+    mcq_answers: Optional[list[str]] = None,
+) -> list[Match]:
+    lines = extract_lines(candidate_path)
+    stems = extract_mcq_stems(lines)
+    if mcq_answers is None and stems:
+        mcq_answers = _mcq_key_from_lines(lines, expected_count=len(stems))
+    return compare_intra_exam_lines(lines, mcq_answers=mcq_answers or None)
+
+
 def _add_match(matches: list[Match], m: Match) -> None:
     matches.append(m)
 
@@ -406,9 +662,9 @@ def compare_documents(
                     ),
                 )
 
-    # Section-level (whole 乙/丙) — only for past papers, not template layout
+    # Section-level (whole 乙–戊) — only for past papers, not template layout
     if not template_mode:
-        for sec, end in (("乙部", ("丙部",)), ("丙部", ("試卷完", "附表"))):
+        for sec, end in SECTION_BOUNDARIES:
             cs = "\n".join(_section_lines(cand_lines, sec, end))
             rs = "\n".join(_section_lines(ref_lines, sec, end))
             if cs and rs:
@@ -604,6 +860,21 @@ def run_full_check(
                 )
             )
 
+    try:
+        report.matches.extend(compare_intra_exam(candidate))
+    except Exception as e:  # pragma: no cover
+        report.matches.append(
+            Match(
+                reference="(within exam)",
+                match_type="error",
+                similarity=0.0,
+                candidate_label="",
+                reference_label="",
+                candidate_snippet=str(e),
+                reference_snippet="",
+            )
+        )
+
     return report
 
 
@@ -614,8 +885,10 @@ def format_report_text(report: CompareReport, *, min_similarity: float = THRESH_
         f"Template: {report.template or '(none)'}",
         f"References checked: {len(report.references_checked)}",
         f"Rule: similarity > {pct}% → same question (duplicate)",
+        f"Cross-section (within exam): similarity > {int(THRESH_INTRA_CROSS * 100)}% also flagged",
         f"Duplicates found: {report.duplicate_count}",
         "Note: question numbers may differ (cross-number matching).",
+        "Includes intra-exam overlap (甲–戊) and MCQ answer leaks into other sections.",
         "",
     ]
     shown = [
