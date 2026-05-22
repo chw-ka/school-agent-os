@@ -172,6 +172,7 @@ def build_f5_ict_exam_spec(
     *,
     mcq_rows: list[list[str]] | None = None,
     mcq_answers: str | None = None,
+    mcq_provenance: list[str] | None = None,
     written_picks: dict[str, dict] | None = None,
 ) -> dict:
     _fmt = Path(__file__).resolve().parents[1] / "paper-formatter"
@@ -187,17 +188,20 @@ def build_f5_ict_exam_spec(
         answer = mcq_answers[i - 1] if mcq_answers and i <= len(mcq_answers) else None
         core, concepts = MCQ_SLOT_PLAN[i - 1] if i <= len(MCQ_SLOT_PLAN) else ("", [])
         concepts = list(concepts)
-        items.append(
-            make_item(
-                f"mcq-{i:02d}",
-                "mcq",
-                _join_lines(row),
-                marks=1,
-                concepts=concepts,
-                core=core,
-                answer=answer,
-            )
+        prov_id = (
+            mcq_provenance[i - 1]
+            if mcq_provenance and i - 1 < len(mcq_provenance)
+            else None
         )
+        item_kw: dict = {
+            "marks": 1,
+            "concepts": concepts,
+            "core": core,
+            "answer": answer,
+        }
+        if prov_id:
+            item_kw["dse_source"] = prov_id
+        items.append(make_item(f"mcq-{i:02d}", "mcq", _join_lines(row), **item_kw))
     if written_picks:
         items.extend(_written_items_from_picks(written_picks))
     else:
@@ -233,4 +237,6 @@ def build_f5_ict_exam_spec(
     }
     if mcq_answers:
         meta["mcq_answers"] = mcq_answers
+    if mcq_provenance:
+        meta["mcq_provenance"] = list(mcq_provenance)
     return build_spec(meta, items)

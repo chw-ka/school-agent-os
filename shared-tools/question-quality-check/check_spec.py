@@ -25,6 +25,12 @@ from concept_conflict_check import (
     format_concept_conflict_report,
 )
 from exam_spec import DuplicateEntry, DuplicateReport, load_spec, spec_items
+from answer_verify_check import (
+    AnswerVerifyResult,
+    format_answer_verify_report,
+    verify_spec_answers,
+)
+from coherence_check import CoherenceCheckResult, check_spec_coherence, format_coherence_report
 from format_check import FormatCheckResult, check_exam_format, check_spec_format, format_format_report
 from mcq_check import McqCheckResult, check_mcq, format_mcq_report
 from quality_lib import (
@@ -49,6 +55,8 @@ class QuestionQualityReport:
     answer_patterns: Optional[AllAnswerPatternsResult] = None
     format: Optional[FormatCheckResult] = None
     concept_conflicts: Optional[ConceptConflictResult] = None
+    coherence: Optional[CoherenceCheckResult] = None
+    answer_verify: Optional[AnswerVerifyResult] = None
 
     @property
     def has_duplicates(self) -> bool:
@@ -81,6 +89,14 @@ class QuestionQualityReport:
         return self.format is not None and not self.format.ok
 
     @property
+    def has_coherence_issues(self) -> bool:
+        return self.coherence is not None and not self.coherence.ok
+
+    @property
+    def has_answer_verify_issues(self) -> bool:
+        return self.answer_verify is not None and not self.answer_verify.ok
+
+    @property
     def ok(self) -> bool:
         return (
             not self.has_duplicates
@@ -89,6 +105,8 @@ class QuestionQualityReport:
             and not self.has_mcq_issues
             and not self.has_answer_pattern_issues
             and not self.has_format_issues
+            and not self.has_coherence_issues
+            and not self.has_answer_verify_issues
         )
 
     @property
@@ -112,6 +130,10 @@ class QuestionQualityReport:
             d["format"] = self.format.to_dict()
         if self.concept_conflicts is not None:
             d["concept_conflicts"] = self.concept_conflicts.to_dict()
+        if self.coherence is not None:
+            d["coherence"] = self.coherence.to_dict()
+        if self.answer_verify is not None:
+            d["answer_verify"] = self.answer_verify.to_dict()
         return d
 
 
@@ -339,6 +361,8 @@ def run_question_check(
     verify_mcq: bool = True,
     verify_format: bool = True,
     verify_concept_conflicts: bool = True,
+    verify_coherence: bool = True,
+    verify_answers: bool = True,
 ) -> QuestionQualityReport:
     candidate_spec_path = candidate_spec_path.expanduser().resolve()
     candidate = load_spec(candidate_spec_path)
@@ -463,6 +487,14 @@ def run_question_check(
     if verify_concept_conflicts:
         quality.concept_conflicts = check_concept_conflicts(candidate)
 
+    if verify_coherence:
+        quality.coherence = check_spec_coherence(
+            candidate, candidate_label=str(candidate_spec_path)
+        )
+
+    if verify_answers:
+        quality.answer_verify = verify_spec_answers(candidate)
+
     return quality
 
 
@@ -519,6 +551,12 @@ def format_quality_report_text(report: QuestionQualityReport) -> str:
                 "=== Concept conflicts (cross-section) ===",
                 format_concept_conflict_report(report.concept_conflicts),
             ]
+        )
+    if report.coherence is not None:
+        sections.extend(["", "=== Coherence (通順) ===", format_coherence_report(report.coherence)])
+    if report.answer_verify is not None:
+        sections.extend(
+            ["", "=== Answer verification ===", format_answer_verify_report(report.answer_verify)]
         )
     sections.append("")
     sections.append(f"Overall: {'PASS' if report.ok else 'ISSUES FOUND'}")

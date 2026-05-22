@@ -81,19 +81,8 @@
     }
   ],
   "written_total": 13,
-  "written_source_over_threshold": 2,
-  "written_source_hits": [
-    {
-      "slot": "b-02",
-      "similarity": 0.7802,
-      "bank_id": "2024-Paper1B_CompulsoryStructured-1-a-iii"
-    },
-    {
-      "slot": "b-06",
-      "similarity": 0.7193,
-      "bank_id": "2024-Paper1B_CompulsoryStructured-1-b-ii"
-    }
-  ],
+  "written_source_over_threshold": 0,
+  "written_source_hits": [],
   "written_bank_best_over_threshold": 0,
   "written_bank_best_hits": [],
   "over_threshold": 15,

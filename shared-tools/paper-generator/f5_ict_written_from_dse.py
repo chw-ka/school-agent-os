@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import random
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -18,6 +19,11 @@ from f5_ict_from_dse import (
     _vary_numbers_text,
 )
 from quality_lib import normalize_text, text_similarity
+
+_QCHECK = Path(__file__).resolve().parents[1] / "question-quality-check"
+if str(_QCHECK) not in sys.path:
+    sys.path.insert(0, str(_QCHECK))
+from coherence_check import _TOPIC_SQL, check_text_coherence  # noqa: E402
 
 _JSON_BLOCK_RE = re.compile(r"\n?\s*\{[\s\S]*\}\s*$")
 _IMAGE_DESC_RE = re.compile(r"\[圖片描述\][^\n]*")
@@ -292,20 +298,58 @@ def _compose_written_text(
     *,
     mapping: dict[int, int],
 ) -> str:
+    """Same-topic parts only; preserve DSE subpart order; no meta bridge."""
+    ordered = sorted(parts, key=lambda x: str(x.get("number", x.get("id", ""))))
     blocks: list[str] = []
-    years = sorted({str(p.get("_year", "")) for p in parts if p.get("_year")})
-    for i, it in enumerate(parts):
+    seen: set[str] = set()
+    for it in ordered:
         block = _prepare_written_part(_item_part_text(it), rng, mapping)
-        if not block:
+        if not block or block[:72] in seen:
             continue
-        if i > 0 and len(years) >= 2:
-            block = f"({chr(ord('a') + i - 1)}) {block.lstrip()}"
+        seen.add(block[:72])
         blocks.append(block)
-    if len(years) >= 2 and blocks:
-        bridge = "（以下各題參考上述情境；部分設定取自不同 DSE 試題。）"
-        if len(blocks) >= 2:
-            blocks.insert(1, bridge)
     return "\n\n".join(blocks)
+
+
+def _pick_coherent_parts(
+    rng: random.Random,
+    candidates: list[dict],
+    concepts: tuple[str, ...],
+    slot_id: str,
+    *,
+    used_ids: set[str],
+) -> list[dict] | None:
+    """One primary cluster; optionally one extra part from another year if same topic."""
+    pool = [c for c in candidates if c["id"] not in used_ids]
+    if not pool:
+        return None
+    clusters = _cluster_items(pool)
+    scored: list[tuple[int, str, list[dict]]] = []
+    for key, items in clusters.items():
+        score = _score_cluster(items, concepts)
+        if score < 1:
+            continue
+        scored.append((score, key, items))
+    if not scored:
+        return None
+    scored.sort(key=lambda x: (-x[0], x[1]))
+    rng.shuffle(scored[: min(6, len(scored))])
+    _sc, _key, primary = scored[0]
+    primary_sorted = sorted(primary, key=lambda x: str(x.get("number", x.get("id", ""))))
+    parts = primary_sorted[: min(3, len(primary_sorted))]
+    primary_text = _strip_written_raw("\n\n".join(_item_part_text(p) for p in parts))
+    if len(scored) > 1 and rng.random() < 0.45:
+        for _sc2, _k2, other in scored[1:6]:
+            if str(other[0].get("_year")) == str(parts[0].get("_year")):
+                continue
+            extra = rng.choice(other)
+            trial = parts + [extra]
+            if _parts_topic_compatible(trial, slot_id):
+                parts = trial
+                break
+    if not _parts_topic_compatible(parts, slot_id):
+        return None
+    return parts
 
 
 def _max_similarity_to_parts(parts: list[dict], composed: str) -> float:
@@ -316,26 +360,59 @@ def _max_similarity_to_parts(parts: list[dict], composed: str) -> float:
     )
 
 
-def _written_scenario_nudge(text: str, rng: random.Random) -> str:
-    prefix = rng.choice(
-        (
-            "在下列校本情境中，",
-            "參考以下設定（已改編自 DSE 試題），",
-            "假設你是該系統管理員。",
-        )
-    )
-    if text.startswith(prefix[:4]):
-        return text
-    return prefix + text
-
-
 def _strengthen_written_text(text: str, rng: random.Random, mapping: dict[int, int]) -> str:
-    """Extra pass when still too close to a single bank part."""
+    """Extra pass when still too close to a single bank part (no meta bridge)."""
     t = _vary_numbers_text(text, rng, mapping)
-    t = _reframe_written_phrases(t, rng)
-    if rng.random() < 0.7:
-        t = _written_scenario_nudge(t, rng)
-    return t
+    return _reframe_written_phrases(t, rng)
+
+
+def _topic_tags(text: str) -> set[str]:
+    from coherence_check import (  # noqa: PLC0415
+        _TOPIC_ALGO,
+        _TOPIC_ANTIVIRUS,
+        _TOPIC_MEDIA,
+        _TOPIC_SHEET,
+        _TOPIC_SQL,
+        _TOPIC_VALIDATION,
+    )
+
+    tags: set[str] = set()
+    if _TOPIC_SQL.search(text):
+        tags.add("sql")
+    if _TOPIC_MEDIA.search(text):
+        tags.add("media")
+    if _TOPIC_ANTIVIRUS.search(text):
+        tags.add("antivirus")
+    if _TOPIC_ALGO.search(text):
+        tags.add("algo")
+    if _TOPIC_SHEET.search(text):
+        tags.add("sheet")
+    if _TOPIC_VALIDATION.search(text):
+        tags.add("validation")
+    return tags
+
+
+def _parts_topic_compatible(parts: list[dict], slot_id: str) -> bool:
+    texts = [_strip_written_raw(_item_part_text(p)) for p in parts]
+    tags = set()
+    for t in texts:
+        tags |= _topic_tags(t)
+    if len(tags) <= 1:
+        return True
+    from coherence_check import _SLOT_TOPIC_ALLOW  # noqa: PLC0415
+
+    allowed = _SLOT_TOPIC_ALLOW.get(slot_id)
+    if allowed and tags <= allowed:
+        return True
+    return False
+
+
+_COHERENCE_HARD = frozenset({"meta_bridge", "topic_clash", "orphan_subpart", "subpart_order"})
+
+
+def _written_text_coherent(slot_id: str, text: str, section: str) -> bool:
+    issues = check_text_coherence(slot_id, text, section=section)
+    return not any(i.kind in _COHERENCE_HARD for i in issues)
 
 
 def _max_similarity_to_bank(composed: str, pool: list[dict], *, sample: int = 280) -> float:
@@ -380,19 +457,23 @@ def pick_written_items_from_bank(
             pool = _written_pool(rng, slugs)
             required = [c for c in concepts if c in ("堆疊", "ERD")]
             candidates = _ranked_parts(pool, concepts, used_ids)
+            if slot_id in ("b-06", "c-01", "c-02", "c-03", "c-05", "c-06", "c-07") and candidates:
+                sql_cands = [c for c in candidates if _TOPIC_SQL.search(_item_part_text(c))]
+                if sql_cands:
+                    candidates = sql_cands
             if not candidates:
                 ok = False
                 last_err = f"No bank parts for {slot_id} ({concepts})"
                 break
 
             slot_pick: dict | None = None
-            for _slot_try in range(36):
+            for _slot_try in range(40):
                 num_mapping: dict[int, int] = {}
-                n_parts = rng.randint(2, min(4, len(candidates)))
-                min_years = 2 if len({c.get("_year") for c in candidates[:24]}) >= 2 else 1
-                parts = _select_cross_year_parts(
-                    rng, candidates, n_parts=n_parts, min_years=min_years
+                parts = _pick_coherent_parts(
+                    rng, candidates, concepts, slot_id, used_ids=used_ids
                 )
+                if not parts:
+                    continue
                 if required and not any(
                     any(rc in it.get("concepts", []) for rc in required) for it in parts
                 ):
@@ -400,38 +481,44 @@ def pick_written_items_from_bank(
                 full = _compose_written_text(parts, rng, mapping=num_mapping)
                 if len(full) < 24:
                     continue
+                if not _written_text_coherent(slot_id, full, section):
+                    continue
                 sim_parts = _max_similarity_to_parts(parts, full)
                 sim_bank = _max_similarity_to_bank(full, pool)
                 for _ in range(2):
                     if sim_parts <= bank_sim_threshold:
                         break
                     full = _strengthen_written_text(full, rng, num_mapping)
+                    if not _written_text_coherent(slot_id, full, section):
+                        break
                     sim_parts = _max_similarity_to_parts(parts, full)
                     sim_bank = _max_similarity_to_bank(full, pool)
-                if sim_parts <= bank_sim_threshold and sim_bank <= bank_sim_threshold:
-                    years = sorted({str(p.get("_year", "")) for p in parts})
-                    source_ids = [it["id"] for it in parts]
-                    for iid in source_ids:
-                        used_ids.add(iid)
-                    slot_pick = {
-                        "id": slot_id,
-                        "section": section,
-                        "text": full,
-                        "scenario_line": _first_scenario_line(full),
-                        "marks": marks,
-                        "title": title,
-                        "concepts": list(concepts),
-                        "dse_source": source_ids[0],
-                        "dse_sources": source_ids,
-                        "dse_year": years[0] if len(years) == 1 else "+".join(years),
-                        "dse_slug": parts[0].get("_slug"),
-                        "mix_years": years,
-                        "composition": "cross_year" if len(years) >= 2 else "single_year",
-                    }
-                    break
+                if sim_parts > bank_sim_threshold or sim_bank > bank_sim_threshold:
+                    continue
+                if not _written_text_coherent(slot_id, full, section):
+                    continue
+                years = sorted({str(p.get("_year", "")) for p in parts if p.get("_year")})
+                source_ids = [it["id"] for it in parts]
+                for iid in source_ids:
+                    used_ids.add(iid)
+                slot_pick = {
+                    "id": slot_id,
+                    "section": section,
+                    "text": full,
+                    "scenario_line": _first_scenario_line(full),
+                    "marks": marks,
+                    "title": title,
+                    "concepts": list(concepts),
+                    "dse_source": source_ids[0],
+                    "dse_sources": source_ids,
+                    "dse_year": years[0] if len(years) == 1 else "+".join(years),
+                    "dse_slug": parts[0].get("_slug"),
+                    "mix_years": years,
+                    "composition": "cross_year" if len(years) >= 2 else "single_cluster",
+                }
+                break
 
             if slot_pick is None:
-                # Fallback: single cluster, stronger transforms, relax only bank scan
                 clusters = _cluster_items(pool)
                 scored_c: list[tuple[int, str, list[dict]]] = []
                 for key, items in clusters.items():
@@ -450,34 +537,49 @@ def pick_written_items_from_bank(
                     last_err = f"No composed pick for {slot_id} (sim > {bank_sim_threshold:.0%})"
                     break
                 scored_c.sort(key=lambda x: (-x[0], x[1]))
-                rng.shuffle(scored_c[:6])
-                _sc, _key, cluster_items = scored_c[0]
-                num_mapping = {}
-                full = _assemble_cluster_text(cluster_items, rng, max_parts=4, mapping=num_mapping)
-                parts = cluster_items[:4]
-                sim_bank = _max_similarity_to_bank(full, pool)
-                if sim_bank > bank_sim_threshold + 0.08:
-                    ok = False
-                    last_err = f"Fallback still too close to bank for {slot_id}"
+                rng.shuffle(scored_c[:10])
+                for _sc, _key, cluster_items in scored_c[:12]:
+                    ordered = sorted(
+                        cluster_items,
+                        key=lambda x: str(x.get("number", x.get("id", ""))),
+                    )
+                    for take in (2, 1):
+                        num_mapping: dict[int, int] = {}
+                        subset = ordered[:take]
+                        full = _assemble_cluster_text(
+                            subset, rng, max_parts=take, mapping=num_mapping
+                        )
+                        if len(full) < 20 or not _written_text_coherent(slot_id, full, section):
+                            continue
+                        sim_bank = _max_similarity_to_bank(full, pool)
+                        if sim_bank > bank_sim_threshold + 0.12:
+                            continue
+                        break
+                    else:
+                        continue
+                    source_ids = [it["id"] for it in subset]
+                    for iid in source_ids:
+                        used_ids.add(iid)
+                    slot_pick = {
+                        "id": slot_id,
+                        "section": section,
+                        "text": full,
+                        "scenario_line": _first_scenario_line(full),
+                        "marks": marks,
+                        "title": title,
+                        "concepts": list(concepts),
+                        "dse_source": source_ids[0],
+                        "dse_sources": source_ids,
+                        "dse_year": cluster_items[0].get("_year"),
+                        "dse_slug": cluster_items[0].get("_slug"),
+                        "mix_years": sorted({str(p.get("_year", "")) for p in subset}),
+                        "composition": "cluster_fallback",
+                    }
                     break
-                source_ids = [it["id"] for it in parts]
-                for iid in source_ids:
-                    used_ids.add(iid)
-                slot_pick = {
-                    "id": slot_id,
-                    "section": section,
-                    "text": full,
-                    "scenario_line": _first_scenario_line(full),
-                    "marks": marks,
-                    "title": title,
-                    "concepts": list(concepts),
-                    "dse_source": source_ids[0],
-                    "dse_sources": source_ids,
-                    "dse_year": cluster_items[0].get("_year"),
-                    "dse_slug": cluster_items[0].get("_slug"),
-                    "mix_years": sorted({str(p.get("_year", "")) for p in parts}),
-                    "composition": "cluster_fallback",
-                }
+                if slot_pick is None:
+                    ok = False
+                    last_err = f"No coherent fallback for {slot_id}"
+                    break
 
             picks[slot_id] = slot_pick
 

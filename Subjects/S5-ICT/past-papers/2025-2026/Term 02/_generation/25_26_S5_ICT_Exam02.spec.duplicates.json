@@ -37,14 +37,16 @@
         "mcq-27",
         "mcq-28",
         "mcq-29",
-        "mcq-30"
+        "mcq-30",
+        "c-02",
+        "c-01"
       ],
       "references_checked": [
         "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2024-2025\\Term 02\\WrittenExam\\24_25_S5_ICT_Exam02.docx",
         "C:\\Users\\localadmin\\Projects\\school-agent-os\\Subjects\\S5-ICT\\past-papers\\2025-2026\\Term 02\\WrittenExam\\25_26_S5_ICT_Exam02.docx",
         "DSE-ICT/question-bank"
       ],
-      "duplicate_count": 48,
+      "duplicate_count": 51,
       "duplicates": [
         {
           "candidate_id": "mcq-01",
@@ -52,8 +54,8 @@
           "reference_id": "mcq-01",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "以下哪一步驟可以確保輸入數據的準確性？\n\n\tA.\t數據儲存\n\tB.\t數據收集\n\tC.\t數據分析\n\tD.\t數據控制",
-          "reference_text": "以下哪一步驟可以確保輸入數據的準確性？\n\tA.\t數據儲存\n\tB.\t數據收集\n\tC.\t數據分析\n\tD.\t數據控制"
+          "candidate_text": "以下哪一步驟可以確保輸入數據的準確性？\n\n\tA.\t數據分析\n\tB.\t數據儲存\n\tC.\t數據收集\n\tD.\t數據控制",
+          "reference_text": "以下哪一步驟可以確保輸入數據的準確性？\n\tA.\t數據分析\n\tB.\t數據儲存\n\tC.\t數據收集\n\tD.\t數據控制"
         },
         {
           "candidate_id": "mcq-02",
@@ -61,8 +63,8 @@
           "reference_id": "mcq-02",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "下列哪項最能說明操作系統檔宜存放在 SSD 而非硬碟機？\n\n\tA.\t操作系統容量必須小於 SSD 容量\n\tB.\tSSD 每 GB 價格較硬碟機低\n\tC.\t系統檔案需經常讀寫，SSD 存取較快\n\tD.\t操作系統屬於應用軟件",
-          "reference_text": "下列哪項最能說明操作系統檔宜存放在 SSD 而非硬碟機？\n\tA.\t操作系統容量必須小於 SSD 容量\n\tB.\tSSD 每 GB 價格較硬碟機低\n\tC.\t系統檔案需經常讀寫，SSD 存取較快\n\tD.\t操作系統屬於應用軟件"
+          "candidate_text": "下列哪項最能說明操作系統檔宜存放在 SSD 而非硬碟機？\n\n\tA.\t操作系統容量必須小於 SSD 容量\n\tB.\t操作系統屬於應用軟件\n\tC.\tSSD 每 GB 價格較硬碟機低\n\tD.\t系統檔案需經常讀寫，SSD 存取較快",
+          "reference_text": "下列哪項最能說明操作系統檔宜存放在 SSD 而非硬碟機？\n\tA.\t操作系統容量必須小於 SSD 容量\n\tB.\t操作系統屬於應用軟件\n\tC.\tSSD 每 GB 價格較硬碟機低\n\tD.\t系統檔案需經常讀寫，SSD 存取較快"
         },
         {
           "candidate_id": "mcq-03",
@@ -70,8 +72,8 @@
           "reference_id": "mcq-03",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列哪一事項可略為忽略？\n\n\tA.\t網絡安全\n\tB.\t個人數據私隱\n\tC.\t操作系統\n\tD.\t應用程式的檔案大小",
-          "reference_text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列哪一事項可略為忽略？\n\tA.\t網絡安全\n\tB.\t個人數據私隱\n\tC.\t操作系統\n\tD.\t應用程式的檔案大小"
+          "candidate_text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列哪一事項可略為忽略？\n\n\tA.\t應用程式的檔案大小\n\tB.\t網絡安全\n\tC.\t操作系統\n\tD.\t個人數據私隱",
+          "reference_text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列哪一事項可略為忽略？\n\tA.\t應用程式的檔案大小\n\tB.\t網絡安全\n\tC.\t操作系統\n\tD.\t個人數據私隱"
         },
         {
           "candidate_id": "mcq-04",
@@ -79,8 +81,8 @@
           "reference_id": "mcq-04",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "有一百個 298GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 4TB 硬碟來儲存所有視像檔案呢？\n\n\tA.\t19\n\tB.\t11\n\tC.\t29\n\tD.\t13",
-          "reference_text": "有一百個 298GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 4TB 硬碟來儲存所有視像檔案呢？\n\tA.\t19\n\tB.\t11\n\tC.\t29\n\tD.\t13"
+          "candidate_text": "有一百個 298GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 4TB 硬碟來儲存所有視像檔案呢？\n\n\tA.\t13\n\tB.\t19\n\tC.\t29\n\tD.\t11",
+          "reference_text": "有一百個 298GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 4TB 硬碟來儲存所有視像檔案呢？\n\tA.\t13\n\tB.\t19\n\tC.\t29\n\tD.\t11"
         },
         {
           "candidate_id": "mcq-05",
@@ -97,8 +99,8 @@
           "reference_id": "mcq-06",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "設計了 M1 和 M6 兩個算法，在自動販賣機內以每 3 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\n\n\n\n\tA.\tX: 程式, Y: 儲存器\n\tB.\tX: 數據庫, Y: 變數\n\tC.\tX: 互聯網, Y: 網絡設備\n\tD.\tX: 統一碼, Y: 二進制數字",
-          "reference_text": "設計了 M1 和 M6 兩個算法，在自動販賣機內以每 3 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\n\tA.\tX: 程式, Y: 儲存器\n\tB.\tX: 數據庫, Y: 變數\n\tC.\tX: 互聯網, Y: 網絡設備\n\tD.\tX: 統一碼, Y: 二進制數字"
+          "candidate_text": "設計了 M1 和 M6 兩個算法，在自動販賣機內以每 3 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\n\n\n\n\tA.\tX: 統一碼, Y: 二進制數字\n\tB.\tX: 程式, Y: 儲存器\n\tC.\tX: 數據庫, Y: 變數\n\tD.\tX: 互聯網, Y: 網絡設備",
+          "reference_text": "設計了 M1 和 M6 兩個算法，在自動販賣機內以每 3 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\n\tA.\tX: 統一碼, Y: 二進制數字\n\tB.\tX: 程式, Y: 儲存器\n\tC.\tX: 數據庫, Y: 變數\n\tD.\tX: 互聯網, Y: 網絡設備"
         },
         {
           "candidate_id": "mcq-07",
@@ -106,8 +108,8 @@
           "reference_id": "mcq-07",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項因素可略為忽略？\n\n\n\n\tA.\tRAM 的儲存大小\n\tB.\tROM 的儲存大小\n\tC.\tSSD 的儲存大小\n\tD.\tCPU 的時鐘頻率",
-          "reference_text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項因素可略為忽略？\n\tA.\tRAM 的儲存大小\n\tB.\tROM 的儲存大小\n\tC.\tSSD 的儲存大小\n\tD.\tCPU 的時鐘頻率"
+          "candidate_text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項因素可略為忽略？\n\n\n\n\tA.\tRAM 的儲存大小\n\tB.\tSSD 的儲存大小\n\tC.\tROM 的儲存大小\n\tD.\tCPU 的時鐘頻率",
+          "reference_text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項因素可略為忽略？\n\tA.\tRAM 的儲存大小\n\tB.\tSSD 的儲存大小\n\tC.\tROM 的儲存大小\n\tD.\tCPU 的時鐘頻率"
         },
         {
           "candidate_id": "mcq-08",
@@ -115,8 +117,8 @@
           "reference_id": "mcq-08",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 N\n當 N < 0\n\n\n\tA.\t數據驗證\n\tB.\t數據有效性檢驗\n\tC.\t數據生成\n\tD.\t數據修改",
-          "reference_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n輸入 N\n當 N < 0\n\tA.\t數據驗證\n\tB.\t數據有效性檢驗\n\tC.\t數據生成\n\tD.\t數據修改"
+          "candidate_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 N\n當 N < 0\n\n\n\tA.\t數據驗證\n\tB.\t數據修改\n\tC.\t數據生成\n\tD.\t數據有效性檢驗",
+          "reference_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n輸入 N\n當 N < 0\n\tA.\t數據驗證\n\tB.\t數據修改\n\tC.\t數據生成\n\tD.\t數據有效性檢驗"
         },
         {
           "candidate_id": "mcq-09",
@@ -124,8 +126,8 @@
           "reference_id": "mcq-09",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "需要多少位元才態表示一個 13x13 的黑白像素圖像？\n需要多少位元才能表示一個 13x13 的黑白像素圖像？\n\tA.\t61\n\tB.\t64^2\n\tC.\t8^2\n\tD.\t2^64",
-          "reference_text": "需要多少位元才態表示一個 13x13 的黑白像素圖像？\n需要多少位元才能表示一個 13x13 的黑白像素圖像？\n\tA.\t61\n\tB.\t64^2\n\tC.\t8^2\n\tD.\t2^64"
+          "candidate_text": "需要多少位元才態表示一個 13x13 的黑白像素圖像？\n需要多少位元才能表示一個 13x13 的黑白像素圖像？\n\tA.\t64^2\n\tB.\t8^2\n\tC.\t2^64\n\tD.\t61",
+          "reference_text": "需要多少位元才態表示一個 13x13 的黑白像素圖像？\n需要多少位元才能表示一個 13x13 的黑白像素圖像？\n\tA.\t64^2\n\tB.\t8^2\n\tC.\t2^64\n\tD.\t61"
         },
         {
           "candidate_id": "mcq-10",
@@ -133,8 +135,8 @@
           "reference_id": "mcq-10",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "假設 X = 3, Y = 10 和 Z = 11。下列哪項布爾算式的結果是「真」？\n\n\tA.\t((X < 0) AND (Y > 10)) AND (Z > 8)\n\tB.\t((X < 0) OR (Y > 10)) AND (Z > 8)\n\tC.\t((X < 0) OR (Y < 10)) AND (Z > 8)\n\tD.\t((X < 0) OR (Y < 10)) OR (Z > 8)",
-          "reference_text": "假設 X = 3, Y = 10 和 Z = 11。下列哪項布爾算式的結果是「真」？\n\tA.\t((X < 0) AND (Y > 10)) AND (Z > 8)\n\tB.\t((X < 0) OR (Y > 10)) AND (Z > 8)\n\tC.\t((X < 0) OR (Y < 10)) AND (Z > 8)\n\tD.\t((X < 0) OR (Y < 10)) OR (Z > 8)"
+          "candidate_text": "假設 X = 3, Y = 10 和 Z = 11。下列哪項布爾算式的結果是「真」？\n\n\tA.\t((X < 0) OR (Y < 10)) AND (Z > 8)\n\tB.\t((X < 0) OR (Y < 10)) OR (Z > 8)\n\tC.\t((X < 0) AND (Y > 10)) AND (Z > 8)\n\tD.\t((X < 0) OR (Y > 10)) AND (Z > 8)",
+          "reference_text": "假設 X = 3, Y = 10 和 Z = 11。下列哪項布爾算式的結果是「真」？\n\tA.\t((X < 0) OR (Y < 10)) AND (Z > 8)\n\tB.\t((X < 0) OR (Y < 10)) OR (Z > 8)\n\tC.\t((X < 0) AND (Y > 10)) AND (Z > 8)\n\tD.\t((X < 0) OR (Y > 10)) AND (Z > 8)"
         },
         {
           "candidate_id": "mcq-11",
@@ -142,8 +144,8 @@
           "reference_id": "mcq-11",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "用作啟動電腦的啟動程式一般會儲存在哪一種儲存裝置？\n\n\tA.\tSSD\n\tB.\tROM\n\tC.\tCPU\n\tD.\tRAM",
-          "reference_text": "用作啟動電腦的啟動程式一般會儲存在哪一種儲存裝置？\n\tA.\tSSD\n\tB.\tROM\n\tC.\tCPU\n\tD.\tRAM"
+          "candidate_text": "用作啟動電腦的啟動程式一般會儲存在哪一種儲存裝置？\n\n\tA.\tRAM\n\tB.\tROM\n\tC.\tCPU\n\tD.\tSSD",
+          "reference_text": "用作啟動電腦的啟動程式一般會儲存在哪一種儲存裝置？\n\tA.\tRAM\n\tB.\tROM\n\tC.\tCPU\n\tD.\tSSD"
         },
         {
           "candidate_id": "mcq-12",
@@ -151,8 +153,8 @@
           "reference_id": "mcq-12",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "在 CPU 內執行編碼語言指令「載入 1057」時，下列哪項部件會因此指令解碼？\n\n\tA.\t暫存器\n\tB.\tCU\n\tC.\tALU\n\tD.\t匯流排",
-          "reference_text": "在 CPU 內執行編碼語言指令「載入 1057」時，下列哪項部件會因此指令解碼？\n\tA.\t暫存器\n\tB.\tCU\n\tC.\tALU\n\tD.\t匯流排"
+          "candidate_text": "在 CPU 內執行編碼語言指令「載入 1057」時，下列哪項部件會因此指令解碼？\n\n\tA.\tCU\n\tB.\tALU\n\tC.\t匯流排\n\tD.\t暫存器",
+          "reference_text": "在 CPU 內執行編碼語言指令「載入 1057」時，下列哪項部件會因此指令解碼？\n\tA.\tCU\n\tB.\tALU\n\tC.\t匯流排\n\tD.\t暫存器"
         },
         {
           "candidate_id": "mcq-13",
@@ -160,8 +162,8 @@
           "reference_id": "mcq-13",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "當下圖的電腦 C 關掉後，以下哪一項活動仍可進行？\n\n\n\n\n\n\tA.\t使用電腦 A 刪除電腦 B 內的檔案。\n\tB.\t使用電腦 A 列印文件。\n\tC.\t使用電腦 B 將電腦 B 內的檔案複製到電腦 A。\n\tD.\t以上各項均與「使用電腦 A 刪除電腦 …」無關",
-          "reference_text": "當下圖的電腦 C 關掉後，以下哪一項活動仍可進行？\n\tA.\t使用電腦 A 刪除電腦 B 內的檔案。\n\tB.\t使用電腦 A 列印文件。\n\tC.\t使用電腦 B 將電腦 B 內的檔案複製到電腦 A。\n\tD.\t以上各項均與「使用電腦 A 刪除電腦 …」無關"
+          "candidate_text": "當下圖的電腦 C 關掉後，以下哪一項活動仍可進行？\n\n\n\n\n\n\tA.\t以上各項均與「使用電腦 A 刪除電腦 …」無關\n\tB.\t使用電腦 A 刪除電腦 B 內的檔案。\n\tC.\t使用電腦 B 將電腦 B 內的檔案複製到電腦 A。\n\tD.\t使用電腦 A 列印文件。",
+          "reference_text": "當下圖的電腦 C 關掉後，以下哪一項活動仍可進行？\n\tA.\t以上各項均與「使用電腦 A 刪除電腦 …」無關\n\tB.\t使用電腦 A 刪除電腦 B 內的檔案。\n\tC.\t使用電腦 B 將電腦 B 內的檔案複製到電腦 A。\n\tD.\t使用電腦 A 列印文件。"
         },
         {
           "candidate_id": "mcq-14",
@@ -169,8 +171,8 @@
           "reference_id": "mcq-14",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "下列哪項不是 CPU 的短期發展？\n\n\tA.\t減少處理器作數量\n\tB.\t增加時鐘頻率\n\tC.\t增加耗電量\n\tD.\t預裝操作系統",
-          "reference_text": "下列哪項不是 CPU 的短期發展？\n\tA.\t減少處理器作數量\n\tB.\t增加時鐘頻率\n\tC.\t增加耗電量\n\tD.\t預裝操作系統"
+          "candidate_text": "下列哪項不是 CPU 的短期發展？\n\n\tA.\t增加時鐘頻率\n\tB.\t增加耗電量\n\tC.\t預裝操作系統\n\tD.\t減少處理器作數量",
+          "reference_text": "下列哪項不是 CPU 的短期發展？\n\tA.\t增加時鐘頻率\n\tB.\t增加耗電量\n\tC.\t預裝操作系統\n\tD.\t減少處理器作數量"
         },
         {
           "candidate_id": "mcq-15",
@@ -178,8 +180,8 @@
           "reference_id": "mcq-15",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "以下哪一項不會影響資訊系統的輸出？\n\n\n\n\n\n\tA.\t更改輸入數據\n\tB.\t更改儲存裝置的類型\n\tC.\t以上各項均與「更改輸入數據…」無關\n\tD.\t使用不同的 CPU",
-          "reference_text": "以下哪一項不會影響資訊系統的輸出？\n\tA.\t更改輸入數據\n\tB.\t更改儲存裝置的類型\n\tC.\t以上各項均與「更改輸入數據…」無關\n\tD.\t使用不同的 CPU"
+          "candidate_text": "以下哪一項不會影響資訊系統的輸出？\n\n\n\n\n\n\tA.\t以上各項均與「更改輸入數據…」無關\n\tB.\t使用不同的 CPU\n\tC.\t更改儲存裝置的類型\n\tD.\t更改輸入數據",
+          "reference_text": "以下哪一項不會影響資訊系統的輸出？\n\tA.\t以上各項均與「更改輸入數據…」無關\n\tB.\t使用不同的 CPU\n\tC.\t更改儲存裝置的類型\n\tD.\t更改輸入數據"
         },
         {
           "candidate_id": "mcq-16",
@@ -196,8 +198,8 @@
           "reference_id": "mcq-17",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。下列哪項最能解釋上述系統屬於實時處理？\n\n\tA.\t數據輸入和數據處理之間不應有時間延遲\n\tB.\t涉及的電腦需要的運算能力\n\tC.\t在一段時間內應收集到大量的數據\n\tD.\t同一時間向多用戶提供資源和服務",
-          "reference_text": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。下列哪項最能解釋上述系統屬於實時處理？\n\tA.\t數據輸入和數據處理之間不應有時間延遲\n\tB.\t涉及的電腦需要的運算能力\n\tC.\t在一段時間內應收集到大量的數據\n\tD.\t同一時間向多用戶提供資源和服務"
+          "candidate_text": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。下列哪項最能解釋上述系統屬於實時處理？\n\n\tA.\t數據輸入和數據處理之間不應有時間延遲\n\tB.\t在一段時間內應收集到大量的數據\n\tC.\t涉及的電腦需要的運算能力\n\tD.\t同一時間向多用戶提供資源和服務",
+          "reference_text": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。下列哪項最能解釋上述系統屬於實時處理？\n\tA.\t數據輸入和數據處理之間不應有時間延遲\n\tB.\t在一段時間內應收集到大量的數據\n\tC.\t涉及的電腦需要的運算能力\n\tD.\t同一時間向多用戶提供資源和服務"
         },
         {
           "candidate_id": "mcq-18",
@@ -205,8 +207,8 @@
           "reference_id": "mcq-18",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述不是合理的？\n\n\tA.\tP 容許操作系統和視像鏡頭互動\n\tB.\tP 控制同時使用用戶的數量\n\tC.\tQ 可以在不同操作系統中執行\n\tD.\tQ 控制使用打印機的用戶權限",
-          "reference_text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述不是合理的？\n\tA.\tP 容許操作系統和視像鏡頭互動\n\tB.\tP 控制同時使用用戶的數量\n\tC.\tQ 可以在不同操作系統中執行\n\tD.\tQ 控制使用打印機的用戶權限"
+          "candidate_text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述不是合理的？\n\n\tA.\tQ 控制使用打印機的用戶權限\n\tB.\tP 容許操作系統和視像鏡頭互動\n\tC.\tP 控制同時使用用戶的數量\n\tD.\tQ 可以在不同操作系統中執行",
+          "reference_text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述不是合理的？\n\tA.\tQ 控制使用打印機的用戶權限\n\tB.\tP 容許操作系統和視像鏡頭互動\n\tC.\tP 控制同時使用用戶的數量\n\tD.\tQ 可以在不同操作系統中執行"
         },
         {
           "candidate_id": "mcq-19",
@@ -214,8 +216,8 @@
           "reference_id": "mcq-19",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "以下哪項關於快取記憶體的句子不是正確的？\n\n\tA.\t它儲存經常使用的數據和指令\n\tB.\t它只在 CPU 內找到\n\tC.\t它是 ROM 的一種\n\tD.\t快取記憶體的數據存取速度比 RAM 的為低",
-          "reference_text": "以下哪項關於快取記憶體的句子不是正確的？\n\tA.\t它儲存經常使用的數據和指令\n\tB.\t它只在 CPU 內找到\n\tC.\t它是 ROM 的一種\n\tD.\t快取記憶體的數據存取速度比 RAM 的為低"
+          "candidate_text": "以下哪項關於快取記憶體的句子不是正確的？\n\n\tA.\t它只在 CPU 內找到\n\tB.\t快取記憶體的數據存取速度比 RAM 的為低\n\tC.\t它是 ROM 的一種\n\tD.\t它儲存經常使用的數據和指令",
+          "reference_text": "以下哪項關於快取記憶體的句子不是正確的？\n\tA.\t它只在 CPU 內找到\n\tB.\t快取記憶體的數據存取速度比 RAM 的為低\n\tC.\t它是 ROM 的一種\n\tD.\t它儲存經常使用的數據和指令"
         },
         {
           "candidate_id": "mcq-20",
@@ -223,8 +225,8 @@
           "reference_id": "mcq-20",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項不是可能成因？\n\n\tA.\t顯示卡出現故障\n\tB.\t網絡界面卡出現故障\n\tC.\tROM 的容量小\n\tD.\t硬碟的數據傳輸率低",
-          "reference_text": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項不是可能成因？\n\tA.\t顯示卡出現故障\n\tB.\t網絡界面卡出現故障\n\tC.\tROM 的容量小\n\tD.\t硬碟的數據傳輸率低"
+          "candidate_text": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項不是可能成因？\n\n\tA.\t硬碟的數據傳輸率低\n\tB.\t網絡界面卡出現故障\n\tC.\t顯示卡出現故障\n\tD.\tROM 的容量小",
+          "reference_text": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項不是可能成因？\n\tA.\t硬碟的數據傳輸率低\n\tB.\t網絡界面卡出現故障\n\tC.\t顯示卡出現故障\n\tD.\tROM 的容量小"
         },
         {
           "candidate_id": "mcq-21",
@@ -232,8 +234,8 @@
           "reference_id": "mcq-21",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "參考下列算法，執行後會輸出哪個數值？\n\n\n\n\n\n\tA.\t18\n\tB.\t29\n\tC.\t13\n\tD.\t45",
-          "reference_text": "參考下列算法，執行後會輸出哪個數值？\n\tA.\t18\n\tB.\t29\n\tC.\t13\n\tD.\t45"
+          "candidate_text": "參考下列算法，執行後會輸出哪個數值？\n\n\n\n\n\n\tA.\t45\n\tB.\t18\n\tC.\t29\n\tD.\t13",
+          "reference_text": "參考下列算法，執行後會輸出哪個數值？\n\tA.\t45\n\tB.\t18\n\tC.\t29\n\tD.\t13"
         },
         {
           "candidate_id": "mcq-22",
@@ -241,8 +243,8 @@
           "reference_id": "mcq-22",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "下列哪個數值最有可能是上述算法的輸出？\n\n如果 (X < 9) or (X > 22)\n輸出 X\n\n\n\tA.\t7\n\tB.\t6\n\tC.\t27\n\tD.\t26",
-          "reference_text": "下列哪個數值最有可能是上述算法的輸出？\n如果 (X < 9) or (X > 22)\n輸出 X\n\tA.\t7\n\tB.\t6\n\tC.\t27\n\tD.\t26"
+          "candidate_text": "下列哪個數值最有可能是上述算法的輸出？\n\n如果 (X < 9) or (X > 22)\n輸出 X\n\n\n\tA.\t6\n\tB.\t7\n\tC.\t26\n\tD.\t27",
+          "reference_text": "下列哪個數值最有可能是上述算法的輸出？\n如果 (X < 9) or (X > 22)\n輸出 X\n\tA.\t6\n\tB.\t7\n\tC.\t26\n\tD.\t27"
         },
         {
           "candidate_id": "mcq-23",
@@ -250,8 +252,8 @@
           "reference_id": "mcq-23",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 7 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\nj ← 0　輸入 N　當 N <> 888 執行 j ← j + N、輸入 N　輸出 j\n\n\n\tA.\t計算輸入數值的總和\n\tB.\t計算輸入數值的次數\n\tC.\t計算輸入數值的平均值\n\tD.\t找出最大的輸入數值",
-          "reference_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 7 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\nj ← 0　輸入 N　當 N <> 888 執行 j ← j + N、輸入 N　輸出 j\n\tA.\t計算輸入數值的總和\n\tB.\t計算輸入數值的次數\n\tC.\t計算輸入數值的平均值\n\tD.\t找出最大的輸入數值"
+          "candidate_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 7 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\nj ← 0　輸入 N　當 N <> 888 執行 j ← j + N、輸入 N　輸出 j\n\n\n\tA.\t找出最大的輸入數值\n\tB.\t計算輸入數值的平均值\n\tC.\t計算輸入數值的次數\n\tD.\t計算輸入數值的總和",
+          "reference_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 7 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\nj ← 0　輸入 N　當 N <> 888 執行 j ← j + N、輸入 N　輸出 j\n\tA.\t找出最大的輸入數值\n\tB.\t計算輸入數值的平均值\n\tC.\t計算輸入數值的次數\n\tD.\t計算輸入數值的總和"
         },
         {
           "candidate_id": "mcq-24",
@@ -259,8 +261,8 @@
           "reference_id": "mcq-24",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "在以下算法，S 的最終值大於 19。N 的最小可能輸入值是什麼？\n\n版本 1\n如果 (P > 20)\nA ← P + 5\n否則\nA ← P * 2\n版本 2\n\n\tA.\t9\n\tB.\tP * 4\n\tC.\tP\n\tD.\tP + 9",
-          "reference_text": "在以下算法，S 的最終值大於 19。N 的最小可能輸入值是什麼？\n版本 1\n如果 (P > 20)\nA ← P + 5\n否則\nA ← P * 2\n版本 2\n\tA.\t9\n\tB.\tP * 4\n\tC.\tP\n\tD.\tP + 9"
+          "candidate_text": "在以下算法，S 的最終值大於 19。N 的最小可能輸入值是什麼？\n\n版本 1\n如果 (P > 20)\nA ← P + 5\n否則\nA ← P * 2\n版本 2\n\n\tA.\tP\n\tB.\t9\n\tC.\tP * 4\n\tD.\tP + 9",
+          "reference_text": "在以下算法，S 的最終值大於 19。N 的最小可能輸入值是什麼？\n版本 1\n如果 (P > 20)\nA ← P + 5\n否則\nA ← P * 2\n版本 2\n\tA.\tP\n\tB.\t9\n\tC.\tP * 4\n\tD.\tP + 9"
         },
         {
           "candidate_id": "mcq-25",
@@ -268,8 +270,8 @@
           "reference_id": "mcq-25",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "以陣列 P 的初始值進行，下列算法的輸出是什麼？\n\n如果 (age <= 11) or (age >= 60)\n輸出 '有折扣!'\n否則\n輸出 '沒有折扣!'\n以下哪組 age 的數據組最適合用作測試此算法？\n\n\tA.\t14, 18, 37, 40, 59, 56\n\tB.\t2, 14, 43, 48, 59, 56\n\tC.\t14, 14, 8, 62, 56, 59\n\tD.\t1, 4, 2, 2,",
-          "reference_text": "以陣列 P 的初始值進行，下列算法的輸出是什麼？\n如果 (age <= 11) or (age >= 60)\n輸出 '有折扣!'\n否則\n輸出 '沒有折扣!'\n以下哪組 age 的數據組最適合用作測試此算法？\n\tA.\t14, 18, 37, 40, 59, 56\n\tB.\t2, 14, 43, 48, 59, 56\n\tC.\t14, 14, 8, 62, 56, 59\n\tD.\t1, 4, 2, 2, 2"
+          "candidate_text": "以陣列 P 的初始值進行，下列算法的輸出是什麼？\n\n如果 (age <= 11) or (age >= 60)\n輸出 '有折扣!'\n否則\n輸出 '沒有折扣!'\n以下哪組 age 的數據組最適合用作測試此算法？\n\n\tA.\t2, 14, 43, 48, 59, 56\n\tB.\t1, 4, 2, 2, 2\n\tC.\t14, 14, 8, 62, 56, 59\n\tD.\t14, 18, 37, 40, 59, ",
+          "reference_text": "以陣列 P 的初始值進行，下列算法的輸出是什麼？\n如果 (age <= 11) or (age >= 60)\n輸出 '有折扣!'\n否則\n輸出 '沒有折扣!'\n以下哪組 age 的數據組最適合用作測試此算法？\n\tA.\t2, 14, 43, 48, 59, 56\n\tB.\t1, 4, 2, 2, 2\n\tC.\t14, 14, 8, 62, 56, 59\n\tD.\t14, 18, 37, 40, 59, 56"
         },
         {
           "candidate_id": "mcq-26",
@@ -277,8 +279,8 @@
           "reference_id": "mcq-26",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "下列哪項不是正確的？\n\n\n\tA.\t數據收集: 製作統計圖表\n\tB.\t數據儲存: 輸入問卷調查資料\n\tC.\t數據處理: 空間對齊排序以便輸入數據\n\tD.\t數據組織: 設計線上問卷",
-          "reference_text": "下列哪項不是正確的？\n\tA.\t數據收集: 製作統計圖表\n\tB.\t數據儲存: 輸入問卷調查資料\n\tC.\t數據處理: 空間對齊排序以便輸入數據\n\tD.\t數據組織: 設計線上問卷"
+          "candidate_text": "下列哪項不是正確的？\n\n\n\tA.\t數據處理: 空間對齊排序以便輸入數據\n\tB.\t數據收集: 製作統計圖表\n\tC.\t數據組織: 設計線上問卷\n\tD.\t數據儲存: 輸入問卷調查資料",
+          "reference_text": "下列哪項不是正確的？\n\tA.\t數據處理: 空間對齊排序以便輸入數據\n\tB.\t數據收集: 製作統計圖表\n\tC.\t數據組織: 設計線上問卷\n\tD.\t數據儲存: 輸入問卷調查資料"
         },
         {
           "candidate_id": "mcq-27",
@@ -286,8 +288,8 @@
           "reference_id": "mcq-27",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "考慮陣列 A[1..4] = [2, 5, 1, 8]。以線性搜尋找 5，最少要檢查多少個元素？\n\n\tA.\t1\n\tB.\t4\n\tC.\t2\n\tD.\t3",
-          "reference_text": "考慮陣列 A[1..4] = [2, 5, 1, 8]。以線性搜尋找 5，最少要檢查多少個元素？\n\tA.\t1\n\tB.\t4\n\tC.\t2\n\tD.\t3"
+          "candidate_text": "考慮陣列 A[1..4] = [2, 5, 1, 8]。以線性搜尋找 5，最少要檢查多少個元素？\n\n\tA.\t3\n\tB.\t4\n\tC.\t1\n\tD.\t2",
+          "reference_text": "考慮陣列 A[1..4] = [2, 5, 1, 8]。以線性搜尋找 5，最少要檢查多少個元素？\n\tA.\t3\n\tB.\t4\n\tC.\t1\n\tD.\t2"
         },
         {
           "candidate_id": "mcq-28",
@@ -295,8 +297,8 @@
           "reference_id": "mcq-28",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "以下哪些是在編寫程式時使用模組的優點是不正確的？\n\n\t\t(1)\t有些模組可以重用\n\t\t(2)\t較容易進行程式除錯\n\t\t(3)\t較快定義問題\n\n\n\n\n\n\tA.\t較快定義問題\n\tB.\t較容易進行程式除錯\n\tC.\t有些模組不可以重用\n\tD.\t有些模組可以重用",
-          "reference_text": "以下哪些是在編寫程式時使用模組的優點是不正確的？\n\t\t(1)\t有些模組可以重用\n\t\t(2)\t較容易進行程式除錯\n\t\t(3)\t較快定義問題\n\tA.\t較快定義問題\n\tB.\t較容易進行程式除錯\n\tC.\t有些模組不可以重用\n\tD.\t有些模組可以重用"
+          "candidate_text": "以下哪些是在編寫程式時使用模組的優點是不正確的？\n\n\t\t(1)\t有些模組可以重用\n\t\t(2)\t較容易進行程式除錯\n\t\t(3)\t較快定義問題\n\n\n\n\n\n\tA.\t有些模組可以重用\n\tB.\t較容易進行程式除錯\n\tC.\t有些模組不可以重用\n\tD.\t較快定義問題",
+          "reference_text": "以下哪些是在編寫程式時使用模組的優點是不正確的？\n\t\t(1)\t有些模組可以重用\n\t\t(2)\t較容易進行程式除錯\n\t\t(3)\t較快定義問題\n\tA.\t有些模組可以重用\n\tB.\t較容易進行程式除錯\n\tC.\t有些模組不可以重用\n\tD.\t較快定義問題"
         },
         {
           "candidate_id": "mcq-29",
@@ -313,88 +315,43 @@
           "reference_id": "mcq-30",
           "similarity": 1.0,
           "match_type": "mcq",
-          "candidate_text": "在下列算法中，輸入什麼值不會輸出「完成！」？\n\ni ← 1\n當 i > 0\n輸出 '5'\n以下哪句應插入在循環內，以避免出現無限循環？\n\n\n\n\n\tA.\ti ← i + 1\n\tB.\t輸出 i\n\tC.\ti ← i – 1\n\tD.\t如果 i < 13",
-          "reference_text": "在下列算法中，輸入什麼值不會輸出「完成！」？\ni ← 1\n當 i > 0\n輸出 '5'\n以下哪句應插入在循環內，以避免出現無限循環？\n\tA.\ti ← i + 1\n\tB.\t輸出 i\n\tC.\ti ← i – 1\n\tD.\t如果 i < 13"
-        },
-        {
-          "candidate_id": "mcq-26",
-          "reference": "DSE-ICT/question-bank",
-          "reference_id": "2022-Paper1_MultipleChoice-AQ6",
-          "similarity": 0.9928057553956835,
-          "match_type": "mcq",
-          "candidate_text": "下列哪項不是正確的？\n\n\n\tA.\t數據收集: 製作統計圖表\n\tB.\t數據儲存: 輸入問卷調查資料\n\tC.\t數據處理: 空間對齊排序以便輸入數據\n\tD.\t數據組織: 設計線上問卷",
-          "reference_text": "下列哪項是正確的？\nA. 數據收集: 製作統計圖表\nB. 數據儲存: 輸入問卷調查資料\nC. 數據處理: 空間對齊排序以便輸入數據\nD. 數據組織: 設計線上問卷"
-        },
-        {
-          "candidate_id": "mcq-03",
-          "reference": "DSE-ICT/question-bank",
-          "reference_id": "2022-Paper1_MultipleChoice-AQ36",
-          "similarity": 0.9122807017543859,
-          "match_type": "mcq",
-          "candidate_text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列哪一事項可略為忽略？\n\n\tA.\t網絡安全\n\tB.\t個人數據私隱\n\tC.\t操作系統\n\tD.\t應用程式的檔案大小",
-          "reference_text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列悉個事項應該最不重要？\nA. 網絡安全\nB. 個人數據私隱\nC. 操作系統\nD. 應用程式的檔案大小"
+          "candidate_text": "在下列算法中，輸入什麼值不會輸出「完成！」？\n\ni ← 1\n當 i > 0\n輸出 '5'\n以下哪句應插入在循環內，以避免出現無限循環？\n\n\n\n\n\tA.\t輸出 i\n\tB.\t如果 i < 13\n\tC.\ti ← i + 1\n\tD.\ti ← i – 1",
+          "reference_text": "在下列算法中，輸入什麼值不會輸出「完成！」？\ni ← 1\n當 i > 0\n輸出 '5'\n以下哪句應插入在循環內，以避免出現無限循環？\n\tA.\t輸出 i\n\tB.\t如果 i < 13\n\tC.\ti ← i + 1\n\tD.\ti ← i – 1"
         },
         {
           "candidate_id": "mcq-04",
           "reference": "DSE-ICT/question-bank",
           "reference_id": "2022-Paper1_MultipleChoice-AQ20",
-          "similarity": 0.8636363636363636,
+          "similarity": 0.8484848484848485,
           "match_type": "mcq",
-          "candidate_text": "有一百個 298GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 4TB 硬碟來儲存所有視像檔案呢？\n\n\tA.\t19\n\tB.\t11\n\tC.\t29\n\tD.\t13",
+          "candidate_text": "有一百個 298GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 4TB 硬碟來儲存所有視像檔案呢？\n\n\tA.\t13\n\tB.\t19\n\tC.\t29\n\tD.\t11",
           "reference_text": "有一百個 300GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 2TB 硬碟來儲存所有視像檔案呢？\nA. 15\nB. 16\nC. 17\nD. 32"
-        },
-        {
-          "candidate_id": "mcq-18",
-          "reference": "DSE-ICT/question-bank",
-          "reference_id": "2024-Paper1_MultipleChoice-17",
-          "similarity": 0.8449197860962567,
-          "match_type": "mcq",
-          "candidate_text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述不是合理的？\n\n\tA.\tP 容許操作系統和視像鏡頭互動\n\tB.\tP 控制同時使用用戶的數量\n\tC.\tQ 可以在不同操作系統中執行\n\tD.\tQ 控制使用打印機的用戶權限",
-          "reference_text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述是合理的？\nA. P 容許操作系統和視像鏡頭互動\nB. Q 可以在不同操作系統中執行\nC. P 控制同時使用用戶的數量\nD. Q 控制使用打印機的用戶權限"
-        },
-        {
-          "candidate_id": "mcq-12",
-          "reference": "DSE-ICT/question-bank",
-          "reference_id": "2021-Paper1_MultipleChoice-21",
-          "similarity": 0.8333333333333334,
-          "match_type": "mcq",
-          "candidate_text": "在 CPU 內執行編碼語言指令「載入 1057」時，下列哪項部件會因此指令解碼？\n\n\tA.\t暫存器\n\tB.\tCU\n\tC.\tALU\n\tD.\t匯流排",
-          "reference_text": "在 CPU 內執行編碼語言指令「載入 1060」時，下列哪項部件會因此指令解碼？\nA. 匯流排\nB. 暫存器\nC. ALU\nD. CU"
-        },
-        {
-          "candidate_id": "mcq-10",
-          "reference": "DSE-ICT/question-bank",
-          "reference_id": "2021-Paper1_MultipleChoice-31",
-          "similarity": 0.8144329896907216,
-          "match_type": "mcq",
-          "candidate_text": "假設 X = 3, Y = 10 和 Z = 11。下列哪項布爾算式的結果是「真」？\n\n\tA.\t((X < 0) AND (Y > 10)) AND (Z > 8)\n\tB.\t((X < 0) OR (Y > 10)) AND (Z > 8)\n\tC.\t((X < 0) OR (Y < 10)) AND (Z > 8)\n\tD.\t((X < 0) OR (Y < 10)) OR (Z > 8)",
-          "reference_text": "假設 X = 5, Y = 6 和 Z = 7。下列哪項布爾算式的結果是「真」？\nA. ((X < 0) AND (Y > 6)) AND (Z > 10)\nB. ((X < 0) OR (Y < 6)) AND (Z > 10)\nC. ((X < 0) OR (Y > 6)) AND (Z > 10)\nD. ((X < 0) OR (Y < 6)) OR (Z > 10)"
         },
         {
           "candidate_id": "mcq-07",
           "reference": "DSE-ICT/question-bank",
           "reference_id": "2021-Paper1_MultipleChoice-19",
-          "similarity": 0.7814569536423841,
+          "similarity": 0.847682119205298,
           "match_type": "mcq",
-          "candidate_text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項因素可略為忽略？\n\n\n\n\tA.\tRAM 的儲存大小\n\tB.\tROM 的儲存大小\n\tC.\tSSD 的儲存大小\n\tD.\tCPU 的時鐘頻率",
+          "candidate_text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項因素可略為忽略？\n\n\n\n\tA.\tRAM 的儲存大小\n\tB.\tSSD 的儲存大小\n\tC.\tROM 的儲存大小\n\tD.\tCPU 的時鐘頻率",
           "reference_text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項是最不重要的因素？\nA. SSD 的儲存大小\nB. RAM 的儲存大小\nC. ROM 的儲存大小\nD. CPU 的時鐘頻率"
         },
         {
-          "candidate_id": "mcq-14",
+          "candidate_id": "mcq-12",
           "reference": "DSE-ICT/question-bank",
-          "reference_id": "2021-Paper1_MultipleChoice-18-Page-5-problem-18",
-          "similarity": 0.7789473684210526,
+          "reference_id": "2021-Paper1_MultipleChoice-21",
+          "similarity": 0.7777777777777778,
           "match_type": "mcq",
-          "candidate_text": "下列哪項不是 CPU 的短期發展？\n\n\tA.\t減少處理器作數量\n\tB.\t增加時鐘頻率\n\tC.\t增加耗電量\n\tD.\t預裝操作系統",
-          "reference_text": "下列哪項是 CPU 的短期發展？\nA. 預裝操作系統\nB. 減少處理器作數量\nC. 增加時鐘頻率\nD. 增加耗電量"
+          "candidate_text": "在 CPU 內執行編碼語言指令「載入 1057」時，下列哪項部件會因此指令解碼？\n\n\tA.\tCU\n\tB.\tALU\n\tC.\t匯流排\n\tD.\t暫存器",
+          "reference_text": "在 CPU 內執行編碼語言指令「載入 1060」時，下列哪項部件會因此指令解碼？\nA. 匯流排\nB. 暫存器\nC. ALU\nD. CU"
         },
         {
           "candidate_id": "mcq-17",
           "reference": "DSE-ICT/question-bank",
           "reference_id": "2022-Paper1_MultipleChoice-AQ19",
-          "similarity": 0.7715355805243446,
+          "similarity": 0.7640449438202247,
           "match_type": "mcq",
-          "candidate_text": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。下列哪項最能解釋上述系統屬於實時處理？\n\n\tA.\t數據輸入和數據處理之間不應有時間延遲\n\tB.\t涉及的電腦需要的運算能力\n\tC.\t在一段時間內應收集到大量的數據\n\tD.\t同一時間向多用戶提供資源和服務",
+          "candidate_text": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。下列哪項最能解釋上述系統屬於實時處理？\n\n\tA.\t數據輸入和數據處理之間不應有時間延遲\n\tB.\t在一段時間內應收集到大量的數據\n\tC.\t涉及的電腦需要的運算能力\n\tD.\t同一時間向多用戶提供資源和服務",
           "reference_text": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。這是實時處理系統，原因是因為_______。\nA. 涉及的電腦需要的運算能力\nB. 數據輸入和數據處理之間不應有時間延遲\nC. 在一段時間內應收集到大量的數據\nD. 同一時間向多用戶提供資源和服務"
         },
         {
@@ -407,31 +364,67 @@
           "reference_text": "更改電子郵箱的密碼，以下哪個步驟是數據驗證的方法？\nA. 輸入用戶名稱\nB. 輸入舊密碼\nC. 輸入新密碼兩次\nD. 回答「密碼提示」問題"
         },
         {
-          "candidate_id": "mcq-19",
-          "reference": "DSE-ICT/question-bank",
-          "reference_id": "2024-Paper1_MultipleChoice-20",
-          "similarity": 0.7189542483660131,
-          "match_type": "mcq",
-          "candidate_text": "以下哪項關於快取記憶體的句子不是正確的？\n\n\tA.\t它儲存經常使用的數據和指令\n\tB.\t它只在 CPU 內找到\n\tC.\t它是 ROM 的一種\n\tD.\t快取記憶體的數據存取速度比 RAM 的為低",
-          "reference_text": "以下哪項關於快取記憶體的句子是正確的？\nA. 它是 ROM 的一種\nB. 它只在 CPU 內找到\nC. 它儲存經常使用的數據和指令\nD. 快取記憶體的數據存取速度比 RAM 的為低"
-        },
-        {
-          "candidate_id": "mcq-09",
-          "reference": "DSE-ICT/question-bank",
-          "reference_id": "2022-Paper1_MultipleChoice-AQ5",
-          "similarity": 0.7130434782608696,
-          "match_type": "mcq",
-          "candidate_text": "需要多少位元才態表示一個 13x13 的黑白像素圖像？\n需要多少位元才能表示一個 13x13 的黑白像素圖像？\n\tA.\t61\n\tB.\t64^2\n\tC.\t8^2\n\tD.\t2^64",
-          "reference_text": "需要多少位元才態表示一個 8x8 的黑白像素圖像？\nA. 64\nB. 64^2\nC. 8^2\nD. 2^64"
-        },
-        {
           "candidate_id": "mcq-20",
           "reference": "DSE-ICT/question-bank",
           "reference_id": "2022-Paper1_MultipleChoice-AQ17",
-          "similarity": 0.7034482758620689,
+          "similarity": 0.7448275862068966,
           "match_type": "mcq",
-          "candidate_text": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項不是可能成因？\n\n\tA.\t顯示卡出現故障\n\tB.\t網絡界面卡出現故障\n\tC.\tROM 的容量小\n\tD.\t硬碟的數據傳輸率低",
+          "candidate_text": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項不是可能成因？\n\n\tA.\t硬碟的數據傳輸率低\n\tB.\t網絡界面卡出現故障\n\tC.\t顯示卡出現故障\n\tD.\tROM 的容量小",
           "reference_text": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項是可能成因？\nA. ROM 的容量小\nB. 硬碟的數據傳輸率低\nC. 顯示卡出現故障\nD. 網絡界面卡出現故障"
+        },
+        {
+          "candidate_id": "mcq-30",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2025-Paper1A_MultipleChoice-27",
+          "similarity": 0.7231638418079096,
+          "match_type": "mcq",
+          "candidate_text": "在下列算法中，輸入什麼值不會輸出「完成！」？\n\ni ← 1\n當 i > 0\n輸出 '5'\n以下哪句應插入在循環內，以避免出現無限循環？\n\n\n\n\n\tA.\t輸出 i\n\tB.\t如果 i < 13\n\tC.\ti ← i + 1\n\tD.\ti ← i – 1",
+          "reference_text": "細看以下算法。\ni ← 1\n當 i > 0\n輸出 '5'\n以下哪句應插入在循環內，以避免出現無限循環？\ni ← 1\n當 i > 0\n輸出 '5'\n以下哪句應插入在循環內，以避免出現無限循環？\nA. 輸出 i\nB. 如果 i < 10\nC. i ← i + 1\nD. i ← i – 1"
+        },
+        {
+          "candidate_id": "mcq-10",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2021-Paper1_MultipleChoice-31",
+          "similarity": 0.7216494845360825,
+          "match_type": "mcq",
+          "candidate_text": "假設 X = 3, Y = 10 和 Z = 11。下列哪項布爾算式的結果是「真」？\n\n\tA.\t((X < 0) OR (Y < 10)) AND (Z > 8)\n\tB.\t((X < 0) OR (Y < 10)) OR (Z > 8)\n\tC.\t((X < 0) AND (Y > 10)) AND (Z > 8)\n\tD.\t((X < 0) OR (Y > 10)) AND (Z > 8)",
+          "reference_text": "假設 X = 5, Y = 6 和 Z = 7。下列哪項布爾算式的結果是「真」？\nA. ((X < 0) AND (Y > 6)) AND (Z > 10)\nB. ((X < 0) OR (Y < 6)) AND (Z > 10)\nC. ((X < 0) OR (Y > 6)) AND (Z > 10)\nD. ((X < 0) OR (Y < 6)) OR (Z > 10)"
+        },
+        {
+          "candidate_id": "mcq-18",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2024-Paper1_MultipleChoice-17",
+          "similarity": 0.7058823529411765,
+          "match_type": "mcq",
+          "candidate_text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述不是合理的？\n\n\tA.\tQ 控制使用打印機的用戶權限\n\tB.\tP 容許操作系統和視像鏡頭互動\n\tC.\tP 控制同時使用用戶的數量\n\tD.\tQ 可以在不同操作系統中執行",
+          "reference_text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述是合理的？\nA. P 容許操作系統和視像鏡頭互動\nB. Q 可以在不同操作系統中執行\nC. P 控制同時使用用戶的數量\nD. Q 控制使用打印機的用戶權限"
+        },
+        {
+          "candidate_id": "mcq-11",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2024-Paper1_MultipleChoice-19",
+          "similarity": 0.6976744186046512,
+          "match_type": "mcq",
+          "candidate_text": "用作啟動電腦的啟動程式一般會儲存在哪一種儲存裝置？\n\n\tA.\tRAM\n\tB.\tROM\n\tC.\tCPU\n\tD.\tSSD",
+          "reference_text": "用作啟動電腦的啟動程式通常儲存在哪個地方？\nA. CPU\nB. RAM\nC. ROM\nD. SSD"
+        },
+        {
+          "candidate_id": "mcq-03",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2022-Paper1_MultipleChoice-AQ36",
+          "similarity": 0.6783625730994152,
+          "match_type": "mcq",
+          "candidate_text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列哪一事項可略為忽略？\n\n\tA.\t應用程式的檔案大小\n\tB.\t網絡安全\n\tC.\t操作系統\n\tD.\t個人數據私隱",
+          "reference_text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列悉個事項應該最不重要？\nA. 網絡安全\nB. 個人數據私隱\nC. 操作系統\nD. 應用程式的檔案大小"
+        },
+        {
+          "candidate_id": "mcq-28",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2024-Paper1_MultipleChoice-33",
+          "similarity": 0.6748466257668712,
+          "match_type": "mcq",
+          "candidate_text": "以下哪些是在編寫程式時使用模組的優點是不正確的？\n\n\t\t(1)\t有些模組可以重用\n\t\t(2)\t較容易進行程式除錯\n\t\t(3)\t較快定義問題\n\n\n\n\n\n\tA.\t有些模組可以重用\n\tB.\t較容易進行程式除錯\n\tC.\t有些模組不可以重用\n\tD.\t較快定義問題",
+          "reference_text": "以下哪些是在編寫程式時使用模組的優點？\n(1) 有些模組可以重用\n(2) 較容易進行程式除錯\n(3) 較快定義問題\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. (1)、(2) 和 (3)"
         },
         {
           "candidate_id": "mcq-08",
@@ -439,17 +432,26 @@
           "reference_id": "mcq-23",
           "similarity": 0.6697247706422018,
           "match_type": "intra_spec",
-          "candidate_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 N\n當 N < 0\n\n\n\tA.\t數據驗證\n\tB.\t數據有效性檢驗\n\tC.\t數據生成\n\tD.\t數據修改",
-          "reference_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 7 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\nj ← 0　輸入 N　當 N <> 888 執行 j ← j + N、輸入 N　輸出 j\n\n\n\tA.\t計算輸入數值的總和\n\tB.\t計算輸入數值的次數\n\tC.\t計算輸入數值的平均值\n\tD.\t找出最大的輸入數值"
+          "candidate_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 N\n當 N < 0\n\n\n\tA.\t數據驗證\n\tB.\t數據修改\n\tC.\t數據生成\n\tD.\t數據有效性檢驗",
+          "reference_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 7 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\nj ← 0　輸入 N　當 N <> 888 執行 j ← j + N、輸入 N　輸出 j\n\n\n\tA.\t找出最大的輸入數值\n\tB.\t計算輸入數值的平均值\n\tC.\t計算輸入數值的次數\n\tD.\t計算輸入數值的總和"
         },
         {
-          "candidate_id": "mcq-28",
+          "candidate_id": "mcq-19",
           "reference": "DSE-ICT/question-bank",
-          "reference_id": "2024-Paper1_MultipleChoice-33",
-          "similarity": 0.6625766871165644,
+          "reference_id": "2024-Paper1_MultipleChoice-20",
+          "similarity": 0.6535947712418301,
           "match_type": "mcq",
-          "candidate_text": "以下哪些是在編寫程式時使用模組的優點是不正確的？\n\n\t\t(1)\t有些模組可以重用\n\t\t(2)\t較容易進行程式除錯\n\t\t(3)\t較快定義問題\n\n\n\n\n\n\tA.\t較快定義問題\n\tB.\t較容易進行程式除錯\n\tC.\t有些模組不可以重用\n\tD.\t有些模組可以重用",
-          "reference_text": "以下哪些是在編寫程式時使用模組的優點？\n(1) 有些模組可以重用\n(2) 較容易進行程式除錯\n(3) 較快定義問題\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. (1)、(2) 和 (3)"
+          "candidate_text": "以下哪項關於快取記憶體的句子不是正確的？\n\n\tA.\t它只在 CPU 內找到\n\tB.\t快取記憶體的數據存取速度比 RAM 的為低\n\tC.\t它是 ROM 的一種\n\tD.\t它儲存經常使用的數據和指令",
+          "reference_text": "以下哪項關於快取記憶體的句子是正確的？\nA. 它是 ROM 的一種\nB. 它只在 CPU 內找到\nC. 它儲存經常使用的數據和指令\nD. 快取記憶體的數據存取速度比 RAM 的為低"
+        },
+        {
+          "candidate_id": "mcq-14",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2021-Paper1_MultipleChoice-18-Page-5-problem-18",
+          "similarity": 0.6526315789473685,
+          "match_type": "mcq",
+          "candidate_text": "下列哪項不是 CPU 的短期發展？\n\n\tA.\t增加時鐘頻率\n\tB.\t增加耗電量\n\tC.\t預裝操作系統\n\tD.\t減少處理器作數量",
+          "reference_text": "下列哪項是 CPU 的短期發展？\nA. 預裝操作系統\nB. 減少處理器作數量\nC. 增加時鐘頻率\nD. 增加耗電量"
         },
         {
           "candidate_id": "mcq-16",
@@ -461,12 +463,39 @@
           "reference_text": "在一般情況下，P、Q 和 R 會是什麼？\n用戶 → P → Q → 電腦；R 位於 Q 與電腦之間\nA. P: 操作系統, Q: 硬件, R: 應用軟件\nB. P: 應用軟件, Q: 操作系統, R: 硬件\nC. P: 應用軟件, Q: 硬件, R: 操作系統\nD. P: 硬件, Q: 應用軟件, R: 操作系統"
         },
         {
+          "candidate_id": "mcq-09",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2022-Paper1_MultipleChoice-AQ5",
+          "similarity": 0.6260869565217392,
+          "match_type": "mcq",
+          "candidate_text": "需要多少位元才態表示一個 13x13 的黑白像素圖像？\n需要多少位元才能表示一個 13x13 的黑白像素圖像？\n\tA.\t64^2\n\tB.\t8^2\n\tC.\t2^64\n\tD.\t61",
+          "reference_text": "需要多少位元才態表示一個 8x8 的黑白像素圖像？\nA. 64\nB. 64^2\nC. 8^2\nD. 2^64"
+        },
+        {
+          "candidate_id": "c-02",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2021-Paper2A_Database-3-a-i",
+          "similarity": 0.6140845070422535,
+          "match_type": "section_c/section_b",
+          "candidate_text": "試完成以下 SQL 語句以防止在 SEQ 中輸入相的表演次序。\nCREATE TABLE TEAM (\nTID char(7) primary key,\nTNAME char(26),\nSEQ int,\nTMARK int NOT NULL,\n_____________\n)\n\n（以下各題參考上述情境；部分設定取自不同 DSE 試題。）\n\n(a) 簡略說明以下SQL語句的用途。 SELECT RN ",
+          "reference_text": "完成以下 SQL 語句以防止在 SEQ 中輸入相的表演次序。\nCREATE TABLE TEAM (\nTID char(3) primary key,\nTNAME char(30),\nSEQ int,\nTMARK int NOT NULL,\n_____________\n)\n\n[圖片描述] 展示了 SONG 和 TEAM 兩個數據庫表的結構和範例數據。"
+        },
+        {
+          "candidate_id": "c-01",
+          "reference": "DSE-ICT/question-bank",
+          "reference_id": "2022-Paper2A_Database-1-e-iii",
+          "similarity": 0.6049586776859505,
+          "match_type": "section_c/section_b",
+          "candidate_text": "參考以下設定（已改編自 DSE 試題），在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。試寫出該完整性問題，並簡要說明你的答案。\n[Record to insert: SID=12060, RDATE=12/9/2028, SNO=12, LEADER=23450]\n\n（以下各題參考上述情境；部分設定取自不同 DSE 試題。）\n\n(",
+          "reference_text": "考慮以下檢視 MYREAD。\nCREATE VIEW AS MYREAD\nSELECT MAX(STEP) AS MYSTEP FROM READING\nWHERE RDATE = '20/03/2021'\n利用 MYREAD 完成以下 SQL 語句，以便能產生與 (e)(i) 的結果相同。\nSELECT PID FROM READING\nWHERE ______________ >=\n(SELE"
+        },
+        {
           "candidate_id": "mcq-22",
           "reference": "DSE-ICT/question-bank",
           "reference_id": "2025-Paper1A_MultipleChoice-33",
           "similarity": 0.6019417475728155,
           "match_type": "mcq",
-          "candidate_text": "下列哪個數值最有可能是上述算法的輸出？\n\n如果 (X < 9) or (X > 22)\n輸出 X\n\n\n\tA.\t7\n\tB.\t6\n\tC.\t27\n\tD.\t26",
+          "candidate_text": "下列哪個數值最有可能是上述算法的輸出？\n\n如果 (X < 9) or (X > 22)\n輸出 X\n\n\n\tA.\t6\n\tB.\t7\n\tC.\t26\n\tD.\t27",
           "reference_text": "以下算法可能輸出哪個數值？\n如果 (X < 9) or (X > 22)\n輸出 X\n如果 (X < 9) or (X > 22)\n輸出 X\nA. 9\nB. 10\nC. 22\nD. 23"
         },
         {
@@ -475,8 +504,8 @@
           "reference_id": "mcq-08",
           "similarity": 0.600896860986547,
           "match_type": "intra_spec",
-          "candidate_text": "設計了 M1 和 M6 兩個算法，在自動販賣機內以每 3 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\n\n\n\n\tA.\tX: 程式, Y: 儲存器\n\tB.\tX: 數據庫, Y: 變數\n\tC.\tX: 互聯網, Y: 網絡設備\n\tD.\tX: 統一碼, Y: 二進制數字",
-          "reference_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 N\n當 N < 0\n\n\n\tA.\t數據驗證\n\tB.\t數據有效性檢驗\n\tC.\t數據生成\n\tD.\t數據修改"
+          "candidate_text": "設計了 M1 和 M6 兩個算法，在自動販賣機內以每 3 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\n\n\n\n\tA.\tX: 統一碼, Y: 二進制數字\n\tB.\tX: 程式, Y: 儲存器\n\tC.\tX: 數據庫, Y: 變數\n\tD.\tX: 互聯網, Y: 網絡設備",
+          "reference_text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 N\n當 N < 0\n\n\n\tA.\t數據驗證\n\tB.\t數據修改\n\tC.\t數據生成\n\tD.\t數據有效性檢驗"
         }
       ]
     },
@@ -1357,8 +1386,8 @@
       "counts": {
         "A": 7,
         "B": 8,
-        "C": 8,
-        "D": 7
+        "C": 7,
+        "D": 8
       },
       "expected_per_letter": [
         7,
@@ -1367,35 +1396,35 @@
       "spread": 1,
       "answers": [
         "D",
+        "D",
+        "B",
+        "D",
+        "D",
+        "A",
         "C",
         "A",
+        "C",
+        "C",
+        "B",
+        "C",
+        "C",
+        "A",
+        "B",
+        "C",
+        "B",
+        "A",
+        "A",
+        "D",
+        "C",
+        "B",
+        "B",
+        "A",
+        "D",
         "B",
         "D",
         "D",
         "B",
-        "A",
-        "D",
-        "A",
-        "B",
-        "D",
-        "C",
-        "B",
-        "D",
-        "C",
-        "C",
-        "D",
-        "B",
-        "C",
-        "B",
-        "A",
-        "C",
-        "C",
-        "A",
-        "A",
-        "C",
-        "A",
-        "B",
-        "B"
+        "A"
       ],
       "issues": [],
       "pattern_issues": []
@@ -1408,35 +1437,35 @@
           "ok": true,
           "values": [
             "D",
+            "D",
+            "B",
+            "D",
+            "D",
+            "A",
             "C",
             "A",
+            "C",
+            "C",
+            "B",
+            "C",
+            "C",
+            "A",
+            "B",
+            "C",
+            "B",
+            "A",
+            "A",
+            "D",
+            "C",
+            "B",
+            "B",
+            "A",
+            "D",
             "B",
             "D",
             "D",
             "B",
-            "A",
-            "D",
-            "A",
-            "B",
-            "D",
-            "C",
-            "B",
-            "D",
-            "C",
-            "C",
-            "D",
-            "B",
-            "C",
-            "B",
-            "A",
-            "C",
-            "C",
-            "A",
-            "A",
-            "C",
-            "A",
-            "B",
-            "B"
+            "A"
           ],
           "issues": []
         }

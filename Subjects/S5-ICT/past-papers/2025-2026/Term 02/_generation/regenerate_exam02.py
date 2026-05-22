@@ -137,6 +137,7 @@ def main() -> int:
     spec = build_f5_ict_exam_spec(
         mcq_rows=final_rows,
         mcq_answers=mcq_key,
+        mcq_provenance=prov,
         written_picks=written_picks,
     )
     save_spec(SPEC_OUT, spec)

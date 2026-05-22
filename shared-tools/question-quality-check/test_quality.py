@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from coherence_check import check_text_coherence
 from answer_pattern_check import (
     check_all_answer_patterns,
     generate_random_balanced_letters,
@@ -267,6 +268,18 @@ def test_concept_conflict_diversified_pass() -> None:
     assert result.ok
 
 
+def test_coherence_meta_bridge() -> None:
+    bad = "（以下各題參考上述情境；部分設定取自不同 DSE 試題。）\n\n(a) 寫出公式。"
+    issues = check_text_coherence("b-01", bad, section="section_b")
+    assert any(i.kind == "meta_bridge" for i in issues)
+
+
+def test_coherence_topic_clash() -> None:
+    bad = "SELECT * FROM T\n\n估算 BMP 像素大小。"
+    issues = check_text_coherence("b-03", bad, section="section_b")
+    assert any(i.kind == "topic_clash" for i in issues)
+
+
 if __name__ == "__main__":
     test_format_backticks_fail()
     test_format_backticks_pass()
@@ -284,4 +297,6 @@ if __name__ == "__main__":
     test_concept_conflict_hallucination_mcq_and_later_sections()
     test_concept_conflict_tm_testing_mcq_and_sa()
     test_concept_conflict_diversified_pass()
+    test_coherence_meta_bridge()
+    test_coherence_topic_clash()
     print("ok")
