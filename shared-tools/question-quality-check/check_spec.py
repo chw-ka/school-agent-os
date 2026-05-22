@@ -18,6 +18,11 @@ from concept_check import (
     compare_concept_distributions,
     format_concept_report,
 )
+from concept_conflict_check import (
+    ConceptConflictResult,
+    check_concept_conflicts,
+    format_concept_conflict_report,
+)
 from exam_spec import DuplicateEntry, DuplicateReport, load_spec, spec_items
 from format_check import FormatCheckResult, check_exam_format, check_spec_format, format_format_report
 from mcq_check import McqCheckResult, check_mcq, format_mcq_report
@@ -74,6 +79,7 @@ class QuestionQualityReport:
         return (
             not self.has_duplicates
             and not self.has_concept_issues
+            and not self.has_concept_conflict_issues
             and not self.has_mcq_issues
             and not self.has_answer_pattern_issues
             and not self.has_format_issues
@@ -98,6 +104,8 @@ class QuestionQualityReport:
             d["answer_patterns"] = self.answer_patterns.to_dict()
         if self.format is not None:
             d["format"] = self.format.to_dict()
+        if self.concept_conflicts is not None:
+            d["concept_conflicts"] = self.concept_conflicts.to_dict()
         return d
 
 
@@ -247,6 +255,7 @@ def run_question_check(
     verify_concepts: bool = True,
     verify_mcq: bool = True,
     verify_format: bool = True,
+    verify_concept_conflicts: bool = True,
 ) -> QuestionQualityReport:
     candidate_spec_path = candidate_spec_path.expanduser().resolve()
     candidate = load_spec(candidate_spec_path)
@@ -362,6 +371,9 @@ def run_question_check(
             )
         else:
             quality.format = spec_fmt
+
+    if verify_concept_conflicts:
+        quality.concept_conflicts = check_concept_conflicts(candidate)
 
     return quality
 
