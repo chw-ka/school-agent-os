@@ -81,10 +81,52 @@
     }
   ],
   "written_total": 13,
-  "written_source_over_threshold": 0,
-  "written_source_hits": [],
-  "written_bank_best_over_threshold": 0,
-  "written_bank_best_hits": [],
+  "written_source_over_threshold": 5,
+  "written_source_hits": [
+    {
+      "slot": "b-02",
+      "similarity": 0.6305,
+      "bank_id": "2024-Paper1B_CompulsoryStructured-1-a-i"
+    },
+    {
+      "slot": "b-05",
+      "similarity": 0.8163,
+      "bank_id": "2023-Paper1B_CompulsoryStructured-BQ1-a-i"
+    },
+    {
+      "slot": "b-06",
+      "similarity": 0.6936,
+      "bank_id": "2024-Paper1B_CompulsoryStructured-1-b-i"
+    },
+    {
+      "slot": "c-07",
+      "similarity": 0.7059,
+      "bank_id": "2024-Paper2A_Database-2-a-i"
+    },
+    {
+      "slot": "c-08",
+      "similarity": 0.7073,
+      "bank_id": "2022-Paper2D_SoftwareDevelopment-2-a-i"
+    }
+  ],
+  "written_bank_best_over_threshold": 3,
+  "written_bank_best_hits": [
+    {
+      "slot": "b-05",
+      "similarity": 0.8163,
+      "bank_id": "2022-Paper1B_CompulsoryStructured-BQ1-a-i"
+    },
+    {
+      "slot": "b-06",
+      "similarity": 0.689,
+      "bank_id": "2024-Paper1B_CompulsoryStructured-1-b-iii"
+    },
+    {
+      "slot": "c-08",
+      "similarity": 0.7073,
+      "bank_id": "2022-Paper2D_SoftwareDevelopment-2-b-i"
+    }
+  ],
   "over_threshold": 15,
   "ok_count": 15,
   "hits": [

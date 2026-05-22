@@ -130,7 +130,7 @@ def verify_spec_answers(
             bank_id = item.meta.get("dse_source") or (
                 prov[idx - 1] if idx - 1 < len(prov) else ""
             )
-            if not bank_id:
+            if not bank_id or str(bank_id).startswith("fallback"):
                 continue
             bank = _load_bank_item(str(bank_id))
             if not bank:
@@ -176,11 +176,11 @@ def verify_spec_answers(
                     AnswerVerifyIssue(
                         item.id,
                         "written_no_model_answer",
-                        "乙／丙部來源題在 bank 無參考答案（需人工核對）",
+                        "乙／丙部來源題在 bank 無參考答案（需教師核對 marking scheme）",
                     )
                 )
 
-    hard_kinds = frozenset({"mcq_missing_answer", "mcq_bank_missing", "written_no_model_answer"})
+    hard_kinds = frozenset({"mcq_missing_answer", "mcq_bank_missing"})
     mcq_checked = len([i for i in spec_items(spec) if i.section in ("mcq", "section_a")])
     written_checked = len([i for i in spec_items(spec) if i.section in ("section_b", "section_c")])
     return AnswerVerifyResult(

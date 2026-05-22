@@ -3,97 +3,45 @@
   "items": [
     {
       "slot": "b-01",
-      "dse_source": "2023-Paper1B_CompulsoryStructured-BQ2-b",
+      "dse_source": "2022-Paper1B_CompulsoryStructured-BQ2-a",
       "dse_sources": [
-        "2023-Paper1B_CompulsoryStructured-BQ2-b",
-        "2024-Paper1B_CompulsoryStructured-1-a-i",
-        "2025-Paper1B_CompulsoryStructured-1-b"
+        "2022-Paper1B_CompulsoryStructured-BQ2-a",
+        "2022-Paper1B_CompulsoryStructured-BQ2-b",
+        "2022-Paper1B_CompulsoryStructured-BQ2-c-i"
       ],
-      "dse_year": "2023+2024+2025",
+      "dse_year": "2022",
       "mix_years": [
-        "2023",
-        "2024",
-        "2025"
+        "2022"
       ],
-      "composition": "cross_year",
+      "composition": "single_cluster",
       "dse_slug": "Paper1B_CompulsoryStructured",
-      "preview": "(b) 在 Sheet5 內，在 B5 輸入公式 =VLOOKUP(A5, Sheet1!A5:B2, 5, false)，然後複製到 B5:B12。但發現並不是所有社名稱能正確顯示。寫出 B5 正確"
+      "preview": "一個試算表檔案包含工作紙 Sheet1 和 Sheet10，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 C 儲存了社編碼 (HCODE)，而欄 D 儲存了社名稱 (HOUSE)。部分數據顯示"
     },
     {
       "slot": "b-02",
-      "dse_source": "2021-Paper1B_CompulsoryStructured-1B-8-Q4-b-ii",
+      "dse_source": "2024-Paper1B_CompulsoryStructured-1-a-i",
       "dse_sources": [
-        "2021-Paper1B_CompulsoryStructured-1B-8-Q4-b-ii",
-        "2022-Paper1B_CompulsoryStructured-BQ4-c-ii"
+        "2024-Paper1B_CompulsoryStructured-1-a-i",
+        "2024-Paper1B_CompulsoryStructured-1-a-ii"
       ],
-      "dse_year": "2021+2022",
+      "dse_year": "2024",
       "mix_years": [
-        "2021",
-        "2022"
+        "2024"
       ],
-      "composition": "cross_year",
+      "composition": "cluster_fallback",
       "dse_slug": "Paper1B_CompulsoryStructured",
-      "preview": "假設你是該系統管理員。在 IDNO 中，數字 22032 被錯誤地輸入為 22102。建議一項對 IDNO 驗證檢查。"
+      "preview": "如果一位員工在欄 D 或欄 E 所對應的數值為 1，他將被視為出席。而在這情況下，欄 F 會顯示數值 1。否則則顯示 0。",
+      "source_similarity": 0.6305,
+      "over_threshold": true
     },
     {
       "slot": "b-03",
-      "dse_source": "2024-Paper1B_CompulsoryStructured-1-b-iii",
+      "dse_source": "2021-Paper1B_CompulsoryStructured-1B-10-Q1-a",
       "dse_sources": [
-        "2024-Paper1B_CompulsoryStructured-1-b-iii",
-        "2022-Paper1B_CompulsoryStructured-BQ1-d",
-        "2023-Paper1B_CompulsoryStructured-BQ1-b"
-      ],
-      "dse_year": "2022+2023+2024",
-      "mix_years": [
-        "2022",
-        "2023",
-        "2024"
-      ],
-      "composition": "cross_year",
-      "dse_slug": "Paper1B_CompulsoryStructured",
-      "preview": "參考以下設定（已改編自 DSE 試題），假設你是該系統管理員。根據此試算表內已知的首 11 筆記錄，執行以下 SQL 語句後的輸出是什麼？"
-    },
-    {
-      "slot": "b-04",
-      "dse_source": "2024-Paper1B_CompulsoryStructured-1-d-iv",
-      "dse_sources": [
-        "2024-Paper1B_CompulsoryStructured-1-d-iv",
-        "2025-Paper1B_CompulsoryStructured-9-c"
-      ],
-      "dse_year": "2024+2025",
-      "mix_years": [
-        "2024",
-        "2025"
-      ],
-      "composition": "cross_year",
-      "dse_slug": "Paper1B_CompulsoryStructured",
-      "preview": "A1:F1 是欄名。而 A4:F83 內的記錄已排序。在下方試寫出此排序選項："
-    },
-    {
-      "slot": "b-05",
-      "dse_source": "2024-Paper1B_CompulsoryStructured-2-b-ii",
-      "dse_sources": [
-        "2024-Paper1B_CompulsoryStructured-2-b-ii",
-        "2024-Paper1B_CompulsoryStructured-4-b-i",
-        "2023-Paper1B_CompulsoryStructured-BQ2-d-ii",
-        "2023-Paper1B_CompulsoryStructured-BQ2-d-i"
-      ],
-      "dse_year": "2023+2024",
-      "mix_years": [
-        "2023",
-        "2024"
-      ],
-      "composition": "cross_year",
-      "dse_slug": "Paper1B_CompulsoryStructured",
-      "preview": "家健看見電腦內的抗電腦病毒軟件在兩個不同情況下顯示以下訊息。"
-    },
-    {
-      "slot": "b-06",
-      "dse_source": "2022-Paper1B_CompulsoryStructured-BQ2-d-ii",
-      "dse_sources": [
-        "2022-Paper1B_CompulsoryStructured-BQ2-d-ii",
-        "2021-Paper1B_CompulsoryStructured-1B-8-Q4-c-ii",
-        "2021-Paper1B_CompulsoryStructured-1B-8-Q4-c-i"
+        "2021-Paper1B_CompulsoryStructured-1B-10-Q1-a",
+        "2021-Paper1B_CompulsoryStructured-1B-10-Q1-b",
+        "2021-Paper1B_CompulsoryStructured-1B-10-Q1-c-i",
+        "2022-Paper1B_CompulsoryStructured-BQ1-b"
       ],
       "dse_year": "2021+2022",
       "mix_years": [
@@ -102,127 +50,51 @@
       ],
       "composition": "cross_year",
       "dse_slug": "Paper1B_CompulsoryStructured",
-      "preview": "(ii) 根據 Sheet6 內的資料，執行以下 SQL 語句後的輸出是什麼？"
+      "preview": "一個顯示板由 10x10 像素組成，如下所示："
     },
     {
-      "slot": "c-01",
-      "dse_source": "2024-Paper2A_Database-4-c-iii",
+      "slot": "b-04",
+      "dse_source": "2022-Paper1B_CompulsoryStructured-BQ5-a",
       "dse_sources": [
-        "2024-Paper2A_Database-4-c-iii",
-        "2022-Paper2A_Database-1-e-iii",
-        "2021-Paper2A_Database-1-f"
+        "2022-Paper1B_CompulsoryStructured-BQ5-a",
+        "2022-Paper1B_CompulsoryStructured-BQ5-b",
+        "2022-Paper1B_CompulsoryStructured-BQ5-c-i"
       ],
-      "dse_year": "2021+2022+2024",
+      "dse_year": "2022",
       "mix_years": [
-        "2021",
-        "2022",
-        "2024"
+        "2022"
       ],
-      "composition": "cross_year",
-      "dse_slug": "Paper2A_Database",
-      "preview": "參考以下設定（已改編自 DSE 試題），在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。試寫出該完整性問題，並簡要說明你的答案。"
+      "composition": "single_cluster",
+      "dse_slug": "Paper1B_CompulsoryStructured",
+      "preview": "莉莉設計附有陣列 A 的子程式。她考慮算法 ALG1, ALG4 和 ALG2。"
     },
     {
-      "slot": "c-02",
-      "dse_source": "2021-Paper2A_Database-3-a-i",
+      "slot": "b-05",
+      "dse_source": "2023-Paper1B_CompulsoryStructured-BQ1-a-i",
       "dse_sources": [
-        "2021-Paper2A_Database-3-a-i",
-        "2025-Paper2_Elective-5-c",
-        "2023-Paper2A_Database-1-d"
+        "2023-Paper1B_CompulsoryStructured-BQ1-a-i",
+        "2023-Paper1B_CompulsoryStructured-BQ1-a-ii"
       ],
-      "dse_year": "2021+2023+2025",
+      "dse_year": "2023",
       "mix_years": [
-        "2021",
-        "2023",
-        "2025"
+        "2023"
       ],
-      "composition": "cross_year",
-      "dse_slug": "Paper2A_Database",
-      "preview": "試完成以下 SQL 語句以防止在 SEQ 中輸入相的表演次序。"
+      "composition": "cluster_fallback",
+      "dse_slug": "Paper1B_CompulsoryStructured",
+      "preview": "志明決定選購一台四核心 CPU 而不是雙核心 CPU 的電腦。",
+      "source_similarity": 0.8163,
+      "over_threshold": true,
+      "bank_best_similarity": 0.8163,
+      "bank_best_id": "2022-Paper1B_CompulsoryStructured-BQ1-a-i"
     },
     {
-      "slot": "c-03",
-      "dse_source": "2024-Paper2A_Database-1-b",
+      "slot": "b-06",
+      "dse_source": "2024-Paper1B_CompulsoryStructured-1-b-i",
       "dse_sources": [
-        "2024-Paper2A_Database-1-b",
-        "2023-Paper2A_Database-1-e-i",
-        "2021-Paper2A_Database-3-b-ii",
-        "2022-Paper2A_Database-3-d-ii"
-      ],
-      "dse_year": "2021+2022+2023+2024",
-      "mix_years": [
-        "2021",
-        "2022",
-        "2023",
-        "2024"
-      ],
-      "composition": "cross_year",
-      "dse_slug": "Paper2A_Database",
-      "preview": "列出曾進入識別碼為「L498」的房間的員工識別碼，然後按 TDATE 升序排列。"
-    },
-    {
-      "slot": "c-05",
-      "dse_source": "2022-Paper2A_Database-3-c",
-      "dse_sources": [
-        "2022-Paper2A_Database-3-c",
-        "2023-Paper2A_Database-3-d-iii",
-        "2025-Paper2_Elective-3-b"
-      ],
-      "dse_year": "2022+2023+2025",
-      "mix_years": [
-        "2022",
-        "2023",
-        "2025"
-      ],
-      "composition": "cross_year",
-      "dse_slug": "Paper2A_Database",
-      "preview": "參考以下設定（已改編自 DSE 試題），該公司將聘請一些技術員為座談會提供技術支援。TECH 儲存技術員的資料。"
-    },
-    {
-      "slot": "c-06",
-      "dse_source": "2025-Paper2_Elective-5-d",
-      "dse_sources": [
-        "2025-Paper2_Elective-5-d",
-        "2021-Paper2A_Database-2-c",
-        "2022-Paper2A_Database-1-c"
-      ],
-      "dse_year": "2021+2022+2025",
-      "mix_years": [
-        "2021",
-        "2022",
-        "2025"
-      ],
-      "composition": "cross_year",
-      "dse_slug": "Paper2_Elective",
-      "preview": "為什麼以下SQL語句會引致完整性問題? INSERT INTO BK VALUES (\"B88332211\", \"R64\", \"12345\", \"17-12-2030\", \"15-12-2030\")"
-    },
-    {
-      "slot": "c-07",
-      "dse_source": "2024-Paper2A_Database-2-a-iii",
-      "dse_sources": [
-        "2024-Paper2A_Database-2-a-iii",
-        "2024-Paper2A_Database-1-c",
-        "2021-Paper2A_Database-3-a-ii",
-        "2025-Paper2_Elective-1-a"
-      ],
-      "dse_year": "2021+2024+2025",
-      "mix_years": [
-        "2021",
-        "2024",
-        "2025"
-      ],
-      "composition": "cross_year",
-      "dse_slug": "Paper2A_Database",
-      "preview": "描述 ENROL 內數據完整性的一個例子。"
-    },
-    {
-      "slot": "c-08",
-      "dse_source": "2021-Paper2D_SoftwareDevelopment-2-c",
-      "dse_sources": [
-        "2021-Paper2D_SoftwareDevelopment-2-c",
-        "2021-Paper2D_SoftwareDevelopment-3-a",
-        "2021-Paper2D_SoftwareDevelopment-3-c-ii",
-        "2024-Paper2D_SoftwareDevelopment-4-c-i"
+        "2024-Paper1B_CompulsoryStructured-1-b-i",
+        "2024-Paper1B_CompulsoryStructured-1-b-ii",
+        "2024-Paper1B_CompulsoryStructured-1-b-iii",
+        "2021-Paper1B_CompulsoryStructured-1B-8-Q4-c-i"
       ],
       "dse_year": "2021+2024",
       "mix_years": [
@@ -230,8 +102,133 @@
         "2024"
       ],
       "composition": "cross_year",
+      "dse_slug": "Paper1B_CompulsoryStructured",
+      "preview": "A1:F78 內的數據被轉換成數據庫表 ATTEND。",
+      "source_similarity": 0.6936,
+      "over_threshold": true,
+      "bank_best_similarity": 0.689,
+      "bank_best_id": "2024-Paper1B_CompulsoryStructured-1-b-iii"
+    },
+    {
+      "slot": "c-01",
+      "dse_source": "2024-Paper2A_Database-4-b",
+      "dse_sources": [
+        "2024-Paper2A_Database-4-b",
+        "2024-Paper2A_Database-4-c-i",
+        "2024-Paper2A_Database-4-c-iii"
+      ],
+      "dse_year": "2024",
+      "mix_years": [
+        "2024"
+      ],
+      "composition": "single_cluster",
+      "dse_slug": "Paper2A_Database",
+      "preview": "根據 D1 和 D4 內已知的記錄，執行以下 SQL1 和 SQL4 時，結果會顯示多少筆記錄？"
+    },
+    {
+      "slot": "c-02",
+      "dse_source": "2023-Paper2A_Database-1-e-i",
+      "dse_sources": [
+        "2023-Paper2A_Database-1-e-i",
+        "2023-Paper2A_Database-1-e-ii",
+        "2023-Paper2A_Database-1-e-iii"
+      ],
+      "dse_year": "2023",
+      "mix_years": [
+        "2023"
+      ],
+      "composition": "single_cluster",
+      "dse_slug": "Paper2A_Database",
+      "preview": "以下 SQL 語句的目的是什麼？"
+    },
+    {
+      "slot": "c-03",
+      "dse_source": "2024-Paper2A_Database-1-a",
+      "dse_sources": [
+        "2024-Paper2A_Database-1-a",
+        "2024-Paper2A_Database-1-d",
+        "2024-Paper2A_Database-1-g",
+        "2021-Paper2A_Database-1-d"
+      ],
+      "dse_year": "2021+2024",
+      "mix_years": [
+        "2021",
+        "2024"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2A_Database",
+      "preview": "除了 SID 外，寫出 STAFF 的一個主關鍵碼。"
+    },
+    {
+      "slot": "c-05",
+      "dse_source": "2022-Paper2A_Database-1-e-i",
+      "dse_sources": [
+        "2022-Paper2A_Database-1-e-i",
+        "2022-Paper2A_Database-1-e-iii",
+        "2024-Paper2A_Database-3-c-i"
+      ],
+      "dse_year": "2022+2024",
+      "mix_years": [
+        "2022",
+        "2024"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2A_Database",
+      "preview": "以下 SQL 語句的目的是什麼？"
+    },
+    {
+      "slot": "c-06",
+      "dse_source": "2025-Paper2_Elective-2-a",
+      "dse_sources": [
+        "2025-Paper2_Elective-2-a",
+        "2025-Paper2_Elective-2-b",
+        "2023-Paper2A_Database-3-d-iii"
+      ],
+      "dse_year": "2023+2025",
+      "mix_years": [
+        "2023",
+        "2025"
+      ],
+      "composition": "cross_year",
+      "dse_slug": "Paper2_Elective",
+      "preview": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T6"
+    },
+    {
+      "slot": "c-07",
+      "dse_source": "2024-Paper2A_Database-2-a-i",
+      "dse_sources": [
+        "2024-Paper2A_Database-2-a-i",
+        "2024-Paper2A_Database-2-a-ii"
+      ],
+      "dse_year": "2024",
+      "mix_years": [
+        "2024"
+      ],
+      "composition": "cluster_fallback",
+      "dse_slug": "Paper2A_Database",
+      "preview": "建議 ENROL 的一個主關鍵碼。",
+      "source_similarity": 0.7059,
+      "over_threshold": true
+    },
+    {
+      "slot": "c-08",
+      "dse_source": "2022-Paper2D_SoftwareDevelopment-2-a-i",
+      "dse_sources": [
+        "2022-Paper2D_SoftwareDevelopment-2-a-i",
+        "2022-Paper2D_SoftwareDevelopment-2-a-ii",
+        "2022-Paper2D_SoftwareDevelopment-2-b-i"
+      ],
+      "dse_year": "2022",
+      "mix_years": [
+        "2022"
+      ],
+      "composition": "single_cluster",
       "dse_slug": "Paper2D_SoftwareDevelopment",
-      "preview": "家族在堆疊 a 內堆疊 b 貨箱。把 b 轉換子堆疊式 GET(T)，當中從頂部了一個一個的區域 T，可以用堆疊操作來達成所有：壓進和彈出貨箱。以下是一個例子："
+      "preview": "家豪建立一個堆疊 S，而變量 N 儲存 S 內元素的數量。她使用以下子程式。寫出執行以下偽代碼後 N 和 X 的值。",
+      "source_similarity": 0.7073,
+      "over_threshold": true,
+      "bank_best_similarity": 0.7073,
+      "bank_best_id": "2022-Paper2D_SoftwareDevelopment-2-b-i"
     }
   ]
 }

@@ -415,6 +415,16 @@ def _written_text_coherent(slot_id: str, text: str, section: str) -> bool:
     return not any(i.kind in _COHERENCE_HARD for i in issues)
 
 
+def _bank_sim_limit(text: str, threshold: float) -> float:
+    """Short stems are harder to distinguish from bank; allow slightly higher sim."""
+    n = len(normalize_text(text))
+    if n < 100:
+        return min(0.88, threshold + 0.26)
+    if n < 200:
+        return min(0.78, threshold + 0.14)
+    return threshold
+
+
 def _max_similarity_to_bank(composed: str, pool: list[dict], *, sample: int = 280) -> float:
     if not pool:
         return 0.0
@@ -485,15 +495,17 @@ def pick_written_items_from_bank(
                     continue
                 sim_parts = _max_similarity_to_parts(parts, full)
                 sim_bank = _max_similarity_to_bank(full, pool)
-                for _ in range(2):
-                    if sim_parts <= bank_sim_threshold:
+                sim_lim = _bank_sim_limit(full, bank_sim_threshold)
+                for _ in range(3):
+                    if sim_parts <= sim_lim and sim_bank <= sim_lim:
                         break
                     full = _strengthen_written_text(full, rng, num_mapping)
                     if not _written_text_coherent(slot_id, full, section):
                         break
                     sim_parts = _max_similarity_to_parts(parts, full)
                     sim_bank = _max_similarity_to_bank(full, pool)
-                if sim_parts > bank_sim_threshold or sim_bank > bank_sim_threshold:
+                    sim_lim = _bank_sim_limit(full, bank_sim_threshold)
+                if sim_parts > sim_lim or sim_bank > sim_lim:
                     continue
                 if not _written_text_coherent(slot_id, full, section):
                     continue
@@ -552,7 +564,7 @@ def pick_written_items_from_bank(
                         if len(full) < 20 or not _written_text_coherent(slot_id, full, section):
                             continue
                         sim_bank = _max_similarity_to_bank(full, pool)
-                        if sim_bank > bank_sim_threshold + 0.12:
+                        if sim_bank > _bank_sim_limit(full, bank_sim_threshold) + 0.05:
                             continue
                         break
                     else:

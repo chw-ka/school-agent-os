@@ -176,7 +176,11 @@ def check_text_coherence(item_id: str, text: str, *, section: str = "") -> list[
 
     # MCQ: need options A–D
     if section == "mcq":
-        letters = sum(1 for L in "ABCD" if re.search(rf"^{L}\.\s", t, re.M))
+        letters = sum(
+            1
+            for L in "ABCD"
+            if re.search(rf"(?:^|\t){L}\.\s", t, re.M) or f"{L}、" in t
+        )
         if letters < 4:
             issues.append(CoherenceIssue(item_id, "mcq_options", f"MCQ 選項不足（只得 {letters}/4）"))
 

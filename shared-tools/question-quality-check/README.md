@@ -10,6 +10,8 @@
 | **Concepts** | 與原稿 spec 比對 `concepts`；`meta.concept_targets` 分佈 |
 | **MCQ balance** | 甲部 A–D 分佈均勻 |
 | **Answer patterns** | MCQ／配對／T-F／供詞填充答案不可有規律（一般 MCQ 打亂選項；**組合選項題**按 (1)→(1)(2)→…→「皆是」排 A→D，唔 random shuffle） |
+| **Coherence（通順）** | 禁止改編橋接句、主題硬拼（SQL+多媒體）、子題順序錯亂、孤兒 (ii) 等 |
+| **Answer verify** | 甲部有答案；有 `dse_source` 時對照 bank（改寫題標「與原題不同」供人工確認）；乙丙標示缺 model answer 的來源 |
 
 ## 用法
 
