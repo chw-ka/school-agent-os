@@ -15,7 +15,7 @@ from docx import Document
 from dse_ict_style import COMBO_OPTS_1_ONLY, COMBO_OPTS_3_ONLY, COMBO_OPTS_ALL, COMBO_OPTS_1_2_OK
 from f5_ict_from_dse import build_mcq_payload_from_bank
 from f5_ict_spec import build_f5_ict_exam_spec
-from post_check import repo_root, run_spec_check
+from post_check import repo_root, run_post_render_check, run_question_spec_check
 
 _FMT = Path(__file__).resolve().parents[1] / "paper-formatter"
 if str(_FMT) not in sys.path:
@@ -27,6 +27,7 @@ from f5_ict_tables import (
     remove_unused_f5_ict_tables,
 )
 from f5_ict_written_content import build_part_b, build_part_c
+from f5_ict_written_from_dse import get_active_written_picks
 from mcq_answer_keys import build_random_mcq_key
 from written_layout import replace_span
 
@@ -349,6 +350,59 @@ def clear_answer_pages(doc: Document) -> None:
         set_paragraph_text_distribute(doc.paragraphs[635], note)
 
 
+def prepare_mcq_final_rows(
+    mcq_payload: list[list[str]],
+    mcq_correct_indices: tuple[int, ...],
+    *,
+    rng: object | None = None,
+) -> tuple[list[list[str]], str]:
+    """Shuffle MCQ options for spec/render; no DOCX I/O."""
+    import random as _random
+
+    rng_obj = rng if isinstance(rng, _random.Random) else _random.Random(252602)
+    block_map = {i + 1: row for i, row in enumerate(mcq_payload)}
+    shuffled, mcq_key = build_random_mcq_key(
+        block_map,
+        correct_indices=mcq_correct_indices,
+        rng=rng_obj,
+    )
+    final_rows = [shuffled[i] for i in range(1, len(shuffled) + 1)]
+    return final_rows, mcq_key
+
+
+def render_docx(
+    template: Path,
+    output: Path,
+    *,
+    final_mcq_rows: list[list[str]],
+    footer_meta: dict | None = None,
+) -> None:
+    """Render deliverable DOCX from prepared MCQ rows + active written picks."""
+    shutil.copy(template, output)
+    doc = Document(str(output))
+    _apply_cover(doc)
+    blocks = mcq_blocks(doc)
+    apply_mcq(doc, blocks, final_mcq_rows)
+    written_picks = get_active_written_picks()
+    if written_picks:
+        from written_picks_render import build_part_b_from_picks, build_part_c_from_picks
+
+        part_b_lines = build_part_b_from_picks(written_picks)
+        part_c_lines = build_part_c_from_picks(written_picks)
+    else:
+        part_b_lines = build_part_b()
+        part_c_lines = build_part_c()
+    replace_span(doc, 313, 422, part_b_lines)
+    replace_span(doc, 423, 624, part_c_lines)
+    clear_all_body_tables_before_write(doc)
+    apply_f5_ict_table_content(doc)
+    remove_unused_f5_ict_tables(doc)
+    clear_answer_pages(doc)
+    doc.save(str(output))
+    if footer_meta:
+        apply_footer_meta(output, footer_meta)
+
+
 def generate(
     template: Path,
     output: Path,
@@ -357,37 +411,24 @@ def generate(
     rng: object | None = None,
     mcq_payload: list[list[str]] | None = None,
     mcq_correct_indices: tuple[int, ...] | None = None,
+    final_mcq_rows: list[list[str]] | None = None,
+    mcq_key: str | None = None,
 ) -> tuple[list[list[str]], str]:
-    """Render DOCX; return (final MCQ rows, mcq answer key)."""
+    """Prepare MCQ (if needed), render DOCX; return (final MCQ rows, mcq answer key)."""
     import random as _random
 
     rng_obj = rng if isinstance(rng, _random.Random) else _random.Random(252602)
-    if mcq_payload is not None and mcq_correct_indices is not None:
-        payload, correct_indices = mcq_payload, mcq_correct_indices
+    if final_mcq_rows is not None and mcq_key is not None:
+        rows, key = final_mcq_rows, mcq_key
+    elif mcq_payload is not None and mcq_correct_indices is not None:
+        rows, key = prepare_mcq_final_rows(
+            mcq_payload, mcq_correct_indices, rng=rng_obj
+        )
     else:
         payload, correct_indices, _prov = build_mcq_payload_from_bank(rng_obj)
-    shutil.copy(template, output)
-    doc = Document(str(output))
-    _apply_cover(doc)
-    blocks = mcq_blocks(doc)
-    block_map = {i + 1: row for i, row in enumerate(payload)}
-    shuffled, mcq_key = build_random_mcq_key(
-        block_map,
-        correct_indices=correct_indices,
-        rng=rng_obj,
-    )
-    apply_mcq(doc, blocks, [shuffled[i] for i in range(1, len(shuffled) + 1)])
-    replace_span(doc, 313, 422, build_part_b())
-    replace_span(doc, 423, 624, build_part_c())
-    clear_all_body_tables_before_write(doc)
-    apply_f5_ict_table_content(doc)
-    remove_unused_f5_ict_tables(doc)
-    clear_answer_pages(doc)
-    doc.save(str(output))
-    if footer_meta:
-        apply_footer_meta(output, footer_meta)
-    final_rows = [shuffled[i] for i in range(1, len(shuffled) + 1)]
-    return final_rows, mcq_key
+        rows, key = prepare_mcq_final_rows(payload, correct_indices, rng=rng_obj)
+    render_docx(template, output, final_mcq_rows=rows, footer_meta=footer_meta)
+    return rows, key
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -448,76 +489,55 @@ def main(argv: list[str] | None = None) -> int:
 
     import random
 
-    check_code = 1
+    extra_refs = [
+        root / "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.pdf",
+        root / "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/23_24_S5_ICT_Exam02.pdf",
+    ]
+    q_code = 1
+    final_rows: list[list[str]] = []
+    mcq_key = ""
     for attempt in range(1, 41):
-        mcq_rows, mcq_key = generate(
-            template, output, footer_meta=footer, rng=random.Random(2025_2026 + attempt)
+        rng = random.Random(2025_2026 + attempt)
+        payload, correct_indices, _prov = build_mcq_payload_from_bank(rng)
+        final_rows, mcq_key = prepare_mcq_final_rows(
+            payload, correct_indices, rng=rng
         )
-        spec = build_f5_ict_exam_spec(mcq_rows=mcq_rows, mcq_answers=mcq_key)
+        spec = build_f5_ict_exam_spec(mcq_rows=final_rows, mcq_answers=mcq_key)
         save_spec(spec_path, spec)
-        check_code = run_spec_check(
+        q_code = run_question_spec_check(
             candidate_spec=spec_path,
             template=template,
-            candidate_docx=output,
             years=args.years,
             subject_subpath=args.subject,
             json_report=dup_report,
             strict=args.strict,
-            extra_reference_docx=[
-                root / "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.pdf",
-                root / "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/23_24_S5_ICT_Exam02.pdf",
-            ],
+            extra_reference_docx=extra_refs,
         )
-        if check_code == 0:
-            print(f"Wrote spec: {spec_path}")
-            print(f"Wrote DOCX: {output}")
-            print(f"MCQ key: {mcq_key} (attempt {attempt})")
+        if q_code == 0:
+            print(f"Wrote spec: {spec_path} (attempt {attempt})")
             break
     else:
-        print("Could not pass spec duplicate check after 40 attempts.")
-        return check_code
+        print("Could not pass question check after 40 attempts.")
+        return q_code
 
-    import importlib.util
-
-    _qdir = Path(__file__).resolve().parents[1] / "question-quality-check"
-    _pdir = Path(__file__).resolve().parents[1] / "paper-quality-check"
-    if str(_qdir) not in sys.path:
-        sys.path.insert(0, str(_qdir))
-    if str(_pdir) not in sys.path:
-        sys.path.append(str(_pdir))
-    _qdocx = importlib.util.spec_from_file_location(
-        "qqc_check_docx", _qdir / "check_docx.py"
-    )
-    assert _qdocx and _qdocx.loader
-    _qmod = importlib.util.module_from_spec(_qdocx)
-    _qdocx.loader.exec_module(_qmod)
-    question_docx_main = _qmod.main
-    from check_paper import format_paper_report_text, report_exit_code, run_paper_check
-
-    docx_argv = [
-        "--candidate",
-        str(output),
-        "--candidate-spec",
-        str(spec_path),
-        "--template",
-        str(template),
-        "--subject",
-        args.subject,
-        "--years",
-        str(args.years),
-    ]
-    docx_code = int(question_docx_main(docx_argv))
-    p_report = run_paper_check(
+    generate(
+        template,
         output,
-        candidate_spec_path=spec_path,
-        template_docx_path=template,
+        footer_meta=footer,
+        final_mcq_rows=final_rows,
+        mcq_key=mcq_key,
     )
-    print("\n--- Paper quality check (DOCX) ---")
-    print(format_paper_report_text(p_report))
-    final_code = max(check_code, docx_code, report_exit_code(p_report))
-    if final_code == 0:
+    print(f"Wrote DOCX: {output}")
+    print(f"MCQ key: {mcq_key}")
+
+    p_code = run_post_render_check(
+        candidate_spec=spec_path,
+        candidate_docx=output,
+        template=template,
+    )
+    if p_code == 0:
         print("All checks passed.")
-    return final_code
+    return max(q_code, p_code)
 
 
 if __name__ == "__main__":

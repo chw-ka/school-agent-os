@@ -148,14 +148,22 @@ def _written_items_from_picks(picks: dict[str, dict]) -> list[dict]:
     order = [sid for sid, *_ in __import__(
         "f5_ict_written_from_dse", fromlist=["WRITTEN_SLOT_PLAN"]
     ).WRITTEN_SLOT_PLAN]
+    _fmt = Path(__file__).resolve().parents[1] / "paper-formatter"
+    if str(_fmt) not in sys.path:
+        sys.path.insert(0, str(_fmt))
+    from f5_ict_written_content import build_part_b, build_part_c
+    from written_picks_render import pick_slot_spec_text
+
     items: list[dict] = []
     for slot_id in order:
         p = picks[slot_id]
+        builder = build_part_b if slot_id.startswith("b-") else build_part_c
+        body = pick_slot_spec_text(p, slot_id, default_builder=builder)
         items.append(
             make_item(
                 slot_id,
                 p["section"],
-                p["text"],
+                body,
                 marks=p["marks"],
                 title=p.get("title"),
                 concepts=p.get("concepts"),

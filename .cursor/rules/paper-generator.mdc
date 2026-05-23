@@ -1,68 +1,77 @@
 ---
-description: School exam paper generation — mandatory quality-check and MCQ concept ordering
+description: School exam paper generation — concept-generate-review pipeline and MCQ concept ordering
 globs: shared-tools/paper-generator/**,Subjects/**/past-papers/**/_generation/**
 alwaysApply: false
 ---
 
 # Paper generator rules
 
-## Mandatory quality-check
+**S5 ICT 出卷主流程：** `.cursor/skills/generate-f5-ict-exam/SKILL.md`  
+**目標流程技術文檔：** `shared-tools/paper-generator/F5_ICT_CONCEPT_GENERATE_FLOW.md`
 
-Every exam **generate** (spec + DOCX) **must** run the full check pipeline before treating output as final:
+## Target pipeline（mandatory direction）
 
-1. `question-quality-check` — duplicates (template + past 3 years **PDF/DOCX** + **intra-exam** MCQ), concepts, MCQ key, format
-2. `paper-quality-check` — footer, cover, 乙／丙 structure
+**Bank 唔抄題** — `question-bank` 只供 `concept_map` + `style_patterns`；題目由 blueprint **generate**，similarity 喺 **question_review** 驗證。
 
-**Do not** use `--skip-check` when generating deliverable exam papers unless the user explicitly asks for a draft-only run.
+1. Side products：`concept_map.json`（tree, C&A Guide）+ `style_patterns.json`（問法／語法／專有名詞）
+2. `exam_blueprint.json` — 考核比例 + slots
+3. **concept_review** — concept 重覆、對 C&A map、common mistakes
+4. **generate** → `*.spec.json`（agent 或 tool；唔貼 bank stem）
+5. **question_review** — duplicates、bank similarity、coherence、answers（過渡：`run_question_spec_check`）
+6. Fail → **只 regen 失敗 slot**，每 slot **≤10 次**；仍 fail → report，**唔成卷 loop**
+7. **render DOCX** — question_review pass 後先 render
+8. **paper_review** — footer、cover、乙丙；spec↔DOCX ≥92%
 
-Default command (F5 ICT example):
+**Do not** bulk-edit question text in DOCX; fix **spec** then re-render.  
+**Do not** use `--skip-check` for final exams unless draft-only.
 
-```bash
-python shared-tools/paper-generator/f5_ict_blueprint_db_web.py
-```
+## Legacy（過渡，勿擴充）
 
-Inspect `*_generation/*.spec.duplicates.json` when check exit code ≠ 0.
+`regenerate_exam02.py`：bank pick + transform + pick-time ≤60% gate → 易長時間 retry（似 hang）。有合格 spec 時只做 review + render。詳見 skill「Legacy implementation」。
+
+## Spec-first（不變）
+
+| 產物 | 用途 |
+|------|------|
+| `*.spec.json` | 內容 source of truth |
+| `WrittenExam/*.docx` | 交付；render 後 paper_review |
 
 ## MCQ concept ordering (Core A → B → D blocks)
 
-S5 ICT Term2 MCQ (30) must follow **blocked** compulsory cores (EDB C&A Guide topic order within each block):
+S5 ICT Term2 MCQ (30): **Core A ×10 → Core B ×10 → Core D ×10**（EDB C&A Guide 順序）
 
-- Pattern: **Core A ×10 → Core B ×10 → Core D ×10**
-- Core A = 資訊處理（A-a 簡介 → A-b 數據組織/控制 → A-c 數據表示 → A-d 數據操縱）
-- Core B = 電腦系統基礎（B-a 硬件 → B-b 軟件/OS）
-- Core D = 計算思維（D-a 問題分析 → D-b 算法 → D-c 程式開發 → D-d 測試）
-- **EC elective** concepts（堆疊、佇列、鏈表…）= Module C — **not** 甲部 MCQ targets
+- Core A = 資訊處理；Core B = 電腦系統；Core D = 計算思維
+- **EC elective**（堆疊、鏈表…）= 丙部 — **not** 甲部 MCQ
 
-Implementation: `mcq_core_plan.py` + `Subjects/DSE-ICT/question-bank/curriculum_concepts.json`; picker in `f5_ict_from_dse.py`; validated in `question-quality-check/concept_check.py`.
+Implementation: `mcq_core_plan.py` + `curriculum_concepts.json`（→ `concept_map.json`）；validated in `concept_check.py`.
 
-When changing slot concepts, keep **both** block order and template **span** constraints (combo `(1)(2)(3)` only in span ≥10 slots).
+Combo MCQ: `\t\t(1)\t…`, `\t\t(2)\t…`, `\t\t(3)\t…` in span ≥10 slots only.
 
-## DSE bank pick rules (F5 ICT)
+## Similarity（question_review，唔再 pick gate）
 
-- Year pool: **2021–2025** (ignore 2019–2020 unless user says otherwise)
-- Exclude Core C / Module B networking-heavy items
-- **Bank + past papers**: stem similarity **must be ≤ 60%** vs DSE question-bank and vs school past papers (past papers = reference only; same concept, different scenario/wording)
-- **Intra-exam dedup**: same stem / >60% similarity forbidden
-- Picker keeps **DSE phrasing** (no school prefixes); varies **numbers**; **flip** (`是`↔`不是`); **single ↔ combo**; **reframe**（例：「X 重要，這是因為」→「以下哪一步驟可以…？」+ 流程名稱選項）. Target bank similarity ≤ 60% where feasible
-- Combo MCQ format: `\t\t(1)\t…`, `\t\t(2)\t…`, `\t\t(3)\t…` before options
-- Quality-check: `run_question_check` also compares spec to `DSE-ICT/question-bank` when `meta.dse_sources` is set
+| 部分 | Threshold |
+|------|-----------|
+| 甲部 MCQ stem vs bank/past | ≤ 60% |
+| 乙丙 whole slot vs bank | ≤ 60% |
+| 乙丙 subpart vs bank part | ≤ 85% |
+| spec ↔ DOCX（paper_review） | ≥ 92% |
+
+Constants: `f5_ict_from_dse.py`, `quality_lib.py`.
 
 ## Template tables (DOCX render)
 
-When writing into a **prior-year layout template**:
+1. **Clear** non-cover tables
+2. **Populate** `apply_f5_ict_table_content`
+3. **Delete** unused tables (`F5_ICT_REQUIRED_TABLES`)
 
-1. **Clear** all non-cover tables (`clear_all_body_tables_before_write`)
-2. **Populate** only tables the current paper needs (`apply_f5_ict_table_content`) — uses template indices
-3. **Delete** unused template tables physically (`remove_unused_f5_ict_tables` / `F5_ICT_REQUIRED_TABLES`)
-
-Do not leave blank template tables from last year — remove them after populate (delete last so indices stay stable during apply).
+乙丙全文：`written_picks_render`（方案 A）；spec 用 `pick_slot_spec_text()` 同一套文字。
 
 ## Exam structure (F5 ICT Term 2)
 
-| Section | DSE equivalent | Format |
-|---------|----------------|--------|
-| 甲部 | Paper 1A | MCQ (Core A/B/D only) |
-| 乙部 | Paper 1B | Structured — no MCQ |
-| 丙部 | Paper 2 (Module A + C) | Structured — **no MCQ** |
+| Section | Format |
+|---------|--------|
+| 甲部 | MCQ Core A/B/D |
+| 乙部 | Structured, no MCQ |
+| 丙部 | DB elective structured, no MCQ |
 
-MCQ bank picker uses `Paper1_MultipleChoice` only — never Paper 2 elective JSON for MCQ slots.
+MCQ bank slug: `Paper1_MultipleChoice` only.

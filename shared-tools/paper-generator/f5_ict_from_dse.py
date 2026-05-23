@@ -60,6 +60,9 @@ _EXCLUDE_NETWORK_KW = (
 
 # vs DSE bank + school past papers: stem similarity must stay <= 60% (complaint risk)
 _BANK_SIM_THRESH = 0.60
+# 乙／丙：整條 scenario／slot vs bank；子題可跨多年拼合，較寬
+_BANK_SIM_THRESH_WRITTEN_STEM = 0.60
+_BANK_SIM_THRESH_WRITTEN_SUBPART = 0.85
 # Never ship a stem identical to the source bank item (flip-only / option shuffle)
 _BANK_SIM_IDENTICAL = 0.999
 # Within-exam: avoid near-duplicate stems in the same paper (stricter than bank/past ref)
@@ -1126,6 +1129,11 @@ def _bank_stem_similarity(original: dict, adapted: dict) -> float:
     return text_similarity(o, a)
 
 
+def _bank_stem_similarity_row(original: dict, row: list[str]) -> float:
+    """Similarity vs bank using rendered MCQ block (stem + statements only)."""
+    return _bank_stem_similarity(original, {"text": "\n".join(row)})
+
+
 def _transform_modes(item: dict, *, span: int) -> list[str]:
     text = _adapt_text(item.get("text", ""), random.Random(0))
     q, stmts, opts, ans = _extract_mcq_parts({**item, "text": text})
@@ -1493,12 +1501,8 @@ def pick_mcq_items(rng: random.Random, used_ids: set[str]) -> list[dict]:
                             break
                     if pick is not None:
                         break
-                if pick is None and best_work is not None:
-                    if best_sim >= _BANK_SIM_IDENTICAL:
-                        best_work = _prepare_bank_item(cand, rng, span=span)
-                        best_sim = _bank_stem_similarity(cand, best_work)
-                    if best_sim < _BANK_SIM_IDENTICAL:
-                        pick = best_work
+                if pick is None and best_work is not None and best_sim <= _BANK_SIM_THRESH:
+                    pick = best_work
         if pick is None:
             fb = FALLBACK_BY_SLOT.get(slot_idx)
             if fb and _fits_span(fb, span):
@@ -1530,7 +1534,9 @@ def _format_mcq_block(item: dict, span: int, rng: random.Random) -> tuple[list[s
             work["stem"] = _adapt_text(str(work["stem"]), rng)
 
     question, statements, opts, ans = _extract_mcq_parts(work)
-    if question.startswith("假設 N = 0"):
+    raw = work.get("text") or ""
+    # Only restore vending stem when the bank item is actually the M1/M2 flowchart set
+    if question.startswith("假設 N = 0") and ("販賣" in raw or "M1" in raw):
         question = (
             "設計了 M1 和 M2 兩個算法，在自動販賣機內以每 5 個積分輸出一罐汽水。"
             "N 代表積分數量。" + question
@@ -1578,18 +1584,27 @@ def audit_mcq_bank_similarity(
         orig = _load_bank_item_by_id(iid)
         if not orig:
             continue
-        sim = _bank_stem_similarity(orig, {"text": "\n".join(row)})
+        sim = _bank_stem_similarity_row(orig, row)
         if sim > threshold:
             hits.append((slot, sim, iid))
     return hits
+
+
+def _is_vending_mcq_block(text: str) -> bool:
+    return "自動販賣機" in text and "積分" in text
 
 
 def audit_intra_exam_duplicates(rows: list[list[str]], *, threshold: float = _INTRA_EXAM_THRESH) -> list[tuple[int, int, float]]:
     """Return list of (q1, q2, similarity) for MCQ pairs within the same paper."""
     texts = ["\n".join(r) for r in rows]
     hits: list[tuple[int, int, float]] = []
+    vending_slots = [i + 1 for i, t in enumerate(texts) if _is_vending_mcq_block(t)]
+    if len(vending_slots) > 1:
+        hits.append((vending_slots[0], vending_slots[1], 1.0))
     for i in range(len(texts)):
         for j in range(i + 1, len(texts)):
+            if _is_vending_mcq_block(texts[i]) and _is_vending_mcq_block(texts[j]):
+                continue
             sim = text_similarity(texts[i], texts[j])
             if sim > threshold:
                 hits.append((i + 1, j + 1, sim))
@@ -1620,7 +1635,10 @@ def build_mcq_payload_from_bank(
             hits = audit_intra_exam_duplicates(rows)
             if hits:
                 raise RuntimeError(f"intra-exam duplicates: {hits[:5]}")
-            # Bank <=60% enforced in pick + reported in spec duplicate check (not here)
+            audit_items = [{"id": p} for p in prov]
+            bank_hits = audit_mcq_bank_similarity(audit_items, rows)
+            if bank_hits:
+                raise RuntimeError(f"bank similarity: {bank_hits[:6]}")
             seq_errors = verify_core_sequence([c for c, _ in MCQ_SLOT_PLAN])
             if seq_errors:
                 raise RuntimeError(f"core sequence: {seq_errors[0]}")

@@ -10,6 +10,8 @@ from pathlib import Path
 
 from f5_ict_from_dse import (
     _BANK_SIM_THRESH,
+    _BANK_SIM_THRESH_WRITTEN_STEM,
+    _BANK_SIM_THRESH_WRITTEN_SUBPART,
     _adapt_text,
     _concept_overlap,
     _load_bank_items,
@@ -454,9 +456,14 @@ def pick_written_items_from_bank(
     rng: random.Random | None = None,
     *,
     max_attempts: int = 80,
-    bank_sim_threshold: float = _BANK_SIM_THRESH,
+    bank_stem_threshold: float = _BANK_SIM_THRESH_WRITTEN_STEM,
+    bank_subpart_threshold: float = _BANK_SIM_THRESH_WRITTEN_SUBPART,
 ) -> dict[str, dict]:
-    """Return slot_id → pick dict; cross-year parts + transforms; bank sim <= threshold."""
+    """Return slot_id → pick dict; cross-year parts + transforms.
+
+    Whole slot/stem vs bank ≤ bank_stem_threshold (60%).
+    Composed vs source parts (subquestions) ≤ bank_subpart_threshold (85%).
+    """
     rng = rng or random.Random()
     last_err: str | None = None
     for _attempt in range(max_attempts):
@@ -495,17 +502,19 @@ def pick_written_items_from_bank(
                     continue
                 sim_parts = _max_similarity_to_parts(parts, full)
                 sim_bank = _max_similarity_to_bank(full, pool)
-                sim_lim = _bank_sim_limit(full, bank_sim_threshold)
+                sub_lim = _bank_sim_limit(full, bank_subpart_threshold)
+                stem_lim = _bank_sim_limit(full, bank_stem_threshold)
                 for _ in range(3):
-                    if sim_parts <= sim_lim and sim_bank <= sim_lim:
+                    if sim_parts <= sub_lim and sim_bank <= stem_lim:
                         break
                     full = _strengthen_written_text(full, rng, num_mapping)
                     if not _written_text_coherent(slot_id, full, section):
                         break
                     sim_parts = _max_similarity_to_parts(parts, full)
                     sim_bank = _max_similarity_to_bank(full, pool)
-                    sim_lim = _bank_sim_limit(full, bank_sim_threshold)
-                if sim_parts > sim_lim or sim_bank > sim_lim:
+                    sub_lim = _bank_sim_limit(full, bank_subpart_threshold)
+                    stem_lim = _bank_sim_limit(full, bank_stem_threshold)
+                if sim_parts > sub_lim or sim_bank > stem_lim:
                     continue
                 if not _written_text_coherent(slot_id, full, section):
                     continue
@@ -546,7 +555,10 @@ def pick_written_items_from_bank(
                     scored_c.append((score, key, items))
                 if not scored_c:
                     ok = False
-                    last_err = f"No composed pick for {slot_id} (sim > {bank_sim_threshold:.0%})"
+                    last_err = (
+                        f"No composed pick for {slot_id} "
+                        f"(stem>{bank_stem_threshold:.0%} or subpart>{bank_subpart_threshold:.0%})"
+                    )
                     break
                 scored_c.sort(key=lambda x: (-x[0], x[1]))
                 rng.shuffle(scored_c[:10])
@@ -564,7 +576,7 @@ def pick_written_items_from_bank(
                         if len(full) < 20 or not _written_text_coherent(slot_id, full, section):
                             continue
                         sim_bank = _max_similarity_to_bank(full, pool)
-                        if sim_bank > _bank_sim_limit(full, bank_sim_threshold) + 0.05:
+                        if sim_bank > _bank_sim_limit(full, bank_stem_threshold) + 0.05:
                             continue
                         break
                     else:
@@ -651,9 +663,9 @@ def _written_bank_pool() -> list[dict]:
 def audit_written_source_similarity(
     picks: dict[str, dict],
     *,
-    threshold: float = _BANK_SIM_THRESH,
+    threshold: float = _BANK_SIM_THRESH_WRITTEN_SUBPART,
 ) -> list[tuple[str, float, str]]:
-    """(slot_id, max similarity, dse_source) vs each raw source part (matches pick gate)."""
+    """(slot_id, max similarity, dse_source) vs each raw source part (subquestion gate, default 85%)."""
     hits: list[tuple[str, float, str]] = []
     for slot_id, p in sorted(picks.items()):
         source_ids = list(p.get("dse_sources") or [])
@@ -680,9 +692,9 @@ def audit_written_source_similarity(
 def audit_written_best_bank_match(
     picks: dict[str, dict],
     *,
-    threshold: float = _BANK_SIM_THRESH,
+    threshold: float = _BANK_SIM_THRESH_WRITTEN_STEM,
 ) -> list[tuple[str, float, str]]:
-    """(slot_id, similarity, bank_id) for highest match anywhere in written bank."""
+    """(slot_id, similarity, bank_id) for highest whole-slot match in written bank (default 60%)."""
     pool = _written_bank_pool()
     hits: list[tuple[str, float, str]] = []
     for slot_id, p in sorted(picks.items()):
@@ -703,11 +715,12 @@ def audit_written_best_bank_match(
 def audit_written_bank_similarity(
     picks: dict[str, dict],
     *,
-    threshold: float = _BANK_SIM_THRESH,
+    stem_threshold: float = _BANK_SIM_THRESH_WRITTEN_STEM,
+    subpart_threshold: float = _BANK_SIM_THRESH_WRITTEN_SUBPART,
 ) -> dict[str, list[tuple[str, float, str]]]:
     return {
-        "source": audit_written_source_similarity(picks, threshold=threshold),
-        "bank_best": audit_written_best_bank_match(picks, threshold=threshold),
+        "source": audit_written_source_similarity(picks, threshold=subpart_threshold),
+        "bank_best": audit_written_best_bank_match(picks, threshold=stem_threshold),
     }
 
 
@@ -733,9 +746,11 @@ def written_preview_json(
         }
         if sid in src_by_slot:
             row["source_similarity"] = src_by_slot[sid][0]
-            row["over_threshold"] = True
+            row["over_threshold_subpart"] = True
+            row["over_threshold"] = True  # legacy alias
         if sid in best_by_slot:
             row["bank_best_similarity"] = best_by_slot[sid][0]
             row["bank_best_id"] = best_by_slot[sid][1]
+            row["over_threshold_stem"] = True
         rows.append(row)
     return json.dumps({"count": len(rows), "items": rows}, ensure_ascii=False, indent=2)

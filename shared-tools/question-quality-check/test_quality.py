@@ -280,6 +280,33 @@ def test_coherence_topic_clash() -> None:
     assert any(i.kind == "topic_clash" for i in issues)
 
 
+def test_written_picks_render_b02() -> None:
+    import sys
+    from pathlib import Path
+
+    fmt = Path(__file__).resolve().parents[1] / "paper-formatter"
+    if str(fmt) not in sys.path:
+        sys.path.insert(0, str(fmt))
+    from written_layout import ANSWER_BLANK
+    from written_picks_render import layout_slot_from_pick, pick_text_to_content_lines
+
+    pick = {
+        "text": (
+            "如果一位員工在欄 D 或欄 E 所對應的數值為 1，他將被視為出席。\n"
+            "(a) 說明有效性檢驗。\n"
+            "(b) 為班別欄建議規則。"
+        )
+    }
+    lines = pick_text_to_content_lines(pick["text"])
+    assert any("(a)" in ln for ln in lines)
+    assert "出席" in lines[0]
+    skel = ["舊情景：網上報名", "", "", "\t(a)\t舊", ANSWER_BLANK, "\t(b)\t舊", ANSWER_BLANK]
+    merged = layout_slot_from_pick(pick, skel)
+    assert "出席" in merged[0]
+    assert "有效性" in "".join(merged)
+    assert "網上報名" not in "".join(merged)
+
+
 if __name__ == "__main__":
     test_format_backticks_fail()
     test_format_backticks_pass()
@@ -299,4 +326,5 @@ if __name__ == "__main__":
     test_concept_conflict_diversified_pass()
     test_coherence_meta_bridge()
     test_coherence_topic_clash()
+    test_written_picks_render_b02()
     print("ok")

@@ -1,6 +1,12 @@
 # F5 ICT 出卷流程（DSE 題庫藍本 → 新題 → Formatter）
 
-> **狀態：規劃中（2026-05）** — `Subjects/DSE-ICT/question-bank/` 尚未齊備 2019–2025 各卷 JSON，**暫不實作自動抽題**；本文先記低目標流程與現有工具接軌方式。
+> **⚠️ 歸檔（2026-05）** — 已被 **[`F5_ICT_CONCEPT_GENERATE_FLOW.md`](F5_ICT_CONCEPT_GENERATE_FLOW.md)** 取代。  
+> 現行 operator 流程見 **[`.cursor/skills/generate-f5-ict-exam/SKILL.md`](../../.cursor/skills/generate-f5-ict-exam/SKILL.md)**。  
+> 下文保留作歷史參考（當時 bank 未齊、pick 藍本等假設已過時）。
+
+---
+
+> **原狀態：規劃中（2026-05）** — `Subjects/DSE-ICT/question-bank/` 尚未齊備 2019–2025 各卷 JSON，**暫不實作自動抽題**；本文先記低目標流程與現有工具接軌方式。
 
 ## 背景：點解而家份卷「好似」但仍過到 check？
 

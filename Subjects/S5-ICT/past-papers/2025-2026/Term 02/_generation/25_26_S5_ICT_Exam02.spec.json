@@ -56,7 +56,7 @@
       "section_b": "Structured — compulsory (DSE Paper 1B style)",
       "section_c": "Structured — elective Module A + C (DSE Paper 2); no MCQ"
     },
-    "style_guide": "shared-tools\\paper-generator\\dse_ict_style_guide.json",
+    "style_guide": "shared-tools/paper-generator/dse_ict_style_guide.json",
     "dse_sources": [
       "Subjects/DSE-ICT/past-papers/2021",
       "Subjects/DSE-ICT/past-papers/2022",
@@ -92,7 +92,7 @@
         "max": 10
       }
     },
-    "mcq_answers": "AABCBCACAADCDCACDCDCDBBDBABDAB",
+    "mcq_answers": "ACCADDCCABAADADBCDBBCBBAACDCBD",
     "mcq_provenance": [
       "2025-Paper1A_MultipleChoice-3",
       "2021-Paper1_MultipleChoice-17-Page-5-problem-17",
@@ -100,37 +100,37 @@
       "2022-Paper1_MultipleChoice-AQ20",
       "2025-Paper1A_MultipleChoice-6",
       "2021-Paper1_MultipleChoice-12",
+      "2025-Paper1A_MultipleChoice-29",
+      "2025-Paper1A_MultipleChoice-2",
       "2021-Paper1_MultipleChoice-19",
-      "2025-Paper1A_MultipleChoice-31",
-      "2022-Paper1_MultipleChoice-AQ5",
       "2021-Paper1_MultipleChoice-31",
       "2024-Paper1_MultipleChoice-19",
       "2021-Paper1_MultipleChoice-21",
       "2025-Paper1A_MultipleChoice-20",
       "2021-Paper1_MultipleChoice-18-Page-5-problem-18",
-      "2025-Paper1A_MultipleChoice-2",
-      "2022-Paper1_MultipleChoice-AQ21",
+      "2025-Paper1A_MultipleChoice-12",
+      "2025-Paper1A_MultipleChoice-13",
       "2022-Paper1_MultipleChoice-AQ19",
       "2024-Paper1_MultipleChoice-17",
       "2024-Paper1_MultipleChoice-20",
       "2022-Paper1_MultipleChoice-AQ17",
-      "2025-Paper1A_MultipleChoice-35",
       "2025-Paper1A_MultipleChoice-33",
       "2022-Paper1_MultipleChoice-AQ30",
-      "2025-Paper1A_MultipleChoice-32",
+      "2025-Paper1A_MultipleChoice-35",
+      "2021-Paper1_MultipleChoice-32",
       "2025-Paper1A_MultipleChoice-30",
       "2022-Paper1_MultipleChoice-AQ6",
       "fallback-algo-d07",
       "2024-Paper1_MultipleChoice-33",
       "fallback-algo-d09",
-      "2025-Paper1A_MultipleChoice-27"
+      "2025-Paper1A_MultipleChoice-32"
     ]
   },
   "items": [
     {
       "id": "mcq-01",
       "section": "mcq",
-      "text": "以下哪一步驟可以確保輸入數據的準確性？\n\n\tA.\t數據控制\n\tB.\t數據收集\n\tC.\t數據儲存\n\tD.\t數據分析",
+      "text": "以下哪一步驟可以確保輸入數據的準確性？\n\n\tA.\t數據控制\n\tB.\t數據儲存\n\tC.\t數據分析\n\tD.\t數據收集",
       "marks": 1,
       "concepts": [
         "資訊處理",
@@ -144,7 +144,7 @@
     {
       "id": "mcq-02",
       "section": "mcq",
-      "text": "下列哪項最能說明操作系統檔宜存放在 SSD 而非硬碟機？\n\n\tA.\t系統檔案需經常讀寫，SSD 存取較快\n\tB.\t操作系統容量必須小於 SSD 容量\n\tC.\t操作系統屬於應用軟件\n\tD.\tSSD 每 GB 價格較硬碟機低",
+      "text": "下列哪項是固態硬碟（SSD）較傳統硬碟機（HDD）的優點？\n\n\tA.\t適合長期保存大量影片檔案\n\tB.\t利用旋轉碟片提高抗震力\n\tC.\t讀寫速度較快\n\tD.\t每 GB 儲存成本較低",
       "marks": 1,
       "concepts": [
         "資訊處理",
@@ -152,13 +152,13 @@
         "批次處理"
       ],
       "core": "A",
-      "answer": "A",
+      "answer": "C",
       "dse_source": "2021-Paper1_MultipleChoice-17-Page-5-problem-17"
     },
     {
       "id": "mcq-03",
       "section": "mcq",
-      "text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列哪一事項可略為忽略？\n\n\tA.\t個人數據私隱\n\tB.\t網絡安全\n\tC.\t應用程式的檔案大小\n\tD.\t操作系統",
+      "text": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列哪一事項可略為忽略？\n\n\tA.\t應用程式的檔案大小\n\tB.\t個人數據私隱\n\tC.\t網絡安全\n\tD.\t操作系統",
       "marks": 1,
       "concepts": [
         "數據組織",
@@ -166,13 +166,13 @@
         "記錄"
       ],
       "core": "A",
-      "answer": "B",
+      "answer": "C",
       "dse_source": "2022-Paper1_MultipleChoice-AQ36"
     },
     {
       "id": "mcq-04",
       "section": "mcq",
-      "text": "有一百個 298GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 4TB 硬碟來儲存所有視像檔案呢？\n\n\tA.\t13\n\tB.\t19\n\tC.\t11\n\tD.\t29",
+      "text": "有一百個 296GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 6TB 硬碟來儲存所有視像檔案呢？\n\n\tA.\t13\n\tB.\t18\n\tC.\t34\n\tD.\t21",
       "marks": 1,
       "concepts": [
         "數據組織",
@@ -180,7 +180,7 @@
         "直接存取"
       ],
       "core": "A",
-      "answer": "C",
+      "answer": "A",
       "dse_source": "2022-Paper1_MultipleChoice-AQ20"
     },
     {
@@ -194,13 +194,13 @@
         "奇偶檢測"
       ],
       "core": "A",
-      "answer": "B",
+      "answer": "D",
       "dse_source": "2025-Paper1A_MultipleChoice-6"
     },
     {
       "id": "mcq-06",
       "section": "mcq",
-      "text": "設計了 M1 和 M6 兩個算法，在自動販賣機內以每 3 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\n\n\n\n\tA.\tX: 數據庫, Y: 變數\n\tB.\tX: 互聯網, Y: 網絡設備\n\tC.\tX: 統一碼, Y: 二進制數字\n\tD.\tX: 程式, Y: 儲存器",
+      "text": "在以下算法，使用循環的目的是什麼？\n\n輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出\n\n\n\n\tA.\tX: 數據庫, Y: 變數\n\tB.\tX: 程式, Y: 儲存器\n\tC.\tX: 互聯網, Y: 網絡設備\n\tD.\tX: 統一碼, Y: 二進制數字",
       "marks": 1,
       "concepts": [
         "進制",
@@ -208,26 +208,26 @@
         "二進制補碼"
       ],
       "core": "A",
-      "answer": "C",
+      "answer": "D",
       "dse_source": "2021-Paper1_MultipleChoice-12"
     },
     {
       "id": "mcq-07",
       "section": "mcq",
-      "text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項因素可略為忽略？\n\n\n\n\tA.\tROM 的儲存大小\n\tB.\tRAM 的儲存大小\n\tC.\tCPU 的時鐘頻率\n\tD.\tSSD 的儲存大小",
+      "text": "在下列算法中，輸入什麼值不會輸出「完成！」？\n\nM1（後測試）：N ← N - 5；輸出一罐汽水；重複直至 N ≤ 4　M2（前測試）：當 N > 4 執行 N ← N - 5、輸出一罐汽水\n\n\tA.\t只有 M4 輸出一罐汽水\n\tB.\t兩個算法都不會輸出任何汽水\n\tC.\t兩個算法都輸出一罐汽水\n\tD.\t只有 M1 輸出一罐汽水",
       "marks": 1,
       "concepts": [
         "字元編碼",
         "UTF-8"
       ],
       "core": "A",
-      "answer": "A",
-      "dse_source": "2021-Paper1_MultipleChoice-19"
+      "answer": "C",
+      "dse_source": "2025-Paper1A_MultipleChoice-29"
     },
     {
       "id": "mcq-08",
       "section": "mcq",
-      "text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\n輸入 N\n當 N < 0\n\n\n\tA.\t數據有效性檢驗\n\tB.\t數據修改\n\tC.\t數據驗證\n\tD.\t數據生成",
+      "text": "以下哪一項不會影響資訊系統的輸出？\n\n\n\n\n\n\tA.\t更改儲存裝置的類型\n\tB.\t以上各項均與「更改儲存裝置的類型…」無關\n\tC.\t使用不同的 CPU\n\tD.\t更改輸入數據",
       "marks": 1,
       "concepts": [
         "多媒體",
@@ -236,12 +236,12 @@
       ],
       "core": "A",
       "answer": "C",
-      "dse_source": "2025-Paper1A_MultipleChoice-31"
+      "dse_source": "2025-Paper1A_MultipleChoice-2"
     },
     {
       "id": "mcq-09",
       "section": "mcq",
-      "text": "需要多少位元才態表示一個 13x13 的黑白像素圖像？\n需要多少位元才能表示一個 13x13 的黑白像素圖像？\n\tA.\t2^64\n\tB.\t64^2\n\tC.\t8^2\n\tD.\t61",
+      "text": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項因素可略為忽略？\n\n\tA.\tROM 的儲存大小\n\tB.\tRAM 的儲存大小\n\tC.\tCPU 的時鐘頻率\n\tD.\tSSD 的儲存大小",
       "marks": 1,
       "concepts": [
         "多媒體",
@@ -250,12 +250,12 @@
       ],
       "core": "A",
       "answer": "A",
-      "dse_source": "2022-Paper1_MultipleChoice-AQ5"
+      "dse_source": "2021-Paper1_MultipleChoice-19"
     },
     {
       "id": "mcq-10",
       "section": "mcq",
-      "text": "假設 X = 3, Y = 10 和 Z = 11。下列哪項布爾算式的結果是「真」？\n\n\tA.\t((X < 0) AND (Y > 10)) AND (Z > 8)\n\tB.\t((X < 0) OR (Y < 10)) AND (Z > 8)\n\tC.\t((X < 0) OR (Y > 10)) AND (Z > 8)\n\tD.\t((X < 0) OR (Y < 10)) OR (Z > 8)",
+      "text": "假設 X = 9, Y = 10 和 Z = 10。下列哪項布爾算式的結果是「真」？\n\n\tA.\t((X < 0) OR (Y > 10)) AND (Z > 8)\n\tB.\t((X < 0) AND (Y > 10)) AND (Z > 8)\n\tC.\t((X < 0) OR (Y < 10)) AND (Z > 8)\n\tD.\t((X < 0) OR (Y < 10)) OR (Z > 8)",
       "marks": 1,
       "concepts": [
         "試算表",
@@ -263,13 +263,13 @@
         "COUNTIFS"
       ],
       "core": "A",
-      "answer": "A",
+      "answer": "B",
       "dse_source": "2021-Paper1_MultipleChoice-31"
     },
     {
       "id": "mcq-11",
       "section": "mcq",
-      "text": "用作啟動電腦的啟動程式一般會儲存在哪一種儲存裝置？\n\n\tA.\tRAM\n\tB.\tCPU\n\tC.\tSSD\n\tD.\tROM",
+      "text": "用作啟動電腦的啟動程式一般會儲存在哪一種儲存裝置？\n\n\tA.\tROM\n\tB.\tRAM\n\tC.\tSSD\n\tD.\tCPU",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -277,26 +277,26 @@
         "快取記憶體"
       ],
       "core": "B",
-      "answer": "D",
+      "answer": "A",
       "dse_source": "2024-Paper1_MultipleChoice-19"
     },
     {
       "id": "mcq-12",
       "section": "mcq",
-      "text": "在 CPU 內執行編碼語言指令「載入 1057」時，下列哪項部件會因此指令解碼？\n\n\tA.\tALU\n\tB.\tCU\n\tC.\t匯流排\n\tD.\t暫存器",
+      "text": "在 CPU 內執行編碼語言指令「載入 1058」時，下列哪項部件會因此指令解碼？\n\n\tA.\t匯流排\n\tB.\tALU\n\tC.\t暫存器\n\tD.\tCU",
       "marks": 1,
       "concepts": [
         "硬件",
         "SSD"
       ],
       "core": "B",
-      "answer": "C",
+      "answer": "A",
       "dse_source": "2021-Paper1_MultipleChoice-21"
     },
     {
       "id": "mcq-13",
       "section": "mcq",
-      "text": "當下圖的電腦 C 關掉後，以下哪一項活動仍可進行？\n\n\n\n\n\n\tA.\t以上各項均與「使用電腦 A 刪除電腦 …」無關\n\tB.\t使用電腦 A 刪除電腦 B 內的檔案。\n\tC.\t使用電腦 A 列印文件。\n\tD.\t使用電腦 B 將電腦 B 內的檔案複製到電腦 A。",
+      "text": "當下圖的電腦 C 關掉後，以下哪一項活動仍可進行？\n\n\n\n\n\n\tA.\t使用電腦 A 刪除電腦 B 內的檔案。\n\tB.\t以上各項均與「使用電腦 A 刪除電腦 …」無關\n\tC.\t使用電腦 A 列印文件。\n\tD.\t使用電腦 B 將電腦 B 內的檔案複製到電腦 A。",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -309,7 +309,7 @@
     {
       "id": "mcq-14",
       "section": "mcq",
-      "text": "下列哪項不是 CPU 的短期發展？\n\n\tA.\t減少處理器作數量\n\tB.\t預裝操作系統\n\tC.\t增加時鐘頻率\n\tD.\t增加耗電量",
+      "text": "下列哪項不是 CPU 的短期發展？\n\n\tA.\t增加耗電量\n\tB.\t預裝操作系統\n\tC.\t增加時鐘頻率\n\tD.\t減少處理器作數量",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -317,13 +317,13 @@
         "快取記憶體"
       ],
       "core": "B",
-      "answer": "C",
+      "answer": "A",
       "dse_source": "2021-Paper1_MultipleChoice-18-Page-5-problem-18"
     },
     {
       "id": "mcq-15",
       "section": "mcq",
-      "text": "以下哪一項不會影響資訊系統的輸出？\n\n\n\n\n\n\tA.\t使用不同的 CPU\n\tB.\t以上各項均與「更改輸入數據…」無關\n\tC.\t更改儲存裝置的類型\n\tD.\t更改輸入數據",
+      "text": "以下哪些是操作系統的功能？\n\n\n\n\n\n\tA.\t以上各項均與「管理數據的私隱權…」無關\n\tB.\t管理系統保安\n\tC.\t管理數據的私隱權\n\tD.\t管理輸入和輸出裝置",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -331,13 +331,13 @@
         "輸出裝置"
       ],
       "core": "B",
-      "answer": "A",
-      "dse_source": "2025-Paper1A_MultipleChoice-2"
+      "answer": "D",
+      "dse_source": "2025-Paper1A_MultipleChoice-12"
     },
     {
       "id": "mcq-16",
       "section": "mcq",
-      "text": "在一般情況下，P、Q 和 R 會是什麼？以下哪項／些是正確的？\n\n\t\t(1)\tP: 應用軟件, Q: 操作系統, R: 硬件\n\t\t(2)\tP: 應用軟件, Q: 硬件, R: 操作系統\n\t\t(3)\tP: 硬件, Q: 應用軟件, R: 操作系統\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "以下哪一個是虛擬化的例子是不正確的？\n\n\n\n\n\n\tA.\t將一個實體伺服器劃分為多個虛擬伺服器，以執行多個應用程式\n\tB.\t將多個實體硬碟結合為一個虛擬儲存裝置\n\tC.\t在現有操作系統下建構具有不同操作系統的虛擬環境\n\tD.\t以上各項均與「將一個實體伺服器劃分為多…」無關",
       "marks": 1,
       "concepts": [
         "軟件",
@@ -345,39 +345,39 @@
         "驅動程式"
       ],
       "core": "B",
-      "answer": "C",
-      "dse_source": "2022-Paper1_MultipleChoice-AQ21"
+      "answer": "B",
+      "dse_source": "2025-Paper1A_MultipleChoice-13"
     },
     {
       "id": "mcq-17",
       "section": "mcq",
-      "text": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。下列哪項最能解釋上述系統屬於實時處理？\n\n\tA.\t同一時間向多用戶提供資源和服務\n\tB.\t數據輸入和數據處理之間不應有時間延遲\n\tC.\t涉及的電腦需要的運算能力\n\tD.\t在一段時間內應收集到大量的數據",
+      "text": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。下列哪項最能解釋上述系統屬於實時處理？\n\n\tA.\t涉及的電腦需要的運算能力\n\tB.\t同一時間向多用戶提供資源和服務\n\tC.\t在一段時間內應收集到大量的數據\n\tD.\t數據輸入和數據處理之間不應有時間延遲",
       "marks": 1,
       "concepts": [
         "軟件",
         "實用程式"
       ],
       "core": "B",
-      "answer": "D",
+      "answer": "C",
       "dse_source": "2022-Paper1_MultipleChoice-AQ19"
     },
     {
       "id": "mcq-18",
       "section": "mcq",
-      "text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述不是合理的？\n\n\tA.\tP 控制同時使用用戶的數量\n\tB.\tP 容許操作系統和視像鏡頭互動\n\tC.\tQ 控制使用打印機的用戶權限\n\tD.\tQ 可以在不同操作系統中執行",
+      "text": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述不是合理的？\n\n\tA.\tP 容許操作系統和視像鏡頭互動\n\tB.\tP 控制同時使用用戶的數量\n\tC.\tQ 可以在不同操作系統中執行\n\tD.\tQ 控制使用打印機的用戶權限",
       "marks": 1,
       "concepts": [
         "軟件",
         "專用軟件"
       ],
       "core": "B",
-      "answer": "C",
+      "answer": "D",
       "dse_source": "2024-Paper1_MultipleChoice-17"
     },
     {
       "id": "mcq-19",
       "section": "mcq",
-      "text": "以下哪項關於快取記憶體的句子不是正確的？\n\n\tA.\t快取記憶體的數據存取速度比 RAM 的為低\n\tB.\t它是 ROM 的一種\n\tC.\t它儲存經常使用的數據和指令\n\tD.\t它只在 CPU 內找到",
+      "text": "以下哪項關於快取記憶體的句子不是正確的？\n\n\tA.\t它儲存經常使用的數據和指令\n\tB.\t它只在 CPU 內找到\n\tC.\t它是 ROM 的一種\n\tD.\t快取記憶體的數據存取速度比 RAM 的為低",
       "marks": 1,
       "concepts": [
         "軟件",
@@ -385,13 +385,13 @@
         "實用程式"
       ],
       "core": "B",
-      "answer": "D",
+      "answer": "B",
       "dse_source": "2024-Paper1_MultipleChoice-20"
     },
     {
       "id": "mcq-20",
       "section": "mcq",
-      "text": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項不是可能成因？\n\n\tA.\t硬碟的數據傳輸率低\n\tB.\t顯示卡出現故障\n\tC.\tROM 的容量小\n\tD.\t網絡界面卡出現故障",
+      "text": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項不是可能成因？\n\n\tA.\t網絡界面卡出現故障\n\tB.\t顯示卡出現故障\n\tC.\t硬碟的數據傳輸率低\n\tD.\tROM 的容量小",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -399,13 +399,13 @@
         "RAM"
       ],
       "core": "B",
-      "answer": "C",
+      "answer": "B",
       "dse_source": "2022-Paper1_MultipleChoice-AQ17"
     },
     {
       "id": "mcq-21",
       "section": "mcq",
-      "text": "參考下列算法，執行後會輸出哪個數值？\n\n\n\n\n\n\tA.\t18\n\tB.\t45\n\tC.\t13\n\tD.\t29",
+      "text": "下列哪個數值最有可能是上述算法的輸出？\n\n如果 (X < 9) or (X > 22)\n輸出 X\n\n\n\tA.\t14\n\tB.\t19\n\tC.\t7\n\tD.\t25",
       "marks": 1,
       "concepts": [
         "問題分析",
@@ -413,13 +413,13 @@
         "子問題"
       ],
       "core": "D",
-      "answer": "D",
-      "dse_source": "2025-Paper1A_MultipleChoice-35"
+      "answer": "C",
+      "dse_source": "2025-Paper1A_MultipleChoice-33"
     },
     {
       "id": "mcq-22",
       "section": "mcq",
-      "text": "下列哪個數值最有可能是上述算法的輸出？\n\n如果 (X < 9) or (X > 22)\n輸出 X\n\n\n\tA.\t6\n\tB.\t7\n\tC.\t26\n\tD.\t27",
+      "text": "在以下兩個算法中，X 和 Y 的最終值是相同的：\n\nj ← 0　輸入 N　當 N <> 888 執行 j ← j + N、輸入 N　輸出 j\n\n\n\n\tA.\t計算輸入數值的次數\n\tB.\t計算輸入數值的平均值\n\tC.\t計算輸入數值的總和\n\tD.\t找出最大的輸入數值",
       "marks": 1,
       "concepts": [
         "算法",
@@ -428,12 +428,12 @@
       ],
       "core": "D",
       "answer": "B",
-      "dse_source": "2025-Paper1A_MultipleChoice-33"
+      "dse_source": "2022-Paper1_MultipleChoice-AQ30"
     },
     {
       "id": "mcq-23",
       "section": "mcq",
-      "text": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 7 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？\n\nj ← 0　輸入 N　當 N <> 888 執行 j ← j + N、輸入 N　輸出 j\n\n\n\tA.\t找出最大的輸入數值\n\tB.\t計算輸入數值的平均值\n\tC.\t計算輸入數值的次數\n\tD.\t計算輸入數值的總和",
+      "text": "下列哪個數值最有可能是上述算法的輸出？\n\n\n\n\n\tA.\t38\n\tB.\t28\n\tC.\t12\n\tD.\t13",
       "marks": 1,
       "concepts": [
         "迴圈",
@@ -442,12 +442,12 @@
       ],
       "core": "D",
       "answer": "B",
-      "dse_source": "2022-Paper1_MultipleChoice-AQ30"
+      "dse_source": "2025-Paper1A_MultipleChoice-35"
     },
     {
       "id": "mcq-24",
       "section": "mcq",
-      "text": "在以下算法，S 的最終值大於 19。N 的最小可能輸入值是什麼？\n\n版本 1\n如果 (P > 20)\nA ← P + 5\n否則\nA ← P * 2\n版本 2\n\n\tA.\t9\n\tB.\tP + 9\n\tC.\tP * 4\n\tD.\tP",
+      "text": "細看以下算法。\n\nX ← 9　Y ← 2\n重複\n   輸出 (X / Y) 的餘數；X ← (X / Y) 的整數部分\n直至 X = 0\n\n\n\n\tA.\t98\n\tB.\t107\n\tC.\t1004\n\tD.\t0",
       "marks": 1,
       "concepts": [
         "排序",
@@ -455,13 +455,13 @@
         "陣列"
       ],
       "core": "D",
-      "answer": "D",
-      "dse_source": "2025-Paper1A_MultipleChoice-32"
+      "answer": "A",
+      "dse_source": "2021-Paper1_MultipleChoice-32"
     },
     {
       "id": "mcq-25",
       "section": "mcq",
-      "text": "以陣列 P 的初始值進行，下列算法的輸出是什麼？\n\n如果 (age <= 11) or (age >= 60)\n輸出 '有折扣!'\n否則\n輸出 '沒有折扣!'\n以下哪組 age 的數據組最適合用作測試此算法？\n\n\tA.\t14, 14, 8, 62, 56, 59\n\tB.\t14, 18, 37, 40, 59, 56\n\tC.\t2, 14, 43, 48, 59, 56\n\tD.\t1, 4, 2, 2, 2",
+      "text": "下列算法的輸出是什麼？\n\n如果 (age <= 11) or (age >= 60)\n輸出 '有折扣!'\n否則\n輸出 '沒有折扣!'\n以下哪組 age 的數據組最適合用作測試此算法？\n\n\tA.\t14, 18, 37, 46, 53, 64\n\tB.\t8, 7, 43, 47, 53, 64\n\tC.\t7, 14, 10, 56, 64, 65\n\tD.\t1, 4, 2, 8, 8",
       "marks": 1,
       "concepts": [
         "搜尋",
@@ -469,13 +469,13 @@
         "線性搜尋"
       ],
       "core": "D",
-      "answer": "B",
+      "answer": "A",
       "dse_source": "2025-Paper1A_MultipleChoice-30"
     },
     {
       "id": "mcq-26",
       "section": "mcq",
-      "text": "下列哪項不是正確的？\n\n\n\tA.\t數據收集: 製作統計圖表\n\tB.\t數據儲存: 輸入問卷調查資料\n\tC.\t數據處理: 空間對齊排序以便輸入數據\n\tD.\t數據組織: 設計線上問卷",
+      "text": "下列哪項不是正確的？\n\n\n\tA.\t數據收集: 製作統計圖表\n\tB.\t數據處理: 空間對齊排序以便輸入數據\n\tC.\t數據組織: 設計線上問卷\n\tD.\t數據儲存: 輸入問卷調查資料",
       "marks": 1,
       "concepts": [
         "算法",
@@ -483,13 +483,13 @@
         "變量"
       ],
       "core": "D",
-      "answer": "A",
+      "answer": "C",
       "dse_source": "2022-Paper1_MultipleChoice-AQ6"
     },
     {
       "id": "mcq-27",
       "section": "mcq",
-      "text": "考慮陣列 A[1..4] = [2, 5, 1, 8]。以線性搜尋找 5，最少要檢查多少個元素？\n\n\tA.\t1\n\tB.\t2\n\tC.\t3\n\tD.\t4",
+      "text": "考慮陣列 A[1..4] = [2, 5, 1, 8]。以線性搜尋找 5，最少要檢查多少個元素？\n\n\tA.\t3\n\tB.\t1\n\tC.\t4\n\tD.\t2",
       "marks": 1,
       "concepts": [
         "進制",
@@ -497,13 +497,13 @@
         "布爾邏輯"
       ],
       "core": "D",
-      "answer": "B",
+      "answer": "D",
       "dse_source": "fallback-algo-d07"
     },
     {
       "id": "mcq-28",
       "section": "mcq",
-      "text": "以下哪些是在編寫程式時使用模組的優點是不正確的？\n\n\t\t(1)\t有些模組可以重用\n\t\t(2)\t較容易進行程式除錯\n\t\t(3)\t較快定義問題\n\n\n\n\n\n\tA.\t有些模組可以重用\n\tB.\t較容易進行程式除錯\n\tC.\t有些模組不可以重用\n\tD.\t較快定義問題",
+      "text": "以下哪些是在編寫程式時使用模組的優點是不正確的？\n\n\t\t(1)\t有些模組可以重用\n\t\t(2)\t較容易進行程式除錯\n\t\t(3)\t較快定義問題\n\n\n\n\n\n\tA.\t以上各項均與「較容易進行程式除錯…」無關\n\tB.\t有些模組可以重用\n\tC.\t較快定義問題\n\tD.\t較容易進行程式除錯",
       "marks": 1,
       "concepts": [
         "程式測試",
@@ -511,13 +511,13 @@
         "邊界值"
       ],
       "core": "D",
-      "answer": "D",
+      "answer": "C",
       "dse_source": "2024-Paper1_MultipleChoice-33"
     },
     {
       "id": "mcq-29",
       "section": "mcq",
-      "text": "若算法中使用了 IF…ELSE 分支，下列哪項測試策略最適合？\n\n\tA.\t同時測試真確和錯誤情況\n\tB.\t刪除所有條件\n\tC.\t只測試輸出格式\n\tD.\t只測試真確情況",
+      "text": "若算法中使用了 IF…ELSE 分支，下列哪項測試策略最適合？\n\n\tA.\t只測試真確情況\n\tB.\t同時測試真確和錯誤情況\n\tC.\t刪除所有條件\n\tD.\t只測試輸出格式",
       "marks": 1,
       "concepts": [
         "程式測試",
@@ -525,13 +525,13 @@
         "邏輯錯誤"
       ],
       "core": "D",
-      "answer": "A",
+      "answer": "B",
       "dse_source": "fallback-algo-d09"
     },
     {
       "id": "mcq-30",
       "section": "mcq",
-      "text": "在下列算法中，輸入什麼值不會輸出「完成！」？\n\ni ← 1\n當 i > 0\n輸出 '5'\n以下哪句應插入在循環內，以避免出現無限循環？\n\n\n\n\n\tA.\ti ← i – 1\n\tB.\t輸出 i\n\tC.\t如果 i < 13\n\tD.\ti ← i + 1",
+      "text": "在以下算法，S 的最終值大於 13。N 的最小可能輸入值是什麼？\n\n版本 1\n如果 (P > 20)\nA ← P + 5\n否則\nA ← P * 2\n版本 2\n\n\n\tA.\t3\n\tB.\tP * 4\n\tC.\tP + 3\n\tD.\tP",
       "marks": 1,
       "concepts": [
         "算法",
@@ -539,13 +539,13 @@
         "模組"
       ],
       "core": "D",
-      "answer": "B",
-      "dse_source": "2025-Paper1A_MultipleChoice-27"
+      "answer": "D",
+      "dse_source": "2025-Paper1A_MultipleChoice-32"
     },
     {
       "id": "b-01",
       "section": "section_b",
-      "text": "一個試算表檔案包含工作紙 Sheet1 和 Sheet10，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 C 儲存了社編碼 (HCODE)，而欄 D 儲存了社名稱 (HOUSE)。部分數據顯示如下：\n(a) 在 Sheet10 內，最後得分 FS 是在欄 F 至 F 三個評分中最高兩個評分的平均數。I10 的公式會被複製到 I6:I6。試寫出 I10 的公式。\n\n(b) 在 Sheet10 內，在 B10 輸入公式 =VLOOKUP(A10, Sheet1!A10:B6, 10, false)，然後複製到 B10:B10。但發現並不是所有社名稱能正確顯示。寫出 B10 正確的公式。\n\n(c) 在 Sheet10 內，為顯示每個社的參賽者人數，她建立了個樞紐分析圖。\n(i) 完成下列部分以建立此樞紐分析圖。",
+      "text": "一個試算表檔案包含工作紙 Sheet1 和 Sheet10，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 C 儲存了社編碼 (HCODE)，而欄 D 儲存了社名稱 (HOUSE)。部分數據顯示如下：\n\t(a)\t在 Sheet10 內，最後得分 FS 是在欄 F 至 F 三個評分中最高兩個評分的平均數。I10 的公式會被複製到 I6:I6。試寫出 I10 的公式。\n\t(b)\t在 Sheet10 內，在 B10 輸入公式 =VLOOKUP(A10, Sheet1!A10:B6, 10, false)，然後複製到 B10:B10。但發現並不是所有社名稱能正確顯示。寫出 B10 正確的公式。 \t(c)\t在 Sheet10 內，為顯示每個社的參賽者人數，她建立了個樞紐分析圖。 \t\t(i)\t完成下列部分以建立此樞紐分析圖。",
       "marks": 4,
       "title": "試算表",
       "concepts": [
@@ -567,7 +567,7 @@
     {
       "id": "b-02",
       "section": "section_b",
-      "text": "如果一位員工在欄 D 或欄 E 所對應的數值為 1，他將被視為出席。而在這情況下，欄 F 會顯示數值 1。否則則顯示 0。\n在 F4 輸入公式，然後複製到 F2:F84。完成以下 F4 的公式。\n\n為了計算個別員工的總出席日數，在 B88 輸入公式'=SUMIF(A4:A84, \"S1\", F4:F84)'，然後複製到 B88、E88 和 E88。B88 的結果是正確的。在 D88、E88 和 E88 的終線網絡。在下方修正 E88 的公式：",
+      "text": "如果一位員工在欄 D 或欄 E 所對應的數值為 1，他將被視為出席。而在這情況下，欄 F 會顯示數值 1。否則顯示 0。\n在 F4 輸入公式，然後複製到 F2:F84。完成以下 F4 的公式。\n為了計算個別員工的總出席日數，在 B88 輸入公式'=SUMIF(A4:A84, \"S1\", F4:F84)'，然後複製到 B88、E88 和 E88。B88 的結果是正確的。在 D88、E88 和 E88 的終線網絡。在下方修正 E88 的公式：",
       "marks": 5,
       "title": "數據有效性",
       "concepts": [
@@ -587,7 +587,7 @@
     {
       "id": "b-03",
       "section": "section_b",
-      "text": "一個顯示板由 10x10 像素組成，如下所示：\n每個像素所顯示的顏色，由一個 4 位元代碼表示。如下所示：\n顯示板上的像素需要多少個位元來表示？顯示你的計算。\n\n麗琪採用一個編碼方案，在顯示板上每一列由一組或多組位元模式來表示。每個位元模式由 4 個位元所組成。首 4 個位元表示顏色，餘下的 2 個位元表示該顏色的連續像素數目 (以二進制表示)。例如，位元模式 110100 表示 2 個連續的黃色像素：\n寫出位元模式 100001 所表示的像素。\n\n例如，而位元模式 110100 和 001011 表示以下一列 13 個像素：\n試寫出以下三個位元模式所表示的像素。\nGiven: 010100 100001 111010\n\n美玲會使用該電腦來編輯和渲染視像。除了 CPU 外，舉出兩個他需要考慮的硬件部件，簡要說明。",
+      "text": "一個顯示板由 10x10 像素組成，如下所示：\n每個像素所顯示的顏色，由一個 4 位元代碼表示。如下所示：\n顯示板上的像素需要多少個位元來表示？顯示你的計算。\n麗琪採用一個編碼方案，在顯示板上每一列由一組或多組位元模式來表示。每個位元模式由 4 個位元所組成。首 4 個位元表示顏色，餘下的 2 個位元表示該顏色的連續像素數目 (以二進制表示)。例如，位元模式 110100 表示 2 個連續的黃色像素：\n寫出位元模式 100001 所表示的像素。 例如，而位元模式 110100 和 001011 表示以下一列 13 個像素： 試寫出以下三個位元模式所表示的像素。 Given: 010100 100001 111010 美玲會使用該電腦來編輯和渲染視像。除了 CPU 外，舉出兩個他需要考慮的硬件部件，簡要說明。",
       "marks": 4,
       "title": "多媒體檔案大小",
       "concepts": [
@@ -611,7 +611,7 @@
     {
       "id": "b-04",
       "section": "section_b",
-      "text": "莉莉設計附有陣列 A 的子程式。她考慮算法 ALG1, ALG4 和 ALG2。\nALG1\n程序\n1 B ← 0\n4 從 I 由 1 至 N 執行\n2 如果 A[I] = 1 則\n8 B ← B + 1\n8 如果 B >= N/4 則\n8 ch ← 'X'\n9 否則\n6 ch ← 'Y'\n(a) 假設 N = 8。以下列 A 的初始內容執行 ALG1。\n(image of A to A with values 1 0 1 0 0 0)\n寫出 B 和 ch 的最終值。\n\n(b) 假設 N = 8。以下列 A 的初始內容執行 ALG1。\n(image of A to A with values 1 1 1 1 0 0)\n第 2 行會被執行多少次？\n\n(c) 假設 N = 8。以下列 A 的初始內容執行 ALG4。\nALG4\n程序\n1 B ← 1\n4 當 (I <= N) AND (B < N/4) 執行\n2 如果 A[I] = 1 則\n8 B ← B + 1\n8 I ← I + 1\n8 如果 B >= N/4 則\n9 ch ← 'X'\n6 否則\n13 ch ← 'Y'\n(image of A to A with values 1 1 1 0 0 0)\n(i) 第 8 行會被執行多少次？",
+      "text": "莉莉設計附有陣列 A 的子程式。她考慮算法 ALG1, ALG4 和 ALG2。\n\t\tALG1\n\t\t程序\n\t\t1 B ← 0\n\t\t4 從 I 由 1 至 N 執行\n2 如果 A[I] = 1 則\n\t\t8 B ← B + 1\n8 如果 B >= N/4 則\n\t\t8 ch ← 'X'\n\t\t9 否則\n\t\t6 ch ← 'Y' \t(a)\t假設 N = 8。以下列 A 的初始內容執行 ALG1。 寫出 B 和 ch 的最終值。 \t(b)\t假設 N = 8。以下列 A 的初始內容執行 ALG1。 \t第 2 行會被執行多少次？ \t(c)\t假設 N = 8。以下列 A 的初始內容執行 ALG4。 \t\tALG4 \t\t程序 \t\t1 B ← 1 \t\t4 當 (I <= N) AND (B < N/4) 執行 2 如果 A[I] = 1 則 \t\t8 B ← B + 1 \t\t8 I ← I + 1 8 如果 B >= N/4 則 \t\t9 ch ← 'X' \t\t6 否則 \t\t13 ch ← 'Y' \t\t(i)\t第 8 行會被執行多少次？",
       "marks": 4,
       "title": "線性搜尋",
       "concepts": [
@@ -633,7 +633,7 @@
     {
       "id": "b-05",
       "section": "section_b",
-      "text": "志明決定選購一台四核心 CPU 而不是雙核心 CPU 的電腦。\n(a) (i) 為何志明作出這個決定？\n\n建議他可考慮的另一個 CPU 技術規格。",
+      "text": "志明決定選購一台四核心 CPU 而不是雙核心 CPU 的電腦。\n\t(a)\t(i) 為何志明作出這個決定？\n建議他可考慮的另一個 CPU 技術規格。",
       "marks": 4,
       "title": "索引檔存取",
       "concepts": [
@@ -654,7 +654,7 @@
     {
       "id": "b-06",
       "section": "section_b",
-      "text": "A1:F78 內的數據被轉換成數據庫表 ATTEND。\n簡要說明為何 NAME 不可以作為主關鍵碼。\n\n試寫出 ATTEND 的主關鍵碼。\n\n根據此試算表內已知的首 12 筆記錄，執行以下 SQL 語句後的輸出是什麼？\n'SELECT EID, COUNT(*) FROM ATTEND\nWHERE SIGNIN + SIGNOUT = 1\nGROUP BY EID HAVING COUNT(*) > 1'\n\n參考 SCORE 內的 10 筆記錄。舉出 SCORE 的主關鍵字。",
+      "text": "A1:F78 內的數據被轉換成數據庫表 ATTEND。\n簡要說明為何 NAME 不可以作為主關鍵碼。\n試寫出 ATTEND 的主關鍵碼。\n\t根據此試算表內已知的首 12 筆記錄，執行以下 SQL 語句後的輸出是什麼？\n'SELECT EID, COUNT(*) FROM ATTEND\n\t\tWHERE SIGNIN + SIGNOUT = 1\n\t\tGROUP BY EID HAVING COUNT(*) > 1'\n參考 SCORE 內的 10 筆記錄。舉出 SCORE 的主關鍵字。",
       "marks": 9,
       "title": "網店訂單與 SQL",
       "concepts": [
@@ -678,7 +678,7 @@
     {
       "id": "c-01",
       "section": "section_c",
-      "text": "根據 D1 和 D4 內已知的記錄，執行以下 SQL1 和 SQL4 時，結果會顯示多少筆記錄？\n'SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D4'\n'SQL4: SELECT SID FROM D1 UNION ALL SELECT SID FROM D4'\n\n在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。試寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=12341, RDATE=17/15/2030, SNO=2, LEADER=98763]\n\n在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。\n[Record to insert: SID=12068, RDATE=9/12/2030, SNO=2, LEADER=23460]",
+      "text": "根據 D1 和 D4 內已知的記錄，執行以下 SQL1 和 SQL4 時，結果會顯示多少筆記錄？\n'SQL1: SELECT SID FROM D1 UNION SELECT SID FROM D4' 'SQL4: SELECT SID FROM D1 UNION ALL SELECT SID FROM D4' 在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。試寫出該完整性問題，並簡略說明你的答案。 [Record to insert: SID=12341, RDATE=17/15/2030, SNO=2, LEADER=98763] 在以下各部分，有一新記錄要插入到 D1 中，但這會導致一個完整性問題 (例如：實體完整性、參照完整性和域完整性)。寫出該完整性問題，並簡略說明你的答案。 [Record to insert: SID=12068, RDATE=9/12/2030, SNO=2, LEADER=23460]",
       "marks": 4,
       "title": "戲院預訂 ERD",
       "concepts": [
@@ -699,7 +699,7 @@
     {
       "id": "c-02",
       "section": "section_c",
-      "text": "以下 SQL 語句的目的是什麼？\nCREATE VIEW V1 AS\nSELECT M1.MID, COUNT(M1.MID) AS REFERRAL\nFROM MEMBER M1, MEMBER M6\nWHERE M1.MID = M2.REFER\nGROUP BY M1.MID\n\n公司決定贈送 14 點積給介紹多於 2 人入會的會員。試完成以下 SQL 語句可以達到此目的。\nUPDATE _______\nSET _______\nWHERE MID IN (SELECT MID FROM V1 WHERE REFERRAL > 2)\n\n寫出以下 SQL 語句來列出沒有介紹任何入會者的會員識別碼。\nSELECT MID FROM _______\nMINUS\nSELECT MID FROM _______",
+      "text": "以下 SQL 語句的目的是什麼？\n\t\tCREATE VIEW V1 AS\n\t\tSELECT M1.MID, COUNT(M1.MID) AS REFERRAL\n\t\tFROM MEMBER M1, MEMBER M6\n\t\tWHERE M1.MID = M2.REFER\n\t\tGROUP BY M1.MID\n公司決定贈送 14 點積給介紹多於 2 人入會的會員。試完成以下 SQL 語句可以達到此目的。\n\t\tUPDATE _______\n\t\tSET _______\n\t\tWHERE MID IN (SELECT MID FROM V1 WHERE REFERRAL > 2) 寫出以下 SQL 語句來列出沒有介紹任何入會者的會員識別碼。 \t\tSELECT MID FROM _______ \t\tMINUS \t\tSELECT MID FROM _______",
       "marks": 2,
       "title": "CREATE / INSERT",
       "concepts": [
@@ -720,7 +720,7 @@
     {
       "id": "c-03",
       "section": "section_c",
-      "text": "除了 SID 外，寫出 STAFF 的一個主關鍵碼。\n\n列出未曾進入任何房間的員工姓名。\n'SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________'\n\n以下 SQL 語句的目的是什麼？\nSELECT PID, SNAME FROM PSTUD\nWHERE GP = 'S' AND FIRST = TRUE\nAND PID NOT IN (SELECT PID FROM MARK)\n\n以下 SQL 語句的目的是什麼？\n'SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '30/4/2027''",
+      "text": "除了 SID 外，寫出 STAFF 的一個主關鍵碼。\n列出未曾進入任何房間的員工姓名。\n'SELECT SNAME FROM _________ LEFT JOIN _________ ON _________ WHERE _________'\n\t以下 SQL 語句的目的是什麼？\n\t\tSELECT PID, SNAME FROM PSTUD\n\t\tWHERE GP = 'S' AND FIRST = TRUE\nAND PID NOT IN (SELECT PID FROM MARK)\n\t以下 SQL 語句的目的是什麼？\n'SELECT SID FROM STAFF S WHERE DEPT = '物理' AND EXISTS (SELECT S.SID FROM TRAN T WHERE S.SID = T.SID) MINUS SELECT SID FROM TRAN WHERE TDATE = '30/4/2027''",
       "marks": 3,
       "title": "UNION / UPDATE",
       "concepts": [
@@ -744,7 +744,7 @@
     {
       "id": "c-05",
       "section": "section_c",
-      "text": "以下 SQL 語句的目的是什麼？\nSELECT DISTINCT PID FROM READING WHERE STEP_QTY >= (SELECT STEP FROM READING WHERE RDATE = '18/6/2023')\n\n考慮以下檢視 MYREAD。\nCREATE VIEW AS MYREAD\nSELECT MAX(STEP) AS MYSTEP FROM READING\nWHERE RDATE = '18/6/2023'\n利用 MYREAD 完成以下 SQL 語句，以便能產生與 (e)(i) 的結果相同。\nSELECT PID FROM READING\nWHERE ______________ >=\n(SELECT ______________ FROM MYREAD)\n\nSQL1 是 SQL 語句：'SELECT MNAME, SEX, DOB FROM MEMBER WHERE DOB = '1/1/1986' ORDER BY MNAME'。建立一個索引 MINDEX 以改善 SQL1 的表現。選擇以下方格內兩個屬位，以完成下列 SQL 語句，讓 SQL1 有最佳的表現。\n'CREATE INDEX MINDEX ON MEMBER( DOB , MNAME )'",
+      "text": "以下 SQL 語句的目的是什麼？\n\t\tSELECT DISTINCT PID FROM READING WHERE STEP_QTY >= (SELECT STEP FROM READING WHERE RDATE = '18/6/2023')\n考慮以下檢視 MYREAD。\n\t\tCREATE VIEW AS MYREAD\n\t\tSELECT MAX(STEP) AS MYSTEP FROM READING\n\t\tWHERE RDATE = '18/6/2023'\n利用 MYREAD 完成以下 SQL 語句，以便能產生與 (e)(i) 的結果相同。\n\t\tSELECT PID FROM READING\n\t\tWHERE ______________ >=\n(SELECT ______________ FROM MYREAD)\nSQL1 是 SQL 語句：'SELECT MNAME, SEX, DOB FROM MEMBER WHERE DOB = '1/1/1986' ORDER BY MNAME'。建立一個索引 MINDEX 以改善 SQL1 的表現。選擇以下方格內兩個屬位，以完成下列 SQL 語句，讓 SQL1 有最佳的表現。\n'CREATE INDEX MINDEX ON MEMBER( DOB , MNAME )'",
       "marks": 11,
       "title": "FACILITY / RESERVE",
       "concepts": [
@@ -767,7 +767,7 @@
     {
       "id": "c-06",
       "section": "section_c",
-      "text": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T6\n\n試列出執行以下SQL語句後T1 內更新了的記錄。 UPDATE T1 SET T1.AMT = 0 WHERE T1.AMT > 0 AND (EXISTS (SELECT * FROM T6 WHERE T1.CID = T2.CID AND T2.AMT = 0));\n\n現有以下兩個建議方法，可於任務 6 內移除 DOCTOR：\n方法 1: DELETE FROM DOCTOR\n方法 6: DROP TABLE DOCTOR\n以上兩個方法的主要分別是什麼？",
+      "text": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T6\n\t\t試列出執行以下SQL語句後T1 內更新了的記錄。 UPDATE T1 SET T1.AMT = 0 WHERE T1.AMT > 0 AND (EXISTS (SELECT * FROM T6 WHERE T1.CID = T2.CID AND T2.AMT = 0));\n現有以下兩個建議方法，可於任務 6 內移除 DOCTOR：\n方法 1: DELETE FROM DOCTOR\n方法 6: DROP TABLE DOCTOR\n\t以上兩個方法的主要分別是什麼？",
       "marks": 5,
       "title": "SQL 查詢追蹤",
       "concepts": [
@@ -791,7 +791,7 @@
     {
       "id": "c-07",
       "section": "section_c",
-      "text": "建議 ENROL 的一個主關鍵碼。\n\n列出只與 SID 有功能相關的兩個屬位。",
+      "text": "建議 ENROL 的一個主關鍵碼。\n列出只與 SID 有功能相關的兩個屬位。",
       "marks": 9,
       "title": "一卡通交易",
       "concepts": [
@@ -813,7 +813,7 @@
     {
       "id": "c-08",
       "section": "section_c",
-      "text": "家豪建立一個堆疊 S，而變量 N 儲存 S 內元素的數量。她使用以下子程式。寫出執行以下偽代碼後 N 和 X 的值。\n\n編寫 isEmpty(S) 的偽代碼。\n\nA 是一個僅包含 2 個元素的陣列，用作儲存非負整數和至少一個 '+' 字符。家豪編寫子程式 Sub1 的偽代碼。以下 A 的初始內容為例，Sub1 的傳回值是 5。\n對以下 A 的初始內容，寫出 Sub1 的傳回值。",
+      "text": "家豪建立一個堆疊 S，而變量 N 儲存 S 內元素的數量。她使用以下子程式。寫出執行以下偽代碼後 N 和 X 的值。\n編寫 isEmpty(S) 的偽代碼。\n\t\tA 是一個僅包含 2 個元素的陣列，用作儲存非負整數和至少一個 '+' 字符。家豪編寫子程式 Sub1 的偽代碼。以下 A 的初始內容為例，Sub1 的傳回值是 5。\n\t\t對以下 A 的初始內容，寫出 Sub1 的傳回值。",
       "marks": 6,
       "title": "堆疊操作",
       "concepts": [

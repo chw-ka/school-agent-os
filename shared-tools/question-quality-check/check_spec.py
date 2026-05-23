@@ -31,6 +31,11 @@ from answer_verify_check import (
     verify_spec_answers,
 )
 from coherence_check import CoherenceCheckResult, check_spec_coherence, format_coherence_report
+from written_spec_docx_check import (
+    WrittenSpecDocxResult,
+    check_written_spec_docx,
+    format_written_spec_docx_report,
+)
 from format_check import FormatCheckResult, check_exam_format, check_spec_format, format_format_report
 from mcq_check import McqCheckResult, check_mcq, format_mcq_report
 from quality_lib import (
@@ -56,6 +61,7 @@ class QuestionQualityReport:
     format: Optional[FormatCheckResult] = None
     concept_conflicts: Optional[ConceptConflictResult] = None
     coherence: Optional[CoherenceCheckResult] = None
+    written_spec_docx: Optional[WrittenSpecDocxResult] = None
     answer_verify: Optional[AnswerVerifyResult] = None
 
     @property
@@ -93,6 +99,10 @@ class QuestionQualityReport:
         return self.coherence is not None and not self.coherence.ok
 
     @property
+    def has_written_spec_docx_issues(self) -> bool:
+        return self.written_spec_docx is not None and not self.written_spec_docx.ok
+
+    @property
     def has_answer_verify_issues(self) -> bool:
         return self.answer_verify is not None and not self.answer_verify.ok
 
@@ -106,6 +116,7 @@ class QuestionQualityReport:
             and not self.has_answer_pattern_issues
             and not self.has_format_issues
             and not self.has_coherence_issues
+            and not self.has_written_spec_docx_issues
             and not self.has_answer_verify_issues
         )
 
@@ -132,6 +143,8 @@ class QuestionQualityReport:
             d["concept_conflicts"] = self.concept_conflicts.to_dict()
         if self.coherence is not None:
             d["coherence"] = self.coherence.to_dict()
+        if self.written_spec_docx is not None:
+            d["written_spec_docx"] = self.written_spec_docx.to_dict()
         if self.answer_verify is not None:
             d["answer_verify"] = self.answer_verify.to_dict()
         return d
@@ -492,6 +505,9 @@ def run_question_check(
             candidate, candidate_label=str(candidate_spec_path)
         )
 
+    if docx_path is not None and docx_path.exists():
+        quality.written_spec_docx = check_written_spec_docx(candidate, docx_path)
+
     if verify_answers:
         quality.answer_verify = verify_spec_answers(candidate)
 
@@ -554,6 +570,10 @@ def format_quality_report_text(report: QuestionQualityReport) -> str:
         )
     if report.coherence is not None:
         sections.extend(["", "=== Coherence (通順) ===", format_coherence_report(report.coherence)])
+    if report.written_spec_docx is not None:
+        sections.extend(
+            ["", "=== Written spec ↔ DOCX (slot text) ===", format_written_spec_docx_report(report.written_spec_docx)]
+        )
     if report.answer_verify is not None:
         sections.extend(
             ["", "=== Answer verification ===", format_answer_verify_report(report.answer_verify)]

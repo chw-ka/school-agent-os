@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Regenerate 25/26 S5 ICT Exam02 spec + DOCX and write bank-risk report."""
+"""Regenerate 25/26 S5 ICT Exam02 (LEGACY: bank pick + transform).
+
+Target pipeline: .cursor/skills/generate-f5-ict-exam/SKILL.md
+  and shared-tools/paper-generator/F5_ICT_CONCEPT_GENERATE_FLOW.md
+
+This script may run long (seed retry, no progress). Prefer existing spec.json
++ run_question_spec_check + render when not re-picking from bank.
+"""
 from __future__ import annotations
 
 import json
@@ -20,7 +27,7 @@ for _d in (
     sys.path.insert(0, str(_d))
 
 from exam_spec import save_spec
-from f5_ict_blueprint_db_web import generate
+from f5_ict_blueprint_db_web import generate, prepare_mcq_final_rows
 from f5_ict_from_dse import (
     _BANK_SIM_THRESH,
     audit_mcq_bank_similarity,
@@ -33,7 +40,7 @@ from f5_ict_written_from_dse import (
     written_preview_json,
 )
 from f5_ict_spec import build_f5_ict_exam_spec
-from post_check import run_spec_check
+from post_check import run_post_render_check, run_question_spec_check
 
 SPEC_OUT = _GEN / "25_26_S5_ICT_Exam02.spec.json"
 DOCX_OUT = _EXAM / "25_26_S5_ICT_Exam02.docx"
@@ -42,16 +49,46 @@ RISK_OUT = _GEN / "25_26_S5_ICT_Exam02.bank_risk.json"
 PREVIEW_OUT = _GEN / "mcq_preview.json"
 WRITTEN_PREVIEW_OUT = _GEN / "written_preview.json"
 SEED = 2025_2026
+MAX_SEED_TRIES = 80
 
 
 def main() -> int:
-    rng = random.Random(SEED)
-    mcq_rows, correct_indices, prov = build_mcq_payload_from_bank(rng, max_attempts=60)
-    written_picks = pick_written_items_from_bank(rng)
+    mcq_rows: list[list[str]] = []
+    correct_indices: tuple[int, ...] = ()
+    prov: list[str] = []
+    written_picks: dict[str, dict] = {}
+    bank_hits: list[tuple[int, float, str]] = []
+    written_src_hits: list[tuple[str, float, str]] = []
+    written_best_hits: list[tuple[str, float, str]] = []
+    seed_used = SEED
+
+    for offset in range(MAX_SEED_TRIES):
+        seed_used = SEED + offset
+        rng = random.Random(seed_used)
+        try:
+            mcq_rows, correct_indices, prov = build_mcq_payload_from_bank(
+                rng, max_attempts=120
+            )
+            written_picks = pick_written_items_from_bank(rng, max_attempts=100)
+        except RuntimeError:
+            continue
+        written_audit = audit_written_bank_similarity(written_picks)
+        written_src_hits = written_audit["source"]
+        written_best_hits = written_audit["bank_best"]
+        items = [{"id": pid} for pid in prov]
+        bank_hits = audit_mcq_bank_similarity(items, mcq_rows)
+        if not bank_hits and not written_src_hits and not written_best_hits:
+            break
+    else:
+        print(
+            f"Could not reach bank ≤{_BANK_SIM_THRESH:.0%} after {MAX_SEED_TRIES} seeds "
+            f"(last seed {seed_used})"
+        )
+        if not mcq_rows:
+            return 1
+
+    rng = random.Random(seed_used)
     set_active_written_picks(written_picks)
-    written_audit = audit_written_bank_similarity(written_picks)
-    written_src_hits = written_audit["source"]
-    written_best_hits = written_audit["bank_best"]
     WRITTEN_PREVIEW_OUT.write_text(
         written_preview_json(
             written_picks,
@@ -61,14 +98,11 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    items = [{"id": pid} for pid in prov]
-    bank_hits = audit_mcq_bank_similarity(items, mcq_rows)
-
     hit_by_slot = {sl: round(sim, 4) for sl, sim, _ in bank_hits}
     PREVIEW_OUT.write_text(
         json.dumps(
             {
-                "seed": SEED,
+                "seed": seed_used,
                 "count": len(prov),
                 "items": [
                     {
@@ -119,21 +153,9 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    footer = {
-        "academic_year": "2025-2026",
-        "level": "中五級",
-        "term_exam": "下學期考試",
-        "subject": "資訊及通訊科技",
-    }
-    final_rows, mcq_key = generate(
-        _TEMPLATE,
-        DOCX_OUT,
-        footer_meta=footer,
-        rng=rng,
-        mcq_payload=mcq_rows,
-        mcq_correct_indices=correct_indices,
+    final_rows, mcq_key = prepare_mcq_final_rows(
+        mcq_rows, correct_indices, rng=rng
     )
-
     spec = build_f5_ict_exam_spec(
         mcq_rows=final_rows,
         mcq_answers=mcq_key,
@@ -142,14 +164,40 @@ def main() -> int:
     )
     save_spec(SPEC_OUT, spec)
 
-    check = run_spec_check(
+    q_check = run_question_spec_check(
         candidate_spec=SPEC_OUT,
         template=_TEMPLATE,
-        candidate_docx=None,
         subject_subpath="S5-ICT",
         json_report=DUP_OUT,
     )
+    if q_check != 0:
+        print(f"Seed: {seed_used}")
+        print(f"Spec: {SPEC_OUT} (question check failed — DOCX not updated)")
+        print(f"Question check exit: {q_check}")
+        return q_check
 
+    footer = {
+        "academic_year": "2025-2026",
+        "level": "中五級",
+        "term_exam": "下學期考試",
+        "subject": "資訊及通訊科技",
+    }
+    generate(
+        _TEMPLATE,
+        DOCX_OUT,
+        footer_meta=footer,
+        final_mcq_rows=final_rows,
+        mcq_key=mcq_key,
+    )
+
+    p_check = run_post_render_check(
+        candidate_spec=SPEC_OUT,
+        candidate_docx=DOCX_OUT,
+        template=_TEMPLATE,
+    )
+    check = max(q_check, p_check)
+
+    print(f"Seed: {seed_used}")
     print(f"Spec: {SPEC_OUT}")
     print(f"DOCX: {DOCX_OUT}")
     print(f"MCQ key: {mcq_key}")
@@ -170,7 +218,9 @@ def main() -> int:
     for sid, sim, iid in written_best_hits[:6]:
         if sid not in {x[0] for x in written_src_hits}:
             print(f"  {sid} bank-best {sim:.0%} ({iid})")
-    print(f"Duplicate check exit: {check}")
+    print(f"Question check exit: {q_check}")
+    print(f"Post-render check exit: {p_check}")
+    print(f"Overall exit: {check}")
     return check
 
 

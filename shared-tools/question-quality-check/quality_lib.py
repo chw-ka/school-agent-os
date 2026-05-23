@@ -21,8 +21,18 @@ except ImportError as e:  # pragma: no cover
 
 # Similarity **>** this value ⇒ duplicate (「多於 60%」)
 THRESH_DUPLICATE = 0.60
+# 乙／丙 structured: whole question / scenario stem (整條)
+THRESH_WRITTEN_STEM = 0.60
+# 乙／丙 sub-questions (a)(b)(i)… — may mix parts from several DSE years
+THRESH_WRITTEN_SUBPART = 0.85
 # Cross-section pairs (e.g. 甲部 MCQ vs 丁部填充) — lower bar; near-paraphrase leaks answers
 THRESH_INTRA_CROSS = 0.48
+
+# Sub-part line: tab + (a) / (i) / (ii) …
+_WRITTEN_SUBPART_START = re.compile(
+    r"^\s*(?:\t+\s*)?\(([a-z]{1,2}|[ivx]{1,4})\)\s*[\t ]",
+    re.IGNORECASE,
+)
 
 SECTION_BOUNDARIES: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("乙部", ("丙部",)),
@@ -218,6 +228,45 @@ def _section_lines(lines: list[str], start_kw: str, end_kws: tuple[str, ...]) ->
         if active:
             buf.append(t)
     return buf
+
+
+def split_written_stem_and_subparts(text: str) -> tuple[str, list[str]]:
+    """
+    Split 乙／丙 slot text into scenario stem (整條) and sub-question blocks ((a)(b)(i)…).
+    """
+    lines = (text or "").splitlines()
+    stem_lines: list[str] = []
+    subparts: list[str] = []
+    current: list[str] = []
+    in_sub = False
+
+    def _flush_sub() -> None:
+        nonlocal current, in_sub
+        block = "\n".join(current).strip()
+        if len(normalize_text(block)) >= 12:
+            subparts.append(block)
+        current = []
+        in_sub = False
+
+    for line in lines:
+        if _WRITTEN_SUBPART_START.match(line):
+            if in_sub:
+                _flush_sub()
+            elif current:
+                stem_lines.extend(current)
+                current = []
+            current = [line]
+            in_sub = True
+        else:
+            current.append(line)
+
+    if in_sub:
+        _flush_sub()
+    elif current:
+        stem_lines.extend(current)
+
+    stem = "\n".join(stem_lines).strip()
+    return stem, subparts
 
 
 def extract_written_units(lines: list[str]) -> list[dict]:

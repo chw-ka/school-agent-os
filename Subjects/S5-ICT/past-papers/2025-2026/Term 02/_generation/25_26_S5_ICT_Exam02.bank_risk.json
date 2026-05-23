@@ -1,8 +1,8 @@
 {
   "threshold": 0.6,
   "mcq_total": 30,
-  "mcq_over_threshold": 15,
-  "mcq_ok_count": 15,
+  "mcq_over_threshold": 13,
+  "mcq_ok_count": 17,
   "mcq_hits": [
     {
       "slot": "mcq-03",
@@ -20,14 +20,9 @@
       "bank_id": "2025-Paper1A_MultipleChoice-6"
     },
     {
-      "slot": "mcq-07",
+      "slot": "mcq-09",
       "similarity": 0.8451,
       "bank_id": "2021-Paper1_MultipleChoice-19"
-    },
-    {
-      "slot": "mcq-09",
-      "similarity": 0.875,
-      "bank_id": "2022-Paper1_MultipleChoice-AQ5"
     },
     {
       "slot": "mcq-10",
@@ -48,11 +43,6 @@
       "slot": "mcq-14",
       "similarity": 0.9655,
       "bank_id": "2021-Paper1_MultipleChoice-18-Page-5-problem-18"
-    },
-    {
-      "slot": "mcq-16",
-      "similarity": 0.7556,
-      "bank_id": "2022-Paper1_MultipleChoice-AQ21"
     },
     {
       "slot": "mcq-17",
@@ -81,34 +71,8 @@
     }
   ],
   "written_total": 13,
-  "written_source_over_threshold": 5,
-  "written_source_hits": [
-    {
-      "slot": "b-02",
-      "similarity": 0.6305,
-      "bank_id": "2024-Paper1B_CompulsoryStructured-1-a-i"
-    },
-    {
-      "slot": "b-05",
-      "similarity": 0.8163,
-      "bank_id": "2023-Paper1B_CompulsoryStructured-BQ1-a-i"
-    },
-    {
-      "slot": "b-06",
-      "similarity": 0.6936,
-      "bank_id": "2024-Paper1B_CompulsoryStructured-1-b-i"
-    },
-    {
-      "slot": "c-07",
-      "similarity": 0.7059,
-      "bank_id": "2024-Paper2A_Database-2-a-i"
-    },
-    {
-      "slot": "c-08",
-      "similarity": 0.7073,
-      "bank_id": "2022-Paper2D_SoftwareDevelopment-2-a-i"
-    }
-  ],
+  "written_source_over_threshold": 0,
+  "written_source_hits": [],
   "written_bank_best_over_threshold": 3,
   "written_bank_best_hits": [
     {
@@ -127,8 +91,8 @@
       "bank_id": "2022-Paper2D_SoftwareDevelopment-2-b-i"
     }
   ],
-  "over_threshold": 15,
-  "ok_count": 15,
+  "over_threshold": 13,
+  "ok_count": 17,
   "hits": [
     {
       "slot": "mcq-03",
@@ -146,14 +110,9 @@
       "bank_id": "2025-Paper1A_MultipleChoice-6"
     },
     {
-      "slot": "mcq-07",
+      "slot": "mcq-09",
       "similarity": 0.8451,
       "bank_id": "2021-Paper1_MultipleChoice-19"
-    },
-    {
-      "slot": "mcq-09",
-      "similarity": 0.875,
-      "bank_id": "2022-Paper1_MultipleChoice-AQ5"
     },
     {
       "slot": "mcq-10",
@@ -174,11 +133,6 @@
       "slot": "mcq-14",
       "similarity": 0.9655,
       "bank_id": "2021-Paper1_MultipleChoice-18-Page-5-problem-18"
-    },
-    {
-      "slot": "mcq-16",
-      "similarity": 0.7556,
-      "bank_id": "2022-Paper1_MultipleChoice-AQ21"
     },
     {
       "slot": "mcq-17",

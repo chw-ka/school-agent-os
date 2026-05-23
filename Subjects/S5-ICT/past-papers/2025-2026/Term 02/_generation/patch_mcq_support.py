@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One-off patch: restore missing MCQ diagrams/algorithms in Exam02 spec + DOCX."""
+"""Patch MCQ content/answers in Exam02 spec + DOCX (support content, dedupe 販賣機)."""
 from __future__ import annotations
 
 import json
@@ -17,6 +17,30 @@ spec_path = Path(__file__).resolve().parent / "25_26_S5_ICT_Exam02.spec.json"
 docx_path = Path(__file__).resolve().parents[1] / "WrittenExam" / "25_26_S5_ICT_Exam02.docx"
 
 PATCHES: dict[int, list[str]] = {
+    6: [
+        "下列哪個以 8 位元二進制補碼表示數字的加法運算，會引至上溢錯誤？",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\tA.\t0000 0010 + 0011 1100",
+        "\tB.\t0100 0010 + 0000 0001",
+        "\tC.\t1001 1100 + 1111 0110",
+        "\tD.\t1011 1010 + 1100 0100",
+    ],
+    8: [
+        "需要多少位元才能表示一個 8x8 的黑白像素圖像？",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "\tA.\t64",
+        "\tB.\t64^2",
+        "\tC.\t8^2",
+        "\tD.\t2^64",
+    ],
     7: [
         "以下試算表顯示了產品零售價的計算。C4 中的公式是什麼，以便可以複製到 C5 及其下的儲存格？",
         "",
@@ -99,6 +123,8 @@ PATCHES: dict[int, list[str]] = {
 }
 
 ANSWERS = {
+    "mcq-06": "A",
+    "mcq-08": "D",
     "mcq-10": "B",
     "mcq-21": "A",
     "mcq-23": "D",
@@ -108,7 +134,11 @@ ANSWERS = {
 
 
 def main() -> int:
-    spec = json.loads(spec_path.read_text(encoding="utf-8"))
+    if not spec_path.exists():
+        print(f"No spec at {spec_path}; patching DOCX only.")
+        spec = {"items": [], "meta": {}}
+    else:
+        spec = json.loads(spec_path.read_text(encoding="utf-8"))
     for item in spec["items"]:
         mcq_no = int(item["id"].split("-")[1])
         if mcq_no in PATCHES:
@@ -116,8 +146,10 @@ def main() -> int:
         if item["id"] in ANSWERS:
             item["answer"] = ANSWERS[item["id"]]
 
-    spec["meta"]["mcq_answers"] = "CBBDCADBCBDCACAABDDABDBBDBDACA"
-    spec_path.write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # Q6 A (補碼), Q8 D (點陣圖), Q23 D (除法 trace) — replaces duplicate 販賣機 variants
+    spec["meta"]["mcq_answers"] = "CBBDAADBCBDCACAABDDABDBDDBDACA"
+    if spec_path.exists() or spec.get("items"):
+        spec_path.write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     doc = Document(str(docx_path))
     blocks = mcq_blocks(doc)

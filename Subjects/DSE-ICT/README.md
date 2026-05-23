@@ -14,6 +14,8 @@ DSE 資訊及通訊科技（ICT）共用參考庫 — 適用於 F4–F6（S4–S
 - `gemini-output/`：Gemini 人手／半自動提取的原始 JSON（**文字版**，通常無圖片；匯入前的工作區）
 - `question-bank/`：結構化題目 JSON（**出卷參考時讀這裡，毋須每次 OCR**）
   - `curriculum_concepts.json`：概念 tag 及新課程單元對照（依 `edb/ICT_C&A Guide_c_final.pdf`）
+  - `concept_map.json`（目標，tree）：C&A + bank 統計 — 見 `F5_ICT_CONCEPT_GENERATE_FLOW.md` 🔲
+  - `style_patterns.json`（目標）：問法／語法／專有名詞 patterns（唔係題目原文）🔲
   - `index.json`：各年份／試卷目錄
 - `edb/`：教育局課程及評估指引等官方文件
 

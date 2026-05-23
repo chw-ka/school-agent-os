@@ -1,0 +1,446 @@
+{
+  "candidate": "/Users/warren_chan/Projects/school-agent-os/Subjects/S5-ICT/past-papers/2025-2026/Term 02/WrittenExam/25_26_S5_ICT_Exam02.docx",
+  "threshold": 0.6,
+  "rule": "similarity > threshold = too close to school past paper",
+  "past_references": [
+    "/Users/warren_chan/Projects/school-agent-os/Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/23_24_S5_ICT_Exam02.pdf",
+    "/Users/warren_chan/Projects/school-agent-os/Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx"
+  ],
+  "mcq_total": 30,
+  "fail_mcq_past": 0,
+  "pass_mcq_past": 30,
+  "written_checks": 15,
+  "fail_written_past": 2,
+  "intra_duplicates": 2,
+  "mcq_rows": [
+    {
+      "id": "mcq-01",
+      "kind": "mcq",
+      "past_sim": 0.2909,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-10",
+      "fail_past": false,
+      "preview": "以下哪一步驟可以確保輸入數據的準確性？ \tA.\t數據控制 \tB.\t數據收集 \tC.\t數據儲存 \tD.\t數據分析"
+    },
+    {
+      "id": "mcq-02",
+      "kind": "mcq",
+      "past_sim": 0.2143,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-26",
+      "fail_past": false,
+      "preview": "下列哪項最能說明操作系統檔宜存放在 SSD 而非硬碟機？ \tA.\t系統檔案需經常讀寫，SSD 存取較快 \tB.\t操作系統容量必須小於 SSD 容量 \tC.\t操作系統屬於應用軟件 \tD.\tSSD 每 G"
+    },
+    {
+      "id": "mcq-03",
+      "kind": "mcq",
+      "past_sim": 0.2619,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-17",
+      "fail_past": false,
+      "preview": "某零售商場計劃為顧客開發一個流動應用程式，登記他們的購物記錄，並賺取積分來換取禮品。下列哪一事項可略為忽略？ \tA.\t個人數據私隱 \tB.\t網絡安全 \tC.\t應用程式的檔案大小 \tD.\t操作系統"
+    },
+    {
+      "id": "mcq-04",
+      "kind": "mcq",
+      "past_sim": 0.2963,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-09",
+      "fail_past": false,
+      "preview": "有一百個 298GB 的監管視像檔案。在沒有任何重組和壓縮下，最要多少個 4TB 硬碟來儲存所有視像檔案呢？ \tA.\t13 \tB.\t19 \tC.\t11 \tD.\t29"
+    },
+    {
+      "id": "mcq-05",
+      "kind": "mcq",
+      "past_sim": 0.2698,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-02",
+      "fail_past": false,
+      "preview": "更改電子郵箱的密碼，以下哪個步驟不是數據驗證的方法？ \tA.\t輸入舊密碼 \tB.\t輸入用戶名稱 \tC.\t輸入新密碼兩次 \tD.\t回答「密碼提示」問題"
+    },
+    {
+      "id": "mcq-06",
+      "kind": "mcq",
+      "past_sim": 0.1709,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-02",
+      "fail_past": false,
+      "preview": "設計了 M1 和 M6 兩個算法，在自動販賣機內以每 3 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？ 輸入 → 處理 → 輸出；X：處理 → 輸入；Y：處理 → 輸出 "
+    },
+    {
+      "id": "mcq-07",
+      "kind": "mcq",
+      "past_sim": 0.2254,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-10",
+      "fail_past": false,
+      "preview": "若要打開計算機遊戲，以便使用多媒體學習軟件包。下列哪項因素可略為忽略？ \tA.\tROM 的儲存大小 \tB.\tRAM 的儲存大小 \tC.\tCPU 的時鐘頻率 \tD.\tSSD 的儲存大小"
+    },
+    {
+      "id": "mcq-08",
+      "kind": "mcq",
+      "past_sim": 0.2179,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-02",
+      "fail_past": false,
+      "preview": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 8 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？ 輸入 N 當 N < 0 \tA.\t數據有效性檢驗 \tB.\t數據修改"
+    },
+    {
+      "id": "mcq-09",
+      "kind": "mcq",
+      "past_sim": 0.2429,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-09",
+      "fail_past": false,
+      "preview": "需要多少位元才態表示一個 13x13 的黑白像素圖像？ 需要多少位元才能表示一個 13x13 的黑白像素圖像？ \tA.\t2^64 \tB.\t64^2 \tC.\t8^2 \tD.\t61"
+    },
+    {
+      "id": "mcq-10",
+      "kind": "mcq",
+      "past_sim": 0.2471,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-03",
+      "fail_past": false,
+      "preview": "假設 X = 3, Y = 10 和 Z = 11。下列哪項布爾算式的結果是「真」？ \tA.\t((X < 0) AND (Y > 10)) AND (Z > 8) \tB.\t((X < 0) OR (Y"
+    },
+    {
+      "id": "mcq-11",
+      "kind": "mcq",
+      "past_sim": 0.2917,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-26",
+      "fail_past": false,
+      "preview": "用作啟動電腦的啟動程式一般會儲存在哪一種儲存裝置？ \tA.\tRAM \tB.\tCPU \tC.\tSSD \tD.\tROM"
+    },
+    {
+      "id": "mcq-12",
+      "kind": "mcq",
+      "past_sim": 0.3597,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-18",
+      "fail_past": false,
+      "preview": "在 CPU 內執行編碼語言指令「載入 1057」時，下列哪項部件會因此指令解碼？ \tA.\tALU \tB.\tCU \tC.\t匯流排 \tD.\t暫存器"
+    },
+    {
+      "id": "mcq-13",
+      "kind": "mcq",
+      "past_sim": 0.1931,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-26",
+      "fail_past": false,
+      "preview": "當下圖的電腦 C 關掉後，以下哪一項活動仍可進行？ \tA.\t以上各項均與「使用電腦 A 刪除電腦 …」無關 \tB.\t使用電腦 A 刪除電腦 B 內的檔案。 \tC.\t使用電腦 A 列印文件。 \tD.\t使"
+    },
+    {
+      "id": "mcq-14",
+      "kind": "mcq",
+      "past_sim": 0.2807,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-02",
+      "fail_past": false,
+      "preview": "下列哪項不是 CPU 的短期發展？ \tA.\t減少處理器作數量 \tB.\t預裝操作系統 \tC.\t增加時鐘頻率 \tD.\t增加耗電量"
+    },
+    {
+      "id": "mcq-15",
+      "kind": "mcq",
+      "past_sim": 0.2791,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-02",
+      "fail_past": false,
+      "preview": "以下哪一項不會影響資訊系統的輸出？ \tA.\t使用不同的 CPU \tB.\t以上各項均與「更改輸入數據…」無關 \tC.\t更改儲存裝置的類型 \tD.\t更改輸入數據"
+    },
+    {
+      "id": "mcq-16",
+      "kind": "mcq",
+      "past_sim": 0.3226,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-15",
+      "fail_past": false,
+      "preview": "在一般情況下，P、Q 和 R 會是什麼？以下哪項／些是正確的？ \t\t(1)\tP: 應用軟件, Q: 操作系統, R: 硬件 \t\t(2)\tP: 應用軟件, Q: 硬件, R: 操作系統 \t\t(3)\tP:"
+    },
+    {
+      "id": "mcq-17",
+      "kind": "mcq",
+      "past_sim": 0.203,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-05",
+      "fail_past": false,
+      "preview": "有間公司開發了一個自動駕駛的電腦系統，使車輛可收集和利用周邊的圖像數據能在道路上安全行駛。下列哪項最能解釋上述系統屬於實時處理？ \tA.\t同一時間向多用戶提供資源和服務 \tB.\t數據輸入和數據處理之間"
+    },
+    {
+      "id": "mcq-18",
+      "kind": "mcq",
+      "past_sim": 0.225,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-02",
+      "fail_past": false,
+      "preview": "驅動程式 P 和 Q 分別會應用於視像會議和列印上。以下哪項描述不是合理的？ \tA.\tP 控制同時使用用戶的數量 \tB.\tP 容許操作系統和視像鏡頭互動 \tC.\tQ 控制使用打印機的用戶權限 \tD.\t"
+    },
+    {
+      "id": "mcq-19",
+      "kind": "mcq",
+      "past_sim": 0.2797,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-02",
+      "fail_past": false,
+      "preview": "以下哪項關於快取記憶體的句子不是正確的？ \tA.\t快取記憶體的數據存取速度比 RAM 的為低 \tB.\t它是 ROM 的一種 \tC.\t它儲存經常使用的數據和指令 \tD.\t它只在 CPU 內找到"
+    },
+    {
+      "id": "mcq-20",
+      "kind": "mcq",
+      "past_sim": 0.259,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-02",
+      "fail_past": false,
+      "preview": "有一天，莉莉發覺她不能透過家中電腦投互聯網，以下哪項不是可能成因？ \tA.\t硬碟的數據傳輸率低 \tB.\t顯示卡出現故障 \tC.\tROM 的容量小 \tD.\t網絡界面卡出現故障"
+    },
+    {
+      "id": "mcq-21",
+      "kind": "mcq",
+      "past_sim": 0.3617,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-24",
+      "fail_past": false,
+      "preview": "參考下列算法，執行後會輸出哪個數值？ \tA.\t18 \tB.\t45 \tC.\t13 \tD.\t29"
+    },
+    {
+      "id": "mcq-22",
+      "kind": "mcq",
+      "past_sim": 0.3925,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-24",
+      "fail_past": false,
+      "preview": "下列哪個數值最有可能是上述算法的輸出？ 如果 (X < 9) or (X > 22) 輸出 X \tA.\t6 \tB.\t7 \tC.\t26 \tD.\t27"
+    },
+    {
+      "id": "mcq-23",
+      "kind": "mcq",
+      "past_sim": 0.1915,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-24",
+      "fail_past": false,
+      "preview": "設計了 M1 和 M4 兩個算法，在自動販賣機內以每 7 個積分輸出一罐汽水。N 代表積分數量。假設 N = 0。以下哪句是正確的？ j ← 0　輸入 N　當 N <> 888 執行 j ← j + "
+    },
+    {
+      "id": "mcq-24",
+      "kind": "mcq",
+      "past_sim": 0.2316,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-28",
+      "fail_past": false,
+      "preview": "在以下算法，S 的最終值大於 19。N 的最小可能輸入值是什麼？ 版本 1 如果 (P > 20) A ← P + 5 否則 A ← P * 2 版本 2 \tA.\t9 \tB.\tP + 9 \tC.\tP "
+    },
+    {
+      "id": "mcq-25",
+      "kind": "mcq",
+      "past_sim": 0.266,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-24",
+      "fail_past": false,
+      "preview": "以陣列 P 的初始值進行，下列算法的輸出是什麼？ 如果 (age <= 11) or (age >= 60) 輸出 '有折扣!' 否則 輸出 '沒有折扣!' 以下哪組 age 的數據組最適合用作測試此"
+    },
+    {
+      "id": "mcq-26",
+      "kind": "mcq",
+      "past_sim": 0.3088,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-02",
+      "fail_past": false,
+      "preview": "下列哪項不是正確的？ \tA.\t數據收集: 製作統計圖表 \tB.\t數據儲存: 輸入問卷調查資料 \tC.\t數據處理: 空間對齊排序以便輸入數據 \tD.\t數據組織: 設計線上問卷"
+    },
+    {
+      "id": "mcq-27",
+      "kind": "mcq",
+      "past_sim": 0.3559,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-09",
+      "fail_past": false,
+      "preview": "考慮陣列 A[1..4] = [2, 5, 1, 8]。以線性搜尋找 5，最少要檢查多少個元素？ \tA.\t1 \tB.\t2 \tC.\t3 \tD.\t4"
+    },
+    {
+      "id": "mcq-28",
+      "kind": "mcq",
+      "past_sim": 0.253,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-08",
+      "fail_past": false,
+      "preview": "以下哪些是在編寫程式時使用模組的優點是不正確的？ \t\t(1)\t有些模組可以重用 \t\t(2)\t較容易進行程式除錯 \t\t(3)\t較快定義問題 \tA.\t有些模組可以重用 \tB.\t較容易進行程式除錯 \tC.\t"
+    },
+    {
+      "id": "mcq-29",
+      "kind": "mcq",
+      "past_sim": 0.2712,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-14",
+      "fail_past": false,
+      "preview": "若算法中使用了 IF…ELSE 分支，下列哪項測試策略最適合？ \tA.\t同時測試真確和錯誤情況 \tB.\t刪除所有條件 \tC.\t只測試輸出格式 \tD.\t只測試真確情況"
+    },
+    {
+      "id": "mcq-30",
+      "kind": "mcq",
+      "past_sim": 0.2878,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "mcq-24",
+      "fail_past": false,
+      "preview": "在下列算法中，輸入什麼值不會輸出「完成！」？ i ← 1 當 i > 0 輸出 '5' 以下哪句應插入在循環內，以避免出現無限循環？ \tA.\ti ← i – 1 \tB.\t輸出 i \tC.\t如果 i <"
+    }
+  ],
+  "written_rows": [
+    {
+      "id": "丙部-L10",
+      "kind": "written_scenario",
+      "past_sim": 0.8,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:246",
+      "fail_past": true,
+      "preview": "INSERT INTO MOVIE VALUES (                                )"
+    },
+    {
+      "id": "乙部-L35",
+      "kind": "written_scenario",
+      "past_sim": 0.7835,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:233",
+      "fail_past": true,
+      "preview": "SELECT CNAME FROM ORDER WHERE ORDER_DATE < '2026-03-01';"
+    },
+    {
+      "id": "丙部-L45",
+      "kind": "written_scenario",
+      "past_sim": 0.4681,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:288",
+      "fail_past": false,
+      "preview": "(iii)\t加入 HAVING COUNT(*) > 1 後最終結果是什麼？\t(1 分)"
+    },
+    {
+      "id": "丙部-L41",
+      "kind": "written_scenario",
+      "past_sim": 0.4634,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:250",
+      "fail_past": false,
+      "preview": "執行以下SQL語句後會列出多少筆記錄? SELECT * FROM T1 UNION SELECT CID, AID, AMT FROM T6"
+    },
+    {
+      "id": "丙部-L0",
+      "kind": "written_scenario",
+      "past_sim": 0.4516,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:250",
+      "fail_past": false,
+      "preview": "根據 D1 和 D4 內已知的記錄，執行以下 SQL1 和 SQL4 時，結果會顯示多少筆記錄？"
+    },
+    {
+      "id": "丙部-L50",
+      "kind": "written_scenario",
+      "past_sim": 0.3838,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:35",
+      "fail_past": false,
+      "preview": "UPDATE Account SET Balance = Balance - 30 WHERE StudentID = 'S002';"
+    },
+    {
+      "id": "丙部-L54",
+      "kind": "written_scenario",
+      "past_sim": 0.3505,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:233",
+      "fail_past": false,
+      "preview": "UPDATE Wallet SET Balance = Balance - 50 WHERE SID = 'S001';"
+    },
+    {
+      "id": "丙部-L55",
+      "kind": "written_scenario",
+      "past_sim": 0.3404,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:233",
+      "fail_past": false,
+      "preview": "UPDATE Canteen SET Income = Income + 50 WHERE ID = 'C01';"
+    },
+    {
+      "id": "丙部-L1",
+      "kind": "written_scenario",
+      "past_sim": 0.2973,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:282",
+      "fail_past": false,
+      "preview": "繪製實體關係圖（ERD），標示 Member、Booking、Screening、Cinema 及主鍵／外鍵。\t(4 分)"
+    },
+    {
+      "id": "乙部-L12",
+      "kind": "written_scenario",
+      "past_sim": 0.2456,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:318",
+      "fail_past": false,
+      "preview": "莉莉設計附有陣列 A 的子程式。她考慮算法 ALG1, ALG4 和 ALG2。"
+    },
+    {
+      "id": "乙部",
+      "kind": "written_section",
+      "past_sim": 0.2256,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "",
+      "fail_past": false,
+      "preview": "一個試算表檔案包含工作紙 Sheet1 和 Sheet10，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 C 儲存了社編碼 (HCODE)，而欄 D 儲存了社名稱 (HOUSE)。部分數據顯示"
+    },
+    {
+      "id": "丙部-L63",
+      "kind": "written_scenario",
+      "past_sim": 0.2,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:264",
+      "fail_past": false,
+      "preview": "家豪建立一個堆疊 S，而變量 N 儲存 S 內元素的數量。她使用以下子程式。寫出執行以下偽代碼後 N 和 X 的值。"
+    },
+    {
+      "id": "乙部-L0",
+      "kind": "written_scenario",
+      "past_sim": 0.1955,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:35",
+      "fail_past": false,
+      "preview": "一個試算表檔案包含工作紙 Sheet1 和 Sheet10，用作處理社際歌唱比賽的數據。在 Sheet1 內，欄 C 儲存了社編碼 (HCODE)，而欄 D 儲存了社名稱 (HOUSE)。部分數據顯示"
+    },
+    {
+      "id": "乙部-L3",
+      "kind": "written_scenario",
+      "past_sim": 0.172,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:264",
+      "fail_past": false,
+      "preview": "如果一位員工在欄 D 或欄 E 所對應的數值為 1，他將被視為出席。而在這情況下，欄 F 會顯示數值 1。否則則顯示 0。"
+    },
+    {
+      "id": "丙部",
+      "kind": "written_section",
+      "past_sim": 0.1429,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "",
+      "fail_past": false,
+      "preview": "根據 D1 和 D4 內已知的記錄，執行以下 SQL1 和 SQL4 時，結果會顯示多少筆記錄？ \t繪製實體關係圖（ERD），標示 Member、Booking、Screening、Cinema 及主"
+    }
+  ],
+  "mcq_failures": [],
+  "written_failures": [
+    {
+      "id": "乙部-L35",
+      "kind": "written_scenario",
+      "past_sim": 0.7835,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:233",
+      "fail_past": true,
+      "preview": "SELECT CNAME FROM ORDER WHERE ORDER_DATE < '2026-03-01';"
+    },
+    {
+      "id": "丙部-L10",
+      "kind": "written_scenario",
+      "past_sim": 0.8,
+      "past_ref": "24_25_S5_ICT_Exam02.docx",
+      "past_ref_id": "line:246",
+      "fail_past": true,
+      "preview": "INSERT INTO MOVIE VALUES (                                )"
+    }
+  ],
+  "mcq_max_sim": 0.3925
+}
