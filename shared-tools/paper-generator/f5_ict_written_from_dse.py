@@ -464,6 +464,8 @@ def pick_written_items_from_bank(
     Whole slot/stem vs bank ≤ bank_stem_threshold (60%).
     Composed vs source parts (subquestions) ≤ bank_subpart_threshold (85%).
     """
+    from f5_ict_pipeline_flags import PICK_TIME_BANK_SIM_GATE
+
     rng = rng or random.Random()
     last_err: str | None = None
     for _attempt in range(max_attempts):
@@ -514,7 +516,7 @@ def pick_written_items_from_bank(
                     sim_bank = _max_similarity_to_bank(full, pool)
                     sub_lim = _bank_sim_limit(full, bank_subpart_threshold)
                     stem_lim = _bank_sim_limit(full, bank_stem_threshold)
-                if sim_parts > sub_lim or sim_bank > stem_lim:
+                if PICK_TIME_BANK_SIM_GATE and (sim_parts > sub_lim or sim_bank > stem_lim):
                     continue
                 if not _written_text_coherent(slot_id, full, section):
                     continue

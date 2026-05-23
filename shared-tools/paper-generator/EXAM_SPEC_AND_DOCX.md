@@ -138,7 +138,7 @@ flowchart LR
 | `*.spec.duplicates.json` | 查重報告 |
 | `*.bank_risk.json` / `*.dse_bank_audit.json` | 與 DSE bank 相似度審計 |
 
-說明性 `.md`（例如本文、`F5_ICT_DSE_BLUEPRINT_FLOW.md`）只係文檔，**唔會**自動變成卷面。
+說明性 `.md`（例如本文、`F5_ICT_CONCEPT_GENERATE_FLOW.md`）只係文檔，**唔會**自動變成卷面。
 
 ---
 
@@ -171,9 +171,12 @@ PY
 | `written_slot_ranges.py` | slot → DOCX 段落 index |
 | `f5_ict_spec.py` | picks → spec `items[]` |
 | `f5_ict_blueprint_db_web.py` | `generate()` 組裝 DOCX |
-| `regenerate_exam02.py` | 一鍵：pick → spec → question check → DOCX → paper check |
+| `build_f5_exam02.py` | **主入口：** generate → partial regen → render |
+| `render_from_spec.py` | spec → DOCX + paper_review（`spec_mcq_render` + `written_picks_render`） |
+| `question_review.py` / `paper_review.py` | Review CLI（`post_check` 別名） |
+| `regenerate_exam02.py` | **Legacy wrapper** → `build_f5_exam02.py`；`--legacy-pick` 為舊 bank pick |
 | `post_check.run_question_spec_check` | 出卷前：只驗 spec |
 | `post_check.run_post_render_check` | render 後：版面 + spec↔docx |
 
 目標流程（generate 唔抄 bank、partial regen）見 [`F5_ICT_CONCEPT_GENERATE_FLOW.md`](F5_ICT_CONCEPT_GENERATE_FLOW.md)。  
-舊 pick 藍本文檔 [`F5_ICT_DSE_BLUEPRINT_FLOW.md`](F5_ICT_DSE_BLUEPRINT_FLOW.md) 已歸檔參考。
+舊 pick 藍本流程文檔已移除（2026-05）；僅保留 [`F5_ICT_CONCEPT_GENERATE_FLOW.md`](F5_ICT_CONCEPT_GENERATE_FLOW.md)。

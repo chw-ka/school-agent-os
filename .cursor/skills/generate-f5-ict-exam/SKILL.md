@@ -78,34 +78,31 @@ flowchart TD
 
 ---
 
-## Legacy implementation（過渡期，仍可用）
+## Review CLI 別名
 
-> **已知問題：** `regenerate_exam02.py` 用 bank **pick + transform**，pick 時要求 ≤60% similarity，好多 concept 難過關 → 大量 seed retry、**長時間無 output 似 hang**。  
-> **過渡策略：** 已有合格 `*.spec.json` 時，只做 question_review + render；唔好無謂 re-pick 成卷。  
-> 新卷應跟 **Target architecture** 逐步遷移，唔再擴充 pick-transform 邏輯。
+| 目標名 | CLI |
+|--------|-----|
+| concept_review | `concept_review.py` |
+| question_review | `question_review.py` |
+| paper_review | `paper_review.py` |
 
-| Phase | Tool name（目標） | 現行模組（過渡） |
-|-------|-------------------|------------------|
-| Concept | `concept_review` | `concept_check.py`（question-quality-check） |
-| Question | `question_review` | `run_question_spec_check` / `check_spec.py` |
-| Paper | `paper_review` | `run_post_render_check` |
-
-Legacy 一鍵（Term 02 2025–26）：
+改 spec 後只跑 review：
 
 ```bash
-cd /path/to/school-agent-os
-.venv/bin/python "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/regenerate_exam02.py"
+.venv/bin/python shared-tools/paper-generator/question_review.py
+.venv/bin/python shared-tools/paper-generator/paper_review.py
 ```
 
-改 spec 後只跑 review（唔 re-pick）：
+舊 bank pick（慢）：`regenerate_exam02.py --legacy-pick`
 
 ```bash
+# 以下仍可用 run_question_spec_check，等同 question_review.py
 .venv/bin/python -c "
 from pathlib import Path
 import sys
 sys.path.insert(0, 'shared-tools/paper-generator')
-from post_check import run_question_spec_check
-raise SystemExit(run_question_spec_check(
+from post_check import run_question_review
+raise SystemExit(run_question_review(
     candidate_spec=Path('Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json'),
     template=Path('Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx'),
     subject_subpath='S5-ICT',
@@ -141,32 +138,70 @@ raise SystemExit(run_question_spec_check(
 
 ### 1 — Blueprint
 
-- 甲 30（Core A×10 → B×10 → D×10）、乙 6、丙 8（DB elective）；見 `mcq_core_plan.py`、`WRITTEN_SLOT_PLAN`。
-- 寫 `exam_blueprint.json`：`slots[]` 每條 `id`、`concepts[]`、`marks`、`section`。
+```bash
+.venv/bin/python shared-tools/paper-generator/build_exam_blueprint.py --out \
+  "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/exam_blueprint.json"
+```
+
+- 甲 30（Core A×10 → B×10 → D×10）、乙 6、丙 7（無 c-04）；由 `mcq_core_plan` + `WRITTEN_SLOT_PLAN` 自動生成。
+- 可手改 `exam_blueprint.json` 內 `concepts[]` / `marks` 後再跑 review。
 
 ### 2 — concept_review
 
-- 全卷 concept 分佈、slot 間重覆、對 `concept_map.json`。
-- 對照 C&A out-of-syllabus rules（`curriculum_concepts.json` → 日後併入 tree map）。
-- 輸出：`_generation/*.concept_review.json`（待建 CLI）。
+```bash
+.venv/bin/python shared-tools/paper-generator/build_exam_blueprint.py --review
+# 或 concept_review.py --blueprint … --json …/exam_blueprint.concept_review.json
+```
+
+- 檢查：`concept_targets`、MCQ A→B→D、`out_of_syllabus`、F5 scope、slot 概念重疊、未知 concept。
+- 輸出：`exam_blueprint.concept_review.json`；**PASS（exit 0）** 後進入 generate。
 
 ### 3 — Generate → spec
 
-- 每 slot：用 `style_patterns.json` + blueprint concepts **寫新題**（唔貼 bank stem）。
-- 組裝 `build_f5_ict_exam_spec()` → save `*.spec.json`。
+```bash
+.venv/bin/python shared-tools/paper-generator/generate_from_blueprint.py \
+  --concept-review --question-check --set-written-picks
+```
 
-### 4 — question_review
+- 每 slot：`f5_ict_generate_from_blueprint.py` 用 `style_patterns` + blueprint **寫新題**（`generated://…`，唔貼 bank stem）。
+- 輸出：`25_26_S5_ICT_Exam02.spec.json`（43 items）；MCQ key 自動 balance。
+
+### 4 — question_review + partial regen
+
+```bash
+# Generate + auto partial regen (2 rounds, 10 tries/slot)
+.venv/bin/python shared-tools/paper-generator/generate_from_blueprint.py \
+  --partial-regen --regen-rounds 3 --question-check
+
+# Or regen an existing spec only
+.venv/bin/python shared-tools/paper-generator/partial_regen_spec.py --rounds 3
+```
 
 - `run_question_spec_check`（過渡名；日後 `question_review`）。
-- Fail slot → 只改該 slot，最多 10 次 regen → 仍 fail 寫入 report。
+- Fail slot → `partial_regen.py` 只改該 slot，最多 10 次／輪；報告 `*.partial_regen.json`。
 
 ### 5 — Render + paper_review
 
-- **Question pass 後先** `generate()` → DOCX。
-- `run_post_render_check`：paper layout + written spec↔DOCX ≥92%。
-- **唔好**喺 DOCX 改題目文字；改 spec 再 render。
+```bash
+.venv/bin/python shared-tools/paper-generator/render_from_spec.py --force
+# --force：question_review 有 duplicate 仍可 render；paper_review 仍會跑
+```
 
-### 6 — Publish
+- **輸入：** `25_26_S5_ICT_Exam02.spec.json` + 模板 `24_25_S5_ICT_Exam02.docx`
+- **輸出：** `WrittenExam/25_26_S5_ICT_Exam02.docx`
+- `spec_mcq_render.py`：spec 甲部 → template row blocks；`written_picks_render`：乙丙全文
+- `run_post_render_check`：footer/cover + written spec↔DOCX ≥92%
+- **唔好**喺 DOCX 改題目文字；改 spec → 再 `render_from_spec.py`
+
+### 6 — One-shot build (optional)
+
+```bash
+.venv/bin/python shared-tools/paper-generator/build_f5_exam02.py --force-render
+```
+
+等同 Phase 3–6；`regenerate_exam02.py`（無參數）亦會轉發此腳本。
+
+### 7 — Publish
 
 - Git：交付用 DOCX + spec；`_generation` 審計檔可 commit。
 - Panel S：只 final DOCX/PDF，**要明示許可**（`panel-storage-sync`）。
@@ -199,13 +234,13 @@ raise SystemExit(run_question_spec_check(
 | Phase | 內容 | 狀態 |
 |-------|------|------|
 | **0** | 本文檔 + skill / flow 文檔 | ✅ |
-| **1** | `extract_style_patterns.py` → `style_patterns.json` | 🔲 |
-| **2** | `concept_map.json` tree（C&A + bank） | 🔲（partial：`curriculum_concepts.json`） |
-| **3** | `exam_blueprint.json` + `concept_review` CLI | 🔲 |
-| **4** | `generate_item` / agent generate → spec | 🔲 |
-| **5** | `question_review` + partial regen（max 10/slot） | 🔲（partial：`check_spec.py`） |
-| **6** | Spec-driven render；乙丙改善 | 🟡（方案 A 已有；乙丙待優化） |
-| **7** | Rename review modules；deprecate pick-transform | 🔲 |
+| **1** | `extract_style_patterns.py` → `style_patterns.json` | ✅ |
+| **2** | `build_concept_map.py` → `concept_map.json` tree | ✅ |
+| **3** | `exam_blueprint.json` + `concept_review` CLI | ✅ |
+| **4** | `generate_from_blueprint.py` → spec | ✅ |
+| **5** | `partial_regen_spec.py` + `--partial-regen` | ✅ |
+| **6** | `render_from_spec.py` + paper_review | ✅ |
+| **7** | `build_f5_exam02.py`；review CLI；pick gate off；legacy 清理 | ✅ |
 
 ---
 
@@ -215,4 +250,3 @@ raise SystemExit(run_question_spec_check(
 - Technical flow & schemas: `shared-tools/paper-generator/F5_ICT_CONCEPT_GENERATE_FLOW.md`
 - Spec/DOCX detail: `shared-tools/paper-generator/EXAM_SPEC_AND_DOCX.md`
 - Rule: `.cursor/rules/paper-generator.mdc`
-- Legacy pick flow（舊）: `F5_ICT_DSE_BLUEPRINT_FLOW.md`（歸檔說明）

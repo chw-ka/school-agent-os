@@ -1453,6 +1453,8 @@ def pick_mcq_pool(rng: random.Random) -> list[dict]:
 
 
 def pick_mcq_items(rng: random.Random, used_ids: set[str]) -> list[dict]:
+    from f5_ict_pipeline_flags import PICK_TIME_BANK_SIM_GATE
+
     pool = pick_mcq_pool(rng)
     chosen: list[dict] = []
     chosen_fps: list[str] = []
@@ -1501,8 +1503,9 @@ def pick_mcq_items(rng: random.Random, used_ids: set[str]) -> list[dict]:
                             break
                     if pick is not None:
                         break
-                if pick is None and best_work is not None and best_sim <= _BANK_SIM_THRESH:
-                    pick = best_work
+                if pick is None and best_work is not None:
+                    if not PICK_TIME_BANK_SIM_GATE or best_sim <= _BANK_SIM_THRESH:
+                        pick = best_work
         if pick is None:
             fb = FALLBACK_BY_SLOT.get(slot_idx)
             if fb and _fits_span(fb, span):
@@ -1617,6 +1620,8 @@ def build_mcq_payload_from_bank(
     max_attempts: int = 120,
 ) -> tuple[list[list[str]], tuple[int, ...], list[str]]:
     """Return (rows, correct_indices, provenance_ids) for F5 ICT template."""
+    from f5_ict_pipeline_flags import PICK_TIME_BANK_SIM_GATE
+
     base_seed = getattr(rng, "_seed", None) if rng else 252602
     last_err: Exception | None = None
     for attempt in range(1, max_attempts + 1):
@@ -1637,7 +1642,7 @@ def build_mcq_payload_from_bank(
                 raise RuntimeError(f"intra-exam duplicates: {hits[:5]}")
             audit_items = [{"id": p} for p in prov]
             bank_hits = audit_mcq_bank_similarity(audit_items, rows)
-            if bank_hits:
+            if bank_hits and PICK_TIME_BANK_SIM_GATE:
                 raise RuntimeError(f"bank similarity: {bank_hits[:6]}")
             seq_errors = verify_core_sequence([c for c, _ in MCQ_SLOT_PLAN])
             if seq_errors:

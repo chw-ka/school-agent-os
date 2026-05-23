@@ -15,16 +15,9 @@ side products (concept_map + style_patterns)
 
 詳見 `shared-tools/paper-generator/F5_ICT_CONCEPT_GENERATE_FLOW.md`。
 
-## Legacy pipeline（過渡，仍可用）
+## Legacy bank pick（僅 `--legacy-pick`）
 
-```
-pick bank → prepare_mcq_final_rows → build_f5_ict_exam_spec → save spec
-  → run_question_spec_check (FAIL stops here)
-  → generate / render_docx
-  → run_post_render_check
-```
-
-> `regenerate_exam02.py` 可能因 seed retry 跑很久且無 progress；有現成 spec 時勿全量 re-pick。
+`regenerate_exam02.py --legacy-pick` 仍可用但慢；日常用 `build_f5_exam02.py`。
 
 ## Key paths (25/26 Term 2 example)
 
@@ -33,13 +26,14 @@ pick bank → prepare_mcq_final_rows → build_f5_ict_exam_spec → save spec
 | Regenerate (legacy) | `Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/regenerate_exam02.py` |
 | Output DOCX | `.../WrittenExam/25_26_S5_ICT_Exam02.docx` |
 | Spec | `.../_generation/25_26_S5_ICT_Exam02.spec.json` |
-| Blueprint (target) | `.../_generation/exam_blueprint.json` |
+| Exam blueprint | `.../_generation/exam_blueprint.json` |
+| Concept review report | `.../_generation/exam_blueprint.concept_review.json` |
 | Template | `Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx` |
 | DSE bank | `Subjects/DSE-ICT/question-bank/` |
 | C&A Guide | `Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf` |
-| Concept map (partial) | `Subjects/DSE-ICT/question-bank/curriculum_concepts.json` |
-| Concept map (target tree) | `Subjects/DSE-ICT/question-bank/concept_map.json` 🔲 |
-| Style patterns (target) | `Subjects/DSE-ICT/question-bank/style_patterns.json` 🔲 |
+| Curriculum (flat source) | `Subjects/DSE-ICT/question-bank/curriculum_concepts.json` |
+| Concept map (tree) | `Subjects/DSE-ICT/question-bank/concept_map.json` |
+| Style patterns | `Subjects/DSE-ICT/question-bank/style_patterns.json` |
 
 ## Review commands（過渡：仍叫 question/paper check）
 
@@ -106,7 +100,7 @@ CLI:
 | Concept map tree | `concept_map.json` 🔲 | `curriculum_concepts.json` |
 | Blueprint | `exam_blueprint.json` 🔲 | `f5_ict_spec.py` meta |
 | concept_review | CLI 🔲 | `concept_check.py` |
-| Generate | agent / `generate_item` 🔲 | `f5_ict_from_dse` pick+transform |
+| Generate | `generate_from_blueprint.py` ✅ | `f5_ict_from_dse` pick+transform |
 | question_review | rename 🔲 | `post_check.run_question_spec_check` |
 | Spec assembly | `f5_ict_spec.py` | same |
 | DOCX render | `f5_ict_blueprint_db_web.generate` | same |
@@ -118,13 +112,54 @@ CLI:
 | Phase | 狀態 |
 |-------|------|
 | 0 Docs | ✅ |
-| 1 style_patterns | 🔲 |
-| 2 concept_map tree | 🔲 |
-| 3 blueprint + concept_review | 🔲 |
-| 4 generate → spec | 🔲 |
-| 5 partial regen | 🔲 |
-| 6 乙丙 render | 🟡 |
-| 7 deprecate pick-transform | 🔲 |
+| 1 style_patterns | ✅ |
+| 2 concept_map | ✅ |
+
+### Extract style patterns (Phase 1)
+
+```bash
+.venv/bin/python shared-tools/paper-generator/extract_style_patterns.py
+```
+| 2 concept_map tree | ✅ |
+
+### Build concept map (Phase 2)
+
+```bash
+.venv/bin/python shared-tools/paper-generator/build_concept_map.py
+```
+| 3 blueprint + concept_review | ✅ |
+
+### Build blueprint + concept review (Phase 3)
+
+```bash
+.venv/bin/python shared-tools/paper-generator/build_exam_blueprint.py --review
+.venv/bin/python shared-tools/paper-generator/concept_review.py \
+  --blueprint "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/exam_blueprint.json"
+```
+| 4 generate → spec | ✅ |
+
+```bash
+.venv/bin/python shared-tools/paper-generator/generate_from_blueprint.py \
+  --concept-review --question-check --set-written-picks
+```
+| 5 partial regen | ✅ |
+
+```bash
+.venv/bin/python shared-tools/paper-generator/partial_regen_spec.py --rounds 3
+# 或 --partial-regen --regen-rounds 3 on generate_from_blueprint.py
+```
+| 6 render + paper_review | ✅ |
+
+```bash
+.venv/bin/python shared-tools/paper-generator/render_from_spec.py --force
+```
+| 7 build_f5_exam02 + review CLIs | ✅ |
+
+```bash
+.venv/bin/python shared-tools/paper-generator/build_f5_exam02.py --force-render
+.venv/bin/python shared-tools/paper-generator/question_review.py
+.venv/bin/python shared-tools/paper-generator/paper_review.py
+```
 
 ## New academic year
 

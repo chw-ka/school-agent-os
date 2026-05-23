@@ -25,9 +25,14 @@ alwaysApply: false
 **Do not** bulk-edit question text in DOCX; fix **spec** then re-render.  
 **Do not** use `--skip-check` for final exams unless draft-only.
 
-## Legacy（過渡，勿擴充）
+## Canonical entry (Phase 7)
 
-`regenerate_exam02.py`：bank pick + transform + pick-time ≤60% gate → 易長時間 retry（似 hang）。有合格 spec 時只做 review + render。詳見 skill「Legacy implementation」。
+`build_f5_exam02.py` — blueprint generate → partial regen → render.  
+`question_review.py` / `paper_review.py` — review CLIs (`post_check` aliases).
+
+## Legacy（勿擴充）
+
+`regenerate_exam02.py` 預設轉發 `build_f5_exam02.py`。`--legacy-pick`：bank pick（`PICK_TIME_BANK_SIM_GATE=1`）。Pick-time ≤60% gate **預設關**（`f5_ict_pipeline_flags.py`）；相似度喺 question_review 處理。
 
 ## Spec-first（不變）
 

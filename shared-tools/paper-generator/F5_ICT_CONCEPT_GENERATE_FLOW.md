@@ -46,9 +46,17 @@
 }
 ```
 
-**現有可重用：** `Subjects/DSE-ICT/question-bank/curriculum_concepts.json`（flat keyword→concept）→ Phase 2 升級為 tree。
+**基礎：** `curriculum_concepts.json`（C&A 單元結構）  
+**工具：** `shared-tools/paper-generator/build_concept_map.py`  
+**輸出：** `Subjects/DSE-ICT/question-bank/concept_map.json`
 
-**建議路徑：** `Subjects/DSE-ICT/question-bank/concept_map.json`
+```bash
+.venv/bin/python shared-tools/paper-generator/build_concept_map.py
+# 合併 style_patterns 術語提示（預設開啟）
+.venv/bin/python shared-tools/paper-generator/build_concept_map.py --dry-run
+```
+
+`concept_map.json` 包含：`tree.compulsory` / `tree.elective`（每 topic 有 concepts、keywords、bank_stats、common_mistakes）、`concept_index`（逐 concept 統計）、`f5_exam_scope`、`out_of_syllabus_rules`、`mcq_compulsory_slot_order`。
 
 ### 2. `style_patterns.json`（問法庫，唔係題庫）
 
@@ -64,8 +72,15 @@
 | `subpart_templates` | `(a) 寫出 CREATE TABLE…` |
 | `distractor_patterns` | MCQ 常見混淆項類型 |
 
-**建議工具（待建）：** `shared-tools/paper-generator/extract_style_patterns.py`  
-**建議路徑：** `Subjects/DSE-ICT/question-bank/style_patterns.json` 或 per-exam `_generation/style_patterns.json`
+**工具：** `shared-tools/paper-generator/extract_style_patterns.py`  
+**輸出：** `Subjects/DSE-ICT/question-bank/style_patterns.json`
+
+```bash
+.venv/bin/python shared-tools/paper-generator/extract_style_patterns.py
+# 自訂年份／輸出
+.venv/bin/python shared-tools/paper-generator/extract_style_patterns.py \
+  --years 2021 2022 2023 2024 2025 --dry-run
+```
 
 ---
 
@@ -94,9 +109,20 @@ flowchart TD
 
 放 `Subjects/S5-ICT/past-papers/{學年}/Term {NN}/_generation/`。
 
-- 卷面：甲 30 / 乙 30 / 丙 43；MCQ Core A→B→D block order
-- 每 slot：`id`, `section`, `marks`, `concepts[]`, `question_type`
-- `meta.concept_targets` — 全卷 concept 次數上下限（見 `f5_ict_spec.py`）
+- 卷面：甲 30 / 乙 30 / 丙 40（7 題，無 c-04）；MCQ Core A→B→D block order
+- 每 slot：`id`, `section`, `marks`, `concepts[]`, `question_type`, `core`（MCQ）
+- `meta.concept_targets` — 全卷 concept 次數上下限
+
+**工具：**
+
+```bash
+.venv/bin/python shared-tools/paper-generator/build_exam_blueprint.py --review
+# → exam_blueprint.json + exam_blueprint.concept_review.json
+
+.venv/bin/python shared-tools/paper-generator/concept_review.py \
+  --blueprint "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/exam_blueprint.json" \
+  --json "…/exam_blueprint.concept_review.json"
+```
 
 ### Step 2 — Concepts from bank
 
@@ -116,9 +142,17 @@ flowchart TD
 
 ### Step 4 — Generate
 
-- **輸入：** blueprint slot + `style_patterns` + `concept_map`
-- **輸出：** `exam_spec` item（`text`, `concepts`, `marks`, `meta.provenance` = `generated` 唔係 `bank_id`）
-- **執行：** agent 撰寫 或 日後 `generate_item(slot, blueprint, patterns, rng)`
+- **輸入：** `exam_blueprint.json` + `style_patterns.json`
+- **輸出：** `25_26_S5_ICT_Exam02.spec.json`（`dse_source` = `generated://…`）
+- **工具：**
+
+```bash
+.venv/bin/python shared-tools/paper-generator/generate_from_blueprint.py \
+  --concept-review --question-check --set-written-picks
+```
+
+- **實作：** `f5_ict_generate_from_blueprint.py`（slot 模板 + MCQ key rebalance）
+- 首輪 `question_review` 可能仍有 duplicate／concept conflict → Phase 5 partial regen
 
 ### Step 5 — question_review
 
@@ -134,20 +168,30 @@ flowchart TD
 
 ### Step 6 — Partial regen
 
+```bash
+.venv/bin/python shared-tools/paper-generator/partial_regen_spec.py --rounds 3
+# 或 generate_from_blueprint.py --partial-regen --regen-rounds 3
+```
+
 ```text
 FOR each slot_id IN failed_slots:
   FOR attempt IN 1..10:
-    regenerate slot_id only
-    IF question_review(slot_id).ok: BREAK
-  ELSE: append to unresolved_slots report
+    regenerate slot_id only (variant seed)
+    IF local review (intra-dup + coherence) ok: BREAK
+  ELSE: append to unresolved_slots in *.partial_regen.json
+REPEAT rounds until question_review clean or max rounds
 STOP — no whole-paper re-seed loop
 ```
 
 ### Step 7 — Render DOCX
 
-- `generate()` / `render_docx()` — 模板 `24_25_S5_ICT_Exam02.docx`
-- 甲部、封面、footer：現行 render **OK**
-- 乙丙：`written_picks_render`（方案 A）；layout 持續改善（另開 task）
+```bash
+.venv/bin/python shared-tools/paper-generator/render_from_spec.py --force
+```
+
+- `spec_mcq_render.py` — spec 甲部 → template MCQ row blocks（`_layout_mcq_block`）
+- `written_picks_from_items` + `written_picks_render` — 乙丙全文寫入模板
+- 模板：`24_25_S5_ICT_Exam02.docx` → `25_26_S5_ICT_Exam02.docx`
 
 ### Step 8 — paper_review
 
@@ -160,11 +204,11 @@ STOP — no whole-paper re-seed loop
 
 | 目標名 | 現行模組 | 輸入 |
 |--------|----------|------|
-| concept_review | `concept_check.py`（待獨立 CLI） | blueprint + concept_map |
-| question_review | `check_spec.run_question_check` | `*.spec.json` |
-| paper_review | `post_check.run_post_render_check` | spec + DOCX |
+| concept_review | `concept_review.py` | blueprint + concept_map |
+| question_review | `question_review.py` → `post_check.run_question_review` | `*.spec.json` |
+| paper_review | `paper_review.py` → `post_check.run_paper_review` | spec + DOCX |
 
-程式改名可 Phase 7 做；skill 先用 **review** 稱呼。
+`run_question_review` / `run_paper_review` 為 `post_check` 別名（Phase 7）。
 
 ---
 
@@ -176,7 +220,8 @@ STOP — no whole-paper re-seed loop
 | question_review | 甲部 stem 目標 ≤60% vs bank + past；乙丙 stem ≤60%、子題 ≤85% |
 | Fail | regen **該 slot only**，唔成卷 retry |
 
-常數仍喺 `f5_ict_from_dse.py` / `quality_lib.py`（過渡）；pick-time gate 將 **移除**。
+Review 閾值常數仍喺 `f5_ict_from_dse.py` / `quality_lib.py`。  
+**Pick-time gate 預設關閉**（`f5_ict_pipeline_flags.PICK_TIME_BANK_SIM_GATE`）；legacy pick 設 `PICK_TIME_BANK_SIM_GATE=1`。
 
 ---
 
@@ -185,28 +230,38 @@ STOP — no whole-paper re-seed loop
 | Phase | 交付 | 狀態 |
 |-------|------|------|
 | **0** | Skill + 本文 + `EXAM_SPEC_AND_DOCX` 更新 | ✅ |
-| **1** | `extract_style_patterns.py` | 🔲 |
-| **2** | `concept_map.json` tree | 🔲 |
-| **3** | `exam_blueprint.json` schema + `concept_review` | 🔲 |
-| **4** | Generate → spec（agent / `generate_item`） | 🔲 |
-| **5** | Partial regen wrapper（max 10/slot） | 🔲 |
-| **6** | 乙丙 DOCX render 改善 | 🟡 |
-| **7** | Deprecate `pick_written` / `build_mcq_payload` pick gate | 🔲 |
+| **1** | `extract_style_patterns.py` | ✅ |
+| **2** | `concept_map.json` tree | ✅ |
+| **3** | `exam_blueprint.json` schema + `concept_review` | ✅ |
+| **4** | `generate_from_blueprint.py` → spec | ✅ |
+| **5** | `partial_regen_spec.py`（max 10/slot） | ✅ |
+| **6** | `render_from_spec.py` + paper_review | ✅ |
+| **7** | Deprecate pick-transform；review CLI aliases | ✅ |
 
 ---
 
-## Legacy：`regenerate_exam02.py`
+## 主入口（Phase 7）
 
-仍執行：pick → spec → `run_question_spec_check` → DOCX → `run_post_render_check`。
+```bash
+.venv/bin/python shared-tools/paper-generator/build_f5_exam02.py
+# = generate_from_blueprint --partial-regen --question-check
+#   + render_from_spec --force
 
-**唔再：**
+.venv/bin/python shared-tools/paper-generator/question_review.py
+.venv/bin/python shared-tools/paper-generator/paper_review.py
+```
 
-- 加大 `MAX_SEED_TRIES` 或 pick-time similarity gate
-- 擴充 transform heuristics 只為過 60%
+`Subjects/…/_generation/regenerate_exam02.py` **預設轉發** `build_f5_exam02.py`；`--legacy-pick` 先會跑舊 bank pick。
 
-**短期 workaround：** 用現有 `25_26_S5_ICT_Exam02.spec.json` 做 review + render；避免全量 re-pick。
+---
 
-舊規劃文檔 `F5_ICT_DSE_BLUEPRINT_FLOW.md` 保留作歷史參考（2019 bank blocker 等已過時）。
+## Legacy：`regenerate_exam02.py --legacy-pick`
+
+Bank pick + transform；`PICK_TIME_BANK_SIM_GATE=1`、seed 進度每 5 次。
+
+**唔再擴充。** 新卷用 blueprint generate；相似度只喺 `question_review` / partial regen 處理。
+
+舊規劃文檔 `F5_ICT_DSE_BLUEPRINT_FLOW.md` 已刪除（2026-05 整理）。
 
 ---
 

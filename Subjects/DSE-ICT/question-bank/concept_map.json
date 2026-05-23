@@ -1,0 +1,3610 @@
+{
+  "version": 2,
+  "generated_at": "2026-05-23T11:03:56.117350+00:00",
+  "source": "Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf",
+  "curriculum": "Subjects/DSE-ICT/question-bank/curriculum_concepts.json",
+  "question_bank": "Subjects/DSE-ICT/question-bank",
+  "years": [
+    "2019",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "stats": {
+    "bank_items_scanned": 476,
+    "bank_rows_total": 616,
+    "distinct_concepts": 79,
+    "compulsory_units": 5,
+    "elective_units": 3
+  },
+  "f5_exam_scope": {
+    "mcq_units": [
+      "A",
+      "B",
+      "D"
+    ],
+    "written_compulsory": "Paper1B",
+    "written_elective": "EA",
+    "exclude_units_heavy": [
+      "C"
+    ],
+    "notes": "S5 Term2: Core A/B/D MCQ; 乙部 1B; 丙部 DB (EA) + 堆疊 (EC)"
+  },
+  "out_of_syllabus_rules": [
+    {
+      "id": "word-processing-apps",
+      "label": "文書處理軟件功能（2021 修訂後 A-d 已刪減）",
+      "keywords": [
+        "文書處理",
+        "Word",
+        "郵件合併",
+        "mail merge",
+        "OLE",
+        "物件連結",
+        "物件連結與嵌入",
+        "嵌入"
+      ],
+      "unless_keywords": [
+        "RAM",
+        "ROM",
+        "硬碟",
+        "電源故障",
+        "復原",
+        "儲存在"
+      ],
+      "concepts": [
+        "文書處理",
+        "郵件合併",
+        "OLE"
+      ]
+    },
+    {
+      "id": "presentation-software",
+      "label": "演示／簡報軟件功能（2021 修訂後 A-d 已刪減）",
+      "keywords": [
+        "演示軟件",
+        "簡報軟件",
+        "投影片",
+        "轉換幻燈",
+        "網上演示工具",
+        "PowerPoint",
+        "旁白",
+        "配色方案",
+        "投影片的佈局",
+        "投影片的次序"
+      ],
+      "concepts": [
+        "演示軟件",
+        "網上演示"
+      ]
+    },
+    {
+      "id": "word-toc-feature",
+      "label": "文書／簡報「目錄」功能（舊 A-d 軟件操作）",
+      "keywords": [
+        "「目錄」功能",
+        "目錄」功能",
+        "目錄內輸入章節"
+      ],
+      "concepts": [
+        "文書處理",
+        "演示軟件"
+      ]
+    },
+    {
+      "id": "ole-objects",
+      "label": "OLE 物件連結與嵌入",
+      "keywords": [
+        "OLE",
+        "物件連結",
+        "連結與嵌入"
+      ],
+      "concepts": [
+        "OLE"
+      ]
+    }
+  ],
+  "legacy_elective_map": {
+    "Paper2A_Database": "EA",
+    "Paper2B_DataCommunicationsNetworking": "EB",
+    "Paper2C_MultimediaWebsiteConstruction": "EB",
+    "Paper2D_SoftwareDevelopment": "EC"
+  },
+  "mcq_compulsory_slot_order": [
+    {
+      "slot": 1,
+      "core": "A",
+      "topic": "A-a",
+      "concepts": [
+        "資訊處理",
+        "數據與資訊",
+        "資訊處理循環"
+      ]
+    },
+    {
+      "slot": 2,
+      "core": "A",
+      "topic": "A-a",
+      "concepts": [
+        "資訊處理",
+        "輸入處理輸出",
+        "批次處理"
+      ]
+    },
+    {
+      "slot": 3,
+      "core": "A",
+      "topic": "A-b",
+      "concepts": [
+        "數據組織",
+        "欄位",
+        "記錄"
+      ]
+    },
+    {
+      "slot": 4,
+      "core": "A",
+      "topic": "A-b",
+      "concepts": [
+        "數據組織",
+        "檔案存取",
+        "直接存取"
+      ]
+    },
+    {
+      "slot": 5,
+      "core": "A",
+      "topic": "A-b",
+      "concepts": [
+        "數據控制",
+        "有效性檢驗",
+        "奇偶檢測"
+      ]
+    },
+    {
+      "slot": 6,
+      "core": "A",
+      "topic": "A-c",
+      "concepts": [
+        "進制",
+        "十六進制",
+        "二進制補碼"
+      ]
+    },
+    {
+      "slot": 7,
+      "core": "A",
+      "topic": "A-c",
+      "concepts": [
+        "字元編碼",
+        "UTF-8"
+      ]
+    },
+    {
+      "slot": 8,
+      "core": "A",
+      "topic": "A-c",
+      "concepts": [
+        "多媒體",
+        "點陣圖",
+        "向量圖"
+      ]
+    },
+    {
+      "slot": 9,
+      "core": "A",
+      "topic": "A-c",
+      "concepts": [
+        "多媒體",
+        "壓縮",
+        "顏色深度"
+      ]
+    },
+    {
+      "slot": 10,
+      "core": "A",
+      "topic": "A-d",
+      "concepts": [
+        "試算表",
+        "VLOOKUP",
+        "COUNTIFS"
+      ]
+    },
+    {
+      "slot": 11,
+      "core": "B",
+      "topic": "B-a",
+      "concepts": [
+        "硬件",
+        "RAM",
+        "快取記憶體"
+      ]
+    },
+    {
+      "slot": 12,
+      "core": "B",
+      "topic": "B-a",
+      "concepts": [
+        "硬件",
+        "SSD"
+      ]
+    },
+    {
+      "slot": 13,
+      "core": "B",
+      "topic": "B-a",
+      "concepts": [
+        "硬件",
+        "輸入裝置"
+      ]
+    },
+    {
+      "slot": 14,
+      "core": "B",
+      "topic": "B-a",
+      "concepts": [
+        "硬件",
+        "RAM",
+        "快取記憶體"
+      ]
+    },
+    {
+      "slot": 15,
+      "core": "B",
+      "topic": "B-a",
+      "concepts": [
+        "硬件",
+        "SSD",
+        "輸出裝置"
+      ]
+    },
+    {
+      "slot": 16,
+      "core": "B",
+      "topic": "B-b",
+      "concepts": [
+        "軟件",
+        "作業系統",
+        "驅動程式"
+      ]
+    },
+    {
+      "slot": 17,
+      "core": "B",
+      "topic": "B-b",
+      "concepts": [
+        "軟件",
+        "實用程式"
+      ]
+    },
+    {
+      "slot": 18,
+      "core": "B",
+      "topic": "B-b",
+      "concepts": [
+        "軟件",
+        "專用軟件"
+      ]
+    },
+    {
+      "slot": 19,
+      "core": "B",
+      "topic": "B-b",
+      "concepts": [
+        "軟件",
+        "作業系統",
+        "實用程式"
+      ]
+    },
+    {
+      "slot": 20,
+      "core": "B",
+      "topic": "B-a",
+      "concepts": [
+        "硬件",
+        "輸入裝置",
+        "RAM"
+      ]
+    },
+    {
+      "slot": 21,
+      "core": "D",
+      "topic": "D-a",
+      "concepts": [
+        "問題分析",
+        "算法",
+        "子問題"
+      ]
+    },
+    {
+      "slot": 22,
+      "core": "D",
+      "topic": "D-b",
+      "concepts": [
+        "算法",
+        "偽代碼",
+        "流程圖"
+      ]
+    },
+    {
+      "slot": 23,
+      "core": "D",
+      "topic": "D-b",
+      "concepts": [
+        "迴圈",
+        "算法",
+        "迭代"
+      ]
+    },
+    {
+      "slot": 24,
+      "core": "D",
+      "topic": "D-b",
+      "concepts": [
+        "排序",
+        "算法",
+        "陣列"
+      ]
+    },
+    {
+      "slot": 25,
+      "core": "D",
+      "topic": "D-b",
+      "concepts": [
+        "搜尋",
+        "算法",
+        "線性搜尋"
+      ]
+    },
+    {
+      "slot": 26,
+      "core": "D",
+      "topic": "D-c",
+      "concepts": [
+        "算法",
+        "陣列",
+        "變量"
+      ]
+    },
+    {
+      "slot": 27,
+      "core": "D",
+      "topic": "D-c",
+      "concepts": [
+        "進制",
+        "二進制",
+        "布爾邏輯"
+      ]
+    },
+    {
+      "slot": 28,
+      "core": "D",
+      "topic": "D-d",
+      "concepts": [
+        "程式測試",
+        "除錯",
+        "邊界值"
+      ]
+    },
+    {
+      "slot": 29,
+      "core": "D",
+      "topic": "D-d",
+      "concepts": [
+        "程式測試",
+        "語法錯誤",
+        "邏輯錯誤"
+      ]
+    },
+    {
+      "slot": 30,
+      "core": "D",
+      "topic": "D-b",
+      "concepts": [
+        "算法",
+        "偽代碼",
+        "模組"
+      ]
+    }
+  ],
+  "tree": {
+    "compulsory": {
+      "A": {
+        "label": "資訊處理",
+        "topics": {
+          "A-a": {
+            "label": "資訊處理簡介",
+            "concepts": [
+              "COUNTIFS",
+              "UTF-8",
+              "VLOOKUP",
+              "十六進制",
+              "向量圖",
+              "壓縮",
+              "批次處理",
+              "數據與資訊",
+              "欄位",
+              "直接存取",
+              "記錄",
+              "資訊處理",
+              "資訊處理循環",
+              "輸入處理輸出",
+              "音訊",
+              "順序存取",
+              "顏色深度",
+              "點陣圖"
+            ],
+            "keywords": [
+              "資訊處理",
+              "資訊系統",
+              "資訊處理循環",
+              "輸入處理輸出",
+              "批次處理",
+              "數據與資訊"
+            ],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 5,
+              "years": {
+                "2022": 2,
+                "2025": 2,
+                "2021": 1
+              },
+              "marks_distribution": {
+                "1": 3
+              },
+              "question_types": {
+                "mcq": 3,
+                "short": 2
+              }
+            }
+          },
+          "A-b": {
+            "label": "數據組織及數據控制",
+            "concepts": [
+              "奇偶檢測",
+              "數據控制",
+              "數據組織",
+              "有效性檢驗",
+              "檔案存取"
+            ],
+            "keywords": [
+              "數據控制",
+              "有效性檢驗",
+              "數據驗證",
+              "驗證",
+              "奇偶",
+              "parity",
+              "奇偶檢驗",
+              "奇偶校驗",
+              "直接存取",
+              "順序存取",
+              "檔案",
+              "記錄",
+              "欄",
+              "數據庫表"
+            ],
+            "common_mistakes": [
+              "循環測試 / 預先錯誤",
+              "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。",
+              "找出非首個眾數。",
+              "混淆欄位與記錄",
+              "混淆檔案與數據庫表"
+            ],
+            "bank_stats": {
+              "item_count": 293,
+              "years": {
+                "2024": 78,
+                "2021": 61,
+                "2022": 59,
+                "2025": 49,
+                "2023": 46
+              },
+              "marks_distribution": {
+                "1": 124,
+                "2": 55,
+                "3": 4,
+                "4": 4
+              },
+              "question_types": {
+                "short": 119,
+                "mcq": 103,
+                "sql": 38,
+                "fill": 23,
+                "algorithm": 4,
+                "structured": 4,
+                "erd": 2
+              }
+            }
+          },
+          "A-c": {
+            "label": "數據表示",
+            "concepts": [
+              "二進制補碼",
+              "多媒體",
+              "字元編碼",
+              "進制"
+            ],
+            "keywords": [
+              "二進制",
+              "十六進制",
+              "補碼",
+              "進制",
+              "上溢",
+              "位元",
+              "ASCII",
+              "UTF-8",
+              "字符集",
+              "GB 碼",
+              "Unicode",
+              "Big-5",
+              "bmp",
+              "png",
+              "jpg",
+              "wav",
+              "mp3",
+              "avi",
+              "點陣",
+              "向量",
+              "顏色深度",
+              "像素",
+              "解析度",
+              "壓縮",
+              "多媒體",
+              "視像",
+              "音訊"
+            ],
+            "common_mistakes": [
+              "混淆二進制與十六進制的位元數",
+              "混淆有損與無損壓縮"
+            ],
+            "bank_stats": {
+              "item_count": 104,
+              "years": {
+                "2021": 32,
+                "2022": 21,
+                "2023": 20,
+                "2024": 20,
+                "2025": 11
+              },
+              "marks_distribution": {
+                "1": 59,
+                "2": 7
+              },
+              "question_types": {
+                "mcq": 56,
+                "short": 44,
+                "algorithm": 3,
+                "sql": 1
+              }
+            }
+          },
+          "A-d": {
+            "label": "數據操縱和分析",
+            "concepts": [
+              "SQL",
+              "數據庫",
+              "試算表"
+            ],
+            "keywords": [
+              "試算表",
+              "公式",
+              "VLOOKUP",
+              "COUNT",
+              "SUMIF",
+              "RANK",
+              "IF(",
+              "樞紐",
+              "假設",
+              "排序",
+              "篩選",
+              "SQL",
+              "SELECT",
+              "INSERT",
+              "UPDATE",
+              "DELETE",
+              "GROUP BY",
+              "JOIN",
+              "VIEW",
+              "INDEX"
+            ],
+            "common_mistakes": [
+              "試算表函數參照類型錯誤（相對／絕對）",
+              "SQL 語句缺少 WHERE"
+            ],
+            "bank_stats": {
+              "item_count": 222,
+              "years": {
+                "2024": 70,
+                "2021": 42,
+                "2022": 41,
+                "2023": 40,
+                "2025": 29
+              },
+              "marks_distribution": {
+                "2": 50,
+                "1": 44,
+                "3": 12,
+                "4": 5,
+                "5": 2,
+                "6": 1
+              },
+              "question_types": {
+                "sql": 84,
+                "short": 65,
+                "mcq": 29,
+                "algorithm": 25,
+                "fill": 9,
+                "erd": 5,
+                "structured": 4,
+                "long": 1
+              }
+            }
+          }
+        }
+      },
+      "B": {
+        "label": "電腦系統基礎",
+        "topics": {
+          "B-a": {
+            "label": "基本機器組織",
+            "concepts": [
+              "RAM",
+              "SSD",
+              "實用程式",
+              "專用軟件",
+              "快取記憶體",
+              "硬件",
+              "輸入裝置",
+              "輸出裝置",
+              "驅動程式"
+            ],
+            "keywords": [
+              "RAM",
+              "ROM",
+              "快取",
+              "SSD",
+              "HDD",
+              "CPU",
+              "GPU",
+              "匯流排",
+              "寄存器",
+              "主記憶",
+              "儲存設備"
+            ],
+            "common_mistakes": [
+              "混淆 RAM 與 ROM",
+              "混淆快取與主記憶體",
+              "RAM 是易失性的而 SSD 是非易失性的。"
+            ],
+            "bank_stats": {
+              "item_count": 67,
+              "years": {
+                "2024": 27,
+                "2023": 12,
+                "2021": 10,
+                "2022": 10,
+                "2025": 8
+              },
+              "marks_distribution": {
+                "1": 26,
+                "2": 18,
+                "3": 1,
+                "6": 1
+              },
+              "question_types": {
+                "sql": 22,
+                "mcq": 21,
+                "short": 17,
+                "fill": 5,
+                "long": 1,
+                "algorithm": 1
+              }
+            }
+          },
+          "B-b": {
+            "label": "系統軟件",
+            "concepts": [
+              "作業系統",
+              "軟件"
+            ],
+            "keywords": [
+              "操作系統",
+              "驅動",
+              "實用程式",
+              "批次",
+              "實時",
+              "并行",
+              "分布式",
+              "虛擬"
+            ],
+            "common_mistakes": [
+              "RAM 是易失性的而 SSD 是非易失性的。",
+              "混淆系統軟件與應用軟件",
+              "混淆編譯程式與解釋程式"
+            ],
+            "bank_stats": {
+              "item_count": 52,
+              "years": {
+                "2023": 14,
+                "2022": 12,
+                "2025": 10,
+                "2021": 8,
+                "2024": 8
+              },
+              "marks_distribution": {
+                "1": 42,
+                "2": 2
+              },
+              "question_types": {
+                "mcq": 38,
+                "short": 14
+              }
+            }
+          }
+        }
+      },
+      "C": {
+        "label": "互聯網及其應用",
+        "topics": {
+          "C-a": {
+            "label": "建網及互聯網基本知識",
+            "concepts": [
+              "網絡"
+            ],
+            "keywords": [
+              "LAN",
+              "WAN",
+              "MAC",
+              "IP",
+              "IPv4",
+              "IPv6",
+              "TCP",
+              "DNS",
+              "HTTP",
+              "HTTPS",
+              "URL",
+              "路由器",
+              "交換器",
+              "Wi-Fi",
+              "藍牙",
+              "頻寬",
+              "Mbps"
+            ],
+            "common_mistakes": [
+              "RAM 是易失性的而 SSD 是非易失性的。",
+              "找出非首個眾數。",
+              "編譯器可檢測更多錯誤。",
+              "循環測試 / 預先錯誤",
+              "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。"
+            ],
+            "bank_stats": {
+              "item_count": 66,
+              "years": {
+                "2024": 40,
+                "2021": 8,
+                "2023": 7,
+                "2022": 6,
+                "2025": 5
+              },
+              "marks_distribution": {
+                "1": 30,
+                "2": 27,
+                "4": 1
+              },
+              "question_types": {
+                "short": 30,
+                "mcq": 21,
+                "fill": 8,
+                "algorithm": 4,
+                "sql": 2,
+                "erd": 1
+              }
+            }
+          },
+          "C-b": {
+            "label": "互聯網服務及應用",
+            "concepts": [],
+            "keywords": [],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 0,
+              "years": {},
+              "marks_distribution": {},
+              "question_types": {}
+            }
+          },
+          "C-c": {
+            "label": "初級網頁創作",
+            "concepts": [
+              "網頁創作"
+            ],
+            "keywords": [
+              "HTML",
+              "CSS",
+              "網頁",
+              "超連結",
+              "網站"
+            ],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 30,
+              "years": {
+                "2025": 11,
+                "2021": 6,
+                "2024": 6,
+                "2022": 4,
+                "2023": 3
+              },
+              "marks_distribution": {
+                "1": 21,
+                "3": 2,
+                "2": 1
+              },
+              "question_types": {
+                "mcq": 16,
+                "short": 13,
+                "fill": 1
+              }
+            }
+          },
+          "C-d": {
+            "label": "網上威脅及保安",
+            "concepts": [
+              "網絡保安",
+              "資訊保安"
+            ],
+            "keywords": [
+              "防火牆",
+              "病毒",
+              "勒索",
+              "木馬",
+              "間諜",
+              "私隱",
+              "加密",
+              "VPN",
+              "WPA",
+              "認證",
+              "授權"
+            ],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 62,
+              "years": {
+                "2022": 16,
+                "2023": 14,
+                "2021": 12,
+                "2024": 12,
+                "2025": 8
+              },
+              "marks_distribution": {
+                "1": 42,
+                "2": 4
+              },
+              "question_types": {
+                "mcq": 42,
+                "short": 18,
+                "algorithm": 2
+              }
+            }
+          }
+        }
+      },
+      "D": {
+        "label": "計算思維與程式編寫",
+        "topics": {
+          "D-a": {
+            "label": "問題建構和分析",
+            "concepts": [
+              "二進制",
+              "問題分析",
+              "子問題",
+              "布爾邏輯",
+              "排序",
+              "搜尋",
+              "模組",
+              "流程圖",
+              "線性搜尋",
+              "語法錯誤",
+              "變量",
+              "迭代",
+              "迴圈",
+              "邊界值",
+              "邏輯錯誤",
+              "陣列",
+              "除錯"
+            ],
+            "keywords": [],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 0,
+              "years": {},
+              "marks_distribution": {},
+              "question_types": {}
+            }
+          },
+          "D-b": {
+            "label": "算法設計",
+            "concepts": [
+              "偽代碼",
+              "算法"
+            ],
+            "keywords": [
+              "偽代碼",
+              "算法",
+              "流程圖",
+              "陣列",
+              "排序",
+              "搜尋",
+              "對分",
+              "線性",
+              "冒泡",
+              "迭代",
+              "子程式",
+              "模組",
+              "問題分解"
+            ],
+            "common_mistakes": [
+              "找出非首個眾數。",
+              "循環測試 / 預先錯誤",
+              "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。",
+              "堆疊 top／bottom 方向混淆",
+              "混淆排序與搜尋算法"
+            ],
+            "bank_stats": {
+              "item_count": 300,
+              "years": {
+                "2022": 92,
+                "2021": 74,
+                "2024": 70,
+                "2025": 34,
+                "2023": 30
+              },
+              "marks_distribution": {
+                "1": 94,
+                "2": 28,
+                "3": 16,
+                "4": 8,
+                "5": 2
+              },
+              "question_types": {
+                "algorithm": 150,
+                "mcq": 82,
+                "short": 58,
+                "fill": 4,
+                "structured": 4,
+                "sql": 2
+              }
+            }
+          },
+          "D-c": {
+            "label": "程式開發",
+            "concepts": [],
+            "keywords": [],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 0,
+              "years": {},
+              "marks_distribution": {},
+              "question_types": {}
+            }
+          },
+          "D-d": {
+            "label": "程式測試和除錯",
+            "concepts": [
+              "程式測試"
+            ],
+            "keywords": [
+              "測試",
+              "除錯",
+              "邊界",
+              "語法錯誤",
+              "邏輯錯誤"
+            ],
+            "common_mistakes": [
+              "混淆語法錯誤與邏輯錯誤",
+              "測試個案未包含邊界值",
+              "編譯器可檢測更多錯誤。",
+              "循環測試 / 預先錯誤",
+              "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。"
+            ],
+            "bank_stats": {
+              "item_count": 16,
+              "years": {
+                "2022": 5,
+                "2024": 4,
+                "2021": 3,
+                "2023": 3,
+                "2025": 1
+              },
+              "marks_distribution": {
+                "1": 5,
+                "2": 3
+              },
+              "question_types": {
+                "short": 7,
+                "mcq": 5,
+                "fill": 3,
+                "algorithm": 1
+              }
+            }
+          }
+        }
+      },
+      "E": {
+        "label": "資訊及通訊科技對社會的影響",
+        "topics": {
+          "E-a": {
+            "label": "科技創新",
+            "concepts": [
+              "科技創新"
+            ],
+            "keywords": [
+              "人工智能",
+              "AI",
+              "物聯網",
+              "IoT",
+              "3D 打印",
+              "AR",
+              "VR"
+            ],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 53,
+              "years": {
+                "2024": 28,
+                "2021": 12,
+                "2022": 5,
+                "2023": 4,
+                "2025": 4
+              },
+              "marks_distribution": {
+                "2": 18,
+                "1": 10,
+                "4": 3,
+                "3": 2,
+                "6": 1
+              },
+              "question_types": {
+                "short": 22,
+                "sql": 11,
+                "algorithm": 8,
+                "mcq": 5,
+                "erd": 2,
+                "fill": 2,
+                "structured": 2,
+                "long": 1
+              }
+            }
+          },
+          "E-b": {
+            "label": "健康及道德議題",
+            "concepts": [
+              "社會影響",
+              "道德議題"
+            ],
+            "keywords": [
+              "資訊素養",
+              "知識產權",
+              "版權",
+              "道德",
+              "人機工程",
+              "RSI",
+              "公平存取"
+            ],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 18,
+              "years": {
+                "2021": 4,
+                "2022": 4,
+                "2023": 4,
+                "2024": 4,
+                "2025": 2
+              },
+              "marks_distribution": {
+                "1": 16,
+                "2": 2
+              },
+              "question_types": {
+                "mcq": 16,
+                "short": 2
+              }
+            }
+          },
+          "E-c": {
+            "label": "知識產權",
+            "concepts": [],
+            "keywords": [],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 0,
+              "years": {},
+              "marks_distribution": {},
+              "question_types": {}
+            }
+          }
+        }
+      }
+    },
+    "elective": {
+      "EA": {
+        "label": "數據庫",
+        "topics": {
+          "EA-a": {
+            "label": "關聯式數據庫概念",
+            "concepts": [],
+            "keywords": [],
+            "common_mistakes": [
+              "混淆實體完整性與參照完整性",
+              "ERD  cardinality 標示錯誤"
+            ],
+            "bank_stats": {
+              "item_count": 0,
+              "years": {},
+              "marks_distribution": {},
+              "question_types": {}
+            }
+          },
+          "EA-b": {
+            "label": "結構化查詢語言",
+            "concepts": [
+              "Transaction",
+              "數據庫"
+            ],
+            "keywords": [
+              "Transaction",
+              "COMMIT",
+              "ROLLBACK"
+            ],
+            "common_mistakes": [
+              "JOIN 條件遺漏",
+              "混淆 DELETE 與 DROP"
+            ],
+            "bank_stats": {
+              "item_count": 85,
+              "years": {
+                "2024": 27,
+                "2022": 17,
+                "2023": 17,
+                "2021": 14,
+                "2025": 10
+              },
+              "marks_distribution": {
+                "2": 20,
+                "1": 14,
+                "3": 3,
+                "4": 3,
+                "6": 1
+              },
+              "question_types": {
+                "sql": 39,
+                "short": 29,
+                "mcq": 7,
+                "erd": 5,
+                "fill": 2,
+                "long": 1,
+                "algorithm": 1,
+                "structured": 1
+              }
+            }
+          },
+          "EA-c": {
+            "label": "數據庫設計方法",
+            "concepts": [
+              "ERD",
+              "數據庫",
+              "正規化"
+            ],
+            "keywords": [
+              "主關鍵",
+              "外鍵",
+              "ERD",
+              "實體關係",
+              "正規化",
+              "3NF",
+              "參照完整性",
+              "實體完整性",
+              "冗餘"
+            ],
+            "common_mistakes": [
+              "正規化步驟跳過導致冗餘",
+              "主鍵／外鍵指派錯誤"
+            ],
+            "bank_stats": {
+              "item_count": 143,
+              "years": {
+                "2024": 51,
+                "2022": 31,
+                "2023": 25,
+                "2021": 22,
+                "2025": 14
+              },
+              "marks_distribution": {
+                "2": 32,
+                "1": 24,
+                "4": 9,
+                "6": 3,
+                "3": 3
+              },
+              "question_types": {
+                "short": 67,
+                "sql": 39,
+                "erd": 15,
+                "mcq": 9,
+                "fill": 6,
+                "long": 3,
+                "structured": 3,
+                "algorithm": 1
+              }
+            }
+          }
+        },
+        "legacy_paper": "Paper2A_Database"
+      },
+      "EB": {
+        "label": "網絡應用程式開發",
+        "topics": {
+          "EB-a": {
+            "label": "網絡服務與實施",
+            "concepts": [
+              "客戶機伺服器",
+              "網絡應用"
+            ],
+            "keywords": [
+              "DHCP",
+              "伺服器",
+              "客戶機",
+              "GET",
+              "POST",
+              "腳本"
+            ],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 26,
+              "years": {
+                "2021": 8,
+                "2022": 8,
+                "2023": 4,
+                "2025": 4,
+                "2024": 2
+              },
+              "marks_distribution": {
+                "1": 12
+              },
+              "question_types": {
+                "mcq": 12,
+                "short": 10,
+                "algorithm": 2,
+                "fill": 2
+              }
+            }
+          },
+          "EB-b": {
+            "label": "網絡編程與應用",
+            "concepts": [],
+            "keywords": [],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 0,
+              "years": {},
+              "marks_distribution": {},
+              "question_types": {}
+            }
+          }
+        },
+        "legacy_paper": "Paper2B_DataCommunicationsNetworking"
+      },
+      "EC": {
+        "label": "算法與程式編寫",
+        "topics": {
+          "EC-a": {
+            "label": "程式編寫",
+            "concepts": [
+              "佇列",
+              "動態規劃",
+              "堆疊",
+              "遞歸",
+              "鏈列",
+              "鏈表"
+            ],
+            "keywords": [
+              "堆疊",
+              "stack",
+              "push",
+              "pop",
+              "佇列",
+              "queue",
+              "鏈表",
+              "鏈列",
+              "linked list"
+            ],
+            "common_mistakes": [
+              "堆疊 push／pop 次序錯誤",
+              "混淆堆疊與佇列"
+            ],
+            "bank_stats": {
+              "item_count": 33,
+              "years": {
+                "2022": 15,
+                "2024": 15,
+                "2021": 3
+              },
+              "marks_distribution": {
+                "3": 6,
+                "2": 6,
+                "4": 3
+              },
+              "question_types": {
+                "algorithm": 30,
+                "short": 3
+              }
+            }
+          },
+          "EC-b": {
+            "label": "程式編寫在現實生活的應用",
+            "concepts": [],
+            "keywords": [],
+            "common_mistakes": [],
+            "bank_stats": {
+              "item_count": 0,
+              "years": {},
+              "marks_distribution": {},
+              "question_types": {}
+            }
+          }
+        },
+        "legacy_paper": "Paper2D_SoftwareDevelopment"
+      }
+    }
+  },
+  "concept_index": {
+    "COUNTIFS": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "ERD": {
+      "unit": "EA",
+      "topics": [
+        "EA-c"
+      ],
+      "bank_stats": {
+        "item_count": 29,
+        "years": {
+          "2024": 12,
+          "2022": 7,
+          "2021": 4,
+          "2023": 4,
+          "2025": 2
+        },
+        "paper_slugs": {
+          "Paper2A_Database": 21,
+          "Paper1B_CompulsoryStructured": 5,
+          "Paper2_Elective": 2,
+          "Paper1_MultipleChoice": 1
+        },
+        "marks_distribution": {
+          "2": 6,
+          "1": 5,
+          "4": 3,
+          "6": 1
+        },
+        "question_types": {
+          "short": 19,
+          "erd": 5,
+          "fill": 2,
+          "mcq": 1,
+          "long": 1,
+          "structured": 1
+        }
+      },
+      "common_mistakes": [
+        "正規化步驟跳過導致冗餘",
+        "主鍵／外鍵指派錯誤"
+      ],
+      "top_terminology": [
+        "主關鍵",
+        "數據庫",
+        "記錄",
+        "數據庫表",
+        "實體關係",
+        "參照完整性",
+        "實體完整性",
+        "外鍵"
+      ],
+      "question_types": {
+        "short": 19,
+        "erd": 5,
+        "fill": 2,
+        "mcq": 1,
+        "long": 1,
+        "structured": 1
+      }
+    },
+    "RAM": {
+      "unit": "B",
+      "topics": [
+        "B-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "混淆 RAM 與 ROM",
+        "混淆快取與主記憶體"
+      ]
+    },
+    "SQL": {
+      "unit": "A",
+      "topics": [
+        "A-d"
+      ],
+      "bank_stats": {
+        "item_count": 59,
+        "years": {
+          "2024": 18,
+          "2023": 13,
+          "2021": 10,
+          "2022": 10,
+          "2025": 8
+        },
+        "paper_slugs": {
+          "Paper2A_Database": 40,
+          "Paper2_Elective": 7,
+          "Paper1_MultipleChoice": 5,
+          "Paper1B_CompulsoryStructured": 4,
+          "Paper2D_SoftwareDevelopment": 2,
+          "Paper1A_MultipleChoice": 1
+        },
+        "marks_distribution": {
+          "2": 17,
+          "1": 9,
+          "3": 3
+        },
+        "question_types": {
+          "sql": 39,
+          "short": 13,
+          "mcq": 6,
+          "algorithm": 1
+        }
+      },
+      "common_mistakes": [
+        "試算表函數參照類型錯誤（相對／絕對）",
+        "SQL 語句缺少 WHERE"
+      ],
+      "top_terminology": [
+        "SQL",
+        "ROM",
+        "SELECT",
+        "記錄",
+        "數據庫",
+        "GROUP BY",
+        "AR",
+        "數據庫表"
+      ],
+      "question_types": {
+        "sql": 39,
+        "short": 13,
+        "mcq": 6,
+        "algorithm": 1
+      }
+    },
+    "SSD": {
+      "unit": "B",
+      "topics": [
+        "B-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "混淆 RAM 與 ROM",
+        "混淆快取與主記憶體"
+      ]
+    },
+    "Transaction": {
+      "unit": "",
+      "topics": [
+        "EA-b"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "JOIN 條件遺漏",
+        "混淆 DELETE 與 DROP"
+      ]
+    },
+    "UTF-8": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "VLOOKUP": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "二進制": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "二進制補碼": {
+      "unit": "A",
+      "topics": [
+        "A-c"
+      ],
+      "bank_stats": {
+        "item_count": 31,
+        "years": {
+          "2021": 10,
+          "2024": 7,
+          "2023": 6,
+          "2022": 5,
+          "2025": 3
+        },
+        "paper_slugs": {
+          "Paper1B_CompulsoryStructured": 16,
+          "Paper1_MultipleChoice": 12,
+          "Paper1A_MultipleChoice": 3
+        },
+        "marks_distribution": {
+          "1": 16,
+          "2": 3
+        },
+        "question_types": {
+          "short": 15,
+          "mcq": 15,
+          "algorithm": 1
+        }
+      },
+      "common_mistakes": [
+        "混淆二進制與十六進制的位元數",
+        "混淆有損與無損壓縮"
+      ],
+      "top_terminology": [
+        "位元",
+        "進制",
+        "二進制",
+        "像素",
+        "二進制補碼",
+        "補碼",
+        "加密",
+        "上溢"
+      ],
+      "question_types": {
+        "short": 15,
+        "mcq": 15,
+        "algorithm": 1
+      }
+    },
+    "佇列": {
+      "unit": "EC",
+      "topics": [
+        "EC-a"
+      ],
+      "bank_stats": {
+        "item_count": 11,
+        "years": {
+          "2022": 5,
+          "2024": 5,
+          "2021": 1
+        },
+        "paper_slugs": {
+          "Paper2D_SoftwareDevelopment": 11
+        },
+        "marks_distribution": {
+          "3": 2,
+          "2": 2,
+          "4": 1
+        },
+        "question_types": {
+          "algorithm": 10,
+          "short": 1
+        }
+      },
+      "common_mistakes": [
+        "堆疊 push／pop 次序錯誤",
+        "混淆堆疊與佇列"
+      ],
+      "top_terminology": [
+        "偽代碼",
+        "子程式",
+        "pop",
+        "堆疊",
+        "push",
+        "陣列",
+        "GET",
+        "佇列"
+      ],
+      "question_types": {
+        "algorithm": 10,
+        "short": 1
+      }
+    },
+    "作業系統": {
+      "unit": "B",
+      "topics": [
+        "B-b"
+      ],
+      "bank_stats": {
+        "item_count": 26,
+        "years": {
+          "2023": 7,
+          "2022": 6,
+          "2025": 5,
+          "2021": 4,
+          "2024": 4
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 16,
+          "Paper1B_CompulsoryStructured": 7,
+          "Paper1A_MultipleChoice": 3
+        },
+        "marks_distribution": {
+          "1": 21,
+          "2": 1
+        },
+        "question_types": {
+          "mcq": 19,
+          "short": 7
+        }
+      },
+      "common_mistakes": [
+        "RAM 是易失性的而 SSD 是非易失性的。",
+        "混淆系統軟件與應用軟件",
+        "混淆編譯程式與解釋程式"
+      ],
+      "top_terminology": [
+        "操作系統",
+        "檔案",
+        "伺服器",
+        "網絡",
+        "軟件",
+        "驅動",
+        "實時",
+        "IP"
+      ],
+      "question_types": {
+        "mcq": 19,
+        "short": 7
+      }
+    },
+    "偽代碼": {
+      "unit": "D",
+      "topics": [
+        "D-b"
+      ],
+      "bank_stats": {
+        "item_count": 150,
+        "years": {
+          "2022": 46,
+          "2021": 37,
+          "2024": 35,
+          "2025": 17,
+          "2023": 15
+        },
+        "paper_slugs": {
+          "Paper2D_SoftwareDevelopment": 73,
+          "Paper1_MultipleChoice": 29,
+          "Paper1B_CompulsoryStructured": 25,
+          "Paper1A_MultipleChoice": 12,
+          "Paper2A_Database": 7,
+          "Paper2_Elective": 4
+        },
+        "marks_distribution": {
+          "1": 47,
+          "2": 14,
+          "3": 8,
+          "4": 4,
+          "5": 1
+        },
+        "question_types": {
+          "algorithm": 75,
+          "mcq": 41,
+          "short": 29,
+          "fill": 2,
+          "structured": 2,
+          "sql": 1
+        }
+      },
+      "common_mistakes": [
+        "找出非首個眾數。",
+        "循環測試 / 預先錯誤",
+        "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。",
+        "堆疊 top／bottom 方向混淆",
+        "混淆排序與搜尋算法"
+      ],
+      "top_terminology": [
+        "偽代碼",
+        "算法",
+        "子程式",
+        "陣列",
+        "假設",
+        "搜尋",
+        "排序",
+        "測試"
+      ],
+      "question_types": {
+        "algorithm": 75,
+        "mcq": 41,
+        "short": 29,
+        "fill": 2,
+        "structured": 2,
+        "sql": 1
+      }
+    },
+    "動態規劃": {
+      "unit": "EC",
+      "topics": [
+        "EC-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "堆疊 push／pop 次序錯誤",
+        "混淆堆疊與佇列"
+      ]
+    },
+    "十六進制": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "向量圖": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "問題分析": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "堆疊": {
+      "unit": "EC",
+      "topics": [
+        "EC-a"
+      ],
+      "bank_stats": {
+        "item_count": 11,
+        "years": {
+          "2022": 5,
+          "2024": 5,
+          "2021": 1
+        },
+        "paper_slugs": {
+          "Paper2D_SoftwareDevelopment": 11
+        },
+        "marks_distribution": {
+          "3": 2,
+          "2": 2,
+          "4": 1
+        },
+        "question_types": {
+          "algorithm": 10,
+          "short": 1
+        }
+      },
+      "common_mistakes": [
+        "堆疊 push／pop 次序錯誤",
+        "混淆堆疊與佇列"
+      ],
+      "top_terminology": [
+        "偽代碼",
+        "子程式",
+        "pop",
+        "堆疊",
+        "push",
+        "陣列",
+        "GET",
+        "佇列"
+      ],
+      "question_types": {
+        "algorithm": 10,
+        "short": 1
+      }
+    },
+    "壓縮": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "多媒體": {
+      "unit": "A",
+      "topics": [
+        "A-c"
+      ],
+      "bank_stats": {
+        "item_count": 37,
+        "years": {
+          "2021": 11,
+          "2022": 10,
+          "2023": 7,
+          "2024": 5,
+          "2025": 4
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 18,
+          "Paper1B_CompulsoryStructured": 12,
+          "Paper1A_MultipleChoice": 4,
+          "Paper2A_Database": 2,
+          "Paper2D_SoftwareDevelopment": 1
+        },
+        "marks_distribution": {
+          "1": 22,
+          "2": 1
+        },
+        "question_types": {
+          "mcq": 22,
+          "short": 13,
+          "algorithm": 1,
+          "sql": 1
+        }
+      },
+      "common_mistakes": [
+        "混淆二進制與十六進制的位元數",
+        "混淆有損與無損壓縮"
+      ],
+      "top_terminology": [
+        "檔案",
+        "視像",
+        "像素",
+        "位元",
+        "軟件",
+        "壓縮",
+        "多媒體",
+        "網絡"
+      ],
+      "question_types": {
+        "mcq": 22,
+        "short": 13,
+        "algorithm": 1,
+        "sql": 1
+      }
+    },
+    "奇偶檢測": {
+      "unit": "A",
+      "topics": [
+        "A-b"
+      ],
+      "bank_stats": {
+        "item_count": 17,
+        "years": {
+          "2022": 4,
+          "2024": 4,
+          "2021": 3,
+          "2023": 3,
+          "2025": 3
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 7,
+          "Paper1B_CompulsoryStructured": 6,
+          "Paper1A_MultipleChoice": 2,
+          "Paper2A_Database": 1,
+          "Paper2D_SoftwareDevelopment": 1
+        },
+        "marks_distribution": {
+          "1": 10,
+          "2": 3
+        },
+        "question_types": {
+          "mcq": 9,
+          "short": 7,
+          "fill": 1
+        }
+      },
+      "common_mistakes": [
+        "循環測試 / 預先錯誤",
+        "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。",
+        "混淆欄位與記錄",
+        "混淆檔案與數據庫表"
+      ],
+      "top_terminology": [
+        "驗證",
+        "測試",
+        "算法",
+        "奇偶檢驗",
+        "奇偶",
+        "防火牆",
+        "DNS",
+        "數據庫"
+      ],
+      "question_types": {
+        "mcq": 9,
+        "short": 7,
+        "fill": 1
+      }
+    },
+    "子問題": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "字元編碼": {
+      "unit": "A",
+      "topics": [
+        "A-c"
+      ],
+      "bank_stats": {
+        "item_count": 5,
+        "years": {
+          "2021": 1,
+          "2022": 1,
+          "2023": 1,
+          "2024": 1,
+          "2025": 1
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 4,
+          "Paper2_Elective": 1
+        },
+        "marks_distribution": {
+          "1": 5
+        },
+        "question_types": {
+          "mcq": 4,
+          "short": 1
+        }
+      },
+      "common_mistakes": [
+        "混淆二進制與十六進制的位元數",
+        "混淆有損與無損壓縮"
+      ],
+      "top_terminology": [
+        "ASCII",
+        "進制",
+        "字符集",
+        "二進制",
+        "加密",
+        "十六進制",
+        "UTF-8",
+        "GB 碼"
+      ],
+      "question_types": {
+        "mcq": 4,
+        "short": 1
+      }
+    },
+    "客戶機伺服器": {
+      "unit": "",
+      "topics": [
+        "EB-a"
+      ],
+      "bank_stats": {
+        "item_count": 13,
+        "years": {
+          "2021": 4,
+          "2022": 4,
+          "2023": 2,
+          "2025": 2,
+          "2024": 1
+        },
+        "paper_slugs": {
+          "Paper1B_CompulsoryStructured": 4,
+          "Paper1_MultipleChoice": 4,
+          "Paper2D_SoftwareDevelopment": 2,
+          "Paper1A_MultipleChoice": 2,
+          "Paper2A_Database": 1
+        },
+        "marks_distribution": {
+          "1": 6
+        },
+        "question_types": {
+          "mcq": 6,
+          "short": 5,
+          "algorithm": 1,
+          "fill": 1
+        }
+      },
+      "common_mistakes": [],
+      "top_terminology": [
+        "伺服器",
+        "網頁",
+        "操作系統",
+        "網絡",
+        "檔案",
+        "GET",
+        "URL",
+        "網站"
+      ],
+      "question_types": {
+        "mcq": 6,
+        "short": 5,
+        "algorithm": 1,
+        "fill": 1
+      }
+    },
+    "實用程式": {
+      "unit": "B",
+      "topics": [
+        "B-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "混淆 RAM 與 ROM",
+        "混淆快取與主記憶體"
+      ]
+    },
+    "專用軟件": {
+      "unit": "B",
+      "topics": [
+        "B-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "混淆 RAM 與 ROM",
+        "混淆快取與主記憶體"
+      ]
+    },
+    "布爾邏輯": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "快取記憶體": {
+      "unit": "B",
+      "topics": [
+        "B-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "混淆 RAM 與 ROM",
+        "混淆快取與主記憶體"
+      ]
+    },
+    "批次處理": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "排序": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "搜尋": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "數據庫": {
+      "unit": "EA",
+      "topics": [
+        "A-d",
+        "EA-b",
+        "EA-c"
+      ],
+      "bank_stats": {
+        "item_count": 85,
+        "years": {
+          "2024": 27,
+          "2022": 17,
+          "2023": 17,
+          "2021": 14,
+          "2025": 10
+        },
+        "paper_slugs": {
+          "Paper2A_Database": 58,
+          "Paper1B_CompulsoryStructured": 9,
+          "Paper2_Elective": 9,
+          "Paper1_MultipleChoice": 6,
+          "Paper2D_SoftwareDevelopment": 2,
+          "Paper1A_MultipleChoice": 1
+        },
+        "marks_distribution": {
+          "2": 20,
+          "1": 14,
+          "3": 3,
+          "4": 3,
+          "6": 1
+        },
+        "question_types": {
+          "sql": 39,
+          "short": 29,
+          "mcq": 7,
+          "erd": 5,
+          "fill": 2,
+          "long": 1,
+          "algorithm": 1,
+          "structured": 1
+        }
+      },
+      "common_mistakes": [
+        "試算表函數參照類型錯誤（相對／絕對）",
+        "SQL 語句缺少 WHERE",
+        "JOIN 條件遺漏",
+        "混淆 DELETE 與 DROP",
+        "正規化步驟跳過導致冗餘",
+        "主鍵／外鍵指派錯誤"
+      ],
+      "top_terminology": [
+        "SQL",
+        "數據庫",
+        "ROM",
+        "SELECT",
+        "記錄",
+        "主關鍵",
+        "數據庫表",
+        "AR"
+      ],
+      "question_types": {
+        "sql": 39,
+        "short": 29,
+        "mcq": 7,
+        "erd": 5,
+        "fill": 2,
+        "long": 1,
+        "algorithm": 1,
+        "structured": 1
+      }
+    },
+    "數據控制": {
+      "unit": "A",
+      "topics": [
+        "A-b"
+      ],
+      "bank_stats": {
+        "item_count": 16,
+        "years": {
+          "2024": 4,
+          "2025": 4,
+          "2021": 3,
+          "2022": 3,
+          "2023": 2
+        },
+        "paper_slugs": {
+          "Paper1B_CompulsoryStructured": 6,
+          "Paper1_MultipleChoice": 5,
+          "Paper1A_MultipleChoice": 3,
+          "Paper2A_Database": 1,
+          "Paper2D_SoftwareDevelopment": 1
+        },
+        "marks_distribution": {
+          "1": 9,
+          "2": 3
+        },
+        "question_types": {
+          "mcq": 8,
+          "short": 7,
+          "fill": 1
+        }
+      },
+      "common_mistakes": [
+        "循環測試 / 預先錯誤",
+        "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。",
+        "混淆欄位與記錄",
+        "混淆檔案與數據庫表"
+      ],
+      "top_terminology": [
+        "驗證",
+        "測試",
+        "算法",
+        "防火牆",
+        "DNS",
+        "數據庫",
+        "有效性檢驗",
+        "陣列"
+      ],
+      "question_types": {
+        "mcq": 8,
+        "short": 7,
+        "fill": 1
+      }
+    },
+    "數據組織": {
+      "unit": "A",
+      "topics": [
+        "A-b"
+      ],
+      "bank_stats": {
+        "item_count": 121,
+        "years": {
+          "2024": 33,
+          "2021": 26,
+          "2022": 24,
+          "2023": 19,
+          "2025": 19
+        },
+        "paper_slugs": {
+          "Paper2A_Database": 41,
+          "Paper1B_CompulsoryStructured": 32,
+          "Paper1_MultipleChoice": 31,
+          "Paper2_Elective": 8,
+          "Paper1A_MultipleChoice": 7,
+          "Paper2D_SoftwareDevelopment": 2
+        },
+        "marks_distribution": {
+          "1": 47,
+          "2": 23,
+          "3": 2,
+          "4": 2
+        },
+        "question_types": {
+          "short": 49,
+          "mcq": 38,
+          "sql": 19,
+          "fill": 10,
+          "algorithm": 2,
+          "structured": 2,
+          "erd": 1
+        }
+      },
+      "common_mistakes": [
+        "找出非首個眾數。",
+        "混淆欄位與記錄",
+        "混淆檔案與數據庫表"
+      ],
+      "top_terminology": [
+        "記錄",
+        "檔案",
+        "數據庫",
+        "數據庫表",
+        "SQL",
+        "主關鍵",
+        "SELECT",
+        "ROM"
+      ],
+      "question_types": {
+        "short": 49,
+        "mcq": 38,
+        "sql": 19,
+        "fill": 10,
+        "algorithm": 2,
+        "structured": 2,
+        "erd": 1
+      }
+    },
+    "數據與資訊": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "有效性檢驗": {
+      "unit": "A",
+      "topics": [
+        "A-b"
+      ],
+      "bank_stats": {
+        "item_count": 18,
+        "years": {
+          "2022": 4,
+          "2024": 4,
+          "2025": 4,
+          "2021": 3,
+          "2023": 3
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 7,
+          "Paper1B_CompulsoryStructured": 6,
+          "Paper1A_MultipleChoice": 3,
+          "Paper2A_Database": 1,
+          "Paper2D_SoftwareDevelopment": 1
+        },
+        "marks_distribution": {
+          "1": 11,
+          "2": 3
+        },
+        "question_types": {
+          "mcq": 10,
+          "short": 7,
+          "fill": 1
+        }
+      },
+      "common_mistakes": [
+        "循環測試 / 預先錯誤",
+        "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。",
+        "混淆欄位與記錄",
+        "混淆檔案與數據庫表"
+      ],
+      "top_terminology": [
+        "驗證",
+        "測試",
+        "算法",
+        "奇偶檢驗",
+        "奇偶",
+        "防火牆",
+        "DNS",
+        "數據庫"
+      ],
+      "question_types": {
+        "mcq": 10,
+        "short": 7,
+        "fill": 1
+      }
+    },
+    "模組": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "檔案存取": {
+      "unit": "A",
+      "topics": [
+        "A-b"
+      ],
+      "bank_stats": {
+        "item_count": 121,
+        "years": {
+          "2024": 33,
+          "2021": 26,
+          "2022": 24,
+          "2023": 19,
+          "2025": 19
+        },
+        "paper_slugs": {
+          "Paper2A_Database": 41,
+          "Paper1B_CompulsoryStructured": 32,
+          "Paper1_MultipleChoice": 31,
+          "Paper2_Elective": 8,
+          "Paper1A_MultipleChoice": 7,
+          "Paper2D_SoftwareDevelopment": 2
+        },
+        "marks_distribution": {
+          "1": 47,
+          "2": 23,
+          "3": 2,
+          "4": 2
+        },
+        "question_types": {
+          "short": 49,
+          "mcq": 38,
+          "sql": 19,
+          "fill": 10,
+          "algorithm": 2,
+          "structured": 2,
+          "erd": 1
+        }
+      },
+      "common_mistakes": [
+        "找出非首個眾數。",
+        "混淆欄位與記錄",
+        "混淆檔案與數據庫表"
+      ],
+      "top_terminology": [
+        "記錄",
+        "檔案",
+        "數據庫",
+        "數據庫表",
+        "SQL",
+        "主關鍵",
+        "SELECT",
+        "ROM"
+      ],
+      "question_types": {
+        "short": 49,
+        "mcq": 38,
+        "sql": 19,
+        "fill": 10,
+        "algorithm": 2,
+        "structured": 2,
+        "erd": 1
+      }
+    },
+    "欄位": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "正規化": {
+      "unit": "EA",
+      "topics": [
+        "EA-c"
+      ],
+      "bank_stats": {
+        "item_count": 29,
+        "years": {
+          "2024": 12,
+          "2022": 7,
+          "2021": 4,
+          "2023": 4,
+          "2025": 2
+        },
+        "paper_slugs": {
+          "Paper2A_Database": 21,
+          "Paper1B_CompulsoryStructured": 5,
+          "Paper2_Elective": 2,
+          "Paper1_MultipleChoice": 1
+        },
+        "marks_distribution": {
+          "2": 6,
+          "1": 5,
+          "4": 3,
+          "6": 1
+        },
+        "question_types": {
+          "short": 19,
+          "erd": 5,
+          "fill": 2,
+          "mcq": 1,
+          "long": 1,
+          "structured": 1
+        }
+      },
+      "common_mistakes": [
+        "正規化步驟跳過導致冗餘",
+        "主鍵／外鍵指派錯誤"
+      ],
+      "top_terminology": [
+        "主關鍵",
+        "數據庫",
+        "記錄",
+        "數據庫表",
+        "實體關係",
+        "參照完整性",
+        "實體完整性",
+        "外鍵"
+      ],
+      "question_types": {
+        "short": 19,
+        "erd": 5,
+        "fill": 2,
+        "mcq": 1,
+        "long": 1,
+        "structured": 1
+      }
+    },
+    "流程圖": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "直接存取": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "硬件": {
+      "unit": "B",
+      "topics": [
+        "B-a"
+      ],
+      "bank_stats": {
+        "item_count": 67,
+        "years": {
+          "2024": 27,
+          "2023": 12,
+          "2021": 10,
+          "2022": 10,
+          "2025": 8
+        },
+        "paper_slugs": {
+          "Paper1B_CompulsoryStructured": 22,
+          "Paper2A_Database": 17,
+          "Paper1_MultipleChoice": 16,
+          "Paper1A_MultipleChoice": 5,
+          "Paper2D_SoftwareDevelopment": 4,
+          "Paper2_Elective": 3
+        },
+        "marks_distribution": {
+          "1": 26,
+          "2": 18,
+          "3": 1,
+          "6": 1
+        },
+        "question_types": {
+          "sql": 22,
+          "mcq": 21,
+          "short": 17,
+          "fill": 5,
+          "long": 1,
+          "algorithm": 1
+        }
+      },
+      "common_mistakes": [
+        "RAM 是易失性的而 SSD 是非易失性的。",
+        "混淆 RAM 與 ROM",
+        "混淆快取與主記憶體"
+      ],
+      "top_terminology": [
+        "ROM",
+        "SELECT",
+        "SQL",
+        "CPU",
+        "RAM",
+        "GROUP BY",
+        "數據庫",
+        "軟件"
+      ],
+      "question_types": {
+        "sql": 22,
+        "mcq": 21,
+        "short": 17,
+        "fill": 5,
+        "long": 1,
+        "algorithm": 1
+      }
+    },
+    "社會影響": {
+      "unit": "",
+      "topics": [
+        "E-b"
+      ],
+      "bank_stats": {
+        "item_count": 9,
+        "years": {
+          "2021": 2,
+          "2022": 2,
+          "2023": 2,
+          "2024": 2,
+          "2025": 1
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 7,
+          "Paper1B_CompulsoryStructured": 1,
+          "Paper1A_MultipleChoice": 1
+        },
+        "marks_distribution": {
+          "1": 8,
+          "2": 1
+        },
+        "question_types": {
+          "mcq": 8,
+          "short": 1
+        }
+      },
+      "common_mistakes": [],
+      "top_terminology": [
+        "版權",
+        "軟件",
+        "人工智能",
+        "資訊素養",
+        "AI",
+        "操作系統",
+        "授權",
+        "知識產權"
+      ],
+      "question_types": {
+        "mcq": 8,
+        "short": 1
+      }
+    },
+    "科技創新": {
+      "unit": "",
+      "topics": [
+        "E-a"
+      ],
+      "bank_stats": {
+        "item_count": 53,
+        "years": {
+          "2024": 28,
+          "2021": 12,
+          "2022": 5,
+          "2023": 4,
+          "2025": 4
+        },
+        "paper_slugs": {
+          "Paper2A_Database": 22,
+          "Paper1B_CompulsoryStructured": 14,
+          "Paper2D_SoftwareDevelopment": 10,
+          "Paper1_MultipleChoice": 4,
+          "Paper2_Elective": 2,
+          "Paper1A_MultipleChoice": 1
+        },
+        "marks_distribution": {
+          "2": 18,
+          "1": 10,
+          "4": 3,
+          "3": 2,
+          "6": 1
+        },
+        "question_types": {
+          "short": 22,
+          "sql": 11,
+          "algorithm": 8,
+          "mcq": 5,
+          "erd": 2,
+          "fill": 2,
+          "structured": 2,
+          "long": 1
+        }
+      },
+      "common_mistakes": [],
+      "top_terminology": [
+        "AR",
+        "數據庫",
+        "SQL",
+        "記錄",
+        "偽代碼",
+        "AI",
+        "陣列",
+        "數據庫表"
+      ],
+      "question_types": {
+        "short": 22,
+        "sql": 11,
+        "algorithm": 8,
+        "mcq": 5,
+        "erd": 2,
+        "fill": 2,
+        "structured": 2,
+        "long": 1
+      }
+    },
+    "程式測試": {
+      "unit": "D",
+      "topics": [
+        "D-d"
+      ],
+      "bank_stats": {
+        "item_count": 16,
+        "years": {
+          "2022": 5,
+          "2024": 4,
+          "2021": 3,
+          "2023": 3,
+          "2025": 1
+        },
+        "paper_slugs": {
+          "Paper2D_SoftwareDevelopment": 5,
+          "Paper1_MultipleChoice": 4,
+          "Paper2A_Database": 4,
+          "Paper1B_CompulsoryStructured": 2,
+          "Paper1A_MultipleChoice": 1
+        },
+        "marks_distribution": {
+          "1": 5,
+          "2": 3
+        },
+        "question_types": {
+          "short": 7,
+          "mcq": 5,
+          "fill": 3,
+          "algorithm": 1
+        }
+      },
+      "common_mistakes": [
+        "編譯器可檢測更多錯誤。",
+        "循環測試 / 預先錯誤",
+        "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。",
+        "混淆語法錯誤與邏輯錯誤",
+        "測試個案未包含邊界值"
+      ],
+      "top_terminology": [
+        "測試",
+        "驗證",
+        "算法",
+        "數據庫",
+        "子程式",
+        "模組",
+        "GET",
+        "流程圖"
+      ],
+      "question_types": {
+        "short": 7,
+        "mcq": 5,
+        "fill": 3,
+        "algorithm": 1
+      }
+    },
+    "算法": {
+      "unit": "D",
+      "topics": [
+        "D-b"
+      ],
+      "bank_stats": {
+        "item_count": 150,
+        "years": {
+          "2022": 46,
+          "2021": 37,
+          "2024": 35,
+          "2025": 17,
+          "2023": 15
+        },
+        "paper_slugs": {
+          "Paper2D_SoftwareDevelopment": 73,
+          "Paper1_MultipleChoice": 29,
+          "Paper1B_CompulsoryStructured": 25,
+          "Paper1A_MultipleChoice": 12,
+          "Paper2A_Database": 7,
+          "Paper2_Elective": 4
+        },
+        "marks_distribution": {
+          "1": 47,
+          "2": 14,
+          "3": 8,
+          "4": 4,
+          "5": 1
+        },
+        "question_types": {
+          "algorithm": 75,
+          "mcq": 41,
+          "short": 29,
+          "fill": 2,
+          "structured": 2,
+          "sql": 1
+        }
+      },
+      "common_mistakes": [
+        "找出非首個眾數。",
+        "循環測試 / 預先錯誤",
+        "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。",
+        "堆疊 top／bottom 方向混淆",
+        "混淆排序與搜尋算法"
+      ],
+      "top_terminology": [
+        "偽代碼",
+        "算法",
+        "子程式",
+        "陣列",
+        "假設",
+        "搜尋",
+        "排序",
+        "測試"
+      ],
+      "question_types": {
+        "algorithm": 75,
+        "mcq": 41,
+        "short": 29,
+        "fill": 2,
+        "structured": 2,
+        "sql": 1
+      }
+    },
+    "網絡": {
+      "unit": "C",
+      "topics": [
+        "C-a"
+      ],
+      "bank_stats": {
+        "item_count": 66,
+        "years": {
+          "2024": 40,
+          "2021": 8,
+          "2023": 7,
+          "2022": 6,
+          "2025": 5
+        },
+        "paper_slugs": {
+          "Paper1B_CompulsoryStructured": 31,
+          "Paper1_MultipleChoice": 18,
+          "Paper2A_Database": 9,
+          "Paper2D_SoftwareDevelopment": 5,
+          "Paper1A_MultipleChoice": 3
+        },
+        "marks_distribution": {
+          "1": 30,
+          "2": 27,
+          "4": 1
+        },
+        "question_types": {
+          "short": 30,
+          "mcq": 21,
+          "fill": 8,
+          "algorithm": 4,
+          "sql": 2,
+          "erd": 1
+        }
+      },
+      "common_mistakes": [
+        "RAM 是易失性的而 SSD 是非易失性的。",
+        "找出非首個眾數。",
+        "編譯器可檢測更多錯誤。",
+        "循環測試 / 預先錯誤",
+        "透過循環單元測試 / 發現代碼中的錯誤 / 缺點。"
+      ],
+      "top_terminology": [
+        "網絡",
+        "URL",
+        "IP",
+        "頻寬",
+        "數據庫",
+        "路由器",
+        "檔案",
+        "LAN"
+      ],
+      "question_types": {
+        "short": 30,
+        "mcq": 21,
+        "fill": 8,
+        "algorithm": 4,
+        "sql": 2,
+        "erd": 1
+      }
+    },
+    "網絡保安": {
+      "unit": "C",
+      "topics": [
+        "C-d"
+      ],
+      "bank_stats": {
+        "item_count": 31,
+        "years": {
+          "2022": 8,
+          "2023": 7,
+          "2021": 6,
+          "2024": 6,
+          "2025": 4
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 17,
+          "Paper1B_CompulsoryStructured": 7,
+          "Paper1A_MultipleChoice": 4,
+          "Paper2A_Database": 3
+        },
+        "marks_distribution": {
+          "1": 21,
+          "2": 2
+        },
+        "question_types": {
+          "mcq": 21,
+          "short": 9,
+          "algorithm": 1
+        }
+      },
+      "common_mistakes": [],
+      "top_terminology": [
+        "軟件",
+        "加密",
+        "私隱",
+        "病毒",
+        "檔案",
+        "防火牆",
+        "操作系統",
+        "網站"
+      ],
+      "question_types": {
+        "mcq": 21,
+        "short": 9,
+        "algorithm": 1
+      }
+    },
+    "網絡應用": {
+      "unit": "",
+      "topics": [
+        "EB-a"
+      ],
+      "bank_stats": {
+        "item_count": 13,
+        "years": {
+          "2021": 4,
+          "2022": 4,
+          "2023": 2,
+          "2025": 2,
+          "2024": 1
+        },
+        "paper_slugs": {
+          "Paper1B_CompulsoryStructured": 4,
+          "Paper1_MultipleChoice": 4,
+          "Paper2D_SoftwareDevelopment": 2,
+          "Paper1A_MultipleChoice": 2,
+          "Paper2A_Database": 1
+        },
+        "marks_distribution": {
+          "1": 6
+        },
+        "question_types": {
+          "mcq": 6,
+          "short": 5,
+          "algorithm": 1,
+          "fill": 1
+        }
+      },
+      "common_mistakes": [],
+      "top_terminology": [
+        "伺服器",
+        "網頁",
+        "操作系統",
+        "網絡",
+        "檔案",
+        "GET",
+        "URL",
+        "網站"
+      ],
+      "question_types": {
+        "mcq": 6,
+        "short": 5,
+        "algorithm": 1,
+        "fill": 1
+      }
+    },
+    "網頁創作": {
+      "unit": "C",
+      "topics": [
+        "C-c"
+      ],
+      "bank_stats": {
+        "item_count": 30,
+        "years": {
+          "2025": 11,
+          "2021": 6,
+          "2024": 6,
+          "2022": 4,
+          "2023": 3
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 11,
+          "Paper1B_CompulsoryStructured": 9,
+          "Paper1A_MultipleChoice": 5,
+          "Paper2_Elective": 5
+        },
+        "marks_distribution": {
+          "1": 21,
+          "3": 2,
+          "2": 1
+        },
+        "question_types": {
+          "mcq": 16,
+          "short": 13,
+          "fill": 1
+        }
+      },
+      "common_mistakes": [],
+      "top_terminology": [
+        "網頁",
+        "網站",
+        "檔案",
+        "HTML",
+        "伺服器",
+        "URL",
+        "超連結",
+        "網絡"
+      ],
+      "question_types": {
+        "mcq": 16,
+        "short": 13,
+        "fill": 1
+      }
+    },
+    "線性搜尋": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "記錄": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "試算表": {
+      "unit": "A",
+      "topics": [
+        "A-d"
+      ],
+      "bank_stats": {
+        "item_count": 78,
+        "years": {
+          "2024": 25,
+          "2021": 18,
+          "2022": 14,
+          "2025": 11,
+          "2023": 10
+        },
+        "paper_slugs": {
+          "Paper1B_CompulsoryStructured": 29,
+          "Paper2D_SoftwareDevelopment": 21,
+          "Paper1_MultipleChoice": 12,
+          "Paper2A_Database": 9,
+          "Paper1A_MultipleChoice": 4,
+          "Paper2_Elective": 3
+        },
+        "marks_distribution": {
+          "1": 21,
+          "2": 13,
+          "3": 6,
+          "4": 2,
+          "5": 2
+        },
+        "question_types": {
+          "algorithm": 23,
+          "short": 23,
+          "mcq": 16,
+          "fill": 7,
+          "sql": 6,
+          "structured": 3
+        }
+      },
+      "common_mistakes": [
+        "試算表函數參照類型錯誤（相對／絕對）",
+        "SQL 語句缺少 WHERE"
+      ],
+      "top_terminology": [
+        "假設",
+        "偽代碼",
+        "公式",
+        "試算表",
+        "排序",
+        "記錄",
+        "子程式",
+        "陣列"
+      ],
+      "question_types": {
+        "algorithm": 23,
+        "short": 23,
+        "mcq": 16,
+        "fill": 7,
+        "sql": 6,
+        "structured": 3
+      }
+    },
+    "語法錯誤": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "變量": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "資訊保安": {
+      "unit": "",
+      "topics": [
+        "C-d"
+      ],
+      "bank_stats": {
+        "item_count": 31,
+        "years": {
+          "2022": 8,
+          "2023": 7,
+          "2021": 6,
+          "2024": 6,
+          "2025": 4
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 17,
+          "Paper1B_CompulsoryStructured": 7,
+          "Paper1A_MultipleChoice": 4,
+          "Paper2A_Database": 3
+        },
+        "marks_distribution": {
+          "1": 21,
+          "2": 2
+        },
+        "question_types": {
+          "mcq": 21,
+          "short": 9,
+          "algorithm": 1
+        }
+      },
+      "common_mistakes": [],
+      "top_terminology": [
+        "軟件",
+        "加密",
+        "私隱",
+        "病毒",
+        "檔案",
+        "防火牆",
+        "操作系統",
+        "網站"
+      ],
+      "question_types": {
+        "mcq": 21,
+        "short": 9,
+        "algorithm": 1
+      }
+    },
+    "資訊處理": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 5,
+        "years": {
+          "2022": 2,
+          "2025": 2,
+          "2021": 1
+        },
+        "paper_slugs": {
+          "Paper2D_SoftwareDevelopment": 2,
+          "Paper1A_MultipleChoice": 2,
+          "Paper1_MultipleChoice": 1
+        },
+        "marks_distribution": {
+          "1": 3
+        },
+        "question_types": {
+          "mcq": 3,
+          "short": 2
+        }
+      },
+      "common_mistakes": [],
+      "top_terminology": [
+        "資訊系統",
+        "資訊處理",
+        "數據庫",
+        "假設",
+        "篩選",
+        "子程式",
+        "測試",
+        "CPU"
+      ],
+      "question_types": {
+        "mcq": 3,
+        "short": 2
+      }
+    },
+    "資訊處理循環": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "軟件": {
+      "unit": "B",
+      "topics": [
+        "B-b"
+      ],
+      "bank_stats": {
+        "item_count": 26,
+        "years": {
+          "2023": 7,
+          "2022": 6,
+          "2025": 5,
+          "2021": 4,
+          "2024": 4
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 16,
+          "Paper1B_CompulsoryStructured": 7,
+          "Paper1A_MultipleChoice": 3
+        },
+        "marks_distribution": {
+          "1": 21,
+          "2": 1
+        },
+        "question_types": {
+          "mcq": 19,
+          "short": 7
+        }
+      },
+      "common_mistakes": [
+        "RAM 是易失性的而 SSD 是非易失性的。",
+        "混淆系統軟件與應用軟件",
+        "混淆編譯程式與解釋程式"
+      ],
+      "top_terminology": [
+        "操作系統",
+        "檔案",
+        "伺服器",
+        "網絡",
+        "軟件",
+        "驅動",
+        "實時",
+        "IP"
+      ],
+      "question_types": {
+        "mcq": 19,
+        "short": 7
+      }
+    },
+    "輸入處理輸出": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "輸入裝置": {
+      "unit": "B",
+      "topics": [
+        "B-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "混淆 RAM 與 ROM",
+        "混淆快取與主記憶體"
+      ]
+    },
+    "輸出裝置": {
+      "unit": "B",
+      "topics": [
+        "B-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "混淆 RAM 與 ROM",
+        "混淆快取與主記憶體"
+      ]
+    },
+    "迭代": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "迴圈": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "進制": {
+      "unit": "A",
+      "topics": [
+        "A-c"
+      ],
+      "bank_stats": {
+        "item_count": 31,
+        "years": {
+          "2021": 10,
+          "2024": 7,
+          "2023": 6,
+          "2022": 5,
+          "2025": 3
+        },
+        "paper_slugs": {
+          "Paper1B_CompulsoryStructured": 16,
+          "Paper1_MultipleChoice": 12,
+          "Paper1A_MultipleChoice": 3
+        },
+        "marks_distribution": {
+          "1": 16,
+          "2": 3
+        },
+        "question_types": {
+          "short": 15,
+          "mcq": 15,
+          "algorithm": 1
+        }
+      },
+      "common_mistakes": [
+        "混淆二進制與十六進制的位元數",
+        "混淆有損與無損壓縮"
+      ],
+      "top_terminology": [
+        "位元",
+        "進制",
+        "二進制",
+        "像素",
+        "二進制補碼",
+        "補碼",
+        "加密",
+        "上溢"
+      ],
+      "question_types": {
+        "short": 15,
+        "mcq": 15,
+        "algorithm": 1
+      }
+    },
+    "道德議題": {
+      "unit": "",
+      "topics": [
+        "E-b"
+      ],
+      "bank_stats": {
+        "item_count": 9,
+        "years": {
+          "2021": 2,
+          "2022": 2,
+          "2023": 2,
+          "2024": 2,
+          "2025": 1
+        },
+        "paper_slugs": {
+          "Paper1_MultipleChoice": 7,
+          "Paper1B_CompulsoryStructured": 1,
+          "Paper1A_MultipleChoice": 1
+        },
+        "marks_distribution": {
+          "1": 8,
+          "2": 1
+        },
+        "question_types": {
+          "mcq": 8,
+          "short": 1
+        }
+      },
+      "common_mistakes": [],
+      "top_terminology": [
+        "版權",
+        "軟件",
+        "人工智能",
+        "資訊素養",
+        "AI",
+        "操作系統",
+        "授權",
+        "知識產權"
+      ],
+      "question_types": {
+        "mcq": 8,
+        "short": 1
+      }
+    },
+    "遞歸": {
+      "unit": "EC",
+      "topics": [
+        "EC-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "堆疊 push／pop 次序錯誤",
+        "混淆堆疊與佇列"
+      ]
+    },
+    "邊界值": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "邏輯錯誤": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "鏈列": {
+      "unit": "EC",
+      "topics": [
+        "EC-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "堆疊 push／pop 次序錯誤",
+        "混淆堆疊與佇列"
+      ]
+    },
+    "鏈表": {
+      "unit": "EC",
+      "topics": [
+        "EC-a"
+      ],
+      "bank_stats": {
+        "item_count": 11,
+        "years": {
+          "2022": 5,
+          "2024": 5,
+          "2021": 1
+        },
+        "paper_slugs": {
+          "Paper2D_SoftwareDevelopment": 11
+        },
+        "marks_distribution": {
+          "3": 2,
+          "2": 2,
+          "4": 1
+        },
+        "question_types": {
+          "algorithm": 10,
+          "short": 1
+        }
+      },
+      "common_mistakes": [
+        "堆疊 push／pop 次序錯誤",
+        "混淆堆疊與佇列"
+      ],
+      "top_terminology": [
+        "偽代碼",
+        "子程式",
+        "pop",
+        "堆疊",
+        "push",
+        "陣列",
+        "GET",
+        "佇列"
+      ],
+      "question_types": {
+        "algorithm": 10,
+        "short": 1
+      }
+    },
+    "陣列": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "除錯": {
+      "unit": "D",
+      "topics": [
+        "D-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "音訊": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "順序存取": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "顏色深度": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    },
+    "驅動程式": {
+      "unit": "B",
+      "topics": [
+        "B-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": [
+        "混淆 RAM 與 ROM",
+        "混淆快取與主記憶體"
+      ]
+    },
+    "點陣圖": {
+      "unit": "A",
+      "topics": [
+        "A-a"
+      ],
+      "bank_stats": {
+        "item_count": 0
+      },
+      "common_mistakes": []
+    }
+  }
+}

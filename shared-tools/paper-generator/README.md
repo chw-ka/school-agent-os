@@ -10,7 +10,41 @@
 
 **目標流程文檔：** [`F5_ICT_CONCEPT_GENERATE_FLOW.md`](F5_ICT_CONCEPT_GENERATE_FLOW.md)
 
-過渡一鍵（bank pick，可能慢）：`Subjects/S5-ICT/past-papers/…/Term 02/_generation/regenerate_exam02.py`
+**Side products（題庫基建）：**
+
+```bash
+# Phase 1 — 問法 patterns
+.venv/bin/python shared-tools/paper-generator/extract_style_patterns.py
+# → Subjects/DSE-ICT/question-bank/style_patterns.json
+
+# Phase 2 — concept tree + bank 統計
+.venv/bin/python shared-tools/paper-generator/build_concept_map.py
+# → Subjects/DSE-ICT/question-bank/concept_map.json
+
+# Phase 3 — exam blueprint + concept review
+.venv/bin/python shared-tools/paper-generator/build_exam_blueprint.py --review
+# → Subjects/S5-ICT/.../_generation/exam_blueprint.json
+
+# Phase 4 — generate spec from blueprint (no bank copy)
+.venv/bin/python shared-tools/paper-generator/generate_from_blueprint.py \
+  --concept-review --question-check --set-written-picks
+# → …/_generation/25_26_S5_ICT_Exam02.spec.json
+
+# Phase 5 — partial regen failed slots (max 10 tries each)
+.venv/bin/python shared-tools/paper-generator/partial_regen_spec.py --rounds 3
+# 或 generate_from_blueprint.py --partial-regen --regen-rounds 3
+
+# Phase 6 — render DOCX + paper_review
+.venv/bin/python shared-tools/paper-generator/render_from_spec.py --force
+# → WrittenExam/25_26_S5_ICT_Exam02.docx
+
+# Phase 7 — one-shot (phases 4–6) + review CLIs
+.venv/bin/python shared-tools/paper-generator/build_f5_exam02.py --force-render
+.venv/bin/python shared-tools/paper-generator/question_review.py
+.venv/bin/python shared-tools/paper-generator/paper_review.py
+```
+
+`regenerate_exam02.py` 預設轉發 `build_f5_exam02.py`；`--legacy-pick` 才用舊 bank pick（慢）。
 
 技術備註（spec ↔ DOCX）：[`EXAM_SPEC_AND_DOCX.md`](EXAM_SPEC_AND_DOCX.md)
 
@@ -42,7 +76,7 @@ python shared-tools/paper-generator/f5_ict_blueprint_db_web.py
 
 MCQ core 規劃：`shared-tools/paper-generator/mcq_core_plan.py`（A ×10 → B ×10 → D ×10；細分 concept 順序見 `curriculum_concepts.json`）。
 
-**舊規劃（pick 藍本，已取代）：** [`F5_ICT_DSE_BLUEPRINT_FLOW.md`](F5_ICT_DSE_BLUEPRINT_FLOW.md) — 見新 flow 文檔。
+**主流程文檔：** [`F5_ICT_CONCEPT_GENERATE_FLOW.md`](F5_ICT_CONCEPT_GENERATE_FLOW.md)
 
 ## 新增 recipe
 

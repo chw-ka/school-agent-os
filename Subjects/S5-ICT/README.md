@@ -16,13 +16,21 @@ DSE 官方卷及題庫見 [`../DSE-ICT/`](../DSE-ICT/)（F4–F6 共用）。
 **目標：** concept blueprint → **生成**題目（唔抄 bank）→ concept / question / paper **review** → 校內模板 DOCX。  
 詳見 `shared-tools/paper-generator/F5_ICT_CONCEPT_GENERATE_FLOW.md`。
 
-**過渡（bank pick，可能很慢）：**
+Phase 3（blueprint + concept review）：
 
 ```bash
-.venv/bin/python "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/regenerate_exam02.py"
+.venv/bin/python shared-tools/paper-generator/build_exam_blueprint.py --review
 ```
 
-已有 `*.spec.json` 時，只做 question_review + render，避免全量 re-pick。
+**一鍵（建議）：**
+
+```bash
+.venv/bin/python shared-tools/paper-generator/build_f5_exam02.py --force-render
+```
+
+或 `regenerate_exam02.py`（無參數，轉發同上）。`--legacy-pick` 才用舊 bank pick（慢）。
+
+已有 spec 時：`render_from_spec.py` 或 `build_f5_exam02.py --render-only`。
 
 產物：`WrittenExam/*.docx`（交付）、`_generation/*.spec.json`（source of truth，唔好當學生卷發佈）。
 

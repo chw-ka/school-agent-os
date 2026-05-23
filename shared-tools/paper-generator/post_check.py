@@ -288,3 +288,8 @@ def run_post_generation_check(
         code = max(code, paper_code)
 
     return code
+
+
+# Phase 7 aliases (skill naming; module names unchanged for imports)
+run_question_review = run_question_spec_check
+run_paper_review = run_post_render_check

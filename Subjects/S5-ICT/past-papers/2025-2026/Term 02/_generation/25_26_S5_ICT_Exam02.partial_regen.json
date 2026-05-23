@@ -1,0 +1,198 @@
+{
+  "ok": false,
+  "seed": 20255026,
+  "max_attempts": 10,
+  "unresolved": [
+    "mcq-04",
+    "mcq-11",
+    "mcq-21",
+    "mcq-07",
+    "mcq-17",
+    "mcq-10",
+    "mcq-22",
+    "mcq-08",
+    "mcq-18",
+    "mcq-16",
+    "mcq-26",
+    "mcq-20",
+    "mcq-23",
+    "mcq-25",
+    "mcq-03",
+    "mcq-15",
+    "mcq-06",
+    "mcq-12",
+    "mcq-01",
+    "mcq-27",
+    "mcq-13"
+  ],
+  "slots": [
+    {
+      "slot_id": "mcq-04",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-11",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-21",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-07",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-17",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-10",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-22",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-08",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-18",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-16",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-09",
+      "resolved": true,
+      "attempts": 2,
+      "note": "ok on attempt 2"
+    },
+    {
+      "slot_id": "mcq-26",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-20",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-23",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-25",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-03",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-15",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-06",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-12",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-01",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-19",
+      "resolved": true,
+      "attempts": 1,
+      "note": "ok on attempt 1"
+    },
+    {
+      "slot_id": "mcq-27",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-30",
+      "resolved": true,
+      "attempts": 2,
+      "note": "ok on attempt 2"
+    },
+    {
+      "slot_id": "mcq-14",
+      "resolved": true,
+      "attempts": 1,
+      "note": "ok on attempt 1"
+    },
+    {
+      "slot_id": "mcq-28",
+      "resolved": true,
+      "attempts": 2,
+      "note": "ok on attempt 2"
+    },
+    {
+      "slot_id": "mcq-13",
+      "resolved": false,
+      "attempts": 10,
+      "note": "still failing after 10 attempts"
+    },
+    {
+      "slot_id": "mcq-02",
+      "resolved": true,
+      "attempts": 1,
+      "note": "ok on attempt 1"
+    },
+    {
+      "slot_id": "mcq-05",
+      "resolved": true,
+      "attempts": 2,
+      "note": "ok on attempt 2"
+    }
+  ]
+}

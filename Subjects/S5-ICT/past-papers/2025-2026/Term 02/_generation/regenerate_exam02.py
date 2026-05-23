@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Regenerate 25/26 S5 ICT Exam02 (LEGACY: bank pick + transform).
+"""Regenerate 25/26 S5 ICT Exam02 — DEPRECATED entry point.
 
-Target pipeline: .cursor/skills/generate-f5-ict-exam/SKILL.md
-  and shared-tools/paper-generator/F5_ICT_CONCEPT_GENERATE_FLOW.md
+Default (no flags): delegates to shared-tools/paper-generator/build_f5_exam02.py
+  (blueprint generate → partial regen → render).
 
-This script may run long (seed retry, no progress). Prefer existing spec.json
-+ run_question_spec_check + render when not re-picking from bank.
+Legacy bank pick + transform: pass --legacy-pick (slow; pick-time gate optional via
+  PICK_TIME_BANK_SIM_GATE=1). See F5_ICT_CONCEPT_GENERATE_FLOW.md.
 """
 from __future__ import annotations
 
@@ -52,7 +52,10 @@ SEED = 2025_2026
 MAX_SEED_TRIES = 80
 
 
-def main() -> int:
+def _legacy_main() -> int:
+    import os
+
+    os.environ.setdefault("PICK_TIME_BANK_SIM_GATE", "1")
     mcq_rows: list[list[str]] = []
     correct_indices: tuple[int, ...] = ()
     prov: list[str] = []
@@ -62,8 +65,15 @@ def main() -> int:
     written_best_hits: list[tuple[str, float, str]] = []
     seed_used = SEED
 
+    print(
+        "LEGACY pick-transform: searching seed (progress every 5 tries). "
+        "Use build_f5_exam02.py for the supported pipeline.",
+        flush=True,
+    )
     for offset in range(MAX_SEED_TRIES):
         seed_used = SEED + offset
+        if offset % 5 == 0:
+            print(f"  seed try {offset + 1}/{MAX_SEED_TRIES} (seed={seed_used})…", flush=True)
         rng = random.Random(seed_used)
         try:
             mcq_rows, correct_indices, prov = build_mcq_payload_from_bank(
@@ -222,6 +232,39 @@ def main() -> int:
     print(f"Post-render check exit: {p_check}")
     print(f"Overall exit: {check}")
     return check
+
+
+def main(argv: list[str] | None = None) -> int:
+    import argparse
+
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument(
+        "--legacy-pick",
+        action="store_true",
+        help="Run deprecated bank pick + transform (slow)",
+    )
+    ap.add_argument(
+        "--render-only",
+        action="store_true",
+        help="Delegate: render existing spec only",
+    )
+    ap.add_argument("--force-render", action="store_true")
+    args, rest = ap.parse_known_args(argv)
+
+    if args.legacy_pick:
+        return _legacy_main()
+
+    sys.path.insert(0, str(_ROOT / "shared-tools/paper-generator"))
+    from build_f5_exam02 import main as build_main
+
+    bargv: list[str] = []
+    if args.render_only:
+        bargv.append("--render-only")
+    if args.force_render:
+        bargv.append("--force-render")
+    bargv.extend(rest)
+    print("regenerate_exam02.py → build_f5_exam02.py (concept-generate pipeline)", flush=True)
+    return build_main(bargv)
 
 
 if __name__ == "__main__":

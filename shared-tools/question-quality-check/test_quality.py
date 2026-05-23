@@ -274,6 +274,32 @@ def test_coherence_meta_bridge() -> None:
     assert any(i.kind == "meta_bridge" for i in issues)
 
 
+def test_answer_verify_skips_generated_provenance() -> None:
+    from answer_verify_check import verify_spec_answers
+
+    spec = {
+        "items": [
+            {
+                "id": "mcq-01",
+                "section": "mcq",
+                "text": "stem\n\tA.\ta\n\tB.\tb\n\tC.\tc\n\tD.\td",
+                "answer": "A",
+                "dse_source": "generated://mcq/mcq-01",
+            },
+            {
+                "id": "b-01",
+                "section": "section_b",
+                "text": "(a) test",
+                "dse_source": "generated://written/b-01",
+            },
+        ],
+        "meta": {"mcq_answers": "A"},
+    }
+    result = verify_spec_answers(spec)
+    assert result.ok
+    assert not any(i.kind == "mcq_bank_missing" for i in result.issues)
+
+
 def test_coherence_topic_clash() -> None:
     bad = "SELECT * FROM T\n\n估算 BMP 像素大小。"
     issues = check_text_coherence("b-03", bad, section="section_b")

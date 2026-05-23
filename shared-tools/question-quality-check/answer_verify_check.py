@@ -130,7 +130,7 @@ def verify_spec_answers(
             bank_id = item.meta.get("dse_source") or (
                 prov[idx - 1] if idx - 1 < len(prov) else ""
             )
-            if not bank_id or str(bank_id).startswith("fallback"):
+            if not bank_id or str(bank_id).startswith(("fallback", "generated://")):
                 continue
             bank = _load_bank_item(str(bank_id))
             if not bank:
@@ -163,7 +163,7 @@ def verify_spec_answers(
             seen: set[str] = set()
             has_any = False
             for sid in sources:
-                if not sid or sid in seen:
+                if not sid or sid in seen or str(sid).startswith("generated://"):
                     continue
                 seen.add(sid)
                 bank = _load_bank_item(str(sid))
@@ -171,7 +171,8 @@ def verify_spec_answers(
                     continue
                 if _written_has_answer(bank):
                     has_any = True
-            if sources and not has_any:
+            bank_sources = [s for s in sources if s and not str(s).startswith("generated://")]
+            if bank_sources and not has_any:
                 issues.append(
                     AnswerVerifyIssue(
                         item.id,
