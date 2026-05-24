@@ -11,7 +11,7 @@ from docx_inplace import (
     clear_all_tables_except,
     clear_table_cells,
     delete_tables_except,
-    set_paragraph_text_distribute,
+    set_paragraph_text_rich,
 )
 
 # Cover (always keep) + body tables used by 25-26 blueprint content.
@@ -68,7 +68,7 @@ def clear_all_body_tables_before_write(doc: Document) -> None:
 def set_cell_text(table: Table, r: int, c: int, text: str) -> None:
     cell = table.cell(r, c)
     if cell.paragraphs:
-        set_paragraph_text_distribute(cell.paragraphs[0], text)
+        set_paragraph_text_rich(cell.paragraphs[0], text)
     else:
         cell.text = text
 

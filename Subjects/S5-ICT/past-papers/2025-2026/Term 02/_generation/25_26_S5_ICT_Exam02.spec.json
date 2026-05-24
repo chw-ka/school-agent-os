@@ -131,13 +131,13 @@
       "generated://mcq/mcq-30"
     ],
     "written_picks_source": "spec_items",
-    "mcq_answers": "CBCADAADBACDDAABCBBDDACDCCBABB"
+    "mcq_answers": "ADBBDCCADDCBADCABBCABBADCCBAAD"
   },
   "items": [
     {
       "id": "mcq-01",
       "section": "mcq",
-      "text": "以下哪一項最能描述「資訊」與「數據」的關係？\n\n\n\tA.\t資訊不需要儲存\n\tB.\t數據不能重複使用\n\tC.\t數據經處理後成為資訊\n\tD.\t資訊必定以數字儲存\n",
+      "text": "以下哪一項最能描述「資訊」與「數據」的關係？\n\n\n\n\n\n\n\tA.\t數據經處理後成為資訊\n\tB.\t數據不能重複使用\n\tC.\t資訊不需要儲存\n\tD.\t資訊必定以數字儲存\n",
       "marks": 1,
       "concepts": [
         "資訊處理",
@@ -145,13 +145,13 @@
         "資訊處理循環"
       ],
       "core": "A",
-      "answer": "C",
+      "answer": "A",
       "dse_source": "generated://mcq/mcq-01"
     },
     {
       "id": "mcq-02",
       "section": "mcq",
-      "text": "某校運動會以試算表記錄各項成績。學生檔案含學號、姓名、班別等欄位。下列哪項（些）與資訊處理有關的說法正確？\n\t(1)\t資訊處理可在輸入階段使用\n\t(2)\t輸入處理輸出會取代備份程序\n\t(3)\t批次處理只適用於圖像檔案\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "以下哪一項最能描述「資訊」與「數據」的關係？\n\n\n\tA.\t資訊必定以數字儲存\n\tB.\t數據不能重複使用\n\tC.\t資訊不需要儲存\n\tD.\t數據經處理後成為資訊\n",
       "marks": 1,
       "concepts": [
         "資訊處理",
@@ -159,13 +159,13 @@
         "批次處理"
       ],
       "core": "A",
-      "answer": "B",
+      "answer": "D",
       "dse_source": "generated://mcq/mcq-02"
     },
     {
       "id": "mcq-03",
       "section": "mcq",
-      "text": "學生檔案以學號、姓名、班別三個欄位儲存。下列哪項正確？\n\n\n\tA.\t一個欄位對應一名學生\n\tB.\t記錄與欄位相同\n\tC.\t一筆記錄對應一名學生\n\tD.\t學號是記錄\n",
+      "text": "學生檔案以學號、姓名、班別三個欄位儲存。下列哪項正確？\n\n\n\n\n\n\n\n\tA.\t記錄與欄位相同\n\tB.\t一筆記錄對應一名學生\n\tC.\t一個欄位對應一名學生\n\tD.\t學號是記錄\n",
       "marks": 1,
       "concepts": [
         "數據組織",
@@ -173,13 +173,13 @@
         "記錄"
       ],
       "core": "A",
-      "answer": "C",
+      "answer": "B",
       "dse_source": "generated://mcq/mcq-03"
     },
     {
       "id": "mcq-04",
       "section": "mcq",
-      "text": "圖書館以書號作索引，職員輸入書號即可讀取該書資料。這屬於哪種存取方式？\n\n\n\tA.\t直接存取\n\tB.\t與索引無關\n\tC.\t順序存取\n\tD.\t只能順序存取\n",
+      "text": "圖書館以書號作索引，職員輸入書號即可讀取該書資料。這屬於哪種存取方式？\n\n\n\n\n\n\tA.\t只能順序存取\n\tB.\t直接存取\n\tC.\t與索引無關\n\tD.\t順序存取\n",
       "marks": 1,
       "concepts": [
         "數據組織",
@@ -187,13 +187,13 @@
         "直接存取"
       ],
       "core": "A",
-      "answer": "A",
+      "answer": "B",
       "dse_source": "generated://mcq/mcq-04"
     },
     {
       "id": "mcq-05",
       "section": "mcq",
-      "text": "就數據控制而言，某旅行社以電腦處理機票預訂。傳送數據時須檢驗是否損壞。以下哪項（些）正確？\n\t(1)\t數據控制可提高數據準確性\n\t(2)\t有效性檢驗只適用於紙本文件\n\t(3)\t奇偶檢測屬於輸出階段\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "下列哪一項關於數據控制的敘述是正確的？\n\n\n\tA.\t數據控制只適用於硬件\n\tB.\t數據控制不能應用於軟件\n\tC.\t數據控制與數據無關\n\tD.\t數據控制是有效的資訊處理概念\n",
       "marks": 1,
       "concepts": [
         "數據控制",
@@ -207,7 +207,7 @@
     {
       "id": "mcq-06",
       "section": "mcq",
-      "text": "8 位元二進制補碼可表示的整數範圍是什麼？\n\n\tA.\t-128 至 127\n\tB.\t-255 至 255\n\tC.\t-127 至 128\n\tD.\t0 至 255",
+      "text": "8 位元二進制補碼可表示的整數範圍是什麼？\n\n\n\n\n\n\n\tA.\t-127 至 128\n\tB.\t-255 至 255\n\tC.\t-128 至 127\n\tD.\t0 至 255\n",
       "marks": 1,
       "concepts": [
         "進制",
@@ -215,26 +215,26 @@
         "二進制補碼"
       ],
       "core": "A",
-      "answer": "A",
+      "answer": "C",
       "dse_source": "generated://mcq/mcq-06"
     },
     {
       "id": "mcq-07",
       "section": "mcq",
-      "text": "下列哪一項關於字元編碼的敘述是正確的？\n\n\n\tA.\t字元編碼是有效的資訊處理概念\n\tB.\t字元編碼不能應用於軟件\n\tC.\t字元編碼與數據無關\n\tD.\t字元編碼只適用於硬件\n",
+      "text": "下列哪一項關於字元編碼的敘述是正確的？\n\n\n\n\n\n\n\n\tA.\t字元編碼與數據無關\n\tB.\t字元編碼只適用於硬件\n\tC.\t字元編碼是有效的資訊處理概念\n\tD.\t字元編碼不能應用於軟件\n",
       "marks": 1,
       "concepts": [
         "字元編碼",
         "UTF-8"
       ],
       "core": "A",
-      "answer": "A",
+      "answer": "C",
       "dse_source": "generated://mcq/mcq-07"
     },
     {
       "id": "mcq-08",
       "section": "mcq",
-      "text": "下列哪項較可能採用無損壓縮？\n\n\n\tA.\t社交媒體相片\n\tB.\t網上影片串流\n\tC.\t串流音樂檔案\n\tD.\t醫學掃描影像的備份\n",
+      "text": "下列哪項較可能採用無損壓縮？\n\n\n\n\n\n\tA.\t醫學掃描影像的備份\n\tB.\t網上影片串流\n\tC.\t社交媒體相片\n\tD.\t串流音樂檔案\n",
       "marks": 1,
       "concepts": [
         "多媒體",
@@ -242,13 +242,13 @@
         "向量圖"
       ],
       "core": "A",
-      "answer": "D",
+      "answer": "A",
       "dse_source": "generated://mcq/mcq-08"
     },
     {
       "id": "mcq-09",
       "section": "mcq",
-      "text": "就多媒體而言，某網店以系統處理訂單與庫存。學生以數位相機拍攝活動相片並儲存為 JPEG。以下哪項（些）正確？\n\t(1)\tJPEG 可用有損壓縮減少檔案大小\n\t(2)\t向量圖以像素逐點描述\n\t(3)\t解析度不影響相片像素數目\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "下列哪項較可能採用無損壓縮？\n\n\n\tA.\t串流音樂檔案\n\tB.\t社交媒體相片\n\tC.\t網上影片串流\n\tD.\t醫學掃描影像的備份\n",
       "marks": 1,
       "concepts": [
         "多媒體",
@@ -256,13 +256,13 @@
         "顏色深度"
       ],
       "core": "A",
-      "answer": "B",
+      "answer": "D",
       "dse_source": "generated://mcq/mcq-09"
     },
     {
       "id": "mcq-10",
       "section": "mcq",
-      "text": "在試算表中，要統計班別為「5A」且分數≥60的學生人數，最適合使用哪個函數？\n\n\n\tA.\tCOUNTIFS\n\tB.\tSUM\n\tC.\tRANK\n\tD.\tAVERAGE\n",
+      "text": "在試算表中，要統計班別為「5A」且分數≥60的學生人數，最適合使用哪個函數？\n\n\n\n\n\n\tA.\tSUM\n\tB.\tRANK\n\tC.\tAVERAGE\n\tD.\tCOUNTIFS\n",
       "marks": 1,
       "concepts": [
         "試算表",
@@ -270,13 +270,13 @@
         "COUNTIFS"
       ],
       "core": "A",
-      "answer": "A",
+      "answer": "D",
       "dse_source": "generated://mcq/mcq-10"
     },
     {
       "id": "mcq-11",
       "section": "mcq",
-      "text": "下列哪項（些）關於 RAM 與快取記憶體的敘述是正確的？\n\n\n\tA.\t快取不能加快 CPU 存取\n\tB.\t快取比硬碟慢\n\tC.\tRAM 在斷電後資料會消失\n\tD.\tRAM 容量通常小於快取\n",
+      "text": "下列哪項（些）關於 RAM 與快取記憶體的敘述是正確的？\n\n\n\n\n\n\tA.\t快取比硬碟慢\n\tB.\tRAM 容量通常小於快取\n\tC.\tRAM 在斷電後資料會消失\n\tD.\t快取不能加快 CPU 存取\n",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -290,33 +290,33 @@
     {
       "id": "mcq-12",
       "section": "mcq",
-      "text": "下列哪項關於硬件的敘述是正確的？\n\n\n\tA.\t硬件與輸入無關\n\tB.\t硬件只存在於網絡\n\tC.\t硬件不能升級\n\tD.\t硬件屬於電腦系統的一部分\n",
+      "text": "下列哪項關於硬件的敘述是正確的？\n\n\n\n\n\n\tA.\t硬件不能升級\n\tB.\t硬件屬於電腦系統的一部分\n\tC.\t硬件與輸入無關\n\tD.\t硬件只存在於網絡\n",
       "marks": 1,
       "concepts": [
         "硬件",
         "SSD"
       ],
       "core": "B",
-      "answer": "D",
+      "answer": "B",
       "dse_source": "generated://mcq/mcq-12"
     },
     {
       "id": "mcq-13",
       "section": "mcq",
-      "text": "下列哪一組均屬於輸入裝置？\n\n\tA.\t投影機與喇叭\n\tB.\t繪圖儀與顯示器\n\tC.\t硬碟與光碟機\n\tD.\t鍵盤與滑鼠",
+      "text": "下列哪一組均屬於輸入裝置？\n\n\n\n\n\n\n\tA.\t鍵盤與滑鼠\n\tB.\t繪圖儀與顯示器\n\tC.\t硬碟與光碟機\n\tD.\t投影機與喇叭\n",
       "marks": 1,
       "concepts": [
         "硬件",
         "輸入裝置"
       ],
       "core": "B",
-      "answer": "D",
+      "answer": "A",
       "dse_source": "generated://mcq/mcq-13"
     },
     {
       "id": "mcq-14",
       "section": "mcq",
-      "text": "某校使用資訊系統管理學與教數據。試算表用於統計各班捐款。下列哪項（些）與硬件有關的說法正確？\n\t(1)\t硬件屬於數據處理的一環\n\t(2)\tRAM與硬件無關\n\t(3)\t快取記憶體不能與欄位同時使用\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "下列哪項（些）關於 RAM 與快取記憶體的敘述是正確的？\n\n\n\n\tA.\t快取比硬碟慢\n\tB.\t快取不能加快 CPU 存取\n\tC.\tRAM 容量通常小於快取\n\tD.\tRAM 在斷電後資料會消失\n",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -324,13 +324,13 @@
         "快取記憶體"
       ],
       "core": "B",
-      "answer": "A",
+      "answer": "D",
       "dse_source": "generated://mcq/mcq-14"
     },
     {
       "id": "mcq-15",
       "section": "mcq",
-      "text": "下列哪一項屬於輸出裝置？\n\n\tA.\t投影機\n\tB.\t鍵盤\n\tC.\t麥克風\n\tD.\t滑鼠",
+      "text": "下列哪一項屬於輸出裝置？\n\n\n\n\n\n\n\tA.\t鍵盤\n\tB.\t滑鼠\n\tC.\t投影機\n\tD.\t麥克風\n",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -338,13 +338,13 @@
         "輸出裝置"
       ],
       "core": "B",
-      "answer": "A",
+      "answer": "C",
       "dse_source": "generated://mcq/mcq-15"
     },
     {
       "id": "mcq-16",
       "section": "mcq",
-      "text": "下列哪一項最能描述「驅動程式」的作用？\n\n\n\tA.\t壓縮檔案\n\tB.\t讓作業系統控制硬件\n\tC.\t設計數據庫\n\tD.\t編寫網頁\n",
+      "text": "下列哪一項最能描述「驅動程式」的作用？\n\n\n\n\n\n\tA.\t讓作業系統控制硬件\n\tB.\t設計數據庫\n\tC.\t編寫網頁\n\tD.\t壓縮檔案\n",
       "marks": 1,
       "concepts": [
         "軟件",
@@ -352,26 +352,26 @@
         "驅動程式"
       ],
       "core": "B",
-      "answer": "B",
+      "answer": "A",
       "dse_source": "generated://mcq/mcq-16"
     },
     {
       "id": "mcq-17",
       "section": "mcq",
-      "text": "下列哪一項屬於實用程式（utility）？\n\n\n\tA.\t網頁瀏覽器\n\tB.\t文書處理軟件\n\tC.\t磁碟重組工具\n\tD.\t試算表\n",
+      "text": "下列哪一項屬於實用程式（utility）？\n\n\n\n\n\n\n\tA.\t文書處理軟件\n\tB.\t磁碟重組工具\n\tC.\t網頁瀏覽器\n\tD.\t試算表\n",
       "marks": 1,
       "concepts": [
         "軟件",
         "實用程式"
       ],
       "core": "B",
-      "answer": "C",
+      "answer": "B",
       "dse_source": "generated://mcq/mcq-17"
     },
     {
       "id": "mcq-18",
       "section": "mcq",
-      "text": "下列哪一項屬於專用軟件（application software）？\n\n\n\tA.\t驅動程式\n\tB.\t文書處理軟件\n\tC.\t編譯器\n\tD.\t作業系統\n",
+      "text": "下列哪一項屬於專用軟件（application software）？\n\n\n\n\n\n\n\tA.\t驅動程式\n\tB.\t文書處理軟件\n\tC.\t作業系統\n\tD.\t編譯器\n",
       "marks": 1,
       "concepts": [
         "軟件",
@@ -384,7 +384,7 @@
     {
       "id": "mcq-19",
       "section": "mcq",
-      "text": "某校學會以系統管理會員及活動報名。排序名單時須考慮時間複雜度。下列哪項（些）與軟件有關的說法正確？\n\t(1)\t軟件有助驗證輸入\n\t(2)\t作業系統只適用於輸出裝置\n\t(3)\t實用程式與進制無關\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "下列哪一項屬於實用程式（utility）？\n\n\n\n\tA.\t試算表\n\tB.\t文書處理軟件\n\tC.\t磁碟重組工具\n\tD.\t網頁瀏覽器\n",
       "marks": 1,
       "concepts": [
         "軟件",
@@ -392,13 +392,13 @@
         "實用程式"
       ],
       "core": "B",
-      "answer": "B",
+      "answer": "C",
       "dse_source": "generated://mcq/mcq-19"
     },
     {
       "id": "mcq-20",
       "section": "mcq",
-      "text": "下列哪一項屬於輸入裝置？\n\n\n\tA.\t繪圖儀\n\tB.\t投影機\n\tC.\t喇叭\n\tD.\t條碼掃描器\n",
+      "text": "下列哪一項屬於輸入裝置？\n\n\n\n\n\n\tA.\t條碼掃描器\n\tB.\t投影機\n\tC.\t喇叭\n\tD.\t繪圖儀\n",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -406,13 +406,13 @@
         "RAM"
       ],
       "core": "B",
-      "answer": "D",
+      "answer": "A",
       "dse_source": "generated://mcq/mcq-20"
     },
     {
       "id": "mcq-21",
       "section": "mcq",
-      "text": "下列哪一項正確描述「迭代」？\n\n\n\tA.\t必定用遞歸實現\n\tB.\t不能與迴圈並用\n\tC.\t只執行一次\n\tD.\t重複執行某步驟直至條件成立\n",
+      "text": "考慮以下程序 CalcSum(n)，把 1 至 n 的總和輸出：\ntotal ← 0\n重複 i 由 1 至 n：total ← total + i\n輸出 total\n下列哪項最能描述此設計運用的計算思維技巧？\n\n\n\n\n\tA.\t格式化\n\tB.\t問題分解\n\tC.\t編譯\n\tD.\t備份\n",
       "marks": 1,
       "concepts": [
         "問題分析",
@@ -420,13 +420,13 @@
         "子問題"
       ],
       "core": "D",
-      "answer": "D",
+      "answer": "B",
       "dse_source": "generated://mcq/mcq-21"
     },
     {
       "id": "mcq-22",
       "section": "mcq",
-      "text": "在流程圖中，菱形符號通常表示什麼？\n\n\n\tA.\t判斷／分支\n\tB.\t輸入\n\tC.\t程序開始\n\tD.\t輸出\n",
+      "text": "考慮以下偽代碼：\ncount ← 0\n當 count < 3：輸出 count；count ← count + 1\n執行後會輸出什麼？\n\n\n\n\tA.\t0, 1, 2, 3\n\tB.\t0, 1, 2\n\tC.\t1, 2, 3\n\tD.\t3\n",
       "marks": 1,
       "concepts": [
         "算法",
@@ -434,13 +434,13 @@
         "流程圖"
       ],
       "core": "D",
-      "answer": "A",
+      "answer": "B",
       "dse_source": "generated://mcq/mcq-22"
     },
     {
       "id": "mcq-23",
       "section": "mcq",
-      "text": "下列哪一項最能描述「問題分解」在算法設計中的作用？\n\n\n\tA.\t增加變數數目\n\tB.\t刪除測試個案\n\tC.\t把複雜問題拆成較小子問題\n\tD.\t合併所有子程式\n",
+      "text": "下列 Python 程式，變數 i 的最終值是多少？\ni = 1\nwhile i <= 8:\n    i = i * 2\n\n\n\n\tA.\t16\n\tB.\t2\n\tC.\t8\n\tD.\t4\n",
       "marks": 1,
       "concepts": [
         "迴圈",
@@ -448,13 +448,13 @@
         "迭代"
       ],
       "core": "D",
-      "answer": "C",
+      "answer": "A",
       "dse_source": "generated://mcq/mcq-23"
     },
     {
       "id": "mcq-24",
       "section": "mcq",
-      "text": "某網店以系統處理訂單與庫存。編寫程式時把任務分成多個子程式。下列哪項（些）與排序有關的說法正確？\n\t(1)\t合併排序需要額外記憶空間\n\t(2)\t排序後主鍵會改變\n\t(3)\t搜尋必定比排序快\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "某校運動會以試算表記錄各項成績。編寫程式時把任務分成多個子程式。以下哪項（些）關於排序的敘述是正確的？\n\t(1)\t氣泡排序可把相鄰逆序元素交換\t\t\t\t\t\n\t(2)\t已排序陣列無需任何比較\t\t\t\t\t\n\t(3)\t排序只適用於文字檔\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
       "marks": 1,
       "concepts": [
         "排序",
@@ -468,7 +468,7 @@
     {
       "id": "mcq-25",
       "section": "mcq",
-      "text": "下列算法的輸出是什麼？\n考慮陣列 [3, 1, 4, 2]，以線性搜尋尋找 4。\n\n\tA.\t找到索引 1\n\tB.\t找不到\n\tC.\t找到索引 2\n\tD.\t陣列變成 [1,2,3,4]",
+      "text": "考慮以下偽代碼，陣列 A[1..5]=[3,1,4,2,9]，尋找 4：\nfound ← 假；i ← 1\n當 i ≤ 5 且 found = 假\n  若 A[i] = 4 則 found ← 真；i ← i + 1\n輸出 i\n輸出是？\n\n\n\n\tA.\t0\n\tB.\t5\n\tC.\t3\n\tD.\t1\n",
       "marks": 1,
       "concepts": [
         "搜尋",
@@ -482,7 +482,7 @@
     {
       "id": "mcq-26",
       "section": "mcq",
-      "text": "下列哪一項最能描述「問題分解」在算法設計中的作用？\n\n\n\tA.\t增加變數數目\n\tB.\t合併所有子程式\n\tC.\t把複雜問題拆成較小子問題\n\tD.\t刪除測試個案\n",
+      "text": "考慮以下偽代碼：x ← 2；y ← x + 3；x ← x + 1；輸出 y\n輸出是？\n\n\n\tA.\t6\n\tB.\t2\n\tC.\t5\n\tD.\t3\n",
       "marks": 1,
       "concepts": [
         "算法",
@@ -496,7 +496,7 @@
     {
       "id": "mcq-27",
       "section": "mcq",
-      "text": "下列哪一項正確描述「迭代」？\n\n\n\tA.\t必定用遞歸實現\n\tB.\t重複執行某步驟直至條件成立\n\tC.\t只執行一次\n\tD.\t不能與迴圈並用\n",
+      "text": "考慮以下偽代碼：若 (score ≥ 60) 且 (score ≤ 100) 則 grade ←「合格」，否則 grade ←「不合格」。若 score = 60，grade 是？\n\n\n\tA.\t不合格\n\tB.\t合格\n\tC.\t60\n\tD.\t100\n",
       "marks": 1,
       "concepts": [
         "進制",
@@ -510,7 +510,7 @@
     {
       "id": "mcq-28",
       "section": "mcq",
-      "text": "測試下列算法時，哪個是適當的邊界個案？\n\n\n\tA.\t輸入為 0 或最大值\n\tB.\t只檢查變量名稱\n\tC.\t只測試正常輸入\n\tD.\t不進行測試\n",
+      "text": "考慮以下偽代碼，n 為非負整數：\n輸入 n\n若 n = 0 則\n  輸出 「zero」\n測試時下列哪個是適當的邊界個案？\n\n\n\n\n\tA.\tn = 0\n\tB.\t只測試 n = 1\n\tC.\tn = 5\n\tD.\tn = -1 且 n = 10\n",
       "marks": 1,
       "concepts": [
         "程式測試",
@@ -524,7 +524,7 @@
     {
       "id": "mcq-29",
       "section": "mcq",
-      "text": "某圖書館以電腦記錄借還書及罰款。測試程式時須包含邊界個案。下列哪項（些）與程式測試有關的說法正確？\n\t(1)\t程式測試有助防止輸入錯誤\n\t(2)\t語法錯誤必定增加儲存空間\n\t(3)\t邏輯錯誤只適用於試算表\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "下列哪一項是正確的賦值語句（偽代碼）？\n\n\n\tA.\tcount ← count + 1\n\tB.\tcount + 1 ← count\n\tC.\tcount ← ← 1\n\tD.\tcount == count + 1\n",
       "marks": 1,
       "concepts": [
         "程式測試",
@@ -532,13 +532,13 @@
         "邏輯錯誤"
       ],
       "core": "D",
-      "answer": "B",
+      "answer": "A",
       "dse_source": "generated://mcq/mcq-29"
     },
     {
       "id": "mcq-30",
       "section": "mcq",
-      "text": "把程式分成多個子程式（模組）的主要好處是什麼？\n\n\n\tA.\t只能執行一次\n\tB.\t提高可讀性與重用性\n\tC.\t減少變量數目\n\tD.\t取消測試需要\n",
+      "text": "考慮以下偽代碼：\ntotal ← 0\n重複 i 由 1 至 5\n  total ← total + A[i]\n輸出 total\n變數 total 的作用是什麼？\n\n\n\n\tA.\t儲存迴圈次數\n\tB.\t輸出單一元素\n\tC.\t重置索引 i\n\tD.\t累加陣列元素總和\n",
       "marks": 1,
       "concepts": [
         "算法",
@@ -546,7 +546,7 @@
         "模組"
       ],
       "core": "D",
-      "answer": "B",
+      "answer": "D",
       "dse_source": "generated://mcq/mcq-30"
     },
     {

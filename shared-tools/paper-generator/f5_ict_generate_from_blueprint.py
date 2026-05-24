@@ -17,7 +17,13 @@ for _p in (_QCHECK, _FMT):
 
 from dse_ict_style import COMBO_OPTS_1_AND_3, style_meta  # noqa: E402
 from exam_spec import build_spec, make_item  # noqa: E402
-_COMBO_SLOTS = frozenset({2, 5, 9, 14, 19, 24, 29})
+from spec_mcq_render import MCQ_SPANS  # noqa: E402
+
+# Combo MCQ needs span ≥ 10 (stem + (1)(2)(3) + blank + A–D); shorter template rows use single MCQ.
+_COMBO_SLOT_IDS = (2, 5, 9, 14, 19, 24, 29)
+_COMBO_SLOTS = frozenset(
+    i for i in _COMBO_SLOT_IDS if MCQ_SPANS[i - 1] >= 10
+)
 _COMBO_EXTRA: dict[int, str] = {
     2: "學生檔案含學號、姓名、班別等欄位。",
     5: "傳送數據時須檢驗是否損壞。",
@@ -119,10 +125,17 @@ def _combo_subitems(
         return media_sets[variant % len(media_sets)]
     if primary == "排序" or "排序" in concepts:
         sort_sets = (
-            ("氣泡排序平均情況為 O(n²)", "已排序陣列仍須比較全部元素", "排序只適用於文字檔"),
+            ("氣泡排序可把相鄰逆序元素交換", "已排序陣列無需任何比較", "排序只適用於文字檔"),
             ("合併排序需要額外記憶空間", "排序後主鍵會改變", "搜尋必定比排序快"),
+            ("偽代碼 WHILE 迴圈可實現冒泡排序", "陣列索引由 0 開始", "排序必定比搜尋快"),
         )
         return sort_sets[variant % len(sort_sets)]
+    if "程式測試" in concepts or "邊界值" in concepts:
+        test_sets = (
+            ("邊界值可檢驗極端輸入", "語法錯誤必定增加儲存空間", "邏輯錯誤只適用於試算表"),
+            ("測試應包含正常與異常情況", "只測試輸出格式即可", "不必測試 IF 分支"),
+        )
+        return test_sets[variant % len(test_sets)]
     variants = (
         (f"{primary}可提高數據準確性", f"{c2}只適用於紙本文件", f"{c3}屬於輸出階段"),
         (f"{primary}屬於數據處理的一環", f"{c2}與硬件無關", f"{c3}不能與欄位同時使用"),
@@ -206,9 +219,133 @@ def _format_combo_mcq(
     correct_combo_idx: int,
     rng: random.Random,
 ) -> tuple[str, str]:
-    body = stem.rstrip() + "\n" + "\n".join(f"\t({i})\t{t}" for i, t in enumerate(subitems, 1))
+    body = stem.rstrip() + "\n" + "\n".join(
+        f"\t({i})\t{t}\t" for i, t in enumerate(subitems, 1)
+    )
     opts = list(COMBO_OPTS_1_AND_3)
     return _format_mcq_fixed(body, opts, correct_combo_idx)
+
+
+def _generate_core_d_mcq(
+    idx: int,
+    concepts: list[str],
+    rng: random.Random,
+    *,
+    variant: int = 0,
+) -> tuple[str, str]:
+    """Core D MCQ (slots 21–30): prefer pseudocode / Python trace questions."""
+    v = (idx + variant) % 8
+    templates: dict[int, tuple[str, list[str], int]] = {
+        21: (
+            "考慮以下程序 CalcSum(n)，把 1 至 n 的總和輸出：\n"
+            "total ← 0\n"
+            "重複 i 由 1 至 n：total ← total + i\n"
+            "輸出 total\n"
+            "下列哪項最能描述此設計運用的計算思維技巧？",
+            ["問題分解", "備份", "編譯", "格式化"],
+            0,
+        ),
+        22: (
+            "考慮以下偽代碼：\n"
+            "count ← 0\n"
+            "當 count < 3：輸出 count；count ← count + 1\n"
+            "執行後會輸出什麼？",
+            ["0, 1, 2", "1, 2, 3", "0, 1, 2, 3", "3"],
+            0,
+        ),
+        23: (
+            "下列 Python 程式，變數 i 的最終值是多少？\n"
+            "i = 1\n"
+            "while i <= 8:\n"
+            "    i = i * 2",
+            ["16", "8", "4", "2"],
+            0,
+        ),
+        25: (
+            "考慮以下偽代碼，陣列 A[1..5]=[3,1,4,2,9]，尋找 4：\n"
+            "found ← 假；i ← 1\n"
+            "當 i ≤ 5 且 found = 假\n"
+            "  若 A[i] = 4 則 found ← 真；i ← i + 1\n"
+            "輸出 i\n"
+            "輸出是？",
+            ["3", "1", "5", "0"],
+            0,
+        ),
+        26: (
+            "考慮以下偽代碼：\n"
+            "x ← 2\n"
+            "y ← x + 3\n"
+            "x ← x + 1\n"
+            "輸出 y\n"
+            "輸出是？",
+            ["5", "3", "6", "2"],
+            0,
+        ),
+        27: (
+            "考慮以下偽代碼：\n"
+            "若 (score ≥ 60) 且 (score ≤ 100) 則 grade ←「合格」，否則 grade ←「不合格」\n"
+            "若 score = 60，grade 是？",
+            ["合格", "不合格", "60", "100"],
+            0,
+        ),
+        28: (
+            "考慮以下偽代碼，n 為非負整數：\n"
+            "輸入 n\n"
+            "若 n = 0 則\n"
+            "  輸出 「zero」\n"
+            "測試時下列哪個是適當的邊界個案？",
+            ["n = 0", "n = 5", "n = -1 且 n = 10", "只測試 n = 1"],
+            0,
+        ),
+        30: (
+            "考慮以下偽代碼：\n"
+            "total ← 0\n"
+            "重複 i 由 1 至 5\n"
+            "  total ← total + A[i]\n"
+            "輸出 total\n"
+            "變數 total 的作用是什麼？",
+            ["累加陣列元素總和", "儲存迴圈次數", "輸出單一元素", "重置索引 i"],
+            0,
+        ),
+    }
+    if idx in templates:
+        stem, opts, ans = templates[idx]
+        return _format_mcq(stem, opts, ans, rng)
+    if "流程圖" in concepts:
+        return _format_mcq(
+            "在流程圖中，菱形符號通常表示什麼？",
+            ["判斷／分支", "輸入", "輸出", "程序開始"],
+            0,
+            rng,
+        )
+    if "排序" in concepts:
+        return _format_mcq(
+            "以冒泡排序處理陣列 [3, 1, 4, 2]，第一趟完成後陣列會變成什麼？",
+            ["[1, 3, 2, 4]", "[1, 3, 4, 2]", "[3, 1, 2, 4]", "[1, 2, 3, 4]"],
+            0,
+            rng,
+        )
+    if "模組" in concepts:
+        return _format_mcq(
+            "把程式分成多個子程式（模組）的主要好處是什麼？",
+            ["提高可讀性與重用性", "減少變量數目", "取消測試需要", "只能執行一次"],
+            0,
+            rng,
+        )
+    fallbacks = (
+        (
+            "下列哪一項正確描述「迭代」？",
+            ["重複執行某步驟直至條件成立", "只執行一次", "不能與迴圈並用", "必定用遞歸實現"],
+            0,
+        ),
+        (
+            "下列哪一項是正確的賦值語句（偽代碼）？",
+            ["count ← count + 1", "count + 1 ← count", "count == count + 1", "count ← ← 1"],
+            0,
+        ),
+    )
+    stem, opts, ans = fallbacks[v % len(fallbacks)]
+    return _format_mcq(stem, list(opts), ans, rng)
 
 
 def _generate_mcq(
@@ -370,61 +507,7 @@ def _generate_mcq(
             rng,
         )
 
-    # Core D
-    if "程式測試" in concepts or "邊界值" in concepts:
-        return _format_mcq(
-            "測試下列算法時，哪個是適當的邊界個案？",
-            ["輸入為 0 或最大值", "只測試正常輸入", "不進行測試", "只檢查變量名稱"],
-            0,
-            rng,
-        )
-    if "流程圖" in concepts:
-        return _format_mcq(
-            "在流程圖中，菱形符號通常表示什麼？",
-            ["判斷／分支", "輸入", "輸出", "程序開始"],
-            0,
-            rng,
-        )
-    if "模組" in concepts:
-        return _format_mcq(
-            "把程式分成多個子程式（模組）的主要好處是什麼？",
-            ["提高可讀性與重用性", "減少變量數目", "取消測試需要", "只能執行一次"],
-            0,
-            rng,
-        )
-    if "偽代碼" in concepts and "排序" not in concepts and "搜尋" not in concepts:
-        return _format_mcq(
-            "下列哪一項是正確的賦值語句（偽代碼）？",
-            ["count ← count + 1", "count + 1 ← count", "count == count + 1", "count ← ← 1"],
-            0,
-            rng,
-        )
-    if "排序" in concepts or "搜尋" in concepts:
-        return _format_mcq(
-            "下列算法的輸出是什麼？\n考慮陣列 [3, 1, 4, 2]，以線性搜尋尋找 4。",
-            ["找到索引 2", "找到索引 1", "找不到", "陣列變成 [1,2,3,4]"],
-            0,
-            rng,
-        )
-    d_variants = (
-        (
-            "下列哪一項最能描述「問題分解」在算法設計中的作用？",
-            ["把複雜問題拆成較小子問題", "合併所有子程式", "刪除測試個案", "增加變數數目"],
-            0,
-        ),
-        (
-            "下列哪一項正確描述「迭代」？",
-            ["重複執行某步驟直至條件成立", "只執行一次", "不能與迴圈並用", "必定用遞歸實現"],
-            0,
-        ),
-        (
-            "下列哪一項屬於「算法」？",
-            ["按步驟解決問題的程序", "硬件組件", "網絡協定", "試算表函數"],
-            0,
-        ),
-    )
-    tpl = d_variants[(idx + variant) % len(d_variants)]
-    return _format_mcq(tpl[0], list(tpl[1]), tpl[2], rng)
+    return _generate_core_d_mcq(idx, concepts, rng, variant=variant)
 
 
 def _written_generators() -> dict[str, Any]:

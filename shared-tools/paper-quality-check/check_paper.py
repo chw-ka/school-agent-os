@@ -15,6 +15,13 @@ from filename_meta import infer_exam_meta_from_path
 from footer import FooterCheckResult, FooterMeta, check_footer, format_footer_report
 from written_sections import WrittenSectionCheckResult, check_written_sections
 
+try:
+    from mcq_blank_check import McqBlankCheckResult, check_mcq_blank_lines, format_mcq_blank_report
+except ImportError:
+    McqBlankCheckResult = None  # type: ignore[misc, assignment]
+    check_mcq_blank_lines = None  # type: ignore[assignment]
+    format_mcq_blank_report = None  # type: ignore[assignment]
+
 
 @dataclass
 class PaperQualityReport:
@@ -22,6 +29,7 @@ class PaperQualityReport:
     footer: Optional[FooterCheckResult] = None
     cover: Optional[CoverCheckResult] = None
     written: Optional[WrittenSectionCheckResult] = None
+    mcq_blanks: Optional["McqBlankCheckResult"] = None
 
     @property
     def has_footer_issues(self) -> bool:
@@ -36,11 +44,16 @@ class PaperQualityReport:
         return self.written is not None and not self.written.ok
 
     @property
+    def has_mcq_blank_issues(self) -> bool:
+        return self.mcq_blanks is not None and not self.mcq_blanks.ok
+
+    @property
     def ok(self) -> bool:
         return (
             not self.has_footer_issues
             and not self.has_cover_issues
             and not self.has_written_issues
+            and not self.has_mcq_blank_issues
         )
 
     def to_dict(self) -> dict[str, Any]:
@@ -51,6 +64,8 @@ class PaperQualityReport:
             d["cover"] = self.cover.to_dict()
         if self.written is not None:
             d["written"] = self.written.to_dict()
+        if self.mcq_blanks is not None:
+            d["mcq_blanks"] = self.mcq_blanks.to_dict()
         return d
 
 
@@ -62,6 +77,8 @@ def run_paper_check(
     verify_footer: bool = True,
     verify_cover: bool = True,
     verify_written: bool = True,
+    verify_mcq_blanks: bool = True,
+    mcq_blocks: tuple[tuple[int, int], ...] | None = None,
     footer_meta: Optional[dict] = None,
 ) -> PaperQualityReport:
     candidate_docx = candidate_docx.expanduser().resolve()
@@ -102,6 +119,19 @@ def run_paper_check(
             template_docx_path=template_docx_path,
         )
 
+    if verify_mcq_blanks and check_mcq_blank_lines is not None:
+        blocks = mcq_blocks
+        if blocks is None:
+            import sys
+
+            fmt = Path(__file__).resolve().parents[1] / "paper-formatter"
+            if str(fmt) not in sys.path:
+                sys.path.insert(0, str(fmt))
+            from f5_ict_layout import F5_ICT_MCQ_BLOCKS
+
+            blocks = F5_ICT_MCQ_BLOCKS
+        report.mcq_blanks = check_mcq_blank_lines(candidate_docx, blocks)
+
     return report
 
 
@@ -115,6 +145,8 @@ def format_paper_report_text(report: PaperQualityReport) -> str:
         from written_sections import format_written_report
 
         sections.extend(["", format_written_report(report.written)])
+    if report.mcq_blanks is not None and format_mcq_blank_report is not None:
+        sections.extend(["", format_mcq_blank_report(report.mcq_blanks)])
     sections.append("")
     sections.append(f"Overall: {'PASS' if report.ok else 'ISSUES FOUND'}")
     return "\n".join(sections)

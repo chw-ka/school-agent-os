@@ -20,12 +20,18 @@ from post_check import repo_root, run_post_render_check, run_question_spec_check
 _FMT = Path(__file__).resolve().parents[1] / "paper-formatter"
 if str(_FMT) not in sys.path:
     sys.path.insert(0, str(_FMT))
-from docx_inplace import ZhCoverPatch, apply_cmp_cover_zh_on_en_layout, set_paragraph_text_distribute
-from f5_ict_tables import (
-    apply_f5_ict_table_content,
-    clear_all_body_tables_before_write,
-    remove_unused_f5_ict_tables,
+from docx_inplace import (
+    ZhCoverPatch,
+    apply_cmp_cover_zh_on_en_layout,
+    set_paragraph_text_distribute,
+    set_paragraph_text_rich,
 )
+from f5_ict_layout import (
+    F5_ICT_MCQ_BLOCKS,
+    normalize_mcq_vertical_gaps,
+    prepare_f5_ict_template_body,
+)
+from f5_ict_tables import apply_f5_ict_table_content, remove_unused_f5_ict_tables
 from f5_ict_written_content import build_part_b, build_part_c
 from f5_ict_written_from_dse import get_active_written_picks
 from mcq_answer_keys import build_random_mcq_key
@@ -314,15 +320,31 @@ def build_mcq_payload() -> list[list[str]]:
     return rows
 
 
-def apply_mcq(doc: Document, blocks: list[tuple[int, int]], payload: list[list[str]]) -> None:
+def apply_mcq(
+    doc: Document,
+    blocks: list[tuple[int, int]],
+    payload: list[list[str]],
+    *,
+    profile: dict | None = None,
+) -> None:
+    if profile is None:
+        from template_profile import load_f5_ict_profile
+
+        profile = load_f5_ict_profile()
+    from paper_format.renderer.paragraph_write import write_mcq_line
+
     if len(blocks) != len(payload):
         raise RuntimeError("blocks/payload mismatch")
     for (start, end), lines in zip(blocks, payload):
         span = end - start
-        if span != len(lines):
-            raise RuntimeError(f"span {span} != payload {len(lines)} at {start}")
+        if len(lines) > span:
+            raise RuntimeError(
+                f"MCQ payload {len(lines)} lines exceeds template span {span} at {start}"
+            )
         for j, text in enumerate(lines):
-            set_paragraph_text_distribute(doc.paragraphs[start + j], text)
+            write_mcq_line(doc.paragraphs[start + j], text, profile)
+        for j in range(len(lines), span):
+            write_mcq_line(doc.paragraphs[start + j], "", profile, collapsed=True)
 
 
 
@@ -381,8 +403,9 @@ def render_docx(
     shutil.copy(template, output)
     doc = Document(str(output))
     _apply_cover(doc)
-    blocks = mcq_blocks(doc)
-    apply_mcq(doc, blocks, final_mcq_rows)
+    prepare_f5_ict_template_body(doc)
+    apply_mcq(doc, list(F5_ICT_MCQ_BLOCKS), final_mcq_rows)
+    normalize_mcq_vertical_gaps(doc)
     written_picks = get_active_written_picks()
     if written_picks:
         from written_picks_render import build_part_b_from_picks, build_part_c_from_picks
@@ -394,7 +417,6 @@ def render_docx(
         part_c_lines = build_part_c()
     replace_span(doc, 313, 422, part_b_lines)
     replace_span(doc, 423, 624, part_c_lines)
-    clear_all_body_tables_before_write(doc)
     apply_f5_ict_table_content(doc)
     remove_unused_f5_ict_tables(doc)
     clear_answer_pages(doc)

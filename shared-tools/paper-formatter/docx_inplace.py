@@ -7,9 +7,21 @@ existing cover paragraphs that need to change (often just the paper title line).
 
 from __future__ import annotations
 
+import re
 from copy import deepcopy
 from dataclasses import dataclass
 from typing import Iterable, Optional, Sequence
+
+CODE_FONT = "Courier New"
+BODY_FONT = "新細明體"
+
+_PSEUDO_KW = re.compile(
+    r"\b(FOR|WHILE|REPEAT|UNTIL|IF|THEN|ELSE|ENDIF|ENDFOR|ENDWHILE|OUTPUT|"
+    r"PROCEDURE|ENDPROCEDURE|CALL|RETURN|PUSH|POP|BEGIN|END)\b",
+    re.IGNORECASE,
+)
+_PYTHON_KW = re.compile(r"^\s*(def |print\(|import |while |if |for |elif )", re.IGNORECASE)
+_PSEUDO_ASSIGN = re.compile(r"^\s*\w+\s*←")
 
 # Chinese CMP cover (table 0, cell 0,0) — 20 paragraphs in 24_25 templates.
 ZH_COVER_PARA = {
@@ -38,6 +50,38 @@ EN_COVER_PARA = {
 }
 
 
+def is_program_text(text: str) -> bool:
+    """True for pseudocode / Python / similar program lines."""
+    s = text.strip()
+    if not s:
+        return False
+    if "←" in s or "→" in s:
+        return True
+    if _PSEUDO_ASSIGN.match(s):
+        return True
+    if _PSEUDO_KW.search(s):
+        return True
+    if _PYTHON_KW.match(s):
+        return True
+    if re.search(r"^\s*\w+\s*=\s*\w", s) and not s.endswith("？"):
+        return True
+    return False
+
+
+def is_sql_text(text: str) -> bool:
+    s = text.strip()
+    if not s:
+        return False
+    return bool(
+        re.match(
+            r"^\s*(SELECT|INSERT|UPDATE|DELETE|CREATE|ALTER|DROP|FROM|WHERE|"
+            r"UNION|BEGIN|COMMIT|ROLLBACK|MINUS|JOIN|GROUP|HAVING|SET|VALUES|INTO)\b",
+            s,
+            re.IGNORECASE,
+        )
+    )
+
+
 def set_paragraph_text_distribute(paragraph, text: str) -> None:
     """
     Set paragraph text while preserving existing run count and formatting.
@@ -61,6 +105,22 @@ def set_paragraph_text_distribute(paragraph, text: str) -> None:
             seg = remaining[:ln]
             remaining = remaining[ln:]
             r.text = seg if seg != "" else " "
+
+
+def set_paragraph_text_rich(paragraph, text: str) -> None:
+    """Write paragraph text; pseudocode / Python / SQL use Courier New."""
+    # Template rows may be CENTER (e.g. SQL snippet) — MCQ options must stay left.
+    paragraph.paragraph_format.alignment = None
+    set_paragraph_text_distribute(paragraph, text)
+    if not text.strip():
+        return
+    font = (
+        CODE_FONT
+        if (is_program_text(text) or is_sql_text(text))
+        else BODY_FONT
+    )
+    for r in paragraph.runs:
+        r.font.name = font
 
 
 def replace_in_paragraph_runs(paragraph, needle: str, replacement: str) -> None:

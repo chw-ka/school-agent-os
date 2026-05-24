@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from docx_inplace import set_paragraph_text_distribute
+from docx_inplace import set_paragraph_text_rich
 
 if TYPE_CHECKING:
     from docx.document import Document
@@ -68,9 +68,16 @@ def blank_lines(count: int) -> list[str]:
     return [""] * count
 
 
-def replace_span(doc: Document, start: int, end_inclusive: int, lines: list[str]) -> None:
+def replace_span(
+    doc: Document,
+    start: int,
+    end_inclusive: int,
+    lines: list[str],
+    *,
+    profile: dict | None = None,
+) -> None:
     """
-    Overwrite ``doc.paragraphs[start:end_inclusive]`` preserving run formatting.
+    Overwrite ``doc.paragraphs[start:end_inclusive]`` using template role profiles.
 
     Raises if line count does not match the paragraph span exactly.
     """
@@ -79,8 +86,14 @@ def replace_span(doc: Document, start: int, end_inclusive: int, lines: list[str]
         raise RuntimeError(
             f"replace_span {start}-{end_inclusive} need {span} lines, got {len(lines)}"
         )
+    if profile is None:
+        from template_profile import load_f5_ict_profile
+
+        profile = load_f5_ict_profile()
+    from paper_format.renderer.paragraph_write import write_written_line
+
     for k, text in enumerate(lines):
-        set_paragraph_text_distribute(doc.paragraphs[start + k], text)
+        write_written_line(doc.paragraphs[start + k], text, profile)
 
 
 def set_paragraph_block(doc: Document, start: int, end_exclusive: int, lines: list[str]) -> None:
@@ -92,7 +105,7 @@ def set_paragraph_block(doc: Document, start: int, end_exclusive: int, lines: li
             f"(range {start}:{end_exclusive})."
         )
     for i in range(span):
-        set_paragraph_text_distribute(
+        set_paragraph_text_rich(
             doc.paragraphs[start + i],
             lines[i] if i < len(lines) else "",
         )

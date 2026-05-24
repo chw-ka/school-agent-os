@@ -31,8 +31,8 @@ MCQ_SPANS: tuple[int, ...] = (
     9,
     13,
     12,
-    7,
-    6,
+    10,
+    8,
     14,
     6,
     14,
@@ -59,15 +59,7 @@ def parse_spec_mcq_text(text: str) -> tuple[str, list[str], dict[str, str]]:
             statements.append(ms.group(2).strip())
         else:
             question_parts.append(line.strip())
-    if not question_parts:
-        question = ""
-    elif len(question_parts) == 1:
-        question = question_parts[0]
-    else:
-        question = question_parts[0]
-        for extra in question_parts[1:]:
-            if extra not in question:
-                question = f"{question} {extra}"
+    question = "\n".join(question_parts)
     return question, statements, opts
 
 

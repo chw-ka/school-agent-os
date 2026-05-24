@@ -1315,53 +1315,59 @@ def _layout_mcq_block(
     context: list[str] | None = None,
 ) -> list[str]:
     """Build template lines: DSE style with (1)(2)(3) sub-items where needed."""
+    import sys
+    from pathlib import Path
+
+    _fmt = Path(__file__).resolve().parents[1] / "paper-formatter"
+    if str(_fmt) not in sys.path:
+        sys.path.insert(0, str(_fmt))
+    from mcq_code_layout import format_mcq_stem_with_code
+
     opt_lines = [f"\t{L}.\t{opts[L]}" for L in "ABCD" if L in opts]
     if len(opt_lines) != 4:
         raise ValueError(f"MCQ must have 4 options, got {len(opt_lines)} for: {question[:60]}")
 
-    body: list[str] = [question]
+    question = format_mcq_stem_with_code(question)
+    body: list[str] = []
+    for ql in question.split("\n"):
+        if ql.strip() or not body:
+            body.append(ql)
+
+    max_body = span - 1 - len(opt_lines)  # blank + options
+    from mcq_code_layout import insert_code_block_gaps
+
+    body = insert_code_block_gaps(body, max_lines=max_body)
     ctx = context or []
     if ctx:
-        body.append("")
+        if body and body[-1].strip():
+            body.append("")
         body.extend(ctx)
+
     if statements:
-        if body[-1] != "":
+        compact_combo = len(body) + 3 + 1 + 4 > span
+        if not compact_combo and body and body[-1].strip():
             body.append("")
         for i, stmt in enumerate(statements, start=1):
-            body.append(f"\t\t({i})\t{stmt}")
-        body.append("")
+            body.append(f"\t\t({i})\t{stmt}\t")
+        if not compact_combo:
+            body.append("")
     elif hint:
-        body.append("")
+        if body and body[-1].strip():
+            body.append("")
         body.append(hint)
         body.append("")
-    elif not ctx:
+
+    # Exactly one blank line immediately above options (DSE convention)
+    if not body or body[-1].strip():
         body.append("")
 
     body.extend(opt_lines)
 
-    # Pad with blank lines before options
-    while len(body) < span:
-        insert_at = len(body) - 4
-        body.insert(max(1, insert_at), "")
-
-    # Trim excess blank lines (keep question + options intact)
-    while len(body) > span:
-        removed = False
-        for i in range(1, len(body) - 4):
-            if body[i] == "" and len(body) > span:
-                body.pop(i)
-                removed = True
-                break
-        if not removed:
-            body = body[:span]
-            break
-
-    if len(body) < span:
-        body.extend([""] * (span - len(body)))
-    if len(body) != span:
+    if len(body) > span:
         raise ValueError(
             f"MCQ layout span mismatch: need {span}, got {len(body)} "
-            f"(q={question[:40]!r}, statements={len(statements)})"
+            f"(statements={len(statements)}, q={question[:40]!r}…). "
+            "Shorten stem/code or use a shorter combo stem."
         )
     return body
 

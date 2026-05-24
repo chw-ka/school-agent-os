@@ -27,10 +27,12 @@ We keep "tool-first" + decoupling (data vs execution) by splitting into layers:
   - Optional image-based comparison (LibreOffice + PyMuPDF) as a non-blocking enhancement.
 
 ### CLI tools (Shared Tools)
-Planned CLIs under `shared-tools/paper-formatter/`:
-- `paper_extract.py`: extract `paper-model.json` from a reference paper (into subject folder).
-- `paper_generate.py`: generate a new DOCX by applying question replacements onto a chosen reference/template.
-- `paper_compare.py`: compare generated vs reference to quantify fidelity.
+Under `shared-tools/paper-formatter/`:
+- **`paper_extract.py`**: extract role profiles (`*.profile.json`) from a reference DOCX — tab stops, alignment, fonts per line type (MCQ stem/option/combo/code, 乙丙 subpart/answer blank/SQL, etc.).
+- **`render_from_spec.py`** / **`f5_ict_blueprint_db_web.render_docx()`**: clone skeleton DOCX, apply content via **role profiles** (not blind paragraph inherit).
+- `paper_compare.py` (planned): compare generated vs reference fidelity.
+
+Profile JSON lives under subject templates, e.g. `Subjects/S5-ICT/templates/24_25_S5_ICT_Exam02.profile.json`. Re-extract when the reference past paper layout changes.
 
 ### How this coexists with `exam_generator.py`
 - `exam_generator.py`: generic "build from template" generator (good for simple papers).
