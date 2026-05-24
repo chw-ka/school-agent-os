@@ -331,6 +331,8 @@ def apply_mcq(
         from template_profile import load_f5_ict_profile
 
         profile = load_f5_ict_profile()
+    from mcq_code_layout import is_code_layout_line
+    from paper_format.f5_ict_roles import mcq_line_kind
     from paper_format.renderer.paragraph_write import write_mcq_line
 
     if len(blocks) != len(payload):
@@ -341,8 +343,20 @@ def apply_mcq(
             raise RuntimeError(
                 f"MCQ payload {len(lines)} lines exceeds template span {span} at {start}"
             )
+        code_idxs = [
+            j
+            for j, t in enumerate(lines)
+            if t.strip() and mcq_line_kind(t) == "code"
+        ]
         for j, text in enumerate(lines):
-            write_mcq_line(doc.paragraphs[start + j], text, profile)
+            is_code = j in code_idxs
+            write_mcq_line(
+                doc.paragraphs[start + j],
+                text,
+                profile,
+                code_before=is_code and j == code_idxs[0],
+                code_after=is_code and j == code_idxs[-1],
+            )
         for j in range(len(lines), span):
             write_mcq_line(doc.paragraphs[start + j], "", profile, collapsed=True)
 

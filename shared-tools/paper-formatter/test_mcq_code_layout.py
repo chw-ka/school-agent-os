@@ -44,7 +44,7 @@ def test_mcq_code_single_tab():
     assert lines[1].startswith("\t")
 
 
-def test_code_gaps_when_span_allows():
+def test_code_gaps_before_code_only():
     body = ["考慮以下偽代碼：", "\tx ← 2", "輸出是？"]
     out = insert_code_block_gaps(body, max_lines=6)
     assert out[1] == ""
@@ -55,5 +55,5 @@ if __name__ == "__main__":
     test_split_inline_pseudocode()
     test_split_trailing_question()
     test_mcq_code_single_tab()
-    test_code_gaps_when_span_allows()
+    test_code_gaps_before_code_only()
     print("ok")

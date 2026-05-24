@@ -82,7 +82,7 @@ def split_semicolon_statements(text: str) -> list[str]:
         part = part.strip()
         if not part:
             continue
-        if _STMT_START.match(part):
+        if _STMT_START.match(part) and not out[-1].rstrip().endswith(("則", ":", "：")):
             out.append(part)
         else:
             out[-1] = f"{out[-1]}；{part}"
@@ -151,19 +151,31 @@ def _en_pseudo_to_zh(line: str) -> str:
     return s
 
 
-def _code_line_depth(zh: str, *, prev: str | None, block_open: bool) -> int:
-    depth = MCQ_CODE_BASE_DEPTH
-    if block_open and not zh.startswith(("若 ", "當 ", "重複 ", "否則")):
-        depth += 1
-    if prev and prev.strip().startswith(("若 ", "當 ", "重複 ")) and not prev.rstrip().endswith(
-        ("則", "：", ":")
-    ):
-        depth += 1
-    if zh.startswith(("若 ", "當 ", "重複 ")):
-        return MCQ_CODE_BASE_DEPTH
-    if prev and prev.lstrip("\t").startswith(("若 ", "當 ")):
-        return MCQ_CODE_BASE_DEPTH + 1
-    return depth
+def _code_line_depth(zh: str, *, prev: str | None, open_blocks: int, source_line: str) -> tuple[int, int]:
+    """Return (tab depth, updated open_blocks)."""
+    lead = len(source_line) - len(source_line.lstrip(" \t"))
+    if lead >= 2:
+        return MCQ_CODE_BASE_DEPTH + open_blocks + 1, open_blocks
+
+    depth = MCQ_CODE_BASE_DEPTH + open_blocks
+    header_only = zh.startswith(("當 ", "若 ", "重複 ")) and (
+        zh.rstrip().endswith(("則", "：", ":"))
+        or (zh.endswith("則") and "←" not in zh.split("則", 1)[-1])
+    )
+    inline_block = zh.startswith(("當 ", "若 ", "重複 ")) and "：" in zh and any(
+        ch in zh.split("：", 1)[1] for ch in ("←", "輸出", "輸入")
+    )
+
+    if inline_block:
+        return MCQ_CODE_BASE_DEPTH, open_blocks
+
+    if header_only:
+        return depth, open_blocks + 1
+
+    if open_blocks and zh.startswith(("輸出", "結束")):
+        return depth, max(0, open_blocks - 1)
+
+    return depth, open_blocks
 
 
 def format_code_block(text: str, *, lang: str = "pseudo_zh") -> str:
@@ -173,7 +185,7 @@ def format_code_block(text: str, *, lang: str = "pseudo_zh") -> str:
     ``lang``: ``pseudo_zh`` | ``python`` (Python keeps 4-space inner indent → tabs).
     """
     out: list[str] = []
-    block_open = False
+    open_blocks = 0
     for raw in text.splitlines():
         line = raw.rstrip()
         if not line.strip():
@@ -186,13 +198,10 @@ def format_code_block(text: str, *, lang: str = "pseudo_zh") -> str:
             continue
         zh = _en_pseudo_to_zh(line) if is_code_content_line(line) else line.strip()
         if is_code_content_line(line):
-            prev = out[-1] if out else None
-            depth = _code_line_depth(zh, prev=prev, block_open=block_open)
+            depth, open_blocks = _code_line_depth(
+                zh, prev=out[-1] if out else None, open_blocks=open_blocks, source_line=line
+            )
             out.append(indent_code_line(zh, depth=depth))
-            if zh.startswith(("若 ", "當 ", "重複 ")):
-                block_open = True
-            elif zh.startswith(("輸出", "結束")):
-                block_open = False
         else:
             out.append(indent_code_line(line, depth=MCQ_CODE_BASE_DEPTH))
     return "\n".join(out)
@@ -259,7 +268,8 @@ def insert_code_block_gaps(lines: list[str], *, max_lines: int | None = None) ->
             cur = is_code_layout_line(line)
             if out and out[-1].strip():
                 prev = is_code_layout_line(out[-1])
-                if prev is not cur:
+                # Blank before code block only; after code use paragraph spacing + pre-option blank
+                if not prev and cur:
                     out.append("")
             out.append(line)
         return out

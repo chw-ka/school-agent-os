@@ -77,12 +77,18 @@ def apply_paragraph_profile(paragraph: Paragraph, profile: ParagraphProfile) -> 
             pf.tab_stops.add_tab_stop(Emu(ts.position_emu), align)
 
 
-def apply_code_paragraph_spacing(paragraph: Paragraph, profile: ParagraphProfile) -> None:
-    """Visual gap before/after code lines (reference uses blank paras; profile adds spacing)."""
+def apply_code_paragraph_spacing(
+    paragraph: Paragraph,
+    profile: ParagraphProfile,
+    *,
+    before: bool = True,
+    after: bool = True,
+) -> None:
+    """Visual gap before/after code block (Word spacing, not extra blank paragraphs)."""
     pf = paragraph.paragraph_format
-    if profile.space_before_pt is None:
+    if before and profile.space_before_pt is None:
         pf.space_before = Pt(6)
-    if profile.space_after_pt is None:
+    if after and profile.space_after_pt is None:
         pf.space_after = Pt(6)
 
 

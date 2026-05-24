@@ -1332,11 +1332,6 @@ def _layout_mcq_block(
     for ql in question.split("\n"):
         if ql.strip() or not body:
             body.append(ql)
-
-    max_body = span - 1 - len(opt_lines)  # blank + options
-    from mcq_code_layout import insert_code_block_gaps
-
-    body = insert_code_block_gaps(body, max_lines=max_body)
     ctx = context or []
     if ctx:
         if body and body[-1].strip():

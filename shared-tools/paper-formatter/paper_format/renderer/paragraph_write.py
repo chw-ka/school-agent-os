@@ -39,10 +39,6 @@ def set_paragraph_with_role(
     set_paragraph_text_distribute(paragraph, text)
     if not text.strip():
         return
-    if role in ("mcq.code_left", "mcq.code_center", "written.code") and prof:
-        from paper_format.renderer.profile_apply import apply_code_paragraph_spacing
-
-        apply_code_paragraph_spacing(paragraph, prof)
     font = _font_for_line(text, role)
     for r in paragraph.runs:
         r.font.name = font
@@ -50,11 +46,38 @@ def set_paragraph_with_role(
         apply_run_defaults(paragraph, prof)
 
 
-def write_mcq_line(paragraph: Paragraph, text: str, profile: dict[str, Any], *, collapsed: bool = False) -> None:
+def write_mcq_line(
+    paragraph: Paragraph,
+    text: str,
+    profile: dict[str, Any],
+    *,
+    collapsed: bool = False,
+    code_before: bool = False,
+    code_after: bool = False,
+) -> None:
     kind = mcq_line_kind(text, collapsed=collapsed)
     code_center = kind == "code" and is_sql_text(text) and not text.startswith("\t")
     role = mcq_role_for_kind(kind, code_center=code_center)
-    set_paragraph_with_role(paragraph, text, role, profile)
+    prof = get_role_profile(profile, role)
+    if prof:
+        apply_paragraph_profile(paragraph, prof)
+    set_paragraph_text_distribute(paragraph, text)
+    if not text.strip():
+        return
+    if kind == "code" and prof:
+        from paper_format.renderer.profile_apply import apply_code_paragraph_spacing
+
+        apply_code_paragraph_spacing(
+            paragraph,
+            prof,
+            before=code_before,
+            after=code_after,
+        )
+    font = _font_for_line(text, role)
+    for r in paragraph.runs:
+        r.font.name = font
+    if prof:
+        apply_run_defaults(paragraph, prof)
 
 
 def write_written_line(paragraph: Paragraph, text: str, profile: dict[str, Any]) -> None:
