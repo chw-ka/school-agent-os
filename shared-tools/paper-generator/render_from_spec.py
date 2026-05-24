@@ -65,9 +65,12 @@ def main(argv: list[str] | None = None) -> int:
             return q_code
 
     final_rows, mcq_key = spec_mcq_to_final_rows(spec)
-    picks = written_picks_from_items(spec.get("items") or [])
+    meta = spec.get("meta") or {}
+    use_template_written = meta.get("written_render") == "template"
+    picks = {} if use_template_written else written_picks_from_items(spec.get("items") or [])
     set_active_written_picks(picks)
-    print(f"MCQ rows: {len(final_rows)}, written picks: {len(picks)}")
+    written_mode = "template (f5_ict_written_content)" if use_template_written else f"picks ({len(picks)} slots)"
+    print(f"MCQ rows: {len(final_rows)}, written: {written_mode}")
 
     footer = dict((spec.get("meta") or {}).get("footer") or {})
     if not footer:

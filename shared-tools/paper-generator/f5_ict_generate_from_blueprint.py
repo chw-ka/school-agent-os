@@ -730,6 +730,20 @@ def replace_spec_item(spec: dict[str, Any], new_item: dict[str, Any], *, seed: i
         sync_mcq_meta(spec, seed=seed)
 
 
+def template_written_items() -> list[dict]:
+    """Curated 乙／丙 from f5_ict_written_content (tables, blanks, SQL traces)."""
+    if str(_FMT) not in sys.path:
+        sys.path.insert(0, str(_FMT))
+    from f5_ict_spec import _part_b_items, _part_c_items
+    from f5_ict_written_content import build_part_b, build_part_c
+
+    items = _part_b_items(build_part_b) + _part_c_items(build_part_c)
+    for it in items:
+        it["dse_source"] = f"template://written/{it['id']}"
+        it["composition"] = "template"
+    return items
+
+
 def written_picks_from_items(items: list[dict]) -> dict[str, dict]:
     """Build written_picks dict for DOCX render from spec written items."""
     picks: dict[str, dict] = {}
@@ -763,39 +777,27 @@ def build_spec_from_blueprint(
     for slot in blueprint.get("slots") or []:
         sid = str(slot["id"])
         section = slot["section"]
+        if section != "mcq":
+            continue
         rng = _slot_rng(sid, seed)
         concepts = list(slot.get("concepts") or [])
         marks = slot.get("marks", 1)
-        title = slot.get("title")
-
-        if section == "mcq":
-            text, letter = _generate_mcq(slot, style, rng, variant=0)
-            prov = f"generated://mcq/{sid}"
-            item = make_item(
-                sid,
-                "mcq",
-                text,
-                marks=marks,
-                concepts=concepts,
-                core=slot.get("core"),
-                answer=letter,
-                dse_source=prov,
-            )
-        else:
-            text = _generate_written(slot, rng)
-            prov = f"generated://written/{sid}"
-            item = make_item(
-                sid,
-                section,
-                text,
-                marks=marks,
-                title=title,
-                concepts=concepts,
-                dse_source=prov,
-                composition="generated",
-            )
+        text, letter = _generate_mcq(slot, style, rng, variant=0)
+        prov = f"generated://mcq/{sid}"
+        item = make_item(
+            sid,
+            "mcq",
+            text,
+            marks=marks,
+            concepts=concepts,
+            core=slot.get("core"),
+            answer=letter,
+            dse_source=prov,
+        )
         provenance.append(prov)
         items.append(item)
+
+    items.extend(template_written_items())
 
     bmeta = blueprint.get("meta") or {}
     meta: dict[str, Any] = {
@@ -828,7 +830,8 @@ def build_spec_from_blueprint(
     }
     meta["phrasing"] = "HKDSE ICT style — generated from blueprint (not bank copy)"
     meta["mcq_provenance"] = provenance[:30]
-    meta["written_picks_source"] = "spec_items"
+    meta["written_render"] = "template"
+    meta["written_picks_source"] = "f5_ict_written_content"
 
     spec = build_spec(meta, items)
     sync_mcq_meta(spec, seed=seed)

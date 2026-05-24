@@ -130,8 +130,9 @@
       "generated://mcq/mcq-29",
       "generated://mcq/mcq-30"
     ],
-    "written_picks_source": "spec_items",
-    "mcq_answers": "ADBBDCCADDCBADCABBCABBADCCBAAD"
+    "written_picks_source": "f5_ict_written_content",
+    "mcq_answers": "ADBBDCCADDCBADCABBCABBADCCBAAD",
+    "written_render": "template"
   },
   "items": [
     {
@@ -552,34 +553,34 @@
     {
       "id": "b-01",
       "section": "section_b",
-      "text": "某校舉辦義賣，老師使用試算表記錄各班捐款。工作表「Donation」中：\n欄 A 為班別，欄 B 為學號，欄 C 為捐款金額（港元）。\n在 D2 輸入公式，若 C2≥100 則顯示「達標」，否則顯示「未達標」，並複製至 D3:D50。\n\n(a) 寫出 D2 的公式。\t(2 分)\n\n(b) 在 E2 使用 COUNTIFS 統計 5A 班且捐款≥100 的人數，寫出公式。\t(2 分)",
+      "text": "「煦風書社」以試算表記錄義賣收入。欄位：A=日期、B=商品、C=單價、D=數量、E=會員（Y／N）、F=總價。部分資料如下：\n\n\n\t(a)\t在 F2 寫出一條公式並複製至 F3:F50。若 E2 為「Y」且 D2≥5，總價為 C2*D2 的 9 折；否則為 C2*D2。\t(1 分)\n\t\t\t\t\t\n\n\t(b)\t在 H2 寫出一條公式（可用 COUNTIFS），複製至 H3:H5，分別統計：會員訂單數、非會員訂單數及總銷售額。寫出 H2 的公式。\t(3 分)",
       "marks": 4,
-      "title": "試算表",
+      "title": "試算表（義賣）",
       "concepts": [
         "試算表",
         "IF",
         "COUNTIFS"
       ],
-      "dse_source": "generated://written/b-01",
-      "composition": "generated"
+      "dse_source": "template://written/b-01",
+      "composition": "template"
     },
     {
       "id": "b-02",
       "section": "section_b",
-      "text": "某系統以 8 位元傳送數據，並在最高位加入奇偶檢驗位（偶校驗）。\n第一組：0101 0110\n第二組：1100 1011\n第三組：1110 0100\n\n(a) 指出哪兩組在傳送時可能已損壞，並說明理由。\t(3 分)\n\n(b) 描述一個適用於學號欄（文字，長度 8）的有效性檢驗。\t(2 分)",
+      "text": "完成下表，為網上報名欄位選擇適當的數據有效性檢驗。\t(3 分)\n\n\n\t(b)\t試算表可設定數據有效性以減少輸入錯誤。\n\n\t\t(i)\t說明「數據有效性檢驗」與「奇偶檢測」的分別。\t(1 分)\n\t\t\t\t\t\n\n\t\t(ii)\t為「班別」欄建議一種有效性規則並舉例。\t(1 分)",
       "marks": 5,
       "title": "數據有效性",
       "concepts": [
         "有效性檢驗",
         "奇偶檢測"
       ],
-      "dse_source": "generated://written/b-02",
-      "composition": "generated"
+      "dse_source": "template://written/b-02",
+      "composition": "template"
     },
     {
       "id": "b-03",
       "section": "section_b",
-      "text": "學生以 1920×1080 像素、24 bit 真彩色拍攝 30 秒短片，每秒 24 幀，未壓縮。\n\n(a) 估算影片檔案大小（MB），列出計算步驟。\t(3 分)\n\n(b) 說明使用 H.264 壓縮可如何減少檔案大小。\t(1 分)",
+      "text": "攝影學會以未壓縮 BMP 儲存活動相片：每張 1600×1200 像素、24 bit 真彩色。\n\n\t(a)\t估算 80 張相片的總檔案大小（以 MB 表示，展示計算）。\t(2 分)\n\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\n\t(b)\t比較以 JPEG（有損）與 PNG（無損）儲存同一批相片的取捨。\n\n\t\t(i)\t哪種格式檔案通常較小？為什麼？\t(1 分)\n\t\t\t\t\t\n\n\n\t\t(ii)\t若需保留最高畫質供印刷，應選哪種？簡述。\t(1 分)",
       "marks": 4,
       "title": "多媒體檔案大小",
       "concepts": [
@@ -587,13 +588,13 @@
         "點陣圖",
         "壓縮"
       ],
-      "dse_source": "generated://written/b-03",
-      "composition": "generated"
+      "dse_source": "template://written/b-03",
+      "composition": "template"
     },
     {
       "id": "b-04",
       "section": "section_b",
-      "text": "考慮以下偽代碼，在陣列 A[1..n] 中尋找最大值並輸出其索引。\nmax ← A[1]; pos ← 1\nFOR i ← 2 TO n\n  IF A[i] > max THEN max ← A[i]; pos ← i\nENDFOR\nOUTPUT pos\n\n(a) 若 n=5 且 A=[3,9,2,9,1]，寫出輸出。\t(2 分)\n\n(b) 說明此算法屬於哪類搜尋。\t(2 分)",
+      "text": "考慮陣列 A（索引由 1 開始，n=6）及以下搜尋算法（尋找值 key）：\n\n\n\t執行下列算法：\n\n\t\tfound ← FALSE\n\t\ti ← 1\n\t\tWHILE i ≤ n AND found = FALSE DO\n\t\t    IF A[i] = key THEN\n\t\t\t        found ← TRUE\n\t\t    i ← i + 1\n\n\t(a)\t設 A = [4, 9, 2, 9, 7, 1]、key = 9。完成追蹤表，展示每次迴圈後 i 與 found。\t(2 分)\n\t\t\t\t\t\n\n\n\t(b)\t若 key 不在陣列內，算法結束時 i 的值是多少？解釋。\t(2 分)\n\t\t\t\t\t\n\n\t請在答案中說明此算法屬「線性搜尋」的原因。",
       "marks": 4,
       "title": "線性搜尋",
       "concepts": [
@@ -601,13 +602,13 @@
         "偽代碼",
         "陣列"
       ],
-      "dse_source": "generated://written/b-04",
-      "composition": "generated"
+      "dse_source": "template://written/b-04",
+      "composition": "template"
     },
     {
       "id": "b-05",
       "section": "section_b",
-      "text": "圖書館以隨機存取檔案儲存書籍，主鍵為書號；另以順序存取檔案記錄每日借還記錄。\n\n(a) 比較兩種存取方式各適合上述哪項用途。\t(2 分)\n\n(b) 若要以書號快速找書，應使用哪種存取？說明理由。\t(2 分)",
+      "text": "校園相簿系統以索引檔記錄每張相片的編號與儲存位置。\n\n\n\n\n\n\n\n\t系統可以「直接存取」或「順序存取」索引檔。\n\n\t(a)\t比較兩種方式查找特定相片編號的優缺點。\t(2 分)\n\t\t\t\t\t\n\n\t(b)\t若索引按相片編號排序，查找時哪種方式較適合？舉一項校內應用。\t(2 分)",
       "marks": 4,
       "title": "索引檔存取",
       "concepts": [
@@ -615,53 +616,54 @@
         "直接存取",
         "順序存取"
       ],
-      "dse_source": "generated://written/b-05",
-      "composition": "generated"
+      "dse_source": "template://written/b-05",
+      "composition": "template"
     },
     {
       "id": "b-06",
       "section": "section_b",
-      "text": "網店「TechShop」使用關聯式數據庫，含 CUSTOMER(CID, CName) 及 ORDER(OID, CID, Amount, ODate)。\n\n(a) 寫出 CREATE TABLE ORDER 的 SQL（含主鍵及外鍵）。\t(4 分)\n\n(b) 寫出一條 INSERT，新增 CID='C01' 的訂單，金額 250，日期 '2026-03-01'。\t(3 分)\n\n(c) 為 Amount 欄建議一個合適的資料類型並說明。\t(2 分)",
+      "text": "「綠途生活」網店以網上表格收集訂單，並把資料匯入 ORDER 資料表（OID、CNAME、PHONE、EMAIL、ORDER_DATE）。\n\n\t(a)\t試指出使用網上表格相對紙本表格的兩項好處。\t(2 分)\n\n\t\t\t\t\t\n\n\t(b)\t為電話及電郵欄各建議一種數據有效性檢驗方法，並舉例。\t(2 分)\n\t(i)\t電話號碼\n\t\t\t\t\t\n\n\t\t(ii)\t電郵地址\n\n\n\t以下是 ORDER 資料表部分記錄：\n\n\n\t(c)\tPHONE 欄應使用哪種資料類型？為什麼？\t(2 分)\n\n\t\t\t\t\t\n\n\t(d)\t執行以下 SQL 後的輸出是什麼？\t(1 分)\n\t\t\t\t\t\n\t\t\tSELECT CNAME FROM ORDER WHERE ORDER_DATE < '2026-03-01';\n\n\n\t(e)\t寫出一條 SQL，列出所有於 5 月落單的客戶名稱。\t(2 分)",
       "marks": 9,
       "title": "網店訂單與 SQL",
       "concepts": [
         "數據庫",
         "SQL",
+        "有效性檢驗",
         "資料類型"
       ],
-      "dse_source": "generated://written/b-06",
-      "composition": "generated"
+      "dse_source": "template://written/b-06",
+      "composition": "template"
     },
     {
       "id": "c-01",
       "section": "section_c",
-      "text": "戲院「StarCinema」預訂系統含實體：CINEMA、SCREEN、SHOWTIME、BOOKING。\n一場放映在一個影廳；一筆預訂對應一場放映及一位顧客。\n\n(a) 繪製 ERD（標示主鍵、外鍵及 cardinality）。\t(3 分)\n\n(b) 說明 BOOKING 與 SHOWTIME 之間的參照完整性。\t(1 分)",
+      "text": "某院線公司開發會員預訂系統：每位會員可建立多張預訂；每張預訂對應一個場次；每間戲院每日有多個場次。\n\n\t繪製實體關係圖（ERD），標示 Member、Booking、Screening、Cinema 及主鍵／外鍵。\t(4 分)",
       "marks": 4,
       "title": "戲院預訂 ERD",
       "concepts": [
         "ERD",
         "數據庫"
       ],
-      "dse_source": "generated://written/c-01",
-      "composition": "generated"
+      "dse_source": "template://written/c-01",
+      "composition": "template"
     },
     {
       "id": "c-02",
       "section": "section_c",
-      "text": "表 FILM(FID, Title, Year) 及 RENTAL(RID, FID, MemberID, RentDate)。\n\n(a) 寫出建立 FILM 的 CREATE TABLE（FID 為主鍵）。\t(1 分)\n\n(b) 寫出 INSERT 一條 FILM 記錄的 SQL。\t(1 分)",
+      "text": "某社企使用 MOVIE 資料表記錄租借影碟。\n\n\t(a)\t補充以下 SQL，使 MID 不可重複。\t(1 分)\n\n\t\t\tCREATE TABLE MOVIE (\n\t\t\t\t    MID CHAR(6)\t\t\t\t,\n\t\t\t\t    TITLE VARCHAR(60),\n\t\t\t\t    RENTAL INTEGER\n\t\t\t)\n\n\t(b)\t以下記錄將插入 MOVIE。\t(1 分)\n\n\n\t\t\tINSERT INTO MOVIE VALUES (                                )\n\n\t寫出此 SQL 語句中未填寫的部分。",
       "marks": 2,
       "title": "CREATE / INSERT",
       "concepts": [
         "數據庫",
         "SQL"
       ],
-      "dse_source": "generated://written/c-02",
-      "composition": "generated"
+      "dse_source": "template://written/c-02",
+      "composition": "template"
     },
     {
       "id": "c-03",
       "section": "section_c",
-      "text": "表 STAFF(SID, Name, Dept) 及 PROJECT(PID, PName, LeadSID)。\n\n(a) 寫出 UPDATE，把 LeadSID='S03' 的專案改為 'S05'。\t(1 分)\n\n(b) 使用 UNION 合併兩個 SELECT（SID, Name），分別來自 STAFF 與外聘顧問表 GUEST。\t(2 分)",
+      "text": "Order2024 與 Order2025 結構相同，部分記錄如下：\n\n\t\tOrder2024\t\tOrder2025\n\n\t(a)\t執行以下 SQL 後會列出多少筆記錄？\t(1 分)\n\n\t\t\tSELECT *\n\t\t\tFROM Order2024\n\t\t\tUNION\n\t\t\tSELECT PID, SID, AMT\n\t\t\tFROM Order2025;\n\n\t\t\t\t\t\t\t\n\t(b)\t列出執行以下 SQL 後 Order2024 內被更新的記錄。\t(2 分)\n\n\t\t\tUPDATE Order2024\n\t\t\tSET AMT = 0\n\t\t\tWHERE AMT > 0 AND\n\t\t\t\t    (EXISTS\n\t\t\t\t\t        (SELECT * FROM Order2025\n\t\t\t\t\t         WHERE Order2024.PID = Order2025.PID\n\t\t\t\t\t\t\t           AND Order2025.AMT = 0);",
       "marks": 3,
       "title": "UNION / UPDATE",
       "concepts": [
@@ -669,13 +671,13 @@
         "SQL",
         "UNION"
       ],
-      "dse_source": "generated://written/c-03",
-      "composition": "generated"
+      "dse_source": "template://written/c-03",
+      "composition": "template"
     },
     {
       "id": "c-05",
       "section": "section_c",
-      "text": "表 FACILITY(FID, FName, Capacity) 及 RESERVE(RID, FID, ClubID, RDate, Slot)。\nClub 表含 CID, CName。\n\n(a) 寫出查詢：列出 2026 年 4 月曾預訂的設施名稱（DISTINCT）。\t(3 分)\n\n(b) 寫出使用 MINUS：曾預訂 F01 但未預訂 F02 的 ClubID。\t(4 分)\n\n(c) 說明 MINUS 與 NOT IN 的差異（一句）。\t(1 分)\n\n(d) 寫出 GROUP BY 統計各設施預訂次數。\t(3 分)",
+      "text": "某社區中心資料庫包含 FACILITY 及 RESERVE 資料表：\n\nFACILITY\n\nRESERVE\n\n\t(a)\t寫出 MEMID 欄的合適數據類型並簡略說明。\t(1 分)\n\n\t\t\t\t\t\t\t\n\n\t(b)\t為以下任務寫出 SQL：\n\n\t\t(i)\t列出預約編號以「R26」開頭的記錄，按日期升序。\t(2 分)\n\n\t\t\t\t\t\t\t\n\n\n\t\t(ii)\t列出 2026-07-12 預約的所有設施名稱。\t(2 分)\n\n\t\t\t\t\t\t\t\n\n\n\t\t(iii)\t列出曾預約容量少於 25 的設施之會員編號（不重複）。\t(3 分)\n\n\t\t\t\t\t\t\t\n\n\n\n\n\n\t(c)\t簡述以下 SQL 的用途。\t(2 分)\n\n\t\t\tSELECT FID FROM FACILITY\n\t\t\tMINUS\n\t\t\tSELECT FID FROM RESERVE;\n\n\t\t\t\t\t\t\t\n\n\n\n\t(d)\t簡述非規範化 FACILITY 與 RESERVE 的一個方法。\t(1 分)",
       "marks": 11,
       "title": "FACILITY / RESERVE",
       "concepts": [
@@ -683,13 +685,13 @@
         "SQL",
         "MINUS"
       ],
-      "dse_source": "generated://written/c-05",
-      "composition": "generated"
+      "dse_source": "template://written/c-05",
+      "composition": "template"
     },
     {
       "id": "c-06",
       "section": "section_c",
-      "text": "表 MEMBER(MID, MName) 及 LOAN(LID, MID, BID, LDate)。\nSQL：SELECT MName, COUNT(*) FROM MEMBER M JOIN LOAN L ON M.MID=L.MID GROUP BY MName;\n\n(a) 描述此查詢的輸出欄位。\t(2 分)\n\n(b) 若改為 LEFT JOIN，結果有何不同？\t(3 分)",
+      "text": "考慮 Member 與 Enrol 資料表，以下 SQL 逐步執行：\n\n\n\t設初始結果為空。\n\n\n\t(a)\t第一次 JOIN 後結果包含哪些 MemberID？\t(1 分)\n\n\n\t\t(ii)\t加入 GROUP BY 後結果如何變化？\t(1 分)\n\n\n\t\t(iii)\t加入 HAVING COUNT(*) > 1 後最終結果是什麼？\t(1 分)\n\n\n\t(b)\t此查詢找出哪類會員？\t(1 分)\n\n\n\t(c)\t若改為 LEFT JOIN，結果有何不同？簡述。\t(1 分)",
       "marks": 5,
       "title": "SQL 查詢追蹤",
       "concepts": [
@@ -698,13 +700,13 @@
         "JOIN",
         "GROUP BY"
       ],
-      "dse_source": "generated://written/c-06",
-      "composition": "generated"
+      "dse_source": "template://written/c-06",
+      "composition": "template"
     },
     {
       "id": "c-07",
       "section": "section_c",
-      "text": "一卡通系統以 Transaction 處理扣款：BEGIN; UPDATE ACCOUNT SET Balance=Balance-50 WHERE AID='A1'; INSERT INTO LOG VALUES(...); COMMIT;\n\n(a) 說明 COMMIT 的作用。\t(2 分)\n\n(b) 若在 UPDATE 後發生錯誤而執行 ROLLBACK，Balance 會如何？\t(3 分)\n\n(c) 舉出一個應使用 Transaction 的學校場景。\t(4 分)",
+      "text": "校園一卡通系統使用交易（Transaction）確保扣款一致。常用子句如下：\n\n\n\t(a)\t寫出 BEGIN…COMMIT 與 ROLLBACK 的用途各一項。\t(1 分)\n\n\t\t\tUPDATE Account SET Balance = Balance - 30 WHERE StudentID = 'S002';\n\n\n\t(b)\t若第二步 UPDATE 失敗，應執行哪個子句？為什麼？\t(1 分)\n\n\n\t試描述如何確保兩個 UPDATE 同時成功或同時失敗。\n\n\t\t\tBEGIN TRANSACTION\n\t\t\tUPDATE Wallet SET Balance = Balance - 50 WHERE SID = 'S001';\n\t\t\tUPDATE Canteen SET Income = Income + 50 WHERE ID = 'C01';\n\t\t\tIF @@ERROR <> 0\n\t\t\t    ROLLBACK\n\t\t\tELSE\n\t\t\t    COMMIT\n\n\n\t(c)\t寫出 PAY(SID, AMOUNT) 的偽代碼，使用 BEGIN/COMMIT/ROLLBACK。\t(3 分)\n\n\t\t\tPAY(SID, AMOUNT)\n\n\t(d)\t說明若無交易控制，扣款中斷可能造成什麼資料不一致。\t(4 分)",
       "marks": 9,
       "title": "一卡通交易",
       "concepts": [
@@ -713,13 +715,13 @@
         "COMMIT",
         "ROLLBACK"
       ],
-      "dse_source": "generated://written/c-07",
-      "composition": "generated"
+      "dse_source": "template://written/c-07",
+      "composition": "template"
     },
     {
       "id": "c-08",
       "section": "section_c",
-      "text": "堆疊 S 初為空。依次執行：PUSH 3; PUSH 7; POP; PUSH 2; POP; PUSH 9。\n\n(a) 列出每次 POP 的輸出值。\t(3 分)\n\n(b) 完成後堆疊頂端元素是什麼？\t(1 分)\n\n(c) 說明堆疊適合處理「復原上次操作」的原因。\t(2 分)",
+      "text": "某程式以堆疊（Stack）儲存運算元，以下為初始狀態及 PUSH／POP 操作：\n\n堆疊底在左，頂端在右。\n完成下表（首四步）後，繼續追蹤 PUSH 2、POP、POP。\n\n\t操作序列：PUSH 3；PUSH 7；POP；PUSH 2；POP；POP\n\n\t\tStack 狀態\n\n\t老師設計 trace_stack 追蹤每次操作後的堆疊頂端：\n\n\t\ttrace_stack\n\t\t10  op ← 1\n\t\t20  WHILE op ≤ 6 DO\n\t\t30      執行第 op 步操作並記錄 stack 頂端\n\t\t40      顯示 \"Step op: top = …\"\n\t\t50      op ← op + 1\n\n\t(a)\t完成追蹤表，列出每步後 stack 頂端元素。\t(2 分)\n\n\t(b)\t若先 POP 再 PUSH 順序對調，結果有何不同？簡述。\t(2 分)\n\n\t\t\t\t\t\t\t\n\n\n\t(c)\t說明堆疊「後進先出」在此題中的意義。\t(2 分)",
       "marks": 6,
       "title": "堆疊操作",
       "concepts": [
@@ -727,8 +729,8 @@
         "堆疊",
         "偽代碼"
       ],
-      "dse_source": "generated://written/c-08",
-      "composition": "generated"
+      "dse_source": "template://written/c-08",
+      "composition": "template"
     }
   ]
 }
