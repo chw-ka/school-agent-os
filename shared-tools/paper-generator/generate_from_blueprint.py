@@ -64,6 +64,17 @@ def main(argv: list[str] | None = None) -> int:
         default=2,
         help="Partial regen passes when --partial-regen (default 2)",
     )
+    ap.add_argument(
+        "--solve-review",
+        action="store_true",
+        help="After generate/regen, run LLM solve_review (needs GOOGLE_API_KEY)",
+    )
+    ap.add_argument(
+        "--solve-repair",
+        action="store_true",
+        help="With --partial-regen, LLM-repair slots from solve_review.json",
+    )
+    ap.add_argument("--solve-provider", choices=["gemini", "deepseek", "openai"], default=None)
     args = ap.parse_args(argv)
 
     bp_path = args.blueprint.expanduser().resolve()
@@ -79,6 +90,9 @@ def main(argv: list[str] | None = None) -> int:
     style = _load_json(style_path) if style_path.exists() else {}
 
     spec = build_spec_from_blueprint(blueprint, seed=args.seed, style_patterns=style)
+    from f5_ict_model_answers import attach_model_answers_to_spec
+
+    attach_model_answers_to_spec(spec)
     out_path = args.out.expanduser().resolve()
     save_spec(out_path, spec)
     print(f"Wrote spec: {out_path} ({len(spec['items'])} items)")
@@ -111,6 +125,21 @@ def main(argv: list[str] | None = None) -> int:
             if not failed:
                 break
             print(f"Partial regen round {round_i}/{args.regen_rounds}: {len(failed)} slot(s)")
+            solve_fb: dict = {}
+            llm_cfg = None
+            solve_path = out_path.parent / (out_path.stem + ".solve_review.json")
+            if solve_path.is_file():
+                from solve_review_core import feedback_by_slot, load_solve_review
+
+                sr = load_solve_review(solve_path)
+                solve_fb = feedback_by_slot(sr)
+                for sid in sr.blocked_ids:
+                    if sid not in failed:
+                        failed.append(sid)
+            if args.solve_repair:
+                from solve_llm import llm_config_from_env
+
+                llm_cfg = llm_config_from_env(provider=args.solve_provider)
             pr = run_partial_regen(
                 spec,
                 blueprint,
@@ -119,6 +148,9 @@ def main(argv: list[str] | None = None) -> int:
                 seed=args.seed + round_i * 1000,
                 max_attempts=args.max_attempts,
                 refs=refs,
+                solve_feedback=solve_fb,
+                use_llm_repair=args.solve_repair,
+                llm_cfg=llm_cfg,
             )
             save_spec(out_path, spec)
             save_partial_regen_report(pr, args.regen_report.expanduser().resolve())
@@ -140,6 +172,28 @@ def main(argv: list[str] | None = None) -> int:
         set_active_written_picks(picks)
         print(f"set_active_written_picks({len(picks)} written slots)")
 
+    if args.solve_review:
+        from solve_llm import llm_config_from_env
+        from solve_generation_rules import load_generation_rules, merge_solve_report_into_rules, save_generation_rules
+        from solve_review_core import format_solve_review_report, run_solve_review, save_solve_review
+        from solve_tables import sync_item_tables_in_spec
+
+        sync_item_tables_in_spec(spec)
+        save_spec(out_path, spec)
+        try:
+            cfg = llm_config_from_env(provider=args.solve_provider)
+        except RuntimeError as e:
+            print(str(e))
+            return 2
+        sr_path = out_path.parent / (out_path.stem + ".solve_review.json")
+        print(f"Solve review ({cfg.provider}) …")
+        report = run_solve_review(spec, cfg=cfg, sync_tables=False, on_progress=lambda i, _: print(f"  {i}"))
+        save_solve_review(report, sr_path)
+        rules = merge_solve_report_into_rules(report, load_generation_rules())
+        save_generation_rules(rules)
+        print(format_solve_review_report(report))
+        print(f"Solve report: {sr_path}")
+
     if args.question_check:
         from post_check import run_question_spec_check
 
@@ -149,6 +203,12 @@ def main(argv: list[str] | None = None) -> int:
             subject_subpath="S5-ICT",
         )
         print(f"question_review exit: {code}")
+        if args.solve_review:
+            from solve_review_core import load_solve_review
+
+            sr_path = out_path.parent / (out_path.stem + ".solve_review.json")
+            if sr_path.is_file() and load_solve_review(sr_path).blocked_ids:
+                return max(code, 1)
         return code
 
     return 0

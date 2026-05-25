@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EA1 Ch1.pptx",
+    "slug": "EA1_Ch1_slides",
+    "title": "EA1 Ch1",
+    "series": "EA1",
+    "chapter": 1,
+    "curriculum_unit": "EA-a",
+    "curriculum_part": "EA",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.368118+00:00",
+    "slide_count": 36,
+    "topic_tags": {
+      "循環": 6,
+      "硬件": 4,
+      "數據庫": 2,
+      "除錯": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Introduction to Information Processing"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Answer the question on P. 8 of the textbook.D101.1"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Data and Information11Do you know what is the meaning of the data below?1.2OlympiaMerchantBoatmanParisFisher8173494570HamiltonBaker"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Data12Data is a collection of unorganised facts which usually has no meaning on its own.AOlympiaMerchantBoatmanParisFisher8173494570HamiltonBaker"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "13After processing, data is put into context and converted into information.For example:BFirst nameLast nameGenderAgeCity of ResidenceOccupationWeightScoreGradeBrooklynFisherM45SydneyBoatman4944FParisMerchantF24OlympiaBaker6281BHamiltonMillerM37RichmondBlacksmith7073C"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Input-process-output cycle14Input-process-output cycle (IPO cycle):Data is input into the computer.The computer processes the input data.Meaningful information is output from the computer.C"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "15"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Write down which is data and which is information on P. 9 of the textbook.161.3ItemNet income of a companyGrowth rate of the net income of a companyDataInformationItemHeights of the students in Class 1AName of the tallest student in Class 1AItemAverage temperature of room 101Hourly temperature of room 101ItemRaw footage of a speechTranscript of a speechItemNumber of cats in a real life photoA real life photo of catsDataInformation (by sorting)Information (by calculation)DataInformation (by speech recognition, etc.)DataInformation (by image recognition, etc)Data"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Data Type in Multimedia17Text includes various types of characters:numbersletterssymbolsText in different languages may use different encoding systems.DCharacter encoding systemLanguageASCIIEnglishBig5繁體中文"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Data Type in Multimedia18There are two types of text:DPlain textFormatted textStores characters onlyStores characters and their formatting data"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "Data Type in Multimedia19Digital images are images captured by digital cameras or made with image editing software.There are two types of images:DBitmap imagesVector imagesStored as a series of little squares called pixelsStored as mathematical formulae"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "What is the use if analysing data on the general population?Do you know that most people prefer apples over oranges? However, data shows that an average Ethiopian prefers oranges over apples. What will happen if no data is collected and analysed?"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Data Type in Multimedia20Digital audios are data that can be converted to sounds.Analog signals are converted into digital signals, and stored as digital audios:D"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Data Type in Multimedia21Videos are combinations of images and audios.By showing a collection of images within a short duration of time, a moving image is created:D"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "Information Processing22Information processing converts raw data into meaningful information. There are seven stages of information processing: 1.3"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "Data collection23Data can be collected by various methods like observation, experiments, interviews, surveys, etc. The data collection method depends on the scope and the data type.A"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "Organisation24Organisation means managing, categorising and classifying the collected data in a specific way, examples include:B Data arrangementData validationData type conversion"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "Storage25After organisation, Data can be stored as physical copies or in a digital storage.Common digital storages include:CHard diskUSB flash drive"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "Processing26Processing means editing, modifying and updating data. The can be categorized as:Text processingImage processingAudio processingVideo processingD"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "Analysis27Data analysis extracts meaningful information from the processed data. For example:Putting the annual average temperature of Hong Kong in the past 50 years into a spreadsheet to identify the climate trends E"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "Transmission28Data transmission involves transmitters, media and receivers.Network is one of the possible media. It requires that both the transmitter and the receiver use the same protocol for communication.F"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "Presentation29Presentation means the output of data or information through various media. Common examples include:GTextImageVideoAudio"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Information System3Do you know how libraries keep track of the status of the huge amount of books? How the status of books are updated when borrowed or returned?Libraries can achieve this with the help of information systems.1.1"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "Diana is making a reality show. She has over 200 footages stored in her computer. Which of the following are proper ways for her to search footages more efficiently?(1) Subtitling the footages(2) Stating the creation date in the filenames of the footages(3) Putting the footages filmed in the same week into one folder(1) and (2) only(2) and (3) only(1) and (3) only(1), (2) and (3)301.1"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Analysis(2) allows us to search footages by their creation date. (3) helps us find all the footages filmed in the same week. (1) makes the footage more accessible but does not make the searching easier. SolutionThe answer is B.311.1"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "Information Age32What will happen to your life without computers?1.4"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Definition33With the rapid development of information and communication technology, microcomputers, internet and search engines have been improved constantly.Accessing and publishing information have become easier and more popular:ASearch engineSocial mediaStreaming platform"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "Causes34The causes of the information age include:BPersonal computers and mobile devicesApplication designCommunication networkPersonal computers and mobile devices have become more widespread as they are more affordable. The computing power of mobile devices has increased over the years, which allows users to process and transmit data anytime and anywhere.Interactive design of software allows people to access desired information directly.The invention of optical fibres and the advancement of telecommunication technology have enhanced the mobility and the coverage of information."
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "Development35The developments of information and communication technology include:CInternet of ThingsBig DataArtificial intelligenceNetwork of physical objectsThe vast amount of data gathers due to the high usage of digital devices and online platformsHas the power to process and analyse a large amount of data in a short time."
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "Information Literacy36We should consider information literacy from different aspects before accepting and using information. DIntellectual propertyIt is unethical and illegal to use or gain benefits from others’ intellectual properties without their permission.Data privacyWhen sharing information, we should respect others’ privacy.CredibilityWe should consider the authoritativeness, validity and relevance of the information.Extraction and organisationWe should search information from various media, then extract and organise our findings."
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Purpose4Information systems are implemented to:Automate processesReduce human errorsImprove efficiencyA"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Data5Data is stored in computer storage devices, it can be used by programs for input or output.Examples of data include:Medical history of a patientWeather dataB"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Technology6Hardware refers to the physical devices used in an information system: CProcessingConnection of system unitsNetwork communicationInputOutputCentral processing unit (CPU)MotherboardHome routerMicrophoneMonitor"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Technology7Software refers to the programs running in an information system:CTypes of softwareSoftwareSystem softwareOperating system Microsoft Windows and macOSUtility programTask Manager and anti-virus softwareDriver programDriver programs for a sound card, a USB flash drive or a printerApplication softwareWord processor and database management software (DBMS)"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Process8Process is the series of steps to ensure the data and the related analysis can achieve the purpose precisely.Data should be processed in a meaningful way to convert it into useful information.D"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "Personnel9Information systems are managed by different personnels:1.1Computer EngineerSystem AnalystProgrammerTechnical SupportNetwork ManagerDatabase AdministratorDesign, build and integrate the hardware, software and networkDesign a system to fulil the business needs and the requirements provided by end usersAnalyse the time, cost and feasibility of building the systemDevelop the system according to the design given by systems analystsAssist the end users in using the information systemMonitor the network communication between computer systemsDesign and manage the databases"
+    }
+  ]
+}

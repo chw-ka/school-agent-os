@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecC Ch7.pptx",
+    "slug": "EELECC_Ch7_slides",
+    "title": "EElecC Ch7",
+    "series": "EELECC",
+    "chapter": 7,
+    "curriculum_unit": "EC-a",
+    "curriculum_part": "EC",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.719149+00:00",
+    "slide_count": 47,
+    "topic_tags": {
+      "硬件": 21,
+      "循環": 8,
+      "列表": 8,
+      "除錯": 2,
+      "數據庫": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 7Handling of Text Files"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Reading text files10CComplete Lab 7.1 on P.278 of the textbook."
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Text file streaming11DPython treats content in a document as continuous character streams. When a document is opened, the system generates a hidden pointer to indicate the position being read at the moment, i.e. point to the first character."
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Text file streaming12DIn text files, there are some special characters for controlling the formats of printing and display. Usually such characters are not shown in the document editor, but they are still stored in the text files:Line Feed (LF) character “\\n” is stored at the end of every line;End Of File (EOF) character “EOF” is stored at the end of the text file."
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Text file streaming13DIn Python, the read() function is used to read a document until it detects the EOF; while the readline() function is used to read a document until it detects a \\n or reaches the end of the file. Take the following Python program as an example:"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Text file streaming14D1. When the document is opened, the hidden pointer points to the first character."
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Text file streaming15D2. The readline() function in the second line starts reading the document until the hidden pointer moves to the character after the \\n character."
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Text file streaming16D3. The readline() function in the third line starts reading the document from the position where the hidden pointer last stopped, until the hidden pointer moves to the character after the \\n character."
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Text file streaming17D4. The readline() function in the fourth line starts reading the document from the position where the hidden pointer last stopped. Since no \\n is detected by the time the function reached the end of file, the function stops reading."
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Text file streaming18D5. The hidden pointer reaches the end of file character. The readline() function in the fifth line returns an empty string."
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "1. Shirley has received the following text file “NewMember.txt”. The document stores the list of new members who join the Table Tennis Club this year, and each line shows a member’s name:She writes the sub-program newMemberList() to save the new members’ names in the document to list member, and then return this list:197.1"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Reading Content from Text Files27.1Programs often require users to input information. We have learnt about using the input() function in Python to obtain information input by users."
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Complete the following sub-program newMemberList() in Python.\tdef newMemberList():\t\tmember = []\t\tf = open(\"NewMember.txt\", \"r\")\t\tname = f.readline()\t\twhile ________________ :\t\t\tmember = member + [name]\t\t\tname = f.readline()\t\tf.close()\t\treturn member207.1"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "◣ Solutionlen(name) > 0217.1"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "String Processing227.2Same as numbers (integers and floats), strings are one of the most frequently processed data types in Python. In this section, we will learn more ways to process strings in Python."
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "Searching strings23APython provides the find() function for us to search a string for the target string, and then return the search result:If the target string is found, the function returns the index of its first occurrence;If the target string is not found, the function returns -1."
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "Splitting strings24BAn English sentence is formed by multiple words, which are separated from one another by whitespaces. We can use the split() function to split words into list items, and then the function returns this list. The following is a sample Python program:"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "Splitting strings25BApart from splitting strings by the default delimiter (i.e. whitespaces), we can specify another delimiter. The split() function uses the input parameter as the delimiter. Sample Python grogram:"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "Replacing strings26CWe often have to update the content of text files. Python provides the replace() function, which returns the new string after the specified string has been updated."
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "Replacing strings27CSample Python program:"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "Complete Checkpoint 7.1 on P. 286 of the textbook.a)b)  287.1"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "c) d) 297.1"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Reading Content from Text Files37.1However, every time when the program is run, users need to input pieces of information one by one, until they input a specific string (e.g. -1) for exiting the program."
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "Writing Content into Text Files307.3Complete Lab 7.2 on P.288 of the textbook."
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Complete Checkpoint 7.2 on P. 289 of the textbook.a)   LW LV D QLFH GDBb) 317.2"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "c)d) NY NX F SNHJ IFDe) Change the code in line 6 to encoded_char = encoded_char + X 327.2"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "f) 337.2"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "Deleting Text Files347.4We can use the remove() function in the “os” library to delete files:Similarly, to avoid run-time errors, we should check whether a file exists before trying to delete it."
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "Updating Records in a Text File357.5Unlike internal data (stored in variables) of a program, data stored in external files does not disappear even when the program ends or the computer shuts down. This chapter will show you how to update records in a text file."
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "Updating Records in a Text File367.5By referring to the format of data storage in a database, we can store and display data in rows and columns.Each column is a field;Each row is a record."
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "Updating Records in a Text File377.5Take the following table that stores contact information as an example:Assume that we store the above data in a text file “phonebook.txt”, each line represents the record of a contact and each field is delimited by a semicolon. The format is as follows:"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "Loading records38ATo update records in a text file by a program, we need to load the data into the program first, and then store and process the data in a two-dimensional list.The following two-dimensional list record displays the contact information in the text file “phonebook.txt”:"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "Loading records39AThe following sub-program load_record() saves the contact information in the text file to two-dimensional list record:"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Reading Content from Text Files47.1Other than receiving the information directly input by users, Python programs can also obtain information from plain text files (e.g. files in TXT, CSV or JSON format). Therefore, when the program has a large number of inputs or outputs, it is more convenient to read the content from or write the content to text files."
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "Loading records40AThe following sub-program print_record() print the items of two-dimensional list record in table format:The following is the output in the shell after loading the data and calling the sub-program print_record():"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "Searching for records41BThe following sub-program search_recordByFirstname(firstname) uses linear search to search for the existence of the target name firstname in the list, and returns the search result:"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Deleting records42CThe following sub-program delete_recordByFirstname(firstname) replaces the whole record of the target name firstname with the string “---” to indicate that the record has been deleted:"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "Deleting records43CThe following is the output in the shell after loading the data and calling the sub-programs delete_recordByFirstname(\"Gary\") and print_ record() sequentially:"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "Updating a Text File44DThe following sub-program update_file() writes all the items of two-dimensional list record to the text file once again in a specific format:"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "Updating a Text File45DThe content of the updated text file “phonebook.txt” is as follows:"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "Adding records46EThe following sub-program add_record(firstname,lastname,noType,number) appends the record of a contact to the text file."
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "Adding records47EThe content of the text file “phonebook.txt” after calling the sub-program add_record(\"Jay\",\"Chow\",\"Home\",\"26573012\") is as follows:"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Opening text files5AIn Python, the most important function for handling text files is the open() function. This function requires two parameters: file name and extension of the text file and the mode."
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Opening text files6AThere are four modes for opening a file:"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Opening text files7AAfter completing file operations, remember to use the close() function to close the file."
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Checking whether a text file exists8BIf the file to be opened does not exist, a run-time error occurs in the program. To avoid this, we should check whether a file exists before trying to open it. We can import the \"os\" library and use the path.exists() function to check whether the file or the path exists."
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "Checking whether a text file exists9BThis function returns a Boolean value: it returns True if the file exists; otherwise it returns False."
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreA1_en_Introduction to information Processing.docx",
+    "slug": "CoreA1_en",
+    "title": "Introduction to information Processing",
+    "title_zh": null,
+    "title_en": "Introduction to information Processing",
+    "language": "en",
+    "family": "CoreA",
+    "chapter": 1,
+    "integrated": false,
+    "topic_code": "A01",
+    "curriculum_unit": "Core-A",
+    "ca_unit": "A",
+    "f5_exam_scope": "mcq_core_a",
+    "extracted_at": "2026-05-24T10:37:17.527601+00:00",
+    "item_count": 16,
+    "section_counts": {
+      "mcq": 10,
+      "short_answer": 5,
+      "long_answer": 1
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTA0101_01A001E",
+      "bank_code": "SSICTA0101_01A001E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following hardware is/are used for input?\n(1)\nKeyboard\n(2)\nWebcam\n(3)\nSpeaker",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following hardware is/are used for input?\n(1)\nKeyboard\n(2)\nWebcam\n(3)\nSpeaker\nA. (1) only\nB. (2) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: B--]",
+      "concepts": [
+        "A-ch1",
+        "循環",
+        "硬件",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0101_01A002E",
+      "bank_code": "SSICTA0101_01A002E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is not used for output?",
+      "options": {
+        "A": "Monitor",
+        "B": "Headphones",
+        "C": "Mouse",
+        "D": "Projector\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is not used for output?\nA. Monitor\nB. Headphones\nC. Mouse\nD. Projector\n[--Answer: C--]",
+      "concepts": [
+        "A-ch1",
+        "循環"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0101_01A003E",
+      "bank_code": "SSICTA0101_01A003E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is/are the example(s) of application software?\n(1)\nTask Manager\n(2)\nDatabase management software\n(3)\nAnti-virus software",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (3) only",
+        "D": "(2) and (3) only\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is/are the example(s) of application software?\n(1)\nTask Manager\n(2)\nDatabase management software\n(3)\nAnti-virus software\nA. (1) only\nB. (2) only\nC. (1) and (3) only\nD. (2) and (3) only\n[--Answer: B--]",
+      "concepts": [
+        "A-ch1",
+        "數據庫",
+        "軟件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0101_01A004E",
+      "bank_code": "SSICTA0101_01A004E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is the duty of a system analyst?",
+      "options": {
+        "A": "To assist end users in using the information system.",
+        "B": "To develop the system according to the design.",
+        "C": "To determine the resources needed to develop the system.",
+        "D": "To manage databases.\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is the duty of a system analyst?\nA. To assist end users in using the information system.\nB. To develop the system according to the design.\nC. To determine the resources needed to develop the system.\nD. To manage databases.\n[--Answer: C--]",
+      "concepts": [
+        "A-ch1",
+        "數據庫",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0101_01A005E",
+      "bank_code": "SSICTA0101_01A005E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following involves the conversion from data to information?",
+      "options": {
+        "A": "Measuring the heights of different students in a class.",
+        "B": "Determining the data collection method of a survey.",
+        "C": "Finding the maximum temperature of Hong Kong in August.",
+        "D": "Displaying a photo of a dog.\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following involves the conversion from data to information?\nA. Measuring the heights of different students in a class.\nB. Determining the data collection method of a survey.\nC. Finding the maximum temperature of Hong Kong in August.\nD. Displaying a photo of a dog.\n[--Answer: C--]",
+      "concepts": [
+        "A-ch1",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0101_01A006E",
+      "bank_code": "SSICTA0101_01A006E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "What is the purpose of the program represented by the IPO chart below?\nInput\nProcess\nOutput\nStudent names and their mathematics test score\nIdentify the 10 highest scores.\nStudent names",
+      "options": {
+        "A": "Find the students who took the mathematics test.",
+        "B": "Sort the students according to their mathematics examination scores in descending order.",
+        "C": "Find the top 10 mathematics examination scores.",
+        "D": "Find the students with top 10 mathematics examination scores.\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "What is the purpose of the program represented by the IPO chart below?\nInput\nProcess\nOutput\nStudent names and their mathematics test score\nIdentify the 10 highest scores.\nStudent names\nA. Find the students who took the mathematics test.\nB. Sort the students according to their mathematics examination scores in descending order.\nC. Find the top 10 mathematics examination scores.\nD. Find the students with top 10 mathematics examination scores.\n[--Answer: D--]",
+      "concepts": [
+        "A-ch1",
+        "Python",
+        "排序",
+        "硬件",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0101_01A007E",
+      "bank_code": "SSICTA0101_01A007E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following statements about the media shown below must be false?\nText\nThis is not text.\nOr is it?",
+      "options": {
+        "A": "It is in plain text format.",
+        "B": "It is in formatted text format.",
+        "C": "It is a bitmap image.",
+        "D": "It is a vector image.\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following statements about the media shown below must be false?\nText\nThis is not text.\nOr is it?\nA. It is in plain text format.\nB. It is in formatted text format.\nC. It is a bitmap image.\nD. It is a vector image.\n[--Answer: A--]",
+      "concepts": [
+        "A-ch1",
+        "進制"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0101_01A008E",
+      "bank_code": "SSICTA0101_01A008E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following does not involve the conversion between analog and digital data?",
+      "options": {
+        "A": "Watching a video on the internet.",
+        "B": "Recording audio with a microphone.",
+        "C": "Editing digital audio with audio editing software.",
+        "D": "Printing out a document.\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following does not involve the conversion between analog and digital data?\nA. Watching a video on the internet.\nB. Recording audio with a microphone.\nC. Editing digital audio with audio editing software.\nD. Printing out a document.\n[--Answer: C--]",
+      "concepts": [
+        "A-ch1",
+        "軟件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0101_01A009E",
+      "bank_code": "SSICTA0101_01A009E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is/are the cause(s) of the emergence of the information age?\n(1)\nMore affordable computer components\n(2)\nIncreased coverage of network\n(3)\nThe use of renewable energy sources",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (2) only",
+        "D": "(1), (2) and (3)\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is/are the cause(s) of the emergence of the information age?\n(1)\nMore affordable computer components\n(2)\nIncreased coverage of network\n(3)\nThe use of renewable energy sources\nA. (1) only\nB. (2) only\nC. (1) and (2) only\nD. (1), (2) and (3)\n[--Answer: C--]",
+      "concepts": [
+        "A-ch1",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0101_01A010E",
+      "bank_code": "SSICTA0101_01A010E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following should Benny do after collecting data through a survey?",
+      "options": {
+        "A": "Distribute the data to his friends.",
+        "B": "Analyse the data and delete them after use.",
+        "C": "Upload the data to social media.",
+        "D": "Delete data that does not match Benny’s expected result.\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following should Benny do after collecting data through a survey?\nA. Distribute the data to his friends.\nB. Analyse the data and delete them after use.\nC. Upload the data to social media.\nD. Delete data that does not match Benny’s expected result.\n[--Answer: B--]",
+      "concepts": [
+        "A-ch1",
+        "SQL",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0101_03A001E",
+      "bank_code": "SSICTA0101_03A001E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Tom wants to play video games on his computer.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Suggest two output devices for him.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Tom needs to connect to the Internet when playing online video games. Suggest one network communication device that is required for an Internet connection.(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "The video game allows different players to communicate through voice chat. Suggest an input device for Tom to use this function. (1 mark)\n[--Answer:\n(a) Monitor/ headphones/ speakers. (Any two)\n(b) Home router.\n(c) Microphone.\n--]"
+        }
+      ],
+      "text": "Tom wants to play video games on his computer.\n(a) Suggest two output devices for him.(2 marks)\n(b) Tom needs to connect to the Internet when playing online video games. Suggest one network communication device that is required for an Internet connection.(1 mark)\n(c) The video game allows different players to communicate through voice chat. Suggest an input device for Tom to use this function. (1 mark)\n[--Answer:\n(a) Monitor/ headphones/ speakers. (Any two)\n(b) Home router.\n(c) Microphone.\n--]",
+      "concepts": [
+        "A-ch1",
+        "循環",
+        "函數",
+        "網絡",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0101_03A002E",
+      "bank_code": "SSICTA0101_03A002E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "Sam is starting a convenience store. He has to purchase different input and output devices.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Suggest an input device to read the product information.(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The convenience store offers hot food to customers. An information panel which displays information of different food is installed. What type of device, input or output, is an information panel?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Sam is planning to promote his convenience store with an advertisement including a photo of the store. Which type of images, bitmap or vector, should he use for the advertisement? (1 mark)\n[--Answer:\n(a) Barcode scanner.\n(b) Output device.\n(c) Bitmap image.\n--]"
+        }
+      ],
+      "text": "Sam is starting a convenience store. He has to purchase different input and output devices.\n(a) Suggest an input device to read the product information.(1 mark)\n(b) The convenience store offers hot food to customers. An information panel which displays information of different food is installed. What type of device, input or output, is an information panel?(1 mark)\n(c) Sam is planning to promote his convenience store with an advertisement including a photo of the store. Which type of images, bitmap or vector, should he use for the advertisement? (1 mark)\n[--Answer:\n(a) Barcode scanner.\n(b) Output device.\n(c) Bitmap image.\n--]",
+      "concepts": [
+        "A-ch1",
+        "循環",
+        "硬件",
+        "資訊處理",
+        "進制"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0101_03A003E",
+      "bank_code": "SSICTA0101_03A003E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Mathew used a digital camera to take photos of different sceneries.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "What is the type of image taken by the digital camera? (1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Mathew also used his digital camera to record videos of his trip. Other than resolution, name one attribute of the resulting videos.(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Mathew’s friend Jimmy posted a beautiful image on his social media account. Mathew wants to use it secretly for a photo contest. Should he use the photo? Explain briefly.(2 marks)\n[--Answer:\n(a) Bitmap image.\n(b) Colour depth / frame rate / duration.\n(c) No, he should not gain benefits from others’ intellectual properties without permission.\n--]"
+        }
+      ],
+      "text": "Mathew used a digital camera to take photos of different sceneries.\n(a) What is the type of image taken by the digital camera? (1 mark)\n(b) Mathew also used his digital camera to record videos of his trip. Other than resolution, name one attribute of the resulting videos.(1 mark)\n(c) Mathew’s friend Jimmy posted a beautiful image on his social media account. Mathew wants to use it secretly for a photo contest. Should he use the photo? Explain briefly.(2 marks)\n[--Answer:\n(a) Bitmap image.\n(b) Colour depth / frame rate / duration.\n(c) No, he should not gain benefits from others’ intellectual properties without permission.\n--]",
+      "concepts": [
+        "A-ch1",
+        "循環",
+        "硬件",
+        "資訊處理",
+        "進制",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0101_03A004E",
+      "bank_code": "SSICTA0101_03A004E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "Nicholas is planting different trees and would like to monitor their growth each day. He wants to take a picture of each of the trees every day to analyse their growth.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Suggest two ways for him to organise the photos.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Nicholas’ friend Thomas would like to analyse the data from the photos. Suggest a storage device for Nicholas to share his collected data with Thomas.(1 mark)\n[--Answer:\n(a) He can arrange the photos of different trees in different folders. He can also name the photos by the date of which the photo is taken.\n(b) USB flash drive.\n--]"
+        }
+      ],
+      "text": "Nicholas is planting different trees and would like to monitor their growth each day. He wants to take a picture of each of the trees every day to analyse their growth.\n(a) Suggest two ways for him to organise the photos.(2 marks)\n(b) Nicholas’ friend Thomas would like to analyse the data from the photos. Suggest a storage device for Nicholas to share his collected data with Thomas.(1 mark)\n[--Answer:\n(a) He can arrange the photos of different trees in different folders. He can also name the photos by the date of which the photo is taken.\n(b) USB flash drive.\n--]",
+      "concepts": [
+        "A-ch1",
+        "循環",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0101_03A005E",
+      "bank_code": "SSICTA0101_03A005E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "Tammy is researching for her essay.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "She has found an article that may be useful for her essay. Suggest two actions that she should take before using the information from the article.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Mary claims that writing the essay in plain text is better as it requires less storage space. Tammy disagrees. Suggest one reason to support Tammy.(1 mark)\n[--Answer:\n(a) Search for more similar information to prove the authenticity of information of the article. Seek permission from the author before using it in the essay.\n(b) Formatted text stores formatted data, which usually has higher readability.\n--]"
+        }
+      ],
+      "text": "Tammy is researching for her essay.\n(a) She has found an article that may be useful for her essay. Suggest two actions that she should take before using the information from the article.(2 marks)\n(b) Mary claims that writing the essay in plain text is better as it requires less storage space. Tammy disagrees. Suggest one reason to support Tammy.(1 mark)\n[--Answer:\n(a) Search for more similar information to prove the authenticity of information of the article. Seek permission from the author before using it in the essay.\n(b) Formatted text stores formatted data, which usually has higher readability.\n--]",
+      "concepts": [
+        "A-ch1",
+        "循環",
+        "排序",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0101_04A001E",
+      "bank_code": "SSICTA0101_04A001E",
+      "section_type": "long_answer",
+      "marks": 7.0,
+      "year_tag": "2025",
+      "stem": "A startup, \"DataVitals,\" develops a mobile app that collects users' daily exercise data and heart rate readings. The app uses this raw input to generate weekly progress reports and securely store the information.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "John is a user of the DataVitals app. He finds that the app crashes every time he tries to view his weekly report. Which staff role in the company is primarily responsible for providing immediate support for John?(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "The issue John reported is confirmed to be a bug in the DataVitals app's source code. Which staff role in the company is responsible for fixing this flaw?(1 mark)\nThe DataVitals app calculates a user's Body Mass Index (BMI). BMI is a measure that uses a person's weight and height to determine if they are underweight, normal weight, or overweight. The formula is: BMI = weight ÷ (height × height)."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Explain the role of each stage of the Input-Process-Output (IPO) cycle in determining the final BMI score.(3 marks)\nInput\nCollecting the raw data, i.e. ________________________.\nProcess\nOutput\nPresenting the user with _______________________."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "The app uses John’s health data (e.g. BMI and heart rate) to display customised advertising for related product. What is the potential issue associated with this practice?(2 marks)\n[--Answer:\n(a) (i) Technical support.\n(ii) Programmer / software engineer / software developer.\n(b) Input: weight and height\nProcess: Calculates BMI using the formula.\nOutput: the final BMI score\n(c) Violation of privacy / unauthorised use of sensitive data for commercial gain.\n--]"
+        }
+      ],
+      "text": "A startup, \"DataVitals,\" develops a mobile app that collects users' daily exercise data and heart rate readings. The app uses this raw input to generate weekly progress reports and securely store the information.\n(a) \n(i) John is a user of the DataVitals app. He finds that the app crashes every time he tries to view his weekly report. Which staff role in the company is primarily responsible for providing immediate support for John?(1 mark)\n(ii) The issue John reported is confirmed to be a bug in the DataVitals app's source code. Which staff role in the company is responsible for fixing this flaw?(1 mark)\nThe DataVitals app calculates a user's Body Mass Index (BMI). BMI is a measure that uses a person's weight and height to determine if they are underweight, normal weight, or overweight. The formula is: BMI = weight ÷ (height × height).\n(b) Explain the role of each stage of the Input-Process-Output (IPO) cycle in determining the final BMI score.(3 marks)\nInput\nCollecting the raw data, i.e. ________________________.\nProcess\nOutput\nPresenting the user with _______________________.\n(c) The app uses John’s health data (e.g. BMI and heart rate) to display customised advertising for related product. What is the potential issue associated with this practice?(2 marks)\n[--Answer:\n(a) (i) Technical support.\n(ii) Programmer / software engineer / software developer.\n(b) Input: weight and height\nProcess: Calculates BMI using the formula.\nOutput: the final BMI score\n(c) Violation of privacy / unauthorised use of sensitive data for commercial gain.\n--]",
+      "concepts": [
+        "A-ch1",
+        "Python",
+        "循環",
+        "列表",
+        "硬件",
+        "軟件",
+        "試算表",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

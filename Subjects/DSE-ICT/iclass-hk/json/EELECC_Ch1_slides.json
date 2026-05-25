@@ -1,0 +1,300 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecC Ch1.pptx",
+    "slug": "EELECC_Ch1_slides",
+    "title": "EElecC Ch1",
+    "series": "EELECC",
+    "chapter": 1,
+    "curriculum_unit": "EC-a",
+    "curriculum_part": "EC",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.600731+00:00",
+    "slide_count": 55,
+    "topic_tags": {
+      "硬件": 14,
+      "循環": 11,
+      "列表": 4,
+      "數據庫": 2
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 1Algorithm Design & Basics of Python Programs"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Basic Programming Concepts‹#›1.3      Output statementsIn Python, the print() function prints the input parameter in the brackets to the console. The input parameter can be strings, variables or expressions:"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Variables and simple data types‹#›BUnlike most programming languages, Python declares the data types of variables by tagging values directly during assignments. Python uses “=” as the assignment operator to put data into a specified variable, then automatically tags the data type of the variable according to that of the piece of data. The following are examples of assignment and tagging of variables:"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "‹#›Variables are very similar to algebra that we have learnt in Mathematics. Besides, they are like boxes for storing objects in our daily life. A name is labelled on each box for identifying the content. Variables can store various types of data, such as numbers or text. Different data types will be explained in detail later."
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Input statements‹#›CPython asks users to input data by themselves through the input() function. The input obtained will be stored as a string in a variable. If we need to change its data type, we may use the int() or float() function.Printing instructions before receiving the users’ input allows them to know what they need to input. If we add a string into the input() function, the program prints a message before the keyboard cursor on the same line. For instance, “name = input(\"Please input your name: \")”."
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Arithmetic expressions‹#›DPrograms often perform arithmetic calculations. We can use arithmetic operators to process data related to numbers (also known as operand) and store the results of the arithmetic expressions in variables."
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Answer the questions on P.14 of the textbook.1. ‹#›1.2"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Boolean expressions‹#›ERelational operatorsA Boolean expression gives only two possible results: “True” or “False”, so the result belongs to the Boolean data type. Relational operators can be used to create Boolean expressions."
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Boolean expressions‹#›EBoolean operatorsBoolean operators (also called logical operators) are used to determine the logical relationship between two conditions. A truth table lists all the combinations of condition evaluation results and the results after logical operations. Assume A and B represent condition 1 and condition 2 respectively. The following tables summarise the truth tables of all Boolean operators."
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Boolean expressions‹#›EPrecedence and association of operatorsLike how we perform arithmetic operations, programs start with the expressions within brackets when processing arithmetic expressions. But how about expressions without brackets? Actually there is a rule similar to PEMDAS for operators. The order of operation is as follows:"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "1. Dry run the following Python codes and write down the output of the programs:‹#›1.2"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Algorithms1.1An algorithm is a set of steps for solving a problem in the specified order. This process of comprehending an algorithm or a program is called “dry run”, which is a commonly used technique for deducing the purpose and output of an algorithm or a program."
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Control Structures‹#›1.4In computer algorithms, there are three basic types of control structures, including sequence, selection and iteration. The sequence control structure allows the program to execute statements according to the order of writing. Selection and iteration control structures let the program decide which statements to execute according to specified conditions."
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Selection‹#›ASelection control structure uses a Boolean expression as the condition for evaluation. The logical result will decide which statements the program should execute."
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "‹#›1.1"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "‹#›1.1"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "‹#›1.1"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "‹#›1.1"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "‹#›1.1"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "(a)    (i) 1 \t(ii) 4         (b)‹#›1.3Answer the questions on P.22 of the textbook."
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "2. ‹#›1.3"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "Iteration‹#›BThe iteration control structure is also called the loop control structure. It means repeatedly executing certain statement(s) until the loop condition is no longer true. The statement(s) to be repeated is called loop body."
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "‹#›1.1"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "Answer the questions on P.25 of the textbook.1. ‹#›1.4"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "2. ‹#›1.4"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "Data Structures‹#›1.5Data structure helps organising data for easier use. An example is onedimensional array (1D array). It is a simple linear data structure that stores a set of data sequentially in continuous variables. This set of data are often of the same type."
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Arrays and Python lists (one-dimensionalarrays)‹#›AThe above diagram illustrates how a list is presented in a linear data structure. age[0] stands for the first piece of data in the list, age[1] the second piece, and so on. This means the value of age[0] is 8 and that of age[1] is 21.Apart from connecting a lot of related data, lists facilitate the use of loops to implement different algorithms, such as algorithms of counting and accumulating."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "Answer the questions on P.28 of the textbook.1. ‹#›1.5"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "‹#›1.5(c) Add 1 to the number in binary representation in array B(d) Accessing an item outside the range of the array index"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "Strings‹#›BA string is formed by a series of characters. In the following example, the characters in the string \"Work Hard!\" are placed in a list named the_string, i.e. the value of the_string[0] is 'W'."
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "Answer the questions on P.31 of the textbook.1.(a)(i) Valid         (ii) Missing quotation mark    (b) ‹#›1.6"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "‹#›1.2"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "‹#›1.2"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Input-Process-Output cycle‹#›AThe Input-Process-Output cycle (IPO cycle) is a tool for problem analysis, as well as an important structure of an algorithm or a program.• “Input” is the data to be used by the program;• “Process” is the method adopted or procedure performed by theprogram;• “Output” is the information returned by the program."
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "‹#›1.2"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "Answer the questions on P.33 of the textbook.1. ‹#›1.7"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "‹#›1.3"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "‹#›1.3"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "Two-dimensional arrays‹#›CArrays are not always in the form of lists. They can also present data in the form of tables or matrixes, which are called two-dimensional arrays (2D arrays). For instance, when writing a “tic-tac-toe” or “minesweeper” game, we can use two-dimensional arrays to create forms for storing data of different locations."
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "Two-dimensional arrays‹#›C"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "Two-dimensional arrays‹#›C"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "‹#›1.4"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "‹#›1.4"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "‹#›1.3"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Input-Process-Output cycle‹#›AThe following is a simple example, which is about writing an application to calculate the Body Mass Index (BMI, 身體質量指數) of human bodies for assessing the health of the user. The input, process and output of the program are as follows:"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "‹#›1.3"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "‹#›1.3"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "‹#›1.3"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "Answer the questions on P.42-45 of the textbook.1.‹#›1.8"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "2. (a)(i) 45          (ii) 6     (b)       (c)   ‹#›1.8"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "3.    ‹#›1.8"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Pseudocode and flowcharts‹#›BThere are three common ways to express algorithms. The first way is expressing them in everyday words, yet it is hard to be concise. Now, we will learn about two other ways of expression: pseudocode and flowcharts.• Pseudocode uses simple words/statements, including some keywords, to express an algorithm.• Flowchart uses specific shapes and links them to express an algorithm."
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Answer the questions on P.7 of the textbook.1(a)             (b) 4‹#›1.1"
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Python Programs‹#›1.2      From pseudocode to programming languagesPseudocode is not a language that computers can understand. Therefore, we need to communicate with computers using a programming language (e.g. Python). The following are algorithms for calculating the area of a square, which are written in pseudocode and the programming language Python respectively:"
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "What is your name?‹#›1.1"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecC1_en_Algorithm Design & Basics of Python Programs.docx",
+    "slug": "ElecC1_en",
+    "title": "Algorithm Design & Basics of Python Programs",
+    "title_zh": null,
+    "title_en": "Algorithm Design & Basics of Python Programs",
+    "language": "en",
+    "family": "ElecC",
+    "chapter": 1,
+    "integrated": false,
+    "topic_code": "EC01",
+    "curriculum_unit": "EC",
+    "ca_unit": "EC",
+    "f5_exam_scope": "elective_sd",
+    "extracted_at": "2026-05-24T10:37:18.154935+00:00",
+    "item_count": 7,
+    "section_counts": {
+      "short_answer": 5,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTC1101_03A001E",
+      "bank_code": "SSICTC1101_03A001E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Alex is designing a Python program that prints all the square numbers within 1 and a number specified by the user. Complete the program for him.(4 marks)\nnum = int(input(\"Please input a number: \"))\nif __________:\nprint(\"The number must be a positive integer.\")\nelse:\ni = 1\nwhile __________:\n____________________\n____________________\n[--Answer:\nnum < 1\ni*i <= num\nprint(i * i)\ni = i + 1\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Alex is designing a Python program that prints all the square numbers within 1 and a number specified by the user. Complete the program for him.(4 marks)\nnum = int(input(\"Please input a number: \"))\nif __________:\nprint(\"The number must be a positive integer.\")\nelse:\ni = 1\nwhile __________:\n____________________\n____________________\n[--Answer:\nnum < 1\ni*i <= num\nprint(i * i)\ni = i + 1\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch1",
+        "Python",
+        "循環",
+        "硬件",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1101_03A002E",
+      "bank_code": "SSICTC1101_03A002E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "The library of Kowloon University provides printing services for library users. They can pay the charges using the printing units stored in their library cards. The following shows the charges for making different types of copies:\nType of copies\nPrinting units required (per page)\nblack-and-white\n1 unit\ncolour\n5 units\nA Python program is used in the printer to calculate the total amount of printing units required and check whether there are sufficient units in the user’s card before the printer starts printing. Users will be reminded to top up if there are insufficient printing units. When all pages have been printed, the program deducts the printing units required from the user’s card and outputs the balance. Complete the following pseudocode for the program.(4 marks)\nbalance  printing units in the user’s library card\npages  number of pages in the document to be printed\ntype  \"black-and-white\" or \"colour\"\ncharges  0\nif type = \"black-and-white\" then\ncharges  __________\nelse if type = \"colour\" then\ncharges  __________\nif _________________ then\nOutput \"Insufficient printing units. Please top up.\"\nelse\nbalance  _________________\nOutput \"Printing\"\nOutput \"Your remaining printing units:\", balance\n[--Answer:\npages\n5 * pages\nbalance < charges\nbalance - charges\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "The library of Kowloon University provides printing services for library users. They can pay the charges using the printing units stored in their library cards. The following shows the charges for making different types of copies:\nType of copies\nPrinting units required (per page)\nblack-and-white\n1 unit\ncolour\n5 units\nA Python program is used in the printer to calculate the total amount of printing units required and check whether there are sufficient units in the user’s card before the printer starts printing. Users will be reminded to top up if there are insufficient printing units. When all pages have been printed, the program deducts the printing units required from the user’s card and outputs the balance. Complete the following pseudocode for the program.(4 marks)\nbalance  printing units in the user’s library card\npages  number of pages in the document to be printed\ntype  \"black-and-white\" or \"colour\"\ncharges  0\nif type = \"black-and-white\" then\ncharges  __________\nelse if type = \"colour\" then\ncharges  __________\nif _________________ then\nOutput \"Insufficient printing units. Please top up.\"\nelse\nbalance  _________________\nOutput \"Printing\"\nOutput \"Your remaining printing units:\", balance\n[--Answer:\npages\n5 * pages\nbalance < charges\nbalance - charges\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch1",
+        "Python",
+        "循環",
+        "算法",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1101_03B003E",
+      "bank_code": "SSICTC1101_03B003E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Data in a computer can be stored in various file formats and have different attributes. The format of a file is usually indicated by its file extension, which helps the computer read and decode the file. The filename and file extension are separated by a dot. For example, if a file is saved as “ict.pdf”, “ict” is the filename and “pdf” is the file extension.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Paul designs a program that receives a name of file inputted by the user, and then finds the file extension of the file. What is the file extension if the inputted name is “abc.def.txt”?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write the program in Python.(3 marks)\nfile = input()\nextension = \"\"\nN = len(file)\ndot = _____\ni = 0\nwhile _______________:\nif file[i] == \".\":\ndot = i\ni = i + 1\nif dot != -1:\nfor i in range(_____,_____):\nextension = extension + file[i]\nprint(extension)\nelse:\nprint(\"No filename extension\")\n[--Answer:\n(a) txt"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "-1\ni < N\ndot+1, N\n--]"
+        }
+      ],
+      "text": "Data in a computer can be stored in various file formats and have different attributes. The format of a file is usually indicated by its file extension, which helps the computer read and decode the file. The filename and file extension are separated by a dot. For example, if a file is saved as “ict.pdf”, “ict” is the filename and “pdf” is the file extension.\n(a) Paul designs a program that receives a name of file inputted by the user, and then finds the file extension of the file. What is the file extension if the inputted name is “abc.def.txt”?(1 mark)\n(b) Write the program in Python.(3 marks)\nfile = input()\nextension = \"\"\nN = len(file)\ndot = _____\ni = 0\nwhile _______________:\nif file[i] == \".\":\ndot = i\ni = i + 1\nif dot != -1:\nfor i in range(_____,_____):\nextension = extension + file[i]\nprint(extension)\nelse:\nprint(\"No filename extension\")\n[--Answer:\n(a) txt\n(b) -1\ni < N\ndot+1, N\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch1",
+        "Python",
+        "循環",
+        "硬件",
+        "資訊處理",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1101_03B004E",
+      "bank_code": "SSICTC1101_03B004E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "A shopping mall is holding a lucky draw. Every shopper is given a card with a random integer on it. A shopper gets a gift if the number on their card meets one of the following conditions:\nNumber on the card\nGift\nA multiple of 3\nRestaurant coupon\nA multiple of 8\nFree cinema ticket\nA multiple of both 3 and 8\nSpecial gift\nHugo is the IT manager of this shopping mall. He is writing a Python program for shoppers to check whether they can get a gift and what the gift is. Complete the program for him.(4 marks)\nnum = int(input(\"Enter the number on your card: \"))\ngift = \"\"\nif _____________________________:\ngift = ____________________\nelif ____________:\ngift = ____________________\nelif ____________:\ngift = ____________________\nif __________:\nprint(\"Congratulations! You can get a\", gift)\nelse:\nprint(\"Better luck next time!\")\n[--Answer:\nnum % 3 == 0 and num % 8 == 0\n\"special gift.\"\nnum % 3 == 0\n\"restaurant coupon.\"\nnum % 8 == 0\n\"free cinema ticket.\"\ngift != \"\"\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A shopping mall is holding a lucky draw. Every shopper is given a card with a random integer on it. A shopper gets a gift if the number on their card meets one of the following conditions:\nNumber on the card\nGift\nA multiple of 3\nRestaurant coupon\nA multiple of 8\nFree cinema ticket\nA multiple of both 3 and 8\nSpecial gift\nHugo is the IT manager of this shopping mall. He is writing a Python program for shoppers to check whether they can get a gift and what the gift is. Complete the program for him.(4 marks)\nnum = int(input(\"Enter the number on your card: \"))\ngift = \"\"\nif _____________________________:\ngift = ____________________\nelif ____________:\ngift = ____________________\nelif ____________:\ngift = ____________________\nif __________:\nprint(\"Congratulations! You can get a\", gift)\nelse:\nprint(\"Better luck next time!\")\n[--Answer:\nnum % 3 == 0 and num % 8 == 0\n\"special gift.\"\nnum % 3 == 0\n\"restaurant coupon.\"\nnum % 8 == 0\n\"free cinema ticket.\"\ngift != \"\"\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch1",
+        "Python",
+        "循環",
+        "硬件",
+        "網絡",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1101_03B005E",
+      "bank_code": "SSICTC1101_03B005E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "An automatic vending machine sells five kinds of products (numbered as product 1 to 5). List unit_price and stock store the unit prices and the stocks of the products respectively. The order of items in unit_price corresponds to that in stock; moreover, the data of the products is stored sequentially, i.e. unit_price[0] and stock[0] store the unit price and stock of product 1 respectively, and so on.\nunit_price\n9.0\n6.0\n7.0\n8.0\n4.0\nindex\n0\n1\n2\n3\n4\nstock\n20\n15\n18\n21\n19\nindex\n0\n1\n2\n3\n4\nTo purchase a product from the vending machine, the customer should input the product number and the quantity they want to purchase. They can purchase multiple units of the same product but not different products in a single transaction.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "A Python program is used in the vending machine to calculate the total price to be paid by a customer. The program should check whether the product number entered by the customer is valid, as well as whether there is adequate stock for the selected product. Complete the following program.(4 marks)\nproduct = int(input(\"Product number: \"))\nif ______________________________:\nprint(\"Error. No such product.\")\nelse:\nquantity = int(input(\"quantity: \"))\nindex = product - 1\nif ______________________________:\nprint(\"Insufficient stock\")\nelse:\ntotal_price = ______________________________\nprint(total_price)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Why do we have to change the data type of product to integer?(1 mark)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "product < 1 or product > 5\nstock[index] < quantity\nunit_price[index] * quantity\n(b) It is because an arithmetic operation is performed on product.\n--]"
+        }
+      ],
+      "text": "An automatic vending machine sells five kinds of products (numbered as product 1 to 5). List unit_price and stock store the unit prices and the stocks of the products respectively. The order of items in unit_price corresponds to that in stock; moreover, the data of the products is stored sequentially, i.e. unit_price[0] and stock[0] store the unit price and stock of product 1 respectively, and so on.\nunit_price\n9.0\n6.0\n7.0\n8.0\n4.0\nindex\n0\n1\n2\n3\n4\nstock\n20\n15\n18\n21\n19\nindex\n0\n1\n2\n3\n4\nTo purchase a product from the vending machine, the customer should input the product number and the quantity they want to purchase. They can purchase multiple units of the same product but not different products in a single transaction.\n(a) A Python program is used in the vending machine to calculate the total price to be paid by a customer. The program should check whether the product number entered by the customer is valid, as well as whether there is adequate stock for the selected product. Complete the following program.(4 marks)\nproduct = int(input(\"Product number: \"))\nif ______________________________:\nprint(\"Error. No such product.\")\nelse:\nquantity = int(input(\"quantity: \"))\nindex = product - 1\nif ______________________________:\nprint(\"Insufficient stock\")\nelse:\ntotal_price = ______________________________\nprint(total_price)\n(b) Why do we have to change the data type of product to integer?(1 mark)\n[--Answer:\n(a) product < 1 or product > 5\nstock[index] < quantity\nunit_price[index] * quantity\n(b) It is because an arithmetic operation is performed on product.\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch1",
+        "Python",
+        "循環",
+        "列表",
+        "SQL",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1101_04A001E",
+      "bank_code": "SSICTC1101_04A001E",
+      "section_type": "long_answer",
+      "marks": 8.0,
+      "year_tag": null,
+      "stem": "A self-storage space has 40 storage units arranged in 5 rows and 8 columns. The manager of the self-storage space created a two-dimensional array storage to store the availability of storage units. The number in storage[i,j] indicates whether the corresponding storage unit is available: 0 means it is available and 1 means it is in use. For instance, storage[1,3], the storage unit at row 1 column 3, is in use.\nj\ni\n1\n2\n3\n4\n5\n6\n7\n8\n1\n1\n1\n1\n0\n0\n0\n0\n0\n2\n1\n0\n1\n0\n1\n1\n1\n0\n3\n1\n0\n0\n0\n1\n1\n0\n0\n4\n0\n0\n0\n0\n0\n0\n1\n1\n5\n0\n1\n1\n0\n0\n0\n0\n0",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "How many storage units are in use?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The manager writes a program for customers to check the availability of a storage unit by inputting the row number and the column number. If the unit is available, customers can rent it and the system will update its availability. Complete the following algorithm.(2 marks)\nInput row\nInput column\nif _______________________ then\nOutput \"Success. Thank you for renting.\"\nelse\nOutput \"Not available for renting.\""
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write an algorithm that counts the number of storage units available on row 2.(3 marks)\ncount  0\nfor k from ___ to ___\nif ________________ then\nOutput count"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the output of the above algorithm?(1 mark)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "A customer wants to rent all the storage units in column 4. Write an algorithm to update the relevant data in the array.(1 mark)\nfor k from 1 to 5\n[--Answer:\n(a) 15"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "storage[row,column] = 0\nstorage[row,column]  1\n(c)(i)\n1 to 8\nstorage[2,k] = 0\ncount  count + 1\n(c)(ii) 3\n(d) storage[k,4]  1\n--]"
+        }
+      ],
+      "text": "A self-storage space has 40 storage units arranged in 5 rows and 8 columns. The manager of the self-storage space created a two-dimensional array storage to store the availability of storage units. The number in storage[i,j] indicates whether the corresponding storage unit is available: 0 means it is available and 1 means it is in use. For instance, storage[1,3], the storage unit at row 1 column 3, is in use.\nj\ni\n1\n2\n3\n4\n5\n6\n7\n8\n1\n1\n1\n1\n0\n0\n0\n0\n0\n2\n1\n0\n1\n0\n1\n1\n1\n0\n3\n1\n0\n0\n0\n1\n1\n0\n0\n4\n0\n0\n0\n0\n0\n0\n1\n1\n5\n0\n1\n1\n0\n0\n0\n0\n0\n(a) How many storage units are in use?(1 mark)\n(b) The manager writes a program for customers to check the availability of a storage unit by inputting the row number and the column number. If the unit is available, customers can rent it and the system will update its availability. Complete the following algorithm.(2 marks)\nInput row\nInput column\nif _______________________ then\nOutput \"Success. Thank you for renting.\"\nelse\nOutput \"Not available for renting.\"\n(c) \n(i) Write an algorithm that counts the number of storage units available on row 2.(3 marks)\ncount  0\nfor k from ___ to ___\nif ________________ then\nOutput count\n(ii) What is the output of the above algorithm?(1 mark)\n(d) A customer wants to rent all the storage units in column 4. Write an algorithm to update the relevant data in the array.(1 mark)\nfor k from 1 to 5\n[--Answer:\n(a) 15\n(b) storage[row,column] = 0\nstorage[row,column]  1\n(c)(i)\n1 to 8\nstorage[2,k] = 0\ncount  count + 1\n(c)(ii) 3\n(d) storage[k,4]  1\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch1",
+        "Python",
+        "循環",
+        "列表",
+        "算法",
+        "SQL",
+        "硬件",
+        "資訊處理",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTC1101_04B002E",
+      "bank_code": "SSICTC1101_04B002E",
+      "section_type": "long_answer",
+      "marks": 9.0,
+      "year_tag": null,
+      "stem": "In a competition, participants are required to complete five missions and they are ranked in each mission. Jason is a helper of the organiser, and he is responsible for score calculation. He stores the ranks of the participants in each mission in a two-dimensional array rank, where i represents the mission and j represents the participant number. He also creates a one-dimensional array name to store the names of the participants. The order of names in name corresponds to the order of participant number in rank. For instance, rank[2,1] stores the rank of Alan (participant 1) in mission 2.\nrank\nj\ni\n1\n2\n3\n4\n5\n6\n1\n1\n3\n5\n2\n4\n6\n2\n1\n6\n2\n4\n3\n5\n3\n2\n4\n6\n5\n3\n1\n4\n2\n5\n6\n4\n1\n3\n5\n3\n6\n4\n1\n2\n5\nname\nAlan\nBen\nCathy\nDanny\nEllen\nFiona\nindex\n1\n2\n3\n4\n5\n6",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "What is the rank of Ellen in mission 4?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write an algorithm to output the name of the participant who comes first in mission 3.(3 marks)\nfirst  \"\"\nfor k from ___ to ___\nif _____________ then\nOutput _______"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the output of this algorithm?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Jason is now calculating the final scores. The following table shows how the ranking in a mission is converted to score:\n1st\n10 scores\n2nd\n5 scores\n3rd to 6th\n0 score\nJason creates another one-dimensional array score to store the final scores of participants. The order of items in score corresponds to the order of names in name. Complete the following algorithm for calculating the final score of Alan.(4 marks)\nfinal_score  0\nfor k from ___ to ___\nif _____________ then\nfinal_score  ________________\nelse if _____________ then\nfinal_score  ________________\nscore[___]  final_score\n[--Answer:\n(a) 1st\n(b)(i)\n1 to 6\nrank[3,k] = 1\nname[k]\n(b)(ii) Fiona"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "1 to 5\nrank[k,1] = 1\nfinal_score + 10\nrank[k,1] = 2\nfinal_score + 5\n1\n--]"
+        }
+      ],
+      "text": "In a competition, participants are required to complete five missions and they are ranked in each mission. Jason is a helper of the organiser, and he is responsible for score calculation. He stores the ranks of the participants in each mission in a two-dimensional array rank, where i represents the mission and j represents the participant number. He also creates a one-dimensional array name to store the names of the participants. The order of names in name corresponds to the order of participant number in rank. For instance, rank[2,1] stores the rank of Alan (participant 1) in mission 2.\nrank\nj\ni\n1\n2\n3\n4\n5\n6\n1\n1\n3\n5\n2\n4\n6\n2\n1\n6\n2\n4\n3\n5\n3\n2\n4\n6\n5\n3\n1\n4\n2\n5\n6\n4\n1\n3\n5\n3\n6\n4\n1\n2\n5\nname\nAlan\nBen\nCathy\nDanny\nEllen\nFiona\nindex\n1\n2\n3\n4\n5\n6\n(a) What is the rank of Ellen in mission 4?(1 mark)\n(b) \n(i) Write an algorithm to output the name of the participant who comes first in mission 3.(3 marks)\nfirst  \"\"\nfor k from ___ to ___\nif _____________ then\nOutput _______\n(ii) What is the output of this algorithm?(1 mark)\n(c) Jason is now calculating the final scores. The following table shows how the ranking in a mission is converted to score:\n1st\n10 scores\n2nd\n5 scores\n3rd to 6th\n0 score\nJason creates another one-dimensional array score to store the final scores of participants. The order of items in score corresponds to the order of names in name. Complete the following algorithm for calculating the final score of Alan.(4 marks)\nfinal_score  0\nfor k from ___ to ___\nif _____________ then\nfinal_score  ________________\nelse if _____________ then\nfinal_score  ________________\nscore[___]  final_score\n[--Answer:\n(a) 1st\n(b)(i)\n1 to 6\nrank[3,k] = 1\nname[k]\n(b)(ii) Fiona\n(c) 1 to 5\nrank[k,1] = 1\nfinal_score + 10\nrank[k,1] = 2\nfinal_score + 5\n1\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch1",
+        "循環",
+        "列表",
+        "算法",
+        "硬件",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

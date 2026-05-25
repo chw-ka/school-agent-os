@@ -14,27 +14,30 @@ from docx_inplace import (
     set_paragraph_text_rich,
 )
 
-# Cover (always keep) + body tables used by 25-26 blueprint content.
-# All other template tables (MCQ diagrams, appendix, spare trace grids) are removed.
-F5_ICT_REQUIRED_TABLES: frozenset[int] = frozenset(
+# Cover only by default. Body tables were tied to the old f5_ict_written_content template;
+# pattern-generated papers use text-only slots until slot-driven table populate exists.
+F5_ICT_REQUIRED_TABLES: frozenset[int] = frozenset({0})
+
+# Legacy template body tables (populate via apply_f5_ict_table_content when populate_body_tables=True).
+F5_ICT_TEMPLATE_BODY_TABLES: frozenset[int] = frozenset(
     {
-        0,  # cover
-        3,  # B1 spreadsheet
-        4,  # B2 validation
-        5,  # B3 multimedia spec
-        6,  # B4 linear-search trace
-        11,  # B6 ORDER sample
-        14,  # C2 MOVIE insert
-        15,  # C3 Order2024/2025
-        18,  # C5 FACILITY
-        19,  # C5 RESERVE
-        20,  # C6 SQL trace step 1
-        21,  # C6 SQL trace step 2
-        22,  # C6 SQL trace step 3
-        23,  # C6 SQL trace step 4
-        24,  # C6 SQL trace step 5
-        25,  # C7 transaction reference
-        31,  # C8 stack trace
+        0,
+        3,
+        4,
+        5,
+        6,
+        11,
+        14,
+        15,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        31,
     }
 )
 
@@ -55,9 +58,13 @@ def clear_entire_table(table: Table) -> None:
     clear_table_cells(table)
 
 
-def remove_unused_f5_ict_tables(doc: Document) -> None:
-    """Delete template tables not required by the current paper (keep cover + body slots)."""
-    delete_tables_except(doc, F5_ICT_REQUIRED_TABLES)
+def remove_unused_f5_ict_tables(
+    doc: Document,
+    *,
+    keep_indices: frozenset[int] | None = None,
+) -> None:
+    """Delete template tables not in keep_indices (default: cover only)."""
+    delete_tables_except(doc, keep_indices or F5_ICT_REQUIRED_TABLES)
 
 
 def clear_all_body_tables_before_write(doc: Document) -> None:
@@ -74,7 +81,9 @@ def set_cell_text(table: Table, r: int, c: int, text: str) -> None:
 
 
 def apply_f5_ict_table_content(doc: Document) -> None:
-    """Populate body tables for the 25-26 DSE blueprint variant."""
+    """Populate legacy template body tables (f5_ict_written_content variant only)."""
+    if len(doc.tables) < 10:
+        return
     # B1 — charity sale spreadsheet (table 3)
     t3 = doc.tables[3]
     clear_entire_table(t3)

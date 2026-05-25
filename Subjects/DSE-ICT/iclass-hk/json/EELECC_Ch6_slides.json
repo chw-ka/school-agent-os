@@ -1,0 +1,641 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecC Ch6.pptx",
+    "slug": "EELECC_Ch6_slides",
+    "title": "EElecC Ch6",
+    "series": "EELECC",
+    "chapter": 6,
+    "curriculum_unit": "EC-a",
+    "curriculum_part": "EC",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.707699+00:00",
+    "slide_count": 123,
+    "topic_tags": {
+      "列表": 58,
+      "循環": 47,
+      "硬件": 34,
+      "數據庫": 14,
+      "課本活動": 2
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 6Searching and Sorting"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Matthew uses the following linear search algorithm to check if the username entered is registered for the webinar.106.1"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide100.xml",
+      "text": "Bubble sort100CSuppose there are N items in the list:"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide101.xml",
+      "text": "Bubble sort101CHence, the number of comparisons required for completing the whole bubble sort is:"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide102.xml",
+      "text": "1. Valerie is a judge at a photography competition. She stores the scores of five participants in array A, as shown below:She has written the following algorithm to process array A:\tLine \tPseudocode\t 1 \tfor i from 0 to 3\t 2 \t\tfor j from 0 to 3\t 3 \t\t\tif A[j] > A[j+1] then\t 4 \t\t\t\tSwap A[j] and A[j+1]1026.5"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide103.xml",
+      "text": "(a) (i) Write down the content of A after the loop body of i = 0 has been executed.(ii) Write down the content of A after the loop body of i = 1 has been executed.(iii) Write down the content of A after the above algorithm has been executed.1036.5"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide104.xml",
+      "text": "(b) (i) After the above algorithm has been executed, how many times has the conditional statement in line 3 been executed?(ii) Vanessa suggests that Valerie should change the pseudocode in line 2 to “for j from 0 to 3-i” in order to enhance the efficiency of this algorithm. Do you agree with Vanessa’s suggestion? Explain briefly.(c) What is the purpose of this algorithm?1046.5"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide105.xml",
+      "text": "(d) Valerie only needs to calculate and print the scores of the champion, first runner-up and second runner-up. (i) After the above algorithm has been executed, which items store the scores of the champion, first runner-up and second runner-up?\tChampion: \t\tA[_______]\tFirst runner-up: \t\tA[_______]\tSecond runner-up:\tA[_______](ii) How should the pseudocode in line 1 be changed such that the algorithm has the fewest steps of operation?\tfor i from _______ to _______1056.5"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide106.xml",
+      "text": "◣ Solution(a) (i) The content of A:(ii) The content of A:(iii) The content of A:1066.5"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide107.xml",
+      "text": "(b) (i) 6      (ii) Agree. Since the nested loop body is executed for fewer times while the sorting algorithm gives the same result, the algorithm becomes more efficient.(c) Sorted the items in array A in ascending order.(d) (i) \tA[4]\tA[3]\tA[2]      (ii) for i from 0 to 21076.5"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide108.xml",
+      "text": "Complete Checkpoint 6.6 on P. 255 of the textbook.(a) (i)      (ii)      (iii)1086.6"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide109.xml",
+      "text": "(b) Sort the dates in array B from earlier to later (or in ascending order).(c) for j from 8 down to 1+i1096.6"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "(a) Write down the number of times the program needs to make the evaluation “participant[i] ! = name” for each of the names entered below.(i) Enter “smartguy123” (ii) Enter “funfunfun” (iii) Enter a name that is not recorded(b) Assuming that the username entered can be found in this array, what is the program’s average number of searches?116.1"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide110.xml",
+      "text": "Merging Two Sorted Lists1106.4The following lists class4A and class4B store the exam scores of six and four students respectively, and they have been sorted in ascending order as follows:"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide111.xml",
+      "text": "The concept of merging lists111ASuppose that we are going to merge the two lists into list form4, which is sorted in ascending order:"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide112.xml",
+      "text": "The concept of merging lists112AThe following Python program writes the algorithm for merging lists:i = 0j = 0for k in range(0, len(class4A)+len(class4B)):\tif i < len(class4A) and (j == len(class4B) or class4A[i] < class4B[j]):\t\tform4[k] = class4A[i]\t\ti = i + 1\telse:\t\tform4[k] = class4B[j]\t\tj = j + 1"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide113.xml",
+      "text": "The concept of merging lists113A1. Compare the first unmerged item of the two lists, and then copy the smaller item to the merged list."
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide114.xml",
+      "text": "The concept of merging lists114A2. Repeat the above operations."
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide115.xml",
+      "text": "The concept of merging lists115A3. Repeat until all list items have been merged."
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide116.xml",
+      "text": "1. Matthew and William are the markers of an examination, which has ten candidates in total. Each of them marks the papers of five candidates, and then stores the marks in descending order in array P and array Q, as shown below:Matthew writes a sub-program merge. It uses the algorithm for merging lists to merge the marks in array P and array Q, and then store the marks in array score in descending order, i.e. score[0] will store the highest mark.1166.6"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide117.xml",
+      "text": "(a) After the sub-program merge has been called, what will the content of array score become?1176.6"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide118.xml",
+      "text": "(b) Complete the pseudocode for the sub-program merge.\tLine\tPseudocode\t 1 \tSub-program merge\t 2 \t\ti, j, k  0\t 3 \t\tfor k from 0 to _______\t 4 \t\t\tif i = _______ then\t 5 \t\t\t\tscore[k]  Q[j]\t 6 \t\t\t\tj  j + 1\t 7 \t\t\telse if j = _______ then\t 8 \t\t\t\tscore[k]  P[i]\t 9 \t\t\t\ti  i + 1\t 10 \t\t\telse if _______ then\t 11 \t\t\t\tscore[k]  P[i]\t 12 \t\t\t\ti  i + 1\t 13 \t\t\telse\t 14 \t\t\t\tscore[k]  Q[j]\t 15 \t\t\t\tj  j + 11186.6"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide119.xml",
+      "text": "(c) Simplify lines 4 to 15 in the sub-program merge using a single “if-then-else” conditional statement.\tif ________________ then\t\tscore[k]  P[i]\t\ti  i + 1\telse\t\tscore[k]  Q[j]\t\tj  j + 11196.6"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "◣ Solution(a) (i) 1     (ii) 4     (iii) 500(b) 250126.1"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide120.xml",
+      "text": "◣ Solution(a) The content of array score:(b) \t9 \t5 \t5 \tP[i] > Q[j] (c) \ti < 5 and (j = 5 or P[i] > Q[j])1206.6"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide121.xml",
+      "text": "Complete Checkpoint 6.7 on P. 261 of the textbook.(a)(b) 141216.7"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide122.xml",
+      "text": "Other Quicker Sorting Algorithms1226.5Apart from the above three sorting algorithms, there are faster alternatives, such as merge sort and quick sort."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide123.xml",
+      "text": "Efficiency of the Sorting Algorithms1236.6Comparison of the number of comparisons required by different sorting algorithms"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Complete Checkpoint 6.1 on P. 214 of the textbook.(a) found == -1(b) (i) The search method remains unchanged, and the average number of searches needed to find the target value is still 25 (n/2).(ii) and staff_no >= retire[i] When searching through a list that has been sorted in ascending order, as soon as an item in the list is found to be larger than the target value, it can be established that the remaining items in the list are also larger than the target value (i.e., not equal), thus the loop can stop immediately.136.1"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Binary search14BAs you can see from unsorted list mark above, the worst case that a program using linear search can encounter is when the search continues to the last index of the list. The efficiency of linear search is rather low for searching lists with many items."
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Binary search15BIn this section, we will introduce another commonly used search algorithm — binary search. It can be performed on sorted lists only."
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Binary search16BThe following list mark stores the test scores of ten students and has been sorted in ascending order. It happens that the score of each student is different:"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Binary search17BSuppose that the target value is “80”:1. In a binary search, the item in the middle of the list will be compared first. If it is the same as the target value, the search ends."
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Binary search18B2. If the item is different from the target value, the program will continue searching. Since the list is sorted, if the item is smaller than the target value, the target value can only appear in the second half of the list."
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "Binary search19B3. Narrow the search to the second half of the list and compare the item in the middle."
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Searching Algorithms26.1Using lists or arrays to store data helps us organise large amounts of related data. To find a record in the list that is the same as the target value, we need to perform a search. Whether the items in the list are sorted will also affect the design and efficiency of the algorithm. This chapter will discuss the design and efficiency of different search algorithms."
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Binary search20B4. Since the item is larger than the target value, it means that the target value can only appear in the first half of the search range."
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Binary search21B5. Narrow the search range again and compare the item in the middle."
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "Binary search22B6. Since the item is smaller than the target value, it means that the target value can only appear in the second half of the search range."
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "Binary search23B7. The search is finally narrowed down to just one item. If this item is the same as the target value, the search ends. Otherwise, the target value does not exist in the list."
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "Binary search24BA binary search algorithm is written into the following Python program:\tstart = 0\tend = len(mark)-1\ttarget = int(input())\tfound = False\twhile start <= end and found == False:\t\tmid = int((start + end)/2)\t\tif mark[mid] == target:\t\t\tfound = True\t\telse:\t\t\tif target < mark[mid]:\t\t\t\tend = mid – 1\t\t\telse:\t\t\t\tstart = mid + 1\tif found == True:\t\tprint(\"Found at index\", mid)\telse:\t\tprint(\"Not found\")"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "Binary search25BA binary search algorithm is written into the following Python program:\tstart = 0\tend = len(mark)-1\ttarget = int(input())\tfound = False\twhile start <= end and found == False:\t\tmid = int((start + end)/2)\t\tif mark[mid] == target:\t\t\tfound = True\t\telse:\t\t\tif target < mark[mid]:\t\t\t\tend = mid – 1\t\t\telse:\t\t\t\tstart = mid + 1"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "Binary search26BA binary search algorithm is written into the following Python program:\tend = len(mark)-1\ttarget = int(input())\tfound = False\twhile start <= end and found == False:\t\tmid = int((start + end)/2)\t\tif mark[mid] == target:\t\t\tfound = True\t\telse:\t\t\tif target < mark[mid]:\t\t\t\tend = mid – 1\t\t\telse:\t\t\t\tstart = mid + 1"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "Binary search27BA binary search algorithm is written into the following Python program:\t\t\tmid = int((start + end)/2)\t\tif mark[mid] == target:\t\t\tfound = True\t\telse:\t\t\tif target < mark[mid]:\t\t\t\tend = mid – 1\t\t\telse:\t\t\t\tstart = mid + 1\tif found == True:\t\tprint(\"Found at index\", mid)\telse:"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "Binary search28BBinary search assumes that the items in a list have been sorted and starts searching from the middle of the list. After each comparison, even if the item is not the same as the target value, the search range can be reduced by half."
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "Binary search29BThe worst case is that the target value is stored in the last item in the list or does not exist in it. That is, after the ith iteration, only one item remains in the search range."
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Linear search3AThe easiest way to know if the target value exists in the list is to search the list from the beginning, i.e. start from index 0, then go through index 1, index 2 and so on until you reach the last index in the list or find the target value. This algorithm is called linear search. It is often used to search unsorted lists."
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "Binary search30BUsing the previous equation, we can calculate the maximum number of iterations required for searching a list with N items in the worst case:"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Binary search31BThe maximum number of iterations required for a binary search of the list mark with ten items is 4 (log2 10 = 3.32)."
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "1. The following array age stores the ages of the N customers who have purchased a product, sorted in descending order. The following example shows the first ten array items:326.2"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "(a) Mr Chan, the manager, writes the sub-program SearchByBinary(target) which searches for the target value target using binary search. If the target value is found, the sub-program will return the array index where the target value is stored. If the target value is not found, “-1” will be returned instead. Write the pseudocode for SearchByBinary(target).Sub-program SearchByBinary(target)\tstart  _____________\tend  _____________\twhile _____________ do\t\tmid  _____________\t\tif age[mid] = target then\t\t\treturn _____________\t\telse if age[mid] > target then\t\t\t _____________\t\telse\t\t\t _____________\treturn _____________336.2"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "(b) Mr Chan writes another sub-program count(target), which returns the number of customers whose age is equal to target.(i) What is the return value for calling count(38)? (ii) What is the return value for calling count(29)? (iii) What is the return value for calling count(18)? (iv) What is the return value for calling count(25)? 346.2"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "(c) The following is the pseudocode for count(target):\tSub-program count(target)\t\tindex  SearchByBinary(target)\t\tif index = -1 then\t\t\treturn 0\t\telse\t\t\tleft  leftMost(index)\t\t\tright  rightMost(index)\t\t\treturn (right - left + 1)The sub-program leftMost(index) returns the index of the first item that stores the value of age[index]; the sub-program rightMost(index) returns the index of the last item that stores the value of age[index].356.2"
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "(i) What is the return value for calling leftMost(5)? (ii) What is the return value for calling rightMost(5)? 366.2"
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "(d) The following is the pseudocode for the sub-program rightMost(index).\tSub-program rightMost(index)\t\tright  index\t\twhile right < N AND age[right+1] = age[index] do\t\t\tright  right + 1\t\treturn rightWrite the pseudocode for leftMost(index) by referring to the above algorithm.\tSub-program leftMost(index)376.2"
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "◣ Solution(a) Sub-program SearchByBinary(target) \tstart  1 \tend  N \twhile start <= end do \t\tmid  (start + end) // 2 \t\tif age[mid] = target then \t\t\treturn mid \t\telse if age[mid] > target then \t\t\tstart  mid + 1 \t\telse \t\t\tend  mid - 1 \treturn -1386.2"
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "(b) (i) 3 \t\t(ii) 2 \t\t(iii) 0 \t\t(iv) 1(c) (i) 4 \t\t(ii) 6(d) Sub-program leftMost(index)\tleft  index\twhile left > 1 and age[left-1] = age[index] do\t\tleft  left – 1\treturn left396.2"
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Linear search4ASuppose unsorted list mark stores the test scores of ten students, as listed below:The following Python program can search whether the target score exists in the list (ifexist).target = int(input())found = Falsefor i in range(0, len(mark)):\tif target == mark[i]:\t\tfound = Trueprint(found)"
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "Complete Checkpoint 6.2 on P. 225.(a) \tkeywords = [\"and\", \"as\", \"def\", \"elif\", \"else\"]\tstart = 0\tend = len(keywords)-1\tname = input()\tfound = False\twhile start <= end and found == False:\t\tmid = int((start + end)/2)\t\tif keywords[mid] == name:\t\t\tfound = True\t\telse:\t\t\tif name[0] < keywords[mid][0]:\t\t\t\tend = mid – 1\t\t\telse:\t\t\t\tstart = mid + 1\tif found == True:\t\tprint(\"This is a keyword.\")\telse:\t\tprint(\"Available for use\")406.2"
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "(b) N = 300, log2 N = log2 300 = 8.23 The strings will be compared 9 times.416.2"
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Comparison between linear search and binary search42CThe following chart shows the average numbers of iterations required by the program for using linear search and binary search respectively in lists of different lengths."
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "Comparison between linear search and binary search43CThe following table lists the advantages and limitations of linear search and binary search:"
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "Swapping446.2If we need to swap the values of two variables (A and B), we can use the variable “temp” to temporarily store the value of one of the variables, as shown in the example below:\tA  1\tB  2\ttemp  A\tA  B\tB  temp"
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "Complete Checkpoint 6.3 on P. 231 of the textbook.1 (a)    (b) Sub-program swap(num)\t temp  num[0]\t num[0]  num[1]\t num[1]  temp456.3"
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "2. (a)     (b) Swapping the values of array items A[m] and A[n].466.3"
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "Complete Activity 6.3 on P. 232 of the textbook.476.3"
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "Sorting Algorithms486.3As its name suggests, sorting means arranging a series of data in ascending or descending order. We often need to sort data for different purposes. For example, in a spreadsheet that stores the marks of 100 students, the marks are sorted from highest to lowest."
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "Sorting Algorithms496.3Sorting is also relevant to binary search, which we have learnt earlier. Binary search helps us find the target value quickly, but this algorithm is only applicable to sorted lists."
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Linear search5AIf the target value entered exists in the list, e.g. “50”, the final output of the program will be True;  If the target value entered does not exist in the list, e.g. “100”, the final output of the program will be False instead."
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "Selection sort50ASelection sort is based on linear search. The algorithm repeatedly carries out linear search in the unsorted part of the list in order to find the maximum or minimum value. Then, this value is swapped with the first item of the unsorted list so as to set up the sorted part of the list. This process is repeated until all list items have been sorted."
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "Selection sort51AThe following Python program uses selection sort to sort list mark in descending order:\tfor i in range(0, len(mark)):\t\tmax_index = i\t\tfor j in range(i+1, len(mark)):\t\t\tif mark[j] > mark[max_index]:\t\t\t\tmax_index = j\t\ttemp = mark[i]\t\tmark[i] = mark[max_index]\t\tmark[max_index] = temp"
+    },
+    {
+      "slide_index": 72,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "Selection sort52A1. Firstly, perform linear search on the list to find the maximum value."
+    },
+    {
+      "slide_index": 73,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "Selection sort53A1. Firstly, perform linear search on the list to find the maximum value."
+    },
+    {
+      "slide_index": 74,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "Selection sort54A2. Swap the maximum value with the first item of the list."
+    },
+    {
+      "slide_index": 75,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "Selection sort55AThis divides the sorted and unsorted parts of the list."
+    },
+    {
+      "slide_index": 76,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "Selection sort56A3. Then, perform linear search on the unsorted part to find the maximum value."
+    },
+    {
+      "slide_index": 77,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "Selection sort57A4. Swap the maximum value with the first item of the unsorted list."
+    },
+    {
+      "slide_index": 78,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "Selection sort58AThis adds an item to the sorted list."
+    },
+    {
+      "slide_index": 79,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "Selection sort59A5. Repeat the above operations of linear search and swapping."
+    },
+    {
+      "slide_index": 80,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Linear search6ASince we only need to know if the target value exists in the list, we can use the while loop with an additional condition so that the program will stop the loop once it finds the same value as the target value, increasing the efficiency of the search algorithm.target = int(input())found = Falsei = 0while i < len(mark) and found == False:\tif target == mark[i]:\t\tfound = True\ti = i + 1print(found)"
+    },
+    {
+      "slide_index": 81,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "Selection sort60A6. Repeat until all list items have been sorted."
+    },
+    {
+      "slide_index": 82,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "Selection sort61ASuppose that there are N items in the list:"
+    },
+    {
+      "slide_index": 83,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "Selection sort62ATherefore, the number of comparisons for completing the whole selection sort is:When selection sort is performed on list mark with seven items, the maximum number of comparisons to be performed by the program is 21."
+    },
+    {
+      "slide_index": 84,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "1. Steven records the titles of five books in array book as follows:He has written the following algorithm, which uses selection sort to sort the items in array book in ascending order. Suppose that the character “A” is smaller than the character “B”, the character “B” is smaller than the character “C”, and so on.636.3"
+    },
+    {
+      "slide_index": 85,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "Line \t\tPseudocode 1 \t\tSub-program swap(a, b) 2 \t\t\ttemp  book[a] 3 \t\t\tbook[a]  book[b] 4 \t\t\tbook[b]  temp 5 \t\tfor i from 0 to 4 6 \t\t\tmin_index  I 7 \t\t\tfor j from i+1 to 4 8 \t\t\t\tif book[j] < book[min_index] then 9 \t\t\t\t\tmin_index  j 10 \t\t\tCall sub-program swap(______,______)646.3"
+    },
+    {
+      "slide_index": 86,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "(a) Complete the pseudocode in line 10.(b) Write down the content of array book after each pass of line 10.(c) Suppose that the pseudocode in line 5 is changed to “for i from 0 to 3”. How will this modification affect the result of this sorting algorithm?656.3"
+    },
+    {
+      "slide_index": 87,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "◣ Solution(a) Sub-program swap(i, min_index)(b) The content of array book:(c) No effect, because the iteration for i = 4 is unnecessary. (When i = 4, only one unsorted item is left, and the part of linear search is skipped in practice. This iteration simply assigns book[4] to temp and puts temp back to book[4].)666.3"
+    },
+    {
+      "slide_index": 88,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "Complete Checkpoint 6.4 on P. 239 of your textbook.1. (a) Sub-program swap(i, j) \ttemp  athlete[i]\tathlete[i]  athlete[j]\tathlete[j]  temp\ttemp  result[i]\tresult[i]  result[j]\tresult[j]  temp676.4"
+    },
+    {
+      "slide_index": 89,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "1. (b) (i)           (ii) Sub-program sortByName\t\tfor i from 1 to 7 or 8\t\t\tsmallest  i\t\t\tfor j from i+1 to 8\t\t\t\tif athlete[j] < athlete[smallest] then\t\t\t\t\tsmallest  j\t\t\tCall sub-program swap( i , smallest )686.4"
+    },
+    {
+      "slide_index": 90,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "1. (c) (i)          (ii) Sub-program sortByResult\t\tfor i from 1 to 7or8\t\t\thighest  I\t\t\tfor j from i+1 to 8\t\t\t\tif result[j] > result[highest] then\t\t\t\t\thighest  j\t\t\tCall sub-program swap( i , highest )696.4"
+    },
+    {
+      "slide_index": 91,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Linear search7AUsing the following sample data, analyse how many evaluations are required for each of the two algorithms (target == mark[i]):As you can see, it is more efficient to use a while loop, since it leaves the loop as soon as it finds the target value, without proceeding to check all items in the list."
+    },
+    {
+      "slide_index": 92,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "Insertion sort70BInsertion sort divides the list into the sorted and unsorted parts, then one of the list items in the unsorted part (key value) is inserted into the correct position in the sorted part of the list. This process is repeated until all list items have been sorted."
+    },
+    {
+      "slide_index": 93,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "Insertion sort71BThe following list mark stores the exam marks of seven students, as shown below:Suppose that the list is to be sorted in descending order:"
+    },
+    {
+      "slide_index": 94,
+      "slide_part": "ppt/slides/slide72.xml",
+      "text": "Insertion sort72BThe following Python program uses insertion sort to sort list mark in descending order:\tfor i in range(1, len(mark)):\t\tkey = mark[i]\t\tj = i-1\t\twhile j >= 0 and key > mark[j]:\t\t\tmark[j+1] = mark[j]\t\t\tj = j – 1\t\tmark[j+1] = key"
+    },
+    {
+      "slide_index": 95,
+      "slide_part": "ppt/slides/slide73.xml",
+      "text": "Insertion sort73B1. Firstly, set apart the first item of the list as the sorted part. Then, take out the first item of the unsorted part (known as “key value”)."
+    },
+    {
+      "slide_index": 96,
+      "slide_part": "ppt/slides/slide74.xml",
+      "text": "Insertion sort74B2. To find the correct position for inserting the key value, compare the key value with each list item in the sorted part on the left. If that item is smaller than the key value, move it backwards"
+    },
+    {
+      "slide_index": 97,
+      "slide_part": "ppt/slides/slide75.xml",
+      "text": "Insertion sort75B3. Since all the list items in the sorted part have been compared, the key value should eventually be inserted into the first position of the list."
+    },
+    {
+      "slide_index": 98,
+      "slide_part": "ppt/slides/slide76.xml",
+      "text": "Insertion sort76B4. Now, an item is added to the sorted section. Similarly, take out the first item of the unsorted part. Compare it with each list item in the sorted part on the left. If that item is smaller than the key value, move it backwards."
+    },
+    {
+      "slide_index": 99,
+      "slide_part": "ppt/slides/slide77.xml",
+      "text": "Insertion sort77B5. When a larger item is found, stop moving the items. Here is the position where the key value should be inserted into the list."
+    },
+    {
+      "slide_index": 100,
+      "slide_part": "ppt/slides/slide78.xml",
+      "text": "Insertion sort78B6. Repeat the above operations."
+    },
+    {
+      "slide_index": 101,
+      "slide_part": "ppt/slides/slide79.xml",
+      "text": "Insertion sort79B7. Repeat until all list items have been sorted."
+    },
+    {
+      "slide_index": 102,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Linear search8AWe can now rewrite the program so that when the target value is found, the program will output its index in the list. \ttarget = int(input())\tindex = -1\tfor i in range(0, len(mark)):\t\tif target == mark[i]:\t\t\tindex = I\t\t\tprint(i)\tif index == -1:\t\tprint(\"No result is found.\")"
+    },
+    {
+      "slide_index": 103,
+      "slide_part": "ppt/slides/slide80.xml",
+      "text": "Complete Activity 6.4 on P. 244 of the textbook.1. 02. 9806.4"
+    },
+    {
+      "slide_index": 104,
+      "slide_part": "ppt/slides/slide81.xml",
+      "text": "Insertion sort81BEvery time when the loop body of insertion sort is executed:the best case is the key value is smaller than the item on the left.the worst case is the key value should be inserted into the first position of the list. If the index of the key value is K, it needs to perform (K – 1) comparisons and swapping."
+    },
+    {
+      "slide_index": 105,
+      "slide_part": "ppt/slides/slide82.xml",
+      "text": "Insertion sort82BTo conclude, suppose that a list with N items is to be sorted in descending order,the best case is the list happens to be sorted in descending orderthe worst case is the list happens to be sorted in ascending order. The number of comparisons and swapping for completing the whole insertion sort is:"
+    },
+    {
+      "slide_index": 106,
+      "slide_part": "ppt/slides/slide83.xml",
+      "text": "1. Brian is writing a price comparison website. He records the price of goods at eight shops in array price as follows:He has written the following algorithm, which sorts the items in price using insertion sort, as well as a sub-program swap(a, b), which swaps the values of items a and b in array.\tLine \tPseudocode \t 1 \tfor i from 1 to 7 \t 2 \t\twhile i > 0 AND price[i] < price[i-1] \t 3 \t\t\tswap(price[i], price[i-1]) \t 4 \t\t\ti  i - 1836.4"
+    },
+    {
+      "slide_index": 107,
+      "slide_part": "ppt/slides/slide84.xml",
+      "text": "(a) (i) Write down the content of price after the loop body of i = 1 has been executed.     (ii) Write down the content of price after the loop body of i = 3 has been executed.     (iii) Write down the final content of price after the above algorithm has been executed.846.4"
+    },
+    {
+      "slide_index": 108,
+      "slide_part": "ppt/slides/slide85.xml",
+      "text": "(b) (i) How many times has line 3 been executed?      (ii) In what situation will line 3 be executed for the least number of times?     (iii) In what situation will line 3 be executed for the greatest number of times?856.4"
+    },
+    {
+      "slide_index": 109,
+      "slide_part": "ppt/slides/slide86.xml",
+      "text": "(c) Henry writes the following algorithm, which produces the same result as Brian’s algorithm.\tLine \tPseudocode\t 1 \tfor i from 0 to 7\t 2 \tkey  price[i]\t 3 \tj  i-1\t 4 \twhile j >= 0 AND key < price[j]\t 5 \tprice[j+1]  price[j]\t 6 \tj  j – 1\t 7 \tprice[j+1]  keyWhich algorithm do you think is more efficient? Explain briefly.866.4"
+    },
+    {
+      "slide_index": 110,
+      "slide_part": "ppt/slides/slide87.xml",
+      "text": "◣ Solution(a) (i) The content of price:      (ii) The content of price:      (iii) The content of price:876.4"
+    },
+    {
+      "slide_index": 111,
+      "slide_part": "ppt/slides/slide88.xml",
+      "text": "(b) (i) 14      (ii) The initial content of price is sorted in ascending order.      (iii) The initial content of price is sorted in descending order.(c) Henry’s algorithm is more efficient, because the items are moved for fewer times886.4"
+    },
+    {
+      "slide_index": 112,
+      "slide_part": "ppt/slides/slide89.xml",
+      "text": "Complete Checkpoint 6.5 on P. 248 of the textbook.1. (a) (i)          (ii)          (iii)    (b) Sort the items in array score in descending order.    (c) 15896.5"
+    },
+    {
+      "slide_index": 113,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "1. The following array participant stores the username of participants who have signed up for a webinar:96.1"
+    },
+    {
+      "slide_index": 114,
+      "slide_part": "ppt/slides/slide90.xml",
+      "text": "Bubble sort90CBubble sort starts from the first item of the list and compares an item with its adjacent item. If the two items are in the wrong positions, they will be swapped."
+    },
+    {
+      "slide_index": 115,
+      "slide_part": "ppt/slides/slide91.xml",
+      "text": "Bubble sort91CThe following list mark stores the exam marks of seven students, as shown below:Suppose that the list is to be sorted in descending order."
+    },
+    {
+      "slide_index": 116,
+      "slide_part": "ppt/slides/slide92.xml",
+      "text": "Bubble sort92CThe following Python program writes the algorithm of bubble sort:\tfor i in range(0, len(mark)-1):\t\tfor j in range(0, len(mark)-1-i):\t\t\tif mark[j] < mark[j+1]:\t\t\t\ttemp = mark[j]\t\t\t\tmark[j] = mark[j+1]\t\t\t\tmark[j+1] = temp"
+    },
+    {
+      "slide_index": 117,
+      "slide_part": "ppt/slides/slide93.xml",
+      "text": "Bubble sort93C1. Starting from the leftmost item of the list, compare two adjacent list items."
+    },
+    {
+      "slide_index": 118,
+      "slide_part": "ppt/slides/slide94.xml",
+      "text": "Bubble sort94C1. If the value on the left is smaller, swap the two items."
+    },
+    {
+      "slide_index": 119,
+      "slide_part": "ppt/slides/slide95.xml",
+      "text": "Bubble sort95C2. After the above operation has been completed on the whole list, the smallest value will move (rise) to the last item. This divides the list into the sorted and unsorted parts."
+    },
+    {
+      "slide_index": 120,
+      "slide_part": "ppt/slides/slide96.xml",
+      "text": "Bubble sort96C3. Starting from the leftmost item in the unsorted part, compare two adjacent list items."
+    },
+    {
+      "slide_index": 121,
+      "slide_part": "ppt/slides/slide97.xml",
+      "text": "Bubble sort97C3. If the value on the left is smaller, swap the two items."
+    },
+    {
+      "slide_index": 122,
+      "slide_part": "ppt/slides/slide98.xml",
+      "text": "Bubble sort98C4. After the above operation has been completed once again, the second smallest value will move (rise) to the second last item. This adds one item to the sorted part."
+    },
+    {
+      "slide_index": 123,
+      "slide_part": "ppt/slides/slide99.xml",
+      "text": "Bubble sort99C5. Repeat until all list items have been sorted."
+    }
+  ]
+}

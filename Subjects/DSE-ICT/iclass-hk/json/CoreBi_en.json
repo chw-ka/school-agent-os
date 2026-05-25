@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreBi_en_Integrated.docx",
+    "slug": "CoreBi_en",
+    "title": "Integrated",
+    "title_zh": null,
+    "title_en": "Integrated",
+    "language": "en",
+    "family": "CoreB",
+    "chapter": null,
+    "integrated": true,
+    "topic_code": "B99",
+    "curriculum_unit": "Core-B",
+    "ca_unit": "B",
+    "f5_exam_scope": "mcq_core_b",
+    "extracted_at": "2026-05-24T10:37:17.755015+00:00",
+    "item_count": 6,
+    "section_counts": {
+      "mcq": 6
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTB0299_01A001E",
+      "bank_code": "SSICTB0299_01A001E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Compared to using a touchscreen, a mouse is ________________.\n(1)\nmore ergonomic to use\n(2)\nmore precise in input\n(3)\ncheaper in cost",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Compared to using a touchscreen, a mouse is ________________.\n(1)\nmore ergonomic to use\n(2)\nmore precise in input\n(3)\ncheaper in cost\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: D--]",
+      "concepts": [
+        "B-integrated"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0299_01A002E",
+      "bank_code": "SSICTB0299_01A002E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Websites designed for mobile devices with a touch screen are different from desktop versions because __________________.\n(1)\nmobile processors are less powerful\n(2)\nmobile screen size is smaller\n(3)\nthere is no secondary mouse click on a touch screen",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer:  C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Websites designed for mobile devices with a touch screen are different from desktop versions because __________________.\n(1)\nmobile processors are less powerful\n(2)\nmobile screen size is smaller\n(3)\nthere is no secondary mouse click on a touch screen\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer:  C--]",
+      "concepts": [
+        "B-integrated",
+        "循環",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0299_01A003E",
+      "bank_code": "SSICTB0299_01A003E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Steve is using a scanner with optical character recognition (OCR).Which of the following can increase recognition accuracy?",
+      "options": {
+        "A": "Scan a document with handwritten text instead of printed text",
+        "B": "Change the scanner resolution from 300DPI to 600DPI",
+        "C": "Scan in full-colour instead of monochrome",
+        "D": "Use a lower resolution\n[--Answer:  B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Steve is using a scanner with optical character recognition (OCR).Which of the following can increase recognition accuracy?\nA. Scan a document with handwritten text instead of printed text\nB. Change the scanner resolution from 300DPI to 600DPI\nC. Scan in full-colour instead of monochrome\nD. Use a lower resolution\n[--Answer:  B--]",
+      "concepts": [
+        "B-integrated",
+        "硬件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0299_01A004E",
+      "bank_code": "SSICTB0299_01A004E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Which of the following is a feature of an NFC smart card that is not possible with a printed QR code?",
+      "options": {
+        "A": "It can store alphabetic data",
+        "B": "It can be used to make electronic payments",
+        "C": "Its internal data can be updated",
+        "D": "It can be read by a scanner\n[--Answer:  C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is a feature of an NFC smart card that is not possible with a printed QR code?\nA. It can store alphabetic data\nB. It can be used to make electronic payments\nC. Its internal data can be updated\nD. It can be read by a scanner\n[--Answer:  C--]",
+      "concepts": [
+        "B-integrated",
+        "SQL",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0299_01A005E",
+      "bank_code": "SSICTB0299_01A005E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Which of the following is not an advantage of using a fingerprint sensor compared to facial recognition for biometric authentication?",
+      "options": {
+        "A": "Can be used while wearing a facial mask",
+        "B": "Does not require a password",
+        "C": "Does not require a direct line of sight with the sensor",
+        "D": "Can be used in dark environments\n[--Answer:  B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is not an advantage of using a fingerprint sensor compared to facial recognition for biometric authentication?\nA. Can be used while wearing a facial mask\nB. Does not require a password\nC. Does not require a direct line of sight with the sensor\nD. Can be used in dark environments\n[--Answer:  B--]",
+      "concepts": [
+        "B-integrated",
+        "循環"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0299_01A006E",
+      "bank_code": "SSICTB0299_01A006E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Which of the following can reduce the power consumption of a monitor?\n(1)\nLower screen brightness\n(2)\nIncrease screen contrast\n(3)\nUse a lower screen refresh rate",
+      "options": {
+        "A": "(1) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer:  B--]\nShort QuestionsSSICTB0299_03A001E, 4, 2025\n1.\nJayden wants to purchase a new printer for his mother.\n(a)\nSuggest two ways to connect the printer to the computer.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(b)\nSuggest a use case where using a laser printer is better than an inkjet printer. Explain why.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) Wired connection using USB;\nWireless connection using Wi-Fi\n(b) Printing large amounts of document → Laser printer has a faster printing speed\nPrinting contracts / important documents → printouts are more durable / water resistant\n--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following can reduce the power consumption of a monitor?\n(1)\nLower screen brightness\n(2)\nIncrease screen contrast\n(3)\nUse a lower screen refresh rate\nA. (1) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer:  B--]\nShort QuestionsSSICTB0299_03A001E, 4, 2025\n1.\nJayden wants to purchase a new printer for his mother.\n(a)\nSuggest two ways to connect the printer to the computer.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(b)\nSuggest a use case where using a laser printer is better than an inkjet printer. Explain why.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) Wired connection using USB;\nWireless connection using Wi-Fi\n(b) Printing large amounts of document → Laser printer has a faster printing speed\nPrinting contracts / important documents → printouts are more durable / water resistant\n--]",
+      "concepts": [
+        "B-integrated",
+        "循環"
+      ],
+      "difficulty_tier": "intermediate"
+    }
+  ]
+}

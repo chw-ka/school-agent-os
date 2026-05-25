@@ -59,6 +59,18 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--rounds", type=int, default=2, help="Repeat partial regen until clean or max rounds")
     ap.add_argument("--set-written-picks", action="store_true")
     ap.add_argument("--dry-run", action="store_true", help="Only list failed slots, do not regen")
+    ap.add_argument(
+        "--solve-report",
+        type=Path,
+        default=_DEFAULT_SPEC.parent / "25_26_S5_ICT_Exam02.solve_review.json",
+        help="solve_review.json for blocked slots + repair hints",
+    )
+    ap.add_argument(
+        "--solve-repair",
+        action="store_true",
+        help="LLM-repair blocked slots from solve_report before pattern regen",
+    )
+    ap.add_argument("--provider", choices=["gemini", "deepseek", "openai"], default=None)
     args = ap.parse_args(argv)
 
     spec_path = args.spec.expanduser().resolve()
@@ -88,9 +100,32 @@ def main(argv: list[str] | None = None) -> int:
         subject_subpath="S5-ICT",
     )
     failed = collect_failed_slot_ids(report)
+    solve_fb: dict = {}
+    solve_path = args.solve_report.expanduser().resolve()
+    if solve_path.is_file():
+        from solve_review_core import feedback_by_slot, load_solve_review
+
+        sr = load_solve_review(solve_path)
+        solve_fb = feedback_by_slot(sr)
+        for sid in sr.blocked_ids:
+            if sid not in failed:
+                failed.append(sid)
+        print(f"Loaded solve_review: {len(sr.blocked_ids)} blocked slot(s)")
+
     if not failed:
         print("No failed slots — spec already passes question_review.")
         return 0
+
+    llm_cfg = None
+    if args.solve_repair:
+        from solve_llm import llm_config_from_env
+
+        try:
+            llm_cfg = llm_config_from_env(provider=args.provider)
+        except RuntimeError as e:
+            print(str(e))
+            print("Run: .venv/bin/python shared-tools/paper-generator/solve_review.py --check-key")
+            return 2
 
     refs = build_reference_specs(
         template_docx=template,
@@ -110,6 +145,9 @@ def main(argv: list[str] | None = None) -> int:
             seed=args.seed + round_i * 1000,
             max_attempts=args.max_attempts,
             refs=refs,
+            solve_feedback=solve_fb,
+            use_llm_repair=args.solve_repair,
+            llm_cfg=llm_cfg,
         )
         save_spec(spec_path, spec)
         save_partial_regen_report(last_pr, args.report)

@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecC8_en_Applications of Programming in Real Life.docx",
+    "slug": "ElecC8_en",
+    "title": "Applications of Programming in Real Life",
+    "title_zh": null,
+    "title_en": "Applications of Programming in Real Life",
+    "language": "en",
+    "family": "ElecC",
+    "chapter": 8,
+    "integrated": false,
+    "topic_code": "EC08",
+    "curriculum_unit": "EC",
+    "ca_unit": "EC",
+    "f5_exam_scope": "elective_sd",
+    "extracted_at": "2026-05-24T10:37:18.311258+00:00",
+    "item_count": 2,
+    "section_counts": {
+      "short_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTC1108_03A001E",
+      "bank_code": "SSICTC1108_03A001E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Tommy is designing a prototype of an energy-saving escalator. It has two modes of operation, namely the normal mode and the standby mode. A sensor is used to detect the presence of passengers within 3 metre from the entry of the escalator. If a passenger is detected, the escalator will operate in the normal mode; otherwise, it will operate in the standby mode.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Which sensor should be used in the escalator?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "A variable passenger stores the presence or absence of passengers as detected by the sensor. When a passenger is detected, the value of passenger becomes True; otherwise, it becomes False. Complete the following algorithm for this escalator.(2 marks)\nrepeat _______________\nif ____________________ then\nOperate in the normal mode\nelse\nOperate in the standby mode"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Tommy also wants to add certain features to ensure people enter the escalator from the right direction."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Tommy is going to install an AI camera at the exit of the escalator to detect the presence of any passengers approaching in the opposite direction. If such passengers are detected, a warning sound will be emitted to alert them. Which output device should be used to implement this function?(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "If Tommy wants to show an arrow sign at the entry of the escalator to indicate the direction of travel, which output device can be used?(1 mark)\n[--Answer:\n(a) Passive Infrared (PIR) motion sensor / Ultrasonic (distance) sensor"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "forever\npassenger = True\n(c)(i) buzzer\n(c)(ii) display\n--]"
+        }
+      ],
+      "text": "Tommy is designing a prototype of an energy-saving escalator. It has two modes of operation, namely the normal mode and the standby mode. A sensor is used to detect the presence of passengers within 3 metre from the entry of the escalator. If a passenger is detected, the escalator will operate in the normal mode; otherwise, it will operate in the standby mode.\n(a) Which sensor should be used in the escalator?(1 mark)\n(b) A variable passenger stores the presence or absence of passengers as detected by the sensor. When a passenger is detected, the value of passenger becomes True; otherwise, it becomes False. Complete the following algorithm for this escalator.(2 marks)\nrepeat _______________\nif ____________________ then\nOperate in the normal mode\nelse\nOperate in the standby mode\n(c) Tommy also wants to add certain features to ensure people enter the escalator from the right direction.\n(i) Tommy is going to install an AI camera at the exit of the escalator to detect the presence of any passengers approaching in the opposite direction. If such passengers are detected, a warning sound will be emitted to alert them. Which output device should be used to implement this function?(1 mark)\n(ii) If Tommy wants to show an arrow sign at the entry of the escalator to indicate the direction of travel, which output device can be used?(1 mark)\n[--Answer:\n(a) Passive Infrared (PIR) motion sensor / Ultrasonic (distance) sensor\n(b) forever\npassenger = True\n(c)(i) buzzer\n(c)(ii) display\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch8",
+        "循環",
+        "函數",
+        "算法",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1108_03A002E",
+      "bank_code": "SSICTC1108_03A002E",
+      "section_type": "short_answer",
+      "marks": 7.0,
+      "year_tag": null,
+      "stem": "Kay is designing a smart assistant that gives suggestions for the user after detecting the temperature and humidity in the surroundings.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Which sensor and output device should be used respectively?(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The following table lists the message to be displayed for each temperature/humidity level:\nTemperature/Humidity\nMessage\nTemperature lower than 15°C\nBring a coat with you.\nTemperature higher than 25°C\nDrink more water.\nHumidity higher than 75%\nBring an umbrella with you.\nHumidity lower than 40%\nApply moisturiser."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Which messages will be displayed if the temperature and the humidity are 26°C and 85% respectively?(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Assume variables temperature and humidity store these two pieces of data collected by the sensor, complete the algorithm for this smart assistant. The smart assistant should perform as few evaluations as possible.(4 marks)\nif ____________________ then\nOutput \"Bring a coat with you.\"\nOutput \"Drink more water.\"\nOutput \"Bring an umbrella with you.\"\nOutput \"Apply moisturiser.\"\n[--Answer:\n(a) Sensor: Temperature and humidity sensor; Output device: Display\n(b)(i) “Drink more water.” and “Bring an umbrella with you.”\n(b)(ii)\ntemperature < 15\nelse if temperature > 25 then\nif humidity > 75 then\nelse if humidity < 40 then\n--]"
+        }
+      ],
+      "text": "Kay is designing a smart assistant that gives suggestions for the user after detecting the temperature and humidity in the surroundings.\n(a) Which sensor and output device should be used respectively?(2 marks)\n(b) The following table lists the message to be displayed for each temperature/humidity level:\nTemperature/Humidity\nMessage\nTemperature lower than 15°C\nBring a coat with you.\nTemperature higher than 25°C\nDrink more water.\nHumidity higher than 75%\nBring an umbrella with you.\nHumidity lower than 40%\nApply moisturiser.\n(i) Which messages will be displayed if the temperature and the humidity are 26°C and 85% respectively?(1 mark)\n(ii) Assume variables temperature and humidity store these two pieces of data collected by the sensor, complete the algorithm for this smart assistant. The smart assistant should perform as few evaluations as possible.(4 marks)\nif ____________________ then\nOutput \"Bring a coat with you.\"\nOutput \"Drink more water.\"\nOutput \"Bring an umbrella with you.\"\nOutput \"Apply moisturiser.\"\n[--Answer:\n(a) Sensor: Temperature and humidity sensor; Output device: Display\n(b)(i) “Drink more water.” and “Bring an umbrella with you.”\n(b)(ii)\ntemperature < 15\nelse if temperature > 25 then\nif humidity > 75 then\nelse if humidity < 40 then\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch8",
+        "循環",
+        "列表",
+        "算法",
+        "資訊處理",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    }
+  ]
+}

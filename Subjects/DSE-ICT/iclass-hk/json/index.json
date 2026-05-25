@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-24T10:37:18.997519+00:00",
+  "root": "Subjects/DSE-ICT/iclass-hk/json",
+  "source_folder": "Subjects/DSE-ICT/iclass-hk",
+  "depth_profile": "Subjects/DSE-ICT/iclass-hk/depth_profile.json",
+  "sources": [
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreA1_en_Introduction to information Processing.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreA1_en.json",
+      "items": 16,
+      "slug": "CoreA1_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreA1_hk_資訊處理簡介.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreA1_hk.json",
+      "items": 16,
+      "slug": "CoreA1_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreA2_en_Data Control and Data Organisation.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreA2_en.json",
+      "items": 22,
+      "slug": "CoreA2_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreA2_hk_數據控制及數據組織.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreA2_hk.json",
+      "items": 22,
+      "slug": "CoreA2_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreA3_en_Data Representation.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreA3_en.json",
+      "items": 37,
+      "slug": "CoreA3_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreA3_hk_數據表示.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreA3_hk.json",
+      "items": 37,
+      "slug": "CoreA3_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreB1_en_Input and Output Devices.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreB1_en.json",
+      "items": 20,
+      "slug": "CoreB1_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreB2_en_Computer Hardware.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreB2_en.json",
+      "items": 25,
+      "slug": "CoreB2_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreB3_en_Computer Software.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreB3_en.json",
+      "items": 20,
+      "slug": "CoreB3_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreBi_en_Integrated.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreBi_en.json",
+      "items": 6,
+      "slug": "CoreBi_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreD1_hk_問題建構和分析.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreD1_hk.json",
+      "items": 16,
+      "slug": "CoreD1_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreD2_hk_算法設計（一）.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreD2_hk.json",
+      "items": 33,
+      "slug": "CoreD2_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreD3_hk_算法設計（二）.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreD3_hk.json",
+      "items": 34,
+      "slug": "CoreD3_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreD4_hk_Python 編程入門.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreD4_hk.json",
+      "items": 26,
+      "slug": "CoreD4_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreD5_hk_Python 綜合解難.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreD5_hk.json",
+      "items": 27,
+      "slug": "CoreD5_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreD6_hk_程式測試和除錯.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreD6_hk.json",
+      "items": 30,
+      "slug": "CoreD6_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_CoreDi_hk_綜合.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/CoreDi_hk.json",
+      "items": 17,
+      "slug": "CoreDi_hk"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecA1_en_Managing Data Using SQL.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecA1_en.json",
+      "items": 10,
+      "slug": "ElecA1_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecA2_en_SQL Operators and Functions.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecA2_en.json",
+      "items": 10,
+      "slug": "ElecA2_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecA3_en_SQL Operations on Multiple Tables.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecA3_en.json",
+      "items": 13,
+      "slug": "ElecA3_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecA4_en_Relational Database.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecA4_en.json",
+      "items": 10,
+      "slug": "ElecA4_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecA5_en_Database Design and ER Diagram.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecA5_en.json",
+      "items": 10,
+      "slug": "ElecA5_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecAi_en_Integrated.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecAi_en.json",
+      "items": 8,
+      "slug": "ElecAi_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecC1_en_Algorithm Design & Basics of Python Programs.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecC1_en.json",
+      "items": 7,
+      "slug": "ElecC1_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecC2_en_Program Testing & Debugging (II).docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecC2_en.json",
+      "items": 2,
+      "slug": "ElecC2_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecC3_en_Advanced Control Structures.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecC3_en.json",
+      "items": 7,
+      "slug": "ElecC3_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecC4_en_Sub-programs.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecC4_en.json",
+      "items": 9,
+      "slug": "ElecC4_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecC5_en_Data Structures.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecC5_en.json",
+      "items": 7,
+      "slug": "ElecC5_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecC6_en_Searching and Sorting.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecC6_en.json",
+      "items": 8,
+      "slug": "ElecC6_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecC7_en_Handling of Text Files.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecC7_en.json",
+      "items": 2,
+      "slug": "ElecC7_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecC8_en_Applications of Programming in Real Life.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecC8_en.json",
+      "items": 2,
+      "slug": "ElecC8_en"
+    },
+    {
+      "kind": "question_bank",
+      "file": "QB_ElecCi_en_Integrated.docx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/ElecCi_en.json",
+      "items": 8,
+      "slug": "ElecCi_en"
+    },
+    {
+      "kind": "slides",
+      "file": "EA1 Ch1.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EA1_Ch1_slides.json",
+      "slides": 36,
+      "slug": "EA1_Ch1_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EA1 Ch2.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EA1_Ch2_slides.json",
+      "slides": 32,
+      "slug": "EA1_Ch2_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EA1 Ch3.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EA1_Ch3_slides.json",
+      "slides": 154,
+      "slug": "EA1_Ch3_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EB Ch1.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EB_Ch1_slides.json",
+      "slides": 71,
+      "slug": "EB_Ch1_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EB Ch2.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EB_Ch2_slides.json",
+      "slides": 82,
+      "slug": "EB_Ch2_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EB Ch3.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EB_Ch3_slides.json",
+      "slides": 43,
+      "slug": "EB_Ch3_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecA Ch1.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECA_Ch1_slides.json",
+      "slides": 97,
+      "slug": "EELECA_Ch1_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecA Ch2.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECA_Ch2_slides.json",
+      "slides": 63,
+      "slug": "EELECA_Ch2_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecA Ch3.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECA_Ch3_slides.json",
+      "slides": 132,
+      "slug": "EELECA_Ch3_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecA Ch4.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECA_Ch4_slides.json",
+      "slides": 73,
+      "slug": "EELECA_Ch4_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecA Ch5.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECA_Ch5_slides.json",
+      "slides": 129,
+      "slug": "EELECA_Ch5_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecC Ch1.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECC_Ch1_slides.json",
+      "slides": 55,
+      "slug": "EELECC_Ch1_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecC Ch2.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECC_Ch2_slides.json",
+      "slides": 16,
+      "slug": "EELECC_Ch2_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecC Ch3.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECC_Ch3_slides.json",
+      "slides": 35,
+      "slug": "EELECC_Ch3_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecC Ch4.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECC_Ch4_slides.json",
+      "slides": 55,
+      "slug": "EELECC_Ch4_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecC Ch5.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECC_Ch5_slides.json",
+      "slides": 116,
+      "slug": "EELECC_Ch5_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecC Ch6 Activity 6.1 Number guessing game Q1.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECC_Ch6_slides.json",
+      "slides": 13,
+      "slug": "EELECC_Ch6_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecC Ch6.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECC_Ch6_slides.json",
+      "slides": 123,
+      "slug": "EELECC_Ch6_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecC Ch7.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECC_Ch7_slides.json",
+      "slides": 47,
+      "slug": "EELECC_Ch7_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "EElecC Ch8.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/EELECC_Ch8_slides.json",
+      "slides": 23,
+      "slug": "EELECC_Ch8_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "HA1 Ch1.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/HA1_Ch1_slides.json",
+      "slides": 36,
+      "slug": "HA1_Ch1_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "HA1 Ch2.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/HA1_Ch2_slides.json",
+      "slides": 32,
+      "slug": "HA1_Ch2_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "HA1 Ch3.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/HA1_Ch3_slides.json",
+      "slides": 154,
+      "slug": "HA1_Ch3_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "HD1 Ch1.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/HD1_Ch1_slides.json",
+      "slides": 19,
+      "slug": "HD1_Ch1_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "HD1 Ch2.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/HD1_Ch2_slides.json",
+      "slides": 66,
+      "slug": "HD1_Ch2_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "HD1 Ch3.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/HD1_Ch3_slides.json",
+      "slides": 51,
+      "slug": "HD1_Ch3_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "HD2 Ch4.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/HD2_Ch4_slides.json",
+      "slides": 107,
+      "slug": "HD2_Ch4_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "HD2 Ch5.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/HD2_Ch5_slides.json",
+      "slides": 95,
+      "slug": "HD2_Ch5_slides"
+    },
+    {
+      "kind": "slides",
+      "file": "HD2 Ch6.pptx",
+      "json": "Subjects/DSE-ICT/iclass-hk/json/HD2_Ch6_slides.json",
+      "slides": 51,
+      "slug": "HD2_Ch6_slides"
+    }
+  ]
+}

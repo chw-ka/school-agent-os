@@ -1,0 +1,423 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreD1_hk_問題建構和分析.docx",
+    "slug": "CoreD1_hk",
+    "title": "問題建構和分析",
+    "title_zh": "問題建構和分析",
+    "title_en": null,
+    "language": "hk",
+    "family": "CoreD",
+    "chapter": 1,
+    "integrated": false,
+    "topic_code": "D01",
+    "curriculum_unit": "Core-D",
+    "ca_unit": "D",
+    "f5_exam_scope": "mcq_core_d",
+    "extracted_at": "2026-05-24T10:37:17.768279+00:00",
+    "item_count": 16,
+    "section_counts": {
+      "mcq": 13,
+      "short_answer": 3
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTD0101_01A001C",
+      "bank_code": "SSICTD0101_01A001C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "某巴士公司想開發一個流動應用程式，以顯示巴士抵達不同車站的時間。該公司首先應做什麼？",
+      "options": {
+        "A": "定義應用程式的功能。",
+        "B": "估計開發成本。",
+        "C": "設計應用程式的算法。",
+        "D": "設計應用程式的用戶界面。"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "某巴士公司想開發一個流動應用程式，以顯示巴士抵達不同車站的時間。該公司首先應做什麼？\nA. 定義應用程式的功能。\nB. 估計開發成本。\nC. 設計應用程式的算法。\nD. 設計應用程式的用戶界面。",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "算法"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0101_01A002C",
+      "bank_code": "SSICTD0101_01A002C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是模組化的好處？",
+      "options": {
+        "A": "減少程式的執行時間。",
+        "B": "使程式不須測試。",
+        "C": "使程式可重用。",
+        "D": "使用戶更容易使用程式。"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是模組化的好處？\nA. 減少程式的執行時間。\nB. 使程式不須測試。\nC. 使程式可重用。\nD. 使用戶更容易使用程式。",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "程式測試"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0101_01A003C",
+      "bank_code": "SSICTD0101_01A003C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "允行的程式未能產生正確輸出，因此他修改了程式的流程圖。以下哪項解難步驟最能貼切地描述他的動作？",
+      "options": {
+        "A": "分析問題",
+        "B": "設計算法",
+        "C": "開發程式",
+        "D": "測試及除錯"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "允行的程式未能產生正確輸出，因此他修改了程式的流程圖。以下哪項解難步驟最能貼切地描述他的動作？\nA. 分析問題\nB. 設計算法\nC. 開發程式\nD. 測試及除錯",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "除錯",
+        "程式測試",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0101_01A004C",
+      "bank_code": "SSICTD0101_01A004C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項最能貼切地描述以下動作？\n步驟一：將所有學生的體重記錄在同一組別。\n步驟二：找出組別中最重的學生，並將他抽出組別。\n步驟三：重複以上步驟，直至組別內餘下三名學生。",
+      "options": {
+        "A": "找出組別中最重的學生。",
+        "B": "找出組別中最輕的學生。",
+        "C": "找出組別中最重至第三重的學生。",
+        "D": "找出組別中最輕至第三輕的學生。"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項最能貼切地描述以下動作？\n步驟一：將所有學生的體重記錄在同一組別。\n步驟二：找出組別中最重的學生，並將他抽出組別。\n步驟三：重複以上步驟，直至組別內餘下三名學生。\nA. 找出組別中最重的學生。\nB. 找出組別中最輕的學生。\nC. 找出組別中最重至第三重的學生。\nD. 找出組別中最輕至第三輕的學生。",
+      "concepts": [
+        "D-ch1",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0101_01A005C",
+      "bank_code": "SSICTD0101_01A005C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "某應用程式供用戶以作品名稱或作者名稱搜尋音樂作品，並在網上播放該作品。以下哪組輸入、處理和輸出符合搜尋過程？\n輸入\n處理\n輸出",
+      "options": {
+        "A": "作品名稱\n搜尋\n相關音樂",
+        "B": "作者名稱\n排序\n相關音樂",
+        "C": "播放音樂的指令\n串流\n音頻",
+        "D": "下載音樂的指令\n下載\n音頻檔案"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "某應用程式供用戶以作品名稱或作者名稱搜尋音樂作品，並在網上播放該作品。以下哪組輸入、處理和輸出符合搜尋過程？\n輸入\n處理\n輸出\nA. 作品名稱\n搜尋\n相關音樂\nB. 作者名稱\n排序\n相關音樂\nC. 播放音樂的指令\n串流\n音頻\nD. 下載音樂的指令\n下載\n音頻檔案",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "排序",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0101_01A006C",
+      "bank_code": "SSICTD0101_01A006C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪些是界定問題及其範圍的好處？\n(1)\n較容易將問題拆解成子問題\n(2)\n較容易識別輸入\n(3)\n令解決方案更複雜",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "(1)、(2) 和 (3)"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪些是界定問題及其範圍的好處？\n(1)\n較容易將問題拆解成子問題\n(2)\n較容易識別輸入\n(3)\n令解決方案更複雜\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. (1)、(2) 和 (3)",
+      "concepts": [
+        "D-ch1",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0101_01A007C",
+      "bank_code": "SSICTD0101_01A007C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "域名系統（DNS）的輸入和輸出分別是甚麼？\n輸入輸出",
+      "options": {
+        "A": "IP 位址      網域名稱",
+        "B": "IP 位址      MAC 位址",
+        "C": "網域名稱      IP 位址",
+        "D": "網域名稱      MAC位址"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "域名系統（DNS）的輸入和輸出分別是甚麼？\n輸入輸出\nA. IP 位址      網域名稱\nB. IP 位址      MAC 位址\nC. 網域名稱      IP 位址\nD. 網域名稱      MAC位址",
+      "concepts": [
+        "D-ch1",
+        "網絡",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0101_01A008C",
+      "bank_code": "SSICTD0101_01A008C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "雅文想開發一個程式，運用奇數檢測以檢驗某字節的有效性。以下哪項會是這程式的輸入？",
+      "options": {
+        "A": "該字節是否有效",
+        "B": "字節",
+        "C": "該字節的二進制補碼",
+        "D": "RAM的大小"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "雅文想開發一個程式，運用奇數檢測以檢驗某字節的有效性。以下哪項會是這程式的輸入？\nA. 該字節是否有效\nB. 字節\nC. 該字節的二進制補碼\nD. RAM的大小",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "硬件",
+        "進制",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0101_01A009C",
+      "bank_code": "SSICTD0101_01A009C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "智傑正在開發一個供用戶搜尋歌曲的程式。以下哪項 / 些可能是這程式的輸入？\n(1)\n歌曲名稱\n(2)\n歌曲的檔案大小\n(3)\n一部分歌詞",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "智傑正在開發一個供用戶搜尋歌曲的程式。以下哪項 / 些可能是這程式的輸入？\n(1)\n歌曲名稱\n(2)\n歌曲的檔案大小\n(3)\n一部分歌詞\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "排序",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0101_01A010C",
+      "bank_code": "SSICTD0101_01A010C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "解決問題時，將問題拆解有甚麼好處？",
+      "options": {
+        "A": "將開發團隊分成小組，令每組以不同方式解決同一問題。",
+        "B": "分拆數據以提升程式效能。",
+        "C": "讓用戶逐一運行程式各部分，使程式更易用。",
+        "D": "將複雜的問題拆解成較小的部分令問題變得更容易解決。"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "解決問題時，將問題拆解有甚麼好處？\nA. 將開發團隊分成小組，令每組以不同方式解決同一問題。\nB. 分拆數據以提升程式效能。\nC. 讓用戶逐一運行程式各部分，使程式更易用。\nD. 將複雜的問題拆解成較小的部分令問題變得更容易解決。",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0101_01A011C",
+      "bank_code": "SSICTD0101_01A011C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪組輸入、處理和輸出是錯誤的？",
+      "options": {
+        "A": "輸入\n長方形的長和闊\n處理\n面積 = 長 * 闊\n輸出\n長方形的面積",
+        "B": "輸入\n貨品賣出的價格和數量\n處理\n總收入 = 價格 * 數量\n輸出\n總收入",
+        "C": "輸入\n身體質量指數（BMI）\n處理\nBMI = 體重 / 身高2\n輸出\n某人的體重和身高",
+        "D": "輸入\n圓形的半徑\n處理\n面積 = π * 半徑2，其中 π 是已知的常數 ≈ 3.14。\n輸出\n圓形的面積"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪組輸入、處理和輸出是錯誤的？\nA. 輸入\n長方形的長和闊\n處理\n面積 = 長 * 闊\n輸出\n長方形的面積\nB. 輸入\n貨品賣出的價格和數量\n處理\n總收入 = 價格 * 數量\n輸出\n總收入\nC. 輸入\n身體質量指數（BMI）\n處理\nBMI = 體重 / 身高2\n輸出\n某人的體重和身高\nD. 輸入\n圓形的半徑\n處理\n面積 = π * 半徑2，其中 π 是已知的常數 ≈ 3.14。\n輸出\n圓形的面積",
+      "concepts": [
+        "D-ch1",
+        "除錯",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0101_01A012C",
+      "bank_code": "SSICTD0101_01A012C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "俊華正在學習編寫用作計算三角形內角和的程式。他隨後被要求編寫一個能計算任何多邊形的內角和的程式，因此他修改了三角形的程式，令它同時適用於任何多邊形。他使用了哪種解難技巧？",
+      "options": {
+        "A": "精益求精",
+        "B": "模式識別",
+        "C": "拆解問題",
+        "D": "界定問題"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "俊華正在學習編寫用作計算三角形內角和的程式。他隨後被要求編寫一個能計算任何多邊形的內角和的程式，因此他修改了三角形的程式，令它同時適用於任何多邊形。他使用了哪種解難技巧？\nA. 精益求精\nB. 模式識別\nC. 拆解問題\nD. 界定問題",
+      "concepts": [
+        "D-ch1",
+        "Python"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0101_01A013C",
+      "bank_code": "SSICTD0101_01A013C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "解決問題時，家輝將問題拆解成不同子問題。他繼而將這些子問題進一步拆解，並利用分而治之的策略逐個解決。家輝使用了哪種解難技巧？",
+      "options": {
+        "A": "精益求精",
+        "B": "模式識別",
+        "C": "反覆試驗",
+        "D": "界定問題"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "解決問題時，家輝將問題拆解成不同子問題。他繼而將這些子問題進一步拆解，並利用分而治之的策略逐個解決。家輝使用了哪種解難技巧？\nA. 精益求精\nB. 模式識別\nC. 反覆試驗\nD. 界定問題",
+      "concepts": [
+        "D-ch1"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0101_03A001C",
+      "bank_code": "SSICTD0101_03A001C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "家明想開發一個應用程式以搜尋不同主題的圖片。",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 圖片的關鍵詞和圖片的主題。\n(b) 模組可以重用 / 模組可各自開發 / 模組化提升開發程式的效率。（任何兩個答案）",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "試建議兩項能幫助搜尋的用戶輸入。（2 分）"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "家明將應用程式分為不同模組並逐一開發。試提出模組化的兩項好處。（2 分）"
+        }
+      ],
+      "text": "家明想開發一個應用程式以搜尋不同主題的圖片。\n(a) 試建議兩項能幫助搜尋的用戶輸入。（2 分）\n(b) 家明將應用程式分為不同模組並逐一開發。試提出模組化的兩項好處。（2 分）\n(a) 圖片的關鍵詞和圖片的主題。\n(b) 模組可以重用 / 模組可各自開發 / 模組化提升開發程式的效率。（任何兩個答案）",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "排序",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0101_03A002C",
+      "bank_code": "SSICTD0101_03A002C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "陳老師想設計一個程式，找出班上有多少學生在物理、化學和生物三科平均取得 70 分以上。試列出程式的輸入、處理和輸出。（4 分）\n輸入\n處理\n輸出",
+      "options": {},
+      "answer": null,
+      "answer_text": "輸入：每名學生的物理、化學和生物科分數。\n處理：找出三個分數的平均數；如果該分數高於 70，將結果加 1。\n輸出：在物理、化學和生物三科平均取得 70 分以上的學生人數。",
+      "parts": [],
+      "text": "陳老師想設計一個程式，找出班上有多少學生在物理、化學和生物三科平均取得 70 分以上。試列出程式的輸入、處理和輸出。（4 分）\n輸入\n處理\n輸出\n輸入：每名學生的物理、化學和生物科分數。\n處理：找出三個分數的平均數；如果該分數高於 70，將結果加 1。\n輸出：在物理、化學和生物三科平均取得 70 分以上的學生人數。",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0101_03A003C",
+      "bank_code": "SSICTD0101_03A003C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": "2025",
+      "stem": "家晴正在開發一個用以計算正方形面積的算法。",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) (1) 正方形的長度\n(a) (2) 正方形的面積\n(b) 模組可以重用 / 模組可個別開發 / 模組化可提升程式開發的效率。 （任何兩個答案）",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "完成以下輸入 — 處理 — 輸出周期。(2 分)\n輸入\n處理\n輸出\n(1)______________________\n面積 = 長度2\n(2)______________________"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "家晴正在編寫一個程式以比較不同形狀的面積。該程式會使用模組。舉出在此程式使用模組化設計的兩個好處。(2 分)"
+        }
+      ],
+      "text": "家晴正在開發一個用以計算正方形面積的算法。\n(a) 完成以下輸入 — 處理 — 輸出周期。(2 分)\n輸入\n處理\n輸出\n(1)______________________\n面積 = 長度2\n(2)______________________\n(b) 家晴正在編寫一個程式以比較不同形狀的面積。該程式會使用模組。舉出在此程式使用模組化設計的兩個好處。(2 分)\n(a) (1) 正方形的長度\n(a) (2) 正方形的面積\n(b) 模組可以重用 / 模組可個別開發 / 模組化可提升程式開發的效率。 （任何兩個答案）",
+      "concepts": [
+        "D-ch1",
+        "Python",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    }
+  ]
+}

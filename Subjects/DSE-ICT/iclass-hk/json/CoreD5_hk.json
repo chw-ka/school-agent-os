@@ -1,0 +1,836 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreD5_hk_Python 綜合解難.docx",
+    "slug": "CoreD5_hk",
+    "title": "Python 綜合解難",
+    "title_zh": "Python 綜合解難",
+    "title_en": null,
+    "language": "hk",
+    "family": "CoreD",
+    "chapter": 5,
+    "integrated": false,
+    "topic_code": "D05",
+    "curriculum_unit": "Core-D",
+    "ca_unit": "D",
+    "f5_exam_scope": "mcq_core_d",
+    "extracted_at": "2026-05-24T10:37:17.904076+00:00",
+    "item_count": 27,
+    "section_counts": {
+      "mcq": 18,
+      "short_answer": 7,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTD0205_01A001C",
+      "bank_code": "SSICTD0205_01A001C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "執行下列 Python 程式後，以下哪個列表 X 的索引儲存了數值「7」？\nX = [5, 9, 7, 6, 7, 8, 9]\nfor i in range(0, 7):\nX[i] = X[i] + 1\nfor i in range(2, 7):\nX[i] = X[i] - 2",
+      "options": {
+        "A": "0",
+        "B": "2",
+        "C": "5",
+        "D": "6"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "執行下列 Python 程式後，以下哪個列表 X 的索引儲存了數值「7」？\nX = [5, 9, 7, 6, 7, 8, 9]\nfor i in range(0, 7):\nX[i] = X[i] + 1\nfor i in range(2, 7):\nX[i] = X[i] - 2\nA. 0\nB. 2\nC. 5\nD. 6",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A002C",
+      "bank_code": "SSICTD0205_01A002C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列 Python 程式的輸出？\nnum = [1, 2, 3, 4, 5]\nfor i in range(1, 3):\nprint(num[i], end = \" \")",
+      "options": {
+        "A": "1 2",
+        "B": "1 2 3",
+        "C": "2 3",
+        "D": "2 3 4"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列 Python 程式的輸出？\nnum = [1, 2, 3, 4, 5]\nfor i in range(1, 3):\nprint(num[i], end = \" \")\nA. 1 2\nB. 1 2 3\nC. 2 3\nD. 2 3 4",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A003C",
+      "bank_code": "SSICTD0205_01A003C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下 Python 程式用以將列表X的一部分複製至列表 Y。以下哪行 Python 程式碼可用以填上空格？\nX = [242, 34, 219, 84, 69, 18, 100]\nY = [0, 0, 0, 0]\nY[i] = X[i]",
+      "options": {
+        "A": "for i in range(0, 6):",
+        "B": "for i in range(0, 7):",
+        "C": "for i in range(0, 5):",
+        "D": "for i in range(0, 3):"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下 Python 程式用以將列表X的一部分複製至列表 Y。以下哪行 Python 程式碼可用以填上空格？\nX = [242, 34, 219, 84, 69, 18, 100]\nY = [0, 0, 0, 0]\nY[i] = X[i]\nA. for i in range(0, 6):\nB. for i in range(0, 7):\nC. for i in range(0, 5):\nD. for i in range(0, 3):",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A004C",
+      "bank_code": "SSICTD0205_01A004C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下 Python 程式用以列印列表中所有名字。以下哪行程式碼可用以填上空格？\nname = [\"Peter\", \"Donald\", \"Chris\", \"Ben\"]\nprint(name[i])",
+      "options": {
+        "A": "for i in range(0, 3):",
+        "B": "for i in range(0, 4):",
+        "C": "while i < 3:",
+        "D": "while i < 4:"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下 Python 程式用以列印列表中所有名字。以下哪行程式碼可用以填上空格？\nname = [\"Peter\", \"Donald\", \"Chris\", \"Ben\"]\nprint(name[i])\nA. for i in range(0, 3):\nB. for i in range(0, 4):\nC. while i < 3:\nD. while i < 4:",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A005C",
+      "bank_code": "SSICTD0205_01A005C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項可用以填上空格，令程式輸出「6 5 4 3」？\nnum = [1, 2, 3, 4, 5, 6, 7, 8]\nfor i in _______________:\nprint(num[i], end = \" \")",
+      "options": {
+        "A": "range(1, 5)",
+        "B": "range(1, 6)",
+        "C": "range(6, 1, -1)",
+        "D": "range(5, 1, -1)"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項可用以填上空格，令程式輸出「6 5 4 3」？\nnum = [1, 2, 3, 4, 5, 6, 7, 8]\nfor i in _______________:\nprint(num[i], end = \" \")\nA. range(1, 5)\nB. range(1, 6)\nC. range(6, 1, -1)\nD. range(5, 1, -1)",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A006C",
+      "bank_code": "SSICTD0205_01A006C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下 Python 程式用以找出列表 num 中數值的平均數。以下哪行程式碼可用以填上空格？\nnum = [12, 34, 32, 193, 172, 268, 9173]\nsum = 0\nfor i in range(0, 7):\nsum = sum + num[i]",
+      "options": {
+        "A": "print(avg(sum))",
+        "B": "print(average(sum))",
+        "C": "print(sum/len(num))",
+        "D": "print(sum/i)"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下 Python 程式用以找出列表 num 中數值的平均數。以下哪行程式碼可用以填上空格？\nnum = [12, 34, 32, 193, 172, 268, 9173]\nsum = 0\nfor i in range(0, 7):\nsum = sum + num[i]\nA. print(avg(sum))\nB. print(average(sum))\nC. print(sum/len(num))\nD. print(sum/i)",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A007C",
+      "bank_code": "SSICTD0205_01A007C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "辯論隊隊員的名字儲存在列表 name。以下 Python 程式用以按名字搜尋隊員。以下哪段程式碼可用以填上空格？\ntarget = str(input(\"Input the target name: \"))\nname = [\"Nelson\", \"Nathan\", \"Mandy\", \"Paul\", \"George\"]\nfound = False\ni = 0\nprint(found)",
+      "options": {
+        "A": "while i < 4 and found == False:\nif target == name[i]:\nfound = True\ni = i + 1",
+        "B": "while i < 5 and found == False:\nif target == name[i]:\nfound = True\ni = i + 1",
+        "C": "while i < 6 and found == False:\nif target == name[i]:\nfound = True\ni = i + 1",
+        "D": "for i in range(0, 4):\nif target == name[i]:\nfound = True"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "辯論隊隊員的名字儲存在列表 name。以下 Python 程式用以按名字搜尋隊員。以下哪段程式碼可用以填上空格？\ntarget = str(input(\"Input the target name: \"))\nname = [\"Nelson\", \"Nathan\", \"Mandy\", \"Paul\", \"George\"]\nfound = False\ni = 0\nprint(found)\nA. while i < 4 and found == False:\nif target == name[i]:\nfound = True\ni = i + 1\nB. while i < 5 and found == False:\nif target == name[i]:\nfound = True\ni = i + 1\nC. while i < 6 and found == False:\nif target == name[i]:\nfound = True\ni = i + 1\nD. for i in range(0, 4):\nif target == name[i]:\nfound = True",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "排序",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01B008C",
+      "bank_code": "SSICTD0205_01B008C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下 Python 程式用以找出目標值首次出現時的索引。以下哪段程式碼可用以填上空格？\nnum = [1, 2, 3, 2, 3, 1]\ntarget = int(input())\nindex = -1\nprint(index)",
+      "options": {
+        "A": "for i in range(0, 6):\nif num[i] == target:\nindex = i",
+        "B": "i = 0\nwhile i < 6:\nif num[i] == target:\nindex = i",
+        "C": "i = 0\nwhile i < 6:\nif num[i] == target:\nindex = i\ni = i + 1",
+        "D": "i = 0\nwhile i < 6 and index == -1:\nif num[i] == target:\nindex = i\ni = i + 1"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下 Python 程式用以找出目標值首次出現時的索引。以下哪段程式碼可用以填上空格？\nnum = [1, 2, 3, 2, 3, 1]\ntarget = int(input())\nindex = -1\nprint(index)\nA. for i in range(0, 6):\nif num[i] == target:\nindex = i\nB. i = 0\nwhile i < 6:\nif num[i] == target:\nindex = i\nC. i = 0\nwhile i < 6:\nif num[i] == target:\nindex = i\ni = i + 1\nD. i = 0\nwhile i < 6 and index == -1:\nif num[i] == target:\nindex = i\ni = i + 1",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A009C",
+      "bank_code": "SSICTD0205_01A009C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "列表 present 與 list 分別儲存出席學生和班上所有學生。\nlist = [\"4A01\",\"4A02\",\"4A03\",\"4A04\",\"4A05\",\"4A06\",\"4A07\",\"4A08\"]\npresent = [\"4A01\",\"4A02\",\"4A03\",\"4A04\",\"4A05\",\"4A06\"]\n以下哪個 Python 程式可用以檢查班上所有學生是否皆有出席？",
+      "options": {
+        "A": "if len(present) == len(list):\nprint(\"All students are present\")\nelse:\nprint(\"Some students are absent\")",
+        "B": "if len(present) <= len(list):\nprint(\"All students are present\")\nelse:\nprint(\"Some students are absent\")",
+        "C": "if present <= list:\nprint(\"Some students are absent\")\nelse:\nprint(\"All students are present\")",
+        "D": "for i in range(0, 8):\nif present[i] == list[i]:\nprint(\"All students are present\")\nelse:\nprint(\"Some students are absent\")"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "列表 present 與 list 分別儲存出席學生和班上所有學生。\nlist = [\"4A01\",\"4A02\",\"4A03\",\"4A04\",\"4A05\",\"4A06\",\"4A07\",\"4A08\"]\npresent = [\"4A01\",\"4A02\",\"4A03\",\"4A04\",\"4A05\",\"4A06\"]\n以下哪個 Python 程式可用以檢查班上所有學生是否皆有出席？\nA. if len(present) == len(list):\nprint(\"All students are present\")\nelse:\nprint(\"Some students are absent\")\nB. if len(present) <= len(list):\nprint(\"All students are present\")\nelse:\nprint(\"Some students are absent\")\nC. if present <= list:\nprint(\"Some students are absent\")\nelse:\nprint(\"All students are present\")\nD. for i in range(0, 8):\nif present[i] == list[i]:\nprint(\"All students are present\")\nelse:\nprint(\"Some students are absent\")",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01B010C",
+      "bank_code": "SSICTD0205_01B010C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "下列 Python 程式中，變量 X 和 Y 分別儲存什麼？\nnum = [1, 5, 14, 18, 9, 4]\nX = num[0]\nY = num[5]\nfor i in range(0, 6):\nif num[i] > X:\nX = num[i]\nfor i in range(5, -1, -1):\nif num[i] < Y:\nY = num[i]",
+      "options": {
+        "A": "X：最大值；Y：最小值",
+        "B": "X：最小值；Y：最小值",
+        "C": "X：最小值；Y：最大值",
+        "D": "X：最大值；Y：最大值"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列 Python 程式中，變量 X 和 Y 分別儲存什麼？\nnum = [1, 5, 14, 18, 9, 4]\nX = num[0]\nY = num[5]\nfor i in range(0, 6):\nif num[i] > X:\nX = num[i]\nfor i in range(5, -1, -1):\nif num[i] < Y:\nY = num[i]\nA. X：最大值；Y：最小值\nB. X：最小值；Y：最小值\nC. X：最小值；Y：最大值\nD. X：最大值；Y：最大值",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A011C",
+      "bank_code": "SSICTD0205_01A011C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下程式的輸出是甚麼？\ntime = [15, 19, 17, 12, 16, 23]\nx = 0\nfor i in range(1, 6):\nx = x + time[i]\ny = x / 6\nprint(x)\nprint(y)",
+      "options": {
+        "A": "102\n17.0",
+        "B": "102\n20.4",
+        "C": "87\n14.5",
+        "D": "87\n17.4"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下程式的輸出是甚麼？\ntime = [15, 19, 17, 12, 16, 23]\nx = 0\nfor i in range(1, 6):\nx = x + time[i]\ny = x / 6\nprint(x)\nprint(y)\nA. 102\n17.0\nB. 102\n20.4\nC. 87\n14.5\nD. 87\n17.4",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A012C",
+      "bank_code": "SSICTD0205_01A012C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪項是下列Python程式的輸出？\narr1 = [2] * 4\nfor i in range(0, 4):\narr1[i] = arr1[i] + i\narr2 = [0] * 4\nfor j in range(0, 3):\narr2[j] = arr1[j]\narr2[3] = arr1[1]\nprint(arr2)",
+      "options": {
+        "A": "[2, 3, 4, 3]",
+        "B": "[2, 3, 4, 5]",
+        "C": "[0, 1, 2, 3]",
+        "D": "[1, 2, 3, 2]"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列Python程式的輸出？\narr1 = [2] * 4\nfor i in range(0, 4):\narr1[i] = arr1[i] + i\narr2 = [0] * 4\nfor j in range(0, 3):\narr2[j] = arr1[j]\narr2[3] = arr1[1]\nprint(arr2)\nA. [2, 3, 4, 3]\nB. [2, 3, 4, 5]\nC. [0, 1, 2, 3]\nD. [1, 2, 3, 2]",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A013C",
+      "bank_code": "SSICTD0205_01A013C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪項是下列Python程式的輸出？\nscore = [23, 85, 42, 96, 57]\nN = len(score)\ntarget = score[0]\nfor i in range(1, N):\nif target < score[i]:\ntarget = score[i]\nprint(target)",
+      "options": {
+        "A": "23",
+        "B": "57",
+        "C": "85",
+        "D": "96"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列Python程式的輸出？\nscore = [23, 85, 42, 96, 57]\nN = len(score)\ntarget = score[0]\nfor i in range(1, N):\nif target < score[i]:\ntarget = score[i]\nprint(target)\nA. 23\nB. 57\nC. 85\nD. 96",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A014C",
+      "bank_code": "SSICTD0205_01A014C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪項是下列Python程式的輸出？\narr1 = [5, 18, 20, 22, 14, 27]\nbound = 20\ncount = 0\nN = len(arr1)\nfor k in range(0, N):\nif arr1[k] >= bound:\ncount = count + 1\nprint(count)",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列Python程式的輸出？\narr1 = [5, 18, 20, 22, 14, 27]\nbound = 20\ncount = 0\nN = len(arr1)\nfor k in range(0, N):\nif arr1[k] >= bound:\ncount = count + 1\nprint(count)\nA. 1\nB. 2\nC. 3\nD. 4",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A015C",
+      "bank_code": "SSICTD0205_01A015C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "嘉欣想編寫以下Python程式以找出列表中最小的項目之索引，但欠缺了一部分的程式碼。以下哪項是欠缺部分的程式碼？\ns = [44, 17, 23, 36, 21]\nsmallest = 0\nN = len(s)\nfor i in range(1, N):\n欠缺部分\nprint(smallest)",
+      "options": {
+        "A": "if s[smallest] < s[i]:\nsmallest = i",
+        "B": "if s[i] < s[smallest]:\nsmallest = i",
+        "C": "if s[i] < smallest:\nsmallest = s[i]",
+        "D": "if s[i] < s[smallest]:\nsmallest = s[i]"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "嘉欣想編寫以下Python程式以找出列表中最小的項目之索引，但欠缺了一部分的程式碼。以下哪項是欠缺部分的程式碼？\ns = [44, 17, 23, 36, 21]\nsmallest = 0\nN = len(s)\nfor i in range(1, N):\n欠缺部分\nprint(smallest)\nA. if s[smallest] < s[i]:\nsmallest = i\nB. if s[i] < s[smallest]:\nsmallest = i\nC. if s[i] < smallest:\nsmallest = s[i]\nD. if s[i] < s[smallest]:\nsmallest = s[i]",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A016C",
+      "bank_code": "SSICTD0205_01A016C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪項是下列Python程式的輸出？\narr1 = [5, 6, 7, 8, 9]\nT = 3\ns = arr1[T]\nfor k in range(T, 0, -1):\narr1[k] = arr1[k-1]\narr1[0] = s\nprint(arr1)",
+      "options": {
+        "A": "[5, 6, 7, 9, 8]",
+        "B": "[8, 5, 6, 7, 9]",
+        "C": "[8, 9, 5, 6, 7]",
+        "D": "[9, 5, 6, 7, 8]"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列Python程式的輸出？\narr1 = [5, 6, 7, 8, 9]\nT = 3\ns = arr1[T]\nfor k in range(T, 0, -1):\narr1[k] = arr1[k-1]\narr1[0] = s\nprint(arr1)\nA. [5, 6, 7, 9, 8]\nB. [8, 5, 6, 7, 9]\nC. [8, 9, 5, 6, 7]\nD. [9, 5, 6, 7, 8]",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A017C",
+      "bank_code": "SSICTD0205_01A017C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪項是下列Python程式的目的？\ns = input(\"Content? :\")\nindex = int(input(\"Index: \"))\narr1 = arr1 + [0]\nN = len(arr1)\nfor k in range(N-1, index, -1):\narr1[k] = arr1[k-1]\narr1[index] = s",
+      "options": {
+        "A": "將s添加至arr1的末端。",
+        "B": "以s取代位於arr1中指定索引的項目。",
+        "C": "從arr1刪除位於指定索引的項目s。",
+        "D": "將s 添加至 arr1 中指定索引的位置。"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列Python程式的目的？\ns = input(\"Content? :\")\nindex = int(input(\"Index: \"))\narr1 = arr1 + [0]\nN = len(arr1)\nfor k in range(N-1, index, -1):\narr1[k] = arr1[k-1]\narr1[index] = s\nA. 將s添加至arr1的末端。\nB. 以s取代位於arr1中指定索引的項目。\nC. 從arr1刪除位於指定索引的項目s。\nD. 將s 添加至 arr1 中指定索引的位置。",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_01A018C",
+      "bank_code": "SSICTD0205_01A018C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "小豪編寫了一個程式，檢查所輸入的用戶名稱是否符合某些條件。\nusername = input(\"Input your username: \")\nstatus = True\nfor item in username:\nif (ch >= \"A\" and ch <= \"Z\"):\nstatus = False\nif status:\nprint(\"Username OK.\")\nelse\nprint(\"Invalid username!!!\")\n有效的用戶名稱可包括以下哪個 / 些類別的字符？\n(1)\n大寫字母\n(2)\n小寫字母\n(3)\n數字\n(4)\n符號（如 !、@、#、$、%）",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2) 和 (3)",
+        "C": "只有 (2)、(3) 和 (4)",
+        "D": "(1)、(2)、(3) 和 (4)"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "小豪編寫了一個程式，檢查所輸入的用戶名稱是否符合某些條件。\nusername = input(\"Input your username: \")\nstatus = True\nfor item in username:\nif (ch >= \"A\" and ch <= \"Z\"):\nstatus = False\nif status:\nprint(\"Username OK.\")\nelse\nprint(\"Invalid username!!!\")\n有效的用戶名稱可包括以下哪個 / 些類別的字符？\n(1)\n大寫字母\n(2)\n小寫字母\n(3)\n數字\n(4)\n符號（如 !、@、#、$、%）\nA. 只有 (1)\nB. 只有 (2) 和 (3)\nC. 只有 (2)、(3) 和 (4)\nD. (1)、(2)、(3) 和 (4)",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_03A001C",
+      "bank_code": "SSICTD0205_03A001C",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "列表 participant 儲存了五名 100 米跑選手的編號。他們完成比賽所需時間儲存在列表 time，該列表的排位與 participant 的項目排位相通。以下 Python 程式用以搜尋選手的時間紀錄。細閱程式並回答以下問題。\nparticipant = [\"0003\", \"0021\", \"0067\", \"0131\", \"1211\"]\ntime = [13.0, 15.0, 13.6, 12.7, 15.2]\ntarget = input(\"Please input the target participant ID: \")\nfound = False\ni = 0\nwhile i < 5 and found == False:\nif __________b(i)__________:\nfound = True\nelse:\ni = i + 1\nif found == True:\nprint(_____b(ii)_____)",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 列表 participant 和 time 所儲存項目的數據類型分別是字串和浮點數。\n(b)(i) target == participant[i]\n(b)(ii) time[i]\n(c) 在找到目標值時停止迭代。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "列表 participant 和 time 所儲存項目的數據類型是什麼？（2 分）"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "參考以下所示的輸入和輸出範例，完成程式的留空部分。粗體文字代表用戶的輸入。（2 分）\nPlease input the target participant ID: 0021\n15.0"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "c",
+          "marks": 1.0,
+          "text": "變量 found 的用途是什麼？（1 分）"
+        }
+      ],
+      "text": "列表 participant 儲存了五名 100 米跑選手的編號。他們完成比賽所需時間儲存在列表 time，該列表的排位與 participant 的項目排位相通。以下 Python 程式用以搜尋選手的時間紀錄。細閱程式並回答以下問題。\nparticipant = [\"0003\", \"0021\", \"0067\", \"0131\", \"1211\"]\ntime = [13.0, 15.0, 13.6, 12.7, 15.2]\ntarget = input(\"Please input the target participant ID: \")\nfound = False\ni = 0\nwhile i < 5 and found == False:\nif __________b(i)__________:\nfound = True\nelse:\ni = i + 1\nif found == True:\nprint(_____b(ii)_____)\n(a) 列表 participant 和 time 所儲存項目的數據類型是什麼？（2 分）\n(b) 參考以下所示的輸入和輸出範例，完成程式的留空部分。粗體文字代表用戶的輸入。（2 分）\nPlease input the target participant ID: 0021\n15.0\n(i) \n(ii) \n(c) 變量 found 的用途是什麼？（1 分）\n(a) 列表 participant 和 time 所儲存項目的數據類型分別是字串和浮點數。\n(b)(i) target == participant[i]\n(b)(ii) time[i]\n(c) 在找到目標值時停止迭代。",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "排序",
+        "資訊處理",
+        "網絡",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_03A002C",
+      "bank_code": "SSICTD0205_03A002C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\nzero  True\nA  [0, 0, 1, 0, 0]\n設 i 由 1 至 5\n如果 A[i] = 1 則\nzero  False",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 檢查陣列中的值是否皆為零。\n(b)\nfor i in range(0, 5):\nif A[i] == 1:\ndisqualified = False\n(c) 於程式使用 while 循環並加入一個變量，使程式在找到「1」時離開迭代，以提升效率。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "假設陣列 A 的索引由 1 開始，以上算法的目的是什麼？（1 分）\n子謙正在編寫一個 Python 程式，以判斷某五人隊伍是否有資格參賽。若所有隊員皆被淘汰，該隊即失去參賽資格。列表 A 儲存了一個隊伍中各成員的狀態。數值「1」表示該成員仍可參賽，而「0」代表被淘汰的成員。"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "參考以上算法，試協助子謙在不使用新變量的情況下完成以下 Python 程式。（2 分）\nA = [0, 0, 0, 1, 0]\ndisqualified = True\nfor i range(_______________):\nprint(disqualified)"
+        },
+        {
+          "label": "c",
+          "marks": 1.0,
+          "text": "試建議一個方法，以提升以上程式的效率。（1 分）"
+        }
+      ],
+      "text": "細閱以下算法：\nzero  True\nA  [0, 0, 1, 0, 0]\n設 i 由 1 至 5\n如果 A[i] = 1 則\nzero  False\n(a) 假設陣列 A 的索引由 1 開始，以上算法的目的是什麼？（1 分）\n子謙正在編寫一個 Python 程式，以判斷某五人隊伍是否有資格參賽。若所有隊員皆被淘汰，該隊即失去參賽資格。列表 A 儲存了一個隊伍中各成員的狀態。數值「1」表示該成員仍可參賽，而「0」代表被淘汰的成員。\n(b) 參考以上算法，試協助子謙在不使用新變量的情況下完成以下 Python 程式。（2 分）\nA = [0, 0, 0, 1, 0]\ndisqualified = True\nfor i range(_______________):\nprint(disqualified)\n(c) 試建議一個方法，以提升以上程式的效率。（1 分）\n(a) 檢查陣列中的值是否皆為零。\n(b)\nfor i in range(0, 5):\nif A[i] == 1:\ndisqualified = False\n(c) 於程式使用 while 循環並加入一個變量，使程式在找到「1」時離開迭代，以提升效率。",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "算法",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_03A003C",
+      "bank_code": "SSICTD0205_03A003C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "文學比賽的參賽作品由一個評審小組審閱。評審會各自為作品評分，分數介乎 1 至 100，而最終分數就是這些分數的平均值。評審給予的分數儲存於列表 score。",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\ntotal + score[i]\ntotal / 5\n(b) 將第 4 行for循環的範圍改為「range(0, len(score))」，並將第 6 行計算 avg 的算式改為「total / len(score)」。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "今年比賽的評審小組由五人組成。試完成以下 Python 程式，以計算某參賽作品的最終分數。（2 分）\n行號  Python 程式\n1    score = [70, 85, 83, 78, 90]\n2    total = 0\n3    avg = 0\n4    for i in range(0, 5):\n5        total = ____________________\n6    avg = ____________________\n7    print(avg)"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "假設每年的評審人數都可能不同。我們可如何修改 (a) 部分的程式，不論評審人數是多少，程式亦可產生正確的輸出？（2 分）"
+        }
+      ],
+      "text": "文學比賽的參賽作品由一個評審小組審閱。評審會各自為作品評分，分數介乎 1 至 100，而最終分數就是這些分數的平均值。評審給予的分數儲存於列表 score。\n(a) 今年比賽的評審小組由五人組成。試完成以下 Python 程式，以計算某參賽作品的最終分數。（2 分）\n行號  Python 程式\n1    score = [70, 85, 83, 78, 90]\n2    total = 0\n3    avg = 0\n4    for i in range(0, 5):\n5        total = ____________________\n6    avg = ____________________\n7    print(avg)\n(b) 假設每年的評審人數都可能不同。我們可如何修改 (a) 部分的程式，不論評審人數是多少，程式亦可產生正確的輸出？（2 分）\n(a)\ntotal + score[i]\ntotal / 5\n(b) 將第 4 行for循環的範圍改為「range(0, len(score))」，並將第 6 行計算 avg 的算式改為「total / len(score)」。",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_03A004C",
+      "bank_code": "SSICTD0205_03A004C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "以下列表儲存七份計劃書所獲得的評分。\nscore\n20\n35\n40\n53\n71\n82\n90\n索引\n0\n1\n2\n3\n4\n5\n6",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\nTrue\n0, 6\nFalse\n(b) 將第 4 行的「score[k] > score[k+1]」改為「score[k] < score[k+1]」。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3.0,
+          "text": "試完成以下 Python 程式，以檢查列表是否按小至大順序排列。（3 分）\n行號  Python 程式\n1    score = [20, 35, 40, 53, 71, 82, 90]\n2    sorted_list = __________\n3    for k in range(__________):\n4        if score[k] > score[k+1]:\n5            sorted_list = __________\n6    print(sorted_list)"
+        },
+        {
+          "label": "b",
+          "marks": 1.0,
+          "text": "如果我們想改為檢查列表是否按大至小順序排列，應如何修改以上程式？（1 分）"
+        }
+      ],
+      "text": "以下列表儲存七份計劃書所獲得的評分。\nscore\n20\n35\n40\n53\n71\n82\n90\n索引\n0\n1\n2\n3\n4\n5\n6\n(a) 試完成以下 Python 程式，以檢查列表是否按小至大順序排列。（3 分）\n行號  Python 程式\n1    score = [20, 35, 40, 53, 71, 82, 90]\n2    sorted_list = __________\n3    for k in range(__________):\n4        if score[k] > score[k+1]:\n5            sorted_list = __________\n6    print(sorted_list)\n(b) 如果我們想改為檢查列表是否按大至小順序排列，應如何修改以上程式？（1 分）\n(a)\nTrue\n0, 6\nFalse\n(b) 將第 4 行的「score[k] > score[k+1]」改為「score[k] < score[k+1]」。",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "排序",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_03A005C",
+      "bank_code": "SSICTD0205_03A005C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "列表 speaker 記錄了某工作坊的講者名字。列表的順序顯示他們演講的順序。列表內容如下：\nspeaker\n\"Karl\"\n\"Kelie\"\n\"Steve\"\n\"Cherry\"\n\"Leo\"\n\"Alan\"\n索引\n0\n1\n2\n3\n4\n5",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\n6, 4, -1\n4\n(b)\n3, 1, -1\n1",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "主辦機構邀請了一位叫 Ellen 的新講者，她會在 Cherry 之後發言。試完成以下程式，將「Ellen」加入列表。（2 分）\nspeaker = [\"Karl\", \"Kelie\", \"Steve\", \"Cherry\", \"Leo\", \"Alan\"]\nspeaker = speaker + [\"\"]\nfor k in range(__________):\nspeaker[k] = speaker[k-1]\nspeaker[_____] = \"Ellen\""
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "承上題，由於 Cherry 發現自己當日要早退，主辦機構會讓她在 Kelie 之前發言。試完成以下程式，更新講者的順序。（2 分）\nfor k in range(__________):\nspeaker[k] = speaker[k-1]\nspeaker[_____] = \"Cherry\""
+        }
+      ],
+      "text": "列表 speaker 記錄了某工作坊的講者名字。列表的順序顯示他們演講的順序。列表內容如下：\nspeaker\n\"Karl\"\n\"Kelie\"\n\"Steve\"\n\"Cherry\"\n\"Leo\"\n\"Alan\"\n索引\n0\n1\n2\n3\n4\n5\n(a) 主辦機構邀請了一位叫 Ellen 的新講者，她會在 Cherry 之後發言。試完成以下程式，將「Ellen」加入列表。（2 分）\nspeaker = [\"Karl\", \"Kelie\", \"Steve\", \"Cherry\", \"Leo\", \"Alan\"]\nspeaker = speaker + [\"\"]\nfor k in range(__________):\nspeaker[k] = speaker[k-1]\nspeaker[_____] = \"Ellen\"\n(b) 承上題，由於 Cherry 發現自己當日要早退，主辦機構會讓她在 Kelie 之前發言。試完成以下程式，更新講者的順序。（2 分）\nfor k in range(__________):\nspeaker[k] = speaker[k-1]\nspeaker[_____] = \"Cherry\"\n(a)\n6, 4, -1\n4\n(b)\n3, 1, -1\n1",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_03A006C",
+      "bank_code": "SSICTD0205_03A006C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "列表 late 儲存了八名學生本月的遲到次數。列表內容如下：\nlate\n2\n0\n1\n3\n0\n3\n2\n0\n索引\n0\n1\n2\n3\n4\n5\n6\n7",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\nif late[k] >= 2:\ncount = count + 1\n(b)\nif late[k] == 0:\nprint(k)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "試完成以下 Python 程式，以找出本月遲到兩次或以上的學生人數。（2 分）\nlate = [2, 0, 1, 3, 0, 3, 2, 0]\ncount = 0\nfor k in range(0, 8):\nprint(count)"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "試完成以下 Python 程式，以列印本月從未遲到的學生之索引。（2 分）\nlate = [2, 0, 1, 3, 0, 3, 2, 0]\nfor k in range(0, 8):"
+        }
+      ],
+      "text": "列表 late 儲存了八名學生本月的遲到次數。列表內容如下：\nlate\n2\n0\n1\n3\n0\n3\n2\n0\n索引\n0\n1\n2\n3\n4\n5\n6\n7\n(a) 試完成以下 Python 程式，以找出本月遲到兩次或以上的學生人數。（2 分）\nlate = [2, 0, 1, 3, 0, 3, 2, 0]\ncount = 0\nfor k in range(0, 8):\nprint(count)\n(b) 試完成以下 Python 程式，以列印本月從未遲到的學生之索引。（2 分）\nlate = [2, 0, 1, 3, 0, 3, 2, 0]\nfor k in range(0, 8):\n(a)\nif late[k] >= 2:\ncount = count + 1\n(b)\nif late[k] == 0:\nprint(k)",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_03A007C",
+      "bank_code": "SSICTD0205_03A007C",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "某網上平台的用戶可使用字母及/或數字設定用戶名稱。用戶名稱可包含 6 至 20 個字符，而且不得有空格。",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) count < 6 or count > 20\n(b)\nTrue\nif username[i] == \" \":\nno_space = False",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "試完成以下 Python 程式，以檢查用戶名稱的長度是否在容許範圍內。（2 分）\nusername = input(\"Create your username: \")\ncount = 0\nfor item in username:\ncount = count + 1\nif _________________________:\nprint(\"The username must contain 6 to 20 characters.\")"
+        },
+        {
+          "label": "b",
+          "marks": 3.0,
+          "text": "試完成以下 Python 程式，以檢查用戶名稱是否包含空格。（3 分）\nno_space = _____\nfor i in range(0, count):\nif no_space == False:\nprint(\"No spaces are allowed.\")"
+        }
+      ],
+      "text": "某網上平台的用戶可使用字母及/或數字設定用戶名稱。用戶名稱可包含 6 至 20 個字符，而且不得有空格。\n(a) 試完成以下 Python 程式，以檢查用戶名稱的長度是否在容許範圍內。（2 分）\nusername = input(\"Create your username: \")\ncount = 0\nfor item in username:\ncount = count + 1\nif _________________________:\nprint(\"The username must contain 6 to 20 characters.\")\n(b) 試完成以下 Python 程式，以檢查用戶名稱是否包含空格。（3 分）\nno_space = _____\nfor i in range(0, count):\nif no_space == False:\nprint(\"No spaces are allowed.\")\n(a) count < 6 or count > 20\n(b)\nTrue\nif username[i] == \" \":\nno_space = False",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0205_04A001C",
+      "bank_code": "SSICTD0205_04A001C",
+      "section_type": "long_answer",
+      "marks": 12.0,
+      "year_tag": null,
+      "stem": "戲劇學會今年舉行了七場演出。家明是此學會的主席，他以列表 viewers 儲存每場演出的觀眾人數：第一場演出的觀眾人數儲存在 viewers[0]，第二場演出的觀眾人數儲存在 viewers[1]，如此類推。\nviewers\n60\n88\n73\n90\n75\n100\n110\n索引\n0\n1\n2\n3\n4\n5\n6",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\nfor i in range(0, 7):\navg = avg + viewers[i]\navg = avg / 7\nprint(avg)\nfor i in range(0, 7):\nif viewers[i] > avg:\nprint(i)\n(b)\nviewers[i] > viewers[most_viewers]\nviewers[i] < viewers[least_viewers]\nmost_viewers + 1\nleast_viewers + 1\n(c)(i)\nfor i in range(0, 7):\nproceeds[i] = viewers[i] * 50\n(c)(ii)\nif proceeds[i] > 4000:\ndonation = donation + proceeds[i]*0.15",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 4.0,
+          "text": "家明想找出每場演出的平均觀眾人數，以及觀眾人數高於平均的演出之索引。試為他完成以下 Python 程式。（4 分）\nviewers = [60, 88, 73, 90, 75, 100, 110]\navg = 0"
+        },
+        {
+          "label": "b",
+          "marks": 4.0,
+          "text": "家明接下來想找出有最多觀眾和最少觀眾的演出。試為他完成以下 Python 程式。（4 分）\nviewers = [60, 88, 73, 90, 75, 100, 110]\nmost_viewers = 0\nleast_viewers = 0\nfor i in range(1, 7):\nif ______________________________:\nmost_viewers = i\nif ______________________________:\nleast_viewers = i\nprint(\"The performance with the most viewers is Performance\", ____________________)\nprint(\"The performance with the least viewers is Performance\", ____________________)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "每場演出的門票售價為 $50。列表 proceeds 記錄每場演出的門票收入，其項目排位與列表 viewers 的項目排位相通。"
+        },
+        {
+          "label": "i",
+          "marks": 2.0,
+          "text": "試完成以下 Python 程式，幫助家明計算每場演出的門票收入。（2 分）\nviewers = [60, 88, 73, 90, 75, 100, 110]\nproceeds = [0, 0, 0, 0, 0, 0, 0]"
+        },
+        {
+          "label": "ii",
+          "marks": 2.0,
+          "text": "戲劇學會承諾將今年的部分門票收入捐獻予某本地藝術團體。如果某場演出的門票收入超過 $4000，學會就會捐出 15% 的金額。試完成以下 Python 程式，幫助家明計算總捐獻金額。（2 分）\ndonation = 0\nfor i in range(0, 7):\nprint(\"The amount to be donated is $\", donation)"
+        }
+      ],
+      "text": "戲劇學會今年舉行了七場演出。家明是此學會的主席，他以列表 viewers 儲存每場演出的觀眾人數：第一場演出的觀眾人數儲存在 viewers[0]，第二場演出的觀眾人數儲存在 viewers[1]，如此類推。\nviewers\n60\n88\n73\n90\n75\n100\n110\n索引\n0\n1\n2\n3\n4\n5\n6\n(a) 家明想找出每場演出的平均觀眾人數，以及觀眾人數高於平均的演出之索引。試為他完成以下 Python 程式。（4 分）\nviewers = [60, 88, 73, 90, 75, 100, 110]\navg = 0\n(b) 家明接下來想找出有最多觀眾和最少觀眾的演出。試為他完成以下 Python 程式。（4 分）\nviewers = [60, 88, 73, 90, 75, 100, 110]\nmost_viewers = 0\nleast_viewers = 0\nfor i in range(1, 7):\nif ______________________________:\nmost_viewers = i\nif ______________________________:\nleast_viewers = i\nprint(\"The performance with the most viewers is Performance\", ____________________)\nprint(\"The performance with the least viewers is Performance\", ____________________)\n(c) 每場演出的門票售價為 $50。列表 proceeds 記錄每場演出的門票收入，其項目排位與列表 viewers 的項目排位相通。\n(i) 試完成以下 Python 程式，幫助家明計算每場演出的門票收入。（2 分）\nviewers = [60, 88, 73, 90, 75, 100, 110]\nproceeds = [0, 0, 0, 0, 0, 0, 0]\n(ii) 戲劇學會承諾將今年的部分門票收入捐獻予某本地藝術團體。如果某場演出的門票收入超過 $4000，學會就會捐出 15% 的金額。試完成以下 Python 程式，幫助家明計算總捐獻金額。（2 分）\ndonation = 0\nfor i in range(0, 7):\nprint(\"The amount to be donated is $\", donation)\n(a)\nfor i in range(0, 7):\navg = avg + viewers[i]\navg = avg / 7\nprint(avg)\nfor i in range(0, 7):\nif viewers[i] > avg:\nprint(i)\n(b)\nviewers[i] > viewers[most_viewers]\nviewers[i] < viewers[least_viewers]\nmost_viewers + 1\nleast_viewers + 1\n(c)(i)\nfor i in range(0, 7):\nproceeds[i] = viewers[i] * 50\n(c)(ii)\nif proceeds[i] > 4000:\ndonation = donation + proceeds[i]*0.15",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "資訊處理",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTD0205_04B002C",
+      "bank_code": "SSICTD0205_04B002C",
+      "section_type": "long_answer",
+      "marks": 10.0,
+      "year_tag": null,
+      "stem": "家希是某旅遊雜誌的記者。她正在就某海外國家的旅遊景點搜集資料。她將六個旅遊景點的入場費（已換算為港幣）儲存在列表 entrance_fee。\nentrance_fee\n70\n80\n105\n110\n120\n125\n索引\n0\n1\n2\n3\n4\n5",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\ntotal + entrance_fee[k]\ntotal / 6\n(b)\nentrance_fee[k] >= 100 and entrance_fee[k] <= 120\ncount + 1\n(c)\n6\nk <= 5\n115 < entrance_fee[k]\nentrance_fee[k] = entrance_fee[k-1]\nindex",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "家希想計算這些旅遊景點的入場費之平均值。試為她完成以下 Python 程式。（2 分）\ntotal = 0\nfor k in range(0, 6):\ntotal = _________________________\navg = __________\nprint(avg)"
+        },
+        {
+          "label": "b",
+          "marks": 3.0,
+          "text": "家希想點算有多少個旅遊景點的入場費在港幣 100 元至 120 元之間。試為她完成以下 Python 程式。（3 分）\ncount = 0\nfor k in range(0, 6):\nif ______________________________:\ncount = _______________\nprint(count)"
+        },
+        {
+          "label": "c",
+          "marks": 5.0,
+          "text": "家希發現了一個新旅遊景點，其入場費為港幣 115 元。試完成以下 Python 程式，使她可將此項目加入列表，同時保持項目由小至大順序排列。（5 分）\nentrance_fee = entrance_fee + [0]\nindex = _____\nk = 0\nwhile __________ and index == 6:\nif _________________________:\nindex = k\nk = k + 1\nfor k in range(6, index, -1):\nentrance_fee[_____] = 115"
+        }
+      ],
+      "text": "家希是某旅遊雜誌的記者。她正在就某海外國家的旅遊景點搜集資料。她將六個旅遊景點的入場費（已換算為港幣）儲存在列表 entrance_fee。\nentrance_fee\n70\n80\n105\n110\n120\n125\n索引\n0\n1\n2\n3\n4\n5\n(a) 家希想計算這些旅遊景點的入場費之平均值。試為她完成以下 Python 程式。（2 分）\ntotal = 0\nfor k in range(0, 6):\ntotal = _________________________\navg = __________\nprint(avg)\n(b) 家希想點算有多少個旅遊景點的入場費在港幣 100 元至 120 元之間。試為她完成以下 Python 程式。（3 分）\ncount = 0\nfor k in range(0, 6):\nif ______________________________:\ncount = _______________\nprint(count)\n(c) 家希發現了一個新旅遊景點，其入場費為港幣 115 元。試完成以下 Python 程式，使她可將此項目加入列表，同時保持項目由小至大順序排列。（5 分）\nentrance_fee = entrance_fee + [0]\nindex = _____\nk = 0\nwhile __________ and index == 6:\nif _________________________:\nindex = k\nk = k + 1\nfor k in range(6, index, -1):\nentrance_fee[_____] = 115\n(a)\ntotal + entrance_fee[k]\ntotal / 6\n(b)\nentrance_fee[k] >= 100 and entrance_fee[k] <= 120\ncount + 1\n(c)\n6\nk <= 5\n115 < entrance_fee[k]\nentrance_fee[k] = entrance_fee[k-1]\nindex",
+      "concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

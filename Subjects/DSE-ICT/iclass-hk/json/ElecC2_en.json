@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecC2_en_Program Testing & Debugging (II).docx",
+    "slug": "ElecC2_en",
+    "title": "Program Testing & Debugging (II)",
+    "title_zh": null,
+    "title_en": "Program Testing & Debugging (II)",
+    "language": "en",
+    "family": "ElecC",
+    "chapter": 2,
+    "integrated": false,
+    "topic_code": "EC02",
+    "curriculum_unit": "EC",
+    "ca_unit": "EC",
+    "f5_exam_scope": "elective_sd",
+    "extracted_at": "2026-05-24T10:37:18.158038+00:00",
+    "item_count": 2,
+    "section_counts": {
+      "short_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTC1102_03A001E",
+      "bank_code": "SSICTC1102_03A001E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "A currency exchange buys Japanese yen at a rate of 1 JPY = 0.05732 HKD. The boss uses the following Python program for calculating the price payable to the customer:\nJPY  amount in Japanese yen\nHKD  JPY * 0.05732\nOutput round(HKD, 1)",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "How much in HKD can a customer get if they sell 5500 JPY?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What error does this result contain?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Find the value of the error. Will the customer or the currency exchange benefit from it?(2 marks)\n[--Answer:\n(a) 315.3 HKD\n(b) The value of HKD has a rounding error."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "|315.26-315.3| = 0.04\nThe customer will benefit because the value is rounded up in this case.\n--]"
+        }
+      ],
+      "text": "A currency exchange buys Japanese yen at a rate of 1 JPY = 0.05732 HKD. The boss uses the following Python program for calculating the price payable to the customer:\nJPY  amount in Japanese yen\nHKD  JPY * 0.05732\nOutput round(HKD, 1)\n(a) How much in HKD can a customer get if they sell 5500 JPY?(1 mark)\n(b) What error does this result contain?(1 mark)\n(c) Find the value of the error. Will the customer or the currency exchange benefit from it?(2 marks)\n[--Answer:\n(a) 315.3 HKD\n(b) The value of HKD has a rounding error.\n(c) |315.26-315.3| = 0.04\nThe customer will benefit because the value is rounded up in this case.\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch2",
+        "Python",
+        "循環",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1102_03A002E",
+      "bank_code": "SSICTC1102_03A002E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Workers in ABC Company should work for 40 hours per week. However, some workers may work overtime and some may work undertime. Chris, the HR manager of the company, is making a report on the working hours of workers in a given department. The total working hours of each worker in the previous week are stored in array hours.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Chris writes the following Python program to count the respective numbers of workers who have worked overtime and those who have worked undertime. Complete the program.(2 marks)\nLine  Python\n1    hours = [40, 35, 40, 50, 38, 51, 40, 53]\n2    overtime = 0\n3    undertime = 0\n4    for i in range(0, 8):\n5        if _______________:\n6            undertime = undertime + 1\n7        elif _______________:\n8           overtime = overtime + 1\n9    print(\"No. of workers who worked overtime:\", overtime)\n10   print(\"No. of workers who worked undertime:\", undertime)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "If a breakpoint is added to line 5, what will be the values in variables overtime and undertime when the program is paused for the sixth time?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Suggest a series of test data to verify the above program.(1 mark)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "hours[i] < 40\nhours[i] > 40\n(b) overtime = 1, undertime = 2\n(c) 30 (or any value smaller than 40), 40, 50 (or any value larger than 40)\n--]"
+        }
+      ],
+      "text": "Workers in ABC Company should work for 40 hours per week. However, some workers may work overtime and some may work undertime. Chris, the HR manager of the company, is making a report on the working hours of workers in a given department. The total working hours of each worker in the previous week are stored in array hours.\n(a) Chris writes the following Python program to count the respective numbers of workers who have worked overtime and those who have worked undertime. Complete the program.(2 marks)\nLine  Python\n1    hours = [40, 35, 40, 50, 38, 51, 40, 53]\n2    overtime = 0\n3    undertime = 0\n4    for i in range(0, 8):\n5        if _______________:\n6            undertime = undertime + 1\n7        elif _______________:\n8           overtime = overtime + 1\n9    print(\"No. of workers who worked overtime:\", overtime)\n10   print(\"No. of workers who worked undertime:\", undertime)\n(b) If a breakpoint is added to line 5, what will be the values in variables overtime and undertime when the program is paused for the sixth time?(1 mark)\n(c) Suggest a series of test data to verify the above program.(1 mark)\n[--Answer:\n(a) hours[i] < 40\nhours[i] > 40\n(b) overtime = 1, undertime = 2\n(c) 30 (or any value smaller than 40), 40, 50 (or any value larger than 40)\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch2",
+        "Python",
+        "循環",
+        "列表",
+        "硬件",
+        "資訊處理",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    }
+  ]
+}

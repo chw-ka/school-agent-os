@@ -1,0 +1,885 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreD6_hk_程式測試和除錯.docx",
+    "slug": "CoreD6_hk",
+    "title": "程式測試和除錯",
+    "title_zh": "程式測試和除錯",
+    "title_en": null,
+    "language": "hk",
+    "family": "CoreD",
+    "chapter": 6,
+    "integrated": false,
+    "topic_code": "D06",
+    "curriculum_unit": "Core-D",
+    "ca_unit": "D",
+    "f5_exam_scope": "mcq_core_d",
+    "extracted_at": "2026-05-24T10:37:17.943125+00:00",
+    "item_count": 30,
+    "section_counts": {
+      "mcq": 23,
+      "short_answer": 5,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTD0206_01A001C",
+      "bank_code": "SSICTD0206_01A001C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "偉豪編寫了一個判斷某數字是否質數的程式。他下一步應做什麼？",
+      "options": {
+        "A": "決定程式的輸入和輸出。",
+        "B": "繪畫流程圖以表示程式。",
+        "C": "以正常和錯誤的數據值測試程式。",
+        "D": "加入註解以解釋程式每一行的用途。"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "偉豪編寫了一個判斷某數字是否質數的程式。他下一步應做什麼？\nA. 決定程式的輸入和輸出。\nB. 繪畫流程圖以表示程式。\nC. 以正常和錯誤的數據值測試程式。\nD. 加入註解以解釋程式每一行的用途。",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "除錯",
+        "程式測試",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0206_01A002C",
+      "bank_code": "SSICTD0206_01A002C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下算法檢查用戶所輸入的分數是否有效：\n輸入 marks\n如果 marks < 0 or marks > 200 則\n輸出 \"錯誤\"\n以下哪組數據最適合用作測試此算法？",
+      "options": {
+        "A": "0, 200",
+        "B": "-1, 0, 50, 100",
+        "C": "-1, 0, 100, 200, 201",
+        "D": "0, 50, 100, 200, 201"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下算法檢查用戶所輸入的分數是否有效：\n輸入 marks\n如果 marks < 0 or marks > 200 則\n輸出 \"錯誤\"\n以下哪組數據最適合用作測試此算法？\nA. 0, 200\nB. -1, 0, 50, 100\nC. -1, 0, 100, 200, 201\nD. 0, 50, 100, 200, 201",
+      "concepts": [
+        "D-ch6",
+        "除錯",
+        "程式測試",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0206_01A003C",
+      "bank_code": "SSICTD0206_01A003C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\n輸入 price\n如果 price >= 50 and price < 100 則\n輸出 \"合理\"\n否則\n輸出 \"調整價格\"\n以下哪個 / 些數字是測試此算法的邊際個案？\n(1)\n20\n(2)\n50\n(3)\n100\n(4)\n200",
+      "options": {
+        "A": "只有 (2)",
+        "B": "只有 (2) 和 (3)",
+        "C": "只有 (1)、(2) 和 (3)",
+        "D": "(1)、(2)、(3) 和 (4)"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下算法：\n輸入 price\n如果 price >= 50 and price < 100 則\n輸出 \"合理\"\n否則\n輸出 \"調整價格\"\n以下哪個 / 些數字是測試此算法的邊際個案？\n(1)\n20\n(2)\n50\n(3)\n100\n(4)\n200\nA. 只有 (2)\nB. 只有 (2) 和 (3)\nC. 只有 (1)、(2) 和 (3)\nD. (1)、(2)、(3) 和 (4)",
+      "concepts": [
+        "D-ch6",
+        "程式測試",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A004C",
+      "bank_code": "SSICTD0206_01A004C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下算法。以下哪組數據最適合用作測試此算法？\n輸入 num\nX  15\n如果 num > 10 則\nX  X - 5\n否則如果 num < -10 則\nX  X + 5\n否則\nX  X * 5",
+      "options": {
+        "A": "-10, 10",
+        "B": "-10, 5, 10",
+        "C": "-10, -5, 0, 5, 10",
+        "D": "-15, -10, 0, 10, 15"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下算法。以下哪組數據最適合用作測試此算法？\n輸入 num\nX  15\n如果 num > 10 則\nX  X - 5\n否則如果 num < -10 則\nX  X + 5\n否則\nX  X * 5\nA. -10, 10\nB. -10, 5, 10\nC. -10, -5, 0, 5, 10\nD. -15, -10, 0, 10, 15",
+      "concepts": [
+        "D-ch6",
+        "程式測試",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A005C",
+      "bank_code": "SSICTD0206_01A005C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下算法。\n輸入 A\nB  5\nC  6\nX  (A**2 - B**2 - C**2) 的平方根\n輸出 X\n以下哪項輸入值會導致運行時錯誤？",
+      "options": {
+        "A": "-8",
+        "B": "7",
+        "C": "8",
+        "D": "10"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下算法。\n輸入 A\nB  5\nC  6\nX  (A**2 - B**2 - C**2) 的平方根\n輸出 X\n以下哪項輸入值會導致運行時錯誤？\nA. -8\nB. 7\nC. 8\nD. 10",
+      "concepts": [
+        "D-ch6",
+        "除錯",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A006C",
+      "bank_code": "SSICTD0206_01A006C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "weight 是一個列表，儲存 20 名學生的體重。以下 Python 程式用作點算體重為 X kg 的學生人數。\n行號  Python 程式碼\n1    X = int(input())\n2    count = 0\n3    for k in range(0, 20):\n4        if weight[k] = X:\n5            count = count + 1\n6    print(count)\n以上程式中，哪一行有錯誤？",
+      "options": {
+        "A": "第 2 行",
+        "B": "第 3 行",
+        "C": "第 4 行",
+        "D": "第 5 行"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "weight 是一個列表，儲存 20 名學生的體重。以下 Python 程式用作點算體重為 X kg 的學生人數。\n行號  Python 程式碼\n1    X = int(input())\n2    count = 0\n3    for k in range(0, 20):\n4        if weight[k] = X:\n5            count = count + 1\n6    print(count)\n以上程式中，哪一行有錯誤？\nA. 第 2 行\nB. 第 3 行\nC. 第 4 行\nD. 第 5 行",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "除錯",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A007C",
+      "bank_code": "SSICTD0206_01A007C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "participant 是一個列表，儲存某活動中 30 名參加者的名字。以下 Python 程式用作將名為 John 的新參加者之紀錄加入列表索引 20 的位置：\n行號  Python 程式碼\n1    participant = participant + [0]\n2    for k in range(30, 20, -1):\n3        participant[k] = participant[k+1]\n4    participant[20] = \"John\"\n此程式有以下哪項錯誤？",
+      "options": {
+        "A": "第 2 行：for 循環的範圍應改為「range(29, 20, -1)」。",
+        "B": "第 3 行：賦值運算符「=」應以關係運算符「==」代替。",
+        "C": "第 3 行：「participant[k+1]」應以「participant[k–1]」代替。",
+        "D": "第 4 行：雙引號應刪去。"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "participant 是一個列表，儲存某活動中 30 名參加者的名字。以下 Python 程式用作將名為 John 的新參加者之紀錄加入列表索引 20 的位置：\n行號  Python 程式碼\n1    participant = participant + [0]\n2    for k in range(30, 20, -1):\n3        participant[k] = participant[k+1]\n4    participant[20] = \"John\"\n此程式有以下哪項錯誤？\nA. 第 2 行：for 循環的範圍應改為「range(29, 20, -1)」。\nB. 第 3 行：賦值運算符「=」應以關係運算符「==」代替。\nC. 第 3 行：「participant[k+1]」應以「participant[k–1]」代替。\nD. 第 4 行：雙引號應刪去。",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "除錯",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A008C",
+      "bank_code": "SSICTD0206_01A008C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "陣列 A 有 N 個項目，並由索引 1 開始。細閱以下算法，兩者皆用作輸出小於輸入值的項目之索引：\n算法 1\n算法 2\n輸入 num\n設 i 由 1 至 N\n如果 A[i] < num 則\n輸出 i\n輸入 num\ni  1\nfound  False\n當 i <= N\n如果 A[i] < num 則\nfound  True\n輸出 i\ni  i + 1\n以下哪項陳述是正確的？",
+      "options": {
+        "A": "兩者的執行時間大致相同。",
+        "B": "算法 1 通常較快。",
+        "C": "算法 2 通常較快。",
+        "D": "無法判斷。"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "陣列 A 有 N 個項目，並由索引 1 開始。細閱以下算法，兩者皆用作輸出小於輸入值的項目之索引：\n算法 1\n算法 2\n輸入 num\n設 i 由 1 至 N\n如果 A[i] < num 則\n輸出 i\n輸入 num\ni  1\nfound  False\n當 i <= N\n如果 A[i] < num 則\nfound  True\n輸出 i\ni  i + 1\n以下哪項陳述是正確的？\nA. 兩者的執行時間大致相同。\nB. 算法 1 通常較快。\nC. 算法 2 通常較快。\nD. 無法判斷。",
+      "concepts": [
+        "D-ch6",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01B009C",
+      "bank_code": "SSICTD0206_01B009C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下用作判斷顧客能否獲得禮品的算法：\n算法 1\n輸入 total\n輸入 stamp\n如果 total >= 1500 則\n輸出 \"此顧客可獲得禮品。\"\n否則如果 stamp >= 5 則\n輸出 \"此顧客可獲得禮品。\"\n算法 2\n輸入 total\n輸入 stamp\n如果 total >= 1500 and stamp >= 5 則\n輸出 \"此顧客可獲得禮品。\"\n以下哪項陳述是正確的？",
+      "options": {
+        "A": "兩者的執行步數大致相同。",
+        "B": "算法 1 較有效率。",
+        "C": "算法 2 較有效率。",
+        "D": "無法判斷。"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下用作判斷顧客能否獲得禮品的算法：\n算法 1\n輸入 total\n輸入 stamp\n如果 total >= 1500 則\n輸出 \"此顧客可獲得禮品。\"\n否則如果 stamp >= 5 則\n輸出 \"此顧客可獲得禮品。\"\n算法 2\n輸入 total\n輸入 stamp\n如果 total >= 1500 and stamp >= 5 則\n輸出 \"此顧客可獲得禮品。\"\n以下哪項陳述是正確的？\nA. 兩者的執行步數大致相同。\nB. 算法 1 較有效率。\nC. 算法 2 較有效率。\nD. 無法判斷。",
+      "concepts": [
+        "D-ch6",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A010C",
+      "bank_code": "SSICTD0206_01A010C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "參考以下算法：\n輸入 a\n如果 (a <= 20) or (a > 30)\n輸出 a\n否則\n輸出 10\n用於測試此算法的邊際個案是甚麼？\n(1)\n10\n(2)\n20\n(3)\n30",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "(1)、(2) 和 (3)"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "參考以下算法：\n輸入 a\n如果 (a <= 20) or (a > 30)\n輸出 a\n否則\n輸出 10\n用於測試此算法的邊際個案是甚麼？\n(1)\n10\n(2)\n20\n(3)\n30\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. (1)、(2) 和 (3)",
+      "concepts": [
+        "D-ch6",
+        "程式測試",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A011C",
+      "bank_code": "SSICTD0206_01A011C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "下列哪組測試數據最適合用作測試此算法？\n輸入 year\n如果 (year <= 2012) and (year >= 1997) 則\n輸出 \"Generation Z\"",
+      "options": {
+        "A": "1990, 1997, 1998, 2000, 2006",
+        "B": "1996, 1997, 2003, 2012, 2013",
+        "C": "1997, 2000, 2006, 2012, 2015",
+        "D": "2003, 2006, 2012, 2019, 2025"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列哪組測試數據最適合用作測試此算法？\n輸入 year\n如果 (year <= 2012) and (year >= 1997) 則\n輸出 \"Generation Z\"\nA. 1990, 1997, 1998, 2000, 2006\nB. 1996, 1997, 2003, 2012, 2013\nC. 1997, 2000, 2006, 2012, 2015\nD. 2003, 2006, 2012, 2019, 2025",
+      "concepts": [
+        "D-ch6",
+        "程式測試",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0206_01A012C",
+      "bank_code": "SSICTD0206_01A012C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "家軒正在開發一個購票系統。系統會限制用戶每次可購買的門票數量，限額如下：\n每次可購買的最少門票數量： 2\n每次可購買的最多門票數量： 4\n下列哪組門票數量最適合作為測試數據？",
+      "options": {
+        "A": "1, 2, 3, 4, 5",
+        "B": "2, 3, 4, 5, 6",
+        "C": "3, 4, 5, 6, 7",
+        "D": "4, 5, 6, 7, 8"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "家軒正在開發一個購票系統。系統會限制用戶每次可購買的門票數量，限額如下：\n每次可購買的最少門票數量： 2\n每次可購買的最多門票數量： 4\n下列哪組門票數量最適合作為測試數據？\nA. 1, 2, 3, 4, 5\nB. 2, 3, 4, 5, 6\nC. 3, 4, 5, 6, 7\nD. 4, 5, 6, 7, 8",
+      "concepts": [
+        "D-ch6",
+        "程式測試",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0206_01A013C",
+      "bank_code": "SSICTD0206_01A013C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "細看以下算法。以下哪項是此算法的邊際個案？\n輸入 A\n如果 A = 12 則\nA  A + 10\nA  A * 2",
+      "options": {
+        "A": "0",
+        "B": "12",
+        "C": "22",
+        "D": "24"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "細看以下算法。以下哪項是此算法的邊際個案？\n輸入 A\n如果 A = 12 則\nA  A + 10\nA  A * 2\nA. 0\nB. 12\nC. 22\nD. 24",
+      "concepts": [
+        "D-ch6",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0206_01A014C",
+      "bank_code": "SSICTD0206_01A014C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "完成編寫程式後，應使用以下哪些數據值作測試？\n(1)\n邊界數據值\n(2)\n錯誤數據值\n(3)\n正常數據值",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "(1)、(2) 和 (3)"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "完成編寫程式後，應使用以下哪些數據值作測試？\n(1)\n邊界數據值\n(2)\n錯誤數據值\n(3)\n正常數據值\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. (1)、(2) 和 (3)",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "除錯",
+        "程式測試",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A015C",
+      "bank_code": "SSICTD0206_01A015C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "一些程式語言（如Python）對縮排有嚴格要求。以下哪項最能描述程式碼完全欠缺縮排時出現的錯誤？",
+      "options": {
+        "A": "邏輯錯誤",
+        "B": "溢出錯誤",
+        "C": "運行時錯誤",
+        "D": "語法錯誤"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "一些程式語言（如Python）對縮排有嚴格要求。以下哪項最能描述程式碼完全欠缺縮排時出現的錯誤？\nA. 邏輯錯誤\nB. 溢出錯誤\nC. 運行時錯誤\nD. 語法錯誤",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "除錯"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0206_01A016C",
+      "bank_code": "SSICTD0206_01A016C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "當出現語法錯誤時：",
+      "options": {
+        "A": "表示計算所得的結果太大，所選的數據類型不足以儲存。",
+        "B": "程式會在運行過程中意外終止。",
+        "C": "程式碼不能被編譯及執行。",
+        "D": "病毒識別碼已過時。"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "當出現語法錯誤時：\nA. 表示計算所得的結果太大，所選的數據類型不足以儲存。\nB. 程式會在運行過程中意外終止。\nC. 程式碼不能被編譯及執行。\nD. 病毒識別碼已過時。",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "除錯",
+        "資訊處理",
+        "數據類型"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0206_01A017C",
+      "bank_code": "SSICTD0206_01A017C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "細閱以下由嘉輝所編寫的算法：\nn = 10\n當 n > 0 執行\n輸出 \"Hello\"\nn = n + 1\n嘉輝預期字串「Hello」會列印10次，然而它一直重複列印。嘉輝再次審視程式碼後，發覺最後一行應是n = n - 1而非n = n + 1。以下哪項最能描述此錯誤？",
+      "options": {
+        "A": "邏輯錯誤",
+        "B": "溢出錯誤",
+        "C": "運行時錯誤",
+        "D": "語法錯誤"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下由嘉輝所編寫的算法：\nn = 10\n當 n > 0 執行\n輸出 \"Hello\"\nn = n + 1\n嘉輝預期字串「Hello」會列印10次，然而它一直重複列印。嘉輝再次審視程式碼後，發覺最後一行應是n = n - 1而非n = n + 1。以下哪項最能描述此錯誤？\nA. 邏輯錯誤\nB. 溢出錯誤\nC. 運行時錯誤\nD. 語法錯誤",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "除錯",
+        "算法",
+        "輸入輸出",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A018C",
+      "bank_code": "SSICTD0206_01A018C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "當偉豪執行某程式時，出現了錯誤。以下是程式展示的錯誤訊息：\n[Python 版本]\nTraceback (most recent call last):\nFile \"D:\\mySoftware\\main.py\", line 22, in <module>\nlst[5] = 6\n~~~^^^\nIndexError: list assignment index out of range\n[C++ 版本]\nterminate called after throwing an instance of 'std::out_of_range'\nwhat():  array::at: __n (which is 5) >= _Nm (which is 5)\n以下哪項最能描述以上錯誤？",
+      "options": {
+        "A": "運行時錯誤",
+        "B": "邏輯錯誤",
+        "C": "溢出錯誤",
+        "D": "語法錯誤"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "當偉豪執行某程式時，出現了錯誤。以下是程式展示的錯誤訊息：\n[Python 版本]\nTraceback (most recent call last):\nFile \"D:\\mySoftware\\main.py\", line 22, in <module>\nlst[5] = 6\n~~~^^^\nIndexError: list assignment index out of range\n[C++ 版本]\nterminate called after throwing an instance of 'std::out_of_range'\nwhat():  array::at: __n (which is 5) >= _Nm (which is 5)\n以下哪項最能描述以上錯誤？\nA. 運行時錯誤\nB. 邏輯錯誤\nC. 溢出錯誤\nD. 語法錯誤",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "列表",
+        "除錯",
+        "軟件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A019C",
+      "bank_code": "SSICTD0206_01A019C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "假設已知A、B、C 和 D是四個布爾值，而只有一個是true。此外，已知以下四個算法有相同功能。平均而言哪個算法最有效率？",
+      "options": {
+        "A": "如果 (A = true) or (B = true) 則\n如果 (A = true) 則\n輸出 \"A\"\n否則\n輸出 \"B\"\n否則\n如果 (C = true) 則\n輸出 \"C\"\n否則\n輸出 \"D\"",
+        "B": "如果 (A = true) 則\n輸出 \"A\"\n如果 (B = true) 則\n輸出 \"B\"\n如果 (C = true) 則\n輸出 \"C\"\n如果 (D = true) 則\n輸出 \"D\"",
+        "C": "如果 (A = true) or (B = true) or (C = true) 則\n如果 (A = true) or (B = true) 則\n如果 (A = true) 則\n輸出 \"A\"\n否則\n輸出 \"B\"\n否則\n輸出 \"C\"\n否則\n輸出 \"D\"",
+        "D": "如果 (B = false) or (C = false) or (D = false) 則\n輸出 \"A\"\n否則如果 (A = false) or (C = false) or (D = false) 則\n輸出 \"B\"\n否則如果 (A = false) or (B = false) or (D = false) 則\n輸出 \"C\"\n否則\n輸出 \"D\""
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "假設已知A、B、C 和 D是四個布爾值，而只有一個是true。此外，已知以下四個算法有相同功能。平均而言哪個算法最有效率？\nA. 如果 (A = true) or (B = true) 則\n如果 (A = true) 則\n輸出 \"A\"\n否則\n輸出 \"B\"\n否則\n如果 (C = true) 則\n輸出 \"C\"\n否則\n輸出 \"D\"\nB. 如果 (A = true) 則\n輸出 \"A\"\n如果 (B = true) 則\n輸出 \"B\"\n如果 (C = true) 則\n輸出 \"C\"\n如果 (D = true) 則\n輸出 \"D\"\nC. 如果 (A = true) or (B = true) or (C = true) 則\n如果 (A = true) or (B = true) 則\n如果 (A = true) 則\n輸出 \"A\"\n否則\n輸出 \"B\"\n否則\n輸出 \"C\"\n否則\n輸出 \"D\"\nD. 如果 (B = false) or (C = false) or (D = false) 則\n輸出 \"A\"\n否則如果 (A = false) or (C = false) or (D = false) 則\n輸出 \"B\"\n否則如果 (A = false) or (B = false) or (D = false) 則\n輸出 \"C\"\n否則\n輸出 \"D\"",
+      "concepts": [
+        "D-ch6",
+        "算法",
+        "輸入輸出",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A020C",
+      "bank_code": "SSICTD0206_01A020C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "算法1和算法2計算10個數值的平均值。以下哪項描述是正確的？\n算法1\n算法2",
+      "options": {
+        "A": "算法 1有一個後測循環。",
+        "B": "算法2有一個前測循環。",
+        "C": "算法1的效率明顯高於算法2。",
+        "D": "在電腦上運行時，算法2 使用較少記憶體。"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "算法1和算法2計算10個數值的平均值。以下哪項描述是正確的？\n算法1\n算法2\nA. 算法 1有一個後測循環。\nB. 算法2有一個前測循環。\nC. 算法1的效率明顯高於算法2。\nD. 在電腦上運行時，算法2 使用較少記憶體。",
+      "concepts": [
+        "D-ch6",
+        "循環",
+        "除錯",
+        "算法",
+        "硬件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0206_01A021C",
+      "bank_code": "SSICTD0206_01A021C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "算法1和算法2皆可運用某直角三角形三條邊的長度計算該三角形的面積，如下所示：\n算法 1\n輸入 a\n輸入 b\n輸入 c\n如果 (a > b) and (b > c) 則\narea  b * c / 2\n否則如果 (b > c) 則\narea  a * c / 2\n否則\narea  a * b / 2\n輸出 area\n算法 2\n輸入 a\n輸入 b\n輸入 c\ns  (a + b + c) / 2\nx  s – a\ny  s – b\nz  s – c\ntemp  s * x * y * z\narea  temp 的平方根\n輸出 area\n已知a、b和c必定為正實數，代表某直角三角形的三條邊長。以下哪項描述是正確的？",
+      "options": {
+        "A": "算法1中，當a = c時會出現運行時錯誤。",
+        "B": "(a > b) and (b > c)可改寫為(NOT (a <= b OR c >= b))。",
+        "C": "在電腦上運行時，算法 1比起算法2 使用較少記憶體。",
+        "D": "算法2的效率高於算法1。"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "算法1和算法2皆可運用某直角三角形三條邊的長度計算該三角形的面積，如下所示：\n算法 1\n輸入 a\n輸入 b\n輸入 c\n如果 (a > b) and (b > c) 則\narea  b * c / 2\n否則如果 (b > c) 則\narea  a * c / 2\n否則\narea  a * b / 2\n輸出 area\n算法 2\n輸入 a\n輸入 b\n輸入 c\ns  (a + b + c) / 2\nx  s – a\ny  s – b\nz  s – c\ntemp  s * x * y * z\narea  temp 的平方根\n輸出 area\n已知a、b和c必定為正實數，代表某直角三角形的三條邊長。以下哪項描述是正確的？\nA. 算法1中，當a = c時會出現運行時錯誤。\nB. (a > b) and (b > c)可改寫為(NOT (a <= b OR c >= b))。\nC. 在電腦上運行時，算法 1比起算法2 使用較少記憶體。\nD. 算法2的效率高於算法1。",
+      "concepts": [
+        "D-ch6",
+        "除錯",
+        "算法",
+        "硬件",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A022C",
+      "bank_code": "SSICTD0206_01A022C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "細看以下算法。用於測試此算法的邊際個案是甚麼？\n輸入 m\nn  100\n如果 m <= 0 則\n輸出 \"數字太小\"\n否則\n輸出 m + n\n(1)\n0\n(2)\n1\n(3)\n100\n(4)\n101",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (4)",
+        "D": "只有 (3) 和 (4)"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "細看以下算法。用於測試此算法的邊際個案是甚麼？\n輸入 m\nn  100\n如果 m <= 0 則\n輸出 \"數字太小\"\n否則\n輸出 m + n\n(1)\n0\n(2)\n1\n(3)\n100\n(4)\n101\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (4)\nD. 只有 (3) 和 (4)",
+      "concepts": [
+        "D-ch6",
+        "程式測試",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_01A023C",
+      "bank_code": "SSICTD0206_01A023C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "麗珍誤將程式中的「AND」運算符轉換為「OR」。程式隨後被執行，過程中沒有顯示錯誤訊息，但所輸出的數值是錯誤的。這屬於哪種錯誤？",
+      "options": {
+        "A": "換位錯誤",
+        "B": "邏輯錯誤",
+        "C": "溢出錯誤",
+        "D": "語法錯誤"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "麗珍誤將程式中的「AND」運算符轉換為「OR」。程式隨後被執行，過程中沒有顯示錯誤訊息，但所輸出的數值是錯誤的。這屬於哪種錯誤？\nA. 換位錯誤\nB. 邏輯錯誤\nC. 溢出錯誤\nD. 語法錯誤",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "除錯",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0206_03A001C",
+      "bank_code": "SSICTD0206_03A001C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "張先生編寫了一個算法，以按照遊戲分數列印相應訊息。\n輸入 score\n如果 score < 0 則\n輸出 \"分數無效。\"\n否則如果 score >= 24 則\n輸出 \"很出色！\"\n否則如果 score >= 13 則\n輸出 \"不錯！\"\n否則\n輸出 \"再努力一點！\"\n假設玩家的分數必定為整數，試為每個輸出建議一組測試數據以測試此算法。（4 分）\n輸入\n輸出\n分數無效。\n很出色！\n不錯！\n再努力一點！",
+      "options": {},
+      "answer": null,
+      "answer_text": "-1（或任何小於 0 的值）\n24, 29（或任何大於 24 的值）\n13, 19（或任何在13 < score < 23之間的值）, 23\n0, 10（或任何在0 < score < 12之間的值）, 12",
+      "parts": [],
+      "text": "張先生編寫了一個算法，以按照遊戲分數列印相應訊息。\n輸入 score\n如果 score < 0 則\n輸出 \"分數無效。\"\n否則如果 score >= 24 則\n輸出 \"很出色！\"\n否則如果 score >= 13 則\n輸出 \"不錯！\"\n否則\n輸出 \"再努力一點！\"\n假設玩家的分數必定為整數，試為每個輸出建議一組測試數據以測試此算法。（4 分）\n輸入\n輸出\n分數無效。\n很出色！\n不錯！\n再努力一點！\n-1（或任何小於 0 的值）\n24, 29（或任何大於 24 的值）\n13, 19（或任何在13 < score < 23之間的值）, 23\n0, 10（或任何在0 < score < 12之間的值）, 12",
+      "concepts": [
+        "D-ch6",
+        "程式測試",
+        "算法",
+        "資訊處理",
+        "輸入輸出",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_03A002C",
+      "bank_code": "SSICTD0206_03A002C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "staff_ID 是一個由索引 1 開始的陣列，儲存 25 名員工的員工編號。以下算法用作刪除位於陣列索引 20 的員工之紀錄。\n設 k 由 20 至 24\nstaff_ID[k+1]  staff_ID[k]\nstaff_ID[25]  0",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\nstaff_ID\n453\n375\n134\n134\n134\n134\n134\n0\n索引\n18\n19\n20\n21\n22\n23\n24\n25\n(b)\n邏輯錯誤。\n所有在 staff_ID[20] 和 staff_ID[24] 之間的項目有相同的值。\n(c) 將第 2 行改為「staff_ID[k]  staff_ID[k+1]」。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "陣列 staff_ID 的一部分初始內容如下：\nstaff_ID\n453\n375\n134\n326\n365\n311\n145\n467\n索引\n18\n19\n20\n21\n22\n23\n24\n25\n此算法執行一次後，陣列 staff_ID 的內容會是什麼？（1 分）\nstaff_ID\n索引\n18\n19\n20\n21\n22\n23\n24\n25"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "這算法出現哪種錯誤？試簡單描述你得到的錯誤結果。（2 分）"
+        },
+        {
+          "label": "c",
+          "marks": 1.0,
+          "text": "這錯誤可如何修正？（1 分）"
+        }
+      ],
+      "text": "staff_ID 是一個由索引 1 開始的陣列，儲存 25 名員工的員工編號。以下算法用作刪除位於陣列索引 20 的員工之紀錄。\n設 k 由 20 至 24\nstaff_ID[k+1]  staff_ID[k]\nstaff_ID[25]  0\n(a) 陣列 staff_ID 的一部分初始內容如下：\nstaff_ID\n453\n375\n134\n326\n365\n311\n145\n467\n索引\n18\n19\n20\n21\n22\n23\n24\n25\n此算法執行一次後，陣列 staff_ID 的內容會是什麼？（1 分）\nstaff_ID\n索引\n18\n19\n20\n21\n22\n23\n24\n25\n(b) 這算法出現哪種錯誤？試簡單描述你得到的錯誤結果。（2 分）\n(c) 這錯誤可如何修正？（1 分）\n(a)\nstaff_ID\n453\n375\n134\n134\n134\n134\n134\n0\n索引\n18\n19\n20\n21\n22\n23\n24\n25\n(b)\n邏輯錯誤。\n所有在 staff_ID[20] 和 staff_ID[24] 之間的項目有相同的值。\n(c) 將第 2 行改為「staff_ID[k]  staff_ID[k+1]」。",
+      "concepts": [
+        "D-ch6",
+        "列表",
+        "除錯",
+        "算法"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_03A003C",
+      "bank_code": "SSICTD0206_03A003C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "杏壇中學招募了一些學生擔任開放日助手，在其中一至六個時段當值。為答謝其努力，學校會送一份紀念品給每位助手。某學生助手可獲的紀念品視乎其當值時段的總數而定。\n該學生當值時段總數\n紀念品\n1 - 2\n原子筆\n3 - 4\n筆袋\n5 - 6\n水樽\n以下算法輸出某學生助手可獲的紀念品：\n輸入 sessions\n如果 sessions > 6 or sessions < 1 則\n輸出 \"錯誤\"\n否則如果 sessions >= 1 則\n輸出 \"原子筆\"\n否則如果 sessions >= 3 則\n輸出 \"筆袋\"\n否則\n輸出 \"水樽\"",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 原子筆\n(b)\nsessions > 6 or sessions < 1\nsessions <= 2\nsessions <= 4",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "如果某學生助手在三個時段當值，算法會輸出什麼？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 3.0,
+          "text": "試完成以下算法，以輸出正確的紀念品。（3 分）\n輸入 sessions\n如果 ______________________________ 則\n輸出 \"錯誤\"\n否則如果 _________________________ 則\n輸出 \"原子筆\"\n否則如果 _________________________ 則\n輸出 \"筆袋\"\n否則\n輸出 \"水樽\""
+        }
+      ],
+      "text": "杏壇中學招募了一些學生擔任開放日助手，在其中一至六個時段當值。為答謝其努力，學校會送一份紀念品給每位助手。某學生助手可獲的紀念品視乎其當值時段的總數而定。\n該學生當值時段總數\n紀念品\n1 - 2\n原子筆\n3 - 4\n筆袋\n5 - 6\n水樽\n以下算法輸出某學生助手可獲的紀念品：\n輸入 sessions\n如果 sessions > 6 or sessions < 1 則\n輸出 \"錯誤\"\n否則如果 sessions >= 1 則\n輸出 \"原子筆\"\n否則如果 sessions >= 3 則\n輸出 \"筆袋\"\n否則\n輸出 \"水樽\"\n(a) 如果某學生助手在三個時段當值，算法會輸出什麼？（1 分）\n(b) 試完成以下算法，以輸出正確的紀念品。（3 分）\n輸入 sessions\n如果 ______________________________ 則\n輸出 \"錯誤\"\n否則如果 _________________________ 則\n輸出 \"原子筆\"\n否則如果 _________________________ 則\n輸出 \"筆袋\"\n否則\n輸出 \"水樽\"\n(a) 原子筆\n(b)\nsessions > 6 or sessions < 1\nsessions <= 2\nsessions <= 4",
+      "concepts": [
+        "D-ch6",
+        "除錯",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_03A004C",
+      "bank_code": "SSICTD0206_03A004C",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "num 是一個儲存了 N 個數字的列表。以下 Python 程式用作檢查列表是否由小至大排列：\n行號  Python 程式碼\n1    sorted_list = True\n2    for k in range(0, N):\n3        if num[k] > num[k+1]:\n4            sorted_list = False\n5    print(sorted_list)",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 程式存取超出列表索引範圍的項目。\n(b) 運行時錯誤。\n(c) 將第 2 行 for 循環的範圍改為「range(0, N-1)」。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "此程式不能正確運作。為什麼？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 1.0,
+          "text": "這屬於哪種錯誤？（1 分）"
+        },
+        {
+          "label": "c",
+          "marks": 1.0,
+          "text": "這程式可如何除錯？（1 分）"
+        }
+      ],
+      "text": "num 是一個儲存了 N 個數字的列表。以下 Python 程式用作檢查列表是否由小至大排列：\n行號  Python 程式碼\n1    sorted_list = True\n2    for k in range(0, N):\n3        if num[k] > num[k+1]:\n4            sorted_list = False\n5    print(sorted_list)\n(a) 此程式不能正確運作。為什麼？（1 分）\n(b) 這屬於哪種錯誤？（1 分）\n(c) 這程式可如何除錯？（1 分）\n(a) 程式存取超出列表索引範圍的項目。\n(b) 運行時錯誤。\n(c) 將第 2 行 for 循環的範圍改為「range(0, N-1)」。",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "除錯",
+        "排序",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_03A005C",
+      "bank_code": "SSICTD0206_03A005C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "列表 time 儲存了一名學生某六日之中用於溫習考試的時間（以小時計）。\ntime\n2.0\n3.0\n2.5\n4.0\n3.5\n3.0\n索引\n0\n1\n2\n3\n4\n5\n以下 Python 程式用於計算該學生用於溫習考試的總時間和平均時間。然而，程式有一些錯誤。試在錯誤部分底下加上橫線並作改正。（4 分）\n行號  Python 程式碼\n1    time = [2.0, 3.0, 2.5, 4.0, 3.5, 3.0]\n2    total = 0\n3    for k in range(0, 5):\n4        total = total + time[i]\n5    print(total)\n6    avg = total / 5\n7    print(\"avg\")",
+      "options": {},
+      "answer": null,
+      "answer_text": "第 3 行：for i in range(0, 6):\n第 4 行：total = total + time[k]\n第 6 行：avg = total / 6\n第 7 行：print(avg)",
+      "parts": [],
+      "text": "列表 time 儲存了一名學生某六日之中用於溫習考試的時間（以小時計）。\ntime\n2.0\n3.0\n2.5\n4.0\n3.5\n3.0\n索引\n0\n1\n2\n3\n4\n5\n以下 Python 程式用於計算該學生用於溫習考試的總時間和平均時間。然而，程式有一些錯誤。試在錯誤部分底下加上橫線並作改正。（4 分）\n行號  Python 程式碼\n1    time = [2.0, 3.0, 2.5, 4.0, 3.5, 3.0]\n2    total = 0\n3    for k in range(0, 5):\n4        total = total + time[i]\n5    print(total)\n6    avg = total / 5\n7    print(\"avg\")\n第 3 行：for i in range(0, 6):\n第 4 行：total = total + time[k]\n第 6 行：avg = total / 6\n第 7 行：print(avg)",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "除錯",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0206_04A001C",
+      "bank_code": "SSICTD0206_04A001C",
+      "section_type": "long_answer",
+      "marks": 8.0,
+      "year_tag": null,
+      "stem": "某訓練計劃有 10 次測驗，而學員必須在至少一半的測驗取得合格成績才能獲發畢業證書。列表 result 記錄某學員每次測驗的成績；「Pass」或「Fail」被順序輸入至 result[0]、result[1]、...、result[9] 之中。主辦機構使用以下 Python 程式判斷某學員是否達到獲取畢業證書的要求：\n行號  Python 程式碼\n1    P = 0\n2    for k in range(0, 9):\n3        if result[k] == \"Pass\":\n4            P = P + 1\n5    if P >= 5:\n6        print(\"S/he gets the certificate of completion.\")\n7    else:\n8        print(\"S/he needs to pass more tests.\")",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 儲存學員取得合格成績的測驗數目。\n(b)(i) for 循環的範圍出錯；程式不會檢查 result[9]。\n(b)(ii) 邏輯錯誤。\n(b)(iii) 將第 2 行 for 循環的範圍改為「range(0, 10)」。\n(c)(i) k < 10 and P <= 5\n(c)(ii) 此程式一發現學員已在五次測驗取得合格成績就會停止，換言之程式的執行步數一般較少。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "變量 P 的功能是什麼？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": 1.0,
+          "text": "此程式未必能輸出正確結果。試解釋為何。（1 分）"
+        },
+        {
+          "label": "ii",
+          "marks": 1.0,
+          "text": "這是哪種錯誤？（1 分）"
+        },
+        {
+          "label": "iii",
+          "marks": 1.0,
+          "text": "這錯誤可如何修正？（1 分）"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "志雄是主辦機構的程式設計師。他認為以上程式的第 1 至 4 行應修改。他提議使用 while 循環以提升程式的效率。"
+        },
+        {
+          "label": "i",
+          "marks": 2.0,
+          "text": "試完成以下 Python 程式。（2 分）\n行號  Python 程式碼\n1    P = 0\n2    k = 0\n3    while _________________________:\n4        if result[k] == \"Pass\":\n5            P = P + 1\n6        k = k + 1\n7    if P >= 5:\n8        print(\"S/he gets the certificate of completion.\")\n9    else:\n10       print(\"S/he needs to pass more tests.\")"
+        },
+        {
+          "label": "ii",
+          "marks": 2.0,
+          "text": "試簡單解釋此修改如何提升程式的效率。（2 分）"
+        }
+      ],
+      "text": "某訓練計劃有 10 次測驗，而學員必須在至少一半的測驗取得合格成績才能獲發畢業證書。列表 result 記錄某學員每次測驗的成績；「Pass」或「Fail」被順序輸入至 result[0]、result[1]、...、result[9] 之中。主辦機構使用以下 Python 程式判斷某學員是否達到獲取畢業證書的要求：\n行號  Python 程式碼\n1    P = 0\n2    for k in range(0, 9):\n3        if result[k] == \"Pass\":\n4            P = P + 1\n5    if P >= 5:\n6        print(\"S/he gets the certificate of completion.\")\n7    else:\n8        print(\"S/he needs to pass more tests.\")\n(a) 變量 P 的功能是什麼？（1 分）\n(b) \n(i) 此程式未必能輸出正確結果。試解釋為何。（1 分）\n(ii) 這是哪種錯誤？（1 分）\n(iii) 這錯誤可如何修正？（1 分）\n(c) 志雄是主辦機構的程式設計師。他認為以上程式的第 1 至 4 行應修改。他提議使用 while 循環以提升程式的效率。\n(i) 試完成以下 Python 程式。（2 分）\n行號  Python 程式碼\n1    P = 0\n2    k = 0\n3    while _________________________:\n4        if result[k] == \"Pass\":\n5            P = P + 1\n6        k = k + 1\n7    if P >= 5:\n8        print(\"S/he gets the certificate of completion.\")\n9    else:\n10       print(\"S/he needs to pass more tests.\")\n(ii) 試簡單解釋此修改如何提升程式的效率。（2 分）\n(a) 儲存學員取得合格成績的測驗數目。\n(b)(i) for 循環的範圍出錯；程式不會檢查 result[9]。\n(b)(ii) 邏輯錯誤。\n(b)(iii) 將第 2 行 for 循環的範圍改為「range(0, 10)」。\n(c)(i) k < 10 and P <= 5\n(c)(ii) 此程式一發現學員已在五次測驗取得合格成績就會停止，換言之程式的執行步數一般較少。",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "除錯",
+        "資訊處理",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTD0206_04B002C",
+      "bank_code": "SSICTD0206_04B002C",
+      "section_type": "long_answer",
+      "marks": 9.0,
+      "year_tag": null,
+      "stem": "某店主將 N 位顧客的消費金額儲存在陣列 spend（其索引由 1 開始）。宇軒編寫了以下算法，用作搜尋最高和最低的消費金額，並列印這些金額的索引：\n行號  算法 1 的偽代碼\n1    highest_i  1\n2    highest  spend[highest_i]\n3    lowest_i  1\n4    lowest  spend[lowest_i]\n5    設 i 由 1 至 N\n6        如果 spend[i] > highest 則\n7            highest_i  i\n8            highest  spend[i]\n9    設 i 由 1 至 N\n10       如果 spend[i] < lowest 則\n11           lowest_i  i\n12           lowest  spend[i]\n13   輸出 highest, highest_i\n14   輸出 lowest, lowest_i",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\n1\n1\nspend[i] > spend[A]\nA  i\nspend[i] < spend[B]\nB  i\nspend[A], A\nspend[B], B\n(b)(i) 第6行\n(b)(ii) 不同意，程式進行比較的次數沒有改變。\n第二個程式迭代的次數較少，因此通常較快。\n(c) 將第 3 行 for 循環的範圍改為「設 i 由 2 至 N」。\n因為當 i = 1，條件必然為 False，換言之第一次迭代時沒有必要進行比較。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 4.0,
+          "text": "宇軒發現他可以使用更少變量以簡化算法。試為他完成以下算法。（4 分）\n行號  算法 2 的偽代碼\n1    A  __________\n2    B  __________\n3    設 i 由 1 至 N\n4        如果 ____________________ 則\n5            ____________________\n6    設 i 由 1 至 N\n7        如果 ____________________ 則\n8            ____________________\n9    輸出 ____________________\n10   輸出 ____________________"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "此外，宇軒改寫了算法 2，以單一 for 循環代替兩個獨立的 for 循環。"
+        },
+        {
+          "label": "i",
+          "marks": 1.0,
+          "text": "他應刪去算法 2 的偽代碼中哪一行？（1 分）"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "宇軒使用 Python 實踐以上算法。他發現與使用兩個獨立 for 循環的程式相比，使用單一 for 循環的程式之執行時間通常較短。\n他認為此修改之所以能提升程式的效率，是因為程式需要進行比較的次數減少了。你同意嗎？試簡單解釋你的答案。（2 分）"
+        },
+        {
+          "label": "c",
+          "marks": 2.0,
+          "text": "試提議另一項修改，以減省不必要的步驟。簡單解釋你的答案。（2 分）"
+        }
+      ],
+      "text": "某店主將 N 位顧客的消費金額儲存在陣列 spend（其索引由 1 開始）。宇軒編寫了以下算法，用作搜尋最高和最低的消費金額，並列印這些金額的索引：\n行號  算法 1 的偽代碼\n1    highest_i  1\n2    highest  spend[highest_i]\n3    lowest_i  1\n4    lowest  spend[lowest_i]\n5    設 i 由 1 至 N\n6        如果 spend[i] > highest 則\n7            highest_i  i\n8            highest  spend[i]\n9    設 i 由 1 至 N\n10       如果 spend[i] < lowest 則\n11           lowest_i  i\n12           lowest  spend[i]\n13   輸出 highest, highest_i\n14   輸出 lowest, lowest_i\n(a) 宇軒發現他可以使用更少變量以簡化算法。試為他完成以下算法。（4 分）\n行號  算法 2 的偽代碼\n1    A  __________\n2    B  __________\n3    設 i 由 1 至 N\n4        如果 ____________________ 則\n5            ____________________\n6    設 i 由 1 至 N\n7        如果 ____________________ 則\n8            ____________________\n9    輸出 ____________________\n10   輸出 ____________________\n(b) 此外，宇軒改寫了算法 2，以單一 for 循環代替兩個獨立的 for 循環。\n(i) 他應刪去算法 2 的偽代碼中哪一行？（1 分）\n(ii) 宇軒使用 Python 實踐以上算法。他發現與使用兩個獨立 for 循環的程式相比，使用單一 for 循環的程式之執行時間通常較短。\n他認為此修改之所以能提升程式的效率，是因為程式需要進行比較的次數減少了。你同意嗎？試簡單解釋你的答案。（2 分）\n(c) 試提議另一項修改，以減省不必要的步驟。簡單解釋你的答案。（2 分）\n(a)\n1\n1\nspend[i] > spend[A]\nA  i\nspend[i] < spend[B]\nB  i\nspend[A], A\nspend[B], B\n(b)(i) 第6行\n(b)(ii) 不同意，程式進行比較的次數沒有改變。\n第二個程式迭代的次數較少，因此通常較快。\n(c) 將第 3 行 for 循環的範圍改為「設 i 由 2 至 N」。\n因為當 i = 1，條件必然為 False，換言之第一次迭代時沒有必要進行比較。",
+      "concepts": [
+        "D-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "算法",
+        "排序",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

@@ -4,7 +4,9 @@
 
 | File | Purpose |
 |------|---------|
-| `exam_blueprint.json` | Slot plan + concepts |
+| `exam_blueprint.json` | Slot plan + concepts（`section_b_plan` 乙部子題分） |
+| `written_bank_audit.json` | 每 slot 題庫可參考題數 + 點解 Gen 唔變 |
+| `Subjects/DSE-ICT/question-bank/style_patterns.json` | 問法庫；`written.section_b/c` 按 concept／課題 unit |
 | `exam_blueprint.concept_review.json` | Blueprint review report |
 | `25_26_S5_ICT_Exam02.spec.json` | Exam content (source of truth) |
 | `25_26_S5_ICT_Exam02.partial_regen.json` | Last partial regen report |

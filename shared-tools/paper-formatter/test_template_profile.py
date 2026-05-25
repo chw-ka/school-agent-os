@@ -34,6 +34,12 @@ class TestTemplateProfile(unittest.TestCase):
         self.assertEqual(mcq_line_kind("\t\t(1)\t陳述"), "combo_sub")
         self.assertEqual(mcq_role_for_kind("option"), "mcq.option")
 
+    def test_answer_blank_kind(self) -> None:
+        from paper_format.f5_ict_roles import written_line_kind
+
+        self.assertEqual(written_line_kind(ANSWER_BLANK), "answer_blank")
+        self.assertEqual(written_line_kind(ANSWER_BLANK_LONG), "answer_blank_long")
+
     def test_written_answer_blank(self) -> None:
         from written_layout import ANSWER_BLANK
 

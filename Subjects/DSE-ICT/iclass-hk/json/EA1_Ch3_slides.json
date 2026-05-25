@@ -1,0 +1,796 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EA1 Ch3.pptx",
+    "slug": "EA1_Ch3_slides",
+    "title": "EA1 Ch3",
+    "series": "EA1",
+    "chapter": 3,
+    "curriculum_unit": "EA-a",
+    "curriculum_part": "EA",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.435498+00:00",
+    "slide_count": 154,
+    "topic_tags": {
+      "循環": 37,
+      "除錯": 12,
+      "硬件": 4,
+      "課本活動": 1,
+      "列表": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 3Data Representation"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "For a decimal number, 11810 , we can convert it to a binary number by repeatedly dividing it by 2 until the quotient is smaller than 2, then arranging the quotient and the sequence of remainders from the last one to the first one.Therefore, 11810 = 11101102 .103.1"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide100.xml",
+      "text": "Which of the following actions involve data conversion between analog data and digital data?Printing an electronic documentCombining multiple image files into a video fileRecording the sound of a fox(1) and (2) only(1) and (3) only(2) and (3) only(1), (2) and (3)1003.6"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide101.xml",
+      "text": "AnalysisFor item (1), an electronic document is digital data while a printed document is an analog data.For item (2), both image files and video files are digital data. No analog data is involved. Therefore, (2) does not satisfy the requirement.For item (3), the sound waves produced by a fox are analog data while a sound recording is digital data.Therefore, both (1) and (3) satisfy the requirement.SolutionThe answer is B.1013.6"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide102.xml",
+      "text": "Peter has a 1200-page book published in the 19th century. He uses a scanner to scan the books into a collection of image files, then converts the image files into text files by optical character recognition (OCR). Which of the following are the major benefits of this action?Peter can share the book with ease by uploading the image files on the internet.Peter can search for text in the book with ease.Peter can discard the book to save storage space.(1) and (2) only(1) and (3) only(2) and (3) only(1), (2) and (3)1023.6"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide103.xml",
+      "text": "AnalysisFor item (1), it takes more time to share a book by transferring the physical copy between readers. Moreover, the book risks being damaged in the process. Therefore, being able to share the book in a digital form is a major benefit.For item (2), manually searching for text in a 1200-page book is very time-consuming but searching for text in an electronic document can be done fast and correctly by a computer. Therefore, the support of easy searching is a major benefit.For item (3), sometimes, the physical copy will be discarded after digitalisation for saving storage space. However, it is not a must. In this case, a book published in the 19th century is a valuable resource and is thus worth keeping.SolutionThe answer is A.1033.6"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide104.xml",
+      "text": "Finish Checkpoint 3.6 on P. 100 of the textbook.C1. If students change their answers on the examination papers before appealing, the image files can prove them cheating.2. When a student tries to make an appeal, Mary can remark their paper at home.3. Students are allowed to keep their papers for revision.1043.6"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide105.xml",
+      "text": "Multimedia1053.5Multimedia can be stored in various file formats.The file format and the metadata of a file are usually stored in its file header.The file format of a file is usually indicated by its file extension."
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide106.xml",
+      "text": "Multimedia1063.5File formats can be changed by:Exporting in another file format with editing softwareUsing file format converting software"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide107.xml",
+      "text": "Compression1073.5Files are often compressed to facilitate file transmission and save storage space.Details of compression method are usually stored in the file header."
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide108.xml",
+      "text": "Compression1083.5There are mainly two types of compressions:Lossless CompressionLossy compressionNo data lost after compressionSome data lost after compressionOriginal file can be retrieved completelyFile slightly different after decompressionSaves less storage space Saves more storage space"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide109.xml",
+      "text": "Compression1093.5The compression ratio can be calculated by:Higher compression ratio means more storage saved."
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Convert 14910 into a binary number.Therefore, 14910 =113.1"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide110.xml",
+      "text": "Finish Activity 3.1 on P. 103 of the textbook.1103.1File formatBMPPNGJPGCompressionUncompressedLosslessLossyImageFile size1376 KB609 KB5 KBCompression ratio1376 KB / 609 KB = 2.261376 KB / 5 KB = 275"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide111.xml",
+      "text": "BMP and PNGBMP1113.1"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide112.xml",
+      "text": "Study and compare the two images on P. 104.1123.2"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide113.xml",
+      "text": "1133.2File formatBMPJPGCompressionUncompressedLossyImageFile size1 MB1 MBImage width5501618Image height6351871File size after compressing into a ZIP file853 KB1017 KBCompression ratio of compressing it into a ZIP file1024 ÷ 853 = 1.201024 ÷ 1017 = 1.01"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide114.xml",
+      "text": "JPG uses lossy compression, it can store a larger image at the same file size as BMP. Compressing a BMP image usually save more storage space than JPG images as JPG images are already compressed.1143.2BMPJPG"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide115.xml",
+      "text": "Text115AThere are two types of text:Plain textFormatted text"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide116.xml",
+      "text": "Text116APlain TextStores characters onlyFile size smaller than formatted textPlain text file is approximately:file size per character × number of characters"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide117.xml",
+      "text": "Text117AFormatted TextStores characters and formatting data(e.g. font type, font size, font colour)File size larger than plain text"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide118.xml",
+      "text": "Text118ACommon text file formats include:File formatTypeRemarksTXTPlain textRelatively small file size.Widely supported by different operating systems.DOC/DOCXFormatted textNative to Microsoft Word.Contain multimedia, including images, audio, videos and hyperlinks.PDFFormatted textNative to Adobe Acrobat, but is usually exported from other file formats.Contain multimedia, including images, audios, videos and hyperlinks.Provides consistent document layout and text format across different devices as well as operating systems, i.e. it is cross-platform."
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide119.xml",
+      "text": "Which of the following documents should be stored in the format of PDF instead of DOCX?Academic certificateTemplate of a management reportInstruction manual containing a table of contents(1) only(2) only(1) and (3) only(2) and (3) only1193.7"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Convert 14910 into a binary number.Therefore, 14910 = 100101012123.1"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide120.xml",
+      "text": "AnalysisFor item (1), PDF format provides a consistent document layout, which allows academic certificates to retain their authentic appearance on any devices and identical hard copies can be printed.For item (2), the template of a management report is expected to be copied and edited multiple times. Its layout is not finalised as its contents are missing. DOCX format is better for editing. The report should only be exported as a PDF file after it is finished.For item (3), PDF format provides a consistent document layout and also ensures that the text and image in the instruction manual will not be misplaced on any devices. If any of its contents is misplaced, the page number may change, invalidating its table of contents.SolutionThe answer is C.1203.7"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide121.xml",
+      "text": "Finish Checkpoint 3.7 on P. 108.DD1213.7"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide122.xml",
+      "text": "Image122BThere are two types of images:Bitmap imagesVector images"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide123.xml",
+      "text": "Image123BBitmap imagesStored as a series of squares (pixels).Can be edited by common image editing software. (e.g. Microsoft Paint)File size of an uncompressed bitmap image file:\tcolour depth × resolution"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide124.xml",
+      "text": "Image124BVector imagesStored as mathematical formulaeSmaller file sizeDo not have rough edges, do not lose quality when scaled up or down."
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide125.xml",
+      "text": "Image125BColour depth is the number of bits used to represent the colour of a pixel.Images with higher colour depth can include more colours.1-bit colour3-bit grayscale3-bit colour8-bit colour"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide126.xml",
+      "text": "Image126BResolution is the total number of pixels in an image. It is usually presented as “no. of pixels per row × no. of pixels per column”.Images with higher resolution will look less blurry.High-resolution imageLow-resolution image"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide127.xml",
+      "text": "Image127BAspect Ratio is the ratio of width to height.Changing the aspect ratio of an image will result in blank spaces or cropping.Original imageImage with blank spacesCropped image"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide128.xml",
+      "text": "Compare the two screens on P. 112.1283.316:9 monitor4:3 monitor"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide129.xml",
+      "text": "High aspect ratio results in wider screen, which is usually good for gaming. In this example, 16:9 monitor makes it easier for the player to spot the purple enemy. 1293.3"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Calculation of binary numbersArithmetic operations on binary numbers are more or less the same as that of decimal numbers. Some calculators, including the built-in calculators in mobile phones, can calculate binary numbers. Here is an example of calculating 1011012 + 1111102 .133.1"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide130.xml",
+      "text": "Image130BTransparency means that whether an image can allow transparent areas or not.TransparentNot Transparent"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide131.xml",
+      "text": "Image131BCommon image file formats include:File formatTypeSupport transparencySupport animationCompressionBMPBitmapUncompressedJPEG/ JPGBitmapLossyGIFBitmapLosslessPNGBitmapLosslessWebPBitmapLossless or LossyTIFF/TIFBitmapLosslessSVGVectorUncompressed"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide132.xml",
+      "text": "Finish Lab 3.9 on P. 114 of the textbook.File size (in MB) =24 bits × 1,024 × 768 = 3 bytes × 1,024 × 768 = 3 KB × 768 ≈ 2,304 KB  = (2,304 ÷ 1,024) MB ≈ 2.25 MB1323.9Colour depth24 bitsResolution1024 × 768"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide133.xml",
+      "text": "Read the following paragraph and answer questions 1 and 2. Henry took some photos during his journey. He wants to upload these photos to his social media account.Which of the following image file formats is suitable for him to upload?TIFFSVGGIFPNG1333.8"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide134.xml",
+      "text": "AnalysisTIFF is not widely supported by web browsers. Vector images are drawings that can be represented by mathematical formulae. Real life photos are better not stored as vector images. Thus, SVG is not suitable. For non-animated images, PNG is better than GIF due to its capability of having higher colour depth and higher compression ratio.SolutionThe answer is D.1343.8"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide135.xml",
+      "text": "Henry decides to upload his photo in JPG format instead. Which of the following is/are the benefit(s) of his decision?JPG file has a relatively smaller size.JPG file uses lossless compression.JPG supports animation.(1) only(2) only(1) and (3) only(2) and (3) only 1353.8"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide136.xml",
+      "text": "AnalysisJPG uses lossy compression and thus its file size is relatively smaller. Among all the mentioned file formats, only GIF supports animation.SolutionThe answer is A.1363.8"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide137.xml",
+      "text": "Finish Checkpoint 3.8 on P. 115 of the textbook.B1373.8"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide138.xml",
+      "text": "Audio138CAn audio file has three attributes:Bit depthSampling rateNumber of channels"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide139.xml",
+      "text": "Audio139CBit depth is the number of bits used to represent an audio sample.Sampling with a low bit depthSampling with a high bit depth"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Calculate 1110112 + 11001012 .143.1"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide140.xml",
+      "text": "Audio140CSampling rate is the number of audio samples taken per second.Sampling with a low bit depthSampling with a high bit depth"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide141.xml",
+      "text": "Audio141CAn audio file can contain more than one channel. For example:Stereo (2 channels)5.1 surround sound (6 channels)File size of an uncompressed audio file:\tBit depth × number of channels × sampling rate × duration"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide142.xml",
+      "text": "Audio142CCommon audio file formats include:File formatCompressionRemarksWAV/WAVEUncompressedHigh audio quality.Relatively large file size.MP3, AAC, OGGLossyRelatively small file size.FLAC, ALACLoselessHigh audio quality.Relatively large file size."
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide143.xml",
+      "text": "Finish Lab 3.10 on P. 119 of the textbook.File size (in MB) =16 bits × 2 × 96,000 × (60 × 2 + 30) = 4 bytes × 96,000 × 150 = (57,600,000 ÷ 1,024) KB = (56,250 ÷ 1,024) MB ≈ 54.9 MB1433.10Bit depth16 bitsNumber of channel(s)2Sampling rate96,000 HzDuration2 minutes and 30 seconds"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide144.xml",
+      "text": "John wants to upload his song to his personal website. However, the storage space of his website is limited. Which audio format should he choose?MP3AVIWAVWMV1443.9"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide145.xml",
+      "text": "AnalysisAVI and WMV are not audio file formats. WAV is an uncompressed file format, while MP3 is a compressed file format. Thus, MP3 has a relatively smaller file size.SolutionThe answer is A.1453.9"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide146.xml",
+      "text": "Finish Checkpoint 3.9 on P. 119 of the textbook.Advantage: WAV has a higher audio quality. Disadvantage: WAV has a larger file size.1463.9"
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide147.xml",
+      "text": "Video147DVideos are sequences of images shown within a certain duration. It may contain audio track(s).A video file has four attributes:Colour depthResolutionFrame rateDuration"
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide148.xml",
+      "text": "Video148DFrame rate is the number of frames shown per second.It is measured in fps (frame per second)."
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide149.xml",
+      "text": "Video149DThe colour depth and resolution of a frame are similar to that of an image.File size of an uncompressed video file:\tcolour depth × resolution × frame rate × duration + size of the audio track"
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Calculate 1110112 + 11001012 .153.1"
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide150.xml",
+      "text": "Video150DFile formatCodecBrowser supportFile sizeFeatures and applicationsMP4MPEG-4MostRelatively small with high compression rateVideo streamingH.264(AVC)MostSmaller than MPEG-4Live streamingHD and Full HD video streamingH.265(HEVC)FewSmaller than H.264Live streamingBetter image quality for streaming videos with a resolution above 2KWebMVP8Most latest versionsSmaller than H.264 with higher compression rateVideo streamingLive streamingCommon video file formats include:"
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide151.xml",
+      "text": "Finish Lab 3.11 on P. 121 of the textbook.File size (in GB) =  16 bits × 640 × 360 × 24 × (60 × 60) = 2 bytes × 640 × 360 × 24 × 3600 = (39,813,120,000 ÷ 1,0243) GB ≈ 37.1 GB1513.11Bit depth16 bitsResolution640 × 360Frame rate24 fpsDuration1 hour"
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide152.xml",
+      "text": "Fanny has four files, the file sizes of which are all 20 MB. She compresses them to ZIP files. Which of the compressed files has the smallest file size under normal circumstances?1523.10Original filesCompressed filesA. A.pngA.zipB.B.jpgB.zipC.C.wavC.zipD.D.wmvD.zip"
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide153.xml",
+      "text": "AnalysisCompressing a compressed file saves less storage space than compressing an uncompressed file. Among all four files, only C.wav has an uncompressed file format.SolutionThe answer is C.1533.10"
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide154.xml",
+      "text": "Finish Checkpoint 3.10 on P. 122 of the textbook.Advantage: MP4 has a relatively smaller file size.Disadvantage: AVI has better video quality.C1543.10"
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Here is an example of calculating 1111102 − 1011012 .163.1"
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Calculate 11001012 − 1110112 .173.1"
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Calculate 11001012 − 1110112 .183.1"
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "Binary number19BThe number of patterns (combinations) determines how much data can be represented.For example, a 1-digit binary number is either 0 to 1, meaning that it has 2 unique patterns.A 3-digit binary number ranges from 0 to 7, meaning that it has 8 unique patterns.1st pattern2nd pattern011st pattern2nd pattern3rd pattern4th pattern5th pattern6th pattern7th pattern8th pattern000001010011100101110111"
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "The girl I like is an old man?Can you imagine that the person behind the voice is a stingy man when you hear such a cute voice? The voice changer function has become popular in major chatting platforms. Do you know that the principle of data conversion and processing is actually applied behind the scenes?2"
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Hexadecimal number20CA hexadecimal number is a number in base 16. Each digit can represent 4 bits of digital data, since 24 = 16. To represent 10 to 15 in a single digit, hexadecimal system uses A to F respectively.The range of a digitBinary number0 to 1Decimal number0 to 9Hexadecimal number0 to 9, A to F"
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Conversion between hexadecimal numbers and decimal numbersFor a hexadecimal number, B4AF16 , we can convert it into a decimal number by expanding it like below.Therefore, B4AF16 = 45056 + 1024 + 160 + 15 = 4625510 .213.2DigitB (11)4A (10)F (15)Place value163 = 4096162 = 256161 = 16160 = 1Value of the digit4096 × 11 = 45056256 × 4 = 102416 × 10 = 160 1 × 15 = 15"
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "Convert 9C7E16 into a decimal number.Therefore, 9C7E16 = 36864 + 3072 + 112 + 14 = 4006210.223.2Digit9C (12)7E (14)Place value163 = 4096162 = 256161 = 16160 = 1Value of the digit4096 × 9 = 36864256 × 12 = 307216 × 7 = 1121 × 14 = 14"
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "For a decimal number, 5462510, we can convert it into a hexadecimal number by repeatedly dividing it by 16 until the quotient is smaller than 16, then arranging the quotient and the sequence of remainders from the last one to the first one. Therefore, 5462510 = D56116.233.2"
+    },
+    {
+      "slide_index": 72,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "Convert 3460410 into a hexadecimal number.Therefore, 3460410 = 243.2"
+    },
+    {
+      "slide_index": 73,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "Convert 3460410 into a hexadecimal number.Therefore, 3460410 = 872C16.253.2"
+    },
+    {
+      "slide_index": 74,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "Calculation of hexadecimal numbersSimilarly, some calculators can calculate hexadecimal numbers too. Nevertheless, it is not difficult to calculate hexadecimal numbers by ourselves. Here is an example of calculating B4AF16 + 9C7E16.263.2"
+    },
+    {
+      "slide_index": 75,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "Calculate 6D6116 + 972C16.273.2"
+    },
+    {
+      "slide_index": 76,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "Calculate 6D6116 + 972C16.283.2"
+    },
+    {
+      "slide_index": 77,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "Calculate 972C16 − 6D6116 .293.2"
+    },
+    {
+      "slide_index": 78,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Number System and Representation33.1People usually use a decimal system for counting.In contrast, digital devices use a binary system."
+    },
+    {
+      "slide_index": 79,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "Calculate 972C16 − 6D6116 .303.2"
+    },
+    {
+      "slide_index": 80,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Here is a 3-digit combination lock. A digit can be 1 to 9 or A to F. The figure below shows this lock with a combination of \"15A\".How many different combinations does the password of this lock have?3374337540954096313.1"
+    },
+    {
+      "slide_index": 81,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "AnalysisThere are 15 possible symbols for each digit, since 0 is excluded. The number of combinations = 15 × 15 × 15 = 3375.SolutionThe answer is B.323.1"
+    },
+    {
+      "slide_index": 82,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Tom is the owner of a store. He wants to distribute 50,000 redeem codes for promotion. Each redeem code occupies 8 KB and is stored in a computer system. How many MB of storage space should Tom allocate for all redeem codes?AnalysisThe storage space Tom should allocate = 8 KB × 50,000 = 400,000 KB = (400,000 ÷ 1024) MB = 390.625 MB Remember that you should convert 1024 KB, not 1000 KB, into 1 MB.SolutionThe answer is 390.625 MB. Rounding the result to the nearest integer is acceptable.333.1"
+    },
+    {
+      "slide_index": 83,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "The computer system used by a school allocates 8 bits for a student identity number and 1 bit for the gender of a student. What is the maximum number of student accounts in the system?64128256512343.1"
+    },
+    {
+      "slide_index": 84,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "AnalysisThe maximum number of student accounts in the system depends on the maximum number of student identity numbers, as each student should have a unique student identity number.The gender of a student is irrelevant. Two students of different genders cannot share the same student identity number.Since 8 bits are allocated for a student identity number, the maximum number of student accounts equals to the number of possible patterns that an 8-bit representation has, i.e. 28 = 256.SolutionThe answer is C.353.1"
+    },
+    {
+      "slide_index": 85,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "Finish Checkpoint 3.1 on P. 67 of the textbook.40 × 1024 × 1024 ÷ 500 ÷ 60 = 1398.1 hours. Rounding the result to the nearest hours is acceptable.CB363.1"
+    },
+    {
+      "slide_index": 86,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "Representation of unsigned integers37DWhen integers are stored in digital devices, they can be represented as unsigned integers or signed integers.Unsigned integers are integers that do not have a negative sign, i.e. positive integers and zero."
+    },
+    {
+      "slide_index": 87,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "Representation of signed integers38ESigned integers are integers that may have a negative sign, i.e. positive integers, negative integers and zero."
+    },
+    {
+      "slide_index": 88,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "Representation of signed integers39EThe two’s complement representation is a method for representation of signed integers in bit pattern.The two’s complement of a number is the result that comes from the negation of the number in twos complement representation, meaning that an integer −X can be represented by the two’s complement of X.All 3-bit two’s complement representations are listed below.Decimal number-4-3-2-10123Two’s complement representation100101110111000001010011"
+    },
+    {
+      "slide_index": 89,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Unit of data4AIn a digital device, data is usually measured by the following units.UnitSymbolValueBitbit, bThe most basic unit of data. It can be either \"0\" or \"1\".ByteB1 B = 8 bitsKilobyteKB1 KB = 210 B = 1024 B = 210 BMegabyteMB1 MB = 210 KB = 1024 KB = 220 BGigabyteGB1 GB = 210 MB = 1024 MB = 230 B"
+    },
+    {
+      "slide_index": 90,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "Conversion of two’s complement representations into decimal numbersFor a 3-bit two’s complement representation, 101 , we can convert it into a decimal number by expanding it like below.Therefore, 1012 = -4 + 0 + 1 = -310.403.3Digit101Place-(22) = -421 = 220 = 1Value of the digit-4 × 1 = -42 × 0 = 01 × 1 = 1"
+    },
+    {
+      "slide_index": 91,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "For a 4-bit two’s complement representation, 0101 , we can convert it into a decimal number by expanding it like below.Therefore, 0101 = 4 + 0 + 1 = 510.413.3Digit0101Place-(23) = -822 = 421 = 220 = 1Value of the digit-8 × 0 = 04 × 1 = 42 × 0 = 01 × 1 = 1"
+    },
+    {
+      "slide_index": 92,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Convert a 4-bit two’s complement representation, 1010, into a decimal number.Therefore, 1010 =423.3Digit0101Place value-(23) = -822 = 421 = 220 = 1Value of the digit"
+    },
+    {
+      "slide_index": 93,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "Convert a 4-bit two’s complement representation, 1010, into a decimal number.Therefore, 1010 = -8 + 0 + 2 + 0 = -610433.3Digit0101Place value-(23) = -822 = 421 = 220 = 1Value of the digit-8 × 1 = -84 × 0 = 02 × 1 = 21 × 0 = 0"
+    },
+    {
+      "slide_index": 94,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "Convert a 5-bit two’s complement representation, 10101, into a decimal number.Therefore, 10101 =443.3Digit10101Place value-(24) = -1623 = 822 = 421 = 220 = 1Value of the digit"
+    },
+    {
+      "slide_index": 95,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "Convert a 5-bit two’s complement representation, 10101, into a decimal number.Therefore, 10101 = −16 + 0 + 4 + 0 + 1 = −1110 453.3Digit10101Place value-(24) = -1623 = 822 = 421 = 220 = 1Value of the digit-16 × 1 = -168 × 0 = 04 × 1 = 42 × 0 = 01 × 1 = 1"
+    },
+    {
+      "slide_index": 96,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "46The two’s complement of 310 is 011, which is also the two’s complement representation of 310The two’s complement of  310 is 101, which is also the two’s complement representation of -310. In short, the two’s complement of an integer X is the two’s complement representation of −X. Pay attention to the word “representation”."
+    },
+    {
+      "slide_index": 97,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "Representation of signed integers47EAs we can see from the above table, the two’s complement of 110 is 111, which is the two’s complement representation of −110 .Decimal number-4-3-2-101234Two’s complement representation100110110111000001010011Out of rangeTwo’s complementOut of range011010001000111110101100"
+    },
+    {
+      "slide_index": 98,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "Representation of signed integers48EThe two’s complement of a binary integer can be found by subtraction from 2N. For example, to find the 8-bit two’s complement of 2710 , we can:Convert 2710 into a binary number, which is 11011. Add leading 0s to change it to an 8-bit binary representation, i.e. 0001 10112 . Subtract it from 28, i.e. 1 0000 0000.The 8-bit two’s complement of 2710 is 1110 0101, which is the 8-bit two’s complement representation of −2710 ."
+    },
+    {
+      "slide_index": 99,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "Representation of signed integers49EThe two’s complement of a binary integer can also be found by adding 1 to its one’s complement.The one’s complement of a binary representation is produced by inverting all its bits, i.e. change 0 to 1 and 1 to 0."
+    },
+    {
+      "slide_index": 100,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Unit of data5AIn a data transmission system, the amount of data transferred per unit time is called bitrate or data transfer rate:UnitSymbolValueBit per secondbps, bit/s, b/sOne bit of data is transferred every second.Kilobit per secondkbps, kbit/s, kb/s1 kbps = 103 bps = 1000 bps = 103 bpsMegabit per secondMbps, Mbit/s, Mb/s1 Mbps = 103 kbps = 1000 kbps = 106 bpsGigabit per secondGbps, Gbit/s, Gb/s1 Gbps = 103 Mbps = 1000 Mbps = 109 bpsTerabit per secondTbps, Tbit/s, Tb/s1 Tbps = 103 Gbps = 1000 Gbps = 1012 bps"
+    },
+    {
+      "slide_index": 101,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "Representation of signed integers50EFor example, to find the 8-bit two’s complement of 4510 , we can:Convert 4510 into a binary number, which is 101101. Add leading 0s to change it to an 8-bit binary representation, i.e. 0010 1101.Invert all bits of the 8-bit representation.Add 1 to the one’s complement and we get 1101 0011. The 8-bit two’s complement of 4510 is 1101 0011, which is the 8-bit two’s complement representation of −4510 ."
+    },
+    {
+      "slide_index": 102,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "What is the decimal value of the 4-bit two’s complement representation 1000?0-8-15-16513.2"
+    },
+    {
+      "slide_index": 103,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "What is the 7-bit two’s complement of the decimal value 17? 001 0001 001 0010 110 1110 110 1111523.2"
+    },
+    {
+      "slide_index": 104,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "What is the 8-bit two’s complement representation of the decimal value −1? 0000 0001 1000 0001 1111 1110 1111 1111533.2"
+    },
+    {
+      "slide_index": 105,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "What is the decimal value of the 4-bit two’s complement representation 1000?               1001       11 0111 0001 0111(1) only(2) only(1) and (3) only(2) and (3) only543.2"
+    },
+    {
+      "slide_index": 106,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "What is the decimal result of adding these two 8-bit two’s complement representations, 0110 and 1011?-15-1117553.2"
+    },
+    {
+      "slide_index": 107,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "Overflow error56FAn overflow error occurs when the result of a calculation is out of range that the number of bits can represent. In such cases, the results will be incorrect."
+    },
+    {
+      "slide_index": 108,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "Overflow error57FFor unsigned integers, overflow error occurs during:AdditionSubtraction910 + 910 = 1001 + 10011010 − 1210 = 1010 − 1210 = 1010 − 1100"
+    },
+    {
+      "slide_index": 109,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "Overflow error58FFor signed integers, overflow error occurs during:AdditionSubtraction310 + 510 = 0011 + 0101−410 − 610 = −410 + (−610) = 1100 + 1010"
+    },
+    {
+      "slide_index": 110,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "59When an additional bit appears after the calculation of two’s complement representations, an overflow error occurs.When an additional bit appears after the calculation of two’s complement representations, it does not necessarily mean that an overflow occurs. The additional bit implies an overflow error only if it is a calculation of unsigned integer. The fundamental reason for overflow error is that the calculation result is out of range."
+    },
+    {
+      "slide_index": 111,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Binary number6BIn data representation, binary numbers are used because each digit of a binary number can represent one bit of digital data.Binary numbers are represented by “0” and “1” only.Decimal number01234567Binary number000001010011100101110111"
+    },
+    {
+      "slide_index": 112,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "A computer uses 4-bit two’s complement representation to store integers. Which of the following calculations involves an overflow error? 2 − 3 + 4 − 23 + 4 + 2 − 22 + 3 − 4 − 2−2 − 3 – 3603.3"
+    },
+    {
+      "slide_index": 113,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "AnalysisThe range of a 4-bit two’s complement representation is from −24−1 to 24−1−1, i.e. from −8 to 7.For option A, 2 − 3 + 4 − 2 = −1 + 4 − 2 = 3 − 2 = 1. No result is out of range.For option B, 3 + 4 + 2 − 2 = 7 + 2 − 2 = 9 − 2 = 7. Although the final result is not out of range, a number which is out of range appears in the calculation, meaning that an overflow error occurs during the calculation.For option C, 2 + 3 − 4 − 2 = 5 − 4 − 2 = 1 − 2 = −1. No result is out of range.For option D, −2 − 3 − 3 = −5 − 3 = −8. No result is out of range.Only option B involves an overflow error.SolutionThe answer is B.613.3"
+    },
+    {
+      "slide_index": 114,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "Jane’s computer uses 8-bit two’s complement representation to store numbers. She increments a number X by 3, then an overflow error occurs. What is the number X?0111 11101111 11100000 11011000 0000623.3"
+    },
+    {
+      "slide_index": 115,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "Analysis3 is a positive number. Overflow error occurs only if two numbers of the same sign are added together. The representations of option B and D both represent a negative number. Therefore, option B and D cannot be the answer. The 8-bit two’s complement representation of 3 is 0000 0011. For option A, 0111 1110 represents a positive number. 0111 1110 + 0000 0011 = 1000 0001, which represents a negative number. For option C, 0000 1101 represents a positive number. 0000 1101 + 0000 0011 = 0001 0000, which represents a positive number.SolutionThe answer is A.633.3"
+    },
+    {
+      "slide_index": 116,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "A computer performs this calculation, P + Q, and returns R as the answer. Assume that P, Q and R are all 3-bit unsigned integers, under what conditions would an overflow error occur during this calculation?P = 7P > RP > 3 and Q > 4(1) and (2) only(1) and (3) only(2) and (3) only(1), (2) and (3)643.3"
+    },
+    {
+      "slide_index": 117,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "AnalysisFor item (1), if Q = 0, then P + Q = 7, which is NOT out of the range of a 3-bit unsigned integer.For item (2), since P, Q and R are all unsigned integers, they can only be zero or positive. Adding zero or a positive integer to P should result in an integer larger than P.For item (3), if P > 3 and Q > 4, then P + Q > 7. A 3-bit unsigned integer cannot be larger than 7.SolutionThe answer is C.653.3"
+    },
+    {
+      "slide_index": 118,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "Finish Checkpoint 3.3 on P. 81 of the textbook.ABDC663.3"
+    },
+    {
+      "slide_index": 119,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "Character Encoding673.2Besides numbers, there are also representation methods for characters. They are called character encoding systems. Text in different languages may use different encoding systems."
+    },
+    {
+      "slide_index": 120,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "English68AAmerican Standard Code for Information Interchange (ASCII) is one of the commonly used character encoding systems for English.ASCII usually uses 7 bits to represent a character. Thus, it can represent 27 = 128 characters.See P. 83 of the textbook for the ASCII table."
+    },
+    {
+      "slide_index": 121,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "Chinese69BThere are two sets of Chinese characters:Traditional Chinese, which is often encoded by Big-5 code.Simplified Chinese, which is often encoded by Guobiao (GB) code."
+    },
+    {
+      "slide_index": 122,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Conversion between binary numbers and decimal numbersFor a binary number, 11012 , we can convert it into a decimal number by expanding it like below.Therefore, 11012 = 8 + 4 + 0 + 1 = 1310 .73.1Digit1001Place value23 = 822 = 421 = 220 = 1Value of the digit8 × 1 = 84 × 1 = 42 × 0 = 01 × 1 = 1"
+    },
+    {
+      "slide_index": 123,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "Chinese70BBoth encoding systems represent Chinese, but they are not interchangeable.Code(in hexadecimal representation)BD73BD58A874B2CEB1E0C2EBCFB5CDB3Character in Big-5 code編 碼系統晤鎢炵苀Character in Guobiao (GB) code絪絏 ╰参编码 系统"
+    },
+    {
+      "slide_index": 124,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "Chinese71BIf a text file or a website is encoded by Big-5 code, but is decoded by Guobiao code, instead of being translated to simplified Chinese, the text will be displayed as garbled text."
+    },
+    {
+      "slide_index": 125,
+      "slide_part": "ppt/slides/slide72.xml",
+      "text": "Multi-languages72CA character encoding system named Unicode is used to represent multiple languages.Unicode is made for representing all the existing languages, like Korean, Arabic, Thai, Russian, etc. Code(in hexadecimal representation)7DE878DC7CFB7D717F1678017CFB7EDFCharacter in Unicode編 碼系統编码系统"
+    },
+    {
+      "slide_index": 126,
+      "slide_part": "ppt/slides/slide73.xml",
+      "text": "Multi-languages73CDue to the enormous number of Unicode characters, Unicode may use up to 4 bytes to represent a character. It uses variable-width encoding, which allows codes of different lengths to be used to encode different characters. Unicode characters may take 1 to 4 bytes, depending on the languages.LanguageCharacter encoding systemSize per characterEnglishASCII7 bits to 1 byteTraditional ChineseBig-5 code2 bytesSimplified ChineseGuobiao (GB) codeMost languages in the worldUnicode1 to 4 bytes"
+    },
+    {
+      "slide_index": 127,
+      "slide_part": "ppt/slides/slide74.xml",
+      "text": "Which of the following statements about Unicode, ASCII and Big-5 code is/are correct?Among the three character encoding systems, ASCII has the smallest size of character set.Big-5 code does not support English letters.Unicode uses 4 bytes to store every character.(1) only(2) only(1) and (3) only(2) and (3) only743.4"
+    },
+    {
+      "slide_index": 128,
+      "slide_part": "ppt/slides/slide75.xml",
+      "text": "AnalysisASCII does not support languages other than English. Big-5 code supports English and traditional Chinese characters. Unicode supports more than one language. Therefore, (1) is correct and (2) is incorrect.Unicode uses variable-width encoding, which allows codes of different lengths to be used to encode different characters. The size of a Unicode character varies from 1 to 4 bytes. Thus, (3) is incorrect.SolutionThe answer is A.753.4"
+    },
+    {
+      "slide_index": 129,
+      "slide_part": "ppt/slides/slide76.xml",
+      "text": "A device uses 8 bits to store an integer and 16 bits to store a character. To store the text string “3D printer”, how many bytes are needed?17 bytes18 bytes19 bytes20 bytes763.4"
+    },
+    {
+      "slide_index": 130,
+      "slide_part": "ppt/slides/slide77.xml",
+      "text": "Analysis“3D printer” is a text string, meaning that it consists of characters. The “3” in “3D printer” is a numeric character, not an integer, and thus it occupies 16 bits instead of 8 bits. The whitespace after “3D” still counts as a character.As a result, there are 10 characters in the text string, occupying 16 × 10 bits = 160 bits = 20 bytes in total.SolutionThe answer is D.773.4"
+    },
+    {
+      "slide_index": 131,
+      "slide_part": "ppt/slides/slide78.xml",
+      "text": "A device uses a hexadecimal code, ranging from 000 to FFF, to store a character. How many bytes are required to represent a text string of 6 characters?AnalysisEvery digit in a hexadecimal code equals to 4 bits, as 24 = 16. Therefore, a 3-digit hexadecimal code takes 4 × 3 bits = 12 bits. 6 characters takes 12 × 6 bits = 72 bits = 72 ÷ 8 bytes = 9 bytes.Solution12 × 6 ÷ 8 = 9 bytes783.4"
+    },
+    {
+      "slide_index": 132,
+      "slide_part": "ppt/slides/slide79.xml",
+      "text": "Finish Checkpoint 3.4 on P. 87 of the textbook.(a) Unicode. The data includes English, traditional and simplified Chinese. All three languages are supported by Unicode. (b) Any reasonable answer, such as Japanese, Arabic, Thai, Russian, etc.Advantage: Unicode supports more languages. It can represent both traditional and simplified Chinese characters. Disadvantage: Unicode requires more storage space than Big-5 code does.793.4"
+    },
+    {
+      "slide_index": 133,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Convert 101101012 into a decimal number.Therefore, 101101012 =83.1Digit10110101Place value27 = 12826 = 6425 = 3224 = 1623 = 822 = 421 = 220 = 1Value of the digit"
+    },
+    {
+      "slide_index": 134,
+      "slide_part": "ppt/slides/slide80.xml",
+      "text": "Barcode Encoding803.3Can you give an example of where you have seen the following two images?"
+    },
+    {
+      "slide_index": 135,
+      "slide_part": "ppt/slides/slide81.xml",
+      "text": "Barcode81ABarcode is widely used in our daily life. It can be seen on a packaged product sold in supermarkets or a coupon distributed by retailers."
+    },
+    {
+      "slide_index": 136,
+      "slide_part": "ppt/slides/slide82.xml",
+      "text": "Barcode82ABarcodes are codes that consist of bars and spaces of different widths to represent a text string. This string is often a sequence of numbers representing a product ID.Compared with manually typing the numbers, barcode scanning reduces typing errors and input time."
+    },
+    {
+      "slide_index": 137,
+      "slide_part": "ppt/slides/slide83.xml",
+      "text": "Barcode83AHere are the elements of a barcode."
+    },
+    {
+      "slide_index": 138,
+      "slide_part": "ppt/slides/slide84.xml",
+      "text": "Barcode84AThe heights of the bars do not matter in a barcode. It is the widths of the bars and spaces that matter.A readable barcode must: Have sufficient space for the quiet zoneKeep the widths of its bars and spaces unchangedReadable barcodeUnreadable barcode"
+    },
+    {
+      "slide_index": 139,
+      "slide_part": "ppt/slides/slide85.xml",
+      "text": "Quick Response code85BQuick Response code (QR code) is a two-dimensional barcode. It can be seen on various posters, books, websites, applications, etc."
+    },
+    {
+      "slide_index": 140,
+      "slide_part": "ppt/slides/slide86.xml",
+      "text": "Quick Response code86BA QR code is made up of numerous black dots arranged in a white square background. It represents a text string which is usually a Uniform Resource Locator (URL), a phone number or an email address. Here are the elements of a QR code."
+    },
+    {
+      "slide_index": 141,
+      "slide_part": "ppt/slides/slide87.xml",
+      "text": "Quick Response code87BQR codes can be still be scanned in different scenarios:RotatedDistortedDirtiedColouredMulticolouredObstructed by a logo"
+    },
+    {
+      "slide_index": 142,
+      "slide_part": "ppt/slides/slide88.xml",
+      "text": "Quick Response code88BQR codes are becoming more and more popular due to their advantages over barcode. Refer to the comparison below.AttributeBarcodeQR codeEasiness to scanNormally, a barcode can only be scanned from two angles, which are 0° or 180°.A QR code can be scanned from any direction. Even if the scanner is at an angle that distorts the scanned image, it still has a chance to read the QR code successfully.Error correction capabilityIf the width of a single bar or a single space is altered, a barcode cannot be scanned correctly.A QR code has a higher error correction capability than a barcode. It can often restore up to 30% of data.Character limitThe maximum length of the number sequence is around 50.Usually, the character limit of the text string is at least 1000."
+    },
+    {
+      "slide_index": 143,
+      "slide_part": "ppt/slides/slide89.xml",
+      "text": "Which of the following statements about the barcode below is/are correct?This type of barcode cannot represent a number.This type of barcode can be scanned in any direction.This type of barcode may be decoded even if a logo is added to its centre.(1) only(2) only(1) and (3) only(2) and (3) only893.5"
+    },
+    {
+      "slide_index": 144,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "Convert 101101012 into a decimal number.Therefore, 101101012 = 128 + 0 + 32 + 16 + 0 + 4 + 0 + 1 = 1811093.1Digit10110101Place value27 = 12826 = 6425 = 3224 = 1623 = 822 = 421 = 220 = 1Value of the digit128 × 1 = 12864 × 0 = 032 × 1 = 3216 × 1 = 168 × 0 = 04 × 1 = 42 × 0 = 01 × 1 = 1"
+    },
+    {
+      "slide_index": 145,
+      "slide_part": "ppt/slides/slide90.xml",
+      "text": "AnalysisThis type of barcode is a QR code. QR codes can represent any type of characters. Thus, (1) is incorrect. A QR code has three position patterns, allowing it to be scanned from any direction. Thus, (2) is correct. A QR code can restore up to 30% of data. Thus, (3) is correct.SolutionThe answer is D.903.5"
+    },
+    {
+      "slide_index": 146,
+      "slide_part": "ppt/slides/slide91.xml",
+      "text": "Ben is a shop owner. Every product in his shop has a barcode on its package paper. When a product is bought, the cashier will scan the barcode using a barcode reader to update the number of products in stock. What does the barcode represent?A number (a sequence of numbers) (product ID)Give two benefits of this method.Reduces typing errors and input time.913.5"
+    },
+    {
+      "slide_index": 147,
+      "slide_part": "ppt/slides/slide92.xml",
+      "text": "Analog and Digital Data923.4There are different ways to represent a piece of data:Analog data is represented in a physical way with continuous values, such as sound waves, written text and drawings.Digital data is represented in discrete symbols (like “0” and “1”), such as text documents, digital photos and audio files."
+    },
+    {
+      "slide_index": 148,
+      "slide_part": "ppt/slides/slide93.xml",
+      "text": "Analog and Digital Data933.4Analog data and digital data are stored in different kinds of storage media.Analog data storageDigital data storage"
+    },
+    {
+      "slide_index": 149,
+      "slide_part": "ppt/slides/slide94.xml",
+      "text": "Analog and Digital Data943.4See the following table for a comparison between analog and digital data.AttributeAnalog dataDigital dataWay of representationPhysical. The change between its values is continuous.Discrete symbols. Usually, the symbols are \"0\" and \"1\" in digital devices.Viability to reduce storage size by compressionLow.High. Digital television signals occupy less radio spectrum.Capability of data analysisLow. Calculation results written on a ledger needs to be updated manually when relevant data is changed.High. An electronic spreadsheet can update data automatically when relevant data is changed and even create charts in no time."
+    },
+    {
+      "slide_index": 150,
+      "slide_part": "ppt/slides/slide95.xml",
+      "text": "Digitalisation95ADigitalisation is the conversion of analog data to digital data. We can break down digitalisation into two parts: Discretisation Quantisation"
+    },
+    {
+      "slide_index": 151,
+      "slide_part": "ppt/slides/slide96.xml",
+      "text": "Digitalisation96ATo convert an analog signal into a digital signal, the value of the signal should be sampled at a regular time interval. The length of this time interval determines the sampling rate. This process is called “discretisation”."
+    },
+    {
+      "slide_index": 152,
+      "slide_part": "ppt/slides/slide97.xml",
+      "text": "Digitalisation97ASampled values are rounded to a fixed set of discrete values, which is usually represented by binary numbers in digital storage. This process is called “quantisation”."
+    },
+    {
+      "slide_index": 153,
+      "slide_part": "ppt/slides/slide98.xml",
+      "text": "Digitalisation98AConverting physical books to electronic books is usually a digitalisation of text and images."
+    },
+    {
+      "slide_index": 154,
+      "slide_part": "ppt/slides/slide99.xml",
+      "text": "Digitalisation99ASound waves are analog data that can be converted into digital data through the following process:"
+    }
+  ]
+}

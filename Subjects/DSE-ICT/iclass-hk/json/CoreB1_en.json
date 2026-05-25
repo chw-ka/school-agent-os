@@ -1,0 +1,477 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreB1_en_Input and Output Devices.docx",
+    "slug": "CoreB1_en",
+    "title": "Input and Output Devices",
+    "title_zh": null,
+    "title_en": "Input and Output Devices",
+    "language": "en",
+    "family": "CoreB",
+    "chapter": 1,
+    "integrated": false,
+    "topic_code": "B01",
+    "curriculum_unit": "Core-B",
+    "ca_unit": "B",
+    "f5_exam_scope": "mcq_core_b",
+    "extracted_at": "2026-05-24T10:37:17.681987+00:00",
+    "item_count": 20,
+    "section_counts": {
+      "mcq": 20
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTB0101_01A001E",
+      "bank_code": "SSICTB0101_01A001E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "An airline uses QR code instead of barcode on luggage identification tags. Which of the following is/are the advantage(s) of this?\n(1)\nQR code occupies less storage space.\n(2)\nIt is easier to scan QR code than barcode.\n(3)\nQR code can still be scanned when partly smudged, while barcode cannot.",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (2) only",
+        "D": "(2) and (3) only\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "An airline uses QR code instead of barcode on luggage identification tags. Which of the following is/are the advantage(s) of this?\n(1)\nQR code occupies less storage space.\n(2)\nIt is easier to scan QR code than barcode.\n(3)\nQR code can still be scanned when partly smudged, while barcode cannot.\nA. (1) only\nB. (2) only\nC. (1) and (2) only\nD. (2) and (3) only\n[--Answer: D--]",
+      "concepts": [
+        "B-ch1",
+        "循環",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_01A002E",
+      "bank_code": "SSICTB0101_01A002E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following are the ways of connecting a keyboard to a computer?\n(1)\nUSB\n(2)\nPS/2\n(3)\nBluetooth\n(4)\nWi-Fi",
+      "options": {
+        "A": "(1), (2) and (3) only",
+        "B": "(1), (3) and (4) only",
+        "C": "(2), (3) and (4) only",
+        "D": "(1), (2), (3) and (4)\n[--Answer:  A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following are the ways of connecting a keyboard to a computer?\n(1)\nUSB\n(2)\nPS/2\n(3)\nBluetooth\n(4)\nWi-Fi\nA. (1), (2) and (3) only\nB. (1), (3) and (4) only\nC. (2), (3) and (4) only\nD. (1), (2), (3) and (4)\n[--Answer:  A--]",
+      "concepts": [
+        "B-ch1",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_01A003E",
+      "bank_code": "SSICTB0101_01A003E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following can be the specification(s) of a scanner?\n(1)\n1GB DDR4 Memory\n(2)\n60 Hz refresh rate\n(3)\n802.11ac Wi-Fi",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "None of the above\n[--Answer:  B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following can be the specification(s) of a scanner?\n(1)\n1GB DDR4 Memory\n(2)\n60 Hz refresh rate\n(3)\n802.11ac Wi-Fi\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. None of the above\n[--Answer:  B--]",
+      "concepts": [
+        "B-ch1"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_01A004E",
+      "bank_code": "SSICTB0101_01A004E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following input device/sensor(s) can be used in game applications to receive user input?\n(1)\nAccelerometer\n(2)\nTouch Screen\n(3)\nKeyboard",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer:  D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following input device/sensor(s) can be used in game applications to receive user input?\n(1)\nAccelerometer\n(2)\nTouch Screen\n(3)\nKeyboard\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer:  D--]",
+      "concepts": [
+        "B-ch1",
+        "硬件",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_01A005E",
+      "bank_code": "SSICTB0101_01A005E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Pokémon Go is a popular mobile game that uses augmented reality (AR). Players can catch ‘Pokémon’ scattered in real life using their phone.Which of the following device(s) is/are necessary to enable AR experience on a smartphone?\n(1)\nCamera\n(2)\nGyroscope\n(3)\nTouchscreen",
+      "options": {
+        "A": "(1) only",
+        "B": "(1) and (2) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer:  D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Pokémon Go is a popular mobile game that uses augmented reality (AR). Players can catch ‘Pokémon’ scattered in real life using their phone.Which of the following device(s) is/are necessary to enable AR experience on a smartphone?\n(1)\nCamera\n(2)\nGyroscope\n(3)\nTouchscreen\nA. (1) only\nB. (1) and (2) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer:  D--]",
+      "concepts": [
+        "B-ch1"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_01A006E",
+      "bank_code": "SSICTB0101_01A006E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Nicole is playing a flight simulator game on her phone. She controls the aeroplane by rotating her phone.Which input device is used in the mobile phone to enable this control method?",
+      "options": {
+        "A": "Touchscreen",
+        "B": "Camera",
+        "C": "Electronic Compass",
+        "D": "Gyroscope\n[--Answer:  D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Nicole is playing a flight simulator game on her phone. She controls the aeroplane by rotating her phone.Which input device is used in the mobile phone to enable this control method?\nA. Touchscreen\nB. Camera\nC. Electronic Compass\nD. Gyroscope\n[--Answer:  D--]",
+      "concepts": [
+        "B-ch1"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0101_01A007E",
+      "bank_code": "SSICTB0101_01A007E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Most smartphones have the feature of turning off the screen temporarily when a user holds the phone to their face during a phone call. This is to prevent unintended touch input on the screen.Which sensor is used to enable this feature?",
+      "options": {
+        "A": "Light Proximity Sensor",
+        "B": "Gyroscope",
+        "C": "Microphone",
+        "D": "Ultrasonic Sensor\n[--Answer:  A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Most smartphones have the feature of turning off the screen temporarily when a user holds the phone to their face during a phone call. This is to prevent unintended touch input on the screen.Which sensor is used to enable this feature?\nA. Light Proximity Sensor\nB. Gyroscope\nC. Microphone\nD. Ultrasonic Sensor\n[--Answer:  A--]",
+      "concepts": [
+        "B-ch1"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0101_01A008E",
+      "bank_code": "SSICTB0101_01A008E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Compared to Micro USB connector, Which of the following is an advantage of Type-C USB connector?",
+      "options": {
+        "A": "Reversible connector",
+        "B": "Higher power delivery in charging",
+        "C": "Faster data transfer speed",
+        "D": "All of the above\n[--Answer:  D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Compared to Micro USB connector, Which of the following is an advantage of Type-C USB connector?\nA. Reversible connector\nB. Higher power delivery in charging\nC. Faster data transfer speed\nD. All of the above\n[--Answer:  D--]",
+      "concepts": [
+        "B-ch1",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0101_01A009E",
+      "bank_code": "SSICTB0101_01A009E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following are factors of consideration when purchasing a monitor?\n(1)\nPrinting size\n(2)\nPower efficiency\n(3)\nVideo Resolution\n(4)\nconnector interface",
+      "options": {
+        "A": "(1), (2) and (3) only",
+        "B": "(1), (3) and (4) only",
+        "C": "(2), (3) and (4) only",
+        "D": "(1), (2), (3) and (4)\n[--Answer:  B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following are factors of consideration when purchasing a monitor?\n(1)\nPrinting size\n(2)\nPower efficiency\n(3)\nVideo Resolution\n(4)\nconnector interface\nA. (1), (2) and (3) only\nB. (1), (3) and (4) only\nC. (2), (3) and (4) only\nD. (1), (2), (3) and (4)\n[--Answer:  B--]",
+      "concepts": [
+        "B-ch1"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_01A010E",
+      "bank_code": "SSICTB0101_01A010E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following are reasons for using ‘eInk’ display instead of LCD display on eBook reader tablets?\n(1)\nHigher image quality\n(2)\nLess straining on user’s eyesight\n(3)\nLower power consumption",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer:  C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following are reasons for using ‘eInk’ display instead of LCD display on eBook reader tablets?\n(1)\nHigher image quality\n(2)\nLess straining on user’s eyesight\n(3)\nLower power consumption\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer:  C--]",
+      "concepts": [
+        "B-ch1",
+        "循環"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_01A011E",
+      "bank_code": "SSICTB0101_01A011E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Continuous Ink Supply System (CISS) is an inkjet printer that accepts a large amount of ink refill through ink tanks. Users fill up the ink tank using ink bottles which hold enough ink for large volumes of printing.\nWhich of the following is an advantage of CISS printers compared to traditional inkjets that use ink cartridges?",
+      "options": {
+        "A": "Much faster printing speed",
+        "B": "Lower printing cost per page",
+        "C": "Better photo quality",
+        "D": "Able to print colour pages\n[--Answer:  B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Continuous Ink Supply System (CISS) is an inkjet printer that accepts a large amount of ink refill through ink tanks. Users fill up the ink tank using ink bottles which hold enough ink for large volumes of printing.\nWhich of the following is an advantage of CISS printers compared to traditional inkjets that use ink cartridges?\nA. Much faster printing speed\nB. Lower printing cost per page\nC. Better photo quality\nD. Able to print colour pages\n[--Answer:  B--]",
+      "concepts": [
+        "B-ch1",
+        "循環"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_01A012E",
+      "bank_code": "SSICTB0101_01A012E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Christopher wants to improve the quality of video conferencing. He is currently using a laptop. Which of the following is the most suitable upgrade for him?",
+      "options": {
+        "A": "60 Hz Laptop Monitor → 144 Hz Gaming Monitor",
+        "B": "Multi-touch Trackpad → Bluetooth Mouse",
+        "C": "Built-In Microphone → External Studio Microphone",
+        "D": "Built-In 802.11ac Wi-Fi adapter → USB 802.11ax Wi-Fi adapter\n[--Answer:  C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Christopher wants to improve the quality of video conferencing. He is currently using a laptop. Which of the following is the most suitable upgrade for him?\nA. 60 Hz Laptop Monitor → 144 Hz Gaming Monitor\nB. Multi-touch Trackpad → Bluetooth Mouse\nC. Built-In Microphone → External Studio Microphone\nD. Built-In 802.11ac Wi-Fi adapter → USB 802.11ax Wi-Fi adapter\n[--Answer:  C--]",
+      "concepts": [
+        "B-ch1",
+        "循環"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0101_01A013E",
+      "bank_code": "SSICTB0101_01A013E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Compare the specification of two printers below.\nPrinter A\nPrinter B\nType\nInk Jet\nLaser\nPrinting Speed\n14 ppm\n30 ppm\nColour\nFull Colour\nMonochrome\nPrint Resolution\n1200 dpi\n600 dpi\nWhich printer should be used in each of the following scenarios?\n(1)\nPrinting image on glossy photo paper\n(2)\nPrinting exam papers for 200 students\n(3)\nPrinting contracts in a law firm",
+      "options": {
+        "A": "(1)：A，(2)：A，(3)：B",
+        "B": "(1)：A，(2)：B，(3)：B",
+        "C": "(1)：B，(2)：A，(3)：B",
+        "D": "(1)：B，(2)：A，(3)：B\n[--Answer:  B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Compare the specification of two printers below.\nPrinter A\nPrinter B\nType\nInk Jet\nLaser\nPrinting Speed\n14 ppm\n30 ppm\nColour\nFull Colour\nMonochrome\nPrint Resolution\n1200 dpi\n600 dpi\nWhich printer should be used in each of the following scenarios?\n(1)\nPrinting image on glossy photo paper\n(2)\nPrinting exam papers for 200 students\n(3)\nPrinting contracts in a law firm\nA. (1)：A，(2)：A，(3)：B\nB. (1)：A，(2)：B，(3)：B\nC. (1)：B，(2)：A，(3)：B\nD. (1)：B，(2)：A，(3)：B\n[--Answer:  B--]",
+      "concepts": [
+        "B-ch1",
+        "循環",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_01A014E",
+      "bank_code": "SSICTB0101_01A014E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Maxwell is learning remotely from home during the pandemic. His mother wants to purchase a device to help him study better.\nWhich of the following devices is most suitable?",
+      "options": {
+        "A": "Fingerprint reader",
+        "B": "Game controller",
+        "C": "Laser printer",
+        "D": "Thermal printer\n[--Answer:  C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Maxwell is learning remotely from home during the pandemic. His mother wants to purchase a device to help him study better.\nWhich of the following devices is most suitable?\nA. Fingerprint reader\nB. Game controller\nC. Laser printer\nD. Thermal printer\n[--Answer:  C--]",
+      "concepts": [
+        "B-ch1",
+        "硬件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0101_01A015E",
+      "bank_code": "SSICTB0101_01A015E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A law firm uses a laser printer to print legal contracts instead of ink jet because of ____________.",
+      "options": {
+        "A": "better print quality",
+        "B": "colour printing capability",
+        "C": "more long-lasting printouts",
+        "D": "better reliability\n[--Answer:  C--]\nShort QuestionsSSICTB0101_03A001E, 4\n1.\nKelly wants to input some text on her computer. However, she does not have a physical keyboard with her at the moment.\n(a)\nFor each of the following input devices, suggest a way for Kelly to input text on her computer.\n(i)\nMouse(1 mark)\n___________________________________________________________________________\n(ii)\nMicrophone(1 mark)\n___________________________________________________________________________\n(b)\nSuggest an advantage of using Bluetooth over USB for connecting a keyboard to a computer.\n(1 mark)\n_______________________________________________________________________________\n(c)\nEvery computer in the computer room at Kelly’s school uses wired connection to connect to its keyboard.Give an advantage of this from a technical aspect.(1 mark)\n_______________________________________________________________________________\n[--Answer:\n(a)(i) Use a virtual / on-screen keyboard\n(a)(ii) Use dictation / Voice-to-text software\n(b) No wires needed / Keyboard can be moved easily\n(c) Less interference / Facilitate management; easier to identify which keyboard is connected to which computer\n--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A law firm uses a laser printer to print legal contracts instead of ink jet because of ____________.\nA. better print quality\nB. colour printing capability\nC. more long-lasting printouts\nD. better reliability\n[--Answer:  C--]\nShort QuestionsSSICTB0101_03A001E, 4\n1.\nKelly wants to input some text on her computer. However, she does not have a physical keyboard with her at the moment.\n(a)\nFor each of the following input devices, suggest a way for Kelly to input text on her computer.\n(i)\nMouse(1 mark)\n___________________________________________________________________________\n(ii)\nMicrophone(1 mark)\n___________________________________________________________________________\n(b)\nSuggest an advantage of using Bluetooth over USB for connecting a keyboard to a computer.\n(1 mark)\n_______________________________________________________________________________\n(c)\nEvery computer in the computer room at Kelly’s school uses wired connection to connect to its keyboard.Give an advantage of this from a technical aspect.(1 mark)\n_______________________________________________________________________________\n[--Answer:\n(a)(i) Use a virtual / on-screen keyboard\n(a)(ii) Use dictation / Voice-to-text software\n(b) No wires needed / Keyboard can be moved easily\n(c) Less interference / Facilitate management; easier to identify which keyboard is connected to which computer\n--]",
+      "concepts": [
+        "B-ch1",
+        "循環",
+        "硬件",
+        "軟件",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_03A002E",
+      "bank_code": "SSICTB0101_03A002E",
+      "section_type": "mcq",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Jacky is an IT technician at a secondary school.\n(a)\nHe is contemplating which type of printer to purchase. For each of the following use cases, suggest a suitable type of printer and provide a reason.\n(i)\nPrinting exam papers(2 marks)\n___________________________________________________________________________\n(ii)\nPrinting class photos for exhibition(2 marks)\n___________________________________________________________________________\n(b)\nSuggest a printer setting which can be changed to reduce overall paper use in printing.(1 mark)\n_______________________________________________________________________________\n[--Answer:\n(a)(i) Laser printer. Faster printing speed / Long lasting printouts / Printouts are resistant to water\n(a)(ii) Inkjet printer. Higher print quality / Higher image quality in printouts\n(b) Two-sided printing / Print 2 pages on 1 sheet\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Jacky is an IT technician at a secondary school.\n(a)\nHe is contemplating which type of printer to purchase. For each of the following use cases, suggest a suitable type of printer and provide a reason.\n(i)\nPrinting exam papers(2 marks)\n___________________________________________________________________________\n(ii)\nPrinting class photos for exhibition(2 marks)\n___________________________________________________________________________\n(b)\nSuggest a printer setting which can be changed to reduce overall paper use in printing.(1 mark)\n_______________________________________________________________________________\n[--Answer:\n(a)(i) Laser printer. Faster printing speed / Long lasting printouts / Printouts are resistant to water\n(a)(ii) Inkjet printer. Higher print quality / Higher image quality in printouts\n(b) Two-sided printing / Print 2 pages on 1 sheet\n--]",
+      "concepts": [
+        "B-ch1",
+        "循環",
+        "進制"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_03A003E",
+      "bank_code": "SSICTB0101_03A003E",
+      "section_type": "mcq",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Loky is designing an interactive mobile game application.\n(a)\nSuggest which sensor can be used to detect the device’s physical motion.(1 mark)\n________________________________________________________________________________\n(b)\nGive two design considerations for the user interface of a touch-based application compared to a desktop application.(2 marks)\n________________________________________________________________________________\n(c)\nSuggest a change to system settings on a mobile phone to conserve battery power.(1 mark)________________________________________________________________________________\n[--Answer:\n(a) Gyroscope\n(b) Larger buttons / No support for mouse hovering / No support for secondary mouse click(c) Lower screen brightness / Turn off Bluetooth or Wi-Fi / Terminate background apps\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Loky is designing an interactive mobile game application.\n(a)\nSuggest which sensor can be used to detect the device’s physical motion.(1 mark)\n________________________________________________________________________________\n(b)\nGive two design considerations for the user interface of a touch-based application compared to a desktop application.(2 marks)\n________________________________________________________________________________\n(c)\nSuggest a change to system settings on a mobile phone to conserve battery power.(1 mark)________________________________________________________________________________\n[--Answer:\n(a) Gyroscope\n(b) Larger buttons / No support for mouse hovering / No support for secondary mouse click(c) Lower screen brightness / Turn off Bluetooth or Wi-Fi / Terminate background apps\n--]",
+      "concepts": [
+        "B-ch1",
+        "循環"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_03A004E",
+      "bank_code": "SSICTB0101_03A004E",
+      "section_type": "mcq",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Bluetooth is a common way of connecting peripheral devices to computers.\n(a)\nBluetooth can also be used to transfer files between devices. However, this is rarely used nowadays. Give a disadvantage of transferring files using Bluetooth between devices.(1 mark)\n_______________________________________________________________________________\n(b)\nKaley wants to purchase a new monitor.For each of the following monitor properties, explain what it is and how it affects the user’s experience.\n(i)\nResolution(2 marks)\n___________________________________________________________________________\n(ii)\nRefresh rate(2 marks)\n___________________________________________________________________________\n[--Answer:\n(a) Low data transfer speed\n(b)(i) It refers to the number of pixels on the monitor / along the vertical and horizontal axis. The higher the resolution, more details can be presented, resulting in higher image quality.\n(b)(ii) It refers to the rate at which a new frame is displayed on the monitor. The higher the refresh rate, the smoother the animation / video appears.\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Bluetooth is a common way of connecting peripheral devices to computers.\n(a)\nBluetooth can also be used to transfer files between devices. However, this is rarely used nowadays. Give a disadvantage of transferring files using Bluetooth between devices.(1 mark)\n_______________________________________________________________________________\n(b)\nKaley wants to purchase a new monitor.For each of the following monitor properties, explain what it is and how it affects the user’s experience.\n(i)\nResolution(2 marks)\n___________________________________________________________________________\n(ii)\nRefresh rate(2 marks)\n___________________________________________________________________________\n[--Answer:\n(a) Low data transfer speed\n(b)(i) It refers to the number of pixels on the monitor / along the vertical and horizontal axis. The higher the resolution, more details can be presented, resulting in higher image quality.\n(b)(ii) It refers to the rate at which a new frame is displayed on the monitor. The higher the refresh rate, the smoother the animation / video appears.\n--]",
+      "concepts": [
+        "B-ch1",
+        "循環",
+        "硬件",
+        "多媒體",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_03A005E",
+      "bank_code": "SSICTB0101_03A005E",
+      "section_type": "mcq",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Shirley is shopping for a new printer for office use.\n(a)\nFor each of the scenarios below, explain briefly whether an inkjet or laser printer is more suitable.\n(i)\nPrinting images on a postcard(1 mark)\n___________________________________________________________________________\n(ii)\nPrinting 1000 coloured posters for outdoor posting(1 mark)\n___________________________________________________________________________\n(b)\nWhile reading the specification sheet of different printers, she noticed that some printers have specifications which are not printing-related. Explain how each of these specifications can be used in a printer.\n(i)\nSupports 802.11n Wi-Fi(1 mark)\n___________________________________________________________________________\n(ii)\nPre-installed smart card reader(1 mark)\n___________________________________________________________________________\n[--Answer:\n(a)(i) Inkjet: Better quality for photo printing / Able to print on thicker paper\n(a)(ii) Laser: Faster printing speed for large quantities / Print out does not fade when wetted\n(b)(i) Connect the printer to a network wirelessly / Share the printer with network users wirelessly\n(b)(ii) Allow user authentication before a user uses the printer\n--]\nLong QuestionsSSICTB0101_04A001E, 14\nBelow shows the input/output ports on a typical computer motherboard:\n(a)\nMatch the following devices to the corresponding port above.(5 marks)\nDevices\nPorts\n(i)\nExternal Hard Drive\n(ii)\nMonitor\n(iii)\nNetwork Switch\n(iv)\nAudio Speaker\n(v)\nPrinter\n(b)\nThis computer motherboard does not have built-in Bluetooth.\nSuggest a way for a user to connect the computer to other devices using Bluetooth.(1 mark)\n_______________________________________________________________________________\n(c)\nFor each of the following situations, explain which type of printer (laser/inkjet/thermal) should be used.\n(i)\nPrinting photographs for exhibition(2 marks)\n___________________________________________________________________________\n(ii)\nPrinting university graduation certificates(2 marks)\n___________________________________________________________________________\n(iii)\nPrinting queue tickets at a fast-food restaurant(2 marks)\n___________________________________________________________________________\n(d)\nSome printers also have a built-in scanner.\nSuggest two changes to the scan setting to reduce the file size of the scanned document.(2 marks)\n_______________________________________________________________________________\n[--Answer:\n(a)\nDevices\nPorts\n(i)\nExternal Hard Drive\nA\n(ii)\nMonitor\nB\n(iii)\nNetwork Switch\nC\n(iv)\nAudio Speaker\nA/D\n(v)\nPrinter\nA\n(b) Use an external Bluetooth receiver / adaptor connected via USB\n(c)(i) Ink Jet. High printing quality for images\n(c)(ii) Laser Jet. Long lasting printout / Fast printing speed for large volume\n(c)(iii) Thermal Printer. Very fast printing speed\n(d) Reduce scan resolution / Use black-and-white or greyscale / Skip blank pages\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Shirley is shopping for a new printer for office use.\n(a)\nFor each of the scenarios below, explain briefly whether an inkjet or laser printer is more suitable.\n(i)\nPrinting images on a postcard(1 mark)\n___________________________________________________________________________\n(ii)\nPrinting 1000 coloured posters for outdoor posting(1 mark)\n___________________________________________________________________________\n(b)\nWhile reading the specification sheet of different printers, she noticed that some printers have specifications which are not printing-related. Explain how each of these specifications can be used in a printer.\n(i)\nSupports 802.11n Wi-Fi(1 mark)\n___________________________________________________________________________\n(ii)\nPre-installed smart card reader(1 mark)\n___________________________________________________________________________\n[--Answer:\n(a)(i) Inkjet: Better quality for photo printing / Able to print on thicker paper\n(a)(ii) Laser: Faster printing speed for large quantities / Print out does not fade when wetted\n(b)(i) Connect the printer to a network wirelessly / Share the printer with network users wirelessly\n(b)(ii) Allow user authentication before a user uses the printer\n--]\nLong QuestionsSSICTB0101_04A001E, 14\nBelow shows the input/output ports on a typical computer motherboard:\n(a)\nMatch the following devices to the corresponding port above.(5 marks)\nDevices\nPorts\n(i)\nExternal Hard Drive\n(ii)\nMonitor\n(iii)\nNetwork Switch\n(iv)\nAudio Speaker\n(v)\nPrinter\n(b)\nThis computer motherboard does not have built-in Bluetooth.\nSuggest a way for a user to connect the computer to other devices using Bluetooth.(1 mark)\n_______________________________________________________________________________\n(c)\nFor each of the following situations, explain which type of printer (laser/inkjet/thermal) should be used.\n(i)\nPrinting photographs for exhibition(2 marks)\n___________________________________________________________________________\n(ii)\nPrinting university graduation certificates(2 marks)\n___________________________________________________________________________\n(iii)\nPrinting queue tickets at a fast-food restaurant(2 marks)\n___________________________________________________________________________\n(d)\nSome printers also have a built-in scanner.\nSuggest two changes to the scan setting to reduce the file size of the scanned document.(2 marks)\n_______________________________________________________________________________\n[--Answer:\n(a)\nDevices\nPorts\n(i)\nExternal Hard Drive\nA\n(ii)\nMonitor\nB\n(iii)\nNetwork Switch\nC\n(iv)\nAudio Speaker\nA/D\n(v)\nPrinter\nA\n(b) Use an external Bluetooth receiver / adaptor connected via USB\n(c)(i) Ink Jet. High printing quality for images\n(c)(ii) Laser Jet. Long lasting printout / Fast printing speed for large volume\n(c)(iii) Thermal Printer. Very fast printing speed\n(d) Reduce scan resolution / Use black-and-white or greyscale / Skip blank pages\n--]",
+      "concepts": [
+        "B-ch1",
+        "循環",
+        "堆疊",
+        "進制",
+        "網絡",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0101_04A002E",
+      "bank_code": "SSICTB0101_04A002E",
+      "section_type": "mcq",
+      "marks": 12.0,
+      "year_tag": null,
+      "stem": "Janice is shopping for a new laptop.\n(a)\nShe is considering between two laptops that have different input/output ports selection.\nLaptop A:\nLaptop B:\n(i)\nThere is only one port on Laptop B, which is used for charging, connecting external displays and connecting USB devices. What is the name of this port?(1 mark)\n___________________________________________________________________________\n(ii)\nIf Janice wants to connect laptop B to an external monitor using HDMI, what other equipment would she need?                                                                                                     (1 mark)\n___________________________________________________________________________\n(iii)\nFrom the aspect of input/output ports, give an advantage and a disadvantage of laptop A over laptop B.(2 marks)\n___________________________________________________________________________\n___________________________________________________________________________\n(b)\nJanice noticed that the screen resolution of both laptops are 1920 x 1080, therefore she thinks both laptops should have the same image quality.\nWith reference to the following monitor properties, explain why Janice is not necessarily correct.\n(i)\nScreen size(1 mark)\n___________________________________________________________________________\n(ii)\nBrightness(1 mark)\n___________________________________________________________________________\n(c)\nJanice wants to purchase a new printer as well.\nGive two factors of consideration when choosing a printer.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(d)\nJanice decided on a full colour inkjet printer.\nGive an advantage and a disadvantage of inkjet compared to laser printers.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(e)\nJanice’s new printer does not support automatic duplex printing. Suggest a way for Janice to print on both sides of the paper manually.(2 marks)\n_______________________________________________________________________________\n[--Answer:\n(a)(i) USB Type-C\n(a)(ii) A USB Type-C to HDMI cable / A Type-C dongle/adapter\n(a)(iii) Advantage: No adapter needed for connecting peripherals / More convenient for connecting external devices\nDisadvantage: Laptop is thicker to accommodate more ports / Space is wasted for accommodating ports\n(b)(i) If one screen is larger, the pixel density would be lower, resulting in a grainier look when viewed from the same distance\n(b)(ii) A screen with a higher brightness allows better readability in brighter environments / Support for HDR in movies and games for better contrast\n(c) Cost / Printing speed / Full-Colour or monochrome / Connectivity / Scanner support / Duplex support\n(d) Advantage: Lower printer price / Less complicated consumables / Easier maintenance / Smaller size / Higher print quality for images\nDisadvantage: Slow printing speed / Printouts are susceptible to water\n(e) First print odd number pages only.\nThen reinsert the printed pages in the paper feed, and print even number pages on the other side.\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Janice is shopping for a new laptop.\n(a)\nShe is considering between two laptops that have different input/output ports selection.\nLaptop A:\nLaptop B:\n(i)\nThere is only one port on Laptop B, which is used for charging, connecting external displays and connecting USB devices. What is the name of this port?(1 mark)\n___________________________________________________________________________\n(ii)\nIf Janice wants to connect laptop B to an external monitor using HDMI, what other equipment would she need?                                                                                                     (1 mark)\n___________________________________________________________________________\n(iii)\nFrom the aspect of input/output ports, give an advantage and a disadvantage of laptop A over laptop B.(2 marks)\n___________________________________________________________________________\n___________________________________________________________________________\n(b)\nJanice noticed that the screen resolution of both laptops are 1920 x 1080, therefore she thinks both laptops should have the same image quality.\nWith reference to the following monitor properties, explain why Janice is not necessarily correct.\n(i)\nScreen size(1 mark)\n___________________________________________________________________________\n(ii)\nBrightness(1 mark)\n___________________________________________________________________________\n(c)\nJanice wants to purchase a new printer as well.\nGive two factors of consideration when choosing a printer.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(d)\nJanice decided on a full colour inkjet printer.\nGive an advantage and a disadvantage of inkjet compared to laser printers.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(e)\nJanice’s new printer does not support automatic duplex printing. Suggest a way for Janice to print on both sides of the paper manually.(2 marks)\n_______________________________________________________________________________\n[--Answer:\n(a)(i) USB Type-C\n(a)(ii) A USB Type-C to HDMI cable / A Type-C dongle/adapter\n(a)(iii) Advantage: No adapter needed for connecting peripherals / More convenient for connecting external devices\nDisadvantage: Laptop is thicker to accommodate more ports / Space is wasted for accommodating ports\n(b)(i) If one screen is larger, the pixel density would be lower, resulting in a grainier look when viewed from the same distance\n(b)(ii) A screen with a higher brightness allows better readability in brighter environments / Support for HDR in movies and games for better contrast\n(c) Cost / Printing speed / Full-Colour or monochrome / Connectivity / Scanner support / Duplex support\n(d) Advantage: Lower printer price / Less complicated consumables / Easier maintenance / Smaller size / Higher print quality for images\nDisadvantage: Slow printing speed / Printouts are susceptible to water\n(e) First print odd number pages only.\nThen reinsert the printed pages in the paper feed, and print even number pages on the other side.\n--]",
+      "concepts": [
+        "B-ch1",
+        "循環",
+        "SQL",
+        "硬件",
+        "多媒體",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

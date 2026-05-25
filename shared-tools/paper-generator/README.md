@@ -21,6 +21,10 @@
 .venv/bin/python shared-tools/paper-generator/build_concept_map.py
 # → Subjects/DSE-ICT/question-bank/concept_map.json
 
+# iClass HK Core D depth (題庫 + 投影片 → JSON，校準深淺)
+.venv/bin/python shared-tools/paper-generator/extract_iclass_hk.py
+# → Subjects/DSE-ICT/iclass-hk/json/*.json, depth_profile.json
+
 # Phase 3 — exam blueprint + concept review
 .venv/bin/python shared-tools/paper-generator/build_exam_blueprint.py --review
 # → Subjects/S5-ICT/.../_generation/exam_blueprint.json

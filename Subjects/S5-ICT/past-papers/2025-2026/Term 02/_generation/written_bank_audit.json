@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "generated": "2026-05-24",
+  "scope": "DSE question-bank parts (2021–2026); pick filter: syllabus_ok + unit_ok + text_ok",
+  "why_gen_looks_same": [
+    "build_spec_from_blueprint uses template_written_items() → fixed f5_ict_written_content.py",
+    "Does not call pick_written_items_from_bank() unless regenerate_exam02.py --legacy-pick",
+    "partial_regen only retries failed MCQ slots"
+  ],
+  "section_b": {
+    "pool_total_paper1b": 156,
+    "slots": [
+      {
+        "slot_id": "b-01",
+        "plan": "試算表公式 IF / COUNTIF / RANK / SUMIF / XLOOKUP (a)+(b) = 4",
+        "bank_parts": 30,
+        "parent_questions_approx": 9,
+        "years": ["2021", "2022", "2023", "2024", "2025", "2026"],
+        "note": "充足"
+      },
+      {
+        "slot_id": "b-02",
+        "plan": "(a) 電腦系統 2 + (b) 未來發展 3",
+        "bank_parts_computer": 51,
+        "bank_parts_future_tech_keyword": 5,
+        "parent_questions_future_approx": 4,
+        "note": "⚠️ 未來發展題極少（concept 標籤少）；需 keyword 揀題或 agent 自寫"
+      },
+      {
+        "slot_id": "b-03",
+        "plan": "(a) 檔案大小 + (b) 格式比較 = 4",
+        "bank_parts_size": 16,
+        "bank_parts_format": 14,
+        "note": "尚可；宜分開揀 part 再合成"
+      },
+      {
+        "slot_id": "b-04",
+        "plan": "Core D 編程 = 4",
+        "bank_parts": 26,
+        "parent_questions_approx": 9,
+        "note": "充足"
+      },
+      {
+        "slot_id": "b-05",
+        "plan": "Core A 簡單 SQL = 4",
+        "bank_parts": 11,
+        "parent_questions_approx": 5,
+        "note": "偏少但可用；多為 Paper1B 短 SQL"
+      },
+      {
+        "slot_id": "b-06",
+        "plan": "硬件比較 = 9",
+        "bank_parts": 24,
+        "parent_questions_approx": 9,
+        "note": "充足（升級表、部件比較）"
+      }
+    ]
+  },
+  "section_c_unchanged": {
+    "c-01": {"bank_parts": 76, "note": "ERD — 充足"},
+    "c-02": {"bank_parts": 78, "note": "CREATE/INSERT — 充足"},
+    "c-03": {"bank_parts": 53, "note": "UNION/UPDATE — 充足"},
+    "c-05": {"bank_parts": 53, "note": "MINUS/GROUP BY — 充足"},
+    "c-06": {"bank_parts": 4, "note": "⚠️ JOIN 追蹤 keyword 少；concept 標籤不足"},
+    "c-07": {"bank_parts": 0, "note": "⚠️ Transaction 幾乎無獨立 part；靠 template 或 agent"},
+    "c-08": {"bank_parts": 12, "note": "堆疊 — 中等"}
+  }
+}

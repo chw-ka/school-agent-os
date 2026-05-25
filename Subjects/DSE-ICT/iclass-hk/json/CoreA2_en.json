@@ -1,0 +1,652 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreA2_en_Data Control and Data Organisation.docx",
+    "slug": "CoreA2_en",
+    "title": "Data Control and Data Organisation",
+    "title_zh": null,
+    "title_en": "Data Control and Data Organisation",
+    "language": "en",
+    "family": "CoreA",
+    "chapter": 2,
+    "integrated": false,
+    "topic_code": "A02",
+    "curriculum_unit": "Core-A",
+    "ca_unit": "A",
+    "f5_exam_scope": "mcq_core_a",
+    "extracted_at": "2026-05-24T10:37:17.565043+00:00",
+    "item_count": 22,
+    "section_counts": {
+      "mcq": 15,
+      "short_answer": 5,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTA0102_01A001E",
+      "bank_code": "SSICTA0102_01A001E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is the correct order of the data hierarchy from largest to smallest?",
+      "options": {
+        "A": "Database > File > Field > Record",
+        "B": "Database > File > Record > Field",
+        "C": "File > Database > Field > Record",
+        "D": "File > Database > Record > Field\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is the correct order of the data hierarchy from largest to smallest?\nA. Database > File > Field > Record\nB. Database > File > Record > Field\nC. File > Database > Field > Record\nD. File > Database > Record > Field\n[--Answer: B--]",
+      "concepts": [
+        "A-ch2",
+        "數據庫",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_01A002E",
+      "bank_code": "SSICTA0102_01A002E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Mr Chan is inputting students’ test scores into the database system. He inputs the score 17 as 71 into the system. Which of the following is the type of Mr Chan’s input error?",
+      "options": {
+        "A": "Data source error",
+        "B": "Transcription error",
+        "C": "Transposition error",
+        "D": "Syntax error\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Mr Chan is inputting students’ test scores into the database system. He inputs the score 17 as 71 into the system. Which of the following is the type of Mr Chan’s input error?\nA. Data source error\nB. Transcription error\nC. Transposition error\nD. Syntax error\n[--Answer: C--]",
+      "concepts": [
+        "A-ch2",
+        "除錯",
+        "數據庫",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_01A003E",
+      "bank_code": "SSICTA0102_01A003E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "In an online shopping platform, each email can only be registered once. Which of the following is/are the suitable validation check(s) for the field “email”?\n(1)\nFormat check\n(2)\nConsistency check\n(3)\nUniqueness check",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "In an online shopping platform, each email can only be registered once. Which of the following is/are the suitable validation check(s) for the field “email”?\n(1)\nFormat check\n(2)\nConsistency check\n(3)\nUniqueness check\nA. (1) only\nB. (2) only\nC. (1) and (3) only\nD. (1), (2) and (3)\n[--Answer: C--]",
+      "concepts": [
+        "A-ch2",
+        "循環",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_01A004E",
+      "bank_code": "SSICTA0102_01A004E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A format check is used to check if an “@” exists in the input. Which of the following email addresses is/are considered invalid?\n(1)\ntomforever@fastmail.com\n(2)\ntomtom@\n(3)\ntomcheungfastmail.com",
+      "options": {
+        "A": "(1) only",
+        "B": "(3) only",
+        "C": "(1) and (2) only",
+        "D": "(1) and (3) only\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A format check is used to check if an “@” exists in the input. Which of the following email addresses is/are considered invalid?\n(1)\ntomforever@fastmail.com\n(2)\ntomtom@\n(3)\ntomcheungfastmail.com\nA. (1) only\nB. (3) only\nC. (1) and (2) only\nD. (1) and (3) only\n[--Answer: B--]",
+      "concepts": [
+        "A-ch2",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_01A005E",
+      "bank_code": "SSICTA0102_01A005E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Cindy is making a personality test. Each question requires the user to choose an answer among five choices (strongly agree, agree, neutral, disagree and strongly disagree). Which of the following user interface designs can facilitate user input?",
+      "options": {
+        "A": "Date picker",
+        "B": "Checkboxes",
+        "C": "Radio button",
+        "D": "Text box\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Cindy is making a personality test. Each question requires the user to choose an answer among five choices (strongly agree, agree, neutral, disagree and strongly disagree). Which of the following user interface designs can facilitate user input?\nA. Date picker\nB. Checkboxes\nC. Radio button\nD. Text box\n[--Answer: C--]",
+      "concepts": [
+        "A-ch2"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_01A006E",
+      "bank_code": "SSICTA0102_01A006E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Benny is making a form to update the stock of products in a database.\nWhich of the following set of data types can best describe the two fields in the form?\nProject ID\nAmount",
+      "options": {
+        "A": "Real\nInteger",
+        "B": "String\nInteger",
+        "C": "Boolean\nReal number",
+        "D": "Boolean\nInteger\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Benny is making a form to update the stock of products in a database.\nWhich of the following set of data types can best describe the two fields in the form?\nProject ID\nAmount\nA. Real\nInteger\nB. String\nInteger\nC. Boolean\nReal number\nD. Boolean\nInteger\n[--Answer: B--]",
+      "concepts": [
+        "A-ch2",
+        "SQL",
+        "數據庫",
+        "資訊處理",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_01A007E",
+      "bank_code": "SSICTA0102_01A007E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following statements about data type is correct?",
+      "options": {
+        "A": "Integers cannot be negative.",
+        "B": "Real numbers cannot be negative.",
+        "C": "“100” can be a string",
+        "D": "1.01 can be a Boolean\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following statements about data type is correct?\nA. Integers cannot be negative.\nB. Real numbers cannot be negative.\nC. “100” can be a string\nD. 1.01 can be a Boolean\n[--Answer: C--]",
+      "concepts": [
+        "A-ch2",
+        "資訊處理",
+        "數據類型"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_01A008E",
+      "bank_code": "SSICTA0102_01A008E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A parity check is used when transferring data. Which of the following received codes is invalid?",
+      "options": {
+        "A": "1001 0100",
+        "B": "0011 1101",
+        "C": "1111 0101",
+        "D": "1010 0010\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A parity check is used when transferring data. Which of the following received codes is invalid?\nA. 1001 0100\nB. 0011 1101\nC. 1111 0101\nD. 1010 0010\n[--Answer: C--]",
+      "concepts": [
+        "A-ch2",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_01A009E",
+      "bank_code": "SSICTA0102_01A009E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "An even parity check is used when transferring data. Which of the following received codes is invalid?\n(1)\n1001 0001\n(2)\n1111 0011\n(3)\n0000 0001",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (3) only",
+        "D": "(2) and (3) only\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "An even parity check is used when transferring data. Which of the following received codes is invalid?\n(1)\n1001 0001\n(2)\n1111 0011\n(3)\n0000 0001\nA. (1) only\nB. (2) only\nC. (1) and (3) only\nD. (2) and (3) only\n[--Answer: B--]",
+      "concepts": [
+        "A-ch2",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_01A010E",
+      "bank_code": "SSICTA0102_01A010E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Andy is entering the result of questionnaires into the computer. Which of the following is/are the suitable data verification method(s)?\n(1)\nInputting data twice\n(2)\nType check\n(3)\nPresence check",
+      "options": {
+        "A": "(1) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Andy is entering the result of questionnaires into the computer. Which of the following is/are the suitable data verification method(s)?\n(1)\nInputting data twice\n(2)\nType check\n(3)\nPresence check\nA. (1) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: A--]",
+      "concepts": [
+        "A-ch2",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_01A011E",
+      "bank_code": "SSICTA0102_01A011E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Mr Wong would like to enter the test scores of students into the school’s database system. Before entering the data, Mr Wong wants to ensure the test papers are correctly marked. Which of the following best describes his action?",
+      "options": {
+        "A": "Input data twice",
+        "B": "Double data entry",
+        "C": "Proofreading data",
+        "D": "Data validation\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Mr Wong would like to enter the test scores of students into the school’s database system. Before entering the data, Mr Wong wants to ensure the test papers are correctly marked. Which of the following best describes his action?\nA. Input data twice\nB. Double data entry\nC. Proofreading data\nD. Data validation\n[--Answer: C--]",
+      "concepts": [
+        "A-ch2",
+        "數據庫",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_01A012E",
+      "bank_code": "SSICTA0102_01A012E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Ben is ordering a product in an online store. He has to change the input data before proceeding.\nWhich of the following best describes the process above?",
+      "options": {
+        "A": "Data validation",
+        "B": "Data verification",
+        "C": "Data retrieval",
+        "D": "Data organisation\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Ben is ordering a product in an online store. He has to change the input data before proceeding.\nWhich of the following best describes the process above?\nA. Data validation\nB. Data verification\nC. Data retrieval\nD. Data organisation\n[--Answer: A--]",
+      "concepts": [
+        "A-ch2",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_01A013E",
+      "bank_code": "SSICTA0102_01A013E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is not a function of a database?",
+      "options": {
+        "A": "Data storage",
+        "B": "Data retrieval",
+        "C": "Data validation",
+        "D": "Double data entry\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is not a function of a database?\nA. Data storage\nB. Data retrieval\nC. Data validation\nD. Double data entry\n[--Answer: D--]",
+      "concepts": [
+        "A-ch2",
+        "函數",
+        "數據庫",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_01A014E",
+      "bank_code": "SSICTA0102_01A014E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following storage devices access data sequentially?",
+      "options": {
+        "A": "Floppy disk",
+        "B": "Optical disk",
+        "C": "Magnetic tape",
+        "D": "Hard disk\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following storage devices access data sequentially?\nA. Floppy disk\nB. Optical disk\nC. Magnetic tape\nD. Hard disk\n[--Answer: C--]",
+      "concepts": [
+        "A-ch2",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_01A015E",
+      "bank_code": "SSICTA0102_01A015E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following storage devices is best to store frequently accessed data in a computer?",
+      "options": {
+        "A": "Magnetic tape",
+        "B": "Optical disk",
+        "C": "Floppy disk",
+        "D": "Hard disk\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following storage devices is best to store frequently accessed data in a computer?\nA. Magnetic tape\nB. Optical disk\nC. Floppy disk\nD. Hard disk\n[--Answer: D--]",
+      "concepts": [
+        "A-ch2",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0102_03A001E",
+      "bank_code": "SSICTA0102_03A001E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Peter wants to log in to his online forum account, but he has forgotten his password.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "To reset his password, Peter has to enter the email address he used to register his account. The system will then send an email to Peter so he can continue the process. Suggest two validation checks required for the input of the email. (2 marks)_______________________________________________________________________________"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "When Peter resets his password, the following message is shown:"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Apart from presence check, what is the validation check used in the field “Confirm new password”? (1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the data verification method used for the passwords?(1 mark)\n[--Answer:\n(a) Format check, presence check.\n(b)(i) Consistency check.\n(b)(ii) Inputting data twice.\n--]"
+        }
+      ],
+      "text": "Peter wants to log in to his online forum account, but he has forgotten his password.\n(a) To reset his password, Peter has to enter the email address he used to register his account. The system will then send an email to Peter so he can continue the process. Suggest two validation checks required for the input of the email. (2 marks)_______________________________________________________________________________\n(b) When Peter resets his password, the following message is shown:\n(i) Apart from presence check, what is the validation check used in the field “Confirm new password”? (1 mark)\n(ii) What is the data verification method used for the passwords?(1 mark)\n[--Answer:\n(a) Format check, presence check.\n(b)(i) Consistency check.\n(b)(ii) Inputting data twice.\n--]",
+      "concepts": [
+        "A-ch2",
+        "循環",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_03A002E",
+      "bank_code": "SSICTA0102_03A002E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Tom is using a diary application to write his diary.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Give two validation checks used in the interface above.      (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The diary application uses a date picker for users to choose the date of the diary to be written. Give two advantages of using a date picker over a text box.(2 marks)\n[--Answer:\n(a) Fixed value check, presence check.\n(b) Only dates can be input (Type check). Also, the date must be in a certain format (Format check).\n--]"
+        }
+      ],
+      "text": "Tom is using a diary application to write his diary.\n(a) Give two validation checks used in the interface above.      (2 marks)\n(b) The diary application uses a date picker for users to choose the date of the diary to be written. Give two advantages of using a date picker over a text box.(2 marks)\n[--Answer:\n(a) Fixed value check, presence check.\n(b) Only dates can be input (Type check). Also, the date must be in a certain format (Format check).\n--]",
+      "concepts": [
+        "A-ch2",
+        "循環"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_03A003E",
+      "bank_code": "SSICTA0102_03A003E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Joe is designing an online survey. Suggest an interface design and a validation check for each of the following fields below. (4 marks)\nField\nInterface design\nValidation check\nGender\nInterested product(s) (Allow more than one input)\nEmail\nRating user experience (From a score of 1 to 5)\n[--Answer:\nField\nInterface design\nValidation check\nGender\nDrop-down box\nFixed value check\nInterested product(s) (Allow more than one input)\nCheckboxes\nFixed value check\nEmail\nText box\nFormat check/ length check/ type check\nRating user experience (From a score of 1 to 5)\nSlider\nRange check/ type check\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Joe is designing an online survey. Suggest an interface design and a validation check for each of the following fields below. (4 marks)\nField\nInterface design\nValidation check\nGender\nInterested product(s) (Allow more than one input)\nEmail\nRating user experience (From a score of 1 to 5)\n[--Answer:\nField\nInterface design\nValidation check\nGender\nDrop-down box\nFixed value check\nInterested product(s) (Allow more than one input)\nCheckboxes\nFixed value check\nEmail\nText box\nFormat check/ length check/ type check\nRating user experience (From a score of 1 to 5)\nSlider\nRange check/ type check\n--]",
+      "concepts": [
+        "A-ch2",
+        "循環",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_03A004E",
+      "bank_code": "SSICTA0102_03A004E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Sam is designing an interface for a ticketing kiosk in a cinema. It allows users to purchase tickets for different movies. It has to include:\nSelection of different movies\nSelection of different seats\nDisplay of the number of tickets and the total price\nDesign the user interface of the ticketing kiosk with validation check elements. (4 marks)\n[--Answer:\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Sam is designing an interface for a ticketing kiosk in a cinema. It allows users to purchase tickets for different movies. It has to include:\nSelection of different movies\nSelection of different seats\nDisplay of the number of tickets and the total price\nDesign the user interface of the ticketing kiosk with validation check elements. (4 marks)\n[--Answer:\n--]",
+      "concepts": [
+        "A-ch2",
+        "循環",
+        "SQL",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_03A005E",
+      "bank_code": "SSICTA0102_03A005E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "Susan is a database administrator.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Suggest a method for Susan to speed up the data retrieval process.      (1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Ben suggests that Susan use a magnetic tape to store the database as it has a longer lifespan. Give one reason against Ben’s view.(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Susan finds it hard to teach her colleagues to write SQL statements. Suggest a way for easier input.(1 mark)_______________________________________________________________________________\n[--Answer:\n(a) She can index frequently accessed fields.\n(b) The data access rate of hard disks is more stable and higher.(c) Design a GUI for input.\n--]"
+        }
+      ],
+      "text": "Susan is a database administrator.\n(a) Suggest a method for Susan to speed up the data retrieval process.      (1 mark)\n(b) Ben suggests that Susan use a magnetic tape to store the database as it has a longer lifespan. Give one reason against Ben’s view.(1 mark)\n(c) Susan finds it hard to teach her colleagues to write SQL statements. Suggest a way for easier input.(1 mark)_______________________________________________________________________________\n[--Answer:\n(a) She can index frequently accessed fields.\n(b) The data access rate of hard disks is more stable and higher.(c) Design a GUI for input.\n--]",
+      "concepts": [
+        "A-ch2",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0102_04A001E",
+      "bank_code": "SSICTA0102_04A001E",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": null,
+      "stem": "Tom is a staff member of a drink store.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "When Tom takes orders from customers, he has to input the ordered drink and the corresponding amount of each ordered drink. Suggest 2 validation checks to reduce input errors.      (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Now, the drink store would like to install kiosks to reduce the number of staff members. Ben suggests adding “+” and “-“ buttons on the user interface to determine the number of drinks to be ordered.\nGive 2 reasons to support Ben.(2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "The kiosk has to include:\nSelection of different categories (Tea latte, fruit tea, milk tea)\nSelection of different drinks with images\n“+” and “-“ buttons to modify the number of drinks\nDesign the user interface for the kiosk.(4 marks)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "A checkout page is designed for the kiosk. It shows all the drinks ordered by the user. Suggest a reason for adding the checkout page. (1 mark)"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "text": "To collect feedback from customers, the kiosk will show the following screen after an order is complete.\nGive 2 types of data validation used in the screen above. (2 marks)_______________________________________________________________________________\n[--Answer:\n(a) Ordered drink: Fixed value check/presence check\nAmount: Type check/ range check\n(b) Data validation: It ensures the data type is valid.\nUser-friendliness: It increases efficiency of input.(c)\n(d) To ensure the customer has not ordered the wrong drinks.\n(e) Range check and type check.\n--]"
+        }
+      ],
+      "text": "Tom is a staff member of a drink store.\n(a) When Tom takes orders from customers, he has to input the ordered drink and the corresponding amount of each ordered drink. Suggest 2 validation checks to reduce input errors.      (2 marks)\n(b) Now, the drink store would like to install kiosks to reduce the number of staff members. Ben suggests adding “+” and “-“ buttons on the user interface to determine the number of drinks to be ordered.\nGive 2 reasons to support Ben.(2 marks)\n(c) The kiosk has to include:\nSelection of different categories (Tea latte, fruit tea, milk tea)\nSelection of different drinks with images\n“+” and “-“ buttons to modify the number of drinks\nDesign the user interface for the kiosk.(4 marks)\n(d) A checkout page is designed for the kiosk. It shows all the drinks ordered by the user. Suggest a reason for adding the checkout page. (1 mark)\n(e) To collect feedback from customers, the kiosk will show the following screen after an order is complete.\nGive 2 types of data validation used in the screen above. (2 marks)_______________________________________________________________________________\n[--Answer:\n(a) Ordered drink: Fixed value check/presence check\nAmount: Type check/ range check\n(b) Data validation: It ensures the data type is valid.\nUser-friendliness: It increases efficiency of input.(c)\n(d) To ensure the customer has not ordered the wrong drinks.\n(e) Range check and type check.\n--]",
+      "concepts": [
+        "A-ch2",
+        "循環",
+        "SQL",
+        "硬件",
+        "資訊處理",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA0102_04A002E",
+      "bank_code": "SSICTA0102_04A002E",
+      "section_type": "long_answer",
+      "marks": 10.0,
+      "year_tag": null,
+      "stem": "A student organisation designs a database table MEMBER to store the information of their members.MEMBER\nSTUDENT_ID\nSTUDENT_NAME\nCLASS\nCLASS_NO\n012334\nChan Tai Man\n1A\n1\n012335\nCheung Yiu Man\n3A\n8\n014221\nWong Siu Mei\n3B\n20\n014531\nYeung Ka Ka\n4C\n20",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Suggest a suitable data type for each of the following fields. (4 marks)\nField\nData Type\nSTUDENT_ID\nSTUDENT_NAME\nCLASS\nCLASS_NO"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The student organisation is planning to hold an event that only members can join. Peter has designed an interface to check if the student ID of a student exists in the member list."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Suggest two types of data validation check for the input of STUDENT_ID.(2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Suggest a way to speed up the searching process in the database.(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Sam, the president of the student organisation would like to carry the database file with him all the time for easy access. Peter suggests that Sam use a magnetic tape to store the database as its lifespan is longer."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Give two reasons against Peter’s suggestion.(2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Suggest a storage device for Sam.(1 mark)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Field\nData Type\nSTUDENT_ID\nString\nSTUDENT_NAME\nString\nCLASS\nString\nCLASS_NO\nInteger\n(b)(i) Presence check/length check/format check. (Any 2)\n(b)(ii) Fields that are frequently accessed can be indexed.\n(c)(i) Magnetic tapes use sequential access, which is slower in general.\nSpecific equipment is needed to read magnetic tapes, which makes it hard for Sam to access the database all the time.(c)(ii) USB flash drive.\n--]"
+        }
+      ],
+      "text": "A student organisation designs a database table MEMBER to store the information of their members.MEMBER\nSTUDENT_ID\nSTUDENT_NAME\nCLASS\nCLASS_NO\n012334\nChan Tai Man\n1A\n1\n012335\nCheung Yiu Man\n3A\n8\n014221\nWong Siu Mei\n3B\n20\n014531\nYeung Ka Ka\n4C\n20\n(a) Suggest a suitable data type for each of the following fields. (4 marks)\nField\nData Type\nSTUDENT_ID\nSTUDENT_NAME\nCLASS\nCLASS_NO\n(b) The student organisation is planning to hold an event that only members can join. Peter has designed an interface to check if the student ID of a student exists in the member list.\n(i) Suggest two types of data validation check for the input of STUDENT_ID.(2 marks)\n(ii) Suggest a way to speed up the searching process in the database.(1 mark)\n(c) Sam, the president of the student organisation would like to carry the database file with him all the time for easy access. Peter suggests that Sam use a magnetic tape to store the database as its lifespan is longer.\n(i) Give two reasons against Peter’s suggestion.(2 marks)\n(ii) Suggest a storage device for Sam.(1 mark)\n[--Answer:\n(a) Field\nData Type\nSTUDENT_ID\nString\nSTUDENT_NAME\nString\nCLASS\nString\nCLASS_NO\nInteger\n(b)(i) Presence check/length check/format check. (Any 2)\n(b)(ii) Fields that are frequently accessed can be indexed.\n(c)(i) Magnetic tapes use sequential access, which is slower in general.\nSpecific equipment is needed to read magnetic tapes, which makes it hard for Sam to access the database all the time.(c)(ii) USB flash drive.\n--]",
+      "concepts": [
+        "A-ch2",
+        "循環",
+        "列表",
+        "排序",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

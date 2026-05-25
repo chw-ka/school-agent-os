@@ -1,0 +1,239 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EB Ch3.pptx",
+    "slug": "EB_Ch3_slides",
+    "title": "EB Ch3",
+    "series": "EB",
+    "chapter": 3,
+    "curriculum_unit": "B-a",
+    "curriculum_part": "Core-B",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.473767+00:00",
+    "slide_count": 43,
+    "topic_tags": {
+      "硬件": 17,
+      "循環": 9,
+      "數據庫": 2
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 3Computer Software"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Operating system10AThere are three types of operating systems based on the purpose of the operating systems."
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Operating system11A"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Operating system12A"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Operating system13AThere are two types of operating systems based on the user interface of the operating system.Graphical user interface (GUI)Command line interface (CLI)"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Operating system14ACommon operating system include:"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Utility program15BUtility programs (also known as utility software) are programs that maintain a computer system and improve its efficiency.Utility programs include:"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Utility program16B"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Utility program17B"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Utility program18B"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "Utility program19B"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "The world’s smallest central processing unit International Business Machines Corporation (IBM) introduced the world’s smallest cryptographic anchors in 2018 - almost smaller than a grain of sea salt.Don’t underestimate it! Its computing performance is even comparable to that of x86 processors from the 1990s, and since the entire computer is the size of a grain of sea salt, you can imagine that the CPU will be even smaller.2"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Utility program20B"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Driver program21CDriver programs are used to control peripheral devices by translating requests into machine level commands.Each driver program is designed for a specific OS to control a specific peripheral device."
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "Which of the following is not necessarily a feature of a computer operating system?Peripheral device managementGraphical user interfaceMemory managementDatabase management(1) and (3) only(1) and (4) only(2) and (3) only(2) and (4) only223.1"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "AnalysisThe user interface is a feature of OS. However, there are two types of user interfaces. Item (2), graphical user interface (GUI), is one of them while command line interface (CLI) is another. Some OS support CLI instead of GUI.Item (4), database management, is a feature of a database management system (DBMS), not necessarily a feature of an OS.SolutionThe answer is B.233.1"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "Which of the following statement about operating systems is true? Linux does not support GUI.Windows Server, as a network operating system, is a multi-user operating system.iOS is open source.(1) only(2) only(1) and (3) only(2) and (3) only243.1"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "AnalysisFor item (1), some distributions of Linux, like Debian, Fedora and Ubuntu support GUI.For item (2), while common Windows OS like Windows 10 and Windows 11 is single-user OS, a network OS is usually multi-user OS.For item (3), iOS is an OS developed and owned by Apple. It is not open source.SolutionThe answer is B.253.1"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "Is it possible to generate a bar chart for a spreadsheet file using system software? Explain briefly. No. System software is used to control the hardware operation and manage system resources. For editing spreadsheet files, we should use application software.Ken wants to install a video game of size 24 GB on his computer. However, there is unused storage space of 8 GB in his computer. After running a defragmentation software on his computer, there is still not enough storage space to install the video game. Why? Defragmentation is used for regrouping the data fragments in storage to increase the data access rate. It rarely frees up a storage space of over 16 GB as result.263.1"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "Application Software273.3Application software includes, but is not limited to the following four types: Productivity softwareCommunication softwareMedia development softwareEducational software"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "Productivity software28AProductivity software is used to improve the productivity of working. It is used to produce, analyse or present information."
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "Communication software29BCommunication software is used to exchange information between users via a network for communication purposes."
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Computer System33.1A computer system consists of hardware and software. Hardware is the physical parts, while software is the data or instructions designed to help computer to accomplish specific tasks."
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "Media development software30CMedia development software is used to create or edit multimedia files."
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Educational software31DEducational software is used to acquire knowledge, enhance learning efficiency or assist educational workers in teaching students."
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "Mode of Operation323.4Different computers have different modes of operation. These modes can be categorised by when to process and how to process. They include:Batch processingReal-time processingParallel processingDistributed processingVirtualisation"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Batch processing33AA batch processing system collects data without immediately processing it. Instead, data is processed in a batch at regular intervals. Its advantages include:Making good use of idling system resourcesProcessing a large volume of similar data in one goRelatively less expensive to operate and set up"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "Real-time processing34BA real-time processing system processes data as soon as the data is received.It allows users to get immediate responses that are up-to-date. However, it requires large computing power and main memory to keep its response time short."
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "Parallel processing35CA parallel processing system usually consists of multiple processors and memory can be shared among these processors.The system may:Assign a task for each processor so that multiple tasks are performed concurrently to achieve multitaskingDivide a task into multiple portions and assign a portion for each processor so that every portion is performed concurrently"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "Distributed processing36DA distributed processing system consists of a high-speed network and multiple computers. A program or a computer is used to manage the interaction between these computers. Here are the two characteristics of this system:Has high scalabilityCan achieve multitasking"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "Virtualisation37EVirtualisation divides the computer hardware into multiple virtual portions with the help of utility programs to create a virtual machine.The virtual machine can:run an operating system different from the original computerinstall software that is not compatible with the operating system of the original computer."
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "Which of the following statement about modes of operations are correct?Distributed processing requires network connectivity.Batch processing does not process data once the data is received.Parallel processing can divide a task into multiple subtasks and assign them to different computers to process concurrently.(1) and (2) only(1) and (3) only(2) and (3) only(1), (2) and (3)383.2"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "AnalysisFor item (1), distributed processing assigns tasks or subtasks to different computers with the help of a network. Therefore, network connectivity is a must for distributed processing.For item (2), batch processing processes data in a batch at regular intervals, instead of processing immediately after the data is received.For item (3), parallel processing assigns tasks or subtasks to different processors, not computers.SolutionThe answer is A.393.2"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Computer System43.1There are two types of software: system software and application software."
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "Owen wants to create a virtual machine so that he can play mobile games on his computer. Excluding the mobile games, which of the following does he need?Application softwareOperating systemUtility program(1) and (2) only(1) and (3) only(2) and (3) only(1), (2) and (3)403.2"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "AnalysisTo create a virtual machine, Owen needs a utility program to divide the computer hardware into multiple virtual portions. After that, he needs to install a mobile OS on his computer. Application software is not needed.SolutionThe answer is C.413.2"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Cindy wants to create an online ticket system for her cinema. Which systems would you suggest, batch processing system or real-time processing system? Explain briefly.Real-time processing system. Customers need to know which seats are available (or whether there are available seats) when deciding which tickets to buy (or whether to buy tickets or not). Therefore, the system must update immediately after each successful transaction, otherwise, the ticket of a seat may be bought by multiple customers (or there may not be enough seats for all customers that have bought tickets).423.2"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "Every day, people put letters into a post-box. At 6 o’clock, a postman collects all the letters from the post-box and immediately delivers every letter to its target locations. Which mode of operation, batch processing or real-time processing, is the closest description to the postman’s job? Explain briefly.Batch processing. The postman does not deliver every letter as soon as it is dropped into the post-box. They only deliver the letters at a regular time interval.433.2"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Computer System53.1The following shows the relationship between hardware, software and users:"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "System Software63.2There are different types of system software:Operating systemUtility programDriver program"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Operating system7AAn operating system (OS) controls the hardware operation and interacts with driver programs and application software.These are the functions of an operating system:"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Operating system8A"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "Operating system9AThere are two types of operating systems based on the number of users allowed to access the operating systems at the same time."
+    }
+  ]
+}

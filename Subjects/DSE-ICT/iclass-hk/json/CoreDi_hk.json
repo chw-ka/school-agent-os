@@ -1,0 +1,520 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreDi_hk_綜合.docx",
+    "slug": "CoreDi_hk",
+    "title": "綜合",
+    "title_zh": "綜合",
+    "title_en": null,
+    "language": "hk",
+    "family": "CoreD",
+    "chapter": null,
+    "integrated": true,
+    "topic_code": "D99",
+    "curriculum_unit": "Core-D",
+    "ca_unit": "D",
+    "f5_exam_scope": "mcq_core_d",
+    "extracted_at": "2026-05-24T10:37:17.968448+00:00",
+    "item_count": 17,
+    "section_counts": {
+      "mcq": 14,
+      "short_answer": 2,
+      "long_answer": 1
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTD0299_01A001C",
+      "bank_code": "SSICTD0299_01A001C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "下列算法會輸出甚麼？\nX ← 0\nY ← 2\nX ← X + 1\ntemp ← X\nX ← Y\nY ← temp\n輸出 X",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列算法會輸出甚麼？\nX ← 0\nY ← 2\nX ← X + 1\ntemp ← X\nX ← Y\nY ← temp\n輸出 X\nA. 0\nB. 1\nC. 2\nD. 3",
+      "concepts": [
+        "D-integrated",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A002C",
+      "bank_code": "SSICTD0299_01A002C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "下列哪個算法等同以下流程圖？",
+      "options": {
+        "A": "如果 A > B 則\nA ← A + 5\n否則\nB ← B + 5",
+        "B": "如果 A < B 則\nA ← A + 5\n否則\nB ← B + 5",
+        "C": "如果 A <= B 則\nA ← A + 5\n否則\nB ← B + 5",
+        "D": "如果 A >= B 則\nA ← A + 5\n否則\nB ← B + 5"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列哪個算法等同以下流程圖？\nA. 如果 A > B 則\nA ← A + 5\n否則\nB ← B + 5\nB. 如果 A < B 則\nA ← A + 5\n否則\nB ← B + 5\nC. 如果 A <= B 則\nA ← A + 5\n否則\nB ← B + 5\nD. 如果 A >= B 則\nA ← A + 5\n否則\nB ← B + 5",
+      "concepts": [
+        "D-integrated",
+        "算法"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A003C",
+      "bank_code": "SSICTD0299_01A003C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "陣列 contestant 儲存了歌唱比賽中五位參賽者的名字：\nDavid\nHugo\nJoyce\nPeter\nSally\ncontestant[1]\ncontestant[2]\ncontestant[3]\ncontestant[4]\ncontestant[5]\n執行下列算法後，contestant[3] 中儲存的名字是甚麼？\nL ← 5\n當 L >= 3\ncontestant[L] ← contestant[L – 1]\nL ← L – 1",
+      "options": {
+        "A": "David",
+        "B": "Hugo",
+        "C": "Joyce",
+        "D": "Peter"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "陣列 contestant 儲存了歌唱比賽中五位參賽者的名字：\nDavid\nHugo\nJoyce\nPeter\nSally\ncontestant[1]\ncontestant[2]\ncontestant[3]\ncontestant[4]\ncontestant[5]\n執行下列算法後，contestant[3] 中儲存的名字是甚麼？\nL ← 5\n當 L >= 3\ncontestant[L] ← contestant[L – 1]\nL ← L – 1\nA. David\nB. Hugo\nC. Joyce\nD. Peter",
+      "concepts": [
+        "D-integrated",
+        "算法"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A004C",
+      "bank_code": "SSICTD0299_01A004C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "下列算法用以找出第 X 個「Y 的倍數」。\n輸入 X\n輸入 Y\nk ← 0\nans ← 0\n當 _________\nans ← ans + Y\nk ← k + 1\n輸出 ans\n以下哪項應用以填上空格？",
+      "options": {
+        "A": "k <= X",
+        "B": "k < X",
+        "C": "k > Y",
+        "D": "k >= Y"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列算法用以找出第 X 個「Y 的倍數」。\n輸入 X\n輸入 Y\nk ← 0\nans ← 0\n當 _________\nans ← ans + Y\nk ← k + 1\n輸出 ans\n以下哪項應用以填上空格？\nA. k <= X\nB. k < X\nC. k > Y\nD. k >= Y",
+      "concepts": [
+        "D-integrated",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A005C",
+      "bank_code": "SSICTD0299_01A005C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪些算法有相同效果？\n(1)\n輸入 score\n當 score < 0 或 score > 100\n輸入 score\n(2)\n執行\n輸入 score\n當 score < 0 或 score > 100\n(3)\n重複\n輸入 score\n直至 score >= 0 或 score <= 100",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "(1)、(2) 和 (3)"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪些算法有相同效果？\n(1)\n輸入 score\n當 score < 0 或 score > 100\n輸入 score\n(2)\n執行\n輸入 score\n當 score < 0 或 score > 100\n(3)\n重複\n輸入 score\n直至 score >= 0 或 score <= 100\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. (1)、(2) 和 (3)",
+      "concepts": [
+        "D-integrated",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A006C",
+      "bank_code": "SSICTD0299_01A006C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下 Python 程式用作計算所有小於 X 的 3 的倍數之和。\nX = int(input())\nsum = 0\n__________________:\nsum = sum + i\n以下哪項應用以填上空格，使程式可達到其目的？",
+      "options": {
+        "A": "for i in range(0, X)",
+        "B": "for i in range(0, X + 1, 3)",
+        "C": "for i in range(3, X)",
+        "D": "for i in range(3, X, 3)"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下 Python 程式用作計算所有小於 X 的 3 的倍數之和。\nX = int(input())\nsum = 0\n__________________:\nsum = sum + i\n以下哪項應用以填上空格，使程式可達到其目的？\nA. for i in range(0, X)\nB. for i in range(0, X + 1, 3)\nC. for i in range(3, X)\nD. for i in range(3, X, 3)",
+      "concepts": [
+        "D-integrated",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A007C",
+      "bank_code": "SSICTD0299_01A007C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪個 Python 程式可達到此偽代碼的結果？\nX ← 0\n重複\nX ← X + 1\n直至 X >= 10",
+      "options": {
+        "A": "X = 0\nwhile X < 10:\nX = X + 1",
+        "B": "X = 0\nwhile X <= 10:\nX = X + 1",
+        "C": "X = 0\nwhile X > 10:\nX = X + 1",
+        "D": "X = 0\nwhile X >= 10:\nX = X + 1"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪個 Python 程式可達到此偽代碼的結果？\nX ← 0\n重複\nX ← X + 1\n直至 X >= 10\nA. X = 0\nwhile X < 10:\nX = X + 1\nB. X = 0\nwhile X <= 10:\nX = X + 1\nC. X = 0\nwhile X > 10:\nX = X + 1\nD. X = 0\nwhile X >= 10:\nX = X + 1",
+      "concepts": [
+        "D-integrated",
+        "Python",
+        "循環",
+        "算法"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A008C",
+      "bank_code": "SSICTD0299_01A008C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "此 Python 程式的輸出是甚麼？\nword = \"I love ICT\"\nsub = \" \"\nfor i in range(2, 10):\nsub = sub + word[ i ]\nsub = sub + \" so much\"\nprint(\"We\", sub)",
+      "options": {
+        "A": "I love ICT",
+        "B": "We love ICT",
+        "C": "We love ICT so much",
+        "D": "love ICT so much"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "此 Python 程式的輸出是甚麼？\nword = \"I love ICT\"\nsub = \" \"\nfor i in range(2, 10):\nsub = sub + word[ i ]\nsub = sub + \" so much\"\nprint(\"We\", sub)\nA. I love ICT\nB. We love ICT\nC. We love ICT so much\nD. love ICT so much",
+      "concepts": [
+        "D-integrated",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A009C",
+      "bank_code": "SSICTD0299_01A009C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "student_name 是一個有 N 個項目的列表。以下 Python 程式用作將新項目「Ken」加入列表索引 10 的位置：\nstudent_name = [\"Alan\", \"Ben\", \"Chris\", …]\nstudent_name = student_name + [0]\nfor k in range(10, N, 1):\nstudent_name[k] = student_name[k – 1]\nstudent_name[10] = \"Ken\"\n程式不能產生正確結果。我們應如何除錯？",
+      "options": {
+        "A": "第 2 行：student_name + [0] 應改為 student_name + \"Ken\"。",
+        "B": "第 3 行：循環的範圍應改為 range(N, 10, -1)。",
+        "C": "第 4 行：student_name[k - 1] 應改為 student_name[K + 1]。",
+        "D": "第 5 行：賦值運算符 = 應改為關係運算符 ==。"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "student_name 是一個有 N 個項目的列表。以下 Python 程式用作將新項目「Ken」加入列表索引 10 的位置：\nstudent_name = [\"Alan\", \"Ben\", \"Chris\", …]\nstudent_name = student_name + [0]\nfor k in range(10, N, 1):\nstudent_name[k] = student_name[k – 1]\nstudent_name[10] = \"Ken\"\n程式不能產生正確結果。我們應如何除錯？\nA. 第 2 行：student_name + [0] 應改為 student_name + \"Ken\"。\nB. 第 3 行：循環的範圍應改為 range(N, 10, -1)。\nC. 第 4 行：student_name[k - 1] 應改為 student_name[K + 1]。\nD. 第 5 行：賦值運算符 = 應改為關係運算符 ==。",
+      "concepts": [
+        "D-integrated",
+        "Python",
+        "循環",
+        "列表",
+        "除錯"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A010C",
+      "bank_code": "SSICTD0299_01A010C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下哪項描述是正確的？",
+      "options": {
+        "A": "錯誤數據值用於測試程式能否處理有效的輸入。",
+        "B": "算法的邊界數據值只包括錯誤數據值。",
+        "C": "利用流程圖有助發現語法錯誤。",
+        "D": "當邏輯錯誤出現時，程式未必會顯示錯誤訊息。"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項描述是正確的？\nA. 錯誤數據值用於測試程式能否處理有效的輸入。\nB. 算法的邊界數據值只包括錯誤數據值。\nC. 利用流程圖有助發現語法錯誤。\nD. 當邏輯錯誤出現時，程式未必會顯示錯誤訊息。",
+      "concepts": [
+        "D-integrated",
+        "Python",
+        "除錯",
+        "程式測試",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0299_01A011C",
+      "bank_code": "SSICTD0299_01A011C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下程式碼是某算法的一部分。此程式碼的目的是甚麼？\n輸入 age\n如果 age > 130 則\n輸出 \"無效年齡\"\n終止程式",
+      "options": {
+        "A": "數據有效性檢驗",
+        "B": "數據驗證",
+        "C": "身份認證",
+        "D": "授權"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下程式碼是某算法的一部分。此程式碼的目的是甚麼？\n輸入 age\n如果 age > 130 則\n輸出 \"無效年齡\"\n終止程式\nA. 數據有效性檢驗\nB. 數據驗證\nC. 身份認證\nD. 授權",
+      "concepts": [
+        "D-integrated",
+        "Python",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0299_01A012C",
+      "bank_code": "SSICTD0299_01A012C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下算法會進行哪一種數據有效性檢驗？\n輸入 name\n如果 name = \"\" 則\n輸出 \"錯誤：名稱不能留空！\"",
+      "options": {
+        "A": "固定值檢查",
+        "B": "完整性檢查",
+        "C": "唯一性檢查",
+        "D": "奇偶檢測"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下算法會進行哪一種數據有效性檢驗？\n輸入 name\n如果 name = \"\" 則\n輸出 \"錯誤：名稱不能留空！\"\nA. 固定值檢查\nB. 完整性檢查\nC. 唯一性檢查\nD. 奇偶檢測",
+      "concepts": [
+        "D-integrated",
+        "除錯",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0299_01A013C",
+      "bank_code": "SSICTD0299_01A013C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下算法採用了哪種 / 些數據控制方式？\nvalid  false\n重複\n輸出 \"請輸入用戶編號：\"\n輸入 id1\n輸出 \"請再次輸入用戶編號：\"\n輸入 id2\n如果 id1 != id2 則\n輸出 \"錯誤：用戶編號不一致。請再次輸入。\"\n否則\n輸出 \"歡迎！\"\nvalid  true\n直至 valid\n(1)\n輸入數據兩次\n(2)\n雙重數據輸入\n(3)\n固定值檢查",
+      "options": {
+        "A": "只有 (1)",
+        "B": "只有 (2)",
+        "C": "只有 (1) 和 (3)",
+        "D": "只有 (2) 和 (3)"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下算法採用了哪種 / 些數據控制方式？\nvalid  false\n重複\n輸出 \"請輸入用戶編號：\"\n輸入 id1\n輸出 \"請再次輸入用戶編號：\"\n輸入 id2\n如果 id1 != id2 則\n輸出 \"錯誤：用戶編號不一致。請再次輸入。\"\n否則\n輸出 \"歡迎！\"\nvalid  true\n直至 valid\n(1)\n輸入數據兩次\n(2)\n雙重數據輸入\n(3)\n固定值檢查\nA. 只有 (1)\nB. 只有 (2)\nC. 只有 (1) 和 (3)\nD. 只有 (2) 和 (3)",
+      "concepts": [
+        "D-integrated",
+        "除錯",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_01A014C",
+      "bank_code": "SSICTD0299_01A014C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下算法會進行哪一種數據有效性檢驗？\n輸出 \"輸入開始年份：\"\n輸入 start\n輸出 \"輸入結束年份：\"\n輸入 end\n如果 end >= start 則\n輸出 end – start\n否則\n輸出 \"錯誤\"",
+      "options": {
+        "A": "校對數據",
+        "B": "檢查數位",
+        "C": "一致性檢查",
+        "D": "長度檢查"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下算法會進行哪一種數據有效性檢驗？\n輸出 \"輸入開始年份：\"\n輸入 start\n輸出 \"輸入結束年份：\"\n輸入 end\n如果 end >= start 則\n輸出 end – start\n否則\n輸出 \"錯誤\"\nA. 校對數據\nB. 檢查數位\nC. 一致性檢查\nD. 長度檢查",
+      "concepts": [
+        "D-integrated",
+        "除錯",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_03A001C",
+      "bank_code": "SSICTD0299_03A001C",
+      "section_type": "short_answer",
+      "marks": 6.0,
+      "year_tag": "2025",
+      "stem": "某語言學校一週七日都有一班，每班有 30 個名額。每班的學生人數儲存在陣列 class 中 class[1] 至 class[7]：class[1] 儲存了週一班的學生人數，class[2] 儲存了週二班的人數，如此類推。\n以下算法用於課程報名系統，判斷報名學生能否報讀某班：\n行號\n偽代碼\n1\n輸入 d\n2\n如果 class[d] = 30 則\n3\n輸出 \"此班已滿。請選擇另一班。\"\n4\n否則\n5\n輸出 \"已加入此班\"",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\n所輸入數字\n輸出\n2\n已加入此班\n7\n此班已滿。請選擇另一班。\n8\n沒有輸出 / 錯誤\n(b) 用戶所選擇的班別是在星期幾上課。\n(c) 將第 2 行的條件改為「如果 class[d] = 40」。\n(d) 會出現邏輯錯誤。由於算法沒有在每位學生加入時更新學生人數，即使某班別實際上已滿，報名學生仍能加入該班別。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "假設 class 的內容如下：\nclass\n20\n20\n15\n22\n25\n30\n30\nindex\n1\n2\n3\n4\n5\n6\n7\n如果用戶輸入以下數字，輸出會是甚麼？（3 分）\n所輸入數字\n輸出\n2\n7\n8"
+        },
+        {
+          "label": "b",
+          "marks": 1.0,
+          "text": "d 代表甚麼？（1分）"
+        },
+        {
+          "label": "c",
+          "marks": 1.0,
+          "text": "由於報名人數超乎預期，學校決定將每班名額增加至 40。此算法應如何修改？（1 分）"
+        },
+        {
+          "label": "d",
+          "marks": 1.0,
+          "text": "如果刪去了第 5 行，會發生甚麼事？（1 分）"
+        }
+      ],
+      "text": "某語言學校一週七日都有一班，每班有 30 個名額。每班的學生人數儲存在陣列 class 中 class[1] 至 class[7]：class[1] 儲存了週一班的學生人數，class[2] 儲存了週二班的人數，如此類推。\n以下算法用於課程報名系統，判斷報名學生能否報讀某班：\n行號\n偽代碼\n1\n輸入 d\n2\n如果 class[d] = 30 則\n3\n輸出 \"此班已滿。請選擇另一班。\"\n4\n否則\n5\n輸出 \"已加入此班\"\n(a) 假設 class 的內容如下：\nclass\n20\n20\n15\n22\n25\n30\n30\nindex\n1\n2\n3\n4\n5\n6\n7\n如果用戶輸入以下數字，輸出會是甚麼？（3 分）\n所輸入數字\n輸出\n2\n7\n8\n(b) d 代表甚麼？（1分）\n(c) 由於報名人數超乎預期，學校決定將每班名額增加至 40。此算法應如何修改？（1 分）\n(d) 如果刪去了第 5 行，會發生甚麼事？（1 分）\n(a)\n所輸入數字\n輸出\n2\n已加入此班\n7\n此班已滿。請選擇另一班。\n8\n沒有輸出 / 錯誤\n(b) 用戶所選擇的班別是在星期幾上課。\n(c) 將第 2 行的條件改為「如果 class[d] = 40」。\n(d) 會出現邏輯錯誤。由於算法沒有在每位學生加入時更新學生人數，即使某班別實際上已滿，報名學生仍能加入該班別。",
+      "concepts": [
+        "D-integrated",
+        "列表",
+        "除錯",
+        "算法",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_03A002C",
+      "bank_code": "SSICTD0299_03A002C",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": "2025",
+      "stem": "三角形數（triangular number）指該數目的物件可形成一個等邊三角形。首五個三角形數為 1、3、6、10、15。第 n 個三角形數等於\n以下 Python 程式用以判斷某數字是否三角形數 ：\nnum = int(input())\ntriangular = False\nfor k in range(1, num):\nif k * (k + 1) / 2 == num:\ntriangular = True\nprint(triangular)",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) True\n(b) 可以，但數據會較大。以布爾形式儲存可以節省電腦資源。\n(c)\nnum = int(input())\ntriangular = False\nk = 1\nwhile (k < num) and (triangular == False):\nif k * (k + 1) / 2 == num:\ntriangular = True\nk = k + 1\nprint(triangular)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "如果輸入是 21，程式的輸出是甚麼？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "我們可將 triangular 儲存為字串嗎？為甚麼它以布爾形式儲存？（2 分）"
+        },
+        {
+          "label": "c",
+          "marks": 2.0,
+          "text": "以一個 while 循環取代 for 循環，重寫以上 Python 程式。（2 分）\nnum = int(input())\ntriangular = False\nk = 1\nprint(triangular)"
+        }
+      ],
+      "text": "三角形數（triangular number）指該數目的物件可形成一個等邊三角形。首五個三角形數為 1、3、6、10、15。第 n 個三角形數等於\n以下 Python 程式用以判斷某數字是否三角形數 ：\nnum = int(input())\ntriangular = False\nfor k in range(1, num):\nif k * (k + 1) / 2 == num:\ntriangular = True\nprint(triangular)\n(a) 如果輸入是 21，程式的輸出是甚麼？（1 分）\n(b) 我們可將 triangular 儲存為字串嗎？為甚麼它以布爾形式儲存？（2 分）\n(c) 以一個 while 循環取代 for 循環，重寫以上 Python 程式。（2 分）\nnum = int(input())\ntriangular = False\nk = 1\nprint(triangular)\n(a) True\n(b) 可以，但數據會較大。以布爾形式儲存可以節省電腦資源。\n(c)\nnum = int(input())\ntriangular = False\nk = 1\nwhile (k < num) and (triangular == False):\nif k * (k + 1) / 2 == num:\ntriangular = True\nk = k + 1\nprint(triangular)",
+      "concepts": [
+        "D-integrated",
+        "Python",
+        "循環",
+        "資訊處理",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0299_04A001C",
+      "bank_code": "SSICTD0299_04A001C",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": "2025",
+      "stem": "某銀行正在招聘見習行政人員。申請人的基本要求如下：\n• 持法律或工商管理學士學位（degree）；\n• 取得 3.6 或以上的累計成績平均積點（cGPA）；\n• 可以合法地在香港工作。\n以下是申請表其中一部分：\n大學學位：____________\n累計成績平均積點：_____\n可在香港合法工作？ 是 / 否",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) (i) 大學學位：字串；cGPA：浮點數；可以合法地在香港工作：布爾 / 字串(ii)\ndegree = input(\"大學學位：\")\ncGPA = float(input(\"累計成績平均積點：\"))\ncan_work_in_HK = input(\"可在香港合法工作？\")\nif (degree == \"法律\" or degree == \"工商管理\") and cGPA >= 3.6 and can_work_in_HK == \"是\":\nprint(\"符合面試要求\")\nelse:\nprint(\"不符面試要求\")\n(iii)\ndegree\n法律、工商管理、科學（法律及工商管理以外的任何學位）\ncGPA\n3.5（任何低於3.6的值）、3.6、3.7（任何高於3.6的值）\n(b)\ninterview = [73, 82, 75, …]\npresentation = [85, 91, 80, …]\napt_test = [90, 81, 83, …]\nfinal_score = [0, 0, 0, …]\nfor k in range(0, 30):\nfinal_score[k] = interview[k] * 0.4 + presentation[k] * 0.3 + apt_test[k] * 0.3\nprint(final_score)\n(c)\ncandidate_num = input(\"候選人編號\")\nfound = False\nfor k in range(0, 4):\nif candidate_num == selected[k]:\nfound = True\nif found == True:\ndepartment = department[k]\nprint(\"歡迎來到\", department, \"部門\")\nelse:\nprint(\"你未獲錄取\")",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": 3.0,
+          "text": "儲存各輸入的合適數據類型是甚麼？（3 分）"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "符合基本要求的申請人才有機會面試。以下 Python 程式用於申請系統，以判斷申請人\n是否有資格面試。試完成程式。（1 分）\ndegree = input(\"大學學位：\")\ncGPA = float(input(\"累計成績平均積點：\"))\ncan_work_in_HK = input(\"可在香港合法工作？\")\nif\nprint(\"符合面試要求\")\nelse:\nprint(\"不符面試要求\")"
+        },
+        {
+          "label": "iii",
+          "marks": 2.0,
+          "text": "試為每個輸入建議三項測試數據值。（2 分）\ndegree\ncGPA"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "除了小組面試，求職者須完成個人匯報（presentation）和能力傾向測試（aptitude test）。 求職者在各評核取得的分數分別儲存在列表 interview、presentation 和 apt_test。這些列表的項目排序都是相通的：\ninterview[0]、presentation[0] 和 apt_test[0] 儲存了第 1 位求職者的分數；\ninterview[1]、presentation[1] 和 apt_test[1] 儲存了第 2 位求職者的分數，如此類推。\n求職者的最終分數按以下算式計算：\n是次共有 30 位求職者。人事部經理陳先生要計算各求職者的最終分數，並將分數儲存在列\n表 final_score。試完成以下 Python 程式。（2 分）\ninterview = [73, 82, 75, …]\npresentation = [85, 91, 80, …]\napt_test = [90, 81, 83, …]\nfinal_score = [0, 0, 0, …]\nfor k in                             :\nprint(final_score)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "挑選求職者的過程完結後，銀行公開了獲取錄的求職者名單。列表 selected 儲存獲取錄的求職者的申請編號，而列表 department 儲存他們將會分派到的部門。兩個列表的項目排序是相通的。\nselected\n\"8\"\n\"15\"\n\"21\"\n\"26\"\nindex\n0\n1\n2\n3\ndepartment\n\"環球市場\"\n\"審計\"\n\"合規\"\n\"零售銀行\"\nindex\n0\n1\n2\n3\n以下 Python 程式用於申請系統，供求職者查看其是否獲取錄；如果該求職者獲取錄，程式亦會顯示其將會分派到的部門。以下是這個程式的輸出，粗體文字代表用家的輸入：\n候選人編號：21\n歡迎來到 合規 部門\n候選人編號：13\n你未獲錄取\n試完成此程式。（3 分）\ncandidate_num = input(\"候選人編號：\")\nfound = False\nif found == True:\ndepartment =\nprint(                                                      )\nelse:\nprint(\"你未獲錄取\")"
+        }
+      ],
+      "text": "某銀行正在招聘見習行政人員。申請人的基本要求如下：\n• 持法律或工商管理學士學位（degree）；\n• 取得 3.6 或以上的累計成績平均積點（cGPA）；\n• 可以合法地在香港工作。\n以下是申請表其中一部分：\n大學學位：____________\n累計成績平均積點：_____\n可在香港合法工作？ 是 / 否\n(a) \n(i) 儲存各輸入的合適數據類型是甚麼？（3 分）\n(ii) 符合基本要求的申請人才有機會面試。以下 Python 程式用於申請系統，以判斷申請人\n是否有資格面試。試完成程式。（1 分）\ndegree = input(\"大學學位：\")\ncGPA = float(input(\"累計成績平均積點：\"))\ncan_work_in_HK = input(\"可在香港合法工作？\")\nif\nprint(\"符合面試要求\")\nelse:\nprint(\"不符面試要求\")\n(iii) 試為每個輸入建議三項測試數據值。（2 分）\ndegree\ncGPA\n(b) 除了小組面試，求職者須完成個人匯報（presentation）和能力傾向測試（aptitude test）。 求職者在各評核取得的分數分別儲存在列表 interview、presentation 和 apt_test。這些列表的項目排序都是相通的：\ninterview[0]、presentation[0] 和 apt_test[0] 儲存了第 1 位求職者的分數；\ninterview[1]、presentation[1] 和 apt_test[1] 儲存了第 2 位求職者的分數，如此類推。\n求職者的最終分數按以下算式計算：\n是次共有 30 位求職者。人事部經理陳先生要計算各求職者的最終分數，並將分數儲存在列\n表 final_score。試完成以下 Python 程式。（2 分）\ninterview = [73, 82, 75, …]\npresentation = [85, 91, 80, …]\napt_test = [90, 81, 83, …]\nfinal_score = [0, 0, 0, …]\nfor k in                             :\nprint(final_score)\n(c) 挑選求職者的過程完結後，銀行公開了獲取錄的求職者名單。列表 selected 儲存獲取錄的求職者的申請編號，而列表 department 儲存他們將會分派到的部門。兩個列表的項目排序是相通的。\nselected\n\"8\"\n\"15\"\n\"21\"\n\"26\"\nindex\n0\n1\n2\n3\ndepartment\n\"環球市場\"\n\"審計\"\n\"合規\"\n\"零售銀行\"\nindex\n0\n1\n2\n3\n以下 Python 程式用於申請系統，供求職者查看其是否獲取錄；如果該求職者獲取錄，程式亦會顯示其將會分派到的部門。以下是這個程式的輸出，粗體文字代表用家的輸入：\n候選人編號：21\n歡迎來到 合規 部門\n候選人編號：13\n你未獲錄取\n試完成此程式。（3 分）\ncandidate_num = input(\"候選人編號：\")\nfound = False\nif found == True:\ndepartment =\nprint(                                                      )\nelse:\nprint(\"你未獲錄取\")\n(a) (i) 大學學位：字串；cGPA：浮點數；可以合法地在香港工作：布爾 / 字串(ii)\ndegree = input(\"大學學位：\")\ncGPA = float(input(\"累計成績平均積點：\"))\ncan_work_in_HK = input(\"可在香港合法工作？\")\nif (degree == \"法律\" or degree == \"工商管理\") and cGPA >= 3.6 and can_work_in_HK == \"是\":\nprint(\"符合面試要求\")\nelse:\nprint(\"不符面試要求\")\n(iii)\ndegree\n法律、工商管理、科學（法律及工商管理以外的任何學位）\ncGPA\n3.5（任何低於3.6的值）、3.6、3.7（任何高於3.6的值）\n(b)\ninterview = [73, 82, 75, …]\npresentation = [85, 91, 80, …]\napt_test = [90, 81, 83, …]\nfinal_score = [0, 0, 0, …]\nfor k in range(0, 30):\nfinal_score[k] = interview[k] * 0.4 + presentation[k] * 0.3 + apt_test[k] * 0.3\nprint(final_score)\n(c)\ncandidate_num = input(\"候選人編號\")\nfound = False\nfor k in range(0, 4):\nif candidate_num == selected[k]:\nfound = True\nif found == True:\ndepartment = department[k]\nprint(\"歡迎來到\", department, \"部門\")\nelse:\nprint(\"你未獲錄取\")",
+      "concepts": [
+        "D-integrated",
+        "Python",
+        "循環",
+        "列表",
+        "程式測試",
+        "排序",
+        "SQL",
+        "資訊處理",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

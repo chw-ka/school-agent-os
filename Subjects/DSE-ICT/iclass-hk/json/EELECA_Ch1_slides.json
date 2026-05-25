@@ -1,0 +1,511 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecA Ch1.pptx",
+    "slug": "EELECA_Ch1_slides",
+    "title": "EElecA Ch1",
+    "series": "EELECA",
+    "chapter": 1,
+    "curriculum_unit": "EA-a",
+    "curriculum_part": "EA",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.497197+00:00",
+    "slide_count": 97,
+    "topic_tags": {
+      "數據庫": 52,
+      "循環": 12,
+      "列表": 8,
+      "課本活動": 3,
+      "除錯": 2
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 1Managing Data Using SQL"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Database Structure10BA poor database design may lead to problems such as:Causing data to be inaccurateDegraded performanceLoss of flexibility"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Database Structure11BWe often use a database management system (DBMS) to help us manage databases. For example, Microsoft Access is a DBMS with a graphical user interface (GUI), while MySQL is a DBMS which allows us to manage databases without a GUI."
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "SQL statement12CWe use queries to filter, sort, summarise, update or delete data in a DBMS. These queries are written in Structured Query Language (SQL).Here is a quick summary of common SQL keywords which we have learnt in the Compulsory Part. FunctionKeywordsRetrievalSELECT FROMSummarisationGROUP BYFilteringWHERE/HAVINGSortingORDER BY"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Creating Databases and Tables131.2In this section, we are going to create a database including a table filled with data using SQL statements in a DBMS named MySQL."
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "SHOW DATABASES14AIn a DBMS, there can be multiple databases."
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "SHOW DATABASES15ACommand SHOW DATABASES gets a list of the databases in MySQL."
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "CREATE DATABASE16BIf we do not want to use any existing databases, we may create a new database."
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "USE17CWhenever we start MySQL, we must specifies which database to use before manipulating any data from tables."
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "CREATE TABLE18DTo store data, we should create a table inside the newly created database first. The SQL statement below creates a table named STUDENT with four fields: SID (student identity number), NAME (student name), CLASS (class name) and CNO (class number)."
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "SHOW TABLES19ECommand SHOW TABLES gets a list of the tables in the current database."
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Database and SQL Statement21.1Database is a collection of structured data in a computer system that facilitates the storage and retrieval of data. It is designed in a manner that allows us to store a large amount of data efficiently."
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Finish Lab 1.1 on P. 11 of your textbook.NoYesYesYes201.1"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Finish Activity 1.3 on P. 12 of your textbook.211.3ASHOW DATABASEBshow databaseACREATE DATABASE CITY CENTREBCREATE DATABASE TOWNCENTREAcreate table shop (id, name, location)Bcreate table shop (id int, name char(30))ACREATE TABLE HOTEL (hid INT, hname CHAR(40), address CHAR(40))BCREATE TABLE HOTEL (HID INT, HNAME CHAR(40), HADDRESS CHAR(40)"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "Data Type221.3When creating a table, we have to define the data type of each field in the table."
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "Data Type231.3List of common data types in DBMS"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "A teacher wants to create a table named EVENT to store the data of school events.Here is the table structure of EVENT.The data to be stored in the mentioned table is shown below.Write a SQL statement to create the mentioned table. Choose data types that will mostly likely minimise the storage size of the table. 241.1"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "◣ SolutionCREATE TABLE EVENT ( \tEID INT, \tENAME VARCHAR(255), \tEDATE DATE, \tFEE FLOAT, \tFINISHED BOOL ) INT can be written as INTEGER. BOOL can be written as BOOLEAN. ENAME can be CHAR(255). FEE can be DECIMAL.251.1"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "Finish Checkpoint 1.1 on P. 16 of your textbook.CREATE TABLE NOTICE ( \tNID INT, \tPID INT, \tCONTENT VARCHAR(255) , \tEXPIRY DATETIME )CREATE TABLE MEMBER (MID CHAR(5), MNAME VARCHAR(40), VIP BOOL, AGE INT, CREDIT FLOAT) 261.1"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "Inserting and Retrieving Data271.4In this section, we are going to store data in and retrieve data from a table."
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "INSERT INTO ... VALUES28AThe SQL statement below inserts a record of a student into the table STUDENT."
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "INSERT INTO ... VALUES29AIf you arrange the values in the same order as the fields in the table, you do not have to specify the fields."
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "What is a database?3ADatabase management includes the following three tasks:Retrieval of information from a databaseModification, deletion and insertion of data in a databaseModification on database structure so as to meet the changing needs"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "INSERT INTO ... VALUES30AHowever, if you specify the fields, you can arrange the values in any order."
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "INSERT INTO ... VALUES31AWe may leave a field empty during insertion. In such a case, this field will have a NULL value, i.e. a lack of value."
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "INSERT INTO ... VALUES32AWe may insert more than one record at a time. Use comma to separate the records."
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "SELECT … FROM33BAfter insertion, we may retrieve the data from specific fields of a table using SELECT FROM.The SQL statement below retrieves the data from the fields CNO and CLASS from the table STUDENT."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "SELECT … FROM34BWe may also retrieve the data from all fields of a table using a wildcard *."
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "WHERE35CWhen retrieving data, we may set criteria to filter records. The SQL statement below retrieves the data of students in class 1B."
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "ORDER BY36DWhen retrieving data, we may also set criteria to sort records. The SQL statement below retrieves the data of students in class 1B. The data is sorted by CNO in ascending order."
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "ORDER BY37DData can be sorted in either ascending order (ASC) or descending order (DESC)."
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "DISTINCT38EWe may filtered duplicated results by using DISTINCT."
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "A teacher created a table named EVENT to store the data of school events. Here is the table structure of EVENT.The first two records to be stored in the mentioned table are shown below. 391.2"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "What is a database?4AThe following are some examples of the application of databases in our daily life."
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "(a) Write a SQL statement to insert the above two records into EVENT. (b) Write a SQL statement to show the data of finished events. (c) Write a SQL statement to show the name of the events sorted by the fee in descending order.401.2"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "◣ Solution (a) INSERT INTO EVENT (EID, ENAME, EDATE, FEE, FINISHED) VALUES (83313, 'History Tour', '2036-04-15', 40, 1), (83315, 'Swimming Gala', '2036-06-08', 0, 0) (b) SELECT * FROM EVENT WHERE FINISHED = 1 (c) SELECT ENAME FROM EVENT ORDER BY FEE DESC We may write 0 and 1 as FALSE and TRUE respectively when inserting Booleans or filtering by a Boolean field.411.2"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Finish Checkpoint 1.2 on P. 23 of your textbook.(a) INSERT INTO MEMBER (MID, MNAME, MTYPE, AGE, CREDIT) VALUES (23908, 'Ada Chan', 'Bronze', 26, 472.5), (72330, 'Eva Wong', 'Gold', 23, 203.7)(b) SELECT MTYPE FROM MEMBER WHERE MNAME = 'Ivy Chau'(c) SELECT * FROM MEMBER WHERE MTYPE = 'Gold' ORDER BY AGE [ASC](d) SELECT DISTINCT MTYPE FROM MEMBER421.2"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "Updating and Deleting Data431.5In this section, we are going to update and delete data from a table."
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "UPDATE … SET44AThe SQL statement below updates the name of a specific student in the table STUDENT."
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "UPDATE … SET45ANote that UPDATE usually comes with a WHERE clause, otherwise, it will update the whole table."
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "UPDATE … SET46AThe SQL statement below updates the name and the class of a specific student in the table STUDENT."
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "DELETE FROM47BThe SQL statement below deletes specific records in the table STUDENT."
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "DELETE FROM48BUsing DELETE without a WHERE clause simply deletes all records from the table."
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "DROP TABLE49CAssume that table STUDENT is not needed anymore. We are going to delete the whole table from the database using DROP TABLE."
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Finish Activity 1.1 on P. 5 of your textbook.When borrowing books from the library, have you ever seen a card under the cover of the borrowed book?51.1"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "DROP DATABASE50DAssume that database SCHOOLE is not needed anymore. We are going to drop the whole database using DROP DATABASE."
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "1. A retail store manager created a table named PRODUCT to store the data of products in the store.(a) Here is the table structure of PRODUCT. Fill in suitable data types below. (b) Write a SQL statement to create the above table. 511.3"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "(c) Write a SQL statement to insert the data of the product below into the table. (d) The product with an identity number of BA1100 is out of stock now. Write a SQL statement to update its record.521.3"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "◣ Solution(a)(b) CREATE TABLE PRODUCT (  \tPID CHAR(6),  \tPNAME VARCHAR(80),  \tSTOCK INT,  \tPRICE FLOAT,  \tEXPIRY DATE ) Though not recommended, PID and PRICE can also be VARCHAR(6) and DOUBLE respectively.531.3"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "(c) INSERT INTO PRODUCT VALUES ('SN2359', 'Smart Candy', 138, 14.5, '2042-11-24’)Though not required, we may include the field names in the SQL statement.(d) UPDATE PRODUCT SET STOCK = 0 WHERE PID = 'BA1100'541.3"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "Finish Checkpoint 1.3 on P. 31 of your textbook.(a) CREATE TABLE BOOK (BID CHAR(4), BOOKNAME VARCHAR(200), \tAUTHOR VARCHAR(200), PUBDATE DATE, NUMPAGE INT, PRICE FLOAT)(b) INSERT INTO BOOK [(BID, BOOKNAME, AUTHOR, PUBDATE, \tNUMPAGE, PRICE)] VALUES \t('2012', '2012', 'Arthur White', '20-12-2012', 2012, 201.2)(c) UPDATE BOOK SET PRICE = 12.4 WHERE AUTHOR = 'Sela Brooks'551.3"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "Setting Constraints and Indexing561.6To maintain data integrity and validate data input, we should set constraints for a table."
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "PRIMARY KEY57APrimary key is a field or a combination of fields that store unique data for every record. A table should always have a primary key to identify a record from all other records. Moreover, the value stored in the primary key field cannot be empty, i.e. NULL."
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "Finish Checkpoint 1.4 on P. 32 of your textbook.581.4Field namePossible to have duplications?Available for everyone? Possible to change?HKIDENAMESEXYes. It is very common for people to have the same sex.No. Biological sex is based on chromosome.DOBYes. Everyone have a date of birth.BANKACNo. Some people do not have a bank account.EMAILNo. A personal email address is not supposed to be shared.Yes. People can create email addresses for themselves."
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "591.4Field namePossible to have duplications?Available for everyone? Possible to change?HKIDNo. HKID number is unique for everyone.Yes. Every Hong Kong citizen should have one.No. HKID number is permanent.ENAMEYes. Some people may share the same name.Yes. Every Hong Kong citizen has an English name.Yes. People are allowed to change their names.SEXYes. It is very common for people to have the same sex.Yes. Everyone have a biological sex.No. Biological sex is based on chromosome.DOBYes. Some people may share the same date of birth.Yes. Everyone have a date of birth.No. Date of birth cannot be changed.BANKACNo. A personal bank account number is unique for everyone.No. Some people do not have a bank account.Yes. People can create bank accounts for themselves.EMAILNo. A personal email address is not supposed to be shared.No. Some people do not have an email address.Yes. People can create email addresses for themselves."
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "61.1 Traditional methodOnline library management system"
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "Based on the definition of primary key, which of the above fields should be the primary key of the table HKCITIZEN?HKID601.4"
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "PRIMARY KEY61AThe SQL statement below creates a table named STUDENT, where SID is set as the primary key by the keyword, PRIMARY KEY."
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "PRIMARY KEY62AConstraint PRIMARY KEY prevents a field from storing duplicated values or NULL by any means, including insertion and updating.No record will be inserted into the table STUDENT after executing the above two SQL statements."
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "PRIMARY KEY63ATwo records are inserted into the table. However, the update attempts to set the SID of a record to an existing SID. This update results in an error due to the constraint PRIMARY KEY."
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "PRIMARY KEY64AWe may also set a combination of fields as the primary key of the table. Such a primary key is called a composite key."
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "PRIMARY KEY65AThe SQL statement below creates a table named STUDENT, where CLASS+CNO is set as the primary key by the keyword, PRIMARY KEY."
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "PRIMARY KEY66AUnder this constraint, every combination of the class and the class number of a student must be unique."
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "FOREIGN KEY67BForeign keys are used to show the relationship between records in two tables. A foreign key in a table X is always the primary key of another table Y. In this relationship, table X is considered as the host table, while table Y is considered as the parent table."
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "FOREIGN KEY68BThe SQL statement below creates a table named STUDENT, where CLASS is set as the foreign key by the keyword, FOREIGN KEY."
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "FOREIGN KEY69BConstraint FOREIGN KEY prevents a field from storing a value that does not exist in corresponding field of the parent table by any means, including insertion, update and deletion.Assume there are class 1A, 1B, 1C and 1D in the table CLASSLIST."
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "71.1 Traditional methodOnline library management systemData is recorded on the checkout cards and log booksData is stored in the online systemData must be searched manually from a physical copy of checkout cards or log booksData can be searched by the system in a relatively short time"
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "FOREIGN KEY70BNo record will be inserted into the table STUDENT after executing the above SQL statement."
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "FOREIGN KEY71BOne records are inserted into the table. However, the update attempts to set the CLASS of a record to a non-existing class. This update results in an error due to the constraint FOREIGN KEY."
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide72.xml",
+      "text": "FOREIGN KEY72BConsider the following data in STUDENT and CLASSLIST."
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide73.xml",
+      "text": "FOREIGN KEY73BSince there is at least one student from class 1A in STUDENT, class 1A in CLASSLIST cannot be renamed to 1E, nor can it be deleted."
+    },
+    {
+      "slide_index": 72,
+      "slide_part": "ppt/slides/slide74.xml",
+      "text": "Other constraints74CThere are other constraints in MySQL. They are useful for data validation and shorten our time for data management. Here is a table named STUDENT1A created by the following SQL statement. This table stores the data of students from Class 1A."
+    },
+    {
+      "slide_index": 73,
+      "slide_part": "ppt/slides/slide75.xml",
+      "text": "1. A game store manager wants to create a table named GAME to store the data of video games sold in the store.Here is the table structure of GAME.751.4"
+    },
+    {
+      "slide_index": 74,
+      "slide_part": "ppt/slides/slide76.xml",
+      "text": "(a) Name a field that is suitable to be the primary key of the table GAME.Here is the table structure of two related tables.(b) Name two fields that are suitable to be the foreign keys of the table GAME.761.4"
+    },
+    {
+      "slide_index": 75,
+      "slide_part": "ppt/slides/slide77.xml",
+      "text": "(c) Assume that PCODE, GCODE and GNAME cannot be empty. Finish the following SQL statement to create the table GAME.CREATE TABLE GAME ( \tPCODE ___________, \tGCODE ___________, \tGID ___________, \tGNAME VARCHAR(255) ___________, \tGENREID INT,\t___________, \tFOREIGN KEY (___________) REFERENCES ___________ (CODE), \tFOREIGN KEY (___________) REFERENCES GENRE ___________)(d) One of the fields in GAME is redundant. Which one is it? What change should be done if that field is dropped?771.4"
+    },
+    {
+      "slide_index": 76,
+      "slide_part": "ppt/slides/slide78.xml",
+      "text": "◣ Solution(a) GID.(b) PCODE and GENREID.(c) CREATE TABLE GAME (\tPCODE CHAR(2) NOT NULL, \tGCODE CHAR(3) NOT NULL, \tGID CHAR(5) PRIMARY KEY, \tGNAME VARCHAR(255) NOT NULL, \tGENREID INT, \tPRICE FLOAT, \tFOREIGN KEY (PCODE) REFERENCES PUBLISHER (CODE), \tFOREIGN KEY (GENREID) REFERENCES GENRE (ID))(d) GID. The table should use PCODE+GCODE as the primary key instead.781.4"
+    },
+    {
+      "slide_index": 77,
+      "slide_part": "ppt/slides/slide79.xml",
+      "text": "Finish Checkpoint 1.4 on P. 41 of your textbook.(a) SID for GAME and PHONE for MANAGER.(b) CREATE TABLE SHOP ( \tSID INT PRIMARY KEY , \tSNAME VARCHAR(255) UNIQUE NOT NULL , \tOPEN TIME NOT NULL DEFAULT '09:00’ , \tPHONE CHAR(8) NOT NULL , \tSEX CHAR(1), \tFOREIGN KEY (PHONE) REFERENCES MANAGER (PHONE) , \tCHECK (OPEN >= '08:00' ) )(c) SEX. This piece of data can be found in MANAGER.791.4"
+    },
+    {
+      "slide_index": 78,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Database Structure8BA database organises data as fields, record and tables.Field: A single piece of information.Record: One complete set of fields.Table: A collection of records."
+    },
+    {
+      "slide_index": 79,
+      "slide_part": "ppt/slides/slide80.xml",
+      "text": "Altering Table Structure801.7After creating a table, its structure can still be altered. We can add, modify or drop fields and constraints. Note that some of the alterations may result in data loss so we should proceed with caution."
+    },
+    {
+      "slide_index": 80,
+      "slide_part": "ppt/slides/slide81.xml",
+      "text": "Renaming tables81AAssume that a table has its name spelt wrong, we may use the following SQL statement to rename it."
+    },
+    {
+      "slide_index": 81,
+      "slide_part": "ppt/slides/slide82.xml",
+      "text": "Adding fields82BAssume that the table STUDENT does not have a field for storing the student names. We may use the following SQL statement to add this field."
+    },
+    {
+      "slide_index": 82,
+      "slide_part": "ppt/slides/slide83.xml",
+      "text": "Adding fields83BWe may include constraints when adding a new field, just like how we define a field when creating a table."
+    },
+    {
+      "slide_index": 83,
+      "slide_part": "ppt/slides/slide84.xml",
+      "text": "Modifying fields84CAssume that a field has its name spelt wrong, we may use the following SQL statement to rename it."
+    },
+    {
+      "slide_index": 84,
+      "slide_part": "ppt/slides/slide85.xml",
+      "text": "Modifying fields85CAssume that SID is supposed to be an integer field, we may use the following SQL statement to change its data types."
+    },
+    {
+      "slide_index": 85,
+      "slide_part": "ppt/slides/slide86.xml",
+      "text": "Dropping fields86DAssume that CNO is no longer needed, we may use the following SQL statement to drop it."
+    },
+    {
+      "slide_index": 86,
+      "slide_part": "ppt/slides/slide87.xml",
+      "text": "Adding and dropping constraints87EWhen adding constraints, all existing data must not violate the constraints to be added, otherwise, such an operation will fail. We may set the primary key by adding a constraint."
+    },
+    {
+      "slide_index": 87,
+      "slide_part": "ppt/slides/slide88.xml",
+      "text": "Adding and dropping constraints88EWe may also set the primary key by redefining an existing field. Such a method yields the same result as the previous one does. However, it requires you to input the data type. It cannot set a composite key as the primary key too."
+    },
+    {
+      "slide_index": 88,
+      "slide_part": "ppt/slides/slide89.xml",
+      "text": "Adding and dropping constraints89EWe may use the following SQL statement to drop the primary key."
+    },
+    {
+      "slide_index": 89,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "Finish Activity 1.2 on P. 6 of your textbook.DVD ID; DVD name, DVD price, age restriction of DVD, etc.Member ID, member name, member contact, member age, etc.Member ID, DVD ID, rent date, due date, payable amount, etc.91.2"
+    },
+    {
+      "slide_index": 90,
+      "slide_part": "ppt/slides/slide90.xml",
+      "text": "Adding and dropping constraints90EWe may use the following SQL statement to set a foreign key."
+    },
+    {
+      "slide_index": 91,
+      "slide_part": "ppt/slides/slide91.xml",
+      "text": "Adding and dropping constraints91ESince there can be more than one foreign key in a table, when dropping a foreign key, we need to specify which one to drop. Each foreign key has a constraint name in DBMS. To find out which is which, we may use SHOW CREATE TABLE."
+    },
+    {
+      "slide_index": 92,
+      "slide_part": "ppt/slides/slide92.xml",
+      "text": "Adding and dropping constraints92EThe SQL statement should return a result like below:We may use the following SQL statement to drop the foreign key."
+    },
+    {
+      "slide_index": 93,
+      "slide_part": "ppt/slides/slide93.xml",
+      "text": "1. The administrator of an online shopping website uses a table named USER to store the data of the website users.Here is the table structure of USER. The administrator tries to set two types of membership for the users. These two types are “Regular” and “Premium”. All users are Regular users by default.(a) Write a SQL statement to add a field named MTYPE into the table USER. The default value of this field should be 'Regular'.931.5"
+    },
+    {
+      "slide_index": 94,
+      "slide_part": "ppt/slides/slide94.xml",
+      "text": "Six months later, the administrator decides to set not two but four types of membership for the users. These four types are, in order, “Regular”, “Bronze”, “Silver” and “Gold”.(b) All Premium users shall be changed to Bronze users. Write a SQL statement to update the records of all Premium users.(c) (i) The administrator wants to view the data of all users sorted by the membership type in ascending order. Write a SQL statement to retrieve the corresponding data.(ii) How will the membership type be sorted by the above SQL statement? Write the membership types in order.941.5"
+    },
+    {
+      "slide_index": 95,
+      "slide_part": "ppt/slides/slide95.xml",
+      "text": "The administrator creates a table named MTYPELIST to store all the membership types. Here is the table structure of MTYPELIST.(d) Now MTYPE in USER stores the identity numbers of the membership type instead. Write a SQL statement to change MTYPE into an integer field. (e) Write a SQL statement to set MTYPE in USER as a foreign key.951.5"
+    },
+    {
+      "slide_index": 96,
+      "slide_part": "ppt/slides/slide96.xml",
+      "text": "◣ Solution(a) ALTER TABLE USER ADD MTYPE CHAR(7) DEFAULT 'Regular’(b) UPDATE USER SET MTYPE = 'Bronze' WHERE MTYPE = 'Premium’(c) \t(i) SELECT * FROM USER ORDER BY MTYPE [ASC]\t(ii) Bronze, Gold, Regular and Silver.(d) ALTER TABLE USER MODIFY MTYPE INT(e) ALTER TABLE USER ADD FOREIGN KEY (MTYPE) REFERENCES MTYPELIST(TID)961.5"
+    },
+    {
+      "slide_index": 97,
+      "slide_part": "ppt/slides/slide97.xml",
+      "text": "Finish Checkpoint 1.5 on P. 49 of your textbook.(a) ALTER TABLE BOOKCLUB DROP HKID(b) No. MEMID would be NULL / 0 for all records in BOOKCLUB if it is added successfully. However, the PRIMARY KEY constraint forbids the value of a primary key to be NULL/ duplicated.(c) ALTER TABLE BOOKCLUB ADD SCORE FLOAT DEFAULT 55.5(d) ALTER TABLE BOOKCLUB ADD CHECK (SCORE > 10)(e) CREATE TABLE BCGROUP (GNUM INT, GNAME VARCHAR(50), NEXTMEET DATETIME)(f) ALTER TABLE table ADD FOREIGN KEY (BCGROUP) REFERENCES BCGROUP (GNUM)971.5"
+    }
+  ]
+}

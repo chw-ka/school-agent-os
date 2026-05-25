@@ -1,0 +1,415 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecC5_en_Data Structures.docx",
+    "slug": "ElecC5_en",
+    "title": "Data Structures",
+    "title_zh": null,
+    "title_en": "Data Structures",
+    "language": "en",
+    "family": "ElecC",
+    "chapter": 5,
+    "integrated": false,
+    "topic_code": "EC05",
+    "curriculum_unit": "EC",
+    "ca_unit": "EC",
+    "f5_exam_scope": "elective_sd",
+    "extracted_at": "2026-05-24T10:37:18.265187+00:00",
+    "item_count": 7,
+    "section_counts": {
+      "short_answer": 5,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTC1105_03A001E",
+      "bank_code": "SSICTC1105_03A001E",
+      "section_type": "short_answer",
+      "marks": 6.0,
+      "year_tag": null,
+      "stem": "Holly uses stacks to manage shoeboxes containing shoes of different sizes. For example, the following stack has 4 shoeboxes, with a pair of shoes of size 35, 37, 38 and 40 in each box respectively.\n40\n38\n37\n35\n← Bottom of the stack\nBelow are the sub-programs Holly uses to manipulate the stacks:\nSub-program\nDescription\npush(S, z)\nPush a box containing shoes of size z into stack S.\npop(S)\nRemove a box from stack S and return the size of the shoes in the box.\nisEmpty(S)\nReturn True if stack S is empty, otherwise False.\nisFull(S)\nReturn True if stack S is full, otherwise False.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Holly wants to stack the shoeboxes in ascending order of size of the shoes stored. The following is the content of stack M:\n42\n41\n37\n39\n36\n36\nStack M\nAt the bottom of the stack is the 1st box. Which two boxes need to be swapped in stack M?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Holly develops a sub-program swap(S, x) to help swap the xth and the (x+1)th box in stack S."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "She uses an empty stack T to help with the operation of swap(S, x). Help Holly finish the pseudocode for swap(S, x).(4 marks)\nLine  Pseudocode\n1    Sub-program swap(S, x)\n2        for i from 1 to ___\n3            push(T, pop(S))\n4        temp  pop(S)\n5        push(S, _____)\n6        push(S, _____)\n7        for i from 1 to ___\n8            push(S, pop(T))"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Rewrite the line 7 of sub-program swap(S, x) using while loop.(1 mark)\nLine 7:            while ____________________:\n[--Answer:\n(a) 3rd, 4th\n(b)(i)\nx\npop(T)\ntemp\nx-1\n(b)(ii) isEmpty(T) = False\n--]"
+        }
+      ],
+      "text": "Holly uses stacks to manage shoeboxes containing shoes of different sizes. For example, the following stack has 4 shoeboxes, with a pair of shoes of size 35, 37, 38 and 40 in each box respectively.\n40\n38\n37\n35\n← Bottom of the stack\nBelow are the sub-programs Holly uses to manipulate the stacks:\nSub-program\nDescription\npush(S, z)\nPush a box containing shoes of size z into stack S.\npop(S)\nRemove a box from stack S and return the size of the shoes in the box.\nisEmpty(S)\nReturn True if stack S is empty, otherwise False.\nisFull(S)\nReturn True if stack S is full, otherwise False.\n(a) Holly wants to stack the shoeboxes in ascending order of size of the shoes stored. The following is the content of stack M:\n42\n41\n37\n39\n36\n36\nStack M\nAt the bottom of the stack is the 1st box. Which two boxes need to be swapped in stack M?(1 mark)\n(b) Holly develops a sub-program swap(S, x) to help swap the xth and the (x+1)th box in stack S.\n(i) She uses an empty stack T to help with the operation of swap(S, x). Help Holly finish the pseudocode for swap(S, x).(4 marks)\nLine  Pseudocode\n1    Sub-program swap(S, x)\n2        for i from 1 to ___\n3            push(T, pop(S))\n4        temp  pop(S)\n5        push(S, _____)\n6        push(S, _____)\n7        for i from 1 to ___\n8            push(S, pop(T))\n(ii) Rewrite the line 7 of sub-program swap(S, x) using while loop.(1 mark)\nLine 7:            while ____________________:\n[--Answer:\n(a) 3rd, 4th\n(b)(i)\nx\npop(T)\ntemp\nx-1\n(b)(ii) isEmpty(T) = False\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch5",
+        "Python",
+        "循環",
+        "函數",
+        "算法",
+        "堆疊",
+        "硬件",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1105_03A002E",
+      "bank_code": "SSICTC1105_03A002E",
+      "section_type": "short_answer",
+      "marks": 6.0,
+      "year_tag": null,
+      "stem": "Ellen develops a web application for a popular concert’s online ticketing system. When the number of users simultaneously using the application reaches a certain threshold, new users are directed to the queuing page before they are granted access to the application. Ellen uses an array P with indexes from 0 to n-1 to store the queue of users, and uses the following variables and sub-programs to process array P:\nVariable / Sub-program\nDescription\nN\nThis global variable stores the number of waiting guests.\nnext\nThis global variable stores the index in P for the next new user.\nenq(P, uid)\nSub-program to add a new user’s id uid to P if P is not full. The item after P[N-1] is P[0].\ndeq(P)\nSub-program to return and remove the first user in P if P is not empty.\nGiven that n = 6 and there are currently no users in the queue.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Assume that next = 0, what is the content of P after calling enq(P,001), enq(P,002), enq(P,003), enq(P,004), deq(P), enq(P,005), deq(P), enq(P,006), enq(P,007), deq(P) sequentially?(1 mark)\nP[i]\ni\n0\n1\n2\n3\n4\n5"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the current value of next and N?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "What error will occur if the following sub-programs are then called?(1 mark)\nenq(P,008)\nenq(P,009)\nenq(P,010)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "To prevent this error, Ellen develops a sub-program check(P) and runs it every time before calling enq(P, uid). For example:\nif check(P) then\nenq(P, 011)\nHelp Ellen complete the pseudocode for sub-program check(P).(1 mark)\nif _______________ then\nreturn False\nelse\nreturn True\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "P[i]\n007\n004\n005\n006\ni\n0\n1\n2\n3\n4\n5\n(b) next = 1; N = 4\n(c)(i) Overflow error\n(c)(ii) N = 6\n--]"
+        }
+      ],
+      "text": "Ellen develops a web application for a popular concert’s online ticketing system. When the number of users simultaneously using the application reaches a certain threshold, new users are directed to the queuing page before they are granted access to the application. Ellen uses an array P with indexes from 0 to n-1 to store the queue of users, and uses the following variables and sub-programs to process array P:\nVariable / Sub-program\nDescription\nN\nThis global variable stores the number of waiting guests.\nnext\nThis global variable stores the index in P for the next new user.\nenq(P, uid)\nSub-program to add a new user’s id uid to P if P is not full. The item after P[N-1] is P[0].\ndeq(P)\nSub-program to return and remove the first user in P if P is not empty.\nGiven that n = 6 and there are currently no users in the queue.\n(a) Assume that next = 0, what is the content of P after calling enq(P,001), enq(P,002), enq(P,003), enq(P,004), deq(P), enq(P,005), deq(P), enq(P,006), enq(P,007), deq(P) sequentially?(1 mark)\nP[i]\ni\n0\n1\n2\n3\n4\n5\n(b) What is the current value of next and N?(1 mark)\n(c) \n(i) What error will occur if the following sub-programs are then called?(1 mark)\nenq(P,008)\nenq(P,009)\nenq(P,010)\n(ii) To prevent this error, Ellen develops a sub-program check(P) and runs it every time before calling enq(P, uid). For example:\nif check(P) then\nenq(P, 011)\nHelp Ellen complete the pseudocode for sub-program check(P).(1 mark)\nif _______________ then\nreturn False\nelse\nreturn True\n[--Answer:\n(a) P[i]\n007\n004\n005\n006\ni\n0\n1\n2\n3\n4\n5\n(b) next = 1; N = 4\n(c)(i) Overflow error\n(c)(ii) N = 6\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "堆疊",
+        "硬件",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1105_03A003E",
+      "bank_code": "SSICTC1105_03A003E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Kelly, the HR manager of a company, creates a linked list interview to store the names of the candidates that she is going to interview. She uses arrays to represent this linked list in which the pointer stores the index of the next node. The first node stores “candidate”.\nindex\nContent\nPointer\n0\ncandidate\n2\n1\nCatherine Chan\n2\n2\nChris Wong\n3\n3\nDaniel Lee\n7\n4\n5\nPeter Tang\n6\n6\nSally Kan\n-1\n7\nTim Yip\n5",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write down the content of the nodes in this linked list in order.(2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Kelly uses “-1” as a null pointer. What other values can be used?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Kelly writes the following sub-programs to modify the linked list:\nSub-program\nDescription\ninsert(n, ca)\nAdds a node with the content ca after the nth node.\ndelete(n)\nDeletes the nth node.\nWhat is the content of interview after executing the following code?(2 marks)\ninsert(2, \"Jane Cheung\")\ndelete(5)\nindex\nContent\nPointer\n0\n1\n2\n3\n4\n5\n6\n7\n[--Answer:\n(a)(i) candidate, Chris Wong, Daniel Lee, Tim Yip, Peter Tang, Sally Kan\n(a)(ii) Any negative numbers / any numbers greater than the array size (8)."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "index\nContent\nPointer\n0\ncandidate\n2\n1\nCatherine Chan\n2\n2\nChris Wong\n4\n3\nDaniel Lee\n5\n4\nJane Cheung\n3\n5\nPeter Tang\n6\n6\nSally Kan\n-1\n7\nTim Yip\n5\n--]"
+        }
+      ],
+      "text": "Kelly, the HR manager of a company, creates a linked list interview to store the names of the candidates that she is going to interview. She uses arrays to represent this linked list in which the pointer stores the index of the next node. The first node stores “candidate”.\nindex\nContent\nPointer\n0\ncandidate\n2\n1\nCatherine Chan\n2\n2\nChris Wong\n3\n3\nDaniel Lee\n7\n4\n5\nPeter Tang\n6\n6\nSally Kan\n-1\n7\nTim Yip\n5\n(a) \n(i) Write down the content of the nodes in this linked list in order.(2 marks)\n(ii) Kelly uses “-1” as a null pointer. What other values can be used?(1 mark)\n(b) Kelly writes the following sub-programs to modify the linked list:\nSub-program\nDescription\ninsert(n, ca)\nAdds a node with the content ca after the nth node.\ndelete(n)\nDeletes the nth node.\nWhat is the content of interview after executing the following code?(2 marks)\ninsert(2, \"Jane Cheung\")\ndelete(5)\nindex\nContent\nPointer\n0\n1\n2\n3\n4\n5\n6\n7\n[--Answer:\n(a)(i) candidate, Chris Wong, Daniel Lee, Tim Yip, Peter Tang, Sally Kan\n(a)(ii) Any negative numbers / any numbers greater than the array size (8).\n(b) index\nContent\nPointer\n0\ncandidate\n2\n1\nCatherine Chan\n2\n2\nChris Wong\n4\n3\nDaniel Lee\n5\n4\nJane Cheung\n3\n5\nPeter Tang\n6\n6\nSally Kan\n-1\n7\nTim Yip\n5\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch5",
+        "Python",
+        "列表",
+        "函數",
+        "SQL",
+        "硬件",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1105_03B004E",
+      "bank_code": "SSICTC1105_03B004E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "A palindrome (回文) is a word, phrase or sentence that looks the same both backwards and forwards. For example, the word “madam” is a palindrome. Henry is developing a program in Python that can be used to check if the input string is a palindrome. He creates a stack r and uses stack manipulation in the program.\nStack r\nRefer to the following sub-programs for stack manipulation:\nSub-program\nDescription\npush(r, c)\nPush an item c into stack r.\npop(r)\nTake an item from stack r and return that item.\nisEmpty(r)\nReturn True if there are no items in stack r; otherwise, return False.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "To reverse the order of the letters in a word, Henry uses the stack r by pushing the letters into it and popping the letters out.\nAfter executing the following algorithm, write down the content of stack r.(1 mark)\npush(r, \"w\")\npush(r, \"o\")\npush(r, \"w\")\nStack r"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "To simplify the above algorithm, Henry creates a sub-program pushString(r, s) to push the whole string s (whose index starts from 1) into stack r. Complete the pseudocode for the sub-program pushString(r, s).(2 marks)\nSub-program pushString(r, s)\nfor i from 1 to length of s\npush(r, _____)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Henry then creates another sub-program popString(r) to pop all the letters in stack r and put them together as a word. Complete the pseudocode for the sub-program popString(r).(1 mark)\nSub-program popString(r)\ns  \"\"\nwhile not(___________)\ns  _______________\nreturn s"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Henry implements a sub-program check(s) to return True if a string s is a palindrome or return False if not. Complete the pseudocode for the sub-program check(s).(1 mark)\nSub-program check(s)\npushString(r, s)\nns  popString(r)\nif _______________ then\nreturn True\nelse\nreturn False\n[--Answer:\n(a)(i)\n\"w\"\n\"o\"\n\"w\"\nStack r\n(a)(ii) s[i]\n(a)(iii)\nisEmpty(r)\ns + pop(r)\n(b) ns = s\n--]"
+        }
+      ],
+      "text": "A palindrome (回文) is a word, phrase or sentence that looks the same both backwards and forwards. For example, the word “madam” is a palindrome. Henry is developing a program in Python that can be used to check if the input string is a palindrome. He creates a stack r and uses stack manipulation in the program.\nStack r\nRefer to the following sub-programs for stack manipulation:\nSub-program\nDescription\npush(r, c)\nPush an item c into stack r.\npop(r)\nTake an item from stack r and return that item.\nisEmpty(r)\nReturn True if there are no items in stack r; otherwise, return False.\n(a) \n(i) To reverse the order of the letters in a word, Henry uses the stack r by pushing the letters into it and popping the letters out.\nAfter executing the following algorithm, write down the content of stack r.(1 mark)\npush(r, \"w\")\npush(r, \"o\")\npush(r, \"w\")\nStack r\n(ii) To simplify the above algorithm, Henry creates a sub-program pushString(r, s) to push the whole string s (whose index starts from 1) into stack r. Complete the pseudocode for the sub-program pushString(r, s).(2 marks)\nSub-program pushString(r, s)\nfor i from 1 to length of s\npush(r, _____)\n(iii) Henry then creates another sub-program popString(r) to pop all the letters in stack r and put them together as a word. Complete the pseudocode for the sub-program popString(r).(1 mark)\nSub-program popString(r)\ns  \"\"\nwhile not(___________)\ns  _______________\nreturn s\n(b) Henry implements a sub-program check(s) to return True if a string s is a palindrome or return False if not. Complete the pseudocode for the sub-program check(s).(1 mark)\nSub-program check(s)\npushString(r, s)\nns  popString(r)\nif _______________ then\nreturn True\nelse\nreturn False\n[--Answer:\n(a)(i)\n\"w\"\n\"o\"\n\"w\"\nStack r\n(a)(ii) s[i]\n(a)(iii)\nisEmpty(r)\ns + pop(r)\n(b) ns = s\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "堆疊",
+        "硬件",
+        "網絡",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1105_03C005E",
+      "bank_code": "SSICTC1105_03C005E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "XYZ College is going to hold the Open Day. Ms Cheung, the teacher in-charge, creates a linked list activity to store the activities. She uses arrays activity, prev and next to represent this linked list. Array prev stores the index of the previous activity; array next stores the index of the next activity. The linked list is shown below:\nindex\nactivity\nprev\nnext\n0\nPoetry recital\n2\n5\n1\nPrincipal’s speech\n-1\n2\n2\nChoir performance\n1\n0\n3\nOrchestra performance\n5\n6\n4\n5\nFootball match\n0\n3\n6\nLucky draw\n3\n-1\n7\n8",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Given that the starting index is 1 and “-1” represents a null pointer, write down the content of the nodes in this linked list in order.(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Ms Cheung designs a sub-program delete(n) to delete the nth node. Assume global variable start stores the index of the first node, help her complete the pseudocode for this sub-program.(4 marks)\nSub-program delete(n)\nif n = 1 then\nstart  __________\n_____________  -1\nelse\ncurrent  next[start]\nfor k from 2 to n-1\ncurrent  next[current]\nnext[prev[current]]  __________\nprev[next[current]]  __________\n[--Answer:\n(a) Principal’s speech, Choir performance, Poetry Recital, Football match, Orchestra Performance, Lucky draw"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "next[start]\nprev[start]\nnext[current]\nprev[current]\n--]"
+        }
+      ],
+      "text": "XYZ College is going to hold the Open Day. Ms Cheung, the teacher in-charge, creates a linked list activity to store the activities. She uses arrays activity, prev and next to represent this linked list. Array prev stores the index of the previous activity; array next stores the index of the next activity. The linked list is shown below:\nindex\nactivity\nprev\nnext\n0\nPoetry recital\n2\n5\n1\nPrincipal’s speech\n-1\n2\n2\nChoir performance\n1\n0\n3\nOrchestra performance\n5\n6\n4\n5\nFootball match\n0\n3\n6\nLucky draw\n3\n-1\n7\n8\n(a) Given that the starting index is 1 and “-1” represents a null pointer, write down the content of the nodes in this linked list in order.(1 mark)\n(b) Ms Cheung designs a sub-program delete(n) to delete the nth node. Assume global variable start stores the index of the first node, help her complete the pseudocode for this sub-program.(4 marks)\nSub-program delete(n)\nif n = 1 then\nstart  __________\n_____________  -1\nelse\ncurrent  next[start]\nfor k from 2 to n-1\ncurrent  next[current]\nnext[prev[current]]  __________\nprev[next[current]]  __________\n[--Answer:\n(a) Principal’s speech, Choir performance, Poetry Recital, Football match, Orchestra Performance, Lucky draw\n(b) next[start]\nprev[start]\nnext[current]\nprev[current]\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "SQL",
+        "硬件",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1105_04B001E",
+      "bank_code": "SSICTC1105_04B001E",
+      "section_type": "long_answer",
+      "marks": 13.0,
+      "year_tag": null,
+      "stem": "During the add-drop period of a university, the course enrolment system uses an array waitlist to store the student IDs of students who wish to enrol on a course if that course is full at the moment. The data in the array is processed with circular queue data structure, that means the item after the last array item is waitlist[0].\nThe following variables and sub-programs are used in the course enrolment system to process array waitlist:\nVariable / Sub-program\nDescription\nN\nThis global variable stores the number of students on the waitlist.\nfirst\nThis global variable stores the array index of the first student on the waitlist.\nlast\nThis global variable stores the array index of the last student on the waitlist.\nenq(l, sid)\nIf queue l is not full, this sub-program saves a new student ID sid at the last position in the queue.\ndeq(l)\nIf queue l is not empty, this sub-program returns the student ID of the first student on the queue.\nThere are 10 places on array waitlist. Assume that first = 8 and last = 7, the waitlist for the course COMP1001 is shown below:\nwaitlist\n1234\n1357\n2468\n2122\n5678\n3388\n2223\n4689\n1314\n3579\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "When someone has dropped the course, the first student on waitlist will take the place and then be removed from waitlist.\nWrite down the values of first, last and N, as well as the new content of waitlist if three students originally enrolled on COMP1001 have dropped the course.(4 marks)\nwaitlist\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\nfirst = _____, last = _____, N = _____"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Complete the pseudocode for the sub-program deq(waitlist).(4 marks)\nSub-program deq(waitlist)\nif ________ then\nreturn \"No student on the waitlist.\"\nelse\ntemp  ___________________\n____________________  \"\"\nN  N - 1\nfirst  _______________\nreturn temp"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Complete the pseudocode for the sub-program enq(waitlist, sid).(4 marks)\nSub-program enq(waitlist, sid)\nif __________ then\nOutput \"The waitlist is full.\"\nelse\nlast  _______________\n____________________  sid\nN  ________"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "A circular queue is implemented in this system. What is the benefit of using it?(1 mark)\n[--Answer: Refer to DSE 2020 2D Q3, 2016 2D Q2"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "waitlist\n1357\n2468\n2122\n5678\n3388\n2223\n4689\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\nfirst = 1; last = 7, N = 7"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "N = 0\nwaitlist[first]\nwaitlist[first]\n(first+1)%10"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "N = 10\n(last+1)%10\nwaitlist[last]\nN + 1\n(d) Using this type of queue allows computer resources to be used more efficiently, because the array items can be reused when the tail of the queue has reached the end of the array.\n--]"
+        }
+      ],
+      "text": "During the add-drop period of a university, the course enrolment system uses an array waitlist to store the student IDs of students who wish to enrol on a course if that course is full at the moment. The data in the array is processed with circular queue data structure, that means the item after the last array item is waitlist[0].\nThe following variables and sub-programs are used in the course enrolment system to process array waitlist:\nVariable / Sub-program\nDescription\nN\nThis global variable stores the number of students on the waitlist.\nfirst\nThis global variable stores the array index of the first student on the waitlist.\nlast\nThis global variable stores the array index of the last student on the waitlist.\nenq(l, sid)\nIf queue l is not full, this sub-program saves a new student ID sid at the last position in the queue.\ndeq(l)\nIf queue l is not empty, this sub-program returns the student ID of the first student on the queue.\nThere are 10 places on array waitlist. Assume that first = 8 and last = 7, the waitlist for the course COMP1001 is shown below:\nwaitlist\n1234\n1357\n2468\n2122\n5678\n3388\n2223\n4689\n1314\n3579\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n(a) When someone has dropped the course, the first student on waitlist will take the place and then be removed from waitlist.\nWrite down the values of first, last and N, as well as the new content of waitlist if three students originally enrolled on COMP1001 have dropped the course.(4 marks)\nwaitlist\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\nfirst = _____, last = _____, N = _____\n(b) Complete the pseudocode for the sub-program deq(waitlist).(4 marks)\nSub-program deq(waitlist)\nif ________ then\nreturn \"No student on the waitlist.\"\nelse\ntemp  ___________________\n____________________  \"\"\nN  N - 1\nfirst  _______________\nreturn temp\n(c) Complete the pseudocode for the sub-program enq(waitlist, sid).(4 marks)\nSub-program enq(waitlist, sid)\nif __________ then\nOutput \"The waitlist is full.\"\nelse\nlast  _______________\n____________________  sid\nN  ________\n(d) A circular queue is implemented in this system. What is the benefit of using it?(1 mark)\n[--Answer: Refer to DSE 2020 2D Q3, 2016 2D Q2\n(a) waitlist\n1357\n2468\n2122\n5678\n3388\n2223\n4689\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\nfirst = 1; last = 7, N = 7\n(b) N = 0\nwaitlist[first]\nwaitlist[first]\n(first+1)%10\n(c) N = 10\n(last+1)%10\nwaitlist[last]\nN + 1\n(d) Using this type of queue allows computer resources to be used more efficiently, because the array items can be reused when the tail of the queue has reached the end of the array.\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "堆疊",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTC1105_04B002E",
+      "bank_code": "SSICTC1105_04B002E",
+      "section_type": "long_answer",
+      "marks": 12.0,
+      "year_tag": null,
+      "stem": "Jeffrey works at a travel agency and is now planning the itinerary for a group of tourists. He uses a linked list places to store the names of places to be visited on a given day. The first node stores “hotel”. Jeffrey represents this linked list as arrays, as follows:\nindex\nContent\nPointer\n0\nhotel\n7\n1\nwar memorial\n3\n2\nmuseum\n1\n3\nzoo\n5\n4\nseafood market\n1\n5\ntemple\n8\n6\n7\nharbourfront\n2\n8\nnight market\n0\n9",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write down the content of the first seven nodes in this linked list.(2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What kind of linked list does Jeffrey use?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Jeffrey designs the following sub-programs to manipulate the linked list:\nSub-program\nDescription\ninsert(n, place)\nAdds a node with the content “place” after the nth node\ndelete(n)\nDeletes the nth node\nJeffrey needs to change the itinerary after receiving feedback from his supervisor. He updates places by executing the following operations in order.\ninsert(2, \"art gallery\")\ndelete(6)\nUpdate the linked list below.(3 marks)\nindex\nContent\nPointer\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Following the above sub-questions, Jeffrey restructures the linked list into a doubly linked list. Each node has two pointers: pointer prev stores the index of the previous place to visit, whereas pointer next stores the index of the next place to visit. Update the linked list below. The deleted nodes should not be included.(4 marks)\nindex\nContent\nprev\nnext\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "State one benefit and one drawback of this restructuring of the linked list.(2 marks)\n[--Answer: Refer to DSE 2014 2D Q3\n(a)(i) hotel, harbourfront, museum, war memorial, zoo, temple, night market, hotel\n(a)(ii) Circular linked list."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "index\nContent\nPointer\n0\nhotel\n7\n1\nwar memorial\n5\n2\nmuseum\n1\n3\nzoo\n5\n4\nseafood market\n1\n5\ntemple\n8\n6\nart gallery\n2\n7\nharbourfront\n6\n8\nnight market\n0\n9"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "index\nContent\nprev\nnext\n0\nhotel\n8\n7\n1\nwar memorial\n2\n5\n2\nmuseum\n6\n1\n3\n4\n5\ntemple\n1\n8\n6\nart gallery\n7\n2\n7\nharbourfront\n0\n6\n8\nnight market\n5\n0\n9"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Benefit: a node can be accessed from both directions.\nDrawback: more memory is required.\n--]"
+        }
+      ],
+      "text": "Jeffrey works at a travel agency and is now planning the itinerary for a group of tourists. He uses a linked list places to store the names of places to be visited on a given day. The first node stores “hotel”. Jeffrey represents this linked list as arrays, as follows:\nindex\nContent\nPointer\n0\nhotel\n7\n1\nwar memorial\n3\n2\nmuseum\n1\n3\nzoo\n5\n4\nseafood market\n1\n5\ntemple\n8\n6\n7\nharbourfront\n2\n8\nnight market\n0\n9\n(a) \n(i) Write down the content of the first seven nodes in this linked list.(2 marks)\n(ii) What kind of linked list does Jeffrey use?(1 mark)\n(b) Jeffrey designs the following sub-programs to manipulate the linked list:\nSub-program\nDescription\ninsert(n, place)\nAdds a node with the content “place” after the nth node\ndelete(n)\nDeletes the nth node\nJeffrey needs to change the itinerary after receiving feedback from his supervisor. He updates places by executing the following operations in order.\ninsert(2, \"art gallery\")\ndelete(6)\nUpdate the linked list below.(3 marks)\nindex\nContent\nPointer\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n(c) Following the above sub-questions, Jeffrey restructures the linked list into a doubly linked list. Each node has two pointers: pointer prev stores the index of the previous place to visit, whereas pointer next stores the index of the next place to visit. Update the linked list below. The deleted nodes should not be included.(4 marks)\nindex\nContent\nprev\nnext\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n(d) State one benefit and one drawback of this restructuring of the linked list.(2 marks)\n[--Answer: Refer to DSE 2014 2D Q3\n(a)(i) hotel, harbourfront, museum, war memorial, zoo, temple, night market, hotel\n(a)(ii) Circular linked list.\n(b) index\nContent\nPointer\n0\nhotel\n7\n1\nwar memorial\n5\n2\nmuseum\n1\n3\nzoo\n5\n4\nseafood market\n1\n5\ntemple\n8\n6\nart gallery\n2\n7\nharbourfront\n6\n8\nnight market\n0\n9\n(c) index\nContent\nprev\nnext\n0\nhotel\n8\n7\n1\nwar memorial\n2\n5\n2\nmuseum\n6\n1\n3\n4\n5\ntemple\n1\n8\n6\nart gallery\n7\n2\n7\nharbourfront\n0\n6\n8\nnight market\n5\n0\n9\n(d) Benefit: a node can be accessed from both directions.\nDrawback: more memory is required.\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch5",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "SQL",
+        "硬件",
+        "網絡"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

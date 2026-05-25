@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecC Ch8.pptx",
+    "slug": "EELECC_Ch8_slides",
+    "title": "EElecC Ch8",
+    "series": "EELECC",
+    "chapter": 8,
+    "curriculum_unit": "EC-a",
+    "curriculum_part": "EC",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.723989+00:00",
+    "slide_count": 23,
+    "topic_tags": {
+      "硬件": 8,
+      "循環": 7
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 8Applications of Programming in Real Life"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Programmable Microcontrollers108.3The main processor on an electronic device is known as a programmable microcontroller. It is usually a small circuit board with various ports and pins, which allow users to freely connect different input and output devices."
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Programmable Microcontrollers118.3A programmable microcontroller lets the user upload a program and executes specific tasks according to instructions in this program."
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Forever loops12AUnlike programs for performing operations, many electronic devices do not execute their tasks once only; instead, they need to do the tasks over and over. Therefore, most programs include the following two functions:Setup functionForever loop function"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Event-driven programming13BWhile designing a program, we can set the event that triggers program execution. Once the specified event occurs, the corresponding code will be executed. This design is called event-driven programming."
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Complete Checkpoint 8.2 on P. 319 of the textbook.1. 148.2"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Automation158.4Why do doors open automatically when we walk near them? Why do taps dispense water automatically? Why can air conditioners adjust the temperature automatically?"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Automation168.4Automation lets the computer make decisions on its own according to a preset program. For instance, when a door with an infrared sensor detects someone walking past, it will open automatically."
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Automation178.4When the light sensor detects that the surroundings are dark, the LED will be turned on; when the surroundings are bright, the LED will be turned off."
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Complete Checkpoint 8.3 on P. 325 of the textbook.1. a) Ultrasonic sensor / Passive infrared (PIR) motion sensorb) Temperature sensor. When the temperature sensor detects the change in the temperature in the room, the reading of the sensor changes accordingly. Then the system adjusts the temperature of the air-conditioner until the reading returns to the target value. (When the reading of the temperature sensor is lower than the threshold value, the system raises the temperature of the air-conditioner; otherwise, the system lowers the temperature of the air-conditioner.)188.3"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "2. a) Water temperature sensorb) LED, buzzerc) 198.3"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Maker Culture28.1With ongoing technological innovation, not only programmers but also ordinary people can write programs. This turns us from mere tool users to tool builders."
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "3. Reduce manual work / Enhance cost-effectiveness / Able to operate continuously208.3"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Internet of Things (IoT), Artificial Intelligence (AI) and Smart Living218.5Internet of Things (IoT) is the network of objects. These objects can connect to sensors and the Internet so that data can be transferred among one another. When paired with pre-set programs, sensors and computers can collect and process data more effectively than humans do, and then help the system make automatic and appropriate decisions."
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "Internet of Things (IoT), Artificial Intelligence (AI) and Smart Living228.5By integrating the technologies of AI, big data and IoT in solving problems, Artificial Intelligence of Things (AIoT) develops a new field in innovative technology. After analysing and interpreting the big data with AI, AI can take corresponding actions automatically or serve as references for our decision-making."
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "Internet of Things (IoT), Artificial Intelligence (AI) and Smart Living238.5For example, the government and transport companies install cameras or sensors on roads to analyse and estimate the journey time based on the actual traffic flow detected. Next, they can provide real-time traffic information on the Internet to help citizens plan their journeys better, thereby alleviating traffic congestion."
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Maker Culture38.1Maker culture encourages problem-solving through DIY, which is creating or adapting products with raw materials and technology (e.g. robots, electronic sensors and 3D printing)."
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Input and Output Devices48.2Same as that in computers, data in most electronic devices must undergo the three stages of computer operation: input, process and output.“Input” means the data that the electronic device receives via input devices;“Process” means the procedures used by the electronic device for processing data;“Output” means the responses given by the electronic device.This process is known as the Input-Process-Output cycle."
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Input devices5AInput devices are responsible for the first stage in the Input-Process-Output cycle. Sensors belong to automatic input devices. There are different categories of sensors, and each of them reads one or more physical quantities from the surroundings as the input to a smart device."
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Input devices6AThe following are some sensors and examples of their applications:"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Input devices7AManual input devices require users to adjust the data by hand. The following are some manual input devices that we have seen in our daily life:"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Output devices8BOutput devices respond to us in many different ways, meaning that the outputs can be light, sounds, words and physical motions. The following are some output devices and examples of their applications:"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "Complete Checkpoint 8.1 on P. 310 of the textbook.a) Soil moisture sensor, pH sensorb) Light sensorc) Displayd) Water pump / Motore) (RGB) LED98.1"
+    }
+  ]
+}

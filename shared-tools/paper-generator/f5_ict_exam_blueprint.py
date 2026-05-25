@@ -69,6 +69,10 @@ def build_f5_exam02_blueprint(
             qtype = "erd"
         if slot_id == "c-08":
             qtype = "algorithm"
+        if slot_id == "b-04":
+            qtype = "algorithm"
+        if slot_id == "b-05":
+            qtype = "sql"
         if "試算表" in concepts and slot_id == "b-01":
             qtype = "spreadsheet"
         slots.append(

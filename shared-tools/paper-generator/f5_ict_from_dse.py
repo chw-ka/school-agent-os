@@ -1321,7 +1321,7 @@ def _layout_mcq_block(
     _fmt = Path(__file__).resolve().parents[1] / "paper-formatter"
     if str(_fmt) not in sys.path:
         sys.path.insert(0, str(_fmt))
-    from mcq_code_layout import format_mcq_stem_with_code
+    from mcq_code_layout import format_mcq_stem_with_code, insert_code_block_gaps
 
     opt_lines = [f"\t{L}.\t{opts[L]}" for L in "ABCD" if L in opts]
     if len(opt_lines) != 4:
@@ -1330,8 +1330,9 @@ def _layout_mcq_block(
     question = format_mcq_stem_with_code(question)
     body: list[str] = []
     for ql in question.split("\n"):
-        if ql.strip() or not body:
-            body.append(ql)
+        body.append(ql)
+    reserve = 5 + (4 if statements else 0)  # blank + A–D (+ combo subs + blank)
+    body = insert_code_block_gaps(body, max_lines=span - reserve if span else None)
     ctx = context or []
     if ctx:
         if body and body[-1].strip():
@@ -1351,6 +1352,9 @@ def _layout_mcq_block(
             body.append("")
         body.append(hint)
         body.append("")
+
+    while len(body) >= 2 and body[-1] == "" and body[-2] == "":
+        body.pop(-2)
 
     # Exactly one blank line immediately above options (DSE convention)
     if not body or body[-1].strip():

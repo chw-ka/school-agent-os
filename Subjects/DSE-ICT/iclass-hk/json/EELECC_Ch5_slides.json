@@ -1,0 +1,606 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecC Ch5.pptx",
+    "slug": "EELECC_Ch5_slides",
+    "title": "EElecC Ch5",
+    "series": "EELECC",
+    "chapter": 5,
+    "curriculum_unit": "EC-a",
+    "curriculum_part": "EC",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.659317+00:00",
+    "slide_count": 116,
+    "topic_tags": {
+      "硬件": 35,
+      "堆疊": 32,
+      "列表": 31,
+      "循環": 31,
+      "除錯": 5
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 5Data Structures"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Application of stacks in computer systems10BThe “undo” (復原) and “redo” (取消復原) operations that we frequently perform make use of the stack data structure."
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide100.xml",
+      "text": "(b) Content of the linked list:1005.4"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide101.xml",
+      "text": "2. Anson constructed linked list DLL to store the student numbers of students studying Physics. Each node has two pointers: pointer prev stores the address of the previous node; pointer next stores the address of the next node. The content of the first node in linked list DLL stores “physics”, as shown below:(a) Assume that “-1” represents a null pointer. Write the content of the nodes on this linked list in order.1015.4"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide102.xml",
+      "text": "(b) Anson has designed the following sub-programs to manipulate the linked list:He executes the following code:\tdelete(3)\tinsert(1, \"20180322\")1025.4"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide103.xml",
+      "text": "Update the linked list below.1035.4"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide104.xml",
+      "text": "(c) State an advantage and a disadvantage of a doubly linked list.1045.4"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide105.xml",
+      "text": "◣ Solution(a) physics, 20180317, 20180236, 20180125(b) The content of linked list DLL:(c) \tAdvantage: the nodes in the linked list can be accessed from both directions.\tDisadvantage: more memory (storage space) is required.1055.4"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide106.xml",
+      "text": "Complete Checkpoint 5.4 on P. 193 of your textbook.(a)(b) start  Kyle  Daniel  Benson  Mike(c) The memory (storage space) required is less.1065.4"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide107.xml",
+      "text": "1. Andrew uses two arrays, D and NP, to implement linked list operations. He uses array D and array NP to store the content of nodes and the pointer (i.e. the index of the next node) respectively, as shown below:1075.5"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide108.xml",
+      "text": "(a) (i) Suppose that the index of the first node on the linked list is 5, write down the content of the nodes in the right order.(ii) How many nodes are there on this linked list?(iii) What numerical value is used by Andrew to represent a null pointer?1085.5"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide109.xml",
+      "text": "(b) Andrew designs the following sub-programs to manipulate the linked list:1095.5"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Application of stacks in computer systems11BSuppose that we are using a drawing software:1. When we perform an operation, it will be added to the undo stack."
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide110.xml",
+      "text": "(i) After executing delete(3), what will the content of arrays D and NP become?(ii) After executing insert(2, Brian, 4), what will the content of arrays D and NP become?1105.5"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide111.xml",
+      "text": "(c) Complete the pseudocode for the sub-program length().\tSub-program length()\t\tl  0\t\tnext  start\t\twhile next != ______\t\t\tl  ______\t\t\tnext  ______\t\treturn l1115.5"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide112.xml",
+      "text": "(d) Suppose that 1 ≤ n ≤ length(), complete the pseudocode for the sub-program delete(n).Sub-program delete(n)\tif n = 1 then\t\tstart  ______\telse\t\tprev  start\t\tcurrent  NP[start]\t\t#Use a for loop to move the current node pointer current to the nth node\t\tfor k from 2 to n-1\t\t\tprev  ______\t\t\tcurrent  ______\t\tNP[prev]  ______1125.5"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide113.xml",
+      "text": "◣ Solution(a) (i) Ben, Peter, Iris, Ada       (ii) 4       (iii) 101135.5"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide114.xml",
+      "text": "(b) (i) The content of arrays D and NP:      (ii) The content of arrays D and NP:1145.5"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide115.xml",
+      "text": "(c) while next != 10\tl  l + 1\tnext  NP[next](d) \tif n = 1 then\t\tstart  NP[start] \telse \t\tprev  start \t\tcurrent  NP[start] \t\tfor k from 2 to n-1 \t\t\tprev  current \t\t\tcurrent  NP[current] \t\tNP[prev]  NP[current]1155.5"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide116.xml",
+      "text": "Complete Checkpoint 5.5 on P. 200 of the textbook.1. (a) painting, tea, yoga, japanese    (b) Sub-program printList()\tcurrent  monday\twhile current != null\t\tOutput schedule[current]\t\tcurrent  ptr[current]1165.5"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Application of stacks in computer systems12B2. When we perform another operation, it will be added on top of the previous operation."
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Application of stacks in computer systems13B3. If we press the “undo” button, the program will follow the last-in first-out mode of manipulation, which means taking our last operation from the undo stack and put it into the redo stack."
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Application of stacks in computer systems14B4. If we press the “redo” button, the program will pop the last operation that we have undone from the redo stack and put it back into the undo stack."
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Application of stacks in computer systems15B5. When we perform the next operation, the program will clear the redo stack."
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Application of stacks in computer systems16BMoreover, we need to use stacks when a program calls its sub-program. Call stack (調用堆疊) is a stack stored in RAM and used to coordinate sub-programs."
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Application of stacks in computer systems17BWhen we call a sub-program, its stack frame, which stores information such as return address, will be pushed into the call stack."
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Application of stacks in computer systems18BWhen the sub-program has been executed, its stack frame will be popped. The following is the operating principle of a call stack."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "Manipulation of stacks in Python19CWe can use a Python list to store items in a stack and implement various stack manipulations. See the following basic stack manipulations:"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Data Structures25.1When writing programs, we usually use variables to store data. However, when it comes to storing a lot of related data items, we will use data structures to organise the data."
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Manipulation of stacks in Python20CThe following diagrams explain how to implement stack manipulations using a list:"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Manipulation of stacks in Python21C"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "Manipulation of stacks in Python22C"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "Manipulation of stacks in Python23CBefore performing stack manipulations, there are two things that we need to pay attention to:1. We cannot pop items from an empty stack, otherwise an underflow error will occur."
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "Manipulation of stacks in Python24C2. We cannot push items into a full stack, otherwise an overflow error will occur."
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "1. Austin uses stacks to manage plastic boxes storing soft drinks. The following stack has four plastic boxes, which store 10, 15, 10 and 20 bottles of soft drinks respectively, as shown below:255.1"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "Refer to the following sub-programs for stack manipulations: 265.1"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "(a) (i) Suppose that initially there is an empty stack S1. Write down the content of stack S1 after the following algorithm has been executed.push(S1, 30)push(S1, 10)push(S1, 10)push(S1, pop(S1)+pop(S1))push(S1, 25)275.1"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "(ii) Suppose that initially there is an empty stack S2. Write down the content of stack S2 after the following algorithm has been executed.push(S2, 20)push(S2, 10)pop(S2)if isEmpty(S2) then\tpush(S2, 15)else\tpush(S2, 25)285.1"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "(b) Suppose that the initial content of stack S1 and stack S2 is as follows:Write down the content of stacks S1 and S2 after the following algorithm has been executed.\ttemp  0\twhile not isEmpty(S1)\t\ttemp  temp + pop(S1)\t\tif temp > 25 then\t\t\tpush(S2, 25)\t\t\ttemp  temp – 25\tpush(S2, temp)295.1"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Data Structures35.1Data is stored in computer memory cells arranged in a row. Each computer memory location stores only one piece of data. Data structures refer to the methods of storing and organising data in the computer memory. They determine the sequences and locations of data items in the computer memory."
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "(c) Austin writes the sub-program reverse(A, B) to move all the plastic boxes in stack A to stack B, where the boxes in B are in reverse order. Suppose that there are a non-empty stack S1 and an empty stack S2, the content of S1 and S2 after the sub-program reverse(S1, S2) has been executed is as shown below:305.1"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Complete the pseudocode for the sub-program reverse(A, B).315.1"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "(d) Austin finds that the soft drinks in the bottom N boxes in stack S1 are expired. He plans to use the sub-program reverse(A, B) to design an algorithm, so that he can remove the bottom N plastic boxes in stack S1 and keep the remaining boxes in the original order in S1. Suppose that initially there are a non-empty stack S1 and an empty stack S2, the content of S1 and S2 after the algorithm has been executed is as shown below:325.1"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Complete the algorithm for Austin.335.1"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "(e) Austin finds that at the nth layer of stack S1, there are k boxes of soft drinks that are not placed in the designated stacks for their brands. He plans to design a sub-program get(n, k), so that he can move the k boxes of soft drinks at the nth layer of stack S1 to stack S2, and keep the remaining boxes in the original order in S1. Suppose that initially there are a non-empty stack S1 and an empty stack S2, the content of S1 and S2 after the algorithm has been executed is as shown below:345.1"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "Complete the pseudocode for the sub-program get(n, k) for Austin. New stacks can be added when needed.355.1"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "◣ Solution(a) (i)\t\t\t(ii)\t\t\t(b)365.1"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "(c) \twhile not isEmpty(A)\t\tpush(B, pop(A))(d) \treverse(S1, S2)\tfor i from 1 to N\t\t pop(S2)\treverse(S2, S1)375.1"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "(e) \tdefine stack S3\tfor i from t down to n\t\tpush(S3, pop(S1))\tfor i from 1 to k\t\tpush(S2, pop(S3))\treverse(S3, S1)385.1"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "Complete Checkpoint 5.1 on P. 164 of the textbook.(a) (i)      (ii)395.1"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Arrays4AAs mentioned in Module D of the Compulsory Part, an array is a simple linear data structure that stores a set of data sequentially in a continuous computer memory. The following diagram shows an array that arranges data items in a row:"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "(b) (i)      (ii)405.1"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "(c) No action(d) Firstly, remove the bottommost item in goForward. Then, perform the stack manipulation for clicking “go back”, i.e. push(goForward, pop(goBack)).415.1"
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Queues425.3Suppose that you are now waiting in a queue outside a newly opened restaurant. The restaurant has no table reservation system.Instead, it let diners enter sequentially using the first-come, first-served approach."
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "The concept and manipulation of queues43ASince you are the first diner in the queue, you can enter the restaurant first. This mode of manipulation is called First-In First-Out (FIFO)."
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "The concept and manipulation of queues44AA queue is a data structure that adopts the above mode of manipulation. When you add a data item to a queue (enqueue), that data item will be added to the end of the queue."
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "The concept and manipulation of queues45AWhen you take a data item from the queue (dequeue), the removed item will be the one at the beginning of the queue, i.e. the first item that you have added."
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "Application of queues in computer systems46BQueues are widely applied in computer systems. For example, the order of printing documents is stored as a queue in the printer memory."
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "Manipulation of queues in Python47CWe can use a Python list to store items in a queue and implement various queue manipulations. See the following basic queue manipulations:"
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "Manipulation of queues in Python48CThe following diagrams explain how to implement queue manipulations using a list:"
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "Manipulation of queues in Python49C"
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Pointers5BA pointer is a variable for storing computer memory address, which is usually the address of another variable. A pointer can be compared to an arrow in that it points to a specific variable."
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "Manipulation of queues in Python50C"
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "1. Marco creates a number array Q with indexes from 1 to 10 and manipulates the array as a queue:Refer to the following sub-programs for queue manipulation:515.2"
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "(a) Write down the content of array Q after the following algorithm has been executed.\tenq(Q, 20)\tdeq(Q)\tdeq(Q)525.2"
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "(b) Marco writes the pseudocode for the sub-program isEmpty(Q), as follows:\tSub-program isEmpty(Q)\tif item(Q) = 0 then\t\treturn True\telse\t\treturn False       Write the pseudocode for the sub-program isFull(Q).535.2"
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "(c) Complete the pseudocode for the following sub-program enq(Q, num) for Marco.\tSub-program enq(Q, num)\t\tif ______________ then\t\t\tOutput \"Unsuccessful“\t\telse\t\t\t ______________545.2"
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "(d) Write the pseudocode for the sub-program deq(Q).Sub-program deq(Q)\treturn temp555.2"
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "◣ Solution(a) Content of array Q:(b) Sub-program isFull(Q)\tif item (Q) = 10 then\t\treturn True\telse\t\treturn False565.2"
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "(c) Sub-program enq(Q, num)\tif isFull(Q) then\t\tOutput \"Unsuccessful\"\telse\t\tQ[item(Q) + 1]  num(d) Sub-program deq(Q)\tif isEmpty(Q) then\t\tOutput \"Unsuccessful\"\telse\t\ttemp  Q[1]\t\tfor i from 1 to item(Q)-1\t\t\tQ[i]  Q[i+1]\t\tQ[item(Q)] = \"\"\treturn temp575.2"
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "Queues manipulated with pointers58ETo enhance the efficiency of queue manipulation, we can use two pointers (head and tail) to indicate the first and last items of the queue respectively. Whenever adding or deleting an item, we simply have to move the pointers."
+    },
+    {
+      "slide_index": 72,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "Queues manipulated with pointers59E"
+    },
+    {
+      "slide_index": 73,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Pointers6BData structures have different methods of data organisation as well as ways of manipulation. This chapter will explain three common data structures individually and they will be represented using arrays and pointers:stack (堆疊)queue (隊列)linked list (鏈表)"
+    },
+    {
+      "slide_index": 74,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "Queues manipulated with pointers60E"
+    },
+    {
+      "slide_index": 75,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "Queues manipulated with pointers61E"
+    },
+    {
+      "slide_index": 76,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "Complete Checkpoint 5.2 on P. 173 of the textbook.(a) (i)\tP = 2\t\tQ = 5     (ii)\tP = 4 \tQ = 8625.2"
+    },
+    {
+      "slide_index": 77,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "(b) P > Q(c) Overflow error (index out of range)635.2"
+    },
+    {
+      "slide_index": 78,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "The concept and manipulation of circular queue64FAs shown in the pointers manipulation above, in the case of an array with a fixed size, we can neither add new items nor reuse the array items once the tail of the queue reaches the end of the array. This way of manipulation wastes computer resources."
+    },
+    {
+      "slide_index": 79,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "The concept and manipulation of circular queue65FTo solve this problem, we can simply reset the pointers. When a pointer reaches the end of the array, the next value of the pointer is reset to the index of the first item in the array. In this way, a circular queue is formed."
+    },
+    {
+      "slide_index": 80,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "The concept and manipulation of circular queue66F"
+    },
+    {
+      "slide_index": 81,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "The concept and manipulation of circular queue67F"
+    },
+    {
+      "slide_index": 82,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "The concept and manipulation of circular queue68F"
+    },
+    {
+      "slide_index": 83,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "The concept and manipulation of circular queue69FSame as stack manipulations, before performing queue manipulations, there are two things that we need to pay attention to:1. We cannot pop an item from an empty queue, otherwise an underflow error will occur."
+    },
+    {
+      "slide_index": 84,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Stacks75.2Imagine that you are a librarian. You need to take books from a bookshelf and put them onto another bookshelf. While you are taking out the books, they are stacked up and the first one you have taken out becomes the bottom of the stack."
+    },
+    {
+      "slide_index": 85,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "The concept and manipulation of circular queue70F2. We cannot push an item into a full queue, otherwise an overflow error will occur."
+    },
+    {
+      "slide_index": 86,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "1. Steve is a programmer at an IT company. He is developing for a bank a ticketing program for VIP counter services. Steve uses an array T with indexes from 0 to 9 to store the names of the waiting customers, and uses the following variables and sub-programs to process array T:715.3"
+    },
+    {
+      "slide_index": 87,
+      "slide_part": "ppt/slides/slide72.xml",
+      "text": "Assume that N = 3 and first = 7, and the initial content of array T is as follows:Then, after executing delQ(T), N = 2, first = 8 and the content of array T is:Then, after executing addQ(T, Katie), N = 3, first = 8 and the content of array T is:725.3"
+    },
+    {
+      "slide_index": 88,
+      "slide_part": "ppt/slides/slide73.xml",
+      "text": "(a) Next, execute the following algorithm:\taddQ(T, Dan)\tdelQ(T)\tdelQ(T)\taddQ(T, Alan)\tdelQ(T)\taddQ(T, Ellen)(i) What is the content of array T?(ii) What is the value of variable N?(iii) What is the value of variable first?(iv) What is the return value of calling the sub-program last(T)?735.3"
+    },
+    {
+      "slide_index": 89,
+      "slide_part": "ppt/slides/slide74.xml",
+      "text": "(b) The above ticketing service is provided with a first-come-first-served approach. What data structure does array T use to process the data?(c) Write the pseudocode for the sub-program delQ(T).\tSub-program delQ(T)\t\tif N = 0 then\t\t\ttemp  \"Unsuccessful\"\t\telse\t\t\ttemp  _______\t\t\tT[_______]  \"\"\t\t\tN  _______\t\t\tif _______ then\t\t\t\tfirst  0\t\t\telse\t\t\t\tfirst  first + 1\t\treturn temp745.3"
+    },
+    {
+      "slide_index": 90,
+      "slide_part": "ppt/slides/slide75.xml",
+      "text": "(d) Write the pseudocode for the sub-program addQ(T, name).\tSub-program addQ(T, name)\t\tif _______ then\t\t\tOutput \"Service is busy\"\t\telse\t\t\tT[_______]  name\t\t\tN  _______755.3"
+    },
+    {
+      "slide_index": 91,
+      "slide_part": "ppt/slides/slide76.xml",
+      "text": "(e) Write the pseudocode for the sub-program last(T).\tSub-program last(T)\t\tif N = 0 and first = 0 then\t\t\treturn 9\t\telse765.3"
+    },
+    {
+      "slide_index": 92,
+      "slide_part": "ppt/slides/slide77.xml",
+      "text": "◣ Solution(a) (i) The content of array T:     (ii) 3      (iii) 1      (iv) 3775.3"
+    },
+    {
+      "slide_index": 93,
+      "slide_part": "ppt/slides/slide78.xml",
+      "text": "(b) Queue(c) \ttemp  T[first]\tT[first]  \" \"\tN  N – 1\tif first = 9 then\t\tfirst  0\telse\t\tfirst  first + 1785.3"
+    },
+    {
+      "slide_index": 94,
+      "slide_part": "ppt/slides/slide79.xml",
+      "text": "(d) \tif N = 10 then\t\tOutput \"Service is busy“\telse\t\tT[(last(T)+1) % 10] name\t\tN  N + 1(e) \tif (first+N-1) <= 9 then\t\treturn (first + N - 1)\telse\t\treturn (first + N - 1) % 10795.3"
+    },
+    {
+      "slide_index": 95,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "The concept and manipulation of stacks8AWhile you are putting the books back onto the bookshelf, you pick up the one at the top of the stack, i.e. the last book you have taken out. This mode of manipulation is called Last-In First-Out (LIFO)."
+    },
+    {
+      "slide_index": 96,
+      "slide_part": "ppt/slides/slide80.xml",
+      "text": "Complete Checkpoint 5.3 on P. 180 of your textbook.(a) N(b) \tstart = 3 \tnext = 1805.3"
+    },
+    {
+      "slide_index": 97,
+      "slide_part": "ppt/slides/slide81.xml",
+      "text": "(c)Sub-program push(TAXI, no)\tif (next + 1) % N = start then\t\tOutput \"The queue is full.“\telse\t\tTAXI[next]  no\t\tnext  (next + 1) % NSub-program pop(TAXI)\tif start = next then\t\treturn \"No taxi\"\telse\t\tstart  (start + 1) % N\t\treturn TAXI[start]815.3"
+    },
+    {
+      "slide_index": 98,
+      "slide_part": "ppt/slides/slide82.xml",
+      "text": "(d) Sub-program waiting(TAXI) \tif next >= start \t\treturn next – start \telse\t\treturn N - (start - next)(e) \ttotal  0\ti  start\twhile i != next\t\tif P[i] = 5 then\t\t\ttotal  total + 1\t\ti  (i + 1) % N\tOutput total825.3"
+    },
+    {
+      "slide_index": 99,
+      "slide_part": "ppt/slides/slide83.xml",
+      "text": "Linked Lists835.4A linked list is formed by many nodes. Each node stores its own data and a pointer, which stores the address of the next node. Nodes in the linked list are all connected by pointers."
+    },
+    {
+      "slide_index": 100,
+      "slide_part": "ppt/slides/slide84.xml",
+      "text": "The concept and manipulation of linked lists84ATo add a new node to or delete a node from the linked list, we simply need to modify the pointers of the nodes."
+    },
+    {
+      "slide_index": 101,
+      "slide_part": "ppt/slides/slide85.xml",
+      "text": "The concept and manipulation of linked lists85AStack and queue data structures only allow us to add data at their ends, while a linked list lets us insert new data in the middle of a row of data items. Therefore, a linked list is more flexible than the previous two data structures."
+    },
+    {
+      "slide_index": 102,
+      "slide_part": "ppt/slides/slide86.xml",
+      "text": "Application of linked lists in computer systems86BAfter a file system has been used for a long time, a lot of files are created, edited and deleted. Files are stored in storage devices in the form of separate fragments.A linked list is one of the data structures used in memory management. The computer system connects all fragments of a file using a linked list."
+    },
+    {
+      "slide_index": 103,
+      "slide_part": "ppt/slides/slide87.xml",
+      "text": "Application of linked lists in computer systems87BFile A connected by a linked list:"
+    },
+    {
+      "slide_index": 104,
+      "slide_part": "ppt/slides/slide88.xml",
+      "text": "Differences between linked lists and arrays88CLinked lists and one-dimensional arrays have similar uses in that both can store a series of data. However, as mentioned in Module D of the Compulsory Part, an array can store the same type of data only. On the contrary, a linked list can store different types of data."
+    },
+    {
+      "slide_index": 105,
+      "slide_part": "ppt/slides/slide89.xml",
+      "text": "Differences between linked lists and arrays89CMoreover, since an array stores data in a continuous memory, the computer can use the index to calculate the memory address quickly and easily, and access a given item directly. This method of data access is called direct access (also known as random access)."
+    },
+    {
+      "slide_index": 106,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "The concept and manipulation of stacks9AA stack is a data structure that adopts the above mode of manipulation. When you add (push) a data item into a stack, the item will be added to the top of the stack.when you remove (pop) a data item from a stack, the removed item will be the one at the top of the stack."
+    },
+    {
+      "slide_index": 107,
+      "slide_part": "ppt/slides/slide90.xml",
+      "text": "Differences between linked lists and arrays90CSince a linked list connects nodes by pointers, data items do not need to be stored in a continuous memory, instead, they can be stored separately in different locations. When we need to access the data item at a given location, we can only search the list from the beginning and follow the pointers. This access method is called sequential access."
+    },
+    {
+      "slide_index": 108,
+      "slide_part": "ppt/slides/slide91.xml",
+      "text": "Differences between linked lists and arrays91CAlthough arrays are more convenient than linked lists in terms of data access, adding or deleting items in arrays is more complicated. For instance, if we need to add an item to an array, we must move the items after a given location backwards one by one."
+    },
+    {
+      "slide_index": 109,
+      "slide_part": "ppt/slides/slide92.xml",
+      "text": "Differences between linked lists and arrays92CIn addition, to delete an item, we need to move the items after a given location forwards one by one."
+    },
+    {
+      "slide_index": 110,
+      "slide_part": "ppt/slides/slide93.xml",
+      "text": "Differences between linked lists and arrays93COn the other hand, it is simpler to add or delete a node in a linked list. We only need to change the directions of the pointers."
+    },
+    {
+      "slide_index": 111,
+      "slide_part": "ppt/slides/slide94.xml",
+      "text": "Differences between linked lists and arrays94CComparison of arrays and linked lists:"
+    },
+    {
+      "slide_index": 112,
+      "slide_part": "ppt/slides/slide95.xml",
+      "text": "1. Nicole uses a linked list to store the English names of some MTR stations. The content of the first node in the linked list stores “start”, while the pointer stores the index of the next node. She represents this linked list as arrays, as shown below:955.4"
+    },
+    {
+      "slide_index": 113,
+      "slide_part": "ppt/slides/slide96.xml",
+      "text": "(a) (i) Nicole uses “-1” to represent a null pointer. Write the content of the nodes in this linked list in order.     (ii) Including the first node, how many nodes are there in this linked list?    (iii) Other than “-1”, state the range of values that Nicole can use to represent the null pointer.965.4"
+    },
+    {
+      "slide_index": 114,
+      "slide_part": "ppt/slides/slide97.xml",
+      "text": "(b) Nicole designs the following sub-programs to manipulate the linked list:She executes the following code:\tinsert(5, \"Kowloon Tong\")\tinsert(5, \"Prince Edward\")\tdelete(2)975.4"
+    },
+    {
+      "slide_index": 115,
+      "slide_part": "ppt/slides/slide98.xml",
+      "text": "Update the linked list below.985.4"
+    },
+    {
+      "slide_index": 116,
+      "slide_part": "ppt/slides/slide99.xml",
+      "text": "◣ Solution(a) (i) start, Whampoa, Ho Man Tin, Yau Ma Tei, Mong Kok     (ii) 5     (iii) Any negative numbers/ If we know the array size, any numbers greater than it995.4"
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecA Ch2.pptx",
+    "slug": "EELECA_Ch2_slides",
+    "title": "EElecA Ch2",
+    "series": "EELECA",
+    "chapter": 2,
+    "curriculum_unit": "EA-a",
+    "curriculum_part": "EA",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.508073+00:00",
+    "slide_count": 63,
+    "topic_tags": {
+      "數據庫": 44,
+      "列表": 16,
+      "循環": 2,
+      "除錯": 2,
+      "硬件": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 2SQL Operators and Functions"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Finish Checkpoint 2.1 on P. 64 of your textbook.(a) UPDATE EXP SET ACCEL = DIST * 2 / TTIME / TTIME(b) SELECT RID, ACCEL * TTIME FROM EXP(c) SELECT RID, FORCE / ACCEL AS MASS FROM EXP ORDER BY MASS102.1"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Comparison operator11BHere is a list of comparison operators which are used in criteria."
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Logical operator12CHere is a list of basic logical operators which are used in logical operation."
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Logical operator13CThe following SQL statement shows students who failed the first test.SELECT NAME, SCORE1, SCORE2 FROM STUDENT WHERE SCORE1 < 60"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Logical operator14CThe following SQL statement shows the students who passed the first test. SELECT NAME, SCORE1, SCORE2 FROM STUDENT WHERE NOT SCORE1 < 60"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Logical operator15CThe following SQL statement shows students who failed the second test. SELECT NAME, SCORE1, SCORE2 FROM STUDENT WHERE SCORE2 < 60"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Logical operator16CThe following SQL statement shows the students who failed both tests. SELECT NAME, SCORE1, SCORE2 FROM STUDENT WHERE SCORE1 < 60 AND SCORE2 < 60"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Logical operator17CThe following SQL statement shows the students who failed at least one of both tests.SELECT NAME, SCORE1, SCORE2 FROM STUDENT WHERE SCORE1 < 60 OR SCORE2 < 60"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Logical operator18CSimilar to arithmetic operators, logical operators have an order of operations, which is NOT > AND > OR.NOT CLASS = '1B' AND SCORE1 < 60 OR SCORE2 < 60is equivalent to((NOT CLASS = '1B') AND SCORE1 < 60) OR SCORE2 < 60but not equivalent toNOT (CLASS = '1B' AND (SCORE1 < 60 OR SCORE2 < 60))"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "Logical operator19CIN is used to select more than one value. The following SQL statement list the students from class 1A, 1B and 2C.SELECT SID, NAME FROM STUDENT WHERE CLASS IN ('1A', '1B', '2C')"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "SQL Operator22.1SQL operators are used in an expression to help us modify or filter data in a database.There are three types of operators, namely arithmetic operators, comparison operators and logical operators. Sometimes, wildcards are used in criteria."
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Logical operator20CBETWEEN ... AND is used to select values within a specific range inclusively. The following SQL statement list the students whose date of birth is between 2013-08-23 and 2013-09-22 (including 2013-08-23 and 2013-09-22). SELECT SID, NAME FROM STUDENT WHERE DOB BETWEEN '2013-08-23' AND '2013-09-22'"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Logical operator21CLIKE is used to select character strings that follow a specific pattern. It is usually used with wildcards.Note that this operator is case insensitive too, meaning that both 'Apple' and 'apple' match the pattern 'appl_'."
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "Logical operator22CThe following SQL statement list the students whose names contain an.SELECT SID, NAME FROM STUDENT WHERE NAME LIKE '%an%'"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "Logical operator23CThe following SQL statement list the students whose names have a length of three and end with n. SELECT SID, NAME FROM STUDENT WHERE NAME LIKE '__n'"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "Logical operator24CWe may also use both % and _ at the same time.SELECT SID, NAME FROM STUDENT WHERE NAME LIKE '__a%'"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "Logical operator25CWe may use IS NULL or IS NOT NULL to distinguish between the records with NULL values and those without. The following SQL statement finds students who are absent in the first test.SELECT SID, NAME FROM STUDENT WHERE SCORE1 IS NULL"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "Logical operator26CThe following SQL statement finds students who are present in the first test.SELECT SID, NAME FROM STUDENT WHERE SCORE1 IS NOT NULLNote that 0 is not NULL."
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "1. A manager created a table named EMPLOYEE to store the data of the employees in their company.Here is the table structure of EMPLOYEE.272.2"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "(a) Write a SQL statement to list the names of the employees whose date of birth is before 1966-01-01, or those who have worked for the company for at least 20 years.(b) Write a SQL statement to list the identity codes of the employees who do not belong to team D and have a room number between 202 and 208.(c) Write a SQL statement to list the identity codes and dates of birth of the employees who belong to team A, C or E and have more than 10 leaves.282.2"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "(d) Write a SQL statement to list the team names of the employees whose identity code have a length of six, start with A and end with X. Duplicated teams should not be shown.(e) Assume that every name stored in ENAME starts with the surname of the employee. Write a SQL statement to list the names of the employees whose surname is not Ng.(f) Write a SQL statement to find the names of the employees who are not assigned to a team.292.2"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Arithmetic operator3AHere is a list of arithmetic operators which are used in calculation."
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "◣ Solution(a) SELECT ENAME FROM EMPLOYEE WHERE DOB < '1966-01-01' OR TENURE >= 20(b) SELECT EID FROM EMPLOYEE WHERE TEAM <> 'D' AND ROOM BETWEEN 202 AND 208(c) SELECT EID, DOB FROM EMPLOYEE WHERE TEAM IN ('A', 'C', 'E') AND LEAVE > 10302.2"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "(d) SELECT DISTINCT TEAM FROM EMPLOYEE WHERE EID LIKE 'A____X‘(e) SELECT ENAME FROM EMPLOYEE WHERE NOT ENAME LIKE 'Ng %‘(f) SELECT ENAME FROM EMPLOYEE WHERE TEAM IS NULL312.2"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "Finish Checkpoint 2.2 on P. 76 of your textbook.1.\t(a) SELECT * FROM STUDENT WHERE DOB >= '2013-05-05'\t(b) SELECT * FROM STUDENT WHERE SCORE1 < 60 OR SCORE1 > 80\t(c) SELECT * FROM STUDENT WHERE NOT CLASS IN ('1B', '2C')\t(d) SELECT * FROM STUDENT WHERE SCORE2 \t\t\tBETWEEN SCORE1 AND SCORE32.\t(a) SELECT BN FROM BK WHERE BN LIKE 'the%'\t(b) SELECT BN FROM BK WHERE BN LIKE '%tt%'\t(c) SELECT BN FROM BK WHERE BN LIKE '%t%t%'\t(d) SELECT BN FROM BK WHERE BN LIKE '%t_'322.2"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Function332.2SQL functions are used in an expression to help us analyse data. See the SQL statement below."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "Text function34AHere is a list of functions that are related to character strings."
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "Time function35BHere is a list of functions that are related to dates and times."
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "1. The administrator of an e-learning platform uses a table named USER to store the data of the student users.Here is the table structure of USER.362.3"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "(a) The administrator finds that some usernames contain unwanted whitespaces at the beginning and the end. Write a SQL statement to update the usernames and remove all these whitespaces.(b) Write a SQL statement to display a list of usernames sorted by the month of birth of each user in ascending order.372.3"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "(c) Write a SQL statement to display a list of identity numbers where the users' dates of birth are between 08-23 to 09-22.(d) Some students failed to pass the exam in the previous school year. These students repeat their grades in this school year. Write a SQL statement to list the usernames of these students.382.3"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "(e) Due to transcription error, the phone numbers of some users have missing digits. Write a SQL statement to list the identity numbers and the phone numbers of these users.(f) Write a SQL statement to list the last four characters of the identity numbers of all users.392.3"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Arithmetic operator4AHere is the table structure of STUDENT.Each student has a final score which is calculated using the formula below:Final score = score of the first test × 40% + score of the second test × 60%"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "◣ Solution(a) UPDATE USER SET USERNAME = TRIM(USERNAME)(b) SELECT USERNAME FROM USER ORDER BY MONTH(DOB) [ASC](c) SELECT UID FROM USER \tWHERE MONTH(DOB)*100+DAY(DOB) BETWEEN 823 AND 922(d) SELECT USERNAME FROM USER \tWHERE MID(CLASS, 1, 1) = MID(OLDCLASS, 1, 1)(e) SELECT UID, PHONE FROM USER WHERE LENGTH(PHONE) < 8(f) SELECT MID(UID, LENGTH(UID) - 3, 4) FROM USER402.3"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "Finish Checkpoint 2.3 on P. 80 of your textbook.(a) SELECT FNAME FROM FILM WHERE YEAR(RELEASE) IN (2012, 2016, 2021)(b) SELECT FNAME FROM FILM ORDER BY LENGTH(FNAME)(c) SELECT MID(FID, LENGTH(FID)-2, 2) FROM FILM(d) SELECT LENGTH(FNAME) - LENGTH(TRIM(FNAME)) FROM FILM \tWHERE FID = '2468‘(e) UPDATE FILM SET FNAME = MID(UPPER(FNAME), 1, LENGTH(FNAME)-9) \tWHERE MID(FNAME, LENGTH(FNAME)-8, 9) = 'uppercase'412.3"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Aggregation function42CAggregation functions help us summarise data. The following table is used as an example:"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "Aggregation function43CAggregation functions help us summarise data. The following table is used as an example:"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "Aggregation function44CThe following SQL statement returns the total number of records in STUDENT.SELECT COUNT(*) FROM STUDENT"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "Aggregation function45CWe may add a GROUP BY clause to categorise the data before summarisation. SELECT CLASS, COUNT(*) FROM STUDENT GROUP BY CLASS ORDER BY CLASS"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "Aggregation function46CWe may also add a HAVING clause to filter the categories.The above SQL statement counts the total number of students in each class. However, only class with more than one student is shown."
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "Aggregation function47CThe following SQL statement counts the total number of students who passed the first test in each class. However, only class with more than one student is shown."
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "Aggregation function48C"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "Aggregation function49CWe may use GROUP BY to categorise data based on multiple fields. To better demonstrate the categorisation, the following data is used. The following SQL statement counts the total number of male and female students in each class.SELECT CLASS, SEX, COUNT(*) FROM STUDENT GROUP BY CLASS, SEX ORDER BY CLASS"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Arithmetic operator5AThe SQL statement below lists the final scores of all students in STUDENT.SELECT NAME, SCORE1*0.4+SCORE2*0.6 FROM STUDENT"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "Aggregation function50CSELECT CLASS, SEX, COUNT(*) FROM STUDENT GROUP BY CLASS, SEX ORDER BY CLASS"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "Aggregation function51CCOUNT(<expression>) counts the number of records. We often input * as the <expression> as the expression itself is usually irrelevant, unless NULL values has to be excluded.The following SQL statement counts the total number of students born in different years.SELECT YEAR(DOB), COUNT(*) FROM STUDENT GROUP BY YEAR(DOB)"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "Aggregation function52CMAX(<expression>) and MIN(<expression>) returns the largest and the smallest values in a set of values respectively. The following SQL statement finds the highest and the lowest score of all students.SELECT MAX(SCORE), MIN(SCORE) FROM STUDENT"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "Aggregation function53CSUM(<expression>) calculates the sum of values.The following SQL statement calculates the sum of scores of each class.SELECT CLASS, SUM(SCORE) FROM STUDENT GROUP BY CLASS"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "Aggregation function54CAVG(<expression>) calculates the average values. The following SQL statement calculates the average scores of each class.SELECT CLASS, AVG(SCORE) FROM STUDENT GROUP BY CLASS"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "1. The manager of a theme park uses two tables, MEMBER and MTYPE to manage the membership of the theme park.552.4"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "(a) What is the primary key and the foreign key of MEMBER?Here is the data in MTYPE. Write SQL statements to help the manager finish the following tasks.(b) The manager wants to upgrade all Gold members who registered in or before 2018 to Platinum members.(c) Today is the 8-year anniversary of the theme park. The manager wants to celebrate the anniversary by giving 1000 credits to members with at least an 8 in the months or days of their dates of birth, e.g. those who are born on 2010-08-20 or 2011-02-28.562.4"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "(d) The manager wants to analyse the member data by listing the average amount of credit for members of each gender in each member type.(e) The manager wants to know the registration date of the most recently registered member in each member type.(f) The manager wants to know the number of Bronze members registered in each month. The year is not concerned572.4"
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "◣ Solution(a) MEMID is the primary key and TYPEID is the foreign key.(b) UPDATE MEMBER SET TYPEID = 3 \tWHERE TYPEID = 2 AND YEAR(REGDATE) <= 2018(c) UPDATE MEMBER SET CREDIT = CREDIT + 1000\tWHERE MONTH(DOB) = 8 OR DAY(DOB) IN (8, 18, 28)582.4"
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "(d) SELECT TYPEID, SEX, AVG(CREDIT) FROM MEMBER GROUP BY TYPEID, SEX(e) SELECT TYPEID, MAX(REGDATE) FROM MEMBER GROUP BY TYPEID(f) SELECT MONTH(REGDATE), COUNT(*) FROM MEMBER\tWHERE TYPEID = 0 GROUP BY MONTH(REGDATE)592.4"
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Arithmetic operator6AThe column name of final scores is an expression, SCORE1*0.4+SCORE2*0.6. To make it more comprehensible, we may use AS to give it an alias."
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "Finish Checkpoint 2.4 on P. 93 of your textbook.(a) CAT+SN(b) SELECT MAX(LENGTH(PNAME)) FROM PRODUCT(c) ALTER TABLE PRODUCT MODIFY PNAME VARCHAR(80)602.4"
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "(d) UPDATE PRODUCT SET CAT = TRIM(LOWER(CAT))(e) SELECT PNAME, MIN(COST) FROM PRODUCT \tWHERE STOCK > 50 GROUP BY PNAME HAVING MIN(COST) >= 10(f) SELECT WAREHOUSE, SUM(COST * STOCK) FROM PRODUCT \tGROUP BY WAREHOUSE HAVING SUM(COST * STOCK) > 10000612.4"
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "Finish Checkpoint 2.1 on P. 95 of your textbook.1.2. 3.622.1"
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "4. 632.1"
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "1. A teacher uses a table named TEMP to store the body temperature records of all students. Here is the table structure of TEMP.72.1"
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "(a) The teacher wants to save student's body weight in pound instead of kilogram. Given that 1 kilogram equals 2.2 pound, write a SQL statement to update the existing data in TEMP.(b) The teacher tries to retrieve the names and the body temperatures of all students. However, they wants the body temperature to be shown in degree Celsius (°C). Given that °C = (°F – 32) × 5 ÷ 9, write a SQL statement to retrieve the required data.(c) Due to system errors, some records have negative SID as their body weight, e.g. if the SID is 10522, the body weight would be set as -10522 incorrectly. Write a SQL statement to delete such records.82.1"
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "◣ Solution(a) UPDATE TEMP SET WEIGHT = WEIGHT * 2.2(b) SELECT NAME, (DEGREE - 32) * 5 / 9 FROM TEMP(c) DELETE FROM TEMP WHERE -SID = WEIGHT92.1"
+    }
+  ]
+}

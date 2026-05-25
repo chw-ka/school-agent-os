@@ -1,0 +1,570 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecC4_en_Sub-programs.docx",
+    "slug": "ElecC4_en",
+    "title": "Sub-programs",
+    "title_zh": null,
+    "title_en": "Sub-programs",
+    "language": "en",
+    "family": "ElecC",
+    "chapter": 4,
+    "integrated": false,
+    "topic_code": "EC04",
+    "curriculum_unit": "EC",
+    "ca_unit": "EC",
+    "f5_exam_scope": "elective_sd",
+    "extracted_at": "2026-05-24T10:37:18.238990+00:00",
+    "item_count": 9,
+    "section_counts": {
+      "short_answer": 6,
+      "long_answer": 3
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTC1104_03B001E",
+      "bank_code": "SSICTC1104_03B001E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Ricky is making a floor plan of the boy dormitory with 3 rows and 5 columns. He uses an array item R[i,j] to store the room number of the room in row i , column j.\nj\ni\n1\n2\n3\n4\n5\n1\n2\n3\nRicky writes a sub-program gen_num that generates the room numbers and stores them in R, as shown below.\nSub-program gen_num\nfor i from 1 to 3\nfor j from 1 to 5\nR[i,j]  5*(i-1) + j",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write down the room number stored in R[2,4].(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Write down the indices of the item in R that stores room number 13.(1 mark)\nR[____,____]\nRicky modifies gen_num to change the room numbers in the floor plan, as shown below:\nj\ni\n1\n2\n3\n4\n5\n1\n1\n6\n7\n12\n13\n2\n2\n5\n8\n11\n14\n3\n3\n4\n9\n10\n15"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Complete the pseudocode for gen_num.(2 marks)\nSub-program gen_num\nfor i from 1 to 5\nfor j from 1 to 3\nif ______________________________ then\nR[j,i]  3*(i-1) + j\nelse\nR[j,i]  __________________________\n[--Answer: Refer to DSE ICT 2D 2023 Q2ab\n(a)(i) 9\n(a)(ii) 3,3"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "i % 2 = 1\n3*(i-1) + (4-j)\n--]"
+        }
+      ],
+      "text": "Ricky is making a floor plan of the boy dormitory with 3 rows and 5 columns. He uses an array item R[i,j] to store the room number of the room in row i , column j.\nj\ni\n1\n2\n3\n4\n5\n1\n2\n3\nRicky writes a sub-program gen_num that generates the room numbers and stores them in R, as shown below.\nSub-program gen_num\nfor i from 1 to 3\nfor j from 1 to 5\nR[i,j]  5*(i-1) + j\n(a) \n(i) Write down the room number stored in R[2,4].(1 mark)\n(ii) Write down the indices of the item in R that stores room number 13.(1 mark)\nR[____,____]\nRicky modifies gen_num to change the room numbers in the floor plan, as shown below:\nj\ni\n1\n2\n3\n4\n5\n1\n1\n6\n7\n12\n13\n2\n2\n5\n8\n11\n14\n3\n3\n4\n9\n10\n15\n(b) Complete the pseudocode for gen_num.(2 marks)\nSub-program gen_num\nfor i from 1 to 5\nfor j from 1 to 3\nif ______________________________ then\nR[j,i]  3*(i-1) + j\nelse\nR[j,i]  __________________________\n[--Answer: Refer to DSE ICT 2D 2023 Q2ab\n(a)(i) 9\n(a)(ii) 3,3\n(b) i % 2 = 1\n3*(i-1) + (4-j)\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1104_03A002E",
+      "bank_code": "SSICTC1104_03A002E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Felix is developing a program to calculate the area of different shapes based on a letter inputted by the user. One of the sub-programs, choose(i), is shown as follows:\nSub-program choose(i)\nif i = \"R\" then\nCall sub-program areaR\nif i = \"S\" then\nCall sub-program areaS\nif i = \"T\" then\nCall sub-program areaT",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "If choose(\"S\") is executed, which sub-program (areaR, areaS, or areaT) will be called?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The details of those sub-programs are as follows:\nSub-programs\nDescription\nareaR\nCalculate the area of a rectangle.\nareaS\nCalculate the area of a square.\nareaT\nCalculate the area of a triangle."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "In the sub-program areaR, l is the length of the rectangle and w is the width of the rectangle. Complete the sub-program areaR() in pseudocode.(1 mark)\nSub-program areaR\nInput l, w\narea  __________________________\nOutput area"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "In the sub-program areaT, b is the base length of the triangle and h is the height of the triangle. Complete the sub-program areaT in pseudocode.(1 mark)\nSub-program areaT\nInput b, h\narea  __________________________\nOutput area"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Complete the following algorithm that calculates the area of one of the three shapes after the user has inputted a letter.(2 marks)\nInput shape\nif ____________________________________________ then\nelse\nOutput \"Invalid Output.\"\n[--Answer:\n(a) areaS\n(b)(i) l * w\n(b)(ii) b * h / 2"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "(shape = \"R\") or (shape = \"S\") or (shape = \"T\")\nchoose(shape)\n--]"
+        }
+      ],
+      "text": "Felix is developing a program to calculate the area of different shapes based on a letter inputted by the user. One of the sub-programs, choose(i), is shown as follows:\nSub-program choose(i)\nif i = \"R\" then\nCall sub-program areaR\nif i = \"S\" then\nCall sub-program areaS\nif i = \"T\" then\nCall sub-program areaT\n(a) If choose(\"S\") is executed, which sub-program (areaR, areaS, or areaT) will be called?(1 mark)\n(b) The details of those sub-programs are as follows:\nSub-programs\nDescription\nareaR\nCalculate the area of a rectangle.\nareaS\nCalculate the area of a square.\nareaT\nCalculate the area of a triangle.\n(i) In the sub-program areaR, l is the length of the rectangle and w is the width of the rectangle. Complete the sub-program areaR() in pseudocode.(1 mark)\nSub-program areaR\nInput l, w\narea  __________________________\nOutput area\n(ii) In the sub-program areaT, b is the base length of the triangle and h is the height of the triangle. Complete the sub-program areaT in pseudocode.(1 mark)\nSub-program areaT\nInput b, h\narea  __________________________\nOutput area\n(c) Complete the following algorithm that calculates the area of one of the three shapes after the user has inputted a letter.(2 marks)\nInput shape\nif ____________________________________________ then\nelse\nOutput \"Invalid Output.\"\n[--Answer:\n(a) areaS\n(b)(i) l * w\n(b)(ii) b * h / 2\n(c) (shape = \"R\") or (shape = \"S\") or (shape = \"T\")\nchoose(shape)\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "函數",
+        "算法",
+        "硬件",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1104_03A003E",
+      "bank_code": "SSICTC1104_03A003E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "A shopping mall stores the types of shops on each floor in a two-dimensional array mall, where i represents the floor number and j represents the shop number. For example, mall[1,1] stores the shop type of shop no. 1 on the first floor, i.e. cinema.\nj\ni\n1\n2\n3\n4\n5\n1\n\"cinema\"\n\"book shop\"\n\"restaurant\"\n\"boutique\"\n\"toy shop\"\n2\n\"boutique\"\n\"restaurant\"\n\"pharmacy\"\n\"salon\"\n\"supermarket\"\n3\n\"karaoke\"\n\"restaurant\"\n\"book shop\"\n\"gym\"\n\"boutique\"\n4\n\"restaurant\"\n\"bank\"\n\"supermarket\"\n\"pharmacy\"\n\"electronics\"\nThe IT manager of the shopping mall is writing a sub-program findShop(type) to be used in the information kiosk. After shoppers have inputted a shop type type, the sub-program returns a list of the floor number and shop number of every shop of that type.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Complete the algorithm for sub-program findShop(type).(3 marks)\nSub-program findShop(type)\nshop  []\nfor i from ___ to ___\nfor j from ___ to ___\nif ____________________ then\nshop  shop + [i, j]\nreturn shop"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the return value of calling sub-program findShop(\"book shop\")?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "What is the return value of calling sub-program findShop(\"ice rink\")?(1 mark)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "1 to 4\n1 to 5\ntype = mall[i,j]\n(b) [[1, 2], [3, 3]]\n(c) []\n--]"
+        }
+      ],
+      "text": "A shopping mall stores the types of shops on each floor in a two-dimensional array mall, where i represents the floor number and j represents the shop number. For example, mall[1,1] stores the shop type of shop no. 1 on the first floor, i.e. cinema.\nj\ni\n1\n2\n3\n4\n5\n1\n\"cinema\"\n\"book shop\"\n\"restaurant\"\n\"boutique\"\n\"toy shop\"\n2\n\"boutique\"\n\"restaurant\"\n\"pharmacy\"\n\"salon\"\n\"supermarket\"\n3\n\"karaoke\"\n\"restaurant\"\n\"book shop\"\n\"gym\"\n\"boutique\"\n4\n\"restaurant\"\n\"bank\"\n\"supermarket\"\n\"pharmacy\"\n\"electronics\"\nThe IT manager of the shopping mall is writing a sub-program findShop(type) to be used in the information kiosk. After shoppers have inputted a shop type type, the sub-program returns a list of the floor number and shop number of every shop of that type.\n(a) Complete the algorithm for sub-program findShop(type).(3 marks)\nSub-program findShop(type)\nshop  []\nfor i from ___ to ___\nfor j from ___ to ___\nif ____________________ then\nshop  shop + [i, j]\nreturn shop\n(b) What is the return value of calling sub-program findShop(\"book shop\")?(1 mark)\n(c) What is the return value of calling sub-program findShop(\"ice rink\")?(1 mark)\n[--Answer:\n(a) 1 to 4\n1 to 5\ntype = mall[i,j]\n(b) [[1, 2], [3, 3]]\n(c) []\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "硬件",
+        "資訊處理",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1104_03A004E",
+      "bank_code": "SSICTC1104_03A004E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "A ride-hailing platform has 50 drivers, and each of them is assigned a unique integer from 1 to 50 for identification. When a passenger requests a ride, the platform displays the driver number of the driver who will pick up this passenger.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "After a passenger has made a request, a driver is randomly chosen to pick up this passenger. The platform uses a sub-program randDriver()to return a driver number. It is given that this sub-program uses a sub-program randInt(t), which returns a random integer between 0 and t-1 inclusive. Complete the pseudocode for sub-program randDriver.(1 mark)\nSub-program randDriver\nreturn __________________________"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "In order to provide more timely service, the ride-hailing platform decided to change the way of selecting the driver for picking up a customer: instead of randomly choosing a driver, the platform will compare how far each driver is from the passenger and choose the one who is nearest to the passenger.\nA global integer array driverDis of size 50 stores the distance of each driver from the passenger. The array index i corresponds to the order of driver numbers, e.g. driverDis[1] stores the distance of driver 1 from the passenger. A sub-program nearest returns the driver number of the driver nearest to the passenger. Complete the pseudocode for the sub-program.(3 marks)\nSub-program nearest\nshortest  1\nfor i from 2 to 50\nif ______________________________ then\nreturn ____________\n[--Answer: Refer to DSE 2012 2D Q3a\n(a) randInt(50) + 1"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "driverDis[i] < driverDis[shortest]\nshortest  i\nshortest\n--]"
+        }
+      ],
+      "text": "A ride-hailing platform has 50 drivers, and each of them is assigned a unique integer from 1 to 50 for identification. When a passenger requests a ride, the platform displays the driver number of the driver who will pick up this passenger.\n(a) After a passenger has made a request, a driver is randomly chosen to pick up this passenger. The platform uses a sub-program randDriver()to return a driver number. It is given that this sub-program uses a sub-program randInt(t), which returns a random integer between 0 and t-1 inclusive. Complete the pseudocode for sub-program randDriver.(1 mark)\nSub-program randDriver\nreturn __________________________\n(b) In order to provide more timely service, the ride-hailing platform decided to change the way of selecting the driver for picking up a customer: instead of randomly choosing a driver, the platform will compare how far each driver is from the passenger and choose the one who is nearest to the passenger.\nA global integer array driverDis of size 50 stores the distance of each driver from the passenger. The array index i corresponds to the order of driver numbers, e.g. driverDis[1] stores the distance of driver 1 from the passenger. A sub-program nearest returns the driver number of the driver nearest to the passenger. Complete the pseudocode for the sub-program.(3 marks)\nSub-program nearest\nshortest  1\nfor i from 2 to 50\nif ______________________________ then\nreturn ____________\n[--Answer: Refer to DSE 2012 2D Q3a\n(a) randInt(50) + 1\n(b) driverDis[i] < driverDis[shortest]\nshortest  i\nshortest\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "軟件",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1104_03B005E",
+      "bank_code": "SSICTC1104_03B005E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Mrs Hui writes a program for a digital Bingo game. In a game of Bingo, each player has a card with a grid of random numbers from 1 to 50; all numbers on the card must be unique. Below is an example of a 5 by 5 Bingo card:\n5\n16\n26\n30\n50\n25\n8\n1\n22\n14\n43\n49\n34\n12\n47\n35\n10\n31\n38\n18\n6\n29\n45\n11\n20",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Mrs Hui writes the pseudocode for a sub-program RandomNumber, which returns a random number from 1 to 50 inclusive. Suppose that a function rand returns a floating point between 0 and 0.99 inclusive. Help Mrs Hui complete the sub-program RandomNumber using rand.(2 marks)\nSub-program RandomNumber\nnum  _______________________\nreturn num"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "In terms of variable scopes, which kind of variable does variable num belong to?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Mrs Hui then develops a sub-program GenerateCard that generates random numbers for the Bingo cards. Each Bingo card is represented by a 2D array card with 5 × 5 cells, and card[i,j] stores the random number in the corresponding cell.\ncard\nj\ni\n1\n2\n3\n4\n5\n1\n2\n3\n4\n5"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Complete the following pseudocode for the sub-program GenerateCard.(1 mark)\nSub-program GenerateCard\nfor i from 1 to 5\nfor j from 1 to 5"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "GenerateCard may generate invalid Bingo cards. Briefly explain why.(1 mark)\n[--Answer:\n(a)(i) int(rand()*50) + 1\n(a)(ii) Local variable\n(b)(i) card[i,j]  RandomNumber\n(b)(ii) The same number could be generated more than once, so a card may not have all unique numbers.\n--]"
+        }
+      ],
+      "text": "Mrs Hui writes a program for a digital Bingo game. In a game of Bingo, each player has a card with a grid of random numbers from 1 to 50; all numbers on the card must be unique. Below is an example of a 5 by 5 Bingo card:\n5\n16\n26\n30\n50\n25\n8\n1\n22\n14\n43\n49\n34\n12\n47\n35\n10\n31\n38\n18\n6\n29\n45\n11\n20\n(a) \n(i) Mrs Hui writes the pseudocode for a sub-program RandomNumber, which returns a random number from 1 to 50 inclusive. Suppose that a function rand returns a floating point between 0 and 0.99 inclusive. Help Mrs Hui complete the sub-program RandomNumber using rand.(2 marks)\nSub-program RandomNumber\nnum  _______________________\nreturn num\n(ii) In terms of variable scopes, which kind of variable does variable num belong to?(1 mark)\n(b) Mrs Hui then develops a sub-program GenerateCard that generates random numbers for the Bingo cards. Each Bingo card is represented by a 2D array card with 5 × 5 cells, and card[i,j] stores the random number in the corresponding cell.\ncard\nj\ni\n1\n2\n3\n4\n5\n1\n2\n3\n4\n5\n(i) Complete the following pseudocode for the sub-program GenerateCard.(1 mark)\nSub-program GenerateCard\nfor i from 1 to 5\nfor j from 1 to 5\n(ii) GenerateCard may generate invalid Bingo cards. Briefly explain why.(1 mark)\n[--Answer:\n(a)(i) int(rand()*50) + 1\n(a)(ii) Local variable\n(b)(i) card[i,j]  RandomNumber\n(b)(ii) The same number could be generated more than once, so a card may not have all unique numbers.\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1104_03B006E",
+      "bank_code": "SSICTC1104_03B006E",
+      "section_type": "short_answer",
+      "marks": 6.0,
+      "year_tag": null,
+      "stem": "A greyscale image is represented by a 100 × 100 2D array image. image[x,y] stores the brightness value (0 = black to 255 = white) of the corresponding pixel in the image.\nimage\nj\ni\n1\n2\n3\n4\n5\n…\n100\n1\n200\n205\n205\n200\n202\n…\n205\n2\n240\n250\n235\n202\n200\n…\n205\n3\n250\n255\n250\n250\n240\n…\n200\n4\n200\n250\n200\n202\n200\n…\n190\n5\n195\n195\n190\n195\n190\n…\n190\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋱\n⋮\n100\n90\n80\n0\n5\n10\n…\n90\nMichael develops a program to apply a smoothing filter to the image. He writes a sub-program average(x,y,s), which draws a square of size s × s around pixels, with image[x,y] at the top left corner of the square. Then, it returns the average value of the pixels within the square, rounded down to the nearest integer. As an example, average(1,1,2) returns 223, as illustrated below:\n(200 + 205 + 240 + 250) / 4 = 223.75\nimage\nj\ni\n1\n2\n3\n4\n5\n…\n100\n1\n200\n205\n205\n200\n202\n…\n205\n2\n240\n250\n235\n202\n200\n…\n205\n3\n250\n255\n250\n250\n240\n…\n200\n4\n200\n250\n200\n202\n200\n…\n190\n5\n195\n195\n190\n195\n190\n…\n190\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋱\n⋮\n100\n90\n80\n0\n5\n10\n…\n90",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "What is the value returned after executing average(2,1,2)?(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Help Michael complete the pseudocode for average(x,y,s).(3 marks)\nSub-program average(x,y,s)\nsum  0\nfor i from _____ to _____\nfor j from _____ to _____\nsum  sum + image[_____,_____]\navg  sum / (s*s)\nreturn integral part of avg"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Michael then writes the following program to apply a smoothing filter to the image, with the square size being s × s. newImage is a 2D array that is initially blank, and it is used to store the smoothed image.\nLine  Pseudocode\n1    Input s\n2    for x from 1 to 100\n3        for y from 1 to 100\n4            newImage[x,y]  average(x, y, s)\nHowever, this program always results in an error because the square will go beyond the borders of image, as seen in the examples below:\nimage\nj\ni\n1\n2\n3\n4\n5\n…\n100\n1\n200\n205\n205\n200\n202\n…\n205\n2\n240\n250\n235\n202\n200\n…\n205\n3\n250\n255\n250\n250\n240\n…\n200\n4\n200\n250\n200\n202\n200\n…\n190\n5\n195\n195\n190\n195\n190\n…\n190\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋱\n⋮\n100\n90\n80\n0\n5\n10\n…\n90\nHelp Michael modify his program to eliminate this error.(2 marks)\nInput s\nxBoundary  ___________\nyBoundary  ___________\nfor x from 1 to xBoundary\nfor y from 1 to yBoundary\nnewImage[x,y]  average(x,y,s)\n[--Answer:\n(a)(i) 248\n(a)(ii)\n0 to s-1\n0 to s-1\nx+i,y+j"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "101–s\n101–s\n--]"
+        }
+      ],
+      "text": "A greyscale image is represented by a 100 × 100 2D array image. image[x,y] stores the brightness value (0 = black to 255 = white) of the corresponding pixel in the image.\nimage\nj\ni\n1\n2\n3\n4\n5\n…\n100\n1\n200\n205\n205\n200\n202\n…\n205\n2\n240\n250\n235\n202\n200\n…\n205\n3\n250\n255\n250\n250\n240\n…\n200\n4\n200\n250\n200\n202\n200\n…\n190\n5\n195\n195\n190\n195\n190\n…\n190\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋱\n⋮\n100\n90\n80\n0\n5\n10\n…\n90\nMichael develops a program to apply a smoothing filter to the image. He writes a sub-program average(x,y,s), which draws a square of size s × s around pixels, with image[x,y] at the top left corner of the square. Then, it returns the average value of the pixels within the square, rounded down to the nearest integer. As an example, average(1,1,2) returns 223, as illustrated below:\n(200 + 205 + 240 + 250) / 4 = 223.75\nimage\nj\ni\n1\n2\n3\n4\n5\n…\n100\n1\n200\n205\n205\n200\n202\n…\n205\n2\n240\n250\n235\n202\n200\n…\n205\n3\n250\n255\n250\n250\n240\n…\n200\n4\n200\n250\n200\n202\n200\n…\n190\n5\n195\n195\n190\n195\n190\n…\n190\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋱\n⋮\n100\n90\n80\n0\n5\n10\n…\n90\n(a) \n(i) What is the value returned after executing average(2,1,2)?(1 mark)\n(ii) Help Michael complete the pseudocode for average(x,y,s).(3 marks)\nSub-program average(x,y,s)\nsum  0\nfor i from _____ to _____\nfor j from _____ to _____\nsum  sum + image[_____,_____]\navg  sum / (s*s)\nreturn integral part of avg\n(b) Michael then writes the following program to apply a smoothing filter to the image, with the square size being s × s. newImage is a 2D array that is initially blank, and it is used to store the smoothed image.\nLine  Pseudocode\n1    Input s\n2    for x from 1 to 100\n3        for y from 1 to 100\n4            newImage[x,y]  average(x, y, s)\nHowever, this program always results in an error because the square will go beyond the borders of image, as seen in the examples below:\nimage\nj\ni\n1\n2\n3\n4\n5\n…\n100\n1\n200\n205\n205\n200\n202\n…\n205\n2\n240\n250\n235\n202\n200\n…\n205\n3\n250\n255\n250\n250\n240\n…\n200\n4\n200\n250\n200\n202\n200\n…\n190\n5\n195\n195\n190\n195\n190\n…\n190\n⋮\n⋮\n⋮\n⋮\n⋮\n⋮\n⋱\n⋮\n100\n90\n80\n0\n5\n10\n…\n90\nHelp Michael modify his program to eliminate this error.(2 marks)\nInput s\nxBoundary  ___________\nyBoundary  ___________\nfor x from 1 to xBoundary\nfor y from 1 to yBoundary\nnewImage[x,y]  average(x,y,s)\n[--Answer:\n(a)(i) 248\n(a)(ii)\n0 to s-1\n0 to s-1\nx+i,y+j\n(b) 101–s\n101–s\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "程式測試",
+        "算法",
+        "硬件",
+        "多媒體",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1104_04A001E",
+      "bank_code": "SSICTC1104_04A001E",
+      "section_type": "long_answer",
+      "marks": 15.0,
+      "year_tag": null,
+      "stem": "Oliver is implementing a system to manage the products in a store. He creates a 2D array p to store the names and the prices of the products.\nj\ni\n0\n1\n2\n3\n4\n5\n…\n1999\nName\n0\n\"egg\"\n\"soda\"\n\"water\"\n\"\"\n\"\"\n\"\"\n…\n\"\"\nPrice\n1\n3\n6\n5\n0\n0\n0\n…\n0\nFor example, the name of the first product p[0,0] is \"egg\", and its price p[0,1] is 3.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Oliver has implemented the following sub-program func1().\nSub-program func1(n, pr)\nfor j from 0 to 1999\nif p[0,j] = \"\" then\np[0,j]  n\np[1,j]  pr\nExit from the for loop"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "After executing func1(\"cookie\", 10), what will the content of array p become?(1 mark)\nj\ni\n0\n1\n2\n3\n4\n5\n…\n1999\nName\n0\nPrice\n1"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the purpose of the sub-program func1?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "To utilize func1, Oliver creates another sub-program func2(num) so that func1 can be executed several times in a row. Complete the pseudocode of func2(num).(1 mark)\nSub-program func2(num)\nfor i from 1 to _____\nInput name\nInput price\nfunc1(____________________)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Oliver then creates another array cart to store the amount of the products in a customer's shopping cart. All items in array cart are initialised to 0.\ncart\n0\n0\n0\n0\n0\n0\n…\n0\nindex\n0\n1\n2\n3\n4\n5\n…\n1999\nThe index of the amount of the product in array cart shares the same index with the index of the name of the product in array p. For instance, cart[0] stores the amount of eggs to be purchased, and cart[1] stores the amount of soda to be purchased."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Complete the sub-program addproduct(name, amount) in pseudocode so that this sub-program allows customers to add the amount of a product in the array cart. Assume the input is valid.(2 marks)\nSub-program addproduct(name, amount)\nfor i from 0 to 1999\nif ____________________ then\nExit from the for loop"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Complete the sub-program removeproduct(name, amount) in pseudocode so that this sub-program allows customers to remove a certain amount of a product in the array cart. If the final amount of the product is smaller than 0, set the amount to 0. Assume the input is valid.(3 marks)\nSub-program removeproduct(name, amount)\nfor i from 0 to 1999\nif ____________________ then\nif ____________________ then\nelse\nExit from the for loop"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Later, Oliver creates another sub-program totalprice to calculate and output the total price of the products in a customer's shopping cart. Complete the sub-program totalprice in pseudocode.(2 marks)\nSub-program totalprice\nsum  0\nfor i from 0 to 1999\nif ____________________ then\nsum  ______________________________\nOutput sum"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "text": "The manager of the store decides to test the system by doing several steps as shown below. Suppose that func1(\"cookie\", 10) in a(i) has been executed on array p.\nStep\nDescription\n1\nAdd the amount of the product “water” in cart by 4.\n2\nAdd the amount of the product “cookie” in cart by 10.\n3\nRemove the amount of the product “water” in cart by 6.\n4\nAdd a new product to p with the name as “potato” and the price as 15.\n5\nAdd the amount of the product “potato” in cart by 3.\n6\nRemove the amount of the product “potato” in cart by 2."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Using the above sub-programs, complete the following algorithm in pseudocode according to the steps.(3 marks)\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program totalprice"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the output of the above algorithm?(1 mark)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "What will the final content of array cart become?(1 mark)\ncart\nindex\n0\n1\n2\n3\n4\n5\n…\n1999\n[--Answer:\n(a)(i)\nj\ni\n0\n1\n2\n3\n4\n5\n…\n1999\n0\n\"egg\"\n\"soda\"\n\"water\"\n\"cookie\"\n\"\"\n\"\"\n…\n\"\"\n1\n3\n6\n5\n10\n…\n(a)(ii) To insert a product with name n and price pr into the first available item in array p."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "num\nname, price\n(c)(i)\np[0,i] = name\ncart[i]  cart[i] + amount\n(c)(ii)\n(p[0,i] = name)\ncart[i] - amount > 0\ncart[i]  cart[i] – amount\ncart[i]  0"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "cart[i] != 0\nsum + cart[i] * p[1, i]\n(e)(i)\naddproduct(\"water\", 4)\naddproduct(\"cookie\", 10)\nremoveproduct(\"water\", 6)\nfunc1(\"potato\", 15)\naddproduct(\"potato\", 3)\nremoveproduct(\"potato\", 2)\n(e)(i) 115\n(e)(ii)\ncart\n0\n0\n0\n10\n1\n0\n…\n0\nindex\n0\n1\n2\n3\n4\n5\n…\n1999\n--]"
+        }
+      ],
+      "text": "Oliver is implementing a system to manage the products in a store. He creates a 2D array p to store the names and the prices of the products.\nj\ni\n0\n1\n2\n3\n4\n5\n…\n1999\nName\n0\n\"egg\"\n\"soda\"\n\"water\"\n\"\"\n\"\"\n\"\"\n…\n\"\"\nPrice\n1\n3\n6\n5\n0\n0\n0\n…\n0\nFor example, the name of the first product p[0,0] is \"egg\", and its price p[0,1] is 3.\n(a) Oliver has implemented the following sub-program func1().\nSub-program func1(n, pr)\nfor j from 0 to 1999\nif p[0,j] = \"\" then\np[0,j]  n\np[1,j]  pr\nExit from the for loop\n(i) After executing func1(\"cookie\", 10), what will the content of array p become?(1 mark)\nj\ni\n0\n1\n2\n3\n4\n5\n…\n1999\nName\n0\nPrice\n1\n(ii) What is the purpose of the sub-program func1?(1 mark)\n(b) To utilize func1, Oliver creates another sub-program func2(num) so that func1 can be executed several times in a row. Complete the pseudocode of func2(num).(1 mark)\nSub-program func2(num)\nfor i from 1 to _____\nInput name\nInput price\nfunc1(____________________)\n(c) Oliver then creates another array cart to store the amount of the products in a customer's shopping cart. All items in array cart are initialised to 0.\ncart\n0\n0\n0\n0\n0\n0\n…\n0\nindex\n0\n1\n2\n3\n4\n5\n…\n1999\nThe index of the amount of the product in array cart shares the same index with the index of the name of the product in array p. For instance, cart[0] stores the amount of eggs to be purchased, and cart[1] stores the amount of soda to be purchased.\n(i) Complete the sub-program addproduct(name, amount) in pseudocode so that this sub-program allows customers to add the amount of a product in the array cart. Assume the input is valid.(2 marks)\nSub-program addproduct(name, amount)\nfor i from 0 to 1999\nif ____________________ then\nExit from the for loop\n(ii) Complete the sub-program removeproduct(name, amount) in pseudocode so that this sub-program allows customers to remove a certain amount of a product in the array cart. If the final amount of the product is smaller than 0, set the amount to 0. Assume the input is valid.(3 marks)\nSub-program removeproduct(name, amount)\nfor i from 0 to 1999\nif ____________________ then\nif ____________________ then\nelse\nExit from the for loop\n(d) Later, Oliver creates another sub-program totalprice to calculate and output the total price of the products in a customer's shopping cart. Complete the sub-program totalprice in pseudocode.(2 marks)\nSub-program totalprice\nsum  0\nfor i from 0 to 1999\nif ____________________ then\nsum  ______________________________\nOutput sum\n(e) The manager of the store decides to test the system by doing several steps as shown below. Suppose that func1(\"cookie\", 10) in a(i) has been executed on array p.\nStep\nDescription\n1\nAdd the amount of the product “water” in cart by 4.\n2\nAdd the amount of the product “cookie” in cart by 10.\n3\nRemove the amount of the product “water” in cart by 6.\n4\nAdd a new product to p with the name as “potato” and the price as 15.\n5\nAdd the amount of the product “potato” in cart by 3.\n6\nRemove the amount of the product “potato” in cart by 2.\n(i) Using the above sub-programs, complete the following algorithm in pseudocode according to the steps.(3 marks)\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program ____________________\nCall sub-program totalprice\n(ii) What is the output of the above algorithm?(1 mark)\n(iii) What will the final content of array cart become?(1 mark)\ncart\nindex\n0\n1\n2\n3\n4\n5\n…\n1999\n[--Answer:\n(a)(i)\nj\ni\n0\n1\n2\n3\n4\n5\n…\n1999\n0\n\"egg\"\n\"soda\"\n\"water\"\n\"cookie\"\n\"\"\n\"\"\n…\n\"\"\n1\n3\n6\n5\n10\n…\n(a)(ii) To insert a product with name n and price pr into the first available item in array p.\n(b) num\nname, price\n(c)(i)\np[0,i] = name\ncart[i]  cart[i] + amount\n(c)(ii)\n(p[0,i] = name)\ncart[i] - amount > 0\ncart[i]  cart[i] – amount\ncart[i]  0\n(d) cart[i] != 0\nsum + cart[i] * p[1, i]\n(e)(i)\naddproduct(\"water\", 4)\naddproduct(\"cookie\", 10)\nremoveproduct(\"water\", 6)\nfunc1(\"potato\", 15)\naddproduct(\"potato\", 3)\nremoveproduct(\"potato\", 2)\n(e)(i) 115\n(e)(ii)\ncart\n0\n0\n0\n10\n1\n0\n…\n0\nindex\n0\n1\n2\n3\n4\n5\n…\n1999\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "SQL",
+        "硬件",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTC1104_04B002E",
+      "bank_code": "SSICTC1104_04B002E",
+      "section_type": "long_answer",
+      "marks": 14.0,
+      "year_tag": null,
+      "stem": "A museum is open from 10 am to 6 pm on weekdays (Tuesday to Friday) and from 10 am to 8 pm on weekends. To prevent the museum from being overcrowded, the museum divides its opening hours into several two-hour sessions and sets a quota of 30 visitors per session. Visitors can register for a session, either individually or as a group, on the museum website one week before their visit. A two-dimensional array quota is used in the registration system, where quota[i,j] stores the number of places available at each session in the following week.\nMon\nTue\nWed\nThu\nFri\nSat\nSun\nj\ni\n1\n2\n3\n4\n5\n6\n7\n10:00-12:00\n1\n0\n30\n30\n30\n30\n30\n30\n12:00-14:00\n2\n0\n30\n30\n30\n30\n30\n30\n14:00-16:00\n3\n0\n30\n30\n30\n30\n30\n30\n16:00-18:00\n4\n0\n30\n30\n30\n30\n30\n30\n18:00-20:00\n5\n0\n0\n0\n0\n0\n30\n30",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Why are the values on column 1 set to 0?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "A sub-program register(x, y, num) is used in the system for users to register for a session, where x is the day of the week, y is the yth session on a day and num is the number of visitors. The sub-program checks whether there are sufficient places in the session. If yes, the registration is accepted and the number of places available is updated; otherwise, the users will be asked to choose another session. Complete the pseudocode for this sub-program.(2 marks)\nSub-program register(x, y, num)\nif ____________________ then\nOutput \"Your registration is successful.\"\nelse\nOutput \"This session is full.\""
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "There is another sub-program next_available_session(x, y, num) in the system. If a user fails to register for a session, the sub-program searches for another available session on the same day; if there is not any, it searches the sessions on the next day. For example, if a user fails to register for Tuesday session 2 and the remaining sessions on Tuesday (sessions 3 and 4) are full, the sub-program continues to check whether there is an available session on Wednesday. Complete the pseudocode for this sub-program.(4 marks)\nSub-program next_available_session(x, y, num)\nfor j from ___ to ___\nfor i from ___ to ___\nif ____________________ or j != x then\nif ____________________ then\nreturn [j,i]"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Write a sub-program count_visitors to count the number of visitors who have registered for a session in the coming week.(4 marks)\nSub-program count_visitors\ntotal  0\nfor i from 1 to 5\nfor j from 1 to 7\ntotal  ____________________\ntotal  ____________________\nreturn total"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "text": "Suppose that the initial content of array quota is as shown in the beginning of the question, and then the following pseudocode have been executed in order.\nregister(3, 3, 2)\nregister(6, 1, 6)\nregister(4, 2, 2)\nregister(5, 3, 3)\nregister(6, 1, 25)\nregister(7, 1, 5)"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Update the content of array quota.(2 marks)\nj\ni\n1\n2\n3\n4\n5\n6\n7\n1\n2\n3\n4\n5"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What will be the return value of calling count_visitors?(1 mark)\n[--Answer:\n(a) The museum is closed on Monday."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "quota[y,x] >= num\nquota[y,x]  quota[y,x] - num"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "x to 7\n1 to 5\nj == x and i > y\nquota[i][j] >= num"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "total + (30 – quota[i,j])\ntotal – 30*9\nor\ntotal + quota[i,j]\n30*26 – total\n(e)(i)\nj\ni\n1\n2\n3\n4\n5\n6\n7\n1\n0\n30\n30\n30\n30\n24\n25\n2\n0\n30\n30\n28\n30\n30\n30\n3\n0\n30\n28\n30\n27\n30\n30\n4\n0\n30\n30\n30\n30\n30\n30\n5\n0\n0\n0\n0\n0\n30\n30\n(e)(ii) 18\n--]"
+        }
+      ],
+      "text": "A museum is open from 10 am to 6 pm on weekdays (Tuesday to Friday) and from 10 am to 8 pm on weekends. To prevent the museum from being overcrowded, the museum divides its opening hours into several two-hour sessions and sets a quota of 30 visitors per session. Visitors can register for a session, either individually or as a group, on the museum website one week before their visit. A two-dimensional array quota is used in the registration system, where quota[i,j] stores the number of places available at each session in the following week.\nMon\nTue\nWed\nThu\nFri\nSat\nSun\nj\ni\n1\n2\n3\n4\n5\n6\n7\n10:00-12:00\n1\n0\n30\n30\n30\n30\n30\n30\n12:00-14:00\n2\n0\n30\n30\n30\n30\n30\n30\n14:00-16:00\n3\n0\n30\n30\n30\n30\n30\n30\n16:00-18:00\n4\n0\n30\n30\n30\n30\n30\n30\n18:00-20:00\n5\n0\n0\n0\n0\n0\n30\n30\n(a) Why are the values on column 1 set to 0?(1 mark)\n(b) A sub-program register(x, y, num) is used in the system for users to register for a session, where x is the day of the week, y is the yth session on a day and num is the number of visitors. The sub-program checks whether there are sufficient places in the session. If yes, the registration is accepted and the number of places available is updated; otherwise, the users will be asked to choose another session. Complete the pseudocode for this sub-program.(2 marks)\nSub-program register(x, y, num)\nif ____________________ then\nOutput \"Your registration is successful.\"\nelse\nOutput \"This session is full.\"\n(c) There is another sub-program next_available_session(x, y, num) in the system. If a user fails to register for a session, the sub-program searches for another available session on the same day; if there is not any, it searches the sessions on the next day. For example, if a user fails to register for Tuesday session 2 and the remaining sessions on Tuesday (sessions 3 and 4) are full, the sub-program continues to check whether there is an available session on Wednesday. Complete the pseudocode for this sub-program.(4 marks)\nSub-program next_available_session(x, y, num)\nfor j from ___ to ___\nfor i from ___ to ___\nif ____________________ or j != x then\nif ____________________ then\nreturn [j,i]\n(d) Write a sub-program count_visitors to count the number of visitors who have registered for a session in the coming week.(4 marks)\nSub-program count_visitors\ntotal  0\nfor i from 1 to 5\nfor j from 1 to 7\ntotal  ____________________\ntotal  ____________________\nreturn total\n(e) Suppose that the initial content of array quota is as shown in the beginning of the question, and then the following pseudocode have been executed in order.\nregister(3, 3, 2)\nregister(6, 1, 6)\nregister(4, 2, 2)\nregister(5, 3, 3)\nregister(6, 1, 25)\nregister(7, 1, 5)\n(i) Update the content of array quota.(2 marks)\nj\ni\n1\n2\n3\n4\n5\n6\n7\n1\n2\n3\n4\n5\n(ii) What will be the return value of calling count_visitors?(1 mark)\n[--Answer:\n(a) The museum is closed on Monday.\n(b) quota[y,x] >= num\nquota[y,x]  quota[y,x] - num\n(c) x to 7\n1 to 5\nj == x and i > y\nquota[i][j] >= num\n(d) total + (30 – quota[i,j])\ntotal – 30*9\nor\ntotal + quota[i,j]\n30*26 – total\n(e)(i)\nj\ni\n1\n2\n3\n4\n5\n6\n7\n1\n0\n30\n30\n30\n30\n24\n25\n2\n0\n30\n30\n28\n30\n30\n30\n3\n0\n30\n28\n30\n27\n30\n30\n4\n0\n30\n30\n30\n30\n30\n30\n5\n0\n0\n0\n0\n0\n30\n30\n(e)(ii) 18\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "SQL",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTC1104_04C003E",
+      "bank_code": "SSICTC1104_04C003E",
+      "section_type": "long_answer",
+      "marks": 14.0,
+      "year_tag": null,
+      "stem": "In Hong Kong, car owners may choose their preferred vehicle registration marks (known as “personalised vehicle registration marks”) by applying to the Transport Department. The department has made several rules on the combinations for these marks, some of which are listed below:\nThe PVRM can have eight characters (including blank spaces) at most.\nThe letters “I”, “O” and “Q” shall not be included.\nThere shall not be more than one blank space between any two letters and/or numerals. For example:\nAllowed:\nM\nY\nD\nA\nY\nNot allowed:\nM\nY\nD\nA\nY\nThere should not be more than four identical characters placed together (including characters that are separated by whitespaces only). This restriction does not apply when there are other characters between the identical characters. For example:\nAllowed:\nA\nA\nA\nB\nA\nA\nA\nC\nNot allowed:\nA\nS\nS\nS\nS\nC\nCalvin is developing an application for car owners to check whether their preferred vehicle registration marks follow the rules set by the Transport Department. The vehicle registration mark is stored in a list PVRM, and each character is stored as an individual list item. Calvin writes several sub-programs in Python for checking whether each of the above rules is followed.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a sub-program to check whether a PVRM follows rule 1.(1 mark)\ndef not_more_than_8_letters():\nL = len(PVRM)\nif _______________:\nreturn False\nelse:\nreturn True"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write a sub-program to check whether a PVRM follows rule 2.(2 marks)\ndef no_excluded_letters():\nfor i in range(___,___):\nif ________________________________________:\nprint(\"Your PVRM contains excluded letters.\")\nreturn False\nreturn True"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Write a sub-program to check whether a PVRM follows rule 3.(4 marks)\ndef one_space_only():\nspace = 0\nfor i in range(___,___):\nif _______________:\nspace = _______________\nif _______________:\nprint(\"Your PVRM has more than one space.\")\nreturn False\nelse:\nspace = _______________\nreturn True"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Write a sub-program to check whether a PVRM follows rule 4.(7 marks)\ndef at_most_4_identical_characters_together():\nc = PVRM[0]\nidentical = 1\nfor i in range(___,___):\nif _______________:\nif _______________:\nidentical = _______________\nelse:\nidentical = _______________\nif _______________:\nprint(\"Your PVRM has more than four identical characters placed together.\")\nreturn False\nreturn True\n[--Answer:\n(a) L > 8"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "0,len(PVRM)\nPVRM[i] == \"I\" or PVRM[i] == \"O\" or PVRM[i] == \"Q\""
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "0,len(PVRM)\nPVRM[i] == \" \"\nspace + 1\nspace == 2\n0"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "1, len(PVRM)\nPVRM[i] != \" \"\nPVRM[i] == c\nidentical + 1\n1\nc = PVRM[i]\nidentical == 4\n--]"
+        }
+      ],
+      "text": "In Hong Kong, car owners may choose their preferred vehicle registration marks (known as “personalised vehicle registration marks”) by applying to the Transport Department. The department has made several rules on the combinations for these marks, some of which are listed below:\nThe PVRM can have eight characters (including blank spaces) at most.\nThe letters “I”, “O” and “Q” shall not be included.\nThere shall not be more than one blank space between any two letters and/or numerals. For example:\nAllowed:\nM\nY\nD\nA\nY\nNot allowed:\nM\nY\nD\nA\nY\nThere should not be more than four identical characters placed together (including characters that are separated by whitespaces only). This restriction does not apply when there are other characters between the identical characters. For example:\nAllowed:\nA\nA\nA\nB\nA\nA\nA\nC\nNot allowed:\nA\nS\nS\nS\nS\nC\nCalvin is developing an application for car owners to check whether their preferred vehicle registration marks follow the rules set by the Transport Department. The vehicle registration mark is stored in a list PVRM, and each character is stored as an individual list item. Calvin writes several sub-programs in Python for checking whether each of the above rules is followed.\n(a) Write a sub-program to check whether a PVRM follows rule 1.(1 mark)\ndef not_more_than_8_letters():\nL = len(PVRM)\nif _______________:\nreturn False\nelse:\nreturn True\n(b) Write a sub-program to check whether a PVRM follows rule 2.(2 marks)\ndef no_excluded_letters():\nfor i in range(___,___):\nif ________________________________________:\nprint(\"Your PVRM contains excluded letters.\")\nreturn False\nreturn True\n(c) Write a sub-program to check whether a PVRM follows rule 3.(4 marks)\ndef one_space_only():\nspace = 0\nfor i in range(___,___):\nif _______________:\nspace = _______________\nif _______________:\nprint(\"Your PVRM has more than one space.\")\nreturn False\nelse:\nspace = _______________\nreturn True\n(d) Write a sub-program to check whether a PVRM follows rule 4.(7 marks)\ndef at_most_4_identical_characters_together():\nc = PVRM[0]\nidentical = 1\nfor i in range(___,___):\nif _______________:\nif _______________:\nidentical = _______________\nelse:\nidentical = _______________\nif _______________:\nprint(\"Your PVRM has more than four identical characters placed together.\")\nreturn False\nreturn True\n[--Answer:\n(a) L > 8\n(b) 0,len(PVRM)\nPVRM[i] == \"I\" or PVRM[i] == \"O\" or PVRM[i] == \"Q\"\n(c) 0,len(PVRM)\nPVRM[i] == \" \"\nspace + 1\nspace == 2\n0\n(d) 1, len(PVRM)\nPVRM[i] != \" \"\nPVRM[i] == c\nidentical + 1\n1\nc = PVRM[i]\nidentical == 4\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "硬件",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

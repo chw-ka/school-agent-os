@@ -31,6 +31,11 @@ from answer_verify_check import (
     verify_spec_answers,
 )
 from coherence_check import CoherenceCheckResult, check_spec_coherence, format_coherence_report
+from solvability_check import (
+    SolvabilityCheckResult,
+    check_spec_solvability,
+    format_solvability_report,
+)
 from written_spec_docx_check import (
     WrittenSpecDocxResult,
     check_written_spec_docx,
@@ -61,6 +66,7 @@ class QuestionQualityReport:
     format: Optional[FormatCheckResult] = None
     concept_conflicts: Optional[ConceptConflictResult] = None
     coherence: Optional[CoherenceCheckResult] = None
+    solvability: Optional[SolvabilityCheckResult] = None
     written_spec_docx: Optional[WrittenSpecDocxResult] = None
     answer_verify: Optional[AnswerVerifyResult] = None
 
@@ -99,6 +105,10 @@ class QuestionQualityReport:
         return self.coherence is not None and not self.coherence.ok
 
     @property
+    def has_solvability_issues(self) -> bool:
+        return self.solvability is not None and not self.solvability.ok
+
+    @property
     def has_written_spec_docx_issues(self) -> bool:
         return self.written_spec_docx is not None and not self.written_spec_docx.ok
 
@@ -116,6 +126,7 @@ class QuestionQualityReport:
             and not self.has_answer_pattern_issues
             and not self.has_format_issues
             and not self.has_coherence_issues
+            and not self.has_solvability_issues
             and not self.has_written_spec_docx_issues
             and not self.has_answer_verify_issues
         )
@@ -143,6 +154,8 @@ class QuestionQualityReport:
             d["concept_conflicts"] = self.concept_conflicts.to_dict()
         if self.coherence is not None:
             d["coherence"] = self.coherence.to_dict()
+        if self.solvability is not None:
+            d["solvability"] = self.solvability.to_dict()
         if self.written_spec_docx is not None:
             d["written_spec_docx"] = self.written_spec_docx.to_dict()
         if self.answer_verify is not None:
@@ -375,6 +388,7 @@ def run_question_check(
     verify_format: bool = True,
     verify_concept_conflicts: bool = True,
     verify_coherence: bool = True,
+    verify_solvability: bool = True,
     verify_answers: bool = True,
 ) -> QuestionQualityReport:
     candidate_spec_path = candidate_spec_path.expanduser().resolve()
@@ -505,6 +519,11 @@ def run_question_check(
             candidate, candidate_label=str(candidate_spec_path)
         )
 
+    if verify_solvability:
+        quality.solvability = check_spec_solvability(
+            candidate, candidate_label=str(candidate_spec_path)
+        )
+
     if docx_path is not None and docx_path.exists():
         quality.written_spec_docx = check_written_spec_docx(candidate, docx_path)
 
@@ -570,6 +589,10 @@ def format_quality_report_text(report: QuestionQualityReport) -> str:
         )
     if report.coherence is not None:
         sections.extend(["", "=== Coherence (通順) ===", format_coherence_report(report.coherence)])
+    if report.solvability is not None:
+        sections.extend(
+            ["", "=== Solvability (可作答) ===", format_solvability_report(report.solvability)]
+        )
     if report.written_spec_docx is not None:
         sections.extend(
             ["", "=== Written spec ↔ DOCX (slot text) ===", format_written_spec_docx_report(report.written_spec_docx)]

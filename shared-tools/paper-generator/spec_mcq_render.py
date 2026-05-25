@@ -58,7 +58,11 @@ def parse_spec_mcq_text(text: str) -> tuple[str, list[str], dict[str, str]]:
         elif ms:
             statements.append(ms.group(2).strip())
         else:
-            question_parts.append(line.strip())
+            # Keep leading spaces/tabs on Python / indented pseudocode lines.
+            if line != line.lstrip():
+                question_parts.append(line.rstrip())
+            else:
+                question_parts.append(line.strip())
     question = "\n".join(question_parts)
     return question, statements, opts
 
@@ -67,9 +71,15 @@ def spec_mcq_to_final_rows(spec: dict[str, Any]) -> tuple[list[list[str]], str]:
     """Build template MCQ row blocks + answer key from spec."""
     from f5_ict_from_dse import _layout_mcq_block
 
+    import re
+
+    def _mcq_num(item: dict) -> int:
+        m = re.search(r"(\d+)$", str(item.get("id", "")))
+        return int(m.group(1)) if m else 0
+
     mcq_items = sorted(
         (it for it in spec.get("items") or [] if it.get("section") == "mcq"),
-        key=lambda x: str(x.get("id", "")),
+        key=_mcq_num,
     )
     if len(mcq_items) != len(MCQ_SPANS):
         raise ValueError(f"Expected {len(MCQ_SPANS)} MCQ items, got {len(mcq_items)}")

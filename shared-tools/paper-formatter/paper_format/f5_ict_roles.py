@@ -54,8 +54,10 @@ def mcq_role_for_kind(kind: McqLineKind, *, code_center: bool = False) -> str:
 
 WrittenLineKind = Literal[
     "scenario",
+    "topic_lead",
     "stem",
     "subpart",
+    "subpart_intro",
     "subpart_nested",
     "code",
     "sql",
@@ -65,6 +67,9 @@ WrittenLineKind = Literal[
     "blank",
     "plain",
 ]
+
+_TOPIC_LEAD = re.compile(r"^\([a-z]{1,2}\)\s+", re.I)
+_SUBPART_INTRO = re.compile(r"^\t\([a-z]{1,2}\)\t[^？?]+$", re.I)
 
 _SUBPART = re.compile(r"^\t+\([a-z]{1,2}\)\t", re.I)
 _SUBPART_NESTED = re.compile(r"^\t\t\([ivx]+\)\t", re.I)
@@ -84,8 +89,12 @@ def written_line_kind(line: str) -> WrittenLineKind:
         return "blank"
     if _SUBPART_NESTED.match(line):
         return "subpart_nested"
+    if _TOPIC_LEAD.match(line.strip()) and "\t(" not in line[:3]:
+        return "topic_lead"
     if _SUBPART.match(line):
         return "subpart"
+    if _SUBPART_INTRO.match(line):
+        return "subpart_intro"
     from mcq_code_layout import is_code_content_line
 
     if is_code_content_line(line):
@@ -106,8 +115,10 @@ def written_line_kind(line: str) -> WrittenLineKind:
 def written_role_for_kind(kind: WrittenLineKind) -> str:
     return {
         "scenario": "written.scenario",
+        "topic_lead": "written.topic_lead",
         "stem": "written.stem",
         "subpart": "written.subpart",
+        "subpart_intro": "written.subpart_intro",
         "subpart_nested": "written.subpart_nested",
         "code": "written.code",
         "sql": "written.sql",
@@ -129,12 +140,14 @@ F5_ICT_ROLE_SOURCE_PARAS: dict[str, int] = {
     "mcq.collapsed_padding": 50,
     "mcq.inter_question_gap": 55,
     "written.scenario": 313,
+    "written.topic_lead": 323,
     "written.stem": 316,
-    "written.subpart": 317,
+    "written.subpart": 316,
+    "written.subpart_intro": 326,
     "written.subpart_nested": 358,
     "written.code": 360,
     "written.sql": 399,
-    "written.answer_blank": 318,
+    "written.answer_blank": 317,
     "written.answer_blank_long": 355,
     "written.diagram_blank": 429,
     "written.blank": 314,

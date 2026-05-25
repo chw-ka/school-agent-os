@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecC7_en_Handling of Text Files.docx",
+    "slug": "ElecC7_en",
+    "title": "Handling of Text Files",
+    "title_zh": null,
+    "title_en": "Handling of Text Files",
+    "language": "en",
+    "family": "ElecC",
+    "chapter": 7,
+    "integrated": false,
+    "topic_code": "EC07",
+    "curriculum_unit": "EC",
+    "ca_unit": "EC",
+    "f5_exam_scope": "elective_sd",
+    "extracted_at": "2026-05-24T10:37:18.304205+00:00",
+    "item_count": 2,
+    "section_counts": {
+      "short_answer": 1,
+      "long_answer": 1
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTC1107_03A001E",
+      "bank_code": "SSICTC1107_03A001E",
+      "section_type": "short_answer",
+      "marks": 6.0,
+      "year_tag": null,
+      "stem": "Jimmy is creating a diary application for users to save their diaries on their phones.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "A few sub-programs are created to return information of the current date as strings. For a day or month with a numerical value smaller than 10, a leading zero is added to the return value. The following are the sample outputs of the sub-programs:\nSub-program\nCurrent date\nReturn value\ncurrent_day()\n31 December 2022\n31\ncurrent_month()\n4 May 2021\n05\ncurrent_year()\n6 June 2022\n2022\nIf the current date is 2 March 2023, what will be the return values of the sub-programs?(3 marks)\nSub-program\nReturn value\ncurrent_day()\ncurrent_month()\ncurrent_year()"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "When the user clicks on the “Create” button, a blank text file named as the current date will be created. Jimmy writes a sub-program today_diary() in Python to return the full file name of the file created. For example, if the current date is 2 March 2023, the sub-program will return \"20230302.txt\". Complete the sub-program for him.(1 mark)\ndef today_diary():\nfilename = ________________________________________\nreturn filename"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "When the user has finished writing the diary, they can click the “Save” button and the inputted content will be written into the text file. Complete the following sub-program save_diary(text) for the user to save the completed diary.(2 marks)\ndef save_diary(text):\nf = open(_______________, ___)\nf.close\ntext = input(\"Write something: \")\nsave_diary(text)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "02\n03\n2023\n(b) current_year() + current_month() + current_day() + \".txt\""
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "today_diary(), \"w\"\nf.write(text)\n--]"
+        }
+      ],
+      "text": "Jimmy is creating a diary application for users to save their diaries on their phones.\n(a) A few sub-programs are created to return information of the current date as strings. For a day or month with a numerical value smaller than 10, a leading zero is added to the return value. The following are the sample outputs of the sub-programs:\nSub-program\nCurrent date\nReturn value\ncurrent_day()\n31 December 2022\n31\ncurrent_month()\n4 May 2021\n05\ncurrent_year()\n6 June 2022\n2022\nIf the current date is 2 March 2023, what will be the return values of the sub-programs?(3 marks)\nSub-program\nReturn value\ncurrent_day()\ncurrent_month()\ncurrent_year()\n(b) When the user clicks on the “Create” button, a blank text file named as the current date will be created. Jimmy writes a sub-program today_diary() in Python to return the full file name of the file created. For example, if the current date is 2 March 2023, the sub-program will return \"20230302.txt\". Complete the sub-program for him.(1 mark)\ndef today_diary():\nfilename = ________________________________________\nreturn filename\n(c) When the user has finished writing the diary, they can click the “Save” button and the inputted content will be written into the text file. Complete the following sub-program save_diary(text) for the user to save the completed diary.(2 marks)\ndef save_diary(text):\nf = open(_______________, ___)\nf.close\ntext = input(\"Write something: \")\nsave_diary(text)\n[--Answer:\n(a) 02\n03\n2023\n(b) current_year() + current_month() + current_day() + \".txt\"\n(c) today_diary(), \"w\"\nf.write(text)\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch7",
+        "Python",
+        "循環",
+        "函數",
+        "硬件",
+        "資訊處理",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1107_04A001E",
+      "bank_code": "SSICTC1107_04A001E",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": null,
+      "stem": "Sally is writing a program for a game, which is about guessing letters in the word given by the computer. She needs to read a text file called “dictionary.txt” in the program for choosing a random word from the following list.\nhospital\norange\nobsidian\ndragon\nwater",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Complete the following sub-program getWords() in Python to save the words in “dictionary.txt” as a list wordlist.(2 marks)\nwordlist = []\ndef getWords():\nglobal wordlist\nf = open(___________________, ___)\nword = f.readline()\nwhile ____________________:\nword = word.replace(\"\\n\", \"\")\nwordlist = wordlist + [word]\nword = f.readline()\nf.close()"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "All the words have been stored in list wordlist. Given that the function randint(a, b) in the random library returns a random integer from a to b. Complete the following Python program to draw a word from the list and save it in a variable w.(2 marks)\nimport random"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "The word for guessing will be converted to a string of asterisks of the same length, and this string will be printed when the game starts. For example, if the word for guessing (w) is “water”, the following is displayed at the beginning of the game:\nThe word for guessing: *****\nComplete the following Python program to hide the letters in the word for guessing and print the converted string.(2 marks)\nhidden = \"\"\nprint(\"The word for guessing: \", hidden)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "The player can enter a letter in each guess. If the letter exists in the word for guessing, a sub-program changeHidden(char) will reveal that letter so that the player can continue to guess the remaining letters.\nThe following are the sample input and output of the main program of this game, and the text in bold represents the user input:\nThe word for guessing: *****\nEnter a letter: e\nCorrect! The word for guessing: ***e*"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Assume the word for guessing is “water” and the initial value of hidden is “***e*”.\nWhat should be the value of variable hidden after calling changeHidden(\"a\")?(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Assume the user input is always valid, complete the following sub-program changeHidden(char) to reveal the letter that the player has guessed correctly.(4 marks)\ndef changeHidden(char):\nglobal hidden\npr_hidden = hidden\nhidden = \"\"\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "\"dictionary.txt\", \"r\"\nlen(word) > 0"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "i = random.randint(0, len(wordlist)-1)\nw = wordlist[i]"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "for i in range(0, len(w)):\nhidden = hidden + \"*\"\n(d)(i) *a*e*\n(d)(ii)\nfor i in range(0, len(w)):\nif w[i] == char:\nhidden = hidden + char\nelse:\nhidden = hidden + pr_hidden[i]\n--]"
+        }
+      ],
+      "text": "Sally is writing a program for a game, which is about guessing letters in the word given by the computer. She needs to read a text file called “dictionary.txt” in the program for choosing a random word from the following list.\nhospital\norange\nobsidian\ndragon\nwater\n(a) Complete the following sub-program getWords() in Python to save the words in “dictionary.txt” as a list wordlist.(2 marks)\nwordlist = []\ndef getWords():\nglobal wordlist\nf = open(___________________, ___)\nword = f.readline()\nwhile ____________________:\nword = word.replace(\"\\n\", \"\")\nwordlist = wordlist + [word]\nword = f.readline()\nf.close()\n(b) All the words have been stored in list wordlist. Given that the function randint(a, b) in the random library returns a random integer from a to b. Complete the following Python program to draw a word from the list and save it in a variable w.(2 marks)\nimport random\n(c) The word for guessing will be converted to a string of asterisks of the same length, and this string will be printed when the game starts. For example, if the word for guessing (w) is “water”, the following is displayed at the beginning of the game:\nThe word for guessing: *****\nComplete the following Python program to hide the letters in the word for guessing and print the converted string.(2 marks)\nhidden = \"\"\nprint(\"The word for guessing: \", hidden)\n(d) The player can enter a letter in each guess. If the letter exists in the word for guessing, a sub-program changeHidden(char) will reveal that letter so that the player can continue to guess the remaining letters.\nThe following are the sample input and output of the main program of this game, and the text in bold represents the user input:\nThe word for guessing: *****\nEnter a letter: e\nCorrect! The word for guessing: ***e*\n(i) Assume the word for guessing is “water” and the initial value of hidden is “***e*”.\nWhat should be the value of variable hidden after calling changeHidden(\"a\")?(1 mark)\n(ii) Assume the user input is always valid, complete the following sub-program changeHidden(char) to reveal the letter that the player has guessed correctly.(4 marks)\ndef changeHidden(char):\nglobal hidden\npr_hidden = hidden\nhidden = \"\"\n[--Answer:\n(a) \"dictionary.txt\", \"r\"\nlen(word) > 0\n(b) i = random.randint(0, len(wordlist)-1)\nw = wordlist[i]\n(c) for i in range(0, len(w)):\nhidden = hidden + \"*\"\n(d)(i) *a*e*\n(d)(ii)\nfor i in range(0, len(w)):\nif w[i] == char:\nhidden = hidden + char\nelse:\nhidden = hidden + pr_hidden[i]\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch7",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "硬件",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

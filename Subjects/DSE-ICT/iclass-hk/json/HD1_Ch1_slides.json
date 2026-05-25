@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/HD1 Ch1.pptx",
+    "slug": "HD1_Ch1_slides",
+    "title": "HD1 Ch1",
+    "series": "HD1",
+    "chapter": 1,
+    "curriculum_unit": "D-d",
+    "curriculum_part": "Core-D",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.827164+00:00",
+    "slide_count": 19,
+    "topic_tags": {
+      "課本活動": 3,
+      "除錯": 2
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "第一課問題建構和分析"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "小明想編寫一個運用畢氏定理計算直角三角形斜邊長度的程式。試寫出與這個程式相關的輸入、處理和輸出。101.2輸入處理輸出兩個直角邊邊長(a 和 b)運算( c = √(a2 + b2) )斜邊長度 (c)"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "拆解問題111.3拆解問題指把問題拆解成數個細小而容易處理的子問題，並由上而下/ 分而治之的策略來解決問題。"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "精益求精12A拆解問題時，可以把已拆開的模組進一步分拆，讓每個模組都變得更易處理，這個過程名為「精益求精/逐步求精法」。"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "輸入、處理和輸出模組13B在拆解問題的過程中，你可能會發現一些模組正正代表着「輸入 — 處理 — 輸出」周期中的各個部分。輸入處理輸出"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "辨別相似問題的共同元素141.4模式識別是用以發掘不同問題中相似的規律，以運用相近的方法解決問題。"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "試在課本 P. 14 寫出解決問題的方法。(1) 體重，最輕的(2) 最輕的(3) 輕至重 若老師要求學生按照體重由重至輕順序排列，試寫出解決這個問題的方法。(1) 列出所有學生的體重，從中找出最重的，抽出來排在第一。(2) 從剩下的學生之中找出最重的，抽出來排在第二。(3) 如此類推，便可將全班學生由重至輕排序。151.4"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "試回答課本第 17 頁的問題。D將重複次數改為 4 次161.3"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "設計用戶界面和元件171.5從程式的輸入 — 處理 — 輸出周期中，我們可以知道程式會讀取哪些輸入，並可運用線框稿去起草程式的用戶界面和當中應包含的元件："
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "解難程序181.6運用編程解決問題的過程大致可分為六個步驟："
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "以下哪一個是解難程序的正確次序？\t(1) 進行測試及除錯\t(2) 定義問題\t(3) 編寫程式\t(4) 算法設計(2)  (4)  (1)  (3)(2)  (4)  (3)  (1)(4)  (2)  (1)  (3)(4)  (2)  (3)  (1)191.4"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "解難與編程你知道程式為人類解決了多少生活上的問題嗎？程式能讓電腦接收一系列指示，自動執行各種任務。簡單如家裏的洗衣機，到複雜如人工智能應用，程式都無處不在。你有沒有想到一些希望通過編程解決的問題呢？"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "界定問題31.1電腦程式能協助人們解決日常生活中所遇到的問題。但要透過編寫程式（編程）解決問題時，我們要先「界定問題及其範圍」。在界定問題時，運用不同的思考工具可以幫助我們:六何法腦圖"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "某咖啡店老闆打算提供線上銷售服務，並要求 IT 同事為客戶建構一個網站。IT 同事首先需要做什麼？ 編寫網頁程式 估計項目所需的人手和時間 定義服務範圍 參考其他相關網站41.1"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "分析解決問題的第一步，必定是先清楚界定問題的範圍。 例如：老闆打算在線上提供的服務包括什麼？是銷售咖啡豆，還是預訂預製咖啡服務？先清楚界定問題的範圍，然後才進行「參考其他相關網站」、「估計項目所需的人手和時間」、「編寫網頁程式」等步驟。  答案答案是 C。51.1"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "解決專題研習中的問題時，為什麼需要準確界定問題的範圍？\t(1) 若誤解問題，就會使用錯誤的解決方法\t(2) 能夠通過流程圖清楚展現方案\t(3) 能把大問題細分為子問題 只有 (1) 只有 (3) 只有 (1) 和 (3) (1)、(2) 和 (3)61.1"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "分析問題71.2輸入 — 處理 — 輸出周期是一套用於分析問題的框架。以計算人體的身體質量指數（Body Mass Index, BMI）為例：輸入處理輸出體重（kg）、身高（m）運算（BMI = 體重/身高2）身體質量指數（BMI）"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "試填寫課本第 8 頁的輸入 — 處理 — 輸出周期表格以分析問題：    81.2輸入處理輸出運算（公式）貸款本金、利率、付款次數每月所需供款、利息輸入處理輸出從循線感應器獲得數據判斷車身位置控制摩打讓機械車循線而行"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "小欣想利用程式計算文具店的利潤。以下哪項是與這個程式相關的「輸入」？\t(1) 文具店的利潤\t(2) 文具的成本\t(3) 文具的銷售 只有 (1)、(2) 只有 (1)、(3) 只有 (2)、(3) (1)、(2) 和 (3)91.2"
+    }
+  ]
+}

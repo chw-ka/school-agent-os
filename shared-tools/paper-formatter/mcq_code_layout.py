@@ -19,6 +19,8 @@ _PYTHON_LINE = re.compile(
     r"^\s*(def |class |import |from |if |elif |else:|while |for |print\(|return )",
     re.IGNORECASE,
 )
+_PYTHON_INTRO = re.compile(r"Python\s*程式|下列\s*Python", re.IGNORECASE)
+_PYTHON_ASSIGN = re.compile(r"^[a-zA-Z_]\w*\s*=", re.IGNORECASE)
 _INTRO_PREFIX = re.compile(
     r"^(考慮以下(?:程序|偽代碼|算法|Python 程式)[^：:\n]*[：:])(.*)$",
     re.IGNORECASE,
@@ -33,15 +35,26 @@ _STMT_START = re.compile(
 _TRAILING_QUESTION = re.compile(r"。([^。]+[？?])$")
 
 
+def _is_python_statement(line: str) -> bool:
+    s = line.strip()
+    if not s:
+        return False
+    if _PYTHON_LINE.match(s) or _PYTHON_ASSIGN.match(s):
+        return True
+    if re.match(r"^[a-zA-Z_]\w*\s*[\[,]", s):
+        return True
+    return False
+
+
 def is_code_content_line(line: str) -> bool:
     s = line.strip()
     if not s:
         return False
     if s.endswith("？") or s.endswith("?"):
         return False
-    if s.startswith(("考慮", "下列", "以下", "細看", "參考", "假設", "設計", "就", "在")):
+    if s.startswith(("考慮", "下列", "以下", "細看", "參考", "假設", "設計", "就", "在", "執行下列")):
         return False
-    if _PSEUDO_LINE.match(s) or _PYTHON_LINE.match(s):
+    if _PSEUDO_LINE.match(s) or _is_python_statement(s):
         return True
     if "←" in s or "→" in s:
         return True
@@ -153,8 +166,15 @@ def _en_pseudo_to_zh(line: str) -> str:
 
 def _code_line_depth(zh: str, *, prev: str | None, open_blocks: int, source_line: str) -> tuple[int, int]:
     """Return (tab depth, updated open_blocks)."""
-    lead = len(source_line) - len(source_line.lstrip(" \t"))
+    stripped_src = source_line.lstrip(" \t")
+    lead = len(source_line) - len(stripped_src)
+    if source_line.startswith("\t"):
+        tab_lead = len(source_line) - len(source_line.lstrip("\t"))
+        return MCQ_CODE_BASE_DEPTH + open_blocks + max(0, tab_lead - 1), open_blocks
+
     if lead >= 2:
+        return MCQ_CODE_BASE_DEPTH + open_blocks, open_blocks
+    if lead == 1 and source_line.startswith(" "):
         return MCQ_CODE_BASE_DEPTH + open_blocks + 1, open_blocks
 
     depth = MCQ_CODE_BASE_DEPTH + open_blocks
@@ -172,8 +192,13 @@ def _code_line_depth(zh: str, *, prev: str | None, open_blocks: int, source_line
     if header_only:
         return depth, open_blocks + 1
 
-    if open_blocks and zh.startswith(("輸出", "結束")):
-        return depth, max(0, open_blocks - 1)
+    if zh.startswith(("當 ", "若 ", "重複 ")) and lead == 0 and not zh.rstrip().endswith(
+        ("則", "：", ":")
+    ):
+        return MCQ_CODE_BASE_DEPTH + open_blocks, open_blocks + 1
+
+    if zh.startswith(("輸出", "結束")) and lead == 0:
+        return MCQ_CODE_BASE_DEPTH, max(0, open_blocks - 1)
 
     return depth, open_blocks
 
@@ -215,23 +240,39 @@ def format_mcq_stem_with_code(stem: str) -> str:
     """
     parts: list[str] = []
     code_buf: list[str] = []
-    lang = "python" if "python" in stem.lower() else "pseudo_zh"
+    lang = "pseudo_zh"
+    python_mode = False
 
     def flush_code() -> None:
-        nonlocal code_buf
+        nonlocal code_buf, lang
         if code_buf:
-            parts.append(format_code_block("\n".join(code_buf), lang=lang))
+            block = format_code_block("\n".join(code_buf), lang=lang)
+            parts.extend(block.splitlines())
             code_buf = []
 
     for raw in stem.splitlines():
         line = raw.rstrip()
         if not line.strip():
             flush_code()
+            python_mode = False
+            continue
+
+        if _PYTHON_INTRO.search(line):
+            flush_code()
+            parts.append(line.strip())
+            python_mode = True
+            lang = "python"
+            continue
+
+        if python_mode and _is_python_statement(line):
+            code_buf.append(line)
             continue
 
         intro, code_lines, trailing = split_mixed_intro_line(line)
         if intro is not None:
             flush_code()
+            python_mode = False
+            lang = "pseudo_zh"
             parts.append(intro)
             if code_lines:
                 code_buf.extend(code_lines)
@@ -244,9 +285,11 @@ def format_mcq_stem_with_code(stem: str) -> str:
             code_buf.extend(expand_code_source_line(line))
         else:
             flush_code()
+            python_mode = False
+            lang = "pseudo_zh"
             parts.append(line.strip())
     flush_code()
-    return "\n".join(parts)
+    return "\n".join(p for p in parts if p is not None)
 
 
 def insert_code_block_gaps(lines: list[str], *, max_lines: int | None = None) -> list[str]:

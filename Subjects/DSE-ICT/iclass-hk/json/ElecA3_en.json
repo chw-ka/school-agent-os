@@ -1,0 +1,603 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecA3_en_SQL Operations on Multiple Tables.docx",
+    "slug": "ElecA3_en",
+    "title": "SQL Operations on Multiple Tables",
+    "title_zh": null,
+    "title_en": "SQL Operations on Multiple Tables",
+    "language": "en",
+    "family": "ElecA",
+    "chapter": 3,
+    "integrated": false,
+    "topic_code": "EA03",
+    "curriculum_unit": "EA",
+    "ca_unit": "EA",
+    "f5_exam_scope": "elective_db",
+    "extracted_at": "2026-05-24T10:37:18.061664+00:00",
+    "item_count": 13,
+    "section_counts": {
+      "short_answer": 9,
+      "long_answer": 4
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTA1103_03A001E",
+      "bank_code": "SSICTA1103_03A001E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Skyline company use the following database tables EMPLOYEE and SALARY to store the data of its employees and salary. Below are some of the data from the tables.\nEMPLOYEE\nEID\nNAME\nTITLE\nDEPT\nPOINT\n6130\nJanette To\nSales Manager\nSales\n16\n6131\nJason Wong\nSoftware Engineer\nIT\n18\n6132\nJackie Tam\nMarketing Manager\nMarketing\n13\nSALARY\nPOINT\nAMOUNT\n11\n12000\n12\n13000\n13\n14000",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a SQL statement to list the name and salary of each employee in the Sales department who earns more than $13,000.  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write a SQL statement that returns the number of employees in each department whose average salary is 18000 or more. (2 marks)\n[--Answer:\n(a) SELECT NAME, AMOUNT\nFROM EMPLOYEE E INNER JOIN SALARY S ON E.POINT = S.POINT\nWHERE DEPT = 'SALES' AND AMOUNT > 13000\n(b) SELECT DEPT, COUNT(*)\nFROM EMPLOYEE E LEFT JOIN SALARY S ON E.POINT = S.POINT\nGROUP BY DEPT\nHAVING AVG(AMOUNT) >= 18000\n--]"
+        }
+      ],
+      "text": "Skyline company use the following database tables EMPLOYEE and SALARY to store the data of its employees and salary. Below are some of the data from the tables.\nEMPLOYEE\nEID\nNAME\nTITLE\nDEPT\nPOINT\n6130\nJanette To\nSales Manager\nSales\n16\n6131\nJason Wong\nSoftware Engineer\nIT\n18\n6132\nJackie Tam\nMarketing Manager\nMarketing\n13\nSALARY\nPOINT\nAMOUNT\n11\n12000\n12\n13000\n13\n14000\n(a) Write a SQL statement to list the name and salary of each employee in the Sales department who earns more than $13,000.  (2 marks)\n(b) Write a SQL statement that returns the number of employees in each department whose average salary is 18000 or more. (2 marks)\n[--Answer:\n(a) SELECT NAME, AMOUNT\nFROM EMPLOYEE E INNER JOIN SALARY S ON E.POINT = S.POINT\nWHERE DEPT = 'SALES' AND AMOUNT > 13000\n(b) SELECT DEPT, COUNT(*)\nFROM EMPLOYEE E LEFT JOIN SALARY S ON E.POINT = S.POINT\nGROUP BY DEPT\nHAVING AVG(AMOUNT) >= 18000\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "軟件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1103_03A002E",
+      "bank_code": "SSICTA1103_03A002E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "A grocery store uses a database to manage its inventory, with three tables: PRODUCT, SUPPLIER, and PURCHASE.\nPRODUCT\nField name\nDescription\nPID\nIdentity code of each product\nPNAME\nName of the product\nCATEGORY\nThe category that the product belongs to\nPRICE\nPrice of the product\nSUPPLIER\nField name\nDescription\nSID\nIdentity code of  each supplier\nSNAME\nName of the supplier\nPHONE\nContact information for the supplier\nPURCHASE\nField name\nDescription\nPURID\nIdentity code of each purchase\nPID\nIdentity code of each product\nSID\nIdentity code of  each supplier\nPURDATE\nDate of the purchase\nQUANTITY\nQuantity of the product being purchased\nPPU\nPrice per unit of the product being purchased",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "The owner would like to list the products in the store inventory that any customer has not purchased from January to May. Write a SQL statement to accomplish his task. (3 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Suppose that there are five products in a grocery store's inventory. The following table shows the product information:\nPID\nPNAME\nCATEGORY\nPRICE\nP01\nBanana\nFruits\n5\nP02\nOrange\nFruits\n6\nP03\nCarrot\nVegetables\n8\nP04\nBroccoli\nVegetables\n15\nP05\nSalmon\nSeafood\n49\nExecute the following SQL command.\nSELECT DISTINCT P.PNAME\nFROM PRODUCT P\nWHERE P.PRICE > (SELECT AVG(PRICE) FROM PRODUCT WHERE P.CATEGORY = CATEGORY)\nWhat is the output? (2 marks)\n[--Answer:\n(a) SELECT PNAME\nFROM PRODUCT\nWHERE PID NOT IN (\nSELECT PID\nFROM PURCHASE\nWHERE MONTH(PURDATE) BETWEEN 1 AND 5\n)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Orange\nBroccoli\n--]"
+        }
+      ],
+      "text": "A grocery store uses a database to manage its inventory, with three tables: PRODUCT, SUPPLIER, and PURCHASE.\nPRODUCT\nField name\nDescription\nPID\nIdentity code of each product\nPNAME\nName of the product\nCATEGORY\nThe category that the product belongs to\nPRICE\nPrice of the product\nSUPPLIER\nField name\nDescription\nSID\nIdentity code of  each supplier\nSNAME\nName of the supplier\nPHONE\nContact information for the supplier\nPURCHASE\nField name\nDescription\nPURID\nIdentity code of each purchase\nPID\nIdentity code of each product\nSID\nIdentity code of  each supplier\nPURDATE\nDate of the purchase\nQUANTITY\nQuantity of the product being purchased\nPPU\nPrice per unit of the product being purchased\n(a) The owner would like to list the products in the store inventory that any customer has not purchased from January to May. Write a SQL statement to accomplish his task. (3 marks)\n(b) Suppose that there are five products in a grocery store's inventory. The following table shows the product information:\nPID\nPNAME\nCATEGORY\nPRICE\nP01\nBanana\nFruits\n5\nP02\nOrange\nFruits\n6\nP03\nCarrot\nVegetables\n8\nP04\nBroccoli\nVegetables\n15\nP05\nSalmon\nSeafood\n49\nExecute the following SQL command.\nSELECT DISTINCT P.PNAME\nFROM PRODUCT P\nWHERE P.PRICE > (SELECT AVG(PRICE) FROM PRODUCT WHERE P.CATEGORY = CATEGORY)\nWhat is the output? (2 marks)\n[--Answer:\n(a) SELECT PNAME\nFROM PRODUCT\nWHERE PID NOT IN (\nSELECT PID\nFROM PURCHASE\nWHERE MONTH(PURDATE) BETWEEN 1 AND 5\n)\n(b) Orange\nBroccoli\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1103_03A003E",
+      "bank_code": "SSICTA1103_03A003E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Two database tables COURSE and INSTRUCTOR, are used to store the data of courses and instructors in a university. Below is the table structure of both tables.\nCOURSE\nField name\nDescription\nExample\nCOUID\nIdentity code of the course\nE193\nCNAME\nName of the course\nIntroduction to Programming\nDESCRIPTION\nDescription of the course\nLearn the basics of programming in Python\nINSID\nIdentity code of the instructor\n1001\nINSTRUCTOR\nField name\nDescription\nExample\nINSID\nIdentity code of the instructor\n1001\nINAME\nName of the instructor\nMark Davis\nTITLE\nThe role of the instructor\nAssistant Professor",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "List the total number of courses Instructor Mark Davis teaches. (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the purpose of the following SQL command?  (2 marks)\nSELECT CNAME FROM COURSE WHERE EXISTS (\nSELECT 1 FROM INSTRUCTOR WHERE TITLE = 'Assistant Professor')\n[--Answer:\n(a) SELECT COUNT(*)\nFROM COURSE C INNER JOIN INSTRUCTOR I ON C.INSID = I.INSID\nWHERE INAME = 'Mark Davis'\n(b) The purpose of the SQL command is to list the names of all courses in the COURSE table with the instructor titled 'Assistant Professor'.\n--]"
+        }
+      ],
+      "text": "Two database tables COURSE and INSTRUCTOR, are used to store the data of courses and instructors in a university. Below is the table structure of both tables.\nCOURSE\nField name\nDescription\nExample\nCOUID\nIdentity code of the course\nE193\nCNAME\nName of the course\nIntroduction to Programming\nDESCRIPTION\nDescription of the course\nLearn the basics of programming in Python\nINSID\nIdentity code of the instructor\n1001\nINSTRUCTOR\nField name\nDescription\nExample\nINSID\nIdentity code of the instructor\n1001\nINAME\nName of the instructor\nMark Davis\nTITLE\nThe role of the instructor\nAssistant Professor\n(a) List the total number of courses Instructor Mark Davis teaches. (2 marks)\n(b) What is the purpose of the following SQL command?  (2 marks)\nSELECT CNAME FROM COURSE WHERE EXISTS (\nSELECT 1 FROM INSTRUCTOR WHERE TITLE = 'Assistant Professor')\n[--Answer:\n(a) SELECT COUNT(*)\nFROM COURSE C INNER JOIN INSTRUCTOR I ON C.INSID = I.INSID\nWHERE INAME = 'Mark Davis'\n(b) The purpose of the SQL command is to list the names of all courses in the COURSE table with the instructor titled 'Assistant Professor'.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "Python",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1103_03B004E",
+      "bank_code": "SSICTA1103_03B004E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Here are the database tables, CUSTOMERS, MOVIE and RENTAL, used in a movie rental store.\nCUSTOMERS\nCID\nCNAME\nPHONE\nOCCUPATION\n001\nAnissa\n55123679",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "null",
+          "marks": null,
+          "text": "002\nRobert\n98765432\nStudent\n003\nEmily\n69932145\nNurse\nMOVIE\nMID\nTITLE\nPRICE\nS25\nThe Dark Knight\n20\nT36\nTitanic\n20\nD02\nForrest Gump\n15\nRENTAL\nRID\nCID\nMID\nRDATE\n1\n003\nZ48\n2022-06-18\n2\n001\nS25\n2023-01-08\n3\n001\nZ48\n2023-01-14"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write down the output of the following SQL statement based on the given data.  (2 marks)\nSELECT C.CID, OCCUPATION, MID FROM CUSTOMERS C FULL JOIN RENTAL R ON C.CID = R.CID"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write a SQL command to list the customers’ IDs whom they have rented the movie at least once with their total number of rentals. (2 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "CID\nOCCUPATION\nMID\n001\nNULL\nS25\n001\nNULL\nZ48\n002\nStudent\nNULL\n003\nNurse\nZ48\n(b) SELECT C.CID, COUNT(*)\nFROM CUSTOMERS C, RENTAL R\nWHERE C.CID = R.CID\nGROUP BY C.CID\n--]"
+        }
+      ],
+      "text": "Here are the database tables, CUSTOMERS, MOVIE and RENTAL, used in a movie rental store.\nCUSTOMERS\nCID\nCNAME\nPHONE\nOCCUPATION\n001\nAnissa\n55123679\n(null) 002\nRobert\n98765432\nStudent\n003\nEmily\n69932145\nNurse\nMOVIE\nMID\nTITLE\nPRICE\nS25\nThe Dark Knight\n20\nT36\nTitanic\n20\nD02\nForrest Gump\n15\nRENTAL\nRID\nCID\nMID\nRDATE\n1\n003\nZ48\n2022-06-18\n2\n001\nS25\n2023-01-08\n3\n001\nZ48\n2023-01-14\n(a) Write down the output of the following SQL statement based on the given data.  (2 marks)\nSELECT C.CID, OCCUPATION, MID FROM CUSTOMERS C FULL JOIN RENTAL R ON C.CID = R.CID\n(b) Write a SQL command to list the customers’ IDs whom they have rented the movie at least once with their total number of rentals. (2 marks)\n[--Answer:\n(a) CID\nOCCUPATION\nMID\n001\nNULL\nS25\n001\nNULL\nZ48\n002\nStudent\nNULL\n003\nNurse\nZ48\n(b) SELECT C.CID, COUNT(*)\nFROM CUSTOMERS C, RENTAL R\nWHERE C.CID = R.CID\nGROUP BY C.CID\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1103_03B005E",
+      "bank_code": "SSICTA1103_03B005E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "A car rental company has multiple locations across districts where customers can rent different types of cars on a daily basis. The company has created a database table called CARS to store information about its available cars.\nCARS\nField name\nDescription\nExample\nCID\nIdentity code of the car\nY101\nMODEL\nModel of the car\nToyota Camry\nTYPE\nType of car\nSedan\nLOCATION\nLocation of the car rental branch\nKwun Tong\nDAILYRATE\nThe price per day to rent the car\n400",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "List the car types that are available in the Kwun Tong district but not Yuen Long district using MINUS.  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The company creates another table RENTAL to store information on the car rental, and below are some records of RENTAL.\nRENTAL\nCID\nCUS\nSTART\nEND\nY101\n001\n2022-05-01\n2022-05-06\nC254\n032\n2022-07-12\n2022-07-17\nM110\n011\n2022-09-30\nThe company wants to keep track of how many cars they have available for rent at each location and the total number of cars they have at all locations. They plan to notify their customers if the number of available cars at a specific location exceeds 5. If the END column in RENTAL is null, it means that the rental period has not yet ended and the car is not available for rent. The value of END will be set only after the rental period has ended.\nWrite a SQL command to list the location and number of cars available.  (3 marks)\n[--Answer:\n(a) SELECT TYPE FROM CARS WHERE LOCATION = 'Kwun Tong'\nMINUS\nSELECT TYPE FROM CARS WHERE LOCATION = 'Yuen Long'\n(b) SELECT C.LOCATION, COUNT(*) AS NUM_CARS_AVAILABLE\nFROM CARS C LEFT JOIN RENTAL R ON C.CID = R.CID\nWHERE R.CID IS NULL OR R.END IS NOT NULL\nGROUP BY C.LOCATION\nHAVING COUNT(*) <= 5\n--]"
+        }
+      ],
+      "text": "A car rental company has multiple locations across districts where customers can rent different types of cars on a daily basis. The company has created a database table called CARS to store information about its available cars.\nCARS\nField name\nDescription\nExample\nCID\nIdentity code of the car\nY101\nMODEL\nModel of the car\nToyota Camry\nTYPE\nType of car\nSedan\nLOCATION\nLocation of the car rental branch\nKwun Tong\nDAILYRATE\nThe price per day to rent the car\n400\n(a) List the car types that are available in the Kwun Tong district but not Yuen Long district using MINUS.  (2 marks)\n(b) The company creates another table RENTAL to store information on the car rental, and below are some records of RENTAL.\nRENTAL\nCID\nCUS\nSTART\nEND\nY101\n001\n2022-05-01\n2022-05-06\nC254\n032\n2022-07-12\n2022-07-17\nM110\n011\n2022-09-30\nThe company wants to keep track of how many cars they have available for rent at each location and the total number of cars they have at all locations. They plan to notify their customers if the number of available cars at a specific location exceeds 5. If the END column in RENTAL is null, it means that the rental period has not yet ended and the car is not available for rent. The value of END will be set only after the rental period has ended.\nWrite a SQL command to list the location and number of cars available.  (3 marks)\n[--Answer:\n(a) SELECT TYPE FROM CARS WHERE LOCATION = 'Kwun Tong'\nMINUS\nSELECT TYPE FROM CARS WHERE LOCATION = 'Yuen Long'\n(b) SELECT C.LOCATION, COUNT(*) AS NUM_CARS_AVAILABLE\nFROM CARS C LEFT JOIN RENTAL R ON C.CID = R.CID\nWHERE R.CID IS NULL OR R.END IS NOT NULL\nGROUP BY C.LOCATION\nHAVING COUNT(*) <= 5\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1103_03B006E",
+      "bank_code": "SSICTA1103_03B006E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "A volunteer service centre is running a volunteer service hour programme, and they are using database tables MEMBER, VOLUNTARY_WORKS, and RECORD to store data on volunteers and service activities. Here is the table structure of MEMBER, VOLUNTARY_WORKS, and RECORD.\nMEMBER\nField name\nDescription\nMID\nIdentity code of the member\nMNAME\nName of the member\nPHONE\nThe phone number of the member\nVOLUNTARY_WORKS\nField name\nDescription\nVID\nIdentity code of each voluntary work\nVNAME\nName of each voluntary work\nVDATE\nDate of the voluntary work held\nRECORD\nField name\nDescription\nMID\nIdentity code of each voluntary work\nVID\nName of each voluntary work\nHOURS\nThe number of hours volunteered for the given work",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write an SQL statement to retrieve the identity code of all members who have volunteered for the voluntary work named \"Food Bank\".  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "List the name of members who do not join any service.  (3 marks)\n[--Answer:\n(a) SELECT R.MID\nFROM VOLUNTARY_WORKS V INNER JOIN RECORD R ON V.VID = R.VID\nWHERE VNAME = 'Food Bank'\nAlternatives:\nSELECT R.MID\nFROM RECORD R\nWHERE R.VID IN (\nSELECT V.VID\nFROM VOLUNTARY_WORKS V\nWHERE VNAME = 'Food Bank'\n)\n(b) SELECT MNAME\nFROM MEMBER M LEFT JOIN RECORD R ON M.MID = R.MID\nWHERE R.MID IS NULL\nAlternatives:\nSELECT MNAME\nFROM MEMBER M\nWHERE M.MID NOT IN (\nSELECT R.MID\nFROM RECORD R\n)\n--]"
+        }
+      ],
+      "text": "A volunteer service centre is running a volunteer service hour programme, and they are using database tables MEMBER, VOLUNTARY_WORKS, and RECORD to store data on volunteers and service activities. Here is the table structure of MEMBER, VOLUNTARY_WORKS, and RECORD.\nMEMBER\nField name\nDescription\nMID\nIdentity code of the member\nMNAME\nName of the member\nPHONE\nThe phone number of the member\nVOLUNTARY_WORKS\nField name\nDescription\nVID\nIdentity code of each voluntary work\nVNAME\nName of each voluntary work\nVDATE\nDate of the voluntary work held\nRECORD\nField name\nDescription\nMID\nIdentity code of each voluntary work\nVID\nName of each voluntary work\nHOURS\nThe number of hours volunteered for the given work\n(a) Write an SQL statement to retrieve the identity code of all members who have volunteered for the voluntary work named \"Food Bank\".  (2 marks)\n(b) List the name of members who do not join any service.  (3 marks)\n[--Answer:\n(a) SELECT R.MID\nFROM VOLUNTARY_WORKS V INNER JOIN RECORD R ON V.VID = R.VID\nWHERE VNAME = 'Food Bank'\nAlternatives:\nSELECT R.MID\nFROM RECORD R\nWHERE R.VID IN (\nSELECT V.VID\nFROM VOLUNTARY_WORKS V\nWHERE VNAME = 'Food Bank'\n)\n(b) SELECT MNAME\nFROM MEMBER M LEFT JOIN RECORD R ON M.MID = R.MID\nWHERE R.MID IS NULL\nAlternatives:\nSELECT MNAME\nFROM MEMBER M\nWHERE M.MID NOT IN (\nSELECT R.MID\nFROM RECORD R\n)\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "Python",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1103_03C007E",
+      "bank_code": "SSICTA1103_03C007E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "A local art museum plans to hold an online charity auction to raise funds for its upcoming exhibit. To help manage the auction, they have assembled a team of developers to create an online auction system. The system will allow art enthusiasts to bid on various artwork donated by local artists.\nBIDDER\nField name\nDescription\nExample\nBIDDER\nIdentity code of the bidder\nB123\nBNAME\nName of the bidder\nDavid Ho\nARTWORK\nField name\nDescription\nExample\nWID\nIdentity code of the artwork\nW012\nAID\nIdentity code of the artist\nA262\nANAME\nName of the artist\nJessica Cheung\nTITLE\nTitle of the artwork\nSunset Over Water\nMINBID\nMinimum bid amount of the artwork\n10000\nBID\nField name\nDescription\nExample\nBIDID\nIdentity code of the bid\n1\nWID\nIdentity code of the artwork\nW012\nBIDDER\nIdentity code of the bidder\nB123\nAMOUNT\nThe amount of the bid each time\n12000\nRESULT\nWhether the bidder has won the auction and can purchase the artwork (1 means success; 0 means fail)\n1",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a SQL statement to list the bidder’s name who placed the highest bid on the artwork W012.\n(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write a SQL statement to display a list of bidder ID of bidders who have bid on the same artwork as bidder 'B123', excluding bidder 'B123'.  (3 marks)\n[--Answer:\n(a) SELECT BNAME\nFROM BIDDER B INNER JOIN BID ON B.BIDDER = BID.BIDDER\nWHERE BID.WID = 'W012' AND BID.AMOUNT IN (\nSELECT MAX(AMOUNT)\nFROM BID\nWHERE WID = 'W012'\n)\n(b) SELECT DISTINCT b1.BIDDER\nFROM BID b1 INNER JOIN BID b2 ON b1.WID = b2.WID\nWHERE b2.BIDDER = 'B123' AND b1.BIDDER <> 'B123'\nAlternatives:\nSELECT DISTINCT BIDDER\nFROM BID\nWHERE WID IN (SELECT WID FROM BID WHERE BIDDER = 'B123') AND BIDDER <> 'B123'\n--]"
+        }
+      ],
+      "text": "A local art museum plans to hold an online charity auction to raise funds for its upcoming exhibit. To help manage the auction, they have assembled a team of developers to create an online auction system. The system will allow art enthusiasts to bid on various artwork donated by local artists.\nBIDDER\nField name\nDescription\nExample\nBIDDER\nIdentity code of the bidder\nB123\nBNAME\nName of the bidder\nDavid Ho\nARTWORK\nField name\nDescription\nExample\nWID\nIdentity code of the artwork\nW012\nAID\nIdentity code of the artist\nA262\nANAME\nName of the artist\nJessica Cheung\nTITLE\nTitle of the artwork\nSunset Over Water\nMINBID\nMinimum bid amount of the artwork\n10000\nBID\nField name\nDescription\nExample\nBIDID\nIdentity code of the bid\n1\nWID\nIdentity code of the artwork\nW012\nBIDDER\nIdentity code of the bidder\nB123\nAMOUNT\nThe amount of the bid each time\n12000\nRESULT\nWhether the bidder has won the auction and can purchase the artwork (1 means success; 0 means fail)\n1\n(a) Write a SQL statement to list the bidder’s name who placed the highest bid on the artwork W012.\n(2 marks)\n(b) Write a SQL statement to display a list of bidder ID of bidders who have bid on the same artwork as bidder 'B123', excluding bidder 'B123'.  (3 marks)\n[--Answer:\n(a) SELECT BNAME\nFROM BIDDER B INNER JOIN BID ON B.BIDDER = BID.BIDDER\nWHERE BID.WID = 'W012' AND BID.AMOUNT IN (\nSELECT MAX(AMOUNT)\nFROM BID\nWHERE WID = 'W012'\n)\n(b) SELECT DISTINCT b1.BIDDER\nFROM BID b1 INNER JOIN BID b2 ON b1.WID = b2.WID\nWHERE b2.BIDDER = 'B123' AND b1.BIDDER <> 'B123'\nAlternatives:\nSELECT DISTINCT BIDDER\nFROM BID\nWHERE WID IN (SELECT WID FROM BID WHERE BIDDER = 'B123') AND BIDDER <> 'B123'\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "進制",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1103_03C008E",
+      "bank_code": "SSICTA1103_03C008E",
+      "section_type": "short_answer",
+      "marks": 7.0,
+      "year_tag": null,
+      "stem": "A company is organising a sports tournament where teams of four employees compete in various games. The tournament uses three database tables to store information: TEAM, GAME, and SCORE.\nTEAM\nField name\nDescription\nExample\nTID\nIdentity code of the team\nT1\nTNAME\nName of the team\nLions\nTC\nIdentity code of the captain\n1302\nTM1\nIdentity code of the first member\n1685\nTM2\nIdentity code of the second member\n1342\nTM3\nIdentity code of the third member\n1020\nPrimary key: TID\nGAME\nField name\nDescription\nExample\nGID\nIdentity code of the game\nG1\nGNAME\nName of the game\nBasketball\nLOCATION\nLocation of the game\nGymnasium A\nPrimary key: GID\nSCORE\nField name\nDescription\nExample\nGID\nIdentity code of the game\nT1\nTID\nIdentity code of the team\nG1\nPOINTS\nPoints obtained by the team\n3\nPrimary key: GID+TID\nForeign key: GID, TID",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "List the names of all teams that have played all the games in the tournament. (3 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "List the identity code and name of the team(s) with the highest average score across all games.\n(4 marks)\n[--Answer:\n(a) SELECT TNAME\nFROM TEAM\nWHERE TID NOT IN (\nSELECT TID\nFROM SCORE\nGROUP BY TID\nHAVING COUNT(GID) < (SELECT COUNT(*) FROM GAME)\n)\n(b) CREATE VIEW TEMP AS\nSELECT TID, AVG(POINTS) AS AVG_SCORE\nFROM SCORE\nGROUP BY TID\nSELECT T.TID, T.TNAME\nFROM TEAM T, TEMP P\nWHERE T.TID = P.TID AND P.AVG_SCORE = (\nSELECT MAX(AVG_SCORE)\nFROM TEMP\n)\n--]"
+        }
+      ],
+      "text": "A company is organising a sports tournament where teams of four employees compete in various games. The tournament uses three database tables to store information: TEAM, GAME, and SCORE.\nTEAM\nField name\nDescription\nExample\nTID\nIdentity code of the team\nT1\nTNAME\nName of the team\nLions\nTC\nIdentity code of the captain\n1302\nTM1\nIdentity code of the first member\n1685\nTM2\nIdentity code of the second member\n1342\nTM3\nIdentity code of the third member\n1020\nPrimary key: TID\nGAME\nField name\nDescription\nExample\nGID\nIdentity code of the game\nG1\nGNAME\nName of the game\nBasketball\nLOCATION\nLocation of the game\nGymnasium A\nPrimary key: GID\nSCORE\nField name\nDescription\nExample\nGID\nIdentity code of the game\nT1\nTID\nIdentity code of the team\nG1\nPOINTS\nPoints obtained by the team\n3\nPrimary key: GID+TID\nForeign key: GID, TID\n(a) List the names of all teams that have played all the games in the tournament. (3 marks)\n(b) List the identity code and name of the team(s) with the highest average score across all games.\n(4 marks)\n[--Answer:\n(a) SELECT TNAME\nFROM TEAM\nWHERE TID NOT IN (\nSELECT TID\nFROM SCORE\nGROUP BY TID\nHAVING COUNT(GID) < (SELECT COUNT(*) FROM GAME)\n)\n(b) CREATE VIEW TEMP AS\nSELECT TID, AVG(POINTS) AS AVG_SCORE\nFROM SCORE\nGROUP BY TID\nSELECT T.TID, T.TNAME\nFROM TEAM T, TEMP P\nWHERE T.TID = P.TID AND P.AVG_SCORE = (\nSELECT MAX(AVG_SCORE)\nFROM TEMP\n)\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1103_03C009E",
+      "bank_code": "SSICTA1103_03C009E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "The school library uses database tables BOOKS and AUTHOR to contain information about the library's collection of books and authors.\nBelow are the records of the two tables.\nBOOKS\nBID\nTITLE\nAID\nCOPIES\n001\nThe Secret Garden\nA3\n4\n002\nBeyond the Horizon\nA1\n2\n003\nThe Last Unicorn\nA4\n2\nAUTHOR\nAID\nANAME\nA1\nMatt Haig\nA2\nBrit Bennett\nA3\nNeil Gaiman\nA4\nJandy Nelson",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a SQL statement that can generate the following result.  (3 marks)\nSQL RESULT\nBID\nAID\nCOPIES\n001\nA3\n4\n002\nA1\n2\n003\nA4\n2\nNULL\nA2\nNULL"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Ms Lee, who is in charge of the school library, executes the following SQL command.\nCREATE VIEW NOOFBOOKS AS\nSELECT A.AID, ANAME, COUNT(BID)  FROM AUTHOR A, BOOKS B\nWHERE A.AID = B.AID\nGROUP BY A.AID\nExplain the advantage of Ms Lee using a VIEW.  (2 marks)\n[--Answer:\n(a) SELECT B.BID, A.AID, B.COPIES\nFROM BOOKS B FULL JOIN AUTHOR A\nON B.AID = A.AID\n(b) It provides a simplified and consolidated view of the data, making it easier for Ms Lee to understand and work with the result.\n--]"
+        }
+      ],
+      "text": "The school library uses database tables BOOKS and AUTHOR to contain information about the library's collection of books and authors.\nBelow are the records of the two tables.\nBOOKS\nBID\nTITLE\nAID\nCOPIES\n001\nThe Secret Garden\nA3\n4\n002\nBeyond the Horizon\nA1\n2\n003\nThe Last Unicorn\nA4\n2\nAUTHOR\nAID\nANAME\nA1\nMatt Haig\nA2\nBrit Bennett\nA3\nNeil Gaiman\nA4\nJandy Nelson\n(a) Write a SQL statement that can generate the following result.  (3 marks)\nSQL RESULT\nBID\nAID\nCOPIES\n001\nA3\n4\n002\nA1\n2\n003\nA4\n2\nNULL\nA2\nNULL\n(b) Ms Lee, who is in charge of the school library, executes the following SQL command.\nCREATE VIEW NOOFBOOKS AS\nSELECT A.AID, ANAME, COUNT(BID)  FROM AUTHOR A, BOOKS B\nWHERE A.AID = B.AID\nGROUP BY A.AID\nExplain the advantage of Ms Lee using a VIEW.  (2 marks)\n[--Answer:\n(a) SELECT B.BID, A.AID, B.COPIES\nFROM BOOKS B FULL JOIN AUTHOR A\nON B.AID = A.AID\n(b) It provides a simplified and consolidated view of the data, making it easier for Ms Lee to understand and work with the result.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "循環",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1103_04A001E",
+      "bank_code": "SSICTA1103_04A001E",
+      "section_type": "long_answer",
+      "marks": 9.0,
+      "year_tag": null,
+      "stem": "A local arts centre is organising a music competition. Three database tables have been created to manage the competition: CONTESTANTS, COMPETITION, and SCORES.\nCONTESTANTS\nField name\nDescription\nCID\nIdentity code of each contestant\nNAME\nName of the contestant\nGENDER\nGender of the contestant (M for male, F for female)\nAGE\nAge of the contestant\nTEAM\nThe team the contestant belongs to\nCOMPETITION\nField name\nDescription\nCOMID\nIdentity code of each competition\nCOM\nName of the competition\nMINC\nThe minimum number of contestants per team allowed to participate in the competition\nMAXC\nThe maximum number of contestants per team allowed to participate in the competition\nSCORES\nField name\nDescription\nCID\nIdentity code of each contestant\nCOMID\nIdentity code of the competition the contestant participated in\nSCORE\nThe score received by the contestant in the competition",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "The identity code of Janice is '0001'. List the scores and corresponding competition names she joined.  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The MINC and MAXC attribute limits the number of contestants per team participating in the competition. List all the team names, the number of contestants per team, the competitions they can join, minimum and maximum number of contestants per team allowed to participate in the competition.  (3 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Suppose that SCORES have the following records:\nCID\nCOMID\nSCORE\n0001\nP3\n98\n0002\nS2\n80\n0003\nS2\n82\n0004\nS2\n82\n0005\nS2\n82\n0006\nS4\n80\n0007\nS4\n80"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "What is the purpose of executing the following SQL command?\nSELECT *\nFROM SCORES\nWHERE SCORE > ALL (SELECT SCORE FROM SCORES WHERE COMID = 'S2')  (2 marks)____________________________________________________________________________"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the output?  (2 marks)\n[--Answer:\n(a) SELECT C.COM, SCORES.SCORE\nFROM SCORES S, COMPETITION C\nWHERE SCORES.CID = '0001' AND S.COMID = C.COMID\n(b) SELECT TEAM, COUNT(C.CID), COM, MINC, MAXC\nFROM CONTESTANTS C LEFT JOIN COMPETITION P\nON C.TEAM = P.TEAM\nGROUP BY TEAM, COM, MINC, MAXC\nHAVING MINC <= COUNT(C.CID) AND MAXC >= COUNT(C.CID)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "(i)  To list all rows from the SCORES table where the SCORE field is greater than every score received by a contestant in the competition with COMID equal to 'S2'."
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "CID\nCOMID\nSCORE\n0001\nP3\n98\n--]"
+        }
+      ],
+      "text": "A local arts centre is organising a music competition. Three database tables have been created to manage the competition: CONTESTANTS, COMPETITION, and SCORES.\nCONTESTANTS\nField name\nDescription\nCID\nIdentity code of each contestant\nNAME\nName of the contestant\nGENDER\nGender of the contestant (M for male, F for female)\nAGE\nAge of the contestant\nTEAM\nThe team the contestant belongs to\nCOMPETITION\nField name\nDescription\nCOMID\nIdentity code of each competition\nCOM\nName of the competition\nMINC\nThe minimum number of contestants per team allowed to participate in the competition\nMAXC\nThe maximum number of contestants per team allowed to participate in the competition\nSCORES\nField name\nDescription\nCID\nIdentity code of each contestant\nCOMID\nIdentity code of the competition the contestant participated in\nSCORE\nThe score received by the contestant in the competition\n(a) The identity code of Janice is '0001'. List the scores and corresponding competition names she joined.  (2 marks)\n(b) The MINC and MAXC attribute limits the number of contestants per team participating in the competition. List all the team names, the number of contestants per team, the competitions they can join, minimum and maximum number of contestants per team allowed to participate in the competition.  (3 marks)\n(c) Suppose that SCORES have the following records:\nCID\nCOMID\nSCORE\n0001\nP3\n98\n0002\nS2\n80\n0003\nS2\n82\n0004\nS2\n82\n0005\nS2\n82\n0006\nS4\n80\n0007\nS4\n80\n(i) What is the purpose of executing the following SQL command?\nSELECT *\nFROM SCORES\nWHERE SCORE > ALL (SELECT SCORE FROM SCORES WHERE COMID = 'S2')  (2 marks)____________________________________________________________________________\n(ii) What is the output?  (2 marks)\n[--Answer:\n(a) SELECT C.COM, SCORES.SCORE\nFROM SCORES S, COMPETITION C\nWHERE SCORES.CID = '0001' AND S.COMID = C.COMID\n(b) SELECT TEAM, COUNT(C.CID), COM, MINC, MAXC\nFROM CONTESTANTS C LEFT JOIN COMPETITION P\nON C.TEAM = P.TEAM\nGROUP BY TEAM, COM, MINC, MAXC\nHAVING MINC <= COUNT(C.CID) AND MAXC >= COUNT(C.CID)\n(c) (i)  To list all rows from the SCORES table where the SCORE field is greater than every score received by a contestant in the competition with COMID equal to 'S2'.\n(ii) CID\nCOMID\nSCORE\n0001\nP3\n98\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA1103_04B002E",
+      "bank_code": "SSICTA1103_04B002E",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": null,
+      "stem": "Honey theatre company uses a database with two tables PLAY and STAFF to store information on plays and staff. Staff members can access the database to acquire information.\nHere are the table structures.\nPLAY\nField name\nDescription\nExample\nPID\nIdentity code of the play\nS01\nPNAME\nName of the play\nHamlet\nPTYPE\nType of the play\nStage\nWRITER\nThe name of the writer of each play\nWilliam Shakespeare\nPrimary key: PID\nSTAFF\nField name\nDescription\nExample\nSID\nIdentity code of the staff\nM16\nSNAME\nName of the staff\nSarah Lee\nDEPT\nThe department of the staff\nC&M\nPrimary key: SID\nPERFORMANCE\nField name\nDescription\nExample\nSID\nIdentity code of the staff\nM16\nPID\nIdentity code of the play\nS01\nSESSION\nSession of the play\n1\nPrimary key: SID+PID+SESSION\nForeign key: SID, PID\nWrite SQL commands to complete the following tasks.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "List the name of the play that has a staff member with \"Chan\" in their name.  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Create a view named JOINALL that displays the staff ID of the staff members who have assisted in all the plays. Alias the number of plays as NOOFPLAY.  (3 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Use the view created in (b)(i) to display the staff name in the ACTOR department.  (3 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Select all the staff members who have not performed in any play that was written by 'William Shakespeare'.  (3 marks)\n[--Answer:\n(a) SELECT PNAME\nFROM PLAY P, STAFF S, PERFORMANCE E\nWHERE P.PID = E.PID AND S.SID = E.SID\nWHERE SNAME LIKE '%Chan%'"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "(i)  CREATE VIEW JOINALL AS\nSELECT SID, COUNT(DISTINCT.PID) AS NOOFPLAY\nFROM PERFORMANCE\nGROUP BY SID\nHAVING COUNT(DISTINCT.PID) = (SELECT COUNT(*) FROM PLAY)\n(ii) SELECT SNAME\nFROM STAFF\nWHERE DEPT = 'Actor' AND SID IN (\nSELECT SID\nFROM JOINALL\n)\n(c) SELECT *\nFROM STAFF\nWHERE SID NOT IN (\nSELECT SID\nFROM PERFORMANCE P, PLAY Y\nWHERE P.PID = Y.PID\nWHERE WRITER = 'William Shakespeare'\n)\n--]"
+        }
+      ],
+      "text": "Honey theatre company uses a database with two tables PLAY and STAFF to store information on plays and staff. Staff members can access the database to acquire information.\nHere are the table structures.\nPLAY\nField name\nDescription\nExample\nPID\nIdentity code of the play\nS01\nPNAME\nName of the play\nHamlet\nPTYPE\nType of the play\nStage\nWRITER\nThe name of the writer of each play\nWilliam Shakespeare\nPrimary key: PID\nSTAFF\nField name\nDescription\nExample\nSID\nIdentity code of the staff\nM16\nSNAME\nName of the staff\nSarah Lee\nDEPT\nThe department of the staff\nC&M\nPrimary key: SID\nPERFORMANCE\nField name\nDescription\nExample\nSID\nIdentity code of the staff\nM16\nPID\nIdentity code of the play\nS01\nSESSION\nSession of the play\n1\nPrimary key: SID+PID+SESSION\nForeign key: SID, PID\nWrite SQL commands to complete the following tasks.\n(a) List the name of the play that has a staff member with \"Chan\" in their name.  (2 marks)\n(b) \n(i) Create a view named JOINALL that displays the staff ID of the staff members who have assisted in all the plays. Alias the number of plays as NOOFPLAY.  (3 marks)\n(ii) Use the view created in (b)(i) to display the staff name in the ACTOR department.  (3 marks)\n(c) Select all the staff members who have not performed in any play that was written by 'William Shakespeare'.  (3 marks)\n[--Answer:\n(a) SELECT PNAME\nFROM PLAY P, STAFF S, PERFORMANCE E\nWHERE P.PID = E.PID AND S.SID = E.SID\nWHERE SNAME LIKE '%Chan%'\n(b) (i)  CREATE VIEW JOINALL AS\nSELECT SID, COUNT(DISTINCT.PID) AS NOOFPLAY\nFROM PERFORMANCE\nGROUP BY SID\nHAVING COUNT(DISTINCT.PID) = (SELECT COUNT(*) FROM PLAY)\n(ii) SELECT SNAME\nFROM STAFF\nWHERE DEPT = 'Actor' AND SID IN (\nSELECT SID\nFROM JOINALL\n)\n(c) SELECT *\nFROM STAFF\nWHERE SID NOT IN (\nSELECT SID\nFROM PERFORMANCE P, PLAY Y\nWHERE P.PID = Y.PID\nWHERE WRITER = 'William Shakespeare'\n)\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA1103_04C003E",
+      "bank_code": "SSICTA1103_04C003E",
+      "section_type": "long_answer",
+      "marks": 12.0,
+      "year_tag": null,
+      "stem": "A company manages a job application system that allows interns to apply for multiple jobs. Each job has a unique job ID and is assigned to only one department. Interns can apply for multiple jobs, but each application is for only one job, and they can only apply for jobs in the same department as themselves. The company uses a database with multiple tables to store the information.\nHere are the table structures.\nDEPARTMENT\nField name\nDescription\nDID\nIdentity code of the department\nDNAME\nName of the department\nJOB\nField name\nDescription\nJID\nIdentity code of the job\nJTITLE\nTitle of the job\nDID\nIdentity code of the department\nINTERNS\nField name\nDescription\nIID\nIdentity code of the intern\nNAME\nName of the intern\nEMAIL\nEmail of the intern\nDID\nIdentity code of the department the intern belongs to\nAPPLICATION\nField name\nDescription\nAID\nIdentity code of the application\nIID\nIdentity code of the intern\nJID\nIdentity code of the job\nADATE\nApplication date and time",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write a SQL command to create a NOJ index file with the primary key of JOB.  (2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the purpose of creating an index?  (1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The manager needs to contact the interns who have not applied for any jobs during the month of June. Write a SQL statement to retrieve these interns’ names and email addresses.  (3 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "The manager would like to see the number of job applications made by each intern in the FINANCE department if they have applied for at least one job. Write a SQL command to display the name of interns and the number of jobs applied.  (3 marks)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "List the names of interns who have applied for a job that is not in their own department. (3 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "(i) CREATE INDEX NOJ ON JOB(JID)\n(ii) It improves the speed of searching.\n(b) SELECT NAME, EMAIL\nFROM INTERNS\nWHERE IID NOT IN (\nSELECT IID\nFROM APPLICATION\nWHERE MONTH(ADATE) = 6\n)\n(c) SELECT I.NAME, COUNT(*) AS NUM_APPLICATIONS\nFROM INTERNS I, APPLICATION A, DEPARTMENT D\nWHERE I.IID = A.IID AND I.DID = D.DID AND DNAME = 'FINANCE'\nGROUP BY A.IID\n(d) SELECT I.NAME\nFROM INTERNS I, APPLICATION A, JOB J\nWHERE I.IID = A.IID AND A.JID = J.JID AND I.DID <> J.DID\n--]"
+        }
+      ],
+      "text": "A company manages a job application system that allows interns to apply for multiple jobs. Each job has a unique job ID and is assigned to only one department. Interns can apply for multiple jobs, but each application is for only one job, and they can only apply for jobs in the same department as themselves. The company uses a database with multiple tables to store the information.\nHere are the table structures.\nDEPARTMENT\nField name\nDescription\nDID\nIdentity code of the department\nDNAME\nName of the department\nJOB\nField name\nDescription\nJID\nIdentity code of the job\nJTITLE\nTitle of the job\nDID\nIdentity code of the department\nINTERNS\nField name\nDescription\nIID\nIdentity code of the intern\nNAME\nName of the intern\nEMAIL\nEmail of the intern\nDID\nIdentity code of the department the intern belongs to\nAPPLICATION\nField name\nDescription\nAID\nIdentity code of the application\nIID\nIdentity code of the intern\nJID\nIdentity code of the job\nADATE\nApplication date and time\n(a) \n(i) Write a SQL command to create a NOJ index file with the primary key of JOB.  (2 marks)\n(ii) What is the purpose of creating an index?  (1 mark)\n(b) The manager needs to contact the interns who have not applied for any jobs during the month of June. Write a SQL statement to retrieve these interns’ names and email addresses.  (3 marks)\n(c) The manager would like to see the number of job applications made by each intern in the FINANCE department if they have applied for at least one job. Write a SQL command to display the name of interns and the number of jobs applied.  (3 marks)\n(d) List the names of interns who have applied for a job that is not in their own department. (3 marks)\n[--Answer:\n(a) (i) CREATE INDEX NOJ ON JOB(JID)\n(ii) It improves the speed of searching.\n(b) SELECT NAME, EMAIL\nFROM INTERNS\nWHERE IID NOT IN (\nSELECT IID\nFROM APPLICATION\nWHERE MONTH(ADATE) = 6\n)\n(c) SELECT I.NAME, COUNT(*) AS NUM_APPLICATIONS\nFROM INTERNS I, APPLICATION A, DEPARTMENT D\nWHERE I.IID = A.IID AND I.DID = D.DID AND DNAME = 'FINANCE'\nGROUP BY A.IID\n(d) SELECT I.NAME\nFROM INTERNS I, APPLICATION A, JOB J\nWHERE I.IID = A.IID AND A.JID = J.JID AND I.DID <> J.DID\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "循環",
+        "列表",
+        "排序",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA1103_04C004E",
+      "bank_code": "SSICTA1103_04C004E",
+      "section_type": "long_answer",
+      "marks": 14.0,
+      "year_tag": null,
+      "stem": "The Sports Union is organising a basketball tournament. The person in charge, Mr Mak maintains a database table named GAME and TEAM to store information on various games and teams in the tournament.\nTEAM\nField name\nDescription\nTID\nIdentity code of the home team\nTNAME\nName of the team\nPrimary key: TID\nGAME\nField name\nDescription\nGID\nIdentity code of the game\nHTID\nIdentity code of the home team\nHTS\nScore of the home team\nATID\nIdentity code of the away team\nATS\nScore of the away team\nGD\nDate of the game\nVENUE\nLocation of the game\nPrimary key: GID\nForeign key: HTID. ATID",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a SQL statement to list the teams’ names that have not won any games in the tournament.\n(4 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the purpose of the following SQL commands?  (2 marks)\nCREATE VIEW team_scores AS\nSELECT HTS AS score\nFROM GAME\nUNION ALL\nSELECT ATS AS score\nFROM GAME;\nSELECT AVG(score)\nFROM team_scores;"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Create a view named HOME_TEAM_SCORE to display the total score gained by each team when they are in the home team.  (2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Create a view named AWAY_TEAM_SCORE to display the total score gained by each team when they are an away team.  (2 marks)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Based on the two views created, list the final score of each team gained, and order them in descending order. (4 marks)\n[--Answer:\n(a) SELECT TNAME\nFROM TEAM\nWHERE TID NOT IN (SELECT HTID\nFROM GAME\nWHERE HTS > ATS\nUNION ALL\nSELECT ATID\nFROM GAME\nWHERE ATS > HTS)\n(b) Find out the average score of all teams across all their games."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "(i)  CREATE VIEW HOME_TEAM_SCORE AS\nSELECT HTID AS TID, SUM(HTS) AS THS\nFROM GAME\nGROUP BY HTID\n(ii) CREATE VIEW AWAY_TEAM_SCORE AS\nSELECT ATID AS TID, SUM(ATS) AS TAS\nFROM GAME\nGROUP BY ATID\n(iii) SELECT H.TID, SUM(THS + TAS) AS score\nFROM HOME_TEAM_SCORE H, AWAY_TEAM_SCORE A\nWHERE H.TID = A.TID\nGROUP BY H.TID\nORDER BY score DESC  Alternatives:  SELECT A.TID, SUM(THS + TAS) AS score\nFROM HOME_TEAM_SCORE H, AWAY_TEAM_SCORE A\nWHERE H.TID = A.TID\nGROUP BY A.TID\nORDER BY score DESC\n--]"
+        }
+      ],
+      "text": "The Sports Union is organising a basketball tournament. The person in charge, Mr Mak maintains a database table named GAME and TEAM to store information on various games and teams in the tournament.\nTEAM\nField name\nDescription\nTID\nIdentity code of the home team\nTNAME\nName of the team\nPrimary key: TID\nGAME\nField name\nDescription\nGID\nIdentity code of the game\nHTID\nIdentity code of the home team\nHTS\nScore of the home team\nATID\nIdentity code of the away team\nATS\nScore of the away team\nGD\nDate of the game\nVENUE\nLocation of the game\nPrimary key: GID\nForeign key: HTID. ATID\n(a) Write a SQL statement to list the teams’ names that have not won any games in the tournament.\n(4 marks)\n(b) What is the purpose of the following SQL commands?  (2 marks)\nCREATE VIEW team_scores AS\nSELECT HTS AS score\nFROM GAME\nUNION ALL\nSELECT ATS AS score\nFROM GAME;\nSELECT AVG(score)\nFROM team_scores;\n(c) \n(i) Create a view named HOME_TEAM_SCORE to display the total score gained by each team when they are in the home team.  (2 marks)\n(ii) Create a view named AWAY_TEAM_SCORE to display the total score gained by each team when they are an away team.  (2 marks)\n(iii) Based on the two views created, list the final score of each team gained, and order them in descending order. (4 marks)\n[--Answer:\n(a) SELECT TNAME\nFROM TEAM\nWHERE TID NOT IN (SELECT HTID\nFROM GAME\nWHERE HTS > ATS\nUNION ALL\nSELECT ATID\nFROM GAME\nWHERE ATS > HTS)\n(b) Find out the average score of all teams across all their games.\n(c) (i)  CREATE VIEW HOME_TEAM_SCORE AS\nSELECT HTID AS TID, SUM(HTS) AS THS\nFROM GAME\nGROUP BY HTID\n(ii) CREATE VIEW AWAY_TEAM_SCORE AS\nSELECT ATID AS TID, SUM(ATS) AS TAS\nFROM GAME\nGROUP BY ATID\n(iii) SELECT H.TID, SUM(THS + TAS) AS score\nFROM HOME_TEAM_SCORE H, AWAY_TEAM_SCORE A\nWHERE H.TID = A.TID\nGROUP BY H.TID\nORDER BY score DESC  Alternatives:  SELECT A.TID, SUM(THS + TAS) AS score\nFROM HOME_TEAM_SCORE H, AWAY_TEAM_SCORE A\nWHERE H.TID = A.TID\nGROUP BY A.TID\nORDER BY score DESC\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch3",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

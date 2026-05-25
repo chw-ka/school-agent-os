@@ -1,0 +1,686 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecA Ch3.pptx",
+    "slug": "EELECA_Ch3_slides",
+    "title": "EElecA Ch3",
+    "series": "EELECA",
+    "chapter": 3,
+    "curriculum_unit": "EA-a",
+    "curriculum_part": "EA",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.541498+00:00",
+    "slide_count": 132,
+    "topic_tags": {
+      "數據庫": 68,
+      "列表": 32,
+      "循環": 17,
+      "課本活動": 1,
+      "硬件": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 3SQL Operations on Multiple Tables"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "LEFT JOIN10B"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide100.xml",
+      "text": "VIEW100A3. List the name of each student who is in a class whose teaching language is Chinese and does not join any other clubs besides English Club.We have to join STUDENT with CLASS and count the number of clubs joined by each student at the same time."
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide101.xml",
+      "text": "VIEW101A4. List the name of each student who joins the most number of clubs.Without a view, we either treat a result as a table by giving it an alias, or use the keyword LIMIT."
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide102.xml",
+      "text": "VIEW102ABy using views, all the above statements can be simplified. The following SQL statement creates a view named SCORESHEET.CREATE VIEW SCORESHEET ASSELECT s.SID, NAME, SEX, s.CLASS, TEACH, LANG, SCORE1*0.4+SCORE2*0.6 AS FSCORE FROM STUDENT s, CLASS cl WHERE s.CLASS = cl.CLASS"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide103.xml",
+      "text": "VIEW103A1. List the name of each student taught by Mr Suen and has a final score below 60."
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide104.xml",
+      "text": "VIEW104A2. List the name of each student who joins at least two clubs and has a final score above 60.Now we need a view showing the number of clubs joined by each student. CREATE VIEW COUNTCLUB AS SELECT SID, COUNT(*) AS CLUBNUM FROM SC GROUP BY SID"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide105.xml",
+      "text": "VIEW105A2. List the name of each student who joins at least two clubs and has a final score above 60."
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide106.xml",
+      "text": "VIEW106AHowever, the student Dio with an SID of 03513 joins no club. Thus his SID is not even in the view."
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide107.xml",
+      "text": "VIEW107AThis may cause problems if we are asked to list the name of each student who joins no more than two clubs instead of at least two clubs."
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide108.xml",
+      "text": "VIEW108AThus, we may use LEFT JOIN or RIGHT JOIN to ensure that the view shows all students.To modify an existing view, use CREATE VIEW OR REPLACE VIEW.CREATE OR REPLACE VIEW COUNTCLUB AS SELECT s.SID, COUNT(CID) AS CLUBNUM FROM SC RIGHT JOIN STUDENT s ON SC.sid = s.SID GROUP BY SID"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide109.xml",
+      "text": "VIEW109ATo further simplify the SQL statement, we may even create a view using another view.CREATE OR REPLACE VIEW SCORESHEET AS\tSELECT s.SID, NAME, SEX, s.CLASS, TEACH, LANG,\t\tSCORE1*0.4+SCORE2*0.6 AS FSCORE, CLUBNUM\tFROM STUDENT s, CLASS cl, COUNTCLUB cc\tWHERE s.CLASS = cl.CLASS AND s.SID = cc.SID"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "LEFT JOIN11BThough the student Ben does not belong to any club, his record is still included in the result as STUDENT is the left table and we are using LEFT JOIN."
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide110.xml",
+      "text": "VIEW110A2. List the name of each student who joins at least two clubs and has a final score above 60."
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide111.xml",
+      "text": "VIEW111A3. List the name of each student who is in a class whose teaching language is Chinese and does not join any other clubs besides English Club."
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide112.xml",
+      "text": "VIEW112A"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide113.xml",
+      "text": "VIEW113A4. List the name of each student who joins the most number of clubs."
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide114.xml",
+      "text": "VIEW114A"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide115.xml",
+      "text": "VIEW115AIf we do not need a view anymore, we may delete a view using DROP VIEW.DROP VIEW COUNTCLUBHowever, if a deleted view A is referenced in another view B, view B will no longer work after the deletion."
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide116.xml",
+      "text": "Index116BWhen a teacher wants to search by the name of a student, the DBMS needs to go through the table row by row. In the worst case, if the teacher wants to find a student named Guy, it needs to go through 11 records, i.e. the whole table, to find the required record."
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide117.xml",
+      "text": "Index117BSince the name of a student, i.e. NAME, is expected to be searched frequently, we can index that field to speed up the data retrieval process.Indexing NAME creates an index table containing the indexed field and a pointer to the related records only."
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide118.xml",
+      "text": "Index118BThe data in the indexed field of the index table is sorted in alphabetic order (or ascending order if it is a number field). The sorting allows the DBMS to perform binary search.The record in the middle, i.e. the 6th one, Finn is checked.It starts with an F, which is before G as in Guy.Therefore, every record before the 6th one cannot be our guy."
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide119.xml",
+      "text": "Index119BThe record in the middle of the rest, i.e. the 9th one, Hans is checked. It starts with an H, which is after G as in Guy. Therefore, every record after the 9th one cannot be our guy."
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "LEFT JOIN12BThe following SQL statement lists the student identity code, the student name, class, the club name and the club room of every student who gets at least 60 scores."
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide120.xml",
+      "text": "Index120BThe record in the middle of the rest, i.e. the 7th one, Gabe is checked. It starts with an Ga, which is before Gu as in Guy. Therefore, every record before the 7th one cannot be our guy (though every single one of them is already eliminated)."
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide121.xml",
+      "text": "Index121BThe record in the middle of the rest, i.e. the 8th one, Guy is checked. To our surprise, this is the guy"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide122.xml",
+      "text": "Index122BAs shown in the previous example, we can see how indexing speeds up the data retrieval process.In the worst case, the DBMS only needs to go through 4 records, instead of 11 records, i.e. the whole table, to find the required record.However, the index table needs to be updated when:the data in the indexed field changes (e.g. the name of the student Guy is changed to Gal); ora new record is added (e.g. a new student named Hope is added)."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide123.xml",
+      "text": "Index123BSince the names Gal and Hope is not in the index table, it fails to search for them if it is not updated."
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide124.xml",
+      "text": "Index124BTo index a field of a table, we may use the keyword CREATE INDEX.Normally, the name of the index is used only when we have to drop the index."
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide125.xml",
+      "text": "Index125BTo drop an index, we may use the following SQL statement.If we forget the name of the index, we may find it out by using SHOW CREATE TABLE."
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide126.xml",
+      "text": "1. The manager of a hospital uses two tables, PATIENT and ROOM to manage the data of the patients.1263.5"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide127.xml",
+      "text": "Write SQL statements to complete the following tasks. (a) Create a view to show the name and capacity of each room, as well as its number of patients. Assume that not every room has patients. (b) By using the view created in (a), list the name of each room with fewer patients than its capacity. (c) By using the view created in (a), list the average number of patients in a room. Exclude the room named B01 in the calculation.1273.5"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide128.xml",
+      "text": "(d) Create a view to show the patient identity code, name, sex, Body Mass Index (BMI) and room name of every patient. Assume that some patients has no room assigned. The formula of BMI is: (e) By using the view created in (d), list the lowest BMI of the patients for each sex. (f) By using the view created in (d), list the highest BMI of the patients for each room. Assume that every room has a unique name. Sort the result by the room name.1283.5"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide129.xml",
+      "text": "◣ Solution(a) CREATE VIEW RPNUM AS\tSELECT r.ID, RNAME, CAPACITY, COUNT(p.ID) AS PNUM FROM ROOM r\tLEFT JOIN PATIENT p ON r.ID = RID GROUP BY r.ID(b) SELECT RNAME FROM RPNUM WHERE PNUM < CAPACITY(c) SELECT AVG(PNUM) FROM RPNUM WHERE RNAME <> 'B01'1293.5"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "LEFT JOIN13BWe may shorten the SQL statement by giving each table an alias.The alias s and c refer to the table STUDENT and CLUB respectively."
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide130.xml",
+      "text": "(d) CREATE VIEW PBMI AS\tSELECT p.ID, PNAME, SEX, WEIGHT/HEIGHT/HEIGHT AS BMI, RNAME\tFROM PATIENT p LEFT JOIN ROOM r ON RID = r.ID(e) SELECT SEX, MIN(BMI) FROM PBMI GROUP BY SEX(f) SELECT RNAME, MAX(BMI) FROM PBMI GROUP BY RNAME ORDER BY RNAME1303.5"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide131.xml",
+      "text": "Finish Checkpoint 3.5 on P. 188 of your textbook.(a) CREATE VIEW FORDER2 AS \tSELECT CID, f.MID, MNAME, OPRICE*(1-DISCOUNT)*NUM AS TPRICE, \tETA FROM FORDER f, MEAL m WHERE f.MID = m.MID(b) SELECT MNAME, SUM(TPRICE) FROM FORDER2 \tWHERE ETA < '2025-01-25' GROUP BY MID(c) CREATE OR REPLACE VIEW FORDER2 AS \tSELECT CID, OPRICE*(1-DISCOUNT)*NUM AS TPRICE, ETA FROM\tFORDER f, MEAL m WHERE f.MID = m.MID and PAID = FALSE1313.5"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide132.xml",
+      "text": "(d) CREATE VIEW CPAYMENT AS \tSELECT CNAME, SEX, DEPOSIT, SUM(TPRICE) AS DUE \tFROM CUSTOMER c LEFT JOIN FORDER2 f ON c.CID = f.CID \tGROUP BY c.CID(e) SELECT SEX, SUM(DUE) FROM CPAYMENT GROUP BY SEX(f) SELECT CNAME FROM CPAYMENT WHERE DEPOSIT < DUE1323.5"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "LEFT JOIN14BTo avoid confusion, fields that share the same name may also be renamed by using aliases."
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "LEFT JOIN15BWe may summarise data obtained by joining tables too. The following SQL statement lists the club names and the average scores of the students in each club. The student whose student identity code is 03506 is excluded. Only clubs with more than 1 student are listed."
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "RIGHT JOIN16CThe result of RIGHT JOIN includes all records in the right table and the records with matching values in both tables. It can be written as RIGHT OUTER JOIN."
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "RIGHT JOIN17C"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "FULL JOIN18DThe result of FULL JOIN includes records from both the left table and the right table. It can be written as FULL OUTER JOIN."
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "FULL JOIN19D"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Joining Tables23.1We are going to learn how to summarise data from multiple tables in this chapter."
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "1. The manager of a company uses three tables, EMPLOYEE, TEAM and DEPARTMENT to manage the employees of the company.203.1"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "(a) Write SQL statements to complete the following tasks. (i) Assume that every employee is part of a department. List the name of each employee with the name of their department. The result should not include departments that have no employee. (ii) Assume that some teams do not have a team leader assigned. List the name of each team with the name of its team leader (if any). (iii) Assume that every employee is part of a team. List the name of each employee with the name of their team. The result should include teams that has no employee assigned.213.1"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "(b) (i) One of the fields in TEAM may cause data inconsistency when there are new records added into EMPLOYEE. Which one is it?(ii) The value to be stored in the field mentioned in (i) can be calculated using a function instead. Write a SQL statement to retrieve this value using a function. Include the team names in the SQL result.(c) A manager wants to find every team's average salary, excluding those teams with an average salary less than 20000. Should they use the following SQL statement?\tSELECT TNAME, AVG(SALARY) FROM EMPLOYEE\t\tRIGHT JOIN TEAM ON TEAMID = TEAM.ID\t\tWHERE SALARY >= 20000 GROUP BY TEAM.IDIf not, write a correct SQL statement for them.223.1"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "◣ Solution(a) Note that there are multiple ways to yield the same result.(i) SELECT ENAME, DNAME FROM EMPLOYEE LEFT JOIN DEPARTMENT ON DEPID = DEPARTMENT.ID(ii) SELECT TNAME, ENAME FROM TEAM LEFT JOIN EMPLOYEE ON LEADID = EMPLOYEE.ID(iii) SELECT ENAME, TNAME FROM TEAM LEFT JOIN EMPLOYEE ON TEAM.ID = TEAMID233.1"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "(b) (i) MEMNUM(ii) SELECT TNAME, COUNT(ENAME) FROM EMPLOYEE\t RIGHT JOIN ON TEAMID = TEAM.ID GROUP BY TEAM.ID(c) No.SELECT TNAME, AVG(SALARY) FROM EMPLOYEE\tRIGHT JOIN TEAM ON TEAMID = TEAM.ID\tGROUP BY TEAM.ID HAVING AVG(SALARY) >= 20000243.1"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "Finish Checkpoint 3.1 on P. 120 of your textbook.(a)(i) SELECT SHOP.NAME FROM SHOP \tINNER JOIN MANR ON SHOP.MID = MANR.MID \tWHERE MANR.NAME = 'Ada‘(ii) SELECT PROD.NAME, LOCATION FROM PROD \tLEFT JOIN SHOP ON PROD.SID = SHOP.SID \tWHERE PROD.NAME LIKE '%Pen' AND PRICE < 11.5(iii) SELECT SHOP.NAME, COUNT(PID) FROM SHOP \tLEFT JOIN PROD ON SHOP.SID = PROD.SID GROUP BY SHOP.SID(iv) SELECT SHOP.NAME, LOCATION, SUM(STOCK) FROM SHOP \tLEFT JOIN PROD ON SHOP.SID = PROD.SID \tWHERE PRICE > 25 GROUP BY SHOP.SID253.1"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "(b) To find the highest product price for each product category in each shop.(c) No. SELECT s.NAME, AVG(PRICE) FROM SHOP s \tLEFT JOIN PROD p ON s.SID = p.SID \tWHERE PRICE < 1000 GROUP BY s.SID263.1"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "Other joining methods27EEqui-join is just another way to perform INNER JOIN.Both SQL statements below yields the same result."
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "Other joining methods28ENATURAL JOIN is also the same as INNER JOIN, except that it automatically joins on fields that share the same name in both tables.These two tables below cannot be joined using NATURAL JOIN, as there are two pair of fields that share the same name: NAME and CID."
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "Other joining methods29EWe may rename NAME in CLUB to CLUBNAME and use NATURAL JOIN to join both tables."
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Finish Activity 3.1 on P. 104 of your textbook.Case 1:  4Case 2: We cannot. As SID is the primary key and thus it cannot be NULL.Case 3. We cannot. As the data is lost after the deletion.33.1"
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "Other joining methods30EBoth SQL statements below yields the same result."
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Other joining methods31ESelf join means joining a table to itself. To do so, we have to give a table two different aliases in a SQL statement, so that the DBMS treats it as two different tables temporarily.See the following table:"
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "Other joining methods32ETo list every student with the names of their corresponding class monitors, we need to perform a self join on the table STUDENT."
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Other joining methods33EA teacher wants to identify potential study partners with similar academic performance. They may use the following SQL statement to select the names and scores of pairs of students from the table STUDENT where the difference between their test scores is less than 16:"
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "Other joining methods34EHowever, this SQL statement:pairs up a student with themselves, e.g. “Ada & Ada”; andreturns duplicated pairs, e.g. “Ben & Clem” and “Clem & Ben”.To remove self-pairing and duplicated pairs, we may add the criterion"
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "Other joining methods35ESometimes, we may need to join more than two tables. Take these three tables as an example."
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "Other joining methods36E"
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "Other joining methods37ECROSS JOIN does not need a foreign key to join on. It simply matches each row of the left table to each row of the right table. Take the following tables as an example."
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "Other joining methods38EFor its practical use, see the following example."
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "Other joining methods39EThere are buyers who want to buy different numbers of apples and oranges, as well as sellers who sell apples and oranges at different prices."
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Case 1: 1Case 2: In table CLUB.Case 3: In table CLUB.43.1"
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "Other joining methods40EAssume that each buyer wants to buy fruits for the lowest cost. To find out from which seller a particular buyer should buy, we may use the following SQL statement."
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "Other joining methods41ESort the result to find the desired seller for each buyer easily."
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "1. The manager of a company uses three tables, EMPLOYEE, TEAM and DEPARTMENT to manage the employees of the company.423.2"
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "Assume that every employee is part of a team and every team has at least one employee, while every team is part of a department and every department has at least one team. Write SQL statements to complete the following tasks.(a) List the name of each employee with the name of their department sorted by the department identity code in ascending order.(b) List the name of each department with the name and head count of its teams sorted by the team identity code.433.2"
+    },
+    {
+      "slide_index": 72,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "(c) Assume that every team has a team leader. List the name of each employee with the name of their team leader sorted by the employee identity code in ascending order. Give an alias, LNAME to the column of the team leader name.(d) List the department name and the sum of the salary of the employees in departments whose names start with “IT” sorted by the sum of the salary in descending order.(e) List the department name, the sex and the average salary of the employees for each sex in each department sorted by the department name and the sex in ascending order.443.2"
+    },
+    {
+      "slide_index": 73,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "◣ Solution(a) SELECT ENAME, DNAME FROM EMPLOYEE e, TEAM t, DEPARTMENT d\tWHERE TEAMID = t.ID AND DEPID = d.ID ORDER BY d.ID(b) SELECT DNAME, TNAME, COUNT(*) FROM DEPARTMENT d, TEAM t, EMPLOYEE e\tWHERE d.ID = DEPID AND TEAMID = t.ID GROUP BY t.ID ORDER BY t.ID(c) SELECT e.ENAME, l.ENAME AS LNAME FROM EMPLOYEE e, TEAM t, EMPLOYEE l\tWHERE e.TEAMID = t.ID AND LEADID = l.ID ORDER BY e.ID453.2"
+    },
+    {
+      "slide_index": 74,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "(d) SELECT DNAME, SUM(SALARY) FROM DEPARTMENT d, TEAM t, EMPLOYEE e\tWHERE d.ID = DEPID AND TEAMID = t.ID AND DNAME LIKE 'IT%‘\tGROUP BY d.ID ORDER BY SUM(SALARY) DESC(e) SELECT DNAME, SEX, AVG(SALARY) FROM DEPARTMENT d, TEAM t, EMPLOYEE e\tWHERE d.ID = DEPID AND TEAMID = t.ID\tGROUP BY d.ID, SEX ORDER BY DNAME, SEX463.2"
+    },
+    {
+      "slide_index": 75,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "Complete Checkpoint 3.2 on P. 133 of your textbook.(a) SELECT COUNT(PID) FROM PROD p, SHOP s, MANR m\tWHERE p.SID = s.SID AND s.MID = m.MID AND SEX = 'F'(b) SELECT MNAME, SUM(STOCK) FROM PROD p, SHOP s, MANR m \tWHERE p.SID = s.SID AND s.MID = m.MID\tGROUP BY m.MID ORDER BY MNAME(c) SELECT DIST, AVG(PRICE) FROM PROD p, SHOP s, MANR m \tWHERE p.SID = s.SID AND s.MID = m.MID AND MNAME = 'Paul'\tGROUP BY DIST(d) SELECT SUM(PRICE) FROM PROD p, SHOP s, MANR m \tWHERE p.SID = s.SID AND s.MID = m.MID AND STOCK > 100 AND SEX = 'M'473.2"
+    },
+    {
+      "slide_index": 76,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "Subquery483.2To find the name of the student who gets the highest score, a single function does not suffice. We need a query inside another query, which is called subquery."
+    },
+    {
+      "slide_index": 77,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "Subquery493.2Take this table as an example."
+    },
+    {
+      "slide_index": 78,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Which of the above is the better practice? Why? The latter. It requires fewer updates, allows data to be inserted without dependency and does not lose data due to the deletion of related data. Assume that each student is allowed to join more than one club. Should we store data as below if Clem joins three clubs at the same time? Why? No. If the data of Clem needs update, we will have to update three records.What is the advantage of using this new structure over the previous one? A student may join as many clubs as they want without adding duplicated data to STUDENT.53.1"
+    },
+    {
+      "slide_index": 79,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "Subquery503.2To find the highest score, we may use the following SQL statement.Substitute SELECT MAX(SCORE) FROM STUDENT for 89 and enclose it with parentheses. We have:"
+    },
+    {
+      "slide_index": 80,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "IN51AIN is a logical operator which checks for the existence of certain values in other tables. Take the three tables below as an example."
+    },
+    {
+      "slide_index": 81,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "IN52AThe following SQL statement finds the names of the students who have joined at least one club and have a score above 70.The following SQL statement finds the same result with subquery instead of joining tables."
+    },
+    {
+      "slide_index": 82,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "IN53AOn the other hand, we may use NOT IN to check for the absence of certain values in other tables.The following SQL statement finds the names of the students who have not joined any club."
+    },
+    {
+      "slide_index": 83,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "IN54AHere is another example of using subquery instead of joining tables."
+    },
+    {
+      "slide_index": 84,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "IN55ASubquery may help us insert, update and delete data too.Here is a table named STUDENT2, storing the data of the new students."
+    },
+    {
+      "slide_index": 85,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "IN56ATo insert the data of these students into the table STUDENT, we may use the following SQL statement.INSERT INTO STUDENT (SELECT ID, NAME, SEX, CLASS, 0 FROM STUDENT2)"
+    },
+    {
+      "slide_index": 86,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "IN57AThe following statement updates their score to NULL.UPDATE STUDENT SET SCORE = NULL WHERE SID IN (SELECT ID FROM STUDENT2)"
+    },
+    {
+      "slide_index": 87,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "IN58ATo delete the data of these students from the table STUDENT, we may use the following SQL statement.DELETE FROM STUDENT WHERE SID IN (SELECT ID FROM STUDENT2)"
+    },
+    {
+      "slide_index": 88,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "EXISTS59BEXISTS is a logical operator which checks for the existence of the result of a subquery. Functionally, EXISTS is similar to IN. Here is a table named STUDENT2, storing the data of the new students."
+    },
+    {
+      "slide_index": 89,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Joining Tables63.1Storing data in multiple tables linked with foreign keys allows us to maintain data consistency easier and save data storage.Take these two tables as an example."
+    },
+    {
+      "slide_index": 90,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "EXISTS60BThe following SQL statement finds the names and the scores of the students in STUDENT who have the same score as any of the students in STUDENT2.SELECT NAME, SCORE FROM STUDENT s WHERE EXISTS \t(SELECT 1 FROM STUDENT2 s2 WHERE s.SCORE = s2.SCORE)The whole SQL statement can be rewritten using IN as below: SELECT NAME, SCORE FROM STUDENT s WHERE SCORE IN \t(SELECT SCORE FROM STUDENT2 s2)"
+    },
+    {
+      "slide_index": 91,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "EXISTS61BOn the other hand, we may use NOT EXISTS to check for the absence of the result of a subquery.SELECT NAME, SCORE FROM STUDENT s WHERE NOT EXISTS \t(SELECT 1 FROM STUDENT2 s2 WHERE s.SCORE = s2.SCORE)"
+    },
+    {
+      "slide_index": 92,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "ANY62CANY is a logical operator which compares a single values with any of the values in a list. It can be written as SOME.Here is a table named STUDENT2, storing the data of the new students."
+    },
+    {
+      "slide_index": 93,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "ANY63CThe following SQL statement finds the names of the students who is in the same class as any of the new students.SELECT NAME FROM STUDENT \tWHERE CLASS = ANY (SELECT CLASS FROM STUDENT2)"
+    },
+    {
+      "slide_index": 94,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "ANY64CIN cannot be rewritten as = ANY since IN can be followed by a list of values while = ANY must be followed by a subquery."
+    },
+    {
+      "slide_index": 95,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "ANY65CANY can also be placed after comparison operators other than =.The following SQL statement finds the names and the scores of the students who get a score higher than some of the new students.SELECT NAME, SCORE FROM STUDENT \tWHERE SCORE > ANY (SELECT SCORE FROM STUDENT2)"
+    },
+    {
+      "slide_index": 96,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "ALL66DALL is a logical operator which compares a single values with all of the values in a list.Here is a table named STUDENT2, storing the data of the new students."
+    },
+    {
+      "slide_index": 97,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "ALL67DThe following SQL statement finds the names of the students who is not in the same class as all of the new students.SELECT NAME FROM STUDENT \tWHERE CLASS <> ALL (SELECT CLASS FROM STUDENT2)"
+    },
+    {
+      "slide_index": 98,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "ALL68DALL can also be placed after comparison operators other than <>.The following SQL statement finds the names and the scores of the students who get a score higher than all new students.SELECT NAME, SCORE FROM STUDENT \tWHERE SCORE > ALL (SELECT SCORE FROM STUDENT2)"
+    },
+    {
+      "slide_index": 99,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "1. The manager of multiple cat hotels uses three tables, CAT, BREED and HOTEL to manage the cats resided in the hotels.693.3"
+    },
+    {
+      "slide_index": 100,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "INNER JOIN7AThe result of INNER JOIN includes only the records with matching values in both tables. It can be simplified as JOIN."
+    },
+    {
+      "slide_index": 101,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "Write SQL statements to complete the following tasks.(a) List the name of each cat breed that currently exists in the hotel named Alpha.(b) List the name of each cat that resides in the hotel named Beta and weighs more than the global average weight of its breed.(c) List the name of each hotel with more cats than its capacity.703.3"
+    },
+    {
+      "slide_index": 102,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "(d) List the name of each Ragdoll cats with an age larger than the average age of all Ragdoll cats across all hotels.(e) List the name of each hotel that do not have any Ragdoll cats resided in.(f) What is the purpose of the following SQL statement?SELECT h.NAME, COUNT(DISTINCT c.BID) FROM HOTEL h\tLEFT JOIN CAT c ON h.ID = c.HID GROUP BY h.ID713.3"
+    },
+    {
+      "slide_index": 103,
+      "slide_part": "ppt/slides/slide72.xml",
+      "text": "◣ Solution(a) SELECT NAME FROM BREED WHERE ID IN\t(SELECT BID FROM CAT, HOTEL h \tWHERE HID = h.ID AND h.NAME = 'Alpha')(b) SELECT c.NAME FROM CAT c, BREED b, HOTEL h\tWHERE BID = b.ID AND HID = h.ID AND h.NAME = 'Beta' \tAND c.WEIGHT < b.WEIGHT(c) SELECT NAME FROM HOTEL h WHERE\t(SELECT COUNT(c.ID) FROM CAT c WHERE HID = h.ID) > CAPACITY723.3"
+    },
+    {
+      "slide_index": 104,
+      "slide_part": "ppt/slides/slide73.xml",
+      "text": "(d) SELECT c.NAME FROM CAT c, BREED b\tWHERE BID = b.ID AND b.NAME = 'Ragdoll' AND\tAGE > (SELECT AVG(c2.AGE) FROM CAT c2 WHERE c2.BID = b.ID)(e) SELECT NAME FROM HOTEL WHERE ID NOT IN\t(SELECT HID FROM CAT, BREED b WHERE BID = b.ID AND b.NAME = \t'Ragdoll')(f) It counts the number of breeds within each hotel.733.3"
+    },
+    {
+      "slide_index": 105,
+      "slide_part": "ppt/slides/slide74.xml",
+      "text": "Complete Checkpoint 3.3 on P. 156 of your textbook.(a) SELECT COUNT(ID) FROM PLAYER WHERE ID IN\t(SELECT OWNER FROM ARMY a, CLASS c \tWHERE CID = c.ID AND STR > 90)(b) SELECT NAME FROM PLAYER WHERE ID IN\t(SELECT OWNER FROM ARMY a, CLASS c \tWHERE CID = c.ID AND HP = MAXHP)(c) SELECT NAME FROM PLAYER WHERE GOLD >=\t(SELECT SUM(COST) FROM CLASS WHERE NAME LIKE '%mage') \tORDER BY ID743.3"
+    },
+    {
+      "slide_index": 106,
+      "slide_part": "ppt/slides/slide75.xml",
+      "text": "(d) SELECT NAME, COUNT(a.ID) FROM PLAYER p \tLEFT JOIN ARMY a ON OWNER = p.ID WHERE LEVEL > \t(SELECT AVG(LEVEL) FROM PLAYER) \tGROUP BY p.ID ORDER BY LEVEL DESC(e) SELECT p1.NAME, p1.LEVEL, p2.NAME, p2.LEVEL \tFROM PLAYER p1, PLAYER p2 \tWHERE ABS(p1.LEVEL - p2.LEVEL) <= 5 AND p1.ID < p2.ID(f) It lists the name of each player who has no army. \tSELECT NAME FROM PLAYER \tWHERE ID NOT IN (SELECT OWNER FROM ARMY)753.3"
+    },
+    {
+      "slide_index": 107,
+      "slide_part": "ppt/slides/slide76.xml",
+      "text": "Combining Results763.3Sometimes we want to combine the results from two queries.For example, we have two tables storing the data of students: STUDENT and STUDENT2."
+    },
+    {
+      "slide_index": 108,
+      "slide_part": "ppt/slides/slide77.xml",
+      "text": "UNION77AIf we want to show the identity codes of students from both tables at the same time, we may use the set operator UNION.The following SQL statement lists the identity codes of students from both tables. Duplicated rows are removed, as if DISTINCT is used."
+    },
+    {
+      "slide_index": 109,
+      "slide_part": "ppt/slides/slide78.xml",
+      "text": "UNION78ANote that only rows with completely identical data will be removed. Thus, if we also select NAME from the tables, both rows with identity codes of 03517 will be shown.SELECT SID, NAME FROM STUDENT \tUNION SELECT STUDENTID, NAME FROM STUDENT2"
+    },
+    {
+      "slide_index": 110,
+      "slide_part": "ppt/slides/slide79.xml",
+      "text": "UNION79AIt does not matter if the field names from both results match, as long as the number of fields in both results match, we can combine them using UNION.However, if both results store different kinds of data, the combined result may not be meaningful.SELECT DOB FROM STUDENT2 UNION SELECT STUDENTID FROM STUDENT2"
+    },
+    {
+      "slide_index": 111,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "INNER JOIN8A"
+    },
+    {
+      "slide_index": 112,
+      "slide_part": "ppt/slides/slide80.xml",
+      "text": "UNION80AThe result can be filtered, sorted or summarised using keywords like WHERE just as usual.SELECT SID FROM STUDENT UNION \tSELECT STUDENTID FROM STUDENT2 WHERE CLASS = '3B'"
+    },
+    {
+      "slide_index": 113,
+      "slide_part": "ppt/slides/slide81.xml",
+      "text": "UNION81AIf we want to filter the data of STUDENT, we have to add a WHERE clause after SELECT SID FROM STUDENT. An ORDER BY clause, on the other hand, should be applied to the whole combined result instead."
+    },
+    {
+      "slide_index": 114,
+      "slide_part": "ppt/slides/slide82.xml",
+      "text": "UNION82AField names from the second result (i.e. STUDENT2) are not carried to the combined result, we should use the field names from the first result (i.e. STUDENT) in the ORDER BY clause."
+    },
+    {
+      "slide_index": 115,
+      "slide_part": "ppt/slides/slide83.xml",
+      "text": "UNION ALL83BThe following SQL statement lists the identity codes of students from both tables. Duplicated rows are NOT removed."
+    },
+    {
+      "slide_index": 116,
+      "slide_part": "ppt/slides/slide84.xml",
+      "text": "INTERSECT84CThe following SQL statement lists the identity codes of students which exist in both tables."
+    },
+    {
+      "slide_index": 117,
+      "slide_part": "ppt/slides/slide85.xml",
+      "text": "EXCEPT85DEXCEPT returns the rows from the first table excluding those which also exist in the second table. Sometimes, it is written as MINUS.The following SQL statement lists the identity codes of students which exist in STUDENT but not in STUDENT2."
+    },
+    {
+      "slide_index": 118,
+      "slide_part": "ppt/slides/slide86.xml",
+      "text": "EXCEPT86DWe may also include more than one set operator in a SQL statement.SELECT SID FROM S1 INTERSECT\tSELECT SID FROM S2 INTERSECT\tSELECT SID FROM S3"
+    },
+    {
+      "slide_index": 119,
+      "slide_part": "ppt/slides/slide87.xml",
+      "text": "1. A sports meeting is coming up. There are two sport events, a football game and a relay race. The organiser of this meeting uses three tables, PARTICIPANT, FOOTBALL and RELAYRACE to manage the data of the contestants in two sport events.873.4"
+    },
+    {
+      "slide_index": 120,
+      "slide_part": "ppt/slides/slide88.xml",
+      "text": "Given that there are participants who have not decided which sport event to participate in, write SQL statements to complete the following tasks. (a) List the occurrence of every bib number in both sport events. If a bib number appears twice, list it twice in the result, so on and so forth. Sort the numbers in ascending order. (b) List the participant identity code of each participant who belongs to the team named “A” in at least one of the sport events.883.4"
+    },
+    {
+      "slide_index": 121,
+      "slide_part": "ppt/slides/slide89.xml",
+      "text": "(c) List the name of each female participant who participates in the football game but not in the relay race.(d) List the name of each participant who is at least 22 years old and does not participate in both sport events at the same time.893.4"
+    },
+    {
+      "slide_index": 122,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "LEFT JOIN9BThe result of LEFT JOIN includes all records in the left table and the records with matching values in both tables. It can be written as LEFT OUTER JOIN.To know each student belongs to which club, we may use the following SQL statement."
+    },
+    {
+      "slide_index": 123,
+      "slide_part": "ppt/slides/slide90.xml",
+      "text": "◣ Solution(a) SELECT BIB FROM FOOTBALL UNION ALL SELECT BIB FROM RELAYRACE \tORDER BY BIBThis SQL statement below is wrong and cannot be executed.SELECT BIB FROM FOOTBALL ORDER BY BIB\tUNION ALL SELECT BIB FROM RELAYRACE ORDER BY BIBORDER BY clause cannot be placed in the middle of a SQL statement.903.4"
+    },
+    {
+      "slide_index": 124,
+      "slide_part": "ppt/slides/slide91.xml",
+      "text": "(b) SELECT PID FROM FOOTBALL WHERE TEAM = 'A‘\tUNION SELECT PID FROM RELAYRACE WHERE TEAM = 'A‘This SQL statement below is wrong and cannot be executed.(SELECT PID FROM FOOTBALL UNION SELECT PID FROM RELAYRACE)\tWHERE TEAM = 'A‘WHERE clause cannot be shared between two SELECT clauses.913.4"
+    },
+    {
+      "slide_index": 125,
+      "slide_part": "ppt/slides/slide92.xml",
+      "text": "(c) SELECT NAME FROM PARTICIPANT WHERE GENDER = 'F' AND ID IN(SELECT PID FROM FOOTBALL EXCEPT SELECT PID FROM RELAYRACE)(d) SELECT NAME FROM PARTICIPANT WHERE AGE >= 22 AND ID NOT IN(SELECT PID FROM FOOTBALL INTERSECT SELECT PID FROM RELAYRACE)923.4"
+    },
+    {
+      "slide_index": 126,
+      "slide_part": "ppt/slides/slide93.xml",
+      "text": "Complete Checkpoint 3.4 on P. 168 of your textbook.(a) SELECT ISBN FROM WBS WHERE PRICE < 100 EXCEPT SELECT ISBN FROM HBS(b) SELECT BNAME, AUTHOR FROM BOOK WHERE ISBN IN \t(SELECT ISBN FROM HBS INTERSECT SELECT ISBN FROM WBS)(c) SELECT BNAME, PRICE FROM HBS h, BOOK b \tWHERE h.ISBN = b.ISBN AND PAGE >= 300 UNION \tSELECT BNAME, PRICE FROM WBS w, BOOK b \tWHERE w.ISBN = b.ISBN AND PAGE >= 300 \tORDER BY BNAME933.4"
+    },
+    {
+      "slide_index": 127,
+      "slide_part": "ppt/slides/slide94.xml",
+      "text": "(d) SELECT ISBN FROM HBS WHERE ISBN NOT IN \t(SELECT ISBN FROM BOOK) UNION \tSELECT ISBN FROM WBS WHERE ISBN NOT IN \t(SELECT ISBN FROM BOOK) Alternative: SELECT ISBN FROM HBS UNION SELECT ISBN FROM WBS EXCEPT SELECT ISBN FROM BOOK943.4"
+    },
+    {
+      "slide_index": 128,
+      "slide_part": "ppt/slides/slide95.xml",
+      "text": "Creating Views and Indices953.4In programming, when we expect a certain part of code to be reused frequently in a program, we create a sub-program to simplify the program.Similarly, in database, when we expect a certain result of a SQL statement to be reused frequently in summarisation or as subquery, we create a view, which works as a virtual table, to simplify any future SQL statements."
+    },
+    {
+      "slide_index": 129,
+      "slide_part": "ppt/slides/slide96.xml",
+      "text": "View96AConsider the following tables:"
+    },
+    {
+      "slide_index": 130,
+      "slide_part": "ppt/slides/slide97.xml",
+      "text": "View97AGiven that the final score of a student is calculated by the formula below:Final score = first test score × 0.4 + second test score × 0.6We need a complex SQL statement for each of the following tasks:1. List the name of each student taught by Mr Suen and has a final score below 60;2. List the name of each student who joins at least two clubs and has a final score above 60;3. List the name of each student who is in a class whose teaching language is Chinese and does not join any other clubs besides English Club; and4. List the name of each student who joins the most number of clubs."
+    },
+    {
+      "slide_index": 131,
+      "slide_part": "ppt/slides/slide98.xml",
+      "text": "View98A1. List the name of each student taught by Mr Suen and has a final score below 60.We have to join STUDENT with CLASS to see if a student is taught by Mr Suen.SELECT NAME FROM STUDENT s, CLASS cl WHERE s.CLASS = cl.CLASS AND\tTEACH = 'Mr Suen' AND SCORE1 * 0.4 + SCORE2 * 0.6 < 60"
+    },
+    {
+      "slide_index": 132,
+      "slide_part": "ppt/slides/slide99.xml",
+      "text": "VIEW99A2. List the name of each student who joins at least two clubs and has a final score above 60.We have to count the number of clubs joined by each student in a subquery.SELECT NAME FROM STUDENT WHERE SCORE1 * 0.4 + SCORE2 * 0.6 > 60 AND \tSID IN (SELECT SID FROM SC GROUP BY SID HAVING COUNT(*) >= 2)"
+    }
+  ]
+}

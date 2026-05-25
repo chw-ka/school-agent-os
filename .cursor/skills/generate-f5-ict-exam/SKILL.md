@@ -117,7 +117,8 @@ raise SystemExit(run_question_review(
 1. **Feels like DSE** — Core A/B/D MCQ + Paper 1B/2-style 乙丙；用語跟 `dse_ict_style_guide.json` / `style_patterns.json`。
 2. **Grounded in curriculum** — concepts 對齊 `concept_map.json`（來源：`edb/ICT_C&A Guide_c_final.pdf` + bank 統計）。
 3. **Not traceable** — 唔係抄 DSE 某一條；question_review 確認 vs bank／校內 past 相似度合理（甲部 stem 目標 ≤60% 仍作 **review 指標**，唔作 pick gate）。
-4. **School template** — `24_25_S5_ICT_Exam02.docx` 排版；spec 為內容 source of truth。
+4. **Depth calibration (iClass HK)** — 每 slot 自動附 `depth_references`（相關 iClass 題預覽）；Core D／Python／算法／除錯等概念會參考深淺出題。詳見 `iclass_hk_depth.py`、`iclass-hk/depth_profile.json`。
+5. **School template** — `24_25_S5_ICT_Exam02.docx` 排版；spec 為內容 source of truth。
 
 ---
 
@@ -133,6 +134,7 @@ raise SystemExit(run_question_review(
 | Generation dir | `_generation/` |
 | C&A Guide | `Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf` |
 | Bank | `Subjects/DSE-ICT/question-bank/` |
+| Core D depth (iClass HK) | `Subjects/DSE-ICT/iclass-hk/depth_profile.json` + `iclass-hk/json/*.json` |
 | Side products | `_generation/concept_map.json`, `style_patterns.json`（待建） |
 | Python | `.venv/bin/python` from repo root |
 

@@ -82,6 +82,25 @@ def is_sql_text(text: str) -> bool:
     )
 
 
+def set_answer_blank_runs(paragraph, *, long: bool = False) -> None:
+    """
+    Rebuild answer-line runs: tab-only, underline on trailing tabs (24_25 template).
+
+    Short: 5 tabs — 1 plain + 4 underlined.
+    Long: 7 tabs — 2 plain + 5 underlined.
+    """
+    n = 7 if long else 5
+    plain = 2 if long else 1
+    p_el = paragraph._element
+    for child in list(p_el):
+        if child.tag.endswith("}r"):
+            p_el.remove(child)
+    for i in range(n):
+        run = paragraph.add_run("\t")
+        if i >= plain:
+            run.underline = True
+
+
 def set_paragraph_text_distribute(paragraph, text: str) -> None:
     """
     Set paragraph text while preserving existing run count and formatting.
@@ -121,6 +140,20 @@ def set_paragraph_text_rich(paragraph, text: str) -> None:
     )
     for r in paragraph.runs:
         r.font.name = font
+
+
+def insert_table_after_paragraph(paragraph, rows: int, cols: int):
+    """Insert a new table immediately after `paragraph` (not at document end)."""
+    from docx.table import Table
+
+    doc = paragraph.part.document
+    table = doc.add_table(rows=rows, cols=cols)
+    tbl_element = table._tbl
+    parent = tbl_element.getparent()
+    if parent is not None:
+        parent.remove(tbl_element)
+    paragraph._p.addnext(tbl_element)
+    return Table(tbl_element, paragraph.part)
 
 
 def replace_in_paragraph_runs(paragraph, needle: str, replacement: str) -> None:

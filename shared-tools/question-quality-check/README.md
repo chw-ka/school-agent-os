@@ -40,6 +40,16 @@
 
 與 `exam_spec.py` 的 version 1 相同；`meta.mcq_answers`、`matching_answers`、`tf_answers`、`fill_answers` 等見 `answer_pattern_check.py`。
 
+## Solve review（解題審查，LLM）
+
+模擬學生作答；需 repo `.env` 內 **DeepSeek** 或 Gemini key。見 **`docs/DEEPSEEK_API.md`**、**`docs/SOLVE_REVIEW.md`**。
+
+```bash
+.venv/bin/python shared-tools/paper-generator/solve_review.py --check-key
+.venv/bin/python shared-tools/paper-generator/solve_review.py --test-api --provider deepseek
+.venv/bin/python shared-tools/paper-generator/solve_review.py --provider deepseek --merge-rules
+```
+
 ## 相關工具
 
 - **`../paper-quality-check/`** — 頁尾、封面等試卷版面檢查

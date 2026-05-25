@@ -1,0 +1,434 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EB Ch2.pptx",
+    "slug": "EB_Ch2_slides",
+    "title": "EB Ch2",
+    "series": "EB",
+    "chapter": 2,
+    "curriculum_unit": "B-a",
+    "curriculum_part": "Core-B",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.466014+00:00",
+    "slide_count": 82,
+    "topic_tags": {
+      "硬件": 39,
+      "循環": 31,
+      "除錯": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 2Computer Hardware"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Processor10BA GPU can be integrated into the chipset of a motherboard or a CPU. In such a case, it is called iGPU.Comparison between graphics card and iGPU:"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Storage device11CThere are different types of storage devices:Main memory Secondary storage"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Storage devices12CMain memory (also known as primary storage) often refers to two types of memory: Read-only memory (ROM)Random access memory (RAM). ROM is non-volatile, meaning that its data persists even the computer shuts down; while RAM is volatile, meaning that its data disappears once the computer shuts down."
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Power supply unit13DA power supply unit (PSU) converts high-voltage alternating current (AC) to low-voltage direct current (DC), which provides suitable power for computers to operate.There are PSUs with different powers to cater for the need of different computer systems."
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Bus14EA computer system connects every component by transferring data and control signals using buses. There are different types of buses:System busUniversal serial bus"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Bus15EA system bus transfers data and control signals between processors and various components. The amount of data that a bus can transfer at a time is called bus width. The bus width of a computer is usually the same as the word length of a CPU."
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Bus16EThere are different types of system buses:"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Bus17EUniversal serial bus (USB) is commonly used for connecting external devices, such as keyboards, computer mice, printers, webcams, image scanners, external storage devices, etc. A motherboard usually has multiple USB ports for connecting these devices. There are different standards for USB ports:"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Bus18EWe can distinguish among USB 1.0, USB 2.0 and USB 3.0 by the colour of the plugs:"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "Which of the following components must be found in a system unit?RAMHard diskDedicated graphics card(1) only(2) only(1) and (2) only(1) and (3) only192.1"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Artificial Intelligence and the GPUDo you know why GPUs are used as the core for training artificial intelligence?GPU is the graphics processor unit, both are made for computing. GPUs are good at doing a lot of simple computing at the same time.Artificial intelligence needs to quickly analyse a large amount of different data, so the GPU has become the core of deep learning of artificial intelligence.2"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "AnalysisItem (1), RAM, is a must for every system unit. It stores data that is in use currently for the CPU. There are no other components or devices that can replace a RAM.Item (2), hard disk, is secondary storage. A system unit must have at least one secondary storage device. However, it does not have to be a hard disk. SSD is also an available option.Item (3), dedicated graphics card, is not a must. iGPU is an alternative.SolutionThe answer is A.202.1"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Which of the following statements about CPU and GPU is correct?A CPU cannot process graphics while a GPU can.A CPU has a cooling fan while a GPU does not.A GPU always contains RAM while a CPU does not.A GPU can be integrated into a CPU. 212.1"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "AnalysisFor option A, a CPU can process graphics too, even though its performance in graphics processing is usually not as good as a GPU.For option B, both CPU and GPU can have a cooling fan.For option C, a GPU as an individual graphics card contains RAM. However, an iGPU does not.For option D, an iGPU is a GPU integrated into a CPU.SolutionThe answer is D.222.1"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "Which of the following statements about buses is/are correct?An SSD can be connected to a computer through SATA bus.An address bus transfers memory addresses from various components to processors.A data bus transfers data only from processors to various components.(1) only(1) and (2) only(1) and (3) only(2) and (3) only232.1"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "AnalysisFor item (1), SATA bus is used to connect secondary storage devices and SSD is one of the secondary storage devices.For item (2), the object to transfer is correct but the direction is wrong. An address bus transfers memory address from processors to components.For item (3), once again, the object to transfer is correct but the direction is wrong. A data bus transfers data between processors and components.SolutionThe answer is A.242.1"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "Kevin wants to connect a keyboard to his computer. Through which of the following ports can he connect to the computer?VGA portHDMI portUSB port(2) only(3) only(1) and (2) only(1) and (3) only252.1"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "What is the advantages of using an integrated sound card over a dedicated sound card?  An integrated sound card has a better performance. An integrated sound card can store more data. An integrated sound card has a lower cost. An integrated sound card can perform parallel operations.262.1"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "Which of the following types of system bus transfers control signals from processors to components?Universal serial busData busControl busPCIe bus272.1"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "Central Processing Unit282.2A CPU is the main processor of a computer. It is responsible for the data processing in a computer.It consists of two main components: Control Unit (CU)Arithmetic and Logic Unit (ALU)"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "Arithmetic logic unit29AAn arithmetic and logic unit (ALU) performs:Arithmetic operations, such as addition (+), subtraction (−), multiplication (×) and division (÷)Logical operations, such as comparison (=, ≠, <, >, ≤, ≥), conjunction (AND), disjunction (OR) and negation (NOT).After operations, the result is then transferred to a register called accumulators via data bus."
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "System Unit32.1A system unit contains the main components of a computer system:"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "Control unit30BA CU controls:The response of the ALU and other devices to instructionsThe data flow between the CPU, other components and devices"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Register31CRegisters are a type of memory that can be accessed by the CPU at high speed. Each of them has a small storage size, which is usually 32 bits or 64 bits, depending on the operating system and the word length.They are used for temporarily storing the data needed during processing. Various types of registers that store data for different purposes."
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "32Relationship among CU, ALU and registerCU is like the teacher guiding a student to do his homework. ALU is like the student who does his homework. Registers are like the homework being done by the student."
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Register33CA current instruction register (CIR) stores the instruction currently being executed by the CPU.A program counter (PC) stores the address of the next instruction to be executed. A memory address register (MAR) stores the memory address which needs to be read from or written into.A memory data register (MDR) stores the data which is read from or to be written into the memory address stored in MAR.An accumulator stores the arithmetic operation result from the ALU."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "Cache memory34DThe performance of a CPU is greatly affected by that of its cache memory. Just like RAM, cache memory is volatile.The access rate of the cache memory in the CPU is higher than that of the RAM. Therefore, it is used to facilitate data accessing from the main memory by temporarily storing the data or instructions that are expected to be accessed most frequently."
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "Machine cycle35ENowadays, the design of most computers is based on von Neumann architecture.This architecture features a machine cycle containing four phases: fetching, decoding, executing and storing."
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "Machine cycle36EThis machine cycle can be further broken down into seven steps:"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "Machine cycle37E"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "Specification of CPU38FThe timing of fetching, decoding, executing and storing is controlled by the clock of a CPU. The clock rate is the number of clock cycles a CPU performs in one second."
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "Specification of CPU39FHere are the units of clock rate and clock cycle.A CPU with a higher clock rate usually performs better and has higher energy consumption."
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "System Unit42.1Here are some brief descriptions of the components in a system unit:"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "Specification of CPU40FThe core of a CPU is an individual processor unit inside a CPU.The number of cores in a CPU determines the number of processes that can be run at the same time.A CPU with more cores usually performs better than a CPU with fewer cores does in the case of multitasking."
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "Specification of CPU41FThe number of bits processed by a CPU each time is called word length or word size.Nowadays, the word length of a computer is usually 32-bits or 64-bits. A CPU with a longer word length usually performs better."
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Which of the following store memory address in a machine cycle?Program counter (PC)Memory address register (MAR)Random access memory (RAM)Current instruction register (CIR)(1) and (2) only(1) and (3) only(2) and (3) only(2) and (4) only422.2"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "AnalysisItem (1), PC, is used to store the address of the next instruction.Item (2), MAR, is used to store the address of the instruction.Item (3), RAM, is used to store data.Item (4), CIR, is used to store instruction or data.SolutionThe answer is A.432.2"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "Macy has a program which can recognise human faces through machine learning. She finds that her computer runs this program faster than the computers at her school do. Which of the following specifications are the possible reasons for this?The number of ports on the motherboardThe number of cores in the CPUThe number of clock cycles a CPU performs in one second(1) and (2) only(1) and (3) only(2) and (3) only(1), (2) and (3)442.2"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "AnalysisItem (1), the number of ports, only determines how many peripheral devices can be connected to the computer. It is a non-factor for computer performance.For item (2), having more cores means more instructions can be executed within a given time frame.Item (3), the number of clock cycles a CPU performs in one second is the clock rate of a CPU. A higher clock rate usually means more instructions can be executed within a given time frame.SolutionThe answer is C.452.2"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "Which of the following components in a CPU decodes an instruction during a machine cycle? Arithmetic and Logic unit (ALU)Current instruction register (CIR)Control Unit (CU)Accumulator462.2"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "Which of the following must be the result of reducing the word length of a CPU?The energy consumption of the CPU is increased.The clock rate of the CPU is reduced.The data processing speed of the CPU is increased.The number of memory locations the CPU can address is reduced.472.2"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "Storage Device482.3There are mainly two types of storage devices:Main memorySecondary storage"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "Main memory49AMain memory (also known as primary storage) often refers to two types of memory: Random access memory (RAM) Read-only memory (ROM)."
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Motherboard5AA motherboard is a circuit board that provides slots and ports for connecting various electrical components or peripheral devices."
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "Main memory50ARandom access memory (RAM) is volatile, meaning that its data disappears once the computer shuts down. It stores data temporarily for processing. The storage size and the data access rate of RAM greatly affect the performance of a CPU.There are different versions of RAM, like DDR3 SDRAM, DDR4 SDRAM and DDR5 SDRAM. Each version of them may be different in shape and may not fit in the slots on certain motherboards."
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "Main memory51ARead-only memory (ROM) is non-volatile, meaning that its data persists after the computer shuts down. As the name of ROM suggests, the data it stores is expectedto be read-only and usually cannot be rewritten.A ROM in a computer stores firmware (or called startup program), which is a collection of instructions required to start a computer. This firmware is called basic input/output system (BIOS)."
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "Ryan wants to replace the RAM of his computer. Here are the specifications of the original RAM and the new RAM.However, Ryan fails to replace the RAM. Which of the following is the possible reason?The clock rate of the new RAM is too high for the CPU to handle.The memory size is too large for the CPU to handle.The motherboard does not support DDR4 RAM.The ROM does not support DDR4 RAM.522.3"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "AnalysisTo replace RAM, the new one has to be able to fit in the slot on the motherboard. This depends on the version of RAM. While option D mentions the version of the new RAM, the ROM is irrelevant to the question. Only option C concerns the version of the new RAM and the motherboard.SolutionThe answer is C.532.3"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "The data stored in RAM is used for processing and needs to be updated frequently. Why this kind of data cannot be stored in ROM instead?ROM is non-volatile.ROM has a smaller storage size.ROM has a lower data transfer rate.ROM cannot be rewritten.542.3"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "AnalysisAll four options are true or at least true for most RAM and ROM. However, not all of them are the reasons. Since this kind of data needs to be updated frequently, it must be stored in a storage device that can be rewritten.SolutionThe answer is D.552.3"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "Which of the following statements about RAM is/are correct?Its data access rate is higher than that of other secondary storage.Its data access rate is higher than the CPU cache.Its data disappears once the computer shuts down.(1) only(2) only(1) and (3) only(2) and (3) only562.3"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "What is stored in the ROM of a scanner?The firmware (or the startup program) of the scanner. (BIOS is for computers, not scanners.)572.3"
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "Secondary storage58BUnlike main memory, all types of secondary storage are non-volatile, as they are used to store data for future use.There are three common types of secondary storage based on the storage media:Magnetic storageSolid-state storageOptical storage"
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "Secondary storage59BThere are two types of access methods used by different secondary storage devices:Sequential accessDirect access"
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Motherboard6AHere are the examples of components or devices to connect:"
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "Secondary storage60BFor a storage device using sequential access, data is written sequentially, starting from the beginning.Below shows the storage device that is capable of using sequential access only:"
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "Secondary storage61BFor a storage device using direct access (also known as random access), data can be written in any storage position.Below shows the storage devices that can use direct access:"
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "Secondary storage62BA magnetic tape consists of a strip of plastic film coated with magnetic materials. Its storage size is large enough to be measured in TB (1 TB = 240 bytes) and its unit price per capacity is low.Magnetic tapes are usually used for backup storage but not daily used data."
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "Secondary storage63BA hard disk consists of many read/write heads and circular metal disks coated with magnetic materials.When accessing data, read/write heads move directly to the unique addresses of data.Therefore, it has a higher data access rate than a magnetic tape does thanks to its direct access method."
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "Secondary storage64BA solid-state drive (SSD) consists of flash memory and a controller.Flash memory is a storage medium that can be read and written electrically at a fast speed.Unlike magnetic tape and hard disk, an SSD does not need or contain any moving parts. Therefore, it is more durable and portable than both magnetic tape and hard disk."
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "Secondary storage65BA memory card consists of flash memory. It is designed to be small in physical size so that it can be used for mobile devices, such as digital cameras and smartphones.A USB flash drive consists of flash memory and an integrated USB interface, which often uses the USB-A standards.Optical storage refers to optical disks. An optical disk is a circular plastic disk coated with a reflective material. The stored data is represented by the grooves on the plastic and read by laser beams projected from an optical drive."
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "Secondary storage66BHere is a comparison between most types of secondary storage devices."
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "Secondary storage67BA redundant array of independent disks (RAID) consists of multiple storage devices. It improves data transfer rate, error detection and reduces the chance of data loss due to device failure."
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "Secondary storage68BNetwork-attached storage (NAS) is a file server with many drives that are combined into a RAID.It allows users on a local area network (LAN) to read and write at the same time."
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "Secondary storage69BCloud storage is a service that is often provided by Internet service providers (ISP).As long as there is an Internet connection, users can read and write data on the cloud storage anytime and anywhere."
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Processor7BA central processing unit (CPU) is a processor that consists of many chips to process data and instructions.The number of bits processed by a CPU each time is called word length or word size."
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "Memory Hierarchy70CTypes of computer storage can be arranged into a hierarchy based on their data access rate, storage size and unit price per capacity."
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "Paul needs to carry about 12 GB of files to facilitate working from home and reporting on project progress to his colleagues in the office. He has to make changes to the files regularly. Which of the following secondary storage devices should he use?Floppy diskMagnetic tapeCD-ROMUSB flash memory712.4"
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide72.xml",
+      "text": "AnalysisFor option A, a floppy disk cannot provide storage space of 12 GB.For option B, a magnetic tape drive is uncommon in the home.For option C, the data stored in a CD-ROM cannot be rewritten.For option D, a USB flash memory:usually has a storage space of more than 12 GB;does not need an extra drive to read or write the data; andis small in physical size and easy to carry.SolutionThe answer is D.722.4"
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide73.xml",
+      "text": "Grace is a computer graphics designer. She wants to upgrade her desktop computer for work purposes. Which of the following specifications greatly affect the performance of her computer?Storage size of RAMStorage size of ROMClock cycle of the CPUWeight of the computer(1) and (2) only(1) and (3) only(2) and (3) only(2) and (4) only732.4"
+    },
+    {
+      "slide_index": 72,
+      "slide_part": "ppt/slides/slide74.xml",
+      "text": "AnalysisSince RAM stores the data for processing, its storage size is important to the performance of a computer.ROM stores BIOS, which is only used when booting a computer. Its storage size barely affects the performance of a computer.The clock cycle of a CPU determines the clock rate of a CPU. A higher clock rate usually comes with a better performance of a computer.The weight of the computer does not matter to the performance of a computer, especially when we are talking about desktop computers.SolutionThe answer is B.742.4"
+    },
+    {
+      "slide_index": 73,
+      "slide_part": "ppt/slides/slide75.xml",
+      "text": "Arrange the following types of memory in descending order by data access rate.Cache memoryFlash memoryRegister(1) > (2) > (3)(2) > (1) > (3)(3) > (1) > (2) (3) > (2) > (1)752.4"
+    },
+    {
+      "slide_index": 74,
+      "slide_part": "ppt/slides/slide76.xml",
+      "text": "Give three advantages of using a solid-state drive (SSD) over a hard disk.SSD has a higher data access rate; is smaller in physical size; has a strong resistance to physical impact; consumes less energy; is lighter in weight.762.4"
+    },
+    {
+      "slide_index": 75,
+      "slide_part": "ppt/slides/slide77.xml",
+      "text": "Type of Computers772.4There are different types of computers based on size."
+    },
+    {
+      "slide_index": 76,
+      "slide_part": "ppt/slides/slide78.xml",
+      "text": "Latest Development of Hardware782.5Different hardware devices have different trends of development. Most of them can be summarised as below."
+    },
+    {
+      "slide_index": 77,
+      "slide_part": "ppt/slides/slide79.xml",
+      "text": "Latest Development of Hardware792.5Different hardware devices have different trends of development. Most of them can be summarised as below."
+    },
+    {
+      "slide_index": 78,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Processor8BA graphics processing unit (GPU) is a processor that processes data and executes commands. Comparing to CPU:A GPU is more specialised in graphic rendering while a CPU is made to handle various types of tasks.A GPU has more cores and is thus more capable of multitasking."
+    },
+    {
+      "slide_index": 79,
+      "slide_part": "ppt/slides/slide80.xml",
+      "text": "What are the advantages of using a tablet computer over a desktop computer to watch videos?More portableLarger screen sizeHigher computing powerLower energy consumption(1) and (3) only(1) and (4) only(2) and (3) only(2) and (4) only802.5"
+    },
+    {
+      "slide_index": 80,
+      "slide_part": "ppt/slides/slide81.xml",
+      "text": "AnalysisA tablet computer is lighter in weight and has a built-in monitor. Thus, it is more portable.It is quite rare for a tablet computer to have a screen larger than the screen of an external monitor connected to a desktop computer.A tablet computer usually has lower computing power. It is more used for leisure purposes and thus trades its computing power for its small physical size and high portability.Due to its relatively low computing power and small screen size, a tablet computer usually consumes less energy than a desktop computer does.SolutionThe answer is B.812.5"
+    },
+    {
+      "slide_index": 81,
+      "slide_part": "ppt/slides/slide82.xml",
+      "text": "Which of the following are the main focus of the technology development for a smartphone?Higher resolutionHigher computational powerMore USB ports(1) and (2) only(1) and (3) only(2) and (3) only(1), (2) and (3)822.5"
+    },
+    {
+      "slide_index": 82,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "Processor9BA graphics card is also known as a display card or a video card. It contains a GPU and other components like:RAM: Unlike the RAM in the system unit, this RAM is only used for graphics processing.Digital-to-analog converter: It converts the processing results into analog signals and transfers them to display units such as computer monitors or projectors"
+    }
+  ]
+}

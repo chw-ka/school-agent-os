@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecC6_en_Searching and Sorting.docx",
+    "slug": "ElecC6_en",
+    "title": "Searching and Sorting",
+    "title_zh": null,
+    "title_en": "Searching and Sorting",
+    "language": "en",
+    "family": "ElecC",
+    "chapter": 6,
+    "integrated": false,
+    "topic_code": "EC06",
+    "curriculum_unit": "EC",
+    "ca_unit": "EC",
+    "f5_exam_scope": "elective_sd",
+    "extracted_at": "2026-05-24T10:37:18.297516+00:00",
+    "item_count": 8,
+    "section_counts": {
+      "short_answer": 5,
+      "long_answer": 3
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTC1106_03A001E",
+      "bank_code": "SSICTC1106_03A001E",
+      "section_type": "short_answer",
+      "marks": 6.0,
+      "year_tag": null,
+      "stem": "Consider the following array ID.\nID\n1001\n1003\n1006\n1002\n1005\n1004\n1008\n1007\n1009\nindex\n1\n2\n3\n4\n5\n6\n7\n8\n9\nAlex wants to use a searching algorithm to find if some IDs exist in array ID.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Should Alex use binary search? Explain briefly.(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Assuming Alex decides to use the following searching algorithm:\nLine  Pseudocode\n1    inputID  Input the ID that needs to be checked\n2    check  False\n3    n  the length of array ID\n4    for i from 1 to n\n5        if ID[i] = inputID then\n6            check  True\n7    Output check"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "What is the output if 1005 is entered?(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the output if 1010 is entered?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "How many times will the conditional statement in line 5 be executed if the input is 1004?(1 mark)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "How to modify the program so that it will stop the loop once the target ID is found?(2 marks)\n[--Answer:\n(a) No, because the array is not sorted.\n(b)(i) True\n(b)(ii) False\n(c) 9\n(d) Use a while loop instead and set an additional condition for the program to exit the loop once check becomes True.\n--]"
+        }
+      ],
+      "text": "Consider the following array ID.\nID\n1001\n1003\n1006\n1002\n1005\n1004\n1008\n1007\n1009\nindex\n1\n2\n3\n4\n5\n6\n7\n8\n9\nAlex wants to use a searching algorithm to find if some IDs exist in array ID.\n(a) Should Alex use binary search? Explain briefly.(1 mark)\n(b) Assuming Alex decides to use the following searching algorithm:\nLine  Pseudocode\n1    inputID  Input the ID that needs to be checked\n2    check  False\n3    n  the length of array ID\n4    for i from 1 to n\n5        if ID[i] = inputID then\n6            check  True\n7    Output check\n(i) What is the output if 1005 is entered?(1 mark)\n(ii) What is the output if 1010 is entered?(1 mark)\n(c) How many times will the conditional statement in line 5 be executed if the input is 1004?(1 mark)\n(d) How to modify the program so that it will stop the loop once the target ID is found?(2 marks)\n[--Answer:\n(a) No, because the array is not sorted.\n(b)(i) True\n(b)(ii) False\n(c) 9\n(d) Use a while loop instead and set an additional condition for the program to exit the loop once check becomes True.\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "算法",
+        "排序",
+        "硬件",
+        "進制",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1106_03A002E",
+      "bank_code": "SSICTC1106_03A002E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "The following algorithm aims to find out if an item in an array A (index starts from 1) matches the input. If it does, the program outputs True. Otherwise, the program outputs False.\nLine  Pseudocode\n1    check  False\n2    userInput  Input from the user\n3    n  the length of array A\n4    for i from 1 to n\n5        if A[i] = userInput then\n6            check  True\n7    Output check",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "What kind of searching algorithm is it?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "David wants to change the output of the above algorithm to become the index of the matching item and also change the for loop to while loop. Complete the algorithm for him.(4 marks)\nuserInput  Input from the user\nn  the length of array A\ni  1\nindex  -1\nwhile __________ and __________\nif A[i] = userInput then\ni  i + 1\nif _________________ then\nOutput \"No result is found.\"\nelse\nOutput \"Found at\", index\n[--Answer:\n(a) Linear search"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "i <= n\nindex = -1\nindex  i\nindex = -1\n--]"
+        }
+      ],
+      "text": "The following algorithm aims to find out if an item in an array A (index starts from 1) matches the input. If it does, the program outputs True. Otherwise, the program outputs False.\nLine  Pseudocode\n1    check  False\n2    userInput  Input from the user\n3    n  the length of array A\n4    for i from 1 to n\n5        if A[i] = userInput then\n6            check  True\n7    Output check\n(a) What kind of searching algorithm is it?(1 mark)\n(b) David wants to change the output of the above algorithm to become the index of the matching item and also change the for loop to while loop. Complete the algorithm for him.(4 marks)\nuserInput  Input from the user\nn  the length of array A\ni  1\nindex  -1\nwhile __________ and __________\nif A[i] = userInput then\ni  i + 1\nif _________________ then\nOutput \"No result is found.\"\nelse\nOutput \"Found at\", index\n[--Answer:\n(a) Linear search\n(b) i <= n\nindex = -1\nindex  i\nindex = -1\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "算法",
+        "排序",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1106_03A003E",
+      "bank_code": "SSICTC1106_03A003E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Consider the following algorithm.\nLine  Pseudocode\n1    a  Input the first integer\n2    b  Input the second integer\n3    if a < b  then\n4        temp  a + b\n5        b  temp - b\n6        a  temp – b",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "For each of the following pairs of input values, write down the final values of a and b after running the algorithm.(3 marks)\nThe first integer\nThe second integer\nFinal value of a\nFinal value of b\n5\n12\n-7\n-6\n20\n-12"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the purpose of this algorithm?(1 mark)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "The first integer\nThe second integer\nFinal value of a\nFinal value of b\n5\n12\n12\n5\n-7\n-6\n-6\n-7\n20\n-12\n20\n-12\n(b) Swap the content of a and b when b is greater than a.\n--]"
+        }
+      ],
+      "text": "Consider the following algorithm.\nLine  Pseudocode\n1    a  Input the first integer\n2    b  Input the second integer\n3    if a < b  then\n4        temp  a + b\n5        b  temp - b\n6        a  temp – b\n(a) For each of the following pairs of input values, write down the final values of a and b after running the algorithm.(3 marks)\nThe first integer\nThe second integer\nFinal value of a\nFinal value of b\n5\n12\n-7\n-6\n20\n-12\n(b) What is the purpose of this algorithm?(1 mark)\n[--Answer:\n(a) The first integer\nThe second integer\nFinal value of a\nFinal value of b\n5\n12\n12\n5\n-7\n-6\n-6\n-7\n20\n-12\n20\n-12\n(b) Swap the content of a and b when b is greater than a.\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch6",
+        "循環",
+        "算法",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1106_03B004E",
+      "bank_code": "SSICTC1106_03B004E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Mr Chan is managing the test results of his students. The scores of his students are stored in an array score, while another array studentID stores the student IDs of his students. The order of items in both arrays corresponds to each other. Part of the arrays score and studentID are shown below:\nscore\n82\n79\n75\n70\n…\nindex\n1\n2\n3\n4\n…\nstudentID\n2101\n2217\n2103\n2110\n…\nindex\n1\n2\n3\n4\n…",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Mr Chan thinks that as binary search is faster, he can use it on studentID to search for a student’s index without sorting the array first. Is he correct? Explain briefly.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Given that there are 30 students, complete the sorting algorithm below to sort studentID in ascending order, while keeping the order of items in both arrays corresponds to each other.(3 marks)\nfor i from 1 to 30\nmin  i\nfor j from i + 1 to 30\nif ____________________________ then\nSwap __________ and __________\nSwap __________ and __________\n[--Answer:\n(a) No. Binary search is only applicable to sorted arrays, while the arrays above are sorted in descending order of students' scores instead of their student IDs."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "studentID[min] > studentID[j]\nmin  j\nstudentID[i] and studentID[min]\nscore[i] and score[min]\n--]"
+        }
+      ],
+      "text": "Mr Chan is managing the test results of his students. The scores of his students are stored in an array score, while another array studentID stores the student IDs of his students. The order of items in both arrays corresponds to each other. Part of the arrays score and studentID are shown below:\nscore\n82\n79\n75\n70\n…\nindex\n1\n2\n3\n4\n…\nstudentID\n2101\n2217\n2103\n2110\n…\nindex\n1\n2\n3\n4\n…\n(a) Mr Chan thinks that as binary search is faster, he can use it on studentID to search for a student’s index without sorting the array first. Is he correct? Explain briefly.(2 marks)\n(b) Given that there are 30 students, complete the sorting algorithm below to sort studentID in ascending order, while keeping the order of items in both arrays corresponds to each other.(3 marks)\nfor i from 1 to 30\nmin  i\nfor j from i + 1 to 30\nif ____________________________ then\nSwap __________ and __________\nSwap __________ and __________\n[--Answer:\n(a) No. Binary search is only applicable to sorted arrays, while the arrays above are sorted in descending order of students' scores instead of their student IDs.\n(b) studentID[min] > studentID[j]\nmin  j\nstudentID[i] and studentID[min]\nscore[i] and score[min]\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch6",
+        "循環",
+        "列表",
+        "算法",
+        "排序",
+        "硬件",
+        "進制",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1106_03B005E",
+      "bank_code": "SSICTC1106_03B005E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Helen has some number cards and she stores the numbers on the cards in an array num, as shown below:\nnum\n35\n12\n5\n8\n17\n22\n40\n51\nindex\n0\n1\n2\n3\n4\n5\n6\n7\nShe tries to process the array with the following algorithm:\nLine  Pseudocode\n1    for i from 0 to 6\n2        for j from 0 to 6\n3             if num[j] < num[j+1] then\n4                 temp  num[j]\n5                 num[j]  num[j+1]\n6                 num[j+1]  temp",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write down the content of num after the loop body of i = 0 has been executed.(1 mark)\nnum\nindex\n0\n1\n2\n3\n4\n5\n6\n7"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Write down the content of num after the loop body of i = 1 has been executed.(1 mark)\nnum\nindex\n0\n1\n2\n3\n4\n5\n6\n7"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Write down the final content of num after the above algorithm has been executed.(1 mark)\nnum\nindex\n0\n1\n2\n3\n4\n5\n6\n7"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the purpose of this algorithm?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Rewrite line 2 to increase the efficiency of the algorithm.(1 mark)\nLine 2:    for j from _____ to _____\n[--Answer:\n(a)(i)\nnum\n35\n12\n8\n17\n22\n40\n51\n5\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(a)(ii)\nnum\n35\n12\n17\n22\n40\n51\n8\n5\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(a)(iii)\nnum\n51\n40\n35\n22\n17\n12\n8\n5\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(b) Sort the number cards in descending order."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "0\n6-i\n--]"
+        }
+      ],
+      "text": "Helen has some number cards and she stores the numbers on the cards in an array num, as shown below:\nnum\n35\n12\n5\n8\n17\n22\n40\n51\nindex\n0\n1\n2\n3\n4\n5\n6\n7\nShe tries to process the array with the following algorithm:\nLine  Pseudocode\n1    for i from 0 to 6\n2        for j from 0 to 6\n3             if num[j] < num[j+1] then\n4                 temp  num[j]\n5                 num[j]  num[j+1]\n6                 num[j+1]  temp\n(a) \n(i) Write down the content of num after the loop body of i = 0 has been executed.(1 mark)\nnum\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(ii) Write down the content of num after the loop body of i = 1 has been executed.(1 mark)\nnum\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(iii) Write down the final content of num after the above algorithm has been executed.(1 mark)\nnum\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(b) What is the purpose of this algorithm?(1 mark)\n(c) Rewrite line 2 to increase the efficiency of the algorithm.(1 mark)\nLine 2:    for j from _____ to _____\n[--Answer:\n(a)(i)\nnum\n35\n12\n8\n17\n22\n40\n51\n5\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(a)(ii)\nnum\n35\n12\n17\n22\n40\n51\n8\n5\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(a)(iii)\nnum\n51\n40\n35\n22\n17\n12\n8\n5\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(b) Sort the number cards in descending order.\n(c) 0\n6-i\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch6",
+        "循環",
+        "列表",
+        "算法",
+        "排序",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1106_04B001E",
+      "bank_code": "SSICTC1106_04B001E",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": null,
+      "stem": "Ben is developing a music app for users to play music on it. He is now developing the search function. The default searching mode for the songs will be “most relevant”, which shows five songs with names closest to the keyword. The results are stored in an array name of size 5. Suppose that a user searches with the keyword “Happy”, the content of name will be as follows:\nname\nHappy\nHappy",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "acoustic",
+          "marks": null,
+          "text": "I Am Happy\nHappy and You Know\nMr. Happy\nindex\n1\n2\n3\n4\n5\nThe number of listeners of each song in the result is stored in array listeners, whose order of items corresponds to that in name. The numbers of listeners of the above five songs are as follows:\nlisteners\n32000\n23000\n51000\n15000\n30000\nindex\n1\n2\n3\n4\n5\nBen writes a sub-program swap(a, b) to swap the values in arrays name and listeners. This sub-program first swaps the values of items a and b in name, and then performs the same operation on the corresponding items in listeners. The following example shows the changes in these arrays if swap(1, 3) is called.\nThe initial content of arrays are as follows:\nname\nsong1\nsong2\nsong3\nindex\n1\n2\n3\nlisteners\n10000\n20000\n30000\nindex\n1\n2\n3\nThe content of arrays after calling the sub-program swap(1, 3):\nname\nsong3\nsong2\nsong1\nindex\n1\n2\n3\nlisteners\n30000\n20000\n10000\nindex\n1\n2\n3"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Refer to the above search results for the keyword “Happy” and the numbers of listeners of these songs. What will be the content of arrays name and listeners after calling swap(2, 3) and swap(1, 2) consecutively?(4 marks)\nThe content of arrays after calling the sub-program swap(2, 3):\nname\nindex\n1\n2\n3\n4\n5\nlisteners\nindex\n1\n2\n3\n4\n5\nThe content of arrays after calling the sub-program swap(1, 2):\nname\nindex\n1\n2\n3\n4\n5\nlisteners\nindex\n1\n2\n3\n4\n5"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Complete the pseudocode for sub-program swap(a, b).(3 marks)\nSub-program swap(a, b)\ntemp  __________________\nname[a]  _______________\nname[b]  _______________\ntemp  __________________\nlisteners[a]  __________\nlisteners[b]  __________"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Ben wants to add a sorting function to display the songs in descending order of popularity. Complete the pseudocode for this sub-program.(4 marks)\nSub-program sortByPopularity\nfor i from _____ to _____\nmax  i\nfor j from _____ to _____\nif ______________________ then\nmax  j\nswap(_____, _____)\n[--Answer:\n(a) The content of arrays after calling the sub-program swap(2, 3):\nname\nHappy\nI Am Happy\nHappy (Acoustic)\nHappy and You Know\nMr.Happy\nindex\n1\n2\n3\n4\n5\nlisteners\n32000\n51000\n23000\n15000\n30000\nindex\n1\n2\n3\n4\n5\nThe content of arrays after calling the sub-program swap(1, 2):\nname\nI Am Happy\nHappy\nHappy (Acoustic)\nHappy and You Know\nMr.Happy\nindex\n1\n2\n3\n4\n5\nlisteners\n51000\n32000\n23000\n15000\n30000\nindex\n1\n2\n3\n4\n5"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "name[a]\nname[b]\ntemp\nlisteners[a]\nlisteners[b]\ntemp"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "1 to 5\ni+1 to 5\nlisteners[max] < listeners[j]\nmax, i\n--]"
+        }
+      ],
+      "text": "Ben is developing a music app for users to play music on it. He is now developing the search function. The default searching mode for the songs will be “most relevant”, which shows five songs with names closest to the keyword. The results are stored in an array name of size 5. Suppose that a user searches with the keyword “Happy”, the content of name will be as follows:\nname\nHappy\nHappy\n(acoustic) I Am Happy\nHappy and You Know\nMr. Happy\nindex\n1\n2\n3\n4\n5\nThe number of listeners of each song in the result is stored in array listeners, whose order of items corresponds to that in name. The numbers of listeners of the above five songs are as follows:\nlisteners\n32000\n23000\n51000\n15000\n30000\nindex\n1\n2\n3\n4\n5\nBen writes a sub-program swap(a, b) to swap the values in arrays name and listeners. This sub-program first swaps the values of items a and b in name, and then performs the same operation on the corresponding items in listeners. The following example shows the changes in these arrays if swap(1, 3) is called.\nThe initial content of arrays are as follows:\nname\nsong1\nsong2\nsong3\nindex\n1\n2\n3\nlisteners\n10000\n20000\n30000\nindex\n1\n2\n3\nThe content of arrays after calling the sub-program swap(1, 3):\nname\nsong3\nsong2\nsong1\nindex\n1\n2\n3\nlisteners\n30000\n20000\n10000\nindex\n1\n2\n3\n(a) Refer to the above search results for the keyword “Happy” and the numbers of listeners of these songs. What will be the content of arrays name and listeners after calling swap(2, 3) and swap(1, 2) consecutively?(4 marks)\nThe content of arrays after calling the sub-program swap(2, 3):\nname\nindex\n1\n2\n3\n4\n5\nlisteners\nindex\n1\n2\n3\n4\n5\nThe content of arrays after calling the sub-program swap(1, 2):\nname\nindex\n1\n2\n3\n4\n5\nlisteners\nindex\n1\n2\n3\n4\n5\n(b) Complete the pseudocode for sub-program swap(a, b).(3 marks)\nSub-program swap(a, b)\ntemp  __________________\nname[a]  _______________\nname[b]  _______________\ntemp  __________________\nlisteners[a]  __________\nlisteners[b]  __________\n(c) Ben wants to add a sorting function to display the songs in descending order of popularity. Complete the pseudocode for this sub-program.(4 marks)\nSub-program sortByPopularity\nfor i from _____ to _____\nmax  i\nfor j from _____ to _____\nif ______________________ then\nmax  j\nswap(_____, _____)\n[--Answer:\n(a) The content of arrays after calling the sub-program swap(2, 3):\nname\nHappy\nI Am Happy\nHappy (Acoustic)\nHappy and You Know\nMr.Happy\nindex\n1\n2\n3\n4\n5\nlisteners\n32000\n51000\n23000\n15000\n30000\nindex\n1\n2\n3\n4\n5\nThe content of arrays after calling the sub-program swap(1, 2):\nname\nI Am Happy\nHappy\nHappy (Acoustic)\nHappy and You Know\nMr.Happy\nindex\n1\n2\n3\n4\n5\nlisteners\n51000\n32000\n23000\n15000\n30000\nindex\n1\n2\n3\n4\n5\n(b) name[a]\nname[b]\ntemp\nlisteners[a]\nlisteners[b]\ntemp\n(c) 1 to 5\ni+1 to 5\nlisteners[max] < listeners[j]\nmax, i\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "排序",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTC1106_04B002E",
+      "bank_code": "SSICTC1106_04B002E",
+      "section_type": "long_answer",
+      "marks": 12.0,
+      "year_tag": null,
+      "stem": "Mr Cheung, a teacher in Happy School, has just marked all the exam papers and stored the marks in a list mark.\nmark\n51\n86\n74\n59\n62\n93\n81\n42\nindex\n0\n1\n2\n3\n4\n5\n6\n7\nMr Cheung wants to rank the students from the highest mark to the lowest mark, so he has written a program in Python to sort the list.\nLine  Python\n1    for i in range(1, 8):\n2        k = mark[i]\n3        j = i - 1\n4        while j >= 0 and k < mark[j]:\n5            mark[j+1] = mark[j]\n6            j = j - 1\n7        mark[j+1] = k",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write down the content of mark after the loop body of i = 1 has been executed.(1 mark)\nmark\nindex\n0\n1\n2\n3\n4\n5\n6\n7"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Write down the content of mark after the loop body of i = 2 has been executed.(1 mark)\nmark\nindex\n0\n1\n2\n3\n4\n5\n6\n7"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Write down the final content of mark after the above program has been executed.(1 mark)\nmark\nindex\n0\n1\n2\n3\n4\n5\n6\n7"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Is the result of the program as Mr Cheung has expected? If not, spot the error and suggest how to debug the program.(2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Suppose that the program has been debugged and list mark is now in descending order. Mr Cheung then writes another grading program to assign a grade for each mark in the list. A list grade, whose order of items corresponds to that in mark, is created to store the assigned grade. The following table shows the range of mark for each of the grades (all marks are integers):\nGrade\nRange\nA\n86 - 100\nB\n75 - 85\nC\n60 - 74\nD\n50 - 59\nF\n0 - 49"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Complete the following Python program.(6 marks)\ngrade = []\nfor i in range(__________):\ngrade = grade + [[]]\nif _________________:\ngrade[i] = \"A\"\nelif _______________:\ngrade[i] = __________\nelif _______________:\ngrade[i] = __________\nelif _______________:\ngrade[i] = __________\n____________________:\ngrade[i] = \"F\""
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Write down the final content of grade.(1 mark)\ngrade\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n[--Answer:\n(a)(i)\nmark\n51\n86\n74\n59\n62\n93\n81\n42\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(a)(ii)\nmark\n51\n74\n86\n59\n62\n93\n81\n42\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(a)(iii)\nmark\n42\n51\n59\n62\n74\n81\n86\n93\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(b) No. The condition for the while loop is wrong; it should be changed to while j >= 0 and k > mark[j].\n(c)(i)\n0, 8\nmark[i] >= 86\nmark[i] >= 75\n\"B\"\nmark[i] >= 60\n\"C\"\nmark[i] >= 50\n\"D\"\nelse\n(c)(ii)\ngrade\nA\nA\nB\nC\nC\nD\nD\nF\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n--]"
+        }
+      ],
+      "text": "Mr Cheung, a teacher in Happy School, has just marked all the exam papers and stored the marks in a list mark.\nmark\n51\n86\n74\n59\n62\n93\n81\n42\nindex\n0\n1\n2\n3\n4\n5\n6\n7\nMr Cheung wants to rank the students from the highest mark to the lowest mark, so he has written a program in Python to sort the list.\nLine  Python\n1    for i in range(1, 8):\n2        k = mark[i]\n3        j = i - 1\n4        while j >= 0 and k < mark[j]:\n5            mark[j+1] = mark[j]\n6            j = j - 1\n7        mark[j+1] = k\n(a) \n(i) Write down the content of mark after the loop body of i = 1 has been executed.(1 mark)\nmark\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(ii) Write down the content of mark after the loop body of i = 2 has been executed.(1 mark)\nmark\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(iii) Write down the final content of mark after the above program has been executed.(1 mark)\nmark\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(b) Is the result of the program as Mr Cheung has expected? If not, spot the error and suggest how to debug the program.(2 marks)\n(c) Suppose that the program has been debugged and list mark is now in descending order. Mr Cheung then writes another grading program to assign a grade for each mark in the list. A list grade, whose order of items corresponds to that in mark, is created to store the assigned grade. The following table shows the range of mark for each of the grades (all marks are integers):\nGrade\nRange\nA\n86 - 100\nB\n75 - 85\nC\n60 - 74\nD\n50 - 59\nF\n0 - 49\n(i) Complete the following Python program.(6 marks)\ngrade = []\nfor i in range(__________):\ngrade = grade + [[]]\nif _________________:\ngrade[i] = \"A\"\nelif _______________:\ngrade[i] = __________\nelif _______________:\ngrade[i] = __________\nelif _______________:\ngrade[i] = __________\n____________________:\ngrade[i] = \"F\"\n(ii) Write down the final content of grade.(1 mark)\ngrade\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n[--Answer:\n(a)(i)\nmark\n51\n86\n74\n59\n62\n93\n81\n42\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(a)(ii)\nmark\n51\n74\n86\n59\n62\n93\n81\n42\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(a)(iii)\nmark\n42\n51\n59\n62\n74\n81\n86\n93\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n(b) No. The condition for the while loop is wrong; it should be changed to while j >= 0 and k > mark[j].\n(c)(i)\n0, 8\nmark[i] >= 86\nmark[i] >= 75\n\"B\"\nmark[i] >= 60\n\"C\"\nmark[i] >= 50\n\"D\"\nelse\n(c)(ii)\ngrade\nA\nA\nB\nC\nC\nD\nD\nF\nindex\n0\n1\n2\n3\n4\n5\n6\n7\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "除錯",
+        "排序",
+        "硬件",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTC1106_04B003E",
+      "bank_code": "SSICTC1106_04B003E",
+      "section_type": "long_answer",
+      "marks": 15.0,
+      "year_tag": null,
+      "stem": "Tim is the manager of a supermarket. He stores the names of the products in array product with indexes from 0 to N-1. Considering the large number of different kinds of products, Tim wants to write a program to search for the index of a specific product.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Is it a good idea to use linear search? Explain briefly.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Tim’s friend, Mary, helps to write a sub-program search(target) that implements a binary search to search for a given product target in array product."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Suppose array product should be sorted in ascending order, which means the character “a” is smaller than the character “b”, the character “b” is smaller than the character “c”, and so on. Complete the pseudocode for sub-program search(target).(5 marks)\nSub-program search(target)\na  0\nb  _____\nwhile a <= b\nc  _______________\nif product[c] = target then\nreturn c\nelse if _______________ then\nb  _____\nelse\na  _____\nreturn -1"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Tim stores the names of the products as follows:\nproduct\norange2\nmilk2\nmilk1\nlemon2\nlemon1\ncookie4\n…\napple1\nindex\n0\n1\n2\n3\n4\n5\n…\n10000\nHe finds that he can never find the indexes of some products using the above sub-program even though such products are in the array. Explain why.(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Tim writes sub-program sort to sort the array product in ascending order."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Complete the pseudocode for sub-program sort.(3 marks)\nLine  Pseudocode\n1    Sub-program sort\n2        for i from 0 to N-1\n3            min  i\n4            for j from i to N-1\n5                if product[j] _____ product[min] then\n6                    min  j\n7            Call sub-program swap(min, i) to                 swap items __________ and __________"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Suggest a modification of the above algorithm to increase the efficiency.(1 mark)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Complete the pseudocode for sub-program swap(a, b).(3 marks)\nSub-program swap(a, b)\n[--Answer:\n(a) No, because the number of products is large and using linear search will take a long time to search through the whole array.\n(b)(i)\nN-1\n(a + b) // 2\nproduct[c] > target\nc – 1\nc + 1"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "The array is sorted in descending order, not sorted in ascending order.\n(c)(i)\n<\nproduct[min]\nproduct[i]\n(c)(ii)\nChange the code in line 4 to “for j from i+1 to N-1”.\n(c)(iii)\ntemp  product[a]\nproduct[a]  product[b]\nproduct[b]  temp\n--]"
+        }
+      ],
+      "text": "Tim is the manager of a supermarket. He stores the names of the products in array product with indexes from 0 to N-1. Considering the large number of different kinds of products, Tim wants to write a program to search for the index of a specific product.\n(a) Is it a good idea to use linear search? Explain briefly.(2 marks)\n(b) Tim’s friend, Mary, helps to write a sub-program search(target) that implements a binary search to search for a given product target in array product.\n(i) Suppose array product should be sorted in ascending order, which means the character “a” is smaller than the character “b”, the character “b” is smaller than the character “c”, and so on. Complete the pseudocode for sub-program search(target).(5 marks)\nSub-program search(target)\na  0\nb  _____\nwhile a <= b\nc  _______________\nif product[c] = target then\nreturn c\nelse if _______________ then\nb  _____\nelse\na  _____\nreturn -1\n(ii) Tim stores the names of the products as follows:\nproduct\norange2\nmilk2\nmilk1\nlemon2\nlemon1\ncookie4\n…\napple1\nindex\n0\n1\n2\n3\n4\n5\n…\n10000\nHe finds that he can never find the indexes of some products using the above sub-program even though such products are in the array. Explain why.(1 mark)\n(c) Tim writes sub-program sort to sort the array product in ascending order.\n(i) Complete the pseudocode for sub-program sort.(3 marks)\nLine  Pseudocode\n1    Sub-program sort\n2        for i from 0 to N-1\n3            min  i\n4            for j from i to N-1\n5                if product[j] _____ product[min] then\n6                    min  j\n7            Call sub-program swap(min, i) to                 swap items __________ and __________\n(ii) Suggest a modification of the above algorithm to increase the efficiency.(1 mark)\n(iii) Complete the pseudocode for sub-program swap(a, b).(3 marks)\nSub-program swap(a, b)\n[--Answer:\n(a) No, because the number of products is large and using linear search will take a long time to search through the whole array.\n(b)(i)\nN-1\n(a + b) // 2\nproduct[c] > target\nc – 1\nc + 1\n(ii) The array is sorted in descending order, not sorted in ascending order.\n(c)(i)\n<\nproduct[min]\nproduct[i]\n(c)(ii)\nChange the code in line 4 to “for j from i+1 to N-1”.\n(c)(iii)\ntemp  product[a]\nproduct[a]  product[b]\nproduct[b]  temp\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch6",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "排序",
+        "硬件",
+        "進制",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

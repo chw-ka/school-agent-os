@@ -31,7 +31,11 @@ from f5_ict_layout import (
     normalize_mcq_vertical_gaps,
     prepare_f5_ict_template_body,
 )
-from f5_ict_tables import apply_f5_ict_table_content, remove_unused_f5_ict_tables
+from f5_ict_tables import (
+    F5_ICT_TEMPLATE_BODY_TABLES,
+    apply_f5_ict_table_content,
+    remove_unused_f5_ict_tables,
+)
 from f5_ict_written_content import build_part_b, build_part_c
 from f5_ict_written_from_dse import get_active_written_picks
 from mcq_answer_keys import build_random_mcq_key
@@ -386,6 +390,32 @@ def clear_answer_pages(doc: Document) -> None:
         set_paragraph_text_distribute(doc.paragraphs[635], note)
 
 
+def apply_answer_pages(
+    doc: Document,
+    spec: dict,
+    *,
+    mcq_key: str | None = None,
+    start_para: int = 635,
+) -> None:
+    """Write 甲部 MCQ key + 乙丙參考答案 to template answer pages (para 635+)."""
+    from f5_ict_model_answers import build_model_answer_lines
+
+    meta = dict(spec.get("meta") or {})
+    if mcq_key:
+        meta = {**meta, "mcq_answers": mcq_key}
+    lines = build_model_answer_lines({**spec, "meta": meta})
+
+    for i in range(start_para, len(doc.paragraphs)):
+        set_paragraph_text_distribute(doc.paragraphs[i], "")
+
+    idx = start_para
+    for line in lines:
+        while idx >= len(doc.paragraphs):
+            doc.add_paragraph()
+        set_paragraph_text_distribute(doc.paragraphs[idx], line)
+        idx += 1
+
+
 def prepare_mcq_final_rows(
     mcq_payload: list[list[str]],
     mcq_correct_indices: tuple[int, ...],
@@ -412,6 +442,10 @@ def render_docx(
     *,
     final_mcq_rows: list[list[str]],
     footer_meta: dict | None = None,
+    populate_body_tables: bool = False,
+    spec: dict | None = None,
+    mcq_key: str | None = None,
+    include_answers: bool = True,
 ) -> None:
     """Render deliverable DOCX from prepared MCQ rows + active written picks."""
     shutil.copy(template, output)
@@ -431,9 +465,24 @@ def render_docx(
         part_c_lines = build_part_c()
     replace_span(doc, 313, 422, part_b_lines)
     replace_span(doc, 423, 624, part_c_lines)
-    apply_f5_ict_table_content(doc)
-    remove_unused_f5_ict_tables(doc)
-    clear_answer_pages(doc)
+    if populate_body_tables:
+        remove_unused_f5_ict_tables(doc, keep_indices=F5_ICT_TEMPLATE_BODY_TABLES)
+        apply_f5_ict_table_content(doc)
+    else:
+        remove_unused_f5_ict_tables(doc)
+        if written_picks:
+            from f5_ict_written_tables import apply_written_tables_from_picks
+
+            apply_written_tables_from_picks(doc, written_picks)
+    # After remove_unused — MCQ tables must not be deleted (mcq-06 / 13 / 15).
+    if spec is not None:
+        from f5_ict_mcq_tables import apply_mcq_tables_from_spec
+
+        apply_mcq_tables_from_spec(doc, spec)
+    if include_answers and spec is not None:
+        apply_answer_pages(doc, spec, mcq_key=mcq_key)
+    else:
+        clear_answer_pages(doc)
     doc.save(str(output))
     if footer_meta:
         apply_footer_meta(output, footer_meta)

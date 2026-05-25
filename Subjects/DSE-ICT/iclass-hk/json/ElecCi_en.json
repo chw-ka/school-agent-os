@@ -1,0 +1,530 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecCi_en_Integrated.docx",
+    "slug": "ElecCi_en",
+    "title": "Integrated",
+    "title_zh": null,
+    "title_en": "Integrated",
+    "language": "en",
+    "family": "ElecC",
+    "chapter": null,
+    "integrated": true,
+    "topic_code": "EC99",
+    "curriculum_unit": "EC",
+    "ca_unit": "EC",
+    "f5_exam_scope": "elective_sd",
+    "extracted_at": "2026-05-24T10:37:18.352761+00:00",
+    "item_count": 8,
+    "section_counts": {
+      "short_answer": 6,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTC1199_03A001E",
+      "bank_code": "SSICTC1199_03A001E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": "2025",
+      "stem": "Tom writes an algorithm that sorts the height of students in ascending order. He uses an integer array height with indices from 1 to N.\nLine\nContent\n1\nfor i from N down to 1\n2\ntemp  i\n3\nfor j from i-1 down to 1\n4\nif height[j] > height[temp]\n5\ntemp  j\n6\nswap the content of height[i] and height[temp]\nGiven that N = 5. The initial content of height is:\nindex\n1\n2\n3\n4\n5\nheight[index]\n178\n147\n169\n185\n153",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write down the value of i and temp after Line 5 is executed for the third time.(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write the content in the array height after the algorithm is finished executing.(2 marks)\nindex\n1\n2\n3\n4\n5\nheight[index]"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Under what scenario will Line 5 be executed with the maximum number of times?(1 mark)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "What is the purpose of Line 3 to Line 5 in this sorting algorithm?(1 mark)\n[--Answer:\n(a) i = 4, temp = 1"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "index\n1\n2\n3\n4\n5\nheight[index]\n147\n153\n169\n178\n185\n(c) The array height is sorted in descending order.\n(d) Search the unsorted part of the array for the index of the largest value in the array.\n--]"
+        }
+      ],
+      "text": "Tom writes an algorithm that sorts the height of students in ascending order. He uses an integer array height with indices from 1 to N.\nLine\nContent\n1\nfor i from N down to 1\n2\ntemp  i\n3\nfor j from i-1 down to 1\n4\nif height[j] > height[temp]\n5\ntemp  j\n6\nswap the content of height[i] and height[temp]\nGiven that N = 5. The initial content of height is:\nindex\n1\n2\n3\n4\n5\nheight[index]\n178\n147\n169\n185\n153\n(a) Write down the value of i and temp after Line 5 is executed for the third time.(1 mark)\n(b) Write the content in the array height after the algorithm is finished executing.(2 marks)\nindex\n1\n2\n3\n4\n5\nheight[index]\n(c) Under what scenario will Line 5 be executed with the maximum number of times?(1 mark)\n(d) What is the purpose of Line 3 to Line 5 in this sorting algorithm?(1 mark)\n[--Answer:\n(a) i = 4, temp = 1\n(b) index\n1\n2\n3\n4\n5\nheight[index]\n147\n153\n169\n178\n185\n(c) The array height is sorted in descending order.\n(d) Search the unsorted part of the array for the index of the largest value in the array.\n--]",
+      "concepts": [
+        "EC",
+        "EC-integrated",
+        "循環",
+        "列表",
+        "算法",
+        "排序",
+        "硬件",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1199_03A002E",
+      "bank_code": "SSICTC1199_03A002E",
+      "section_type": "short_answer",
+      "marks": 6.0,
+      "year_tag": "2025",
+      "stem": "A balanced string of parentheses is a string where every opening parenthesis “(” is matched by a corresponding closing parenthesis “)”, and no closing parenthesis “)” appears before its matching opening parenthesis “(”.\nFor example:\n•\"(()()(()))\" is a balanced string.\n•\"))))((((\" is not a balanced string, since closing parentheses come before any opening ones.\n•\"(()(())\" is not a balanced string since there is an unmatched opening parenthesis.\nKarl plans to write a program to check if an inputted string is balanced using a stack, the following are the functions used in the algorithm.\nFunction\nDescription\npush(S, T)\nInsert an element T on top of stack S.\npop(S)\nReturn and remove the topmost element from stack S.\nisEmpty(S)\nReturns True if the stack S is empty, otherwise False.\nclearStack(S)\nClear the stack S to make it become empty stack.\nThe following is the initial content in the stack temp:\ntemp\nKarl writes the following function checkBalance(arr), where arr is an array that stores the inputted string.\nLine\nContent\n1\nfunction checkBalance(arr)\n2\nclearStack(temp)\n3\nL  length of the array arr\n4\nflag  True\n5\ni  0\n6\nwhile i < L and flag = True\n7\nif arr[i] = \"(\" then\n8\npush(temp, arr[i])\n9\nif arr[i] = \")\" then\n10\nif isEmpty(temp)\n11\nflag  False\n12\nelse\n13\npop(temp)\n14\ni = i + 1\n15\nif flag = True or isEmpty(temp) then\n16\noutput \"Balanced String\"\n17\nelse\n18\noutput \"Unbalanced String\"",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Given arr = \"(()()(())\", indicate whether the stack temp contains any elements when the program terminates. If it does, specify the contents of the stack.(1 mark)\ntemp"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Karl tested the subprogram with a wrong case \"))((\", but the subprogram output is \"Balanced String\". Identify and correct the error in the code. State the line number and the corrected statement.(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Can Line 2 be removed? Explain your answers briefly.(1 mark)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Complete the function clearStack(S).(1 mark)\nfunction clearStack(S)\nwhile ________________________ do\npop(S)"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "text": "What would happen if Line 6 is replaced by while i < L?(2 marks)\n[--Answer:\n(a) Yes.\n\"(\"\ntemp\n(b) Line 15\nif flag = True and isEmpty(temp)\n(c) No. It ensures the stack is empty before checking, preventing leftover data from affecting results.\n(d) not isEmpty(S)\n(e) The loop will not stop immediately when an unbalanced string is found, reducing efficiency.\n--]"
+        }
+      ],
+      "text": "A balanced string of parentheses is a string where every opening parenthesis “(” is matched by a corresponding closing parenthesis “)”, and no closing parenthesis “)” appears before its matching opening parenthesis “(”.\nFor example:\n•\"(()()(()))\" is a balanced string.\n•\"))))((((\" is not a balanced string, since closing parentheses come before any opening ones.\n•\"(()(())\" is not a balanced string since there is an unmatched opening parenthesis.\nKarl plans to write a program to check if an inputted string is balanced using a stack, the following are the functions used in the algorithm.\nFunction\nDescription\npush(S, T)\nInsert an element T on top of stack S.\npop(S)\nReturn and remove the topmost element from stack S.\nisEmpty(S)\nReturns True if the stack S is empty, otherwise False.\nclearStack(S)\nClear the stack S to make it become empty stack.\nThe following is the initial content in the stack temp:\ntemp\nKarl writes the following function checkBalance(arr), where arr is an array that stores the inputted string.\nLine\nContent\n1\nfunction checkBalance(arr)\n2\nclearStack(temp)\n3\nL  length of the array arr\n4\nflag  True\n5\ni  0\n6\nwhile i < L and flag = True\n7\nif arr[i] = \"(\" then\n8\npush(temp, arr[i])\n9\nif arr[i] = \")\" then\n10\nif isEmpty(temp)\n11\nflag  False\n12\nelse\n13\npop(temp)\n14\ni = i + 1\n15\nif flag = True or isEmpty(temp) then\n16\noutput \"Balanced String\"\n17\nelse\n18\noutput \"Unbalanced String\"\n(a) Given arr = \"(()()(())\", indicate whether the stack temp contains any elements when the program terminates. If it does, specify the contents of the stack.(1 mark)\ntemp\n(b) Karl tested the subprogram with a wrong case \"))((\", but the subprogram output is \"Balanced String\". Identify and correct the error in the code. State the line number and the corrected statement.(1 mark)\n(c) Can Line 2 be removed? Explain your answers briefly.(1 mark)\n(d) Complete the function clearStack(S).(1 mark)\nfunction clearStack(S)\nwhile ________________________ do\npop(S)\n(e) What would happen if Line 6 is replaced by while i < L?(2 marks)\n[--Answer:\n(a) Yes.\n\"(\"\ntemp\n(b) Line 15\nif flag = True and isEmpty(temp)\n(c) No. It ensures the stack is empty before checking, preventing leftover data from affecting results.\n(d) not isEmpty(S)\n(e) The loop will not stop immediately when an unbalanced string is found, reducing efficiency.\n--]",
+      "concepts": [
+        "EC",
+        "EC-integrated",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "堆疊",
+        "SQL",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1199_03A003E",
+      "bank_code": "SSICTC1199_03A003E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": "2025",
+      "stem": "Ms. Chan wrote an algorithm including an array student, to manage the students waiting for the oral exam. The following are the functions used to control the array student in the algorithm.\nFunction\nDescription\nentering(A, T)\nInsert an element T into the end of the array A if array A is not full.\nleaving(A)\nReturn and remove the first element in array A if array A is not empty, the remaining items will then be moved forward.\nisEmpty(A)\nReturn True if the array A is empty, otherwise False.\nisFull(A)\nReturn True if the array A is full, otherwise False.\nThe following is the initial content in the array student.\ni\n1\n2\n3\n4\n5\n6\nstudent[i]\n\"1242\"\n\"2345\"\n\"4235\"\n\"3426\"\n\"7742\"",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "What data structure is implemented by the functions on the array student? Explain your answers briefly?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write down the content in array student after the following instructions are executed.(1 mark)\nleaving(student)\nentering(student, \"9295\")\nleaving(student)\ni\n1\n2\n3\n4\n5\n6\nstudent[i]"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Ms. Chan wants to write a function check(A, T) to check if an element T existed in the array A. The function should return True if the element T existed in the array A, and False otherwise.\nLine\nContent\n1\nfunction check(A, T)\n2\nif isEmpty(A) then\n3\nreturn False\n4\nelse\n5\ni  1\n6\nwhile i <= _________(c1)_________ do\n7\nif _________(c2)_________ then\n8\nreturn True\n9\ni  i + 1\n10\nreturn False"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Fill in the missing part (c1) in Line 6.(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Fill in the missing part (c2) in Line 7.(1 mark)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Mr. Lee suggests Ms. Wong to use binary search to increase the searching efficiency. Should Ms. Wong take this advice? Explain your answers briefly.(1 mark)\n[--Answer:\n(a) Queue, because the operations follow the First-In First-Out (FIFO) behaviour."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "i\n1\n2\n3\n4\n5\n6\nstudent[i]\n\"4235\"\n\"3426\"\n\"7742\"\n\"9295\"\n(c) (i) length of A\n(ii) T = A[i]\n(iii) No, binary search requires the array to be sorted, but student is not sorted.\n--]"
+        }
+      ],
+      "text": "Ms. Chan wrote an algorithm including an array student, to manage the students waiting for the oral exam. The following are the functions used to control the array student in the algorithm.\nFunction\nDescription\nentering(A, T)\nInsert an element T into the end of the array A if array A is not full.\nleaving(A)\nReturn and remove the first element in array A if array A is not empty, the remaining items will then be moved forward.\nisEmpty(A)\nReturn True if the array A is empty, otherwise False.\nisFull(A)\nReturn True if the array A is full, otherwise False.\nThe following is the initial content in the array student.\ni\n1\n2\n3\n4\n5\n6\nstudent[i]\n\"1242\"\n\"2345\"\n\"4235\"\n\"3426\"\n\"7742\"\n(a) What data structure is implemented by the functions on the array student? Explain your answers briefly?(1 mark)\n(b) Write down the content in array student after the following instructions are executed.(1 mark)\nleaving(student)\nentering(student, \"9295\")\nleaving(student)\ni\n1\n2\n3\n4\n5\n6\nstudent[i]\n(c) Ms. Chan wants to write a function check(A, T) to check if an element T existed in the array A. The function should return True if the element T existed in the array A, and False otherwise.\nLine\nContent\n1\nfunction check(A, T)\n2\nif isEmpty(A) then\n3\nreturn False\n4\nelse\n5\ni  1\n6\nwhile i <= _________(c1)_________ do\n7\nif _________(c2)_________ then\n8\nreturn True\n9\ni  i + 1\n10\nreturn False\n(i) Fill in the missing part (c1) in Line 6.(1 mark)\n(ii) Fill in the missing part (c2) in Line 7.(1 mark)\n(iii) Mr. Lee suggests Ms. Wong to use binary search to increase the searching efficiency. Should Ms. Wong take this advice? Explain your answers briefly.(1 mark)\n[--Answer:\n(a) Queue, because the operations follow the First-In First-Out (FIFO) behaviour.\n(b) i\n1\n2\n3\n4\n5\n6\nstudent[i]\n\"4235\"\n\"3426\"\n\"7742\"\n\"9295\"\n(c) (i) length of A\n(ii) T = A[i]\n(iii) No, binary search requires the array to be sorted, but student is not sorted.\n--]",
+      "concepts": [
+        "EC",
+        "EC-integrated",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "堆疊",
+        "排序",
+        "SQL",
+        "資訊處理",
+        "進制",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1199_03A004E",
+      "bank_code": "SSICTC1199_03A004E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": "2025",
+      "stem": "Eric creates a linked list to manage a minibus route. He uses arrays to represent the linked list involving two pointers: Prev and Next, which stores the address of the previous and next node respectively. The first node stores \"HEAD\".\nAddress\nContent\nPrev\nNext\n0\nHEAD\n-1\n2\n1\nMong Kok\n6\n-1\n2\nCyberport\n0\n5\n3\nNam Cheong\n6\n1\n4\nAberdeen\n1\n-1\n5\nUniversity\n2\n6\n6\nCentral\n5\n1\n⋮\n⋮\n⋮\n⋮",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write down the content of the next three nodes after \"HEAD\" in order.(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "How many nodes are there in this linked list including the first node \"HEAD\"?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "If the node \"Central\" is deleted, specify which nodes need to be updated and state the new values of their pointers.(2 marks)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "In a doubly linked list, each node has pointers to both the next and previous nodes, instead of just the next node as in a singly linked list.\nGive one advantage and one disadvantage compared to a singly linked list.(2 marks)\n[--Answer:\n(a) Cyberport, University, Central\n(b) 5\n(c) The Next pointer of \"University\": 1; The Prev point of \"Mong Kok\": 5.\n(d) Advantage: Easier to traverse the list in both directions.\nDisadvantage: Requires more memory to store the extra pointer for each node.\n--]"
+        }
+      ],
+      "text": "Eric creates a linked list to manage a minibus route. He uses arrays to represent the linked list involving two pointers: Prev and Next, which stores the address of the previous and next node respectively. The first node stores \"HEAD\".\nAddress\nContent\nPrev\nNext\n0\nHEAD\n-1\n2\n1\nMong Kok\n6\n-1\n2\nCyberport\n0\n5\n3\nNam Cheong\n6\n1\n4\nAberdeen\n1\n-1\n5\nUniversity\n2\n6\n6\nCentral\n5\n1\n⋮\n⋮\n⋮\n⋮\n(a) Write down the content of the next three nodes after \"HEAD\" in order.(1 mark)\n(b) How many nodes are there in this linked list including the first node \"HEAD\"?(1 mark)\n(c) If the node \"Central\" is deleted, specify which nodes need to be updated and state the new values of their pointers.(2 marks)\n(d) In a doubly linked list, each node has pointers to both the next and previous nodes, instead of just the next node as in a singly linked list.\nGive one advantage and one disadvantage compared to a singly linked list.(2 marks)\n[--Answer:\n(a) Cyberport, University, Central\n(b) 5\n(c) The Next pointer of \"University\": 1; The Prev point of \"Mong Kok\": 5.\n(d) Advantage: Easier to traverse the list in both directions.\nDisadvantage: Requires more memory to store the extra pointer for each node.\n--]",
+      "concepts": [
+        "EC",
+        "EC-integrated",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1199_03A005E",
+      "bank_code": "SSICTC1199_03A005E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": "2025",
+      "stem": "A printer uses a circular queue task to store the printing task. The following are the variables and functions used.\nVariable or function\nDescription\nenq(Q, T)\nInsert element T at the rear of the queue Q if Q is not full.\ndeq(Q)\nReturn and remove the item at the front of queue Q if Q is not empty.\nfront\nAn integer storing the index of the front (head) of the circular queue.\nrear\nAn integer storing the index of the rear (tail) of the circular queue.\nsizeQ\nA constant storing the maximum size of the queue.\nHere is the content of the circular queue, task:\ntask[i]\ni.pdf\nc.docx\n1.bmp\ni\n0\n1\n2\n3\n4\n5\nFor task, sizeQ = 6, front = 2 and rear = 4.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "The printer keeps printing and receiving requests by executing the following instructions:\nenq(task, \"a.docx\")\nenq(task, \"s.xlsx\")\ndeq(task)\nenq(task, \"s.pdf\")\nWrite down the content in the queue after executing the above instructions.(1 mark)\ntask[i]\ni\n0\n1\n2\n3\n4\n5"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Below is the pseudocode of function enq(Q, T).\nLine\nContent\n1\nfunction enq(Q, T)\n2\nif _________(b3)_________ then\n3\noutput \"Operation failed.\"\n4\nelse\n5\ntask[_________(b1)_________]  T\n6\nrear  _________(b2)_________"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Fill in the missing part (b1) in Line 5.(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Fill in the missing part (b2) in Line 6.(1 mark)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "What should be the purpose of Line 2 to 3?(1 mark)"
+        },
+        {
+          "label": "iv",
+          "marks": null,
+          "text": "Ben suggests that the missing part (b3) should be filled with\n(rear + 1) mod sizeQ = front\nWhat is the potential issue of using this condition?(1 mark)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "task[i]\ns.xlsx\ns.pdf\nc.docx\n1.bmp\na.docx\ni\n0\n1\n2\n3\n4\n5\n(b) (i) (rear + 1) mod sizeQ\n(ii) rear + 1\n(iii) They ensure that no new element will be inserted into a full queue.\n(iv) This condition can be true for both a full and an empty queue.\n--]"
+        }
+      ],
+      "text": "A printer uses a circular queue task to store the printing task. The following are the variables and functions used.\nVariable or function\nDescription\nenq(Q, T)\nInsert element T at the rear of the queue Q if Q is not full.\ndeq(Q)\nReturn and remove the item at the front of queue Q if Q is not empty.\nfront\nAn integer storing the index of the front (head) of the circular queue.\nrear\nAn integer storing the index of the rear (tail) of the circular queue.\nsizeQ\nA constant storing the maximum size of the queue.\nHere is the content of the circular queue, task:\ntask[i]\ni.pdf\nc.docx\n1.bmp\ni\n0\n1\n2\n3\n4\n5\nFor task, sizeQ = 6, front = 2 and rear = 4.\n(a) The printer keeps printing and receiving requests by executing the following instructions:\nenq(task, \"a.docx\")\nenq(task, \"s.xlsx\")\ndeq(task)\nenq(task, \"s.pdf\")\nWrite down the content in the queue after executing the above instructions.(1 mark)\ntask[i]\ni\n0\n1\n2\n3\n4\n5\n(b) Below is the pseudocode of function enq(Q, T).\nLine\nContent\n1\nfunction enq(Q, T)\n2\nif _________(b3)_________ then\n3\noutput \"Operation failed.\"\n4\nelse\n5\ntask[_________(b1)_________]  T\n6\nrear  _________(b2)_________\n(i) Fill in the missing part (b1) in Line 5.(1 mark)\n(ii) Fill in the missing part (b2) in Line 6.(1 mark)\n(iii) What should be the purpose of Line 2 to 3?(1 mark)\n(iv) Ben suggests that the missing part (b3) should be filled with\n(rear + 1) mod sizeQ = front\nWhat is the potential issue of using this condition?(1 mark)\n[--Answer:\n(a) task[i]\ns.xlsx\ns.pdf\nc.docx\n1.bmp\na.docx\ni\n0\n1\n2\n3\n4\n5\n(b) (i) (rear + 1) mod sizeQ\n(ii) rear + 1\n(iii) They ensure that no new element will be inserted into a full queue.\n(iv) This condition can be true for both a full and an empty queue.\n--]",
+      "concepts": [
+        "EC",
+        "EC-integrated",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "堆疊",
+        "SQL",
+        "多媒體",
+        "網絡",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1199_03A006E",
+      "bank_code": "SSICTC1199_03A006E",
+      "section_type": "short_answer",
+      "marks": 6.0,
+      "year_tag": "2025",
+      "stem": "A famous game “Wordle” is a word-guessing game in which players have six chances to find a hidden five-letter word using feedback on letter correctness and position. The program uses the following global variables:\nVariable\nDescription\nkey\nA one-dimensional array for storing the correct word of the day\nguess\nA two-dimensional array for storing N guessed words, with each row representing a guess\nresult\nA two-dimensional array for storing the correctness of the corresponding N guessed words for each guess, where:\n•\"T\" – Correct letter in the correct position.\n•\"F\" – Letter not in the word.\n•\"P\" – Correct letter but in the wrong position.\nBelow is an example for N = 4. There are four guesses, numbered 0 to 3. guess[1][2] represents the third letter in the second guess, which is \"c\".\nkey\nguess\nresult\n0\n1\n2\n3\nc\na\nr\nd\n0\n1\n2\n3\n0\nb\ne\nn\nt\n1\nr\na\nc\ne\n2\nc\na\nm\np\n3\nd\ne\na\nd\n0\n1\n2\n3\n0\nF\nF\nF\nF\n1\nP\nT\nP\nF\n2\nT\nT\nF\nF\n3",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Suggest a data type for the elements in the array result.(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "According to the data in guess, what should be stored in result[3]?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "A subprogram check(g) is introduced to check the player’s guess letter by letter and store the result in the array result. Fill in the missing parts of the code.(3 marks)\nLine\nContent\n1\nsubprogram check(g)\n2\nfor i from 0 to 3\n3\nif ________________________ then\n4\nresult[g][i]  \"T\"\n5\nelse\n6\nj  0\n7\nflag  false\n8\nwhile ________________________ and not flag do\n9\nif ________________________ then\n10\nresult[g][i]  \"P\"\n11\nflag  true\n12\nj  j + 1\n13\nif not flag then\n14\nresult[g][i]  \"F\""
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "List one usage of the Boolean variable flag in the above subprogram check(g).(1 mark)\n[--Answer:\n(a) Character.\n(b) [P, F, P, T] / PFPT\n(c) guess[g][i] = key[i]\nj < 4 / j <= 3\nguess[g][i] = key[j]\n(d) Stop the iteration if the letter is found in the array key / store the search result in Line 8 to Line 12. (Any one)\n--]"
+        }
+      ],
+      "text": "A famous game “Wordle” is a word-guessing game in which players have six chances to find a hidden five-letter word using feedback on letter correctness and position. The program uses the following global variables:\nVariable\nDescription\nkey\nA one-dimensional array for storing the correct word of the day\nguess\nA two-dimensional array for storing N guessed words, with each row representing a guess\nresult\nA two-dimensional array for storing the correctness of the corresponding N guessed words for each guess, where:\n•\"T\" – Correct letter in the correct position.\n•\"F\" – Letter not in the word.\n•\"P\" – Correct letter but in the wrong position.\nBelow is an example for N = 4. There are four guesses, numbered 0 to 3. guess[1][2] represents the third letter in the second guess, which is \"c\".\nkey\nguess\nresult\n0\n1\n2\n3\nc\na\nr\nd\n0\n1\n2\n3\n0\nb\ne\nn\nt\n1\nr\na\nc\ne\n2\nc\na\nm\np\n3\nd\ne\na\nd\n0\n1\n2\n3\n0\nF\nF\nF\nF\n1\nP\nT\nP\nF\n2\nT\nT\nF\nF\n3\n(a) Suggest a data type for the elements in the array result.(1 mark)\n(b) According to the data in guess, what should be stored in result[3]?(1 mark)\n(c) A subprogram check(g) is introduced to check the player’s guess letter by letter and store the result in the array result. Fill in the missing parts of the code.(3 marks)\nLine\nContent\n1\nsubprogram check(g)\n2\nfor i from 0 to 3\n3\nif ________________________ then\n4\nresult[g][i]  \"T\"\n5\nelse\n6\nj  0\n7\nflag  false\n8\nwhile ________________________ and not flag do\n9\nif ________________________ then\n10\nresult[g][i]  \"P\"\n11\nflag  true\n12\nj  j + 1\n13\nif not flag then\n14\nresult[g][i]  \"F\"\n(d) List one usage of the Boolean variable flag in the above subprogram check(g).(1 mark)\n[--Answer:\n(a) Character.\n(b) [P, F, P, T] / PFPT\n(c) guess[g][i] = key[i]\nj < 4 / j <= 3\nguess[g][i] = key[j]\n(d) Stop the iteration if the letter is found in the array key / store the search result in Line 8 to Line 12. (Any one)\n--]",
+      "concepts": [
+        "EC",
+        "EC-integrated",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1199_04A001E",
+      "bank_code": "SSICTC1199_04A001E",
+      "section_type": "long_answer",
+      "marks": 13.0,
+      "year_tag": "2025",
+      "stem": "A linked list is used to manage the waiting users who are unable to access the online ticket system for a concert. The following are the sub-programs used to construct and manage the linked list.\nSub-program or variable\nDescription\ninsert(n, k)\nAdds a node with the content k after the n-th node.\ndelete(n)\nDeletes the n-th node.\nsearch(k)\nSearches for content k in the linked list, and returns the node index if k exists; otherwise, returns -1.\nstart\nStores the index of the first node in the linked list. If its value is -1, the list is empty.\nThe linked list uses array: content and pointer. -1 is used to indicate a null pointer. The initial state of the linked list is shown below.\ni\n1\n2\n3\n4\n5\n6\ncontent[i]\nKarl\nKen\nEric\nAlan\nTom\npointer[i]\n2\n5\n4\n-1\n3",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Suppose that the index of the first node on the linked list is 1, write down the content of the nodes in the right order.(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Write down the final content of the nodes after executing the following algorithm.(1 mark)\ninsert(4, \"Ben\")\ndelete(2)\ndelete(3)\ninsert(1, \"Nick\")"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Below is the pseudocode of function search(k). Fill in the missing parts of the code.(3 marks)\nLine\nContent\n1\nsubprogram search(k)\n2\ni  start\n3\ncount  1\n4\nwhile _____________________ do\n5\nif _____________________ then\n6\nreturn count\n7\ni  _____________________\n8\ncount  count + 1\n9\nreturn -1"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "A junior programmer has written an algorithm for delete(n).\nLine\nContent\n1\nSubprogram delete(n)\n2\nif n = 1 then\n3\ncurrent  pointer[start]\n4\nelse\n5\nprev  start\n6\ncurrent  start\n7\nfor k from 2 to n do\n8\nprev  current\n9\ncurrent  pointer[current]\n10\npointer[current]  pointer[prev]\nHowever, there are four mistakes after Line 1. Fill in the following table to show the location of each mistake and its correction. One of the corrections is given.(3 marks)\nLine\nCorrected statement\n3\nstart  pointer[start]"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Jacky, a senior programmer, suggests that we can just simply use an array to manipulate a queue. A sample queue is as follows:\ni\n1\n2\n3\n4\n5\n6\nqueue[i]\nAda\nBen\nCath\nDan\nElla\nThe manager, Chris, wants to discuss whether a linked list or a queue is better for the following operations, explain your answers briefly."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Removing an item.(2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Searching for an item.(2 marks)"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "text": "Crowd control is an important aspect of managing large events, such as concerts. Suggest a sensor that can detect crowd density and flow.(1 mark)\n[--Answer:\n(a) (i) Karl, Ken, Tom, Eric, Alan\n(ii) Karl, Nick, Tom, Ben, Alan\n(b) i != -1\ncontent[i] = k\npointer[i]"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "6: current  pointer[start]\n7: for k from 2 to n-1 do\n10: pointer[prev]  pointer[current]\n(d) (i) Linked list, as it only requires pointer updates instead of shifting elements.\n(ii) Queue, as searching can be done directly by index without traversal from the start.\n(e) Infrared sensor / ultrasonic sensor / CCTV camera / any other reasonable answers.\n--]"
+        }
+      ],
+      "text": "A linked list is used to manage the waiting users who are unable to access the online ticket system for a concert. The following are the sub-programs used to construct and manage the linked list.\nSub-program or variable\nDescription\ninsert(n, k)\nAdds a node with the content k after the n-th node.\ndelete(n)\nDeletes the n-th node.\nsearch(k)\nSearches for content k in the linked list, and returns the node index if k exists; otherwise, returns -1.\nstart\nStores the index of the first node in the linked list. If its value is -1, the list is empty.\nThe linked list uses array: content and pointer. -1 is used to indicate a null pointer. The initial state of the linked list is shown below.\ni\n1\n2\n3\n4\n5\n6\ncontent[i]\nKarl\nKen\nEric\nAlan\nTom\npointer[i]\n2\n5\n4\n-1\n3\n(a) \n(i) Suppose that the index of the first node on the linked list is 1, write down the content of the nodes in the right order.(1 mark)\n(ii) Write down the final content of the nodes after executing the following algorithm.(1 mark)\ninsert(4, \"Ben\")\ndelete(2)\ndelete(3)\ninsert(1, \"Nick\")\n(b) Below is the pseudocode of function search(k). Fill in the missing parts of the code.(3 marks)\nLine\nContent\n1\nsubprogram search(k)\n2\ni  start\n3\ncount  1\n4\nwhile _____________________ do\n5\nif _____________________ then\n6\nreturn count\n7\ni  _____________________\n8\ncount  count + 1\n9\nreturn -1\n(c) A junior programmer has written an algorithm for delete(n).\nLine\nContent\n1\nSubprogram delete(n)\n2\nif n = 1 then\n3\ncurrent  pointer[start]\n4\nelse\n5\nprev  start\n6\ncurrent  start\n7\nfor k from 2 to n do\n8\nprev  current\n9\ncurrent  pointer[current]\n10\npointer[current]  pointer[prev]\nHowever, there are four mistakes after Line 1. Fill in the following table to show the location of each mistake and its correction. One of the corrections is given.(3 marks)\nLine\nCorrected statement\n3\nstart  pointer[start]\n(d) Jacky, a senior programmer, suggests that we can just simply use an array to manipulate a queue. A sample queue is as follows:\ni\n1\n2\n3\n4\n5\n6\nqueue[i]\nAda\nBen\nCath\nDan\nElla\nThe manager, Chris, wants to discuss whether a linked list or a queue is better for the following operations, explain your answers briefly.\n(i) Removing an item.(2 marks)\n(ii) Searching for an item.(2 marks)\n(e) Crowd control is an important aspect of managing large events, such as concerts. Suggest a sensor that can detect crowd density and flow.(1 mark)\n[--Answer:\n(a) (i) Karl, Ken, Tom, Eric, Alan\n(ii) Karl, Nick, Tom, Ben, Alan\n(b) i != -1\ncontent[i] = k\npointer[i]\n(c) 6: current  pointer[start]\n7: for k from 2 to n-1 do\n10: pointer[prev]  pointer[current]\n(d) (i) Linked list, as it only requires pointer updates instead of shifting elements.\n(ii) Queue, as searching can be done directly by index without traversal from the start.\n(e) Infrared sensor / ultrasonic sensor / CCTV camera / any other reasonable answers.\n--]",
+      "concepts": [
+        "EC",
+        "EC-integrated",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "堆疊",
+        "排序",
+        "SQL",
+        "硬件",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTC1199_04A002E",
+      "bank_code": "SSICTC1199_04A002E",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": "2025",
+      "stem": "A smart taxi station is set up to optimise taxi resources. The passengers can input the number of people in their group and the destination. On the other hand, the capacity of the taxi is recorded when the taxis enter the taxi station. The system uses a program with the following global arrays to arrange taxis for passengers.\nArray\nDescription\ntaxi\nAn integer array for storing the capacity of each taxi.\npas\nAn integer array for storing the number of the passengers in a group.\ndest\nA character array for storing the destination of a passenger group.\nBelow are the contents of the arrays.\ni\n0\n1\n2\n3\n4\n5\n6\ntaxi[i]\n5\n5\n6\n4\n4\n5\n4\ni\n0\n1\n2\n3\n4\n5\n6\npas[i]\n2\n3\n1\n4\n2\n1\n3\ndest[i]\n\"A\"\n\"B\"\n\"C\"\n\"B\"\n\"B\"\n\"A\"\n\"A\"\nA subprogram countDest(d) is used to calculate and return the total number of passengers that traveling to the input destination d.\nReferring to the example above, when d = \"A\", the subprogram will return 6, since there are 2, 1 and 3 passengers at i = 0, 5 and 6 respectively.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Referring to the example above, give the return value of countDest(\"B\").(1 mark)\nThe algorithm for countDest(d) is\nsubprogram countDest(d)\ntotal  0\nfor k from 0 to 6\nif _______(a1)_______ then\n_______(a2)_______\nreturn total"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Fill in the missing part (a1).(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Fill in the missing part (a2).(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The system will first serve the first group of passengers and then check if the remaining capacity is enough to take additional groups of passengers traveling to the same destination as the first group.\nA subprogram comTaxi() is used to perform the above operation. Referring to the example above:\n•At i = 0, there are two passengers going to \"A\".\n•After they get on taxi[0], the remaining capacity is 3.\n•The system will then combine this group of passengers with the group at i = 5, reducing the remaining capacity by 1.\n•The group of passenger at i = 6 cannot be combined, since the remaining capacity is less than pas[6].\nIn this case the output of comTaxi() after execution will be:\n\"Combined group(s): [0,5]\"\nThe algorithm for comTaxi() is\nsubprogram comTaxi()\ni  0\ngrp  an empty array\ncap  taxi[i]\nwhile i < length of pas do\nif pas[i] _______(b1)_______ and _______(b2)_______ then\ncap  _______(b3)_______\ninsert i to grp\ni  i + 1\noutput \"Combined group(s):\" + grp\nremove taxi[0]\nremove corresponding groups from pas"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Fill in the missing part (b1).(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Fill in the missing part (b2).(1 mark)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Fill in the missing part (b3).(1 mark)\nAssume that below are the contents of the arrays after the subprogram comTaxi() executed once.\ni\n0\n1\n2\n3\n4\n5\n6\ntaxi[i]\n5\n6\n4\n4\n5\n4\ni\n0\n1\n2\n3\n4\n5\n6\npas[i]\n3\n1\n4\n2\n3\ndest[i]\n\"B\"\n\"C\"\n\"B\"\n\"B\"\n\"A\""
+        },
+        {
+          "label": "iv",
+          "marks": null,
+          "text": "What is the output of comTaxi() if it is executed again?(1 mark)\nSometimes a large group of passengers cannot fit into a single taxi. In such cases, a subprogram splitTaxi() is introduced to split the group across multiple taxis until the whole group is served.\nAssume that below are the contents of the arrays.\ni\n0\n1\n2\n3\n4\n5\n6\ntaxi[i]\n5\n6\n4\n4\n5\n4\ni\n0\n1\n2\n3\n4\n5\n6\npas[i]\n17\n1\n4\n2\n3\ndest[i]\n\"B\"\n\"C\"\n\"B\"\n\"B\"\n\"A\"\nSince pas[0] > taxi[0], splitTaxi() is executed. The output of the subprogram will be: \"Group split into: [5, 6, 4, 2]\"\nThe algorithm for splitTaxi() is\nsubprogram splitTaxi()\ngrp  pas[0]\nsplit  An empty array\ni  0\nwhile grp > 0 and i < length of taxi do\nif grp >= taxi[i] then\ninsert taxi[i] to split\ngrp  _______(c1)_______\nelse\ninsert _______(c2)_______ to split\ngrp  _______(c3)_______\ni  i + 1\nif grp = 0 then\noutput \"Group split into: \" + split\nelse\noutput \"Not enough taxis.\""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Fill in the missing part (c1).(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Fill in the missing part (c2).(1 mark)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Fill in the missing part (c3).(1 mark)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Describe how RFID tags can be used in the system.(1 mark)\n[--Answer:\n(a) (i) 9\n(ii) dest[k] = d\ntotal  total + pas[k]\n(b) (i) <= cap\n(ii) dest[i] = dest[0]\n(iii) cap – pas[i]\n(iv) Combined group(s): [0,3]\n(c) (i) grp – taxi[i]\n(ii) grp\n(iii) 0\n(d) Scan and get taxi information (i.e. capacity) when entering the station.\n--]"
+        }
+      ],
+      "text": "A smart taxi station is set up to optimise taxi resources. The passengers can input the number of people in their group and the destination. On the other hand, the capacity of the taxi is recorded when the taxis enter the taxi station. The system uses a program with the following global arrays to arrange taxis for passengers.\nArray\nDescription\ntaxi\nAn integer array for storing the capacity of each taxi.\npas\nAn integer array for storing the number of the passengers in a group.\ndest\nA character array for storing the destination of a passenger group.\nBelow are the contents of the arrays.\ni\n0\n1\n2\n3\n4\n5\n6\ntaxi[i]\n5\n5\n6\n4\n4\n5\n4\ni\n0\n1\n2\n3\n4\n5\n6\npas[i]\n2\n3\n1\n4\n2\n1\n3\ndest[i]\n\"A\"\n\"B\"\n\"C\"\n\"B\"\n\"B\"\n\"A\"\n\"A\"\nA subprogram countDest(d) is used to calculate and return the total number of passengers that traveling to the input destination d.\nReferring to the example above, when d = \"A\", the subprogram will return 6, since there are 2, 1 and 3 passengers at i = 0, 5 and 6 respectively.\n(a) \n(i) Referring to the example above, give the return value of countDest(\"B\").(1 mark)\nThe algorithm for countDest(d) is\nsubprogram countDest(d)\ntotal  0\nfor k from 0 to 6\nif _______(a1)_______ then\n_______(a2)_______\nreturn total\n(i) Fill in the missing part (a1).(1 mark)\n(ii) Fill in the missing part (a2).(1 mark)\n(b) The system will first serve the first group of passengers and then check if the remaining capacity is enough to take additional groups of passengers traveling to the same destination as the first group.\nA subprogram comTaxi() is used to perform the above operation. Referring to the example above:\n•At i = 0, there are two passengers going to \"A\".\n•After they get on taxi[0], the remaining capacity is 3.\n•The system will then combine this group of passengers with the group at i = 5, reducing the remaining capacity by 1.\n•The group of passenger at i = 6 cannot be combined, since the remaining capacity is less than pas[6].\nIn this case the output of comTaxi() after execution will be:\n\"Combined group(s): [0,5]\"\nThe algorithm for comTaxi() is\nsubprogram comTaxi()\ni  0\ngrp  an empty array\ncap  taxi[i]\nwhile i < length of pas do\nif pas[i] _______(b1)_______ and _______(b2)_______ then\ncap  _______(b3)_______\ninsert i to grp\ni  i + 1\noutput \"Combined group(s):\" + grp\nremove taxi[0]\nremove corresponding groups from pas\n(i) Fill in the missing part (b1).(1 mark)\n(ii) Fill in the missing part (b2).(1 mark)\n(iii) Fill in the missing part (b3).(1 mark)\nAssume that below are the contents of the arrays after the subprogram comTaxi() executed once.\ni\n0\n1\n2\n3\n4\n5\n6\ntaxi[i]\n5\n6\n4\n4\n5\n4\ni\n0\n1\n2\n3\n4\n5\n6\npas[i]\n3\n1\n4\n2\n3\ndest[i]\n\"B\"\n\"C\"\n\"B\"\n\"B\"\n\"A\"\n(iv) What is the output of comTaxi() if it is executed again?(1 mark)\nSometimes a large group of passengers cannot fit into a single taxi. In such cases, a subprogram splitTaxi() is introduced to split the group across multiple taxis until the whole group is served.\nAssume that below are the contents of the arrays.\ni\n0\n1\n2\n3\n4\n5\n6\ntaxi[i]\n5\n6\n4\n4\n5\n4\ni\n0\n1\n2\n3\n4\n5\n6\npas[i]\n17\n1\n4\n2\n3\ndest[i]\n\"B\"\n\"C\"\n\"B\"\n\"B\"\n\"A\"\nSince pas[0] > taxi[0], splitTaxi() is executed. The output of the subprogram will be: \"Group split into: [5, 6, 4, 2]\"\nThe algorithm for splitTaxi() is\nsubprogram splitTaxi()\ngrp  pas[0]\nsplit  An empty array\ni  0\nwhile grp > 0 and i < length of taxi do\nif grp >= taxi[i] then\ninsert taxi[i] to split\ngrp  _______(c1)_______\nelse\ninsert _______(c2)_______ to split\ngrp  _______(c3)_______\ni  i + 1\nif grp = 0 then\noutput \"Group split into: \" + split\nelse\noutput \"Not enough taxis.\"\n(i) Fill in the missing part (c1).(1 mark)\n(ii) Fill in the missing part (c2).(1 mark)\n(iii) Fill in the missing part (c3).(1 mark)\n(d) Describe how RFID tags can be used in the system.(1 mark)\n[--Answer:\n(a) (i) 9\n(ii) dest[k] = d\ntotal  total + pas[k]\n(b) (i) <= cap\n(ii) dest[i] = dest[0]\n(iii) cap – pas[i]\n(iv) Combined group(s): [0,3]\n(c) (i) grp – taxi[i]\n(ii) grp\n(iii) 0\n(d) Scan and get taxi information (i.e. capacity) when entering the station.\n--]",
+      "concepts": [
+        "EC",
+        "EC-integrated",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "SQL",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

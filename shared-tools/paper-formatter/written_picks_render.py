@@ -20,6 +20,7 @@ _SUBPART_LINE = re.compile(
     r"^\s*\(([a-z]{1,2}|[ivx]{1,4})\)\s*(.*)$",
     re.IGNORECASE,
 )
+_MARKS_SUFFIX = re.compile(r"\t\(\s*\d+\s*分\s*\)\s*$")
 _SQL_LINE = re.compile(
     r"^\s*(SELECT|INSERT|UPDATE|DELETE|CREATE|ALTER|DROP|FROM|WHERE|UNION|BEGIN|"
     r"COMMIT|ROLLBACK|MINUS|JOIN|GROUP|HAVING|SET|VALUES|INTO)\b",
@@ -42,6 +43,15 @@ def _subpart_depth(label: str) -> int:
     return 1
 
 
+def _strip_marks_suffix(text: str) -> tuple[str, int | None]:
+    m = _MARKS_SUFFIX.search(text)
+    if not m:
+        return text.strip(), None
+    body = text[: m.start()].strip()
+    mk = re.search(r"(\d+)", m.group(0))
+    return body, int(mk.group(1)) if mk else None
+
+
 def _format_body_line(line: str) -> str:
     s = line.strip()
     if not s or _IMAGE_DESC.search(s):
@@ -49,15 +59,15 @@ def _format_body_line(line: str) -> str:
     m = _SUBPART_LINE.match(s)
     if m:
         label, rest = m.group(1), (m.group(2) or "").strip()
-        if not rest:
+        body, marks = _strip_marks_suffix(rest)
+        if not body:
             return ""
-        return subpart(label, rest, depth=_subpart_depth(label))
+        return subpart(label, body, marks, depth=_subpart_depth(label))
     if _SQL_LINE.match(s):
         depth = 3 if s.startswith("    ") else 2
         return sql_line(s.strip(), depth=depth)
     if _CODE_HINT.search(s) and not s.endswith("？"):
-        depth = 2 if not s[0].isdigit() else 2
-        return code_line(s.strip(), depth=depth)
+        return code_line(s.strip(), depth=2)
     if s.endswith("？") or s.endswith("?"):
         return stem(s, depth=1)
     return s
@@ -74,6 +84,22 @@ def pick_text_to_content_lines(text: str) -> list[str]:
     return out
 
 
+_SQL_SKELETON = re.compile(
+    r"^\s*(CREATE\s+TABLE|PRIMARY\s+KEY|NOT\s+NULL|REFERENCES|FOREIGN\s+KEY|"
+    r"CHAR\(|VARCHAR|INTEGER|DATE|\)|MID\s|BID\s|TITLE\s|LOANDATE)",
+    re.I,
+)
+
+
+def _is_sql_skeleton_line(s: str) -> bool:
+    t = s.strip()
+    if not t:
+        return False
+    if _SQL_SKELETON.search(t):
+        return True
+    return bool(_SQL_LINE.match(t))
+
+
 def _is_fixed_skeleton_line(s: str) -> bool:
     """Lines that must not be overwritten (blanks, section headers, padding)."""
     if s in (ANSWER_BLANK, ANSWER_BLANK_LONG):
@@ -82,35 +108,40 @@ def _is_fixed_skeleton_line(s: str) -> bool:
         return True
     if "部 (" in s or "分)：" in s or "分）：" in s:
         return True
+    if _is_sql_skeleton_line(s):
+        return True
     return False
 
 
-def _is_replaceable_skeleton_line(s: str) -> bool:
-    return not _is_fixed_skeleton_line(s)
-
-
 def _fit_content_to_skeleton(skeleton: list[str], content: list[str]) -> list[str]:
-    """Map content lines onto replaceable skeleton slots; preserve blanks/headers."""
+    """Map content onto replaceable skeleton slots only; keep answer blanks in place."""
     result = list(skeleton)
-    slots = [i for i, s in enumerate(skeleton) if _is_replaceable_skeleton_line(s)]
+    slots = [i for i, s in enumerate(skeleton) if not _is_fixed_skeleton_line(s)]
     if not slots:
         return result
 
     if len(content) > len(slots):
-        # Merge overflow into last content lines (keep last lines which are often subparts)
         merged = content[: len(slots) - 1]
         merged.append(" ".join(content[len(slots) - 1 :]))
         content = merged
     elif len(content) < len(slots):
-        content = content + [""] * (len(slots) - len(content))
+        for idx, line in zip(slots, content, strict=False):
+            if line.strip():
+                result[idx] = line
+        return result
 
     for idx, line in zip(slots, content, strict=False):
         result[idx] = line
     return result
 
 
-def layout_slot_from_pick(pick: dict, skeleton: list[str]) -> list[str]:
+def layout_slot_from_pick(pick: dict, skeleton: list[str], *, slot_id: str = "") -> list[str]:
+    from written_layout_expand import expand_pick_text_to_layout_lines
+
     text = pick.get("text") or pick.get("scenario_line") or ""
+    expanded = expand_pick_text_to_layout_lines(text, slot_id=slot_id)
+    if expanded:
+        return _fit_content_to_skeleton(skeleton, expanded)
     content = pick_text_to_content_lines(text)
     return _fit_content_to_skeleton(skeleton, content)
 
@@ -141,7 +172,7 @@ def build_part_from_picks(
         if not pick:
             continue
         skel = _slot_skeleton(default_lines, slot_id)
-        merged = layout_slot_from_pick(pick, skel)
+        merged = layout_slot_from_pick(pick, skel, slot_id=slot_id)
         off = start - base
         for i, line in enumerate(merged):
             out[off + i] = line

@@ -1,0 +1,399 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecC3_en_Advanced Control Structures.docx",
+    "slug": "ElecC3_en",
+    "title": "Advanced Control Structures",
+    "title_zh": null,
+    "title_en": "Advanced Control Structures",
+    "language": "en",
+    "family": "ElecC",
+    "chapter": 3,
+    "integrated": false,
+    "topic_code": "EC03",
+    "curriculum_unit": "EC",
+    "ca_unit": "EC",
+    "f5_exam_scope": "elective_sd",
+    "extracted_at": "2026-05-24T10:37:18.190053+00:00",
+    "item_count": 7,
+    "section_counts": {
+      "short_answer": 5,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTC1103_03A001E",
+      "bank_code": "SSICTC1103_03A001E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "Sam is writing some algorithms for printing specific patterns.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "What is the output of this algorithm?(1 mark)\nfor i from 0 to 4\nfor j from 0 to 3-i\nOutput \" \"\nfor k from 0 to i*2\nOutput \"*\"\nGo to the next line"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write an algorithm for Sam to print the following pattern.(2 marks)\n*********\n*******\n*****\n***\n*\nfor i from 0 to ___\nfor j from ___ to ___\nOutput \" \"\nfor k from ___ to ___\nOutput \"*\"\nGo to the next line\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "*\n***\n*****\n*******\n*********"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "4\n0 to i-1\ni to 8-i\n--]"
+        }
+      ],
+      "text": "Sam is writing some algorithms for printing specific patterns.\n(a) What is the output of this algorithm?(1 mark)\nfor i from 0 to 4\nfor j from 0 to 3-i\nOutput \" \"\nfor k from 0 to i*2\nOutput \"*\"\nGo to the next line\n(b) Write an algorithm for Sam to print the following pattern.(2 marks)\n*********\n*******\n*****\n***\n*\nfor i from 0 to ___\nfor j from ___ to ___\nOutput \" \"\nfor k from ___ to ___\nOutput \"*\"\nGo to the next line\n[--Answer:\n(a) *\n***\n*****\n*******\n*********\n(b) 4\n0 to i-1\ni to 8-i\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch3",
+        "循環",
+        "算法",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1103_03A002E",
+      "bank_code": "SSICTC1103_03A002E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Jimmy uses a 2D array score to store the scores of four S6 classes in the Athletic Meet. score[i,j] stores the score earned by a class in each competition. Given that the champion in a competition gets 10 scores, the first-runner up gets 7 scores and the second-runner up gets 5 scores. For example, 6B is the first runner-up in the 800m run and gets 7 scores.\n100m run\n800m run\nLong jump\nHigh jump\nj\ni\n0\n1\n2\n3\n6A\n0\n10\n10\n5\n0\n6B\n1\n7\n7\n10\n5\n6C\n2\n5\n5\n0\n7\n6D\n3\n0\n0\n7\n10",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "In how many competitions did 6A get the champion?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "At the end of the Athletic Meet, the scores earned by each class in all the competitions are added up to find the overall champion. Complete the algorithm to find the overall score of each class and output the class that is the overall champion.(3 marks)\nmax_score  -1\nfor i from 0 to 3\noverall_score  0\nfor j from 0 to 3\noverall_score  overall_score + score[i,j]\nif _________________________ then\nchampion  _______________\nmax_score  _______________\nOutput \"The champion is Class\", champion\n[--Answer:\n(a) Two"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "overall_score > max_score\ni\noverall_score\n--]"
+        }
+      ],
+      "text": "Jimmy uses a 2D array score to store the scores of four S6 classes in the Athletic Meet. score[i,j] stores the score earned by a class in each competition. Given that the champion in a competition gets 10 scores, the first-runner up gets 7 scores and the second-runner up gets 5 scores. For example, 6B is the first runner-up in the 800m run and gets 7 scores.\n100m run\n800m run\nLong jump\nHigh jump\nj\ni\n0\n1\n2\n3\n6A\n0\n10\n10\n5\n0\n6B\n1\n7\n7\n10\n5\n6C\n2\n5\n5\n0\n7\n6D\n3\n0\n0\n7\n10\n(a) In how many competitions did 6A get the champion?(1 mark)\n(b) At the end of the Athletic Meet, the scores earned by each class in all the competitions are added up to find the overall champion. Complete the algorithm to find the overall score of each class and output the class that is the overall champion.(3 marks)\nmax_score  -1\nfor i from 0 to 3\noverall_score  0\nfor j from 0 to 3\noverall_score  overall_score + score[i,j]\nif _________________________ then\nchampion  _______________\nmax_score  _______________\nOutput \"The champion is Class\", champion\n[--Answer:\n(a) Two\n(b) overall_score > max_score\ni\noverall_score\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch3",
+        "循環",
+        "列表",
+        "算法",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1103_03B003E",
+      "bank_code": "SSICTC1103_03B003E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "The technician of ABC Library, Mary, is designing a Python program for the library catalogue system. The list books stores the titles of all the books in the library. The first four items in books are shown below as an example:\nbooks\n\"Little Red Riding Hood\"\n\"Three Little Pigs\"\n\"Cinderella\"\n\"Sleeping Beauty\"\nindex\n0\n1\n2\n3\nMary writes the following Python program:\nLine  Python\n1    substr = input(\"Enter keywords: \")\n2    for i in range(0, len(books)):\n3        title = books[i]\n4        for j in range(0, len(title)):\n5            if title[j] == substr[0]:\n6                if len(substr) == 1:\n7                    print(title)\n8                else:\n9                    for k in range(0, len(substr)):\n10                       if title[j+k] == substr[k]:\n11                           if k == len(substr) - 1:\n12                               print(title)",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Referring only to the four list items stated above, what is the output of this program if the user inputs the word “Little”?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the purpose of this program?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "When the input is “Hoods”, an error occurs on Line 10. Explain why.(1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Fill in the missing part in line 10 to fix the error.(1 mark)\nLine  Python\n9    for k in range(0, len(substr)):\n10       if ____________________:\n11           if title[j+k] == substr[k]:\n12               if k == len(substr) - 1:\n13                   print(title)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Little Red Riding Hood\nThree Little Pigs\n(b) Output all the book titles that contain the input string.\n(c)(i) Index is out of range of the string title.\n(c)(ii) j+k <= len(title) - 1\n--]"
+        }
+      ],
+      "text": "The technician of ABC Library, Mary, is designing a Python program for the library catalogue system. The list books stores the titles of all the books in the library. The first four items in books are shown below as an example:\nbooks\n\"Little Red Riding Hood\"\n\"Three Little Pigs\"\n\"Cinderella\"\n\"Sleeping Beauty\"\nindex\n0\n1\n2\n3\nMary writes the following Python program:\nLine  Python\n1    substr = input(\"Enter keywords: \")\n2    for i in range(0, len(books)):\n3        title = books[i]\n4        for j in range(0, len(title)):\n5            if title[j] == substr[0]:\n6                if len(substr) == 1:\n7                    print(title)\n8                else:\n9                    for k in range(0, len(substr)):\n10                       if title[j+k] == substr[k]:\n11                           if k == len(substr) - 1:\n12                               print(title)\n(a) Referring only to the four list items stated above, what is the output of this program if the user inputs the word “Little”?(1 mark)\n(b) What is the purpose of this program?(1 mark)\n(c) \n(i) When the input is “Hoods”, an error occurs on Line 10. Explain why.(1 mark)\n(ii) Fill in the missing part in line 10 to fix the error.(1 mark)\nLine  Python\n9    for k in range(0, len(substr)):\n10       if ____________________:\n11           if title[j+k] == substr[k]:\n12               if k == len(substr) - 1:\n13                   print(title)\n[--Answer:\n(a) Little Red Riding Hood\nThree Little Pigs\n(b) Output all the book titles that contain the input string.\n(c)(i) Index is out of range of the string title.\n(c)(ii) j+k <= len(title) - 1\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch3",
+        "Python",
+        "循環",
+        "列表",
+        "硬件",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1103_03B004E",
+      "bank_code": "SSICTC1103_03B004E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Peter is studying the transport network of a country. He selects five main cities (city A to E) of this country and checks if there is a highway connecting them to one another. The results are stored in a two-dimensional array named highway. The value in highway[i,j] indicates the existence of a highway between the city on i and the city on j: “T” means there is a highway and “F” means there is not. For example, city A and city B are connected by a highway, whereas city A and city C are not.\nA\nB\nC\nD\nE\nj\ni\n1\n2\n3\n4\n5\nA\n1\nF\nT\nF\nT\nT\nB\n2\nT\nF\nT\nT\nT\nC\n3\nF\nT\nF\nT\nF\nD\n4\nT\nT\nT\nF\nF\nE\n5\nT\nT\nF\nF\nF",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "What is the relationship between highway[1,2] and highway[2,1]?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Peter thinks that he can use 10 items in highway to store all the information about the transport network. Do you agree? Explain your answer.(2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Peter wants to find out which city is the most accessible. Write an algorithm to count the number of highways connecting each city and output the number for the city that is connected by the greatest number of highways.(2 marks)\ngreatest  -1\nfor i from 1 to 5\nhighways  0\nfor j from 1 to 5\nif highway[i,j] = \"T\" then\nhighways  highways + 1\nif ____________________ then\nmost_accessible_city  i\nOutput most_accessible_city\n[--Answer: Refer to DSE 2014 2D Q2\n(a) They store the same value.\n(b) Yes. The value must be “F” when i equals j. Moreover, the value in highway[i,j] and that in highway[j,i] are the same, so storing either is enough. Thus, the required number of items is (25-5)/2 = 10."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "highways > greatest\ngreatest  highways\n--]"
+        }
+      ],
+      "text": "Peter is studying the transport network of a country. He selects five main cities (city A to E) of this country and checks if there is a highway connecting them to one another. The results are stored in a two-dimensional array named highway. The value in highway[i,j] indicates the existence of a highway between the city on i and the city on j: “T” means there is a highway and “F” means there is not. For example, city A and city B are connected by a highway, whereas city A and city C are not.\nA\nB\nC\nD\nE\nj\ni\n1\n2\n3\n4\n5\nA\n1\nF\nT\nF\nT\nT\nB\n2\nT\nF\nT\nT\nT\nC\n3\nF\nT\nF\nT\nF\nD\n4\nT\nT\nT\nF\nF\nE\n5\nT\nT\nF\nF\nF\n(a) What is the relationship between highway[1,2] and highway[2,1]?(1 mark)\n(b) Peter thinks that he can use 10 items in highway to store all the information about the transport network. Do you agree? Explain your answer.(2 marks)\n(c) Peter wants to find out which city is the most accessible. Write an algorithm to count the number of highways connecting each city and output the number for the city that is connected by the greatest number of highways.(2 marks)\ngreatest  -1\nfor i from 1 to 5\nhighways  0\nfor j from 1 to 5\nif highway[i,j] = \"T\" then\nhighways  highways + 1\nif ____________________ then\nmost_accessible_city  i\nOutput most_accessible_city\n[--Answer: Refer to DSE 2014 2D Q2\n(a) They store the same value.\n(b) Yes. The value must be “F” when i equals j. Moreover, the value in highway[i,j] and that in highway[j,i] are the same, so storing either is enough. Thus, the required number of items is (25-5)/2 = 10.\n(c) highways > greatest\ngreatest  highways\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch3",
+        "循環",
+        "列表",
+        "算法",
+        "SQL",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1103_03B005E",
+      "bank_code": "SSICTC1103_03B005E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "Ms Chan is a technician at a theatre. There are 64 lights, all of which are controlled by a computer, in the theatre. An 8 × 8 two-dimensional array light is created to represent the lights in the theatre. “1” is stored at light[i,j] if the light is turned on; otherwise, “0” is stored. All items in light store “0” initially.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Ms Chan writes an algorithm for the computer to turn on the lights at certain positions. Fill in the items of light after the following algorithm has been executed.(1 mark)\nLine  Pseudocode\n1    for i from 1 to 8\n2        for j from 1 to 8\n3            if i % 2 != 0 and j % 2 != 0 then\n4                light[i,j]  1\nlight\nj\ni\n1\n2\n3\n4\n5\n6\n7\n8\n1\n2\n3\n4\n5\n6\n7\n8"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the function of line 3?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "If Ms Chan wants to turn on the lights as follows:\nlight\nj\ni\n1\n2\n3\n4\n5\n6\n7\n8\n1\n0\n1\n0\n1\n0\n1\n0\n1\n2\n0\n0\n0\n0\n0\n0\n0\n0\n3\n0\n1\n0\n1\n0\n1\n0\n1\n4\n0\n0\n0\n0\n0\n0\n0\n0\n5\n0\n1\n0\n1\n0\n1\n0\n1\n6\n0\n0\n0\n0\n0\n0\n0\n0\n7\n0\n1\n0\n1\n0\n1\n0\n1\n8\n0\n0\n0\n0\n0\n0\n0\n0\nHow should the above algorithm be modified?(1 mark)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "light\nj\ni\n1\n2\n3\n4\n5\n6\n7\n8\n1\n1\n0\n1\n0\n1\n0\n1\n0\n2\n0\n0\n0\n0\n0\n0\n0\n0\n3\n1\n0\n1\n0\n1\n0\n1\n0\n4\n0\n0\n0\n0\n0\n0\n0\n0\n5\n1\n0\n1\n0\n1\n0\n1\n0\n6\n0\n0\n0\n0\n0\n0\n0\n0\n7\n1\n0\n1\n0\n1\n0\n1\n0\n8\n0\n0\n0\n0\n0\n0\n0\n0\n(b) Let the computer skip the even number rows and even number columns in the array because none of the lights on these positions need to be turned on.\n(c) Change line 3 to “if i % 2 != 0 and j % 2 == 0 then”.\n--]"
+        }
+      ],
+      "text": "Ms Chan is a technician at a theatre. There are 64 lights, all of which are controlled by a computer, in the theatre. An 8 × 8 two-dimensional array light is created to represent the lights in the theatre. “1” is stored at light[i,j] if the light is turned on; otherwise, “0” is stored. All items in light store “0” initially.\n(a) Ms Chan writes an algorithm for the computer to turn on the lights at certain positions. Fill in the items of light after the following algorithm has been executed.(1 mark)\nLine  Pseudocode\n1    for i from 1 to 8\n2        for j from 1 to 8\n3            if i % 2 != 0 and j % 2 != 0 then\n4                light[i,j]  1\nlight\nj\ni\n1\n2\n3\n4\n5\n6\n7\n8\n1\n2\n3\n4\n5\n6\n7\n8\n(b) What is the function of line 3?(1 mark)\n(c) If Ms Chan wants to turn on the lights as follows:\nlight\nj\ni\n1\n2\n3\n4\n5\n6\n7\n8\n1\n0\n1\n0\n1\n0\n1\n0\n1\n2\n0\n0\n0\n0\n0\n0\n0\n0\n3\n0\n1\n0\n1\n0\n1\n0\n1\n4\n0\n0\n0\n0\n0\n0\n0\n0\n5\n0\n1\n0\n1\n0\n1\n0\n1\n6\n0\n0\n0\n0\n0\n0\n0\n0\n7\n0\n1\n0\n1\n0\n1\n0\n1\n8\n0\n0\n0\n0\n0\n0\n0\n0\nHow should the above algorithm be modified?(1 mark)\n[--Answer:\n(a) light\nj\ni\n1\n2\n3\n4\n5\n6\n7\n8\n1\n1\n0\n1\n0\n1\n0\n1\n0\n2\n0\n0\n0\n0\n0\n0\n0\n0\n3\n1\n0\n1\n0\n1\n0\n1\n0\n4\n0\n0\n0\n0\n0\n0\n0\n0\n5\n1\n0\n1\n0\n1\n0\n1\n0\n6\n0\n0\n0\n0\n0\n0\n0\n0\n7\n1\n0\n1\n0\n1\n0\n1\n0\n8\n0\n0\n0\n0\n0\n0\n0\n0\n(b) Let the computer skip the even number rows and even number columns in the array because none of the lights on these positions need to be turned on.\n(c) Change line 3 to “if i % 2 != 0 and j % 2 == 0 then”.\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch3",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "硬件",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTC1103_04B001E",
+      "bank_code": "SSICTC1103_04B001E",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": null,
+      "stem": "Mr. Chan is the teacher of a class with eight students. The attendance records of students are stored in an array attendance, with “1” indicating presence and “0” indicating absence. He is writing an algorithm to find the number of absentees in a lesson.\nattendance\n1\n1\n1\n1\n1\n1\n0\n1\nindex\n1\n2\n3\n4\n5\n6\n7\n8",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Complete the algorithm below to find the number of absentees in attendance.(2 marks)\ncount  0\nfor i from ___ to ___\nif _________________ then\ncount  count + 1\nOutput count"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "There are 5 lessons in a course. Mr. Chan modified the data structure such that it can store the attendance records of the 5 lessons. The attendance records of students are stored in a two-dimensional array record, in the format of record[L,S], where L is the lesson number of a lesson and S is the class number of a student. Same as attendance, “1” and “0” are used to represent presence and absence respectively.\nrecord\nS\nL\n1\n2\n3\n4\n5\n6\n7\n8\n1\n1\n1\n1\n1\n1\n1\n0\n1\n2\n1\n0\n1\n1\n1\n0\n1\n1\n3\n1\n1\n1\n1\n1\n1\n1\n1\n4\n1\n1\n1\n1\n0\n1\n1\n1\n5\n1\n1\n0\n1\n1\n1\n0\n1"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Mr. Chan adds a one-dimensional array all_present to record the overall attendance by Boolean values. For example, if no one was absent in lesson 1, all_present[1] stores “True”; otherwise, it stores “False”. The overall attendance in lesson 2 is stored in all_present[2], and so on. Suppose that initially all the items in array all_present are “True”, complete the algorithm for updating array all_present.(4 marks)\nfor i from ___ to ___\nj  1\nwhile ____________________ and all_present[i] = True\nif ____________________ then\nj  j + 1\nOutput all_present"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the purpose of adding the condition “all_present[i] = True” in line 3?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Design an algorithm that allows Mr Chan to find the attendance percentage of a student by inputting his/her class number.(4 marks)\nInput class_num\npresent  0\nattendance_percentage  0\nfor i from ___ to ___\nif ________________________ then\npresent  _______________\nattendance_percentage  ____________________\nOutput attendance_percentage, \"%\"\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "1 to 8\nattendance[i] = 0\n(b)(i)\n1 to 5\nj <= 8\nrecord[i,j] = 0\nall_present[i]  False\n(b)(ii) It can improve the efficiency of the algorithm, because the inner loop body stops once an absent student has been found (i.e. all_present[i] = False)."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "1 to 5\nrecord[i,class_num] = 1\npresent + 1\n(present / 5) * 100\n--]"
+        }
+      ],
+      "text": "Mr. Chan is the teacher of a class with eight students. The attendance records of students are stored in an array attendance, with “1” indicating presence and “0” indicating absence. He is writing an algorithm to find the number of absentees in a lesson.\nattendance\n1\n1\n1\n1\n1\n1\n0\n1\nindex\n1\n2\n3\n4\n5\n6\n7\n8\n(a) Complete the algorithm below to find the number of absentees in attendance.(2 marks)\ncount  0\nfor i from ___ to ___\nif _________________ then\ncount  count + 1\nOutput count\n(b) There are 5 lessons in a course. Mr. Chan modified the data structure such that it can store the attendance records of the 5 lessons. The attendance records of students are stored in a two-dimensional array record, in the format of record[L,S], where L is the lesson number of a lesson and S is the class number of a student. Same as attendance, “1” and “0” are used to represent presence and absence respectively.\nrecord\nS\nL\n1\n2\n3\n4\n5\n6\n7\n8\n1\n1\n1\n1\n1\n1\n1\n0\n1\n2\n1\n0\n1\n1\n1\n0\n1\n1\n3\n1\n1\n1\n1\n1\n1\n1\n1\n4\n1\n1\n1\n1\n0\n1\n1\n1\n5\n1\n1\n0\n1\n1\n1\n0\n1\n(i) Mr. Chan adds a one-dimensional array all_present to record the overall attendance by Boolean values. For example, if no one was absent in lesson 1, all_present[1] stores “True”; otherwise, it stores “False”. The overall attendance in lesson 2 is stored in all_present[2], and so on. Suppose that initially all the items in array all_present are “True”, complete the algorithm for updating array all_present.(4 marks)\nfor i from ___ to ___\nj  1\nwhile ____________________ and all_present[i] = True\nif ____________________ then\nj  j + 1\nOutput all_present\n(ii) What is the purpose of adding the condition “all_present[i] = True” in line 3?(1 mark)\n(c) Design an algorithm that allows Mr Chan to find the attendance percentage of a student by inputting his/her class number.(4 marks)\nInput class_num\npresent  0\nattendance_percentage  0\nfor i from ___ to ___\nif ________________________ then\npresent  _______________\nattendance_percentage  ____________________\nOutput attendance_percentage, \"%\"\n[--Answer:\n(a) 1 to 8\nattendance[i] = 0\n(b)(i)\n1 to 5\nj <= 8\nrecord[i,j] = 0\nall_present[i]  False\n(b)(ii) It can improve the efficiency of the algorithm, because the inner loop body stops once an absent student has been found (i.e. all_present[i] = False).\n(c) 1 to 5\nrecord[i,class_num] = 1\npresent + 1\n(present / 5) * 100\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch3",
+        "循環",
+        "列表",
+        "算法",
+        "硬件",
+        "資訊處理",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTC1103_04C002E",
+      "bank_code": "SSICTC1103_04C002E",
+      "section_type": "long_answer",
+      "marks": 17.0,
+      "year_tag": null,
+      "stem": "Pattern lock is a common type of screen lock on smartphones. To set a lock pattern, the user draws a shape on a screen consisting of nine nodes. The shape should connect two or more nodes and each node should be used once only. Moreover, the shape can connect two nodes vertically, horizontally or diagonally, but it should never jump a node.\nAgatha is a developer for a smartphone brand. A 3 × 3 two-dimensional array pattern is used to represent the screen and store the lock pattern chosen by the user. Each array item represents a node and is defaulted to 0 initially. The value in pattern[imp] indicates that the corresponding node is the nth node in the pattern. If the user chooses the above lock pattern, the following values will be stored in array pattern:\npattern\nj\ni\n1\n2\n3\n1\n1\n2\n3\n2\n6\n0\n4\n3\n7\n5\n0\nSome users prefer using a default lock pattern instead of creating their own pattern. Therefore, Agatha writes some programs to generate a lock pattern automatically for these users. A default pattern is shown below:\npattern\nj\ni\n1\n2\n3\n1\n1\n8\n7\n2\n2\n9\n6\n3\n3\n4\n5\nThe following is the pseudocode for the program to generate the above lock pattern.\nLine  Pseudocode\n1    Initialise all items in pattern to 0\n2    R  1\n3    C  1\n4    DR  1\n5    DC  0\n6    dir  2\n7    for i from 1 to 9\n8        pattern[R,C]  i\n9        if R+DR < 1 or R+DR > 3\nor C+DC < 1 or C+DC > 3\nor pattern[R+DR,C+DC] != 0 then\n10           dir  (dir - 1) % 4\n11           if dir = 0 then\n12               DR  -1\n13               DC  0\n14           else if dir = 1 then\n15               DR  0\n16               DC  1\n17           else if dir = 2 then\n18               DR  1\n19               DC  0\n20           else\n21               DR  0\n22               DC  -1\n23   R  R + DR\n24   C  C + DC",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Modify one line in the above pseudocode such that the following pattern can be generated.(1 mark)\npattern\nj\ni\n1\n2\n3\n1\n9\n2\n3\n2\n8\n1\n4\n3\n7\n6\n5\nLine _____: ______________________________________________________________________"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Assume that the modification suggested in (a) is not made on the pseudocode."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "If the following modifications are made to the above pseudocode, what will be the values stored in pattern after the program has been executed?(2 marks)\nLine 4    DR  0\nLine 5    DC  1\nLine 6    dir  1\nLine 10   dir  (dir + 1) % 4\npattern\nj\ni\n1\n2\n3\n1\n2\n3"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "What is the purpose of the variable dir?(1 mark)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "In addition to the above modifications, modify two more lines in the pseudocode such that the following pattern can be generated.(2 marks)\npattern\nj\ni\n1\n2\n3\n1\n5\n6\n7\n2\n4\n9\n8\n3\n3\n2\n1\nLine _____: __________________________________________________________________\nLine _____: __________________________________________________________________"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Agatha rewrites the above program to increase the variety of lock patterns. The user can input a number from 2 to 9, and the program will generate a pattern of that length by assigning numbers spirally in an anti-clockwise direction to pattern[i,j]. For example, if the user inputs 5, the pattern will be:\npattern\nj\ni\n1\n2\n3\n1\n1\n0\n0\n2\n2\n0\n0\n3\n3\n4\n5"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "If the user inputs 7, what will be the pattern generated by the program?(2 marks)\npattern\nj\ni\n1\n2\n3\n1\n2\n3"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Agatha thinks that the program should validate the user input at the beginning. If the number inputted is invalid, the user will be asked to input again. Write the pseudocode for implementing this function, using a variable num to store the user input.(3 marks)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Modify only one line in the original pseudocode such that the program can generate a pattern of the length specified by the user.(1 marks)\nLine _____: ______________________________________________________________"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Agatha writes another program to check whether the user has inputted the correct pattern when unlocking the phone. The shape drawn by the user is stored in a two-dimensional array drawn, whose items correspond to those in pattern. The program then checks whether this shape matches the one stored in pattern. Complete the following pseudocode for the program.(5 marks)\ncorrect  __________\ni  1\nwhile i <= 3 and correct = True\nj  1\nwhile j <= 3 and correct = True\nif __________________________ then\ncorrect  __________\nif correct then\nOutput \"Unlocked\"\nelse\nOutput \"Wrong input\"\n[--Answer: Refer to DSE 2022 2D Q4\n(a) Line 7: for i from 9 down to 1\n(b)(i)\npattern\nj\ni\n1\n2\n3\n1\n1\n2\n3\n2\n8\n9\n4\n3\n7\n6\n5\n(b)(ii) The direction in which the pattern connects the next node\n(b)(iii)\nLine 8: pattern[4-R,4-C]  i\nLine 9: if R + DR < 1 or R + DR > 3 or C + DC < 1 or C + DC > 3 or pattern[4-R-DR][4-C-DC] != 0 then\n(c)(i)\npattern\nj\ni\n1\n2\n3\n1\n1\n0\n7\n2\n2\n0\n6\n3\n3\n4\n5\n(c)(ii)\nInput num\nwhile num < 2 or num > 9\nInput num\n(c)(iii) Line 7: for i from 1 to num"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "True\npattern[i,j] != drawn[i,j]\nFalse\nj  j + 1\ni  i + 1\n--]"
+        }
+      ],
+      "text": "Pattern lock is a common type of screen lock on smartphones. To set a lock pattern, the user draws a shape on a screen consisting of nine nodes. The shape should connect two or more nodes and each node should be used once only. Moreover, the shape can connect two nodes vertically, horizontally or diagonally, but it should never jump a node.\nAgatha is a developer for a smartphone brand. A 3 × 3 two-dimensional array pattern is used to represent the screen and store the lock pattern chosen by the user. Each array item represents a node and is defaulted to 0 initially. The value in pattern[imp] indicates that the corresponding node is the nth node in the pattern. If the user chooses the above lock pattern, the following values will be stored in array pattern:\npattern\nj\ni\n1\n2\n3\n1\n1\n2\n3\n2\n6\n0\n4\n3\n7\n5\n0\nSome users prefer using a default lock pattern instead of creating their own pattern. Therefore, Agatha writes some programs to generate a lock pattern automatically for these users. A default pattern is shown below:\npattern\nj\ni\n1\n2\n3\n1\n1\n8\n7\n2\n2\n9\n6\n3\n3\n4\n5\nThe following is the pseudocode for the program to generate the above lock pattern.\nLine  Pseudocode\n1    Initialise all items in pattern to 0\n2    R  1\n3    C  1\n4    DR  1\n5    DC  0\n6    dir  2\n7    for i from 1 to 9\n8        pattern[R,C]  i\n9        if R+DR < 1 or R+DR > 3\nor C+DC < 1 or C+DC > 3\nor pattern[R+DR,C+DC] != 0 then\n10           dir  (dir - 1) % 4\n11           if dir = 0 then\n12               DR  -1\n13               DC  0\n14           else if dir = 1 then\n15               DR  0\n16               DC  1\n17           else if dir = 2 then\n18               DR  1\n19               DC  0\n20           else\n21               DR  0\n22               DC  -1\n23   R  R + DR\n24   C  C + DC\n(a) Modify one line in the above pseudocode such that the following pattern can be generated.(1 mark)\npattern\nj\ni\n1\n2\n3\n1\n9\n2\n3\n2\n8\n1\n4\n3\n7\n6\n5\nLine _____: ______________________________________________________________________\n(b) Assume that the modification suggested in (a) is not made on the pseudocode.\n(i) If the following modifications are made to the above pseudocode, what will be the values stored in pattern after the program has been executed?(2 marks)\nLine 4    DR  0\nLine 5    DC  1\nLine 6    dir  1\nLine 10   dir  (dir + 1) % 4\npattern\nj\ni\n1\n2\n3\n1\n2\n3\n(ii) What is the purpose of the variable dir?(1 mark)\n(iii) In addition to the above modifications, modify two more lines in the pseudocode such that the following pattern can be generated.(2 marks)\npattern\nj\ni\n1\n2\n3\n1\n5\n6\n7\n2\n4\n9\n8\n3\n3\n2\n1\nLine _____: __________________________________________________________________\nLine _____: __________________________________________________________________\n(c) Agatha rewrites the above program to increase the variety of lock patterns. The user can input a number from 2 to 9, and the program will generate a pattern of that length by assigning numbers spirally in an anti-clockwise direction to pattern[i,j]. For example, if the user inputs 5, the pattern will be:\npattern\nj\ni\n1\n2\n3\n1\n1\n0\n0\n2\n2\n0\n0\n3\n3\n4\n5\n(i) If the user inputs 7, what will be the pattern generated by the program?(2 marks)\npattern\nj\ni\n1\n2\n3\n1\n2\n3\n(ii) Agatha thinks that the program should validate the user input at the beginning. If the number inputted is invalid, the user will be asked to input again. Write the pseudocode for implementing this function, using a variable num to store the user input.(3 marks)\n(iii) Modify only one line in the original pseudocode such that the program can generate a pattern of the length specified by the user.(1 marks)\nLine _____: ______________________________________________________________\n(d) Agatha writes another program to check whether the user has inputted the correct pattern when unlocking the phone. The shape drawn by the user is stored in a two-dimensional array drawn, whose items correspond to those in pattern. The program then checks whether this shape matches the one stored in pattern. Complete the following pseudocode for the program.(5 marks)\ncorrect  __________\ni  1\nwhile i <= 3 and correct = True\nj  1\nwhile j <= 3 and correct = True\nif __________________________ then\ncorrect  __________\nif correct then\nOutput \"Unlocked\"\nelse\nOutput \"Wrong input\"\n[--Answer: Refer to DSE 2022 2D Q4\n(a) Line 7: for i from 9 down to 1\n(b)(i)\npattern\nj\ni\n1\n2\n3\n1\n1\n2\n3\n2\n8\n9\n4\n3\n7\n6\n5\n(b)(ii) The direction in which the pattern connects the next node\n(b)(iii)\nLine 8: pattern[4-R,4-C]  i\nLine 9: if R + DR < 1 or R + DR > 3 or C + DC < 1 or C + DC > 3 or pattern[4-R-DR][4-C-DC] != 0 then\n(c)(i)\npattern\nj\ni\n1\n2\n3\n1\n1\n0\n7\n2\n2\n0\n6\n3\n3\n4\n5\n(c)(ii)\nInput num\nwhile num < 2 or num > 9\nInput num\n(c)(iii) Line 7: for i from 1 to num\n(d) True\npattern[i,j] != drawn[i,j]\nFalse\nj  j + 1\ni  i + 1\n--]",
+      "concepts": [
+        "EC",
+        "EC-ch3",
+        "Python",
+        "循環",
+        "列表",
+        "函數",
+        "算法",
+        "硬件",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

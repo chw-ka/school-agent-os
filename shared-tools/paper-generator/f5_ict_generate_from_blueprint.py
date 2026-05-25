@@ -19,19 +19,22 @@ from dse_ict_style import COMBO_OPTS_1_AND_3, style_meta  # noqa: E402
 from exam_spec import build_spec, make_item  # noqa: E402
 from spec_mcq_render import MCQ_SPANS  # noqa: E402
 
-# Combo MCQ needs span ≥ 10 (stem + (1)(2)(3) + blank + A–D); shorter template rows use single MCQ.
-_COMBO_SLOT_IDS = (2, 5, 9, 14, 19, 24, 29)
+# Combo MCQ needs span ≥ 10 (stem + (1)(2)(3) + blank + A–D); six 組合題 per paper.
+# Template row spans (MCQ_SPANS) must be ≥10 for (1)(2)(3)+options — see spec_mcq_render.MCQ_SPANS.
+# Slots 14/23 have span 6/9 in 24_25 template — use 13/15 instead (both span ≥10).
+_COMBO_SLOT_IDS = (6, 8, 13, 15, 21, 28)
 _COMBO_SLOTS = frozenset(
     i for i in _COMBO_SLOT_IDS if MCQ_SPANS[i - 1] >= 10
 )
+# Curated 試算表／數據庫 MCQ (text-only); mcq-06/13/15 get DOCX tables on render.
+_CURATED_MCQ_SLOTS = frozenset({3, 4, 10})
 _COMBO_EXTRA: dict[int, str] = {
-    2: "學生檔案含學號、姓名、班別等欄位。",
-    5: "傳送數據時須檢驗是否損壞。",
-    9: "學生以數位相機拍攝活動相片並儲存為 JPEG。",
-    14: "試算表用於統計各班捐款。",
-    19: "排序名單時須考慮時間複雜度。",
-    24: "編寫程式時把任務分成多個子程式。",
-    29: "測試程式時須包含邊界個案。",
+    6: "試算表「Sale」部分資料見下表。",
+    8: "學生以數位相機拍攝活動相片。",
+    13: "試算表「Donate」及「Target」部分資料見下表。",
+    15: "圖書館借書記錄見下表。",
+    21: "編寫程式時把任務分成多個子程式。",
+    28: "陣列與鏈表模擬輪候名單。",
 }
 _COMBO_SCENARIOS = (
     "某校使用資訊系統管理學與教數據。",
@@ -115,6 +118,57 @@ def _combo_subitems(
     *,
     variant: int = 0,
 ) -> tuple[str, str, str]:
+    if idx == 13:
+        sheet_sets = (
+            (
+                "XLOOKUP 可依關鍵值在對照範圍查找並傳回結果",
+                "COUNTIF 用於加總兩欄的乘積",
+                "SUMIF 只能統計儲存格個數",
+            ),
+        )
+        return sheet_sets[variant % len(sheet_sets)]
+    if idx == 15:
+        db_sets = (
+            (
+                "主鍵可唯一識別資料表內每一筆記錄",
+                "同一欄位可同時儲存文字與圖片檔",
+                "記錄與欄位是相同的概念",
+            ),
+            (
+                "SELECT 可從資料表讀取記錄",
+                "主鍵值可以重複以方便搜尋",
+                "欄位名稱必須與記錄數目相同",
+            ),
+        )
+        return db_sets[variant % len(db_sets)]
+    if idx == 2:
+        db_sets = (
+            (
+                "主鍵可唯一識別資料表內每一筆記錄",
+                "同一欄位可同時儲存文字與圖片檔",
+                "記錄與欄位是相同的概念",
+            ),
+            (
+                "外鍵欄位用於連結兩個資料表",
+                "主鍵值可以重複以方便搜尋",
+                "欄位名稱必須與記錄數目相同",
+            ),
+        )
+        return db_sets[variant % len(db_sets)]
+    if idx == 6:
+        sheet_sets = (
+            (
+                "COUNTIF 可統計符合條件的儲存格個數",
+                "SUMIF 加總時毋須指定條件範圍",
+                "XLOOKUP 只能查找同一欄內的數字",
+            ),
+            (
+                "SUMIF 可按條件加總指定欄",
+                "COUNTIF 只能加總數值欄的總和",
+                "合併儲存格後所有函數仍不受影響",
+            ),
+        )
+        return sheet_sets[variant % len(sheet_sets)]
     c2 = concepts[1] if len(concepts) > 1 else primary
     c3 = concepts[2] if len(concepts) > 2 else concepts[-1] if concepts else primary
     if primary == "多媒體" or "多媒體" in concepts:
@@ -146,6 +200,70 @@ def _combo_subitems(
         (f"{primary}有助驗證輸入", f"{c2}只適用於輸出裝置", f"{c3}與進制無關"),
     )
     return variants[(idx + variant) % len(variants)]
+
+
+def _curated_mcq_database(idx: int, rng: random.Random, *, variant: int = 0) -> tuple[str, str]:
+    """Curated Core A 數據組織／檔案（無附表）。"""
+    sets = (
+        (
+            "圖書館資料表 MEMBER(MID, Name) 與 LOAN(MID, BookID)。下列哪項正確？",
+            ["LOAN.MID 是外鍵，對應 MEMBER.MID", "Name 是主鍵", "BookID 是外鍵", "MID 可重複出現於 MEMBER"],
+            0,
+        ),
+        (
+            "學生檔案以學號、姓名、班別三個欄位儲存。下列哪項正確？",
+            ["一筆記錄對應一名學生", "一個欄位對應一名學生", "學號是記錄", "記錄與欄位相同"],
+            0,
+        ),
+        (
+            "資料表 BOOK(BookID, Title) 中，BookID 設定為主鍵。下列哪項正確？",
+            ["BookID 值不可重複", "Title 必須是數字", "每個欄位只能有一筆記錄", "主鍵可留空"],
+            0,
+        ),
+    )
+    stem, opts, ans = sets[(idx + variant) % len(sets)]
+    return _format_mcq(stem, list(opts), ans, rng)
+
+
+def _curated_mcq_spreadsheet(idx: int, rng: random.Random, *, variant: int = 0) -> tuple[str, str]:
+    """Curated Core A 試算表（情境與儲存格寫在題幹，無附表）。"""
+    sets = (
+        (
+            "義賣工作表：B 欄商品、C 欄單價、D 欄數量、F 欄總價（=C×D）。"
+            "要在 G2 統計 D 欄數量≥5 的個數，應使用？",
+            ["COUNTIF", "SUMIF", "XLOOKUP", "IF"],
+            0,
+        ),
+        (
+            "捐款工作表：A 欄班別、C 欄金額。要在 D2 依 A2 從 $H$2:$I$10 查找目標金額，應使用？",
+            ["XLOOKUP", "COUNTIF", "SUMIF", "RANK"],
+            0,
+        ),
+        (
+            "工作表 F 欄記錄總價。要在 G2 加總 B 欄為「明信片」的 F 欄金額，應使用？",
+            ["SUMIF", "COUNTIF", "XLOOKUP", "AVERAGE"],
+            0,
+        ),
+    )
+    stem, opts, ans = sets[(idx + variant) % len(sets)]
+    return _format_mcq(stem, list(opts), ans, rng)
+
+
+def _curated_mcq_file_access(idx: int, rng: random.Random, *, variant: int = 0) -> tuple[str, str]:
+    sets = (
+        (
+            "圖書館以書號作索引，輸入書號即可讀取該書資料。這屬於哪種存取方式？",
+            ["直接存取", "順序存取", "只能順序存取", "與索引無關"],
+            0,
+        ),
+        (
+            "MEMBER 表的 MID 為主鍵。新增會員時 MID 不可與現有記錄重複，主要為了維護哪項完整性？",
+            ["實體完整性", "參照完整性", "域完整性", "檔案完整性"],
+            0,
+        ),
+    )
+    stem, opts, ans = sets[variant % len(sets)]
+    return _format_mcq(stem, list(opts), ans, rng)
 
 
 def _permute_mcq_to_letter(text: str, current: str, target: str) -> tuple[str, str]:
@@ -254,11 +372,20 @@ def _generate_core_d_mcq(
             0,
         ),
         23: (
-            "下列 Python 程式，變數 i 的最終值是多少？\n"
+            "執行下列 Python 程式後，變數 i 的最終值是多少？\n"
             "i = 1\n"
             "while i <= 8:\n"
             "    i = i * 2",
             ["16", "8", "4", "2"],
+            0,
+        ),
+        24: (
+            "執行下列 Python 程式後，列表 nums 的內容是什麼？\n"
+            "nums = [3, 1, 4, 2]\n"
+            "for k in range(1, len(nums)):\n"
+            "    if nums[k] < nums[k - 1]:\n"
+            "        nums[k], nums[k - 1] = nums[k - 1], nums[k]",
+            ["[1, 3, 4, 2]", "[3, 1, 2, 4]", "[3, 4, 1, 2]", "[1, 2, 3, 4]"],
             0,
         ),
         25: (
@@ -289,12 +416,19 @@ def _generate_core_d_mcq(
             0,
         ),
         28: (
-            "考慮以下偽代碼，n 為非負整數：\n"
-            "輸入 n\n"
-            "若 n = 0 則\n"
-            "  輸出 「zero」\n"
-            "測試時下列哪個是適當的邊界個案？",
-            ["n = 0", "n = 5", "n = -1 且 n = 10", "只測試 n = 1"],
+            "執行下列 Python 程式後，輸出是什麼？\n"
+            "total = 0\n"
+            "for n in [2, 5, 0, 3]:\n"
+            "    if n == 0:\n"
+            "        break\n"
+            "    total = total + n\n"
+            "print(total)",
+            ["7", "10", "0", "5"],
+            0,
+        ),
+        29: (
+            "測試「輸入 n；若 n = 0 則輸出 zero」時，下列哪個是適當邊界個案？",
+            ["n = 0", "n = 5", "n = 10", "只測試 n = 1"],
             0,
         ),
         30: (
@@ -360,18 +494,44 @@ def _generate_mcq(
     primary = concepts[0] if concepts else "資訊處理"
     idx = int(re.search(r"(\d+)$", slot["id"]).group(1)) if re.search(r"(\d+)$", slot["id"]) else 1
 
+    if idx in _CURATED_MCQ_SLOTS:
+        if idx == 10:
+            return _curated_mcq_spreadsheet(idx, rng, variant=variant)
+        if idx == 4:
+            return _curated_mcq_file_access(idx, rng, variant=variant)
+        return _curated_mcq_database(idx, rng, variant=variant)
+
     if idx in _COMBO_SLOTS:
         sub = _combo_subitems(primary, concepts, idx, variant=variant)
         scenario = _COMBO_SCENARIOS[(idx - 1 + variant) % len(_COMBO_SCENARIOS)]
         extra = _COMBO_EXTRA.get(idx, "")
-        stem_tpls = (
-            f"{scenario}{extra}以下哪項（些）關於{primary}的敘述是正確的？",
-            f"{scenario}{extra}下列哪項（些）與{primary}有關的說法正確？",
-            f"就{primary}而言，{scenario}{extra}以下哪項（些）正確？",
-            f"{scenario}在處理{primary}時，{extra}以下哪項（些）成立？",
-        )
-        stem = stem_tpls[variant % len(stem_tpls)]
-        return _format_combo_mcq(stem, sub, rng.randint(0, 3), rng)
+        topic = primary
+        if idx in (6, 13):
+            topic = "試算表"
+        elif idx == 15:
+            topic = "數據庫"
+        if idx == 6:
+            stem = f"{scenario}{extra}以下哪項（些）關於{topic}的敘述是正確的？"
+        else:
+            stem_tpls = (
+                f"{scenario}{extra}以下哪項（些）關於{topic}的敘述是正確的？",
+                f"{scenario}{extra}下列哪項（些）與{topic}有關的說法正確？",
+                f"就{topic}而言，{scenario}{extra}以下哪項（些）正確？",
+                f"{scenario}在處理{topic}時，{extra}以下哪項（些）成立？",
+            )
+            stem = stem_tpls[variant % len(stem_tpls)]
+        # Subitems curated so (1) only is true → A
+        return _format_combo_mcq(stem, sub, 0, rng)
+
+    try:
+        from iclass_hk_depth import try_iclass_mcq
+
+        adapted = try_iclass_mcq(slot, rng, variant=variant)
+        if adapted is not None:
+            stem, opts, ans = adapted
+            return _format_mcq(stem, opts, ans, rng)
+    except ImportError:
+        pass
 
     if core == "A":
         stems = {
@@ -396,25 +556,15 @@ def _generate_mcq(
                 0,
             ),
             "試算表": (
-                "在試算表中，要統計班別為「5A」且分數≥60的學生人數，最適合使用哪個函數？",
-                ["COUNTIFS", "SUM", "AVERAGE", "RANK"],
+                "工作表記錄各班捐款。要依「班別」欄查找對應「目標金額」，最適合使用哪個函數？",
+                ["XLOOKUP", "COUNTIF", "SUMIF", "IF"],
                 0,
             ),
         }
         if "欄位" in concepts and "記錄" in concepts:
-            return _format_mcq(
-                "學生檔案以學號、姓名、班別三個欄位儲存。下列哪項正確？",
-                ["一筆記錄對應一名學生", "一個欄位對應一名學生", "記錄與欄位相同", "學號是記錄"],
-                0,
-                rng,
-            )
+            return _curated_mcq_database(idx, rng, variant=variant)
         if "直接存取" in concepts or "檔案存取" in concepts:
-            return _format_mcq(
-                "圖書館以書號作索引，職員輸入書號即可讀取該書資料。這屬於哪種存取方式？",
-                ["直接存取", "順序存取", "只能順序存取", "與索引無關"],
-                0,
-                rng,
-            )
+            return _curated_mcq_file_access(idx, rng, variant=variant)
         for key, tpl in stems.items():
             if key in concepts:
                 return _format_mcq(tpl[0], list(tpl[1]), tpl[2], rng)
@@ -431,7 +581,7 @@ def _generate_mcq(
         has_cache = any("快取" in c for c in concepts)
         if has_cache and "RAM" in concepts:
             return _format_mcq(
-                "下列哪項（些）關於 RAM 與快取記憶體的敘述是正確的？",
+                "下列哪一項正確描述 RAM 與快取記憶體？",
                 ["RAM 在斷電後資料會消失", "快取比硬碟慢", "RAM 容量通常小於快取", "快取不能加快 CPU 存取"],
                 0,
                 rng,
@@ -529,12 +679,20 @@ def _written_generators() -> dict[str, Any]:
 
 
 def _gen_b01(rng: random.Random) -> str:
+    fn, tpl = rng.choice(
+        [
+            ("COUNTIF", "在 G2 使用 COUNTIF 統計 C 欄金額≥100 的個數，寫出公式。"),
+            ("SUMIF", "在 G2 使用 SUMIF 加總班別為「5A」的 C 欄捐款，寫出公式。"),
+            ("RANK", "在 G2 使用 RANK 為 C2 在 C$2:C$50 中排名（降序），寫出公式。"),
+            ("XLOOKUP", "在 G2 使用 XLOOKUP 依 A2 班別從 $H$2:$I$10 查找目標金額，寫出公式。"),
+        ]
+    )
     return (
-        "某校舉辦義賣，老師使用試算表記錄各班捐款。工作表「Donation」中：\n"
-        "欄 A 為班別，欄 B 為學號，欄 C 為捐款金額（港元）。\n"
-        "在 D2 輸入公式，若 C2≥100 則顯示「達標」，否則顯示「未達標」，並複製至 D3:D50。\n\n"
-        "(a) 寫出 D2 的公式。\t(2 分)\n\n"
-        "(b) 在 E2 使用 COUNTIFS 統計 5A 班且捐款≥100 的人數，寫出公式。\t(2 分)"
+        "某校以試算表「Donation」記錄捐款：欄 A 班別、欄 B 學號、欄 C 金額（港元）、"
+        "欄 D 達標與否；$H$2:$I$10 為班別目標對照表。\n"
+        "在 D2 使用 IF：若 C2≥100 顯示「達標」，否則「未達標」，複製至 D3:D50。\n\n"
+        f"(a) 寫出 D2 的 IF 公式。\t(2 分)\n\n"
+        f"(b) {tpl}\t(2 分)"
     )
 
 
@@ -649,13 +807,11 @@ def _gen_c08(rng: random.Random) -> str:
     )
 
 
-def _generate_written(slot: dict[str, Any], rng: random.Random) -> str:
-    sid = str(slot["id"])
-    gen = _written_generators().get(sid)
-    if gen:
-        return gen(rng)
-    concepts = "、".join(slot.get("concepts") or [])
-    return f"（{slot.get('title', sid)}）\n\n(a) 解釋與{concepts}相關的一個概念。\t(2 分)"
+def _generate_written(slot: dict[str, Any], style: dict[str, Any], rng: random.Random) -> str:
+    from written_generate_from_patterns import generate_written_text
+
+    text, _ = generate_written_text(slot, style, rng)
+    return text
 
 
 def _find_slot(blueprint: dict[str, Any], slot_id: str) -> dict[str, Any] | None:
@@ -682,7 +838,7 @@ def generate_item_for_slot(
 
     if section == "mcq":
         text, letter = _generate_mcq(slot, style, rng, variant=variant)
-        return make_item(
+        item = make_item(
             sid,
             "mcq",
             text,
@@ -692,17 +848,25 @@ def generate_item_for_slot(
             answer=letter,
             dse_source=f"generated://mcq/{sid}",
         )
-    text = _generate_written(slot, rng)
-    return make_item(
-        sid,
-        section,
-        text,
-        marks=marks,
-        title=title,
-        concepts=concepts,
-        dse_source=f"generated://written/{sid}",
-        composition="generated",
-    )
+    else:
+        text = _generate_written(slot, style, rng)
+        item = make_item(
+            sid,
+            section,
+            text,
+            marks=marks,
+            title=title,
+            concepts=concepts,
+            dse_source=f"generated://pattern/{sid}",
+            composition="pattern_generate",
+        )
+    try:
+        from iclass_hk_depth import attach_depth_references
+
+        attach_depth_references(item, slot)
+    except ImportError:
+        pass
+    return item
 
 
 def sync_mcq_meta(spec: dict[str, Any], *, seed: int) -> None:
@@ -731,7 +895,7 @@ def replace_spec_item(spec: dict[str, Any], new_item: dict[str, Any], *, seed: i
 
 
 def template_written_items() -> list[dict]:
-    """Curated 乙／丙 from f5_ict_written_content (tables, blanks, SQL traces)."""
+    """Legacy curated 乙／丙 from f5_ict_written_content (tables, blanks, SQL traces)."""
     if str(_FMT) not in sys.path:
         sys.path.insert(0, str(_FMT))
     from f5_ict_spec import _part_b_items, _part_c_items
@@ -742,6 +906,18 @@ def template_written_items() -> list[dict]:
         it["dse_source"] = f"template://written/{it['id']}"
         it["composition"] = "template"
     return items
+
+
+def pattern_written_items(
+    blueprint: dict[str, Any],
+    style: dict[str, Any],
+    *,
+    seed: int,
+) -> list[dict]:
+    """乙／丙 from bank ask patterns + blueprint (not verbatim bank copy)."""
+    from written_generate_from_patterns import generate_written_items_from_blueprint
+
+    return generate_written_items_from_blueprint(blueprint, style, seed=seed)
 
 
 def written_picks_from_items(items: list[dict]) -> dict[str, dict]:
@@ -794,10 +970,29 @@ def build_spec_from_blueprint(
             answer=letter,
             dse_source=prov,
         )
+        try:
+            from iclass_hk_depth import attach_depth_references
+
+            attach_depth_references(item, slot)
+        except ImportError:
+            pass
         provenance.append(prov)
         items.append(item)
 
-    items.extend(template_written_items())
+    written_items = pattern_written_items(blueprint, style, seed=seed)
+    try:
+        from iclass_hk_depth import attach_depth_references
+
+        for it in written_items:
+            wslot = next(
+                (s for s in blueprint.get("slots") or [] if str(s.get("id")) == str(it.get("id"))),
+                None,
+            )
+            if wslot:
+                attach_depth_references(it, wslot)
+    except ImportError:
+        pass
+    items.extend(written_items)
 
     bmeta = blueprint.get("meta") or {}
     meta: dict[str, Any] = {
@@ -814,6 +1009,8 @@ def build_spec_from_blueprint(
         },
         "curriculum_units": ["Core-A", "Core-B", "Core-D", "Module-A", "Module-C"],
         "mcq_core_sequence": list(bmeta.get("mcq_core_sequence") or []),
+        "mcq_combo_slots": list(_COMBO_SLOT_IDS),
+        "mcq_table_slots": [6, 13, 15],
         "exam_structure": {
             "section_a": "MCQ — compulsory Core A/B/D only (DSE Paper 1A style)",
             "section_b": "Structured — compulsory (DSE Paper 1B style)",
@@ -828,10 +1025,16 @@ def build_spec_from_blueprint(
         },
         **style_meta(),
     }
+    try:
+        from iclass_hk_depth import depth_calibration_meta
+
+        meta["depth_calibration"] = depth_calibration_meta()
+    except ImportError:
+        pass
     meta["phrasing"] = "HKDSE ICT style — generated from blueprint (not bank copy)"
     meta["mcq_provenance"] = provenance[:30]
-    meta["written_render"] = "template"
-    meta["written_picks_source"] = "f5_ict_written_content"
+    meta["written_render"] = "patterns"
+    meta["written_picks_source"] = "style_patterns.written + blueprint"
 
     spec = build_spec(meta, items)
     sync_mcq_meta(spec, seed=seed)

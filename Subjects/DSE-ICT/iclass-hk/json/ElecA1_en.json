@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecA1_en_Managing Data Using SQL.docx",
+    "slug": "ElecA1_en",
+    "title": "Managing Data Using SQL",
+    "title_zh": null,
+    "title_en": "Managing Data Using SQL",
+    "language": "en",
+    "family": "ElecA",
+    "chapter": 1,
+    "integrated": false,
+    "topic_code": "EA01",
+    "curriculum_unit": "EA",
+    "ca_unit": "EA",
+    "f5_exam_scope": "elective_db",
+    "extracted_at": "2026-05-24T10:37:17.998706+00:00",
+    "item_count": 10,
+    "section_counts": {
+      "short_answer": 7,
+      "long_answer": 3
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTA1101_03A001E",
+      "bank_code": "SSICTA1101_03A001E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Logistic Leaders is a transportation company that uses a database table SHIPMENT to store information about shipment details. Here is the table structure of SHIPMENT.\nSHIPMENT\nField name\nDescription\nSHIPID\nIdentity code of each shipment\nORIGIN\nName of the city where the shipment originated\nDESTINATION\nName of the city where the shipment is being delivered\nPICKUP_DATE\nThe date when the shipment was picked up from the original location\nDELIVERY_DATE\nThe date when the shipment was delivered to the destination location. This attribute will be empty if the shipment is still in transit\nSTATUS\nThe current status of the shipment (1 means delivered, 0 means in transit)",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Complete the SQL statements below to create the database table SHIPMENT.(3 marks)\nCREATE TABLE SHIPMENT (\nSHIPID VARCHAR(10) ______________,\nORIGIN VARCHAR(50) NOT NULL,\n____________________________,\nPICKUP_DATE DATE NOT NULL,\n____________________________,\nSTATUS BOOL\n)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Explain briefly how the following SQL command affects the table SHIPMENT. (1 mark)\nALTER TABLE SHIPMENT ADD MEMBERID CHAR(10)\n[--Answer:\n(a) CREATE TABLE SHIPMENT (\nSHIPID VARCHAR(10) PRIMARY KEY,\nORIGIN VARCHAR(50)NOT NULL,\nDESTINATION VARCHAR(50)NOT NULL,\nPICKUP_DATE DATE NOT NULL,\nDELIVERY_DATE DATE,\nSTATUS BOOL\n)\n(b) It adds a new column called MEMBERID to the SHIPMENT table with a data type of CHAR(10).\n--]"
+        }
+      ],
+      "text": "Logistic Leaders is a transportation company that uses a database table SHIPMENT to store information about shipment details. Here is the table structure of SHIPMENT.\nSHIPMENT\nField name\nDescription\nSHIPID\nIdentity code of each shipment\nORIGIN\nName of the city where the shipment originated\nDESTINATION\nName of the city where the shipment is being delivered\nPICKUP_DATE\nThe date when the shipment was picked up from the original location\nDELIVERY_DATE\nThe date when the shipment was delivered to the destination location. This attribute will be empty if the shipment is still in transit\nSTATUS\nThe current status of the shipment (1 means delivered, 0 means in transit)\n(a) Complete the SQL statements below to create the database table SHIPMENT.(3 marks)\nCREATE TABLE SHIPMENT (\nSHIPID VARCHAR(10) ______________,\nORIGIN VARCHAR(50) NOT NULL,\n____________________________,\nPICKUP_DATE DATE NOT NULL,\n____________________________,\nSTATUS BOOL\n)\n(b) Explain briefly how the following SQL command affects the table SHIPMENT. (1 mark)\nALTER TABLE SHIPMENT ADD MEMBERID CHAR(10)\n[--Answer:\n(a) CREATE TABLE SHIPMENT (\nSHIPID VARCHAR(10) PRIMARY KEY,\nORIGIN VARCHAR(50)NOT NULL,\nDESTINATION VARCHAR(50)NOT NULL,\nPICKUP_DATE DATE NOT NULL,\nDELIVERY_DATE DATE,\nSTATUS BOOL\n)\n(b) It adds a new column called MEMBERID to the SHIPMENT table with a data type of CHAR(10).\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1101_03A002E",
+      "bank_code": "SSICTA1101_03A002E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "The supermarket recorded every customer’s orders. Here are the first four rows of data in PURCHASE.\nPURCHASE\nCID\nPID\nQUANTITY\nPRICE\nORDERDATE\nORDERTIME\nMETHOD\nC01\n1001\n2\n30\n2023-05-18\n15:18:54\nCredit card\nC02\n1001\n1\n15\n2023-08-16\n09:45:06\nCash\nC02\n1003\n3\n21\n2023-08-16\n09:45:06\nCash\nC02\n1008\n2\n58\n2023-08-16\n20:04:39\nCash",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "What is the primary key of table PURCHASE?  (1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The supermarket recorded the payment records of 2023-07-23 incorrectly. Write a SQL command to update all “Credit card” payments made on that day to “Cash” payments.\n(2 marks)\n[--Answer:\n(a) CID+PID+ORDERDATE+ORDERTIME\n(b) UPDATE PURCHASE\nSET METHOD = 'Cash'\nWHERE ORDERDATE = '2023-07-23' AND METHOD = 'Credit card'\n--]"
+        }
+      ],
+      "text": "The supermarket recorded every customer’s orders. Here are the first four rows of data in PURCHASE.\nPURCHASE\nCID\nPID\nQUANTITY\nPRICE\nORDERDATE\nORDERTIME\nMETHOD\nC01\n1001\n2\n30\n2023-05-18\n15:18:54\nCredit card\nC02\n1001\n1\n15\n2023-08-16\n09:45:06\nCash\nC02\n1003\n3\n21\n2023-08-16\n09:45:06\nCash\nC02\n1008\n2\n58\n2023-08-16\n20:04:39\nCash\n(a) What is the primary key of table PURCHASE?  (1 mark)\n(b) The supermarket recorded the payment records of 2023-07-23 incorrectly. Write a SQL command to update all “Credit card” payments made on that day to “Cash” payments.\n(2 marks)\n[--Answer:\n(a) CID+PID+ORDERDATE+ORDERTIME\n(b) UPDATE PURCHASE\nSET METHOD = 'Cash'\nWHERE ORDERDATE = '2023-07-23' AND METHOD = 'Credit card'\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "SQL",
+        "數據庫",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1101_03B003E",
+      "bank_code": "SSICTA1101_03B003E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Maple Secondary School is going to use a database table STUDENT2C to store information about students.\nHere is the table structure of STUDENT2C.\nSTUDENT2C\nField name\nDescription\nExample\nSID\nIdentity code of students\nS001\nSNAME\nStudent’s name\nCindy Chan\nCNO\nClass number\n1\nGENDER\nStudent’s gender (M = Male; F = Female)\nF",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Consider the following SQL statement:(2 marks)\nCREATE TABLE STUDENT2C (\nSID CHAR(5) PRIMARY KEY,\nSNAME VARCHAR(10) NOT NULL,\nCNO INT UNIQUE,\nGENDER CHAR(1) NOT NULL\n)\nState a potential issue in a certain field and explain it briefly."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "A transfer student, Judy Sy, has just enrolled in this school. Write a SQL command to insert the following record into the STUDENT2C table. (2 marks)\nSID\nSNAME\nCNO\nGENDER\nS112\nJudy Sy\n31\nF\n[--Answer:\n(a) Problem will occur if the length of a student's name exceeds the maximum length defined by the VARCHAR(10) data type.\n(b) INSERT INTO STUDENT2C (SID, SNAME, CNO, GENDER)\nVALUES ('S112', 'Judy Sy', 31, 'F')\n--]"
+        }
+      ],
+      "text": "Maple Secondary School is going to use a database table STUDENT2C to store information about students.\nHere is the table structure of STUDENT2C.\nSTUDENT2C\nField name\nDescription\nExample\nSID\nIdentity code of students\nS001\nSNAME\nStudent’s name\nCindy Chan\nCNO\nClass number\n1\nGENDER\nStudent’s gender (M = Male; F = Female)\nF\n(a) Consider the following SQL statement:(2 marks)\nCREATE TABLE STUDENT2C (\nSID CHAR(5) PRIMARY KEY,\nSNAME VARCHAR(10) NOT NULL,\nCNO INT UNIQUE,\nGENDER CHAR(1) NOT NULL\n)\nState a potential issue in a certain field and explain it briefly.\n(b) A transfer student, Judy Sy, has just enrolled in this school. Write a SQL command to insert the following record into the STUDENT2C table. (2 marks)\nSID\nSNAME\nCNO\nGENDER\nS112\nJudy Sy\n31\nF\n[--Answer:\n(a) Problem will occur if the length of a student's name exceeds the maximum length defined by the VARCHAR(10) data type.\n(b) INSERT INTO STUDENT2C (SID, SNAME, CNO, GENDER)\nVALUES ('S112', 'Judy Sy', 31, 'F')\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "SQL",
+        "數據庫",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1101_03B004E",
+      "bank_code": "SSICTA1101_03B004E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Mr Chau operates a restaurant and uses a database table MENU to store the information on the menu item so that customers can view the menu on their website.\nSome of the data stored in the mentioned table is shown below.\nMENUID\nNAME\nPRICE\nPREPTIME\n01\nMargherita Pizza\n101\n25\n02\nCaesar Salad\n65\n10\n03\nSpaghetti and Meatballs\n89\n20",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Mr Chau wants to add a new feature to the website that allows customers to order food for delivery. To implement this feature, the restaurant needs to store whether the food is available for delivery.\nHere is the new table structure of MENU.\nField name\nDescription\nMENUID\nIdentity code of each menu item\nNAME\nThe name of the menu item\nPRICE\nThe price of the menu item\nPREPTIME\nThe estimated time (in minutes) required to prepare the menu item\nDELIVERY\nWhether the item can be delivered (1 means yes; 0 means no)\nWrite a SQL command to add a new field DELIVERY to table MENU.  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Mr Chau decides to set a constraint to ensure that the preparation time for all menu items is at most 30 minutes. Write a SQL command to commit his change.  (2 marks)\n[--Answer:\n(a) ALTER TABLE MENU ADD DELIVERY BOOL\n(b) ALTER TABLE MENU\nADD CONSTRAINT CHECK (PREPTIME <= 30)\n--]"
+        }
+      ],
+      "text": "Mr Chau operates a restaurant and uses a database table MENU to store the information on the menu item so that customers can view the menu on their website.\nSome of the data stored in the mentioned table is shown below.\nMENUID\nNAME\nPRICE\nPREPTIME\n01\nMargherita Pizza\n101\n25\n02\nCaesar Salad\n65\n10\n03\nSpaghetti and Meatballs\n89\n20\n(a) Mr Chau wants to add a new feature to the website that allows customers to order food for delivery. To implement this feature, the restaurant needs to store whether the food is available for delivery.\nHere is the new table structure of MENU.\nField name\nDescription\nMENUID\nIdentity code of each menu item\nNAME\nThe name of the menu item\nPRICE\nThe price of the menu item\nPREPTIME\nThe estimated time (in minutes) required to prepare the menu item\nDELIVERY\nWhether the item can be delivered (1 means yes; 0 means no)\nWrite a SQL command to add a new field DELIVERY to table MENU.  (2 marks)\n(b) Mr Chau decides to set a constraint to ensure that the preparation time for all menu items is at most 30 minutes. Write a SQL command to commit his change.  (2 marks)\n[--Answer:\n(a) ALTER TABLE MENU ADD DELIVERY BOOL\n(b) ALTER TABLE MENU\nADD CONSTRAINT CHECK (PREPTIME <= 30)\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "循環",
+        "SQL",
+        "數據庫",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1101_03B005E",
+      "bank_code": "SSICTA1101_03B005E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "A database table named SONGS stores song information for a music streaming platform.\nHere are some data of SONGS.\nTITLE\nARTIST\nALBUM\nRELEASE\nRATING\nHey Jude\nThe Beatles\nThe Beatles Again\n1970-02-26\n5\nStairway to Heaven\nLed Zeppelin\nLed Zeppelin IV\n1971-11-08\n4\nBohemian Rhapsody\nQueen\nA Night at the Opera\n1975-10-31\n3\nBillie Jean\nMichael Jackson\nThriller\n1983-01-02\n4",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "SONGS is created by the SQL statement below.\nCREATE TABLE SONGS (\nTITLE VARCHAR(50) NOT NULL,\nARTIST VARCHAR(50) NOT NULL,\nALBUM VARCHAR(255),\nRELEASE DATE,\nRATING INT DEFAULT 0,\n)\nCan we set TITLE as the primary key of SONGS? Explain briefly.  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write a SQL statement that can generate the following result.  (3 marks)\nResult\nBillie Jean\nMichael Jackson\nStairway to Heaven\nLed Zeppelin\n[--Answer:\n(a) A primary key is a unique identifier for each row in a table. However, two songs could have the same title. In this case, storing both songs in the table with TITLE as the primary key would be impossible. Thus, we cannot set TITLE as the primary key of SONGS.\n(b) SELECT TITLE, ARTIST\nFROM SONGS\nWHERE RATING = 4\nORDER BY RELEASE DESC\nOr any reasonable answers.\n--]"
+        }
+      ],
+      "text": "A database table named SONGS stores song information for a music streaming platform.\nHere are some data of SONGS.\nTITLE\nARTIST\nALBUM\nRELEASE\nRATING\nHey Jude\nThe Beatles\nThe Beatles Again\n1970-02-26\n5\nStairway to Heaven\nLed Zeppelin\nLed Zeppelin IV\n1971-11-08\n4\nBohemian Rhapsody\nQueen\nA Night at the Opera\n1975-10-31\n3\nBillie Jean\nMichael Jackson\nThriller\n1983-01-02\n4\n(a) SONGS is created by the SQL statement below.\nCREATE TABLE SONGS (\nTITLE VARCHAR(50) NOT NULL,\nARTIST VARCHAR(50) NOT NULL,\nALBUM VARCHAR(255),\nRELEASE DATE,\nRATING INT DEFAULT 0,\n)\nCan we set TITLE as the primary key of SONGS? Explain briefly.  (2 marks)\n(b) Write a SQL statement that can generate the following result.  (3 marks)\nResult\nBillie Jean\nMichael Jackson\nStairway to Heaven\nLed Zeppelin\n[--Answer:\n(a) A primary key is a unique identifier for each row in a table. However, two songs could have the same title. In this case, storing both songs in the table with TITLE as the primary key would be impossible. Thus, we cannot set TITLE as the primary key of SONGS.\n(b) SELECT TITLE, ARTIST\nFROM SONGS\nWHERE RATING = 4\nORDER BY RELEASE DESC\nOr any reasonable answers.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "循環",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1101_03C006E",
+      "bank_code": "SSICTA1101_03C006E",
+      "section_type": "short_answer",
+      "marks": 7.0,
+      "year_tag": null,
+      "stem": "Jacky created a fitness app and used two database tables, USER and WORKOUT. The USER table stores information about the users themselves, while the WORKOUT table stores information about users’ workout records.\nUSER\nUSERID\nNAME\nGENDER\nHEIGHT\nWEIGHT\n0001\nJenny\nF\n1.62\n41\n0002\nKelvin\nM\n1.76\n68\n0003\nNatalie\nF\n1.61\n50\nWORKOUT\nUSERID\nWORKOUTNAME\nDURATION\nCALORIES\nWDATE\n0002\nWeightlifting\n60\n500\n09/07/2022\n0001\nYoga\n44\n200\n10/07/2022",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a SQL command to list the types of workouts done by user ID 0001 without duplication.\n(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Jacky wants to add a foreign key to the WORKOUT table that references the USER table. Write a SQL command to help him accomplish this task.  (3 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Given that (b)(i) has been executed, the records provided are the complete USER and WORKOUT table records. Jacky writes a SQL command in order to insert a new record as below. (2 marks)\nINSERT INTO WORKOUT VALUES (9873, 'Running', 16, 120, '03/07/2022')\nWhat is the result of WORKOUT after executing the following SQL statement?\nSELECT USERID, WORKOUTNAME, DURATION FROM WORKOUT\n[--Answer:\n(a) SELECT DISTINCT WORKOUTNAME\nFROM WORKOUT\nWHERE USERID = '0001'"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "(i) ALTER TABLE WORKOUT\nADD FOREIGN KEY (USERID)\nREFERENCES USER(USERID)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "USERID\nWORKOUTNAME\nDURATION\n0002\nWeightlifting\n60\n0001\nYoga\n44\n--]"
+        }
+      ],
+      "text": "Jacky created a fitness app and used two database tables, USER and WORKOUT. The USER table stores information about the users themselves, while the WORKOUT table stores information about users’ workout records.\nUSER\nUSERID\nNAME\nGENDER\nHEIGHT\nWEIGHT\n0001\nJenny\nF\n1.62\n41\n0002\nKelvin\nM\n1.76\n68\n0003\nNatalie\nF\n1.61\n50\nWORKOUT\nUSERID\nWORKOUTNAME\nDURATION\nCALORIES\nWDATE\n0002\nWeightlifting\n60\n500\n09/07/2022\n0001\nYoga\n44\n200\n10/07/2022\n(a) Write a SQL command to list the types of workouts done by user ID 0001 without duplication.\n(2 marks)\n(b) \n(i) Jacky wants to add a foreign key to the WORKOUT table that references the USER table. Write a SQL command to help him accomplish this task.  (3 marks)\n(ii) Given that (b)(i) has been executed, the records provided are the complete USER and WORKOUT table records. Jacky writes a SQL command in order to insert a new record as below. (2 marks)\nINSERT INTO WORKOUT VALUES (9873, 'Running', 16, 120, '03/07/2022')\nWhat is the result of WORKOUT after executing the following SQL statement?\nSELECT USERID, WORKOUTNAME, DURATION FROM WORKOUT\n[--Answer:\n(a) SELECT DISTINCT WORKOUTNAME\nFROM WORKOUT\nWHERE USERID = '0001'\n(b) (i) ALTER TABLE WORKOUT\nADD FOREIGN KEY (USERID)\nREFERENCES USER(USERID)\n(ii) USERID\nWORKOUTNAME\nDURATION\n0002\nWeightlifting\n60\n0001\nYoga\n44\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1101_03C007E",
+      "bank_code": "SSICTA1101_03C007E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Harry developed a game and used database tables LEVELS to store information on different levels of players and LEADERBOARD to store players’ scores and rankings. Players’ progress has been tracked through the levels and allowed to resume their progress later.\nLEVELS\nField name\nDescription\nLEVEL\nThe level number\nNAME\nThe name of each level\nDIFFICULTY\nThe difficulty level of each level\nSCORE\nThe score value for each level\nPrimary key: LEVEL\nLEADERBOARD\nField name\nDescription\nRANK\nRank according to players’ score\nPLAYER\nThe name of each player\nLEVEL\nThe level number that players achieve\nTOTALSCORE\nThe sum of the player's scores across all levels\nPrimary key: RANK",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Harry accidentally decreased the scores of all levels with an Easy difficulty by 100 points, so now he wishes to change this back.\nWrite an SQL command to add the score to the corresponding player’s account.  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Harry has merged the LEADERBOARD table with a new table, and he needs to delete the LEADERBOARD table now. Which approach would be more appropriate for Harry to delete the table? (2 marks)\nDELETE FROM LEADERBOARD\nDROP TABLE LEADERBOARD\n[--Answer:\n(a) UPDATE LEVELS\nSET SCORE = SCORE + 100\nWHERE DIFFICULTY = 'Easy'\n(b) As the DROP command deletes an entire table, while the DELETE command will only remove records in the LEADERBOARD table. Thus, in this case, DROP TABLE LEADERBOARD is more appropriate.\n--]"
+        }
+      ],
+      "text": "Harry developed a game and used database tables LEVELS to store information on different levels of players and LEADERBOARD to store players’ scores and rankings. Players’ progress has been tracked through the levels and allowed to resume their progress later.\nLEVELS\nField name\nDescription\nLEVEL\nThe level number\nNAME\nThe name of each level\nDIFFICULTY\nThe difficulty level of each level\nSCORE\nThe score value for each level\nPrimary key: LEVEL\nLEADERBOARD\nField name\nDescription\nRANK\nRank according to players’ score\nPLAYER\nThe name of each player\nLEVEL\nThe level number that players achieve\nTOTALSCORE\nThe sum of the player's scores across all levels\nPrimary key: RANK\n(a) Harry accidentally decreased the scores of all levels with an Easy difficulty by 100 points, so now he wishes to change this back.\nWrite an SQL command to add the score to the corresponding player’s account.  (2 marks)\n(b) Harry has merged the LEADERBOARD table with a new table, and he needs to delete the LEADERBOARD table now. Which approach would be more appropriate for Harry to delete the table? (2 marks)\nDELETE FROM LEADERBOARD\nDROP TABLE LEADERBOARD\n[--Answer:\n(a) UPDATE LEVELS\nSET SCORE = SCORE + 100\nWHERE DIFFICULTY = 'Easy'\n(b) As the DROP command deletes an entire table, while the DELETE command will only remove records in the LEADERBOARD table. Thus, in this case, DROP TABLE LEADERBOARD is more appropriate.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "循環",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1101_04A001E",
+      "bank_code": "SSICTA1101_04A001E",
+      "section_type": "long_answer",
+      "marks": 8.0,
+      "year_tag": null,
+      "stem": "A Hospital management system uses several database tables to store information in a hospital.\nHere is the table structure of PATIENT and DOCTOR.\nPATIENT\nField name\nDescription\nExample\nPATIENT\nIdentity code of patient\nP02083\nNAME\nThe name of the patient\nNancy Wu\nGENDER\nGender of patient\nF\nDOB\nThe date of birth of the patient\n2009-05-28\nDOCTOR\nField name\nDescription\nExample\nDOCTOR\nIdentity code of the doctor\nD127\nNAME\nThe name of the doctor\nSam Liu\nSPECIALITY\nThe medical speciality of the doctor\nAllergist\nPHONE\nThe phone number of the doctor\n57928793\nSALARY\nThe salary details of the doctor\n82500",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "The speciality of doctor D128 is changed to Emergency Physician. Write a SQL command to commit this change.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The administrator wants to create a table named APPOINTMENT to store the data of each appointment.\nHere is the table structure of APPOINTMENT.\nAPPOINTMENT\nField name\nDescription\nExample\nAPPOINTMENT\nIdentity code of each appointment\nA1026\nPATIENT\nIdentity code of patient\nP02083\nDOCTOR\nIdentity code of the doctor\nD127\nADATE\nThe date of the appointment\n2021-11-20\nDISEASE\nPatient's medical condition or reason for the appointment\nSkin allergy"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write SQL commands to create the table APPOINTMENT.  (3 marks)\nCREATE TABLE APPOINTMENT (\nPATIENT CHAR(6) NOT NULL,\nDOCTOR CHAR(4) NOT NULL,\nDISEASE VARCHAR(50) NOT NULL,\n)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Write a SQL command to list the appointment date of patient P02083. The latest appointments will be shown first. (2 marks)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "The hospital is now using a new table to store all staff working in the hospital instead of categorising the job like the DOCTOR table. Write a SQL command to drop the DOCTOR table.\n(1 mark)\n[--Answer:\n(a) UPDATE DOCTOR\nSET SPECIALITY = 'Emergency Physician'\nWHERE DOCTOR = 'D128'"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "(i) CREATE TABLE APPOINTMENT (\nAPPOINTMENT CHAR(5) PRIMARY KEY,\nPATIENT CHAR(6) NOT NULL,\nDOCTOR CHAR(4) NOT NULL,\nADATE DATE NOT NULL,\nDISEASE VARCHAR(50) NOT NULL,\nFOREIGN KEY (PATIENT) REFERENCES PATIENT(PATIENT),\nFOREIGN KEY (DOCTOR) REFERENCES DOCTOR(DOCTOR)\n)\n(ii) SELECT DATE\nFROM APPOINTMENT\nWHERE PATIENT = 'P02083'\nORDER BY ADATE DESC\n(c) DROP TABLE DOCTOR\n--]"
+        }
+      ],
+      "text": "A Hospital management system uses several database tables to store information in a hospital.\nHere is the table structure of PATIENT and DOCTOR.\nPATIENT\nField name\nDescription\nExample\nPATIENT\nIdentity code of patient\nP02083\nNAME\nThe name of the patient\nNancy Wu\nGENDER\nGender of patient\nF\nDOB\nThe date of birth of the patient\n2009-05-28\nDOCTOR\nField name\nDescription\nExample\nDOCTOR\nIdentity code of the doctor\nD127\nNAME\nThe name of the doctor\nSam Liu\nSPECIALITY\nThe medical speciality of the doctor\nAllergist\nPHONE\nThe phone number of the doctor\n57928793\nSALARY\nThe salary details of the doctor\n82500\n(a) The speciality of doctor D128 is changed to Emergency Physician. Write a SQL command to commit this change.(2 marks)\n(b) The administrator wants to create a table named APPOINTMENT to store the data of each appointment.\nHere is the table structure of APPOINTMENT.\nAPPOINTMENT\nField name\nDescription\nExample\nAPPOINTMENT\nIdentity code of each appointment\nA1026\nPATIENT\nIdentity code of patient\nP02083\nDOCTOR\nIdentity code of the doctor\nD127\nADATE\nThe date of the appointment\n2021-11-20\nDISEASE\nPatient's medical condition or reason for the appointment\nSkin allergy\n(i) Write SQL commands to create the table APPOINTMENT.  (3 marks)\nCREATE TABLE APPOINTMENT (\nPATIENT CHAR(6) NOT NULL,\nDOCTOR CHAR(4) NOT NULL,\nDISEASE VARCHAR(50) NOT NULL,\n)\n(ii) Write a SQL command to list the appointment date of patient P02083. The latest appointments will be shown first. (2 marks)\n(d) The hospital is now using a new table to store all staff working in the hospital instead of categorising the job like the DOCTOR table. Write a SQL command to drop the DOCTOR table.\n(1 mark)\n[--Answer:\n(a) UPDATE DOCTOR\nSET SPECIALITY = 'Emergency Physician'\nWHERE DOCTOR = 'D128'\n(b) (i) CREATE TABLE APPOINTMENT (\nAPPOINTMENT CHAR(5) PRIMARY KEY,\nPATIENT CHAR(6) NOT NULL,\nDOCTOR CHAR(4) NOT NULL,\nADATE DATE NOT NULL,\nDISEASE VARCHAR(50) NOT NULL,\nFOREIGN KEY (PATIENT) REFERENCES PATIENT(PATIENT),\nFOREIGN KEY (DOCTOR) REFERENCES DOCTOR(DOCTOR)\n)\n(ii) SELECT DATE\nFROM APPOINTMENT\nWHERE PATIENT = 'P02083'\nORDER BY ADATE DESC\n(c) DROP TABLE DOCTOR\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA1101_04B002E",
+      "bank_code": "SSICTA1101_04B002E",
+      "section_type": "long_answer",
+      "marks": 8.0,
+      "year_tag": null,
+      "stem": "Riverview Hotel uses database tables ROOMS, GUESTS, and RESERVATIONS to store information of the hotel.\nROOMS\nField name\nDescription\nExample\nROOMID\nIdentity code of the room\n101\nTYPE\nThe type of the room\nDouble\nAVAILABILITY\nAvailability of the room (A means available; O means occupied)\nA\nPRICE\nPrice per night to rent the room\n600\nPrimary key: ROOMID\nGUESTS\nField name\nDescription\nExample\nGUESTID\nIdentity code of the guest\nG01\nNAME\nThe name of the guest\nChan Siu Ming\nEMAIL\nThe email address of the guest\nSiumingg123@email.com\nPrimary key: GUESTID\nRESERVATIONS\nField name\nDescription\nExample\nRESID\nIdentity code of the reservation\nR1\nGUESTID\nIdentity code of the guest\nG01\nROOMID\nIdentity code of the room\n101\nCHKIN\nThe date when the guest will check in to the hotel\n2023-07-14\nCHKOUT\nThe date when the guest will check out of the hotel\n2023-07-19\nPrimary key: RESID\nForeign key: GUESTID, ROOMID",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a SQL to list all available rooms with their ROOMID, TYPE, and PRICE. (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Room number 610 is currently undergoing renovation and is not available for booking. An employee wishes to remove this record from the ROOMS table and thus executes the following SQL command.\nDELETE FROM ROOM WHERE ROOMID = 610\nExplain briefly why the following SQL statement cannot be executed. (2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Write a SQL statement that should be executed before removing ROOMID 610 from the ROOMS table. (2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Guest G01 checked in on 2023-07-14 and would like to check out later. Update his reservation to change the check-out date to '2023-07-23'. (2 marks)\n[--Answer:\n(a) SELECT ROOMID, TYPE, PRICE\nFROM ROOMS\nWHERE AVAILABILITY = 'A'"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "(i) As the ROOMS table has a foreign key ROOMID with the RESERVATIONS table, if there are any reservations made for room 610, deleting the record from the ROOMS table will violate the foreign key constraint.\n(ii) DELETE FROM RESERVATIONS\nWHERE ROOMID = 610\n(c) UPDATE RESERVATIONS\nSET CHKOUT = '2023-07-23'\nWHERE GUESTID = 'G01' AND CHKIN = '2023-07-14'\n--]"
+        }
+      ],
+      "text": "Riverview Hotel uses database tables ROOMS, GUESTS, and RESERVATIONS to store information of the hotel.\nROOMS\nField name\nDescription\nExample\nROOMID\nIdentity code of the room\n101\nTYPE\nThe type of the room\nDouble\nAVAILABILITY\nAvailability of the room (A means available; O means occupied)\nA\nPRICE\nPrice per night to rent the room\n600\nPrimary key: ROOMID\nGUESTS\nField name\nDescription\nExample\nGUESTID\nIdentity code of the guest\nG01\nNAME\nThe name of the guest\nChan Siu Ming\nEMAIL\nThe email address of the guest\nSiumingg123@email.com\nPrimary key: GUESTID\nRESERVATIONS\nField name\nDescription\nExample\nRESID\nIdentity code of the reservation\nR1\nGUESTID\nIdentity code of the guest\nG01\nROOMID\nIdentity code of the room\n101\nCHKIN\nThe date when the guest will check in to the hotel\n2023-07-14\nCHKOUT\nThe date when the guest will check out of the hotel\n2023-07-19\nPrimary key: RESID\nForeign key: GUESTID, ROOMID\n(a) Write a SQL to list all available rooms with their ROOMID, TYPE, and PRICE. (2 marks)\n(b) \n(i) Room number 610 is currently undergoing renovation and is not available for booking. An employee wishes to remove this record from the ROOMS table and thus executes the following SQL command.\nDELETE FROM ROOM WHERE ROOMID = 610\nExplain briefly why the following SQL statement cannot be executed. (2 marks)\n(ii) Write a SQL statement that should be executed before removing ROOMID 610 from the ROOMS table. (2 marks)\n(c) Guest G01 checked in on 2023-07-14 and would like to check out later. Update his reservation to change the check-out date to '2023-07-23'. (2 marks)\n[--Answer:\n(a) SELECT ROOMID, TYPE, PRICE\nFROM ROOMS\nWHERE AVAILABILITY = 'A'\n(b) (i) As the ROOMS table has a foreign key ROOMID with the RESERVATIONS table, if there are any reservations made for room 610, deleting the record from the ROOMS table will violate the foreign key constraint.\n(ii) DELETE FROM RESERVATIONS\nWHERE ROOMID = 610\n(c) UPDATE RESERVATIONS\nSET CHKOUT = '2023-07-23'\nWHERE GUESTID = 'G01' AND CHKIN = '2023-07-14'\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA1101_04C003E",
+      "bank_code": "SSICTA1101_04C003E",
+      "section_type": "long_answer",
+      "marks": 10.0,
+      "year_tag": null,
+      "stem": "A social media platform uses a USER table and a POST table to store information on users and posts respectively.\nUSER\nField name\nDescription\nExample\nUSERID\nIdentity code of the user\nU1973248\nUSERNAME\nThe name of the user\nJane5522\nEMAIL\nThe email address associated with the user's account\njane.doe@email.com\nPASSWORD\nThe password used to authenticate the user's account\n93Hfh11007\nPOST\nField name\nDescription\nExample\nPOSTID\nIdentity code of the post\nP0468\nCONTENT\nThe text content of the post\nCan't wait to go on vacation next week!\nDATE_TIME\nThe date and time when the post was created\n2023-05-29 14:59\nUSERID\nIdentity code of the user who created the post\nU1973248",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Consider the following SQL statement:\nCREATE TABLE USER (\nUSERID CHAR(8) PRIMARY KEY,\nUSERNAME CHAR(15),\nEMAIL VARCHAR(50),\nPASSWORD VARCHAR(12) UNIQUE\nCHECK (EMAIL LIKE '%@%')\n)"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "State the potential issue in the above SQL statement.(2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "One of the administrators, Margret, claims that using VARCHAR(15) is better than CHAR(15) as a data type for USERID in the USER table. State a reason to support her claim. (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The developer wants to add a new function, comment, to the social media platform.\nHere is the table structure of COMMENT.\nField name\nDescription\nExample\nPOSTID\nIdentity code of the post\nP0468\nUSERID\nIdentity code of the user\nU9873211\nCONTENT\nThe text content of the comment\nGreat photo. Thanks for sharing!\nDATE_TIME\nThe date and time when the comment was created\n2023-05-30 07:13\nIdentify the primary and foreign keys for POST and COMMENT if any, and write N/A if it is not applicable. (3 marks)\nPrimary key\nForeign key\nPOST\nCOMMENT"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Samantha commented on Jane’s new post shown below.\nNEW POST\nJane5522(U1973248) Can’t wait to go on vacation next week! 2023-05-29 14:59\nSaman_tha_13(U1553248) Have fun on your vacation!           2023-05-30 07:13\nSaman_tha_13(U1553248) Can't wait to see your pictures!        2023-05-30 07:15\nWrite a SQL command to insert the new records into the COMMENT table. The POSTID of this post is 'P0468'. (3 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "(i) PASSWORD can be the same for different users, so UNIQUE is unnecessary.\n(ii) VARCHAR allows for variable-length strings, while CHAR requires fixed-length strings. In this case, it would waste storage space if USERID is stored as CHAR data type as all USERID is in different lengths."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Primary key\nForeign key\nPOST\nPOSTID\nUSERID\nCOMMENT\nPOSTID+USERID+DATE_TIME\nPOSTID, USERID\n(c) INSERT INTO COMMENT (POSTID, USERID, CONTENT, DATE_TIME)\nVALUES ('P0468', 'U1553248', 'Have fun on your vacation!', '2023-05-30 07:13'),\n('P0468', 'U1553248', 'Can't wait to see your pictures!', '2023-05-30 07:15')\n--]"
+        }
+      ],
+      "text": "A social media platform uses a USER table and a POST table to store information on users and posts respectively.\nUSER\nField name\nDescription\nExample\nUSERID\nIdentity code of the user\nU1973248\nUSERNAME\nThe name of the user\nJane5522\nEMAIL\nThe email address associated with the user's account\njane.doe@email.com\nPASSWORD\nThe password used to authenticate the user's account\n93Hfh11007\nPOST\nField name\nDescription\nExample\nPOSTID\nIdentity code of the post\nP0468\nCONTENT\nThe text content of the post\nCan't wait to go on vacation next week!\nDATE_TIME\nThe date and time when the post was created\n2023-05-29 14:59\nUSERID\nIdentity code of the user who created the post\nU1973248\n(a) Consider the following SQL statement:\nCREATE TABLE USER (\nUSERID CHAR(8) PRIMARY KEY,\nUSERNAME CHAR(15),\nEMAIL VARCHAR(50),\nPASSWORD VARCHAR(12) UNIQUE\nCHECK (EMAIL LIKE '%@%')\n)\n(i) State the potential issue in the above SQL statement.(2 marks)\n(ii) One of the administrators, Margret, claims that using VARCHAR(15) is better than CHAR(15) as a data type for USERID in the USER table. State a reason to support her claim. (2 marks)\n(b) The developer wants to add a new function, comment, to the social media platform.\nHere is the table structure of COMMENT.\nField name\nDescription\nExample\nPOSTID\nIdentity code of the post\nP0468\nUSERID\nIdentity code of the user\nU9873211\nCONTENT\nThe text content of the comment\nGreat photo. Thanks for sharing!\nDATE_TIME\nThe date and time when the comment was created\n2023-05-30 07:13\nIdentify the primary and foreign keys for POST and COMMENT if any, and write N/A if it is not applicable. (3 marks)\nPrimary key\nForeign key\nPOST\nCOMMENT\n(c) Samantha commented on Jane’s new post shown below.\nNEW POST\nJane5522(U1973248) Can’t wait to go on vacation next week! 2023-05-29 14:59\nSaman_tha_13(U1553248) Have fun on your vacation!           2023-05-30 07:13\nSaman_tha_13(U1553248) Can't wait to see your pictures!        2023-05-30 07:15\nWrite a SQL command to insert the new records into the COMMENT table. The POSTID of this post is 'P0468'. (3 marks)\n[--Answer:\n(a) (i) PASSWORD can be the same for different users, so UNIQUE is unnecessary.\n(ii) VARCHAR allows for variable-length strings, while CHAR requires fixed-length strings. In this case, it would waste storage space if USERID is stored as CHAR data type as all USERID is in different lengths.\n(b) Primary key\nForeign key\nPOST\nPOSTID\nUSERID\nCOMMENT\nPOSTID+USERID+DATE_TIME\nPOSTID, USERID\n(c) INSERT INTO COMMENT (POSTID, USERID, CONTENT, DATE_TIME)\nVALUES ('P0468', 'U1553248', 'Have fun on your vacation!', '2023-05-30 07:13'),\n('P0468', 'U1553248', 'Can't wait to see your pictures!', '2023-05-30 07:15')\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch1",
+        "循環",
+        "函數",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

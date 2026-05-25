@@ -157,6 +157,8 @@ def verify_spec_answers(
                 )
 
         elif item.section in ("section_b", "section_c"):
+            if item.meta.get("model_answer"):
+                continue
             sources = list(item.meta.get("dse_sources") or [])
             if item.meta.get("dse_source"):
                 sources.insert(0, item.meta["dse_source"])

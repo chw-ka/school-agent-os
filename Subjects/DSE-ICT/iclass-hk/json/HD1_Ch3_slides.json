@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/HD1 Ch3.pptx",
+    "slug": "HD1_Ch3_slides",
+    "title": "HD1 Ch3",
+    "series": "HD1",
+    "chapter": 3,
+    "curriculum_unit": "D-d",
+    "curriculum_part": "Core-D",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.885976+00:00",
+    "slide_count": 51,
+    "topic_tags": {
+      "課本活動": 14,
+      "循環": 5,
+      "列表": 3,
+      "除錯": 2
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "第三課算法設計（二）"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "數據結構103.2假設我們須要儲存十位顧客的年齡。我們應該怎麼做？我們應該像這樣創建十個變量嗎？如果有 1000 位顧客，那我們又該怎麼辦？age1age2age3age4age5age6age7age8age9age10"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "數據結構113.2數據結構有助我們整理數據，以便運用。本課將介紹如何使用陣列。"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "數據結構123.2以剛才提及的顧客年齡為例：我們可以將顧客年齡放入陣列 age。我們可以使用索引找出目標項目 / 元素。"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "數據結構133.2\t\t由上圖可見，age[1] 代表 8，age[2] 代表 21， 如此類推。"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "數據結構143.2陣列亦可用以代表字串，即一連串的字符。"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "陣列的基本算法153.3本課將介紹陣列的四種基本算法：存取陣列中的項目搜尋陣列中的項目檢查陣列中的值是否按次序排列加入及刪除陣列中的項目"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "存取陣列中的項目16A存取陣列項目與存取變量相似。偽代碼解說 / 盒子類比圖Input age[1]接收用戶的輸入，將該輸入數據放入陣列項目 age[1]。age[3] ← 16age[9] ← age[3] + 1"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "存取陣列中的項目17A我們亦可利用循環存取陣列項目。偽代碼解說 / 盒子類比圖設 i 由 1 至 10\tnum[i] ← i * 10設 k 由 1 至 10\t輸入 num[i]利用 for 循環逐一輸出陣列項目：10 20 30 40 50 60 70 80 90 100"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "試完成課本第 125 頁至第 126 頁的活動 3.3。183.3"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "193.3偽代碼陣列設 i 由 1 至 5\tnum[ i ] ← inum[ ] ← [ 2, 4, 6, 8, 10 ]設 k 由 1 至 5\tnum[ k ] ← num[ k ] + 50num[ 1 ] ← 1設 k 由 2 至 7\tnum[ k ] ← num[ k-1 ] + 212345Num[1]Num[2]Num[3]Num[4]Num[5]5254565860num[ 1 ]num[ 2 ]num[ 3 ]num[ 4 ]num[ 5 ]135791113Num[1]Num[2]Num[3]Num[4]Num[5]Num[6]Num[7]"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "追蹤表3.1隨著算法變得愈來愈複雜，要掌握變量的值會變得十分困難。使用追蹤表可以協助你追蹤變量的的變化。"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "203.3偽代碼陣列count [ ]  [ 1, 0, 0, 1, 1 ]設 i 由 1 至 5\tcount [ i ]  count [ i ] * 10輸出 count[ 10, 0, 0, 10, 10 ]num[ ]  [5, 10, 15, 20, 25, 30, 35]total  0avg  0設 N 由 1 至 7\ttotal  total + num[ N ]avg  total / 7輸出 total輸出 avg14020"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "213.3偽代碼陣列num[ ]  [15, 20, 10, 20, 25]weight[ ]  [1, 2, 2, 1, 3]設 k 由 1 至 5\tscore[ k ]  num[ k ] * weight[ k ]輸出 scoreAR[ ]  [10, 20, 40, 80, 160]r  0設 k 由 3 至 5\tr  r + AR[ k ]輸出 r[ 15, 40, 20, 20, 75 ]280"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "試完成課本第 129 頁至第 133 頁的測試站 3.3。CDCCC223.3(a) (i)(a) (ii)AR[ 1 ]AR[ 2 ]AR[ 3 ]AR[ 4 ]AR[ 5 ]-11-11-1AR[ 1 ]AR[ 2 ]AR[ 3 ]AR[ 4 ]AR[ 5 ]11-1-1-1"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "(a) (ii)(a) (iii)(b)(c)233.3AR[ 1 ]AR[ 2 ]AR[ 3 ]AR[ 4 ]AR[ 5 ]11-11-1AR[ 1 ]AR[ 2 ]AR[ 3 ]AR[ 4 ]AR[ 5 ]111-11AR[ 1 ]AR[ 2 ]AR[ 3 ]AR[ 4 ]AR[ 5 ]-1-1-111AR[ 1 ]AR[ 2 ]AR[ 3 ]AR[ 4 ]AR[ 5 ]-11111"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "a) \t240000b) \tfirst  1\tlast  7\ttotal  0\tfor k from first to last\t\ttotal  total + profit[ k ]\tOutput totalc)\tfirst  2\tlast  5d)\t只需要更改算法中代表年份的索引，不需要改寫算法，便可以計算不同時段的盈利。例如設 first = 5 和 last = 7 便可計算由 2018 至 2020 的總盈利。e)\t輸出 total / (last – first + 1)243.3"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "搜尋陣列中的項目25B線性檢索可以用於在索引中搜索項目。要搜索特定數據，可從索引 1 開始將項目與目標值進行配對，直至陣列的最後一個索引。"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "搜尋陣列中的項目26B以下算法能找出特定數值是否存在於陣列「height」中。\t輸入 target\tfound  False\t設 i 由 1 至 10\t\t如果 target = height[ i ]\t\t\tfound  True\t\t輸出 found"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "試完成課本第 135 頁的活動 3.4。Input targetfound  Falsei  1當 i <= 10\t如果 target = height\t\tfound  True\ti  i + 1Output found 即使找到目標值是存在於陣列中，for 循環仍會繼續直至到達陣列最後索引。每次循環內的條件判斷的結果會取代早前的結果。因此，以上算法只能判斷陣列最後項目的值是否等於目標值。273.4"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "搜尋陣列中的項目28B只須稍作修改，我們就能利用算法點算陣列項目。\t輸入 bound\tcount  0\t設 k 由 1 至 10\t\t如果 height[ k ] > bound\t\t\tcount  count + 1\t輸出 count"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "試回答課本第 139 頁的問題。mark  [56, 90, 85, 87, 66]avg_mark  76.8設 i 由 0 至 4\t如果 mark[ i ] < avg_mark\t\tcount  count + 1輸出 count293.4"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "追蹤表33.1以下是追蹤表的範例：偽代碼完成語句後 A 的值完成語句後 B 的值A  22B  525A  B – A35A  A * B155B  A – B1510"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "找出最大或最小的值30B通過新增變量儲存暫存數據，我們能夠找出陣列中最大或最小的值。✗✗✗✗✔✔✗✗✗"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "找出最大或最小的值31B以下算法能用以找出最高的同學身高是多少：\thighest  height [ 1 ]\t設 i 由 2 至 10\t\t如果 height [ i ] > tallest\t\t\ttallest  height [ i ]\t\t輸出 tallest"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "檢查陣列中的值是否按次序排列32C我們可以將現在的值與下一個值進行比對，以檢查陣列項目的排序。✔✔✔✔✔✔✔✔✔"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "檢查陣列中的值是否按次序排列33C我們可以將現在的值與下一個值進行比對，以檢查陣列項目的排序。✔✗"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "檢查陣列中的值是否按次序排列34C以下算法能檢查陣列 height中的值是否由小至大順序排列： \tsorted_list  True\t設 i 由 1 至 9\t\t如果 height [ i ] > height [ i + 1 ]\t\t\tsorted_list  False\t輸出 sorted_list"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "試完成課本第 144 頁的活動 3.5。sorted_list  Truei  1當 i <= 9 AND sorted_list = True\t如果 height[ i ] > height[ i + 1 ]\t\tsorted_list  True\ti  i + 1輸出 sorted_list353.5"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "試完成課本第 144 頁的測試站 3.5。weight  [30.5, 29.6, 29.1, 28.8, 28.1, 27.3, 26.9]sorted_list  True設 i 由 0 至 5\t如果 weight[ i ] < weight[ i + 1 ]\t\tsorted_list  False輸出 sorted_list363.5"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "加入及刪除陣列中的項目37D要在陣列中刪除項目，我們可以從需要刪除的項目開始，以該項目的下一個索引項目將其取代。"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "加入及刪除陣列中的項目38D以下算法用以將學生身高從陣列索引 P 的位置刪除：\tL  10\tInput P\tfor i from P to L-1\t\theight [ i ]  height [ i + 1 ]\tL  L - 1"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "加入及刪除陣列中的項目39D要在陣列中加入項目，我們可以從陣列的最後開始，以項目的前一個索引項目將其取代。"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "試完成課本第 111 頁的活動 3.2。43.2A 的值B 的值C 的值輸出A ← 1B ← 2C ← A + B輸出 CA ← B + C輸出 AB ← C + A輸出 A, B, C"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "加入及刪除陣列中的項目40D以下的算法用以把同學的身高加入陣列索引 P 的位置：\tL  9\t輸入 H, P\tL  L + 1\t設 i 由 L – 1 下至 to P\t\theight [ i + 1 ]  height [ i ]\theight [ P ]  H"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "試完成課本第 150 頁的活動 3.6。413.6使用 for 循環的偽代碼沒有使用 for 循環的偽代碼num[ ]num [ ]  [1, 2, 3, 4, 5, 6]設 i 由 5 down 下至 2\tnum [ i + 1 ]  num [ i ]num [ ]  [ 1, 2, 3, 4, 5, 6]num [ 6 ]  num [ 5 ]num [ 5 ]  num [ 4 ][ 1,                      ]num [ ]  [ 1, 2, 3, 4, 5, 6 ]設 i 由 2 下至 5\tnum[ i + 1 ]  num [ i ]num [ ]  [ 1, 2, 3, 4, 5, 6 ]num [ 3 ]  num [ 2 ]num [ 4 ]  num [ 3 ]num [ 3 ]  num [ 2 ]num [ 4 ]  num [ 3 ]num [ 5 ]  num [ 4 ]num [ 6 ]  num [ 5 ]2, 2, 3, 4, 5 [ 1, 2, 2, 2, 2, 2 ]"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "調動陣列中的項目42D通過加入項目和刪除項目，我們可以調動陣列中的項目。"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "調動陣列中的項目43D以下算法能將陣列項目調動至陣列的最前方：\t輸入 K\ttemp  songs [ K ]\t設 i 由 K 下至 2\t\tsongs [ K ]  songs [ K – 1 ]\tsongs [ 1 ]  temp"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "試完成課本第 156 頁的測試站 3.6。BBC443.6"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "邏輯錯誤453.4如果我們編寫算法時疏忽大意，就可能會出現邏輯錯誤。一旦算法出現邏輯錯誤，就會無法達到其目的。"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "試完成課本第 157 頁至第 158 頁的活動 3.7。根據這個算法，身高等於100厘米的客人不能乘坐過山車。這是因為算法裏的關係運算符出錯了，「 > 」應改成「 >= 」。這個算法的條件「mark >= 50 OR mark <=100」包括了所有實數，不論學生取得多少分數也能升班，這條件稱為「永遠成立」（always True）。條件應改成「mark >= 50 AND mark <=100」。這個算法用了前測循環，導致用家尚未輸入便開始判斷條件。應在循環前加入「輸入num」或改成後測循環。463.7"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "根據這個算法，最後輸出的值會是陣列中最小的值，而不是最大的值。這是因為算法裏的關係運算符出錯了，「 < 」應改成「 > 」。由於 i 的值一直不變，維持 i = 1，這導致無限循環。473.7"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "邏輯錯誤483.4典型的邏輯錯誤包括：使用不當的關係運算符或邏輯運算符語句缺漏序列出錯前測和後測循環選擇錯除錯正是找出並糾正程式錯誤的步驟。"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "試完成課本第 158 頁的測試站 3.7。由於循環的條件是「k < N」，最後一個比較的項目會是 AR[N-1]，而 AR[N] 是不會被比較的。因此循環條件應改成「當 k <= N」。493.7"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "The output is: 3 5 5 8 353.2A 的值B 的值C 的值輸出A ← 11B ← 212C ← A + B123輸出 C1233A ← B + C523輸出 A5235B ← C + A583輸出 A, B, C5835  8  3"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "運用模組化的好處503.5模組化是將程式分拆成獨立且較易處理的模組之過程。模組化的好處如下：易於理解便於重複使用提升開發效率"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "試完成課本第 161 頁的測試站 3.8。C513.8"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "The output is: 4 6 263.2ABCOutputA ← 11B ← 212C ← A * B122A ← B + C422B ← C + A462Output A, B, C4624 6 2"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "追蹤表73.1追蹤表亦可用以追蹤循環中的值。iXY輸出追入循環前23完成 i = 1 的循環體後1522完成 i = 2 的循環體後2755完成 i = 3 的循環體後31277完成 i = 4 的循環體後4191212完成 i = 5 的循環體後5311919完成 i = 6 的循環體後6503131"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "試完成課本第 114 頁至第 117 頁的測試站 3.1。83.1(a) 55(b) 找出 1 至 5 的平方數的總和（12 ＋ 22 ＋ 32 ＋ 42 ＋ 52）(c) k > 0CBBB(a)\t7 18 17 35(b)\tcount ← 0\tInput X, Y\trepeat\t\tX ← X + 10 \t\tY ← X – Y\t\tZ ← X + Y\t\tOutput Y\t\tcount ← count + 1\tuntil Z > 50\tOutput X\tOutput count(c) 3(d) X = 1   Y = 9"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "試完成課本第 120 頁至第 121 頁的測試站 3.2。DCAB93.2"
+    }
+  ]
+}

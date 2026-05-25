@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/HD2 Ch6.pptx",
+    "slug": "HD2_Ch6_slides",
+    "title": "HD2 Ch6",
+    "series": "HD2",
+    "chapter": 6,
+    "curriculum_unit": "D-d",
+    "curriculum_part": "Core-D",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.987439+00:00",
+    "slide_count": 51,
+    "topic_tags": {
+      "除錯": 40,
+      "循環": 9,
+      "課本活動": 5,
+      "列表": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "第六課程式測試和除錯"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "邏輯錯誤10A邏輯錯誤會使程式的運作出錯，或產生錯誤結果。邏輯錯誤的例子包括：序列出錯；條件語句的控制結構出錯；無限循環等。"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "運行時錯誤11A運行時錯誤所指的是程式在執行時遇上問題，導程程式意外終結。運行時錯誤的例子包括：將數字除以零；計算負數的平方根；存取超出陣列索引的項目等。"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "除錯12B除錯找出並糾正錯誤的過程。"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "語法錯誤13B試解釋課本第 173 頁至第 174 頁的 Python 程式為何無法運行。題目Python錯誤原因1print(Welcome Home)2print\"I Love ICT\"3print(\"No error\"4Print(\"something\")"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "語法錯誤14B試解釋課本第 173 頁至第 174 頁的 Python 程式為何無法運行。題目Python錯誤原因1print(Welcome Home)缺少引號。2print\"I Love ICT\"缺少括號。3print(\"No error\"括號必須成對。注意：引號也必須成對。4Print(\"something\")Python 區分大小寫（case-sensitive），所以「Print」和「print」並不相通。"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "語法錯誤15B題目Python錯誤原因5\"score\" = 98print(\"score\")6NAME = \"Apple\"print(name)7temp = A + 1print(temp)8if = \"5**\"print(if)9A = 2B = 2C = A × Bprint(C)"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "語法錯誤16B題目Python錯誤原因5\"score\" = 98print(\"score\")變量名稱不包括雙引號。6NAME = \"Apple\"print(name)Python 區分大小寫（case-sensitive），所以 NAME 和 name 是兩個不同的變量。7temp = A + 1print(temp)使用了未被宣告的變量 A。8if = \"5**\"print(if)「if」是關鍵字，不能作為變量的名稱。9A = 2B = 2C = A × Bprint(C)乘數的運算符是「*」，而非「x」。"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "語法錯誤17B題目Python錯誤原因10fullname = \"Chan Tai Man”surname = fullname – \" Tai Man\"11price1 = \"10\"price2 = \"15\"avg_price = (price1 + price2) / 2print(avg_mark)12y = random.uniform(1, 10)print(y)13c = math.sqrt(25)import mathprint(c)"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "語法錯誤18B題目Python錯誤原因10fullname = \"Chan Tai Man”surname = fullname – \" Tai Man\"數學運算符不適用於字串數據類型。11price1 = \"10\"price2 = \"15\"avg_price = (price1 + price2) / 2print(avg_mark)數學運算符不適用於字串數據類型。12y = random.uniform(1, 10)print(y)沒有匯入函數庫「random」。13c = math.sqrt(25)import mathprint(c)使用了相關函數後才匯入函數庫。"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "語法錯誤19B題目Python錯誤原因14num = 10if num < 0 print(\"It is a negative number\")15num = 0if num = 0: print(\"It is a zero\")16num = 10if num < 0: print(\"It is a negative number\")else:print(\"It is a non-negative number\")"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "測試程式6.1在設計算法或編寫程式後，我們可以使用一系列測試數據（test data）驗證程式的準確性。試輸入測試數據並比對實際測試結果和預期結果。測試數據包括：正常數據值錯誤數據值邊界數據值 / 邊際個案"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "語法錯誤20B題目Python錯誤原因14num = 10if num < 0 print(\"It is a negative number\")條件後應有冒號「:」。15num = 0if num = 0: print(\"It is a zero\")條件應使用關係運算符「==」，而非賦值運算符「=」。16num = 10if num < 0: print(\"It is a negative number\")else:print(\"It is a non-negative number\")「print(\"It is a non-negative number\")」前應加入縮排。"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "語法錯誤21B題目Python錯誤原因17print(\"Please input a number\")num = int(input())if num == 0: print(\"It is a zero\")"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "語法錯誤22B題目Python錯誤原因17print(\"Please input a number\")num = int(input())if num == 0: print(\"It is a zero\")不能隨便加入縮排。「print(\"Please input a number\")」前應移除縮排。"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "邏輯錯誤23B試找出以下程式中的邏輯錯誤，並作出修正。問題 1 目的列印由 1 至 10 的整數偽代碼i  1while i <= 10 Output i測試結果錯誤原因更正"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "邏輯錯誤24B試找出以下程式中的邏輯錯誤，並作出修正。問題 1 目的列印由 1 至 10 的整數偽代碼i  1while i <= 10 Output i測試結果1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 …錯誤原因在循環內並沒有更新變量 i 的值，導致無限循環。更正循環內應加入「i  i + 1」。"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "邏輯錯誤25B問題 2 目的將兩個變量的值互換偽代碼A  10B  20A  BB  A輸出 A輸出 B測試結果錯誤原因更正預期結果測試結果2010"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "邏輯錯誤26B問題 2 目的將兩個變量的值互換偽代碼A  10B  20A  BB  A輸出 A輸出 B測試結果錯誤原因在更新變量 A 的值前並沒有把它先儲存起來。更正新增一個暫儲變量去儲存其中一個變量的值。預期結果測試結果20102010"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "邏輯錯誤27B問題 3 目的檢查用家輸入的數值是否在 0 至 100 的範圍內。若不在範圍內，便會要求用家重新輸入。程式碼Input numwhile num < 0 AND num > 100\tOutput \"Wrong input\"\tInput numOutput \"Correct input\"測試測試數據預期結果測試結果-5Wrong input0Correct input10Correct input100Correct input150Wrong input"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "邏輯錯誤28B問題 3 目的檢查用家輸入的數值是否在 0 至 100 的範圍內。若不在範圍內，便會要求用家重新輸入。程式碼Input numwhile num < 0 AND num > 100\tOutput \"Wrong input\"\tInput numOutput \"Correct input\"測試測試數據預期結果測試結果-5Wrong input輸入正確0Correct input輸入正確10Correct input輸入正確100Correct input輸入正確150Wrong input輸入正確"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "邏輯錯誤29B問題 3 錯誤原因更正"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "測試程式36.1邊際個案是：正常數據範圍與錯誤數據範圍的分界值，及分界值兩邊的數據。影響條件判斷邏輯結果的分界值，及分界值兩邊的數據。"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "邏輯錯誤30B問題 3 錯誤原因沒有一個數字符合這個算法的條件「num < 0 AND num > 100」。不論輸入什麼數字，都會顯示「輸入正確」。更正條件應改成「num < 0 OR num > 100」。"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "邏輯錯誤31B問題 4 目的在陣列 A 中的第一個位置加入一個項目「170」偽代碼L  size of array AL  L + 1for i from 1 to L-1\tA[i+1]  A[i]A[1]  170測試結果錯誤原因"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "邏輯錯誤32B問題 4 目的在陣列 A 中的第一個位置加入一個項目「170」偽代碼L  size of array AL  L + 1for i from 1 to L-1\tA[i+1]  A[i]A[1]  170測試結果序列出錯，循環後陣列的項目都全是同一數值。錯誤原因for 循環的範圍應是「設 i 由 L-1 下至 1」。"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "邏輯錯誤33B問題 5 目的根據成績判斷學生取得的等級偽代碼if score >= 50 then\tOutput \"Pass\"else if score >= 60 then\tOutput \"Credit\"else if score >= 80 then\tOutput \"Distinction\"else\tOutput \"Fail\"測試結果測試數據預期結果測試結果40Fail55Pass70Credit90Distinction"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "邏輯錯誤34B問題 5 目的根據成績判斷學生取得的等級偽代碼if score >= 50 then\tOutput \"Pass\"else if score >= 60 then\tOutput \"Credit\"else if score >= 80 then\tOutput \"Distinction\"else\tOutput \"Fail\"測試結果測試數據預期結果測試結果40FailFail55PassPass70CreditPass90DistinctionPass"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "邏輯錯誤35B問題 5 錯誤原因更正"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "邏輯錯誤36B問題 5 錯誤原因嵌套條件語句的條件判斷的邏輯順序出錯， 導致以上算法只能判斷出「Pass」或「Fail」。當 score 為 90，即第一個條件判斷正確，於是算法在輸出 「Pass」後便離開條件語句。更正如果 score >= 80\t輸出 \"Distinction\"否則如果 score >= 60\t輸出 \"Credit\"否則如果 score >= 50\t輸出 \"Pass\"否則\t輸出 \"Fail\""
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "運行時錯誤37B試解讀以下錯誤訊息，並解釋程式終止的原因。題目Python 程式碼及錯誤信息錯誤原因12"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "運行時錯誤38B試解讀以下錯誤訊息，並解釋程式終止的原因。題目Python 程式碼及錯誤信息錯誤原因1將數字除以零。2計算負數的平方根。"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "運行時錯誤39B題目Python 程式碼及錯誤信息錯誤原因34"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "小智設計了一個算法以輸出 BMI 數值所代表的身體健康狀況，算法如下：\t輸入 bmi\t如果 bmi <= 0 then\t\t輸出 “Error”\t否則如果 if bmi < 18.5 then\t\t輸出 “Underweight”\t否則如果 bmi < 23 then\t\t輸出 “Normal”\t否則如果 bmi < 25 then\t\t輸出 “Overweight”\t否則\t\t輸出 \"Obese“試為每個輸出建議一個輸入值來測試這個算法。46.1"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "運行時錯誤40B題目Python 程式碼及錯誤信息錯誤原因3存取超出陣列索引的項目 (AR[5])。4輸入值錯誤，字串「A」不能轉換成數字。"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "試完成課本第 179 頁至第 180 頁的測試站 6.2。CDA計算負數的平方根導致運行時錯誤。由於條件 trial = 3 成立也能令循環結束，所以循環結束不代表用戶輸入的密碼正確。如刪除了第 6 行， 即使用戶未能正確輸入密碼，也會顯示「登入成功！」這訊息。416.2"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "程式設計426.3程式設計可以分為兩大階段：分析問題階段實施階段"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "程式設計436.3除錯會在實施階段進行。"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "算法比較446.4算法的優劣可從執行步數及資源運用的角度進行比較。試參考以下例子：算法 1算法 2偽代碼if mark >= 50 then\tOutput “Pass”if mark < 50 then\tOutput “Fail”if mark >= 50 then\tOutput “Pass”else\tOutput “Fail”比較次數21"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "算法比較456.4下列兩種算法能用以搜尋數據是否存在於陣列中：算法 1算法 2偽代碼found  Falsefor i from 1 to 10\tif target = A[i]\tfound  TrueOutput foundfound  0for i from 1 to 10\tif target = A[i]\t\tfound  1Output found變量 found 的數據類型BooleanInteger變量 found 在記憶體中佔用的大小1 bit32 bits"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "試完成課本第 189 頁至第 190 頁的測試站 6.3。466.3"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "下列兩個算法都是用作檢查陣列 S 中的值是否由小至大順序排列：比較這兩個算法的執行時間，以下哪一句描述是正確的？兩個算法的執行時間是差不多一樣算法 1 一般較快算法 2 一般較快無法判斷476.3算法 1算法 2sorted  Truefor i from 1 to 100\tif S[i] > S[i+1]\t\tsorted_list  FalseOutput sorted_listsorted_list  Truei  1while i <= 100 AND sorted_list = True\tif S[i] > S[i+1]\t\tsorted_list  False\ti  i + 1Output sorted_list"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "下列兩個算法都是用作輸出 BMI 數值所代表的意義：比較這兩個算法的執行時間， 以下哪一句描述是正確的？兩個算法的執行時間是差不多算法 1 一般較快算法 2 一般較快無法判斷486.3算法 1算法 2Input bmiif bmi < 18.5 then\tOutput \"Underweight\"else if bmi < 23 then\tOutput \"Normal\"else if bmi < 25 then\tOutput \"Overweight\"else\tOutput \"Obese\"Input bmiif 0 < bmi AND bmi < 18.5 then\tOutput \"Underweight\"else if 18.5 <= bmi AND bmi < 23 then\tOutput \"Normal\"else if 23 <= bmi AND bmi < 25 then\tOutput \"overweight\"else\tOutput \"Obese\""
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "（挑戰題）下列兩個算法都是用作檢查兩個數字是否同時等於零：比較這兩個算法的執行步數，以下哪一句描述是正確的？兩個算法的執行步數大致相同算法 1 一般較少算法 2 一般較少無法判斷496.3算法 1算法 2if A == 0 and B == 0:\tprint(“Both are zero”)if A == 0:\tif B == 0:\t\tprint(“Both are zero”)"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "分析測試數據須足夠測試程式內所有選擇控制結構的分支：56.1"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "（挑戰題）以下哪些算法的效率是大致相同的？算法 1 和算法 3。506.3算法 1if grade == \"5**\" or grade == \"5*\":\tprint(\"Get stars\")算法 2if grade == \"5**\":\tprint(\"Get stars\")if grade == \"5*\":\tprint(\"Get stars\")算法 3if grade == \"5**\":\tprint(\"Get stars\")elif grade == \"5*\":\tprint(\"Get stars\")"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "算法比較516.4下列兩個算法都是用作計算用家輸入的 5 個數字的總和：算法 1算法 2代碼Input num1Input num2Input num3Input num4Input num5total  num1+num2+num3+num4+num5Output totaltotal  0for i from 1 to 5 do Input num total  total + numOutput total執行步數724變量數量62優勢之處執行步數較少資源運用較少"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "66.1答案輸入輸出-5（或任何小於或等於 0 的數值）輸入錯誤15（或任何 0 < bmi < 18.5 的數值 ）過輕20（或任何 18.5 <= bmi < 23 的數值 ）正常24（或任何 23 <= bmi < 25 的數值）超重30（或任何大於或等於 25 的數值 ）肥胖"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "試完成課本第 167 頁的測試站 6.1。BCCBA76.1"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "程式錯誤及除錯86.2編寫程式時，可能會出現各種各樣的錯誤。你曾在編程時遇到過什麼錯誤？試分享一些例子吧！"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "語法錯誤9A當程式碼違反編程語言規則時，就會出現語法錯誤。這種錯誤會令程式碼無法被編譯和執行。語法錯誤的例子包括：欠缺冒號（ : ）；關鍵字拼寫錯誤；字母大小寫錯誤； 欠缺縮排或括號等。IDE 能夠檢測到語法錯誤，並顯示錯誤信息。"
+    }
+  ]
+}

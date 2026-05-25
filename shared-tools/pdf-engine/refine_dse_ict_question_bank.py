@@ -137,9 +137,9 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--force", action="store_true", help="Re-run LLM even if questions_refined.json exists")
     ap.add_argument(
         "--provider",
-        choices=["gemini", "openai"],
+        choices=["gemini", "deepseek", "openai"],
         default=None,
-        help="LLM provider (default: gemini if GOOGLE_API_KEY set, else openai)",
+        help="LLM provider (default: deepseek > gemini > openai from .env keys)",
     )
     ap.add_argument("--model", help="Override DSE_ICT_LLM_MODEL / default for mode")
     args = ap.parse_args(argv)

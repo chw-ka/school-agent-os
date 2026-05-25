@@ -75,6 +75,10 @@ def collect_failed_slot_ids(report: QuestionQualityReport) -> list[str]:
         for issue in report.coherence.issues:
             add(issue.item_id)
 
+    if report.solvability is not None:
+        for issue in report.solvability.issues:
+            add(issue.item_id)
+
     if report.concept_conflicts is not None:
         for c in report.concept_conflicts.conflicts:
             if c.item_a_section in ("mcq", "section_a"):
@@ -156,6 +160,10 @@ def run_partial_regen(
     seed: int,
     max_attempts: int = 10,
     refs: Optional[list[tuple[str, dict]]] = None,
+    solve_feedback: Optional[dict[str, dict[str, Any]]] = None,
+    use_llm_repair: bool = False,
+    llm_cfg: Any = None,
+    llm_repair_attempts: int = 3,
 ) -> PartialRegenResult:
     results: list[SlotRegenResult] = []
     unresolved: list[str] = []
@@ -169,17 +177,42 @@ def run_partial_regen(
 
         resolved = False
         note = ""
+        fb = (solve_feedback or {}).get(slot_id)
+        if use_llm_repair and fb and llm_cfg is not None:
+            from solve_repair import repair_item_with_llm
+
+            item_row = _item_by_id(spec, slot_id)
+            if item_row:
+                for attempt in range(1, llm_repair_attempts + 1):
+                    try:
+                        new_item = repair_item_with_llm(
+                            cfg=llm_cfg,
+                            slot=slot,
+                            item=item_row,
+                            feedback=fb,
+                        )
+                        replace_spec_item(spec, new_item, seed=seed)
+                        if slot_passes_local_check(spec, slot_id, refs=refs):
+                            resolved = True
+                            note = f"llm repair ok on attempt {attempt}"
+                            results.append(SlotRegenResult(slot_id, True, attempt, note=note))
+                            break
+                    except Exception as exc:
+                        note = f"llm repair attempt {attempt}: {exc}"
+                if resolved:
+                    continue
+
         for attempt in range(1, max_attempts + 1):
             variant = attempt
             item = generate_item_for_slot(slot, style, seed=seed + attempt * 17, variant=variant)
             replace_spec_item(spec, item, seed=seed)
             if slot_passes_local_check(spec, slot_id, refs=refs):
                 resolved = True
-                note = f"ok on attempt {attempt}"
+                note = note or f"pattern regen ok on attempt {attempt}"
                 results.append(SlotRegenResult(slot_id, True, attempt, note=note))
                 break
         else:
-            note = f"still failing after {max_attempts} attempts"
+            note = note or f"still failing after {max_attempts} attempts"
             results.append(SlotRegenResult(slot_id, False, max_attempts, note=note))
             unresolved.append(slot_id)
 

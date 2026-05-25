@@ -1,0 +1,380 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EB Ch1.pptx",
+    "slug": "EB_Ch1_slides",
+    "title": "EB Ch1",
+    "series": "EB",
+    "chapter": 1,
+    "curriculum_unit": "B-a",
+    "curriculum_part": "Core-B",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.449459+00:00",
+    "slide_count": 71,
+    "topic_tags": {
+      "循環": 21,
+      "列表": 2,
+      "硬件": 1,
+      "數據庫": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 1Input and Output Devices"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Audio Input device10CMusical Instrument Digital Interface (MIDI) is a file format that stores the data of musical notes or digitally sampled sounds instead of a sound recorded by a microphone.A MIDI keyboard is used to input the musical notes or digitally sampled sounds in a MIDI file. Unlike a microphone, it is not affected by ambient noise."
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Image input device11DImage input devices are used for creating digital image files. They include:Image scannerDigital camera"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Image input device12DThere are different types of scanners. The most common one is a flatbed image scanner. Here are the common attributes of scanner specifications:"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Image input device13D3D scanners produce a digital 3D model based on the scanned object."
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Image input device14DAfter scanning a paper document, a digital image file is created. However, without further processing, we cannot search for text in the image file.To enable word processing and enhance data analysis, we can convert an image to a text file via optical character recognition (OCR) software."
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Image input device15DDigital cameras capture still images from the real world using image sensors.The captured images are usually stored in memory cards or other storage devices installed in the digital cameras."
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Video input device16EVideo input devices are used for creating digital video files.Digital video cameras are similar to digital cameras, except that they have built-in microphones and can record videos."
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Video input device17EUnlike digital video cameras, webcams are not designed to be portable handheld devices.Instead, they usually connect to a computer directly and stream the recording online."
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Automatic input device18FSome input devices, such as barcode scanners and magnetic stripe card readers, allow us to input data automatically with minimal human effort.An optical reader scans visual data and converts it to digital data, such as sequences of numbers and text strings. They include:Barcode scannerQuick Response code scannerOptical mark readerMagnetic stripe card reader and smart card readerSensorBiometric device"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "Automatic input device19FBarcodes are commonly seen on packaged products, coupons, books, parcels, etc.Barcode scanners scan barcodes, convert them into sequences of characters or text strings and send them to computers."
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Inputs and Outputs: The Sensor Principle in Daily Life Why does the door open automatically when you approach it? Why does the toilet flush automatically? Why does the air conditioner automatically adjust the temperature? 2"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Automatic input device20FQuick Response codes (QR codes) are two-dimensional barcodes. Unlike barcodes, they can represent text strings containing any type of characters, instead of a sequence of numbers only.QR code scanners scan QR codes and convert them into text strings."
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "Automatic input device21FAn optical mark reader is a scanner dedicated to scanning specific symbols. Such an input method is called optical mark recognition."
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "Automatic input device22FMagnetic stripe card readers and smart card readers are commonly used in retail industry, financial industry and security.Magnetic Strip cardSmart cardA magnetic stripe card reader is made to read its data by sensing magnetism.A smart card stores its data in a microchip."
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "Automatic input device23FThere are various types of sensors. Each of them is designed to read one or more physical quantities from the environment.Light sensorUltrasonic sensorCompassTemperature and humidity sensorGyroscope"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "Automatic input device24FBiometric devices can scan and read people’s physical or behavioural characteristics, for example, fingerprint, face, iris and voice."
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "Which of the following is/are common connection method(s) of a wireless mouse to a computer?BluetoothUSB cable2.4 GHz radio frequency(1) and (2) only(1) and (3) only(2) and (3) only(1), (2) and (3)251.1"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "AnalysisAll items are common connection methods. However, one of them is not for wireless devices. Item (2), USB cable is a wired connection method.SolutionThe answer is B.261.1"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "Here are the specifications of an image scanner. Which of the following will affect the quality of its scanned images?4800 dpi802.11n supportedJPEG format(3) only(1) and (2) only(1) and (3) only(1), (2) and (3)271.1"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "AnalysisItem (1), 4800 dpi, is the pixel density/resolution of a scanner. The higher the pixel density, the better the image quality.Item (2) is a valid specification of a scanner. However, it relates to the connection method, instead of the image quality.Item (3), JPEG format, is the file format of the scanned images. As a lossy compressed format, the image quality is lower than an uncompressed format like BMP or a lossless compressed format like PNG.SolutionThe answer is C.281.1"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "Which of the following is/are the advantage(s) of a computer mouse over a touchscreen?Lower purchase costBetter hand-eye coordinationFaster text input(1) only(2) only(1) and (3) only(2) and (3) only291.1"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Input-Process-Output Cycle31.1To convert data into information, there are three steps:Data is input into the computer.The program processes the input data. Data in storage may be retrieved or updated during this step.Meaningful information is output from the computer.This procedure is called input-process-output cycle (IPO cycle)."
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "Which of the following statements about magnetic stripe cards and smart card is/are correct?Magnetic stripe cards are more durable than smart cardsSmart cards store their data in microchipsSmart cards are harder to replicate than magnetic stripe cards(1) only(2) only(1) and (3) only(2) and (3) only301.1"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Oscar’s company receives paper inquiry forms regularly. He is tired of typing the data on the forms to the database. Suggest an input device and a relevant technology to facilitate the data entry. Explain how they can help briefly.Scanner and OCR software. Use a scanner to scan the forms into digital image files. Then use OCR software to convert the images into the text; Microphone and speech recognition. He can read the text on the form out to the microphone. Then use speech recognition software to convert his speech into text.311.1"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "Output Device321.3Output devices are responsible for the last step in an input-process-output cycle. Just like input devices, output devices can be wired or wireless.TypeExampleConnection methodWiredWirelessRF technologyBluetoothWi-Ficonnection"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Monitor33AMonitors are one of the most important output devices for computers. They display the user interface and show the result of information processing."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "Monitor34AThere are two common types of monitors, which look alike."
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "Monitor35AHere are the common attributes of monitor specifications.AttributeDescriptionScreen sizeThe size of a screen is usually measured by the length of its diagonal in inches.ResolutionIt means how many dots/pixels there will be on the screen."
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "Monitor36A AttributeDescriptionPixel densityIt means how many dots (or pixels) there will be in a given area of a screen. It is measured in pixels per inch (ppi)The higher the pixel density, the better the quality of the resulting digital images. It can be calculated by the formula below. Pixel density = diagonal resolution ÷ screen sizeColour depthIt means the number of possible colours that a pixel can be. The higher the colour depth, the better the image quality."
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "Monitor37A AttributeDescriptionAspect ratioThe aspect ratio of a screen is the ratio of its width to its height. Refresh rateIt means the number of times a screen can update its image in a given time. It is usually measured in Hz. Common refresh rates are 60 Hz, 75 Hz, 120 Hz and 144 Hz.InterfaceMonitors can be connected to computers through ports or networks. Common connection types are VGA, DVI, HDMI and DisplayPort.Contrast ratioThe contrast ratio of a screen is the luminance ratio of white to that of black that the monitor can show."
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "Monitor38AThere are different types of connection ports for a monitor:"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "Projector39BProjectors are devices that project images on a surface."
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Input Device41.2Input devices are responsible for the first step in an input-processing-output cycle. They can be wired or wireless.TypeExampleConnection methodWiredWirelessRF technologyBluetoothWi-Ficonnection"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "Projector40BComparison between monitors and projectors:"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "Printer41CPrinters are devices that produce hard copies, which are usually electronic documents in paper form. Here are the common attributes of printer specifications:"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Printer42CThermal printers produce printouts by heating thermal paper."
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "Printer43CInkjet printers produce printouts by spraying ink droplets drawn from their ink cartridges."
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "Printer44CA laser printer is often used in business offices. It has a high printing speed and low printing cost per page. Moreover, its printouts are not susceptible to water."
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "Printer45CHere is a table comparing the above three types of printers:"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "Printer46CPlotters are expensive printers that are specialised in creating high quality vector drawings precisely by moving their pens continuously instead of printing dots by dots like some other printers."
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "Printer47C3D printers are used to produce physical objects based on digital three-dimensional models."
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "Speakers, headphones and earphones48DSpeakers, headphones and earphones can connect to the sound card of a computer and play sounds, which are analog signals, as output. Some headphones have microphones installed. Such headphones are a combination of input devices and output devices."
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "Speakers, headphones and earphones49DComparison between speakers and headphones:"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Keyboard5AA full-sized keyboard has 100 or more keys. Each key is represented by a unique code. When a key is pressed, the corresponding code is sent to the computer."
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "Leslie wants to print a copy of her academic certificate for her resume. What are the advantages of using a laser printer over using an inkjet printer?The image on the printout does not blur upon contact with waterThe cartridges of a laser printer do not get cloggedThe image on the printout lasts for a very long time(1) and (2) only(2) and (3) only(1) and (3) only(1), (2) and (3) only501.2"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "AnalysisAll three statements are correct. However, the question is asking for the advantages of using a laser printer over an inkjet printer. That means if the statement is true for both laser printers and inkjet printers, it does not count.For item (1), an inkjet printout blurs upon contact with water.For item (2), an inkjet printer is susceptible to cartridge clogging.However, for item (3), the image of an inkjet printout lasts for a very long time too.SolutionThe answer is A.511.2"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "Here are the specifications of two monitors, A and B.Which of the following statements must be correct?The screen size of monitor B is larger than that of A.The aspect ratios of monitor B is larger than that of A.Both monitors have the same image quality.(1) only(2) only(1) and (3) only(2) and (3) only521.2"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "SolutionThe answer is A.531.2"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "Which of the following is/are the advantages of using a projector over a monitor?A projector works better outdoor during the dayA projector has an adjustable screen sizeA projector is easier to transport(1) only(2) only(1) and (3) only(2) and (3) only541.2"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "A listening test is scheduled for 100 students in a hall. Spencer is responsible for preparing the devices used for playing the recording. State one advantage and one disadvantage of using speakers over headphones.Advantage: A speaker has a large coverage area while a pair of headphones can be used by one student only / speakers do not hinder the movement of students.Disadvantage: Speakers are easily affected by ambient noise / there may be an inconsistency in sound quality for all students.551.2"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "Application of Computers561.4Computers are used for various purposes:Business useEducational use"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "Business use57AVideo conferencing is a live meeting which can connect more than one party over the internet remotely.Video conferencing allows companies to organise business meetings without gathering employees in the same place."
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "Business use58APaper receipts usually come from thermal printers, which are known for fast and quiet printing with low printing costs."
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "Business use59ATo facilitate the transaction of products and reduce labour costs, some retailers adopt electronic payment systems or self-checkout systems.Point-of-sales terminals (POS terminals) are commonly used for electronic payments."
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Keyboard6AA numeric keyboard (numpad) is also a keyboard. Most of its keys represent Arabic numerals and arithmetic operators. It is mainly used in banks or point-of-sale terminals for number input, password input or calculation."
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "Business use60AA POS terminal usually consists of many devices:"
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "Business use61AA self-service terminal can be seen as an upgrade version of a POS terminal. Most of the devices that are found on a POS terminal can be found on a self-service terminal."
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "Educational use62BOther than business use, video conferencing can be used for online lessons."
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "Educational use63BTo facilitate library circulation, some libraries have library catalogue terminals and self-charging terminals installed."
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "Educational use64BA self-charging terminal usually consists of:"
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "Educational use65BInformation kiosks can be found in many museums. They allow visitors to learn more about the collection in the museum without a tour guide."
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "Which of the following devices is/are commonly seen in a self-checkout system?Smart card readerHeadphoneBarcode scanner(1) only(2) only(1) and (3) only(2) and (3) only661.3"
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "AnalysisItem (1), smart card reader, is commonly used for scanning smart cards for electronic payments.Item (2), headphone, is usually not needed for the self-checkout system. Even if the self-checkout system has a broadcast system, which is rare, speakers are more likely to be used. Item (3), barcode scanner, is commonly used for reading product data.SolutionThe answer is C.671.3"
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "Mandy is a manager of an electrical appliance shop. She wants to choose a printer for the point-of-sales (POS) system of her shop. This printer is used for printing warranty certificates when appliances are bought by customers. Which of the following printer should she choose?Thermal printerPlotter3D printerLaser printer681.3"
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "SolutionThe answer is D.691.3"
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Pointing device7BA pointing device allows us to interact with the interface of a computer. Common interactions include pointing, clicking, dragging, dropping, double-clicking, right-clicking, scrolling, etc. Some of them may involve the movement of cursors."
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "Which of the following devices is/are usually needed for video conferencing?MicrophoneWebcamMIDI keyboard(1) only(3) only(1) and (2) only(2) and (3) only701.3"
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "An advertising company uses plastic sheets as the colour filters and halogen bulbs as backlights for its advertising light boxes. The contents of these light boxes are changed weekly. The company plans to replace these light boxes with LED-backlit LCD monitors. List two advantages and two disadvantages of doing so.Advantage: LED-backlit LCD monitors can play videos and display dynamic information, such as time and weather / There is no need to prepare new plastic sheets weekly / LED-backlit LCD monitors consume less energy than halogen bulbs.Disadvantage: LED-backlit LCD monitors have a higher purchase cost / LED-backlit LCD monitors may break due to bad weather / LED-backlit LCD monitors require more space.711.3"
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Pointing device8BThere are two types of pointing devices: motion-tracking pointing devices and position-tracking pointing devices.TypeExampleMotion-tracking pointing devices Position-tracking pointing devices"
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "Audio input device9CMicrophones record analog sound waves from the real world and convert them into electrical signals. These signals are usually converted to digital audio files by the sound card of a computer.In addition to creating sound recordings, microphones can also be used to input text via speech recognition."
+    }
+  ]
+}

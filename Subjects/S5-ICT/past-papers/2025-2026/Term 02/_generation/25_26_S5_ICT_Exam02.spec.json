@@ -51,6 +51,19 @@
       "D",
       "D"
     ],
+    "mcq_combo_slots": [
+      6,
+      8,
+      13,
+      15,
+      21,
+      28
+    ],
+    "mcq_table_slots": [
+      6,
+      13,
+      15
+    ],
     "exam_structure": {
       "section_a": "MCQ — compulsory Core A/B/D only (DSE Paper 1A style)",
       "section_b": "Structured — compulsory (DSE Paper 1B style)",
@@ -69,18 +82,18 @@
         "min": 2,
         "max": 6
       },
-      "數據控制": {
-        "min": 1,
-        "max": 6
-      },
       "多媒體": {
         "min": 3,
         "max": 10
+      },
+      "硬件": {
+        "min": 2,
+        "max": 8
       }
     },
     "generation": {
       "method": "blueprint_generate",
-      "seed": 20252026,
+      "seed": 20255033,
       "style_patterns": "Subjects/DSE-ICT/question-bank/style_patterns.json",
       "blueprint": "exam_blueprint.json"
     },
@@ -98,6 +111,13 @@
       "Core-D"
     ],
     "phrasing": "HKDSE ICT style — generated from blueprint (not bank copy)",
+    "depth_calibration": {
+      "source": "iclass-hk",
+      "profile_path": "Subjects/DSE-ICT/iclass-hk/depth_profile.json",
+      "json_root": "Subjects/DSE-ICT/iclass-hk/json",
+      "bank_items": 517,
+      "purpose": "Calibrate S5/F5 ICT exam depth across Core A/B/D and electives (EA/EC). iClass HK items are school-level benchmarks — match depth by curriculum_unit + concepts."
+    },
     "mcq_provenance": [
       "generated://mcq/mcq-01",
       "generated://mcq/mcq-02",
@@ -130,15 +150,15 @@
       "generated://mcq/mcq-29",
       "generated://mcq/mcq-30"
     ],
-    "written_picks_source": "f5_ict_written_content",
-    "mcq_answers": "ADBBDCCADDCBADCABBCABBADCCBAAD",
-    "written_render": "template"
+    "written_render": "patterns",
+    "written_picks_source": "style_patterns.written + blueprint",
+    "mcq_answers": "BBADCDDBDBACCABDACCDABAABDCCBA"
   },
   "items": [
     {
       "id": "mcq-01",
       "section": "mcq",
-      "text": "以下哪一項最能描述「資訊」與「數據」的關係？\n\n\n\n\n\n\n\tA.\t數據經處理後成為資訊\n\tB.\t數據不能重複使用\n\tC.\t資訊不需要儲存\n\tD.\t資訊必定以數字儲存\n",
+      "text": "以下哪一項最能描述「資訊」與「數據」的關係？\n\n\n\tA.\t資訊必定以數字儲存\n\tB.\t數據經處理後成為資訊\n\tC.\t資訊不需要儲存\n\tD.\t數據不能重複使用\n",
       "marks": 1,
       "concepts": [
         "資訊處理",
@@ -146,13 +166,74 @@
         "資訊處理循環"
       ],
       "core": "A",
-      "answer": "A",
-      "dse_source": "generated://mcq/mcq-01"
+      "answer": "B",
+      "dse_source": "generated://mcq/mcq-01",
+      "depth_references": [
+        {
+          "id": "SSICTA0101_04A001C",
+          "bank_code": "SSICTA0101_04A001C",
+          "chapter": 1,
+          "source_slug": "CoreA1_hk",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "列表",
+            "除錯",
+            "軟件",
+            "資訊處理",
+            "輸入輸出"
+          ],
+          "stem_preview": "初創企業DataVitals開發了一個手機應用程式，收集用戶每日的運動數據和心跳率讀數。應用程式使用此原始數據生成每週進度報告，並以安全方式儲存資料。"
+        },
+        {
+          "id": "SSICTA0101_04A001E",
+          "bank_code": "SSICTA0101_04A001E",
+          "chapter": 1,
+          "source_slug": "CoreA1_en",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "循環",
+            "列表",
+            "硬件",
+            "軟件",
+            "試算表",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "A startup, \"DataVitals,\" develops a mobile app that collects users' daily exercise data and heart rate readings. The app uses this raw input to generate weekly progress reports and securely store the "
+        },
+        {
+          "id": "SSICTA0102_04A001C",
+          "bank_code": "SSICTA0102_04A001C",
+          "chapter": 2,
+          "source_slug": "CoreA2_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch2",
+            "除錯",
+            "資訊處理",
+            "輸入輸出",
+            "數據類型"
+          ],
+          "stem_preview": "家熙是某飲料店的店員。"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-02",
       "section": "mcq",
-      "text": "以下哪一項最能描述「資訊」與「數據」的關係？\n\n\n\tA.\t資訊必定以數字儲存\n\tB.\t數據不能重複使用\n\tC.\t資訊不需要儲存\n\tD.\t數據經處理後成為資訊\n",
+      "text": "以下哪一項最能描述「資訊」與「數據」的關係？\n\n\n\tA.\t資訊必定以數字儲存\n\tB.\t數據經處理後成為資訊\n\tC.\t資訊不需要儲存\n\tD.\t數據不能重複使用\n",
       "marks": 1,
       "concepts": [
         "資訊處理",
@@ -160,13 +241,74 @@
         "批次處理"
       ],
       "core": "A",
-      "answer": "D",
-      "dse_source": "generated://mcq/mcq-02"
+      "answer": "B",
+      "dse_source": "generated://mcq/mcq-02",
+      "depth_references": [
+        {
+          "id": "SSICTA0101_04A001C",
+          "bank_code": "SSICTA0101_04A001C",
+          "chapter": 1,
+          "source_slug": "CoreA1_hk",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "列表",
+            "除錯",
+            "軟件",
+            "資訊處理",
+            "輸入輸出"
+          ],
+          "stem_preview": "初創企業DataVitals開發了一個手機應用程式，收集用戶每日的運動數據和心跳率讀數。應用程式使用此原始數據生成每週進度報告，並以安全方式儲存資料。"
+        },
+        {
+          "id": "SSICTA0101_04A001E",
+          "bank_code": "SSICTA0101_04A001E",
+          "chapter": 1,
+          "source_slug": "CoreA1_en",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "循環",
+            "列表",
+            "硬件",
+            "軟件",
+            "試算表",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "A startup, \"DataVitals,\" develops a mobile app that collects users' daily exercise data and heart rate readings. The app uses this raw input to generate weekly progress reports and securely store the "
+        },
+        {
+          "id": "SSICTA0102_04A001C",
+          "bank_code": "SSICTA0102_04A001C",
+          "chapter": 2,
+          "source_slug": "CoreA2_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch2",
+            "除錯",
+            "資訊處理",
+            "輸入輸出",
+            "數據類型"
+          ],
+          "stem_preview": "家熙是某飲料店的店員。"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-03",
       "section": "mcq",
-      "text": "學生檔案以學號、姓名、班別三個欄位儲存。下列哪項正確？\n\n\n\n\n\n\n\n\tA.\t記錄與欄位相同\n\tB.\t一筆記錄對應一名學生\n\tC.\t一個欄位對應一名學生\n\tD.\t學號是記錄\n",
+      "text": "圖書館資料表 MEMBER(MID, Name) 與 LOAN(MID, BookID)。下列哪項正確？\n\n\n\tA.\tLOAN.MID 是外鍵，對應 MEMBER.MID\n\tB.\tName 是主鍵\n\tC.\tMID 可重複出現於 MEMBER\n\tD.\tBookID 是外鍵\n",
       "marks": 1,
       "concepts": [
         "數據組織",
@@ -174,13 +316,74 @@
         "記錄"
       ],
       "core": "A",
-      "answer": "B",
-      "dse_source": "generated://mcq/mcq-03"
+      "answer": "A",
+      "dse_source": "generated://mcq/mcq-03",
+      "depth_references": [
+        {
+          "id": "SSICTA0101_04A001C",
+          "bank_code": "SSICTA0101_04A001C",
+          "chapter": 1,
+          "source_slug": "CoreA1_hk",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "列表",
+            "除錯",
+            "軟件",
+            "資訊處理",
+            "輸入輸出"
+          ],
+          "stem_preview": "初創企業DataVitals開發了一個手機應用程式，收集用戶每日的運動數據和心跳率讀數。應用程式使用此原始數據生成每週進度報告，並以安全方式儲存資料。"
+        },
+        {
+          "id": "SSICTA0101_04A001E",
+          "bank_code": "SSICTA0101_04A001E",
+          "chapter": 1,
+          "source_slug": "CoreA1_en",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "循環",
+            "列表",
+            "硬件",
+            "軟件",
+            "試算表",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "A startup, \"DataVitals,\" develops a mobile app that collects users' daily exercise data and heart rate readings. The app uses this raw input to generate weekly progress reports and securely store the "
+        },
+        {
+          "id": "SSICTA0102_04A001C",
+          "bank_code": "SSICTA0102_04A001C",
+          "chapter": 2,
+          "source_slug": "CoreA2_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch2",
+            "除錯",
+            "資訊處理",
+            "輸入輸出",
+            "數據類型"
+          ],
+          "stem_preview": "家熙是某飲料店的店員。"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-04",
       "section": "mcq",
-      "text": "圖書館以書號作索引，職員輸入書號即可讀取該書資料。這屬於哪種存取方式？\n\n\n\n\n\n\tA.\t只能順序存取\n\tB.\t直接存取\n\tC.\t與索引無關\n\tD.\t順序存取\n",
+      "text": "圖書館以書號作索引，輸入書號即可讀取該書資料。這屬於哪種存取方式？\n\n\n\tA.\t只能順序存取\n\tB.\t與索引無關\n\tC.\t順序存取\n\tD.\t直接存取\n",
       "marks": 1,
       "concepts": [
         "數據組織",
@@ -188,13 +391,74 @@
         "直接存取"
       ],
       "core": "A",
-      "answer": "B",
-      "dse_source": "generated://mcq/mcq-04"
+      "answer": "D",
+      "dse_source": "generated://mcq/mcq-04",
+      "depth_references": [
+        {
+          "id": "SSICTA0101_04A001C",
+          "bank_code": "SSICTA0101_04A001C",
+          "chapter": 1,
+          "source_slug": "CoreA1_hk",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "列表",
+            "除錯",
+            "軟件",
+            "資訊處理",
+            "輸入輸出"
+          ],
+          "stem_preview": "初創企業DataVitals開發了一個手機應用程式，收集用戶每日的運動數據和心跳率讀數。應用程式使用此原始數據生成每週進度報告，並以安全方式儲存資料。"
+        },
+        {
+          "id": "SSICTA0101_04A001E",
+          "bank_code": "SSICTA0101_04A001E",
+          "chapter": 1,
+          "source_slug": "CoreA1_en",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "循環",
+            "列表",
+            "硬件",
+            "軟件",
+            "試算表",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "A startup, \"DataVitals,\" develops a mobile app that collects users' daily exercise data and heart rate readings. The app uses this raw input to generate weekly progress reports and securely store the "
+        },
+        {
+          "id": "SSICTA0102_04A001C",
+          "bank_code": "SSICTA0102_04A001C",
+          "chapter": 2,
+          "source_slug": "CoreA2_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch2",
+            "除錯",
+            "資訊處理",
+            "輸入輸出",
+            "數據類型"
+          ],
+          "stem_preview": "家熙是某飲料店的店員。"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-05",
       "section": "mcq",
-      "text": "下列哪一項關於數據控制的敘述是正確的？\n\n\n\tA.\t數據控制只適用於硬件\n\tB.\t數據控制不能應用於軟件\n\tC.\t數據控制與數據無關\n\tD.\t數據控制是有效的資訊處理概念\n",
+      "text": "下列哪一項關於數據控制的敘述是正確的？\n\n\n\tA.\t數據控制不能應用於軟件\n\tB.\t數據控制只適用於硬件\n\tC.\t數據控制是有效的資訊處理概念\n\tD.\t數據控制與數據無關\n",
       "marks": 1,
       "concepts": [
         "數據控制",
@@ -202,13 +466,13 @@
         "奇偶檢測"
       ],
       "core": "A",
-      "answer": "D",
+      "answer": "C",
       "dse_source": "generated://mcq/mcq-05"
     },
     {
       "id": "mcq-06",
       "section": "mcq",
-      "text": "8 位元二進制補碼可表示的整數範圍是什麼？\n\n\n\n\n\n\n\tA.\t-127 至 128\n\tB.\t-255 至 255\n\tC.\t-128 至 127\n\tD.\t0 至 255\n",
+      "text": "某校學會以系統管理會員及活動報名。試算表「Sale」部分資料見下表。以下哪項（些）關於試算表的敘述是正確的？\n\t(1)\tCOUNTIF 可統計符合條件的儲存格個數\t\t\n\t(2)\tSUMIF 加總時毋須指定條件範圍\t\t\n\t(3)\tXLOOKUP 只能查找同一欄內的數字\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
       "marks": 1,
       "concepts": [
         "進制",
@@ -216,26 +480,77 @@
         "二進制補碼"
       ],
       "core": "A",
-      "answer": "C",
-      "dse_source": "generated://mcq/mcq-06"
+      "answer": "D",
+      "dse_source": "generated://mcq/mcq-06",
+      "depth_references": [
+        {
+          "id": "SSICTA0103_04A001C",
+          "bank_code": "SSICTA0103_04A001C",
+          "chapter": 3,
+          "source_slug": "CoreA3_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "Python",
+            "進制"
+          ],
+          "stem_preview": "樂兒正在設計一個智能手機專用的相機應用程式。"
+        },
+        {
+          "id": "SSICTA0103_04A001E",
+          "bank_code": "SSICTA0103_04A001E",
+          "chapter": 3,
+          "source_slug": "CoreA3_en",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "循環",
+            "硬件",
+            "進制"
+          ],
+          "stem_preview": "Sarah is designing a camera application for smartphones."
+        },
+        {
+          "id": "SSICTA0103_04A002C",
+          "bank_code": "SSICTA0103_04A002C",
+          "chapter": 3,
+          "source_slug": "CoreA3_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "排序",
+            "多媒體",
+            "資訊處理",
+            "進制"
+          ],
+          "stem_preview": "家俊正在完成資訊及通訊科技課的筆記。"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-07",
       "section": "mcq",
-      "text": "下列哪一項關於字元編碼的敘述是正確的？\n\n\n\n\n\n\n\n\tA.\t字元編碼與數據無關\n\tB.\t字元編碼只適用於硬件\n\tC.\t字元編碼是有效的資訊處理概念\n\tD.\t字元編碼不能應用於軟件\n",
+      "text": "下列哪一項關於字元編碼的敘述是正確的？\n\n\n\tA.\t字元編碼不能應用於軟件\n\tB.\t字元編碼只適用於硬件\n\tC.\t字元編碼與數據無關\n\tD.\t字元編碼是有效的資訊處理概念\n",
       "marks": 1,
       "concepts": [
         "字元編碼",
         "UTF-8"
       ],
       "core": "A",
-      "answer": "C",
+      "answer": "D",
       "dse_source": "generated://mcq/mcq-07"
     },
     {
       "id": "mcq-08",
       "section": "mcq",
-      "text": "下列哪項較可能採用無損壓縮？\n\n\n\n\n\n\tA.\t醫學掃描影像的備份\n\tB.\t網上影片串流\n\tC.\t社交媒體相片\n\tD.\t串流音樂檔案\n",
+      "text": "某校使用資訊系統管理學與教數據。學生以數位相機拍攝活動相片。以下哪項（些）關於多媒體的敘述是正確的？\n\t(1)\tJPEG 可用有損壓縮減少檔案大小\t\t\n\t(2)\t向量圖以像素逐點描述\t\t\n\t(3)\t解析度不影響相片像素數目\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
       "marks": 1,
       "concepts": [
         "多媒體",
@@ -243,13 +558,65 @@
         "向量圖"
       ],
       "core": "A",
-      "answer": "A",
-      "dse_source": "generated://mcq/mcq-08"
+      "answer": "B",
+      "dse_source": "generated://mcq/mcq-08",
+      "depth_references": [
+        {
+          "id": "SSICTA0103_04A002C",
+          "bank_code": "SSICTA0103_04A002C",
+          "chapter": 3,
+          "source_slug": "CoreA3_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "排序",
+            "多媒體",
+            "資訊處理",
+            "進制"
+          ],
+          "stem_preview": "家俊正在完成資訊及通訊科技課的筆記。"
+        },
+        {
+          "id": "SSICTA0103_04A003C",
+          "bank_code": "SSICTA0103_04A003C",
+          "chapter": 3,
+          "source_slug": "CoreA3_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "硬件",
+            "多媒體",
+            "輸入輸出"
+          ],
+          "stem_preview": "曉瑩正在為某活動設計宣傳海報。"
+        },
+        {
+          "id": "SSICTA0103_04A003E",
+          "bank_code": "SSICTA0103_04A003E",
+          "chapter": 3,
+          "source_slug": "CoreA3_en",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "循環",
+            "多媒體",
+            "進制"
+          ],
+          "stem_preview": "Holly is designing a poster for an event."
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-09",
       "section": "mcq",
-      "text": "下列哪項較可能採用無損壓縮？\n\n\n\tA.\t串流音樂檔案\n\tB.\t社交媒體相片\n\tC.\t網上影片串流\n\tD.\t醫學掃描影像的備份\n",
+      "text": "下列哪項較可能採用無損壓縮？\n\n\n\tA.\t社交媒體相片\n\tB.\t網上影片串流\n\tC.\t串流音樂檔案\n\tD.\t醫學掃描影像的備份\n",
       "marks": 1,
       "concepts": [
         "多媒體",
@@ -258,26 +625,134 @@
       ],
       "core": "A",
       "answer": "D",
-      "dse_source": "generated://mcq/mcq-09"
+      "dse_source": "generated://mcq/mcq-09",
+      "depth_references": [
+        {
+          "id": "SSICTA0103_04A002C",
+          "bank_code": "SSICTA0103_04A002C",
+          "chapter": 3,
+          "source_slug": "CoreA3_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "排序",
+            "多媒體",
+            "資訊處理",
+            "進制"
+          ],
+          "stem_preview": "家俊正在完成資訊及通訊科技課的筆記。"
+        },
+        {
+          "id": "SSICTA0103_04A003C",
+          "bank_code": "SSICTA0103_04A003C",
+          "chapter": 3,
+          "source_slug": "CoreA3_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "硬件",
+            "多媒體",
+            "輸入輸出"
+          ],
+          "stem_preview": "曉瑩正在為某活動設計宣傳海報。"
+        },
+        {
+          "id": "SSICTA0103_04A003E",
+          "bank_code": "SSICTA0103_04A003E",
+          "chapter": 3,
+          "source_slug": "CoreA3_en",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "循環",
+            "多媒體",
+            "進制"
+          ],
+          "stem_preview": "Holly is designing a poster for an event."
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-10",
       "section": "mcq",
-      "text": "在試算表中，要統計班別為「5A」且分數≥60的學生人數，最適合使用哪個函數？\n\n\n\n\n\n\tA.\tSUM\n\tB.\tRANK\n\tC.\tAVERAGE\n\tD.\tCOUNTIFS\n",
+      "text": "捐款工作表：A 欄班別、C 欄金額。要在 D2 依 A2 從 $H$2:$I$10 查找目標金額，應使用？\n\n\n\tA.\tCOUNTIF\n\tB.\tXLOOKUP\n\tC.\tRANK\n\tD.\tSUMIF\n",
       "marks": 1,
       "concepts": [
         "試算表",
-        "VLOOKUP",
-        "COUNTIFS"
+        "XLOOKUP",
+        "COUNTIF"
       ],
       "core": "A",
-      "answer": "D",
-      "dse_source": "generated://mcq/mcq-10"
+      "answer": "B",
+      "dse_source": "generated://mcq/mcq-10",
+      "depth_references": [
+        {
+          "id": "SSICTA0101_04A001E",
+          "bank_code": "SSICTA0101_04A001E",
+          "chapter": 1,
+          "source_slug": "CoreA1_en",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "循環",
+            "列表",
+            "硬件",
+            "軟件",
+            "試算表",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "A startup, \"DataVitals,\" develops a mobile app that collects users' daily exercise data and heart rate readings. The app uses this raw input to generate weekly progress reports and securely store the "
+        },
+        {
+          "id": "SSICTA0103_01A014C",
+          "bank_code": "SSICTA0103_01A014C",
+          "chapter": 3,
+          "source_slug": "CoreA3_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "foundation",
+          "concepts": [
+            "A-ch3",
+            "試算表",
+            "數據類型"
+          ],
+          "stem_preview": "某試算表使用 64 位元儲存一個整數，並使用 1 字節儲存一個字符。要儲存字串「30 eggs」須要用到多少個字節？"
+        },
+        {
+          "id": "SSICTA0103_01A014E",
+          "bank_code": "SSICTA0103_01A014E",
+          "chapter": 3,
+          "source_slug": "CoreA3_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "foundation",
+          "concepts": [
+            "A-ch3",
+            "試算表",
+            "進制",
+            "數據類型"
+          ],
+          "stem_preview": "A spreadsheet uses 64 bits to store an integer and 1 byte to store a character. How many bytes are needed to store the string “30 eggs”?"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-11",
       "section": "mcq",
-      "text": "下列哪項（些）關於 RAM 與快取記憶體的敘述是正確的？\n\n\n\n\n\n\tA.\t快取比硬碟慢\n\tB.\tRAM 容量通常小於快取\n\tC.\tRAM 在斷電後資料會消失\n\tD.\t快取不能加快 CPU 存取\n",
+      "text": "下列哪一項正確描述 RAM 與快取記憶體？\n\n\n\tA.\tRAM 在斷電後資料會消失\n\tB.\t快取不能加快 CPU 存取\n\tC.\t快取比硬碟慢\n\tD.\tRAM 容量通常小於快取\n",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -285,39 +760,208 @@
         "快取記憶體"
       ],
       "core": "B",
-      "answer": "C",
-      "dse_source": "generated://mcq/mcq-11"
+      "answer": "A",
+      "dse_source": "generated://mcq/mcq-11",
+      "depth_references": [
+        {
+          "id": "SSICTB0101_04A002E",
+          "bank_code": "SSICTB0101_04A002E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 12.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "SQL",
+            "硬件",
+            "多媒體",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Janice is shopping for a new laptop. (a) She is considering between two laptops that have different input/output ports selection. Laptop A: Laptop B: (i) There is only one port on Laptop B, which is u"
+        },
+        {
+          "id": "SSICTB0102_04A002E",
+          "bank_code": "SSICTB0102_04A002E",
+          "chapter": 2,
+          "source_slug": "CoreB2_en",
+          "section_type": "mcq",
+          "marks": 12.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch2",
+            "循環",
+            "硬件"
+          ],
+          "stem_preview": "Most modern smartphones utilise low-power consumption components. (a) Explain why low-power consumption components are needed in a smartphone.(1 mark) _________________________________________________"
+        },
+        {
+          "id": "SSICTB0103_04A002E",
+          "bank_code": "SSICTB0103_04A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 14.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "循環",
+            "函數",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "Summie is installing an operating system on her computer. (a) State four functions of an operating system. (4 marks) _______________________________________________________________________________ ___"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-12",
       "section": "mcq",
-      "text": "下列哪項關於硬件的敘述是正確的？\n\n\n\n\n\n\tA.\t硬件不能升級\n\tB.\t硬件屬於電腦系統的一部分\n\tC.\t硬件與輸入無關\n\tD.\t硬件只存在於網絡\n",
+      "text": "下列哪項關於硬件的敘述是正確的？\n\n\tA.\t硬件與輸入無關\n\tB.\t硬件不能升級\n\tC.\t硬件屬於電腦系統的一部分\n\tD.\t硬件只存在於網絡",
       "marks": 1,
       "concepts": [
         "硬件",
         "SSD"
       ],
       "core": "B",
-      "answer": "B",
-      "dse_source": "generated://mcq/mcq-12"
+      "answer": "C",
+      "dse_source": "generated://mcq/mcq-12",
+      "depth_references": [
+        {
+          "id": "SSICTB0101_04A002E",
+          "bank_code": "SSICTB0101_04A002E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 12.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "SQL",
+            "硬件",
+            "多媒體",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Janice is shopping for a new laptop. (a) She is considering between two laptops that have different input/output ports selection. Laptop A: Laptop B: (i) There is only one port on Laptop B, which is u"
+        },
+        {
+          "id": "SSICTB0102_04A002E",
+          "bank_code": "SSICTB0102_04A002E",
+          "chapter": 2,
+          "source_slug": "CoreB2_en",
+          "section_type": "mcq",
+          "marks": 12.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch2",
+            "循環",
+            "硬件"
+          ],
+          "stem_preview": "Most modern smartphones utilise low-power consumption components. (a) Explain why low-power consumption components are needed in a smartphone.(1 mark) _________________________________________________"
+        },
+        {
+          "id": "SSICTB0103_04A002E",
+          "bank_code": "SSICTB0103_04A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 14.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "循環",
+            "函數",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "Summie is installing an operating system on her computer. (a) State four functions of an operating system. (4 marks) _______________________________________________________________________________ ___"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-13",
       "section": "mcq",
-      "text": "下列哪一組均屬於輸入裝置？\n\n\n\n\n\n\n\tA.\t鍵盤與滑鼠\n\tB.\t繪圖儀與顯示器\n\tC.\t硬碟與光碟機\n\tD.\t投影機與喇叭\n",
+      "text": "某校學會以系統管理會員及活動報名。試算表「Donate」及「Target」部分資料見下表。以下哪項（些）關於試算表的敘述是正確的？\n\t(1)\tXLOOKUP 可依關鍵值在對照範圍查找並傳回結果\t\t\n\t(2)\tCOUNTIF 用於加總兩欄的乘積\t\t\n\t(3)\tSUMIF 只能統計儲存格個數\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
       "marks": 1,
       "concepts": [
         "硬件",
         "輸入裝置"
       ],
       "core": "B",
-      "answer": "A",
-      "dse_source": "generated://mcq/mcq-13"
+      "answer": "C",
+      "dse_source": "generated://mcq/mcq-13",
+      "depth_references": [
+        {
+          "id": "SSICTB0101_01A004E",
+          "bank_code": "SSICTB0101_01A004E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "硬件",
+            "輸入輸出"
+          ],
+          "stem_preview": "Which of the following input device/sensor(s) can be used in game applications to receive user input? (1) Accelerometer (2) Touch Screen (3) Keyboard"
+        },
+        {
+          "id": "SSICTB0101_01A015E",
+          "bank_code": "SSICTB0101_01A015E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "A law firm uses a laser printer to print legal contracts instead of ink jet because of ____________."
+        },
+        {
+          "id": "SSICTB0103_01A008E",
+          "bank_code": "SSICTB0103_01A008E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "函數",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "Which of the following requires a driver program to function properly? (1) CPU (2) Keyboard (3) Monitor (4) Scanner"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-14",
       "section": "mcq",
-      "text": "下列哪項（些）關於 RAM 與快取記憶體的敘述是正確的？\n\n\n\n\tA.\t快取比硬碟慢\n\tB.\t快取不能加快 CPU 存取\n\tC.\tRAM 容量通常小於快取\n\tD.\tRAM 在斷電後資料會消失\n",
+      "text": "下列哪一項正確描述 RAM 與快取記憶體？\n\n\n\tA.\tRAM 在斷電後資料會消失\n\tB.\t快取比硬碟慢\n\tC.\tRAM 容量通常小於快取\n\tD.\t快取不能加快 CPU 存取\n",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -325,13 +969,71 @@
         "快取記憶體"
       ],
       "core": "B",
-      "answer": "D",
-      "dse_source": "generated://mcq/mcq-14"
+      "answer": "A",
+      "dse_source": "generated://mcq/mcq-14",
+      "depth_references": [
+        {
+          "id": "SSICTB0101_04A002E",
+          "bank_code": "SSICTB0101_04A002E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 12.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "SQL",
+            "硬件",
+            "多媒體",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Janice is shopping for a new laptop. (a) She is considering between two laptops that have different input/output ports selection. Laptop A: Laptop B: (i) There is only one port on Laptop B, which is u"
+        },
+        {
+          "id": "SSICTB0102_04A002E",
+          "bank_code": "SSICTB0102_04A002E",
+          "chapter": 2,
+          "source_slug": "CoreB2_en",
+          "section_type": "mcq",
+          "marks": 12.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch2",
+            "循環",
+            "硬件"
+          ],
+          "stem_preview": "Most modern smartphones utilise low-power consumption components. (a) Explain why low-power consumption components are needed in a smartphone.(1 mark) _________________________________________________"
+        },
+        {
+          "id": "SSICTB0103_04A002E",
+          "bank_code": "SSICTB0103_04A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 14.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "循環",
+            "函數",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "Summie is installing an operating system on her computer. (a) State four functions of an operating system. (4 marks) _______________________________________________________________________________ ___"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-15",
       "section": "mcq",
-      "text": "下列哪一項屬於輸出裝置？\n\n\n\n\n\n\n\tA.\t鍵盤\n\tB.\t滑鼠\n\tC.\t投影機\n\tD.\t麥克風\n",
+      "text": "某校使用資訊系統管理學與教數據。圖書館借書記錄見下表。以下哪項（些）關於數據庫的敘述是正確的？\n\t(1)\t主鍵可唯一識別資料表內每一筆記錄\t\t\n\t(2)\t同一欄位可同時儲存文字與圖片檔\t\t\n\t(3)\t記錄與欄位是相同的概念\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -339,13 +1041,66 @@
         "輸出裝置"
       ],
       "core": "B",
-      "answer": "C",
-      "dse_source": "generated://mcq/mcq-15"
+      "answer": "B",
+      "dse_source": "generated://mcq/mcq-15",
+      "depth_references": [
+        {
+          "id": "SSICTB0101_01A004E",
+          "bank_code": "SSICTB0101_01A004E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "硬件",
+            "輸入輸出"
+          ],
+          "stem_preview": "Which of the following input device/sensor(s) can be used in game applications to receive user input? (1) Accelerometer (2) Touch Screen (3) Keyboard"
+        },
+        {
+          "id": "SSICTB0101_01A015E",
+          "bank_code": "SSICTB0101_01A015E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "A law firm uses a laser printer to print legal contracts instead of ink jet because of ____________."
+        },
+        {
+          "id": "SSICTB0103_01A008E",
+          "bank_code": "SSICTB0103_01A008E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "函數",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "Which of the following requires a driver program to function properly? (1) CPU (2) Keyboard (3) Monitor (4) Scanner"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-16",
       "section": "mcq",
-      "text": "下列哪一項最能描述「驅動程式」的作用？\n\n\n\n\n\n\tA.\t讓作業系統控制硬件\n\tB.\t設計數據庫\n\tC.\t編寫網頁\n\tD.\t壓縮檔案\n",
+      "text": "下列哪一項最能描述「驅動程式」的作用？\n\n\n\tA.\t壓縮檔案\n\tB.\t編寫網頁\n\tC.\t設計數據庫\n\tD.\t讓作業系統控制硬件\n",
       "marks": 1,
       "concepts": [
         "軟件",
@@ -353,39 +1108,207 @@
         "驅動程式"
       ],
       "core": "B",
-      "answer": "A",
-      "dse_source": "generated://mcq/mcq-16"
+      "answer": "D",
+      "dse_source": "generated://mcq/mcq-16",
+      "depth_references": [
+        {
+          "id": "SSICTB0103_04A002E",
+          "bank_code": "SSICTB0103_04A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 14.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "循環",
+            "函數",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "Summie is installing an operating system on her computer. (a) State four functions of an operating system. (4 marks) _______________________________________________________________________________ ___"
+        },
+        {
+          "id": "SSICTB0101_01A015E",
+          "bank_code": "SSICTB0101_01A015E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "A law firm uses a laser printer to print legal contracts instead of ink jet because of ____________."
+        },
+        {
+          "id": "SSICTB0103_01A002E",
+          "bank_code": "SSICTB0103_01A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch3",
+            "函數",
+            "軟件"
+          ],
+          "stem_preview": "Which of the following are typical functions provided by an operating system? (1) File management (2) Virus detection (3) Memory management (4) Process management"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-17",
       "section": "mcq",
-      "text": "下列哪一項屬於實用程式（utility）？\n\n\n\n\n\n\n\tA.\t文書處理軟件\n\tB.\t磁碟重組工具\n\tC.\t網頁瀏覽器\n\tD.\t試算表\n",
+      "text": "下列哪一項屬於實用程式（utility）？\n\n\n\tA.\t磁碟重組工具\n\tB.\t網頁瀏覽器\n\tC.\t試算表\n\tD.\t文書處理軟件\n",
       "marks": 1,
       "concepts": [
         "軟件",
         "實用程式"
       ],
       "core": "B",
-      "answer": "B",
-      "dse_source": "generated://mcq/mcq-17"
+      "answer": "A",
+      "dse_source": "generated://mcq/mcq-17",
+      "depth_references": [
+        {
+          "id": "SSICTB0103_04A002E",
+          "bank_code": "SSICTB0103_04A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 14.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "循環",
+            "函數",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "Summie is installing an operating system on her computer. (a) State four functions of an operating system. (4 marks) _______________________________________________________________________________ ___"
+        },
+        {
+          "id": "SSICTB0101_01A015E",
+          "bank_code": "SSICTB0101_01A015E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "A law firm uses a laser printer to print legal contracts instead of ink jet because of ____________."
+        },
+        {
+          "id": "SSICTB0103_01A002E",
+          "bank_code": "SSICTB0103_01A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch3",
+            "函數",
+            "軟件"
+          ],
+          "stem_preview": "Which of the following are typical functions provided by an operating system? (1) File management (2) Virus detection (3) Memory management (4) Process management"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-18",
       "section": "mcq",
-      "text": "下列哪一項屬於專用軟件（application software）？\n\n\n\n\n\n\n\tA.\t驅動程式\n\tB.\t文書處理軟件\n\tC.\t作業系統\n\tD.\t編譯器\n",
+      "text": "下列哪一項屬於專用軟件（application software）？\n\n\n\tA.\t編譯器\n\tB.\t作業系統\n\tC.\t文書處理軟件\n\tD.\t驅動程式\n",
       "marks": 1,
       "concepts": [
         "軟件",
         "專用軟件"
       ],
       "core": "B",
-      "answer": "B",
-      "dse_source": "generated://mcq/mcq-18"
+      "answer": "C",
+      "dse_source": "generated://mcq/mcq-18",
+      "depth_references": [
+        {
+          "id": "SSICTB0103_04A002E",
+          "bank_code": "SSICTB0103_04A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 14.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "循環",
+            "函數",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "Summie is installing an operating system on her computer. (a) State four functions of an operating system. (4 marks) _______________________________________________________________________________ ___"
+        },
+        {
+          "id": "SSICTB0101_01A015E",
+          "bank_code": "SSICTB0101_01A015E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "A law firm uses a laser printer to print legal contracts instead of ink jet because of ____________."
+        },
+        {
+          "id": "SSICTB0103_01A002E",
+          "bank_code": "SSICTB0103_01A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch3",
+            "函數",
+            "軟件"
+          ],
+          "stem_preview": "Which of the following are typical functions provided by an operating system? (1) File management (2) Virus detection (3) Memory management (4) Process management"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-19",
       "section": "mcq",
-      "text": "下列哪一項屬於實用程式（utility）？\n\n\n\n\tA.\t試算表\n\tB.\t文書處理軟件\n\tC.\t磁碟重組工具\n\tD.\t網頁瀏覽器\n",
+      "text": "下列哪一項屬於實用程式（utility）？\n\n\tA.\t文書處理軟件\n\tB.\t試算表\n\tC.\t磁碟重組工具\n\tD.\t網頁瀏覽器",
       "marks": 1,
       "concepts": [
         "軟件",
@@ -394,12 +1317,68 @@
       ],
       "core": "B",
       "answer": "C",
-      "dse_source": "generated://mcq/mcq-19"
+      "dse_source": "generated://mcq/mcq-19",
+      "depth_references": [
+        {
+          "id": "SSICTB0103_04A002E",
+          "bank_code": "SSICTB0103_04A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 14.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "循環",
+            "函數",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "Summie is installing an operating system on her computer. (a) State four functions of an operating system. (4 marks) _______________________________________________________________________________ ___"
+        },
+        {
+          "id": "SSICTB0101_01A015E",
+          "bank_code": "SSICTB0101_01A015E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "A law firm uses a laser printer to print legal contracts instead of ink jet because of ____________."
+        },
+        {
+          "id": "SSICTB0103_01A002E",
+          "bank_code": "SSICTB0103_01A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch3",
+            "函數",
+            "軟件"
+          ],
+          "stem_preview": "Which of the following are typical functions provided by an operating system? (1) File management (2) Virus detection (3) Memory management (4) Process management"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-20",
       "section": "mcq",
-      "text": "下列哪一項屬於輸入裝置？\n\n\n\n\n\n\tA.\t條碼掃描器\n\tB.\t投影機\n\tC.\t喇叭\n\tD.\t繪圖儀\n",
+      "text": "下列哪一項屬於輸入裝置？\n\n\n\tA.\t投影機\n\tB.\t喇叭\n\tC.\t繪圖儀\n\tD.\t條碼掃描器\n",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -407,13 +1386,66 @@
         "RAM"
       ],
       "core": "B",
-      "answer": "A",
-      "dse_source": "generated://mcq/mcq-20"
+      "answer": "D",
+      "dse_source": "generated://mcq/mcq-20",
+      "depth_references": [
+        {
+          "id": "SSICTB0101_01A004E",
+          "bank_code": "SSICTB0101_01A004E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "硬件",
+            "輸入輸出"
+          ],
+          "stem_preview": "Which of the following input device/sensor(s) can be used in game applications to receive user input? (1) Accelerometer (2) Touch Screen (3) Keyboard"
+        },
+        {
+          "id": "SSICTB0101_01A015E",
+          "bank_code": "SSICTB0101_01A015E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "A law firm uses a laser printer to print legal contracts instead of ink jet because of ____________."
+        },
+        {
+          "id": "SSICTB0103_01A008E",
+          "bank_code": "SSICTB0103_01A008E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "函數",
+            "硬件",
+            "軟件",
+            "輸入輸出"
+          ],
+          "stem_preview": "Which of the following requires a driver program to function properly? (1) CPU (2) Keyboard (3) Monitor (4) Scanner"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-21",
       "section": "mcq",
-      "text": "考慮以下程序 CalcSum(n)，把 1 至 n 的總和輸出：\ntotal ← 0\n重複 i 由 1 至 n：total ← total + i\n輸出 total\n下列哪項最能描述此設計運用的計算思維技巧？\n\n\n\n\n\tA.\t格式化\n\tB.\t問題分解\n\tC.\t編譯\n\tD.\t備份\n",
+      "text": "某旅行社以電腦處理機票預訂。編寫程式時把任務分成多個子程式。以下哪項（些）關於問題分析的敘述是正確的？\n\t(1)\t問題分析可提高數據準確性\t\t\n\t(2)\t算法只適用於紙本文件\t\t\n\t(3)\t子問題屬於輸出階段\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
       "marks": 1,
       "concepts": [
         "問題分析",
@@ -421,13 +1453,70 @@
         "子問題"
       ],
       "core": "D",
-      "answer": "B",
-      "dse_source": "generated://mcq/mcq-21"
+      "answer": "A",
+      "dse_source": "generated://mcq/mcq-21",
+      "depth_references": [
+        {
+          "id": "SSICTD0206_04B002C",
+          "bank_code": "SSICTD0206_04B002C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "long_answer",
+          "marks": 9.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "算法",
+            "排序",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "某店主將 N 位顧客的消費金額儲存在陣列 spend（其索引由 1 開始）。宇軒編寫了以下算法，用作搜尋最高和最低的消費金額，並列印這些金額的索引： 行號  算法 1 的偽代碼 1    highest_i  1 2    highest  spend[highest_i] 3    lowest_i  1 4    lowest  spend[lowest_i] 5    設 i 由 1 至 N"
+        },
+        {
+          "id": "SSICTD0204_01A008C",
+          "bank_code": "SSICTD0204_01A008C",
+          "chapter": 4,
+          "source_slug": "CoreD4_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch4",
+            "Python",
+            "循環",
+            "算法",
+            "輸入輸出"
+          ],
+          "stem_preview": "以下哪個程式的結果與下列算法相同？ i  1 當 i < 5 輸出 i i  i + 1"
+        },
+        {
+          "id": "SSICTD0204_01B007C",
+          "bank_code": "SSICTD0204_01B007C",
+          "chapter": 4,
+          "source_slug": "CoreD4_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch4",
+            "Python",
+            "算法",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "以下哪個程式的結果與下列算法相同？ 如果 A > 0 則 如果 B >= 0 則 輸出 \"A\" 如果 C > 0 則 輸出 \"B\" 否則如果 D >= 0 則 輸出 \"B\""
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-22",
       "section": "mcq",
-      "text": "考慮以下偽代碼：\ncount ← 0\n當 count < 3：輸出 count；count ← count + 1\n執行後會輸出什麼？\n\n\n\n\tA.\t0, 1, 2, 3\n\tB.\t0, 1, 2\n\tC.\t1, 2, 3\n\tD.\t3\n",
+      "text": "考慮以下偽代碼：\ncount ← 0\n當 count < 3：輸出 count；count ← count + 1\n執行後會輸出什麼？\n\n\tA.\t1, 2, 3\n\tB.\t0, 1, 2\n\tC.\t0, 1, 2, 3\n\tD.\t3",
       "marks": 1,
       "concepts": [
         "算法",
@@ -436,12 +1525,69 @@
       ],
       "core": "D",
       "answer": "B",
-      "dse_source": "generated://mcq/mcq-22"
+      "dse_source": "generated://mcq/mcq-22",
+      "depth_references": [
+        {
+          "id": "SSICTD0206_04B002C",
+          "bank_code": "SSICTD0206_04B002C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "long_answer",
+          "marks": 9.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "算法",
+            "排序",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "某店主將 N 位顧客的消費金額儲存在陣列 spend（其索引由 1 開始）。宇軒編寫了以下算法，用作搜尋最高和最低的消費金額，並列印這些金額的索引： 行號  算法 1 的偽代碼 1    highest_i  1 2    highest  spend[highest_i] 3    lowest_i  1 4    lowest  spend[lowest_i] 5    設 i 由 1 至 N"
+        },
+        {
+          "id": "SSICTD0204_01A008C",
+          "bank_code": "SSICTD0204_01A008C",
+          "chapter": 4,
+          "source_slug": "CoreD4_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch4",
+            "Python",
+            "循環",
+            "算法",
+            "輸入輸出"
+          ],
+          "stem_preview": "以下哪個程式的結果與下列算法相同？ i  1 當 i < 5 輸出 i i  i + 1"
+        },
+        {
+          "id": "SSICTD0204_01B007C",
+          "bank_code": "SSICTD0204_01B007C",
+          "chapter": 4,
+          "source_slug": "CoreD4_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch4",
+            "Python",
+            "算法",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "以下哪個程式的結果與下列算法相同？ 如果 A > 0 則 如果 B >= 0 則 輸出 \"A\" 如果 C > 0 則 輸出 \"B\" 否則如果 D >= 0 則 輸出 \"B\""
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-23",
       "section": "mcq",
-      "text": "下列 Python 程式，變數 i 的最終值是多少？\ni = 1\nwhile i <= 8:\n    i = i * 2\n\n\n\n\tA.\t16\n\tB.\t2\n\tC.\t8\n\tD.\t4\n",
+      "text": "執行下列 Python 程式後，變數 i 的最終值是多少？\ni = 1\nwhile i <= 8:\n    i = i * 2\n\n\n\tA.\t16\n\tB.\t4\n\tC.\t8\n\tD.\t2\n",
       "marks": 1,
       "concepts": [
         "迴圈",
@@ -450,12 +1596,68 @@
       ],
       "core": "D",
       "answer": "A",
-      "dse_source": "generated://mcq/mcq-23"
+      "dse_source": "generated://mcq/mcq-23",
+      "depth_references": [
+        {
+          "id": "SSICTD0206_04B002C",
+          "bank_code": "SSICTD0206_04B002C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "long_answer",
+          "marks": 9.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "算法",
+            "排序",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "某店主將 N 位顧客的消費金額儲存在陣列 spend（其索引由 1 開始）。宇軒編寫了以下算法，用作搜尋最高和最低的消費金額，並列印這些金額的索引： 行號  算法 1 的偽代碼 1    highest_i  1 2    highest  spend[highest_i] 3    lowest_i  1 4    lowest  spend[lowest_i] 5    設 i 由 1 至 N"
+        },
+        {
+          "id": "SSICTD0204_01A008C",
+          "bank_code": "SSICTD0204_01A008C",
+          "chapter": 4,
+          "source_slug": "CoreD4_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch4",
+            "Python",
+            "循環",
+            "算法",
+            "輸入輸出"
+          ],
+          "stem_preview": "以下哪個程式的結果與下列算法相同？ i  1 當 i < 5 輸出 i i  i + 1"
+        },
+        {
+          "id": "SSICTD0299_01A007C",
+          "bank_code": "SSICTD0299_01A007C",
+          "chapter": null,
+          "source_slug": "CoreDi_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-integrated",
+            "Python",
+            "循環",
+            "算法"
+          ],
+          "stem_preview": "以下哪個 Python 程式可達到此偽代碼的結果？ X ← 0 重複 X ← X + 1 直至 X >= 10"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-24",
       "section": "mcq",
-      "text": "某校運動會以試算表記錄各項成績。編寫程式時把任務分成多個子程式。以下哪項（些）關於排序的敘述是正確的？\n\t(1)\t氣泡排序可把相鄰逆序元素交換\t\t\t\t\t\n\t(2)\t已排序陣列無需任何比較\t\t\t\t\t\n\t(3)\t排序只適用於文字檔\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "執行下列 Python 程式後，列表 nums 的內容是什麼？\nnums = [3, 1, 4, 2]\nfor k in range(1, len(nums)):\n    if nums[k] < nums[k - 1]:\n        nums[k], nums[k - 1] = nums[k - 1], nums[k]\n\n\tA.\t[1, 3, 4, 2]\n\tB.\t[3, 4, 1, 2]\n\tC.\t[3, 1, 2, 4]\n\tD.\t[1, 2, 3, 4]",
       "marks": 1,
       "concepts": [
         "排序",
@@ -463,13 +1665,81 @@
         "陣列"
       ],
       "core": "D",
-      "answer": "D",
-      "dse_source": "generated://mcq/mcq-24"
+      "answer": "A",
+      "dse_source": "generated://mcq/mcq-24",
+      "depth_references": [
+        {
+          "id": "SSICTD0206_04B002C",
+          "bank_code": "SSICTD0206_04B002C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "long_answer",
+          "marks": 9.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "算法",
+            "排序",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "某店主將 N 位顧客的消費金額儲存在陣列 spend（其索引由 1 開始）。宇軒編寫了以下算法，用作搜尋最高和最低的消費金額，並列印這些金額的索引： 行號  算法 1 的偽代碼 1    highest_i  1 2    highest  spend[highest_i] 3    lowest_i  1 4    lowest  spend[lowest_i] 5    設 i 由 1 至 N"
+        },
+        {
+          "id": "SSICTC1106_04B001E",
+          "bank_code": "SSICTC1106_04B001E",
+          "chapter": 6,
+          "source_slug": "ElecC6_en",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "排序",
+            "硬件",
+            "選擇結構"
+          ],
+          "stem_preview": "Ben is developing a music app for users to play music on it. He is now developing the search function. The default searching mode for the songs will be “most relevant”, which shows five songs with nam"
+        },
+        {
+          "id": "SSICTC1106_04B003E",
+          "bank_code": "SSICTC1106_04B003E",
+          "chapter": 6,
+          "source_slug": "ElecC6_en",
+          "section_type": "long_answer",
+          "marks": 15.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "排序",
+            "硬件",
+            "進制",
+            "選擇結構"
+          ],
+          "stem_preview": "Tim is the manager of a supermarket. He stores the names of the products in array product with indexes from 0 to N-1. Considering the large number of different kinds of products, Tim wants to write a "
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-25",
       "section": "mcq",
-      "text": "考慮以下偽代碼，陣列 A[1..5]=[3,1,4,2,9]，尋找 4：\nfound ← 假；i ← 1\n當 i ≤ 5 且 found = 假\n  若 A[i] = 4 則 found ← 真；i ← i + 1\n輸出 i\n輸出是？\n\n\n\n\tA.\t0\n\tB.\t5\n\tC.\t3\n\tD.\t1\n",
+      "text": "考慮以下偽代碼，陣列 A[1..5]=[3,1,4,2,9]，尋找 4：\nfound ← 假；i ← 1\n當 i ≤ 5 且 found = 假\n  若 A[i] = 4 則 found ← 真；i ← i + 1\n輸出 i\n輸出是？\n\n\n\tA.\t1\n\tB.\t3\n\tC.\t5\n\tD.\t0\n",
       "marks": 1,
       "concepts": [
         "搜尋",
@@ -477,13 +1747,70 @@
         "線性搜尋"
       ],
       "core": "D",
-      "answer": "C",
-      "dse_source": "generated://mcq/mcq-25"
+      "answer": "B",
+      "dse_source": "generated://mcq/mcq-25",
+      "depth_references": [
+        {
+          "id": "SSICTD0206_04B002C",
+          "bank_code": "SSICTD0206_04B002C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "long_answer",
+          "marks": 9.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "算法",
+            "排序",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "某店主將 N 位顧客的消費金額儲存在陣列 spend（其索引由 1 開始）。宇軒編寫了以下算法，用作搜尋最高和最低的消費金額，並列印這些金額的索引： 行號  算法 1 的偽代碼 1    highest_i  1 2    highest  spend[highest_i] 3    lowest_i  1 4    lowest  spend[lowest_i] 5    設 i 由 1 至 N"
+        },
+        {
+          "id": "SSICTD0204_01A008C",
+          "bank_code": "SSICTD0204_01A008C",
+          "chapter": 4,
+          "source_slug": "CoreD4_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch4",
+            "Python",
+            "循環",
+            "算法",
+            "輸入輸出"
+          ],
+          "stem_preview": "以下哪個程式的結果與下列算法相同？ i  1 當 i < 5 輸出 i i  i + 1"
+        },
+        {
+          "id": "SSICTD0204_01B007C",
+          "bank_code": "SSICTD0204_01B007C",
+          "chapter": 4,
+          "source_slug": "CoreD4_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch4",
+            "Python",
+            "算法",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "以下哪個程式的結果與下列算法相同？ 如果 A > 0 則 如果 B >= 0 則 輸出 \"A\" 如果 C > 0 則 輸出 \"B\" 否則如果 D >= 0 則 輸出 \"B\""
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-26",
       "section": "mcq",
-      "text": "考慮以下偽代碼：x ← 2；y ← x + 3；x ← x + 1；輸出 y\n輸出是？\n\n\n\tA.\t6\n\tB.\t2\n\tC.\t5\n\tD.\t3\n",
+      "text": "考慮以下偽代碼：\nx ← 2\ny ← x + 3\nx ← x + 1\n輸出 y\n輸出是？\n\n\n\tA.\t2\n\tB.\t3\n\tC.\t6\n\tD.\t5\n",
       "marks": 1,
       "concepts": [
         "算法",
@@ -491,13 +1818,70 @@
         "變量"
       ],
       "core": "D",
-      "answer": "C",
-      "dse_source": "generated://mcq/mcq-26"
+      "answer": "D",
+      "dse_source": "generated://mcq/mcq-26",
+      "depth_references": [
+        {
+          "id": "SSICTD0206_04B002C",
+          "bank_code": "SSICTD0206_04B002C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "long_answer",
+          "marks": 9.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "算法",
+            "排序",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "某店主將 N 位顧客的消費金額儲存在陣列 spend（其索引由 1 開始）。宇軒編寫了以下算法，用作搜尋最高和最低的消費金額，並列印這些金額的索引： 行號  算法 1 的偽代碼 1    highest_i  1 2    highest  spend[highest_i] 3    lowest_i  1 4    lowest  spend[lowest_i] 5    設 i 由 1 至 N"
+        },
+        {
+          "id": "SSICTD0204_01A008C",
+          "bank_code": "SSICTD0204_01A008C",
+          "chapter": 4,
+          "source_slug": "CoreD4_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch4",
+            "Python",
+            "循環",
+            "算法",
+            "輸入輸出"
+          ],
+          "stem_preview": "以下哪個程式的結果與下列算法相同？ i  1 當 i < 5 輸出 i i  i + 1"
+        },
+        {
+          "id": "SSICTD0204_01B007C",
+          "bank_code": "SSICTD0204_01B007C",
+          "chapter": 4,
+          "source_slug": "CoreD4_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch4",
+            "Python",
+            "算法",
+            "輸入輸出",
+            "選擇結構"
+          ],
+          "stem_preview": "以下哪個程式的結果與下列算法相同？ 如果 A > 0 則 如果 B >= 0 則 輸出 \"A\" 如果 C > 0 則 輸出 \"B\" 否則如果 D >= 0 則 輸出 \"B\""
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-27",
       "section": "mcq",
-      "text": "考慮以下偽代碼：若 (score ≥ 60) 且 (score ≤ 100) 則 grade ←「合格」，否則 grade ←「不合格」。若 score = 60，grade 是？\n\n\n\tA.\t不合格\n\tB.\t合格\n\tC.\t60\n\tD.\t100\n",
+      "text": "考慮以下偽代碼：\n若 (score ≥ 60) 且 (score ≤ 100) 則 grade ←「合格」，否則 grade ←「不合格」\n若 score = 60，grade 是？\n\n\n\tA.\t60\n\tB.\t100\n\tC.\t合格\n\tD.\t不合格\n",
       "marks": 1,
       "concepts": [
         "進制",
@@ -505,13 +1889,71 @@
         "布爾邏輯"
       ],
       "core": "D",
-      "answer": "B",
-      "dse_source": "generated://mcq/mcq-27"
+      "answer": "C",
+      "dse_source": "generated://mcq/mcq-27",
+      "depth_references": [
+        {
+          "id": "SSICTC1106_04B003E",
+          "bank_code": "SSICTC1106_04B003E",
+          "chapter": 6,
+          "source_slug": "ElecC6_en",
+          "section_type": "long_answer",
+          "marks": 15.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "排序",
+            "硬件",
+            "進制",
+            "選擇結構"
+          ],
+          "stem_preview": "Tim is the manager of a supermarket. He stores the names of the products in array product with indexes from 0 to N-1. Considering the large number of different kinds of products, Tim wants to write a "
+        },
+        {
+          "id": "SSICTD0101_01A008C",
+          "bank_code": "SSICTD0101_01A008C",
+          "chapter": 1,
+          "source_slug": "CoreD1_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "foundation",
+          "concepts": [
+            "D-ch1",
+            "Python",
+            "硬件",
+            "進制",
+            "輸入輸出"
+          ],
+          "stem_preview": "雅文想開發一個程式，運用奇數檢測以檢驗某字節的有效性。以下哪項會是這程式的輸入？"
+        },
+        {
+          "id": "SSICTA0103_04A001C",
+          "bank_code": "SSICTA0103_04A001C",
+          "chapter": 3,
+          "source_slug": "CoreA3_hk",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch3",
+            "Python",
+            "進制"
+          ],
+          "stem_preview": "樂兒正在設計一個智能手機專用的相機應用程式。"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-28",
       "section": "mcq",
-      "text": "考慮以下偽代碼，n 為非負整數：\n輸入 n\n若 n = 0 則\n  輸出 「zero」\n測試時下列哪個是適當的邊界個案？\n\n\n\n\n\tA.\tn = 0\n\tB.\t只測試 n = 1\n\tC.\tn = 5\n\tD.\tn = -1 且 n = 10\n",
+      "text": "某旅行社以電腦處理機票預訂。陣列與鏈表模擬輪候名單。以下哪項（些）關於程式測試的敘述是正確的？\n\t(1)\t邊界值可檢驗極端輸入\t\t\n\t(2)\t語法錯誤必定增加儲存空間\t\t\n\t(3)\t邏輯錯誤只適用於試算表\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
       "marks": 1,
       "concepts": [
         "程式測試",
@@ -519,13 +1961,70 @@
         "邊界值"
       ],
       "core": "D",
-      "answer": "A",
-      "dse_source": "generated://mcq/mcq-28"
+      "answer": "C",
+      "dse_source": "generated://mcq/mcq-28",
+      "depth_references": [
+        {
+          "id": "SSICTD0206_01A014C",
+          "bank_code": "SSICTD0206_01A014C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "除錯",
+            "程式測試",
+            "資訊處理"
+          ],
+          "stem_preview": "完成編寫程式後，應使用以下哪些數據值作測試？ (1) 邊界數據值 (2) 錯誤數據值 (3) 正常數據值"
+        },
+        {
+          "id": "SSICTD0206_01A001C",
+          "bank_code": "SSICTD0206_01A001C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "foundation",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "除錯",
+            "程式測試",
+            "算法",
+            "資訊處理",
+            "輸入輸出"
+          ],
+          "stem_preview": "偉豪編寫了一個判斷某數字是否質數的程式。他下一步應做什麼？"
+        },
+        {
+          "id": "SSICTD0206_01A002C",
+          "bank_code": "SSICTD0206_01A002C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "foundation",
+          "concepts": [
+            "D-ch6",
+            "除錯",
+            "程式測試",
+            "算法",
+            "資訊處理",
+            "輸入輸出"
+          ],
+          "stem_preview": "以下算法檢查用戶所輸入的分數是否有效： 輸入 marks 如果 marks < 0 or marks > 200 則 輸出 \"錯誤\" 以下哪組數據最適合用作測試此算法？"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-29",
       "section": "mcq",
-      "text": "下列哪一項是正確的賦值語句（偽代碼）？\n\n\n\tA.\tcount ← count + 1\n\tB.\tcount + 1 ← count\n\tC.\tcount ← ← 1\n\tD.\tcount == count + 1\n",
+      "text": "測試「輸入 n；若 n = 0 則輸出 zero」時，下列哪個是適當邊界個案？\n\n\tA.\tn = 10\n\tB.\tn = 0\n\tC.\tn = 5\n\tD.\t只測試 n = 1",
       "marks": 1,
       "concepts": [
         "程式測試",
@@ -533,13 +2032,70 @@
         "邏輯錯誤"
       ],
       "core": "D",
-      "answer": "A",
-      "dse_source": "generated://mcq/mcq-29"
+      "answer": "B",
+      "dse_source": "generated://mcq/mcq-29",
+      "depth_references": [
+        {
+          "id": "SSICTD0206_01A014C",
+          "bank_code": "SSICTD0206_01A014C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "除錯",
+            "程式測試",
+            "資訊處理"
+          ],
+          "stem_preview": "完成編寫程式後，應使用以下哪些數據值作測試？ (1) 邊界數據值 (2) 錯誤數據值 (3) 正常數據值"
+        },
+        {
+          "id": "SSICTD0206_01A001C",
+          "bank_code": "SSICTD0206_01A001C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "foundation",
+          "concepts": [
+            "D-ch6",
+            "Python",
+            "除錯",
+            "程式測試",
+            "算法",
+            "資訊處理",
+            "輸入輸出"
+          ],
+          "stem_preview": "偉豪編寫了一個判斷某數字是否質數的程式。他下一步應做什麼？"
+        },
+        {
+          "id": "SSICTD0206_01A002C",
+          "bank_code": "SSICTD0206_01A002C",
+          "chapter": 6,
+          "source_slug": "CoreD6_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "foundation",
+          "concepts": [
+            "D-ch6",
+            "除錯",
+            "程式測試",
+            "算法",
+            "資訊處理",
+            "輸入輸出"
+          ],
+          "stem_preview": "以下算法檢查用戶所輸入的分數是否有效： 輸入 marks 如果 marks < 0 or marks > 200 則 輸出 \"錯誤\" 以下哪組數據最適合用作測試此算法？"
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "mcq-30",
       "section": "mcq",
-      "text": "考慮以下偽代碼：\ntotal ← 0\n重複 i 由 1 至 5\n  total ← total + A[i]\n輸出 total\n變數 total 的作用是什麼？\n\n\n\n\tA.\t儲存迴圈次數\n\tB.\t輸出單一元素\n\tC.\t重置索引 i\n\tD.\t累加陣列元素總和\n",
+      "text": "考慮以下偽代碼：\ntotal ← 0\n重複 i 由 1 至 5\n  total ← total + A[i]\n輸出 total\n變數 total 的作用是什麼？\n\n\n\tA.\t累加陣列元素總和\n\tB.\t儲存迴圈次數\n\tC.\t輸出單一元素\n\tD.\t重置索引 i\n",
       "marks": 1,
       "concepts": [
         "算法",
@@ -547,190 +2103,1180 @@
         "模組"
       ],
       "core": "D",
-      "answer": "D",
-      "dse_source": "generated://mcq/mcq-30"
+      "answer": "A",
+      "dse_source": "generated://mcq/mcq-30",
+      "depth_references": [
+        {
+          "id": "SSICTC1104_04A001E",
+          "bank_code": "SSICTC1104_04A001E",
+          "chapter": 4,
+          "source_slug": "ElecC4_en",
+          "section_type": "long_answer",
+          "marks": 15.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch4",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "SQL",
+            "硬件",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Oliver is implementing a system to manage the products in a store. He creates a 2D array p to store the names and the prices of the products. j i 0 1 2 3 4 5 … 1999 Name 0 \"egg\" \"soda\" \"water\" \"\" \"\" \""
+        },
+        {
+          "id": "SSICTC1104_04B002E",
+          "bank_code": "SSICTC1104_04B002E",
+          "chapter": 4,
+          "source_slug": "ElecC4_en",
+          "section_type": "long_answer",
+          "marks": 14.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch4",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "SQL",
+            "硬件",
+            "選擇結構"
+          ],
+          "stem_preview": "A museum is open from 10 am to 6 pm on weekdays (Tuesday to Friday) and from 10 am to 8 pm on weekends. To prevent the museum from being overcrowded, the museum divides its opening hours into several "
+        },
+        {
+          "id": "SSICTC1105_04B001E",
+          "bank_code": "SSICTC1105_04B001E",
+          "chapter": 5,
+          "source_slug": "ElecC5_en",
+          "section_type": "long_answer",
+          "marks": 13.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch5",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "堆疊",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "During the add-drop period of a university, the course enrolment system uses an array waitlist to store the student IDs of students who wish to enrol on a course if that course is full at the moment. "
+        }
+      ],
+      "depth_calibration": "iclass-hk"
     },
     {
       "id": "b-01",
       "section": "section_b",
-      "text": "「煦風書社」以試算表記錄義賣收入。欄位：A=日期、B=商品、C=單價、D=數量、E=會員（Y／N）、F=總價。部分資料如下：\n\n\n\t(a)\t在 F2 寫出一條公式並複製至 F3:F50。若 E2 為「Y」且 D2≥5，總價為 C2*D2 的 9 折；否則為 C2*D2。\t(1 分)\n\t\t\t\t\t\n\n\t(b)\t在 H2 寫出一條公式（可用 COUNTIFS），複製至 H3:H5，分別統計：會員訂單數、非會員訂單數及總銷售額。寫出 H2 的公式。\t(3 分)",
+      "text": "「煦風書社」以試算表「Order」記錄義賣收入；右側為商品參考單價對照。部分資料見下表。\n\n\t(a)\t在 F2 寫出一條 IF 公式並複製至 F3:F50：若 E2 為「Y」且 D2≥5，總價為 C2*D2×0.9；否則為 C2*D2。寫出 F2 的公式。\t(2 分)\n\n\t(b)\t在 G2 使用 SUMIF：加總 B 欄為「明信片」的 F 欄總價（範圍 F$2:F$50），寫出公式。\t(2 分)",
       "marks": 4,
-      "title": "試算表（義賣）",
+      "title": "試算表（公式）",
       "concepts": [
         "試算表",
         "IF",
-        "COUNTIFS"
+        "COUNTIF",
+        "SUMIF",
+        "RANK",
+        "XLOOKUP"
       ],
-      "dse_source": "template://written/b-01",
-      "composition": "template"
+      "dse_source": "generated://pattern/b-01",
+      "dse_sources": [
+        "pattern://section_b/b-01",
+        "pattern://formula/SUMIF"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTA0101_04A001E",
+          "bank_code": "SSICTA0101_04A001E",
+          "chapter": 1,
+          "source_slug": "CoreA1_en",
+          "section_type": "long_answer",
+          "marks": 7.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "A-ch1",
+            "Python",
+            "循環",
+            "列表",
+            "硬件",
+            "軟件",
+            "試算表",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "A startup, \"DataVitals,\" develops a mobile app that collects users' daily exercise data and heart rate readings. The app uses this raw input to generate weekly progress reports and securely store the "
+        },
+        {
+          "id": "SSICTA0103_01A014C",
+          "bank_code": "SSICTA0103_01A014C",
+          "chapter": 3,
+          "source_slug": "CoreA3_hk",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "foundation",
+          "concepts": [
+            "A-ch3",
+            "試算表",
+            "數據類型"
+          ],
+          "stem_preview": "某試算表使用 64 位元儲存一個整數，並使用 1 字節儲存一個字符。要儲存字串「30 eggs」須要用到多少個字節？"
+        },
+        {
+          "id": "SSICTA0103_01A014E",
+          "bank_code": "SSICTA0103_01A014E",
+          "chapter": 3,
+          "source_slug": "CoreA3_en",
+          "section_type": "mcq",
+          "marks": 1.0,
+          "difficulty_tier": "foundation",
+          "concepts": [
+            "A-ch3",
+            "試算表",
+            "進制",
+            "數據類型"
+          ],
+          "stem_preview": "A spreadsheet uses 64 bits to store an integer and 1 byte to store a character. How many bytes are needed to store the string “30 eggs”?"
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "1.\n\t(a)\t=IF(AND(E2=\"Y\",D2>=5),C2*D2*0.9,C2*D2)\n\t(b)\t=SUMIF(B$2:B$50,\"明信片\",F$2:F$50)"
     },
     {
       "id": "b-02",
       "section": "section_b",
-      "text": "完成下表，為網上報名欄位選擇適當的數據有效性檢驗。\t(3 分)\n\n\n\t(b)\t試算表可設定數據有效性以減少輸入錯誤。\n\n\t\t(i)\t說明「數據有效性檢驗」與「奇偶檢測」的分別。\t(1 分)\n\t\t\t\t\t\n\n\t\t(ii)\t為「班別」欄建議一種有效性規則並舉例。\t(1 分)",
+      "text": "「青禾」為醫務室添置桌上電腦，主要部件包括 CPU、RAM、儲存裝置及顯示器。下表列出兩款候選規格。\n\n\t(a)\t就下表所列部件，各舉一例說明其功能（須與部件直接相關）。\t(2 分)\n\n\t(b)\t說明人工智能可如何協助青禾醫務室管理日常運作，並舉出一項限制。\t(3 分)",
       "marks": 5,
-      "title": "數據有效性",
+      "title": "電腦系統與未來發展",
       "concepts": [
-        "有效性檢驗",
-        "奇偶檢測"
+        "硬件",
+        "軟件",
+        "作業系統",
+        "人工智能",
+        "物聯網"
       ],
-      "dse_source": "template://written/b-02",
-      "composition": "template"
+      "dse_source": "generated://pattern/b-02",
+      "dse_sources": [
+        "pattern://section_b/b-02"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTA1103_03A001E",
+          "bank_code": "SSICTA1103_03A001E",
+          "chapter": 3,
+          "source_slug": "ElecA3_en",
+          "section_type": "short_answer",
+          "marks": 4.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EA",
+            "EA-ch3",
+            "列表",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "資訊處理"
+          ],
+          "stem_preview": "Skyline company use the following database tables EMPLOYEE and SALARY to store the data of its employees and salary. Below are some of the data from the tables. EMPLOYEE EID NAME TITLE DEPT POINT 6130"
+        },
+        {
+          "id": "SSICTC1104_03A004E",
+          "bank_code": "SSICTC1104_03A004E",
+          "chapter": 4,
+          "source_slug": "ElecC4_en",
+          "section_type": "short_answer",
+          "marks": 4.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EC",
+            "EC-ch4",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "選擇結構",
+            "數據類型"
+          ],
+          "stem_preview": "A ride-hailing platform has 50 drivers, and each of them is assigned a unique integer from 1 to 50 for identification. When a passenger requests a ride, the platform displays the driver number of the "
+        },
+        {
+          "id": "SSICTB0103_04A002E",
+          "bank_code": "SSICTB0103_04A002E",
+          "chapter": 3,
+          "source_slug": "CoreB3_en",
+          "section_type": "mcq",
+          "marks": 14.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch3",
+            "Python",
+            "循環",
+            "函數",
+            "數據庫",
+            "硬件",
+            "軟件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "Summie is installing an operating system on her computer. (a) State four functions of an operating system. (4 marks) _______________________________________________________________________________ ___"
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "2.\n\t(a)\tCPU：執行指令；RAM：暫存執行中資料；儲存：永久保存檔案；顯示器：輸出畫面\n\t(b)\t雲端：節省本地硬件成本、易備份；限制：需網絡、私隱風險；本地：速度快、離線可用；限制：硬件成本高、難擴充"
     },
     {
       "id": "b-03",
       "section": "section_b",
-      "text": "攝影學會以未壓縮 BMP 儲存活動相片：每張 1600×1200 像素、24 bit 真彩色。\n\n\t(a)\t估算 80 張相片的總檔案大小（以 MB 表示，展示計算）。\t(2 分)\n\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\n\t(b)\t比較以 JPEG（有損）與 PNG（無損）儲存同一批相片的取捨。\n\n\t\t(i)\t哪種格式檔案通常較小？為什麼？\t(1 分)\n\t\t\t\t\t\n\n\n\t\t(ii)\t若需保留最高畫質供印刷，應選哪種？簡述。\t(1 分)",
+      "text": "真光社區中心以未壓縮 BMP 儲存相片：每張 1920×1080 像素、24 bit 真彩色。\n\n\t(a)\t估算 40 張相片的總檔案大小（MB），須展示計算步驟。\t(2 分)\n\n\t(b)\t比較以 JPEG（有損）與 PNG（無損）儲存同一批相片的取捨。\t(2 分)",
       "marks": 4,
-      "title": "多媒體檔案大小",
+      "title": "多媒體檔案與格式",
       "concepts": [
         "多媒體",
         "點陣圖",
-        "壓縮"
+        "壓縮",
+        "向量圖"
       ],
-      "dse_source": "template://written/b-03",
-      "composition": "template"
+      "dse_source": "generated://pattern/b-03",
+      "dse_sources": [
+        "pattern://section_b/b-03"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTC1104_03B006E",
+          "bank_code": "SSICTC1104_03B006E",
+          "chapter": 4,
+          "source_slug": "ElecC4_en",
+          "section_type": "short_answer",
+          "marks": 6.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EC",
+            "EC-ch4",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "程式測試",
+            "算法",
+            "硬件",
+            "多媒體",
+            "數據類型"
+          ],
+          "stem_preview": "A greyscale image is represented by a 100 × 100 2D array image. image[x,y] stores the brightness value (0 = black to 255 = white) of the corresponding pixel in the image. image j i 1 2 3 4 5 … 100 1 2"
+        },
+        {
+          "id": "SSICTC1199_03A005E",
+          "bank_code": "SSICTC1199_03A005E",
+          "chapter": null,
+          "source_slug": "ElecCi_en",
+          "section_type": "short_answer",
+          "marks": 5.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EC",
+            "EC-integrated",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "堆疊",
+            "SQL",
+            "多媒體",
+            "網絡",
+            "選擇結構",
+            "數據類型"
+          ],
+          "stem_preview": "A printer uses a circular queue task to store the printing task. The following are the variables and functions used. Variable or function Description enq(Q, T) Insert element T at the rear of the queu"
+        },
+        {
+          "id": "SSICTB0101_04A002E",
+          "bank_code": "SSICTB0101_04A002E",
+          "chapter": 1,
+          "source_slug": "CoreB1_en",
+          "section_type": "mcq",
+          "marks": 12.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "B-ch1",
+            "循環",
+            "SQL",
+            "硬件",
+            "多媒體",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Janice is shopping for a new laptop. (a) She is considering between two laptops that have different input/output ports selection. Laptop A: Laptop B: (i) There is only one port on Laptop B, which is u"
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "3.\n\t(a)\t1920×1080×24/8 = 6,220,800 bytes/張；40 張 ≈ 237.3 MB（展示計算）\n\t(b)\tJPEG 檔較細但有損；PNG 無損但檔案較大"
     },
     {
       "id": "b-04",
       "section": "section_b",
-      "text": "考慮陣列 A（索引由 1 開始，n=6）及以下搜尋算法（尋找值 key）：\n\n\n\t執行下列算法：\n\n\t\tfound ← FALSE\n\t\ti ← 1\n\t\tWHILE i ≤ n AND found = FALSE DO\n\t\t    IF A[i] = key THEN\n\t\t\t        found ← TRUE\n\t\t    i ← i + 1\n\n\t(a)\t設 A = [4, 9, 2, 9, 7, 1]、key = 9。完成追蹤表，展示每次迴圈後 i 與 found。\t(2 分)\n\t\t\t\t\t\n\n\n\t(b)\t若 key 不在陣列內，算法結束時 i 的值是多少？解釋。\t(2 分)\n\t\t\t\t\t\n\n\t請在答案中說明此算法屬「線性搜尋」的原因。",
+      "text": "考慮陣列 A（索引由 1 開始，n=6）及以下線性搜尋算法：\n\nfound ← FALSE\n\ni ← 1\n\nWHILE i ≤ n AND found = FALSE DO\n\n    IF A[i] = key THEN found ← TRUE\n\n    i ← i + 1\n\nENDWHILE\n\nIF found = TRUE THEN OUTPUT i ELSE OUTPUT 0\n\n\t(a)\t設 A = [9, 8, 5, 7, 9, 6]、key = 5。完成追蹤表，列出每次迴圈後 i 與 found 的值，並寫出最終 OUTPUT。\t(2 分)\n\n\t(b)\t說明此算法屬線性搜尋的原因。\t(2 分)",
       "marks": 4,
-      "title": "線性搜尋",
+      "title": "計算思維（編程）",
       "concepts": [
         "算法",
         "偽代碼",
-        "陣列"
+        "陣列",
+        "迴圈"
       ],
-      "dse_source": "template://written/b-04",
-      "composition": "template"
+      "dse_source": "generated://pattern/b-04",
+      "dse_sources": [
+        "pattern://section_b/b-04"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTC1101_03A002E",
+          "bank_code": "SSICTC1101_03A002E",
+          "chapter": 1,
+          "source_slug": "ElecC1_en",
+          "section_type": "short_answer",
+          "marks": 4.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EC",
+            "EC-ch1",
+            "Python",
+            "循環",
+            "算法",
+            "硬件",
+            "選擇結構"
+          ],
+          "stem_preview": "The library of Kowloon University provides printing services for library users. They can pay the charges using the printing units stored in their library cards. The following shows the charges for mak"
+        },
+        {
+          "id": "SSICTC1103_03A001E",
+          "bank_code": "SSICTC1103_03A001E",
+          "chapter": 3,
+          "source_slug": "ElecC3_en",
+          "section_type": "short_answer",
+          "marks": 3.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EC",
+            "EC-ch3",
+            "循環",
+            "算法",
+            "硬件"
+          ],
+          "stem_preview": "Sam is writing some algorithms for printing specific patterns."
+        },
+        {
+          "id": "SSICTC1103_03A002E",
+          "bank_code": "SSICTC1103_03A002E",
+          "chapter": 3,
+          "source_slug": "ElecC3_en",
+          "section_type": "short_answer",
+          "marks": 4.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EC",
+            "EC-ch3",
+            "循環",
+            "列表",
+            "算法",
+            "硬件",
+            "選擇結構"
+          ],
+          "stem_preview": "Jimmy uses a 2D array score to store the scores of four S6 classes in the Athletic Meet. score[i,j] stores the score earned by a class in each competition. Given that the champion in a competition get"
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "4.\n\t(a)\tkey=5 不在陣列內 → found 維持 FALSE → 最終 OUTPUT = 0\n\t(b)\t逐一比對每個元素，最壞需檢查 n 個位置"
     },
     {
       "id": "b-05",
       "section": "section_b",
-      "text": "校園相簿系統以索引檔記錄每張相片的編號與儲存位置。\n\n\n\n\n\n\n\n\t系統可以「直接存取」或「順序存取」索引檔。\n\n\t(a)\t比較兩種方式查找特定相片編號的優缺點。\t(2 分)\n\t\t\t\t\t\n\n\t(b)\t若索引按相片編號排序，查找時哪種方式較適合？舉一項校內應用。\t(2 分)",
+      "text": "「德望」網店使用資料表 TRANSACTION(TID, Item, Qty, ADate) 記錄交易，部分記錄見表。\n\n\t(a)\t寫出 CREATE TABLE TRANSACTION（TID 為主鍵，Item 不可為空）。\t(2 分)\n\n\t(b)\t寫出一條 SELECT，列出 Qty ≥ 5 的 Item 及 Qty。\t(2 分)",
       "marks": 4,
-      "title": "索引檔存取",
+      "title": "數據組織與 SQL",
       "concepts": [
-        "檔案存取",
-        "直接存取",
-        "順序存取"
+        "數據庫",
+        "SQL",
+        "資料類型"
       ],
-      "dse_source": "template://written/b-05",
-      "composition": "template"
+      "dse_source": "generated://pattern/b-05",
+      "dse_sources": [
+        "pattern://section_b/b-05"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTA0102_03A005E",
+          "bank_code": "SSICTA0102_03A005E",
+          "chapter": 2,
+          "source_slug": "CoreA2_en",
+          "section_type": "short_answer",
+          "marks": 3.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "A-ch2",
+            "循環",
+            "列表",
+            "SQL",
+            "數據庫",
+            "資訊處理"
+          ],
+          "stem_preview": "Susan is a database administrator."
+        },
+        {
+          "id": "SSICTA1101_03A001E",
+          "bank_code": "SSICTA1101_03A001E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "short_answer",
+          "marks": 4.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Logistic Leaders is a transportation company that uses a database table SHIPMENT to store information about shipment details. Here is the table structure of SHIPMENT. SHIPMENT Field name Description S"
+        },
+        {
+          "id": "SSICTA1101_03A002E",
+          "bank_code": "SSICTA1101_03A002E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "short_answer",
+          "marks": 3.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "SQL",
+            "數據庫",
+            "資訊處理"
+          ],
+          "stem_preview": "The supermarket recorded every customer’s orders. Here are the first four rows of data in PURCHASE. PURCHASE CID PID QUANTITY PRICE ORDERDATE ORDERTIME METHOD C01 1001 2 30 2023-05-18 15:18:54 Credit "
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "5.\n\t(a)\tCREATE TABLE TRANSACTION (TID CHAR(6) PRIMARY KEY, Item VARCHAR(40) NOT NULL, Qty INTEGER, ADate DATE);\n\t(b)\tSELECT Item, Qty FROM TRANSACTION WHERE Qty >= 5;"
     },
     {
       "id": "b-06",
       "section": "section_b",
-      "text": "「綠途生活」網店以網上表格收集訂單，並把資料匯入 ORDER 資料表（OID、CNAME、PHONE、EMAIL、ORDER_DATE）。\n\n\t(a)\t試指出使用網上表格相對紙本表格的兩項好處。\t(2 分)\n\n\t\t\t\t\t\n\n\t(b)\t為電話及電郵欄各建議一種數據有效性檢驗方法，並舉例。\t(2 分)\n\t(i)\t電話號碼\n\t\t\t\t\t\n\n\t\t(ii)\t電郵地址\n\n\n\t以下是 ORDER 資料表部分記錄：\n\n\n\t(c)\tPHONE 欄應使用哪種資料類型？為什麼？\t(2 分)\n\n\t\t\t\t\t\n\n\t(d)\t執行以下 SQL 後的輸出是什麼？\t(1 分)\n\t\t\t\t\t\n\t\t\tSELECT CNAME FROM ORDER WHERE ORDER_DATE < '2026-03-01';\n\n\n\t(e)\t寫出一條 SQL，列出所有於 5 月落單的客戶名稱。\t(2 分)",
+      "text": "攝影學會擬為社員添置筆記本電腦，完成下表比較兩款候選硬件規格。\n\n\t(a)\t列出 CPU 規格欄可填寫的兩個例子。\t(2 分)\n\n\t(b)\t說明增加 RAM 對多工處理的影響。\t(2 分)\n\n\t(c)\t比較 SSD 與 HDD 作為系統碟的優缺點。\t(2 分)\n\n\t(d)\t舉出一項須同時升級硬件與軟件的情況並說明。\t(3 分)",
       "marks": 9,
-      "title": "網店訂單與 SQL",
+      "title": "硬件規格比較",
       "concepts": [
-        "數據庫",
-        "SQL",
-        "有效性檢驗",
-        "資料類型"
+        "RAM",
+        "硬件",
+        "SSD",
+        "快取記憶體"
       ],
-      "dse_source": "template://written/b-06",
-      "composition": "template"
+      "dse_source": "generated://pattern/b-06",
+      "dse_sources": [
+        "pattern://section_b/b-06"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTA0101_03A002E",
+          "bank_code": "SSICTA0101_03A002E",
+          "chapter": 1,
+          "source_slug": "CoreA1_en",
+          "section_type": "short_answer",
+          "marks": 3.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "A-ch1",
+            "循環",
+            "硬件",
+            "資訊處理",
+            "進制"
+          ],
+          "stem_preview": "Sam is starting a convenience store. He has to purchase different input and output devices."
+        },
+        {
+          "id": "SSICTA0101_03A003E",
+          "bank_code": "SSICTA0101_03A003E",
+          "chapter": 1,
+          "source_slug": "CoreA1_en",
+          "section_type": "short_answer",
+          "marks": 4.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "A-ch1",
+            "循環",
+            "硬件",
+            "資訊處理",
+            "進制",
+            "網絡"
+          ],
+          "stem_preview": "Mathew used a digital camera to take photos of different sceneries."
+        },
+        {
+          "id": "SSICTA0101_03A004C",
+          "bank_code": "SSICTA0101_03A004C",
+          "chapter": 1,
+          "source_slug": "CoreA1_hk",
+          "section_type": "short_answer",
+          "marks": 3.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "A-ch1",
+            "硬件",
+            "資訊處理"
+          ],
+          "stem_preview": "家銘正在種植不同樹木，並打算監控樹木每天的成長。"
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "6.\n\t(a)\t例：Intel Core i7；AMD Ryzen 7\n\t(b)\tRAM 增加可同時運行更多程式／減少換頁\n\t(c)\tSSD：快、抗震；HDD：容量大、成本低\n\t(d)\t例：升級顯示卡須同時安裝新驅動程式"
     },
     {
       "id": "c-01",
       "section": "section_c",
-      "text": "某院線公司開發會員預訂系統：每位會員可建立多張預訂；每張預訂對應一個場次；每間戲院每日有多個場次。\n\n\t繪製實體關係圖（ERD），標示 Member、Booking、Screening、Cinema 及主鍵／外鍵。\t(4 分)",
-      "marks": 4,
-      "title": "戲院預訂 ERD",
+      "text": "「青禾」開發會員預訂系統：每位會員可建立多筆預訂；每筆預訂對應一個場次；每個場次屬一間戲院。\n\n\t(a)\t繪製實體關係圖（ERD），須包括 Member、Booking、Screening、Cinema，並標示主鍵及外鍵。\t(6 分)",
+      "marks": 6,
+      "title": "Module A — ERD",
       "concepts": [
         "ERD",
-        "數據庫"
+        "數據庫",
+        "實體關係"
       ],
-      "dse_source": "template://written/c-01",
-      "composition": "template"
+      "dse_source": "generated://pattern/c-01",
+      "dse_sources": [
+        "pattern://section_c/c-01"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTA1101_04A001E",
+          "bank_code": "SSICTA1101_04A001E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 8.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "列表",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "A Hospital management system uses several database tables to store information in a hospital. Here is the table structure of PATIENT and DOCTOR. PATIENT Field name Description Example PATIENT Identity"
+        },
+        {
+          "id": "SSICTA1101_04B002E",
+          "bank_code": "SSICTA1101_04B002E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 8.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "列表",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Riverview Hotel uses database tables ROOMS, GUESTS, and RESERVATIONS to store information of the hotel. ROOMS Field name Description Example ROOMID Identity code of the room 101 TYPE The type of the r"
+        },
+        {
+          "id": "SSICTA1101_04C003E",
+          "bank_code": "SSICTA1101_04C003E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 10.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "函數",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構",
+            "數據類型"
+          ],
+          "stem_preview": "A social media platform uses a USER table and a POST table to store information on users and posts respectively. USER Field name Description Example USERID Identity code of the user U1973248 USERNAME "
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "1.\n\t(a)\tERD：Member–Booking–Screening–Cinema 四實體；Booking 連 Member、Screening；Screening 連 Cinema"
     },
     {
       "id": "c-02",
       "section": "section_c",
-      "text": "某社企使用 MOVIE 資料表記錄租借影碟。\n\n\t(a)\t補充以下 SQL，使 MID 不可重複。\t(1 分)\n\n\t\t\tCREATE TABLE MOVIE (\n\t\t\t\t    MID CHAR(6)\t\t\t\t,\n\t\t\t\t    TITLE VARCHAR(60),\n\t\t\t\t    RENTAL INTEGER\n\t\t\t)\n\n\t(b)\t以下記錄將插入 MOVIE。\t(1 分)\n\n\n\t\t\tINSERT INTO MOVIE VALUES (                                )\n\n\t寫出此 SQL 語句中未填寫的部分。",
-      "marks": 2,
-      "title": "CREATE / INSERT",
+      "text": "「真光」圖書館使用 MEMBER 及 LOAN 資料表，須符合欄位限制。\n\n\t(a)\t在下列 CREATE TABLE LOAN 補充 MID 主鍵及 TITLE 的 NOT NULL 限制。\t(2 分)\n\n\t(b)\t說明外鍵 LOAN(MID) REFERENCES MEMBER(MID) 如何維護參照完整性。\t(2 分)",
+      "marks": 4,
+      "title": "Module A — 欄位限制",
       "concepts": [
         "數據庫",
-        "SQL"
+        "SQL",
+        "主鍵",
+        "外鍵",
+        "資料完整性"
       ],
-      "dse_source": "template://written/c-02",
-      "composition": "template"
+      "dse_source": "generated://pattern/c-02",
+      "dse_sources": [
+        "pattern://section_c/c-02"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTA1101_04A001E",
+          "bank_code": "SSICTA1101_04A001E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 8.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "列表",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "A Hospital management system uses several database tables to store information in a hospital. Here is the table structure of PATIENT and DOCTOR. PATIENT Field name Description Example PATIENT Identity"
+        },
+        {
+          "id": "SSICTA1101_04B002E",
+          "bank_code": "SSICTA1101_04B002E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 8.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "列表",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Riverview Hotel uses database tables ROOMS, GUESTS, and RESERVATIONS to store information of the hotel. ROOMS Field name Description Example ROOMID Identity code of the room 101 TYPE The type of the r"
+        },
+        {
+          "id": "SSICTA1101_04C003E",
+          "bank_code": "SSICTA1101_04C003E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 10.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "函數",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構",
+            "數據類型"
+          ],
+          "stem_preview": "A social media platform uses a USER table and a POST table to store information on users and posts respectively. USER Field name Description Example USERID Identity code of the user U1973248 USERNAME "
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "2.\n\t(a)\tMID CHAR(6) PRIMARY KEY, TITLE VARCHAR(80) NOT NULL, …\n\t(b)\t防止借書記錄指向不存在的會員；刪除會員時可限制"
     },
     {
       "id": "c-03",
       "section": "section_c",
-      "text": "Order2024 與 Order2025 結構相同，部分記錄如下：\n\n\t\tOrder2024\t\tOrder2025\n\n\t(a)\t執行以下 SQL 後會列出多少筆記錄？\t(1 分)\n\n\t\t\tSELECT *\n\t\t\tFROM Order2024\n\t\t\tUNION\n\t\t\tSELECT PID, SID, AMT\n\t\t\tFROM Order2025;\n\n\t\t\t\t\t\t\t\n\t(b)\t列出執行以下 SQL 後 Order2024 內被更新的記錄。\t(2 分)\n\n\t\t\tUPDATE Order2024\n\t\t\tSET AMT = 0\n\t\t\tWHERE AMT > 0 AND\n\t\t\t\t    (EXISTS\n\t\t\t\t\t        (SELECT * FROM Order2025\n\t\t\t\t\t         WHERE Order2024.PID = Order2025.PID\n\t\t\t\t\t\t\t           AND Order2025.AMT = 0);",
-      "marks": 3,
-      "title": "UNION / UPDATE",
+      "text": "「德望」早期把會員姓名、電話直接寫入每筆 LOAN；同一會員借多本書時資料重複，更改電話須更新多筆記錄。\n\n\t(a)\t指出上述設計的數據冗餘，並說明可能導致的更新異常。\t(2 分)\n\n\t(b)\t建議如何分拆資料表以改善完整性（述主鍵／外鍵角色，不須完整 ERD）。\t(2 分)",
+      "marks": 4,
+      "title": "Module A — 冗餘與完整性",
       "concepts": [
         "數據庫",
-        "SQL",
-        "UNION"
+        "冗餘",
+        "完整性",
+        "正規化"
       ],
-      "dse_source": "template://written/c-03",
-      "composition": "template"
+      "dse_source": "generated://pattern/c-03",
+      "dse_sources": [
+        "pattern://section_c/c-03"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTA1101_04A001E",
+          "bank_code": "SSICTA1101_04A001E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 8.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "列表",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "A Hospital management system uses several database tables to store information in a hospital. Here is the table structure of PATIENT and DOCTOR. PATIENT Field name Description Example PATIENT Identity"
+        },
+        {
+          "id": "SSICTA1101_04B002E",
+          "bank_code": "SSICTA1101_04B002E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 8.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "列表",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Riverview Hotel uses database tables ROOMS, GUESTS, and RESERVATIONS to store information of the hotel. ROOMS Field name Description Example ROOMID Identity code of the room 101 TYPE The type of the r"
+        },
+        {
+          "id": "SSICTA1101_04C003E",
+          "bank_code": "SSICTA1101_04C003E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 10.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "函數",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構",
+            "數據類型"
+          ],
+          "stem_preview": "A social media platform uses a USER table and a POST table to store information on users and posts respectively. USER Field name Description Example USERID Identity code of the user U1973248 USERNAME "
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "3.\n\t(a)\t姓名／電話重複；更新電話要改多筆 → 更新異常\n\t(b)\t分拆 MEMBER(MID, Name, Phone) 與 LOAN(MID, BID, …)"
     },
     {
       "id": "c-05",
       "section": "section_c",
-      "text": "某社區中心資料庫包含 FACILITY 及 RESERVE 資料表：\n\nFACILITY\n\nRESERVE\n\n\t(a)\t寫出 MEMID 欄的合適數據類型並簡略說明。\t(1 分)\n\n\t\t\t\t\t\t\t\n\n\t(b)\t為以下任務寫出 SQL：\n\n\t\t(i)\t列出預約編號以「R26」開頭的記錄，按日期升序。\t(2 分)\n\n\t\t\t\t\t\t\t\n\n\n\t\t(ii)\t列出 2026-07-12 預約的所有設施名稱。\t(2 分)\n\n\t\t\t\t\t\t\t\n\n\n\t\t(iii)\t列出曾預約容量少於 25 的設施之會員編號（不重複）。\t(3 分)\n\n\t\t\t\t\t\t\t\n\n\n\n\n\n\t(c)\t簡述以下 SQL 的用途。\t(2 分)\n\n\t\t\tSELECT FID FROM FACILITY\n\t\t\tMINUS\n\t\t\tSELECT FID FROM RESERVE;\n\n\t\t\t\t\t\t\t\n\n\n\n\t(d)\t簡述非規範化 FACILITY 與 RESERVE 的一個方法。\t(1 分)",
-      "marks": 11,
-      "title": "FACILITY / RESERVE",
-      "concepts": [
-        "數據庫",
-        "SQL",
-        "MINUS"
-      ],
-      "dse_source": "template://written/c-05",
-      "composition": "template"
-    },
-    {
-      "id": "c-06",
-      "section": "section_c",
-      "text": "考慮 Member 與 Enrol 資料表，以下 SQL 逐步執行：\n\n\n\t設初始結果為空。\n\n\n\t(a)\t第一次 JOIN 後結果包含哪些 MemberID？\t(1 分)\n\n\n\t\t(ii)\t加入 GROUP BY 後結果如何變化？\t(1 分)\n\n\n\t\t(iii)\t加入 HAVING COUNT(*) > 1 後最終結果是什麼？\t(1 分)\n\n\n\t(b)\t此查詢找出哪類會員？\t(1 分)\n\n\n\t(c)\t若改為 LEFT JOIN，結果有何不同？簡述。\t(1 分)",
-      "marks": 5,
-      "title": "SQL 查詢追蹤",
+      "text": "社區中心資料庫含 MEMBER(MID, MName)、FACILITY(FID, FName)、RESERVE(RID, MEMID, FID, RDATE)（見表）。\n\n\t(a)\t寫出 INNER JOIN：列出每位會員姓名及其預訂的設施名稱。\t(2 分)\n\n\t(b)\t寫出 GROUP BY：統計各設施被預約次數，只列出次數≥2 的設施。\t(2 分)\n\n\t(c)\t寫出 UNION 或 MINUS：比較兩組設施的會員／預約差異（擇一並說明）。\t(2 分)",
+      "marks": 6,
+      "title": "Module A — SQL 綜合",
       "concepts": [
         "數據庫",
         "SQL",
         "JOIN",
-        "GROUP BY"
+        "GROUP BY",
+        "UNION",
+        "MINUS"
       ],
-      "dse_source": "template://written/c-06",
-      "composition": "template"
+      "dse_source": "generated://pattern/c-05",
+      "dse_sources": [
+        "pattern://section_c/c-05"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTA1101_04A001E",
+          "bank_code": "SSICTA1101_04A001E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 8.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "列表",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡"
+          ],
+          "stem_preview": "A Hospital management system uses several database tables to store information in a hospital. Here is the table structure of PATIENT and DOCTOR. PATIENT Field name Description Example PATIENT Identity"
+        },
+        {
+          "id": "SSICTA1101_04B002E",
+          "bank_code": "SSICTA1101_04B002E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 8.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "列表",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Riverview Hotel uses database tables ROOMS, GUESTS, and RESERVATIONS to store information of the hotel. ROOMS Field name Description Example ROOMID Identity code of the room 101 TYPE The type of the r"
+        },
+        {
+          "id": "SSICTA1101_04C003E",
+          "bank_code": "SSICTA1101_04C003E",
+          "chapter": 1,
+          "source_slug": "ElecA1_en",
+          "section_type": "long_answer",
+          "marks": 10.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EA",
+            "EA-ch1",
+            "循環",
+            "函數",
+            "SQL",
+            "數據庫",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構",
+            "數據類型"
+          ],
+          "stem_preview": "A social media platform uses a USER table and a POST table to store information on users and posts respectively. USER Field name Description Example USERID Identity code of the user U1973248 USERNAME "
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "4.\n\t(a)\tSELECT M.MName, F.FName FROM MEMBER M INNER JOIN RESERVE R ON M.MID=R.MEMID INNER JOIN FACILITY F ON R.FID=F.FID;\n\t(b)\tSELECT F.FName, COUNT(*) FROM RESERVE R JOIN FACILITY F ON R.FID=F.FID GROUP BY F.FName HAVING COUNT(*)>=2;\n\t(c)\tMINUS 或 UNION 擇一；例：曾訂 F01 但未訂 F02 的 MID"
+    },
+    {
+      "id": "c-06",
+      "section": "section_c",
+      "text": "某遊戲以二維陣列 Grid[row][col] 表示地圖（0=通道，1=牆）；玩家移動及「復活」位置以堆疊記錄。\n\n\t(a)\t寫出判斷 Grid[3][2] 是否為牆的條件；若 Grid[3][2]=1 且 Grid[3][3]=0，說明能否向右移。\t(3 分)\n\n\t(b)\t依次 PUSH 2、5、9、POP、PUSH 1、POP，列出每次 POP 的輸出及最終堆疊頂端。\t(4 分)",
+      "marks": 7,
+      "title": "Module C — 二維陣列與堆疊",
+      "concepts": [
+        "算法",
+        "二維陣列",
+        "堆疊"
+      ],
+      "dse_source": "generated://pattern/c-06",
+      "dse_sources": [
+        "pattern://section_c/c-06"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTC1105_04B001E",
+          "bank_code": "SSICTC1105_04B001E",
+          "chapter": 5,
+          "source_slug": "ElecC5_en",
+          "section_type": "long_answer",
+          "marks": 13.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch5",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "堆疊",
+            "硬件",
+            "資訊處理",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "During the add-drop period of a university, the course enrolment system uses an array waitlist to store the student IDs of students who wish to enrol on a course if that course is full at the moment. "
+        },
+        {
+          "id": "SSICTC1199_04A001E",
+          "bank_code": "SSICTC1199_04A001E",
+          "chapter": null,
+          "source_slug": "ElecCi_en",
+          "section_type": "long_answer",
+          "marks": 13.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-integrated",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "堆疊",
+            "排序",
+            "SQL",
+            "硬件",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "A linked list is used to manage the waiting users who are unable to access the online ticket system for a concert. The following are the sub-programs used to construct and manage the linked list. Sub-"
+        },
+        {
+          "id": "SSICTC1105_03A001E",
+          "bank_code": "SSICTC1105_03A001E",
+          "chapter": 5,
+          "source_slug": "ElecC5_en",
+          "section_type": "short_answer",
+          "marks": 6.0,
+          "difficulty_tier": "intermediate",
+          "concepts": [
+            "EC",
+            "EC-ch5",
+            "Python",
+            "循環",
+            "函數",
+            "算法",
+            "堆疊",
+            "硬件",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "Holly uses stacks to manage shoeboxes containing shoes of different sizes. For example, the following stack has 4 shoeboxes, with a pair of shoes of size 35, 37, 38 and 40 in each box respectively. 40"
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "5.\n\t(a)\tGrid[3][2]=1 為牆；Grid[3][3]=0 可向右移\n\t(b)\tPOP→5；POP→1；最終頂端=1"
     },
     {
       "id": "c-07",
       "section": "section_c",
-      "text": "校園一卡通系統使用交易（Transaction）確保扣款一致。常用子句如下：\n\n\n\t(a)\t寫出 BEGIN…COMMIT 與 ROLLBACK 的用途各一項。\t(1 分)\n\n\t\t\tUPDATE Account SET Balance = Balance - 30 WHERE StudentID = 'S002';\n\n\n\t(b)\t若第二步 UPDATE 失敗，應執行哪個子句？為什麼？\t(1 分)\n\n\n\t試描述如何確保兩個 UPDATE 同時成功或同時失敗。\n\n\t\t\tBEGIN TRANSACTION\n\t\t\tUPDATE Wallet SET Balance = Balance - 50 WHERE SID = 'S001';\n\t\t\tUPDATE Canteen SET Income = Income + 50 WHERE ID = 'C01';\n\t\t\tIF @@ERROR <> 0\n\t\t\t    ROLLBACK\n\t\t\tELSE\n\t\t\t    COMMIT\n\n\n\t(c)\t寫出 PAY(SID, AMOUNT) 的偽代碼，使用 BEGIN/COMMIT/ROLLBACK。\t(3 分)\n\n\t\t\tPAY(SID, AMOUNT)\n\n\t(d)\t說明若無交易控制，扣款中斷可能造成什麼資料不一致。\t(4 分)",
-      "marks": 9,
-      "title": "一卡通交易",
+      "text": "診所輪候系統以隊列處理先到先得；學生證編號已按升序存入陣列 ID = [\"S1001\", \"S1010\", \"S1042\", \"S1088\", \"S1100\"]（索引 1 至 5）。\n\n\t(a)\t說明 Enqueue／Dequeue 如何實現輪候；舉一例 Dequeue 後 Front 及 Rear 的變化。\t(3 分)\n\n\t(b)\t用二分搜尋在 ID 中查找「S1042」，描述 mid 如何移動（至少兩步）。\t(4 分)",
+      "marks": 7,
+      "title": "Module C — 隊列與二分搜尋",
       "concepts": [
-        "數據庫",
-        "Transaction",
-        "COMMIT",
-        "ROLLBACK"
+        "算法",
+        "隊列",
+        "二分搜尋"
       ],
-      "dse_source": "template://written/c-07",
-      "composition": "template"
+      "dse_source": "generated://pattern/c-07",
+      "dse_sources": [
+        "pattern://section_c/c-07"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTC1101_04A001E",
+          "bank_code": "SSICTC1101_04A001E",
+          "chapter": 1,
+          "source_slug": "ElecC1_en",
+          "section_type": "long_answer",
+          "marks": 8.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch1",
+            "Python",
+            "循環",
+            "列表",
+            "算法",
+            "SQL",
+            "硬件",
+            "資訊處理",
+            "選擇結構"
+          ],
+          "stem_preview": "A self-storage space has 40 storage units arranged in 5 rows and 8 columns. The manager of the self-storage space created a two-dimensional array storage to store the availability of storage units. Th"
+        },
+        {
+          "id": "SSICTC1101_04B002E",
+          "bank_code": "SSICTC1101_04B002E",
+          "chapter": 1,
+          "source_slug": "ElecC1_en",
+          "section_type": "long_answer",
+          "marks": 9.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch1",
+            "循環",
+            "列表",
+            "算法",
+            "硬件",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "In a competition, participants are required to complete five missions and they are ranked in each mission. Jason is a helper of the organiser, and he is responsible for score calculation. He stores th"
+        },
+        {
+          "id": "SSICTC1103_04B001E",
+          "bank_code": "SSICTC1103_04B001E",
+          "chapter": 3,
+          "source_slug": "ElecC3_en",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch3",
+            "循環",
+            "列表",
+            "算法",
+            "硬件",
+            "資訊處理",
+            "選擇結構"
+          ],
+          "stem_preview": "Mr. Chan is the teacher of a class with eight students. The attendance records of students are stored in an array attendance, with “1” indicating presence and “0” indicating absence. He is writing an "
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "6.\n\t(a)\tDequeue 後 Front 指向下一個輪候者\n\t(b)\t二分：mid 取中，比較後縮小範圍（至少兩步）"
     },
     {
       "id": "c-08",
       "section": "section_c",
-      "text": "某程式以堆疊（Stack）儲存運算元，以下為初始狀態及 PUSH／POP 操作：\n\n堆疊底在左，頂端在右。\n完成下表（首四步）後，繼續追蹤 PUSH 2、POP、POP。\n\n\t操作序列：PUSH 3；PUSH 7；POP；PUSH 2；POP；POP\n\n\t\tStack 狀態\n\n\t老師設計 trace_stack 追蹤每次操作後的堆疊頂端：\n\n\t\ttrace_stack\n\t\t10  op ← 1\n\t\t20  WHILE op ≤ 6 DO\n\t\t30      執行第 op 步操作並記錄 stack 頂端\n\t\t40      顯示 \"Step op: top = …\"\n\t\t50      op ← op + 1\n\n\t(a)\t完成追蹤表，列出每步後 stack 頂端元素。\t(2 分)\n\n\t(b)\t若先 POP 再 PUSH 順序對調，結果有何不同？簡述。\t(2 分)\n\n\t\t\t\t\t\t\t\n\n\n\t(c)\t說明堆疊「後進先出」在此題中的意義。\t(2 分)",
+      "text": "電競社以陣列 Next[1..N] 及 Head 模擬鏈表儲存輪候參賽者；每日關閉前須把 Score[1..M] 按降序整理並更新鏈表順序。\n\n管理員記錄：Score = [72, 45, 90, 45, 61, 88, 33, 77]（索引 1 至 8）；Head = 1；Next = [2, 3, 4, 5, 6, 7, 8, 0]（0 表示無下一個）。\n\n\t(a)\t對 Score 執行一次冒泡排序（降序）的首輪比較，寫出需交換的一對索引。\t(2 分)\n\n\t(b)\t說明如何以 Head 及 Next[] 走訪仍參賽者；刪除一個 Score=45 的結點後，描述 Head／Next 如何更新，並述此結構與陣列模擬鏈表的優點。\t(4 分)",
       "marks": 6,
-      "title": "堆疊操作",
+      "title": "Module C — 排序與陣列鏈表",
       "concepts": [
         "算法",
-        "堆疊",
-        "偽代碼"
+        "排序",
+        "鏈表"
       ],
-      "dse_source": "template://written/c-08",
-      "composition": "template"
+      "dse_source": "generated://pattern/c-08",
+      "dse_sources": [
+        "pattern://section_c/c-08"
+      ],
+      "composition": "pattern_generate",
+      "depth_references": [
+        {
+          "id": "SSICTC1106_04B001E",
+          "bank_code": "SSICTC1106_04B001E",
+          "chapter": 6,
+          "source_slug": "ElecC6_en",
+          "section_type": "long_answer",
+          "marks": 11.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "排序",
+            "硬件",
+            "選擇結構"
+          ],
+          "stem_preview": "Ben is developing a music app for users to play music on it. He is now developing the search function. The default searching mode for the songs will be “most relevant”, which shows five songs with nam"
+        },
+        {
+          "id": "SSICTC1106_04B003E",
+          "bank_code": "SSICTC1106_04B003E",
+          "chapter": 6,
+          "source_slug": "ElecC6_en",
+          "section_type": "long_answer",
+          "marks": 15.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-ch6",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "排序",
+            "硬件",
+            "進制",
+            "選擇結構"
+          ],
+          "stem_preview": "Tim is the manager of a supermarket. He stores the names of the products in array product with indexes from 0 to N-1. Considering the large number of different kinds of products, Tim wants to write a "
+        },
+        {
+          "id": "SSICTC1199_04A001E",
+          "bank_code": "SSICTC1199_04A001E",
+          "chapter": null,
+          "source_slug": "ElecCi_en",
+          "section_type": "long_answer",
+          "marks": 13.0,
+          "difficulty_tier": "advanced",
+          "concepts": [
+            "EC",
+            "EC-integrated",
+            "Python",
+            "循環",
+            "列表",
+            "函數",
+            "算法",
+            "堆疊",
+            "排序",
+            "SQL",
+            "硬件",
+            "網絡",
+            "選擇結構"
+          ],
+          "stem_preview": "A linked list is used to manage the waiting users who are unable to access the online ticket system for a concert. The following are the sub-programs used to construct and manage the linked list. Sub-"
+        }
+      ],
+      "depth_calibration": "iclass-hk",
+      "model_answer": "7.\n\t(a)\t首輪降序：比較 (1,2) 若 72<45 則交換 → 索引 1 與 2\n\t(b)\t沿 Next 由 Head 走訪；刪除 Score=45 結點要調整 Next／Head"
     }
   ]
 }

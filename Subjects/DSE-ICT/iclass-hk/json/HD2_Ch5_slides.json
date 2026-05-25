@@ -1,0 +1,500 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/HD2 Ch5.pptx",
+    "slug": "HD2_Ch5_slides",
+    "title": "HD2 Ch5",
+    "series": "HD2",
+    "chapter": 5,
+    "curriculum_unit": "D-d",
+    "curriculum_part": "Core-D",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.959013+00:00",
+    "slide_count": 95,
+    "topic_tags": {
+      "循環": 38,
+      "列表": 35,
+      "課本活動": 13,
+      "除錯": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "第五課Python 綜合解難"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "試指出導致以下程式無法運行或執行錯誤的原因。105.1"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "115.1"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "試完成課本第 82 頁的活動 5.2。125.2"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "135.2"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "試完成課本第 83 頁的測試站 5.1。    145.1"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "155.3"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "165.1"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "列表綜合應用175.2通過結合不同的控制結構，我們可以設計並建立新程式，以解決複雜的問題。"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "列表運算18A以下的程式將列表的項目逐一相加，計算這位同學完成 800 米跑所需時間：time = [15.1, 14.9, 15.6, 16.1, 16.8, 17.0, 16.9, 16.5]total = 0for i in range(0, 8):\ttotal = total + time[i]print(total) #Output: 128.9"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "列表運算19A以下的程式將列表的總和除以列表長度，以計算這位同學跑 100 米的平均時間：time = [15.1, 14.9, 15.6, 16.1, 16.8, 17.0, 16.9, 16.5]total = 0for i in range(0, 8):\ttotal = total + time[i]print(total)\t#Output: 128.9avg = total/8print(avg)\t\t#Output: 16.1125"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "學會 Python 有什麼用？現時，一些會計和金融公司甚至要求員工至少掌握一門編程語言，以方便工作。在 2021 年，Python 名列熱門編程語言的第三位。在名單的前十名中，Python 是最為容易、資源最多、支援最多且免費的編程語言。"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "列表運算20A在 Python 中，len() 函數能傳回列表長度，即列表共有多少個項目。"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "試完成課本第 90 頁的測試站 5.2。(a)215.2"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "(b)225.2"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "(c)235.2"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "搜索列表中的項目24B我們可通過以下方式在 Python 中運用線性檢索：target = int(input())found = FalseN = len(the_list)for i in range(0, N):\tif target == the_list[i]:\t\tfound = Trueprint(found)"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "某大學公佈了獎學金得獎名單，共有三位同學得獎。此名單放入了列表 scholarship 供下載及查閱。英秀編寫了一個程式以查看同學是否得獎。以下是這個程式的輸出，粗體文字代表用家的輸入：255.2"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "試編寫 Python 程式或算法：scholarship = [\"002\", \"134\", \"192\"]application_num = input(\"Please input your number: \")found = Falsefor i in range( 0 , 3 ):\tif application_num == scholarship[i] :\t\tfound = Trueif found == True :\tprint(\"Congratulation!\")else:\tprint(\"Sorry, you are not on the list.\")265.2"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "試編寫 Python 程式或算法：scholarship = [\"002\", \"134\", \"192\"]application_num = input(\"Please input your number: \")found = Falsefor i in range( 0 , 3 ):\tif application_num == scholarship[i] :\t\tfound = Trueif found == True :\tprint(\"Congratulation!\")else:\tprint(\"Sorry, you are not on the list.\")275.2"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "想像為何 application_num 使用字串而非整數作為其數據類型？在 Python 中，數字不允許有前置零（leading zeros），例如：002、05。285.2"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "搜索列表中的項目29B我們亦可以運用 while 循環找出列表中第一個儲存目標值的索引。target = int(input())found = Falseindex = -1i = 0N = len(the_list)while i < N and found == False:\tif target == the_list[i]:\t\tfound = True\t\tindex = i\ti = i + 1print(index)"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "列表35.1在第三課中，曾提及一維陣列（或稱單陣列）能夠有次序地儲存一連串數據。可是，Python 裏並沒有這類陣列。若要達到相似效果，用戶可以使用另一種數據結構 — 列表。"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "試完成課本第 98 頁的測試站 5.3。 305.3"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "搜索列表中的項目31B以下的算法 / 程式用以找出列表中大於輸入值的項目總數。bound = int(input())count = 0N = len(the_list)for k in range(0, N):\tif the_list[k] > bound:\t\tcount = count + 1print(count)"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "林老師把 1 至 10 號同學的測驗成績按照學號順序記錄在列表 mark 中，如下：325.4"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "(a) 試編寫 Python 程式或算法，找出有多少位同學取得 100 分。mark = [87, 45, 79, 100, 50, 35, 90, 100, 60, 80]search_mark = 100found = 0for i in range(0, 10):\tif mark[i] == search_mark:\t\tfound = found + 1print(found)335.4"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "(a) 試編寫 Python 程式或算法，找出有多少位同學取得 100 分。mark = [87, 45, 79, 100, 50, 35, 90, 100, 60, 80]search_mark = 100found = 0for i in range(0, 10):\tif mark[i] == search_mark:\t\tfound = found + 1print(found)345.4"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "(b) 林老師正統計有多少測驗不及格的同學需要補測。假設及格分數為 50 分，試寫 Python 程式或算法。mark = [87, 45, 79, 100, 50, 35, 90, 100, 60, 80]passing_mark = 50fail = 0for i in range(0, 10):\tif mark[i] < passing_mark:\t\tfail = fail + 1print(fail)355.4"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "(b) 林老師正統計有多少測驗不及格的同學需要補測。假設及格分數為 50 分，試寫 Python 程式或算法。mark = [87, 45, 79, 100, 50, 35, 90, 100, 60, 80]passing_mark = 50fail = 0for i in range(0, 10):\tif mark[i] < passing_mark:\t\tfail = fail + 1print(fail)365.4"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "(c) 林老師想找出哪些同學需要補測。試編寫算法或程式，找出那些需要補測的同學，並列印該同學的學號。mark = [87, 45, 79, 100, 50, 35, 90, 100, 60, 80]passing_mark = 50for i in range(0, 10):\tif mark[i] < passing_mark:375.4"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "(c) 林老師想找出哪些同學需要補測。試編寫算法或程式，找出那些需要補測的同學，並列印該同學的學號。mark = [87, 45, 79, 100, 50, 35, 90, 100, 60, 80]passing_mark = 50for i in range(0, 10):\tif mark[i] < passing_mark:\t\tprint(i+1)385.4"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "試完成課本第 101 頁至第 102 頁的測試站 5.4。(a)395.4"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "陣列與 Python 列表4A列表是一連串以某種次序排列的項目，而這些項目不需像陣列一樣屬於同一種數據類型。本課將重點實踐與陣列相關的算法，故運用列表時，只會儲存同一種數據類型。"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "試完成課本第 101 頁至第 102 頁的測試站 5.4。(b)405.4"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "415.4"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "搜索列表中的項目42B以下算法 / 程式能找出列表中最大的值。largest = the_list[0]N = len(the_list)for i in range(1, N):\tif the_list[i] > largest:\t\tlargest = the_list[i]print(largest)"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "林老師把 10 位學生的測驗成績記錄在列表 mark 中，如下：(a) 他設計了一個可以同時找出最高及最低的分數的程式，以下是這個程式的輸出：435.5"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "試編寫 Python 程式或算法：mark = [87, 85, 79, 100, 50, 35, 90, 100, 60, 80]highest_mark = mark[0]lowest_mark = mark[0]for i in range(1, 10):\tif mark[i] > highest_mark :\t\thighest_mark = mark[i]\tif mark[i] < lowest_mark :\t\tlowest_mark = mark[i]print(\"The highest mark is:\", highest_mark)print(\"The lowest mark is:\", lowest_mark)445.5"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "試編寫 Python 程式或算法：mark = [87, 85, 79, 100, 50, 35, 90, 100, 60, 80]highest_mark = mark[0]lowest_mark = mark[0]for i in range(1, 10):\tif mark[i] > highest_mark :\t\thighest_mark = mark[i]\tif mark[i] < lowest_mark :\t\tlowest_mark = mark[i]print(\"The highest mark is:\", highest_mark)print(\"The lowest mark is:\", lowest_mark)455.5"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "(b) 假設列表內的分數是按學號排序的，即 mark[0] 是 1 號同學的成績，mark[1]是 2 號同學的成績，如此類推。林老師想找出分數最低的同學。試編寫 Python 程式或算法：mark = [87, 85, 79, 100, 50, 35, 90, 100, 60, 80]lowest_mark = mark[0]lowest_no = 0for i in range(1, 10):\tif mark[i] < lowest_mark :\t\tlowest_mark = mark[i]\t\tlowest_no = iprint(\"The lowest mark is student no.\", lowest_no+1 )465.5"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "(b) 假設列表內的分數是按學號排序的，即 mark[0] 是 1 號同學的成績，mark[1]是 2 號同學的成績，如此類推。林老師想找出分數最低的同學。試編寫 Python 程式或算法：mark = [87, 85, 79, 100, 50, 35, 90, 100, 60, 80]lowest_mark = mark[0]lowest_no = 0for i in range(1, 10):\tif mark[i] < lowest_mark :\t\tlowest_mark = mark[i]\t\tlowest_no = iprint(\"The lowest mark is student no.\", lowest_no+1 )475.5"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "(c) 林老師發現有時會多於一位同學取得最高分數。他想找出所有取得最高分數的同學，以下是這個程式的輸出：485.5"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "試編寫 Python 程式或算法：mark = [87, 85, 79, 100, 50, 35, 90, 100, 60, 80]print(\"The following student(s) got the highest mark:\")for i in range(0, 10):\tif mark[i] == highest_mark:495.5"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Basic operations of Python lists5B在 Python 中，我們可以通過以下方式建立列表：Python解說 / 盒子類比圖list1 = [\"David\", \"Lily\", \"Ben\"]list2 = [34, 23, 90, 56, 100]"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "試編寫 Python 程式或算法：mark = [87, 85, 79, 100, 50, 35, 90, 100, 60, 80]print(\"The following student(s) got the highest mark:\")for i in range(0, 10):\tif mark[i] == highest_mark:\t\tprint(i+1)505.5"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "試完成課本第 106 頁的測試站 5.5。(a)515.5"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "試完成課本第 106 頁的測試站 5.5。(b)525.5"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "檢查列表中的值是否按次序排列53C以下的算法 / 程式會檢查列表中的值是否由小至大順序排列。sorted_list = TrueN = len(the_list)for k in range(0, N-1):\tif the_list[k] > the_list[k+1]:\t\tsorted_list = Falseprint(sorted_list)"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "某遊戲排行榜將頭十名的玩家分數由高至低順序排列。但由於玩家的分數不斷更新，程式需要不斷檢查排行榜是否按該次序排列。試編寫 Python 程式或算法：score = [99.8, 99.5, 98, 97.9, 97.6, 95.3, 95.2, 93.4, 92.1, 90.5]sorted_list = Truefor k in range( 0 , 9 ):\tif score[k+1] > score[k] :\t\tsorted_list = Falseprint(sorted_list)545.6"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "某遊戲排行榜將頭十名的玩家分數由高至低順序排列。但由於玩家的分數不斷更新，程式需要不斷檢查排行榜是否按該次序排列。試編寫 Python 程式或算法：score = [99.8, 99.5, 98, 97.9, 97.6, 95.3, 95.2, 93.4, 92.1, 90.5]sorted_list = Truefor k in range( 0 , 9 ):\tif score[k+1] > score[k] :\t\tsorted_list = Falseprint(sorted_list)555.6"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "試完成課本第 108 頁至第 109 頁的測試站 5.6。  565.6"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "575.6"
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "加入或刪除列表中的項目58D列表的大小會因加減項目而改變。以下的算法 / 程式會將列表索引 P 的項目刪除。N = len(the_list)for k in range(P, N-1):\tthe_list[k] = the_list[k+1]N = N - 1"
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "孫老師把參加了編程課外班的小組名單記錄在列表 eca_code 中，如下：Paul 向孫老師說他想退出編程班，所以孫老師把 Paul 從小組名單中刪除。假設已知 Paul 位於列表索引 1 的位置，試編寫 Python 程式或算法：eca_code = [\"Tony\", \"Paul\", \"Kelly\", \"Wendy\", \"Jack\"]for k in range(1, 4) :\teca_code[ k ] = eca_code[ k+1 ]eca_code[ 4 ] = \"\"595.7"
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Python 列表的基本運作6B要存取項目，必須先建立列表並賦予預設值。此過程名為過程稱為初始化。Python解說 / 盒子類比圖list3 = [0]*10list4 = [\"\"]*5"
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "孫老師把參加了編程課外班的小組名單記錄在列表 eca_code 中，如下：Paul 向孫老師說他想退出編程班，所以孫老師把 Paul 從小組名單中刪除。假設已知 Paul 位於列表索引 1 的位置，試編寫 Python 程式或算法：eca_code = [\"Tony\", \"Paul\", \"Kelly\", \"Wendy\", \"Jack\"]for k in range(1, 4) :\teca_code[ k ] = eca_code[ k+1 ]eca_code[ 4 ] = \"\"605.7"
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "加入或刪除列表中的項目61D以下的算法/程式將新項目 new_data 加入列表索引 P 的位置。the_list = the_list + [0]N = len(the_list)for k in range(N-1, P, -1):\tthe_list[k] = the_list[k-1]the_list[P] = new_data"
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "試完成課本第 112 頁的測試站 5.7。(a) 625.7"
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "(b) 635.7"
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "調動列表中的項目64D以下的算法 / 程式將原本位於索引 P 的項目調到列表的第一位。temp = the_list[P]for k in range(P, 0, -1):\tthe_list[k] = the_list[k-1]the_list[0] = temp"
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "某學校舉辦開放日，老師將表演班別出演的先後次序儲存在列表 show，如下：4E 班提出提早表演的請求。假設已知 4E 班在列表索引 3 的位置，試編寫 Python 程式或算法將班別調到最前：show = [\"2A\", \"3B\", \"1C\", \"4E\", \"5A\"]temp = show[3]for k in range( 3, 0, -1 ):\tshow[ k ] = show[ k-1 ]show[0] = temp655.8"
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "某學校舉辦開放日，老師將表演班別出演的先後次序儲存在列表 show，如下：4E 班提出提早表演的請求。假設已知 4E 班在列表索引 3 的位置，試編寫 Python 程式或算法將班別調到最前：show = [\"2A\", \"3B\", \"1C\", \"4E\", \"5A\"]temp = show[3]for k in range( 3, 0, -1 ):\tshow[ k ] = show[ k-1 ]show[0] = temp665.8"
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "Python 字串的綜合應用675.3在此例子中，字串 \"Work Hard!\" 內的字符放入名為 word 的列表中，即 word[0] 的值是'W'。"
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "Python 字串的綜合應用685.3"
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "Python 字串的綜合應用695.3然而，也有些列表操作不適用於字串。"
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Python 列表的基本運作7B我們可通過以下方式在 Python 更新列表中的項目：Python解說 / 盒子類比圖list2[0] = 28list2[1] = list2[2] - 5"
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "找出字符串的長度70A在 Python 中，len() 函數能傳回列表長度。"
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "找出字符是否存在於字串中71B以下是運用 for 循環逐一檢查字符的方式：the_string = \"Work Hard!\"target = \"a\"found = FalseN = len(the_string)for i in range (0, N):\tif target == the_string[i]:\tfound = Trueprint(found)"
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide72.xml",
+      "text": "英文元音字母（vowel letter）是指英語裏起着發聲作用的字母，即 a、e、i、o 和 u。設計程式讓用家輸入單詞，然後統計當中元音字母的總數。以下是這個程式的輸出：725.9"
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide73.xml",
+      "text": "試編寫 Python 程式或算法：word = input()count = 0length = len(word)for i in range(0, length):\tif word[i] == \"a\" or word[i] == \"e\" or \\\tword[i] == \"i\" or word[i] == \"o\" or word[i] == \"u\": \t\tcount = count + 1735.9"
+    },
+    {
+      "slide_index": 72,
+      "slide_part": "ppt/slides/slide74.xml",
+      "text": "試編寫 Python 程式或算法：word = input()count = 0length = len(word)for i in range(0, length):\tif word[i] == \"a\" or word[i] == \"e\" or \\\tword[i] == \"i\" or word[i] == \"o\" or word[i] == \"u\": \t\tcount = count + 1745.9"
+    },
+    {
+      "slide_index": 73,
+      "slide_part": "ppt/slides/slide75.xml",
+      "text": "想像程式能同時計算小寫及大寫字母嗎？如否，應如何改寫程式？75"
+    },
+    {
+      "slide_index": 74,
+      "slide_part": "ppt/slides/slide76.xml",
+      "text": "試完成課本第 119 頁至第 120 頁的測試站 5.8。  765.8"
+    },
+    {
+      "slide_index": 75,
+      "slide_part": "ppt/slides/slide77.xml",
+      "text": "775.8"
+    },
+    {
+      "slide_index": 76,
+      "slide_part": "ppt/slides/slide78.xml",
+      "text": "找出字符是否存在於字串中78B我們亦可運用 while 循環尋找字符。the_string = \"Work Hard!“target = \"r“index = -1found = Falsei = 0N = len(the_string)while i < N and found == False:\t if target == the_string[i]:\t\t index = i\t\t found = True\t i = i + 1print(index)"
+    },
+    {
+      "slide_index": 77,
+      "slide_part": "ppt/slides/slide79.xml",
+      "text": "找出字符是否存在於字串中79C從字串中提取部分的字符會成為子字串。"
+    },
+    {
+      "slide_index": 78,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "Python 列表的基本運作8B我們可通過以下方式在 Python 輸出列表：PythonOutputlist1 = [\"David\", \"Lily\", \"Ben\"]print(list1[1])print(list1[0])LilyDavidlist2 = [34, 23, 90, 56, 100]for i in range(0, 5):\tprint(list2[i])34239056100"
+    },
+    {
+      "slide_index": 79,
+      "slide_part": "ppt/slides/slide80.xml",
+      "text": "試空運行以下 Python 程式碼，並寫下程式的輸出：805.3"
+    },
+    {
+      "slide_index": 80,
+      "slide_part": "ppt/slides/slide81.xml",
+      "text": "設計程式，讓用家輸入「全名」，然後分別列印他的姓氏和名字。以下是這個程式的輸出：815.11"
+    },
+    {
+      "slide_index": 81,
+      "slide_part": "ppt/slides/slide82.xml",
+      "text": "試編寫 Python 程式或算法：fullname = input()firstname = \"\"lastname = \"\"N = len(fullname)space = -1for i in range(0, N):\tif fullname[i] == \" \" :\t\tspace = iif space != -1 :\tfor i in range( 0, space ):\t\tfirstname = firstname + fullname[i]\tfor i in range( space+1, N ):\t\tlastname = lastname + fullname[i]\tprint(lastname)\tprint(firstname)else:\tprint(\"Not a proper name\")825.11"
+    },
+    {
+      "slide_index": 82,
+      "slide_part": "ppt/slides/slide83.xml",
+      "text": "試編寫 Python 程式或算法：fullname = input()firstname = \"\"lastname = \"\"N = len(fullname)space = -1for i in range(0, N):\tif fullname[i] == \" \" :\t\tspace = iif space != -1 :\tfor i in range( 0, space ):\t\tfirstname = firstname + fullname[i]\tfor i in range( space+1, N ):\t\tlastname = lastname + fullname[i]\tprint(lastname)\tprint(firstname)else:\tprint(\"Not a proper name\")835.11"
+    },
+    {
+      "slide_index": 83,
+      "slide_part": "ppt/slides/slide84.xml",
+      "text": "分析由於以上「全名」的格式必然為「名字、空格、姓氏」，故只需找出空格的位置，將空格前的字串儲存在 firstname，空格後的字串儲存在 lastname。想像有人認為，以上的程式不能處理「Tai Man Chan」和「Siu Ming Chan」這類姓名。你同意以上說法嗎？試解釋。845.11"
+    },
+    {
+      "slide_index": 84,
+      "slide_part": "ppt/slides/slide85.xml",
+      "text": "試完成課本第 126 頁的測試站 5.9。 855.9"
+    },
+    {
+      "slide_index": 85,
+      "slide_part": "ppt/slides/slide86.xml",
+      "text": "判斷字符的類別86D我們可以利用字符的 ASCII 來比較字符的大小。"
+    },
+    {
+      "slide_index": 86,
+      "slide_part": "ppt/slides/slide87.xml",
+      "text": "判斷字符的類別87D"
+    },
+    {
+      "slide_index": 87,
+      "slide_part": "ppt/slides/slide88.xml",
+      "text": "判斷字符的類別88D以下是 ASCII 的特點：大寫字母和小寫字母按字母順序排列；數字按升序排列。我們可以透過判斷字符的 ASCII 是否在特定的範圍，從而判斷字符的類別。"
+    },
+    {
+      "slide_index": 88,
+      "slide_part": "ppt/slides/slide89.xml",
+      "text": "設計程式，讓用家輸入一個字符，然後判斷這字符是大寫或小寫。以下是這個程式的輸出：試編寫 Python 程式或算法：inputLetter = input()if inputLetter >= \"A\" and inputLetter <= \"Z\" : print(\"It is a capital letter.\")if inputLetter >= \"a\" and inputLetter <= \"z\" : print(\"It is a small letter.\")895.12"
+    },
+    {
+      "slide_index": 89,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "Python 列表的基本運作9B我們可通過以下方式在 Python 複製列表：PythonExplanation/ box analogylist2 = [34, 23, 90, 56, 100]new_list = [0]*5for i in range(0, 5):\tnew_list[i] = list2[i]"
+    },
+    {
+      "slide_index": 90,
+      "slide_part": "ppt/slides/slide90.xml",
+      "text": "設計程式，讓用家輸入一個字符，然後判斷這字符是大寫或小寫。以下是這個程式的輸出：試編寫 Python 程式或算法：inputLetter = input()if inputLetter >= \"A\" and inputLetter <= \"Z\" : print(\"It is a capital letter.\")if inputLetter >= \"a\" and inputLetter <= \"z\" : print(\"It is a small letter.\")905.12"
+    },
+    {
+      "slide_index": 91,
+      "slide_part": "ppt/slides/slide91.xml",
+      "text": "分析大寫字母（A 至 Z）和小寫字母（a 至 z）的 ASCII 其中一個特點是它們會按字母順序排列：想像如何判斷字符是否為數字（0 - 9）？inputLetter >= \"0\" and inputLetter <= \"9\"915.12"
+    },
+    {
+      "slide_index": 92,
+      "slide_part": "ppt/slides/slide92.xml",
+      "text": "試完成課本第 98 頁的測試站 5.10。(a)925.10"
+    },
+    {
+      "slide_index": 93,
+      "slide_part": "ppt/slides/slide93.xml",
+      "text": "(b)935.10"
+    },
+    {
+      "slide_index": 94,
+      "slide_part": "ppt/slides/slide94.xml",
+      "text": "(c)945.10"
+    },
+    {
+      "slide_index": 95,
+      "slide_part": "ppt/slides/slide95.xml",
+      "text": "(d) 當密碼不符合要求時，並沒有要求用家重新輸入 / 要求密碼需要有至少1個特殊字符更安全  / 沒有雙重確認 （Data Verification）(f)(g) 目的是數據校驗，雙重確認用戶輸入的密碼無誤。955.10"
+    }
+  ]
+}

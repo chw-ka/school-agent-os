@@ -1,0 +1,1057 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreA3_en_Data Representation.docx",
+    "slug": "CoreA3_en",
+    "title": "Data Representation",
+    "title_zh": null,
+    "title_en": "Data Representation",
+    "language": "en",
+    "family": "CoreA",
+    "chapter": 3,
+    "integrated": false,
+    "topic_code": "A03",
+    "curriculum_unit": "Core-A",
+    "ca_unit": "A",
+    "f5_exam_scope": "mcq_core_a",
+    "extracted_at": "2026-05-24T10:37:17.619940+00:00",
+    "item_count": 37,
+    "section_counts": {
+      "mcq": 26,
+      "short_answer": 8,
+      "long_answer": 3
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTA0103_01A001E",
+      "bank_code": "SSICTA0103_01A001E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A social media platform requires users to set up a 6-digit password, each digit can only contain a number ranging from 0-9. How many different passwords can it represent?",
+      "options": {
+        "A": "26",
+        "B": "210",
+        "C": "102",
+        "D": "106\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A social media platform requires users to set up a 6-digit password, each digit can only contain a number ranging from 0-9. How many different passwords can it represent?\nA. 26\nB. 210\nC. 102\nD. 106\n[--Answer: D--]",
+      "concepts": [
+        "A-ch3",
+        "硬件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A002E",
+      "bank_code": "SSICTA0103_01A002E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A company uses a database to store product records. In each record, 10 bytes are used to store the product name and 8 bits are used to store the product ID. How many different records can the database support?",
+      "options": {
+        "A": "28",
+        "B": "210",
+        "C": "280",
+        "D": "108\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A company uses a database to store product records. In each record, 10 bytes are used to store the product name and 8 bits are used to store the product ID. How many different records can the database support?\nA. 28\nB. 210\nC. 280\nD. 108\n[--Answer: A--]",
+      "concepts": [
+        "A-ch3",
+        "數據庫",
+        "資訊處理",
+        "進制"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A003E",
+      "bank_code": "SSICTA0103_01A003E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "How many bytes are required to represent the pixels of a 16 × 16 black-and-white image?",
+      "options": {
+        "A": "2",
+        "B": "16",
+        "C": "32",
+        "D": "256\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "How many bytes are required to represent the pixels of a 16 × 16 black-and-white image?\nA. 2\nB. 16\nC. 32\nD. 256\n[--Answer: C--]",
+      "concepts": [
+        "A-ch3",
+        "多媒體"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A004E",
+      "bank_code": "SSICTA0103_01A004E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following numbers is the largest?",
+      "options": {
+        "A": "1111 11112",
+        "B": "67010",
+        "C": "29A16",
+        "D": "2A916\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following numbers is the largest?\nA. 1111 11112\nB. 67010\nC. 29A16\nD. 2A916\n[--Answer: D--]",
+      "concepts": [
+        "A-ch3"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A005E",
+      "bank_code": "SSICTA0103_01A005E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is the two’s complement of 5616?",
+      "options": {
+        "A": "0101 0110",
+        "B": "1010 1010",
+        "C": "0011 1000",
+        "D": "1100 1000\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is the two’s complement of 5616?\nA. 0101 0110\nB. 1010 1010\nC. 0011 1000\nD. 1100 1000\n[--Answer: B--]",
+      "concepts": [
+        "A-ch3"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A006E",
+      "bank_code": "SSICTA0103_01A006E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following 8-bit numbers in two’s complement representation is the largest?",
+      "options": {
+        "A": "1000 0001",
+        "B": "1111 0000",
+        "C": "1100 0001",
+        "D": "1111 1111\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following 8-bit numbers in two’s complement representation is the largest?\nA. 1000 0001\nB. 1111 0000\nC. 1100 0001\nD. 1111 1111\n[--Answer: D--]",
+      "concepts": [
+        "A-ch3",
+        "進制"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A007E",
+      "bank_code": "SSICTA0103_01A007E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following numbers is equivalent to the 8-bit two’s complement number 1001 1000?",
+      "options": {
+        "A": "-104",
+        "B": "104",
+        "C": "-152",
+        "D": "152\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following numbers is equivalent to the 8-bit two’s complement number 1001 1000?\nA. -104\nB. 104\nC. -152\nD. 152\n[--Answer: A--]",
+      "concepts": [
+        "A-ch3",
+        "進制"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A008E",
+      "bank_code": "SSICTA0103_01A008E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is the 8-bit two’s complement of the decimal number 96?",
+      "options": {
+        "A": "0110 0000",
+        "B": "1010 0000",
+        "C": "1001 1110",
+        "D": "1001 1111\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is the 8-bit two’s complement of the decimal number 96?\nA. 0110 0000\nB. 1010 0000\nC. 1001 1110\nD. 1001 1111\n[--Answer: B--]",
+      "concepts": [
+        "A-ch3",
+        "進制"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A009E",
+      "bank_code": "SSICTA0103_01A009E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following operations of numbers in 8-bit two’s complement representation may result in an overflow error?\n(1)\nAddition of two positive numbers\n(2)\nAddition of one positive number and one negative number\n(3)\nAddition of two negative numbers",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following operations of numbers in 8-bit two’s complement representation may result in an overflow error?\n(1)\nAddition of two positive numbers\n(2)\nAddition of one positive number and one negative number\n(3)\nAddition of two negative numbers\nA. (1) only\nB. (2) only\nC. (1) and (3) only\nD. (1), (2) and (3)\n[--Answer: C--]",
+      "concepts": [
+        "A-ch3",
+        "進制"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_01A010E",
+      "bank_code": "SSICTA0103_01A010E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following operations of numbers in 8-bit two’s complement representation results in an overflow error?",
+      "options": {
+        "A": "0110 0001 + 1011 0011",
+        "B": "1111 1111 + 1000 0000",
+        "C": "0010 1101 + 0100 1000",
+        "D": "1110 0000 + 0001 0001\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following operations of numbers in 8-bit two’s complement representation results in an overflow error?\nA. 0110 0001 + 1011 0011\nB. 1111 1111 + 1000 0000\nC. 0010 1101 + 0100 1000\nD. 1110 0000 + 0001 0001\n[--Answer: B--]",
+      "concepts": [
+        "A-ch3",
+        "進制"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A011E",
+      "bank_code": "SSICTA0103_01A011E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following operations of numbers in 4-bit two’s complement representation results in an overflow error?",
+      "options": {
+        "A": "1111 + 1111",
+        "B": "1000 + 1000",
+        "C": "0000 + 0000",
+        "D": "0111 + 1111\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following operations of numbers in 4-bit two’s complement representation results in an overflow error?\nA. 1111 + 1111\nB. 1000 + 1000\nC. 0000 + 0000\nD. 0111 + 1111\n[--Answer: B--]",
+      "concepts": [
+        "A-ch3",
+        "進制"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A012E",
+      "bank_code": "SSICTA0103_01A012E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following character encoding systems can represent the character “小“?\n(1)\nASCII\n(2)\nBig-5 code\n(3)\nGuobiao code",
+      "options": {
+        "A": "(1) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following character encoding systems can represent the character “小“?\n(1)\nASCII\n(2)\nBig-5 code\n(3)\nGuobiao code\nA. (1) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: C--]",
+      "concepts": [
+        "A-ch3"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_01A013E",
+      "bank_code": "SSICTA0103_01A013E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following statements about Unicode is correct?",
+      "options": {
+        "A": "It does not support emojis.",
+        "B": "The size of a character in Unicode must be 4 bytes.",
+        "C": "It supports traditional Chinese.",
+        "D": "None of the above\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following statements about Unicode is correct?\nA. It does not support emojis.\nB. The size of a character in Unicode must be 4 bytes.\nC. It supports traditional Chinese.\nD. None of the above\n[--Answer: C--]",
+      "concepts": [
+        "A-ch3"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A014E",
+      "bank_code": "SSICTA0103_01A014E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A spreadsheet uses 64 bits to store an integer and 1 byte to store a character. How many bytes are needed to store the string “30 eggs”?",
+      "options": {
+        "A": "7",
+        "B": "8",
+        "C": "13",
+        "D": "21\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A spreadsheet uses 64 bits to store an integer and 1 byte to store a character. How many bytes are needed to store the string “30 eggs”?\nA. 7\nB. 8\nC. 13\nD. 21\n[--Answer: A--]",
+      "concepts": [
+        "A-ch3",
+        "試算表",
+        "進制",
+        "數據類型"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A015E",
+      "bank_code": "SSICTA0103_01A015E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "The barcode shown below is the original barcode.\nWhich of the following barcodes can be scanned?",
+      "options": {
+        "D": "[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "The barcode shown below is the original barcode.\nWhich of the following barcodes can be scanned?\nD. [--Answer: A--]",
+      "concepts": [
+        "A-ch3"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A016E",
+      "bank_code": "SSICTA0103_01A016E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following statements about QR codes is correct?",
+      "options": {
+        "A": "It can represent numbers only.",
+        "B": "It can be scanned in any direction.",
+        "C": "It cannot be scanned when a small part is covered.",
+        "D": "Its character limit is around 50.\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following statements about QR codes is correct?\nA. It can represent numbers only.\nB. It can be scanned in any direction.\nC. It cannot be scanned when a small part is covered.\nD. Its character limit is around 50.\n[--Answer: B--]",
+      "concepts": [
+        "A-ch3"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A017E",
+      "bank_code": "SSICTA0103_01A017E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following processes involve the conversion between analog and digital data?",
+      "options": {
+        "A": "Editing a text file with a word processor.",
+        "B": "Designing a poster with application software.",
+        "C": "Record the screen of the computer with a screen recording application.",
+        "D": "Taking a photo of the computer screen with a smartphone.\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following processes involve the conversion between analog and digital data?\nA. Editing a text file with a word processor.\nB. Designing a poster with application software.\nC. Record the screen of the computer with a screen recording application.\nD. Taking a photo of the computer screen with a smartphone.\n[--Answer: D--]",
+      "concepts": [
+        "A-ch3",
+        "軟件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A018E",
+      "bank_code": "SSICTA0103_01A018E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following can be used for the conversion between analog and digital data?\n(1)\nE-book reader\n(2)\nPrinter\n(3)\nScanner",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following can be used for the conversion between analog and digital data?\n(1)\nE-book reader\n(2)\nPrinter\n(3)\nScanner\nA. (1) only\nB. (2) only\nC. (1) and (3) only\nD. (1), (2) and (3)\n[--Answer: D--]",
+      "concepts": [
+        "A-ch3",
+        "循環",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_01A019E",
+      "bank_code": "SSICTA0103_01A019E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following tools can be used for digitalisation?",
+      "options": {
+        "A": "E-book reader",
+        "B": "Printer",
+        "C": "Projector",
+        "D": "Scanner\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following tools can be used for digitalisation?\nA. E-book reader\nB. Printer\nC. Projector\nD. Scanner\n[--Answer: D--]",
+      "concepts": [
+        "A-ch3",
+        "循環"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A020E",
+      "bank_code": "SSICTA0103_01A020E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Tom scanned his lesson notes and converted them into text files using OCR technology. Which of the following is not a benefit of digitising the lesson notes?",
+      "options": {
+        "A": "He can read multiple notes on a single device.",
+        "B": "He can edit the lesson notes according to his needs.",
+        "C": "He can sell soft copies of the lesson notes to others.",
+        "D": "He can search for keywords in the text files.\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Tom scanned his lesson notes and converted them into text files using OCR technology. Which of the following is not a benefit of digitising the lesson notes?\nA. He can read multiple notes on a single device.\nB. He can edit the lesson notes according to his needs.\nC. He can sell soft copies of the lesson notes to others.\nD. He can search for keywords in the text files.\n[--Answer: C--]",
+      "concepts": [
+        "A-ch3",
+        "循環",
+        "網絡"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A021E",
+      "bank_code": "SSICTA0103_01A021E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "James is submitting an essay to his teacher in PDF format instead of DOCX format. Which of the following is/are his reason(s) for doing so?\n(1)\nTo provide a consistent document layout.\n(2)\nIt is cross-platform.\n(3)\nIt can contain multimedia elements.",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (2) only",
+        "D": "(1), (2) and (3)\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "James is submitting an essay to his teacher in PDF format instead of DOCX format. Which of the following is/are his reason(s) for doing so?\n(1)\nTo provide a consistent document layout.\n(2)\nIt is cross-platform.\n(3)\nIt can contain multimedia elements.\nA. (1) only\nB. (2) only\nC. (1) and (2) only\nD. (1), (2) and (3)\n[--Answer: C--]",
+      "concepts": [
+        "A-ch3",
+        "循環"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_01A022E",
+      "bank_code": "SSICTA0103_01A022E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following statements about images is correct?",
+      "options": {
+        "A": "BMP uses lossless compression.",
+        "B": "GIF can support up to 16-bit colour depth.",
+        "C": "WebM supports animation.",
+        "D": "JPG supports transparency.\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following statements about images is correct?\nA. BMP uses lossless compression.\nB. GIF can support up to 16-bit colour depth.\nC. WebM supports animation.\nD. JPG supports transparency.\n[--Answer: C--]",
+      "concepts": [
+        "A-ch3",
+        "多媒體",
+        "進制",
+        "選擇結構"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A023E",
+      "bank_code": "SSICTA0103_01A023E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following statements about the image below is true?",
+      "options": {
+        "A": "It must be a bitmap image.",
+        "B": "It must be a vector image.",
+        "C": "It has a colour depth of over 1 bit.",
+        "D": "It must be transparent.\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following statements about the image below is true?\nA. It must be a bitmap image.\nB. It must be a vector image.\nC. It has a colour depth of over 1 bit.\nD. It must be transparent.\n[--Answer: C--]",
+      "concepts": [
+        "A-ch3",
+        "進制"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A024E",
+      "bank_code": "SSICTA0103_01A024E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following will affect the quality of an audio file?\n(1)\nBit depth\n(2)\nColour depth\n(3)\nFrame rate",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following will affect the quality of an audio file?\n(1)\nBit depth\n(2)\nColour depth\n(3)\nFrame rate\nA. (1) only\nB. (2) only\nC. (1) and (3) only\nD. (1), (2) and (3)\n[--Answer: A--]",
+      "concepts": [
+        "A-ch3",
+        "硬件",
+        "進制"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_01A025E",
+      "bank_code": "SSICTA0103_01A025E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Peter is transferring his video files to a hard disk. Which of the following file formats should he use for the videos such that he can store as many videos as he can?",
+      "options": {
+        "A": "AVI",
+        "B": "MP3",
+        "C": "MP4",
+        "D": "BMP\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Peter is transferring his video files to a hard disk. Which of the following file formats should he use for the videos such that he can store as many videos as he can?\nA. AVI\nB. MP3\nC. MP4\nD. BMP\n[--Answer: C--]",
+      "concepts": [
+        "A-ch3",
+        "循環",
+        "多媒體"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_01A026E",
+      "bank_code": "SSICTA0103_01A026E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Which of the following statements is INCORRECT?",
+      "options": {
+        "A": "1101 00112 passes the odd parity check.",
+        "B": "The eight-bit two's complement of 1101 00112 is 0010 11002.",
+        "C": "1101 00112 in hexadecimal is D316.",
+        "D": "1101 00112 represents a negative number in two's complement representation.\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following statements is INCORRECT?\nA. 1101 00112 passes the odd parity check.\nB. The eight-bit two's complement of 1101 00112 is 0010 11002.\nC. 1101 00112 in hexadecimal is D316.\nD. 1101 00112 represents a negative number in two's complement representation.\n[--Answer: B--]",
+      "concepts": [
+        "A-ch3",
+        "進制"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTA0103_03A001E",
+      "bank_code": "SSICTA0103_03A001E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Ben is checking his program that carries out arithmetic operations.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Convert the following decimal numbers into their 8-bit two’s complement form."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "90 (1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "38 (1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Will the addition of the result in (a)(i) and (a)(ii) create an overflow error? Explain briefly.(2 marks)\n[--Answer:\n(a)(i) 1010 0110(a)(ii) 1101 0010\n(b) (-90) + (-38) = -128, which can be represented in 8-bit two’s complement representation.\n--]"
+        }
+      ],
+      "text": "Ben is checking his program that carries out arithmetic operations.\n(a) Convert the following decimal numbers into their 8-bit two’s complement form.\n(i) 90 (1 mark)\n(ii) 38 (1 mark)\n(b) Will the addition of the result in (a)(i) and (a)(ii) create an overflow error? Explain briefly.(2 marks)\n[--Answer:\n(a)(i) 1010 0110(a)(ii) 1101 0010\n(b) (-90) + (-38) = -128, which can be represented in 8-bit two’s complement representation.\n--]",
+      "concepts": [
+        "A-ch3",
+        "Python",
+        "硬件",
+        "進制"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_03A002E",
+      "bank_code": "SSICTA0103_03A002E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "A store uses 1 byte to store the category of the product and 2 bytes to store the ID of the product in that category.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "How many different categories can the system represent? (1 mark)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "How many different IDs can be represented in each category? (1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "A barcode is attached to each product to store its product ID. Suggest two input devices that can read a barcode.(2 marks)\n[--Answer:\n(a)(i) 28 = 256 categories(a)(ii) 216 = 65536\n(b) Barcode reader and smartphone.\n--]"
+        }
+      ],
+      "text": "A store uses 1 byte to store the category of the product and 2 bytes to store the ID of the product in that category.\n(a) \n(i) How many different categories can the system represent? (1 mark)\n(ii) How many different IDs can be represented in each category? (1 mark)\n(b) A barcode is attached to each product to store its product ID. Suggest two input devices that can read a barcode.(2 marks)\n[--Answer:\n(a)(i) 28 = 256 categories(a)(ii) 216 = 65536\n(b) Barcode reader and smartphone.\n--]",
+      "concepts": [
+        "A-ch3"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_03A003E",
+      "bank_code": "SSICTA0103_03A003E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "Tom is registering for a video game. He registered his username as “湯姆” in the video game website.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "He found that his username cannot be displayed in the video game. Suggest a possible cause of this. (1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Suggest two character encoding systems that can represent the Tom’s username.(2 marks)\n[--Answer:\n(a) The video game does not support the Chinese encoding system.\n(b) Unicode, Big-5 code\n--]"
+        }
+      ],
+      "text": "Tom is registering for a video game. He registered his username as “湯姆” in the video game website.\n(a) He found that his username cannot be displayed in the video game. Suggest a possible cause of this. (1 mark)\n(b) Suggest two character encoding systems that can represent the Tom’s username.(2 marks)\n[--Answer:\n(a) The video game does not support the Chinese encoding system.\n(b) Unicode, Big-5 code\n--]",
+      "concepts": [
+        "A-ch3",
+        "循環"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_03A004E",
+      "bank_code": "SSICTA0103_03A004E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "Donald opened a text file from Jimmy and saw the following message.\nVdwakj!dbIAWd&bDHwa!HJKABwd@jKbdKJAWbDy2uBd23I&@ dbIWDaDadjaHbdak!!ABwd@jKbdKJAWbDy2uBd23I12 dbIAWd&bDHwdwaesfwAwaDy2uBd23I&",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Why is the message displayed as garbled text?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Given that the message is written in Japanese and English, suggest a character encoding system that supports the languages.(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Suggest a method that Jimmy can use to display the content without having Donald install the character encoding system suggested in (b). (1 mark)\n[--Answer:\n(a) Donald did not install the character encoding system that Jimmy used.\n(b) Unicode.(c) Jimmy can save the file as a PDF file.\n--]"
+        }
+      ],
+      "text": "Donald opened a text file from Jimmy and saw the following message.\nVdwakj!dbIAWd&bDHwa!HJKABwd@jKbdKJAWbDy2uBd23I&@ dbIWDaDadjaHbdak!!ABwd@jKbdKJAWbDy2uBd23I12 dbIAWd&bDHwdwaesfwAwaDy2uBd23I&\n(a) Why is the message displayed as garbled text?(1 mark)\n(b) Given that the message is written in Japanese and English, suggest a character encoding system that supports the languages.(1 mark)\n(c) Suggest a method that Jimmy can use to display the content without having Donald install the character encoding system suggested in (b). (1 mark)\n[--Answer:\n(a) Donald did not install the character encoding system that Jimmy used.\n(b) Unicode.(c) Jimmy can save the file as a PDF file.\n--]",
+      "concepts": [
+        "A-ch3",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_03A005E",
+      "bank_code": "SSICTA0103_03A005E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Steven joined a Public Examination. He has to bring an admission ticket to take the examination. The admission ticket stores personal information such as the ID, the name of the student, and other examination details.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "The examiner will scan the barcode to verify the identity of the student. Suggest a type of data that may be encoded in the barcode.(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "12 bits are used to represent student IDs in the examination. How many students can be represented in total?(1 mark)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Tom suggests using a QR code instead of a barcode to represent the student ID. Suggest two benefits of using a QR code to encode the student ID.  (2 marks)\n[--Answer:\n(a) ID of the student.\n(b) 212 = 4096 students(c) It can be scanned from any direction, which makes scanning faster and easier. Also, it has a higher error correction capability so that the QR code can still be scanned even if the admission ticket is damaged.\n--]"
+        }
+      ],
+      "text": "Steven joined a Public Examination. He has to bring an admission ticket to take the examination. The admission ticket stores personal information such as the ID, the name of the student, and other examination details.\n(a) The examiner will scan the barcode to verify the identity of the student. Suggest a type of data that may be encoded in the barcode.(1 mark)\n(b) 12 bits are used to represent student IDs in the examination. How many students can be represented in total?(1 mark)\n(c) Tom suggests using a QR code instead of a barcode to represent the student ID. Suggest two benefits of using a QR code to encode the student ID.  (2 marks)\n[--Answer:\n(a) ID of the student.\n(b) 212 = 4096 students(c) It can be scanned from any direction, which makes scanning faster and easier. Also, it has a higher error correction capability so that the QR code can still be scanned even if the admission ticket is damaged.\n--]",
+      "concepts": [
+        "A-ch3",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "進制",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_03A006E",
+      "bank_code": "SSICTA0103_03A006E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Holly is designing a huge banner to promote her organisation.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Donald suggests designing the banner in the form of vector graphics. Give two reasons to support him.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Holly adds the URL of the organisation’s social media page at the bottom of the banner. However, Jimmy disagrees with her decision. Suggest a way to facilitate access to the organisation’s social media page and explain your answer briefly.(2 marks)\n[--Answer:\n(a) The file size of the banner will be smaller. Also, the quality of the banner does not decrease when scaled up or down.\n(b) Represent the URL with a QR code, which allows people to scan it with their mobile phones easily.\n--]"
+        }
+      ],
+      "text": "Holly is designing a huge banner to promote her organisation.\n(a) Donald suggests designing the banner in the form of vector graphics. Give two reasons to support him.(2 marks)\n(b) Holly adds the URL of the organisation’s social media page at the bottom of the banner. However, Jimmy disagrees with her decision. Suggest a way to facilitate access to the organisation’s social media page and explain your answer briefly.(2 marks)\n[--Answer:\n(a) The file size of the banner will be smaller. Also, the quality of the banner does not decrease when scaled up or down.\n(b) Represent the URL with a QR code, which allows people to scan it with their mobile phones easily.\n--]",
+      "concepts": [
+        "A-ch3",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_03A007E",
+      "bank_code": "SSICTA0103_03A007E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Nelson is producing music on his own.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "He records his voice with a microphone. Suggest two attributes that will affect the clearness of the audio.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Refer to the following attributes and estimate the uncompressed file size of Nelson’s music. (2 marks)\nBit depth\n24 bits\nNumber of channel(s)\n1\nSampling rate\n48000 Hz\nDuration\n3 minutes\n[--Answer:\n(a) Bit depth and sampling rate.\n(b) 24 bits × 1 × 48000 × 3 × 60\n= 24.72 MB\n--]"
+        }
+      ],
+      "text": "Nelson is producing music on his own.\n(a) He records his voice with a microphone. Suggest two attributes that will affect the clearness of the audio.(2 marks)\n(b) Refer to the following attributes and estimate the uncompressed file size of Nelson’s music. (2 marks)\nBit depth\n24 bits\nNumber of channel(s)\n1\nSampling rate\n48000 Hz\nDuration\n3 minutes\n[--Answer:\n(a) Bit depth and sampling rate.\n(b) 24 bits × 1 × 48000 × 3 × 60\n= 24.72 MB\n--]",
+      "concepts": [
+        "A-ch3",
+        "資訊處理",
+        "進制"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_03A008E",
+      "bank_code": "SSICTA0103_03A008E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Mathew is participating in a video-shooting competition. His uncompressed video has the following attributes:\nColour depth\n24 bits\nResolution\n1920 × 1080\nFrame rate\n60 fps\nDuration\n10 minutes",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Given that the audio is 100 MB, estimate the size of the video.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The competition only accepts submission of videos under 50 GB. Suggest two ways for Matthew to reduce the file size of his video. (2 marks)\n[--Answer:\n(a) 24 bits × 1920 × 1080 × 60 × 10 × 60 + 100MB\n=208.67 GB\n(b) He can compress the video. He can also reduce the colour depth/resolution/frame rate of the video.\n--]"
+        }
+      ],
+      "text": "Mathew is participating in a video-shooting competition. His uncompressed video has the following attributes:\nColour depth\n24 bits\nResolution\n1920 × 1080\nFrame rate\n60 fps\nDuration\n10 minutes\n(a) Given that the audio is 100 MB, estimate the size of the video.(2 marks)\n(b) The competition only accepts submission of videos under 50 GB. Suggest two ways for Matthew to reduce the file size of his video. (2 marks)\n[--Answer:\n(a) 24 bits × 1920 × 1080 × 60 × 10 × 60 + 100MB\n=208.67 GB\n(b) He can compress the video. He can also reduce the colour depth/resolution/frame rate of the video.\n--]",
+      "concepts": [
+        "A-ch3",
+        "循環",
+        "硬件",
+        "進制",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA0103_04A001E",
+      "bank_code": "SSICTA0103_04A001E",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": null,
+      "stem": "Sarah is designing a camera application for smartphones.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Sarah has decided to include different languages such as Japanese on the interface of the application. What character encoding system should she use?(1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Give an advantage and a disadvantage of using the character encoding system in (a) when compared with ASCII. (2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "The application can store images and videos on the micro-SD card of the phone. Suggest a device needed for a computer to read the micro-SD card. (1 mark)_______________________________________________________________________________"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "The attributes of an image captured are as follows:\nResolution\n3840 × 2160\nColour depth\n24-bit\nEstimate the uncompressed file size of an image.(2 marks)_______________________________________________________________________________"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "text": "The attributes of a video captured are as follows:\nResolution\n1920 × 1080\nColour depth\n24-bit\nFrame rate\n30 fps\nDuration\n3 minutes\nSize of the audio track\n5 MB\nEstimate the uncompressed file size of the video. (3 marks)_______________________________________________________________________________"
+        },
+        {
+          "label": "f",
+          "marks": null,
+          "text": "Given that Sarah has an 8GB micro-SD card. Using the video attributes in (e), how many minutes of videos without audio can be stored in the micro-SD card? (2 marks)\n[--Answer:\n(a) Unicode.\n(b) Advantage: It supports more languages.\nDisadvantage: It requires more storage space.\n(c) Card reader.\n(d) 3840 × 2160 × 24 bits = 23.73 MB\n(e) 1920 × 1080 × 24 bits × 30 × 3 × 60 + 5 MB = 31.29 GB(f) 8GB ÷ (1920 × 1080 × 24 bits × 30) = 0.77 minutes\n--]"
+        }
+      ],
+      "text": "Sarah is designing a camera application for smartphones.\n(a) Sarah has decided to include different languages such as Japanese on the interface of the application. What character encoding system should she use?(1 mark)\n(b) Give an advantage and a disadvantage of using the character encoding system in (a) when compared with ASCII. (2 marks)\n(c) The application can store images and videos on the micro-SD card of the phone. Suggest a device needed for a computer to read the micro-SD card. (1 mark)_______________________________________________________________________________\n(d) The attributes of an image captured are as follows:\nResolution\n3840 × 2160\nColour depth\n24-bit\nEstimate the uncompressed file size of an image.(2 marks)_______________________________________________________________________________\n(e) The attributes of a video captured are as follows:\nResolution\n1920 × 1080\nColour depth\n24-bit\nFrame rate\n30 fps\nDuration\n3 minutes\nSize of the audio track\n5 MB\nEstimate the uncompressed file size of the video. (3 marks)_______________________________________________________________________________\n(f) Given that Sarah has an 8GB micro-SD card. Using the video attributes in (e), how many minutes of videos without audio can be stored in the micro-SD card? (2 marks)\n[--Answer:\n(a) Unicode.\n(b) Advantage: It supports more languages.\nDisadvantage: It requires more storage space.\n(c) Card reader.\n(d) 3840 × 2160 × 24 bits = 23.73 MB\n(e) 1920 × 1080 × 24 bits × 30 × 3 × 60 + 5 MB = 31.29 GB(f) 8GB ÷ (1920 × 1080 × 24 bits × 30) = 0.77 minutes\n--]",
+      "concepts": [
+        "A-ch3",
+        "循環",
+        "硬件",
+        "進制"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA0103_04A002E",
+      "bank_code": "SSICTA0103_04A002E",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": null,
+      "stem": "Tom is completing his paper notes for his ICT lesson.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Convert the following decimal numbers into their 8-bit two’s complement representation"
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "50 (2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "-121 (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Will the 8-bit addition of the two numbers in (a) result in an overflow error? Explain briefly.\n(2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Now, Tom has completed his notes and would like to store it in a digital form so that he can access the file easily. He used a scanner to scan the notes. Suggest two properties that may affect the quality of the image. (2 marks)_______________________________________________________________________________"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Nicholas suggests using OCR to convert the paper notes. Give two advantages of using OCR to convert the notes. (2 marks)"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "text": "Tom wanted to maintain the layout of his digital notes after editing them in a word processor. Suggest one file format that can preserve the layout of the document across different platforms. (1 mark)\n[--Answer:\n(a)(i) 8-bit two’s complement representation of 50: 0011 0010(a)(ii) 8-bit two’s complement representation of-121: 1000 0111\n(b) No, overflow errors do not occur in addition of positive and negative numbers.(c) Bit depth and DPI.\n(d) It is easier to search for specific text/The notes can also be edited digitally/Multimedia elements can be added easily. (Any 2)\n(e) PDF\n--]"
+        }
+      ],
+      "text": "Tom is completing his paper notes for his ICT lesson.\n(a) Convert the following decimal numbers into their 8-bit two’s complement representation\n(i) 50 (2 marks)\n(ii) -121 (2 marks)\n(b) Will the 8-bit addition of the two numbers in (a) result in an overflow error? Explain briefly.\n(2 marks)\n(c) Now, Tom has completed his notes and would like to store it in a digital form so that he can access the file easily. He used a scanner to scan the notes. Suggest two properties that may affect the quality of the image. (2 marks)_______________________________________________________________________________\n(d) Nicholas suggests using OCR to convert the paper notes. Give two advantages of using OCR to convert the notes. (2 marks)\n(e) Tom wanted to maintain the layout of his digital notes after editing them in a word processor. Suggest one file format that can preserve the layout of the document across different platforms. (1 mark)\n[--Answer:\n(a)(i) 8-bit two’s complement representation of 50: 0011 0010(a)(ii) 8-bit two’s complement representation of-121: 1000 0111\n(b) No, overflow errors do not occur in addition of positive and negative numbers.(c) Bit depth and DPI.\n(d) It is easier to search for specific text/The notes can also be edited digitally/Multimedia elements can be added easily. (Any 2)\n(e) PDF\n--]",
+      "concepts": [
+        "A-ch3",
+        "循環",
+        "進制"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA0103_04A003E",
+      "bank_code": "SSICTA0103_04A003E",
+      "section_type": "long_answer",
+      "marks": 11.0,
+      "year_tag": null,
+      "stem": "Holly is designing a poster for an event.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "The poster is intended to include photos of similar events and also different polygons. Suggest the type of image to be used and explain your answers briefly. (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Suggest two properties that may affect the quality of image. (2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Holly has decided to add the link of the registration form at the bottom of the poster so that anyone interested can type the URL into their mobile phones and register for the event. Suggest a better way to do so. (1 mark)_______________________________________________________________________________"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "Holly is determining the file format to be used to save the poster. Suggest a benefit for each of the following file formats. (2 marks)PNG:__________________________________________________________________________\nJPG:___________________________________________________________________________"
+        },
+        {
+          "label": "e",
+          "marks": null,
+          "text": "Suggest two properties that can affect the quality of the printed poster. (2 marks)_______________________________________________________________________________"
+        },
+        {
+          "label": "f",
+          "marks": null,
+          "text": "Suggest two ways for Holly to transfer the poster image to the printer. (2 marks)\n[--Answer:\n(a) Bitmap image. The poster includes real-life images, which can hardly be represented by vector images.\n(b) Colour depth and resolution.\n(c) She can add a QR code that represents the URL of the registration form.\n(d) PNG: It uses lossless compression, which preserves the quality of an image.\nJPG: It has a smaller file size.\n(e) Dot density and supported colour.(f) She can use a USB flash drive to import the poster to the printer. She can connect the printer to the computer through a USB cable and then send the file to the printer.\n--]"
+        }
+      ],
+      "text": "Holly is designing a poster for an event.\n(a) The poster is intended to include photos of similar events and also different polygons. Suggest the type of image to be used and explain your answers briefly. (2 marks)\n(b) Suggest two properties that may affect the quality of image. (2 marks)\n(c) Holly has decided to add the link of the registration form at the bottom of the poster so that anyone interested can type the URL into their mobile phones and register for the event. Suggest a better way to do so. (1 mark)_______________________________________________________________________________\n(d) Holly is determining the file format to be used to save the poster. Suggest a benefit for each of the following file formats. (2 marks)PNG:__________________________________________________________________________\nJPG:___________________________________________________________________________\n(e) Suggest two properties that can affect the quality of the printed poster. (2 marks)_______________________________________________________________________________\n(f) Suggest two ways for Holly to transfer the poster image to the printer. (2 marks)\n[--Answer:\n(a) Bitmap image. The poster includes real-life images, which can hardly be represented by vector images.\n(b) Colour depth and resolution.\n(c) She can add a QR code that represents the URL of the registration form.\n(d) PNG: It uses lossless compression, which preserves the quality of an image.\nJPG: It has a smaller file size.\n(e) Dot density and supported colour.(f) She can use a USB flash drive to import the poster to the printer. She can connect the printer to the computer through a USB cable and then send the file to the printer.\n--]",
+      "concepts": [
+        "A-ch3",
+        "循環",
+        "多媒體",
+        "進制"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

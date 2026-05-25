@@ -26,7 +26,11 @@ _DEFAULT_OUT = _DEFAULT_BANK / "style_patterns.json"
 _DEFAULT_CURRICULUM = _DEFAULT_BANK / "curriculum_concepts.json"
 _STYLE_GUIDE = Path(__file__).resolve().parent / "dse_ict_style_guide.json"
 
-_DEFAULT_YEARS = ("2019", "2021", "2022", "2023", "2024", "2025")
+_DEFAULT_YEARS = ("2019", "2021", "2022", "2023", "2024", "2025", "2026")
+_WRITTEN_SLUGS_B = frozenset({"Paper1B_CompulsoryStructured"})
+_WRITTEN_SLUGS_C = frozenset(
+    {"Paper2A_Database", "Paper2D_SoftwareDevelopment", "Paper2_Elective"}
+)
 _DEFAULT_SLUGS = (
     "Paper1_MultipleChoice",
     "Paper1A_MultipleChoice",
@@ -201,6 +205,10 @@ def extract_subpart_template(item: dict) -> str | None:
     red = redact_for_pattern(first)
     if len(red) < 10:
         return None
+    if "_Q(" in red or re.search(r"Sheet\d+_Q", red, re.I):
+        return None
+    if not re.search(r"(寫出|列出|描述|指出|解釋|完成|繪製|設計|建議|比較|說明|估算|簡述)", red):
+        return None
     label = re.sub(r"\d+", "", number).strip() or number
     return f"{label} {red}"[:120]
 
@@ -273,6 +281,69 @@ def _top_counter_items(counter: Counter, limit: int) -> list[dict[str, Any]]:
     return [{"text": text, "count": count} for text, count in counter.most_common(limit)]
 
 
+def _written_bucket_factory() -> dict[str, Any]:
+    return {
+        "item_count": 0,
+        "question_types": Counter(),
+        "command_verbs": Counter(),
+        "terminology": Counter(),
+        "scenario_frames": Counter(),
+        "subpart_templates": Counter(),
+        "marks": Counter(),
+        "years": Counter(),
+        "paper_slugs": Counter(),
+    }
+
+
+def _concept_bucket_factory() -> dict[str, Any]:
+    bucket = _written_bucket_factory()
+    bucket["distractor_patterns"] = Counter()
+    return bucket
+
+
+def _serialize_written_bucket(bucket: dict[str, Any], *, limit: int) -> dict[str, Any]:
+    return {
+        "item_count": bucket["item_count"],
+        "question_types": dict(bucket["question_types"].most_common()),
+        "command_verbs": _top_counter_items(bucket["command_verbs"], limit),
+        "terminology": _top_counter_items(bucket["terminology"], limit),
+        "scenario_frames": _top_counter_items(bucket["scenario_frames"], limit),
+        "subpart_templates": _top_counter_items(bucket["subpart_templates"], limit),
+        "marks_distribution": dict(bucket["marks"].most_common()),
+        "years": dict(bucket["years"].most_common()),
+        "paper_slugs": dict(bucket["paper_slugs"].most_common()),
+    }
+
+
+def _feed_written_bucket(
+    bucket: dict[str, Any],
+    *,
+    row: dict,
+    it: dict,
+    stem: str,
+    qtype: str,
+    verb: str | None,
+    terms: list[str],
+    scenario: str | None,
+    sub_t: str | None,
+    marks_key: str,
+) -> None:
+    bucket["item_count"] += 1
+    bucket["question_types"][qtype] += 1
+    bucket["years"][row["year"]] += 1
+    bucket["paper_slugs"][row["slug"]] += 1
+    if marks_key:
+        bucket["marks"][marks_key] += 1
+    if verb:
+        bucket["command_verbs"][verb] += 1
+    for t in terms:
+        bucket["terminology"][t] += 1
+    if scenario:
+        bucket["scenario_frames"][scenario] += 1
+    if sub_t:
+        bucket["subpart_templates"][sub_t] += 1
+
+
 def build_style_patterns(
     bank_root: Path,
     curriculum_path: Path,
@@ -290,20 +361,11 @@ def build_style_patterns(
     global_distractors: Counter = Counter()
     global_qtypes: Counter = Counter()
 
-    by_concept: dict[str, dict[str, Any]] = defaultdict(
-        lambda: {
-            "question_types": Counter(),
-            "command_verbs": Counter(),
-            "terminology": Counter(),
-            "scenario_frames": Counter(),
-            "subpart_templates": Counter(),
-            "distractor_patterns": Counter(),
-            "marks": Counter(),
-            "years": Counter(),
-            "paper_slugs": Counter(),
-            "item_count": 0,
-        }
-    )
+    by_concept: dict[str, dict[str, Any]] = defaultdict(_concept_bucket_factory)
+    written_b_concept: dict[str, dict[str, Any]] = defaultdict(_written_bucket_factory)
+    written_c_concept: dict[str, dict[str, Any]] = defaultdict(_written_bucket_factory)
+    written_b_unit: dict[str, dict[str, Any]] = defaultdict(_written_bucket_factory)
+    written_c_unit: dict[str, dict[str, Any]] = defaultdict(_written_bucket_factory)
 
     for row in rows:
         it = row["item"]
@@ -362,6 +424,30 @@ def build_style_patterns(
             for d in distractors:
                 bucket["distractor_patterns"][d] += 1
 
+        slug = row["slug"]
+        unit = str(it.get("curriculum_unit") or "(untagged)").strip()
+        feed_kw = dict(
+            row=row,
+            it=it,
+            stem=stem,
+            qtype=qtype,
+            verb=verb,
+            terms=terms,
+            scenario=scenario,
+            sub_t=sub_t,
+            marks_key=marks_key,
+        )
+        if slug in _WRITTEN_SLUGS_B:
+            ub = written_b_unit[unit]
+            _feed_written_bucket(ub, **feed_kw)
+            for concept in concepts:
+                _feed_written_bucket(written_b_concept[concept], **feed_kw)
+        elif slug in _WRITTEN_SLUGS_C:
+            uc = written_c_unit[unit]
+            _feed_written_bucket(uc, **feed_kw)
+            for concept in concepts:
+                _feed_written_bucket(written_c_concept[concept], **feed_kw)
+
     # Merge static style guide hints
     guide_verbs: list[str] = []
     if _STYLE_GUIDE.exists():
@@ -386,6 +472,34 @@ def build_style_patterns(
             "paper_slugs": dict(bucket["paper_slugs"].most_common()),
         }
 
+    def _written_section_out(
+        by_concept_map: dict[str, dict[str, Any]],
+        by_unit_map: dict[str, dict[str, Any]],
+    ) -> dict[str, Any]:
+        return {
+            "by_concept": {
+                k: _serialize_written_bucket(v, limit=per_concept_limit)
+                for k, v in sorted(
+                    by_concept_map.items(), key=lambda x: (-x[1]["item_count"], x[0])
+                )
+            },
+            "by_curriculum_unit": {
+                k: _serialize_written_bucket(v, limit=per_concept_limit)
+                for k, v in sorted(
+                    by_unit_map.items(), key=lambda x: (-x[1]["item_count"], x[0])
+                )
+            },
+        }
+
+    written_out = {
+        "section_b": _written_section_out(written_b_concept, written_b_unit),
+        "section_c": _written_section_out(written_c_concept, written_c_unit),
+        "usage": (
+            "乙部只含 Paper1B；丙部只含 Paper2A/2D/2 Elective。"
+            "用 by_concept 揀問法形狀（已 redact），generate 時填新情境／數字，唔抄 stem。"
+        ),
+    }
+
     return {
         "version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -409,9 +523,11 @@ def build_style_patterns(
             "style_guide_stem_templates": guide_verbs[:30],
         },
         "by_concept": concepts_out,
+        "written": written_out,
         "notes": (
             "Patterns are redacted (placeholders). Do not use as exam stems verbatim. "
-            "Use for generate-from-blueprint: verbs, terminology, scenario frames, subpart shapes."
+            "Use for generate-from-blueprint: verbs, terminology, scenario frames, subpart shapes. "
+            "Written sections: see `written.section_b` / `written.section_c` by_concept and by_curriculum_unit."
         ),
     }
 

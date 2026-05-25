@@ -1,0 +1,128 @@
+{
+  "solve_review_ok": true,
+  "blocked": [],
+  "coherence_question_review": "OK (see question_review run)",
+  "written_alignment_notes": [
+    {
+      "id": "b-01",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "=SUMIF(B2:B50,\"明信片\",F2:F50)",
+      "model_snip": "1. \t(a)\t=IF(AND(E2=\"Y\",D2>=5),C2*D2*0.9,C2*D2) \t(b)\t=SUMIF(B$2:B$50,\"明信片\",F$2:F$50)"
+    },
+    {
+      "id": "b-02",
+      "subpart": "a",
+      "status": "solve_vs_model_differ",
+      "solve": "CPU: 執行指令及處理數據；RAM: 暫存正在使用的數據及程式；儲存裝置: 永久儲存數據及程式；顯示器: 輸出視覺資訊。",
+      "model_snip": "2. \t(a)\tCPU：執行指令；RAM：暫存執行中資料；儲存：永久保存檔案；顯示器：輸出畫面 \t(b)\t雲端：節省本地硬件成本、易備份；限制：需網絡、私隱風險；本地：速度快、離線可用；限制：硬件成本高、難擴充"
+    },
+    {
+      "id": "b-02",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "人工智能可協助管理病人預約、分析病歷數據以輔助診斷、自動化藥物庫存管理等。限制：需要大量數據訓練模型，且可能涉及私隱問題。",
+      "model_snip": "2. \t(a)\tCPU：執行指令；RAM：暫存執行中資料；儲存：永久保存檔案；顯示器：輸出畫面 \t(b)\t雲端：節省本地硬件成本、易備份；限制：需網絡、私隱風險；本地：速度快、離線可用；限制：硬件成本高、難擴充"
+    },
+    {
+      "id": "b-03",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "JPEG 有損壓縮，檔案較小但可能失真；PNG 無損壓縮，保留所有細節但檔案較大。取捨在於檔案大小與畫質的平衡。",
+      "model_snip": "3. \t(a)\t1920×1080×24/8 = 6,220,800 bytes/張；40 張 ≈ 237.3 MB（展示計算） \t(b)\tJPEG 檔較細但有損；PNG 無損但檔案較大"
+    },
+    {
+      "id": "b-04",
+      "subpart": "a",
+      "status": "solve_vs_model_differ",
+      "solve": "步驟1: i=1, found=FALSE; 步驟2: i=2, found=FALSE; 步驟3: i=3, found=TRUE; 最終OUTPUT=3",
+      "model_snip": "4. \t(a)\tkey=5 不在陣列內 → found 維持 FALSE → 最終 OUTPUT = 0 \t(b)\t逐一比對每個元素，最壞需檢查 n 個位置"
+    },
+    {
+      "id": "b-04",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "因為算法從陣列第一個元素開始，逐一檢查每個元素是否等於關鍵值，直到找到或檢查完所有元素，屬於順序搜尋，故為線性搜尋。",
+      "model_snip": "4. \t(a)\tkey=5 不在陣列內 → found 維持 FALSE → 最終 OUTPUT = 0 \t(b)\t逐一比對每個元素，最壞需檢查 n 個位置"
+    },
+    {
+      "id": "b-06",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "增加 RAM 可提升多工處理能力，減少因記憶體不足而導致的系統延遲或卡頓。",
+      "model_snip": "6. \t(a)\t例：Intel Core i7；AMD Ryzen 7 \t(b)\tRAM 增加可同時運行更多程式／減少換頁 \t(c)\tSSD：快、抗震；HDD：容量大、成本低 \t(d)\t例：升級顯示卡須同時安裝新驅動程式"
+    },
+    {
+      "id": "b-06",
+      "subpart": "c",
+      "status": "solve_vs_model_differ",
+      "solve": "SSD 優點：讀寫速度快、抗震、低功耗；缺點：價格較高、容量較小。HDD 優點：價格低、容量大；缺點：速度慢、易損壞。",
+      "model_snip": "6. \t(a)\t例：Intel Core i7；AMD Ryzen 7 \t(b)\tRAM 增加可同時運行更多程式／減少換頁 \t(c)\tSSD：快、抗震；HDD：容量大、成本低 \t(d)\t例：升級顯示卡須同時安裝新驅動程式"
+    },
+    {
+      "id": "b-06",
+      "subpart": "d",
+      "status": "solve_vs_model_differ",
+      "solve": "例如：升級作業系統至 Windows 11 時，需確保 CPU 支援 TPM 2.0 及 Secure Boot，否則需更換硬件。",
+      "model_snip": "6. \t(a)\t例：Intel Core i7；AMD Ryzen 7 \t(b)\tRAM 增加可同時運行更多程式／減少換頁 \t(c)\tSSD：快、抗震；HDD：容量大、成本低 \t(d)\t例：升級顯示卡須同時安裝新驅動程式"
+    },
+    {
+      "id": "c-01",
+      "subpart": "a",
+      "status": "solve_vs_model_differ",
+      "solve": "ERD with entities Member, Booking, Screening, Cinema. Member has PK memberID; Booking has PK bookingID, FK memberID, FK ",
+      "model_snip": "1. \t(a)\tERD：Member–Booking–Screening–Cinema 四實體；Booking 連 Member、Screening；Screening 連 Cinema"
+    },
+    {
+      "id": "c-02",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "外鍵確保 LOAN 中的 MID 必須存在於 MEMBER 的 MID 中，防止無效的會員編號，並在 MEMBER.MID 更新或刪除時可設定級聯操作以維護一致性。",
+      "model_snip": "2. \t(a)\tMID CHAR(6) PRIMARY KEY, TITLE VARCHAR(80) NOT NULL, … \t(b)\t防止借書記錄指向不存在的會員；刪除會員時可限制"
+    },
+    {
+      "id": "c-03",
+      "subpart": "a",
+      "status": "solve_vs_model_differ",
+      "solve": "數據冗餘：會員姓名和電話在每筆借書記錄中重複儲存。更新異常：若會員更改電話，需要更新所有相關的借書記錄，否則會導致數據不一致。",
+      "model_snip": "3. \t(a)\t姓名／電話重複；更新電話要改多筆 → 更新異常 \t(b)\t分拆 MEMBER(MID, Name, Phone) 與 LOAN(MID, BID, …)"
+    },
+    {
+      "id": "c-03",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "將資料表分拆為會員表（MEMBER）和借書表（LOAN）。MEMBER 表主鍵為會員編號，儲存姓名和電話；LOAN 表以外鍵引用會員編號，只儲存借書資訊，避免重複。",
+      "model_snip": "3. \t(a)\t姓名／電話重複；更新電話要改多筆 → 更新異常 \t(b)\t分拆 MEMBER(MID, Name, Phone) 與 LOAN(MID, BID, …)"
+    },
+    {
+      "id": "c-06",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "操作：PUSH 2, PUSH 5, PUSH 9, POP (輸出9), PUSH 1, POP (輸出1)。最終堆疊頂端為5。",
+      "model_snip": "5. \t(a)\tGrid[3][2]=1 為牆；Grid[3][3]=0 可向右移 \t(b)\tPOP→5；POP→1；最終頂端=1"
+    },
+    {
+      "id": "c-07",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "初始 low=1, high=5, mid=3 (S1042)，找到目標。若查找 S1010：mid=3 (S1042) > S1010，high=2；mid=1 (S1001) < S1010，low=2；mid=2 (S1010) 找到",
+      "model_snip": "6. \t(a)\tDequeue 後 Front 指向下一個輪候者 \t(b)\t二分：mid 取中，比較後縮小範圍（至少兩步）"
+    },
+    {
+      "id": "c-08",
+      "subpart": "a",
+      "status": "solve_vs_model_differ",
+      "solve": "冒泡排序降序首輪比較相鄰元素：比較(1,2):72<45?否，不交換；(2,3):45<90?是，交換索引2和3；(3,4):90<45?否；(4,5):45<61?是，交換索引4和5；(5,6):61<88?是，交換索引5和6；(6,7)",
+      "model_snip": "7. \t(a)\t首輪降序：比較 (1,2) 若 72<45 則交換 → 索引 1 與 2 \t(b)\t沿 Next 由 Head 走訪；刪除 Score=45 結點要調整 Next／Head"
+    },
+    {
+      "id": "c-08",
+      "subpart": "b",
+      "status": "solve_vs_model_differ",
+      "solve": "走訪：從Head=1開始，輸出Score[1]，然後Next[1]=2，輸出Score[2]，依此類推直到Next=0。刪除一個Score=45的結點：有兩個45（索引2和4）。假設刪除索引2，則需將前一個結點（索引1）的Next改為Nex",
+      "model_snip": "7. \t(a)\t首輪降序：比較 (1,2) 若 72<45 則交換 → 索引 1 與 2 \t(b)\t沿 Next 由 Head 走訪；刪除 Score=45 結點要調整 Next／Head"
+    }
+  ],
+  "mcq_key": "BBADCDDBDBACCABDACCDABAABDCCBA",
+  "summary": "43/43 solvable; 17 written subpart(s) where solve sketch differs from model_answer template"
+}

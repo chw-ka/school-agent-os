@@ -1,0 +1,433 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecA5_en_Database Design and ER Diagram.docx",
+    "slug": "ElecA5_en",
+    "title": "Database Design and ER Diagram",
+    "title_zh": null,
+    "title_en": "Database Design and ER Diagram",
+    "language": "en",
+    "family": "ElecA",
+    "chapter": 5,
+    "integrated": false,
+    "topic_code": "EA05",
+    "curriculum_unit": "EA",
+    "ca_unit": "EA",
+    "f5_exam_scope": "elective_db",
+    "extracted_at": "2026-05-24T10:37:18.113953+00:00",
+    "item_count": 10,
+    "section_counts": {
+      "short_answer": 7,
+      "long_answer": 3
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTA1105_03A001E",
+      "bank_code": "SSICTA1105_03A001E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "A private gymnastics centre created a database for storing the information of trainers and members. Below is an incomplete ER diagram representing the relationship between the two tables.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write down the database schema of all tables. Identify all primary keys and foreign keys, if any.\n(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Describe the relationship represented by the ER diagram.  (2 marks)\n[--Answer:\n(a) Trainer(TID, TNAME)\nPrimary key: TID                     Foreign key: N/A\nMember (MID, MNAME, TID)\nPrimary key: MID                     Foreign key: TID\n(b) The trainer in the gymnastics centre can train zero or more than one member, but a member must be trained by only one trainer.\n--]"
+        }
+      ],
+      "text": "A private gymnastics centre created a database for storing the information of trainers and members. Below is an incomplete ER diagram representing the relationship between the two tables.\n(a) Write down the database schema of all tables. Identify all primary keys and foreign keys, if any.\n(2 marks)\n(b) Describe the relationship represented by the ER diagram.  (2 marks)\n[--Answer:\n(a) Trainer(TID, TNAME)\nPrimary key: TID                     Foreign key: N/A\nMember (MID, MNAME, TID)\nPrimary key: MID                     Foreign key: TID\n(b) The trainer in the gymnastics centre can train zero or more than one member, but a member must be trained by only one trainer.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1105_03A002E",
+      "bank_code": "SSICTA1105_03A002E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "The library uses two tables: BOOK and BORROWER to store information about books and the borrowing records.\nBOOK\nISBN\nTITLE\nAUTHOR\nPUBLISHER\n196448321\nSecond Chance\nAustin Lee\nRandom House\n563697413\nNew World\nJoseph Wong\nModern-day\nBORROWING_RECORD\nBWID\nBWNAME\nISBN\n1\nNatalie Yeung\n196448321\n2\nYvonne Tsang\n563697413\n3\nEdison Lam\n688775267",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Assume that ISBN from BORROWING_RECORD is referencing ISBN from BOOK. Draw an ER diagram to represent the relationship between BOOK and BORROWING_RECORD. Attributes are not necessary.  (3 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Is there any potential anomaly when the book \"New World\" is deleted from the BOOK table? If yes, state the anomaly.  (1 mark)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "(b) No.\n--]"
+        }
+      ],
+      "text": "The library uses two tables: BOOK and BORROWER to store information about books and the borrowing records.\nBOOK\nISBN\nTITLE\nAUTHOR\nPUBLISHER\n196448321\nSecond Chance\nAustin Lee\nRandom House\n563697413\nNew World\nJoseph Wong\nModern-day\nBORROWING_RECORD\nBWID\nBWNAME\nISBN\n1\nNatalie Yeung\n196448321\n2\nYvonne Tsang\n563697413\n3\nEdison Lam\n688775267\n(a) Assume that ISBN from BORROWING_RECORD is referencing ISBN from BOOK. Draw an ER diagram to represent the relationship between BOOK and BORROWING_RECORD. Attributes are not necessary.  (3 marks)\n(b) Is there any potential anomaly when the book \"New World\" is deleted from the BOOK table? If yes, state the anomaly.  (1 mark)\n[--Answer:\n(a) (b) No.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "SQL",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1105_03B003E",
+      "bank_code": "SSICTA1105_03B003E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "Isaac is developing a weather data collection system that gathers temperature readings for various locations at different times throughout the day. The system includes two tables: LOCATION and DATA.\nLOCATION\nField name\nDescription\nLID\nIdentity code of each location\nLOC\nName of the location\nDATA\nField name\nDescription\nLID\nIdentity code of each location\nDDATE\nDate of the weather data entry.\nTIME\nTime of the weather data entry.\nTEMP\nTemperature reading for the specified date and location.\nDraft an ER diagram for the database design. Draw the attribute and underline the primary key.\n(5 marks)\n[--Answer:",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "--]"
+        }
+      ],
+      "text": "Isaac is developing a weather data collection system that gathers temperature readings for various locations at different times throughout the day. The system includes two tables: LOCATION and DATA.\nLOCATION\nField name\nDescription\nLID\nIdentity code of each location\nLOC\nName of the location\nDATA\nField name\nDescription\nLID\nIdentity code of each location\nDDATE\nDate of the weather data entry.\nTIME\nTime of the weather data entry.\nTEMP\nTemperature reading for the specified date and location.\nDraft an ER diagram for the database design. Draw the attribute and underline the primary key.\n(5 marks)\n[--Answer:\n(a) --]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1105_03B004E",
+      "bank_code": "SSICTA1105_03B004E",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "Miss Kwok, a class teacher at a primary school, is organising an in-class spelling competition. She uses a database table COMPETITION and TEAM to store information.\nCOMPETITION\nField name\nDescription\nRID\nIdentity code of the round\nT1\nClass number of the student who is in Team 1\nT1NAME\nTeam name of Team 1\nT2\nClass number of the student who is in Team 2\nT1NAME\nTeam name of Team 2\nQUESTION\nThe word that needs to be spelt in this round\nWINNER\nThe student who wins this round\nHere are all data on COMPETITION.\nRID\nT1\nT1NAME\nT2\nT1NAME\nQUESTION\nWINNER\n1\n1\nWizards\n2\nBlaze\nComics\n1\n2\n3\nWizards\n4\nBlaze\nAirplane\n4\n3\n5\nWizards\n6\nBlaze\nScenario\n5\n4\n7\nWizards\n8\nBlaze\nIllustrate\n7",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "What is the candidate key of COMPETITION?  (1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What kind of database anomaly will occur if Miss Kwok executes the following SQL command? Explain briefly.  (2 marks)\nUPDATE COMPETITION\nSET T1NAME = 'New'\nWHERE T1 = 1\n[--Answer:\n(a) RID\n(b) Update anomaly will occur. In this case, the command updates the team name for Team 1 in the COMPETITION table. However, this update does not reflect in other rows where the same team participates.\n--]"
+        }
+      ],
+      "text": "Miss Kwok, a class teacher at a primary school, is organising an in-class spelling competition. She uses a database table COMPETITION and TEAM to store information.\nCOMPETITION\nField name\nDescription\nRID\nIdentity code of the round\nT1\nClass number of the student who is in Team 1\nT1NAME\nTeam name of Team 1\nT2\nClass number of the student who is in Team 2\nT1NAME\nTeam name of Team 2\nQUESTION\nThe word that needs to be spelt in this round\nWINNER\nThe student who wins this round\nHere are all data on COMPETITION.\nRID\nT1\nT1NAME\nT2\nT1NAME\nQUESTION\nWINNER\n1\n1\nWizards\n2\nBlaze\nComics\n1\n2\n3\nWizards\n4\nBlaze\nAirplane\n4\n3\n5\nWizards\n6\nBlaze\nScenario\n5\n4\n7\nWizards\n8\nBlaze\nIllustrate\n7\n(a) What is the candidate key of COMPETITION?  (1 mark)\n(b) What kind of database anomaly will occur if Miss Kwok executes the following SQL command? Explain briefly.  (2 marks)\nUPDATE COMPETITION\nSET T1NAME = 'New'\nWHERE T1 = 1\n[--Answer:\n(a) RID\n(b) Update anomaly will occur. In this case, the command updates the team name for Team 1 in the COMPETITION table. However, this update does not reflect in other rows where the same team participates.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "SQL",
+        "數據庫",
+        "資訊處理",
+        "網絡",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1105_03B005E",
+      "bank_code": "SSICTA1105_03B005E",
+      "section_type": "short_answer",
+      "marks": 7.0,
+      "year_tag": null,
+      "stem": "Below is an ER diagram representing the relationship between members and albums in a music store.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Resolve the above relationship into two one-to-many relationships. Attributes are not necessary.\n(4 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Describe the participation constraints and cardinalities of the relationship according to the ER diagram in (a).  (2 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "(b) Each member can purchase zero or multiple albums, and each purchase list is made by exactly one member. Each type of album can be not purchased or have many purchases, while every purchase list has only one album.\n--]"
+        }
+      ],
+      "text": "Below is an ER diagram representing the relationship between members and albums in a music store.\n(a) Resolve the above relationship into two one-to-many relationships. Attributes are not necessary.\n(4 marks)\n(b) Describe the participation constraints and cardinalities of the relationship according to the ER diagram in (a).  (2 marks)\n[--Answer:\n(a) (b) Each member can purchase zero or multiple albums, and each purchase list is made by exactly one member. Each type of album can be not purchased or have many purchases, while every purchase list has only one album.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "列表",
+        "硬件",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1105_03C006E",
+      "bank_code": "SSICTA1105_03C006E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "John has been given a project by a TV show streaming company. The company requires a robust database system to manage their streaming service efficiently. The project involves the following requirements:\nWatch list function\nThe watch list will store the user’s history of watching TV shows\nA user can view zero or many TV shows, and a TV show can be watched by zero or many users\nRating function\nA rating list will store users’ ratings of the TV shows\nA user may or may not rate a TV show, and a TV show may or may not be rated by a user",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Referring to the requirements, complete the draft of the ER diagram for John below. It is not necessary to draw attributes in the diagram.  (5 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "--]"
+        }
+      ],
+      "text": "John has been given a project by a TV show streaming company. The company requires a robust database system to manage their streaming service efficiently. The project involves the following requirements:\nWatch list function\nThe watch list will store the user’s history of watching TV shows\nA user can view zero or many TV shows, and a TV show can be watched by zero or many users\nRating function\nA rating list will store users’ ratings of the TV shows\nA user may or may not rate a TV show, and a TV show may or may not be rated by a user\n(a) Referring to the requirements, complete the draft of the ER diagram for John below. It is not necessary to draw attributes in the diagram.  (5 marks)\n[--Answer:\n(a) --]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "列表",
+        "函數",
+        "數據庫",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1105_03C007E",
+      "bank_code": "SSICTA1105_03C007E",
+      "section_type": "short_answer",
+      "marks": 7.0,
+      "year_tag": null,
+      "stem": "As a nurse, Vanessa viewed two database tables that store patient information. Below are the table structures of PATIENT and MEDICAL.\nPATIENT\nField name\nDescription\nPID\nIdentity code of each patient\nPNAME\nName of the patient\nGENDER\nGender of the patient\nDOB\nDate of birth\nMEDICAL\nField name\nDescription\nRID\nIdentity code of the medical record\nPID\nIdentity code of each patient\nDIAGNOSIS\nDiagnosis or medical condition assigned to the patient\nTREATMENT\nTreatment or medical procedures provided to the patient\nALLERGIC\nAllergic reaction to some medicines\nHISTORY\nMedical history of the patient\nBelow are some records of PATIENT and MEDICAL:\nPID\nPNAME\nGENDER\nDOB\n001\nJeffrey Man\nM\n1997-08-08\n002\nMatthew Yip\nM\n1990-01-30\nRID\nPID\nDIAGNOSIS\nTREATMENT\nALLERGIC\nHISTORY\n1\n001\nFlu\nRest\nPenicillin\nNULL\n2\n002\nSinusitis\nAntibiotics\nNULL\nAsthma, Diabetes",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write the schema for each table. Underline the primary key and identify the foreign key.\n(4 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Vanessa claims that the tables are in third normal form. Prove that her claim is wrong.\n(3 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "PATIENT (PID, PNAME, GENDER, DOB)\nMEDICAL (RID, PID, DIAGNOSIS, TREATMENT, ALLERGIC, HISTORY)\nForeign key: PID\n(b) Firstly, HISTORY may contain multiple values. Secondly, ALLERGIC and HISTORY depend on the non-key field PID rather than the primary key RID.\n--]"
+        }
+      ],
+      "text": "As a nurse, Vanessa viewed two database tables that store patient information. Below are the table structures of PATIENT and MEDICAL.\nPATIENT\nField name\nDescription\nPID\nIdentity code of each patient\nPNAME\nName of the patient\nGENDER\nGender of the patient\nDOB\nDate of birth\nMEDICAL\nField name\nDescription\nRID\nIdentity code of the medical record\nPID\nIdentity code of each patient\nDIAGNOSIS\nDiagnosis or medical condition assigned to the patient\nTREATMENT\nTreatment or medical procedures provided to the patient\nALLERGIC\nAllergic reaction to some medicines\nHISTORY\nMedical history of the patient\nBelow are some records of PATIENT and MEDICAL:\nPID\nPNAME\nGENDER\nDOB\n001\nJeffrey Man\nM\n1997-08-08\n002\nMatthew Yip\nM\n1990-01-30\nRID\nPID\nDIAGNOSIS\nTREATMENT\nALLERGIC\nHISTORY\n1\n001\nFlu\nRest\nPenicillin\nNULL\n2\n002\nSinusitis\nAntibiotics\nNULL\nAsthma, Diabetes\n(a) Write the schema for each table. Underline the primary key and identify the foreign key.\n(4 marks)\n(b) Vanessa claims that the tables are in third normal form. Prove that her claim is wrong.\n(3 marks)\n[--Answer:\n(a) PATIENT (PID, PNAME, GENDER, DOB)\nMEDICAL (RID, PID, DIAGNOSIS, TREATMENT, ALLERGIC, HISTORY)\nForeign key: PID\n(b) Firstly, HISTORY may contain multiple values. Secondly, ALLERGIC and HISTORY depend on the non-key field PID rather than the primary key RID.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "數據庫",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1105_04A001E",
+      "bank_code": "SSICTA1105_04A001E",
+      "section_type": "long_answer",
+      "marks": 9.0,
+      "year_tag": null,
+      "stem": "A coffee brand that sources and sells different types of speciality coffee from around the world. They maintain a database table COFFEE to store information about the coffee they offer and the farm where it is produced.\nCOFFEE\nField name\nDescription\nCID\nIdentity code of each coffee bean\nCNAME\nName of the coffee bean\nFID\nIdentity code of the farm where the coffee is produced\nFARM\nThe name of the farm where the coffee is produced\nFRID\nIdentity code of the farmer\nFARMER\nThe name of the farmer\nPrimary key: CID",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "A new coffee farm is collaborating with the brand, but they haven’t provided the coffee beans. However, the brand wishes to insert the data of the farm and farmers into the COFFEE table first. Explain why an insertion anomaly occurs. (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the normalisation form of this table? Explain briefly.  (2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Refer to the answer in (b), and normalise the table to the next normalisation form. Write the database schema for the tables, underline the primary key and identify the foreign key.  (5 marks)"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "The requirements of the database are described below:\nEach type of coffee bean has to be produced by exactly one farm. A farm can produce more than a kind of coffee bean. A farmer works in exactly one farm, and a farm includes many farmers.\nComplete the ER diagram for the database design below. It is not necessary to draw attributes.\n(3 marks)\n[--Answer:\n(a) Since the farm has not provided the coffee beans to the brand yet, the CID can only be NULL. While CID is the primary key of the COFFEE table and a primary key cannot be NULL, the record cannot be inserted.\n(b) Second normal form (2NF). The table has no multi-value fields, repeating groups, or partial dependency. Yet, FARM depends on FID rather than depending directly on the primary key CID, which violates 3NF because of transitive functional dependency."
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "COFFEE (CID, CNAME, FID)\nForeign key: FID\nFARM(FID, FARM_NAME)\nFARMER(FRID, FARMER_NAME, FID)\nForeign key: FID"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": "--]"
+        }
+      ],
+      "text": "A coffee brand that sources and sells different types of speciality coffee from around the world. They maintain a database table COFFEE to store information about the coffee they offer and the farm where it is produced.\nCOFFEE\nField name\nDescription\nCID\nIdentity code of each coffee bean\nCNAME\nName of the coffee bean\nFID\nIdentity code of the farm where the coffee is produced\nFARM\nThe name of the farm where the coffee is produced\nFRID\nIdentity code of the farmer\nFARMER\nThe name of the farmer\nPrimary key: CID\n(a) A new coffee farm is collaborating with the brand, but they haven’t provided the coffee beans. However, the brand wishes to insert the data of the farm and farmers into the COFFEE table first. Explain why an insertion anomaly occurs. (2 marks)\n(b) What is the normalisation form of this table? Explain briefly.  (2 marks)\n(c) Refer to the answer in (b), and normalise the table to the next normalisation form. Write the database schema for the tables, underline the primary key and identify the foreign key.  (5 marks)\n(d) The requirements of the database are described below:\nEach type of coffee bean has to be produced by exactly one farm. A farm can produce more than a kind of coffee bean. A farmer works in exactly one farm, and a farm includes many farmers.\nComplete the ER diagram for the database design below. It is not necessary to draw attributes.\n(3 marks)\n[--Answer:\n(a) Since the farm has not provided the coffee beans to the brand yet, the CID can only be NULL. While CID is the primary key of the COFFEE table and a primary key cannot be NULL, the record cannot be inserted.\n(b) Second normal form (2NF). The table has no multi-value fields, repeating groups, or partial dependency. Yet, FARM depends on FID rather than depending directly on the primary key CID, which violates 3NF because of transitive functional dependency.\n(c) COFFEE (CID, CNAME, FID)\nForeign key: FID\nFARM(FID, FARM_NAME)\nFARMER(FRID, FARMER_NAME, FID)\nForeign key: FID\n(d) --]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "函數",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA1105_04B002E",
+      "bank_code": "SSICTA1105_04B002E",
+      "section_type": "long_answer",
+      "marks": 8.0,
+      "year_tag": null,
+      "stem": "Below is a database table named PRODUCT and SELLING, which stores information on items sold in a grocery store.\nPRODUCT\nField name\nDescription\nCID\nIdentity code of the category\nCATEGORY\nCategory of the item\nITEM\nName of the item\nSTOCK\nThe stock of the item\nHere are the data in this table.\nCID\nCATEGORY\nITEM\nSTOCK\n1\nFruit\nApple\n12\n1\nFruit\nBanana\n10\n1\nFruit\nOrange\n6\n2\nSeafood\nShrimp\n0\n3\nDairy\nCheese\n19\n3\nDairy\nYoghurt\n21\n4\nVegetables\nLettuce\n11\nSELLING\nField name\nDescription\nSID\nIdentity code of each sale\nITEM\nThe name of the item sold\nQUANTITY\nThe quantity of the item sold\nSDATE\nThe date of the sale\nSTIME\nThe time of the sale\nHere are the data in this table.\nSID\nITEM\nQUANTITY\nSDATE\nSTIME\nS01\nApple\n5\n2023-08-01\n10:30 AM\nS02\nYoghurt\n1\n2023-08-02\n11:45 AM\nS03\nShrimp\n2\n2023-08-02\n02:15 PM\nS04\nYoghurt\n4\n2023-08-03\n09:30 AM\nS05\nApple\n3\n2023-08-04\n10:30 AM",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Draw an ER diagram for the database design. It is not necessary to include the attributes.\n(3 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Joanna, the manager of this grocery store, would like to delete the following record in the PRODUCT table as it has already sold out.\nCID\nCATEGORY\nITEM\nSTOCK\n2\nSeafood\nShrimp\n0\nState the anomaly that occurs and explain it briefly. (2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Joanna usually searches for the items by category to facilitate data retrieval without changing the table structure. What should she do?  (2 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "(b) Deletion anomaly will occur. When Shrimp is deleted from the PRODUCT table, the data related to Shrimp, such as CATEGORY, will also be lost.\n(c) Joanna should add an index on the CID/ CATEGORY column in the GROCERY table.\n--]"
+        }
+      ],
+      "text": "Below is a database table named PRODUCT and SELLING, which stores information on items sold in a grocery store.\nPRODUCT\nField name\nDescription\nCID\nIdentity code of the category\nCATEGORY\nCategory of the item\nITEM\nName of the item\nSTOCK\nThe stock of the item\nHere are the data in this table.\nCID\nCATEGORY\nITEM\nSTOCK\n1\nFruit\nApple\n12\n1\nFruit\nBanana\n10\n1\nFruit\nOrange\n6\n2\nSeafood\nShrimp\n0\n3\nDairy\nCheese\n19\n3\nDairy\nYoghurt\n21\n4\nVegetables\nLettuce\n11\nSELLING\nField name\nDescription\nSID\nIdentity code of each sale\nITEM\nThe name of the item sold\nQUANTITY\nThe quantity of the item sold\nSDATE\nThe date of the sale\nSTIME\nThe time of the sale\nHere are the data in this table.\nSID\nITEM\nQUANTITY\nSDATE\nSTIME\nS01\nApple\n5\n2023-08-01\n10:30 AM\nS02\nYoghurt\n1\n2023-08-02\n11:45 AM\nS03\nShrimp\n2\n2023-08-02\n02:15 PM\nS04\nYoghurt\n4\n2023-08-03\n09:30 AM\nS05\nApple\n3\n2023-08-04\n10:30 AM\n(a) Draw an ER diagram for the database design. It is not necessary to include the attributes.\n(3 marks)\n(b) Joanna, the manager of this grocery store, would like to delete the following record in the PRODUCT table as it has already sold out.\nCID\nCATEGORY\nITEM\nSTOCK\n2\nSeafood\nShrimp\n0\nState the anomaly that occurs and explain it briefly. (2 marks)\n(c) Joanna usually searches for the items by category to facilitate data retrieval without changing the table structure. What should she do?  (2 marks)\n[--Answer:\n(a) (b) Deletion anomaly will occur. When Shrimp is deleted from the PRODUCT table, the data related to Shrimp, such as CATEGORY, will also be lost.\n(c) Joanna should add an index on the CID/ CATEGORY column in the GROCERY table.\n--]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "列表",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA1105_04C003E",
+      "bank_code": "SSICTA1105_04C003E",
+      "section_type": "long_answer",
+      "marks": 13.0,
+      "year_tag": null,
+      "stem": "ABC School is creating a database to store information on students’ enrolment for courses.\nBelow is the table structure of STUDENT.\nSTUDENT\nField name\nDescription\nSID\nIdentity code of student\nSNAME\nName of the student\nCLASS\nClass of the student\nCNO\nStudent’s class number\nCOURSE1\nFirst course enrolled by the student\nCOURSE2\nSecond course enrolled by the student\nCOURSE3\nThird course enrolled by the student",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Is STUDENT in first normal form (1NF)? Explain briefly.  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Normalise the tables into a third normal form. You may need to create new fields to complete the schema below and underline the primary key.  (5 marks)\nSTUDENT(_____________,_____________,_____________,_____________)\nCOURSE(______________,______________)\nENROLMENT(______________,______________)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "The requirements of the database are described below:\nDifferent courses are taught in one or several classrooms in ABC School. Each classroom is dedicated to one course only. All students must enrol in at least one course, every course should have more than one student, and one teacher must teach each course.\nComplete the ER diagram below for the database. It is not necessary to draw attributes.\n(6 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "No, COURSE1, COURSE2 and COURSE3 are a group of attributes storing the courses enrolled by students. They are the repeating attributes."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "STUDENT (SID, SNAME, CLASS, CNO)\nCOURSE (CID, CNAME)\nENROLLMENT (CID, SID)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "--]"
+        }
+      ],
+      "text": "ABC School is creating a database to store information on students’ enrolment for courses.\nBelow is the table structure of STUDENT.\nSTUDENT\nField name\nDescription\nSID\nIdentity code of student\nSNAME\nName of the student\nCLASS\nClass of the student\nCNO\nStudent’s class number\nCOURSE1\nFirst course enrolled by the student\nCOURSE2\nSecond course enrolled by the student\nCOURSE3\nThird course enrolled by the student\n(a) Is STUDENT in first normal form (1NF)? Explain briefly.  (2 marks)\n(b) Normalise the tables into a third normal form. You may need to create new fields to complete the schema below and underline the primary key.  (5 marks)\nSTUDENT(_____________,_____________,_____________,_____________)\nCOURSE(______________,______________)\nENROLMENT(______________,______________)\n(c) The requirements of the database are described below:\nDifferent courses are taught in one or several classrooms in ABC School. Each classroom is dedicated to one course only. All students must enrol in at least one course, every course should have more than one student, and one teacher must teach each course.\nComplete the ER diagram below for the database. It is not necessary to draw attributes.\n(6 marks)\n[--Answer:\n(a) No, COURSE1, COURSE2 and COURSE3 are a group of attributes storing the courses enrolled by students. They are the repeating attributes.\n(b) STUDENT (SID, SNAME, CLASS, CNO)\nCOURSE (CID, CNAME)\nENROLLMENT (CID, SID)\n(c) --]",
+      "concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/HD1 Ch2.pptx",
+    "slug": "HD1_Ch2_slides",
+    "title": "HD1 Ch2",
+    "series": "HD1",
+    "chapter": 2,
+    "curriculum_unit": "D-d",
+    "curriculum_part": "Core-D",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.854755+00:00",
+    "slide_count": 66,
+    "topic_tags": {
+      "課本活動": 15,
+      "循環": 6,
+      "除錯": 2
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "第二課算法設計（一）"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "下列算法的輸出是什麼？\tA  2\tB  5\tA  B – A\tA  A * B\tB  A – B\t輸出 A102.2"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "112.2分析答案輸出「15」偽代碼完成語句後 A 的值完成語句後 B 的值A  22N/AB  525A  B – A35A  A * B155B  A - B1510"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "空運行以下算法，此算法的目的是什麼？\tX  3\tY  9\ttemp  X \tX  Y\tY  temp122.2"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "132.2分析分析偽代碼並追蹤各變量的值：答案此算法用於交換兩個變量的值。偽代碼變量 X 的值變量 Y 的值變量 temp 的值X  33N/AN/AY  939N/Atemp  X393X  Y993Y  temp933"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "試完成課本第 41 頁的測試站 2.1。AD5   8   3142.1"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "數據類型15C數據類型會決定特定數據式可以進行哪種運算。電腦會為不同數據類型的變量分配適當的儲存記憶體。"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "數據類型16C常見的數據類型有四種：整數實數 / 浮點數字符布爾"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "數據類型17C數據類型例子整數288, -101實數 / 浮點數56.5, -0.382字符‘a’, ‘B’, ‘8’, ‘%’布爾1 (True)0 (False)"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "數據類型18C字串由字符所組成。字串是數據類型的一種。其例子為：「abc」、「0011」、「I go to school by bus」"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "一間慈善機構在網頁上顯示了每個月的籌款情況，右圖為某個月的資料。在網頁程式中，運用以下哪組數據類型最為合適？192.3善款數字捐獻人數會長的話A.整數字符字串B.實數整數字串C.整數整數字串D.實數字符字符"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "202.3分析「善款數字」的金額會出現小數點，所以應使用實數來儲存；「捐獻人數」只會是整數，所以應使用整數來儲存，這亦方便計算總人數；「會長的話」必定為文字，所以應使用字串來儲存。答案答案是 B。"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "試完成課本第 44 頁的測試站 2.2。D212.2"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "算法的基本控制結構222.2基本控制結構有三種類型。"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "序列23A序列控制結構讓程式根據編寫次序來順序執行語句。偽代碼流程圖語句 1語句 2...語句 n"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "研究以下展示的輸入－處理－輸出（IPO）周期，及其流程圖。以下哪句描述是不正確的？此 IPO 周期運用了 3 個變量。此 IPO 周期展示了數據類型。此流程圖展示了一個解決問題的方案，而該問題可能是找出三角形的面積。此流程圖展示了如何運用序列控制結構解決問題。242.3輸入處理輸出BHAREA = B * H / 2AREA"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "選擇25B選擇控制結構讓程式能夠作出決定。以下是兩種常見的選擇形式：對分多向"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "選擇26B選擇控制結構會根據指定條件作出決定。條件會以布爾算式表示。布爾算式只會判斷出「真」或「假」。"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "選擇27B對分選擇有兩種常見類型：「如果…則」條件語句「如果…則…否則」條件語句"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "選擇28B「如果…則」條件語句偽代碼流程圖如果 條件 則\t「則」部分"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "選擇29B「如果…則… 否則」條件語句偽代碼流程圖如果 條件 則\t「則」部分否則\t「否則」部分"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "算法32.1電腦會通過使用算法解決問題。算法是按照特定次序解決問題的步驟。以下是表達算法的方式：偽代碼流程圖"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "試完成課本第 51 頁的活動 2.3。302.3條件（布爾算式）輸入 age 為 50 的邏輯結果輸入 age 為 65 的邏輯結果輸入 age 為 70 的邏輯結果age = 65FalseTrueFalseage < 65TrueFalseFalseage <= 65TrueTrueFalseage > 65FalseFalseTrueage >= 65FalseTrueTrueage != 65TrueFalseTrue"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "Yes20及格升班留級312.3"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "選擇32B多向選擇有兩種常見類型：嵌套條件語句「如果…否則如果」條件語句"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "選擇33B嵌套條件語句偽代碼流程圖如果 條件 1 則\t如果 條件 2 則\t\t「則」部分 2\t否則\t\t「否則」部分2 否則\t否則 部分 1"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "試回答課本第 54 頁至第 56 頁的問題。342.4輸入流程圖輸出黃老師輸入「80」B"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "試回答課本第 54 頁至第 56 頁的問題。352.4輸入流程圖輸出黃老師輸入「30」F"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "試回答課本第 54 頁至第 56 頁的問題。362.4輸入流程圖輸出黃老師輸入「95」A"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "選擇372.2「如果…否則如果」條件語句偽代碼流程圖如果 條件 1 則\t「則」部分 1否則如果 條件 2 則\t「則」部分 2否則如果 條件 3 則\t「則」部分 3否則\t「否則」部分"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "細看以下算法：\tX  20\tY  10\tif X + Y > 25 then\t\tif Y > X * 2 then\t\t\tY  X\t\telse\t\t\tX  Y\telse\t\tY  X – 5382.5"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "Y 的最終數值是什麼？10152025392.5"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "偽代碼及流程圖4A偽代碼流程圖輸入 weight, heightbmi  weight/ (height * height)輸出 bmi"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "402.5分析答案答案是 A。偽代碼流程圖X  20Y  10如果 X + Y > 25 則\t如果 Y > X * 2 則\t\tY  X\t否則\t\tX  Y否則\tY  X – 5"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "試完成課本第 59 頁至第 60 頁的測試站 2.4。ABDB412.4"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "選擇422.2布爾運算符能夠用以結合條件，並組成複合布爾算式。常見布爾運算符有三種：AndOrNot"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "選擇432.2舉例來說：閱讀課本第 62 頁至第 63 頁的真值表，以了解更多不同條件判斷結果的組合。布爾運算符意義例子AND及(A = 1) AND (B > 2)OR或(A = 1) OR (B > 2)NOT不成立NOT(A=1)"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "試完成課本第 67 頁至第 68 頁的測試站 2.5。BDDBC442.5"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "X 和 Y 分別代表 age <= 15 和 age > 65，以下哪個 / 些 age 的值會讓布爾算式 X OR Y 「真」？\t(1) 0\t(2) 15\t(3) 25\t(4) 65\t(5) 80只有 (1)只有 (3) 只有 (1)、(2) 和 (5) 只有 (4) 和 (5)452.7"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "462.7分析使用數線找出數值的範圍：答案從以上的數線所見，只有「0」、「15」和「80」在範圍內。所以答案是 C。"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "試完成課本第 70 頁的測試站 2.6。 472.6布爾算式讓布爾算式為「真」的 age 值X OR Y0, 15, 80X AND YNoneNOT (X OR Y)25, 65(NOT X) AND (NOT Y)25, 65(NOT X) OR (NOT Y)0, 15, 25, 65, 80"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "試完成課本第 70 頁的測試站 2.6。DBYes482.7"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "迭代49C迭代控制結構讓程式能夠重複執行特定語句（循環體）。當循環條件不再為真，循環便會中止。"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "變量5B變量用以儲存將會用於運算的數據。變量位於電腦記憶體中。命名變量時，須跟從特定規則。"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "迭代50C本課將介紹四種循環控制結構。For 循環While 循環Do-while 循環Repeat-until 循環"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "迭代51CFor 循環是會重複執行一定次數的循環。此循環的循環次數由通過處理變量（通常為 i、j 或 k）所決定。"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "迭代52C變量可由起始值遞增至最終值：偽代碼流程圖設 i 由 起始值 至 最終值        循環體"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "迭代53C變量可由起始值遞減至最終值：偽代碼流程圖設 i 由 起始值 下至 最終值        循環體"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "試完成課本第 77 頁至第 78 頁的活動 2.6。 542.6偽代碼輸出循環體重複的次數設 i 由 1 至 7\t輸出 i1 2 3 4 5 6 77設 k 由 5 至 10\t輸出 k5 6 7 8 9 106設 n 由 10 下至 0\t輸出 n10 9 8 7 6 5 4 3 2 1 011設 d 由 20 下至 15\t輸出 \"1\"1 1 1 1 1 16"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "552.6沒有使用 for 循環的偽代碼for 循環偽代碼輸出 1 * 5輸出 2 * 5輸出 3 * 5輸出 4 * 5輸出 5 * 5輸出 6 * 5輸出 7 * 5設 i 由 1 至 7\t輸出 i * 5輸出 1 * 1輸出 2 * 2輸出 3 * 3輸出 4 * 4輸出 5 * 5設 i 由 1 至 5\t輸出 i * i"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "562.6沒有使用 for 循環的偽代碼for 循環偽代碼k  10k  k + 1k  k + 1k  k + 1k  k + 1輸出 kk  10設 i 由 1 至 4\tk  k + 1輸出 k"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "572.6偽代碼流程圖輸出設 i 由 10 下至 3\t\t輸出 10 * I10090807060504030"
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "迭代58C只要條件一直成立，While 循環就會不斷執行。每次迭代之前，While 循環都會對條件作出判斷。如果條件成立，循環體會被執行，而條件會再被判斷。偽代碼流程圖當 條件\t循環體"
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "迭代59C有時候，邏輯錯誤可能會導致程式陷入無限循環。例如：\tX  0\ti  1\t當 i < 10\t\t輸入 Y\t\tX  X + 1\t\ti  i – 1\t輸出 X"
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "變量6B舉例來說，變量就像日常生活中用以收藏不同物件的箱子。"
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "試完成課本第 82 頁至第 84 頁的測試站 2.8。602.8DBi ← i + 1當 i <= 10\t\tY ← Y + X\t\t輸出 Y\t\tZ ← Z + Y\t\ti ← i + 1輸出 Z(a) 列出由 1 至 N 的平方數(b) 49"
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "迭代61C執行…當循環與 while 循環相似，唯一分別是此循環會先執行循環體一次，後再進行條件判斷。偽代碼流程圖執行\t循環體當 條件"
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "試完成課本第 85 頁的測試站。1622.9"
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "迭代63CRepeat-until（重複…直至）循環會先執行循環體一次，後再進行條件判斷。若條件不成立，循環體便會再次執行。偽代碼流程圖重複\t循環體直至 條件"
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "試修改以上「猜數字遊戲」的算法，改為使用「執行…當」這個循環控制結構的算法，並畫出其流程圖。642.7偽代碼流程圖輸入 secret執行\t輸入 guess當 guess != secret輸出\"Bingo!\""
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "試完成課本第 90 頁至第 94 頁的測試站 2.10。652.10ABCB(a) 找出最大的數(b) num = 0 / 當用家輸入 0(c) \tInput num\t\tmNum ← num\t\t當 num != 0\t\t\t輸入 num\t\t\t如果 num > mNum 則\t\t\t\tmNum ← num\t\t輸出 mNum(d) 將條件語句內的比較運算符由「 > 」改成「 < 」。(a) 猜數字(b) 數字太小了！(c)輸入輸出任何少於 20 的整數數字太小了！任何大於 20 的整數數字太大了！20你猜對了！"
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "(d) (i)\tSecretNumber  一個隨機在 1 至 100 之內的整數，包含首尾兩數round  0執行\tround  round + 1\t輸入 GuessNum\t如果 (GuessNum < 1) or (GuessNum > 100) 則\t\t輸出 “範圍在 1 至 100 之內！“\t如果 (GuessNum < SecretNumber) 則\t\t輸出 ” 數字太小了！“\t如果 (GuessNum > SecretNumber) 則\t\t輸出 ”數字太大了！“當 (GuessNum <> SecretNumber) AND (round != 7)如果 GuessNum = SecretNumber 則\t輸出 ”你猜對了！\"662.10"
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "672.10(d) (ii) 因為這次當玩家猜七次後便會結束循環，而七次皆可能是錯誤的。(iii) 即使玩家中途猜中數字，仍須等到七次輸入後才可結束遊戲。而且即使在頭六次中有答對過， 最後仍可能因為第七次輸入錯誤，而無法取得勝利訊息。(iv) 範圍在 1 至 100 之內！數字太大了！(v) 運用「如果...否則如果」的結構，便能避免兩個條件語句都成立的情況。"
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "變量7B我們可以用不同方式為變量賦值。偽代碼盒子類比圖輸入 priceprice  8000"
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "變量8B我們可以用不同方式為變量賦值。偽代碼盒子類比圖new  priceprice  price + 1"
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "1. 試空運行以下偽代碼，並寫下算法的輸出：92.2偽代碼輸出A  7A  10輸出 AA  3B  A + 6C  A * B輸出 A, B, CA  6B  A/2A  8輸出 A, B103, 9, 278, 3"
+    }
+  ]
+}

@@ -69,7 +69,12 @@ def main(argv: list[str] | None = None) -> int:
     use_template_written = meta.get("written_render") == "template"
     picks = {} if use_template_written else written_picks_from_items(spec.get("items") or [])
     set_active_written_picks(picks)
-    written_mode = "template (f5_ict_written_content)" if use_template_written else f"picks ({len(picks)} slots)"
+    if use_template_written:
+        written_mode = "template (f5_ict_written_content)"
+    elif meta.get("written_render") == "patterns":
+        written_mode = f"patterns ({len(picks)} slots)"
+    else:
+        written_mode = f"picks ({len(picks)} slots)"
     print(f"MCQ rows: {len(final_rows)}, written: {written_mode}")
 
     footer = dict((spec.get("meta") or {}).get("footer") or {})
@@ -82,11 +87,16 @@ def main(argv: list[str] | None = None) -> int:
         }
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    populate_body_tables = meta.get("written_render") == "template"
     render_docx(
         template,
         out_path,
         final_mcq_rows=final_rows,
         footer_meta=footer,
+        populate_body_tables=populate_body_tables,
+        spec=spec,
+        mcq_key=mcq_key,
+        include_answers=True,
     )
     print(f"Wrote DOCX: {out_path}")
     print(f"MCQ key: {mcq_key}")

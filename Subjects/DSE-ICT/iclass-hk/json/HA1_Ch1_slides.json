@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/HA1 Ch1.pptx",
+    "slug": "HA1_Ch1_slides",
+    "title": "HA1 Ch1",
+    "series": "HA1",
+    "chapter": 1,
+    "curriculum_unit": "A-a",
+    "curriculum_part": "Core-A",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.743176+00:00",
+    "slide_count": 36,
+    "topic_tags": {
+      "課本活動": 2,
+      "硬件": 2,
+      "除錯": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "第一課資訊處理簡介"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "試回答課本第 8 頁的問題。1. D‹#›1.1"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "數據和資訊‹#›1.2你知道以下數據有什麼意義嗎？OlympiaMerchantBoatmanParisFisher8173494570HamiltonBaker"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "數據‹#›A數據是一組未經整理的事實，單獨來看通常沒有意義。OlympiaMerchantBoatmanParisFisher8173494570HamiltonBaker"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "資訊‹#›B數據經處理後便能轉換為資訊。例如：名姓性別年齡居住城市職業重量分數評級BrooklynFisherM45SydneyBoatman4944FParisMerchantF24OlympiaBaker6281BHamiltonMillerM37RichmondBlacksmith7073C"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "輸入-處理-輸出周期‹#›C輸入-處理-輸出周期（IPO 周期）：將數據輸入電腦。電腦處理所輸入的數據。電腦輸出有意義的資訊。"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "‹#›"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "試在課本第 9 頁寫下哪個是數據、哪個是資訊。‹#›1.3項目某公司的淨收入某公司淨收入的增長率數據資訊項目1A 班學生的身高1A 班最高學生的姓名項目101 號室的平均溫度101 號室每小時的溫度項目未經剪輯的演講片段某段演講的逐字記錄稿項目一張實寫照中貓的數目一張貓的實寫照數據資訊（經排序）資訊（經計算）數據資訊（例如經語音識別）數據資訊（例如經圖像識別）數據"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "多媒體的數據類型‹#›D文本包括各種類型的字符：數字字母符號不同語言的文本會使用不同的編碼系統。字符編碼系統語言ASCII英文Big5繁體中文"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "多媒體的數據類型‹#›D文本可分為兩種類型：純文字格式化文本純文字只會儲存字符格式化文本會儲存字符及其格式資料"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "多媒體的數據類型‹#›D數碼圖像是由數碼相機捕捉或使用圖像編輯軟件製作的圖像。圖像可分為兩類：點陣圖向量圖點陣圖會儲存為一系列稱為像素的小正方形向量圖會儲存為數學公式"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "分析普通人的數據有什麼用？你知道大眾普遍喜歡蘋果而不是橘子嗎？然而，數據顯示，埃塞俄比亞人比起蘋果更喜歡橘子。如果不收集和分析數據，會造成什麼情況？"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "多媒體的數據類型‹#›D數碼音頻（音效）是可轉換為聲音的數據。模擬信號會被轉換成數碼信號，並以數碼音頻的形式儲存："
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "多媒體的數據類型‹#›D視頻（視像或影片）是圖像和音效的組合。在短時間內顯示一連串的圖像，便能創造動態影像："
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "資訊處理‹#›1.3資訊處理即是將原始數據轉換成有意義的資訊。此過程包括七個階段："
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "數據收集‹#›A數據可以通過觀察、實驗、訪談、調查等各種方法收集。收集數據的方法會因數據的規模和類型而不同。"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "組織‹#›B組織是指以特定的方式將收集的數據作管理和分類，常見方法包括： 數據整理數據有效性檢驗數據類型轉換"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "儲存‹#›C數據經組織後，便會被儲存為實體副本，或儲存在數碼儲存器中。常見數碼儲存器包括：硬碟USB快閃記憶體"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "處理‹#›D處理即編輯、修改和更新數據，可分為：文字處理圖像處理音效處理視像處理"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "分析‹#›E數據分析即從已經處理的數據中提取有意義的資訊。例如：將香港過去50年的年均氣溫放入試算表，並歸納出氣候趨勢。"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "傳輸‹#›F數據傳輸涉及傳輸者、媒體和接收者。網絡是其中一種可能會使用到的媒體，它要求傳輸者和接收者都使用相同的通訊協定。"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "演示‹#›G演示是指通過各種媒體輸出數據或資訊。常見例子包括：文字圖像視像音效"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "資訊系統‹#›1.1你知道圖書館如何記錄大量藏書的狀態嗎？藏書的狀態如何在借出或歸還時更新？資訊系統可以幫助圖書館管理這些資訊。"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "小敏正在製作一個真人秀，她的電腦裏儲存了超過 200 段視像素材。以下哪些方法可協助她有效率地搜尋視像？(1) 為素材加上字幕(2) 在素材檔名中註明創建日期(3) 將同一週拍攝的素材放入同一個資料夾中 只有 (1) 和 (2) 只有 (2) 和 (3) 只有 (1) 和 (3) (1)、(2) 和(3)‹#›1.1"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "分析(2) 讓我們可按創建日期搜索素材；(3) 可幫我們找到同一週拍攝的所有素材；(1) 使素材更易於理解，但不會使搜索更輕鬆。  答案正確答案是 B。‹#›1.1"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "資訊時代‹#›1.4如果有一天沒有了電腦，你的生活會有什麼轉變？"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "定義‹#›A隨着資訊及通訊科技的飛速發展，微型電腦、互聯網和搜尋器也正不斷完善。存取和發佈資訊變得更容易、更普遍:搜尋器社交媒體串流平台"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "原因‹#›B資訊時代發展的原因包括：個人電腦和流動設備應用程式設計通信網絡個人電腦和流動設備因電腦部件的價錢下降而更普遍。流動設備的運算能力隨著科技進步而提高，使用家可隨時隨地處理和傳輸數據。軟件的互動式設計使人們可直接存取所需的資訊。光導纖維的發明和遠程通訊的進步提高了資訊的流動性和覆蓋面。"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "發展‹#›C資訊科技的發展包括：物聯網大數據人工智能不同物件之間的網絡因為數碼設備與網上平台的高使用率而收集回來的大量數據在短時間內處理和分析大量數據"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "資訊素養‹#›D在接受和使用資訊之前，我們應先考慮資訊素養的不同層面:知識產權未經他人許可而使用其知識產權是不道德和違法的。數據私隱在分享資訊時，我們應該尊重他人的私隱。可信度我們應考慮資訊的權威性、有效性和相關性提取和組織我們從各種媒體中搜索資訊後，應從中提取和組織我們自己的觀點。"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "系統功能‹#›A資訊系統的功能包括：實現流程自動化減少人為錯誤提升效率"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "數據‹#›B數據會被儲存在電腦的儲存設備中，讓程式用以輸入或輸出。數據的例子包括:病人病歷天氣數據"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "科技‹#›C硬件是指資訊系統中所使用的實體設備：處理電子部件之間的連接網絡通訊輸入輸出中央處理器 (CPU)主機板家庭路由器麥克風顯示器"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "科技‹#›C軟件是指在資訊系統中運行的程式：功能軟件系統軟件操作系統 Microsoft Windows 和 macOS實用程式工作管理員和防毒軟件驅動程式聲效卡、USB快閃記憶體或打印機的驅動程式應用軟件文書處理器與數據庫管理系統（DBMS）"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "流程‹#›D流程是確保數據和相關分析能夠精確地達到目的的步驟。我們必須以有意義的方式處理數據來將數據轉換為有用的資訊。"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "從業員‹#›1.1資訊系統被不同的從業員管理：電腦工程師系統分析師程式員技術支援網絡管理員數據庫管理員設計、建構和整合 硬件、軟件和網絡設計系統以滿足終端用戶的業 務需求 分析系統建設的時間、成本和 可行性根據系統分析師的設計 開發系統協助終端用戶 使用資訊系統監控電腦系統之間的網絡通信設計和管理數據庫"
+    }
+  ]
+}

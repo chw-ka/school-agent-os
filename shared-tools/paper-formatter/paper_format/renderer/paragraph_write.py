@@ -4,7 +4,14 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any
 
-from docx_inplace import CODE_FONT, BODY_FONT, is_program_text, is_sql_text, set_paragraph_text_distribute
+from docx_inplace import (
+    CODE_FONT,
+    BODY_FONT,
+    is_program_text,
+    is_sql_text,
+    set_answer_blank_runs,
+    set_paragraph_text_distribute,
+)
 from paper_format.f5_ict_roles import (
     mcq_line_kind,
     mcq_role_for_kind,
@@ -83,4 +90,29 @@ def write_mcq_line(
 def write_written_line(paragraph: Paragraph, text: str, profile: dict[str, Any]) -> None:
     kind = written_line_kind(text)
     role = written_role_for_kind(kind)
+    if kind in ("answer_blank", "answer_blank_long"):
+        prof = get_role_profile(profile, role)
+        pf = paragraph.paragraph_format
+        pf.left_indent = None
+        pf.first_line_indent = None
+        if prof:
+            apply_paragraph_profile(paragraph, prof)
+            if prof.left_indent_emu is None:
+                pf.left_indent = None
+            if prof.first_line_indent_emu is None:
+                pf.first_line_indent = None
+        set_answer_blank_runs(paragraph, long=(kind == "answer_blank_long"))
+        return
+    if kind == "blank":
+        prof = get_role_profile(profile, role)
+        if prof:
+            apply_paragraph_profile(paragraph, prof)
+        pf = paragraph.paragraph_format
+        pf.left_indent = None
+        pf.first_line_indent = None
+        p_el = paragraph._element
+        for child in list(p_el):
+            if child.tag.endswith("}r"):
+                p_el.remove(child)
+        return
     set_paragraph_with_role(paragraph, text, role, profile)

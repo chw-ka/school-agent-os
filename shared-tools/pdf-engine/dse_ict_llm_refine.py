@@ -22,12 +22,14 @@ if str(_SHARED_TOOLS) not in sys.path:
 from repo_env import REPO_ROOT, load_repo_env
 
 RefineMode = Literal["text", "vision"]
-LlmProvider = Literal["gemini", "openai"]
+LlmProvider = Literal["gemini", "openai", "deepseek"]
 
 DEFAULT_MODEL_TEXT = "gpt-4o-mini"
 DEFAULT_MODEL_VISION = "gpt-4o"
 DEFAULT_GEMINI_MODEL = "gemini-2.0-flash"
+DEFAULT_DEEPSEEK_MODEL = "deepseek-chat"
 DEFAULT_BASE_URL = "https://api.openai.com/v1"
+DEFAULT_DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1"
 GEMINI_API_BASE = "https://generativelanguage.googleapis.com/v1beta"
 
 
@@ -43,11 +45,19 @@ class LlmConfig:
     def from_env(cls, *, mode: RefineMode = "text", provider: str | None = None) -> "LlmConfig":
         load_repo_env()
         chosen = (provider or os.environ.get("DSE_ICT_LLM_PROVIDER", "")).strip().lower()
-        gemini_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY") or ""
-        gemini_key = gemini_key.strip()
+        gemini_key = (os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY") or "").strip()
+        deepseek_key = (os.environ.get("DEEPSEEK_API_KEY") or "").strip()
         openai_key = os.environ.get("OPENAI_API_KEY", "").strip()
 
-        if chosen == "gemini" or (not chosen and gemini_key):
+        if not chosen:
+            if deepseek_key:
+                chosen = "deepseek"
+            elif gemini_key:
+                chosen = "gemini"
+            elif openai_key:
+                chosen = "openai"
+
+        if chosen == "gemini":
             if not gemini_key:
                 raise RuntimeError(
                     "Gemini provider selected but GOOGLE_API_KEY / GEMINI_API_KEY is not set.\n"
@@ -57,13 +67,29 @@ class LlmConfig:
             model = os.environ.get("DSE_ICT_LLM_MODEL") or DEFAULT_GEMINI_MODEL
             return cls(api_key=gemini_key, provider="gemini", model=model, mode=mode)
 
+        if chosen == "deepseek":
+            api_key = deepseek_key or openai_key
+            if not api_key:
+                raise RuntimeError(
+                    "DeepSeek provider selected but DEEPSEEK_API_KEY is not set.\n"
+                    f"Add the key to {REPO_ROOT / '.env'} (see docs/DEEPSEEK_API.md).\n"
+                    "Get a key at https://platform.deepseek.com/api_keys"
+                )
+            base_url = (
+                os.environ.get("DEEPSEEK_BASE_URL")
+                or os.environ.get("OPENAI_BASE_URL")
+                or DEFAULT_DEEPSEEK_BASE_URL
+            ).strip()
+            model = os.environ.get("DSE_ICT_LLM_MODEL") or DEFAULT_DEEPSEEK_MODEL
+            return cls(api_key=api_key, provider="deepseek", base_url=base_url, model=model, mode=mode)
+
         if not openai_key:
             raise RuntimeError(
                 "No LLM API key found.\n"
-                f"  Put keys in {REPO_ROOT / '.env'} (copy from .env.example; see docs/GOOGLE_API_KEY.md)\n"
-                "  Hong Kong / free: GOOGLE_API_KEY from https://aistudio.google.com/apikey\n"
-                "    then run with --provider gemini (or set DSE_ICT_LLM_PROVIDER=gemini)\n"
-                "  OpenAI-compatible: OPENAI_API_KEY (+ optional OPENAI_BASE_URL)"
+                f"  Put keys in {REPO_ROOT / '.env'} (copy from .env.example)\n"
+                "  DeepSeek (recommended if Gemini blocked): docs/DEEPSEEK_API.md\n"
+                "  Gemini: GOOGLE_API_KEY + DSE_ICT_LLM_PROVIDER=gemini\n"
+                "  OpenAI-compatible: OPENAI_API_KEY (+ OPENAI_BASE_URL)"
             )
         base_url = os.environ.get("OPENAI_BASE_URL", DEFAULT_BASE_URL).strip()
         model = os.environ.get("DSE_ICT_LLM_MODEL")

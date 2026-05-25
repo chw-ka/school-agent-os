@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecC Ch2.pptx",
+    "slug": "EELECC_Ch2_slides",
+    "title": "EElecC Ch2",
+    "series": "EELECC",
+    "chapter": 2,
+    "curriculum_unit": "EC-a",
+    "curriculum_part": "EC",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.609202+00:00",
+    "slide_count": 16,
+    "topic_tags": {
+      "除錯": 10,
+      "硬件": 7,
+      "課本活動": 2,
+      "循環": 2
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 2Program Testing and Debugging (II)"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "Other errors10CApart from numerical errors, other kinds of errors may appear in a program, which prevent the program from running properly and may even lead to wrong results. Program errors include syntax errors, logical errors and run-time errors."
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Software Debugging Tools112.2Systematically test programs after writing them to ensure intended purpose is fulfilled.Use test data to verify the accuracy of programs by comparing test results with expected results.If results don't match, the program contains errors that need to be fixed.Debugging is the process of identifying and eliminating errors in a program.Debugging methods include manual techniques, such as flags and stubs, and debugging functions provided by Integrated Development Environments.After completing a program, it's essential to systematically test it using test data to ensure it meets its intended purpose. Comparing test results with expected outcomes can help identify errors, which must be located and fixed through the process of debugging. Debugging methods include both manual approaches, such as flags and stubs, and built-in debugging functions offered by Integrated Development Environments."
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Tracing variable values12AWe have used dry runs and trace tables to analyse program codes line by line, tracing the flow of the program and the values of all variables. Using the debug mode of the IDE, we can execute the program step by step and monitor the variable in the program in order to spot any errors. This method is known as program trace."
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "Breakpoints13BA breakpoint is the position where the execution of a program is suspended. When the program is paused, we can view its current status in the IDE, such as the current values of variables, in order to find out whether the error is before or after the breakpoint. We usually add a breakpoint before a conditional statement or the part that we want to test."
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "142.2Try Activity 2.2 on P. 60-61 of the textbook."
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Answer the questions on P.61-62 of the textbook.1.  A breakpoint suspends the execution of a program at the specified line number.When the program is paused, we can view its current status, such as the current values of variables.2.152.1"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "3.  162.1"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "22.1Try Lab 2.1 on P. 54 of the textbook.1.7976931348623157e+3082.2250738585072014e-308The calculation result exceeds the maximum value that can be stored in the float data type."
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Types of Program Errors2.1Overflow errors occur when a number exceeds the range of values storable in a variable's data type.Underflow errors happen when a number is lower than the storable range in a variable's data type.Examples of overflow errors include accessing an item outside an array's index range or obtaining a result outside the range after a calculation."
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "Numerical errors4BTruncation errorsWhen there is insufficient memory space for storing a number, we need to shorten the number, and one way to do so is to truncate the extra digits. Truncation error refers to the difference between the true value and the actual value stored:Truncation error = | True value − Actual value stored |For example, if we want to save the value of π in a variable that can store three decimal places only, the actual value stored will be 3.141, and the truncation error will be 0.000592653589... ."
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "In Python, we can use the trunc() function in the math library to truncate the decimal places.Numerical errors5B"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Numerical errors6BRounding errorsApart from directly truncating numbers, we may choose the alternative way of rounding the values, which includes round off, round up and round down.In Python, we can use the round() function to round off a number to a certain decimal place.Rounding up a number to a certain digit means raising the number to the nearest value at the specified digit.Rounding down a number to a certain digit means lowering the number to the nearest value at the specified digit."
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Numerical errors7BRounding error means the difference between the true value and the rounded value:Rounding error = |True value − Rounded value|For example, if we save the value of e (2.718281828459045) into a variable that can only stores two decimal places, the results are as follows:"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "82.1Try Activity 2.1 on P. 58 of the textbook.1(a) 3 ; 0.7  (b) 2 ; 0.3  (c) 2 ; 0.32(a) 6.207 ; 0.00062  (b) 6.206 ; 0.00038  (c) 6.206 ; 0.00038"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "92.13(a) −6.206 ; 0.00038  (b) −6.207 ; 0.00062  (c) −6.206 ; 0.000384(a) 1.0300 ; 0.00002846  (b) 1.03 ; 0"
+    }
+  ]
+}

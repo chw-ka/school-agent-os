@@ -25,142 +25,164 @@ def build_part_b() -> list[str]:
         scenario_override(
             "b-01",
             "「煦風書社」以試算表記錄義賣收入。欄位：A=日期、B=商品、C=單價、D=數量、"
-            "E=會員（Y／N）、F=總價。部分資料如下：",
+            "E=會員（Y／N）、F=總價；$H$2:$I$10 為參考單價對照表。部分資料見下表。",
         ),
     )
+    put(
+        314,
+        subpart(
+            "a",
+            "在 F2 寫出一條 IF 公式並複製至 F3:F50：若 E2 為「Y」且 D2≥5，"
+            "總價為 C2*D2×0.9；否則為 C2*D2。寫出 F2 的公式。",
+            2,
+        ),
+    )
+    put(315, ANSWER_BLANK)
     put(
         316,
         subpart(
-            "a",
-            "在 F2 寫出一條公式並複製至 F3:F50。若 E2 為「Y」且 D2≥5，總價為 C2*D2 的 9 折；"
-            "否則為 C2*D2。",
-            1,
+            "b",
+            "在 G2 使用 COUNTIF 統計 D$2:D$50 中數量≥5 的個數，寫出公式。",
+            2,
         ),
     )
     put(317, ANSWER_BLANK)
-    put(
-        319,
-        subpart(
-            "b",
-            "在 H2 寫出一條公式（可用 COUNTIFS），複製至 H3:H5，分別統計："
-            "會員訂單數、非會員訂單數及總銷售額。寫出 H2 的公式。",
-            3,
-        ),
-    )
-    put(320, ANSWER_BLANK)
 
-    # --- B2: data validation table (5 marks) ---
+    # --- B2: computer system + future tech (5 marks) — blueprint 25-26 ---
     put(
         323,
         scenario_override(
             "b-02",
-            stem("完成下表，為網上報名欄位選擇適當的數據有效性檢驗。", 3, spaced_marks=True),
+            "「煦風書社」擬為社企添置桌上電腦，主要部件包括 CPU、RAM、儲存裝置及顯示器。"
+            "下表列出兩款候選規格。",
         ),
     )
-    put(326, subpart("b", "試算表可設定數據有效性以減少輸入錯誤。"))
-    put(328, subpart("i", "說明「數據有效性檢驗」與「奇偶檢測」的分別。", 1, depth=2))
-    put(329, ANSWER_BLANK)
-    put(331, subpart("ii", "為「班別」欄建議一種有效性規則並舉例。", 1, depth=2))
-    put(332, ANSWER_BLANK)
+    put(
+        324,
+        subpart(
+            "a",
+            "就下表所列部件，各舉一例說明其功能（須與部件直接相關）。",
+            2,
+        ),
+    )
+    put(325, ANSWER_BLANK)
+    put(
+        326,
+        subpart(
+            "b",
+            "說明人工智能可如何協助社企管理日常運作，並舉出一項限制。",
+            3,
+        ),
+    )
+    put(327, ANSWER_BLANK)
+    put(328, "")
+    put(329, "")
+    put(330, "")
+    put(331, "")
+    put(332, "")
+    put(333, "")
+    put(334, "")
+    put(335, "")
 
     # --- B3: multimedia file size (4 marks) — Core A, no networking ---
     put(
         336,
         scenario_override(
             "b-03",
-            "攝影學會以未壓縮 BMP 儲存活動相片：每張 1600×1200 像素、24 bit 真彩色。",
+            "攝影學會以未壓縮 BMP 儲存活動相片：每張 1600×1200 像素、24 bit 真彩色。"
+            "規格見下表。",
         ),
     )
     put(
-        338,
+        337,
         subpart(
             "a",
             "估算 80 張相片的總檔案大小（以 MB 表示，展示計算）。",
             2,
         ),
     )
-    put(339, ANSWER_BLANK)
-    put(340, ANSWER_BLANK_LONG)
-    put(343, subpart("b", "比較以 JPEG（有損）與 PNG（無損）儲存同一批相片的取捨。"))
+    put(338, ANSWER_BLANK)
+    put(339, ANSWER_BLANK_LONG)
+    put(340, subpart("b", "比較以 JPEG（有損）與 PNG（無損）儲存同一批相片的取捨。", 2))
+    put(341, ANSWER_BLANK)
+    put(343, "")
     put(345, subpart("i", "哪種格式檔案通常較小？為什麼？", 1, depth=2))
     put(346, ANSWER_BLANK)
     put(349, subpart("ii", "若需保留最高畫質供印刷，應選哪種？簡述。", 1, depth=2))
     put(350, ANSWER_BLANK)
 
-    # --- B4: linear search trace — Core D / Module C (4 marks) ---
-    put(
-        354,
-        scenario_override(
-            "b-04",
-            "考慮陣列 A（索引由 1 開始，n=6）及以下搜尋算法（尋找值 key）：",
-        ),
-    )
-    put(357, stem("執行下列算法："))
-    put(359, code_line("found ← FALSE"))
-    put(360, code_line("i ← 1"))
-    put(361, code_line("WHILE i ≤ n AND found = FALSE DO"))
-    put(362, code_line("    IF A[i] = key THEN", depth=2))
-    put(363, code_line("        found ← TRUE", depth=3))
-    put(364, code_line("    i ← i + 1", depth=2))
+    # --- B4: linear search trace (4 marks) ---
+    put(354, scenario_override("b-04", "考慮陣列 A（索引由 1 開始，n=6）及以下線性搜尋算法："))
+    put(355, "")
+    put(356, code_line("found ← FALSE"))
+    put(357, code_line("i ← 1"))
+    put(358, code_line("WHILE i ≤ n AND found = FALSE DO"))
+    put(359, code_line("    IF A[i] = key THEN found ← TRUE"))
+    put(360, code_line("    i ← i + 1"))
+    put(361, code_line("ENDWHILE"))
+    put(362, code_line("IF found = TRUE THEN OUTPUT i ELSE OUTPUT 0"))
+    put(363, "")
     put(
         366,
         subpart(
             "a",
-            "設 A = [4, 9, 2, 9, 7, 1]、key = 9。完成追蹤表，展示每次迴圈後 i 與 found。",
+            "設 A = [9, 8, 5, 7, 9, 6]、key = 5。完成追蹤表，列出每次迴圈後 i 與 found 的值，並寫出最終 OUTPUT。",
             2,
         ),
     )
     put(367, ANSWER_BLANK)
-    put(370, subpart("b", "若 key 不在陣列內，算法結束時 i 的值是多少？解釋。", 2))
+    put(368, "")
+    put(370, subpart("b", "說明此算法屬線性搜尋的原因。", 2))
     put(371, ANSWER_BLANK)
-    put(373, stem("請在答案中說明此算法屬「線性搜尋」的原因。"))
+    for i in (372, 373, 374, 375, 376):
+        put(i, "")
 
-    # --- B5: file access (4 marks) ---
+    # --- B5: SQL (4 marks) ---
     put(
         377,
-        scenario_override("b-05", "校園相簿系統以索引檔記錄每張相片的編號與儲存位置。"),
+        scenario_override(
+            "b-05",
+            "「煦風」網店使用資料表 TRANSACTION(TID, Item, Qty, ADate) 記錄交易，部分記錄見下表。",
+        ),
     )
-    put(385, stem("系統可以「直接存取」或「順序存取」索引檔。"))
-    put(387, subpart("a", "比較兩種方式查找特定相片編號的優缺點。", 2, spaced_marks=True))
-    put(388, ANSWER_BLANK)
-    put(
-        390,
-        subpart("b", "若索引按相片編號排序，查找時哪種方式較適合？舉一項校內應用。", 2, spaced_marks=True),
-    )
-    put(391, ANSWER_BLANK)
-    put(393, ANSWER_BLANK)
+    put(378, subpart("a", "寫出 CREATE TABLE TRANSACTION（TID 為主鍵，Item 不可為空）。", 2, spaced_marks=True))
+    put(379, ANSWER_BLANK)
+    put(380, subpart("b", "寫出一條 SELECT，列出 Qty ≥ 5 的 Item 及 Qty。", 2, spaced_marks=True))
+    put(381, ANSWER_BLANK)
+    put(382, "")
+    put(383, "")
+    put(384, "")
+    put(385, "")
+    put(386, "")
+    put(387, "")
+    put(388, "")
+    put(389, "")
+    put(390, "")
+    put(391, "")
+    put(392, "")
+    put(393, "")
 
-    # --- B6: ORDER / CLIENT database (9 marks) — Module A intro ---
+    # --- B6: hardware comparison (9 marks) ---
     put(
         394,
         scenario_override(
             "b-06",
-            "「綠途生活」網店以網上表格收集訂單，並把資料匯入 ORDER 資料表"
-            "（OID、CNAME、PHONE、EMAIL、ORDER_DATE）。",
+            "攝影學會擬為社員添置筆記本電腦，完成下表比較兩款候選硬件規格。",
         ),
     )
-    put(396, subpart("a", "試指出使用網上表格相對紙本表格的兩項好處。", 2, spaced_marks=True))
+    put(395, subpart("a", "列出 CPU 規格欄可填寫的兩個例子。", 2, spaced_marks=True))
+    put(396, ANSWER_BLANK)
+    put(397, subpart("b", "說明增加 RAM 對多工處理的影響。", 2, spaced_marks=True))
     put(398, ANSWER_BLANK)
-    put(
-        400,
-        subpart(
-            "b",
-            "為電話及電郵欄各建議一種數據有效性檢驗方法，並舉例。",
-            2,
-            spaced_marks=True,
-        ),
-    )
-    put(401, subpart("i", "電話號碼", depth=1))
-    put(402, ANSWER_BLANK)
-    put(404, subpart("ii", "電郵地址", depth=2))
-    put(407, stem("以下是 ORDER 資料表部分記錄："))
-    put(410, subpart("c", "PHONE 欄應使用哪種資料類型？為什麼？", 2, spaced_marks=True))
-    put(412, ANSWER_BLANK)
-    put(414, subpart("d", "執行以下 SQL 後的輸出是什麼？", 1, spaced_marks=True))
-    put(415, ANSWER_BLANK)
-    put(416, sql_line("SELECT CNAME FROM ORDER WHERE ORDER_DATE < '2026-03-01';"))
-    put(419, subpart("e", "寫出一條 SQL，列出所有於 5 月落單的客戶名稱。", 2, spaced_marks=True))
-    put(420, ANSWER_BLANK)
+    put(399, "")
+    put(400, subpart("c", "比較 SSD 與 HDD 作為系統碟的優缺點。", 2, spaced_marks=True))
+    put(401, ANSWER_BLANK)
+    put(402, "")
+    put(403, subpart("d", "舉出一項須同時升級硬件與軟件的情況並說明。", 3, spaced_marks=True))
+    put(404, ANSWER_BLANK)
+    put(405, ANSWER_BLANK_LONG)
+    for i in range(406, 423):
+        put(i, "")
 
     return lines
 
@@ -173,9 +195,13 @@ def build_part_c() -> list[str]:
     def put(i: int, s: str) -> None:
         lines[i - base] = s
 
-    put(423, "丙部 (40分)：選修單元問答題（數據庫及程式開發）— 不設多項選擇題")
+    put(
+        423,
+        "丙部 (40分)：Module A 數據庫 (20分) + Module C 程式開發 (20分) — 不設多項選擇題",
+    )
+    put(424, "— Module A 數據庫（20 分）—")
 
-    # C1 — ERD cinema booking (4 marks) — blueprint: 2024 Paper2A
+    # C1 — ERD (6 marks)
     put(
         425,
         scenario_override(
@@ -188,141 +214,119 @@ def build_part_c() -> list[str]:
         427,
         stem(
             "繪製實體關係圖（ERD），標示 Member、Booking、Screening、Cinema 及主鍵／外鍵。",
-            4,
+            6,
             spaced_marks=True,
         ),
     )
     put(429, "\t\t")
 
-    # C2 — CREATE / INSERT (2 marks)
-    put(440, scenario_override("c-02", "某社企使用 MOVIE 資料表記錄租借影碟。"))
-    put(442, subpart("a", "補充以下 SQL，使 MID 不可重複。", 1, spaced_marks=True))
-    put(444, sql_line("CREATE TABLE MOVIE ("))
-    put(445, sql_line("    MID CHAR(6)\t\t\t\t,", depth=4))
-    put(446, sql_line("    TITLE VARCHAR(60),", depth=4))
-    put(447, sql_line("    RENTAL INTEGER", depth=4))
-    put(448, sql_line(")"))
-    put(450, subpart("b", "以下記錄將插入 MOVIE。", 1, spaced_marks=True))
-    put(453, sql_line("INSERT INTO MOVIE VALUES (                                )"))
-    put(455, stem("寫出此 SQL 語句中未填寫的部分。"))
+    # C2 — 欄位限制 (4 marks)
+    put(440, scenario_override("c-02", "某社企圖書館使用 MEMBER 及 LOAN 資料表，須符合欄位限制。"))
+    put(442, subpart("a", "在下列 CREATE TABLE 補充 MID 主鍵及 TITLE 的 NOT NULL。", 2, spaced_marks=True))
+    put(444, sql_line("CREATE TABLE LOAN ("))
+    put(445, sql_line("    MID CHAR(6),", depth=4))
+    put(446, sql_line("    BID CHAR(8),", depth=4))
+    put(447, sql_line("    TITLE VARCHAR(80),", depth=4))
+    put(448, sql_line("    LOANDATE DATE", depth=4))
+    put(449, sql_line(")"))
+    put(451, subpart("b", "說明外鍵 LOAN(MID) REFERENCES MEMBER(MID) 如何維護參照完整性。", 2, spaced_marks=True))
+    put(452, ANSWER_BLANK_LONG)
+    put(454, ANSWER_BLANK_LONG)
 
-    # C3 — UNION / UPDATE (3 marks)
-    put(457, scenario_override("c-03", "Order2024 與 Order2025 結構相同，部分記錄如下："))
-    put(459, "\t\tOrder2024\t\tOrder2025")
-    put(461, subpart("a", "執行以下 SQL 後會列出多少筆記錄？", 1, spaced_marks=True))
-    put(463, sql_line("SELECT *"))
-    put(464, sql_line("FROM Order2024"))
-    put(465, sql_line("UNION"))
-    put(466, sql_line("SELECT PID, SID, AMT"))
-    put(467, sql_line("FROM Order2025;"))
-    put(469, ANSWER_BLANK_LONG)
-    put(470, subpart("b", "列出執行以下 SQL 後 Order2024 內被更新的記錄。", 2, spaced_marks=True))
-    put(472, sql_line("UPDATE Order2024"))
-    put(473, sql_line("SET AMT = 0"))
-    put(474, sql_line("WHERE AMT > 0 AND"))
-    put(475, sql_line("    (EXISTS", depth=4))
-    put(476, sql_line("        (SELECT * FROM Order2025", depth=5))
-    put(477, sql_line("         WHERE Order2024.PID = Order2025.PID", depth=5))
-    put(478, sql_line("           AND Order2025.AMT = 0);", depth=7))
-
-    # C4 — removed (was 3NF sports, 3 marks) — slots left blank for template span
-
-    # C5 — FACILITY / RESERVE (11 marks)
-    put(496, scenario_override("c-05", "某社區中心資料庫包含 FACILITY 及 RESERVE 資料表："))
-    put(498, "FACILITY")
-    put(500, "RESERVE")
-    put(502, subpart("a", "寫出 MEMID 欄的合適數據類型並簡略說明。", 1, spaced_marks=True))
-    put(504, ANSWER_BLANK_LONG)
-    put(506, subpart("b", "為以下任務寫出 SQL："))
+    # C3 — 冗餘與完整性 (4 marks)
     put(
-        508,
-        subpart(
-            "i",
-            "列出預約編號以「R26」開頭的記錄，按日期升序。",
-            2,
-            depth=2,
-            spaced_marks=True,
+        457,
+        scenario_override(
+            "c-03",
+            "早期設計把會員姓名、電話直接寫入每筆 LOAN 記錄；同一會員借多本書時資料重複，"
+            "更改電話須更新多筆記錄。",
         ),
     )
-    put(510, ANSWER_BLANK_LONG)
-    put(513, subpart("ii", "列出 2026-07-12 預約的所有設施名稱。", 2, depth=2, spaced_marks=True))
-    put(515, ANSWER_BLANK_LONG)
+    put(461, subpart("a", "指出上述設計的數據冗餘，並說明可能導致的更新異常。", 2, spaced_marks=True))
+    put(462, ANSWER_BLANK_LONG)
+    put(464, subpart("b", "建議如何分拆資料表以改善完整性（述主鍵／外鍵角色，不須完整 ERD）。", 2, spaced_marks=True))
+    put(465, ANSWER_BLANK_LONG)
+
+    # C5 — SQL 綜合 (6 marks) — still Module A; Module C header before c-06
     put(
-        518,
-        subpart(
-            "iii",
-            "列出曾預約容量少於 25 的設施之會員編號（不重複）。",
-            3,
-            depth=2,
-            spaced_marks=True,
+        496,
+        scenario_override(
+            "c-05",
+            "社區中心資料庫含 MEMBER(MID, MName)、FACILITY(FID, FName)、"
+            "RESERVE(RID, MEMID, FID, RDATE)。樣本資料見下表。",
         ),
     )
-    put(520, ANSWER_BLANK_LONG)
-    put(526, subpart("c", "簡述以下 SQL 的用途。", 2, spaced_marks=True))
-    put(528, sql_line("SELECT FID FROM FACILITY"))
-    put(529, sql_line("MINUS"))
-    put(530, sql_line("SELECT FID FROM RESERVE;"))
-    put(532, ANSWER_BLANK_LONG)
-    put(536, subpart("d", "簡述非規範化 FACILITY 與 RESERVE 的一個方法。", 1, spaced_marks=True))
+    put(497, subpart("a", "寫出 INNER JOIN：列出每位會員姓名及其預訂的設施名稱。", 2, spaced_marks=True))
+    put(498, ANSWER_BLANK_LONG)
+    put(499, subpart("b", "寫出 GROUP BY：統計各設施被預約次數，只列出次數≥2 的設施。", 2, spaced_marks=True))
+    put(500, ANSWER_BLANK_LONG)
+    put(501, subpart("c", "寫出 UNION 或 MINUS：比較兩組設施的會員／預約差異（擇一並說明）。", 2, spaced_marks=True))
+    put(502, ANSWER_BLANK_LONG)
+    for i in range(503, 540):
+        put(i, "")
 
-    # C6 — SQL trace (5 marks)
-    put(541, scenario_override("c-06", "考慮 Member 與 Enrol 資料表，以下 SQL 逐步執行："))
-    put(544, stem("設初始結果為空。"))
-    put(547, subpart("a", "第一次 JOIN 後結果包含哪些 MemberID？", 1, spaced_marks=True))
-    put(550, subpart("ii", "加入 GROUP BY 後結果如何變化？", 1, depth=2, spaced_marks=True))
-    put(553, subpart("iii", "加入 HAVING COUNT(*) > 1 後最終結果是什麼？", 1, depth=2, spaced_marks=True))
-    put(556, subpart("b", "此查詢找出哪類會員？", 1, spaced_marks=True))
-    put(559, subpart("c", "若改為 LEFT JOIN，結果有何不同？簡述。", 1, spaced_marks=True))
+    put(540, "— Module C 程式開發（20 分）—")
 
-    # C7 — transactions (9 marks)
+    # C6 — 二維陣列 + 堆疊 (7 marks)
+    put(
+        541,
+        scenario_override(
+            "c-06",
+            "某遊戲以二維陣列 Grid[row][col] 表示地圖（0=通道，1=牆）；玩家移動及「復活」"
+            "位置以堆疊記錄。地圖見下表。",
+        ),
+    )
+    put(542, subpart("a", "寫出判斷 Grid[3][2] 是否為牆的條件；若 Grid[3][2]=1 且 Grid[3][3]=0，說明能否向右移。", 3, spaced_marks=True))
+    put(543, ANSWER_BLANK_LONG)
+    put(544, subpart("b", "依次 PUSH 2、5、9、POP、PUSH 1、POP，列出每次 POP 的輸出及最終堆疊頂端。", 4, spaced_marks=True))
+    put(545, ANSWER_BLANK_LONG)
+    put(546, ANSWER_BLANK_LONG)
+    for i in range(547, 566):
+        put(i, "")
+
+    # C7 — 隊列 + 二分搜尋 (7 marks)
     put(
         566,
         scenario_override(
             "c-07",
-            "校園一卡通系統使用交易（Transaction）確保扣款一致。常用子句如下：",
+            "診所輪候系統以隊列處理先到先得；學生證編號已按升序存入陣列 ID[1..N] 供登入核對。",
         ),
     )
-    put(569, subpart("a", "寫出 BEGIN…COMMIT 與 ROLLBACK 的用途各一項。", 1, spaced_marks=True))
-    put(571, sql_line("UPDATE Account SET Balance = Balance - 30 WHERE StudentID = 'S002';"))
-    put(574, subpart("b", "若第二步 UPDATE 失敗，應執行哪個子句？為什麼？", 1, spaced_marks=True))
-    put(577, stem("試描述如何確保兩個 UPDATE 同時成功或同時失敗。"))
-    put(579, sql_line("BEGIN TRANSACTION"))
-    put(580, sql_line("UPDATE Wallet SET Balance = Balance - 50 WHERE SID = 'S001';"))
-    put(581, sql_line("UPDATE Canteen SET Income = Income + 50 WHERE ID = 'C01';"))
-    put(582, sql_line("IF @@ERROR <> 0"))
-    put(583, sql_line("    ROLLBACK"))
-    put(584, sql_line("ELSE"))
-    put(585, sql_line("    COMMIT"))
-    put(588, subpart("c", "寫出 PAY(SID, AMOUNT) 的偽代碼，使用 BEGIN/COMMIT/ROLLBACK。", 3, spaced_marks=True))
-    put(590, sql_line("PAY(SID, AMOUNT)"))
-    put(592, subpart("d", "說明若無交易控制，扣款中斷可能造成什麼資料不一致。", 4, spaced_marks=True))
+    put(569, subpart("a", "說明 Enqueue／Dequeue 如何實現輪候；舉一例 Dequeue 後 Front 及 Rear 的變化。", 3, spaced_marks=True))
+    put(570, ANSWER_BLANK_LONG)
+    put(572, subpart("b", "用二分搜尋在 ID 中查找「S1042」，描述 mid 如何移動（至少兩步）。", 4, spaced_marks=True))
+    put(573, ANSWER_BLANK_LONG)
+    put(574, ANSWER_BLANK_LONG)
 
-    # C8 — stack / Module C (6 marks)
+    # C8 — 排序 + 陣列鏈表 (6 marks)
     put(
         595,
         scenario_override(
             "c-08",
-            "某程式以堆疊（Stack）儲存運算元，以下為初始狀態及 PUSH／POP 操作：",
+            "電競社以陣列 Next[1..N] 及 Head 模擬鏈表儲存輪候參賽者；每日關閉前須把 Score[1..M] "
+            "按降序整理並更新鏈表順序。",
         ),
     )
-    put(597, "堆疊底在左，頂端在右。")
-    put(598, "完成下表（首四步）後，繼續追蹤 PUSH 2、POP、POP。")
-    put(600, stem("操作序列：PUSH 3；PUSH 7；POP；PUSH 2；POP；POP"))
-    put(602, stem("Stack 狀態", depth=2))
-    put(604, stem("老師設計 trace_stack 追蹤每次操作後的堆疊頂端："))
-    put(606, code_line("trace_stack"))
-    put(607, code_line("10  op ← 1"))
-    put(608, code_line("20  WHILE op ≤ 6 DO"))
-    put(609, code_line("30      執行第 op 步操作並記錄 stack 頂端"))
-    put(610, code_line('40      顯示 "Step op: top = …"'))
-    put(611, code_line("50      op ← op + 1"))
-    put(613, subpart("a", "完成追蹤表，列出每步後 stack 頂端元素。", 2, spaced_marks=True))
-    put(615, subpart("b", "若先 POP 再 PUSH 順序對調，結果有何不同？簡述。", 2, spaced_marks=True))
-    put(617, ANSWER_BLANK_LONG)
     put(
-        620,
-        subpart("c", "說明堆疊「後進先出」在此題中的意義。", 2, spaced_marks=True),
+        597,
+        "管理員記錄：Score = [72, 45, 90, 45, 61, 88, 33, 77]（索引 1 至 8），Head 指向第一個"
+        "有效參賽者；刪除 Score=45 的結點後須重新連結 Next 指標。",
     )
-    put(622, ANSWER_BLANK_LONG)
+    put(598, subpart("a", "對 Score 執行一次冒泡排序（降序）的首輪比較，寫出需交換的一對索引。", 2, spaced_marks=True))
+    put(599, ANSWER_BLANK)
+    put(600, "")
+    put(
+        601,
+        subpart(
+            "b",
+            "說明如何以 Head 及 Next[] 走訪仍參賽者；刪除一個 Score=45 的結點後，"
+            "描述 Head／Next 如何更新，並述此結構與陣列模擬鏈表的優點。",
+            4,
+            spaced_marks=True,
+        ),
+    )
+    put(602, ANSWER_BLANK_LONG)
+    put(603, ANSWER_BLANK_LONG)
+    put(604, ANSWER_BLANK_LONG)
 
     return lines

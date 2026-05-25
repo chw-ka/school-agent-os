@@ -119,7 +119,18 @@ def check_mcq_block_lines(question: int, lines: list[str], *, para_start: int) -
                     )
                 )
         else:
-            # Non-combo: at most one blank, immediately before options
+            # Non-combo: blank before options; optional one blank before first code line
+            try:
+                from mcq_code_layout import is_code_layout_line
+            except ImportError:
+                is_code_layout_line = lambda _: False  # type: ignore[misc, assignment]
+
+            first_code = next(
+                (j for j, line in enumerate(content) if is_code_layout_line(line)),
+                None,
+            )
+            if first_code is not None and start == first_code - 1 and run_len == 1:
+                continue
             if start != len(content) - 1 or run_len != 1:
                 issues.append(
                     McqBlankIssue(

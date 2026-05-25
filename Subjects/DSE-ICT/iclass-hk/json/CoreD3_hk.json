@@ -1,0 +1,964 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreD3_hk_算法設計（二）.docx",
+    "slug": "CoreD3_hk",
+    "title": "算法設計（二）",
+    "title_zh": "算法設計（二）",
+    "title_en": null,
+    "language": "hk",
+    "family": "CoreD",
+    "chapter": 3,
+    "integrated": false,
+    "topic_code": "D03",
+    "curriculum_unit": "Core-D",
+    "ca_unit": "D",
+    "f5_exam_scope": "mcq_core_d",
+    "extracted_at": "2026-05-24T10:37:17.838694+00:00",
+    "item_count": 34,
+    "section_counts": {
+      "mcq": 27,
+      "short_answer": 5,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTD0103_01A001C",
+      "bank_code": "SSICTD0103_01A001C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "下列算法中，當 X = 3，以下哪項是 Z 的值？\nX  1\nZ  7\n當 X < 5\nX  X + 1\nZ  Z - X",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "5",
+        "D": "7"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列算法中，當 X = 3，以下哪項是 Z 的值？\nX  1\nZ  7\n當 X < 5\nX  X + 1\nZ  Z - X\nA. 1\nB. 2\nC. 5\nD. 7",
+      "concepts": [
+        "D-ch3",
+        "算法"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A002C",
+      "bank_code": "SSICTD0103_01A002C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nA  3\nB  5\n設 i 由 1 至 5\n如果 i < 3 則\n輸出 A\n否則\n輸出 B",
+      "options": {
+        "A": "3 3 5 5",
+        "B": "3 3 3 5",
+        "C": "3 3 5 5 5",
+        "D": "3 3 3 5 5"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nA  3\nB  5\n設 i 由 1 至 5\n如果 i < 3 則\n輸出 A\n否則\n輸出 B\nA. 3 3 5 5\nB. 3 3 3 5\nC. 3 3 5 5 5\nD. 3 3 3 5 5",
+      "concepts": [
+        "D-ch3",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A003C",
+      "bank_code": "SSICTD0103_01A003C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\n輸入 X\ni  1\n當 i < 4\nZ  X + i * i\ni  i + 1\n輸出 Z\n如果 X = 10，下列算法的輸出是什麼？",
+      "options": {
+        "A": "6",
+        "B": "19",
+        "C": "36",
+        "D": "沒有輸出"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下算法：\n輸入 X\ni  1\n當 i < 4\nZ  X + i * i\ni  i + 1\n輸出 Z\n如果 X = 10，下列算法的輸出是什麼？\nA. 6\nB. 19\nC. 36\nD. 沒有輸出",
+      "concepts": [
+        "D-ch3",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A004C",
+      "bank_code": "SSICTD0103_01A004C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "參看以下陣列 num 的內容：\n4\n1\n3\n4\n5\n9\n1\n2\n10\n6\n已知 num[4] 的值是 5，以下哪項是 num[8] 的值？",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "6",
+        "D": "10"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "參看以下陣列 num 的內容：\n4\n1\n3\n4\n5\n9\n1\n2\n10\n6\n已知 num[4] 的值是 5，以下哪項是 num[8] 的值？\nA. 1\nB. 2\nC. 6\nD. 10",
+      "concepts": [
+        "D-ch3"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A005C",
+      "bank_code": "SSICTD0103_01A005C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA  [1, 2, 3, 4, 5, 6]\n設 i 由 1 至 6\nA[i]  A[i] * i * 10\n輸出 A[6]",
+      "options": {
+        "A": "25",
+        "B": "36",
+        "C": "250",
+        "D": "360"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA  [1, 2, 3, 4, 5, 6]\n設 i 由 1 至 6\nA[i]  A[i] * i * 10\n輸出 A[6]\nA. 25\nB. 36\nC. 250\nD. 360",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0103_01A006C",
+      "bank_code": "SSICTD0103_01A006C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA[1]  1\n設 i 由 1 至 8\nA[i+1]  A[i] + i\n輸出 (A[6] + A[7])",
+      "options": {
+        "A": "16",
+        "B": "22",
+        "C": "38",
+        "D": "51"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA[1]  1\n設 i 由 1 至 8\nA[i+1]  A[i] + i\n輸出 (A[6] + A[7])\nA. 16\nB. 22\nC. 38\nD. 51",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0103_01A007C",
+      "bank_code": "SSICTD0103_01A007C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A 是一個由索引 1 開始的陣列。執行下列算法一次後，以下哪個陣列項目儲存的值最小？\nA  [18, 0, 0, 0, 0, 0, 0, 0, 0, 0]\n設 i 由 2 至 10\n如果 i < 6 則\nA[i]  A [i-1] + 1\n否則\nA[i]  A [i-1] - 1",
+      "options": {
+        "A": "A[1]",
+        "B": "A[2]",
+        "C": "A[9]",
+        "D": "A[10]"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "A 是一個由索引 1 開始的陣列。執行下列算法一次後，以下哪個陣列項目儲存的值最小？\nA  [18, 0, 0, 0, 0, 0, 0, 0, 0, 0]\n設 i 由 2 至 10\n如果 i < 6 則\nA[i]  A [i-1] + 1\n否則\nA[i]  A [i-1] - 1\nA. A[1]\nB. A[2]\nC. A[9]\nD. A[10]",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A008C",
+      "bank_code": "SSICTD0103_01A008C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA  [3, 4, 14, 14, 13, 45, 2, 6, 1]\nB  0\n設 i 由 1 至 9\n如果 A[i] > 1 AND A[i] < 14 則\nB  A[i]\n輸出 B",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "6",
+        "D": "13"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA  [3, 4, 14, 14, 13, 45, 2, 6, 1]\nB  0\n設 i 由 1 至 9\n如果 A[i] > 1 AND A[i] < 14 則\nB  A[i]\n輸出 B\nA. 2\nB. 3\nC. 6\nD. 13",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A009C",
+      "bank_code": "SSICTD0103_01A009C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "S 是一個由索引 1 開始的陣列。以下哪項是下列算法的目的？\nS  [1, 0, 1, 0, 0, 0, 1, 0, 1, 0]\ncount  0\n設 i 由 1 至 10\n如果 S[i] = 1 則\ncount  count + 1\n輸出 count",
+      "options": {
+        "A": "找出陣列大小。",
+        "B": "找出陣列中 1 的數目。",
+        "C": "找出陣列中 0 的數目。",
+        "D": "按陣列大小增加 count 的值。"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "S 是一個由索引 1 開始的陣列。以下哪項是下列算法的目的？\nS  [1, 0, 1, 0, 0, 0, 1, 0, 1, 0]\ncount  0\n設 i 由 1 至 10\n如果 S[i] = 1 則\ncount  count + 1\n輸出 count\nA. 找出陣列大小。\nB. 找出陣列中 1 的數目。\nC. 找出陣列中 0 的數目。\nD. 按陣列大小增加 count 的值。",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A010C",
+      "bank_code": "SSICTD0103_01A010C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA  [3, 6, 9, 12, 15, 18, 21]\nsum  0\n設 i 由 2 至 6\nsum  sum + A[i]\n輸出 sum\nsum  sum / 5\n輸出 sum",
+      "options": {
+        "A": "60",
+        "B": "60 12",
+        "C": "6 15 27 42 60 12",
+        "D": "9 18 30 45 63 12"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA  [3, 6, 9, 12, 15, 18, 21]\nsum  0\n設 i 由 2 至 6\nsum  sum + A[i]\n輸出 sum\nsum  sum / 5\n輸出 sum\nA. 60\nB. 60 12\nC. 6 15 27 42 60 12\nD. 9 18 30 45 63 12",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A011C",
+      "bank_code": "SSICTD0103_01A011C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項關於在設計算法時使用陣列的陳述是不正確的？",
+      "options": {
+        "A": "這做法有助用戶以單一數據結構整理關連的數據。",
+        "B": "這做法減少重複宣告變量的需要。",
+        "C": "這做法令算法更有效率地進行重複性的操作。",
+        "D": "這做法防止算法出現邏輯錯誤。"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項關於在設計算法時使用陣列的陳述是不正確的？\nA. 這做法有助用戶以單一數據結構整理關連的數據。\nB. 這做法減少重複宣告變量的需要。\nC. 這做法令算法更有效率地進行重複性的操作。\nD. 這做法防止算法出現邏輯錯誤。",
+      "concepts": [
+        "D-ch3",
+        "除錯",
+        "算法",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0103_01B012C",
+      "bank_code": "SSICTD0103_01B012C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "num 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nnum  [12, 24, 43, 21, 85, 21, 10]\ncount  1\n設 i 由 1 至 7\n如果 num[i] > 10 則\ncount  count + 1\n輸出 count",
+      "options": {
+        "A": "0",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "num 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nnum  [12, 24, 43, 21, 85, 21, 10]\ncount  1\n設 i 由 1 至 7\n如果 num[i] > 10 則\ncount  count + 1\n輸出 count\nA. 0\nB. 6\nC. 7\nD. 8",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A013C",
+      "bank_code": "SSICTD0103_01A013C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "已知 num 是一個索引由 1 至 10 的陣列。以下哪項是下列算法的目的？\nX  num[1]\n設 i 由 2 至 10\n如果 num[i] < X 則\nX  num[i]\n輸出 X",
+      "options": {
+        "A": "找出陣列 num 中的最小值。",
+        "B": "找出陣列 num 中的最大值。",
+        "C": "找出陣列 num 的起始值。",
+        "D": "找出陣列 num 的最終值。"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "已知 num 是一個索引由 1 至 10 的陣列。以下哪項是下列算法的目的？\nX  num[1]\n設 i 由 2 至 10\n如果 num[i] < X 則\nX  num[i]\n輸出 X\nA. 找出陣列 num 中的最小值。\nB. 找出陣列 num 中的最大值。\nC. 找出陣列 num 的起始值。\nD. 找出陣列 num 的最終值。",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01B014C",
+      "bank_code": "SSICTD0103_01B014C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "已知 num 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nnum  [3, 1, 2]\nX  True\n設 i 由 1 至 2\n如果 num[i] > num[i+1] 則\nX  False\n輸出 X",
+      "options": {
+        "A": "True True",
+        "B": "True False",
+        "C": "False True",
+        "D": "False False"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "已知 num 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nnum  [3, 1, 2]\nX  True\n設 i 由 1 至 2\n如果 num[i] > num[i+1] 則\nX  False\n輸出 X\nA. True True\nB. True False\nC. False True\nD. False False",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01B015C",
+      "bank_code": "SSICTD0103_01B015C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "X 是一個由索引 1 開始的陣列。以下哪項是下列算法的目的？\nX  [1, 2, 3, 4, 5, 4, 3, 2, 1]\nY  True\ni  1\n當 i < 9 AND Y = True\n如果 X[i] > X[i+1] 則\nY  False\ni  i + 1\n輸出 i",
+      "options": {
+        "A": "找出陣列停止由小至大排列的位置索引。",
+        "B": "找出陣列停止由大至小排列的位置索引。",
+        "C": "檢查陣列是否由小至大排列。",
+        "D": "檢查陣列是否由大至小排列。"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "X 是一個由索引 1 開始的陣列。以下哪項是下列算法的目的？\nX  [1, 2, 3, 4, 5, 4, 3, 2, 1]\nY  True\ni  1\n當 i < 9 AND Y = True\n如果 X[i] > X[i+1] 則\nY  False\ni  i + 1\n輸出 i\nA. 找出陣列停止由小至大排列的位置索引。\nB. 找出陣列停止由大至小排列的位置索引。\nC. 檢查陣列是否由小至大排列。\nD. 檢查陣列是否由大至小排列。",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01B016C",
+      "bank_code": "SSICTD0103_01B016C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Y 是一個由索引 1 開始的陣列。以下哪項是變量 X 的用途？\nX  5\nY  [1, 2, 3, 4, 5]\n輸入 target\n設 i 由 target 至 X-1\nY[i]  Y[i+1]\nX  X – 1\n輸出 i",
+      "options": {
+        "A": "儲存迭代次數。",
+        "B": "儲存陣列 Y 的最大值。",
+        "C": "儲存陣列 Y 的大小。",
+        "D": "儲存陣列 Y 中須刪除項目的索引。"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "Y 是一個由索引 1 開始的陣列。以下哪項是變量 X 的用途？\nX  5\nY  [1, 2, 3, 4, 5]\n輸入 target\n設 i 由 target 至 X-1\nY[i]  Y[i+1]\nX  X – 1\n輸出 i\nA. 儲存迭代次數。\nB. 儲存陣列 Y 的最大值。\nC. 儲存陣列 Y 的大小。\nD. 儲存陣列 Y 中須刪除項目的索引。",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A017C",
+      "bank_code": "SSICTD0103_01A017C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "已知 num 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nnum  [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]\n輸出 num[10]\n設 i 由 9 下至 1\nnum[i+1]  num[i]\nnum[1]  10\n輸出 num[10]",
+      "options": {
+        "A": "0 0",
+        "B": "0 10",
+        "C": "0 9",
+        "D": "10 9"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "已知 num 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nnum  [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]\n輸出 num[10]\n設 i 由 9 下至 1\nnum[i+1]  num[i]\nnum[1]  10\n輸出 num[10]\nA. 0 0\nB. 0 10\nC. 0 9\nD. 10 9",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A018C",
+      "bank_code": "SSICTD0103_01A018C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "已知 X 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nX  [120, 142, 183, 124, 183, 162, 155]\ntemp  X[5]\n設 i 由 4 下至 1\nX[i+1]  X[i]\nX[1]  temp\n輸出 X[5]",
+      "options": {
+        "A": "120",
+        "B": "124",
+        "C": "142",
+        "D": "183"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "已知 X 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nX  [120, 142, 183, 124, 183, 162, 155]\ntemp  X[5]\n設 i 由 4 下至 1\nX[i+1]  X[i]\nX[1]  temp\n輸出 X[5]\nA. 120\nB. 124\nC. 142\nD. 183",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A019C",
+      "bank_code": "SSICTD0103_01A019C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "N 是一個由索引 1 開始的陣列。以下哪項是下列算法的目的？\nN  [10, 20, 30, 40, 50, 60]\nj  3\n設 i 由 j 至 5\nN[i]  N[i+1]\nN[6]  0",
+      "options": {
+        "A": "將 N[3]、N[4] 和 N[5] 的值加 3。",
+        "B": "將一個項目添加至索引 3 的位置。",
+        "C": "刪除位於索引 3 的項目。",
+        "D": "刪除位於索引 6 的項目。"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "N 是一個由索引 1 開始的陣列。以下哪項是下列算法的目的？\nN  [10, 20, 30, 40, 50, 60]\nj  3\n設 i 由 j 至 5\nN[i]  N[i+1]\nN[6]  0\nA. 將 N[3]、N[4] 和 N[5] 的值加 3。\nB. 將一個項目添加至索引 3 的位置。\nC. 刪除位於索引 3 的項目。\nD. 刪除位於索引 6 的項目。",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A020C",
+      "bank_code": "SSICTD0103_01A020C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪些關於模組化的陳述是正確的？\n(1)\n模組化令用戶可在程式使用選擇控制結構。\n(2)\n模組化使程式更易讀。\n(3)\n模組化幫助程式設計師解決複雜問題。\n(4)\n模組化是由下而上的解難策略。",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "只有 (2) 和 (4)"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪些關於模組化的陳述是正確的？\n(1)\n模組化令用戶可在程式使用選擇控制結構。\n(2)\n模組化使程式更易讀。\n(3)\n模組化幫助程式設計師解決複雜問題。\n(4)\n模組化是由下而上的解難策略。\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. 只有 (2) 和 (4)",
+      "concepts": [
+        "D-ch3",
+        "Python"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A021C",
+      "bank_code": "SSICTD0103_01A021C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "十個人參與了一個問答遊戲。陣列 correct 儲存他們答對的問題數目，由大至小排列。以下算法搜尋某目標值，並於找到首個小於目標的值時停止。\ncorrect  [50, 45, 44, 37, 35, 33, 28, 25, 23, 21]\n輸入 target\nfound  False\nindex  -1\ni  1\n當 i <= 10 AND found = False AND _______________\n如果 target = correct[i] 則\nfound  True\nindex  i\ni  i + 1\n輸出 index\n以下哪項條件應用以填入留空部分？",
+      "options": {
+        "A": "correct[i] >= target",
+        "B": "correct[i] > target",
+        "C": "correct[i] <= target",
+        "D": "correct[i] < target"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "十個人參與了一個問答遊戲。陣列 correct 儲存他們答對的問題數目，由大至小排列。以下算法搜尋某目標值，並於找到首個小於目標的值時停止。\ncorrect  [50, 45, 44, 37, 35, 33, 28, 25, 23, 21]\n輸入 target\nfound  False\nindex  -1\ni  1\n當 i <= 10 AND found = False AND _______________\n如果 target = correct[i] 則\nfound  True\nindex  i\ni  i + 1\n輸出 index\n以下哪項條件應用以填入留空部分？\nA. correct[i] >= target\nB. correct[i] > target\nC. correct[i] <= target\nD. correct[i] < target",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "排序",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A022C",
+      "bank_code": "SSICTD0103_01A022C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "十個人參與了一個問答遊戲。陣列 correct 儲存他們答對的問題數目，由大至小排列。以下算法搜尋某目標值，並於找到首個小於目標的值時停止。\ncorrect  [50, 45, 44, 37, 35, 33, 28, 25, 23, 21]\n輸入 target\nfound  False\nindex  -1\ni  1\n當 i <= 10 AND found = False AND correct[i] >= target\n如果 target = correct[i] 則\nfound  True\nindex  i\ni  i + 1\n輸出 index\n如果輸入「26」，while 循環體會被執行多少次？",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "十個人參與了一個問答遊戲。陣列 correct 儲存他們答對的問題數目，由大至小排列。以下算法搜尋某目標值，並於找到首個小於目標的值時停止。\ncorrect  [50, 45, 44, 37, 35, 33, 28, 25, 23, 21]\n輸入 target\nfound  False\nindex  -1\ni  1\n當 i <= 10 AND found = False AND correct[i] >= target\n如果 target = correct[i] 則\nfound  True\nindex  i\ni  i + 1\n輸出 index\n如果輸入「26」，while 循環體會被執行多少次？\nA. 5\nB. 6\nC. 7\nD. 8",
+      "concepts": [
+        "D-ch3",
+        "循環",
+        "列表",
+        "算法",
+        "排序",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A023C",
+      "bank_code": "SSICTD0103_01A023C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\nnum  [1, 3, 5, 7, 9, 11]\nnum  num + [0]\n設 i 由 3 至 6\nnum[i+1]  num[i]\nnum[3]  3\n執行此算法後，num 的內容是什麼？",
+      "options": {
+        "A": "[1, 3, 5, 7, 9, 11, 0]",
+        "B": "[1, 3, 3, 3, 3, 3, 3]",
+        "C": "[1, 3, 3, 5, 5, 5, 5]",
+        "D": "[1, 3, 3, 5, 7, 9, 11]"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下算法：\nnum  [1, 3, 5, 7, 9, 11]\nnum  num + [0]\n設 i 由 3 至 6\nnum[i+1]  num[i]\nnum[3]  3\n執行此算法後，num 的內容是什麼？\nA. [1, 3, 5, 7, 9, 11, 0]\nB. [1, 3, 3, 3, 3, 3, 3]\nC. [1, 3, 3, 5, 5, 5, 5]\nD. [1, 3, 3, 5, 7, 9, 11]",
+      "concepts": [
+        "D-ch3",
+        "算法"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A024C",
+      "bank_code": "SSICTD0103_01A024C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "N 是一個陣列，而 N[1]、N[2]、N[3]、N[4] 和 N[5] 的起始值分別為 2、3、6、4 和 8。\n執行此算法一次後，陣列 N 中儲存的最大值是什麼？",
+      "options": {
+        "A": "6",
+        "B": "8",
+        "C": "9",
+        "D": "12"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "N 是一個陣列，而 N[1]、N[2]、N[3]、N[4] 和 N[5] 的起始值分別為 2、3、6、4 和 8。\n執行此算法一次後，陣列 N 中儲存的最大值是什麼？\nA. 6\nB. 8\nC. 9\nD. 12",
+      "concepts": [
+        "D-ch3",
+        "算法"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0103_01A025C",
+      "bank_code": "SSICTD0103_01A025C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "N 是一個陣列，而 N[1]、N[2]、N[3]、N[4] 和 N[5] 的起始值分別為 2、3、6、4 和 8。\nc 的輸出值是多少？",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "5",
+        "D": "7"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "N 是一個陣列，而 N[1]、N[2]、N[3]、N[4] 和 N[5] 的起始值分別為 2、3、6、4 和 8。\nc 的輸出值是多少？\nA. 1\nB. 3\nC. 5\nD. 7",
+      "concepts": [
+        "D-ch3",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0103_01B026C",
+      "bank_code": "SSICTD0103_01B026C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\nP  0\n設 k 由 1 至 5\n如果 A[k] = 3 則\nP  3 - P\n輸出 P\n如果以下是陣列 A 各項目的起始值，以上算法的輸出是什麼？\nA[1]\nA[2]\nA[3]\nA[4]\nA[5]\n2\n3\n3\n1\n5",
+      "options": {
+        "A": "03000",
+        "B": "03300",
+        "C": "03330",
+        "D": "30003"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下算法：\nP  0\n設 k 由 1 至 5\n如果 A[k] = 3 則\nP  3 - P\n輸出 P\n如果以下是陣列 A 各項目的起始值，以上算法的輸出是什麼？\nA[1]\nA[2]\nA[3]\nA[4]\nA[5]\n2\n3\n3\n1\n5\nA. 03000\nB. 03300\nC. 03330\nD. 30003",
+      "concepts": [
+        "D-ch3",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_01A027C",
+      "bank_code": "SSICTD0103_01A027C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "報名參加暑期交流計劃的學生可以列出 1 至 3 間有意就讀的院校。以下算法檢查申請人所列出有意就讀的院校數目是否在容許範圍之內：\n輸入 choices\n如果 choices >= 1 OR choices <= 3 則\n輸出 \"Proceed.\"\n否則\n輸出 \"You should choose 1 to 3 preferred institutions.\"\n由於條件錯誤，算法不能達到其目的。算法應改為使用以下哪項條件？",
+      "options": {
+        "A": "choices > 1 OR choices < 3",
+        "B": "choices < 1 OR choices > 3",
+        "C": "choices >= 1 AND choices <= 3",
+        "D": "choices > 1 AND choices < 3"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "報名參加暑期交流計劃的學生可以列出 1 至 3 間有意就讀的院校。以下算法檢查申請人所列出有意就讀的院校數目是否在容許範圍之內：\n輸入 choices\n如果 choices >= 1 OR choices <= 3 則\n輸出 \"Proceed.\"\n否則\n輸出 \"You should choose 1 to 3 preferred institutions.\"\n由於條件錯誤，算法不能達到其目的。算法應改為使用以下哪項條件？\nA. choices > 1 OR choices < 3\nB. choices < 1 OR choices > 3\nC. choices >= 1 AND choices <= 3\nD. choices > 1 AND choices < 3",
+      "concepts": [
+        "D-ch3",
+        "除錯",
+        "算法",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_03A001C",
+      "bank_code": "SSICTD0103_03A001C",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\nX  10\nY  20\nk  0\n重複\nX  X + Y\n輸出 X\nk  k + 1\nY  Y + 15\n輸出 Y\n直至 X >= 100",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 30 35 65 50 115 65\n(b) 3, 點算迭代次數。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "此算法的輸出是什麼？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "k的最終值是什麼？它的作用是什麼？（2 分）"
+        }
+      ],
+      "text": "細閱以下算法：\nX  10\nY  20\nk  0\n重複\nX  X + Y\n輸出 X\nk  k + 1\nY  Y + 15\n輸出 Y\n直至 X >= 100\n(a) 此算法的輸出是什麼？（1 分）\n(b) k的最終值是什麼？它的作用是什麼？（2 分）\n(a) 30 35 65 50 115 65\n(b) 3, 點算迭代次數。",
+      "concepts": [
+        "D-ch3",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_03A002C",
+      "bank_code": "SSICTD0103_03A002C",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "家明設計了一個算法，以加密陣列 X 中儲存的整數。算法如下：\n設 i 由 1 至 5\nP  True\n如果 X[i] < 0 則\nP  False\n如果 P = False 則\nX[i]  X[i] * (-1)",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\nX[1]\nX[2]\nX[3]\nX[4]\nX[5]\n2\n3\n1\n8\n5\n(b) 將陣列中的負數變成正數。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "陣列 X 的起始內容如下：\nX[1]\nX[2]\nX[3]\nX[4]\nX[5]\n-2\n3\n-1\n8\n5\n執行此算法一次後，陣列 X 的內容是什麼？（2 分）\nX[1]\nX[2]\nX[3]\nX[4]\nX[5]"
+        },
+        {
+          "label": "b",
+          "marks": 1.0,
+          "text": "此算法的目的是什麼？（1 分）"
+        }
+      ],
+      "text": "家明設計了一個算法，以加密陣列 X 中儲存的整數。算法如下：\n設 i 由 1 至 5\nP  True\n如果 X[i] < 0 則\nP  False\n如果 P = False 則\nX[i]  X[i] * (-1)\n(a) 陣列 X 的起始內容如下：\nX[1]\nX[2]\nX[3]\nX[4]\nX[5]\n-2\n3\n-1\n8\n5\n執行此算法一次後，陣列 X 的內容是什麼？（2 分）\nX[1]\nX[2]\nX[3]\nX[4]\nX[5]\n(b) 此算法的目的是什麼？（1 分）\n(a)\nX[1]\nX[2]\nX[3]\nX[4]\nX[5]\n2\n3\n1\n8\n5\n(b) 將陣列中的負數變成正數。",
+      "concepts": [
+        "D-ch3",
+        "算法",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_03A003C",
+      "bank_code": "SSICTD0103_03A003C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "陣列 price 儲存了七份旅遊套票的價錢：\nprice\n5000\n5500\n6000\n7200\n8100\n8800\n9200\n索引\n1\n2\n3\n4\n5\n6\n7\n試完成以下算法，檢查陣列 price 中的值是否由小至大排列。（4 分）\nprice  [5000, 5500, 6000, 7200, 8100, 8800, 9200]\nsorted_list  __________\n設 i 由 __________\n如果 ____________________ 則\nsorted_list  __________\n輸出 sorted_list",
+      "options": {},
+      "answer": null,
+      "answer_text": "True\n1 至 6\nprice[i] > price[i+1]\nFalse",
+      "parts": [],
+      "text": "陣列 price 儲存了七份旅遊套票的價錢：\nprice\n5000\n5500\n6000\n7200\n8100\n8800\n9200\n索引\n1\n2\n3\n4\n5\n6\n7\n試完成以下算法，檢查陣列 price 中的值是否由小至大排列。（4 分）\nprice  [5000, 5500, 6000, 7200, 8100, 8800, 9200]\nsorted_list  __________\n設 i 由 __________\n如果 ____________________ 則\nsorted_list  __________\n輸出 sorted_list\nTrue\n1 至 6\nprice[i] > price[i+1]\nFalse",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "排序",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_03A004C",
+      "bank_code": "SSICTD0103_03A004C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "陣列 A 儲存了 10 個數字，如下所示：\nA[0]\nA[1]\nA[2]\nA[3]\nA[4]\nA[5]\nA[6]\nA[7]\nA[8]\nA[9]\n0\n15\n10\n22\n30\n35\n-15\n-20\n15\n25\n以下算法在此陣列上運行：\nm  A[0]\n設 i 由 1 至 9\n如果 A[i] < m 則\nm  A[i]\n輸出 m",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) -20\n(b) 輸出陣列中最小的值。\n(c) 由於 m 的初始值是 A[0]，當 i = 0，條件判斷「A[i] < m」是無用的，因為其結果必然為 False。\n(d) 35",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "算法會輸出什麼？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 1.0,
+          "text": "算法的目的是什麼？（1 分）"
+        },
+        {
+          "label": "c",
+          "marks": 1.0,
+          "text": "為什麼 for 循環由「i = 1」開始？（1分）"
+        },
+        {
+          "label": "d",
+          "marks": 1.0,
+          "text": "如果第 3 行的條件改為「A[i] > m」，算法會輸出什麼？（1 分）"
+        }
+      ],
+      "text": "陣列 A 儲存了 10 個數字，如下所示：\nA[0]\nA[1]\nA[2]\nA[3]\nA[4]\nA[5]\nA[6]\nA[7]\nA[8]\nA[9]\n0\n15\n10\n22\n30\n35\n-15\n-20\n15\n25\n以下算法在此陣列上運行：\nm  A[0]\n設 i 由 1 至 9\n如果 A[i] < m 則\nm  A[i]\n輸出 m\n(a) 算法會輸出什麼？（1 分）\n(b) 算法的目的是什麼？（1 分）\n(c) 為什麼 for 循環由「i = 1」開始？（1分）\n(d) 如果第 3 行的條件改為「A[i] > m」，算法會輸出什麼？（1 分）\n(a) -20\n(b) 輸出陣列中最小的值。\n(c) 由於 m 的初始值是 A[0]，當 i = 0，條件判斷「A[i] < m」是無用的，因為其結果必然為 False。\n(d) 35",
+      "concepts": [
+        "D-ch3",
+        "循環",
+        "算法",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_03A005C",
+      "bank_code": "SSICTD0103_03A005C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "陣列 weight 記錄 30 名學生的體重。以下算法用以計算這些學生的平均體重：\n行號  偽代碼\n1    i  1\n2    total  0\n3    當 i <= 30\n4        total  total + weight[i]\n5        i  i - 1\n6    avg  total / 30\n7    輸出 avg",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 不能。由於 i 的值不斷減少，算法落入無限循環。\n(b) 第 5 行應改為「i  i + 1」。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "此算法能達到其目的嗎？為什麼？（2 分）"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "此算法可如何修改？（2 分）"
+        }
+      ],
+      "text": "陣列 weight 記錄 30 名學生的體重。以下算法用以計算這些學生的平均體重：\n行號  偽代碼\n1    i  1\n2    total  0\n3    當 i <= 30\n4        total  total + weight[i]\n5        i  i - 1\n6    avg  total / 30\n7    輸出 avg\n(a) 此算法能達到其目的嗎？為什麼？（2 分）\n(b) 此算法可如何修改？（2 分）\n(a) 不能。由於 i 的值不斷減少，算法落入無限循環。\n(b) 第 5 行應改為「i  i + 1」。",
+      "concepts": [
+        "D-ch3",
+        "循環",
+        "算法",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0103_04B001C",
+      "bank_code": "SSICTD0103_04B001C",
+      "section_type": "long_answer",
+      "marks": 9.0,
+      "year_tag": null,
+      "stem": "張先生是某公司的採購經理。他將九間製造商所供應原材料的價格記錄在陣列 price。\nprice\n1000\n800\n1250\n1300\n1550\n1600\n2000\n1700\n950\n索引\n1\n2\n3\n4\n5\n6\n7\n8\n9",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)(i)\n1\n8\nprice[i] < price[i+1]\n(a)(ii) False\n(a)(iii) 將第 3 行的條件改為「price[i] > price[i+1]」。\n(b)(i) 找出大於輸入值的項目之位置及這（些）項目的總數。\n(b)(ii) 儲存大於輸入值的項目數量。\n(b)(iii) 5 6 7 8 4",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "張先生設計了以下算法，檢查陣列是否由大至小順序排列。"
+        },
+        {
+          "label": "i",
+          "marks": 3.0,
+          "text": "試完成此算法的偽代碼。（3 分）\n行號  偽代碼\n1    sorted_list  True\n2    設 i 由 _____ 至 _____\n3        如果 ______________________________ 則\n4            sorted_list  False\n5    輸出 sorted_list"
+        },
+        {
+          "label": "ii",
+          "marks": 1.0,
+          "text": "以上算法的預期輸出是什麼？（1 分）"
+        },
+        {
+          "label": "iii",
+          "marks": 1.0,
+          "text": "如果張先生想改為檢查陣列是否由小至大順序排列，可如何修改算法？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "張先生再編寫了另一個算法：\n輸入 num\nresult  False\nloc  -1\nk  0\n設 i 由 1 至 9\n如果 price[i] > num 則\nresult  True\nloc  i\n輸出 loc\nk  k + 1\n輸出 k\n如果 loc = -1 則\n輸出 \"Not found\""
+        },
+        {
+          "label": "i",
+          "marks": 2.0,
+          "text": "此算法的目的是什麼？（2 分）"
+        },
+        {
+          "label": "ii",
+          "marks": 1.0,
+          "text": "變量 k 的功能是什麼？（1 分）"
+        },
+        {
+          "label": "iii",
+          "marks": 1.0,
+          "text": "如果輸入是「1500」，算法會輸出什麼？（1 分）"
+        }
+      ],
+      "text": "張先生是某公司的採購經理。他將九間製造商所供應原材料的價格記錄在陣列 price。\nprice\n1000\n800\n1250\n1300\n1550\n1600\n2000\n1700\n950\n索引\n1\n2\n3\n4\n5\n6\n7\n8\n9\n(a) 張先生設計了以下算法，檢查陣列是否由大至小順序排列。\n(i) 試完成此算法的偽代碼。（3 分）\n行號  偽代碼\n1    sorted_list  True\n2    設 i 由 _____ 至 _____\n3        如果 ______________________________ 則\n4            sorted_list  False\n5    輸出 sorted_list\n(ii) 以上算法的預期輸出是什麼？（1 分）\n(iii) 如果張先生想改為檢查陣列是否由小至大順序排列，可如何修改算法？（1 分）\n(b) 張先生再編寫了另一個算法：\n輸入 num\nresult  False\nloc  -1\nk  0\n設 i 由 1 至 9\n如果 price[i] > num 則\nresult  True\nloc  i\n輸出 loc\nk  k + 1\n輸出 k\n如果 loc = -1 則\n輸出 \"Not found\"\n(i) 此算法的目的是什麼？（2 分）\n(ii) 變量 k 的功能是什麼？（1 分）\n(iii) 如果輸入是「1500」，算法會輸出什麼？（1 分）\n(a)(i)\n1\n8\nprice[i] < price[i+1]\n(a)(ii) False\n(a)(iii) 將第 3 行的條件改為「price[i] > price[i+1]」。\n(b)(i) 找出大於輸入值的項目之位置及這（些）項目的總數。\n(b)(ii) 儲存大於輸入值的項目數量。\n(b)(iii) 5 6 7 8 4",
+      "concepts": [
+        "D-ch3",
+        "列表",
+        "算法",
+        "排序",
+        "資訊處理",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTD0103_04A002C",
+      "bank_code": "SSICTD0103_04A002C",
+      "section_type": "long_answer",
+      "marks": 10.0,
+      "year_tag": null,
+      "stem": "八間中學將會參加一個編程工作坊。主辦機構將每間學校的參加者人數記錄在陣列 participant。\nparticipant\n30\n22\n25\n19\n18\n26\n31\n28\n索引\n1\n2\n3\n4\n5\n6\n7\n8",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\n1 至 8\ntotal + participant[i]\ntotal / 8\n(b)\nS\n7\nparticipant[i]  participant [i+1]\n(c)(i) 20\n(c)(ii) 4\n(c)(iii) 不能。如果調動項目的順序倒轉了，陣列項目 5 至 8 會有相同的值。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3.0,
+          "text": "主辦機構編寫了一個算法，以計算每間學校平均有多少名參加者。試完成此算法的偽代碼。（3 分）\ntotal  0\navg  0\n設 i 由 _______________\ntotal  ____________________\navg  _______________\n輸出 total\n輸出 avg"
+        },
+        {
+          "label": "b",
+          "marks": 3.0,
+          "text": "XYZ 中學（其索引為 5）因為工作坊的時間與另一學校活動有衝突而退出。試完成此算法，刪除該校的參加者人數。（3 分）\nS  5\n設 i 由 _____ 至 _____\nparticipant[8]  0"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "承上題，另一中學想加入工作坊。主辦機構編寫了以下算法，將該校的參加者人數加入陣列：\n行號  偽代碼\n1    L  7\n2    X  20\n3    A  4\n4    L  L + 1\n5    設 i 由 L 下至 5\n6        participant[i]  participant [i-1]\n7    participant[4]  X"
+        },
+        {
+          "label": "i",
+          "marks": 1.0,
+          "text": "該校有多少學生參與工作坊？（1 分）"
+        },
+        {
+          "label": "ii",
+          "marks": 1.0,
+          "text": "該校參加者人數的陣列索引是什麼？（1 分）"
+        },
+        {
+          "label": "iii",
+          "marks": 2.0,
+          "text": "第 5 行的條件可改為「設i 由 5 至 L」嗎？為什麼？（2 分）"
+        }
+      ],
+      "text": "八間中學將會參加一個編程工作坊。主辦機構將每間學校的參加者人數記錄在陣列 participant。\nparticipant\n30\n22\n25\n19\n18\n26\n31\n28\n索引\n1\n2\n3\n4\n5\n6\n7\n8\n(a) 主辦機構編寫了一個算法，以計算每間學校平均有多少名參加者。試完成此算法的偽代碼。（3 分）\ntotal  0\navg  0\n設 i 由 _______________\ntotal  ____________________\navg  _______________\n輸出 total\n輸出 avg\n(b) XYZ 中學（其索引為 5）因為工作坊的時間與另一學校活動有衝突而退出。試完成此算法，刪除該校的參加者人數。（3 分）\nS  5\n設 i 由 _____ 至 _____\nparticipant[8]  0\n(c) 承上題，另一中學想加入工作坊。主辦機構編寫了以下算法，將該校的參加者人數加入陣列：\n行號  偽代碼\n1    L  7\n2    X  20\n3    A  4\n4    L  L + 1\n5    設 i 由 L 下至 5\n6        participant[i]  participant [i-1]\n7    participant[4]  X\n(i) 該校有多少學生參與工作坊？（1 分）\n(ii) 該校參加者人數的陣列索引是什麼？（1 分）\n(iii) 第 5 行的條件可改為「設i 由 5 至 L」嗎？為什麼？（2 分）\n(a)\n1 至 8\ntotal + participant[i]\ntotal / 8\n(b)\nS\n7\nparticipant[i]  participant [i+1]\n(c)(i) 20\n(c)(ii) 4\n(c)(iii) 不能。如果調動項目的順序倒轉了，陣列項目 5 至 8 會有相同的值。",
+      "concepts": [
+        "D-ch3",
+        "Python",
+        "列表",
+        "算法",
+        "資訊處理",
+        "網絡",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

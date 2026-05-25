@@ -271,6 +271,7 @@ Bank pick + transform；`PICK_TIME_BANK_SIM_GATE=1`、seed 進度每 5 次。
 |------|------|
 | C&A Guide | `Subjects/DSE-ICT/edb/ICT_C&A Guide_c_final.pdf` |
 | Bank | `Subjects/DSE-ICT/question-bank/` |
+| iClass depth (Core D 校準) | `Subjects/DSE-ICT/iclass-hk/` → `iclass_hk_depth.py`；spec 每題 `depth_references` |
 | Curriculum (flat) | `.../curriculum_concepts.json` |
 | Template | `Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx` |
 | Spec / generation | `Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/` |

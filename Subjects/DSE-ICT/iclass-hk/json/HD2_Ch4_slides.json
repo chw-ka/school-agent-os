@@ -1,0 +1,560 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/HD2 Ch4.pptx",
+    "slug": "HD2_Ch4_slides",
+    "title": "HD2 Ch4",
+    "series": "HD2",
+    "chapter": 4,
+    "curriculum_unit": "D-d",
+    "curriculum_part": "Core-D",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.936028+00:00",
+    "slide_count": 107,
+    "topic_tags": {
+      "除錯": 26,
+      "課本活動": 22,
+      "循環": 17,
+      "硬件": 3
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "第四課Python 編程入門"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "除錯（Hello World!）104.1Python 程式碼及錯誤信息錯誤原因"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide100.xml",
+      "text": "試完成課本第 54 頁的活動 4.7。1004.7Python輸出循環體重複次數total = 0for i in range (0, 6):\ttotal = total + i * 5\tprint(total)print(total/5)"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide101.xml",
+      "text": "試完成課本第 54 頁的活動 4.7。1014.7Python輸出循環體重複次數total = 0for i in range (0, 6):\ttotal = total + i * 5\tprint(total)print(total/5)051530507515.06"
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide102.xml",
+      "text": "試完成課本第 55 頁的測試站 4.7。 amount = float(input(\"Please input an amount: \"))star = int( amount // 10 )for i in range(0, star ):\tprint(\"*\", end = \"\") X = int(input(\"X: \"))Y = int(input(\"Y: \"))print(\"The result is: \", end = \"\")for i in range( 1, X+1 ):\tprint( Y * i , \"\", end = \"\")1024.7"
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide103.xml",
+      "text": "k = int(input())summation = 0for n in range( 1, k+1 ):\tsummation = summation + nprint(summation) n = int(input())factorial = 1for i in range( 1, n+1 ):\tfactorial = factorial * iprint(factorial)1034.7"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide104.xml",
+      "text": "while 循環104BPython 中的 while 循環：偽代碼Python當 {條件}\t{循環體}while {條件}:\t{循環體}num  17當 num < 100 \t輸出 num\tnum  num + 17num = 17while num < 100:\tprint(num)\tnum = num + 17"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide105.xml",
+      "text": "試完成課本第 58 頁的測試站 4.8。 X = int(input())Y = int(input())num = Ywhile num <= X :\tprint(num)\tnum = num + Y(a) (i) 11054.8"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide106.xml",
+      "text": "(a) (ii)(b) 找出「t 除以 d」的餘數1064.8測試td輸出1220213533373420100"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide107.xml",
+      "text": "後測循環107CPython 並沒有後測循環的語句。要達致相同效果，我們需要利用 while 循環。偽代碼Python執行\t輸入 X當 X <= 0X = input()while X <= 0:\tX = input()"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "除錯（Hello World!）114.1Python 程式碼及錯誤信息錯誤原因缺少括號"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "除錯（Hello World!）124.1Python 程式碼及錯誤信息錯誤原因"
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "除錯（Hello World!）134.1Python 程式碼及錯誤信息錯誤原因缺少引號"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "除錯（Hello World!）144.1Python 程式碼及錯誤信息錯誤原因"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "除錯（Hello World!）154.1Python 程式碼及錯誤信息錯誤原因括號必須成對。注意：引號也必須成對。"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "基礎編程概念164.2不同編程語言都擁有其獨特的「關鍵字」；但大部分編程語言都使用相近的概念。"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "變量17A在大部分的編程語言裏，運用任何變量前，都必先宣告變量的名稱和數據類型。宣告變量的名稱後，該名稱會成為它的識別符。Python 中的常見數據類型包括：Python 數據類型數據例子整數（int）整數，包括正負數288, -101浮點數（float）整數及小數，包括正負數56.5, -30.0, -0.382布爾（bool）只可能是「True」或「False」1 (True) 0 (False)字串（str）一串字符，可以包括任何字母、數字和一些特別符號。\"abc\", \"P%ssword123\",\"1\", \"k\""
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "變量18APython 運用「 = 」作為賦值運算符來將數據放入指定變量。偽代碼Python輸出length  12length = 12 print(type(length))<class ‘int’>length  12.0length = 12.0 print(type(length))<class ‘float’>"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "變量19APython 還容許變量隨時轉換成不同的數據類型。Python輸出length = 12print(length)print (type(length))length = 12.0print(length)print (type(length))length = \"The length is twelve\"print(length)print (type(length))12<class ‘int’>12.0<class ‘float’>The length is twelve<class ‘str’>"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Python 與人工智能發展Python 由荷蘭電腦程式設計師 Guido van Rossum 於 1980 年代末所創造，設計重點強調要將程式碼變得簡潔易讀，便於學習和理解 Python 亦擁有豐富的函數庫，如圖表化工具。很多全球知名的公司例如 Instagram 及 Spotify 都有把 Python 應用於其服務中。"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "變量20APython 可以使用以下內置函數改變變量所儲存的值之數據類型。函數目的Python輸出int()將輸入參數轉換成整數（int）（若輸入參數是浮點數，會將浮點數向下捨入至整數）length = \"12\" print(length) print(type(length)) length = int(length) print(length) print(type(length))12<class ‘str’>12<class ‘int’>"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "變量21A函數目的Python輸出float()Convert the input parameter to floatlength = 12 print(length) print(type(length)) length = float(length) print(length) print(type(length))12<class ‘int’>12.0<class ‘float’>"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "變量22A函數目的Python輸出str()Convert the input parameter to strlength = 12.1 print(length) print(type(length)) length = str(length) print(length) print(type(length))12.1<class ‘float’>12.1<class ‘str’>"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "除錯（Hello World!）234.2Python 程式碼及錯誤信息錯誤原因"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "除錯（Hello World!）244.2Python 程式碼及錯誤信息錯誤原因字串 length 是帶有小數的數字，不能直接轉換成整數。若須要將字串「\"12.1\"」轉換成整數，可先轉換成浮點數，再轉換成整數：length = \"12.1\"length = float(length)length = int(length)print(length)print(type(length))"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "除錯（Hello World!）254.2Python 程式碼及錯誤信息錯誤原因"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "除錯（Hello World!）264.2Python 程式碼及錯誤信息錯誤原因字串內的文字不能轉換成數字。"
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "變量27A雖然變量的數據是可被修改的，但某些值是固定的，例如 π = 3.14159。這些擁有固定數據的變量稱為常數。"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "運算算式28B除了將一個指定的值放入變量外，我們還可以將運算算式的結果儲存於變量中。偽代碼Python變量  算式變量 = 算式"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "運算算式29B運算算式由數據（數字、變量或常數）及數學運算符組成。"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "程式開發34.1在過去數課，我們學習了運用偽代碼表達算法，但其實偽代碼並非電腦能夠理解的語言。從本課開始，我們將學習運用 Python 編程語言跟電腦溝通。"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "運算算式30BPython 的數學運算符包括：算法偽代碼中的數學運算符Python 的數學運算符Python 例句變量 y 的值加法++y = 1 + 23減法--y = 5 – 23乘法* 或 ×*y = 2 * 36除法/ 或 ÷/y = 10 / 33.33333整數除法DIV//y = 10 // 33模數（Modulus）MOD%y = 10 % 31指數（Exponent）^**y = 2 ** 38"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "除錯（變量）試完成課本第 17 頁的活動 4.3。314.3Python錯誤原因“code” = 404print(“code”)SUBJECT = “ICT”print(subject)B = A + 1print(B)"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "除錯（變量）試完成課本第 17 頁的活動 4.3。324.3Python錯誤原因“code” = 404print(“code”)變量名稱不包括雙引號。SUBJECT = “ICT”print(subject)Python 區分大小寫（case-sensitive），所以 SUBJECT 和 subject是兩個不同的變量。B = A + 1print(B)使用了未被宣告的變量 A。"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "334.3Python錯誤原因import = “5**”print(import)fullname = “Peter Chan”nickname = fullname – “Chan”"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "344.3Python錯誤原因import = “5**”print(import)「import」是關鍵字，不能作為變量的名稱。fullname = “Peter Chan”nickname = fullname – “Chan”數學運算符不適用於字串數據類型。"
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "試把以下偽代碼編寫成 Python 程式碼，並寫下程式的輸出：354.4偽代碼Python輸出A  5B  9C  A + BOutput CA  3B  A + 6C  A × BOutput C"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "試把以下偽代碼編寫成 Python 程式碼，並寫下程式的輸出：364.4偽代碼Python輸出A  5B  9C  A + BOutput CA = 5B = 9C = A + Bprint(C)14A  3B  A + 6C  A × BOutput CA = 3B = A + 6C = A * Bprint(C - B)27"
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "374.4偽代碼Python輸出A  3B  2B  2 * (A + B)C  cube of BOutput C - BA  9B  A x 5Output the remainder of (A ÷ B)Output the integral part of(A ÷ B)"
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "384.4偽代碼Python輸出A  3B  2B  2 * (A + B)C  cube of BOutput C - BA = 3B = 2B = 2 * (A + B)C = B ** 3print(C - B)990A  9B  A x 5Output the remainder of (A ÷ B)Output the integral part of(A ÷ B)A = 9B = A * 5print(A % B)print(A // B)90"
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "試空運行以下 Python 程式碼，並寫下程式的輸出：394.4Python輸出a = 12b = a + 10c = b % 10a = a**cprint(a//b)print(type(a//b))"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "從偽代碼到編程語言4A以下是計算正方形面積的算法，分別運用了不同編程語言編寫。Pythonprint(\"This is to find the area of a square!\")length = input(\"Please enter a side length for a square: \")length = float(length)area = length * lengthprint(area)"
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "試空運行以下 Python 程式碼，並寫下程式的輸出：404.4Python輸出a = 12b = a + 10c = b % 10a = a**cprint(a//b)print(type(a//b))6<class ‘int’>"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "試完成課本第 20 頁的測試站 4.1。(a)(b)414.1偽代碼Pythonlength  20width  15area  length * widthOutput arealength = 20width = 15area = length * widthprint(area)偽代碼Pythonlength  35width  10perimeter  (length + width) * 2Output perimeterlength = 35width = 10perimeter = (length + width) * 2print( perimeter )"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "試完成課本第 20 頁的測試站 4.1。(c)(d)424.1偽代碼PythonPI  3.14r  5area  PI * r * rOutput areaPI = 3.14r = 5area = PI * r * rprint( area )偽代碼Pythona  13b  26h  5area  ((a + b) * h) / 2Output areaa = 13b = 26h = 5area = ((a + b) * h) / 2print(area)"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "輸出及輸入語句43CPython 中，print() 函數把括號中的內容列印出來。列印的內容可以是字串、變量或表示式：輸入參數目的例句輸出字串顯示引號內的所有字符print(“Text”)Text變量將變量的值列印出來length = 10print(length)10表示式將輸入參數順序列印出來，以「 , 」分隔各種不同類型的數據或算式，在列印時會自動加入空白格。name = \"Sam\"print(\"Hi\", name)Hi Sam"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "試完成課本第 22 頁至第 23 頁的實驗站 4.2。444.2Python輸出name = \"David\"mark = 89print(\"Hi\", name)print(\"Your mark is\", mark)name = \"David\"mark = 89print(\"Hi\", name, \"your mark is\", mark)"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "試完成課本第 22 頁至第 23 頁的實驗站 4.2。454.2Python輸出name = \"David\"mark = 89print(\"Hi\", name)print(\"Your mark is\", mark)Hi DavidYour mark is 89name = \"David\"mark = 89print(\"Hi\", name, \"your mark is\", mark)Hi David your mark is 89"
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "464.2Python輸出print(\"print something \\\"special\\\"\")name = \"Sam\"print(\"Hi\")print(name)print(\"Bye\")name = \"Sam\"print(\"Hi\", end=\"\")print(name, end=\"\")print(\"Bye\")"
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "474.2Python輸出print(\"print something \\\"special\\\"\")print something “special”name = \"Sam\"print(\"Hi\")print(name)print(\"Bye\")HiSamByename = \"Sam\"print(\"Hi\", end=\"\")print(name, end=\"\")print(\"Bye\")HiSamBye"
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "輸出及輸入語句48C程式很多時候需要用家自行輸入變量的值。Python 透過 input() 函數所取得的輸入數據都會以字串的數據類型儲存於變量。偽代碼PythonInput lengthlength = input()"
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "試完成課本第 25 頁的測試站 4.3。494.3Python輸出length = input()print(type(length))length = int(input())print(type(length))width = float(input())print(type(width))"
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "從偽代碼到編程語言5A以下是計算正方形面積的算法，分別運用了不同編程語言編寫。C++#include <iostream>using namespace std;int main() { float area, length; cout << \"This is to find the area of a square!\" << endl; cout << \"Please enter a side length for a square: \"; cin >> length; area = length * length; cout << area;}"
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "試完成課本第 25 頁的測試站 4.3。50Python輸出length = input()print(type(length))20<class ‘str’>length = int(input())print(type(length))20<class ‘int’>width = float(input())print(type(width))15<class ‘float’>"
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "514.3Python輸出length = int(input())width = float(input())area = length * widthprint(area)print(type(area))A = input()B = input()sum = A + Bprint(sum)print(type(sum))"
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "524.3Python輸出length = int(input())width = float(input())area = length * widthprint(area)print(type(area))2015300.0<class ‘float’>A = input()B = input()sum = A + Bprint(sum)print(type(sum))1111<class ‘str’>"
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "除錯（輸入）試指出導致以下程式無法運行的原因。534.5Python錯誤原因mark = int(input()print(mark)mark1 = input()mark2 = input()avg_mark = (mark1 + mark2) / 2print(avg_mark)"
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "除錯（輸入）試指出導致以下程式無法運行的原因。544.5Python錯誤原因mark = int(input()print(mark)括號必須成對。mark1 = input()mark2 = input()avg_mark = (mark1 + mark2) / 2print(avg_mark)數學運算符不適用於字串數據類型。"
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "試完成課本第 27 頁的測試站 4.2。 d = float(input(\"Please enter the diameter of the cylinder: \"))h = float(input(\"Please enter the height of the cylinder: \"))PI = 3.14vol = PI * ((d/2)**2) * harea = 2 * PI * (d/2) * h + 2 * PI * (d/2)**2print(\"The volume of the cylinder is:\", vol)print(\"The surface area of the cylinder is:\", area) 554.2"
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "564.2 name = input(\"Please enter your name: \")test1 = float(input(\"Please enter the first test result: \"))test2 = float(input(\"Please enter the second test result: \"))exam = float(input(\"Please enter the exam result: \"))TEST1_WEIGHT = 0.2TEST2_WEIGHT = 0.3EXAM_WEIGHT = 0.5overall = test1*TEST1_WEIGHT + test2*TEST2_WEIGHT + exam*EXAM_WEIGHTprint(name , end = \"\")print(\", your overall result of ICT is:\", overall )"
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "print(\"This is a BMI Calculator!\")height = float(input(\"Please enter your height in meters: \"))weight = float(input(\"Please enter your weight in kg: \"))bmi = weight / (height**2)print(\"Your BMI is\", bmi) time = int(input(\"Input the number of seconds: \"))minutes = time // 60seconds = time % 60print(\"Your record is\", minutes, \"minute(s) and\", seconds, \"second(s).\")574.2"
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "函數58DPython 有很多內置函數，能夠為用家提供經常使用的功能。print(), input(), type(), int()便是 Python 內置函數的例子。以下再介紹一些常用的內置函數：內置函數描述例句變量 y 的值abs(x)傳回數字 x 的絕對值y = abs(-10) y = abs(20)1020round(x, y)將數字 x 四捨五入到 y 位小數y = round(10/3, 2) y = round(10/3, 5)3.333.33333"
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "函數59D如果需要使用額外的功能，我們需要匯入函數庫。將函數庫匯入到程式中便能使用那些額外的函數。以下介紹一些「math」函數庫內的數學函數：數學函數描述例句變量 y 的值sqrt(x)計算 x 的平方根import mathy = math.sqrt(16)4.0sin(x) 計算 x radian 的正弦值（sine）import mathy = math.sin(x)0.89399666360…"
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Python 整合開發環境6B我們可以運用整合開發環境（Integrated DevelopmentEnvironment，IDE）開始編寫 Python 程式。IDE 是一種應用程式，通常附有程式碼編輯器，並提供不少與編程相關的功能。"
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "試完成課本第 31 頁的測試站 4.3。 import matha = float(input(\"One side of right triangle: \"))b = float(input(\"Another side of right triangle: \"))c = math.sqrt(a**2 + b**2)print(\"The length of hypotenuse side is\", c)604.3"
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "函數61D以下介紹一些「random」函數庫內的隨機函數：隨機函數描述例句變量 y 的值random()傳回一個範圍由 0 至 1（不包括 1）的隨機浮點數。import randomy = random.random()0 <= y < 1uniform(a, b)傳回一個範圍由 a 至 b（不包括 b）的隨機浮點數。import randomy = random.uniform(1, 10)1 <= y < 10randint(a, b)傳回一個範圍由 a 至 b 的隨機整數。 import randomy = random.randint(1, 10)1 <= y <= 10"
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "傑克運用偽代碼設計了一個「攪珠機」的算法，試將以下的偽代碼轉換成 Python 程式碼。624.4偽代碼DrawNumber  a random integer between 1 and 100 inclusiveOutput DrawNumberPython"
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "傑克運用偽代碼設計了一個「攪珠機」的算法，試將以下的偽代碼轉換成 Python 程式碼。634.4偽代碼DrawNumber  a random integer between 1 and 100 inclusiveOutput DrawNumberPythonimport randomDrawNumber = random.randint(1, 100)print(DrawNumber)"
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "選擇644.3選擇控制結構讓程式根據指定的條件，在對分或多向選擇中作出決定。"
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "布爾算式65A以下是 Python 中的布爾算式。偽代碼中的關係運算符Python 的關係運算符意義Python 的布爾算式輸入 mark 為 50 的邏輯結果===等於mark == 50True<<小於mark < 50False≤ 或 <=<=小於或等於mark <= 50True>>大於mark > 50False≥ 或 >=>=大於或等於mark >= 50True≠ 或 != 或 <>!=不相等mark != 50False"
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "對分選擇66BPython 中的「如果…則」條件語句：偽代碼Python如果 {條件（布爾算式）} 則\t{「則」部分}if {條件（布爾算式）}:\t{「則」部分}mark  70如果 mark >= 50 則\tgrade  “及格\"輸出 grademark = 70if mark >= 50:\tgrade = \"Pass\"print(grade)"
+    },
+    {
+      "slide_index": 72,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "對分選擇67BPython 中的「如果…則…否則」條件語句：偽代碼Python如果 {條件} 則\t{「則」部分}否則\t{「否則」部分}if {條件}:\t{「則」 body}else:\t{「否則」部分}mark  70如果 mark >= 50 則\tgrade  \"Pass\"否則\tgrade  \"Fail\"輸出 grademark = 70if mark >= 50:\tgrade = \"Pass\"else:\tgrade = \"Fail\"print(grade)"
+    },
+    {
+      "slide_index": 73,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "除錯（條件語句）試指出導致以下程式無法運行或出現錯誤結果的原因。684.6Python錯誤原因mark = 70if mark >= 50\tprint(\"Pass\")mark = 100if mark = 100:\tprint(\"Congratulation!\")"
+    },
+    {
+      "slide_index": 74,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "除錯（條件語句）試指出導致以下程式無法運行或出現錯誤結果的原因。694.6Python錯誤原因mark = 70if mark >= 50\tprint(\"Pass\")條件後應有冒號「:」。mark = 100if mark = 100:\tprint(\"Congratulation!\")條件應使用關係運算符「==」而非賦值運算符「=」。"
+    },
+    {
+      "slide_index": 75,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "從 Hello World! 開始理解 Python7C「Hello World」是一個最基本、最簡單的入門程式。其唯一目的是顯示文字「Hello World!」。"
+    },
+    {
+      "slide_index": 76,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "704.6Python錯誤原因mark = 70if mark >= 50:print(\"Pass\")else:\tprint(\"Fail\")"
+    },
+    {
+      "slide_index": 77,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "714.6Python錯誤原因mark = 70if mark >= 50:print(\"Pass\")else:\tprint(\"Fail\")「print(\"Pass\")」前應加入縮排。"
+    },
+    {
+      "slide_index": 78,
+      "slide_part": "ppt/slides/slide72.xml",
+      "text": "724.6Python錯誤原因mark = 70if mark >= 50:\tprint(\"Pass\")else:print(\"Fail\")mark = 70if mark >= 50:\tprint(\"Pass\")else:\tprint(\"Work hard next time\")print(\"Fail\")"
+    },
+    {
+      "slide_index": 79,
+      "slide_part": "ppt/slides/slide73.xml",
+      "text": "734.6Python錯誤原因mark = 70if mark >= 50:\tprint(\"Pass\")else:print(\"Fail\")「print(\"Fail\")」前應加入縮排。mark = 70if mark >= 50:\tprint(\"Pass\")else:\tprint(\"Work hard next time\")print(\"Fail\")程式輸出 Pass 和 Fail。程式雖然能成功執行，但執行的結果不似預期。「print(\"Fail\")」應屬於「否則部分」，所以前面應加入縮排。"
+    },
+    {
+      "slide_index": 80,
+      "slide_part": "ppt/slides/slide74.xml",
+      "text": "744.6Python錯誤原因name = \"Jenny\"mark = 70if mark == 100:\tmessage = \"You got full marks!\"print(name, message)name = \"Jenny\"mark = 70if mark >= 50:\tmessage = \"You are passed\"else:\tmessage = \"You are failed\"print(name)\tprint(\"You got\", mark, \"mark(s)\")print(message)"
+    },
+    {
+      "slide_index": 81,
+      "slide_part": "ppt/slides/slide75.xml",
+      "text": "754.6Python錯誤原因name = \"Jenny\"mark = 70if mark == 100:\tmessage = \"You got full marks!\"print(name, message)由於條件算式的判斷結果為「假」，「則」部分便會被忽略。當輸出變量 message 時，它是一個未被宣告的變量。name = \"Jenny\"mark = 70if mark >= 50:\tmessage = \"You are passed\"else:\tmessage = \"You are failed\"print(name)\tprint(\"You got\", mark, \"mark(s)\")print(message)不能隨便加入縮排。「print(\"You got\", mark, \"mark(s)\")」前應移除縮排。"
+    },
+    {
+      "slide_index": 82,
+      "slide_part": "ppt/slides/slide76.xml",
+      "text": "一心經常到不同的商店比較貨品的價錢，她會抄下同一商品在三間不同商舖的價錢。試以 Python 編寫程式，讓她輸入三個價錢後，協助她找出哪間商舖的價錢最低。以下是這個 Python 程式的輸出範例，粗體文字代表用家的輸入：764.2Price of shop A: 10Price of shop B: 8.9Price of shop C: 9.9The lowest price is 8.9Price of shop A: 89.9Price of shop B: 99.9Price of shop C: 59.9The lowest price is 59.9"
+    },
+    {
+      "slide_index": 83,
+      "slide_part": "ppt/slides/slide77.xml",
+      "text": "分析這個程式的目的是找出三個數字中最小的值。假設價錢 A 是$10、價錢 B 是$8.9和價錢 C 是$9.9，以下的圖像解釋算法如何將所有價錢逐一比較，然後找出最低價：假設第一個價錢是最低的，把它與第二個價錢比較。774.2最低價挑戰者哪個價錢較低？$10$8.9$8.9"
+    },
+    {
+      "slide_index": 84,
+      "slide_part": "ppt/slides/slide78.xml",
+      "text": "分析把上一個步驟價錢較低的留下來，與第三個價錢比較，最後留下來的便是最低。784.2最低價挑戰者哪個價錢較低？$8.9$9.9$8.9"
+    },
+    {
+      "slide_index": 85,
+      "slide_part": "ppt/slides/slide79.xml",
+      "text": "答案a = float(input(\"Price of shop A: \"))b = float(input(\"Price of shop B: \"))c = float(input(\"Price of shop C: \"))if a < b:\tmin = aelse:\tmin = bif c < min:\tmin = cprint(\"The lowest price is\", min)794.2"
+    },
+    {
+      "slide_index": 86,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "除錯（Hello World!）84.1Python 程式碼及錯誤信息錯誤原因"
+    },
+    {
+      "slide_index": 87,
+      "slide_part": "ppt/slides/slide80.xml",
+      "text": "想像如何顯示最低價格是哪間商舖？增加多一個變量 shop 以儲存商舖名稱如何找出四個數字中最小的值？if a < b:\tmin = aelse:\tmin = bif c < min:\tmin = cif d < min:\tmin = d804.2"
+    },
+    {
+      "slide_index": 88,
+      "slide_part": "ppt/slides/slide81.xml",
+      "text": "試完成課本第 40 頁的測試站 4.5。(a) (b) (i)814.5行號程式碼5X = Y6Y = tempXY輸出165927-516-3-1073-58-20-713"
+    },
+    {
+      "slide_index": 89,
+      "slide_part": "ppt/slides/slide82.xml",
+      "text": "(b) (ii) 找出兩個數字之間的差(c) 824.5行號程式碼1X = int(input()):2Y = int(input())3if Y > X:4\tprint( Y-X )5else:6\tprint( X-Y )"
+    },
+    {
+      "slide_index": 90,
+      "slide_part": "ppt/slides/slide83.xml",
+      "text": "多向選擇83CPython 中的「如果…否則如果…」條件語句：偽代碼Python如果 {條件 1} 則\t{「則」部分 1}否則如果 {條件 2} 則\t{「則」部分 2}否則如果 {條件 3} 則\t{「則」部分 3}否則\t{「否則」部分}if {條件 1} :\t{「則」部分 1}elif {條件 2} :\t{「則」部分 2}elif {條件 3} :\t{「則」部分 3}else:\t{「否則」部分}"
+    },
+    {
+      "slide_index": 91,
+      "slide_part": "ppt/slides/slide84.xml",
+      "text": "多向選擇84CPython 中的「如果…否則如果…」條件語句：偽代碼Pythonmark  70如果 mark >= 85 則\tgrade  \"A\"否則如果 mark >= 50 則\tgrade  \"B\"否則\tgrade  \"F\"輸出 grademark = 70if mark >= 85:\tgrade = \"A\"elif mark >= 50:\tgrade = \"B\"else:\tgrade = \"F\"print(grade)"
+    },
+    {
+      "slide_index": 92,
+      "slide_part": "ppt/slides/slide85.xml",
+      "text": "大學學士學位的榮譽等級是根據畢業平均分數 / 績點（GGPA）分類的：何小姐是大學某學院的文員，試協助她編寫程式，用以尋找輸入的分數對應之榮譽等級。以Python 編寫程式，假設輸入之分數必定在 1.00 至 4.30 的範圍內。854.3榮譽等級畢業平均分數範圍一級榮譽3.60 – 4.30二級榮譽（甲等）3.00 – 3.59二級榮譽（乙等）2.40 – 2.99三級榮譽1.70 – 2.39合格1.00 – 1.69"
+    },
+    {
+      "slide_index": 93,
+      "slide_part": "ppt/slides/slide86.xml",
+      "text": "分析試辨認所有條件和條件判斷的順序：864.3條件 1GGPA >= 3.60條件 2GGPA >= 3.00條件 3GGPA >= 2.40條件 4GGPA >= 1.70否則"
+    },
+    {
+      "slide_index": 94,
+      "slide_part": "ppt/slides/slide87.xml",
+      "text": "答案ggpa = float(input())if ggpa >= 3.60:\tresult = \"First Class Honours“elif ggpa >= 3.00:\tresult = \"Second Class Honours (Division One)“elif ggpa >= 2.40:\tresult = \"Second Class Honours (Division Two)“elif ggpa >= 1.70:\tresult = \"Third Class Honours“else:\tresult = \"Pass“print(result)874.3"
+    },
+    {
+      "slide_index": 95,
+      "slide_part": "ppt/slides/slide88.xml",
+      "text": "試完成課本第 46 頁的測試站 4.6。 if bmi < 18.5:\tprint( \"Underweight\" )elif bmi <= 22.9 :\tprint( \"Normal weight\" )elif bmi <= 24.9 :\tprint( \"Overweight\" )else:\tprint(\"Obesity\")884.6"
+    },
+    {
+      "slide_index": 96,
+      "slide_part": "ppt/slides/slide89.xml",
+      "text": "num = int(input(\"Please input your class number: \"))group = num % 4if group == 1:\tprint(\"You are in group RED \")elif group == 2:\tprint(\"You are in group ORANGE\")elif group == 3:\tprint(\"You are in group GREEN\")else:\tprint(\"You are in group BLUE\")894.6"
+    },
+    {
+      "slide_index": 97,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "除錯（Hello World!）94.1Python 程式碼及錯誤信息錯誤原因Python 是區分大小寫的（case sensitive），所以「Print」和「print」於Python 中並不相通。注意：print()只會將引號中的文字列印出來，當中的內容是什麼並不影響程式運行。"
+    },
+    {
+      "slide_index": 98,
+      "slide_part": "ppt/slides/slide90.xml",
+      "text": "布爾邏輯90DPython 中的布爾邏輯：Python 的布爾運算符意義例子and及(A == 1) and (B > 2)or或(A == 1) or (B > 2)not不成立not (A == 1)"
+    },
+    {
+      "slide_index": 99,
+      "slide_part": "ppt/slides/slide91.xml",
+      "text": "迭代914.4迭代控制結構，又稱為循環控制結構。"
+    },
+    {
+      "slide_index": 100,
+      "slide_part": "ppt/slides/slide92.xml",
+      "text": "for 循環92APython 中的 for 循環：偽代碼設 {變量} 由 {起始值} 至 {最終值}\t{循環體}Pythonfor {變量} in range ( {起始值}, {最終值+1} ):\t{循環體}"
+    },
+    {
+      "slide_index": 101,
+      "slide_part": "ppt/slides/slide93.xml",
+      "text": "for 循環93Arange() 函數傳回一系列的數字作為循環變量的值。range() 函數解釋例句包含數列range(end)從 0 開始每次遞增 1，直至 end（但不包括 end）range(4)0, 1, 2, 3range(start, end)從 start 開始每次遞增 1，直至 end（但不包括 end）range(2, 5)2, 3, 4range(start, end, increment)從 start 開始每次遞增 increment，直至 end（但不包括 end）range(2, 10, 3)2, 5, 8range(8, 2, -3)8, 5"
+    },
+    {
+      "slide_index": 102,
+      "slide_part": "ppt/slides/slide94.xml",
+      "text": "試完成課本第 54 頁的活動 4.7。944.7Python輸出循環體重複次數for i in range(1, 4):\tprint(i)1233for k in range(0, 7): \tprint(k)"
+    },
+    {
+      "slide_index": 103,
+      "slide_part": "ppt/slides/slide95.xml",
+      "text": "試完成課本第 54 頁的活動 4.7。954.7Python輸出循環體重複次數for i in range(1, 4):\tprint(i)1233for k in range(0, 7): \tprint(k)01234567"
+    },
+    {
+      "slide_index": 104,
+      "slide_part": "ppt/slides/slide96.xml",
+      "text": "試完成課本第 54 頁的活動 4.7。964.7Python輸出循環體重複次數for i in range(3, 6): \tprint(i)for i in range(5): \tprint(i * 2)"
+    },
+    {
+      "slide_index": 105,
+      "slide_part": "ppt/slides/slide97.xml",
+      "text": "試完成課本第 54 頁的活動 4.7。974.7Python輸出循環體重複次數for i in range(3, 6): \tprint(i)3453for i in range(5): \tprint(i * 2)024685"
+    },
+    {
+      "slide_index": 106,
+      "slide_part": "ppt/slides/slide98.xml",
+      "text": "試完成課本第 54 頁的活動 4.7。984.7Python輸出循環體重複次數for k in range(5, 0, -1):\tprint(k)5for i in range(5, -1, -1):\tprint(i)"
+    },
+    {
+      "slide_index": 107,
+      "slide_part": "ppt/slides/slide99.xml",
+      "text": "試完成課本第 54 頁的活動 4.7。994.7Python輸出循環體重複次數for k in range(5, 0, -1):\tprint(k)5432155for i in range(5, -1, -1):\tprint(i)5432106"
+    }
+  ]
+}

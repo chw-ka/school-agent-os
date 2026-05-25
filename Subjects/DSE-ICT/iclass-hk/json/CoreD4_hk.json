@@ -1,0 +1,768 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreD4_hk_Python 編程入門.docx",
+    "slug": "CoreD4_hk",
+    "title": "Python 編程入門",
+    "title_zh": "Python 編程入門",
+    "title_en": null,
+    "language": "hk",
+    "family": "CoreD",
+    "chapter": 4,
+    "integrated": false,
+    "topic_code": "D04",
+    "curriculum_unit": "Core-D",
+    "ca_unit": "D",
+    "f5_exam_scope": "mcq_core_d",
+    "extracted_at": "2026-05-24T10:37:17.870931+00:00",
+    "item_count": 26,
+    "section_counts": {
+      "mcq": 18,
+      "short_answer": 5,
+      "long_answer": 3
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTD0204_01A001C",
+      "bank_code": "SSICTD0204_01A001C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "假設我們要記錄一群學生的每月交通開支並計算平均金額。以下哪項數據類型最適合用以儲存這些數據項目？",
+      "options": {
+        "A": "整數",
+        "B": "浮點數",
+        "C": "字串",
+        "D": "布爾"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "假設我們要記錄一群學生的每月交通開支並計算平均金額。以下哪項數據類型最適合用以儲存這些數據項目？\nA. 整數\nB. 浮點數\nC. 字串\nD. 布爾",
+      "concepts": [
+        "D-ch4",
+        "資訊處理",
+        "數據類型"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0204_01A002C",
+      "bank_code": "SSICTD0204_01A002C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "下列 Python 程式用以找出 X 和 Y 的和。以下哪項可以填入空格？\nX = 3\nY = 4\nprint(sum)",
+      "options": {
+        "A": "sum(X:Y)",
+        "B": "sum < X + Y",
+        "C": "sum = X + Y",
+        "D": "sum == X + Y"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列 Python 程式用以找出 X 和 Y 的和。以下哪項可以填入空格？\nX = 3\nY = 4\nprint(sum)\nA. sum(X:Y)\nB. sum < X + Y\nC. sum = X + Y\nD. sum == X + Y",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0204_01A003C",
+      "bank_code": "SSICTD0204_01A003C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "下列程式用以檢查 X 是否能被 7 整除。以下哪項可以填入空格？\nX = 14\nif _______________:\nprint(\"It is divisible by 7\")",
+      "options": {
+        "A": "X == 7",
+        "B": "X / 7 == 2",
+        "C": "X % 7 == 0",
+        "D": "X // 7 == 0"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列程式用以檢查 X 是否能被 7 整除。以下哪項可以填入空格？\nX = 14\nif _______________:\nprint(\"It is divisible by 7\")\nA. X == 7\nB. X / 7 == 2\nC. X % 7 == 0\nD. X // 7 == 0",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0204_01B004C",
+      "bank_code": "SSICTD0204_01B004C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪個程式能產生下列輸出？\n1\n3\n5\n7\n9",
+      "options": {
+        "A": "for i in range(1, 6):\nprint(2 * i - 1)",
+        "B": "for i in range(1, 10):\nprint(2 * i - 1)",
+        "C": "for i in range(1, 5):\nprint(2 * i - 1)",
+        "D": "for i in range(2, 11, 2):\nprint(2 * i - 1)"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪個程式能產生下列輸出？\n1\n3\n5\n7\n9\nA. for i in range(1, 6):\nprint(2 * i - 1)\nB. for i in range(1, 10):\nprint(2 * i - 1)\nC. for i in range(1, 5):\nprint(2 * i - 1)\nD. for i in range(2, 11, 2):\nprint(2 * i - 1)",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A005C",
+      "bank_code": "SSICTD0204_01A005C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "下列程式用以找出某數字是負數、零或正數。以下哪項可以填入空格？\nnum = int(input(\"Number: \"))\nif num == 0:\nprint(\"Zero\")\nelif num > 0:\nprint(\"Positive\")\nelif _______________:\nprint(\"Negative\")",
+      "options": {
+        "A": "num <= 0",
+        "B": "num < 0",
+        "C": "num >= 0",
+        "D": "num != 0"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列程式用以找出某數字是負數、零或正數。以下哪項可以填入空格？\nnum = int(input(\"Number: \"))\nif num == 0:\nprint(\"Zero\")\nelif num > 0:\nprint(\"Positive\")\nelif _______________:\nprint(\"Negative\")\nA. num <= 0\nB. num < 0\nC. num >= 0\nD. num != 0",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A006C",
+      "bank_code": "SSICTD0204_01A006C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "下列程式用以找出 1 至 10 中所有雙數的和。以下哪項可以填入空格？\nsum = 0\nfor i in range(1, 11):\nsum = sum + i\nprint(sum)",
+      "options": {
+        "A": "if i == 2:",
+        "B": "if i % 2 == 0:",
+        "C": "for i in range(2):",
+        "D": "while i == 2:"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "下列程式用以找出 1 至 10 中所有雙數的和。以下哪項可以填入空格？\nsum = 0\nfor i in range(1, 11):\nsum = sum + i\nprint(sum)\nA. if i == 2:\nB. if i % 2 == 0:\nC. for i in range(2):\nD. while i == 2:",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01B007C",
+      "bank_code": "SSICTD0204_01B007C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪個程式的結果與下列算法相同？\n如果 A > 0 則\n如果 B >= 0 則\n輸出 \"A\"\n如果 C > 0 則\n輸出 \"B\"\n否則如果 D >= 0 則\n輸出 \"B\"",
+      "options": {
+        "A": "if A > 0:\nif B > 0:\nprint(\"A\")\nif C > 0:\nprint(\"B\")\nelif D > 0:\nprint(\"B\")",
+        "B": "if A >= 0:\nif B >= 0:\nprint(\"A\")\nif C >= 0:\nprint(\"B\")\nelif D >= 0:\nprint(\"B\")",
+        "C": "if A > 0 and B >= 0:\nprint(\"A\")\nif C > 0 or D >= 0:\nprint(\"B\")",
+        "D": "if A > 0 or B > 0:\nprint(\"A\")\nif C > 0 and D > 0:\nprint(\"B\")"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪個程式的結果與下列算法相同？\n如果 A > 0 則\n如果 B >= 0 則\n輸出 \"A\"\n如果 C > 0 則\n輸出 \"B\"\n否則如果 D >= 0 則\n輸出 \"B\"\nA. if A > 0:\nif B > 0:\nprint(\"A\")\nif C > 0:\nprint(\"B\")\nelif D > 0:\nprint(\"B\")\nB. if A >= 0:\nif B >= 0:\nprint(\"A\")\nif C >= 0:\nprint(\"B\")\nelif D >= 0:\nprint(\"B\")\nC. if A > 0 and B >= 0:\nprint(\"A\")\nif C > 0 or D >= 0:\nprint(\"B\")\nD. if A > 0 or B > 0:\nprint(\"A\")\nif C > 0 and D > 0:\nprint(\"B\")",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "算法",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A008C",
+      "bank_code": "SSICTD0204_01A008C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪個程式的結果與下列算法相同？\ni  1\n當 i < 5\n輸出 i\ni  i + 1",
+      "options": {
+        "A": "for i in range(1, 4):\nprint(i)",
+        "B": "for i in range(1, 6):\nprint(i)",
+        "C": "i = 1\nwhile i <= 4:\nprint(i)\ni = i + 1",
+        "D": "i = 1\nwhile i < 6:\nprint(i)\ni = i + 1"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪個程式的結果與下列算法相同？\ni  1\n當 i < 5\n輸出 i\ni  i + 1\nA. for i in range(1, 4):\nprint(i)\nB. for i in range(1, 6):\nprint(i)\nC. i = 1\nwhile i <= 4:\nprint(i)\ni = i + 1\nD. i = 1\nwhile i < 6:\nprint(i)\ni = i + 1",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A009C",
+      "bank_code": "SSICTD0204_01A009C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "小健正在編寫一個用作交易後列印收據的簡單程式。以下是這個 Python 程式的輸入和輸出範例：\n輸入\n輸出\n15\n9.5\n30\nPrices:\n15\n9.5\n30\nTotal: 54.5\n細閱以下未完成的程式：\nA = input()\nB = input()\nC = input()\n以下哪項是最適合變量 A、B 和 C 的數據類型？",
+      "options": {
+        "A": "整數",
+        "B": "浮點數",
+        "C": "布爾",
+        "D": "字串"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "小健正在編寫一個用作交易後列印收據的簡單程式。以下是這個 Python 程式的輸入和輸出範例：\n輸入\n輸出\n15\n9.5\n30\nPrices:\n15\n9.5\n30\nTotal: 54.5\n細閱以下未完成的程式：\nA = input()\nB = input()\nC = input()\n以下哪項是最適合變量 A、B 和 C 的數據類型？\nA. 整數\nB. 浮點數\nC. 布爾\nD. 字串",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "資訊處理",
+        "輸入輸出",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A010C",
+      "bank_code": "SSICTD0204_01A010C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "小健正在編寫一個用作交易後列印收據的簡單程式。以下是這個 Python 程式的輸入和輸出範例：\n輸入\n輸出\n15\n9.5\n30\nPrices:\n15\n9.5\n30\nTotal: 54.5\n細閱以下未完成的程式：\nA = float(input())\nB = float(input())\nC = float(input())\n以下哪段 Python 程式碼可填上空格，以產生以上輸出？",
+      "options": {
+        "A": "print(\"Prices:\")\nprint(\"A\")\nprint(\"B\")\nprint(\"C\")\nprint(\"Total: A+B+C\")",
+        "B": "print(\"Prices:\")\nprint(A)\nprint(B)\nprint(C)\nprint(\"Total:\", A+B+C)",
+        "C": "print(Prices:)\nprint(\"A\")\nprint(\"B\")\nprint(\"C\")\nprint(Total: A+B+C)",
+        "D": "print(\"Prices:\")\nprint(\"A\")\nprint(\"B\")\nprint(\"C\")\nprint(\"Total:\", A+B+C)"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "小健正在編寫一個用作交易後列印收據的簡單程式。以下是這個 Python 程式的輸入和輸出範例：\n輸入\n輸出\n15\n9.5\n30\nPrices:\n15\n9.5\n30\nTotal: 54.5\n細閱以下未完成的程式：\nA = float(input())\nB = float(input())\nC = float(input())\n以下哪段 Python 程式碼可填上空格，以產生以上輸出？\nA. print(\"Prices:\")\nprint(\"A\")\nprint(\"B\")\nprint(\"C\")\nprint(\"Total: A+B+C\")\nB. print(\"Prices:\")\nprint(A)\nprint(B)\nprint(C)\nprint(\"Total:\", A+B+C)\nC. print(Prices:)\nprint(\"A\")\nprint(\"B\")\nprint(\"C\")\nprint(Total: A+B+C)\nD. print(\"Prices:\")\nprint(\"A\")\nprint(\"B\")\nprint(\"C\")\nprint(\"Total:\", A+B+C)",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A011C",
+      "bank_code": "SSICTD0204_01A011C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列程式的輸出？\nfood = \"beef\"\nmoney = 5\nprint(\"The price of\", \"food\", \"is $\", money)",
+      "options": {
+        "A": "The price of food is $ 5",
+        "B": "The price of beef is $ 5",
+        "C": "The price of food is $ money",
+        "D": "The price of beef is $ money"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列程式的輸出？\nfood = \"beef\"\nmoney = 5\nprint(\"The price of\", \"food\", \"is $\", money)\nA. The price of food is $ 5\nB. The price of beef is $ 5\nC. The price of food is $ money\nD. The price of beef is $ money",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0204_01B012C",
+      "bank_code": "SSICTD0204_01B012C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪段 Python 程式碼可表示下列流程圖？",
+      "options": {
+        "A": "if A > 0:\nif B > 0:\nd = d + 1\nelse:\nc = c + 1",
+        "B": "if A > 0:\nif B > 0:\nd = d + 1\nelse:\nc = c + 1",
+        "C": "if A > 0 and B > 0:\nd = d + 1\nelse:\nc = c + 1",
+        "D": "if A > 0 or B > 0:\nd = d + 1\nelse:\nc = c + 1"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪段 Python 程式碼可表示下列流程圖？\nA. if A > 0:\nif B > 0:\nd = d + 1\nelse:\nc = c + 1\nB. if A > 0:\nif B > 0:\nd = d + 1\nelse:\nc = c + 1\nC. if A > 0 and B > 0:\nd = d + 1\nelse:\nc = c + 1\nD. if A > 0 or B > 0:\nd = d + 1\nelse:\nc = c + 1",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "算法",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A013C",
+      "bank_code": "SSICTD0204_01A013C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下Python程式的輸出是甚麼？\na = 3\nwhile not a == 0:\na = a - 1\nprint(a)",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下Python程式的輸出是甚麼？\na = 3\nwhile not a == 0:\na = a - 1\nprint(a)\nA. 0\nB. 1\nC. 2\nD. 3",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0204_01A014C",
+      "bank_code": "SSICTD0204_01A014C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下Python程式的輸出是甚麼？\ns = 0\nfor i in range(1, 5):\ns = s + i\nprint(s)",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "14",
+        "D": "15"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下Python程式的輸出是甚麼？\ns = 0\nfor i in range(1, 5):\ns = s + i\nprint(s)\nA. 9\nB. 10\nC. 14\nD. 15",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A015C",
+      "bank_code": "SSICTD0204_01A015C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下Python程式用以判斷某整數是否單數，但程式尚未完成。\nnum = int(input(\"Enter a number: \"))\nif                          :\nprint(\"Not an odd number\")\nelse:\nprint(\"Odd number\")\n假設已知輸入為有效的正整數，以下哪項可以填上空格？",
+      "options": {
+        "A": "num // 2 == 0",
+        "B": "num // 2 != 0",
+        "C": "num % 2 == 0",
+        "D": "num % 2 != 0"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下Python程式用以判斷某整數是否單數，但程式尚未完成。\nnum = int(input(\"Enter a number: \"))\nif                          :\nprint(\"Not an odd number\")\nelse:\nprint(\"Odd number\")\n假設已知輸入為有效的正整數，以下哪項可以填上空格？\nA. num // 2 == 0\nB. num // 2 != 0\nC. num % 2 == 0\nD. num % 2 != 0",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A016C",
+      "bank_code": "SSICTD0204_01A016C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下Python程式用以計算某實數的三次方，但程式尚未完成。\nnum = float(input(\"Enter the number here: \"))\nprint(num, \"cubed =\",                        )\n以下哪項可以填上空格？",
+      "options": {
+        "A": "x / 3",
+        "B": "x // 3",
+        "C": "x * 3",
+        "D": "x ** 3"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下Python程式用以計算某實數的三次方，但程式尚未完成。\nnum = float(input(\"Enter the number here: \"))\nprint(num, \"cubed =\",                        )\n以下哪項可以填上空格？\nA. x / 3\nB. x // 3\nC. x * 3\nD. x ** 3",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0204_01A017C",
+      "bank_code": "SSICTD0204_01A017C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下Python程式用以輸出三個實數之中最大的數值，但程式尚未完成。\nx = float(input())\ny = float(input())\nz = float(input())\nif            (a)             :\nprint(x)\nelif       (b)       :\nprint(z)\nelse:\nprint(y)\n以下哪項可以填上空格 (a) 和空格 (b)？\n空格 (a)空格 (b)",
+      "options": {
+        "A": "x >= y and x >= zz > y",
+        "B": "x >= y or x >= zz > y",
+        "C": "x >= y and x >= zz > x",
+        "D": "x >= y or x >= zz > x"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下Python程式用以輸出三個實數之中最大的數值，但程式尚未完成。\nx = float(input())\ny = float(input())\nz = float(input())\nif            (a)             :\nprint(x)\nelif       (b)       :\nprint(z)\nelse:\nprint(y)\n以下哪項可以填上空格 (a) 和空格 (b)？\n空格 (a)空格 (b)\nA. x >= y and x >= zz > y\nB. x >= y or x >= zz > y\nC. x >= y and x >= zz > x\nD. x >= y or x >= zz > x",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_01A018C",
+      "bank_code": "SSICTD0204_01A018C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "以下Python程式的輸出是甚麼？\nfor i in range(0, 8, 3):\nprint(\"A\")",
+      "options": {
+        "A": "A",
+        "B": "A\nA",
+        "C": "A\nA\nA",
+        "D": "AAA"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下Python程式的輸出是甚麼？\nfor i in range(0, 8, 3):\nprint(\"A\")\nA. A\nB. A\nA\nC. A\nA\nA\nD. AAA",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_03A001C",
+      "bank_code": "SSICTD0204_03A001C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\n輸入 n\nsum  0\n設 i 由 1 至 n\nsum  sum + i × i\n輸出 sum",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 輸出由 1 至 n 的平方數的和。\n(b)\nn = int(input())\nsum = 0\nfor i in range(1, n+1):\nsum = sum + i * i\nprint(sum)",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "此算法的目的是什麼？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 3.0,
+          "text": "試以 Python 重寫以上算法。（3 分）"
+        }
+      ],
+      "text": "細閱以下算法：\n輸入 n\nsum  0\n設 i 由 1 至 n\nsum  sum + i × i\n輸出 sum\n(a) 此算法的目的是什麼？（1 分）\n(b) 試以 Python 重寫以上算法。（3 分）\n(a) 輸出由 1 至 n 的平方數的和。\n(b)\nn = int(input())\nsum = 0\nfor i in range(1, n+1):\nsum = sum + i * i\nprint(sum)",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_03A002C",
+      "bank_code": "SSICTD0204_03A002C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "三名學生的測驗分數儲存在變量 X、Y 和 Z。",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)(i) X > Y\n(a)(ii) Z > score\n(b) 將 (a)(i) 和 (a)(ii) 的答案分別改為「X < Y」和「Z < score」。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "以下 Python 程式比較三名學生的測驗分數，並輸出最高者。試完成此程式。（2 分）\nX = int(input())\nY = int(input())\nZ = int(input())\nif __________(i)__________:\nscore = X\nelse:\nscore = Y\nif __________(ii)_________:\nscore = Z\nprint(score)"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "如要程式輸出最低的分數，應如何修改 (a) 部分的答案？（2 分）"
+        }
+      ],
+      "text": "三名學生的測驗分數儲存在變量 X、Y 和 Z。\n(a) 以下 Python 程式比較三名學生的測驗分數，並輸出最高者。試完成此程式。（2 分）\nX = int(input())\nY = int(input())\nZ = int(input())\nif __________(i)__________:\nscore = X\nelse:\nscore = Y\nif __________(ii)_________:\nscore = Z\nprint(score)\n(b) 如要程式輸出最低的分數，應如何修改 (a) 部分的答案？（2 分）\n(a)(i) X > Y\n(a)(ii) Z > score\n(b) 將 (a)(i) 和 (a)(ii) 的答案分別改為「X < Y」和「Z < score」。",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_03A003C",
+      "bank_code": "SSICTD0204_03A003C",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "香港政府採用兩級制稅率，向香港公司的應評税利潤（assessable profits）徵收利得稅：\n應評税利潤首 $2,000,000\n8.25%\n應評税利潤中超過 $2,000,000 的部分\n16.5%",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) $264,000\n(b)\nap <= 2000000\n2000000 * 0.0825 + (ap - 2000000) * 0.165",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "某公司的應評税利潤為 $2,600,000，該公司應繳付的利得稅是多少？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "一位會計師編寫了一個程式以計算其企業客戶應繳付的利得稅。試完成以下 Python 程式。（2 分）\nap = float(input(\"Assessable profits: \"))\ntax = 0\nif ____________________:\ntax = ap * 0.0825\nelse:\ntax = ______________________________\nprint(\"Profits tax payable:\", tax)"
+        }
+      ],
+      "text": "香港政府採用兩級制稅率，向香港公司的應評税利潤（assessable profits）徵收利得稅：\n應評税利潤首 $2,000,000\n8.25%\n應評税利潤中超過 $2,000,000 的部分\n16.5%\n(a) 某公司的應評税利潤為 $2,600,000，該公司應繳付的利得稅是多少？（1 分）\n(b) 一位會計師編寫了一個程式以計算其企業客戶應繳付的利得稅。試完成以下 Python 程式。（2 分）\nap = float(input(\"Assessable profits: \"))\ntax = 0\nif ____________________:\ntax = ap * 0.0825\nelse:\ntax = ______________________________\nprint(\"Profits tax payable:\", tax)\n(a) $264,000\n(b)\nap <= 2000000\n2000000 * 0.0825 + (ap - 2000000) * 0.165",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_03A004C",
+      "bank_code": "SSICTD0204_03A004C",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "設計一個程式，要求用戶輸入一個正數雙數。若輸入錯誤，程式便會要求用戶重新輸入，直至有正數雙數輸入。假設輸入必須為整數，試完成以下 Python 程式。（3 分）\nnum = int(input())",
+      "options": {},
+      "answer": null,
+      "answer_text": "while num <= 0 or num % 2 != 0:\nnum = int(input())",
+      "parts": [],
+      "text": "設計一個程式，要求用戶輸入一個正數雙數。若輸入錯誤，程式便會要求用戶重新輸入，直至有正數雙數輸入。假設輸入必須為整數，試完成以下 Python 程式。（3 分）\nnum = int(input())\nwhile num <= 0 or num % 2 != 0:\nnum = int(input())",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "除錯",
+        "輸入輸出",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_03A005C",
+      "bank_code": "SSICTD0204_03A005C",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": null,
+      "stem": "以下 Python 程式用於一個猜數字遊戲。程式從 1 至 100 抽出一個隨機數字讓玩家猜。玩家在三次之內猜中就能獲得獎品。試完成以下 Python 程式。（4 分）\nimport random\ndraw_number = random.randint(_____, _____)\ncount = 0\nbingo = False\nwhile ______________________________:\nguess_number = int(input(\"Make a guess: \"))\ncount = count + 1\nif ____________________:\nbingo = True\nif ____________________:\nprint(\"Congratulations! You can receive a prize.\")\nelse:\nprint(\"Good luck next time!\")",
+      "options": {},
+      "answer": null,
+      "answer_text": "1\n100\ncount < 3 and bingo == False\nguess_number == draw_number\nbingo == True",
+      "parts": [],
+      "text": "以下 Python 程式用於一個猜數字遊戲。程式從 1 至 100 抽出一個隨機數字讓玩家猜。玩家在三次之內猜中就能獲得獎品。試完成以下 Python 程式。（4 分）\nimport random\ndraw_number = random.randint(_____, _____)\ncount = 0\nbingo = False\nwhile ______________________________:\nguess_number = int(input(\"Make a guess: \"))\ncount = count + 1\nif ____________________:\nbingo = True\nif ____________________:\nprint(\"Congratulations! You can receive a prize.\")\nelse:\nprint(\"Good luck next time!\")\n1\n100\ncount < 3 and bingo == False\nguess_number == draw_number\nbingo == True",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0204_04A001C",
+      "bank_code": "SSICTD0204_04A001C",
+      "section_type": "long_answer",
+      "marks": 10.0,
+      "year_tag": null,
+      "stem": "香港僱主須為僱員的強制性公積金（「強積金」，MPF）戶口供款。僱員亦可能須為其強積金戶口供款。僱主與僱員的強制性供款取決於該僱員的「有關入息」（relevant income）：\n每月有關入息\n僱主強制性供款\n（Employer’s contributions）\n僱員強制性供款\n（Employee’s contributions）\n低於 $7,100\n有關入息 × 5%\n毋須供款\n$7,100 至 $30,000\n有關入息 × 5%\n有關入息 × 5%\n高於 $30,000\n$1,500\n$1,500\n家明在某公司的人事部工作。他正在為每位同事的強積金戶口計算僱主與僱員各自的強制性供款。",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 僱主強制性供款：$1,250；僱員強制性供款：$1,250\n(b)\nrelevant_income < 7100\nrelevant_income * 0.05\n0\nrelevant_income <= 30000\nrelevant_income * 0.05\nrelevant_income * 0.05\n1500\n1500\n(c)\nmon * 12\n18000\nannual_contributions",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "子華是他的同事，每月有關入息為 $25,000。其強積金戶口的僱主與僱員強制性供款分別是多少？（2 分）"
+        },
+        {
+          "label": "b",
+          "marks": 5.0,
+          "text": "家明編寫了一個程式，當他輸入某員工的每月有關入息後，程式就會列印僱主與僱員的強制性供款。試完成以下 Python 程式。（5 分）\nrelevant_income = float(input(\"Monthly relevant income: \"))\nemployer_contributions = 0\nemployee_contributions = 0\nif _____________________:\nemployer_contributions = _________________________\nemployee_contributions = _________________________\nelif ____________________:\nemployer_contributions = _________________________\nemployee_contributions = _________________________\nelse:\nemployer_contributions = _________________________\nemployee_contributions = _________________________\nprint(\"Employer’s contributions:\", employer_contributions)\nprint(\"Employee’s contributions:\", employee_contributions)"
+        },
+        {
+          "label": "c",
+          "marks": 3.0,
+          "text": "僱員可在計算其應課稅入息時扣除強積金供款。每個課稅年度的可扣除金額按照該年度的總供款額而定，最高為 $18,000。家明編寫了一個程式，讓同事輸入其每月強積金供款（monthly contributions）以得知其可獲得的扣除額（deduction）。試完成以下 Python 程式。（3 分）\nmon = float(input(\"Please enter your monthly contributions: \"))\nannual_contributions = ____________________\ndeduction = 0\nif annual_contributions >= 18000:\ndeduction = ____________________\nelse:\ndeduction = ____________________\nprint(\"Your allowable deduction for MPF is $\", deduction)"
+        }
+      ],
+      "text": "香港僱主須為僱員的強制性公積金（「強積金」，MPF）戶口供款。僱員亦可能須為其強積金戶口供款。僱主與僱員的強制性供款取決於該僱員的「有關入息」（relevant income）：\n每月有關入息\n僱主強制性供款\n（Employer’s contributions）\n僱員強制性供款\n（Employee’s contributions）\n低於 $7,100\n有關入息 × 5%\n毋須供款\n$7,100 至 $30,000\n有關入息 × 5%\n有關入息 × 5%\n高於 $30,000\n$1,500\n$1,500\n家明在某公司的人事部工作。他正在為每位同事的強積金戶口計算僱主與僱員各自的強制性供款。\n(a) 子華是他的同事，每月有關入息為 $25,000。其強積金戶口的僱主與僱員強制性供款分別是多少？（2 分）\n(b) 家明編寫了一個程式，當他輸入某員工的每月有關入息後，程式就會列印僱主與僱員的強制性供款。試完成以下 Python 程式。（5 分）\nrelevant_income = float(input(\"Monthly relevant income: \"))\nemployer_contributions = 0\nemployee_contributions = 0\nif _____________________:\nemployer_contributions = _________________________\nemployee_contributions = _________________________\nelif ____________________:\nemployer_contributions = _________________________\nemployee_contributions = _________________________\nelse:\nemployer_contributions = _________________________\nemployee_contributions = _________________________\nprint(\"Employer’s contributions:\", employer_contributions)\nprint(\"Employee’s contributions:\", employee_contributions)\n(c) 僱員可在計算其應課稅入息時扣除強積金供款。每個課稅年度的可扣除金額按照該年度的總供款額而定，最高為 $18,000。家明編寫了一個程式，讓同事輸入其每月強積金供款（monthly contributions）以得知其可獲得的扣除額（deduction）。試完成以下 Python 程式。（3 分）\nmon = float(input(\"Please enter your monthly contributions: \"))\nannual_contributions = ____________________\ndeduction = 0\nif annual_contributions >= 18000:\ndeduction = ____________________\nelse:\ndeduction = ____________________\nprint(\"Your allowable deduction for MPF is $\", deduction)\n(a) 僱主強制性供款：$1,250；僱員強制性供款：$1,250\n(b)\nrelevant_income < 7100\nrelevant_income * 0.05\n0\nrelevant_income <= 30000\nrelevant_income * 0.05\nrelevant_income * 0.05\n1500\n1500\n(c)\nmon * 12\n18000\nannual_contributions",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTD0204_04A002C",
+      "bank_code": "SSICTD0204_04A002C",
+      "section_type": "long_answer",
+      "marks": 9.0,
+      "year_tag": null,
+      "stem": "香城大學的經濟及工商管理學院（簡稱FBE）為不同年級的學生提供課程。某些課程亦容許其他學院的同學修讀。",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)(i)\nFBE_student == \"Y\"\n(year == 1) and (FBE_student == True)\n(a)(ii) 可以，因為不須對 year 進行算術運算。\n(b) 將第7行的條件改為「(year >= 3) and (FBE_student == True)」。\n(c)(i) 可以，但他會被放入候補名單。\n(c)(ii)\nyear == 1\nelif (year >= 2) and (FBE_student == True)\nelse",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "課程 ECON1001 Introductory Microeconomics 只開放予該學院的一年級生修讀。"
+        },
+        {
+          "label": "i",
+          "marks": 2.0,
+          "text": "以下 Python 程式用於選科系統，檢查某學生是否能選修這一科，試完成此程式。（2 分）\n行號  Python 程式\n1    year = int(input(\"Year of study: \"))\n2    FBE_student = input(\"Student at FBE? (Y/N): \")\n3    if ____________________:\n4        FBE_student = True\n5    else:\n6        FBE_student = False\n7    if ____________________:\n8        print(\"S/he can enrol in this course.\")\n9    else:\n10       print(\"S/he cannot enrol in this course.\")"
+        },
+        {
+          "label": "ii",
+          "marks": 2.0,
+          "text": "year 可以儲存為字串嗎？為什麼？（2 分）"
+        },
+        {
+          "label": "b",
+          "marks": 1.0,
+          "text": "課程 ECON3001 Advanced Auditing 只開放予該學院的三年級或以上學生修讀。我們可如何修改以上程式，檢查某學生是否能選修這一科？（1 分）"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "課程 ECON2001 Social Media Marketing 開放予二年級或以上學生修讀。其他學院的學生亦可以選修這一科，但他們會被放入候補名單（waitlist）。"
+        },
+        {
+          "label": "i",
+          "marks": 1.0,
+          "text": "家輝是社會科學學院的三年級生。他可以選修這一科嗎？（1 分）"
+        },
+        {
+          "label": "ii",
+          "marks": 3.0,
+          "text": "試完成以下用以為課程 ECON2001 報名的 Python 程式。（3 分）\nyear = int(input(\"Year of study: \"))\nFBE_student = input(\"Student at FBE? (Y/N): \")\nif _____(a)_____:\nFBE_student = True\nelse:\nFBE_student = False\nif ______________________:\nprint(\"S/he cannot enrol in this course.\")\n_________________________:\nprint(\"S/he can enrol in this course.\")\n_________________________:\nprint(\"S/he will be placed on the waitlist.\")"
+        }
+      ],
+      "text": "香城大學的經濟及工商管理學院（簡稱FBE）為不同年級的學生提供課程。某些課程亦容許其他學院的同學修讀。\n(a) 課程 ECON1001 Introductory Microeconomics 只開放予該學院的一年級生修讀。\n(i) 以下 Python 程式用於選科系統，檢查某學生是否能選修這一科，試完成此程式。（2 分）\n行號  Python 程式\n1    year = int(input(\"Year of study: \"))\n2    FBE_student = input(\"Student at FBE? (Y/N): \")\n3    if ____________________:\n4        FBE_student = True\n5    else:\n6        FBE_student = False\n7    if ____________________:\n8        print(\"S/he can enrol in this course.\")\n9    else:\n10       print(\"S/he cannot enrol in this course.\")\n(ii) year 可以儲存為字串嗎？為什麼？（2 分）\n(b) 課程 ECON3001 Advanced Auditing 只開放予該學院的三年級或以上學生修讀。我們可如何修改以上程式，檢查某學生是否能選修這一科？（1 分）\n(c) 課程 ECON2001 Social Media Marketing 開放予二年級或以上學生修讀。其他學院的學生亦可以選修這一科，但他們會被放入候補名單（waitlist）。\n(i) 家輝是社會科學學院的三年級生。他可以選修這一科嗎？（1 分）\n(ii) 試完成以下用以為課程 ECON2001 報名的 Python 程式。（3 分）\nyear = int(input(\"Year of study: \"))\nFBE_student = input(\"Student at FBE? (Y/N): \")\nif _____(a)_____:\nFBE_student = True\nelse:\nFBE_student = False\nif ______________________:\nprint(\"S/he cannot enrol in this course.\")\n_________________________:\nprint(\"S/he can enrol in this course.\")\n_________________________:\nprint(\"S/he will be placed on the waitlist.\")\n(a)(i)\nFBE_student == \"Y\"\n(year == 1) and (FBE_student == True)\n(a)(ii) 可以，因為不須對 year 進行算術運算。\n(b) 將第7行的條件改為「(year >= 3) and (FBE_student == True)」。\n(c)(i) 可以，但他會被放入候補名單。\n(c)(ii)\nyear == 1\nelif (year >= 2) and (FBE_student == True)\nelse",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "列表",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTD0204_04A003C",
+      "bank_code": "SSICTD0204_04A003C",
+      "section_type": "long_answer",
+      "marks": 9.0,
+      "year_tag": null,
+      "stem": "某博物館正舉辦展覽。為免令展覽場地過於擠迫，館方安排了五個等候區，各自可容納 20 人。等候區會順序使用：當等候區 1 已滿，訪客會獲安排到等候區 2，如此類推。",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)(i) 3\n(a)(ii) 100\n(b)(i)\nWaiting area 1 is being used.\nWaiting area 2 is being used.\n(b)(ii)\nwhile visitor > 0:\nvisitor = visitor - 20\ntotal = total + 1\nprint(\"Waiting area\", total, \"is being used.\")\n(c) > 5",
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": 1.0,
+          "text": "如果有 48 名訪客在等候，會用到多少個等候區？（1 分）"
+        },
+        {
+          "label": "ii",
+          "marks": 1.0,
+          "text": "同一時間最多可以有多少名訪客等候入場？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "館方利用以下 Python 程式作人潮管制。經理可輸入訪客總數，然後程式會顯示使用中的等候區。\n行號  Python 程式\n1    visitor = int(input())\n2    total = 0\n3    for i in range(0, visitor, 20):\n4        total = total + 1\n5        print(\"Waiting area\", total, \"is being used.\")"
+        },
+        {
+          "label": "i",
+          "marks": 2.0,
+          "text": "如果輸入是 35，輸出是什麼？（2 分）"
+        },
+        {
+          "label": "ii",
+          "marks": 4.0,
+          "text": "以 while 循環取代 for 循環，同時不使用循環計數器 i，改寫以上程式第 3 至 5 行。（4 分）"
+        },
+        {
+          "label": "c",
+          "marks": 1.0,
+          "text": "當所有等候區已滿，館方會停止讓其他人進入博物館。試修改 (b) 的程式，使其可判斷是否有需要停止接受訪客。（1 分）\nvisitor = int(input())\ntotal = 0\nfor i in range(0, visitor, 20):\ntotal = total + 1\nif total __________:\nprint(\"All waiting areas are full.\")\nprint(\"Stop admitting visitors.\")\nelse:\nprint(\"Waiting area\", total, \"is being used.\")"
+        }
+      ],
+      "text": "某博物館正舉辦展覽。為免令展覽場地過於擠迫，館方安排了五個等候區，各自可容納 20 人。等候區會順序使用：當等候區 1 已滿，訪客會獲安排到等候區 2，如此類推。\n(a) \n(i) 如果有 48 名訪客在等候，會用到多少個等候區？（1 分）\n(ii) 同一時間最多可以有多少名訪客等候入場？（1 分）\n(b) 館方利用以下 Python 程式作人潮管制。經理可輸入訪客總數，然後程式會顯示使用中的等候區。\n行號  Python 程式\n1    visitor = int(input())\n2    total = 0\n3    for i in range(0, visitor, 20):\n4        total = total + 1\n5        print(\"Waiting area\", total, \"is being used.\")\n(i) 如果輸入是 35，輸出是什麼？（2 分）\n(ii) 以 while 循環取代 for 循環，同時不使用循環計數器 i，改寫以上程式第 3 至 5 行。（4 分）\n(c) 當所有等候區已滿，館方會停止讓其他人進入博物館。試修改 (b) 的程式，使其可判斷是否有需要停止接受訪客。（1 分）\nvisitor = int(input())\ntotal = 0\nfor i in range(0, visitor, 20):\ntotal = total + 1\nif total __________:\nprint(\"All waiting areas are full.\")\nprint(\"Stop admitting visitors.\")\nelse:\nprint(\"Waiting area\", total, \"is being used.\")\n(a)(i) 3\n(a)(ii) 100\n(b)(i)\nWaiting area 1 is being used.\nWaiting area 2 is being used.\n(b)(ii)\nwhile visitor > 0:\nvisitor = visitor - 20\ntotal = total + 1\nprint(\"Waiting area\", total, \"is being used.\")\n(c) > 5",
+      "concepts": [
+        "D-ch4",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

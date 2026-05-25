@@ -48,6 +48,17 @@ def topic_header(number: str, title: str, points: int) -> str:
     return f"{number}\t{title}\t{marks(points)}"
 
 
+def topic_lead(label: str, text: str, points: int | None = None, *, spaced_marks: bool = True) -> str:
+    """First sub-part in a block — List Paragraph style: ``(a)\\ttext\\t(N 分)`` (no leading tab)."""
+    suffix = f"\t{marks(points, spaced=spaced_marks)}" if points is not None else ""
+    return f"({label}) {text.strip()}{suffix}"
+
+
+def subpart_intro(label: str, text: str) -> str:
+    """Sub-part stem without marks on same line (e.g. ``\\t(b)\\t使用打印機…``)."""
+    return f"\t({label})\t{text.strip()}"
+
+
 def stem(text: str, points: int | None = None, *, spaced_marks: bool = False, depth: int = 1) -> str:
     """Single-line stem with leading tab(s) (ERD / instruction lines)."""
     suffix = f"\t{marks(points, spaced=spaced_marks)}" if points is not None else ""

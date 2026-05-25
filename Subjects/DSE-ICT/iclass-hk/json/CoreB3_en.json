@@ -1,0 +1,512 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreB3_en_Computer Software.docx",
+    "slug": "CoreB3_en",
+    "title": "Computer Software",
+    "title_zh": null,
+    "title_en": "Computer Software",
+    "language": "en",
+    "family": "CoreB",
+    "chapter": 3,
+    "integrated": false,
+    "topic_code": "B03",
+    "curriculum_unit": "Core-B",
+    "ca_unit": "B",
+    "f5_exam_scope": "mcq_core_b",
+    "extracted_at": "2026-05-24T10:37:17.745587+00:00",
+    "item_count": 20,
+    "section_counts": {
+      "mcq": 20
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTB0103_01A001E",
+      "bank_code": "SSICTB0103_01A001E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Most operating systems prompt the user to update as soon as possible when there is a new release.\nWhich of the following is not a reason for this?",
+      "options": {
+        "A": "To block security loopholes",
+        "B": "To ensure compatibility with other software",
+        "C": "To fix bugs in the operating system",
+        "D": "Technical support for older versions will stop soon\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Most operating systems prompt the user to update as soon as possible when there is a new release.\nWhich of the following is not a reason for this?\nA. To block security loopholes\nB. To ensure compatibility with other software\nC. To fix bugs in the operating system\nD. Technical support for older versions will stop soon\n[--Answer: D--]",
+      "concepts": [
+        "B-ch3",
+        "循環",
+        "SQL",
+        "硬件",
+        "軟件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0103_01A002E",
+      "bank_code": "SSICTB0103_01A002E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following are typical functions provided by an operating system?\n(1)\nFile management\n(2)\nVirus detection\n(3)\nMemory management\n(4)\nProcess management",
+      "options": {
+        "A": "(1), (2) and (3) only",
+        "B": "(1), (2) and (4) only",
+        "C": "(1), (3) and (4) only",
+        "D": "(2), (3) and (4) only\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following are typical functions provided by an operating system?\n(1)\nFile management\n(2)\nVirus detection\n(3)\nMemory management\n(4)\nProcess management\nA. (1), (2) and (3) only\nB. (1), (2) and (4) only\nC. (1), (3) and (4) only\nD. (2), (3) and (4) only\n[--Answer: C--]",
+      "concepts": [
+        "B-ch3",
+        "函數",
+        "軟件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_01A003E",
+      "bank_code": "SSICTB0103_01A003E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Alan’s computer is idling and not running any application. He opens the system monitor to view the processor and memory usage. Which of the following would he see?\n(1)\nThere is no process running\n(2)\nProcessor usage is low but not zero\n(3)\nMemory usage is zero",
+      "options": {
+        "A": "(1) only",
+        "B": "(2) only",
+        "C": "(1) and (3) only",
+        "D": "(2) and (3) only\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Alan’s computer is idling and not running any application. He opens the system monitor to view the processor and memory usage. Which of the following would he see?\n(1)\nThere is no process running\n(2)\nProcessor usage is low but not zero\n(3)\nMemory usage is zero\nA. (1) only\nB. (2) only\nC. (1) and (3) only\nD. (2) and (3) only\n[--Answer: B--]",
+      "concepts": [
+        "B-ch3"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_01A004E",
+      "bank_code": "SSICTB0103_01A004E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Summie wants to delete an application from her computer. She deletes the program files from her hard drive using the file manager. Why is this way of uninstalling a program not recommended?",
+      "options": {
+        "A": "The files will reappear after the computer restarts",
+        "B": "Some system configurations remain unchanged",
+        "C": "The computer might be infected by virus",
+        "D": "It wastes disk space\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Summie wants to delete an application from her computer. She deletes the program files from her hard drive using the file manager. Why is this way of uninstalling a program not recommended?\nA. The files will reappear after the computer restarts\nB. Some system configurations remain unchanged\nC. The computer might be infected by virus\nD. It wastes disk space\n[--Answer: B--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "SQL",
+        "硬件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0103_01A005E",
+      "bank_code": "SSICTB0103_01A005E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "John has two printers A and B. He has two computers X and Y, both running the same operating system. He wants to connect each computer to both printers. How many different driver programs does he need?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "John has two printers A and B. He has two computers X and Y, both running the same operating system. He wants to connect each computer to both printers. How many different driver programs does he need?\nA. 1\nB. 2\nC. 3\nD. 4\n[--Answer: B--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "硬件",
+        "軟件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0103_01A006E",
+      "bank_code": "SSICTB0103_01A006E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is not true about driver programs?",
+      "options": {
+        "A": "It could be installed automatically by the operating system",
+        "B": "It allows a computer to communicate with peripheral devices",
+        "C": "Most manufacturers only provide one driver program for a device",
+        "D": "None of the above\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is not true about driver programs?\nA. It could be installed automatically by the operating system\nB. It allows a computer to communicate with peripheral devices\nC. Most manufacturers only provide one driver program for a device\nD. None of the above\n[--Answer: C--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "循環",
+        "硬件",
+        "軟件",
+        "網絡"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0103_01A007E",
+      "bank_code": "SSICTB0103_01A007E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Tom wants to rename 100 images by adding a prefix to it.\ne.g., ABC.jpg → Thai_ABC.jpg\nHe uses the command line interface (CLI) instead of the file manager that uses graphical user interface (GUI). It is because ____________________.",
+      "options": {
+        "A": "he can rename files faster using CLI",
+        "B": "file names cannot be edited using GUI file manager",
+        "C": "CLI allows him to access more system resources",
+        "D": "GUI file manager may not display the file name correctly\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Tom wants to rename 100 images by adding a prefix to it.\ne.g., ABC.jpg → Thai_ABC.jpg\nHe uses the command line interface (CLI) instead of the file manager that uses graphical user interface (GUI). It is because ____________________.\nA. he can rename files faster using CLI\nB. file names cannot be edited using GUI file manager\nC. CLI allows him to access more system resources\nD. GUI file manager may not display the file name correctly\n[--Answer: A--]",
+      "concepts": [
+        "B-ch3"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_01A008E",
+      "bank_code": "SSICTB0103_01A008E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following requires a driver program to function properly?\n(1)\nCPU\n(2)\nKeyboard\n(3)\nMonitor\n(4)\nScanner",
+      "options": {
+        "A": "(1), (2) and (3) only",
+        "B": "(1), (2) and (4) only",
+        "C": "(1), (3) and (4) only",
+        "D": "(2), (3) and (4) only\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following requires a driver program to function properly?\n(1)\nCPU\n(2)\nKeyboard\n(3)\nMonitor\n(4)\nScanner\nA. (1), (2) and (3) only\nB. (1), (2) and (4) only\nC. (1), (3) and (4) only\nD. (2), (3) and (4) only\n[--Answer: D--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "函數",
+        "硬件",
+        "軟件",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_01A009E",
+      "bank_code": "SSICTB0103_01A009E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A portable program is a program installed on a removable storage device such as a USB flash drive. The program can only be used when it is connected to a computer. Which of the following statements about portable programs is/are true?\n(1)\nPortable programs run faster compared to programs installed on a computer’s drive\n(2)\nNo program files are stored on the computer after the removable storage device is removed\n(3)\nAll application programs can be converted into portable programs by installing them on a USB flash drive.",
+      "options": {
+        "A": "(2) only",
+        "B": "(1) and (2) only",
+        "C": "(1) and (3) only",
+        "D": "(2) and (3) only\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A portable program is a program installed on a removable storage device such as a USB flash drive. The program can only be used when it is connected to a computer. Which of the following statements about portable programs is/are true?\n(1)\nPortable programs run faster compared to programs installed on a computer’s drive\n(2)\nNo program files are stored on the computer after the removable storage device is removed\n(3)\nAll application programs can be converted into portable programs by installing them on a USB flash drive.\nA. (2) only\nB. (1) and (2) only\nC. (1) and (3) only\nD. (2) and (3) only\n[--Answer: A--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_01A010E",
+      "bank_code": "SSICTB0103_01A010E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A photo editing software “imageshop.exe” is installed on a computer. Which of the following actions are possible?\n(1)\nUninstalling the software\n(2)\nCopying the program and run it on another operating system\n(3)\nMoving the program file to another location on the drive",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A photo editing software “imageshop.exe” is installed on a computer. Which of the following actions are possible?\n(1)\nUninstalling the software\n(2)\nCopying the program and run it on another operating system\n(3)\nMoving the program file to another location on the drive\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: B--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "硬件",
+        "軟件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_01A011E",
+      "bank_code": "SSICTB0103_01A011E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "A computer checks for updates of the operating system at 1AM every night. Which mode of operation best describes this?",
+      "options": {
+        "A": "Batch processing",
+        "B": "Real time processing",
+        "C": "Parallel processing",
+        "D": "Distributed processing\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "A computer checks for updates of the operating system at 1AM every night. Which mode of operation best describes this?\nA. Batch processing\nB. Real time processing\nC. Parallel processing\nD. Distributed processing\n[--Answer: A--]",
+      "concepts": [
+        "B-ch3",
+        "循環",
+        "SQL",
+        "軟件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0103_01A012E",
+      "bank_code": "SSICTB0103_01A012E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Most modern processors have multiple cores. However, some programs can only utilise one processing core because _________________.",
+      "options": {
+        "A": "It consumes much less power",
+        "B": "Using one processing core is faster",
+        "C": "they do not have system permission to run on multiple cores",
+        "D": "they cannot be run on multiple cores concurrently\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Most modern processors have multiple cores. However, some programs can only utilise one processing core because _________________.\nA. It consumes much less power\nB. Using one processing core is faster\nC. they do not have system permission to run on multiple cores\nD. they cannot be run on multiple cores concurrently\n[--Answer: D--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "硬件",
+        "網絡"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0103_01A013E",
+      "bank_code": "SSICTB0103_01A013E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following factors would affect the performance of a distributed processing system?\n(1)\nConnection bandwidth\n(2)\nStorage capacity on each computer\n(3)\nMemory capacity on each computer",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following factors would affect the performance of a distributed processing system?\n(1)\nConnection bandwidth\n(2)\nStorage capacity on each computer\n(3)\nMemory capacity on each computer\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: D--]",
+      "concepts": [
+        "B-ch3",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_01A014E",
+      "bank_code": "SSICTB0103_01A014E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Tony’s computer takes a long time to boot up. Which of the following can improve the bootup speed?\n(1)\nUse a disk defragmentation software on the system hard drive\n(2)\nInstall an antivirus software\n(3)\nStop certain software from running during startup",
+      "options": {
+        "A": "(3) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Tony’s computer takes a long time to boot up. Which of the following can improve the bootup speed?\n(1)\nUse a disk defragmentation software on the system hard drive\n(2)\nInstall an antivirus software\n(3)\nStop certain software from running during startup\nA. (3) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: B--]",
+      "concepts": [
+        "B-ch3",
+        "硬件",
+        "軟件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_01A015E",
+      "bank_code": "SSICTB0103_01A015E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "An online multiplayer game is a real time processing system because ___________.",
+      "options": {
+        "A": "inputs from users are given response immediately",
+        "B": "it is a game",
+        "C": "it has many players using it",
+        "D": "All of the above\n[--Answer: A--]\nShort QuestionsSSICTB0103_03A001E, 4\n1.\nAll modern computer systems require an operating system.\n(a)\nFor each of the following functions, give an example of how the operating system performs the function.\n(i)\nProcess management(1 mark)\n___________________________________________________________________________\n(ii)\nPeripheral device management(1 mark)\n___________________________________________________________________________\n(iii)\nFile management(1 mark)\n___________________________________________________________________________\n(b)\nAlthough most users interact with their operating system with a Graphical user Interface (GUI), give a reason why Command line interface (CLI) is still provided on most operating systems nowadays.(1 mark)_______________________________________________________________________________\n[--Answer:\n(a)(i) Schedule task for CPU / Perform background task such as update and maintenance while user is using another program / Run multiple programs concurrently\n(a)(ii) Receive input and output to external devices through a driver program\n(a)(iii) Track drive capacity usage / Prevent users or programs to read, edit or delete files without necessary system privilege\n(b) More flexible / Able to use scripts to speed up task / Developer friendly\n--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "An online multiplayer game is a real time processing system because ___________.\nA. inputs from users are given response immediately\nB. it is a game\nC. it has many players using it\nD. All of the above\n[--Answer: A--]\nShort QuestionsSSICTB0103_03A001E, 4\n1.\nAll modern computer systems require an operating system.\n(a)\nFor each of the following functions, give an example of how the operating system performs the function.\n(i)\nProcess management(1 mark)\n___________________________________________________________________________\n(ii)\nPeripheral device management(1 mark)\n___________________________________________________________________________\n(iii)\nFile management(1 mark)\n___________________________________________________________________________\n(b)\nAlthough most users interact with their operating system with a Graphical user Interface (GUI), give a reason why Command line interface (CLI) is still provided on most operating systems nowadays.(1 mark)_______________________________________________________________________________\n[--Answer:\n(a)(i) Schedule task for CPU / Perform background task such as update and maintenance while user is using another program / Run multiple programs concurrently\n(a)(ii) Receive input and output to external devices through a driver program\n(a)(iii) Track drive capacity usage / Prevent users or programs to read, edit or delete files without necessary system privilege\n(b) More flexible / Able to use scripts to speed up task / Developer friendly\n--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "循環",
+        "函數",
+        "SQL",
+        "硬件",
+        "軟件",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_03A002E",
+      "bank_code": "SSICTB0103_03A002E",
+      "section_type": "mcq",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "(a)\nGive two differences between a desktop operating system and mobile operating system.\n(2 marks)\n_______________________________________________________________________________\n(b)\nTom is installing a new operating system on his computer. The system requirements state “at least 50GB of drive capacity is needed”.\n(i)\nExplain why the operating system requires such a large drive capacity.(1 mark)\n___________________________________________________________________________\n(ii)\nThe system requirements also recommend installing the operating system on a solid-state drive. What is the advantage of this?(1 mark)\n___________________________________________________________________________\n[--Answer:\n(a) Mobile operating systems are less resource intensive. / Mobile operating system does not support enterprise features such as hosting a server. / Mobile operating systems can only be run on mobile architecture processors.\n(b)(i) An operating system provides many functions and requires a large amount of system files to be fully operational.\n(b)(ii) Faster bootup speed / Smoother daily usage / Faster installation of OS\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "(a)\nGive two differences between a desktop operating system and mobile operating system.\n(2 marks)\n_______________________________________________________________________________\n(b)\nTom is installing a new operating system on his computer. The system requirements state “at least 50GB of drive capacity is needed”.\n(i)\nExplain why the operating system requires such a large drive capacity.(1 mark)\n___________________________________________________________________________\n(ii)\nThe system requirements also recommend installing the operating system on a solid-state drive. What is the advantage of this?(1 mark)\n___________________________________________________________________________\n[--Answer:\n(a) Mobile operating systems are less resource intensive. / Mobile operating system does not support enterprise features such as hosting a server. / Mobile operating systems can only be run on mobile architecture processors.\n(b)(i) An operating system provides many functions and requires a large amount of system files to be fully operational.\n(b)(ii) Faster bootup speed / Smoother daily usage / Faster installation of OS\n--]",
+      "concepts": [
+        "B-ch3",
+        "函數",
+        "軟件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_03A003E",
+      "bank_code": "SSICTB0103_03A003E",
+      "section_type": "mcq",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Kevin installed a third-party firewall software on his computer.\n(a)\nIt is not necessary for most users to install a separate, third-party firewall software. Why?\n(1 mark)\n_______________________________________________________________________________\n(b)\nKevin also installed a separate backup software to backup his computer regularly.\n(i)\nHe thinks since his computer has a 1TB drive, the hard drive used to store his backup must be 1TB in capacity.\nExplain why this is not necessarily true.(1 mark)_\n___________________________________________________________________________\n(ii)\nHe realises that he can set different backup intervals, for example backup “once every day” or “once every two week”.\nGive an advantage for a shorter interval and a longer interval respectively.(2 marks)\n___________________________________________________________________________\n___________________________________________________________________________\n[--Answer:\n(a) Most operating systems already provide a built-in firewall.\n(b)(i) Not all files on the system drive are backed up / The backup can be compressed in file size\n(b)(ii) Shorter interval: Recently created files are safe in the backup\nLonger interval: Less computing resources needed / Problematic files created recently are not included in the backup\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Kevin installed a third-party firewall software on his computer.\n(a)\nIt is not necessary for most users to install a separate, third-party firewall software. Why?\n(1 mark)\n_______________________________________________________________________________\n(b)\nKevin also installed a separate backup software to backup his computer regularly.\n(i)\nHe thinks since his computer has a 1TB drive, the hard drive used to store his backup must be 1TB in capacity.\nExplain why this is not necessarily true.(1 mark)_\n___________________________________________________________________________\n(ii)\nHe realises that he can set different backup intervals, for example backup “once every day” or “once every two week”.\nGive an advantage for a shorter interval and a longer interval respectively.(2 marks)\n___________________________________________________________________________\n___________________________________________________________________________\n[--Answer:\n(a) Most operating systems already provide a built-in firewall.\n(b)(i) Not all files on the system drive are backed up / The backup can be compressed in file size\n(b)(ii) Shorter interval: Recently created files are safe in the backup\nLonger interval: Less computing resources needed / Problematic files created recently are not included in the backup\n--]",
+      "concepts": [
+        "B-ch3",
+        "循環",
+        "軟件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_03A004E",
+      "bank_code": "SSICTB0103_03A004E",
+      "section_type": "mcq",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Cody bought a new printer.\n(a)\nHe needs to install a driver before using it.\nWhat is the purpose of a driver program?(1 mark)\n_______________________________________________________________________________\n(b)\nExplain why it is necessary to update driver programs when updates are available.(1 mark)\n_______________________________________________________________________________\n(c)\nSome operating systems can identify a new hardware when plugged in, and search for the suitable driver from a database and install it automatically.\nCompared to the user manually downloading and installing the driver, give an advantage and a disadvantage of this approach.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) Driver programs are used to control peripheral devices by translating requests into machine level commands.\n(b) Fix bugs / Fix security vulnerabilities / Maintain compatibility with new hardware and software\n(c) Advantage: More convenient / Less prone to the human error of installing the wrong driver\nDisadvantage: The driver in the database may be outdated / Cannot choose between the drivers available\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Cody bought a new printer.\n(a)\nHe needs to install a driver before using it.\nWhat is the purpose of a driver program?(1 mark)\n_______________________________________________________________________________\n(b)\nExplain why it is necessary to update driver programs when updates are available.(1 mark)\n_______________________________________________________________________________\n(c)\nSome operating systems can identify a new hardware when plugged in, and search for the suitable driver from a database and install it automatically.\nCompared to the user manually downloading and installing the driver, give an advantage and a disadvantage of this approach.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) Driver programs are used to control peripheral devices by translating requests into machine level commands.\n(b) Fix bugs / Fix security vulnerabilities / Maintain compatibility with new hardware and software\n(c) Advantage: More convenient / Less prone to the human error of installing the wrong driver\nDisadvantage: The driver in the database may be outdated / Cannot choose between the drivers available\n--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "循環",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "軟件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_03A005E",
+      "bank_code": "SSICTB0103_03A005E",
+      "section_type": "mcq",
+      "marks": 6.0,
+      "year_tag": null,
+      "stem": "For each of the following software, give a real-life example of why it should be classified as the given mode of operation.\n(a)\nSupermarket inventory management, Multi-user system(2 marks)\n_______________________________________________________________________________\n(b)\nDisk defragmentation software, batch processing system(2 marks)\n_______________________________________________________________________________\n(c)\nVideo call software, Real time processing system(2 marks)_______________________________________________________________________________\n[--Answer:\n(a) It must allow point-of-sale from different branches to update the inventory database at the same time while maintaining data consistency across all users.\n(b) Disk defragmentation can be set to perform at a fixed interval, such as every night or every week.\n(c) Video call software has to display the video input from a user instantly as the display output on the other user’s device.\n--]\nLong QuestionsSSICTB0103_04A001E, 12\nJanice is looking at different computer software.\n(a)\nAn advertisement for a disk defragmentation software claims it can improve the overall user experience.\n(i)\nWith reference to how files are stored on a hard drive, explain how disk defragmentation software can improve the overall user experience.(3 marks)\n___________________________________________________________________________\n___________________________________________________________________________\n___________________________________________________________________________\n(ii)\nSuggest why using disk defragmentation on a new computer system drive would not result in much performance gain.(1 mark)\n___________________________________________________________________________\n(b)\nJanice found that she cannot terminate the file manager process on her computer’s operating system. Give a reason why the file manager cannot be user-terminated. (1 mark)\n_______________________________________________________________________________\n(c)\nThe system drive on Janice’ computer reported it is full.\nSuggest two ways to free up space on her system drive.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(d)\nThe operating system prompts Janice to restart her computer for an update whenever it is available. Give two reasons why keeping the operating system up to date is important.(2 marks)_______________________________________________________________________________\n(e)\nWhen visiting Kaley’s home, Janice connected to Kaley’s printer using wireless connection.\nShe found that even though that was her first time connecting to Kaley’s printer, and she didn’t install any driver after connecting, she could still use the printer.\n(i)\nExplain why a driver program is needed for using the printer.(1 mark)\n___________________________________________________________________________\n(ii)\nSuggest two possible reasons why Janice does not need to install the driver program herself.(2 marks)\n___________________________________________________________________________\n[--Answer:\n(a)(i) Files are stored as separate fragments on different segments on a hard drive.\nDisk defragmentation moves fragments of the same file to closer locations on a hard drive.\nThis reduces overall file access time and results in smoother user experience.\n(a)(ii) Most computer files stored on a new computer drive are stored as continuous fragments. / There is not much fragmentation of files across the hard drive.\n(b) The file manager is used by other parts of the operating system.(c) Delete unused files / Delete cache / Compress infrequently used files\n(d) Fix security vulnerabilities / Maintain compatibility\n(e)(i) A driver program is needed for the operating system to communicate with the external device.\n(e)(ii) Janice installed the driver for the same printer before. / The operating system installed the driver automatically.\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "For each of the following software, give a real-life example of why it should be classified as the given mode of operation.\n(a)\nSupermarket inventory management, Multi-user system(2 marks)\n_______________________________________________________________________________\n(b)\nDisk defragmentation software, batch processing system(2 marks)\n_______________________________________________________________________________\n(c)\nVideo call software, Real time processing system(2 marks)_______________________________________________________________________________\n[--Answer:\n(a) It must allow point-of-sale from different branches to update the inventory database at the same time while maintaining data consistency across all users.\n(b) Disk defragmentation can be set to perform at a fixed interval, such as every night or every week.\n(c) Video call software has to display the video input from a user instantly as the display output on the other user’s device.\n--]\nLong QuestionsSSICTB0103_04A001E, 12\nJanice is looking at different computer software.\n(a)\nAn advertisement for a disk defragmentation software claims it can improve the overall user experience.\n(i)\nWith reference to how files are stored on a hard drive, explain how disk defragmentation software can improve the overall user experience.(3 marks)\n___________________________________________________________________________\n___________________________________________________________________________\n___________________________________________________________________________\n(ii)\nSuggest why using disk defragmentation on a new computer system drive would not result in much performance gain.(1 mark)\n___________________________________________________________________________\n(b)\nJanice found that she cannot terminate the file manager process on her computer’s operating system. Give a reason why the file manager cannot be user-terminated. (1 mark)\n_______________________________________________________________________________\n(c)\nThe system drive on Janice’ computer reported it is full.\nSuggest two ways to free up space on her system drive.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(d)\nThe operating system prompts Janice to restart her computer for an update whenever it is available. Give two reasons why keeping the operating system up to date is important.(2 marks)_______________________________________________________________________________\n(e)\nWhen visiting Kaley’s home, Janice connected to Kaley’s printer using wireless connection.\nShe found that even though that was her first time connecting to Kaley’s printer, and she didn’t install any driver after connecting, she could still use the printer.\n(i)\nExplain why a driver program is needed for using the printer.(1 mark)\n___________________________________________________________________________\n(ii)\nSuggest two possible reasons why Janice does not need to install the driver program herself.(2 marks)\n___________________________________________________________________________\n[--Answer:\n(a)(i) Files are stored as separate fragments on different segments on a hard drive.\nDisk defragmentation moves fragments of the same file to closer locations on a hard drive.\nThis reduces overall file access time and results in smoother user experience.\n(a)(ii) Most computer files stored on a new computer drive are stored as continuous fragments. / There is not much fragmentation of files across the hard drive.\n(b) The file manager is used by other parts of the operating system.(c) Delete unused files / Delete cache / Compress infrequently used files\n(d) Fix security vulnerabilities / Maintain compatibility\n(e)(i) A driver program is needed for the operating system to communicate with the external device.\n(e)(ii) Janice installed the driver for the same printer before. / The operating system installed the driver automatically.\n--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "循環",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "軟件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0103_04A002E",
+      "bank_code": "SSICTB0103_04A002E",
+      "section_type": "mcq",
+      "marks": 14.0,
+      "year_tag": null,
+      "stem": "Summie is installing an operating system on her computer.\n(a)\nState four functions of an operating system. (4 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n_______________________________________________________________________________\n_______________________________________________________________________________\n(b)\nDescribe the difference between an application program and a utility program.(2 marks)\n_______________________________________________________________________________\n(c)\nSummie thinks that a single-user operating system can only have one user account.With reference to the definition of single-user operating system, explain why she is wrong.\n(2 marks)\n_______________________________________________________________________________\n(d)\nExplain why it is unnecessary to install a multi-user operating system on most personal computers.(1 mark)\n_______________________________________________________________________________\n(e)\nSuggest an example where a multi-user operating system would be necessary.(1 mark)\n_______________________________________________________________________________\n(f)\nDescribe the following mode of operation with a real life example.\n(i)\nBatch processing mode(2 marks)\n___________________________________________________________________________\n(ii)\nParallel processing(2 marks)\n___________________________________________________________________________\n[--Answer:\n(a)File Management / Memory Management / Peripheral device management / Process Management / Disk management / User management / Multitasking\n(b)An application achieves a specific task for the user, while a utility program maintains a computer and improves its efficiency.\n(c)A single user system only allows one user to access the operating system at the same time. More than one user account can be created.\n(d)Most personal computers will not be accessed by two users at the same time.\n(e)A supermarket where different points of sale need to access the database concurrently for making sales.\n(f)(i) A batch processing system collects data without immediately processing it. Instead, data is processed in a batch at regular intervals. For example, backup software creates a backup regularly.\n(f)(ii) A parallel processing system usually consists of multiple processors and memory can be shared among these processors.  For instance, in a system for scientific analysis, data sets can be allocated to different processors for processing.\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Summie is installing an operating system on her computer.\n(a)\nState four functions of an operating system. (4 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n_______________________________________________________________________________\n_______________________________________________________________________________\n(b)\nDescribe the difference between an application program and a utility program.(2 marks)\n_______________________________________________________________________________\n(c)\nSummie thinks that a single-user operating system can only have one user account.With reference to the definition of single-user operating system, explain why she is wrong.\n(2 marks)\n_______________________________________________________________________________\n(d)\nExplain why it is unnecessary to install a multi-user operating system on most personal computers.(1 mark)\n_______________________________________________________________________________\n(e)\nSuggest an example where a multi-user operating system would be necessary.(1 mark)\n_______________________________________________________________________________\n(f)\nDescribe the following mode of operation with a real life example.\n(i)\nBatch processing mode(2 marks)\n___________________________________________________________________________\n(ii)\nParallel processing(2 marks)\n___________________________________________________________________________\n[--Answer:\n(a)File Management / Memory Management / Peripheral device management / Process Management / Disk management / User management / Multitasking\n(b)An application achieves a specific task for the user, while a utility program maintains a computer and improves its efficiency.\n(c)A single user system only allows one user to access the operating system at the same time. More than one user account can be created.\n(d)Most personal computers will not be accessed by two users at the same time.\n(e)A supermarket where different points of sale need to access the database concurrently for making sales.\n(f)(i) A batch processing system collects data without immediately processing it. Instead, data is processed in a batch at regular intervals. For example, backup software creates a backup regularly.\n(f)(ii) A parallel processing system usually consists of multiple processors and memory can be shared among these processors.  For instance, in a system for scientific analysis, data sets can be allocated to different processors for processing.\n--]",
+      "concepts": [
+        "B-ch3",
+        "Python",
+        "循環",
+        "函數",
+        "數據庫",
+        "硬件",
+        "軟件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

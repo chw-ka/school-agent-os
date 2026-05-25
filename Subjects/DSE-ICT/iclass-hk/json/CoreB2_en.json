@@ -1,0 +1,599 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreB2_en_Computer Hardware.docx",
+    "slug": "CoreB2_en",
+    "title": "Computer Hardware",
+    "title_zh": null,
+    "title_en": "Computer Hardware",
+    "language": "en",
+    "family": "CoreB",
+    "chapter": 2,
+    "integrated": false,
+    "topic_code": "B02",
+    "curriculum_unit": "Core-B",
+    "ca_unit": "B",
+    "f5_exam_scope": "mcq_core_b",
+    "extracted_at": "2026-05-24T10:37:17.719085+00:00",
+    "item_count": 25,
+    "section_counts": {
+      "mcq": 25
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTB0102_01A001E",
+      "bank_code": "SSICTB0102_01A001E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is typically stored in an Instruction Register (IR)?",
+      "options": {
+        "A": "Data",
+        "B": "Memory Address",
+        "C": "Control Signal",
+        "D": "None of the above\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is typically stored in an Instruction Register (IR)?\nA. Data\nB. Memory Address\nC. Control Signal\nD. None of the above\n[--Answer: D--]",
+      "concepts": [
+        "B-ch2",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0102_01A002E",
+      "bank_code": "SSICTB0102_01A002E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "If a processor A has a higher clock speed than processor B, which of the following MUST be correct? (Assume both A and B are single core processors)\n(1)\nProcessor A has a higher computational power\n(2)\nProcessor B consumes less power than A\n(3)\nThe number of instructions executed per clock cycle is higher on A",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "None of the above\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "If a processor A has a higher clock speed than processor B, which of the following MUST be correct? (Assume both A and B are single core processors)\n(1)\nProcessor A has a higher computational power\n(2)\nProcessor B consumes less power than A\n(3)\nThe number of instructions executed per clock cycle is higher on A\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. None of the above\n[--Answer: D--]",
+      "concepts": [
+        "B-ch2",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A003E",
+      "bank_code": "SSICTB0102_01A003E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Compared to Central Processing Units (CPU) that usually have 2-6 cores, Graphics Processing Units (GPU) usually have much more processing units, usually from 512 to 4096 units. What is the main reason for the much higher number of processing units in GPU?",
+      "options": {
+        "A": "For better parallel processing",
+        "B": "To increase power consumption",
+        "C": "To reduce production cost",
+        "D": "All above\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Compared to Central Processing Units (CPU) that usually have 2-6 cores, Graphics Processing Units (GPU) usually have much more processing units, usually from 512 to 4096 units. What is the main reason for the much higher number of processing units in GPU?\nA. For better parallel processing\nB. To increase power consumption\nC. To reduce production cost\nD. All above\n[--Answer: A--]",
+      "concepts": [
+        "B-ch2",
+        "循環",
+        "硬件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0102_01A004E",
+      "bank_code": "SSICTB0102_01A004E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Crystal wants to connect a monitor to her computer using HDMI.\nShe should connect the HDMI wire to port B instead of A because _____________.",
+      "options": {
+        "A": "better graphical performance can be achieved",
+        "B": "it reduces interference between electrical wires",
+        "C": "port A is not an HDMI port",
+        "D": "it reduces power consumption\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Crystal wants to connect a monitor to her computer using HDMI.\nShe should connect the HDMI wire to port B instead of A because _____________.\nA. better graphical performance can be achieved\nB. it reduces interference between electrical wires\nC. port A is not an HDMI port\nD. it reduces power consumption\n[--Answer: A--]",
+      "concepts": [
+        "B-ch2"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0102_01A005E",
+      "bank_code": "SSICTB0102_01A005E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is true about the address bus in a computer system?\n(1)\nIt connects the CPU and the memory\n(2)\nIt can move a memory address from the CPU to the memory\n(3)\nIt can move data from a memory to a CPU",
+      "options": {
+        "A": "(1) only",
+        "B": "(1) and (2) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3) only\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is true about the address bus in a computer system?\n(1)\nIt connects the CPU and the memory\n(2)\nIt can move a memory address from the CPU to the memory\n(3)\nIt can move data from a memory to a CPU\nA. (1) only\nB. (1) and (2) only\nC. (2) and (3) only\nD. (1), (2) and (3) only\n[--Answer: B--]",
+      "concepts": [
+        "B-ch2",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A006E",
+      "bank_code": "SSICTB0102_01A006E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Match the following types of system bus to its corresponding function.\nBus Type\nFunction\n(1)\nTransfer control signal from processor to other system components\n(2)\nTransfer memory address from processor to other system components\n(3)\nTransfer power from power supply unit to processor",
+      "options": {
+        "A": "(1): Address Bus (2): Data Bus (3):  This bus does not exist",
+        "B": "(1): Control Bus (2): Memory Bus (3):  Power Bus",
+        "C": "(1) Data Bus (2): Memory Bus (3):  Power Bus",
+        "D": "(1): Control Bus (2): Address Bus (3): This bus does not exist\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Match the following types of system bus to its corresponding function.\nBus Type\nFunction\n(1)\nTransfer control signal from processor to other system components\n(2)\nTransfer memory address from processor to other system components\n(3)\nTransfer power from power supply unit to processor\nA. (1): Address Bus (2): Data Bus (3):  This bus does not exist\nB. (1): Control Bus (2): Memory Bus (3):  Power Bus\nC. (1) Data Bus (2): Memory Bus (3):  Power Bus\nD. (1): Control Bus (2): Address Bus (3): This bus does not exist\n[--Answer: D--]",
+      "concepts": [
+        "B-ch2",
+        "函數",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A007E",
+      "bank_code": "SSICTB0102_01A007E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Suppose A is a processor in a smartphone while B is a processor in a desktop computer. Which of the following must be true when comparing A and B?",
+      "options": {
+        "A": "B have a higher computational power",
+        "B": "A and B have the same instruction set",
+        "C": "A has a lower power consumption",
+        "D": "None of the above\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Suppose A is a processor in a smartphone while B is a processor in a desktop computer. Which of the following must be true when comparing A and B?\nA. B have a higher computational power\nB. A and B have the same instruction set\nC. A has a lower power consumption\nD. None of the above\n[--Answer: D--]",
+      "concepts": [
+        "B-ch2",
+        "循環"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0102_01A008E",
+      "bank_code": "SSICTB0102_01A008E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following are typical interfaces for connecting a Hard Drive to a computer?\n(1)\nSATA\n(2)\nDVI\n(3)\nUSB",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following are typical interfaces for connecting a Hard Drive to a computer?\n(1)\nSATA\n(2)\nDVI\n(3)\nUSB\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: B--]",
+      "concepts": [
+        "B-ch2",
+        "循環"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A009E",
+      "bank_code": "SSICTB0102_01A009E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Look at the specification of two computer systems below.\nA\nB\nCPU\n2.8 GHz Dual Core\n2.4 GHz Quad Core\nMemory\n8GB DDR4\n2 X 16GB DDR4\nGraphics Unit\nGraphics Card with 4GB GDDR6 Video Memory\nIntegrated GPU\nStorage\n1TB SSD\n1TB Hard Drive\nWhich computer system is more suitable in each of the following use cases?\nRunning 3D Animation Program\nOpening 150 tabs in a browser at the same time\nTransferring large number of photos and videos from external storage device",
+      "options": {
+        "A": "(1):A、(2):A、(3):B",
+        "B": "(1):B、(2):B、(3):A",
+        "C": "(1):A、(2):B、(3):A",
+        "D": "(1):B、(2):A、(3):B\n[--Answer: C--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Look at the specification of two computer systems below.\nA\nB\nCPU\n2.8 GHz Dual Core\n2.4 GHz Quad Core\nMemory\n8GB DDR4\n2 X 16GB DDR4\nGraphics Unit\nGraphics Card with 4GB GDDR6 Video Memory\nIntegrated GPU\nStorage\n1TB SSD\n1TB Hard Drive\nWhich computer system is more suitable in each of the following use cases?\nRunning 3D Animation Program\nOpening 150 tabs in a browser at the same time\nTransferring large number of photos and videos from external storage device\nA. (1):A、(2):A、(3):B\nB. (1):B、(2):B、(3):A\nC. (1):A、(2):B、(3):A\nD. (1):B、(2):A、(3):B\n[--Answer: C--]",
+      "concepts": [
+        "B-ch2",
+        "Python",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A010E",
+      "bank_code": "SSICTB0102_01A010E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following configurations is the least effective in reducing power consumption in a laptop computer?",
+      "options": {
+        "A": "Use a dual core CPU instead of eight core CPU",
+        "B": "Use 8GB Memory instead of 16GB Memory",
+        "C": "Use SSD instead of hard drive",
+        "D": "Use integrated graphics instead of standalone graphics card\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following configurations is the least effective in reducing power consumption in a laptop computer?\nA. Use a dual core CPU instead of eight core CPU\nB. Use 8GB Memory instead of 16GB Memory\nC. Use SSD instead of hard drive\nD. Use integrated graphics instead of standalone graphics card\n[--Answer: B--]",
+      "concepts": [
+        "B-ch2",
+        "硬件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0102_01A011E",
+      "bank_code": "SSICTB0102_01A011E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following factors will affect the processing power of a central processing unit (CPU)?\n(1)\nNumber of cores\n(2)\nClock rate\n(3)\nCache memory capacity",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following factors will affect the processing power of a central processing unit (CPU)?\n(1)\nNumber of cores\n(2)\nClock rate\n(3)\nCache memory capacity\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: D--]",
+      "concepts": [
+        "B-ch2",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A012E",
+      "bank_code": "SSICTB0102_01A012E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Rank the access time of data from the CPU to the following in ascending order.\n(1)\nCache\n(2)\nRegister\n(3)\nSolid State Drive\n(4)\nMain memory",
+      "options": {
+        "A": "(2) → (4) → (1) → (3)",
+        "B": "(2) → (1) → (4) → (3)",
+        "C": "(1) → (2) → (4) → (3)",
+        "D": "(1) → (2) → (3) → (4)\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Rank the access time of data from the CPU to the following in ascending order.\n(1)\nCache\n(2)\nRegister\n(3)\nSolid State Drive\n(4)\nMain memory\nA. (2) → (4) → (1) → (3)\nB. (2) → (1) → (4) → (3)\nC. (1) → (2) → (4) → (3)\nD. (1) → (2) → (3) → (4)\n[--Answer: B--]",
+      "concepts": [
+        "B-ch2",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A013E",
+      "bank_code": "SSICTB0102_01A013E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Tommy finds that when he opens too many tabs in his browser, his computer begins to respond very slowly. Which of the following upgrades can most likely solve this problem?",
+      "options": {
+        "A": "Quad core CPU → Eight core CPU",
+        "B": "4GB RAM → 8GB RAM",
+        "C": "500GB Hard Drive → 256GB Solid State Drive",
+        "D": "Integrated graphics → Discrete graphics card\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Tommy finds that when he opens too many tabs in his browser, his computer begins to respond very slowly. Which of the following upgrades can most likely solve this problem?\nA. Quad core CPU → Eight core CPU\nB. 4GB RAM → 8GB RAM\nC. 500GB Hard Drive → 256GB Solid State Drive\nD. Integrated graphics → Discrete graphics card\n[--Answer: B--]",
+      "concepts": [
+        "B-ch2",
+        "硬件"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0102_01A014E",
+      "bank_code": "SSICTB0102_01A014E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "The operating system should be installed on a solid-state drive instead of a hard disk because of ______________.",
+      "options": {
+        "A": "larger capacity",
+        "B": "better shock resistance",
+        "C": "lower power consumption",
+        "D": "faster data access speed\n[--Answer: D--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "The operating system should be installed on a solid-state drive instead of a hard disk because of ______________.\nA. larger capacity\nB. better shock resistance\nC. lower power consumption\nD. faster data access speed\n[--Answer: D--]",
+      "concepts": [
+        "B-ch2",
+        "軟件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0102_01A015E",
+      "bank_code": "SSICTB0102_01A015E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "Which of the following is not true when comparing integrated graphics and discrete graphics?",
+      "options": {
+        "A": "Discrete graphics does not use the computer’s main memory",
+        "B": "Integrated graphics are usually in the same processor chip as the CPU",
+        "C": "Not all computer system allows a discrete graphics unit",
+        "D": "The purpose of having integrated graphics and discrete graphics is similar\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is not true when comparing integrated graphics and discrete graphics?\nA. Discrete graphics does not use the computer’s main memory\nB. Integrated graphics are usually in the same processor chip as the CPU\nC. Not all computer system allows a discrete graphics unit\nD. The purpose of having integrated graphics and discrete graphics is similar\n[--Answer: A--]",
+      "concepts": [
+        "B-ch2",
+        "硬件",
+        "網絡"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTB0102_01A016E",
+      "bank_code": "SSICTB0102_01A016E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Which of the following storage devices is/are volatile?\n(1)\nCache memory\n(2)\nRAM\n(3)\nROM\n(4)\nSSD",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(3) and (4) only\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following storage devices is/are volatile?\n(1)\nCache memory\n(2)\nRAM\n(3)\nROM\n(4)\nSSD\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (3) and (4) only\n[--Answer: A--]",
+      "concepts": [
+        "B-ch2",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A017E",
+      "bank_code": "SSICTB0102_01A017E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Which of the following is a correct match of a hardware and its specification?\nHardware\nSpecification",
+      "options": {
+        "A": "Wireless earphones\nAspect ratio is 16:9",
+        "B": "Motherboard\nProvides 3 PCIe slots",
+        "C": "Graphic card\nSupports IPv6",
+        "D": "Inkjet printer\nRefresh rate is 120 frames per second\n[--Answer: B--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following is a correct match of a hardware and its specification?\nHardware\nSpecification\nA. Wireless earphones\nAspect ratio is 16:9\nB. Motherboard\nProvides 3 PCIe slots\nC. Graphic card\nSupports IPv6\nD. Inkjet printer\nRefresh rate is 120 frames per second\n[--Answer: B--]",
+      "concepts": [
+        "B-ch2",
+        "硬件",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A018E",
+      "bank_code": "SSICTB0102_01A018E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "The clock rates of CPU X and Y are 2 GHz and 4 GHz, respectively. Assume that both CPUs have the same architecture and can execute the same number of instructions per cycle. Which of the following statements are correct?\n(1)\nThe clock cycle of CPU X is 0.5 × 10-9 seconds.\n(2)\nThe processing power of CPU Y is higher.\n(3)\nThe word length of CPU X and Y are 32 bits and 64 bits respectively.",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: A--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "The clock rates of CPU X and Y are 2 GHz and 4 GHz, respectively. Assume that both CPUs have the same architecture and can execute the same number of instructions per cycle. Which of the following statements are correct?\n(1)\nThe clock cycle of CPU X is 0.5 × 10-9 seconds.\n(2)\nThe processing power of CPU Y is higher.\n(3)\nThe word length of CPU X and Y are 32 bits and 64 bits respectively.\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: A--]",
+      "concepts": [
+        "B-ch2",
+        "硬件",
+        "進制"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A019E",
+      "bank_code": "SSICTB0102_01A019E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Which of the following system buses transfer data in only one direction?\n(1)\nAddress bus\n(2)\nControl bus\n(3)\nData bus",
+      "options": {
+        "A": "(1) and (2) only",
+        "B": "(1) and (3) only",
+        "C": "(2) and (3) only",
+        "D": "(1), (2) and (3)\n[--Answer: -A-]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following system buses transfer data in only one direction?\n(1)\nAddress bus\n(2)\nControl bus\n(3)\nData bus\nA. (1) and (2) only\nB. (1) and (3) only\nC. (2) and (3) only\nD. (1), (2) and (3)\n[--Answer: -A-]",
+      "concepts": [
+        "B-ch2",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_01A020E",
+      "bank_code": "SSICTB0102_01A020E",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "Which of the following are transferred by a data bus?\n(1)\nControl signal\n(2)\nData\n(3)\nInstruction\n(4)\nMemory address",
+      "options": {
+        "A": "(1) and (3) only",
+        "B": "(1) and (4) only",
+        "C": "(2) and (3) only",
+        "D": "(2) and (4) only\n[--Answer: C--]\nShort QuestionsSSICTB0102_03A001E, 4\n1.\nSecondary storage devices are used commonly in computer systems.\n(a)\nGive two reasons why a hard drive is not a suitable built-in storage for smartphones.(2 marks)_______________________________________________________________________________\n(b)\nSome smartphones allow users to expand storage capacity by adding a removable media such as an SD card.\nCompared to storing data on the smartphone’s built-in storage, give an advantage and a disadvantage of storing data on the removable media.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) Hard drive has a large physical size / Vulnerable to data loss when dropped / Greater power consumption\n(b) Advantage: The data can be quickly transferred to another device by removing the card / Able to replace the card when capacity is full (No need to delete files) /Able to use very-high capacity storage media\nDisadvantage: Security risk as SD card can be removed by others / Higher cost / Slower data transfer speed compared to built-in storage\n--]"
+      },
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Which of the following are transferred by a data bus?\n(1)\nControl signal\n(2)\nData\n(3)\nInstruction\n(4)\nMemory address\nA. (1) and (3) only\nB. (1) and (4) only\nC. (2) and (3) only\nD. (2) and (4) only\n[--Answer: C--]\nShort QuestionsSSICTB0102_03A001E, 4\n1.\nSecondary storage devices are used commonly in computer systems.\n(a)\nGive two reasons why a hard drive is not a suitable built-in storage for smartphones.(2 marks)_______________________________________________________________________________\n(b)\nSome smartphones allow users to expand storage capacity by adding a removable media such as an SD card.\nCompared to storing data on the smartphone’s built-in storage, give an advantage and a disadvantage of storing data on the removable media.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) Hard drive has a large physical size / Vulnerable to data loss when dropped / Greater power consumption\n(b) Advantage: The data can be quickly transferred to another device by removing the card / Able to replace the card when capacity is full (No need to delete files) /Able to use very-high capacity storage media\nDisadvantage: Security risk as SD card can be removed by others / Higher cost / Slower data transfer speed compared to built-in storage\n--]",
+      "concepts": [
+        "B-ch2",
+        "循環",
+        "SQL",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_03A002E",
+      "bank_code": "SSICTB0102_03A002E",
+      "section_type": "mcq",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "All modern computers have a central processing unit (CPU).\n(a)\nWhat is the use of registers in a CPU?(1 mark)\n_______________________________________________________________________________\n(b)\nName and describe the three steps involved in the machine cycle of a CPU.(3 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) They are used to store temporary data used in the CPU’s calculation/operation.\n(b) Fetch, get the instruction from the main memory to the CPU;\nDecode, identify the operation and operand associated with the instruction;\nExecute, execute the operation.\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "All modern computers have a central processing unit (CPU).\n(a)\nWhat is the use of registers in a CPU?(1 mark)\n_______________________________________________________________________________\n(b)\nName and describe the three steps involved in the machine cycle of a CPU.(3 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) They are used to store temporary data used in the CPU’s calculation/operation.\n(b) Fetch, get the instruction from the main memory to the CPU;\nDecode, identify the operation and operand associated with the instruction;\nExecute, execute the operation.\n--]",
+      "concepts": [
+        "B-ch2",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_03A003E",
+      "bank_code": "SSICTB0102_03A003E",
+      "section_type": "mcq",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Storage devices are used to store data in a computer system.\n(a)\nCache memory and main memory are both called volatile memory.\nExplain what is meant by “volatile”.(1 mark)\n_______________________________________________________________________________\n(b)\nWhat is stored on main memory during normal operation of a computer? (1 mark)\n_______________________________________________________________________________\n(c)\nExplain how cache memory is different from main memory, and how it can improve a computer’s performance.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) Data is not retained after the computer is shut down.\n(b) Data and files of currently running program.\n(c) Cache memory has a higher data transfer rate.\nIt allows frequently accessed data and files to be accessed much quicker.\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Storage devices are used to store data in a computer system.\n(a)\nCache memory and main memory are both called volatile memory.\nExplain what is meant by “volatile”.(1 mark)\n_______________________________________________________________________________\n(b)\nWhat is stored on main memory during normal operation of a computer? (1 mark)\n_______________________________________________________________________________\n(c)\nExplain how cache memory is different from main memory, and how it can improve a computer’s performance.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n[--Answer:\n(a) Data is not retained after the computer is shut down.\n(b) Data and files of currently running program.\n(c) Cache memory has a higher data transfer rate.\nIt allows frequently accessed data and files to be accessed much quicker.\n--]",
+      "concepts": [
+        "B-ch2",
+        "Python",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_03A004E",
+      "bank_code": "SSICTB0102_03A004E",
+      "section_type": "mcq",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Discrete graphics are commonly used in gaming computers.\n(a)\nExplain why discrete graphics are usually needed in these computers.(1 mark)\n_______________________________________________________________________________\n(b)\nStill, many gaming laptops have integrated graphics installed alongside a discrete graphics card. Give an advantage of this.(1 mark)\n_______________________________________________________________________________\n(c)\nTom wants to purchase a new CPU for his gaming PC. He is wondering whether he should get a CPU with higher clock speed or more processing cores.\n(i)\nWhat is the clock speed of a CPU?                                                                                         (1 mark)\n___________________________________________________________________________\n(ii)\nExplain the benefit of having more processing cores to the overall user experience. (1 mark)\n___________________________________________________________________________\n[--Answer:\n(a) Gaming usually requires much more powerful 3D rendering and graphics processing power.\n(b) The integrated graphics can still be used during low workload periods to reduce power consumption.\n(c)(i) It refers to the number of clock cycles executed per time unit.\n(c)(ii) It allows smoother multi-tasking.\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Discrete graphics are commonly used in gaming computers.\n(a)\nExplain why discrete graphics are usually needed in these computers.(1 mark)\n_______________________________________________________________________________\n(b)\nStill, many gaming laptops have integrated graphics installed alongside a discrete graphics card. Give an advantage of this.(1 mark)\n_______________________________________________________________________________\n(c)\nTom wants to purchase a new CPU for his gaming PC. He is wondering whether he should get a CPU with higher clock speed or more processing cores.\n(i)\nWhat is the clock speed of a CPU?                                                                                         (1 mark)\n___________________________________________________________________________\n(ii)\nExplain the benefit of having more processing cores to the overall user experience. (1 mark)\n___________________________________________________________________________\n[--Answer:\n(a) Gaming usually requires much more powerful 3D rendering and graphics processing power.\n(b) The integrated graphics can still be used during low workload periods to reduce power consumption.\n(c)(i) It refers to the number of clock cycles executed per time unit.\n(c)(ii) It allows smoother multi-tasking.\n--]",
+      "concepts": [
+        "B-ch2",
+        "循環",
+        "硬件"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_03A005E",
+      "bank_code": "SSICTB0102_03A005E",
+      "section_type": "mcq",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "Solid state drives are used extensively in computer systems nowadays.\n(a)\nCompared to a hard drive, give two benefits of using a solid state drive.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(b)\nMost external solid-state drives are used with USB 3.0 or above.\nExplain why USB 2.0 should not be used with SSD.(1 mark)\n_______________________________________________________________________________\n(c)\nSuggest a technology which can be used to increase overall data transfer speed on multiple hard drives.(1 mark)_______________________________________________________________________________\n[--Answer:\n(a) Higher data transfer rate / Lower power consumption / Better shock resistance / Smaller physical size.\n(b) As the transfer speed of USB 2.0 is too slow, it would limit the data transfer speed and cause bottlenecks.\n(c) RAID / Redundant Array of Independent Disks\n--]\nLong QuestionsSSICTB0102_04A001E, 11\nAiden is reviewing the specifications of a computer.\n(a)\nExplain how each of the following CPU features result in better processing power overall.\n(i)\nFaster clock speed(1 mark)\n___________________________________________________________________________\n(ii)\nMore processing cores    (1 mark)\n___________________________________________________________________________\n(iii)\nLarger cache capacity(1 mark)\n___________________________________________________________________________\n(b)\nAiden thinks adding more RAM capacity to a computer will result in a smoother user experience.\n(i)\nExplain why this is not necessarily true.  (1 mark)\n___________________________________________________________________________\n(ii)\nSuggest a situation where adding more RAM capacity would improve the user experience\n(1 mark)\n___________________________________________________________________________\n(iii)\nExplain how switching to faster RAM can improve performance.(1 mark)\n___________________________________________________________________________\n(c)\nPower management is especially important on a laptop computer.\nFor each of the following system components, suggest a way to conserve power usage from a system configuration viewpoint.\n(i)\nGraphics processing unit(1 mark)\n___________________________________________________________________________\n(ii)\nSecondary storage device(1 mark)\n___________________________________________________________________________\n(iii)\nCentral Processing Unit(1 mark)\n___________________________________________________________________________\n(d)\nBelow shows a list of common computer problems. Suggest a way to solve them without violating the given constraint.\n(i)\nThe hard drive is full. (Constraint: All files must be preserved for later use; cannot add a new hard drive.)(1 mark)\n___________________________________________________________________________\n(ii)\nThe computer takes a long time to boot up.\n(Constraint: Upgrade one component only)(1 mark)\n___________________________________________________________________________\n[--Answer:\n(a) (i) A faster clock speed allows more clock cycles/instructions to be executed in the same time period.\n(a)(ii) More processing cores allow more instructions to be executed in parallel.\n(a)(iii) A larger cache allows more frequently used data to be stored there, reducing data transfer time between CPU and RAM.\n(b)(i) Adding more RAM does not improve performance unless there is insufficient RAM capacity and currently using files are paged to the SSD/Hard drive.\n(b)(ii) A user has many programs running in the background / A user opens many tabs in the browser / A user is running a computationally heavy program which requires a lot of memory capacity.\n(b)(iii) Faster RAM reduces the time needed for transferring data between RAM and CPU/other components.\n(c)(i) Use integrated graphics instead of discrete graphics\n(c)(ii) Use SSD instead of hard drive\n(c)(iii) Use CPU with less number of core / Use low-power CPU\n(d)(i) Compress unused files\n(d)(ii) Upgrade to an SSD / Add more RAM\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Solid state drives are used extensively in computer systems nowadays.\n(a)\nCompared to a hard drive, give two benefits of using a solid state drive.(2 marks)\n_______________________________________________________________________________\n_______________________________________________________________________________\n(b)\nMost external solid-state drives are used with USB 3.0 or above.\nExplain why USB 2.0 should not be used with SSD.(1 mark)\n_______________________________________________________________________________\n(c)\nSuggest a technology which can be used to increase overall data transfer speed on multiple hard drives.(1 mark)_______________________________________________________________________________\n[--Answer:\n(a) Higher data transfer rate / Lower power consumption / Better shock resistance / Smaller physical size.\n(b) As the transfer speed of USB 2.0 is too slow, it would limit the data transfer speed and cause bottlenecks.\n(c) RAID / Redundant Array of Independent Disks\n--]\nLong QuestionsSSICTB0102_04A001E, 11\nAiden is reviewing the specifications of a computer.\n(a)\nExplain how each of the following CPU features result in better processing power overall.\n(i)\nFaster clock speed(1 mark)\n___________________________________________________________________________\n(ii)\nMore processing cores    (1 mark)\n___________________________________________________________________________\n(iii)\nLarger cache capacity(1 mark)\n___________________________________________________________________________\n(b)\nAiden thinks adding more RAM capacity to a computer will result in a smoother user experience.\n(i)\nExplain why this is not necessarily true.  (1 mark)\n___________________________________________________________________________\n(ii)\nSuggest a situation where adding more RAM capacity would improve the user experience\n(1 mark)\n___________________________________________________________________________\n(iii)\nExplain how switching to faster RAM can improve performance.(1 mark)\n___________________________________________________________________________\n(c)\nPower management is especially important on a laptop computer.\nFor each of the following system components, suggest a way to conserve power usage from a system configuration viewpoint.\n(i)\nGraphics processing unit(1 mark)\n___________________________________________________________________________\n(ii)\nSecondary storage device(1 mark)\n___________________________________________________________________________\n(iii)\nCentral Processing Unit(1 mark)\n___________________________________________________________________________\n(d)\nBelow shows a list of common computer problems. Suggest a way to solve them without violating the given constraint.\n(i)\nThe hard drive is full. (Constraint: All files must be preserved for later use; cannot add a new hard drive.)(1 mark)\n___________________________________________________________________________\n(ii)\nThe computer takes a long time to boot up.\n(Constraint: Upgrade one component only)(1 mark)\n___________________________________________________________________________\n[--Answer:\n(a) (i) A faster clock speed allows more clock cycles/instructions to be executed in the same time period.\n(a)(ii) More processing cores allow more instructions to be executed in parallel.\n(a)(iii) A larger cache allows more frequently used data to be stored there, reducing data transfer time between CPU and RAM.\n(b)(i) Adding more RAM does not improve performance unless there is insufficient RAM capacity and currently using files are paged to the SSD/Hard drive.\n(b)(ii) A user has many programs running in the background / A user opens many tabs in the browser / A user is running a computationally heavy program which requires a lot of memory capacity.\n(b)(iii) Faster RAM reduces the time needed for transferring data between RAM and CPU/other components.\n(c)(i) Use integrated graphics instead of discrete graphics\n(c)(ii) Use SSD instead of hard drive\n(c)(iii) Use CPU with less number of core / Use low-power CPU\n(d)(i) Compress unused files\n(d)(ii) Upgrade to an SSD / Add more RAM\n--]",
+      "concepts": [
+        "B-ch2",
+        "Python",
+        "循環",
+        "列表",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTB0102_04A002E",
+      "bank_code": "SSICTB0102_04A002E",
+      "section_type": "mcq",
+      "marks": 12.0,
+      "year_tag": null,
+      "stem": "Most modern smartphones utilise low-power consumption components.\n(a)\nExplain why low-power consumption components are needed in a smartphone.(1 mark)\n_______________________________________________________________________________\n(b)\nFor each of the following smartphone settings, suggest a change to extend the battery life.\n(i)\nScreen(1 mark)\n___________________________________________________________________________\n(ii)\nCellular connection(1 mark)\n___________________________________________________________________________\n(iii)\nLocation access(1 mark)\n___________________________________________________________________________\n(iv)\nBackground services(1 mark)\n___________________________________________________________________________\n(c)\nMost CPU used in smartphones uses a Big-Little design.There are a few ‘efficiency’ cores which are less computationally powerful but very power efficient, and a few ‘performance’ cores which are computationally powerful while more power consuming.\n(i)\nExplain an advantage of this design compared to a traditional CPU where all processing cores are the same.                                                                                                                          (2 marks)\n___________________________________________________________________________\n(ii)\nSuggest a design concern when all processing cores are at full load on a smartphone.(1 mark)\n___________________________________________________________________________\n(iii)\nDesktop processors are usually much more computationally powerful than smartphones even at the same price.\nGive two reasons for why this is generally true.(2 marks)\n___________________________________________________________________________\n___________________________________________________________________________\n(d)\nFor the last decade, most laptop computers use the same processor family (architecture) as desktop computers. However, in recent years, an increasing number of manufacturers are launching laptops which use processor architectures found on smartphones. Examples include Apple M1 and Microsoft Surface Pro X.\n(i)\nSuggest an advantage of using a mobile architecture CPU on a laptop.                           (1 mark)\n___________________________________________________________________________\n(ii)\nSuggest a disadvantage of using a mobile architecture CPU on a laptop.                         (1 mark)\n___________________________________________________________________________\n[--Answer:\n(a) The power supply from the battery is limited.(b)(i) Lower screen brightness / Reduce screen refresh rate\n(b)(ii) Use LTE instead of 5G / Turn off cellular connection\n(b)(iii) Turn off location access / Reduce location access frequency / Use approximate location instead of precise location\n(b)(iv) Terminate unnecessary background services\n(c)(i) Big-Little design allows a balance between computational power and power efficiency. Smartphones can still have high computational power when needed but remain power efficient during normal operation.\n(c)(ii) The smartphone may be overheated.\n(c)(iii) Higher wattage power supply / Unconstrained by batter power limit / Better cooling solutions / Larger volume to fit more components\n(d)(i) Lower power consumption / compatibility with mobile apps\n(d)(ii) Incompatible with existing desktop applications\n--]",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [],
+      "text": "Most modern smartphones utilise low-power consumption components.\n(a)\nExplain why low-power consumption components are needed in a smartphone.(1 mark)\n_______________________________________________________________________________\n(b)\nFor each of the following smartphone settings, suggest a change to extend the battery life.\n(i)\nScreen(1 mark)\n___________________________________________________________________________\n(ii)\nCellular connection(1 mark)\n___________________________________________________________________________\n(iii)\nLocation access(1 mark)\n___________________________________________________________________________\n(iv)\nBackground services(1 mark)\n___________________________________________________________________________\n(c)\nMost CPU used in smartphones uses a Big-Little design.There are a few ‘efficiency’ cores which are less computationally powerful but very power efficient, and a few ‘performance’ cores which are computationally powerful while more power consuming.\n(i)\nExplain an advantage of this design compared to a traditional CPU where all processing cores are the same.                                                                                                                          (2 marks)\n___________________________________________________________________________\n(ii)\nSuggest a design concern when all processing cores are at full load on a smartphone.(1 mark)\n___________________________________________________________________________\n(iii)\nDesktop processors are usually much more computationally powerful than smartphones even at the same price.\nGive two reasons for why this is generally true.(2 marks)\n___________________________________________________________________________\n___________________________________________________________________________\n(d)\nFor the last decade, most laptop computers use the same processor family (architecture) as desktop computers. However, in recent years, an increasing number of manufacturers are launching laptops which use processor architectures found on smartphones. Examples include Apple M1 and Microsoft Surface Pro X.\n(i)\nSuggest an advantage of using a mobile architecture CPU on a laptop.                           (1 mark)\n___________________________________________________________________________\n(ii)\nSuggest a disadvantage of using a mobile architecture CPU on a laptop.                         (1 mark)\n___________________________________________________________________________\n[--Answer:\n(a) The power supply from the battery is limited.(b)(i) Lower screen brightness / Reduce screen refresh rate\n(b)(ii) Use LTE instead of 5G / Turn off cellular connection\n(b)(iii) Turn off location access / Reduce location access frequency / Use approximate location instead of precise location\n(b)(iv) Terminate unnecessary background services\n(c)(i) Big-Little design allows a balance between computational power and power efficiency. Smartphones can still have high computational power when needed but remain power efficient during normal operation.\n(c)(ii) The smartphone may be overheated.\n(c)(iii) Higher wattage power supply / Unconstrained by batter power limit / Better cooling solutions / Larger volume to fit more components\n(d)(i) Lower power consumption / compatibility with mobile apps\n(d)(ii) Incompatible with existing desktop applications\n--]",
+      "concepts": [
+        "B-ch2",
+        "循環",
+        "硬件"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

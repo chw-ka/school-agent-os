@@ -1,0 +1,2499 @@
+{
+  "version": 2,
+  "generated_at": "2026-05-24T10:37:18.995251+00:00",
+  "purpose": "Calibrate S5/F5 ICT exam depth across Core A/B/D and electives (EA/EC). iClass HK items are school-level benchmarks — match depth by curriculum_unit + concepts.",
+  "usage_notes": [
+    "Each generated spec item may include depth_references from matching iClass QB JSON.",
+    "Do not copy stems verbatim into exams (copyright); use for depth and topic coverage.",
+    "Core A/B MCQ: scenario + hardware/software/data organisation; not only definitions.",
+    "Core D: code trace, lists, testing/debugging.",
+    "EA written: SQL multi-step; EC: Python structures, sorting, files."
+  ],
+  "totals": {
+    "items": 517,
+    "mcq": 332,
+    "short_answer": 134,
+    "long_answer": 51
+  },
+  "units": [
+    {
+      "unit_key": "Core-A-ch1",
+      "item_count": 32,
+      "section_types": {
+        "mcq": 20,
+        "short_answer": 10,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 20,
+        "4.0": 4,
+        "3.0": 6,
+        "7.0": 2
+      },
+      "difficulty_distribution": {
+        "intermediate": 18,
+        "foundation": 12,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "A-ch1",
+        "資訊處理",
+        "硬件",
+        "循環",
+        "輸入輸出",
+        "網絡",
+        "軟件",
+        "Python",
+        "排序",
+        "進制",
+        "數據庫",
+        "列表"
+      ],
+      "sample_stems": [
+        "Which of the following hardware is/are used for input?\n(1)\nKeyboard\n(2)\nWebcam\n(3)\nSpeaker",
+        "Which of the following is not used for output?",
+        "Which of the following is/are the example(s) of application software?\n(1)\nTask Manager\n(2)\nDatabase management software\n(3)\nAnti-virus software",
+        "Which of the following is the duty of a system analyst?",
+        "Which of the following involves the conversion from data to information?"
+      ],
+      "source_slugs": [
+        "CoreA1_en",
+        "CoreA1_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-A-ch2",
+      "item_count": 44,
+      "section_types": {
+        "mcq": 30,
+        "short_answer": 10,
+        "long_answer": 4
+      },
+      "marks_distribution": {
+        "1.0": 30,
+        "4.0": 8,
+        "3.0": 2,
+        "11.0": 2,
+        "10.0": 2
+      },
+      "difficulty_distribution": {
+        "foundation": 20,
+        "intermediate": 20,
+        "advanced": 4
+      },
+      "top_concepts": [
+        "A-ch2",
+        "資訊處理",
+        "輸入輸出",
+        "硬件",
+        "循環",
+        "數據庫",
+        "數據類型",
+        "除錯",
+        "SQL",
+        "選擇結構",
+        "列表",
+        "網絡"
+      ],
+      "sample_stems": [
+        "Which of the following is the correct order of the data hierarchy from largest to smallest?",
+        "Mr Chan is inputting students’ test scores into the database system. He inputs the score 17 as 71 into the system. Which of the following is the type of Mr Chan’s input error?",
+        "In an online shopping platform, each email can only be registered once. Which of the following is/are the suitable validation check(s) for the field “email”?\n(1)\nFormat check\n(2)\nConsistency check\n(3)",
+        "A format check is used to check if an “@” exists in the input. Which of the following email addresses is/are considered invalid?\n(1)\ntomforever@fastmail.com\n(2)\ntomtom@\n(3)\ntomcheungfastmail.com",
+        "Cindy is making a personality test. Each question requires the user to choose an answer among five choices (strongly agree, agree, neutral, disagree and strongly disagree). Which of the following user"
+      ],
+      "source_slugs": [
+        "CoreA2_en",
+        "CoreA2_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-A-ch3",
+      "item_count": 74,
+      "section_types": {
+        "mcq": 52,
+        "short_answer": 16,
+        "long_answer": 6
+      },
+      "marks_distribution": {
+        "1.0": 52,
+        "4.0": 12,
+        "3.0": 4,
+        "11.0": 6
+      },
+      "difficulty_distribution": {
+        "foundation": 42,
+        "intermediate": 26,
+        "advanced": 6
+      },
+      "top_concepts": [
+        "A-ch3",
+        "進制",
+        "資訊處理",
+        "多媒體",
+        "循環",
+        "硬件",
+        "Python",
+        "選擇結構",
+        "數據庫",
+        "試算表",
+        "數據類型",
+        "軟件"
+      ],
+      "sample_stems": [
+        "A social media platform requires users to set up a 6-digit password, each digit can only contain a number ranging from 0-9. How many different passwords can it represent?",
+        "A company uses a database to store product records. In each record, 10 bytes are used to store the product name and 8 bits are used to store the product ID. How many different records can the database",
+        "How many bytes are required to represent the pixels of a 16 × 16 black-and-white image?",
+        "Which of the following numbers is the largest?",
+        "Which of the following is the two’s complement of 5616?"
+      ],
+      "source_slugs": [
+        "CoreA3_en",
+        "CoreA3_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-B-ch1",
+      "item_count": 20,
+      "section_types": {
+        "mcq": 20
+      },
+      "marks_distribution": {
+        "1.0": 15,
+        "5.0": 2,
+        "4.0": 2,
+        "12.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 14,
+        "foundation": 5,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "B-ch1",
+        "循環",
+        "硬件",
+        "輸入輸出",
+        "網絡",
+        "資訊處理",
+        "進制",
+        "多媒體",
+        "軟件",
+        "堆疊",
+        "SQL",
+        "選擇結構"
+      ],
+      "sample_stems": [
+        "An airline uses QR code instead of barcode on luggage identification tags. Which of the following is/are the advantage(s) of this?\n(1)\nQR code occupies less storage space.\n(2)\nIt is easier to scan QR ",
+        "Which of the following are the ways of connecting a keyboard to a computer?\n(1)\nUSB\n(2)\nPS/2\n(3)\nBluetooth\n(4)\nWi-Fi",
+        "Which of the following can be the specification(s) of a scanner?\n(1)\n1GB DDR4 Memory\n(2)\n60 Hz refresh rate\n(3)\n802.11ac Wi-Fi",
+        "Which of the following input device/sensor(s) can be used in game applications to receive user input?\n(1)\nAccelerometer\n(2)\nTouch Screen\n(3)\nKeyboard",
+        "Pokémon Go is a popular mobile game that uses augmented reality (AR). Players can catch ‘Pokémon’ scattered in real life using their phone.Which of the following device(s) is/are necessary to enable A"
+      ],
+      "source_slugs": [
+        "CoreB1_en"
+      ]
+    },
+    {
+      "unit_key": "Core-B-ch2",
+      "item_count": 25,
+      "section_types": {
+        "mcq": 25
+      },
+      "marks_distribution": {
+        "1.0": 20,
+        "4.0": 4,
+        "12.0": 1
+      },
+      "difficulty_distribution": {
+        "foundation": 8,
+        "intermediate": 16,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "B-ch2",
+        "硬件",
+        "資訊處理",
+        "循環",
+        "Python",
+        "網絡",
+        "選擇結構",
+        "函數",
+        "軟件",
+        "進制",
+        "SQL",
+        "列表"
+      ],
+      "sample_stems": [
+        "Which of the following is typically stored in an Instruction Register (IR)?",
+        "If a processor A has a higher clock speed than processor B, which of the following MUST be correct? (Assume both A and B are single core processors)\n(1)\nProcessor A has a higher computational power\n(2",
+        "Compared to Central Processing Units (CPU) that usually have 2-6 cores, Graphics Processing Units (GPU) usually have much more processing units, usually from 512 to 4096 units. What is the main reason",
+        "Crystal wants to connect a monitor to her computer using HDMI.\nShe should connect the HDMI wire to port B instead of A because _____________.",
+        "Which of the following is true about the address bus in a computer system?\n(1)\nIt connects the CPU and the memory\n(2)\nIt can move a memory address from the CPU to the memory\n(3)\nIt can move data from "
+      ],
+      "source_slugs": [
+        "CoreB2_en"
+      ]
+    },
+    {
+      "unit_key": "Core-B-ch3",
+      "item_count": 20,
+      "section_types": {
+        "mcq": 20
+      },
+      "marks_distribution": {
+        "1.0": 15,
+        "4.0": 3,
+        "6.0": 1,
+        "14.0": 1
+      },
+      "difficulty_distribution": {
+        "foundation": 6,
+        "intermediate": 13,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "B-ch3",
+        "硬件",
+        "軟件",
+        "Python",
+        "循環",
+        "SQL",
+        "函數",
+        "網絡",
+        "數據庫",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "sample_stems": [
+        "Most operating systems prompt the user to update as soon as possible when there is a new release.\nWhich of the following is not a reason for this?",
+        "Which of the following are typical functions provided by an operating system?\n(1)\nFile management\n(2)\nVirus detection\n(3)\nMemory management\n(4)\nProcess management",
+        "Alan’s computer is idling and not running any application. He opens the system monitor to view the processor and memory usage. Which of the following would he see?\n(1)\nThere is no process running\n(2)\n",
+        "Summie wants to delete an application from her computer. She deletes the program files from her hard drive using the file manager. Why is this way of uninstalling a program not recommended?",
+        "John has two printers A and B. He has two computers X and Y, both running the same operating system. He wants to connect each computer to both printers. How many different driver programs does he need"
+      ],
+      "source_slugs": [
+        "CoreB3_en"
+      ]
+    },
+    {
+      "unit_key": "Core-B-integrated",
+      "item_count": 6,
+      "section_types": {
+        "mcq": 6
+      },
+      "marks_distribution": {
+        "1.0": 6
+      },
+      "difficulty_distribution": {
+        "intermediate": 3,
+        "foundation": 3
+      },
+      "top_concepts": [
+        "B-integrated",
+        "循環",
+        "硬件",
+        "SQL",
+        "資訊處理"
+      ],
+      "sample_stems": [
+        "Compared to using a touchscreen, a mouse is ________________.\n(1)\nmore ergonomic to use\n(2)\nmore precise in input\n(3)\ncheaper in cost",
+        "Websites designed for mobile devices with a touch screen are different from desktop versions because __________________.\n(1)\nmobile processors are less powerful\n(2)\nmobile screen size is smaller\n(3)\nt",
+        "Steve is using a scanner with optical character recognition (OCR).Which of the following can increase recognition accuracy?",
+        "Which of the following is a feature of an NFC smart card that is not possible with a printed QR code?",
+        "Which of the following is not an advantage of using a fingerprint sensor compared to facial recognition for biometric authentication?"
+      ],
+      "source_slugs": [
+        "CoreBi_en"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch1",
+      "item_count": 16,
+      "section_types": {
+        "mcq": 13,
+        "short_answer": 3
+      },
+      "marks_distribution": {
+        "1.0": 13,
+        "4.0": 3
+      },
+      "difficulty_distribution": {
+        "foundation": 9,
+        "intermediate": 7
+      },
+      "top_concepts": [
+        "D-ch1",
+        "Python",
+        "輸入輸出",
+        "算法",
+        "排序",
+        "程式測試",
+        "除錯",
+        "資訊處理",
+        "網絡",
+        "硬件",
+        "進制"
+      ],
+      "sample_stems": [
+        "某巴士公司想開發一個流動應用程式，以顯示巴士抵達不同車站的時間。該公司首先應做什麼？",
+        "以下哪項是模組化的好處？",
+        "允行的程式未能產生正確輸出，因此他修改了程式的流程圖。以下哪項解難步驟最能貼切地描述他的動作？",
+        "以下哪項最能貼切地描述以下動作？\n步驟一：將所有學生的體重記錄在同一組別。\n步驟二：找出組別中最重的學生，並將他抽出組別。\n步驟三：重複以上步驟，直至組別內餘下三名學生。",
+        "某應用程式供用戶以作品名稱或作者名稱搜尋音樂作品，並在網上播放該作品。以下哪組輸入、處理和輸出符合搜尋過程？\n輸入\n處理\n輸出"
+      ],
+      "source_slugs": [
+        "CoreD1_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch2",
+      "item_count": 33,
+      "section_types": {
+        "mcq": 26,
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 26,
+        "3.0": 1,
+        "4.0": 4,
+        "9.0": 1,
+        "7.0": 1
+      },
+      "difficulty_distribution": {
+        "foundation": 7,
+        "intermediate": 24,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出",
+        "數據類型",
+        "循環",
+        "資訊處理",
+        "除錯",
+        "選擇結構",
+        "Python"
+      ],
+      "sample_stems": [
+        "以下哪項是下列算法的輸出？\nA  5\nB  10\nC  15 - A * B\n輸出 A + B - C",
+        "以下哪項是下列算法的輸出？\nX  2\nY  3\nZ  5\ntemp  X\nX  Y\nY  temp\nZ  Y - X\n輸出 X - Y + Z",
+        "以下哪組數據類型和數據的組合是不正確的？\n數據類型\n數據",
+        "一個網站展示了以下資訊：\n日期：1/1/2022\n天氣：晴\n溫度：18.5\n以下哪組數據類型最適合用以儲存以上數據？\n日期\n天氣\n溫度",
+        "以下哪項是下列算法的輸出？\nA  7\nB  8\n如果 (A + B <= 15) AND (A * B > 60) 則\nA  A * 3\n輸出 A\n否則\nB  B * 3\n輸出 B"
+      ],
+      "source_slugs": [
+        "CoreD2_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch3",
+      "item_count": 34,
+      "section_types": {
+        "mcq": 27,
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 27,
+        "3.0": 2,
+        "4.0": 3,
+        "9.0": 1,
+        "10.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 27,
+        "foundation": 5,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "D-ch3",
+        "算法",
+        "輸入輸出",
+        "列表",
+        "選擇結構",
+        "資訊處理",
+        "排序",
+        "循環",
+        "除錯",
+        "Python",
+        "數據類型",
+        "網絡"
+      ],
+      "sample_stems": [
+        "下列算法中，當 X = 3，以下哪項是 Z 的值？\nX  1\nZ  7\n當 X < 5\nX  X + 1\nZ  Z - X",
+        "以下哪項是下列算法的輸出？\nA  3\nB  5\n設 i 由 1 至 5\n如果 i < 3 則\n輸出 A\n否則\n輸出 B",
+        "細閱以下算法：\n輸入 X\ni  1\n當 i < 4\nZ  X + i * i\ni  i + 1\n輸出 Z\n如果 X = 10，下列算法的輸出是什麼？",
+        "參看以下陣列 num 的內容：\n4\n1\n3\n4\n5\n9\n1\n2\n10\n6\n已知 num[4] 的值是 5，以下哪項是 num[8] 的值？",
+        "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA  [1, 2, 3, 4, 5, 6]\n設 i 由 1 至 6\nA[i]  A[i] * i * 10\n輸出 A[6]"
+      ],
+      "source_slugs": [
+        "CoreD3_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch4",
+      "item_count": 26,
+      "section_types": {
+        "mcq": 18,
+        "short_answer": 5,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "1.0": 18,
+        "4.0": 2,
+        "3.0": 2,
+        "5.0": 1,
+        "10.0": 1,
+        "9.0": 2
+      },
+      "difficulty_distribution": {
+        "foundation": 6,
+        "intermediate": 17,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出",
+        "選擇結構",
+        "循環",
+        "數據類型",
+        "算法",
+        "資訊處理",
+        "除錯",
+        "列表"
+      ],
+      "sample_stems": [
+        "假設我們要記錄一群學生的每月交通開支並計算平均金額。以下哪項數據類型最適合用以儲存這些數據項目？",
+        "下列 Python 程式用以找出 X 和 Y 的和。以下哪項可以填入空格？\nX = 3\nY = 4\nprint(sum)",
+        "下列程式用以檢查 X 是否能被 7 整除。以下哪項可以填入空格？\nX = 14\nif _______________:\nprint(\"It is divisible by 7\")",
+        "以下哪個程式能產生下列輸出？\n1\n3\n5\n7\n9",
+        "下列程式用以找出某數字是負數、零或正數。以下哪項可以填入空格？\nnum = int(input(\"Number: \"))\nif num == 0:\nprint(\"Zero\")\nelif num > 0:\nprint(\"Positive\")\nelif _______________:\nprint(\"Negative\")"
+      ],
+      "source_slugs": [
+        "CoreD4_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch5",
+      "item_count": 27,
+      "section_types": {
+        "mcq": 18,
+        "short_answer": 7,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 18,
+        "5.0": 2,
+        "4.0": 5,
+        "12.0": 1,
+        "10.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 25,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "列表",
+        "選擇結構",
+        "排序",
+        "資訊處理",
+        "網絡",
+        "數據類型",
+        "算法"
+      ],
+      "sample_stems": [
+        "執行下列 Python 程式後，以下哪個列表 X 的索引儲存了數值「7」？\nX = [5, 9, 7, 6, 7, 8, 9]\nfor i in range(0, 7):\nX[i] = X[i] + 1\nfor i in range(2, 7):\nX[i] = X[i] - 2",
+        "以下哪項是下列 Python 程式的輸出？\nnum = [1, 2, 3, 4, 5]\nfor i in range(1, 3):\nprint(num[i], end = \" \")",
+        "以下 Python 程式用以將列表X的一部分複製至列表 Y。以下哪行 Python 程式碼可用以填上空格？\nX = [242, 34, 219, 84, 69, 18, 100]\nY = [0, 0, 0, 0]\nY[i] = X[i]",
+        "以下 Python 程式用以列印列表中所有名字。以下哪行程式碼可用以填上空格？\nname = [\"Peter\", \"Donald\", \"Chris\", \"Ben\"]\nprint(name[i])",
+        "以下哪項可用以填上空格，令程式輸出「6 5 4 3」？\nnum = [1, 2, 3, 4, 5, 6, 7, 8]\nfor i in _______________:\nprint(num[i], end = \" \")"
+      ],
+      "source_slugs": [
+        "CoreD5_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch6",
+      "item_count": 30,
+      "section_types": {
+        "mcq": 23,
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 23,
+        "4.0": 4,
+        "3.0": 1,
+        "8.0": 1,
+        "9.0": 1
+      },
+      "difficulty_distribution": {
+        "foundation": 9,
+        "intermediate": 19,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "D-ch6",
+        "輸入輸出",
+        "算法",
+        "除錯",
+        "Python",
+        "程式測試",
+        "資訊處理",
+        "列表",
+        "循環",
+        "選擇結構",
+        "數據類型",
+        "硬件"
+      ],
+      "sample_stems": [
+        "偉豪編寫了一個判斷某數字是否質數的程式。他下一步應做什麼？",
+        "以下算法檢查用戶所輸入的分數是否有效：\n輸入 marks\n如果 marks < 0 or marks > 200 則\n輸出 \"錯誤\"\n以下哪組數據最適合用作測試此算法？",
+        "細閱以下算法：\n輸入 price\n如果 price >= 50 and price < 100 則\n輸出 \"合理\"\n否則\n輸出 \"調整價格\"\n以下哪個 / 些數字是測試此算法的邊際個案？\n(1)\n20\n(2)\n50\n(3)\n100\n(4)\n200",
+        "細閱以下算法。以下哪組數據最適合用作測試此算法？\n輸入 num\nX  15\n如果 num > 10 則\nX  X - 5\n否則如果 num < -10 則\nX  X + 5\n否則\nX  X * 5",
+        "細閱以下算法。\n輸入 A\nB  5\nC  6\nX  (A**2 - B**2 - C**2) 的平方根\n輸出 X\n以下哪項輸入值會導致運行時錯誤？"
+      ],
+      "source_slugs": [
+        "CoreD6_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-integrated",
+      "item_count": 17,
+      "section_types": {
+        "mcq": 14,
+        "short_answer": 2,
+        "long_answer": 1
+      },
+      "marks_distribution": {
+        "1.0": 14,
+        "6.0": 1,
+        "3.0": 1,
+        "11.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 13,
+        "foundation": 3,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "D-integrated",
+        "輸入輸出",
+        "算法",
+        "Python",
+        "資訊處理",
+        "循環",
+        "除錯",
+        "列表",
+        "選擇結構",
+        "程式測試",
+        "數據類型",
+        "排序"
+      ],
+      "sample_stems": [
+        "下列算法會輸出甚麼？\nX ← 0\nY ← 2\nX ← X + 1\ntemp ← X\nX ← Y\nY ← temp\n輸出 X",
+        "下列哪個算法等同以下流程圖？",
+        "陣列 contestant 儲存了歌唱比賽中五位參賽者的名字：\nDavid\nHugo\nJoyce\nPeter\nSally\ncontestant[1]\ncontestant[2]\ncontestant[3]\ncontestant[4]\ncontestant[5]\n執行下列算法後，contestant[3] 中儲存的名字是甚麼？\nL ← 5\n當 L >= 3\ncontestant[L] ← conte",
+        "下列算法用以找出第 X 個「Y 的倍數」。\n輸入 X\n輸入 Y\nk ← 0\nans ← 0\n當 _________\nans ← ans + Y\nk ← k + 1\n輸出 ans\n以下哪項應用以填上空格？",
+        "以下哪些算法有相同效果？\n(1)\n輸入 score\n當 score < 0 或 score > 100\n輸入 score\n(2)\n執行\n輸入 score\n當 score < 0 或 score > 100\n(3)\n重複\n輸入 score\n直至 score >= 0 或 score <= 100"
+      ],
+      "source_slugs": [
+        "CoreDi_hk"
+      ]
+    },
+    {
+      "unit_key": "EA-ch1",
+      "item_count": 10,
+      "section_types": {
+        "short_answer": 7,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "4.0": 4,
+        "3.0": 1,
+        "5.0": 1,
+        "7.0": 1,
+        "8.0": 2,
+        "10.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 7,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch1",
+        "SQL",
+        "數據庫",
+        "資訊處理",
+        "硬件",
+        "網絡",
+        "循環",
+        "選擇結構",
+        "列表",
+        "函數",
+        "數據類型"
+      ],
+      "sample_stems": [
+        "Logistic Leaders is a transportation company that uses a database table SHIPMENT to store information about shipment details. Here is the table structure of SHIPMENT.\nSHIPMENT\nField name\nDescription\nS",
+        "The supermarket recorded every customer’s orders. Here are the first four rows of data in PURCHASE.\nPURCHASE\nCID\nPID\nQUANTITY\nPRICE\nORDERDATE\nORDERTIME\nMETHOD\nC01\n1001\n2\n30\n2023-05-18\n15:18:54\nCredit ",
+        "Maple Secondary School is going to use a database table STUDENT2C to store information about students.\nHere is the table structure of STUDENT2C.\nSTUDENT2C\nField name\nDescription\nExample\nSID\nIdentity c",
+        "Mr Chau operates a restaurant and uses a database table MENU to store the information on the menu item so that customers can view the menu on their website.\nSome of the data stored in the mentioned ta",
+        "A database table named SONGS stores song information for a music streaming platform.\nHere are some data of SONGS.\nTITLE\nARTIST\nALBUM\nRELEASE\nRATING\nHey Jude\nThe Beatles\nThe Beatles Again\n1970-02-26\n5\n"
+      ],
+      "source_slugs": [
+        "ElecA1_en"
+      ]
+    },
+    {
+      "unit_key": "EA-ch2",
+      "item_count": 10,
+      "section_types": {
+        "mcq": 10
+      },
+      "marks_distribution": {
+        "4.0": 5,
+        "5.0": 2,
+        "9.0": 2,
+        "11.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 7,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch2",
+        "SQL",
+        "資訊處理",
+        "數據庫",
+        "硬件",
+        "列表",
+        "循環",
+        "網絡",
+        "數據類型",
+        "Python",
+        "函數"
+      ],
+      "sample_stems": [
+        "An online video streaming platform allows users to upload and view videos on it. The database table VIDEO stores the information of different videos.\nID\nTITLE\nPRODUCER\nUPLOADDATE\nVIEWS\n1310215\nMy secr",
+        "An online payment platform records user activities by storing them in a database table RECORD.\nUSERID\nDESCRIPTION\nAMOUNT\nPAYMENTDATE\nPAYMENTTIME\n012345\nVending machine\n7.5\n2025-03-11\n15:28:33\n012345\nT",
+        "An online store uses a database table ACCOUNTS to store user information.\nACCOUNTS\nField name\nDescription\nExample\nUID\nThe identification code of the user\nA3819\nNAME\nName of the user\nTom Chan\nEMAIL\nThe",
+        "A university named Good University sends mass emails to inform students of school updates. The university uses a database table STUDENT to store student information.\nSTUDENT\nSID\nNAME\nSEX\nEMAIL\nPROGRAM",
+        "A database table SUSPENSION stores all the water suspension cases in different regions:\nSUSPENSION\nField name\nDescription\nExample\nCASEID\nThe identification code for the water suspension case.\n003221\nS"
+      ],
+      "source_slugs": [
+        "ElecA2_en"
+      ]
+    },
+    {
+      "unit_key": "EA-ch3",
+      "item_count": 13,
+      "section_types": {
+        "short_answer": 9,
+        "long_answer": 4
+      },
+      "marks_distribution": {
+        "4.0": 3,
+        "5.0": 5,
+        "7.0": 1,
+        "9.0": 1,
+        "11.0": 1,
+        "12.0": 1,
+        "14.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 9,
+        "advanced": 4
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch3",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "列表",
+        "網絡",
+        "循環",
+        "Python",
+        "選擇結構",
+        "軟件"
+      ],
+      "sample_stems": [
+        "Skyline company use the following database tables EMPLOYEE and SALARY to store the data of its employees and salary. Below are some of the data from the tables.\nEMPLOYEE\nEID\nNAME\nTITLE\nDEPT\nPOINT\n6130",
+        "A grocery store uses a database to manage its inventory, with three tables: PRODUCT, SUPPLIER, and PURCHASE.\nPRODUCT\nField name\nDescription\nPID\nIdentity code of each product\nPNAME\nName of the product\n",
+        "Two database tables COURSE and INSTRUCTOR, are used to store the data of courses and instructors in a university. Below is the table structure of both tables.\nCOURSE\nField name\nDescription\nExample\nCOU",
+        "Here are the database tables, CUSTOMERS, MOVIE and RENTAL, used in a movie rental store.\nCUSTOMERS\nCID\nCNAME\nPHONE\nOCCUPATION\n001\nAnissa\n55123679",
+        "A car rental company has multiple locations across districts where customers can rent different types of cars on a daily basis. The company has created a database table called CARS to store informatio"
+      ],
+      "source_slugs": [
+        "ElecA3_en"
+      ]
+    },
+    {
+      "unit_key": "EA-ch4",
+      "item_count": 10,
+      "section_types": {
+        "mcq": 10
+      },
+      "marks_distribution": {
+        "4.0": 5,
+        "5.0": 2,
+        "8.0": 1,
+        "11.0": 1,
+        "10.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 7,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch4",
+        "數據庫",
+        "資訊處理",
+        "硬件",
+        "網絡",
+        "循環",
+        "SQL",
+        "選擇結構",
+        "軟件",
+        "列表",
+        "Python"
+      ],
+      "sample_stems": [
+        "Tim works in a sports retailer. Two database tables, ABIBAS and NIKI, store information on the sports items sold by the two brands. Another database table, PRODUCT, stores all the products in one tabl",
+        "A company called GoGoCar provides a service which allows users to call for a driver nearby to travel to a certain destination. The company uses three database tables, USER, DRIVER and ORDER to store i",
+        "A platform allows users to purchase a bunch of video games and play on the platform.\nGAMES\nGID\nNAME\nPRICE\nDISCOUNT\nDISCOUNTPRICE\n0331\nFast Cars\n498\n0.7\n348.6\n0332\nPocket League\n198\n0.8\n158.4\n0333\nStri",
+        "The following database tables store the information on TV programmes provided by a broadcasting service REHK.\nCHANNEL\nField name\nDescription\nCNO\nThe channel number of the channel.\nCNAME\nThe name of th",
+        "A greenhouse that uses soil moisture sensors to monitor the moisture levels in the soil in different greenhouse beds. The information of sensors is stored in table SENSOR, and the data collected is st"
+      ],
+      "source_slugs": [
+        "ElecA4_en"
+      ]
+    },
+    {
+      "unit_key": "EA-ch5",
+      "item_count": 10,
+      "section_types": {
+        "short_answer": 7,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "4.0": 3,
+        "5.0": 1,
+        "3.0": 1,
+        "7.0": 2,
+        "9.0": 1,
+        "8.0": 1,
+        "13.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 7,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "資訊處理",
+        "網絡",
+        "數據庫",
+        "硬件",
+        "SQL",
+        "選擇結構",
+        "列表",
+        "函數"
+      ],
+      "sample_stems": [
+        "A private gymnastics centre created a database for storing the information of trainers and members. Below is an incomplete ER diagram representing the relationship between the two tables.",
+        "The library uses two tables: BOOK and BORROWER to store information about books and the borrowing records.\nBOOK\nISBN\nTITLE\nAUTHOR\nPUBLISHER\n196448321\nSecond Chance\nAustin Lee\nRandom House\n563697413\nNe",
+        "Isaac is developing a weather data collection system that gathers temperature readings for various locations at different times throughout the day. The system includes two tables: LOCATION and DATA.\nL",
+        "Miss Kwok, a class teacher at a primary school, is organising an in-class spelling competition. She uses a database table COMPETITION and TEAM to store information.\nCOMPETITION\nField name\nDescription\n",
+        "Below is an ER diagram representing the relationship between members and albums in a music store."
+      ],
+      "source_slugs": [
+        "ElecA5_en"
+      ]
+    },
+    {
+      "unit_key": "EA-integrated",
+      "item_count": 8,
+      "section_types": {
+        "short_answer": 6,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "5.0": 3,
+        "4.0": 3,
+        "7.0": 1,
+        "12.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 6,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EA",
+        "EA-integrated",
+        "資訊處理",
+        "數據庫",
+        "硬件",
+        "網絡",
+        "SQL",
+        "循環",
+        "數據類型"
+      ],
+      "sample_stems": [
+        "A database stores information on employees, departments, and projects in a company. Below are the table structures of the three tables.\nEMPLOYEE\nField name\nDescription\nEID\nIdentity code of each employ",
+        "The Ticketing System for Concerts is a database system designed to facilitate the ticketing and management of concerts.\nCONCERT\nField name\nDescription\nCID\nIdentity code of the concert\nCNAME\nName of th",
+        "A bank uses a database to store information about its banking system. Below are all of the data.\nACCOUNT\nAID\nCID\nATYPE\nBALANCE\nS132\n001\nSaving\n25000\nS310\n002\nSaving\n10000\nCUSTOMER\nCID\nNAME\nCONTACT\n001",
+        "Katie is developing a recipe-sharing platform that allows users to discover, share, and save their favourite recipes. The platform includes a database to store recipe information and user interactions",
+        "A Teen Job Portal is a platform specifically designed to connect teenagers with job opportunities suitable for their age and experience level, and users can apply for jobs through this platform. Below"
+      ],
+      "source_slugs": [
+        "ElecAi_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch1",
+      "item_count": 7,
+      "section_types": {
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "4.0": 4,
+        "5.0": 1,
+        "8.0": 1,
+        "9.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 5,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch1",
+        "循環",
+        "硬件",
+        "選擇結構",
+        "Python",
+        "輸入輸出",
+        "數據類型",
+        "算法",
+        "資訊處理",
+        "網絡",
+        "列表"
+      ],
+      "sample_stems": [
+        "Alex is designing a Python program that prints all the square numbers within 1 and a number specified by the user. Complete the program for him.(4 marks)\nnum = int(input(\"Please input a number: \"))\nif",
+        "The library of Kowloon University provides printing services for library users. They can pay the charges using the printing units stored in their library cards. The following shows the charges for mak",
+        "Data in a computer can be stored in various file formats and have different attributes. The format of a file is usually indicated by its file extension, which helps the computer read and decode the fi",
+        "A shopping mall is holding a lucky draw. Every shopper is given a card with a random integer on it. A shopper gets a gift if the number on their card meets one of the following conditions:\nNumber on t",
+        "An automatic vending machine sells five kinds of products (numbered as product 1 to 5). List unit_price and stock store the unit prices and the stocks of the products respectively. The order of items "
+      ],
+      "source_slugs": [
+        "ElecC1_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch2",
+      "item_count": 2,
+      "section_types": {
+        "short_answer": 2
+      },
+      "marks_distribution": {
+        "4.0": 2
+      },
+      "difficulty_distribution": {
+        "intermediate": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch2",
+        "Python",
+        "循環",
+        "硬件",
+        "選擇結構",
+        "列表",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "sample_stems": [
+        "A currency exchange buys Japanese yen at a rate of 1 JPY = 0.05732 HKD. The boss uses the following Python program for calculating the price payable to the customer:\nJPY  amount in Japanese yen\nHKD  J",
+        "Workers in ABC Company should work for 40 hours per week. However, some workers may work overtime and some may work undertime. Chris, the HR manager of the company, is making a report on the working h"
+      ],
+      "source_slugs": [
+        "ElecC2_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch3",
+      "item_count": 7,
+      "section_types": {
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "3.0": 2,
+        "4.0": 2,
+        "5.0": 1,
+        "11.0": 1,
+        "17.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 5,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch3",
+        "循環",
+        "硬件",
+        "算法",
+        "列表",
+        "選擇結構",
+        "Python",
+        "資訊處理",
+        "網絡",
+        "函數",
+        "輸入輸出"
+      ],
+      "sample_stems": [
+        "Sam is writing some algorithms for printing specific patterns.",
+        "Jimmy uses a 2D array score to store the scores of four S6 classes in the Athletic Meet. score[i,j] stores the score earned by a class in each competition. Given that the champion in a competition get",
+        "The technician of ABC Library, Mary, is designing a Python program for the library catalogue system. The list books stores the titles of all the books in the library. The first four items in books are",
+        "Peter is studying the transport network of a country. He selects five main cities (city A to E) of this country and checks if there is a highway connecting them to one another. The results are stored ",
+        "Ms Chan is a technician at a theatre. There are 64 lights, all of which are controlled by a computer, in the theatre. An 8 × 8 two-dimensional array light is created to represent the lights in the the"
+      ],
+      "source_slugs": [
+        "ElecC3_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch4",
+      "item_count": 9,
+      "section_types": {
+        "short_answer": 6,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "4.0": 2,
+        "5.0": 3,
+        "6.0": 1,
+        "15.0": 1,
+        "14.0": 2
+      },
+      "difficulty_distribution": {
+        "intermediate": 6,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "函數",
+        "硬件",
+        "循環",
+        "列表",
+        "算法",
+        "選擇結構",
+        "SQL",
+        "網絡",
+        "數據類型"
+      ],
+      "sample_stems": [
+        "Ricky is making a floor plan of the boy dormitory with 3 rows and 5 columns. He uses an array item R[i,j] to store the room number of the room in row i , column j.\nj\ni\n1\n2\n3\n4\n5\n1\n2\n3\nRicky writes a s",
+        "Felix is developing a program to calculate the area of different shapes based on a letter inputted by the user. One of the sub-programs, choose(i), is shown as follows:\nSub-program choose(i)\nif i = \"R",
+        "A shopping mall stores the types of shops on each floor in a two-dimensional array mall, where i represents the floor number and j represents the shop number. For example, mall[1,1] stores the shop ty",
+        "A ride-hailing platform has 50 drivers, and each of them is assigned a unique integer from 1 to 50 for identification. When a passenger requests a ride, the platform displays the driver number of the ",
+        "Mrs Hui writes a program for a digital Bingo game. In a game of Bingo, each player has a card with a grid of random numbers from 1 to 50; all numbers on the card must be unique. Below is an example of"
+      ],
+      "source_slugs": [
+        "ElecC4_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch5",
+      "item_count": 7,
+      "section_types": {
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "6.0": 2,
+        "5.0": 3,
+        "13.0": 1,
+        "12.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 5,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch5",
+        "Python",
+        "函數",
+        "硬件",
+        "網絡",
+        "循環",
+        "列表",
+        "算法",
+        "選擇結構",
+        "堆疊",
+        "SQL"
+      ],
+      "sample_stems": [
+        "Holly uses stacks to manage shoeboxes containing shoes of different sizes. For example, the following stack has 4 shoeboxes, with a pair of shoes of size 35, 37, 38 and 40 in each box respectively.\n40",
+        "Ellen develops a web application for a popular concert’s online ticketing system. When the number of users simultaneously using the application reaches a certain threshold, new users are directed to t",
+        "Kelly, the HR manager of a company, creates a linked list interview to store the names of the candidates that she is going to interview. She uses arrays to represent this linked list in which the poin",
+        "A palindrome (回文) is a word, phrase or sentence that looks the same both backwards and forwards. For example, the word “madam” is a palindrome. Henry is developing a program in Python that can be used",
+        "XYZ College is going to hold the Open Day. Ms Cheung, the teacher in-charge, creates a linked list activity to store the activities. She uses arrays activity, prev and next to represent this linked li"
+      ],
+      "source_slugs": [
+        "ElecC5_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch6",
+      "item_count": 8,
+      "section_types": {
+        "short_answer": 5,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "6.0": 1,
+        "5.0": 3,
+        "4.0": 1,
+        "11.0": 1,
+        "12.0": 1,
+        "15.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 5,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch6",
+        "循環",
+        "選擇結構",
+        "列表",
+        "算法",
+        "排序",
+        "硬件",
+        "Python",
+        "進制",
+        "數據類型",
+        "函數"
+      ],
+      "sample_stems": [
+        "Consider the following array ID.\nID\n1001\n1003\n1006\n1002\n1005\n1004\n1008\n1007\n1009\nindex\n1\n2\n3\n4\n5\n6\n7\n8\n9\nAlex wants to use a searching algorithm to find if some IDs exist in array ID.",
+        "The following algorithm aims to find out if an item in an array A (index starts from 1) matches the input. If it does, the program outputs True. Otherwise, the program outputs False.\nLine  Pseudocode\n",
+        "Consider the following algorithm.\nLine  Pseudocode\n1    a  Input the first integer\n2    b  Input the second integer\n3    if a < b  then\n4        temp  a + b\n5        b  temp - b\n6        a  temp – b",
+        "Mr Chan is managing the test results of his students. The scores of his students are stored in an array score, while another array studentID stores the student IDs of his students. The order of items ",
+        "Helen has some number cards and she stores the numbers on the cards in an array num, as shown below:\nnum\n35\n12\n5\n8\n17\n22\n40\n51\nindex\n0\n1\n2\n3\n4\n5\n6\n7\nShe tries to process the array with the following a"
+      ],
+      "source_slugs": [
+        "ElecC6_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch7",
+      "item_count": 2,
+      "section_types": {
+        "short_answer": 1,
+        "long_answer": 1
+      },
+      "marks_distribution": {
+        "6.0": 1,
+        "11.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 1,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch7",
+        "Python",
+        "循環",
+        "函數",
+        "硬件",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型",
+        "資訊處理",
+        "列表"
+      ],
+      "sample_stems": [
+        "Jimmy is creating a diary application for users to save their diaries on their phones.",
+        "Sally is writing a program for a game, which is about guessing letters in the word given by the computer. She needs to read a text file called “dictionary.txt” in the program for choosing a random wor"
+      ],
+      "source_slugs": [
+        "ElecC7_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch8",
+      "item_count": 2,
+      "section_types": {
+        "short_answer": 2
+      },
+      "marks_distribution": {
+        "5.0": 1,
+        "7.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch8",
+        "循環",
+        "算法",
+        "選擇結構",
+        "函數",
+        "硬件",
+        "列表",
+        "資訊處理"
+      ],
+      "sample_stems": [
+        "Tommy is designing a prototype of an energy-saving escalator. It has two modes of operation, namely the normal mode and the standby mode. A sensor is used to detect the presence of passengers within 3",
+        "Kay is designing a smart assistant that gives suggestions for the user after detecting the temperature and humidity in the surroundings."
+      ],
+      "source_slugs": [
+        "ElecC8_en"
+      ]
+    },
+    {
+      "unit_key": "EC-integrated",
+      "item_count": 8,
+      "section_types": {
+        "short_answer": 6,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "5.0": 4,
+        "6.0": 2,
+        "13.0": 1,
+        "11.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 6,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-integrated",
+        "循環",
+        "列表",
+        "選擇結構",
+        "算法",
+        "函數",
+        "SQL",
+        "網絡",
+        "硬件",
+        "數據類型",
+        "Python"
+      ],
+      "sample_stems": [
+        "Tom writes an algorithm that sorts the height of students in ascending order. He uses an integer array height with indices from 1 to N.\nLine\nContent\n1\nfor i from N down to 1\n2\ntemp  i\n3\nfor j from i-1",
+        "A balanced string of parentheses is a string where every opening parenthesis “(” is matched by a corresponding closing parenthesis “)”, and no closing parenthesis “)” appears before its matching openi",
+        "Ms. Chan wrote an algorithm including an array student, to manage the students waiting for the oral exam. The following are the functions used to control the array student in the algorithm.\nFunction\nD",
+        "Eric creates a linked list to manage a minibus route. He uses arrays to represent the linked list involving two pointers: Prev and Next, which stores the address of the previous and next node respecti",
+        "A printer uses a circular queue task to store the printing task. The following are the variables and functions used.\nVariable or function\nDescription\nenq(Q, T)\nInsert element T at the rear of the queu"
+      ],
+      "source_slugs": [
+        "ElecCi_en"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "unit_key": "Core-A-ch1",
+      "item_count": 32,
+      "section_types": {
+        "mcq": 20,
+        "short_answer": 10,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 20,
+        "4.0": 4,
+        "3.0": 6,
+        "7.0": 2
+      },
+      "difficulty_distribution": {
+        "intermediate": 18,
+        "foundation": 12,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "A-ch1",
+        "資訊處理",
+        "硬件",
+        "循環",
+        "輸入輸出",
+        "網絡",
+        "軟件",
+        "Python",
+        "排序",
+        "進制",
+        "數據庫",
+        "列表"
+      ],
+      "sample_stems": [
+        "Which of the following hardware is/are used for input?\n(1)\nKeyboard\n(2)\nWebcam\n(3)\nSpeaker",
+        "Which of the following is not used for output?",
+        "Which of the following is/are the example(s) of application software?\n(1)\nTask Manager\n(2)\nDatabase management software\n(3)\nAnti-virus software",
+        "Which of the following is the duty of a system analyst?",
+        "Which of the following involves the conversion from data to information?"
+      ],
+      "source_slugs": [
+        "CoreA1_en",
+        "CoreA1_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-A-ch2",
+      "item_count": 44,
+      "section_types": {
+        "mcq": 30,
+        "short_answer": 10,
+        "long_answer": 4
+      },
+      "marks_distribution": {
+        "1.0": 30,
+        "4.0": 8,
+        "3.0": 2,
+        "11.0": 2,
+        "10.0": 2
+      },
+      "difficulty_distribution": {
+        "foundation": 20,
+        "intermediate": 20,
+        "advanced": 4
+      },
+      "top_concepts": [
+        "A-ch2",
+        "資訊處理",
+        "輸入輸出",
+        "硬件",
+        "循環",
+        "數據庫",
+        "數據類型",
+        "除錯",
+        "SQL",
+        "選擇結構",
+        "列表",
+        "網絡"
+      ],
+      "sample_stems": [
+        "Which of the following is the correct order of the data hierarchy from largest to smallest?",
+        "Mr Chan is inputting students’ test scores into the database system. He inputs the score 17 as 71 into the system. Which of the following is the type of Mr Chan’s input error?",
+        "In an online shopping platform, each email can only be registered once. Which of the following is/are the suitable validation check(s) for the field “email”?\n(1)\nFormat check\n(2)\nConsistency check\n(3)",
+        "A format check is used to check if an “@” exists in the input. Which of the following email addresses is/are considered invalid?\n(1)\ntomforever@fastmail.com\n(2)\ntomtom@\n(3)\ntomcheungfastmail.com",
+        "Cindy is making a personality test. Each question requires the user to choose an answer among five choices (strongly agree, agree, neutral, disagree and strongly disagree). Which of the following user"
+      ],
+      "source_slugs": [
+        "CoreA2_en",
+        "CoreA2_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-A-ch3",
+      "item_count": 74,
+      "section_types": {
+        "mcq": 52,
+        "short_answer": 16,
+        "long_answer": 6
+      },
+      "marks_distribution": {
+        "1.0": 52,
+        "4.0": 12,
+        "3.0": 4,
+        "11.0": 6
+      },
+      "difficulty_distribution": {
+        "foundation": 42,
+        "intermediate": 26,
+        "advanced": 6
+      },
+      "top_concepts": [
+        "A-ch3",
+        "進制",
+        "資訊處理",
+        "多媒體",
+        "循環",
+        "硬件",
+        "Python",
+        "選擇結構",
+        "數據庫",
+        "試算表",
+        "數據類型",
+        "軟件"
+      ],
+      "sample_stems": [
+        "A social media platform requires users to set up a 6-digit password, each digit can only contain a number ranging from 0-9. How many different passwords can it represent?",
+        "A company uses a database to store product records. In each record, 10 bytes are used to store the product name and 8 bits are used to store the product ID. How many different records can the database",
+        "How many bytes are required to represent the pixels of a 16 × 16 black-and-white image?",
+        "Which of the following numbers is the largest?",
+        "Which of the following is the two’s complement of 5616?"
+      ],
+      "source_slugs": [
+        "CoreA3_en",
+        "CoreA3_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-B-ch1",
+      "item_count": 20,
+      "section_types": {
+        "mcq": 20
+      },
+      "marks_distribution": {
+        "1.0": 15,
+        "5.0": 2,
+        "4.0": 2,
+        "12.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 14,
+        "foundation": 5,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "B-ch1",
+        "循環",
+        "硬件",
+        "輸入輸出",
+        "網絡",
+        "資訊處理",
+        "進制",
+        "多媒體",
+        "軟件",
+        "堆疊",
+        "SQL",
+        "選擇結構"
+      ],
+      "sample_stems": [
+        "An airline uses QR code instead of barcode on luggage identification tags. Which of the following is/are the advantage(s) of this?\n(1)\nQR code occupies less storage space.\n(2)\nIt is easier to scan QR ",
+        "Which of the following are the ways of connecting a keyboard to a computer?\n(1)\nUSB\n(2)\nPS/2\n(3)\nBluetooth\n(4)\nWi-Fi",
+        "Which of the following can be the specification(s) of a scanner?\n(1)\n1GB DDR4 Memory\n(2)\n60 Hz refresh rate\n(3)\n802.11ac Wi-Fi",
+        "Which of the following input device/sensor(s) can be used in game applications to receive user input?\n(1)\nAccelerometer\n(2)\nTouch Screen\n(3)\nKeyboard",
+        "Pokémon Go is a popular mobile game that uses augmented reality (AR). Players can catch ‘Pokémon’ scattered in real life using their phone.Which of the following device(s) is/are necessary to enable A"
+      ],
+      "source_slugs": [
+        "CoreB1_en"
+      ]
+    },
+    {
+      "unit_key": "Core-B-ch2",
+      "item_count": 25,
+      "section_types": {
+        "mcq": 25
+      },
+      "marks_distribution": {
+        "1.0": 20,
+        "4.0": 4,
+        "12.0": 1
+      },
+      "difficulty_distribution": {
+        "foundation": 8,
+        "intermediate": 16,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "B-ch2",
+        "硬件",
+        "資訊處理",
+        "循環",
+        "Python",
+        "網絡",
+        "選擇結構",
+        "函數",
+        "軟件",
+        "進制",
+        "SQL",
+        "列表"
+      ],
+      "sample_stems": [
+        "Which of the following is typically stored in an Instruction Register (IR)?",
+        "If a processor A has a higher clock speed than processor B, which of the following MUST be correct? (Assume both A and B are single core processors)\n(1)\nProcessor A has a higher computational power\n(2",
+        "Compared to Central Processing Units (CPU) that usually have 2-6 cores, Graphics Processing Units (GPU) usually have much more processing units, usually from 512 to 4096 units. What is the main reason",
+        "Crystal wants to connect a monitor to her computer using HDMI.\nShe should connect the HDMI wire to port B instead of A because _____________.",
+        "Which of the following is true about the address bus in a computer system?\n(1)\nIt connects the CPU and the memory\n(2)\nIt can move a memory address from the CPU to the memory\n(3)\nIt can move data from "
+      ],
+      "source_slugs": [
+        "CoreB2_en"
+      ]
+    },
+    {
+      "unit_key": "Core-B-ch3",
+      "item_count": 20,
+      "section_types": {
+        "mcq": 20
+      },
+      "marks_distribution": {
+        "1.0": 15,
+        "4.0": 3,
+        "6.0": 1,
+        "14.0": 1
+      },
+      "difficulty_distribution": {
+        "foundation": 6,
+        "intermediate": 13,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "B-ch3",
+        "硬件",
+        "軟件",
+        "Python",
+        "循環",
+        "SQL",
+        "函數",
+        "網絡",
+        "數據庫",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "sample_stems": [
+        "Most operating systems prompt the user to update as soon as possible when there is a new release.\nWhich of the following is not a reason for this?",
+        "Which of the following are typical functions provided by an operating system?\n(1)\nFile management\n(2)\nVirus detection\n(3)\nMemory management\n(4)\nProcess management",
+        "Alan’s computer is idling and not running any application. He opens the system monitor to view the processor and memory usage. Which of the following would he see?\n(1)\nThere is no process running\n(2)\n",
+        "Summie wants to delete an application from her computer. She deletes the program files from her hard drive using the file manager. Why is this way of uninstalling a program not recommended?",
+        "John has two printers A and B. He has two computers X and Y, both running the same operating system. He wants to connect each computer to both printers. How many different driver programs does he need"
+      ],
+      "source_slugs": [
+        "CoreB3_en"
+      ]
+    },
+    {
+      "unit_key": "Core-B-integrated",
+      "item_count": 6,
+      "section_types": {
+        "mcq": 6
+      },
+      "marks_distribution": {
+        "1.0": 6
+      },
+      "difficulty_distribution": {
+        "intermediate": 3,
+        "foundation": 3
+      },
+      "top_concepts": [
+        "B-integrated",
+        "循環",
+        "硬件",
+        "SQL",
+        "資訊處理"
+      ],
+      "sample_stems": [
+        "Compared to using a touchscreen, a mouse is ________________.\n(1)\nmore ergonomic to use\n(2)\nmore precise in input\n(3)\ncheaper in cost",
+        "Websites designed for mobile devices with a touch screen are different from desktop versions because __________________.\n(1)\nmobile processors are less powerful\n(2)\nmobile screen size is smaller\n(3)\nt",
+        "Steve is using a scanner with optical character recognition (OCR).Which of the following can increase recognition accuracy?",
+        "Which of the following is a feature of an NFC smart card that is not possible with a printed QR code?",
+        "Which of the following is not an advantage of using a fingerprint sensor compared to facial recognition for biometric authentication?"
+      ],
+      "source_slugs": [
+        "CoreBi_en"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch1",
+      "item_count": 16,
+      "section_types": {
+        "mcq": 13,
+        "short_answer": 3
+      },
+      "marks_distribution": {
+        "1.0": 13,
+        "4.0": 3
+      },
+      "difficulty_distribution": {
+        "foundation": 9,
+        "intermediate": 7
+      },
+      "top_concepts": [
+        "D-ch1",
+        "Python",
+        "輸入輸出",
+        "算法",
+        "排序",
+        "程式測試",
+        "除錯",
+        "資訊處理",
+        "網絡",
+        "硬件",
+        "進制"
+      ],
+      "sample_stems": [
+        "某巴士公司想開發一個流動應用程式，以顯示巴士抵達不同車站的時間。該公司首先應做什麼？",
+        "以下哪項是模組化的好處？",
+        "允行的程式未能產生正確輸出，因此他修改了程式的流程圖。以下哪項解難步驟最能貼切地描述他的動作？",
+        "以下哪項最能貼切地描述以下動作？\n步驟一：將所有學生的體重記錄在同一組別。\n步驟二：找出組別中最重的學生，並將他抽出組別。\n步驟三：重複以上步驟，直至組別內餘下三名學生。",
+        "某應用程式供用戶以作品名稱或作者名稱搜尋音樂作品，並在網上播放該作品。以下哪組輸入、處理和輸出符合搜尋過程？\n輸入\n處理\n輸出"
+      ],
+      "source_slugs": [
+        "CoreD1_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch2",
+      "item_count": 33,
+      "section_types": {
+        "mcq": 26,
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 26,
+        "3.0": 1,
+        "4.0": 4,
+        "9.0": 1,
+        "7.0": 1
+      },
+      "difficulty_distribution": {
+        "foundation": 7,
+        "intermediate": 24,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出",
+        "數據類型",
+        "循環",
+        "資訊處理",
+        "除錯",
+        "選擇結構",
+        "Python"
+      ],
+      "sample_stems": [
+        "以下哪項是下列算法的輸出？\nA  5\nB  10\nC  15 - A * B\n輸出 A + B - C",
+        "以下哪項是下列算法的輸出？\nX  2\nY  3\nZ  5\ntemp  X\nX  Y\nY  temp\nZ  Y - X\n輸出 X - Y + Z",
+        "以下哪組數據類型和數據的組合是不正確的？\n數據類型\n數據",
+        "一個網站展示了以下資訊：\n日期：1/1/2022\n天氣：晴\n溫度：18.5\n以下哪組數據類型最適合用以儲存以上數據？\n日期\n天氣\n溫度",
+        "以下哪項是下列算法的輸出？\nA  7\nB  8\n如果 (A + B <= 15) AND (A * B > 60) 則\nA  A * 3\n輸出 A\n否則\nB  B * 3\n輸出 B"
+      ],
+      "source_slugs": [
+        "CoreD2_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch3",
+      "item_count": 34,
+      "section_types": {
+        "mcq": 27,
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 27,
+        "3.0": 2,
+        "4.0": 3,
+        "9.0": 1,
+        "10.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 27,
+        "foundation": 5,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "D-ch3",
+        "算法",
+        "輸入輸出",
+        "列表",
+        "選擇結構",
+        "資訊處理",
+        "排序",
+        "循環",
+        "除錯",
+        "Python",
+        "數據類型",
+        "網絡"
+      ],
+      "sample_stems": [
+        "下列算法中，當 X = 3，以下哪項是 Z 的值？\nX  1\nZ  7\n當 X < 5\nX  X + 1\nZ  Z - X",
+        "以下哪項是下列算法的輸出？\nA  3\nB  5\n設 i 由 1 至 5\n如果 i < 3 則\n輸出 A\n否則\n輸出 B",
+        "細閱以下算法：\n輸入 X\ni  1\n當 i < 4\nZ  X + i * i\ni  i + 1\n輸出 Z\n如果 X = 10，下列算法的輸出是什麼？",
+        "參看以下陣列 num 的內容：\n4\n1\n3\n4\n5\n9\n1\n2\n10\n6\n已知 num[4] 的值是 5，以下哪項是 num[8] 的值？",
+        "A 是一個由索引 1 開始的陣列。以下哪項是下列算法的輸出？\nA  [1, 2, 3, 4, 5, 6]\n設 i 由 1 至 6\nA[i]  A[i] * i * 10\n輸出 A[6]"
+      ],
+      "source_slugs": [
+        "CoreD3_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch4",
+      "item_count": 26,
+      "section_types": {
+        "mcq": 18,
+        "short_answer": 5,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "1.0": 18,
+        "4.0": 2,
+        "3.0": 2,
+        "5.0": 1,
+        "10.0": 1,
+        "9.0": 2
+      },
+      "difficulty_distribution": {
+        "foundation": 6,
+        "intermediate": 17,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "D-ch4",
+        "Python",
+        "輸入輸出",
+        "選擇結構",
+        "循環",
+        "數據類型",
+        "算法",
+        "資訊處理",
+        "除錯",
+        "列表"
+      ],
+      "sample_stems": [
+        "假設我們要記錄一群學生的每月交通開支並計算平均金額。以下哪項數據類型最適合用以儲存這些數據項目？",
+        "下列 Python 程式用以找出 X 和 Y 的和。以下哪項可以填入空格？\nX = 3\nY = 4\nprint(sum)",
+        "下列程式用以檢查 X 是否能被 7 整除。以下哪項可以填入空格？\nX = 14\nif _______________:\nprint(\"It is divisible by 7\")",
+        "以下哪個程式能產生下列輸出？\n1\n3\n5\n7\n9",
+        "下列程式用以找出某數字是負數、零或正數。以下哪項可以填入空格？\nnum = int(input(\"Number: \"))\nif num == 0:\nprint(\"Zero\")\nelif num > 0:\nprint(\"Positive\")\nelif _______________:\nprint(\"Negative\")"
+      ],
+      "source_slugs": [
+        "CoreD4_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch5",
+      "item_count": 27,
+      "section_types": {
+        "mcq": 18,
+        "short_answer": 7,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 18,
+        "5.0": 2,
+        "4.0": 5,
+        "12.0": 1,
+        "10.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 25,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "D-ch5",
+        "Python",
+        "循環",
+        "輸入輸出",
+        "列表",
+        "選擇結構",
+        "排序",
+        "資訊處理",
+        "網絡",
+        "數據類型",
+        "算法"
+      ],
+      "sample_stems": [
+        "執行下列 Python 程式後，以下哪個列表 X 的索引儲存了數值「7」？\nX = [5, 9, 7, 6, 7, 8, 9]\nfor i in range(0, 7):\nX[i] = X[i] + 1\nfor i in range(2, 7):\nX[i] = X[i] - 2",
+        "以下哪項是下列 Python 程式的輸出？\nnum = [1, 2, 3, 4, 5]\nfor i in range(1, 3):\nprint(num[i], end = \" \")",
+        "以下 Python 程式用以將列表X的一部分複製至列表 Y。以下哪行 Python 程式碼可用以填上空格？\nX = [242, 34, 219, 84, 69, 18, 100]\nY = [0, 0, 0, 0]\nY[i] = X[i]",
+        "以下 Python 程式用以列印列表中所有名字。以下哪行程式碼可用以填上空格？\nname = [\"Peter\", \"Donald\", \"Chris\", \"Ben\"]\nprint(name[i])",
+        "以下哪項可用以填上空格，令程式輸出「6 5 4 3」？\nnum = [1, 2, 3, 4, 5, 6, 7, 8]\nfor i in _______________:\nprint(num[i], end = \" \")"
+      ],
+      "source_slugs": [
+        "CoreD5_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-ch6",
+      "item_count": 30,
+      "section_types": {
+        "mcq": 23,
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "1.0": 23,
+        "4.0": 4,
+        "3.0": 1,
+        "8.0": 1,
+        "9.0": 1
+      },
+      "difficulty_distribution": {
+        "foundation": 9,
+        "intermediate": 19,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "D-ch6",
+        "輸入輸出",
+        "算法",
+        "除錯",
+        "Python",
+        "程式測試",
+        "資訊處理",
+        "列表",
+        "循環",
+        "選擇結構",
+        "數據類型",
+        "硬件"
+      ],
+      "sample_stems": [
+        "偉豪編寫了一個判斷某數字是否質數的程式。他下一步應做什麼？",
+        "以下算法檢查用戶所輸入的分數是否有效：\n輸入 marks\n如果 marks < 0 or marks > 200 則\n輸出 \"錯誤\"\n以下哪組數據最適合用作測試此算法？",
+        "細閱以下算法：\n輸入 price\n如果 price >= 50 and price < 100 則\n輸出 \"合理\"\n否則\n輸出 \"調整價格\"\n以下哪個 / 些數字是測試此算法的邊際個案？\n(1)\n20\n(2)\n50\n(3)\n100\n(4)\n200",
+        "細閱以下算法。以下哪組數據最適合用作測試此算法？\n輸入 num\nX  15\n如果 num > 10 則\nX  X - 5\n否則如果 num < -10 則\nX  X + 5\n否則\nX  X * 5",
+        "細閱以下算法。\n輸入 A\nB  5\nC  6\nX  (A**2 - B**2 - C**2) 的平方根\n輸出 X\n以下哪項輸入值會導致運行時錯誤？"
+      ],
+      "source_slugs": [
+        "CoreD6_hk"
+      ]
+    },
+    {
+      "unit_key": "Core-D-integrated",
+      "item_count": 17,
+      "section_types": {
+        "mcq": 14,
+        "short_answer": 2,
+        "long_answer": 1
+      },
+      "marks_distribution": {
+        "1.0": 14,
+        "6.0": 1,
+        "3.0": 1,
+        "11.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 13,
+        "foundation": 3,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "D-integrated",
+        "輸入輸出",
+        "算法",
+        "Python",
+        "資訊處理",
+        "循環",
+        "除錯",
+        "列表",
+        "選擇結構",
+        "程式測試",
+        "數據類型",
+        "排序"
+      ],
+      "sample_stems": [
+        "下列算法會輸出甚麼？\nX ← 0\nY ← 2\nX ← X + 1\ntemp ← X\nX ← Y\nY ← temp\n輸出 X",
+        "下列哪個算法等同以下流程圖？",
+        "陣列 contestant 儲存了歌唱比賽中五位參賽者的名字：\nDavid\nHugo\nJoyce\nPeter\nSally\ncontestant[1]\ncontestant[2]\ncontestant[3]\ncontestant[4]\ncontestant[5]\n執行下列算法後，contestant[3] 中儲存的名字是甚麼？\nL ← 5\n當 L >= 3\ncontestant[L] ← conte",
+        "下列算法用以找出第 X 個「Y 的倍數」。\n輸入 X\n輸入 Y\nk ← 0\nans ← 0\n當 _________\nans ← ans + Y\nk ← k + 1\n輸出 ans\n以下哪項應用以填上空格？",
+        "以下哪些算法有相同效果？\n(1)\n輸入 score\n當 score < 0 或 score > 100\n輸入 score\n(2)\n執行\n輸入 score\n當 score < 0 或 score > 100\n(3)\n重複\n輸入 score\n直至 score >= 0 或 score <= 100"
+      ],
+      "source_slugs": [
+        "CoreDi_hk"
+      ]
+    },
+    {
+      "unit_key": "EA-ch1",
+      "item_count": 10,
+      "section_types": {
+        "short_answer": 7,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "4.0": 4,
+        "3.0": 1,
+        "5.0": 1,
+        "7.0": 1,
+        "8.0": 2,
+        "10.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 7,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch1",
+        "SQL",
+        "數據庫",
+        "資訊處理",
+        "硬件",
+        "網絡",
+        "循環",
+        "選擇結構",
+        "列表",
+        "函數",
+        "數據類型"
+      ],
+      "sample_stems": [
+        "Logistic Leaders is a transportation company that uses a database table SHIPMENT to store information about shipment details. Here is the table structure of SHIPMENT.\nSHIPMENT\nField name\nDescription\nS",
+        "The supermarket recorded every customer’s orders. Here are the first four rows of data in PURCHASE.\nPURCHASE\nCID\nPID\nQUANTITY\nPRICE\nORDERDATE\nORDERTIME\nMETHOD\nC01\n1001\n2\n30\n2023-05-18\n15:18:54\nCredit ",
+        "Maple Secondary School is going to use a database table STUDENT2C to store information about students.\nHere is the table structure of STUDENT2C.\nSTUDENT2C\nField name\nDescription\nExample\nSID\nIdentity c",
+        "Mr Chau operates a restaurant and uses a database table MENU to store the information on the menu item so that customers can view the menu on their website.\nSome of the data stored in the mentioned ta",
+        "A database table named SONGS stores song information for a music streaming platform.\nHere are some data of SONGS.\nTITLE\nARTIST\nALBUM\nRELEASE\nRATING\nHey Jude\nThe Beatles\nThe Beatles Again\n1970-02-26\n5\n"
+      ],
+      "source_slugs": [
+        "ElecA1_en"
+      ]
+    },
+    {
+      "unit_key": "EA-ch2",
+      "item_count": 10,
+      "section_types": {
+        "mcq": 10
+      },
+      "marks_distribution": {
+        "4.0": 5,
+        "5.0": 2,
+        "9.0": 2,
+        "11.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 7,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch2",
+        "SQL",
+        "資訊處理",
+        "數據庫",
+        "硬件",
+        "列表",
+        "循環",
+        "網絡",
+        "數據類型",
+        "Python",
+        "函數"
+      ],
+      "sample_stems": [
+        "An online video streaming platform allows users to upload and view videos on it. The database table VIDEO stores the information of different videos.\nID\nTITLE\nPRODUCER\nUPLOADDATE\nVIEWS\n1310215\nMy secr",
+        "An online payment platform records user activities by storing them in a database table RECORD.\nUSERID\nDESCRIPTION\nAMOUNT\nPAYMENTDATE\nPAYMENTTIME\n012345\nVending machine\n7.5\n2025-03-11\n15:28:33\n012345\nT",
+        "An online store uses a database table ACCOUNTS to store user information.\nACCOUNTS\nField name\nDescription\nExample\nUID\nThe identification code of the user\nA3819\nNAME\nName of the user\nTom Chan\nEMAIL\nThe",
+        "A university named Good University sends mass emails to inform students of school updates. The university uses a database table STUDENT to store student information.\nSTUDENT\nSID\nNAME\nSEX\nEMAIL\nPROGRAM",
+        "A database table SUSPENSION stores all the water suspension cases in different regions:\nSUSPENSION\nField name\nDescription\nExample\nCASEID\nThe identification code for the water suspension case.\n003221\nS"
+      ],
+      "source_slugs": [
+        "ElecA2_en"
+      ]
+    },
+    {
+      "unit_key": "EA-ch3",
+      "item_count": 13,
+      "section_types": {
+        "short_answer": 9,
+        "long_answer": 4
+      },
+      "marks_distribution": {
+        "4.0": 3,
+        "5.0": 5,
+        "7.0": 1,
+        "9.0": 1,
+        "11.0": 1,
+        "12.0": 1,
+        "14.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 9,
+        "advanced": 4
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch3",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "列表",
+        "網絡",
+        "循環",
+        "Python",
+        "選擇結構",
+        "軟件"
+      ],
+      "sample_stems": [
+        "Skyline company use the following database tables EMPLOYEE and SALARY to store the data of its employees and salary. Below are some of the data from the tables.\nEMPLOYEE\nEID\nNAME\nTITLE\nDEPT\nPOINT\n6130",
+        "A grocery store uses a database to manage its inventory, with three tables: PRODUCT, SUPPLIER, and PURCHASE.\nPRODUCT\nField name\nDescription\nPID\nIdentity code of each product\nPNAME\nName of the product\n",
+        "Two database tables COURSE and INSTRUCTOR, are used to store the data of courses and instructors in a university. Below is the table structure of both tables.\nCOURSE\nField name\nDescription\nExample\nCOU",
+        "Here are the database tables, CUSTOMERS, MOVIE and RENTAL, used in a movie rental store.\nCUSTOMERS\nCID\nCNAME\nPHONE\nOCCUPATION\n001\nAnissa\n55123679",
+        "A car rental company has multiple locations across districts where customers can rent different types of cars on a daily basis. The company has created a database table called CARS to store informatio"
+      ],
+      "source_slugs": [
+        "ElecA3_en"
+      ]
+    },
+    {
+      "unit_key": "EA-ch4",
+      "item_count": 10,
+      "section_types": {
+        "mcq": 10
+      },
+      "marks_distribution": {
+        "4.0": 5,
+        "5.0": 2,
+        "8.0": 1,
+        "11.0": 1,
+        "10.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 7,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch4",
+        "數據庫",
+        "資訊處理",
+        "硬件",
+        "網絡",
+        "循環",
+        "SQL",
+        "選擇結構",
+        "軟件",
+        "列表",
+        "Python"
+      ],
+      "sample_stems": [
+        "Tim works in a sports retailer. Two database tables, ABIBAS and NIKI, store information on the sports items sold by the two brands. Another database table, PRODUCT, stores all the products in one tabl",
+        "A company called GoGoCar provides a service which allows users to call for a driver nearby to travel to a certain destination. The company uses three database tables, USER, DRIVER and ORDER to store i",
+        "A platform allows users to purchase a bunch of video games and play on the platform.\nGAMES\nGID\nNAME\nPRICE\nDISCOUNT\nDISCOUNTPRICE\n0331\nFast Cars\n498\n0.7\n348.6\n0332\nPocket League\n198\n0.8\n158.4\n0333\nStri",
+        "The following database tables store the information on TV programmes provided by a broadcasting service REHK.\nCHANNEL\nField name\nDescription\nCNO\nThe channel number of the channel.\nCNAME\nThe name of th",
+        "A greenhouse that uses soil moisture sensors to monitor the moisture levels in the soil in different greenhouse beds. The information of sensors is stored in table SENSOR, and the data collected is st"
+      ],
+      "source_slugs": [
+        "ElecA4_en"
+      ]
+    },
+    {
+      "unit_key": "EA-ch5",
+      "item_count": 10,
+      "section_types": {
+        "short_answer": 7,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "4.0": 3,
+        "5.0": 1,
+        "3.0": 1,
+        "7.0": 2,
+        "9.0": 1,
+        "8.0": 1,
+        "13.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 7,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EA",
+        "EA-ch5",
+        "循環",
+        "資訊處理",
+        "網絡",
+        "數據庫",
+        "硬件",
+        "SQL",
+        "選擇結構",
+        "列表",
+        "函數"
+      ],
+      "sample_stems": [
+        "A private gymnastics centre created a database for storing the information of trainers and members. Below is an incomplete ER diagram representing the relationship between the two tables.",
+        "The library uses two tables: BOOK and BORROWER to store information about books and the borrowing records.\nBOOK\nISBN\nTITLE\nAUTHOR\nPUBLISHER\n196448321\nSecond Chance\nAustin Lee\nRandom House\n563697413\nNe",
+        "Isaac is developing a weather data collection system that gathers temperature readings for various locations at different times throughout the day. The system includes two tables: LOCATION and DATA.\nL",
+        "Miss Kwok, a class teacher at a primary school, is organising an in-class spelling competition. She uses a database table COMPETITION and TEAM to store information.\nCOMPETITION\nField name\nDescription\n",
+        "Below is an ER diagram representing the relationship between members and albums in a music store."
+      ],
+      "source_slugs": [
+        "ElecA5_en"
+      ]
+    },
+    {
+      "unit_key": "EA-integrated",
+      "item_count": 8,
+      "section_types": {
+        "short_answer": 6,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "5.0": 3,
+        "4.0": 3,
+        "7.0": 1,
+        "12.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 6,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EA",
+        "EA-integrated",
+        "資訊處理",
+        "數據庫",
+        "硬件",
+        "網絡",
+        "SQL",
+        "循環",
+        "數據類型"
+      ],
+      "sample_stems": [
+        "A database stores information on employees, departments, and projects in a company. Below are the table structures of the three tables.\nEMPLOYEE\nField name\nDescription\nEID\nIdentity code of each employ",
+        "The Ticketing System for Concerts is a database system designed to facilitate the ticketing and management of concerts.\nCONCERT\nField name\nDescription\nCID\nIdentity code of the concert\nCNAME\nName of th",
+        "A bank uses a database to store information about its banking system. Below are all of the data.\nACCOUNT\nAID\nCID\nATYPE\nBALANCE\nS132\n001\nSaving\n25000\nS310\n002\nSaving\n10000\nCUSTOMER\nCID\nNAME\nCONTACT\n001",
+        "Katie is developing a recipe-sharing platform that allows users to discover, share, and save their favourite recipes. The platform includes a database to store recipe information and user interactions",
+        "A Teen Job Portal is a platform specifically designed to connect teenagers with job opportunities suitable for their age and experience level, and users can apply for jobs through this platform. Below"
+      ],
+      "source_slugs": [
+        "ElecAi_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch1",
+      "item_count": 7,
+      "section_types": {
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "4.0": 4,
+        "5.0": 1,
+        "8.0": 1,
+        "9.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 5,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch1",
+        "循環",
+        "硬件",
+        "選擇結構",
+        "Python",
+        "輸入輸出",
+        "數據類型",
+        "算法",
+        "資訊處理",
+        "網絡",
+        "列表"
+      ],
+      "sample_stems": [
+        "Alex is designing a Python program that prints all the square numbers within 1 and a number specified by the user. Complete the program for him.(4 marks)\nnum = int(input(\"Please input a number: \"))\nif",
+        "The library of Kowloon University provides printing services for library users. They can pay the charges using the printing units stored in their library cards. The following shows the charges for mak",
+        "Data in a computer can be stored in various file formats and have different attributes. The format of a file is usually indicated by its file extension, which helps the computer read and decode the fi",
+        "A shopping mall is holding a lucky draw. Every shopper is given a card with a random integer on it. A shopper gets a gift if the number on their card meets one of the following conditions:\nNumber on t",
+        "An automatic vending machine sells five kinds of products (numbered as product 1 to 5). List unit_price and stock store the unit prices and the stocks of the products respectively. The order of items "
+      ],
+      "source_slugs": [
+        "ElecC1_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch2",
+      "item_count": 2,
+      "section_types": {
+        "short_answer": 2
+      },
+      "marks_distribution": {
+        "4.0": 2
+      },
+      "difficulty_distribution": {
+        "intermediate": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch2",
+        "Python",
+        "循環",
+        "硬件",
+        "選擇結構",
+        "列表",
+        "資訊處理",
+        "輸入輸出"
+      ],
+      "sample_stems": [
+        "A currency exchange buys Japanese yen at a rate of 1 JPY = 0.05732 HKD. The boss uses the following Python program for calculating the price payable to the customer:\nJPY  amount in Japanese yen\nHKD  J",
+        "Workers in ABC Company should work for 40 hours per week. However, some workers may work overtime and some may work undertime. Chris, the HR manager of the company, is making a report on the working h"
+      ],
+      "source_slugs": [
+        "ElecC2_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch3",
+      "item_count": 7,
+      "section_types": {
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "3.0": 2,
+        "4.0": 2,
+        "5.0": 1,
+        "11.0": 1,
+        "17.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 5,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch3",
+        "循環",
+        "硬件",
+        "算法",
+        "列表",
+        "選擇結構",
+        "Python",
+        "資訊處理",
+        "網絡",
+        "函數",
+        "輸入輸出"
+      ],
+      "sample_stems": [
+        "Sam is writing some algorithms for printing specific patterns.",
+        "Jimmy uses a 2D array score to store the scores of four S6 classes in the Athletic Meet. score[i,j] stores the score earned by a class in each competition. Given that the champion in a competition get",
+        "The technician of ABC Library, Mary, is designing a Python program for the library catalogue system. The list books stores the titles of all the books in the library. The first four items in books are",
+        "Peter is studying the transport network of a country. He selects five main cities (city A to E) of this country and checks if there is a highway connecting them to one another. The results are stored ",
+        "Ms Chan is a technician at a theatre. There are 64 lights, all of which are controlled by a computer, in the theatre. An 8 × 8 two-dimensional array light is created to represent the lights in the the"
+      ],
+      "source_slugs": [
+        "ElecC3_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch4",
+      "item_count": 9,
+      "section_types": {
+        "short_answer": 6,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "4.0": 2,
+        "5.0": 3,
+        "6.0": 1,
+        "15.0": 1,
+        "14.0": 2
+      },
+      "difficulty_distribution": {
+        "intermediate": 6,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch4",
+        "Python",
+        "函數",
+        "硬件",
+        "循環",
+        "列表",
+        "算法",
+        "選擇結構",
+        "SQL",
+        "網絡",
+        "數據類型"
+      ],
+      "sample_stems": [
+        "Ricky is making a floor plan of the boy dormitory with 3 rows and 5 columns. He uses an array item R[i,j] to store the room number of the room in row i , column j.\nj\ni\n1\n2\n3\n4\n5\n1\n2\n3\nRicky writes a s",
+        "Felix is developing a program to calculate the area of different shapes based on a letter inputted by the user. One of the sub-programs, choose(i), is shown as follows:\nSub-program choose(i)\nif i = \"R",
+        "A shopping mall stores the types of shops on each floor in a two-dimensional array mall, where i represents the floor number and j represents the shop number. For example, mall[1,1] stores the shop ty",
+        "A ride-hailing platform has 50 drivers, and each of them is assigned a unique integer from 1 to 50 for identification. When a passenger requests a ride, the platform displays the driver number of the ",
+        "Mrs Hui writes a program for a digital Bingo game. In a game of Bingo, each player has a card with a grid of random numbers from 1 to 50; all numbers on the card must be unique. Below is an example of"
+      ],
+      "source_slugs": [
+        "ElecC4_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch5",
+      "item_count": 7,
+      "section_types": {
+        "short_answer": 5,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "6.0": 2,
+        "5.0": 3,
+        "13.0": 1,
+        "12.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 5,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch5",
+        "Python",
+        "函數",
+        "硬件",
+        "網絡",
+        "循環",
+        "列表",
+        "算法",
+        "選擇結構",
+        "堆疊",
+        "SQL"
+      ],
+      "sample_stems": [
+        "Holly uses stacks to manage shoeboxes containing shoes of different sizes. For example, the following stack has 4 shoeboxes, with a pair of shoes of size 35, 37, 38 and 40 in each box respectively.\n40",
+        "Ellen develops a web application for a popular concert’s online ticketing system. When the number of users simultaneously using the application reaches a certain threshold, new users are directed to t",
+        "Kelly, the HR manager of a company, creates a linked list interview to store the names of the candidates that she is going to interview. She uses arrays to represent this linked list in which the poin",
+        "A palindrome (回文) is a word, phrase or sentence that looks the same both backwards and forwards. For example, the word “madam” is a palindrome. Henry is developing a program in Python that can be used",
+        "XYZ College is going to hold the Open Day. Ms Cheung, the teacher in-charge, creates a linked list activity to store the activities. She uses arrays activity, prev and next to represent this linked li"
+      ],
+      "source_slugs": [
+        "ElecC5_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch6",
+      "item_count": 8,
+      "section_types": {
+        "short_answer": 5,
+        "long_answer": 3
+      },
+      "marks_distribution": {
+        "6.0": 1,
+        "5.0": 3,
+        "4.0": 1,
+        "11.0": 1,
+        "12.0": 1,
+        "15.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 5,
+        "advanced": 3
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch6",
+        "循環",
+        "選擇結構",
+        "列表",
+        "算法",
+        "排序",
+        "硬件",
+        "Python",
+        "進制",
+        "數據類型",
+        "函數"
+      ],
+      "sample_stems": [
+        "Consider the following array ID.\nID\n1001\n1003\n1006\n1002\n1005\n1004\n1008\n1007\n1009\nindex\n1\n2\n3\n4\n5\n6\n7\n8\n9\nAlex wants to use a searching algorithm to find if some IDs exist in array ID.",
+        "The following algorithm aims to find out if an item in an array A (index starts from 1) matches the input. If it does, the program outputs True. Otherwise, the program outputs False.\nLine  Pseudocode\n",
+        "Consider the following algorithm.\nLine  Pseudocode\n1    a  Input the first integer\n2    b  Input the second integer\n3    if a < b  then\n4        temp  a + b\n5        b  temp - b\n6        a  temp – b",
+        "Mr Chan is managing the test results of his students. The scores of his students are stored in an array score, while another array studentID stores the student IDs of his students. The order of items ",
+        "Helen has some number cards and she stores the numbers on the cards in an array num, as shown below:\nnum\n35\n12\n5\n8\n17\n22\n40\n51\nindex\n0\n1\n2\n3\n4\n5\n6\n7\nShe tries to process the array with the following a"
+      ],
+      "source_slugs": [
+        "ElecC6_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch7",
+      "item_count": 2,
+      "section_types": {
+        "short_answer": 1,
+        "long_answer": 1
+      },
+      "marks_distribution": {
+        "6.0": 1,
+        "11.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 1,
+        "advanced": 1
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch7",
+        "Python",
+        "循環",
+        "函數",
+        "硬件",
+        "輸入輸出",
+        "選擇結構",
+        "數據類型",
+        "資訊處理",
+        "列表"
+      ],
+      "sample_stems": [
+        "Jimmy is creating a diary application for users to save their diaries on their phones.",
+        "Sally is writing a program for a game, which is about guessing letters in the word given by the computer. She needs to read a text file called “dictionary.txt” in the program for choosing a random wor"
+      ],
+      "source_slugs": [
+        "ElecC7_en"
+      ]
+    },
+    {
+      "unit_key": "EC-ch8",
+      "item_count": 2,
+      "section_types": {
+        "short_answer": 2
+      },
+      "marks_distribution": {
+        "5.0": 1,
+        "7.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-ch8",
+        "循環",
+        "算法",
+        "選擇結構",
+        "函數",
+        "硬件",
+        "列表",
+        "資訊處理"
+      ],
+      "sample_stems": [
+        "Tommy is designing a prototype of an energy-saving escalator. It has two modes of operation, namely the normal mode and the standby mode. A sensor is used to detect the presence of passengers within 3",
+        "Kay is designing a smart assistant that gives suggestions for the user after detecting the temperature and humidity in the surroundings."
+      ],
+      "source_slugs": [
+        "ElecC8_en"
+      ]
+    },
+    {
+      "unit_key": "EC-integrated",
+      "item_count": 8,
+      "section_types": {
+        "short_answer": 6,
+        "long_answer": 2
+      },
+      "marks_distribution": {
+        "5.0": 4,
+        "6.0": 2,
+        "13.0": 1,
+        "11.0": 1
+      },
+      "difficulty_distribution": {
+        "intermediate": 6,
+        "advanced": 2
+      },
+      "top_concepts": [
+        "EC",
+        "EC-integrated",
+        "循環",
+        "列表",
+        "選擇結構",
+        "算法",
+        "函數",
+        "SQL",
+        "網絡",
+        "硬件",
+        "數據類型",
+        "Python"
+      ],
+      "sample_stems": [
+        "Tom writes an algorithm that sorts the height of students in ascending order. He uses an integer array height with indices from 1 to N.\nLine\nContent\n1\nfor i from N down to 1\n2\ntemp  i\n3\nfor j from i-1",
+        "A balanced string of parentheses is a string where every opening parenthesis “(” is matched by a corresponding closing parenthesis “)”, and no closing parenthesis “)” appears before its matching openi",
+        "Ms. Chan wrote an algorithm including an array student, to manage the students waiting for the oral exam. The following are the functions used to control the array student in the algorithm.\nFunction\nD",
+        "Eric creates a linked list to manage a minibus route. He uses arrays to represent the linked list involving two pointers: Prev and Next, which stores the address of the previous and next node respecti",
+        "A printer uses a circular queue task to store the printing task. The following are the variables and functions used.\nVariable or function\nDescription\nenq(Q, T)\nInsert element T at the rear of the queu"
+      ],
+      "source_slugs": [
+        "ElecCi_en"
+      ]
+    }
+  ],
+  "guidance_for_f5_exam": {
+    "mcq_core_a": {
+      "prefer_scenario": true,
+      "avoid_trivial_recall": true
+    },
+    "mcq_core_b": {
+      "include_hardware_specs": true,
+      "compare_devices": true
+    },
+    "mcq_core_d": {
+      "min_fraction_intermediate": 0.4,
+      "include_code_trace": true,
+      "include_list_or_nested_loop": true,
+      "avoid_only_definition_recall": true
+    },
+    "written_core_b": {
+      "multi_part": true,
+      "marks_per_part": [
+        2,
+        3,
+        4
+      ]
+    },
+    "written_ea": {
+      "sql_completion": true,
+      "multi_table": true
+    },
+    "written_ec": {
+      "python_completion": true,
+      "algorithm_or_structure": true
+    }
+  },
+  "sample_mcq_stems": [
+    "Which of the following hardware is/are used for input?\n(1)\nKeyboard\n(2)\nWebcam\n(3)\nSpeaker",
+    "Which of the following is not used for output?",
+    "Which of the following is/are the example(s) of application software?\n(1)\nTask Manager\n(2)\nDatabase management software\n(3)\nAnti-virus software",
+    "Which of the following is the duty of a system analyst?",
+    "Which of the following involves the conversion from data to information?",
+    "What is the purpose of the program represented by the IPO chart below?\nInput\nProcess\nOutput\nStudent names and their mathematics test score\nIdentify the 10 highest scores.\nStudent names",
+    "Which of the following statements about the media shown below must be false?\nText\nThis is not text.\nOr is it?",
+    "Which of the following does not involve the conversion between analog and digital data?",
+    "Which of the following is/are the cause(s) of the emergence of the information age?\n(1)\nMore affordable computer components\n(2)\nIncreased coverage of network\n(3)\nThe use of renewable energy sources",
+    "Which of the following should Benny do after collecting data through a survey?",
+    "以下哪項 ／ 些硬件會用以進行輸入？\n(1)\n鍵盤\n(2)\n網絡攝影機\n(3)\n揚聲器",
+    "以下哪項不會用以進行輸出？",
+    "以下哪項 ／ 些屬於應用軟件的例子？\n(1)\n工作管理員\n(2)\n數據庫管理系統（DBMS）\n(3)\n防毒軟件",
+    "以下哪項是系統分析師的職責？",
+    "以下哪項涉及將數據轉換為資訊的過程？",
+    "以下輸入—處理—輸出周期表所代表的程式的用處是什麼？\n輸入\n處理\n輸出\n學生名字及其數學測驗分數\n找出首 10 個最高分數\n學生名字",
+    "以下哪句關於下方媒體的描述一定是錯誤的？\nText\nThis is not text.\nOr is it?",
+    "以下哪項不涉及把模擬信號和數碼信號互相轉換的過程？",
+    "以下哪項 ／ 些是資訊時代出現的原因？\n(1)\n電腦部件的價格變得更實惠\n(2)\n網絡的覆蓋度有所提高\n(3)\n再生能源的使用",
+    "以下哪項是子謙在通過調查收集數據後應該做的事情？"
+  ],
+  "sample_written_stems": [
+    "Tom wants to play video games on his computer.",
+    "Sam is starting a convenience store. He has to purchase different input and output devices.",
+    "Mathew used a digital camera to take photos of different sceneries.",
+    "Nicholas is planting different trees and would like to monitor their growth each day. He wants to take a picture of each of the trees every day to analyse their growth.",
+    "Tammy is researching for her essay.",
+    "A startup, \"DataVitals,\" develops a mobile app that collects users' daily exercise data and heart rate readings. The app uses this raw input to generate weekly progress reports and securely store the ",
+    "嘉俊打算在電腦上遊玩電子遊戲。",
+    "天朗準備開設一間便利店。他須要購置不同的輸入和輸出設備。",
+    "英秀使用數碼相機拍攝不同場景。",
+    "家銘正在種植不同樹木，並打算監控樹木每天的成長。",
+    "穎妍正在為論文搜集資料。",
+    "初創企業DataVitals開發了一個手機應用程式，收集用戶每日的運動數據和心跳率讀數。應用程式使用此原始數據生成每週進度報告，並以安全方式儲存資料。",
+    "Peter wants to log in to his online forum account, but he has forgotten his password.",
+    "Tom is using a diary application to write his diary.",
+    "Joe is designing an online survey. Suggest an interface design and a validation check for each of the following fields below. (4 marks)\nField\nInterface design\nValidation check\nGender\nInterested produc"
+  ]
+}

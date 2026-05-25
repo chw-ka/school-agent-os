@@ -1,0 +1,428 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_ElecAi_en_Integrated.docx",
+    "slug": "ElecAi_en",
+    "title": "Integrated",
+    "title_zh": null,
+    "title_en": "Integrated",
+    "language": "en",
+    "family": "ElecA",
+    "chapter": null,
+    "integrated": true,
+    "topic_code": "EA99",
+    "curriculum_unit": "EA",
+    "ca_unit": "EA",
+    "f5_exam_scope": "elective_db",
+    "extracted_at": "2026-05-24T10:37:18.140033+00:00",
+    "item_count": 8,
+    "section_counts": {
+      "short_answer": 6,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTA1199_03A002E",
+      "bank_code": "SSICTA1199_03A002E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": "2025",
+      "stem": "A database stores information on employees, departments, and projects in a company. Below are the table structures of the three tables.\nEMPLOYEE\nField name\nDescription\nEID\nIdentity code of each employee\nENAME\nName of the employee\nPOSITION\nPosition of the employee\nDID\nIdentity code of each department\nDEPARTMENT\nField name\nDescription\nDID\nIdentity code of each department\nDNAME\nName of the department\nPROJECT\nField name\nDescription\nEID\nIdentity code of each employee\nPID\nIdentity code of each project\nPNAME\nName of the project\nSDATE\nStarting date of the project\nEDATE\nExpected ending date of the project",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "The database relationship is described below:\nEach employee must belong to exactly one department. Each department has one or more employees.\nEach employee assists in more than one project. Each project is assisted by exactly one employee.\nComplete the ER diagram below for this database. It is not necessary to draw attributes. (4 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "What is the candidate key of PROJECT? (1 mark)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "(b) PID--]"
+        }
+      ],
+      "text": "A database stores information on employees, departments, and projects in a company. Below are the table structures of the three tables.\nEMPLOYEE\nField name\nDescription\nEID\nIdentity code of each employee\nENAME\nName of the employee\nPOSITION\nPosition of the employee\nDID\nIdentity code of each department\nDEPARTMENT\nField name\nDescription\nDID\nIdentity code of each department\nDNAME\nName of the department\nPROJECT\nField name\nDescription\nEID\nIdentity code of each employee\nPID\nIdentity code of each project\nPNAME\nName of the project\nSDATE\nStarting date of the project\nEDATE\nExpected ending date of the project\n(a) The database relationship is described below:\nEach employee must belong to exactly one department. Each department has one or more employees.\nEach employee assists in more than one project. Each project is assisted by exactly one employee.\nComplete the ER diagram below for this database. It is not necessary to draw attributes. (4 marks)\n(b) What is the candidate key of PROJECT? (1 mark)\n[--Answer:\n(a) (b) PID--]",
+      "concepts": [
+        "EA",
+        "EA-integrated",
+        "循環",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1199_03A003E",
+      "bank_code": "SSICTA1199_03A003E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": "2025",
+      "stem": "The Ticketing System for Concerts is a database system designed to facilitate the ticketing and management of concerts.\nCONCERT\nField name\nDescription\nCID\nIdentity code of the concert\nCNAME\nName of the concert\nVENUE\nThe venue where the concert is held\nCDATE\nDate of the concert\nCTIME\nTime of the concert\nTICKET\nField name\nDescription\nTID\nIdentity code of the ticket\nCID\nIdentity code of the concert\nPRICE\nPrice of the ticket\nSEAT\nSeating information for the ticket\nAVAILABILITY\nAvailability status of the ticket (1 means available; 0 means sold)\nTORDER\nField name\nDescription\nOID\nIdentity code of the order\nCID\nIdentity code of the concert\nTID\nIdentity code of the ticket\nCUS\nName of the customer who placed the order\nODATE\nDate when the order was placed\nSTATUS\nThe payment status of the order",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a SQL command to update the price of tickets with a concert ID of 'C05' by increasing it by 10%.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write a SQL command to find the seating information for available tickets in the concert named 'Gianna'.(2 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "UPDATE TICKET\nSET PRICE = PRICE * 1.1\nWHERE CID = 'C05'"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "SELECT SEAT FROM TICKET T\nJOIN CONCERT C ON T.CID = C.CID\nWHERE CNAME = 'Gianna' AND AVAILABILITY = 1\n--]"
+        }
+      ],
+      "text": "The Ticketing System for Concerts is a database system designed to facilitate the ticketing and management of concerts.\nCONCERT\nField name\nDescription\nCID\nIdentity code of the concert\nCNAME\nName of the concert\nVENUE\nThe venue where the concert is held\nCDATE\nDate of the concert\nCTIME\nTime of the concert\nTICKET\nField name\nDescription\nTID\nIdentity code of the ticket\nCID\nIdentity code of the concert\nPRICE\nPrice of the ticket\nSEAT\nSeating information for the ticket\nAVAILABILITY\nAvailability status of the ticket (1 means available; 0 means sold)\nTORDER\nField name\nDescription\nOID\nIdentity code of the order\nCID\nIdentity code of the concert\nTID\nIdentity code of the ticket\nCUS\nName of the customer who placed the order\nODATE\nDate when the order was placed\nSTATUS\nThe payment status of the order\n(a) Write a SQL command to update the price of tickets with a concert ID of 'C05' by increasing it by 10%.(2 marks)\n(b) Write a SQL command to find the seating information for available tickets in the concert named 'Gianna'.(2 marks)\n[--Answer:\n(a) UPDATE TICKET\nSET PRICE = PRICE * 1.1\nWHERE CID = 'C05'\n(b) SELECT SEAT FROM TICKET T\nJOIN CONCERT C ON T.CID = C.CID\nWHERE CNAME = 'Gianna' AND AVAILABILITY = 1\n--]",
+      "concepts": [
+        "EA",
+        "EA-integrated",
+        "循環",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1199_03B004E",
+      "bank_code": "SSICTA1199_03B004E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": "2025",
+      "stem": "A bank uses a database to store information about its banking system. Below are all of the data.\nACCOUNT\nAID\nCID\nATYPE\nBALANCE\nS132\n001\nSaving\n25000\nS310\n002\nSaving\n10000\nCUSTOMER\nCID\nNAME\nCONTACT\n001\nMacy Lee\n98736542\n002\nTimothy Hung\n54632569",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "A new customer Jonathan Mo is creating a new account in this bank. Write a SQL command to insert data to CUSTOMER. The CID will be \"003\" and his CONTACT is \"50906040\".(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The bank also uses a table TRANSACTION to store information on the transaction between accounts.Below is the table structure of TRANSACTION:\nField name\nDescription\nTID\nIdentity code of the transaction\nFAID\nIdentity code of the account from which the transfer is made\nTAID\nIdentity code of the account to which the transfer is made\nAMOUNT\nAmount of the transaction\nTDATE\nThe date when the transaction occurs\nGive an example of a TRANSACTION record that violates referential integrity, using the data above.(2 marks)\nTRANSACTION\nTID\nFAID\nTAID\nAMOUNT\nTDATE\n[--Answer:\n(a) INSERT INTO CUSTOMER (CID, NAME, CONTACT)\nVALUES ('003', 'Jonathan Mo', '50906040')\n(b) Any record where either the FAID or TAID does not match any AID in the ACCOUNT table.\n--]"
+        }
+      ],
+      "text": "A bank uses a database to store information about its banking system. Below are all of the data.\nACCOUNT\nAID\nCID\nATYPE\nBALANCE\nS132\n001\nSaving\n25000\nS310\n002\nSaving\n10000\nCUSTOMER\nCID\nNAME\nCONTACT\n001\nMacy Lee\n98736542\n002\nTimothy Hung\n54632569\n(a) A new customer Jonathan Mo is creating a new account in this bank. Write a SQL command to insert data to CUSTOMER. The CID will be \"003\" and his CONTACT is \"50906040\".(2 marks)\n(b) The bank also uses a table TRANSACTION to store information on the transaction between accounts.Below is the table structure of TRANSACTION:\nField name\nDescription\nTID\nIdentity code of the transaction\nFAID\nIdentity code of the account from which the transfer is made\nTAID\nIdentity code of the account to which the transfer is made\nAMOUNT\nAmount of the transaction\nTDATE\nThe date when the transaction occurs\nGive an example of a TRANSACTION record that violates referential integrity, using the data above.(2 marks)\nTRANSACTION\nTID\nFAID\nTAID\nAMOUNT\nTDATE\n[--Answer:\n(a) INSERT INTO CUSTOMER (CID, NAME, CONTACT)\nVALUES ('003', 'Jonathan Mo', '50906040')\n(b) Any record where either the FAID or TAID does not match any AID in the ACCOUNT table.\n--]",
+      "concepts": [
+        "EA",
+        "EA-integrated",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1199_03B005E",
+      "bank_code": "SSICTA1199_03B005E",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": "2025",
+      "stem": "Katie is developing a recipe-sharing platform that allows users to discover, share, and save their favourite recipes. The platform includes a database to store recipe information and user interactions.\nUSER\nField name\nDescription\nUID\nIdentity code of the user\nNAME\nUsername of the user\nRECIPE\nField name\nDescription\nRID\nIdentity code of the recipe\nUID\nIdentity code of the user\nTITLE\nTitle of the recipe\nDESCRIPTION\nDescription of the recipe\nLIKES\nNumber of users who saved the recipe as their favourites\nFAVOURITE\nField name\nDescription\nUID\nIdentity code of the user\nRID\nIdentity code of the recipe",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Explain why LIKES is a derived attribute. (1 mark)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Write a SQL command to retrieve the usernames of users who do not have favourite recipes.\n(3 marks)\n[--Answer:\n(a) LIKES can be calculated by counting how many records in the FAVOURITE table have the same RID."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "SELECT NAME\nFROM USERS U LEFT JOIN FAVOURITE F ON U.UID = F.UID\nWHERE F.UID IS NULL\nor\nSELECT NAME\nFROM USERS\nWHERE UID NOT IN (SELECT UID FROM FAVOURITE)\n--]"
+        }
+      ],
+      "text": "Katie is developing a recipe-sharing platform that allows users to discover, share, and save their favourite recipes. The platform includes a database to store recipe information and user interactions.\nUSER\nField name\nDescription\nUID\nIdentity code of the user\nNAME\nUsername of the user\nRECIPE\nField name\nDescription\nRID\nIdentity code of the recipe\nUID\nIdentity code of the user\nTITLE\nTitle of the recipe\nDESCRIPTION\nDescription of the recipe\nLIKES\nNumber of users who saved the recipe as their favourites\nFAVOURITE\nField name\nDescription\nUID\nIdentity code of the user\nRID\nIdentity code of the recipe\n(a) Explain why LIKES is a derived attribute. (1 mark)\n(b) Write a SQL command to retrieve the usernames of users who do not have favourite recipes.\n(3 marks)\n[--Answer:\n(a) LIKES can be calculated by counting how many records in the FAVOURITE table have the same RID.\n(b) SELECT NAME\nFROM USERS U LEFT JOIN FAVOURITE F ON U.UID = F.UID\nWHERE F.UID IS NULL\nor\nSELECT NAME\nFROM USERS\nWHERE UID NOT IN (SELECT UID FROM FAVOURITE)\n--]",
+      "concepts": [
+        "EA",
+        "EA-integrated",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1199_03B006E",
+      "bank_code": "SSICTA1199_03B006E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": "2025",
+      "stem": "A Teen Job Portal is a platform specifically designed to connect teenagers with job opportunities suitable for their age and experience level, and users can apply for jobs through this platform. Below is the table structure of JOBAPP.\nJOBAPP\nField name\nDescription\nAID\nIdentity code of the application\nUID\nIdentity code of the user\nNAME\nName of the user\nAGE\nAge of the user\nJOB\nThe title or position of the job\nINDUSTRY\nThe industry or field to which the job belongs\nMINAGE\nThe minimum age required for the job\nHOUR\nThe expected hours of work for the job per week\nEMPLOYER\nThe name of the company or employer",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Below are some records of the application in JOPAPP.\nAID\nUID\nNAME\nAGE\nJOB\nINDUSTRY\nMINAGE\nHOUR\nEMPLOYER\n1\n001\nJamie\n17\nSales\nRetail\n18\n20\nBeauty store\n2\n001\nJamie\n17\nTutor\nEducation\n16\n12\nXYZ Academy\n3\n002\nDavid\n15\nWaiter\nHospitality\n16\n25\nFine Inc.\nConsider the following SQL command.\nUPDATE JOBAPP\nSET AGE = 18\nWHERE AID = 1\nWhich anomaly may occur when the SQL command is executed? Explain briefly.  (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "Normalise the above table into 3NF. Write down the schema of all tables, underline the primary key.  (3 marks)\n[--Answer:\n(a) Update anomaly. The age of Jamie is inconsistent after this update."
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "USER (UID, NAME, AGE)\nJOB (JID, JOB, INDUSTRY, MINAGE, HOUR, EMPLOYER)\nJOBAPP (AID, UID, JID)\n--]"
+        }
+      ],
+      "text": "A Teen Job Portal is a platform specifically designed to connect teenagers with job opportunities suitable for their age and experience level, and users can apply for jobs through this platform. Below is the table structure of JOBAPP.\nJOBAPP\nField name\nDescription\nAID\nIdentity code of the application\nUID\nIdentity code of the user\nNAME\nName of the user\nAGE\nAge of the user\nJOB\nThe title or position of the job\nINDUSTRY\nThe industry or field to which the job belongs\nMINAGE\nThe minimum age required for the job\nHOUR\nThe expected hours of work for the job per week\nEMPLOYER\nThe name of the company or employer\n(a) Below are some records of the application in JOPAPP.\nAID\nUID\nNAME\nAGE\nJOB\nINDUSTRY\nMINAGE\nHOUR\nEMPLOYER\n1\n001\nJamie\n17\nSales\nRetail\n18\n20\nBeauty store\n2\n001\nJamie\n17\nTutor\nEducation\n16\n12\nXYZ Academy\n3\n002\nDavid\n15\nWaiter\nHospitality\n16\n25\nFine Inc.\nConsider the following SQL command.\nUPDATE JOBAPP\nSET AGE = 18\nWHERE AID = 1\nWhich anomaly may occur when the SQL command is executed? Explain briefly.  (2 marks)\n(b) Normalise the above table into 3NF. Write down the schema of all tables, underline the primary key.  (3 marks)\n[--Answer:\n(a) Update anomaly. The age of Jamie is inconsistent after this update.\n(b) USER (UID, NAME, AGE)\nJOB (JID, JOB, INDUSTRY, MINAGE, HOUR, EMPLOYER)\nJOBAPP (AID, UID, JID)\n--]",
+      "concepts": [
+        "EA",
+        "EA-integrated",
+        "循環",
+        "SQL",
+        "數據庫",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1199_03C007E",
+      "bank_code": "SSICTA1199_03C007E",
+      "section_type": "short_answer",
+      "marks": 5.0,
+      "year_tag": "2025",
+      "stem": "The database system is designed to support an online gaming community. The system allows players to register and participate in multiplayer games within different rooms, and each room must consist of two players.\nPLAYER\nField name\nDescription\nPID\nIdentity code of the player\nPNAME\nName of the player\nREGION\nThe region that the player belongs to\nGAME\nField name\nDescription\nRID\nIdentity code of the room\nRNAME\nName of the room\nPWD\nThe password of the room\nCTIME\nThe date and time of the room created\nCONNECT\nField name\nDescription\nRID\nIdentity code of the room\nPID1\nIdentity code of the player 1\nPID2\nIdentity code of the player 2\nWIN\nThe outcome of a game played between the two players (1 means player 1 won; 0 means player 2 won)\nWrite SQL commands to complete the following tasks.",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Find out the number of wins for a player with PID 012. (2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "The names of players who participated in at least two rooms on 2025-06-24. (3 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "SELECT COUNT(*) FROM CONNECT\nWHERE (PID1 = '012' AND WIN = 1) OR (PID2 = '012' AND WIN = 0)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "SELECT PNAME FROM PLAYER P, CONNECT C, GAME G\nWHERE (P.PID = C.PID1 OR P.PID = C.PID2) AND G.RID = C.RID AND DATE(CTIME) = '2025-06-24'\nGROUP BY P.PID\nHAVING COUNT(C.RID) >= 2\n--]"
+        }
+      ],
+      "text": "The database system is designed to support an online gaming community. The system allows players to register and participate in multiplayer games within different rooms, and each room must consist of two players.\nPLAYER\nField name\nDescription\nPID\nIdentity code of the player\nPNAME\nName of the player\nREGION\nThe region that the player belongs to\nGAME\nField name\nDescription\nRID\nIdentity code of the room\nRNAME\nName of the room\nPWD\nThe password of the room\nCTIME\nThe date and time of the room created\nCONNECT\nField name\nDescription\nRID\nIdentity code of the room\nPID1\nIdentity code of the player 1\nPID2\nIdentity code of the player 2\nWIN\nThe outcome of a game played between the two players (1 means player 1 won; 0 means player 2 won)\nWrite SQL commands to complete the following tasks.\n(a) Find out the number of wins for a player with PID 012. (2 marks)\n(b) The names of players who participated in at least two rooms on 2025-06-24. (3 marks)\n[--Answer:\n(a) SELECT COUNT(*) FROM CONNECT\nWHERE (PID1 = '012' AND WIN = 1) OR (PID2 = '012' AND WIN = 0)\n(b) SELECT PNAME FROM PLAYER P, CONNECT C, GAME G\nWHERE (P.PID = C.PID1 OR P.PID = C.PID2) AND G.RID = C.RID AND DATE(CTIME) = '2025-06-24'\nGROUP BY P.PID\nHAVING COUNT(C.RID) >= 2\n--]",
+      "concepts": [
+        "EA",
+        "EA-integrated",
+        "循環",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTA1199_04C001E",
+      "bank_code": "SSICTA1199_04C001E",
+      "section_type": "long_answer",
+      "marks": 7.0,
+      "year_tag": "2025",
+      "stem": "Sam develops a platform for users to reserve for short-term and long-term stays in homes hosted by other users. Tables USER, HOUSE and ORDERS are used to store the information required.\nUSER\nUID\nNAME\nSEX\nEMAIL\n00001\nTom Cheung\nM\ntomcheung@airmail.com\n00002\nPeter Johnson\nM\npetejohnson@coldmail.com\n00003\nMatthew Ho\nM\nmatthewww@airmail.com\n00004\nMary Smith\nF\nmarysmith@ymail.com\nHOUSE\nHID\nNAME\nLOCATION\nCAPACITY\nPRICE\nUID\n0021\nHida Place\nJapan\n4\n500\n00001\n0022\nMountain View\nJapan\n8\n1200\n00001\n0023\nHome Sweet Home\nThailand\n4\n400\n00004\n0024\nThe Local Hotel\nSouth Korea\n5\n430\n00003\nBOOKINGS\nBID\nUID\nHID\nBEGIN\nEND\n02139\n00002\n0021\n2025-04-23\n2025-04-28\n02138\n00002\n0023\n2025-03-22\n2025-03-30\n02137\n00001\n0024\n2025-05-10\n2025-05-15\n02136\n00003\n0021\n2025-04-11\n2025-04-17",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a SQL command to display all the names of houses that have never been reserved.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "John is going to Japan for vacation with 3 of his friends. Write a SQL command to find all suitable houses for them. (2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Hilda wants to find a house that has a price of less than 500 and is available during a specific time period shown below. Write a SQL command to find the IDs of available houses.(3 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "SELECT NAME FROM HOUSE\nLEFT JOIN BOOKINGS ON HOUSE.HID = BOOKINGS.HID\nWHERE BOOKINGS.BID IS NULL\nor\nSELECT NAME\nFROM HOUSE\nWHERE HID NOT IN (SELECT HID FROM BOOKINGS)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": "SELECT * FROM HOUSE WHERE CAPACITY >= 4 AND LOCATION = 'Japan'"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "SELECT h.HID FROM HOUSE h\nWHERE PRICE < 500 AND h.HID NOT IN (\nSELECT b.HID\nFROM BOOKINGS b\nWHERE BEGIN <= '2025-04-26' AND END >= '2025-04-21'\n)\n--]"
+        }
+      ],
+      "text": "Sam develops a platform for users to reserve for short-term and long-term stays in homes hosted by other users. Tables USER, HOUSE and ORDERS are used to store the information required.\nUSER\nUID\nNAME\nSEX\nEMAIL\n00001\nTom Cheung\nM\ntomcheung@airmail.com\n00002\nPeter Johnson\nM\npetejohnson@coldmail.com\n00003\nMatthew Ho\nM\nmatthewww@airmail.com\n00004\nMary Smith\nF\nmarysmith@ymail.com\nHOUSE\nHID\nNAME\nLOCATION\nCAPACITY\nPRICE\nUID\n0021\nHida Place\nJapan\n4\n500\n00001\n0022\nMountain View\nJapan\n8\n1200\n00001\n0023\nHome Sweet Home\nThailand\n4\n400\n00004\n0024\nThe Local Hotel\nSouth Korea\n5\n430\n00003\nBOOKINGS\nBID\nUID\nHID\nBEGIN\nEND\n02139\n00002\n0021\n2025-04-23\n2025-04-28\n02138\n00002\n0023\n2025-03-22\n2025-03-30\n02137\n00001\n0024\n2025-05-10\n2025-05-15\n02136\n00003\n0021\n2025-04-11\n2025-04-17\n(a) Write a SQL command to display all the names of houses that have never been reserved.(2 marks)\n(b) John is going to Japan for vacation with 3 of his friends. Write a SQL command to find all suitable houses for them. (2 marks)\n(c) Hilda wants to find a house that has a price of less than 500 and is available during a specific time period shown below. Write a SQL command to find the IDs of available houses.(3 marks)\n[--Answer:\n(a) SELECT NAME FROM HOUSE\nLEFT JOIN BOOKINGS ON HOUSE.HID = BOOKINGS.HID\nWHERE BOOKINGS.BID IS NULL\nor\nSELECT NAME\nFROM HOUSE\nWHERE HID NOT IN (SELECT HID FROM BOOKINGS)\n(b) SELECT * FROM HOUSE WHERE CAPACITY >= 4 AND LOCATION = 'Japan'\n(c) SELECT h.HID FROM HOUSE h\nWHERE PRICE < 500 AND h.HID NOT IN (\nSELECT b.HID\nFROM BOOKINGS b\nWHERE BEGIN <= '2025-04-26' AND END >= '2025-04-21'\n)\n--]",
+      "concepts": [
+        "EA",
+        "EA-integrated",
+        "循環",
+        "SQL",
+        "硬件",
+        "資訊處理"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTA1199_04B002E",
+      "bank_code": "SSICTA1199_04B002E",
+      "section_type": "long_answer",
+      "marks": 12.0,
+      "year_tag": "2025",
+      "stem": "Sienna is working on a research project analysing a health survey conducted among teenagers. The survey data is stored in a SURVEY table.\nSURVEY\nField name\nDescription\nRID\nIdentity code of the survey respondent\nAGE\nThe age of the respondent\nGENDER\nThe gender of the respondent\nQID\nIdentity code of the questions\nQUESTION\nThe content of the questions\nRESPONSE\nAn integer column to store the numeric response to the question\nBelow are the data of SURVEY:\nRID\nAGE\nGENDER\nQID\nQUESTION\nRESPONSE\n1\n17\nF\n01\nHow many hours do you exercise per week?\n1\n2\n17\nF\n01\nHow many hours do you exercise per week?\n0.5\n3\n15\nM\n01\nHow many hours do you exercise per week?\n6\n4\n16\nF\n02\nHow many hours do you sleep per day?\n7\n5\n13\nM\n02\nHow many hours do you sleep per day?\n8.5",
+      "options": {},
+      "answer": null,
+      "answer_text": null,
+      "parts": [
+        {
+          "label": "a",
+          "marks": null,
+          "text": "Write a SQL query to find the average sleeping hours for respondents between the ages of 13 to 18.(2 marks)"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Create a view named AvgEx that calculates the average number of exercise hours per week for each gender group. (2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Use the view created in (i) to find the highest average exercise hours. (2 marks)"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "Sienna found that this table occupies many storage spaces. Thus, she decided to create a separate table called QUESTIONS to store the content of the questions and removed the related attributes from the SURVEY table to reduce storage space."
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "Write a SQL command to create the QUESTION table. (2 marks)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "Write a SQL command to add a foreign key to SURVEY table. (2 marks)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "Write a SQL command to remove the related attributes from the SURVEY table.(2 marks)\n[--Answer:"
+        },
+        {
+          "label": "a",
+          "marks": null,
+          "text": "SELECT AVG(RESPONSE)\nFROM SURVEY\nWHERE AGE BETWEEN 13 AND 18 AND QID = '01'\nor\nSELECT AVG(RESPONSE)\nFROM SURVEY\nWHERE AGE BETWEEN 13 AND 18 AND QUESTION = 'How many hours do you sleep per day?'"
+        },
+        {
+          "label": "b",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "CREATE VIEW AvgEx AS\nSELECT GENDER, AVG(RESPONSE) AS HOUR\nFROM SURVEY\nWHERE QID = '02'\nGROUP BY GENDER\nor\nCREATE VIEW AvgEx AS\nSELECT GENDER, AVG(RESPONSE) AS HOUR\nFROM SURVEY\nWHERE QUESTION = 'How many hours do you exercise per week?'\nGROUP BY GENDER"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "SELECT MAX(HOUR)\nFROM AvgEx"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": null,
+          "text": "CREATE TABLE QUESTIONS (\nQID CHAR(2) PRIMARY KEY,\nQUESTION VARCHAR(255)\n)"
+        },
+        {
+          "label": "ii",
+          "marks": null,
+          "text": "ALTER TABLE SURVEY\nADD FOREIGN KEY (QID) REFERENCES QUESTIONS(QID)"
+        },
+        {
+          "label": "iii",
+          "marks": null,
+          "text": "ALTER TABLE SURVEY\nDROP COLUMN QUESTION\n--]"
+        }
+      ],
+      "text": "Sienna is working on a research project analysing a health survey conducted among teenagers. The survey data is stored in a SURVEY table.\nSURVEY\nField name\nDescription\nRID\nIdentity code of the survey respondent\nAGE\nThe age of the respondent\nGENDER\nThe gender of the respondent\nQID\nIdentity code of the questions\nQUESTION\nThe content of the questions\nRESPONSE\nAn integer column to store the numeric response to the question\nBelow are the data of SURVEY:\nRID\nAGE\nGENDER\nQID\nQUESTION\nRESPONSE\n1\n17\nF\n01\nHow many hours do you exercise per week?\n1\n2\n17\nF\n01\nHow many hours do you exercise per week?\n0.5\n3\n15\nM\n01\nHow many hours do you exercise per week?\n6\n4\n16\nF\n02\nHow many hours do you sleep per day?\n7\n5\n13\nM\n02\nHow many hours do you sleep per day?\n8.5\n(a) Write a SQL query to find the average sleeping hours for respondents between the ages of 13 to 18.(2 marks)\n(b) \n(i) Create a view named AvgEx that calculates the average number of exercise hours per week for each gender group. (2 marks)\n(ii) Use the view created in (i) to find the highest average exercise hours. (2 marks)\n(c) Sienna found that this table occupies many storage spaces. Thus, she decided to create a separate table called QUESTIONS to store the content of the questions and removed the related attributes from the SURVEY table to reduce storage space.\n(i) Write a SQL command to create the QUESTION table. (2 marks)\n(ii) Write a SQL command to add a foreign key to SURVEY table. (2 marks)\n(iii) Write a SQL command to remove the related attributes from the SURVEY table.(2 marks)\n[--Answer:\n(a) SELECT AVG(RESPONSE)\nFROM SURVEY\nWHERE AGE BETWEEN 13 AND 18 AND QID = '01'\nor\nSELECT AVG(RESPONSE)\nFROM SURVEY\nWHERE AGE BETWEEN 13 AND 18 AND QUESTION = 'How many hours do you sleep per day?'\n(b) \n(i) CREATE VIEW AvgEx AS\nSELECT GENDER, AVG(RESPONSE) AS HOUR\nFROM SURVEY\nWHERE QID = '02'\nGROUP BY GENDER\nor\nCREATE VIEW AvgEx AS\nSELECT GENDER, AVG(RESPONSE) AS HOUR\nFROM SURVEY\nWHERE QUESTION = 'How many hours do you exercise per week?'\nGROUP BY GENDER\n(ii) SELECT MAX(HOUR)\nFROM AvgEx\n(c) \n(i) CREATE TABLE QUESTIONS (\nQID CHAR(2) PRIMARY KEY,\nQUESTION VARCHAR(255)\n)\n(ii) ALTER TABLE SURVEY\nADD FOREIGN KEY (QID) REFERENCES QUESTIONS(QID)\n(iii) ALTER TABLE SURVEY\nDROP COLUMN QUESTION\n--]",
+      "concepts": [
+        "EA",
+        "EA-integrated",
+        "循環",
+        "SQL",
+        "數據庫",
+        "硬件",
+        "資訊處理",
+        "網絡",
+        "數據類型"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

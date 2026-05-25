@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecC Ch3.pptx",
+    "slug": "EELECC_Ch3_slides",
+    "title": "EElecC Ch3",
+    "series": "EELECC",
+    "chapter": 3,
+    "curriculum_unit": "EC-a",
+    "curriculum_part": "EC",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.616420+00:00",
+    "slide_count": 35,
+    "topic_tags": {
+      "循環": 4,
+      "數據庫": 2,
+      "硬件": 2,
+      "課本活動": 2,
+      "列表": 1
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 3Advanced Control Structures"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "103.1Try Example 3.1 on P.77-78 of the textbook.1. L, L"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "Nested Loops and Two-dimensional Arrays113.3We often use a nested for loop to access items in a two-dimensional array one by one:"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Nested Loops and Two-dimensional Arrays123.3No matter whether values will be assigned to list items individually or consecutively with the use of a for loop, users must first create a list and assign default values before they can access the items. This process is known as initialisation. The following is an example of using a nested for loop to initialise a two-dimensional list with 3 × 6 items and assign the value of “0” to all items."
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "133.2Try Example 3.2 on P.79-80 of the textbook."
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Answer the questions on P.80 of the textbook.1. 143.2"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "2. 153.2"
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "3. 163.2"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "4 (a) (i) . 173.2"
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "4 (a) (ii) True    (b) (i) 183.2"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "(b) (ii) On average, Sam’s algorithm is quicker. It is because once an item is found to be False or a fully          \tcrossed row/column is found, the loop will stop. (c) 193.2"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "Nested Control Structures3.1Placing a structure into another is called a nested structure. A conditional statement may also be nested within a branch of another conditional statement. A nested conditional statement decides whether to enter another conditional statement based on the result of the previous condition."
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "Integrated Application of Control Structures203.4In computer programs, different control structures are available for changing the control flow, i.e. the order in which statements are executed. Control structures of a program can be broadly divided into three categories: sequence, selection and iteration. No matter how complex a program is going to be, it can be constructed using these three control structures. They can even be paired with different data structures, such as one-dimensional arrays and two-dimensional arrays, to form multi-layered nested control structures. Making good use of the control structures allows us to design algorithms that solve problems effectively."
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "213.3"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "223.3"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "233.3"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "243.3"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "253.3"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "263.3"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "273.3"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "Answer the questions on P.90 of the textbook.1. 283.3"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "2. (a)         (b) Avoid reading items whose indexes are out of range.293.3"
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "Answer the questions on P.71 of the textbook.1.(a < 0) or (b < 0) or (c < 0)(a+b <= c) or (a+c <= b) or (b+c <= a)33.1"
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "3. (a) 303.3"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "3. (b) 313.3"
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "3. (c) 323.3"
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "Algorithm Comparison333.5A problem can often be solved using several algorithms, yet each of them must have its merits and demerits. We need to compare different algorithms in order to select the most correct and appropriate solution. The merits and demerits of algorithms can be compared mainly in two aspects, steps of operation and resource usage. When there are more steps of operation, the program takes a longer time to run, which usually means an increase in the time complexity (時間複雜度) of the program. When two algorithms use different data structures or different numbers of variables, they occupy different amounts of resources. The more computer resources an algorithm occupies, the higher the space complexity (空間複雜度) of the program is."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "Answer the questions on P.94-96 of the textbook.1 (a)      (b) 343.4"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "(c)      (d) 353.4"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "43.1Try Activity 3.1 on P.72-73 of the textbook."
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Nested Loops53.2Placing a loop into another is called a nested loop. The following is an example of a nested for loop:"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "Nested Loops63.2Use a trace table to analyse the above nested loop line by line, as well as trace the values of the loop counters:"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "Nested Loops73.2From the above trace table, we can see that each time the outer loop body (外循環體) is executed, the inner loop body (內循環體) will be executed three times."
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "83.2Try Activity 3.2 on P.75-76 of the textbook.1."
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "93.22. ×3."
+    }
+  ]
+}

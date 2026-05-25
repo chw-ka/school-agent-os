@@ -1,0 +1,936 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (SSICT question bank)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/QB_CoreD2_hk_算法設計（一）.docx",
+    "slug": "CoreD2_hk",
+    "title": "算法設計（一）",
+    "title_zh": "算法設計（一）",
+    "title_en": null,
+    "language": "hk",
+    "family": "CoreD",
+    "chapter": 2,
+    "integrated": false,
+    "topic_code": "D02",
+    "curriculum_unit": "Core-D",
+    "ca_unit": "D",
+    "f5_exam_scope": "mcq_core_d",
+    "extracted_at": "2026-05-24T10:37:17.804264+00:00",
+    "item_count": 33,
+    "section_counts": {
+      "mcq": 26,
+      "short_answer": 5,
+      "long_answer": 2
+    }
+  },
+  "items": [
+    {
+      "id": "SSICTD0102_01A001C",
+      "bank_code": "SSICTD0102_01A001C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nA  5\nB  10\nC  15 - A * B\n輸出 A + B - C",
+      "options": {
+        "A": "20",
+        "B": "35",
+        "C": "50",
+        "D": "115"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nA  5\nB  10\nC  15 - A * B\n輸出 A + B - C\nA. 20\nB. 35\nC. 50\nD. 115",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0102_01A002C",
+      "bank_code": "SSICTD0102_01A002C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nX  2\nY  3\nZ  5\ntemp  X\nX  Y\nY  temp\nZ  Y - X\n輸出 X - Y + Z",
+      "options": {
+        "A": "-2",
+        "B": "0",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nX  2\nY  3\nZ  5\ntemp  X\nX  Y\nY  temp\nZ  Y - X\n輸出 X - Y + Z\nA. -2\nB. 0\nC. 2\nD. 4",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A003C",
+      "bank_code": "SSICTD0102_01A003C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪組數據類型和數據的組合是不正確的？\n數據類型\n數據",
+      "options": {
+        "A": "整數\n1",
+        "B": "布爾\n1",
+        "C": "浮點數\n1.0",
+        "D": "字符\n1.0"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪組數據類型和數據的組合是不正確的？\n數據類型\n數據\nA. 整數\n1\nB. 布爾\n1\nC. 浮點數\n1.0\nD. 字符\n1.0",
+      "concepts": [
+        "D-ch2",
+        "資訊處理",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A004C",
+      "bank_code": "SSICTD0102_01A004C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "一個網站展示了以下資訊：\n日期：1/1/2022\n天氣：晴\n溫度：18.5\n以下哪組數據類型最適合用以儲存以上數據？\n日期\n天氣\n溫度",
+      "options": {
+        "A": "整數\n字串\n整數",
+        "B": "整數\n布爾\n實數",
+        "C": "字串\n字串\n實數",
+        "D": "字串\n字符\n整數"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "一個網站展示了以下資訊：\n日期：1/1/2022\n天氣：晴\n溫度：18.5\n以下哪組數據類型最適合用以儲存以上數據？\n日期\n天氣\n溫度\nA. 整數\n字串\n整數\nB. 整數\n布爾\n實數\nC. 字串\n字串\n實數\nD. 字串\n字符\n整數",
+      "concepts": [
+        "D-ch2",
+        "資訊處理",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A005C",
+      "bank_code": "SSICTD0102_01A005C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nA  7\nB  8\n如果 (A + B <= 15) AND (A * B > 60) 則\nA  A * 3\n輸出 A\n否則\nB  B * 3\n輸出 B",
+      "options": {
+        "A": "7",
+        "B": "8",
+        "C": "21",
+        "D": "24"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nA  7\nB  8\n如果 (A + B <= 15) AND (A * B > 60) 則\nA  A * 3\n輸出 A\n否則\nB  B * 3\n輸出 B\nA. 7\nB. 8\nC. 21\nD. 24",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01C006C",
+      "bank_code": "SSICTD0102_01C006C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "假設 A = 4、B = 5 和 C = 6，以下哪項布爾算式的結果為「真」？",
+      "options": {
+        "A": "(A < B) AND NOT(B < C)",
+        "B": "NOT((A > B) OR NOT(B < C))",
+        "C": "(A >= 4 AND B < 5) OR (C < B)",
+        "D": "(A >= 4 OR B < 5) AND (C < B)"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "假設 A = 4、B = 5 和 C = 6，以下哪項布爾算式的結果為「真」？\nA. (A < B) AND NOT(B < C)\nB. NOT((A > B) OR NOT(B < C))\nC. (A >= 4 AND B < 5) OR (C < B)\nD. (A >= 4 OR B < 5) AND (C < B)",
+      "concepts": [
+        "D-ch2",
+        "數據類型"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0102_01C007C",
+      "bank_code": "SSICTD0102_01C007C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "假設 X = 3 和 Y = 5，以下哪些布爾算式會得出相同結果？\n(1)\n((X < Y) OR (X + Y >= 10)) AND (X > 1)\n(2)\n(X < Y) AND ((X + Y >= 10) OR (X > 1))\n(3)\n((X < Y) AND (X + Y >= 10)) OR (X > 1)",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "(1)、(2) 和 (3)"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "假設 X = 3 和 Y = 5，以下哪些布爾算式會得出相同結果？\n(1)\n((X < Y) OR (X + Y >= 10)) AND (X > 1)\n(2)\n(X < Y) AND ((X + Y >= 10) OR (X > 1))\n(3)\n((X < Y) AND (X + Y >= 10)) OR (X > 1)\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. (1)、(2) 和 (3)",
+      "concepts": [
+        "D-ch2",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A008C",
+      "bank_code": "SSICTD0102_01A008C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下算法的流程圖：\n已知 A = 5、B = 4 和 C = 8，以下哪項是以上算法的輸出？",
+      "options": {
+        "A": "They can form a triangle.",
+        "B": "They cannot form a triangle.",
+        "C": "沒有輸出",
+        "D": "出現錯誤"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下算法的流程圖：\n已知 A = 5、B = 4 和 C = 8，以下哪項是以上算法的輸出？\nA. They can form a triangle.\nB. They cannot form a triangle.\nC. 沒有輸出\nD. 出現錯誤",
+      "concepts": [
+        "D-ch2",
+        "除錯",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0102_01A009C",
+      "bank_code": "SSICTD0102_01A009C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下算法的流程圖：\n已知 A = 5、B = 3 和 C = 8，以下哪項是以上算法的輸出？",
+      "options": {
+        "A": "They can form a triangle.",
+        "B": "They cannot form a triangle.",
+        "C": "沒有輸出",
+        "D": "出現錯誤"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下算法的流程圖：\n已知 A = 5、B = 3 和 C = 8，以下哪項是以上算法的輸出？\nA. They can form a triangle.\nB. They cannot form a triangle.\nC. 沒有輸出\nD. 出現錯誤",
+      "concepts": [
+        "D-ch2",
+        "除錯",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0102_01A010C",
+      "bank_code": "SSICTD0102_01A010C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nA  6\nB  3\n如果 A >= 6 則\n輸出 \"A\"\n如果 B > 3 則\n輸出 A\n否則\n輸出 B\n否則\n輸出 \"B\"",
+      "options": {
+        "A": "AB",
+        "B": "63",
+        "C": "A3",
+        "D": "B"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nA  6\nB  3\n如果 A >= 6 則\n輸出 \"A\"\n如果 B > 3 則\n輸出 A\n否則\n輸出 B\n否則\n輸出 \"B\"\nA. AB\nB. 63\nC. A3\nD. B",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01B011C",
+      "bank_code": "SSICTD0102_01B011C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪些偽代碼會得出相同的結果？\n(1)\n如果 P > 10 OR Q > 20 則\n輸出 P + Q\n(2)\n如果 P > 10 則\n如果 Q > 20 則\n輸出 P + Q\n(3)\n如果 Q > 20 則\n如果 P > 10 則\n輸出 P + Q",
+      "options": {
+        "A": "只有 (1) 和 (2)",
+        "B": "只有 (1) 和 (3)",
+        "C": "只有 (2) 和 (3)",
+        "D": "(1)、(2) 和 (3)"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪些偽代碼會得出相同的結果？\n(1)\n如果 P > 10 OR Q > 20 則\n輸出 P + Q\n(2)\n如果 P > 10 則\n如果 Q > 20 則\n輸出 P + Q\n(3)\n如果 Q > 20 則\n如果 P > 10 則\n輸出 P + Q\nA. 只有 (1) 和 (2)\nB. 只有 (1) 和 (3)\nC. 只有 (2) 和 (3)\nD. (1)、(2) 和 (3)",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01B012C",
+      "bank_code": "SSICTD0102_01B012C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱此算法：\n輸入 P, Q\n如果 (P <= 20) OR (Q >= 30) 則\n如果 (P + Q <> 50) 則\n輸出 \"Valid\"\n以下哪組輸入值不會輸出「Valid」？",
+      "options": {
+        "A": "P = 20 和 Q = 31",
+        "B": "P = 21 和 Q = 31",
+        "C": "P = 20 和 Q = 30",
+        "D": "P = 21 和 Q = 30"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱此算法：\n輸入 P, Q\n如果 (P <= 20) OR (Q >= 30) 則\n如果 (P + Q <> 50) 則\n輸出 \"Valid\"\n以下哪組輸入值不會輸出「Valid」？\nA. P = 20 和 Q = 31\nB. P = 21 和 Q = 31\nC. P = 20 和 Q = 30\nD. P = 21 和 Q = 30",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A013C",
+      "bank_code": "SSICTD0102_01A013C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項最能準確地描述以下流程圖？",
+      "options": {
+        "A": "單一條件語句",
+        "B": "嵌套條件語句",
+        "C": "while 循環",
+        "D": "for 循環"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項最能準確地描述以下流程圖？\nA. 單一條件語句\nB. 嵌套條件語句\nC. while 循環\nD. for 循環",
+      "concepts": [
+        "D-ch2",
+        "循環",
+        "算法",
+        "選擇結構"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0102_01A014C",
+      "bank_code": "SSICTD0102_01A014C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nsum  1\n設 i 由 0 至 10\nsum  sum + i\n輸出 sum",
+      "options": {
+        "A": "0",
+        "B": "55",
+        "C": "56",
+        "D": "60"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nsum  1\n設 i 由 0 至 10\nsum  sum + i\n輸出 sum\nA. 0\nB. 55\nC. 56\nD. 60",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0102_01B015C",
+      "bank_code": "SSICTD0102_01B015C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "當下列算法結束時，以下哪項是 i 的值？\nA  9\ni  0\n如果 (A >= 9 OR A = 9) AND A < 9 則\n當 i < 10\nA  A + 2 * i\ni  i + 1\n輸出 A\n否則\n輸出 i",
+      "options": {
+        "A": "0",
+        "B": "9",
+        "C": "10",
+        "D": "99"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "當下列算法結束時，以下哪項是 i 的值？\nA  9\ni  0\n如果 (A >= 9 OR A = 9) AND A < 9 則\n當 i < 10\nA  A + 2 * i\ni  i + 1\n輸出 A\n否則\n輸出 i\nA. 0\nB. 9\nC. 10\nD. 99",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A016C",
+      "bank_code": "SSICTD0102_01A016C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nX  1\nY  2\nZ  3\n當 X < 10\nX  X + 3\nY  Y + 2\nZ  Z + 1\n輸出 Z",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nX  1\nY  2\nZ  3\n當 X < 10\nX  X + 3\nY  Y + 2\nZ  Z + 1\n輸出 Z\nA. 3\nB. 4\nC. 5\nD. 6",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A017C",
+      "bank_code": "SSICTD0102_01A017C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nA  2\nB  5\nC  8\n當 A < C\nA  B\nB  C\n輸出 A",
+      "options": {
+        "A": "5",
+        "B": "8",
+        "C": "2 5",
+        "D": "5 8"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nA  2\nB  5\nC  8\n當 A < C\nA  B\nB  C\n輸出 A\nA. 5\nB. 8\nC. 2 5\nD. 5 8",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A018C",
+      "bank_code": "SSICTD0102_01A018C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nX  5\nY  9\n執行\nX  X + 5\n輸出 X\n當 X < Y",
+      "options": {
+        "A": "5",
+        "B": "9",
+        "C": "10",
+        "D": "15"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nX  5\nY  9\n執行\nX  X + 5\n輸出 X\n當 X < Y\nA. 5\nB. 9\nC. 10\nD. 15",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A019C",
+      "bank_code": "SSICTD0102_01A019C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\ni  0\n如果 NOT i = 5 則\n重複\ni  i + 1\n直至 i = 8\n輸出 i",
+      "options": {
+        "A": "0",
+        "B": "7",
+        "C": "8",
+        "D": "算法陷入無限循環中。"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\ni  0\n如果 NOT i = 5 則\n重複\ni  i + 1\n直至 i = 8\n輸出 i\nA. 0\nB. 7\nC. 8\nD. 算法陷入無限循環中。",
+      "concepts": [
+        "D-ch2",
+        "循環",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A020C",
+      "bank_code": "SSICTD0102_01A020C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪組輸入不會令下列算法有輸出？\nX  0\n當 X < 4\n輸入 number\n如果 number <= X 則\n輸出 X\nX  X + 1",
+      "options": {
+        "A": "0, 0, 0, 0",
+        "B": "0, 1, 2, 3",
+        "C": "1, 1, 1, 1",
+        "D": "1, 2, 3, 4"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪組輸入不會令下列算法有輸出？\nX  0\n當 X < 4\n輸入 number\n如果 number <= X 則\n輸出 X\nX  X + 1\nA. 0, 0, 0, 0\nB. 0, 1, 2, 3\nC. 1, 1, 1, 1\nD. 1, 2, 3, 4",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A021C",
+      "bank_code": "SSICTD0102_01A021C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "執行以下算法後，N 會被輸出多少次？\nX  10\nY  0\nN  X - Y\n當 N >= 10\n輸出 N\nN  N - 1",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "執行以下算法後，N 會被輸出多少次？\nX  10\nY  0\nN  X - Y\n當 N >= 10\n輸出 N\nN  N - 1\nA. 0\nB. 1\nC. 2\nD. 3",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A022C",
+      "bank_code": "SSICTD0102_01A022C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\n輸入 num\n執行\nnum  num + 1\n輸出 num\n當 num < 50\n以下哪個選項能得出相同結果？",
+      "options": {
+        "A": "輸入 num\n當 num < 50\nnum  num + 1\n輸出 num",
+        "B": "輸入 num\n重複\nnum  num + 1\n輸出 num\n直至 num >= 50",
+        "C": "輸入 num\n重複\nnum  num + 1\n輸出 num\n直至 num < 50",
+        "D": "以上皆非"
+      },
+      "answer": "B",
+      "answer_text": null,
+      "parts": [],
+      "text": "細閱以下算法：\n輸入 num\n執行\nnum  num + 1\n輸出 num\n當 num < 50\n以下哪個選項能得出相同結果？\nA. 輸入 num\n當 num < 50\nnum  num + 1\n輸出 num\nB. 輸入 num\n重複\nnum  num + 1\n輸出 num\n直至 num >= 50\nC. 輸入 num\n重複\nnum  num + 1\n輸出 num\n直至 num < 50\nD. 以上皆非",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A023C",
+      "bank_code": "SSICTD0102_01A023C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nX  2\nY  3\n輸出 X\n當 X + Y < 15\nX  X + 3\nY  Y + 1\n輸出 Y",
+      "options": {
+        "A": "6",
+        "B": "11",
+        "C": "2 6",
+        "D": "2 11"
+      },
+      "answer": "C",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nX  2\nY  3\n輸出 X\n當 X + Y < 15\nX  X + 3\nY  Y + 1\n輸出 Y\nA. 6\nB. 11\nC. 2 6\nD. 2 11",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A024C",
+      "bank_code": "SSICTD0102_01A024C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下哪項是下列算法的輸出？\nP  19\nQ  2\ncount  0\n重複\nP  (P / Q) 的整數部分\ncount  count + 1\n直至 P = 0\n輸出 count",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "answer": "D",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下哪項是下列算法的輸出？\nP  19\nQ  2\ncount  0\n重複\nP  (P / Q) 的整數部分\ncount  count + 1\n直至 P = 0\n輸出 count\nA. 2\nB. 3\nC. 4\nD. 5",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01B025C",
+      "bank_code": "SSICTD0102_01B025C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": null,
+      "stem": "以下兩個算法得出相同結果：\n算法 1\n算法 2\nA  6\nB  3\n重複\nA  A + 3\nB  B + 5\n直至 (A + B > 20) and (A < B)\nA  6\nB  3\n當 _______________\nA  A + 3\nB  B + 5\n以下哪項能放入算法 2 的留空部份？",
+      "options": {
+        "A": "(A + B <= 20) or (A >= B)",
+        "B": "(A + B > 20) or (A < B)",
+        "C": "(A + B < 20) or (A > B)",
+        "D": "(A + B <= 20) and (A >= B)"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "以下兩個算法得出相同結果：\n算法 1\n算法 2\nA  6\nB  3\n重複\nA  A + 3\nB  B + 5\n直至 (A + B > 20) and (A < B)\nA  6\nB  3\n當 _______________\nA  A + 3\nB  B + 5\n以下哪項能放入算法 2 的留空部份？\nA. (A + B <= 20) or (A >= B)\nB. (A + B > 20) or (A < B)\nC. (A + B < 20) or (A > B)\nD. (A + B <= 20) and (A >= B)",
+      "concepts": [
+        "D-ch2",
+        "算法"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_01A026C",
+      "bank_code": "SSICTD0102_01A026C",
+      "section_type": "mcq",
+      "marks": 1.0,
+      "year_tag": "2025",
+      "stem": "紫晴正在開發一個程式，此程式會用到某人的姓名。應使用哪種數據類型來儲存姓名？",
+      "options": {
+        "A": "字串",
+        "B": "布爾",
+        "C": "整數",
+        "D": "浮點數"
+      },
+      "answer": "A",
+      "answer_text": null,
+      "parts": [],
+      "text": "紫晴正在開發一個程式，此程式會用到某人的姓名。應使用哪種數據類型來儲存姓名？\nA. 字串\nB. 布爾\nC. 整數\nD. 浮點數",
+      "concepts": [
+        "D-ch2",
+        "Python",
+        "資訊處理",
+        "數據類型"
+      ],
+      "difficulty_tier": "foundation"
+    },
+    {
+      "id": "SSICTD0102_03A001C",
+      "bank_code": "SSICTD0102_03A001C",
+      "section_type": "short_answer",
+      "marks": 3.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\n行號  偽代碼\n1    X  2\n2    Y  3\n3    temp  X\n4    X  Y\n5    Y  temp\n6    X  X + Y\n7    Y  X - Y\n8    輸出 X, Y",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 5 3\n(b)\n調換 X 和 Y 的值。\ntemp 用以暫存 X 原來的值。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "算法的輸出是什麼？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "第 3 至 5 行的目的是什麼？變量 temp 的用途是什麼？（2 分）"
+        }
+      ],
+      "text": "細閱以下算法：\n行號  偽代碼\n1    X  2\n2    Y  3\n3    temp  X\n4    X  Y\n5    Y  temp\n6    X  X + Y\n7    Y  X - Y\n8    輸出 X, Y\n(a) 算法的輸出是什麼？（1 分）\n(b) 第 3 至 5 行的目的是什麼？變量 temp 的用途是什麼？（2 分）\n(a) 5 3\n(b)\n調換 X 和 Y 的值。\ntemp 用以暫存 X 原來的值。",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_03A002C",
+      "bank_code": "SSICTD0102_03A002C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "疫情期間，大學採取了各種社交距離措施。以下算法協助講師按照選修該科目的學生人數，選擇合適的教學模式：\n行號  偽代碼\n1    輸入 students\n2    如果 (students >= 0 AND students <= 90) 則\n3        如果 students <= 30 則\n4            輸出 \"面授\"\n5        否則如果 students <= 60 則\n6            輸出 \"混合模式\"\n7        否則\n8            輸出 \"網課\"\n9    否則\n10       輸出 \"錯誤\"",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 整數\n(b) 混合模式\n(c) 確保所輸入的數值是在選修人數的有效範圍（0 至 90）之内。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "變量 students 的合適數據類型是什麼?（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 1.0,
+          "text": "如果有 35 名學生選修某科目，其建議教學模式是什麼?（1 分）"
+        },
+        {
+          "label": "c",
+          "marks": 2.0,
+          "text": "已知每科的選修名額是 90，第 2 行有什麼功能?（2 分）"
+        }
+      ],
+      "text": "疫情期間，大學採取了各種社交距離措施。以下算法協助講師按照選修該科目的學生人數，選擇合適的教學模式：\n行號  偽代碼\n1    輸入 students\n2    如果 (students >= 0 AND students <= 90) 則\n3        如果 students <= 30 則\n4            輸出 \"面授\"\n5        否則如果 students <= 60 則\n6            輸出 \"混合模式\"\n7        否則\n8            輸出 \"網課\"\n9    否則\n10       輸出 \"錯誤\"\n(a) 變量 students 的合適數據類型是什麼?（1 分）\n(b) 如果有 35 名學生選修某科目，其建議教學模式是什麼?（1 分）\n(c) 已知每科的選修名額是 90，第 2 行有什麼功能?（2 分）\n(a) 整數\n(b) 混合模式\n(c) 確保所輸入的數值是在選修人數的有效範圍（0 至 90）之内。",
+      "concepts": [
+        "D-ch2",
+        "除錯",
+        "算法",
+        "資訊處理",
+        "輸入輸出",
+        "數據類型"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_03A003C",
+      "bank_code": "SSICTD0102_03A003C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\n輸入 A, B\n設 i 由 1 至 B\nA  A / i\n如果 A >= 10 則\n輸出 A",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 150 75 25\n(b)\n4 次\n12.5",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 2.0,
+          "text": "如果 A = 150 和 B = 5，算法的輸出會是什麼？（2 分）"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "如果 A = 300 和 B = 10，A 會被輸出多少次？A 的最終值是什麼？（2 分）"
+        }
+      ],
+      "text": "細閱以下算法：\n輸入 A, B\n設 i 由 1 至 B\nA  A / i\n如果 A >= 10 則\n輸出 A\n(a) 如果 A = 150 和 B = 5，算法的輸出會是什麼？（2 分）\n(b) 如果 A = 300 和 B = 10，A 會被輸出多少次？A 的最終值是什麼？（2 分）\n(a) 150 75 25\n(b)\n4 次\n12.5",
+      "concepts": [
+        "D-ch2",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_03A004C",
+      "bank_code": "SSICTD0102_03A004C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\n輸入 k\nt  k\n當 t <= 100\n輸出 t\nt  t + k",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 8\n(b) 找出所輸入數字在 100 之內的所有倍數。\n(c) (i) 1\n(c) (ii) 由於循環體在條件判斷前已被執行一次，即使 t 開始時已經大於 100，程式仍會有輸出。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "如果輸入是 12，「輸出 t」會被執行多少次？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 1.0,
+          "text": "此算法的目的是什麼？（1 分）"
+        },
+        {
+          "label": "c",
+          "marks": null,
+          "text": "以下是經改寫為使用「執行...當」循環的算法：\n輸入 k\nt  k\n執行\n輸出 t\nt  t + k\n當 t <= 100"
+        },
+        {
+          "label": "i",
+          "marks": 1.0,
+          "text": "如果輸入是 120，「輸出 t」會被執行多少次？（1 分）"
+        },
+        {
+          "label": "ii",
+          "marks": 1.0,
+          "text": "承上題，改寫後的算法有什麼問題?（1 分）"
+        }
+      ],
+      "text": "細閱以下算法：\n輸入 k\nt  k\n當 t <= 100\n輸出 t\nt  t + k\n(a) 如果輸入是 12，「輸出 t」會被執行多少次？（1 分）\n(b) 此算法的目的是什麼？（1 分）\n(c) 以下是經改寫為使用「執行...當」循環的算法：\n輸入 k\nt  k\n執行\n輸出 t\nt  t + k\n當 t <= 100\n(i) 如果輸入是 120，「輸出 t」會被執行多少次？（1 分）\n(ii) 承上題，改寫後的算法有什麼問題?（1 分）\n(a) 8\n(b) 找出所輸入數字在 100 之內的所有倍數。\n(c) (i) 1\n(c) (ii) 由於循環體在條件判斷前已被執行一次，即使 t 開始時已經大於 100，程式仍會有輸出。",
+      "concepts": [
+        "D-ch2",
+        "Python",
+        "循環",
+        "算法",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_03A005C",
+      "bank_code": "SSICTD0102_03A005C",
+      "section_type": "short_answer",
+      "marks": 4.0,
+      "year_tag": null,
+      "stem": "細閱以下算法：\n輸入 P\n輸入 Q\nd  0\n如果 P > Q 則\nd  P - Q\n否則\nd  Q - P\n輸出 d",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 5\n(b) 找出兩個數字的差\n(c)\n重複\n輸入 P\n輸入 Q\n直至 P > 0 and Q > 0",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "如果 P = 10 和 Q = 5，輸出是什麼？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 1.0,
+          "text": "此算法的目的是什麼？（1 分）"
+        },
+        {
+          "label": "c",
+          "marks": 2.0,
+          "text": "試使用「重複...直至」循環，改寫以上算法的首兩行，以確保輸入值皆為正數。（2 分）"
+        }
+      ],
+      "text": "細閱以下算法：\n輸入 P\n輸入 Q\nd  0\n如果 P > Q 則\nd  P - Q\n否則\nd  Q - P\n輸出 d\n(a) 如果 P = 10 和 Q = 5，輸出是什麼？（1 分）\n(b) 此算法的目的是什麼？（1 分）\n(c) 試使用「重複...直至」循環，改寫以上算法的首兩行，以確保輸入值皆為正數。（2 分）\n(a) 5\n(b) 找出兩個數字的差\n(c)\n重複\n輸入 P\n輸入 Q\n直至 P > 0 and Q > 0",
+      "concepts": [
+        "D-ch2",
+        "循環",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "intermediate"
+    },
+    {
+      "id": "SSICTD0102_04A001C",
+      "bank_code": "SSICTD0102_04A001C",
+      "section_type": "long_answer",
+      "marks": 9.0,
+      "year_tag": null,
+      "stem": "以下算法用以遞增 / 遞減輸入值，直至兩者變為相同數值。\nX  15\nY  1\n重複\nX  X – 1\nY  Y + 1\n輸出 X, Y\n直至 X = Y",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a)\n14, 2\n13, 3\n12, 4\n(b)\n7\n8\n(c)\n0\nT + 1\n(d)\nX != Y\n(e)\nX = 15, Y = 2",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 3.0,
+          "text": "算法首三個輸出是什麼？（3 分）\n第一個輸出：_____________________\n第二個輸出：_____________________\n第三個輸出：_____________________"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "X 和 Y 被輸出多少次？它們的最終值是什麼？（2 分）"
+        },
+        {
+          "label": "c",
+          "marks": 2.0,
+          "text": "算法新增了一個變量 T，用以儲存 X 和 Y 的輸出次數。試完成算法。（2 分）\nX  15\nY  1\nT  __________\n重複\nX  X - 1\nY  Y + 1\n輸出 X, Y\nT  __________\n直至 X = Y\n輸出 T"
+        },
+        {
+          "label": "d",
+          "marks": 1.0,
+          "text": "試運用 while 循環改寫算法。（1 分）\nX  15\nY  1\n當 __________\nX  X - 1\nY  Y + 1\n輸出 X, Y"
+        },
+        {
+          "label": "e",
+          "marks": 1.0,
+          "text": "試舉出一組會令算法運行無限次的 X 和 Y 值。（1 分）"
+        }
+      ],
+      "text": "以下算法用以遞增 / 遞減輸入值，直至兩者變為相同數值。\nX  15\nY  1\n重複\nX  X – 1\nY  Y + 1\n輸出 X, Y\n直至 X = Y\n(a) 算法首三個輸出是什麼？（3 分）\n第一個輸出：_____________________\n第二個輸出：_____________________\n第三個輸出：_____________________\n(b) X 和 Y 被輸出多少次？它們的最終值是什麼？（2 分）\n(c) 算法新增了一個變量 T，用以儲存 X 和 Y 的輸出次數。試完成算法。（2 分）\nX  15\nY  1\nT  __________\n重複\nX  X - 1\nY  Y + 1\n輸出 X, Y\nT  __________\n直至 X = Y\n輸出 T\n(d) 試運用 while 循環改寫算法。（1 分）\nX  15\nY  1\n當 __________\nX  X - 1\nY  Y + 1\n輸出 X, Y\n(e) 試舉出一組會令算法運行無限次的 X 和 Y 值。（1 分）\n(a)\n14, 2\n13, 3\n12, 4\n(b)\n7\n8\n(c)\n0\nT + 1\n(d)\nX != Y\n(e)\nX = 15, Y = 2",
+      "concepts": [
+        "D-ch2",
+        "循環",
+        "算法",
+        "輸入輸出"
+      ],
+      "difficulty_tier": "advanced"
+    },
+    {
+      "id": "SSICTD0102_04B002C",
+      "bank_code": "SSICTD0102_04B002C",
+      "section_type": "long_answer",
+      "marks": 7.0,
+      "year_tag": null,
+      "stem": "某社區中心有四間多用途活動室供市民預訂。\n多用途活動室\n描述\n1\n最多可容納 25 人；沒有投影機\n2\n最多可容納 25 人；有一部投影機\n3\n最多可容納 50 人；沒有投影機\n4\n最多可容納 50 人；有一部投影機",
+      "options": {},
+      "answer": null,
+      "answer_text": "(a) 活動室 3\n(b)\n(users <= 25) AND (projector = 1)\n(users <= 50) AND (projector = 0)\n(c) 算法因為縮排有錯而出現錯誤的機會較小。\n(d)(i) projector 的值未經檢查；當申請人輸入 0 和 1 以外的數字，不論使用者有多少人、是否須要使用投影機，算法亦會輸出「活動室 4」。\n(d)(ii) 將第 3 行的條件改為「(users <= 0) OR (users > 50) OR ((projector != 0) AND (projector != 1))」。",
+      "parts": [
+        {
+          "label": "a",
+          "marks": 1.0,
+          "text": "如果一位申請人想舉辦有 30 人参加的活動，而不須用到投影機，該申請人會獲分配使用哪間活動室？（1 分）"
+        },
+        {
+          "label": "b",
+          "marks": 2.0,
+          "text": "試完成以下用於活動室預訂系統的算法，以判斷申請人會獲分配哪個活動室。除了人數之外，申請人亦須指明他們是否須使用投影機（輸入 1 代表須使用；輸入 0 代表毋須使用）。（2 分）\n行號  偽代碼\n1    輸入 users\n2    輸入 projector\n3    如果 (users <= 0) OR (users > 50) 則\n4        輸出 \"錯誤\"\n5    否則如果 (users <= 25) AND (projector = 0) 則\n6        輸出 \"活動室 1\"\n7    否則如果 ______________________________ 則\n8        輸出 \"活動室 2\"\n9    否則如果 ______________________________ 則\n10       輸出 \"活動室 3\"\n11   否則\n12       輸出 \"活動室 4\""
+        },
+        {
+          "label": "c",
+          "marks": 1.0,
+          "text": "於第 5 至 12 行使用「如果...否則如果」條件語句而非嵌套「如果...否則」控制結構的好處是什麼？（1 分）"
+        },
+        {
+          "label": "d",
+          "marks": null,
+          "text": ""
+        },
+        {
+          "label": "i",
+          "marks": 2.0,
+          "text": "試解釋為何第 3 行未能防止所有由無效輸入值引起的錯誤。（2 分）"
+        },
+        {
+          "label": "ii",
+          "marks": 1.0,
+          "text": "試提議如何修改算法，以解決上述問題。（1 分）"
+        }
+      ],
+      "text": "某社區中心有四間多用途活動室供市民預訂。\n多用途活動室\n描述\n1\n最多可容納 25 人；沒有投影機\n2\n最多可容納 25 人；有一部投影機\n3\n最多可容納 50 人；沒有投影機\n4\n最多可容納 50 人；有一部投影機\n(a) 如果一位申請人想舉辦有 30 人参加的活動，而不須用到投影機，該申請人會獲分配使用哪間活動室？（1 分）\n(b) 試完成以下用於活動室預訂系統的算法，以判斷申請人會獲分配哪個活動室。除了人數之外，申請人亦須指明他們是否須使用投影機（輸入 1 代表須使用；輸入 0 代表毋須使用）。（2 分）\n行號  偽代碼\n1    輸入 users\n2    輸入 projector\n3    如果 (users <= 0) OR (users > 50) 則\n4        輸出 \"錯誤\"\n5    否則如果 (users <= 25) AND (projector = 0) 則\n6        輸出 \"活動室 1\"\n7    否則如果 ______________________________ 則\n8        輸出 \"活動室 2\"\n9    否則如果 ______________________________ 則\n10       輸出 \"活動室 3\"\n11   否則\n12       輸出 \"活動室 4\"\n(c) 於第 5 至 12 行使用「如果...否則如果」條件語句而非嵌套「如果...否則」控制結構的好處是什麼？（1 分）\n(d) \n(i) 試解釋為何第 3 行未能防止所有由無效輸入值引起的錯誤。（2 分）\n(ii) 試提議如何修改算法，以解決上述問題。（1 分）\n(a) 活動室 3\n(b)\n(users <= 25) AND (projector = 1)\n(users <= 50) AND (projector = 0)\n(c) 算法因為縮排有錯而出現錯誤的機會較小。\n(d)(i) projector 的值未經檢查；當申請人輸入 0 和 1 以外的數字，不論使用者有多少人、是否須要使用投影機，算法亦會輸出「活動室 4」。\n(d)(ii) 將第 3 行的條件改為「(users <= 0) OR (users > 50) OR ((projector != 0) AND (projector != 1))」。",
+      "concepts": [
+        "D-ch2",
+        "除錯",
+        "算法",
+        "輸入輸出",
+        "選擇結構"
+      ],
+      "difficulty_tier": "advanced"
+    }
+  ]
+}

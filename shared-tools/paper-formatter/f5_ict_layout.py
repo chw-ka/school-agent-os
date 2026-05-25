@@ -8,7 +8,7 @@ from docx.enum.text import WD_LINE_SPACING
 from docx.shared import Pt
 
 from docx_inplace import set_paragraph_text_distribute
-from f5_ict_tables import clear_all_body_tables_before_write
+from f5_ict_tables import clear_all_body_tables_before_write, remove_unused_f5_ict_tables
 
 if TYPE_CHECKING:
     from docx.document import Document
@@ -69,6 +69,7 @@ def prepare_f5_ict_template_body(doc: Document) -> None:
 
     Keeps cover (table 0) and section headers (甲／乙／丙). Content is written after this.
     """
+    remove_unused_f5_ict_tables(doc)
     clear_all_body_tables_before_write(doc)
 
     # Clear MCQ area (2–310), 乙部 content, 丙部 content; keep section header lines.

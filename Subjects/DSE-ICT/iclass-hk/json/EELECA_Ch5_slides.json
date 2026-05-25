@@ -1,0 +1,671 @@
+{
+  "version": 1,
+  "meta": {
+    "source": "iclass-hk",
+    "provider": "iClass HK (teaching slides)",
+    "source_file": "Subjects/DSE-ICT/iclass-hk/EElecA Ch5.pptx",
+    "slug": "EELECA_Ch5_slides",
+    "title": "EElecA Ch5",
+    "series": "EELECA",
+    "chapter": 5,
+    "curriculum_unit": "EA-a",
+    "curriculum_part": "EA",
+    "kind": "slides",
+    "extracted_at": "2026-05-24T10:37:18.582912+00:00",
+    "slide_count": 129,
+    "topic_tags": {
+      "循環": 29,
+      "數據庫": 20,
+      "硬件": 14,
+      "列表": 4,
+      "課本活動": 2
+    }
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "slide_part": "ppt/slides/slide1.xml",
+      "text": "Chapter 5Database Design and ER Diagram"
+    },
+    {
+      "slide_index": 2,
+      "slide_part": "ppt/slides/slide10.xml",
+      "text": "◣ Solution(a) Any reasonable field names are accepted.(b) “Is taught by” and “Teacher” respectively.(c) Student ID, HKID and Event ID.(d) CLASS (CLASSNAME, ROOMNUM)105.1"
+    },
+    {
+      "slide_index": 3,
+      "slide_part": "ppt/slides/slide100.xml",
+      "text": "(a) No.(b) No. (c) No.To reduce data redundancy and anomalies.1005.2"
+    },
+    {
+      "slide_index": 4,
+      "slide_part": "ppt/slides/slide101.xml",
+      "text": "Third Normal Form101CA table in Third Normal Form (3NF) should follow these rules:The database follows every normalisation rule of 2NF; andThere must NOT be any transitive functional dependency between attributes.To learn about 3NF, we must first understand the concept of transitive functional dependency."
+    },
+    {
+      "slide_index": 5,
+      "slide_part": "ppt/slides/slide102.xml",
+      "text": "Third Normal Form102CWhen some non-primary key attributes are dependent on other non-primary key attributes, the table is considered to have a transitive functional dependency.SID is the primary key of STUDENT."
+    },
+    {
+      "slide_index": 6,
+      "slide_part": "ppt/slides/slide103.xml",
+      "text": "Third Normal Form103CIf we know the identity code of a student (SID), we will know their class (CLASS).SID  CLASSIf we know the class of a student (CLASS), we will know the name of their class teacher (CTEACH).CLASS  CTEACHTherefore, if we know the identity code of student (SID), we will also know the name of their class teacher (CTEACH).SID  CLASSCLASS  CTEACH∴ SID  CTEACH"
+    },
+    {
+      "slide_index": 7,
+      "slide_part": "ppt/slides/slide104.xml",
+      "text": "Third Normal Form104CThis is transitive functional dependency. While CTEACH is still dependent on the primary key SID, its dependency actually comes from the dependency of CLASS on SID."
+    },
+    {
+      "slide_index": 8,
+      "slide_part": "ppt/slides/slide105.xml",
+      "text": "Third Normal Form105CTo remove transitive functional dependency, we have to ensure that there is no functional dependency between any attributes that are not primary key.See the following table:"
+    },
+    {
+      "slide_index": 9,
+      "slide_part": "ppt/slides/slide106.xml",
+      "text": "Third Normal Form106CBase on its functional dependencies, we shall split this table into two.This two tables are now in 3NF."
+    },
+    {
+      "slide_index": 10,
+      "slide_part": "ppt/slides/slide107.xml",
+      "text": "Denormalisation107DSometimes, data redundancy is not the result of a poor database design, but an intentional way to improve the performance of data retrieval. See the following tables:"
+    },
+    {
+      "slide_index": 11,
+      "slide_part": "ppt/slides/slide108.xml",
+      "text": "Denormalisation108DTo list all data of each students, we may use the following SQL statement:SELECT s.SID, SNAME, c.CLASS, CTEACH, e.EID, ENAME, ETEACH, SCORE\tFROM STUDENT s, CLASSLIST c, ENROL en, ELECTIVE e\tWHERE s.SID = en.SID AND en.EID = e.EID AND s.CLASS = c.CLASS"
+    },
+    {
+      "slide_index": 12,
+      "slide_part": "ppt/slides/slide109.xml",
+      "text": "Denormalisation109DWe shall be aware of the pros and cons of denormalisation."
+    },
+    {
+      "slide_index": 13,
+      "slide_part": "ppt/slides/slide11.xml",
+      "text": "(e) Here is the full ER diagram.115.1"
+    },
+    {
+      "slide_index": 14,
+      "slide_part": "ppt/slides/slide110.xml",
+      "text": "1. Tom builds a website for people to search for the data of actors and films. He uses a table, ACTOR to manage the data.1105.5"
+    },
+    {
+      "slide_index": 15,
+      "slide_part": "ppt/slides/slide111.xml",
+      "text": "The primary key of ACTOR is ID+FID. Here is the data of ACTOR:1115.5"
+    },
+    {
+      "slide_index": 16,
+      "slide_part": "ppt/slides/slide112.xml",
+      "text": "(a) Explain why ACTOR is not in 1NF. After converting the table into 1NF, how many records should there be?(b) Assume that ACTOR is converted into 1NF now. Explain why it is not in 2NF in terms of functional dependency.(c) Convert ACTOR into 3NF by suggesting three schemas. Underline the primary keys.(d) Assume that there are three tables in 3NF now. Tom wants to add a field named GDESC to the table which uses FID as the primary key. GDESC is to store the description of a genre. Explain how his approach affects the normalisation level of the database.1125.5"
+    },
+    {
+      "slide_index": 17,
+      "slide_part": "ppt/slides/slide113.xml",
+      "text": "◣ Solution(a) The field, AWARD of a single record store multiple values. Thus, the table is not in 1NF. After converting the table into 1NF, there should be nine records.(b) Non-key attributes like NAME and SEX are dependent on ID only, while the whole primary key is ID+FID. Thus, there are partial functional dependencies in the table and it is not in 2NF.1135.5"
+    },
+    {
+      "slide_index": 18,
+      "slide_part": "ppt/slides/slide114.xml",
+      "text": "(c) \tACTOR(ID, NAME, SEX, DOB) \tFILM(FID, FNAME, FYEAR, GENRE) \tROLE(ID, FID, RNAME, AWARD)\tFor the table ROLE, ID+FID is the primary key.(d) GDESC is dependent on GENRE, which is dependent on FID. This is a transitive functional dependency. Thus, the table which uses FID as the primary key will no longer be in 3NF.1145.5"
+    },
+    {
+      "slide_index": 19,
+      "slide_part": "ppt/slides/slide115.xml",
+      "text": "Complete Checkpoint 5.6 on P. 297 of your textbook.(a) No. LM1, LM2 and LM3 are repeating attributes. Thus, this table is not in 1NF.(b) Update anomaly.1155.6"
+    },
+    {
+      "slide_index": 20,
+      "slide_part": "ppt/slides/slide116.xml",
+      "text": "(c)         CTID is the foreign key. It references CTID in the table CITY. (d) The new one, as it allows a city to have more than 3 landmarks1165.6"
+    },
+    {
+      "slide_index": 21,
+      "slide_part": "ppt/slides/slide117.xml",
+      "text": "(e) CITY(CTID, CTNAME, TIMEZONE, AREA, POPULATION, CC) COUNTRY(CC, CNAME, HOS, CONTINENT)(f) Faster data retrieval / simpler SQL statements for queries.1175.6"
+    },
+    {
+      "slide_index": 22,
+      "slide_part": "ppt/slides/slide118.xml",
+      "text": "Data Privacy1185.6Data privacy concerns the collection, storage and management of personal data, such as residential addresses, personal photos and even bank account passwords."
+    },
+    {
+      "slide_index": 23,
+      "slide_part": "ppt/slides/slide119.xml",
+      "text": "Principle of data privacy119AWhen handling these pieces of data, we should:use the data for its original purposes only; andnot disclose the data to unauthorised people."
+    },
+    {
+      "slide_index": 24,
+      "slide_part": "ppt/slides/slide12.xml",
+      "text": "Complete Checkpoint 5.1 on P. 248 of your textbook.(a) Animal, Zone and Species.(b) Animal name, Weight and Date of birth. Animal name is the primary key.125.1"
+    },
+    {
+      "slide_index": 25,
+      "slide_part": "ppt/slides/slide120.xml",
+      "text": "Access right120BAccess rights are the permissions granted to a user to perform certain operations on specific data, such as retrieve, create, update and delete.Take the following table as an example. It stores customer accounts in a streaming platform."
+    },
+    {
+      "slide_index": 26,
+      "slide_part": "ppt/slides/slide121.xml",
+      "text": "Access right121BDifferent roles usually have different access rights assigned."
+    },
+    {
+      "slide_index": 27,
+      "slide_part": "ppt/slides/slide122.xml",
+      "text": "View122CSetting views can protect the data privacy by limiting the access of certain data for specific users.If a customer service officer is responsible for matters related to film streaming only, they should have the access right to view the data of accounts with an ATYPE of 0 and 1 only."
+    },
+    {
+      "slide_index": 28,
+      "slide_part": "ppt/slides/slide123.xml",
+      "text": "View123CWe may restrict what data they can view by creating a view:CREATE VIEW AFILM AS\t(SELECT * FROM ACCOUNT WHERE ATYPE IN (0, 1))"
+    },
+    {
+      "slide_index": 29,
+      "slide_part": "ppt/slides/slide124.xml",
+      "text": "1. Janet is the organiser of a game show. She uses the following table to store the data of participants. Participants are divided into different teams.1245.6"
+    },
+    {
+      "slide_index": 30,
+      "slide_part": "ppt/slides/slide125.xml",
+      "text": "Each participant can sign in their account in the official website of the game show. Here is the webpage after a participant named Kara has signed in.1255.6"
+    },
+    {
+      "slide_index": 31,
+      "slide_part": "ppt/slides/slide126.xml",
+      "text": "(a) Write a SQL statement to retrieve the above list of members by using the data of the participant, Kara.(b) What is the potential ethical issue raised by this webpage? Explain briefly.(c) Each participant is allowed to edit their own personal data in the database. Which of the following access rights should be granted to them? CREATE, INSERT, ALTER, UPDATE, DROP, DELETE1265.6"
+    },
+    {
+      "slide_index": 32,
+      "slide_part": "ppt/slides/slide127.xml",
+      "text": "(d) Sean is the host of the game show. He should know only the team number, participant numbers, names, sexes and phone numbers of all participants.Help Janet create a database view named HOSTVIEW for Sean by writing down the required SQL statement.1275.6"
+    },
+    {
+      "slide_index": 33,
+      "slide_part": "ppt/slides/slide128.xml",
+      "text": "◣ Solution(a) SELECT PNAME, HKID, SEX, PNUM FROM P WHERE TNUM = \t(SELECT TNUM FROM P WHERE PNUM = '579')(b) HKID number is a piece of personal data. The webpage violates data privacy by showing the HKID number of other participants.(c) UPDATE(d) CREATE VIEW HOSTVIEW AS  (SELECT TNUM, PNUM, PNAME, SEX, PHONE FROM PARTICIPANT)1285.6"
+    },
+    {
+      "slide_index": 34,
+      "slide_part": "ppt/slides/slide129.xml",
+      "text": "Complete Checkpoint 5.7 on P. 302 of your textbook.(a) SELECT AVG(HEIGHT) FROM STUDNET \tWHERE SEX = 'F' AND AGE BETWEEN 11 AND 14(b) Yes. It violates data privacy, as the data is not used for their original purposes in this case.(c) CREATE VIEW ANALYSIS AS \t(SELECT SEX, AGE, WEIGHT, HEIGHT FROM STUDENT)(d) SELECT1295.7"
+    },
+    {
+      "slide_index": 35,
+      "slide_part": "ppt/slides/slide13.xml",
+      "text": "(c)135.1"
+    },
+    {
+      "slide_index": 36,
+      "slide_part": "ppt/slides/slide14.xml",
+      "text": "Participation Constraint145.2The participation constraint of a relationship specifies whether each entity of an entity type participates in a relationship or not."
+    },
+    {
+      "slide_index": 37,
+      "slide_part": "ppt/slides/slide15.xml",
+      "text": "Participation Constraint155.2Here are some real life examples of mandatory sides:1. Each employee must belong to one department;2. Every course must be taught by one or more lecturers;Here are some real life examples of optional sides:1. An employee may or may not have any tasks at hand;2. Each room in a hotel may or may not be occupied by guests;"
+    },
+    {
+      "slide_index": 38,
+      "slide_part": "ppt/slides/slide16.xml",
+      "text": "Mandatory side & mandatory side16AA real life example is the relationship between schools and school principals:For each school, there must be a school principal; andEach school principal must belong to a school."
+    },
+    {
+      "slide_index": 39,
+      "slide_part": "ppt/slides/slide17.xml",
+      "text": "Mandatory side & optional side17BA real life example is the relationship between teachers and classes:Each teacher may or may not be a class teacher; andFor each class, there must be a class teacher."
+    },
+    {
+      "slide_index": 40,
+      "slide_part": "ppt/slides/slide18.xml",
+      "text": "Optional side & optional side18CA real life example is the relationship between citizens and diseases:Each citizen may or may not have a disease; andEach disease may or may not have an infected citizen."
+    },
+    {
+      "slide_index": 41,
+      "slide_part": "ppt/slides/slide19.xml",
+      "text": "Optional side & optional side19CThis is the list of relationship with different participation constraints:"
+    },
+    {
+      "slide_index": 42,
+      "slide_part": "ppt/slides/slide2.xml",
+      "text": "ER Diagram25.1We have learnt the elements of a relational database in the previous chapter. These elements, such as entity type, relationship and attribute, can be better represented in an Entity-Relationship diagram (ER diagram)."
+    },
+    {
+      "slide_index": 43,
+      "slide_part": "ppt/slides/slide20.xml",
+      "text": "1. Add relationships and participation constraints to the following parts of ER diagrams to show the relationship between two entity types.(a) There are 40 computers and 25 students in a classroom. Each student is assigned to exactly one computer205.2"
+    },
+    {
+      "slide_index": 44,
+      "slide_part": "ppt/slides/slide21.xml",
+      "text": "(b) There are numerous books in the library. Students can borrow books from the library.(c) Every student belongs to a class. Each class has about 20 to 30 students.215.2"
+    },
+    {
+      "slide_index": 45,
+      "slide_part": "ppt/slides/slide22.xml",
+      "text": "(d) There are 16 subjects and 40 students. For each subject, there are 3 awards for the students with the top 3 highest scores. There are at least 5 students studying each subject.225.2"
+    },
+    {
+      "slide_index": 46,
+      "slide_part": "ppt/slides/slide23.xml",
+      "text": "◣ Solution1. Any reasonable verb or verb phrase is acceptable.(a)(b)(c)(d)235.2"
+    },
+    {
+      "slide_index": 47,
+      "slide_part": "ppt/slides/slide24.xml",
+      "text": "Complete Checkpoint 5.2 on P. 254 of your textbook.(a)(b)(c)(d)245.2"
+    },
+    {
+      "slide_index": 48,
+      "slide_part": "ppt/slides/slide25.xml",
+      "text": "Cardinality255.3The cardinality of a relationship specifies how many entities of an entity type can be related to entities of another entity type.They are represented by the characters besides the lines between an entity type and a relationship."
+    },
+    {
+      "slide_index": 49,
+      "slide_part": "ppt/slides/slide26.xml",
+      "text": "Cardinality265.3Here are some real life examples of one-to-one relationship (with any participation constraints): Each department has one department head only; and A classroom may belong to a class, while every class has a classroom.Here are some real life examples of one-to-many relationship (with any participation constraints):Each department has one or more employees; andA school has multiple classrooms."
+    },
+    {
+      "slide_index": 50,
+      "slide_part": "ppt/slides/slide27.xml",
+      "text": "One-to-one relationship27AIf there is a one-to-one relationship between entity type A and entity type B, it means that for each entity a, there can be at most one related entity b and vice versa."
+    },
+    {
+      "slide_index": 51,
+      "slide_part": "ppt/slides/slide28.xml",
+      "text": "One-to-one relationship28AA real life example is the relationship between schools and school principals:For each school, there must be exactly one school principal; andEach school principal must belong to exactly one school."
+    },
+    {
+      "slide_index": 52,
+      "slide_part": "ppt/slides/slide29.xml",
+      "text": "One-to-one relationship29ASince schools and school principals have a one-to-one relationship, we may store the school principal’s name as an attribute of schools, if we are NOT interested in storing any additional data about the school principals."
+    },
+    {
+      "slide_index": 53,
+      "slide_part": "ppt/slides/slide3.xml",
+      "text": "ER Diagram35.1This ER diagram shows the entities and relationship in the database SCHOOL, which stores the data of students and classesAccording to the ER diagram:1. There are two attributes for the entity students: student ID and student name;2. There are two attributes for the entity classes: class name and room number;3. Every student must belong to a class; and4. There are one or more students in a class."
+    },
+    {
+      "slide_index": 54,
+      "slide_part": "ppt/slides/slide30.xml",
+      "text": "One-to-one relationship30ABy doing so, school principals will no longer be a separate entity type. Instead, their names become an attribute of schools.Such an approach trades flexibility and the level of details for simplicity and performance. It should be proceeded with caution."
+    },
+    {
+      "slide_index": 55,
+      "slide_part": "ppt/slides/slide31.xml",
+      "text": "One-to-one relationship31AAnother real life example is the relationship between teachers and classes:A teacher may only be assigned exactly one class, or none at all; andFor each class, there must be exactly one class teacher."
+    },
+    {
+      "slide_index": 56,
+      "slide_part": "ppt/slides/slide32.xml",
+      "text": "One-to-one relationship32AExample data of the tables TEACHER and CLASS:"
+    },
+    {
+      "slide_index": 57,
+      "slide_part": "ppt/slides/slide33.xml",
+      "text": "One-to-many relationship33BIf there is a one-to-many relationship between entity type A and entity type B, it means that:For each entity a, there can be many related entity b; andFor each entity b, there can be at most one related entity a."
+    },
+    {
+      "slide_index": 58,
+      "slide_part": "ppt/slides/slide34.xml",
+      "text": "One-to-many relationship34BA real life example is the relationship between classes and students:Each class must have at least one, if not many, students; andEach student must belong to exactly one class."
+    },
+    {
+      "slide_index": 59,
+      "slide_part": "ppt/slides/slide35.xml",
+      "text": "One-to-many relationship35BExample data of the tables STUDENT and CLASS:"
+    },
+    {
+      "slide_index": 60,
+      "slide_part": "ppt/slides/slide36.xml",
+      "text": "One-to-many relationship36BOne-to-many relationship can also be seen as many-to-one relationship if the position of the two entity types are swapped.It is not recommended to store the data of two entity types with a one-to-many relationship in a single table."
+    },
+    {
+      "slide_index": 61,
+      "slide_part": "ppt/slides/slide37.xml",
+      "text": "One-to-many relationship37BAnother real life example is the relationship between citizens and crime records:A citizen may have many criminal records, or none at all; andEach criminal record must belong to exactly one citizen."
+    },
+    {
+      "slide_index": 62,
+      "slide_part": "ppt/slides/slide38.xml",
+      "text": "One-to-many relationship38BExample data of the tables CITIZEN and CRIMINALRECORD:"
+    },
+    {
+      "slide_index": 63,
+      "slide_part": "ppt/slides/slide39.xml",
+      "text": "Many-to-many relationship39CIf there is a many-to-many relationship between entity type A and entity type B, it means that for each entity a, there can be many related entity b and vice versa."
+    },
+    {
+      "slide_index": 64,
+      "slide_part": "ppt/slides/slide4.xml",
+      "text": "ER Diagram45.1This ER diagram helps us determine the table structures of STUDENT and CLASS."
+    },
+    {
+      "slide_index": 65,
+      "slide_part": "ppt/slides/slide40.xml",
+      "text": "Many-to-many relationship40CA real life example is the relationship between students and elective subjects:Each student must enrol in at least one, if not many, elective subjects; andEach elective subject must be enrolled in by at least one, if not many, students. (Otherwise, the subject should be cancelled.)"
+    },
+    {
+      "slide_index": 66,
+      "slide_part": "ppt/slides/slide41.xml",
+      "text": "Many-to-many relationship41CER diagram showing the relationship between students and elective subjects:"
+    },
+    {
+      "slide_index": 67,
+      "slide_part": "ppt/slides/slide42.xml",
+      "text": "Many-to-many relationship42CExample data of the tables STUDENT, ENROLMENT and ELECTIVE:"
+    },
+    {
+      "slide_index": 68,
+      "slide_part": "ppt/slides/slide43.xml",
+      "text": "Many-to-many relationship43CAnother real life example is the relationship between citizens and properties:A citizen may own many properties, or none at all; andA property may be owned by multiple citizens at the same time, or by none at all. (It may be owned by government or a company.)"
+    },
+    {
+      "slide_index": 69,
+      "slide_part": "ppt/slides/slide44.xml",
+      "text": "Many-to-many relationship44CExample data of the tables CITIZEN, OWNERSHIP and PROPERTY:"
+    },
+    {
+      "slide_index": 70,
+      "slide_part": "ppt/slides/slide45.xml",
+      "text": "1. Add relationships, participation constraints and cardinality to the following parts of ER diagrams to show the relationship between two entity types.(a) Each company may own zero office, or any number of offices. Each office is exclusively owned by one company. Every worker must work in only one office. There are always many workers working in an office.455.3"
+    },
+    {
+      "slide_index": 71,
+      "slide_part": "ppt/slides/slide46.xml",
+      "text": "(b) A restaurant has three menus. Each of them offers multiple dishes. A dish must appear on one or more menus. A customer is required to order at least one, if not multiple, dishes. Some dishes are ordered by many customers, while some are never ordered.2. Draw an ER diagram based on the table structure below.465.3"
+    },
+    {
+      "slide_index": 72,
+      "slide_part": "ppt/slides/slide47.xml",
+      "text": "475.3"
+    },
+    {
+      "slide_index": 73,
+      "slide_part": "ppt/slides/slide48.xml",
+      "text": "◣ Solution1. (a)    (b)485.3"
+    },
+    {
+      "slide_index": 74,
+      "slide_part": "ppt/slides/slide49.xml",
+      "text": "2.495.3"
+    },
+    {
+      "slide_index": 75,
+      "slide_part": "ppt/slides/slide5.xml",
+      "text": "Element5AEach shape represents different elements of a relational database. The colours are irrelevant."
+    },
+    {
+      "slide_index": 76,
+      "slide_part": "ppt/slides/slide50.xml",
+      "text": "Complete Checkpoint 5.3 on P. 267 of your textbook.1. (a)   (b)505.3"
+    },
+    {
+      "slide_index": 77,
+      "slide_part": "ppt/slides/slide51.xml",
+      "text": "2. 515.3"
+    },
+    {
+      "slide_index": 78,
+      "slide_part": "ppt/slides/slide52.xml",
+      "text": "Complete Activity 5.1 on P. 270 of your textbook.Method 11. Yes2. Yes3. No4. No5. No525.1"
+    },
+    {
+      "slide_index": 79,
+      "slide_part": "ppt/slides/slide53.xml",
+      "text": "Method 21. No2. No3. Yes4. No5. Yes535.1"
+    },
+    {
+      "slide_index": 80,
+      "slide_part": "ppt/slides/slide54.xml",
+      "text": "Method 31. Yes2. No3. Yes4. No5. No545.1"
+    },
+    {
+      "slide_index": 81,
+      "slide_part": "ppt/slides/slide55.xml",
+      "text": "Method 41. Yes2. Yes3. Yes4. Yes5. YesConclusionMethod 4555.1"
+    },
+    {
+      "slide_index": 82,
+      "slide_part": "ppt/slides/slide56.xml",
+      "text": "Many-to-many relationship56CA many-to-many relationship is usually represented by a separate table. An ER diagram with many-to-many relationship like below:can be resolved into this ER diagram with one-to-many relationship and many-to-one relationship:"
+    },
+    {
+      "slide_index": 83,
+      "slide_part": "ppt/slides/slide57.xml",
+      "text": "Many-to-many relationship57CThis ENROLMENT table can be seen as an associative entity type. It has multiple foreign keys (SID and EID) to reference the primary keys of multiple tables (STUDENT and ELECTIVE)."
+    },
+    {
+      "slide_index": 84,
+      "slide_part": "ppt/slides/slide58.xml",
+      "text": "Many-to-many relationship58CNow we have a table structure that is flexible and easy to manage. Sometimes, the associated entity type has attributes too."
+    },
+    {
+      "slide_index": 85,
+      "slide_part": "ppt/slides/slide59.xml",
+      "text": "Many-to-many relationship59CThe checkout date, due date and return date is related to a checkout of a book done by a student. Without the information of either the student or the book, these dates are meaningless."
+    },
+    {
+      "slide_index": 86,
+      "slide_part": "ppt/slides/slide6.xml",
+      "text": "1. Here is an ER diagram describing the database which stores the data of a school.65.1"
+    },
+    {
+      "slide_index": 87,
+      "slide_part": "ppt/slides/slide60.xml",
+      "text": "Many-to-many relationship60CList of relationship with different cardinalities:"
+    },
+    {
+      "slide_index": 88,
+      "slide_part": "ppt/slides/slide61.xml",
+      "text": "Complete Checkpoint 5.4 on P. 273 of your textbook.1 (a)    (b)    (c)615.4"
+    },
+    {
+      "slide_index": 89,
+      "slide_part": "ppt/slides/slide62.xml",
+      "text": "2. 625.4"
+    },
+    {
+      "slide_index": 90,
+      "slide_part": "ppt/slides/slide63.xml",
+      "text": "3 (a)635.4"
+    },
+    {
+      "slide_index": 91,
+      "slide_part": "ppt/slides/slide64.xml",
+      "text": "3 (b) Each store may or may not sell more than one different book, while each book is sold by at least one store, if not more.   (c) Each publisher publishes one or more books, while a book is published by exactly one publisher645.4"
+    },
+    {
+      "slide_index": 92,
+      "slide_part": "ppt/slides/slide65.xml",
+      "text": "Data Redundancy655.4When a database stores redundant data due to being poorly designed, anomalies may occur.The following table, STUDENT is used as an example to explain data redundancy. It is used to store the data of students, elective subjects and which elective subjects each student takes."
+    },
+    {
+      "slide_index": 93,
+      "slide_part": "ppt/slides/slide66.xml",
+      "text": "Data Redundancy665.4The primary key of this table is SID+EID."
+    },
+    {
+      "slide_index": 94,
+      "slide_part": "ppt/slides/slide67.xml",
+      "text": "Data Redundancy675.4We can see multiple records for Clem in the above table, repeatedly telling us Clem is in class 3B taught by Mr Bao."
+    },
+    {
+      "slide_index": 95,
+      "slide_part": "ppt/slides/slide68.xml",
+      "text": "Data Redundancy685.4There are also multiple records for the elective subject ICT, repeatedly telling us ICT is taught by Mr Suen.These duplicated pieces of data are redundant and occupy precious storage space. This is called data redundancy."
+    },
+    {
+      "slide_index": 96,
+      "slide_part": "ppt/slides/slide69.xml",
+      "text": "Data Redundancy695.4While it is not a fatal issue when we have abundant storage space, data redundancy tends to induce the following anomalies:Update anomaly;Insertion anomaly; andDeletion anomaly."
+    },
+    {
+      "slide_index": 97,
+      "slide_part": "ppt/slides/slide7.xml",
+      "text": "(a) Write the table structure of the table SPORTSEVENT. This table stores the data of sports events and should include the attributes shown in the ER diagram above.(b) What is p and q?75.1"
+    },
+    {
+      "slide_index": 98,
+      "slide_part": "ppt/slides/slide70.xml",
+      "text": "Update anomaly70AIf the student Clem is transferred from class 3B to class 3A, all three records for Clem have to be updated at the same time. Otherwise, the data will be inconsistent."
+    },
+    {
+      "slide_index": 99,
+      "slide_part": "ppt/slides/slide71.xml",
+      "text": "Update anomaly71ASimilarly, if Mrs Lee teaches the elective subject ICT, replacing Mr Suen, all three records for ICT have to be updated at the same time to preserve data consistency."
+    },
+    {
+      "slide_index": 100,
+      "slide_part": "ppt/slides/slide72.xml",
+      "text": "Update anomaly72AAn update anomaly occurs when a database with data redundancy fails to maintain data consistency after an update is made."
+    },
+    {
+      "slide_index": 101,
+      "slide_part": "ppt/slides/slide73.xml",
+      "text": "Insertion anomaly73BIf there is a new student Dio who has not taken any elective subject yet, his EID can only be NULL. Since the primary key of STUDENT is SID+EID and a primary key cannot be NULL, his record cannot be inserted into the table."
+    },
+    {
+      "slide_index": 102,
+      "slide_part": "ppt/slides/slide74.xml",
+      "text": "Insertion anomaly74BSimilarly, if there is a new elective subject Art which is not taken by any student yet, its SID can only be NULL. Thus, its record cannot be inserted into the table.An insertion anomaly refers to the inability to insert data of one entity type without having the data of another entity type."
+    },
+    {
+      "slide_index": 103,
+      "slide_part": "ppt/slides/slide75.xml",
+      "text": "Deletion anomaly75CIf the student Ada, who is the only student in class 3A, quits school, her record will be deleted. As a result, the data related to class 3A, such as the name of the teacher who teaches class 3A, will be lost."
+    },
+    {
+      "slide_index": 104,
+      "slide_part": "ppt/slides/slide76.xml",
+      "text": "Deletion anomaly76CSimilarly, if Clem and Eva, who are the only students taking History, quit studying History. Their records for History will be deleted. As a result, the data related to History, such as the name of the teacher who teaches History, will be lost."
+    },
+    {
+      "slide_index": 105,
+      "slide_part": "ppt/slides/slide77.xml",
+      "text": "Deletion anomaly77CMoreover, as Eva takes History only, with her record for History gone, her data, such as her name and her class, will be lost too.A deletion anomaly refers to the loss of data of one entity type when deleting the data of another entity type."
+    },
+    {
+      "slide_index": 106,
+      "slide_part": "ppt/slides/slide78.xml",
+      "text": "1. A manager uses a table, CITIZEN to manage the data of the ownership of properties.The primary key of CITIZEN is CID+PID. 785.4"
+    },
+    {
+      "slide_index": 107,
+      "slide_part": "ppt/slides/slide79.xml",
+      "text": "Here is the data of CITIZEN:(a) Adam no long owns GG Garden 6/F Flat B now. Instead, Adam owns a commercial property, PP Plaza 2/F Shop G23. What anomaly may occur due to this change?795.4"
+    },
+    {
+      "slide_index": 108,
+      "slide_part": "ppt/slides/slide8.xml",
+      "text": "(c) Which three attributes should be underlined in the above ER diagram?(d) A new table CLASS is added to the database. Each record in CLASS stores the class name and the room number of the classroom. Write the schema of CLASS and underline its primary key.85.1"
+    },
+    {
+      "slide_index": 109,
+      "slide_part": "ppt/slides/slide80.xml",
+      "text": "(b) Can the manager add an unowned property to the table? Explain briefly and name the anomaly if any.(c) CC City is renamed to CC Court. How many records needs to be updated? What anomaly may occur?805.4"
+    },
+    {
+      "slide_index": 110,
+      "slide_part": "ppt/slides/slide81.xml",
+      "text": "◣ Solution(a) Deletion anomaly.(b) No. An unowned property does not have CID. However CID+PID is the primary key, thus an unowned property cannot be added to the table. It is called insertion anomaly.(c) 2 records need to be updated. An update anomaly may occur.815.4"
+    },
+    {
+      "slide_index": 111,
+      "slide_part": "ppt/slides/slide82.xml",
+      "text": "Complete Checkpoint 5.5 on P. 282 of your textbook.1 (a) Yes. Update anomaly   (b) No   (c) Smartphone. Deletion anomaly.   (d) The manager needs to add a new product which is not sold by any shop yet / a new shop which sells no products yet.825.5"
+    },
+    {
+      "slide_index": 112,
+      "slide_part": "ppt/slides/slide83.xml",
+      "text": "Normalisation835.5Normalisation is the process of designing database in a particular way that:Reduces data redundancy;Prevents occurrences of anomalies; andImprove flexibility."
+    },
+    {
+      "slide_index": 113,
+      "slide_part": "ppt/slides/slide84.xml",
+      "text": "Normalisation845.5There are different levels of normalisation which follows certain rules. Common levels of normalisation are: First Normal Form (1NF); Second Normal Form (2NF); and Third Normal Form (3NF)."
+    },
+    {
+      "slide_index": 114,
+      "slide_part": "ppt/slides/slide85.xml",
+      "text": "First Normal Form85AA table in First Normal Form (1NF) should follow these rules:Every attribute must not contain multiple values; andThere must not be any repeating attributes."
+    },
+    {
+      "slide_index": 115,
+      "slide_part": "ppt/slides/slide86.xml",
+      "text": "First Normal Form86ASee the following table, STUDENT.The attribute ENAME of a single record may contain names of multiple elective subjects, i.e. multiple values. Thus, this table is NOT in 1NF."
+    },
+    {
+      "slide_index": 116,
+      "slide_part": "ppt/slides/slide87.xml",
+      "text": "First Normal Form87ANow ENAME is divided into three attributes: ENAME1, ENAME2 and ENAME3."
+    },
+    {
+      "slide_index": 117,
+      "slide_part": "ppt/slides/slide88.xml",
+      "text": "First Normal Form88AEven though each of ENAME1, ENAME2 and ENAME3 stores a single value, they are a group of attributes which store the names of the elective subjects, i.e. they are all repeating attributes. Thus, this table is NOT in 1NF."
+    },
+    {
+      "slide_index": 118,
+      "slide_part": "ppt/slides/slide89.xml",
+      "text": "First Normal Form89ANow ENAME1, ENAME2 and ENAME3 of each record are broken down into multiple records.This table is now in 1NF with SID+ENAME as the primary key."
+    },
+    {
+      "slide_index": 119,
+      "slide_part": "ppt/slides/slide9.xml",
+      "text": "(e) Modify the ER diagram accordingly.95.1"
+    },
+    {
+      "slide_index": 120,
+      "slide_part": "ppt/slides/slide90.xml",
+      "text": "Second Normal Form90BA table in Second Normal Form (2NF) should follow these rules:The database follows every normalisation rule of 1NF; andThere must NOT be any partial functional dependency between attributes.To learn about 2NF, we must first understand the concept of functional dependency."
+    },
+    {
+      "slide_index": 121,
+      "slide_part": "ppt/slides/slide91.xml",
+      "text": "Second Normal Form91BA functional dependency exists between two sets of attributes when the values of one set can be uniquely determined by the values of another set."
+    },
+    {
+      "slide_index": 122,
+      "slide_part": "ppt/slides/slide92.xml",
+      "text": "Second Normal Form92BConsidering the above table, if we know the class of a student (CLASS), we will know the name of their class teacher (CTEACH), but not the name of the student (SNAME). The fact that CTEACH is dependent on CLASS can be denoted by: CLASS  CTEACH"
+    },
+    {
+      "slide_index": 123,
+      "slide_part": "ppt/slides/slide93.xml",
+      "text": "Second Normal Form93BWhen all attributes that are not primary key are dependent on the primary key, the table is considered to have a full functional dependency.EID is the primary key of ELECTIVE. Since ENAME and ETEACH are dependent on EID, the table above has full functional dependency. EID  {ENAME, ETEACH}"
+    },
+    {
+      "slide_index": 124,
+      "slide_part": "ppt/slides/slide94.xml",
+      "text": "Second Normal Form94BWhen some attributes that are not primary key are dependent on part of the primary key, the table is considered to have a partial functional dependency."
+    },
+    {
+      "slide_index": 125,
+      "slide_part": "ppt/slides/slide95.xml",
+      "text": "Second Normal Form95BSID+EID is the primary key of STUDENT.SNAME, CLASS and CTEACH are dependent on SID.SID {SNAME, CLASS, CTEACH}ENAME and ETEACH are dependent on EID.EID {ENAME, ETEACH}Only SCORE is dependent on SID+EID. {SID, EID}  SCORE"
+    },
+    {
+      "slide_index": 126,
+      "slide_part": "ppt/slides/slide96.xml",
+      "text": "Second Normal Form96BIn conclusion, partial functional dependency can exist only when the primary key of a table is a composite key."
+    },
+    {
+      "slide_index": 127,
+      "slide_part": "ppt/slides/slide97.xml",
+      "text": "Second Normal Form97BTo remove partial functional dependency, we have to ensure that all attributes that are not primary key are dependent on the entire primary key.See the following table:"
+    },
+    {
+      "slide_index": 128,
+      "slide_part": "ppt/slides/slide98.xml",
+      "text": "Second Normal Form98BBase on its functional dependencies, we shall split this table into three.This three tables are now in 2NF."
+    },
+    {
+      "slide_index": 129,
+      "slide_part": "ppt/slides/slide99.xml",
+      "text": "Complete Activity 5.2 on P. 289 of your textbook.(a) Yes. Deletion anomaly(b) Yes. Update anomaly.(c) Yes. Insertion anomaly.995.2"
+    }
+  ]
+}

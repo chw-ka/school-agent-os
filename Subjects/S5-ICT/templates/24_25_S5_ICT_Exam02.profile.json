@@ -316,6 +316,10 @@
       "style_name": "Normal",
       "tab_stops": [
         {
+          "position_emu": 360045,
+          "alignment": "LEFT"
+        },
+        {
           "position_emu": 630555,
           "alignment": "LEFT"
         },
@@ -332,12 +336,15 @@
           "alignment": "LEFT"
         },
         {
-          "position_emu": 6629400,
+          "position_emu": 6645910,
           "alignment": "RIGHT"
         }
       ],
-      "line_spacing_rule": "ONE_POINT_FIVE",
-      "notes": "seed from para 317"
+      "left_indent_emu": 629285,
+      "first_line_indent_emu": -629285,
+      "space_after_pt": 9.0,
+      "run_defaults": {},
+      "notes": "seed from para 316"
     },
     "written.subpart_nested": {
       "role": "written.subpart_nested",
@@ -440,10 +447,6 @@
       "style_name": "Normal",
       "tab_stops": [
         {
-          "position_emu": 360045,
-          "alignment": "LEFT"
-        },
-        {
           "position_emu": 630555,
           "alignment": "LEFT"
         },
@@ -458,9 +461,14 @@
         {
           "position_emu": 1440180,
           "alignment": "LEFT"
+        },
+        {
+          "position_emu": 6629400,
+          "alignment": "RIGHT"
         }
       ],
-      "notes": "seed from para 318"
+      "line_spacing_rule": "ONE_POINT_FIVE",
+      "notes": "seed from para 317"
     },
     "written.answer_blank_long": {
       "role": "written.answer_blank_long",
@@ -613,6 +621,68 @@
         "bold": true
       },
       "notes": "seed from para 423"
+    },
+    "written.topic_lead": {
+      "role": "written.topic_lead",
+      "style_name": "List Paragraph",
+      "tab_stops": [
+        {
+          "position_emu": 360045,
+          "alignment": "LEFT"
+        },
+        {
+          "position_emu": 630555,
+          "alignment": "LEFT"
+        },
+        {
+          "position_emu": 900430,
+          "alignment": "LEFT"
+        },
+        {
+          "position_emu": 1170305,
+          "alignment": "LEFT"
+        },
+        {
+          "position_emu": 1440180,
+          "alignment": "LEFT"
+        },
+        {
+          "position_emu": 6645910,
+          "alignment": "RIGHT"
+        }
+      ],
+      "left_indent_emu": 630555,
+      "first_line_indent_emu": -630555,
+      "run_defaults": {},
+      "notes": "seed from para 323"
+    },
+    "written.subpart_intro": {
+      "role": "written.subpart_intro",
+      "style_name": "Normal",
+      "tab_stops": [
+        {
+          "position_emu": 360045,
+          "alignment": "LEFT"
+        },
+        {
+          "position_emu": 630555,
+          "alignment": "LEFT"
+        },
+        {
+          "position_emu": 900430,
+          "alignment": "LEFT"
+        },
+        {
+          "position_emu": 1170305,
+          "alignment": "LEFT"
+        },
+        {
+          "position_emu": 1440180,
+          "alignment": "LEFT"
+        }
+      ],
+      "run_defaults": {},
+      "notes": "seed from para 326"
     }
   },
   "layout": {
