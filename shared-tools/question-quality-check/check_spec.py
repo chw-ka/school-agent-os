@@ -7,6 +7,7 @@ Question-level quality checks on exam specs (JSON):
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Optional
@@ -48,6 +49,8 @@ from quality_lib import (
     THRESH_INTRA_CROSS,
     _is_section_header,
     compare_intra_exam,
+    normalize_text,
+    text_similarity,
     discover_past_papers,
     infer_subject_subpath,
     text_similarity,
@@ -263,6 +266,98 @@ def load_dse_ict_bank_spec(
     }
 
 
+_MCQ_OPT_RE = re.compile(r"^\t([A-D])\.\t")
+
+# Coarse tags — sharing these alone does not mean duplicate topic.
+MCQ_GENERIC_CONCEPTS = frozenset(
+    {
+        "硬件",
+        "軟件",
+        "算法",
+        "數據庫",
+        "資訊處理",
+        "Python",
+        "迴圈",
+        "多媒體",
+        "試算表",
+        "進制",
+        "選擇結構",
+        "迭代",
+        "偽代碼",
+        "流程圖",
+        "變量",
+        "陣列",
+    }
+)
+
+# Stem-only: high bar so generic templates (「下列哪一項屬於…」) do not false-positive.
+THRESH_MCQ_STEM = 0.85
+
+# When two MCQ slots share a narrow concept, flag if stem similarity exceeds this.
+THRESH_MCQ_CONCEPT_TOPIC = 0.38
+
+
+def extract_compare_stem(text: str) -> str:
+    """Question stem + (1)(2)(3) lines; exclude A–D options (shuffled distractors)."""
+    parts: list[str] = []
+    for line in (text or "").splitlines():
+        if _MCQ_OPT_RE.match(line):
+            break
+        s = line.strip()
+        if s:
+            parts.append(s)
+    return "\n".join(parts)
+
+
+def _intra_pair_key(a_id: str, b_id: str) -> tuple[str, str]:
+    return (a_id, b_id) if a_id <= b_id else (b_id, a_id)
+
+
+def compare_intra_mcq_extended(
+    candidate: dict,
+    *,
+    stem_threshold: float = THRESH_MCQ_STEM,
+) -> list[DuplicateEntry]:
+    """Extra intra-exam MCQ checks: stem similarity + narrow concept overlap."""
+    cand_items = [it for it in spec_items(candidate) if it.section == "mcq"]
+    out: list[DuplicateEntry] = []
+    for i, a in enumerate(cand_items):
+        ca = set(a.meta.get("concepts") or [])
+        stem_a = extract_compare_stem(a.text)
+        for b in cand_items[i + 1 :]:
+            cb = set(b.meta.get("concepts") or [])
+            stem_b = extract_compare_stem(b.text)
+            stem_sim = text_similarity(normalize_text(stem_a), normalize_text(stem_b))
+            if stem_sim > stem_threshold:
+                out.append(
+                    DuplicateEntry(
+                        candidate_id=a.id,
+                        reference="(within exam)",
+                        reference_id=b.id,
+                        similarity=stem_sim,
+                        match_type="intra_mcq_stem",
+                        candidate_text=stem_a[:200],
+                        reference_text=stem_b[:200],
+                    )
+                )
+                continue
+            narrow = (ca & cb) - MCQ_GENERIC_CONCEPTS
+            topic_in_both = any(c in stem_a and c in stem_b for c in narrow)
+            if narrow and topic_in_both and stem_sim > THRESH_MCQ_CONCEPT_TOPIC:
+                out.append(
+                    DuplicateEntry(
+                        candidate_id=a.id,
+                        reference="(within exam)",
+                        reference_id=b.id,
+                        similarity=stem_sim,
+                        match_type="intra_mcq_concept",
+                        candidate_text=f"shared {sorted(narrow)}: {stem_a[:160]}",
+                        reference_text=stem_b[:160],
+                    )
+                )
+    return out
+
+
 def compare_spec_to_dse_bank(
     candidate: dict,
     *,
@@ -287,6 +382,7 @@ def compare_intra_spec(
     """Detect duplicate question pairs within the same exam spec (all sections)."""
     cand_items = spec_items(candidate)
     out: list[DuplicateEntry] = []
+    seen_pairs: set[tuple[str, str]] = set()
     for i, a in enumerate(cand_items):
         for b in cand_items[i + 1 :]:
             if _is_section_header(a.text) or _is_section_header(b.text):
@@ -297,6 +393,8 @@ def compare_intra_spec(
             thresh = THRESH_INTRA_CROSS if cross else threshold
             sim = text_similarity(a.text, b.text)
             if sim > thresh:
+                key = _intra_pair_key(a.id, b.id)
+                seen_pairs.add(key)
                 out.append(
                     DuplicateEntry(
                         candidate_id=a.id,
@@ -308,6 +406,12 @@ def compare_intra_spec(
                         reference_text=b.text[:200],
                     )
                 )
+    for entry in compare_intra_mcq_extended(candidate):
+        key = _intra_pair_key(entry.candidate_id, entry.reference_id)
+        if key in seen_pairs:
+            continue
+        seen_pairs.add(key)
+        out.append(entry)
     return sorted(out, key=lambda x: (-x.similarity, x.candidate_id))
 
 
@@ -543,6 +647,8 @@ def format_spec_report_text(report: DuplicateReport) -> str:
         f"Candidate spec: {report.candidate}",
         f"References checked: {len(report.references_checked)}",
         f"Rule: similarity > {pct}% → duplicate (cross-id matching)",
+        f"MCQ stem (no A–D options): similarity > {int(THRESH_MCQ_STEM * 100)}% → duplicate (intra_mcq_stem)",
+        f"MCQ narrow concept overlap + stem > {int(THRESH_MCQ_CONCEPT_TOPIC * 100)}% → duplicate (intra_mcq_concept)",
         f"Cross-section within exam: similarity > {int(THRESH_INTRA_CROSS * 100)}% also flagged",
         f"Also checks rendered DOCX for 甲–戊 overlap and MCQ answer leaks",
         f"Spec also checks cross-section concept conflicts (same topic in 甲 + 乙–戊)",

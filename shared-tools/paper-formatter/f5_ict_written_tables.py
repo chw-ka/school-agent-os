@@ -274,12 +274,14 @@ def _build_b01_spreadsheet(pick: dict[str, Any]) -> list[list[str]]:
 
 
 def _build_b02_mini_sheet(_pick: dict[str, Any]) -> list[list[str]]:
+    """DSE-style contrast: A = 文書級；B = 多工／影像級（規格差異明顯）。"""
     return [
-        ["部件", "電腦 A", "電腦 B"],
-        ["CPU", "Intel Core i5-12400", "AMD Ryzen 5 5600G"],
-        ["RAM", "8 GB DDR4", "16 GB DDR4"],
-        ["儲存裝置", "256 GB SSD", "512 GB SSD"],
-        ["顯示器", '24" FHD', '27" FHD'],
+        ["硬件規格", "電腦 A", "電腦 B"],
+        ["CPU", "Intel Core i3（3.3 GHz）", "Intel Core i7（4.2 GHz）"],
+        ["RAM", "8 GB", "16 GB"],
+        ["主儲存", "256 GB 硬碟（HDD）", "512 GB 固態硬碟（SSD）"],
+        ["顯示卡", "內置顯示", "NVIDIA 獨立顯卡（4 GB）"],
+        ["螢幕", "21 吋", "27 吋"],
     ]
 
 

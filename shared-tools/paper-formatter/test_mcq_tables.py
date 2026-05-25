@@ -20,8 +20,8 @@ def test_mcq_table_slots_have_grids():
     assert len(grid[0]) == 5
 
     g13 = table_grids_for_mcq_slot(13, {"text": ""})
-    assert [n for n, _ in g13] == ["Donate", "Target"]
-    assert g13[0][1][0] == ["", "A", "C"]
+    assert [n for n, _ in g13] == ["Device"]
+    assert g13[0][1][0] == ["裝置", "用途"]
 
     g15 = table_grids_for_mcq_slot(15, {"text": ""})
     assert [n for n, _ in g15] == ["MEMBER", "LOAN"]

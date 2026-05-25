@@ -152,7 +152,7 @@
     ],
     "written_render": "patterns",
     "written_picks_source": "style_patterns.written + blueprint",
-    "mcq_answers": "BBADCDDBDBACCABDACCDABAABDCCBA"
+    "mcq_answers": "BBADCDCADBCCCABDACACABAABDBCBA"
   },
   "items": [
     {
@@ -308,7 +308,7 @@
     {
       "id": "mcq-03",
       "section": "mcq",
-      "text": "圖書館資料表 MEMBER(MID, Name) 與 LOAN(MID, BookID)。下列哪項正確？\n\n\n\tA.\tLOAN.MID 是外鍵，對應 MEMBER.MID\n\tB.\tName 是主鍵\n\tC.\tMID 可重複出現於 MEMBER\n\tD.\tBookID 是外鍵\n",
+      "text": "下列哪一項正確描述資料表內的「記錄」？\n\n\n\tA.\t記錄是資料表內的一列，代表一個實體的完整資料\n\tB.\t記錄是資料表內的一欄，用以儲存同一類型的數據\n\tC.\t記錄只能儲存數字，不能儲存文字\n\tD.\t記錄與欄位是同義詞",
       "marks": 1,
       "concepts": [
         "數據組織",
@@ -458,7 +458,7 @@
     {
       "id": "mcq-05",
       "section": "mcq",
-      "text": "下列哪一項關於數據控制的敘述是正確的？\n\n\n\tA.\t數據控制不能應用於軟件\n\tB.\t數據控制只適用於硬件\n\tC.\t數據控制是有效的資訊處理概念\n\tD.\t數據控制與數據無關\n",
+      "text": "傳輸數據時，數據會被進行奇偶檢測。以下哪項所接收到的代碼是錯誤的？\n\n\n\tA.\t1001 0100\n\tB.\t0011 1101\n\tC.\t1111 0101\n\tD.\t1010 0010",
       "marks": 1,
       "concepts": [
         "數據控制",
@@ -472,7 +472,7 @@
     {
       "id": "mcq-06",
       "section": "mcq",
-      "text": "某校學會以系統管理會員及活動報名。試算表「Sale」部分資料見下表。以下哪項（些）關於試算表的敘述是正確的？\n\t(1)\tCOUNTIF 可統計符合條件的儲存格個數\t\t\n\t(2)\tSUMIF 加總時毋須指定條件範圍\t\t\n\t(3)\tXLOOKUP 只能查找同一欄內的數字\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "以下哪個 8 位元數字的二進制補碼數字之值是最大的？\n\n\n\tA.\t1000 0001\n\tB.\t1111 0000\n\tC.\t1100 0001\n\tD.\t1111 1111",
       "marks": 1,
       "concepts": [
         "進制",
@@ -537,14 +537,14 @@
     {
       "id": "mcq-07",
       "section": "mcq",
-      "text": "下列哪一項關於字元編碼的敘述是正確的？\n\n\n\tA.\t字元編碼不能應用於軟件\n\tB.\t字元編碼只適用於硬件\n\tC.\t字元編碼與數據無關\n\tD.\t字元編碼是有效的資訊處理概念\n",
+      "text": "某網站使用 UTF-8 儲存繁體中文內容。下列哪項描述是正確的？\n\n\n\tA.\t每個中文字必定只佔 1 字節\n\tB.\tUTF-8 與 ASCII 完全相容，所有字符均佔 1 字節\n\tC.\tUTF-8 可用不同數目的字節表示不同字符\n\tD.\tUTF-8 不能表示英文字母",
       "marks": 1,
       "concepts": [
         "字元編碼",
         "UTF-8"
       ],
       "core": "A",
-      "answer": "D",
+      "answer": "C",
       "dse_source": "generated://mcq/mcq-07"
     },
     {
@@ -558,7 +558,7 @@
         "向量圖"
       ],
       "core": "A",
-      "answer": "B",
+      "answer": "A",
       "dse_source": "generated://mcq/mcq-08",
       "depth_references": [
         {
@@ -682,11 +682,11 @@
     {
       "id": "mcq-10",
       "section": "mcq",
-      "text": "捐款工作表：A 欄班別、C 欄金額。要在 D2 依 A2 從 $H$2:$I$10 查找目標金額，應使用？\n\n\n\tA.\tCOUNTIF\n\tB.\tXLOOKUP\n\tC.\tRANK\n\tD.\tSUMIF\n",
+      "text": "學會募捐工作表：B 欄為班別，D 欄為捐款金額。要在 E2 統計「4A」班的捐款總額，應在 E2 輸入下列哪一個函數？\n\n\n\tA.\t=COUNTIF(B:B,\"4A\")\n\tB.\t=SUMIF(B:B,\"4A\",D:D)\n\tC.\t=XLOOKUP(\"4A\",B:B,D:D)\n\tD.\t=AVERAGEIF(B:B,\"4A\",D:D)",
       "marks": 1,
       "concepts": [
         "試算表",
-        "XLOOKUP",
+        "SUMIF",
         "COUNTIF"
       ],
       "core": "A",
@@ -752,7 +752,7 @@
     {
       "id": "mcq-11",
       "section": "mcq",
-      "text": "下列哪一項正確描述 RAM 與快取記憶體？\n\n\n\tA.\tRAM 在斷電後資料會消失\n\tB.\t快取不能加快 CPU 存取\n\tC.\t快取比硬碟慢\n\tD.\tRAM 容量通常小於快取\n",
+      "text": "以下哪項關於快取記憶體的句子是正確的？\n\n\n\tA.\t它是 ROM 的一種\n\tB.\t它只在 CPU 內找到\n\tC.\t它儲存經常使用的數據和指令\n\tD.\t快取記憶體的數據存取速度比 RAM 的為低",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -760,7 +760,7 @@
         "快取記憶體"
       ],
       "core": "B",
-      "answer": "A",
+      "answer": "C",
       "dse_source": "generated://mcq/mcq-11",
       "depth_references": [
         {
@@ -895,7 +895,7 @@
     {
       "id": "mcq-13",
       "section": "mcq",
-      "text": "某校學會以系統管理會員及活動報名。試算表「Donate」及「Target」部分資料見下表。以下哪項（些）關於試算表的敘述是正確的？\n\t(1)\tXLOOKUP 可依關鍵值在對照範圍查找並傳回結果\t\t\n\t(2)\tCOUNTIF 用於加總兩欄的乘積\t\t\n\t(3)\tSUMIF 只能統計儲存格個數\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (3)\n\tD.\t只有 (2) 和 (3)",
+      "text": "細看下表所列裝置。以下哪項／些屬於輸入裝置？\n\t(1)\t加速度計\n\t(2)\t觸控屏幕\n\t(3)\t激光打印機\n\n\tA.\t只有 (1)\n\tB.\t只有 (2)\n\tC.\t只有 (1) 和 (2)\n\tD.\t(1)、(2) 和 (3)",
       "marks": 1,
       "concepts": [
         "硬件",
@@ -961,12 +961,12 @@
     {
       "id": "mcq-14",
       "section": "mcq",
-      "text": "下列哪一項正確描述 RAM 與快取記憶體？\n\n\n\tA.\tRAM 在斷電後資料會消失\n\tB.\t快取比硬碟慢\n\tC.\tRAM 容量通常小於快取\n\tD.\t快取不能加快 CPU 存取\n",
+      "text": "除了數據傳輸率和儲存容量，下列哪一項正確描述 RAM 與固態硬碟（SSD）的一個功能上的分別？\n\n\n\tA.\tRAM 屬於主記憶體，斷電後資料會消失\n\tB.\tSSD 的數據存取速度必定比快取記憶體快\n\tC.\tRAM 只用作長期儲存檔案\n\tD.\tSSD 不能永久儲存資料",
       "marks": 1,
       "concepts": [
         "硬件",
         "RAM",
-        "快取記憶體"
+        "SSD"
       ],
       "core": "B",
       "answer": "A",
@@ -1239,11 +1239,11 @@
     {
       "id": "mcq-18",
       "section": "mcq",
-      "text": "下列哪一項屬於專用軟件（application software）？\n\n\n\tA.\t編譯器\n\tB.\t作業系統\n\tC.\t文書處理軟件\n\tD.\t驅動程式\n",
+      "text": "下列哪一項屬於應用軟件？\n\n\n\tA.\t編譯器\n\tB.\t作業系統\n\tC.\t文書處理軟件\n\tD.\t驅動程式\n",
       "marks": 1,
       "concepts": [
         "軟件",
-        "專用軟件"
+        "應用軟件"
       ],
       "core": "B",
       "answer": "C",
@@ -1308,15 +1308,15 @@
     {
       "id": "mcq-19",
       "section": "mcq",
-      "text": "下列哪一項屬於實用程式（utility）？\n\n\tA.\t文書處理軟件\n\tB.\t試算表\n\tC.\t磁碟重組工具\n\tD.\t網頁瀏覽器",
+      "text": "下列哪一項最能描述作業系統的功能？\n\n\n\tA.\t管理硬件及軟件資源\n\tB.\t設計網頁版面\n\tC.\t編寫 Python 程式\n\tD.\t壓縮圖像檔案",
       "marks": 1,
       "concepts": [
         "軟件",
         "作業系統",
-        "實用程式"
+        "驅動程式"
       ],
       "core": "B",
-      "answer": "C",
+      "answer": "A",
       "dse_source": "generated://mcq/mcq-19",
       "depth_references": [
         {
@@ -1378,15 +1378,15 @@
     {
       "id": "mcq-20",
       "section": "mcq",
-      "text": "下列哪一項屬於輸入裝置？\n\n\n\tA.\t投影機\n\tB.\t喇叭\n\tC.\t繪圖儀\n\tD.\t條碼掃描器\n",
+      "text": "下列哪一項屬於輸出裝置？\n\n\n\tA.\t鍵盤\n\tB.\t條碼掃描器\n\tC.\t投影機\n\tD.\t麥克風",
       "marks": 1,
       "concepts": [
         "硬件",
-        "輸入裝置",
-        "RAM"
+        "輸出裝置",
+        "SSD"
       ],
       "core": "B",
-      "answer": "D",
+      "answer": "C",
       "dse_source": "generated://mcq/mcq-20",
       "depth_references": [
         {
@@ -1587,12 +1587,12 @@
     {
       "id": "mcq-23",
       "section": "mcq",
-      "text": "執行下列 Python 程式後，變數 i 的最終值是多少？\ni = 1\nwhile i <= 8:\n    i = i * 2\n\n\n\tA.\t16\n\tB.\t4\n\tC.\t8\n\tD.\t2\n",
+      "text": "考慮以下偽代碼：s ← 0，i ← 1；當 i ≤ 3 時重複執行 s ← s + i 及 i ← i + 1，然後輸出 s。輸出是？\n\n\n\tA.\t6\n\tB.\t3\n\tC.\t10\n\tD.\t1",
       "marks": 1,
       "concepts": [
         "迴圈",
         "算法",
-        "迭代"
+        "偽代碼"
       ],
       "core": "D",
       "answer": "A",
@@ -1881,15 +1881,15 @@
     {
       "id": "mcq-27",
       "section": "mcq",
-      "text": "考慮以下偽代碼：\n若 (score ≥ 60) 且 (score ≤ 100) 則 grade ←「合格」，否則 grade ←「不合格」\n若 score = 60，grade 是？\n\n\n\tA.\t60\n\tB.\t100\n\tC.\t合格\n\tD.\t不合格\n",
+      "text": "設 A = 1，B = 0，C = 1。下列哪項布林運算的結果為假？\n\n\n\tA.\t(A AND B) OR C\n\tB.\t(NOT A) AND C\n\tC.\tA XOR B\n\tD.\t(NOT B) OR C",
       "marks": 1,
       "concepts": [
-        "進制",
-        "二進制",
-        "布爾邏輯"
+        "布爾邏輯",
+        "算法",
+        "選擇結構"
       ],
       "core": "D",
-      "answer": "C",
+      "answer": "B",
       "dse_source": "generated://mcq/mcq-27",
       "depth_references": [
         {
@@ -2181,7 +2181,7 @@
     {
       "id": "b-01",
       "section": "section_b",
-      "text": "「煦風書社」以試算表「Order」記錄義賣收入；右側為商品參考單價對照。部分資料見下表。\n\n\t(a)\t在 F2 寫出一條 IF 公式並複製至 F3:F50：若 E2 為「Y」且 D2≥5，總價為 C2*D2×0.9；否則為 C2*D2。寫出 F2 的公式。\t(2 分)\n\n\t(b)\t在 G2 使用 SUMIF：加總 B 欄為「明信片」的 F 欄總價（範圍 F$2:F$50），寫出公式。\t(2 分)",
+      "text": "「煦風書社」以試算表「Order」記錄義賣收入（Order 範圍已設定為 Excel 表格）；PriceRef 為參考單價對照。部分資料見下表。\n\n\t(a)\t在 F2 寫出一條 IF 公式並複製至 F3:F50：若 E2 為「Y」且 D2≥5，總價為 C2*D2×0.9；否則為 C2*D2。寫出 F2 的公式。\t(2 分)\n\n\t(b)\t在 G2 使用結構化參照：加總 Order 表格中商品為「明信片」的總價，寫出公式。\t(2 分)",
       "marks": 4,
       "title": "試算表（公式）",
       "concepts": [
@@ -2254,12 +2254,12 @@
         }
       ],
       "depth_calibration": "iclass-hk",
-      "model_answer": "1.\n\t(a)\t=IF(AND(E2=\"Y\",D2>=5),C2*D2*0.9,C2*D2)\n\t(b)\t=SUMIF(B$2:B$50,\"明信片\",F$2:F$50)"
+      "model_answer": "1.\n\t(a)\t=IF(AND(E2=\"Y\",D2>=5),C2*D2*0.9,C2*D2)\n\t(b)\t=SUMIF(Order[商品],\"明信片\",Order[總價])"
     },
     {
       "id": "b-02",
       "section": "section_b",
-      "text": "「青禾」為醫務室添置桌上電腦，主要部件包括 CPU、RAM、儲存裝置及顯示器。下表列出兩款候選規格。\n\n\t(a)\t就下表所列部件，各舉一例說明其功能（須與部件直接相關）。\t(2 分)\n\n\t(b)\t說明人工智能可如何協助青禾醫務室管理日常運作，並舉出一項限制。\t(3 分)",
+      "text": "「青禾」為醫務室添置桌上電腦，下表列出電腦 A 與電腦 B 的硬件規格（請細看下表各列的數值與類型）。\n\n\t(a)\t根據下表，說明電腦 A 通常適合甚麼用途？電腦 B 通常適合甚麼用途？（各舉一例，須寫明引用下表哪一項規格，例如 RAM 或主儲存）\t(2 分)\n\n\t(b)\t若醫務室須同時開啟病人管理系統及醫療影像軟件，應選購電腦 A 還是電腦 B？須引用下表至少兩項規格（例如 RAM、主儲存、顯示卡）說明理由。\t(3 分)",
       "marks": 5,
       "title": "電腦系統與未來發展",
       "concepts": [
@@ -2343,7 +2343,7 @@
         }
       ],
       "depth_calibration": "iclass-hk",
-      "model_answer": "2.\n\t(a)\tCPU：執行指令；RAM：暫存執行中資料；儲存：永久保存檔案；顯示器：輸出畫面\n\t(b)\t雲端：節省本地硬件成本、易備份；限制：需網絡、私隱風險；本地：速度快、離線可用；限制：硬件成本高、難擴充"
+      "model_answer": "2.\n\t(a)\tA：8 GB RAM、256 GB HDD，適合文書處理／簡單網頁；B：Core i7、獨立顯卡 4 GB，適合醫療影像或較多程式\n\t(b)\t選 B；16 GB RAM 可同時運行兩個系統；SSD 讀寫較快；獨立顯卡有助顯示醫療影像"
     },
     {
       "id": "b-03",
@@ -2513,7 +2513,7 @@
     {
       "id": "b-05",
       "section": "section_b",
-      "text": "「德望」網店使用資料表 TRANSACTION(TID, Item, Qty, ADate) 記錄交易，部分記錄見表。\n\n\t(a)\t寫出 CREATE TABLE TRANSACTION（TID 為主鍵，Item 不可為空）。\t(2 分)\n\n\t(b)\t寫出一條 SELECT，列出 Qty ≥ 5 的 Item 及 Qty。\t(2 分)",
+      "text": "「德望」網店使用資料表 TRANSACTION(TID, Item, Qty, ADate) 記錄交易，部分記錄見下表。\n\n\t(a)\t寫出 CREATE TABLE TRANSACTION（TID 為主鍵，Item 不可為空）。\t(2 分)\n\n\t(b)\t寫出一條 SELECT 語句，查詢 Qty ≥ 5 的交易；並以表格列出查詢結果將顯示的 Item 及 Qty。\t(2 分)",
       "marks": 4,
       "title": "數據組織與 SQL",
       "concepts": [
@@ -2584,7 +2584,7 @@
         }
       ],
       "depth_calibration": "iclass-hk",
-      "model_answer": "5.\n\t(a)\tCREATE TABLE TRANSACTION (TID CHAR(6) PRIMARY KEY, Item VARCHAR(40) NOT NULL, Qty INTEGER, ADate DATE);\n\t(b)\tSELECT Item, Qty FROM TRANSACTION WHERE Qty >= 5;"
+      "model_answer": "5.\n\t(a)\tCREATE TABLE TRANSACTION (TID CHAR(6) PRIMARY KEY, Item VARCHAR(40) NOT NULL, Qty INTEGER, ADate DATE);\n\t(b)\tSELECT Item, Qty FROM TRANSACTION WHERE Qty >= 5;\n\t結果例：明信片|8；徽章|6"
     },
     {
       "id": "b-06",

@@ -300,6 +300,46 @@ def test_answer_verify_skips_generated_provenance() -> None:
     assert not any(i.kind == "mcq_bank_missing" for i in result.issues)
 
 
+def test_intra_mcq_stem_and_concept_dup() -> None:
+    from check_spec import compare_intra_mcq_extended, compare_intra_spec
+
+    spec = build_spec(
+        {"subject": "test"},
+        [
+            make_item(
+                "mcq-17",
+                "mcq",
+                "下列哪一項屬於實用程式（utility）？\n\n\n\tA.\t磁碟重組工具\n\tB.\t網頁瀏覽器",
+                concepts=["軟件", "實用程式"],
+            ),
+            make_item(
+                "mcq-19",
+                "mcq",
+                "下列哪一項屬於實用程式（utility）？\n\n\tA.\t文書處理軟件\n\tB.\t試算表",
+                concepts=["軟件", "實用程式"],
+            ),
+            make_item(
+                "mcq-13",
+                "mcq",
+                "細看下表所列裝置。以下哪項／些屬於輸入裝置？\n\t(1)\t加速度計\n\n\tA.\t只有 (1)",
+                concepts=["硬件", "輸入裝置"],
+            ),
+            make_item(
+                "mcq-20",
+                "mcq",
+                "下列哪一項屬於輸入裝置？\n\n\n\tA.\t投影機\n\tB.\t喇叭",
+                concepts=["硬件", "輸入裝置"],
+            ),
+        ],
+    )
+    stem_hits = [d for d in compare_intra_mcq_extended(spec) if d.match_type == "intra_mcq_stem"]
+    assert any(d.candidate_id == "mcq-17" and d.reference_id == "mcq-19" for d in stem_hits)
+    concept_hits = [d for d in compare_intra_spec(spec) if d.match_type == "intra_mcq_concept"]
+    assert any(
+        {d.candidate_id, d.reference_id} == {"mcq-13", "mcq-20"} for d in concept_hits
+    )
+
+
 def test_coherence_topic_clash() -> None:
     bad = "SELECT * FROM T\n\n估算 BMP 像素大小。"
     issues = check_text_coherence("b-03", bad, section="section_b")
@@ -351,6 +391,7 @@ if __name__ == "__main__":
     test_concept_conflict_tm_testing_mcq_and_sa()
     test_concept_conflict_diversified_pass()
     test_coherence_meta_bridge()
+    test_intra_mcq_stem_and_concept_dup()
     test_coherence_topic_clash()
     test_written_picks_render_b02()
     print("ok")

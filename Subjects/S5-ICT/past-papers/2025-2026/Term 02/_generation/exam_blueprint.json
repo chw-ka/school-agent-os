@@ -471,7 +471,7 @@
       "concepts": [
         "軟件",
         "作業系統",
-        "實用程式"
+        "驅動程式"
       ],
       "question_type": "mcq",
       "dse_paper_types": [
@@ -490,8 +490,8 @@
       "topic": "B-a",
       "concepts": [
         "硬件",
-        "輸入裝置",
-        "RAM"
+        "輸出裝置",
+        "SSD"
       ],
       "question_type": "mcq",
       "dse_paper_types": [
@@ -717,7 +717,7 @@
       ],
       "subparts": [
         {"label": "a", "marks": 2, "focus": "IF（條件公式，如折扣／分類）"},
-        {"label": "b", "marks": 2, "focus": "COUNTIF / SUMIF / RANK / XLOOKUP 其一"}
+        {"label": "b", "marks": 2, "focus": "Excel 表格結構化參照（SUMIF Order[欄]）"}
       ],
       "question_type": "spreadsheet",
       "dse_paper_types": [
@@ -743,8 +743,8 @@
         "物聯網"
       ],
       "subparts": [
-        {"label": "a", "marks": 2, "focus": "電腦系統（硬件/軟件/OS）"},
-        {"label": "b", "marks": 3, "focus": "未來發展（AI、IoT、雲端等）"}
+        {"label": "a", "marks": 2, "focus": "兩款硬件規格的典型用途"},
+        {"label": "b", "marks": 3, "focus": "依情境選購並引用下表比較"}
       ],
       "question_type": "structured",
       "dse_paper_types": [

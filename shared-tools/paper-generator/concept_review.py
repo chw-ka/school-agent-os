@@ -273,6 +273,28 @@ def _check_concept_map_index(
                 )
 
 
+_MCQ_GENERIC_CONCEPTS = frozenset(
+    {
+        "硬件",
+        "軟件",
+        "算法",
+        "數據庫",
+        "資訊處理",
+        "Python",
+        "迴圈",
+        "多媒體",
+        "試算表",
+        "進制",
+        "選擇結構",
+        "迭代",
+        "偽代碼",
+        "流程圖",
+        "變量",
+        "陣列",
+    }
+)
+
+
 def _check_slot_overlap(blueprint: dict[str, Any], issues: list[ConceptReviewIssue]) -> None:
     """Warn when slots in same section share too many concepts."""
     by_section: dict[str, list[tuple[str, set[str]]]] = {}
@@ -294,6 +316,16 @@ def _check_slot_overlap(blueprint: dict[str, Any], issues: list[ConceptReviewIss
                         "concept_overlap",
                         f"{sec}: {id_a} and {id_b} share {len(shared)} concepts: {sorted(shared)}",
                     )
+                elif sec == "mcq" and len(shared) >= 2:
+                    narrow = shared - _MCQ_GENERIC_CONCEPTS
+                    if narrow:
+                        _add(
+                            issues,
+                            "warn",
+                            "mcq_concept_pair",
+                            f"mcq: {id_a} and {id_b} share narrow concepts {sorted(narrow)} "
+                            f"(risk of same-topic MCQ — run question_review)",
+                        )
         # MCQ: same concept in many slots
         if sec == "mcq":
             counts: Counter[str] = Counter()

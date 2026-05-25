@@ -24,8 +24,8 @@ def build_part_b() -> list[str]:
         313,
         scenario_override(
             "b-01",
-            "「煦風書社」以試算表記錄義賣收入。欄位：A=日期、B=商品、C=單價、D=數量、"
-            "E=會員（Y／N）、F=總價；$H$2:$I$10 為參考單價對照表。部分資料見下表。",
+            "「煦風書社」以試算表「Order」記錄義賣收入（Order 範圍已設定為 Excel 表格）；"
+            "PriceRef 為參考單價對照。部分資料見下表。",
         ),
     )
     put(
@@ -42,7 +42,7 @@ def build_part_b() -> list[str]:
         316,
         subpart(
             "b",
-            "在 G2 使用 COUNTIF 統計 D$2:D$50 中數量≥5 的個數，寫出公式。",
+            "在 G2 使用結構化參照：加總 Order 表格中商品為「明信片」的總價，寫出公式。",
             2,
         ),
     )
@@ -53,15 +53,16 @@ def build_part_b() -> list[str]:
         323,
         scenario_override(
             "b-02",
-            "「煦風書社」擬為社企添置桌上電腦，主要部件包括 CPU、RAM、儲存裝置及顯示器。"
-            "下表列出兩款候選規格。",
+            "「煦風書社」擬為社企添置桌上電腦，下表列出電腦 A 與電腦 B 的硬件規格"
+            "（請細看下表各列的數值與類型）。",
         ),
     )
     put(
         324,
         subpart(
             "a",
-            "就下表所列部件，各舉一例說明其功能（須與部件直接相關）。",
+            "根據下表，說明電腦 A 通常適合甚麼用途？電腦 B 通常適合甚麼用途？"
+            "（各舉一例，須寫明引用下表哪一項規格，例如 RAM 或主儲存）",
             2,
         ),
     )
@@ -70,7 +71,8 @@ def build_part_b() -> list[str]:
         326,
         subpart(
             "b",
-            "說明人工智能可如何協助社企管理日常運作，並舉出一項限制。",
+            "若須同時開啟病人管理系統及醫療影像軟件，應選購電腦 A 還是電腦 B？"
+            "須引用下表至少兩項規格（例如 RAM、主儲存、顯示卡）說明理由。",
             3,
         ),
     )
@@ -147,7 +149,15 @@ def build_part_b() -> list[str]:
     )
     put(378, subpart("a", "寫出 CREATE TABLE TRANSACTION（TID 為主鍵，Item 不可為空）。", 2, spaced_marks=True))
     put(379, ANSWER_BLANK)
-    put(380, subpart("b", "寫出一條 SELECT，列出 Qty ≥ 5 的 Item 及 Qty。", 2, spaced_marks=True))
+    put(
+        380,
+        subpart(
+            "b",
+            "寫出一條 SELECT 語句，查詢 Qty ≥ 5 的交易；並以表格列出查詢結果將顯示的 Item 及 Qty。",
+            2,
+            spaced_marks=True,
+        ),
+    )
     put(381, ANSWER_BLANK)
     put(382, "")
     put(383, "")

@@ -41,6 +41,10 @@ def _answer_b01(text: str) -> list[str]:
             lines.append("\t(b)\t=COUNTIF(E$2:E$50,\"Y\")")
         elif "COUNTIF" in body.upper():
             lines.append("\t(b)\t=COUNTIF(D$2:D$50,\">=5\")")
+        elif "結構化參照" in body or "Order[" in body or "Excel 表格" in body:
+            m = re.search(r"「([^」]+)」", body)
+            item = m.group(1) if m else "明信片"
+            lines.append(f"\t(b)\t=SUMIF(Order[商品],\"{item}\",Order[總價])")
         elif "SUMIF" in body.upper():
             m = re.search(r"「([^」]+)」", body)
             item = m.group(1) if m else "項目"
@@ -55,9 +59,8 @@ def _answer_b01(text: str) -> list[str]:
 def _answer_b02(_text: str) -> list[str]:
     return [
         "2.",
-        "\t(a)\tCPU：執行指令；RAM：暫存執行中資料；儲存：永久保存檔案；顯示器：輸出畫面",
-        "\t(b)\t雲端：節省本地硬件成本、易備份；限制：需網絡、私隱風險；"
-        "本地：速度快、離線可用；限制：硬件成本高、難擴充",
+        "\t(a)\tA：8 GB RAM、256 GB HDD，適合文書／簡單網頁；B：Core i7、獨立顯卡，適合醫療影像或較多程式",
+        "\t(b)\t選 B；16 GB RAM 可同時運行兩個系統；SSD 較快；獨立顯卡有助醫療影像",
     ]
 
 
@@ -91,7 +94,7 @@ def _answer_b05(_text: str) -> list[str]:
     return [
         "5.",
         "\t(a)\tCREATE TABLE TRANSACTION (TID CHAR(6) PRIMARY KEY, Item VARCHAR(40) NOT NULL, Qty INTEGER, ADate DATE);",
-        "\t(b)\tSELECT Item, Qty FROM TRANSACTION WHERE Qty >= 5;",
+        "\t(b)\tSELECT Item, Qty FROM TRANSACTION WHERE Qty >= 5; 結果例：明信片|8；徽章|6",
     ]
 
 

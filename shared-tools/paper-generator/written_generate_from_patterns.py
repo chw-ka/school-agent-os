@@ -66,6 +66,10 @@ _B01_FORMULA_B: tuple[tuple[str, str], ...] = (
         "在 G2 使用 SUMIF：加總 B 欄為「{item}」的 F 欄總價（範圍 F$2:F$50），寫出公式。",
     ),
     (
+        "EXCEL_TABLE_SUMIF",
+        "在 G2 使用結構化參照：加總 Order 表格中商品為「{item}」的總價，寫出公式。",
+    ),
+    (
         "XLOOKUP",
         "在 G2 使用 XLOOKUP 依 B2 的商品名稱從 $H$2:$I$10 查找參考單價，寫出公式。",
     ),
@@ -264,9 +268,10 @@ def generate_written_text(
     lines: list[str] = []
 
     if sid == "b-01":
+        sheet = ctx["sheet"]
         lines.append(
-            f"「{ctx['org']}書社」以試算表「{ctx['sheet']}」記錄義賣收入；"
-            "右側為商品參考單價對照。部分資料見下表。"
+            f"「{ctx['org']}書社」以試算表「{sheet}」記錄義賣收入（{sheet} 範圍已設定為 Excel 表格）；"
+            "PriceRef 為參考單價對照。部分資料見下表。"
         )
         mk_a = subparts[0]["marks"] if subparts else 2
         mk_b = subparts[1]["marks"] if len(subparts) > 1 else 2
@@ -285,22 +290,24 @@ def generate_written_text(
 
     elif sid == "b-02":
         lines.append(
-            f"「{ctx['org']}」為{ctx['venue']}添置桌上電腦，主要部件包括 CPU、RAM、"
-            "儲存裝置及顯示器。下表列出兩款候選規格。"
+            f"「{ctx['org']}」為{ctx['venue']}添置桌上電腦，下表列出電腦 A 與電腦 B 的硬件規格"
+            "（請細看下表各列的數值與類型）。"
         )
         mk_a = subparts[0]["marks"] if subparts else 2
         mk_b = subparts[1]["marks"] if len(subparts) > 1 else 3
         lines.append(
             _subpart_line(
                 "a",
-                "就下表所列部件，各舉一例說明其功能（須與部件直接相關）。",
+                "根據下表，說明電腦 A 通常適合甚麼用途？電腦 B 通常適合甚麼用途？"
+                "（各舉一例，須寫明引用下表哪一項規格，例如 RAM 或主儲存）",
                 mk_a,
             )
         )
         lines.append(
             _subpart_line(
                 "b",
-                rng.choice(_B02_FUTURE_ASKS).format(場景=f"{ctx['org']}{ctx['venue']}"),
+                "若須同時開啟病人管理系統及醫療影像軟件，應選購電腦 A 還是電腦 B？"
+                "須引用下表至少兩項規格（例如 RAM、主儲存、顯示卡）說明理由。",
                 mk_b,
             )
         )

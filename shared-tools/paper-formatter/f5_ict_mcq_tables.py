@@ -52,26 +52,14 @@ def _build_mcq06_sale_grid() -> list[list[str]]:
     )
 
 
-def _build_mcq13_donate_grid() -> list[list[str]]:
-    return build_excel_compact_grid(
-        [("A", "班別"), ("C", "已捐金額")],
-        [
-            ["5A", "1200"],
-            ["5B", "800"],
-            ["5C", "950"],
-        ],
-    )
-
-
-def _build_mcq13_target_grid() -> list[list[str]]:
-    return build_excel_compact_grid(
-        [("H", "班別"), ("I", "目標金額")],
-        [
-            ["5A", "1500"],
-            ["5B", "1000"],
-            ["5C", "1200"],
-        ],
-    )
+def _build_mcq13_device_grid() -> list[list[str]]:
+    """甲13：輸入／輸出裝置對照（配合 Core B 輸入裝置 MCQ）。"""
+    return [
+        ["裝置", "用途"],
+        ["加速度計", "偵測手機傾斜與動作"],
+        ["觸控屏幕", "觸控輸入"],
+        ["激光打印機", "列印文件"],
+    ]
 
 
 def _build_mcq15_member_grid() -> list[list[str]]:
@@ -96,10 +84,7 @@ def table_grids_for_mcq_slot(slot: int, item: dict[str, Any]) -> list[tuple[str,
     if slot == 6:
         return [("Sale", _build_mcq06_sale_grid())]
     if slot == 13:
-        return [
-            ("Donate", _build_mcq13_donate_grid()),
-            ("Target", _build_mcq13_target_grid()),
-        ]
+        return [("Device", _build_mcq13_device_grid())]
     if slot == 15:
         return [
             ("MEMBER", _build_mcq15_member_grid()),
