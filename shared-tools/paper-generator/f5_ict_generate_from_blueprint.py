@@ -93,7 +93,9 @@ def _format_mcq(stem: str, options: list[str], correct_idx: int, rng: random.Ran
     pairs = list(enumerate(options))
     rng.shuffle(pairs)
     letters = "ABCD"
-    lines = [stem.rstrip(), ""]
+    # Important for DOCX MCQ table render:
+    # keep exactly one paragraph per line; avoid extra blank-line paragraphs between stem and options.
+    lines = [stem.rstrip()]
     correct_letter = "A"
     for i, (orig_i, text) in enumerate(pairs):
         letter = letters[i]
@@ -105,7 +107,7 @@ def _format_mcq(stem: str, options: list[str], correct_idx: int, rng: random.Ran
 
 def _format_mcq_fixed(stem: str, options: list[str], correct_idx: int) -> tuple[str, str]:
     """Combo MCQ: do not shuffle options (DSE combination order)."""
-    lines = [stem.rstrip(), ""]
+    lines = [stem.rstrip()]
     for i, text in enumerate(options):
         lines.append(f"\t{'ABCD'[i]}.\t{text}")
     return "\n".join(lines), "ABCD"[correct_idx]

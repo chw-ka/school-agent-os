@@ -1,0 +1,695 @@
+{
+  "exam_info": {
+    "organization": "香港電腦教育學會",
+    "subject": "資訊及通訊科技科模擬考試 2026",
+    "paper": "試卷二",
+    "duration": "一小時三十分完卷(上午十一時十五分至下午十二時四十五分)",
+    "language": "中文",
+    "instructions": [
+      "(一) 本試卷共有甲、乙和丙三部。考生須選答任何兩部中的全部試題。",
+      "(二) 答案須寫在所提供的答題簿內,每題(非指分題)必須另起新頁作答。",
+      "(三) 本試題答題簿末頁附有 SQL 指令及及實體關係圖所採用的符號以供參考。"
+    ],
+    "copyright": "◎ 香港電腦教育學會 保留版權 THE HONG KONG ASSOCIATION FOR COMPUTER EDUCATION All Rights Reserved 2026"
+  },
+  "sections": [
+    {
+      "section_id": "PART_A",
+      "section_title": "甲部 數據庫",
+      "questions": [
+        {
+          "question_number": "1",
+          "context": "學校使用資料庫系統(固定資產系統)管理資產。\n• 設備將由一名教職員進行註銷處理。但一名教職員未必曾註銷任何設備。\n• 該教職員必須屬於一個部門,而一個部門可能有多位教職員。\n以下顯示「固定資產系統-註銷項目」的輸入介面。",
+          "images": [
+            {
+              "image_id": "img_p2_1",
+              "page": 2,
+              "description": "實體關係圖(ERD)的空白草稿框，頂部中央為「職員」框，左下角為「設備」框，右下角為「部門」框。"
+            }
+          ],
+          "interface_table": {
+            "title": "固定資產系統 - 註銷項目",
+            "rows": [
+              {"label": "註銷教職員", "value": "請選擇教職員"},
+              {"label": "部門", "value": "資訊科技部"},
+              {"label": "項目編號", "value": "1625"},
+              {"label": "描述", "value": "10.2吋iPad 64GB 銀色"},
+              {"label": "購買日期", "value": "2022-08-04"},
+              {"label": "註銷原因", "value": "請選擇以下原因"},
+              {"label": "註銷申請日期", "value": "請選擇日期"}
+            ],
+            "buttons": ["申請", "取消"]
+          },
+          "sub_questions": [
+            {
+              "sub_id": "a",
+              "text": "繪製學校資產管理系統數據庫的實體關係圖,圖內不用畫上屬性。 設備 職員 部門",
+              "marks": 4
+            },
+            {
+              "sub_id": "b",
+              "text": "描述資料庫管理系統如何處理在執行多個操作時如何處理大量錯誤?",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "question_number": "2",
+          "context": "數據庫表 T1 和T2 各有四筆記錄,它們有相同的結構,如下所示:",
+          "tables": [
+            {
+              "table_name": "T1",
+              "headers": ["CID", "AID", "AMT"],
+              "data": [
+                ["C01", "F01", "1000"],
+                ["C02", "S01", "0"],
+                ["C02", "S02", "6000"],
+                ["C03", "F01", "0"]
+              ]
+            },
+            {
+              "table_name": "T2",
+              "headers": ["CID", "AID", "AMT"],
+              "data": [
+                ["C01", "F01", "1000"],
+                ["C02", "S01", "500"],
+                ["C02", "S02", "0"],
+                ["C03", "S01", "0"]
+              ]
+            }
+          ],
+          "sub_questions": [
+            {
+              "sub_id": "a",
+              "text": "執行以下SQL語句後會列出多少筆記錄?\nSELECT CID, AID FROM T1\nUNION ALL\nSELECT CID, AID FROM T2",
+              "marks": 1
+            },
+            {
+              "sub_id": "b_i",
+              "text": "完成以下SQL語句,列出在T1中所有CID 和AID,而不在T2中存在。\nSELECT T1.CID, T1.AID FROM T1\n(bl)\nJOIN T2 ON T1.CID T2.CID AND T1.AID = T2.AID\nWHERE T2.CID\n(b2)",
+              "marks": 2
+            },
+            {
+              "sub_id": "b_ii",
+              "text": "在(i)中,SQL的輸出是甚麼?",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "question_number": "3",
+          "context": "李小姐使用資料庫表 STUDENT 和MARK 分別儲存學生資訊及其科目成績。",
+          "tables": [
+            {
+              "table_name": "STUDENT",
+              "headers": ["欄名", "描述", "例子"],
+              "data": [
+                ["SID", "學生識別碼", "S2324001"],
+                ["CLASS", "學生班別", "2A"],
+                ["FORM", "學生級別", "S2"]
+              ]
+            },
+            {
+              "table_name": "MARK",
+              "headers": ["欄名", "描述", "例子"],
+              "data": [
+                ["SID", "學生識別碼", "S2324001"],
+                ["CID", "課程識別碼", "MATH101"],
+                ["SCORE", "課程分數", "89"]
+              ]
+            }
+          ],
+          "sub_questions": [
+            {
+              "sub_id": "a",
+              "text": "在MARK表中的欄位 SCORE,應該使用整數為數據類別而不是文字。請簡要解釋。",
+              "marks": 1
+            },
+            {
+              "sub_id": "b",
+              "text": "以下 SQL語句用於完成一項任務。",
+              "code_block": {
+                "S1": "CREATE VIEW TEMP AS\nSELECT CLASS, AVG (SCORE) AS AG\nFROM STUDENT S, MARK M\nWHERE S.SID M.SID AND M.CID = \"MATH101\"\nAND S.FORM = 'S2'\nGROUP BY CLASS",
+                "S2": "SELECT CLASS, AG FROM TEMP\nWHERE AG (SELECT MAX(AG) FROM TEMP)"
+              },
+              "sub_questions": [
+                {
+                  "sub_id": "b_i",
+                  "text": "說明S2的目的。",
+                  "marks": 2
+                },
+                {
+                  "sub_id": "b_ii",
+                  "text": "指出上述SQL語句中使用檢視的一個優點。",
+                  "marks": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "question_number": "4",
+          "context": "某航空公司使用資料庫表 FLIGHT 來儲存航班資訊。FLIGHT 表的結構及資訊如下：",
+          "tables": [
+            {
+              "table_name": "FLIGHT 結構",
+              "headers": ["欄名", "描述", "例子"],
+              "data": [
+                ["FID", "航班識別碼", "AA101"],
+                ["FROM", "航班起始地代碼", "HKG"],
+                ["TO", "航班目的地代碼", "NRT"],
+                ["FTIME", "航班時間", "20:00"]
+              ]
+            },
+            {
+              "table_name": "FLIGHT 的樣本記錄",
+              "headers": ["FID", "FROM", "TO", "FTIME"],
+              "data": [
+                ["AA101", "HKG", "NRT", "09:00"],
+                ["AA102", "HKG", "ICN", "20:00"],
+                ["AA201", "NRT", "HKG", "07:00"],
+                ["AA202", "ICN", "HKG", "15:45"]
+              ]
+            },
+            {
+              "table_name": "部分地區識別代碼",
+              "headers": ["代碼", "城市名稱"],
+              "data": [
+                ["HKG:", "香港"],
+                ["NRT:", "東京(成田機場)"],
+                ["ICN:", "首爾(仁川機場)"]
+              ]
+            },
+            {
+              "table_name": "航班執勤安排表範例",
+              "info": {
+                "roster_id": "R20240722000017",
+                "date": "22/07/2024",
+                "pilot_id": "S000017",
+                "pilot_name": "陳大文",
+                "region": "北亞洲"
+              },
+              "headers": ["項目左側", "內容左側", "項目右側", "內容右側"],
+              "data": [
+                ["航班編號 由HKG至", ": AA101 NRT", "航班編號 由NRT至", ": AA201 HKG"],
+                ["航班時間", ": 09:00", "航班時間", ":20:00"]
+              ]
+            }
+          ],
+          "sub_questions": [
+            {
+              "sub_id": "a",
+              "text": "根據 FLIGHT 和上述執勤的資訊,完成下方符合第三範式的資料庫模式。識別對應的主關鍵碼和外鍵碼。如不適用,請填寫 'N/A'。",
+              "schema_given": [
+                "LOC (LID, LOCATION) | 主關鍵碼: LID | 外鍵碼: N/A",
+                "PILOT (PID, PNAME) | 主關鍵碼: PID | 外鍵碼: N/A",
+                "FLIGHT ((a1), (a2), (a3), (a4)) | 主關鍵碼: FID | 外鍵碼: TO 參照 LOC的 (a5), FROM 參照 LOC的 (a6)",
+                "ROSTER ((a7), (a8), (a9), (a10), (a11)) | 主關鍵碼: (a12) | 外鍵碼: (a13) 參照 FLIGHT的 (a14), (a15) 參照 PILOT 的 (a16)"
+              ],
+              "marks": 5
+            }
+          ]
+        },
+        {
+          "question_number": "5",
+          "context": "公共圖書館使用電腦系統管理圖書借閱記錄。系統使用三個資料庫表:MEMBER、LOAN 和 BOOK,分別儲存會員、圖書和借閱的資料。",
+          "tables": [
+            {
+              "table_name": "MEMBER",
+              "headers": ["欄名", "數字類別", "闊度", "描述", "例子"],
+              "data": [
+                ["MID", "字符", "7", "會員識別碼", "L30245"],
+                ["NAME", "字符", "30", "會員姓名", "陳大文"],
+                ["TYPE", "字符", "1", "會員類別:成人(A)或小童(J)", "A"],
+                ["JOIN DATE", "日期", "", "加入會員日期", "17/5/2023"]
+              ]
+            },
+            {
+              "table_name": "LOAN",
+              "headers": ["欄名", "數字類別", "闊度", "描述", "例子"],
+              "data": [
+                ["MID", "字符", "7", "會員識別碼", "L30245"],
+                ["ISBN", "字符", "13", "國際標準書號", "9783161484100"],
+                ["LOAN DATE", "日期", "", "圖書借出日期", "20/9/2025"],
+                ["STATUS", "字符", "1", "已歸還(R)或已借出(L)", "R"]
+              ]
+            },
+            {
+              "table_name": "BOOK",
+              "headers": ["欄名", "數字類別", "闊度", "描述", "例子"],
+              "data": [
+                ["ISBN", "字符", "13", "國際標準書號", "9783161484100"],
+                ["TITLE", "字符", "50", "圖書名稱", "了不起的蓋茲比"],
+                ["GENRE", "字符", "15", "書籍類型 (例如:小說、科普、歷史)", "小說"]
+              ]
+            }
+          ],
+          "sub_questions": [
+            {
+              "sub_id": "a",
+              "text": "列出“小童”會員的姓名和加入會員的年份。",
+              "marks": 2
+            },
+            {
+              "sub_id": "b",
+              "text": "列出所有已借出的“科學”類圖書的名稱,並依圖書名稱作遞增排列。",
+              "marks": 2
+            },
+            {
+              "sub_id": "c",
+              "text": "使用子查詢列出會員識別碼為“L10888”的會員姓名及圖書借閱總數,不包括“小說”類圖書。",
+              "marks": 3
+            },
+            {
+              "sub_id": "d",
+              "text": "為什麼以下SQL語句會導致完整性問題？\nUPDATE LOAN SET LOAN DATE '25/13/2025'\nWHERE MID = \"L30245\" AND ISBN = \"9783161484100\"",
+              "marks": 1
+            },
+            {
+              "sub_id": "e_i",
+              "text": "簡略描述非規範化 MEMBER、LOAN和BOOK的一個方法。",
+              "marks": 1
+            },
+            {
+              "sub_id": "e_ii",
+              "text": "舉出執行(i)內的方法的一個好處和一個壞處。",
+              "marks": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "PART_B",
+      "section_title": "乙部 網絡應用程式開發",
+      "questions": [
+        {
+          "question_number": "6",
+          "context": "博物館門票預訂系統正在開發中。該系統允許客戶在網頁上輸入以下信息以搜索展覽門票：\n• 參觀日期(客戶可選擇未來 90天內的任何日期)\n• 展覽類型(客戶應該能夠使用多種方式找到不同主題的門票)\n• 門票類別(成人、學生、老年人)\n• 門票數量(個人購買每筆交易最多限購8張門票,團體購買必須至少20張門票)",
+          "sub_questions": [
+            {
+              "sub_id": "a",
+              "text": "作為技術人員,為系統設計合適的網頁佈局。",
+              "marks": 3
+            },
+            {
+              "sub_id": "b",
+              "text": "比較託管您自己的Web伺服器與使用商業 Web 託管服務,提供使用商業託管服務的一個優點和一個缺點。",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "question_number": "7",
+          "context": "學校伺服器的資料夾結構如圖所示。授與使用者的所有權限都會由該使用者的所有子資料夾和檔案繼承。",
+          "images": [
+            {
+              "image_id": "img_p9_1",
+              "page": 9,
+              "description": "樹狀結構圖。頂層為『學校』。其下分支有『行政』和『公開』。『行政』資料夾下分支包含檔案『教職員名單.xlsx』及子資料夾『學生』。『學生』資料夾下有『成績表.pdf』及『獎懲記錄.pdf』。『公開』資料夾下包含檔案『校曆.docx』。"
+            }
+          ],
+          "sub_questions": [
+            {
+              "sub_id": "a",
+              "text": "所有教職員工都擁有行政資料夾的「讀取和寫入」權限。說明此設定可能導致的一個問題。",
+              "marks": 1
+            },
+            {
+              "sub_id": "b_i",
+              "text": "如果學生資料夾權限變更為「唯讀」,而「行政」資料夾權限保持不變。這將對教職員工對成績表.pdf的權限產生什麼影響？",
+              "marks": 1
+            },
+            {
+              "sub_id": "b_ii",
+              "text": "如何限制教師,讓他們只能檢視自己班級的學生資料夾中的檔案？",
+              "marks": 1
+            },
+            {
+              "sub_id": "c_i",
+              "text": "學校需要共用單一資料夾。考慮方法一（內聯網），說明其一個優點。",
+              "marks": 1
+            },
+            {
+              "sub_id": "c_ii",
+              "text": "考慮方法二（雲端儲存服務），說明其一個優點。",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "question_number": "8",
+          "context": "學校的網絡使用五種不同的設備-A1、A2、B1、B2和B3-每種設備都有一個獨特的功能：\n(1)驗證使用者登入憑證\n(2)快取 Web 內容以加速存取\n(3)連接校園有線和無線網絡\n(4)防止外部未經授權存取內部網路\n(5)自動將IP 位址指派給教室電腦",
+          "images": [
+            {
+              "image_id": "img_p10_1",
+              "page": 10,
+              "description": "網絡拓撲圖。從頂層的 'WAN' 向下連接到 '數據機'，再連接到 'B2'，接著連接到核心節點 'B1'。核心節點 'B1' 分流到左側的 '交換器'（其下連接有終端 'A2' 和 'A1'）以及右側的 '交換器'（其下連接有終端 'B3'）。"
+            }
+          ],
+          "tables": [
+            {
+              "table_name": "問題與配對表",
+              "headers": ["大題", "小提內容", "分數"],
+              "data": [
+                ["(a)", "(i) Al是DHCP伺服器。它對應於哪個編號函數?", "(1分)"],
+                ["", "(ii) A2是網域控制器。它對應於哪個編號函數?", "(1分)"],
+                ["(b)", "寫下每個設備的名稱並將其與相應的功能(從1到5)匹配", ""],
+                ["", "(i) B1", "(1分)"],
+                ["", "(ii) B2", "(1分)"],
+                ["", "(iii) B3", "(1分)"]
+              ]
+            }
+          ]
+        },
+        {
+          "question_number": "9",
+          "context": "史蒂夫開發了一個尋路亭系統，提供購物中心的交互式地圖。它使遊客可以輕鬆瀏覽各種商店、美食廣場、衛生間和其他設施。用戶還可以搜索特定的商店。伺服器中部分資料夾和檔案的結構如下圖所示：",
+          "images": [
+            {
+              "image_id": "img_p11_1",
+              "page": 11,
+              "description": "目錄檔案結構圖。根目錄為 'Mall'。旗下包含三個子項目：資料夾 'map'（內含圖片 map1.jpg, map2.jpg）、資料夾 'style'（內含檔案 style.css）、以及根目錄下的檔案 'index.html'。"
+            }
+          ],
+          "code_files": [
+            {
+              "filename": "style.css",
+              "content": [
+                "/* 行號 10-33 */",
+                "body { font-family: Arial, sans-serif; background-color: #f4f4f4; }",
+                ".container { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; }",
+                "#map { width: 100%; height: 400px; background: url('Mall/map/map1.jpg') no-repeat; background-size: cover; position: relative; }",
+                ".search-bar { margin-bottom: 20px; }",
+                "h5:hover{ font-size: 150%; }"
+              ]
+            },
+            {
+              "filename": "index.html",
+              "content": [
+                "<head>",
+                " <link rel=\"stylesheet\" type=\"text/css\" href=\"style/style.css\">",
+                "</head>",
+                "<body>",
+                " <h1> ACE MALL（艾斯購物中心） </h1>",
+                " <div class=\"container\">",
+                "  <div class=\"search-bar\">",
+                "   <input type=\"text\" onkeypress=\"func()\">",
+                "  </div>",
+                "  <div id=\"map\">",
+                "   <div style=\"padding:200px 15%;\">",
+                "    <h5>您在這裡</h5>",
+                "   </div>",
+                "  </div>",
+                " </body>"
+              ]
+            }
+          ],
+          "tables": [
+            {
+              "table_name": "SHOP 範例記錄",
+              "headers": ["名字", "樓層", "類型", "位置"],
+              "data": [
+                ["更多漢堡", "2", "餐廳", "L2-04"],
+                ["好人人", "2", "餐廳", "L2-08"],
+                ["樂高商店", "3", "禮品", "L3-31"],
+                ["壽司圍棋", "-1", "餐廳", "UG-03"]
+              ]
+            }
+          ],
+          "code_files_continued": [
+            {
+              "filename": "shopFinder.php",
+              "content": [
+                "<?php",
+                "/* 行號 101-200 */",
+                "$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);",
+                "if(!$conn){ die(\"連線失敗！\"); }",
+                "$shop_type = $_GET['type']",
+                "$sql = \"SELECT * FROM SHOP WHERE TYPE = '$shop_type' \";",
+                "$result = mysqli_query($conn, $sql);",
+                "echo \"<table>\";",
+                "while($row = mysqli_fetch_assoc($result)){",
+                "  echo \"<tr>\";",
+                "  echo \"<th> {$row['名字']} </th>\";",
+                "  echo \"<td> {$row['樓層']} </td>\";",
+                "  echo \"<td> {$row['類型']} </td>\";",
+                "  echo \"<td> {$row['位置']} </td>\";",
+                "  echo \"</tr>\";",
+                "}",
+                "echo \"</table>\";",
+                "/* Part (d) */",
+                "mysqli_free_result($result);",
+                "?>"
+              ]
+            }
+          ],
+          "sub_questions": [
+            {
+              "sub_id": "a_i",
+              "text": "網頁的背景顏色是什麼？",
+              "marks": 1
+            },
+            {
+              "sub_id": "a_ii",
+              "text": "如果系統的滑鼠遊標指向 h5，會發生什麼？",
+              "marks": 1
+            },
+            {
+              "sub_id": "a_iii",
+              "text": "onkeypress 有什麼用？",
+              "marks": 1
+            },
+            {
+              "sub_id": "b",
+              "text": "史蒂夫發現無法載入 map1.jpg 的圖片。問題出在哪裡？在 style.css 中修改一行代碼。",
+              "marks": 2
+            },
+            {
+              "sub_id": "c_i",
+              "text": "簡要描述如何在尋路亭的瀏覽器上建立 Cookie currentFloor。",
+              "marks": 1
+            },
+            {
+              "sub_id": "c_ii",
+              "text": "填寫下面缺少的代碼，該代碼將取代第 116 行，因此如果商店位於同一樓層，系統將顯示不同的訊息：\nIf ($row[\"樓層\"] == (c ii) ){\n  echo \"<td> 這層樓！ </td>\";\n} else {\n  echo \"<td> {$row['樓層']} </td>\n}\"",
+              "marks": 1
+            },
+            {
+              "sub_id": "d",
+              "text": "完成下列程式碼，以實現 shop_type 的固定值檢查。\n$accepted = [\"餐廳\",\"禮品\",\"時裝\",\"服務\"];\nif( (d) ) {\n  alert(\"商店類型無效。\");\n}",
+              "marks": 2
+            },
+            {
+              "sub_id": "e",
+              "text": "完成下面缺少的代碼，該代碼將添加到第 123 行中，以便系統將顯示 找到的商店數量，例如“找到 3 家餐廳”。\n$count_sql= \" (e) \";\n$count_result = mysqli_query($conn, $count_sql);\n$row = mysqli_fetch_assoc($count_result);\necho \"找到 \".$row['total'].\" 家\". $shop_type;",
+              "marks": 2
+            },
+            {
+              "sub_id": "f",
+              "text": "當用戶選擇店鋪時，系統會顯示一條消息，幫助用戶前往所需的店鋪。完成 JavaScript 函數 getGuideMessage 以達成此目的。(規格要求區分：在同一樓層、以上樓層、以下樓層並顯示差值)",
+              "marks": 3
+            },
+            {
+              "sub_id": "g",
+              "text": "提出包含第 124 行 (mysqli_free_result) 的原因。",
+              "marks": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "PART_C",
+      "section_title": "丙部 算法與程式編寫",
+      "questions": [
+        {
+          "question_number": "10",
+          "context": "以下演算法用來排序一個索引由 0 到 N - 1 的整數陣列 A。\n行號 內容\n1 設 i 由 0 至 N – 2 執行\n2 設 j 由 0 至 N – 2 執行\n3 如果 A[j] > A[j + 1] 則\n4 temp ← A[j]\n5 A[j] ← A[j + 1]\n6 A[j + 1] ← temp\n假設 N = 5，且 A 的初始內容如下：",
+          "tables": [
+            {
+              "table_name": "陣列 A 初始值",
+              "headers": ["k", "0", "1", "2", "3", "4"],
+              "data": [
+                ["A[k]", "13", "7", "44", "16", "9"]
+              ]
+            }
+          ],
+          "sub_questions": [
+            {
+              "sub_id": "a",
+              "text": "在第一次執行第 6 行後，j 和 A[j] 的值是多少？",
+              "marks": 1
+            },
+            {
+              "sub_id": "b",
+              "text": "在第四次執行第 6 行後，j 和 A[j] 的值是多少？",
+              "marks": 1
+            },
+            {
+              "sub_id": "c",
+              "text": "寫出此排序算法的名稱。",
+              "marks": 1
+            },
+            {
+              "sub_id": "d",
+              "text": "修改第 2 行以減少排序所需的迭代次數。",
+              "marks": 1
+            },
+            {
+              "sub_id": "e",
+              "text": "簡要描述將陣列排序為降冪所需的變更。",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "question_number": "11",
+          "context": "研究以下以整數 N 作為輸入並使用隊列資料結構的演算法。\n以下為隊列 Q 所使用的子程式：\n• init(Q) - 建立一個空的隊列 Q。\n• enqueue(Q, X) - 將整數 X 插入隊列 Q 的尾端。\n• dequeue(Q) - 移除並傳回隊列 Q 的前端元素。\n\n代碼內容：\n1 輸入 N\n2 init(Q)\n3 temp ← N\n4 當 temp > 0 執行\n5   q ← (temp / 10)的整數部分\n6   r ← temp – q * 10\n7   enqueue(Q, r)\n8   temp ← q\n9 A ← 0\n10 當 Q 不是空時 執行\n11   digit ← dequeue(Q)\n12   A ← A * 10 + digit\n13 輸出 A",
+          "sub_questions": [
+            {
+              "sub_id": "a_i",
+              "text": "利用以上的整數輸入 N = 489 進行空運行算法，並寫出相應的輸出值。",
+              "marks": 1
+            },
+            {
+              "sub_id": "a_ii",
+              "text": "利用以上的整數輸入 N = 100 進行空運行算法，並寫出相應的輸出值。",
+              "marks": 1
+            },
+            {
+              "sub_id": "b",
+              "text": "指出當輸入為正數時，該算法的目的。",
+              "marks": 1
+            },
+            {
+              "sub_id": "c",
+              "text": "修改第 4 行的程式碼，令此演算法能同時正確處理正數和負數輸入。\n當 (c) 執行",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "question_number": "12",
+          "context": "小添正在使用雷射切割機。他可以輸入一系列指令來控制刻印器，其位置以網格中的 (x, y) 表示。刻印器的初始位置(0,0) 已在圖中顯示。",
+          "images": [
+            {
+              "image_id": "img_p18_1",
+              "page": 18,
+              "description": "刻印器坐標系圖。橫軸為 x (0, 1, 2, 3, 4 ...)，縱軸為 y (0, 1, 2, 3, 4 ...)。"
+            }
+          ],
+          "sub_routines": [
+            {"name": "GU(d)", "description": "將刻印器向上移動 d 個單位。"},
+            {"name": "GD(d)", "description": "將刻印器向下移動 d 個單位。"},
+            {"name": "GL(d)", "description": "將刻印器向左移動 d 個單位。"},
+            {"name": "GR(d)", "description": "將刻印器向右移動 d 個單位。"}
+          ],
+          "example": "例如，在初始位置執行 GD(2)、GR(3)、GU(1) 後，刻印器的最終位置是 (1, 3)。",
+          "sub_questions": [
+            {
+              "sub_id": "a",
+              "text": "在初始位置執行 GR(1)、GD(2)、GL(1)、GD(1)、GR(2)後，刻印器的最終位置是什麼？",
+              "marks": 1
+            },
+            {
+              "sub_id": "b",
+              "text": "小添想建立一個子程式 GeneratePreview(W, L)，用來將切割一個 W × L 的矩形之預覽儲存到二維陣列 Grid 中。預覽可以表示為一個 (W + 2) × (L + 2) 的表格。所有邊框上的 格子以符號 ‘#’ 表示切割。其餘的格子以符號 ‘*’ 表示刻印。Grid[x, y] 儲存位置在 (x, y) 的格子的符號。\n例如，下表展示了切割一個 3 × 4 矩形的預覽。",
+              "tables": [
+                {
+                  "table_name": "Grid (3 x 4 矩形預覽)",
+                  "headers": ["y\\x", "0", "1", "2", "3", "4", "5"],
+                  "data": [
+                    ["0", "#", "#", "#", "#", "#", "#"],
+                    ["1", "#", "*", "*", "*", "*", "#"],
+                    ["2", "#", "*", "*", "*", "*", "#"],
+                    ["3", "#", "*", "*", "*", "*", "#"],
+                    ["4", "#", "#", "#", "#", "#", "#"]
+                  ]
+                }
+              ],
+              "pseudocode_to_complete": "GeneratePreview(W, L)\n設 i 由 0 至 (b1) 執行\n設 j 由 0 至 (b2) 執行\n(b3)",
+              "marks": 4
+            }
+          ]
+        },
+        {
+          "question_number": "13",
+          "context": "一間名為「HKACE 物流」的公司使用一隊無人機在城市中派送包裹。城市以一個 N × N 網格來表示不同地點。\n該公司在其規劃程式中使用以下全域變量：\n• Deliveries: 一個 N × N 的整數陣列。Deliveries[i, j] 儲存位於第 i 列、第 j 行之地點的待處理派送數量。\n• N: 一個整數，用來儲存網格的大小（例如若 N = 4，則網格為 4 × 4）。",
+          "tables": [
+            {
+              "table_name": "Deliveries 範例內容 (N = 4)",
+              "headers": ["i\\j", "0", "1", "2", "3"],
+              "data": [
+                ["0", "10", "5", "8", "12"],
+                ["1", "7", "15", "3", "6"],
+                ["2", "2", "18", "20", "4"],
+                ["3", "9", "1", "31", "16"]
+              ]
+            }
+          ],
+          "sub_questions": [
+            {
+              "sub_id": "a_i",
+              "text": "參考 Deliveries 的內容，在區域 (r1, c1) = (1, 1) 到 (r2, c2) = (2, 3) 之間，最繁忙的地方（即派送量最高的地點）派送數量是多少？",
+              "marks": 1
+            },
+            {
+              "sub_id": "a_ii",
+              "text": "子程式 FindBusiest(r1, c1, r2, c2) 用來找出從 (r1, c1) 到 (r2, c2) 區域內的最繁忙地方的送數量。完成偽代碼。\nFindBusiest(r1, c1, r2, c2)\nm ← 0\n(aii)\n傳回 m",
+              "marks": 3
+            },
+            {
+              "sub_id": "a_iii",
+              "text": "假設 Deliveries 可能儲存負數（用來表示包裹的淨取件量），解釋為何此演算法 FindBusiest()可能無法運作。",
+              "marks": 1
+            },
+            {
+              "sub_id": "b_i",
+              "text": "為了快速找出任意矩形區域中的派送總數，公司建立了一個名為 SumGrid 的二維陣列。SumGrid[i, j] 儲存從 (0, 0) 到 (i, j) 矩形範圍內的派送總數。\n公式：SumGrid[i, j] = Deliveries[i, j] + SumGrid[i - 1, j] + SumGrid[i, j - 1] - SumGrid[i - 1, j - 1]\n使用示例中的 Deliveries 網格和上述公式，計算 SumGrid[1, 1] 的值。",
+              "marks": 1
+            },
+            {
+              "sub_id": "b_ii",
+              "text": "高流量區域的定義是一個從 (0, 0) 開始的最小的 K × K 正方形，且其派送總數達到 T 或以上。完成 FindAreaSize(T) 的偽代碼。該子程式應傳回 K，若找不到符合條件的區域則傳回 -1。\nFindAreaSize(T)\nR ← -1\n設 K 由 N 下至 1 執行\n如果 (b1) 則\n  (b2)\n傳回 R",
+              "marks": 2
+            },
+            {
+              "sub_id": "b_iii",
+              "text": "下列公式使用 SumGrid 找出從 (r1, c1) 到 (r2, c2) 的矩形區域中的派送總數。完成下列公式。\nTotal = SumGrid[r2, c2] - SumGrid[ (b3) , c2] - SumGrid[r2, (b4) ] + SumGrid[ (b5) ]",
+              "marks": 3
+            },
+            {
+              "sub_id": "c_i",
+              "text": "管理人員希望找出最繁忙的 k 個地點。這些地點被稱為熱地點。使用一個二維陣列 isHot 來追蹤這些區域。若區域 (i, j) 是最繁忙的 k 個地點之一，則 isHot[i, j] 會被設為 TRUE(T)；否則設為 FALSE(F)。\n臨界值是第 k 個最繁忙區域的待處理派送數量。在示例的 Deliveries 網格中，當 k = 5 時，臨界值為 15。當要找出最繁忙的 4 個區域時（即 k = 4），其臨界值是多少？",
+              "marks": 1
+            },
+            {
+              "sub_id": "c_ii",
+              "text": "公司希望計算彼此相鄰的熱點區域之間的連接數量。使用示例的 Deliveries 網格，當 k = 5 時，連接數量應為 4。完成 CountConnections() 的偽代碼。只需要檢查右方與下方的相鄰格子。",
+              "tables": [
+                {
+                  "table_name": "isHot 範例內容 (k = 5)",
+                  "headers": ["i\\j", "0", "1", "2", "3"],
+                  "data": [
+                    ["0", "F", "F", "F", "F"],
+                    ["1", "F", "T", "F", "F"],
+                    ["2", "F", "T", "T", "F"],
+                    ["3", "F", "F", "T", "T"]
+                  ]
+                }
+              ],
+              "pseudocode_to_complete": "CountConnections()\nc ← 0\n設 i 由 0 至 N - 1 執行\n設 j 由 0 至 N - 1 執行\n如果 isHot[i, j] 則\n  如果 i < N – 2 和 (c1) 則\n    c ← c + 1\n  如果 j < N – 2 和 (c2) 則\n    c ← c + 1\n傳回 c",
+              "marks": 2
+            },
+            {
+              "sub_id": "c_iii",
+              "text": "解釋為何 CountConnections()只檢查右方與下方的相鄰格子就足以讓每個連接只被計算一次。",
+              "marks": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

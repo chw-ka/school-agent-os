@@ -15,6 +15,7 @@ _META_MARKERS = (
 )
 
 _SUBPART_RE = re.compile(r"\(([a-z]+|[ivx]+)\)", re.IGNORECASE)
+_BLANK_RE = re.compile(r"_{3,}|\([a-z][0-9]+\)", re.IGNORECASE)
 
 _TOPIC_SQL = re.compile(
     r"SELECT\s|INSERT\s|UPDATE\s|DELETE\s|CREATE\s+TABLE|GROUP\s+BY|主關鍵|外鍵|ERD",
@@ -183,6 +184,37 @@ def check_text_coherence(item_id: str, text: str, *, section: str = "") -> list[
         )
         if letters < 4:
             issues.append(CoherenceIssue(item_id, "mcq_options", f"MCQ 選項不足（只得 {letters}/4）"))
+
+    # Section C long-question depth gate (heuristic).
+    if section == "section_c" and item_id.startswith("c-"):
+        # Required signals: multiple subparts, data artifact, blanks/pseudocode completion.
+        subparts = [m.group(1).lower() for m in _SUBPART_RE.finditer(t)]
+        subpart_count = sum(1 for s in subparts if len(s) == 1 and s.isalpha())
+        has_blanks = bool(_BLANK_RE.search(t))
+        has_data_artifact = any(
+            tok in t
+            for tok in (
+                "表",
+                "陣列",
+                "Next[",
+                "Head",
+                "Score",
+                "Grid[",
+                "Q[",
+                "ID = [",
+                "Name = [",
+            )
+        ) or ("[" in t and "]" in t)
+        score = sum([subpart_count >= 2, has_blanks, has_data_artifact])
+        if score < 2:
+            issues.append(
+                CoherenceIssue(
+                    item_id,
+                    "long_depth",
+                    "丙部題目深度不足：建議加入更完整情境、資料表/陣列、以及偽代碼填空／追蹤等元素。",
+                    snippet=t[:140],
+                )
+            )
 
     return issues
 
