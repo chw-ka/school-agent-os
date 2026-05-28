@@ -1,0 +1,17 @@
+[
+  {"item": "魚蛋", "price": 10, "qty": 6, "class": "3A"},
+  {"item": "汽水", "price": 12, "qty": 5, "class": "3A"},
+  {"item": "三文治", "price": 18, "qty": 3, "class": "3A"},
+
+  {"item": "魚蛋", "price": 10, "qty": 4, "class": "3B"},
+  {"item": "汽水", "price": 12, "qty": 7, "class": "3B"},
+  {"item": "薯片", "price": 8, "qty": 8, "class": "3B"},
+
+  {"item": "三文治", "price": 18, "qty": 2, "class": "3C"},
+  {"item": "汽水", "price": 12, "qty": 3, "class": "3C"},
+  {"item": "薯片", "price": 8, "qty": 6, "class": "3C"},
+
+  {"item": "朱古力", "price": 9, "qty": 5, "class": "3D"},
+  {"item": "汽水", "price": 12, "qty": 2, "class": "3D"}
+]
+

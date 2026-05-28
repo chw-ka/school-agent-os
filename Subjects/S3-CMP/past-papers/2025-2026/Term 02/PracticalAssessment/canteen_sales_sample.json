@@ -1,0 +1,8 @@
+[
+  {"item": "魚蛋", "price": 10, "qty": 3, "class": "3A"},
+  {"item": "汽水", "price": 12, "qty": 2, "class": "3B"},
+  {"item": "三文治", "price": 18, "qty": 1, "class": "3C"},
+  {"item": "汽水", "price": 12, "qty": 4, "class": "3A"},
+  {"item": "魚蛋", "price": 10, "qty": 1, "class": "3C"}
+]
+
