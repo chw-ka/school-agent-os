@@ -26,7 +26,8 @@ _ALGO_CODE = re.compile(
     re.I,
 )
 _TRACE_ASK = re.compile(r"追蹤|完成追蹤表|列出每次")
-_RENDER_TABLE_SLOTS = frozenset({"b-01", "b-02", "b-05", "b-06", "c-05"})
+# Some items render tables into DOCX at execution time; allow "見下表" in their stems.
+_RENDER_TABLE_SLOTS = frozenset({"b-01", "b-02", "b-05", "b-06", "c-05", "mcq-06", "mcq-13", "mcq-15"})
 
 
 @dataclass

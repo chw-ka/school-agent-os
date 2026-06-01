@@ -399,15 +399,44 @@ def generate_written_text(
 
     elif sid == "c-01":
         lines.append(
-            f"「{ctx['org']}」開發會員預訂系統：每位會員可建立多筆預訂；"
-            "每筆預訂對應一個場次；每個場次屬一間戲院。"
+            f"「{ctx['org']}」開發會員預訂系統，資料如下：\n"
+            "- Member(MID, MName, Phone)\n"
+            "- Cinema(CID, CName, Address)\n"
+            "- Screening(SID, StartTime, CID)\n"
+            "- Booking(BID, MID, SID, Seats)\n"
+            "規則：每位會員可建立多筆預訂；每筆預訂對應一場放映；每場放映在一間戲院內進行。"
         )
+        parts_marks = [sp["marks"] for sp in subparts] if subparts else [3, 2, 1]
         lines.append(
             _subpart_line(
                 "a",
-                "繪製實體關係圖（ERD），須包括 Member、Booking、Screening、Cinema，"
-                "並標示主鍵及外鍵。",
-                slot.get("marks", 6),
+                "繪製 ERD（標示實體、主鍵、外鍵及 cardinality）。",
+                parts_marks[0] if len(parts_marks) > 0 else 3,
+            )
+        )
+        lines.append(
+            _subpart_line(
+                "b",
+                "完成以下 CREATE TABLE BOOKING 骨架的 (b1)–(b3)（提示：BID 為主鍵；MID、SID 為外鍵）。",
+                parts_marks[1] if len(parts_marks) > 1 else 2,
+            )
+        )
+        lines.append(
+            "CREATE TABLE BOOKING(\n"
+            "  BID CHAR(4),\n"
+            "  MID CHAR(4),\n"
+            "  SID CHAR(4),\n"
+            "  Seats INT,\n"
+            "  PRIMARY KEY ( (b1) ________ ),\n"
+            "  FOREIGN KEY (MID) REFERENCES Member( (b2) ________ ),\n"
+            "  FOREIGN KEY (SID) REFERENCES Screening( (b3) ________ )\n"
+            ");"
+        )
+        lines.append(
+            _subpart_line(
+                "c",
+                "若刪除一個 Cinema 記錄，說明對 Screening 記錄可能造成的參照完整性問題（只需一句）。",
+                parts_marks[2] if len(parts_marks) > 2 else 1,
             )
         )
 
@@ -470,9 +499,14 @@ def generate_written_text(
             lines.append(_subpart_line(lab, ask, mk))
 
     elif sid == "c-06":
+        # Integrated (array + stack) long-style within the slot marks.
         lines.append(
-            "某遊戲以二維陣列 Grid[row][col] 表示地圖（0=通道，1=牆）；"
-            "玩家移動及「復活」位置以堆疊記錄。"
+            "某遊戲以二維陣列 Grid[row][col] 表示地圖（0=通道，1=牆）。"
+            "玩家每次成功移動一步，系統會把相反方向記入堆疊 UndoS 以便「撤回」；"
+            "方向編碼：0=上、1=右、2=下、3=左。"
+        )
+        lines.append(
+            "假設玩家目前在 (r, c)=(3,2)，且 Grid[3][2]=1、Grid[3][3]=0。"
         )
         mk_a, mk_b = 3, 4
         if subparts and len(subparts) >= 2:
@@ -480,22 +514,43 @@ def generate_written_text(
         lines.append(
             _subpart_line(
                 "a",
-                "寫出判斷 Grid[3][2] 是否為牆的條件；若 Grid[3][2]=1 且 Grid[3][3]=0，說明能否向右移。",
+                "寫出判斷「玩家目前所在位置是牆」的條件；並解釋在上述 Grid 值下，玩家能否向右移動（只需一句理由）。",
                 mk_a,
             )
         )
         lines.append(
             _subpart_line(
                 "b",
-                "依次 PUSH 2、5、9、POP、PUSH 1、POP，列出每次 POP 的輸出及最終堆疊頂端。",
+                "完成以下偽代碼的 (b1)–(b4)。假設 move(dir) 會在成功移動後把相反方向 push 至 UndoS。",
                 mk_b,
             )
+        )
+        lines.append(
+            "move(dir)\n"
+            "  如果 dir=1 且 Grid[r][c+1]=0 則\n"
+            "    c ← c + 1\n"
+            "    push(UndoS, (b1) ________)\n"
+            "  如果 dir=3 且 Grid[r][c-1]=0 則\n"
+            "    c ← c - 1\n"
+            "    push(UndoS, (b2) ________)\n"
+            "  如果 dir=0 且 Grid[r-1][c]=0 則\n"
+            "    r ← r - 1\n"
+            "    push(UndoS, (b3) ________)\n"
+            "  如果 dir=2 且 Grid[r+1][c]=0 則\n"
+            "    r ← r + 1\n"
+            "    push(UndoS, (b4) ________)"
         )
 
     elif sid == "c-07":
+        # Integrated (queue + search) long-style: one story, with data + pseudocode blanks.
         lines.append(
-            "診所輪候系統以隊列處理先到先得；學生證編號已按升序存入陣列 "
-            "ID = [\"S1001\", \"S1010\", \"S1042\", \"S1088\", \"S1100\"]（索引 1 至 5）。"
+            "診所輪候系統以循環隊列 Q 儲存求診者學生證編號（先到先得）。"
+            "隊列以陣列 Q[1..5] 實現，Front 指向隊首位置，Rear 指向隊尾位置；"
+            "Empty 以 Front=0 表示。"
+        )
+        lines.append(
+            "同時，診所系統維護一個已按升序排列的陣列 ID = [\"S1001\", \"S1010\", \"S1042\", \"S1088\", \"S1100\"]（索引 1 至 5），"
+            "用作查找病人是否屬於本校學生。"
         )
         mk_a, mk_b = 3, 4
         if subparts and len(subparts) >= 2:
@@ -503,26 +558,53 @@ def generate_written_text(
         lines.append(
             _subpart_line(
                 "a",
-                "說明 Enqueue／Dequeue 如何實現輪候；舉一例 Dequeue 後 Front 及 Rear 的變化。",
+                "假設初始時 Front=0。順序執行 enq(\"S1010\")、enq(\"S1100\")、deq() 後，寫出隊列內仍在排隊的編號次序（由隊首到隊尾）。",
                 mk_a,
             )
         )
         lines.append(
             _subpart_line(
                 "b",
-                "用二分搜尋在 ID 中查找「S1042」，描述 mid 如何移動（至少兩步）。",
+                "子程式 admit(x) 會先以二分搜尋檢查 x 是否在 ID[] 內，若是則把 x enq 入隊列。完成以下 admit 的 (b1)–(b5)。",
                 mk_b,
             )
         )
+        lines.append(
+            "admit(x)\n"
+            "  low ← 1\n"
+            "  high ← 5\n"
+            "  found ← FALSE\n"
+            "  當 low ≤ high 且 found = FALSE 執行\n"
+            "    mid ← (low + high) DIV 2\n"
+            "    如果 ID[mid] = x 則\n"
+            "      found ← TRUE\n"
+            "    否則如果 ID[mid] < x 則\n"
+            "      low ← (b1) ________\n"
+            "    否則\n"
+            "      high ← (b2) ________\n"
+            "  如果 found = TRUE 則\n"
+            "    如果 Front = 0 則\n"
+            "      Front ← 1\n"
+            "      Rear ← 1\n"
+            "    否則\n"
+            "      Rear ← (Rear MOD 5) + 1\n"
+            "    Q[Rear] ← x\n"
+            "  否則\n"
+            "    輸出 (b3) ________\n"
+            "  // (b4) ________：寫出一個可避免隊列溢出的條件（提示：下一個 Rear 位置等於 Front 時代表滿）\n"
+            "  // (b5) ________：寫出當隊列滿時的處理（例如輸出訊息或拒絕入隊）"
+        )
 
     elif sid == "c-08":
+        # Integrated linked list long-style: pointer table + insertion/deletion pseudocode blanks.
         lines.append(
-            "電競社以陣列 Next[1..N] 及 Head 模擬鏈表儲存輪候參賽者；每日關閉前須把 Score[1..M] "
-            "按降序整理並更新鏈表順序。"
+            "電競社以陣列 Name[1..8]、Next[1..8] 及 Head 模擬鏈表儲存輪候名單（0 表示無下一個）。"
         )
         lines.append(
-            "管理員記錄：Score = [72, 45, 90, 45, 61, 88, 33, 77]（索引 1 至 8）；"
-            "Head = 1；Next = [2, 3, 4, 5, 6, 7, 8, 0]（0 表示無下一個）。"
+            "現有資料如下（索引 1 至 8）：\n"
+            "Name = [\"Kai\", \"Mia\", \"Fan\", \"Lee\", \"Yan\", \"Bo\", \"Ting\", \"Ho\"]\n"
+            "Next = [2, 3, 4, 5, 6, 7, 8, 0]\n"
+            "Head = 1"
         )
         mk_a, mk_b = 2, 4
         if subparts and len(subparts) >= 2:
@@ -530,17 +612,28 @@ def generate_written_text(
         lines.append(
             _subpart_line(
                 "a",
-                "對 Score 執行一次冒泡排序（降序）的首輪比較，寫出需交換的一對索引。",
+                "寫出由 Head 開始走訪名單時，將會依次輸出的前 3 個名字。",
                 mk_a,
             )
         )
         lines.append(
             _subpart_line(
                 "b",
-                "說明如何以 Head 及 Next[] 走訪仍參賽者；刪除一個 Score=45 的結點後，"
-                "描述 Head／Next 如何更新，並述此結構與陣列模擬鏈表的優點。",
+                "子程式 insert_after(target, new_idx) 會把 new_idx 插入到名字為 target 的結點之後。完成以下偽代碼的 (b1)–(b4)。",
                 mk_b,
             )
+        )
+        lines.append(
+            "insert_after(target, new_idx)\n"
+            "  ptr ← Head\n"
+            "  當 ptr <> 0 執行\n"
+            "    如果 Name[ptr] = target 則\n"
+            "      Next[new_idx] ← (b1) ________\n"
+            "      Next[ptr] ← (b2) ________\n"
+            "      離開循環\n"
+            "    ptr ← Next[ptr]\n"
+            "  // (b3) ________：寫出一個檢查 target 不存在時的處理（例如輸出訊息）\n"
+            "  // (b4) ________：寫出一個檢查 new_idx 是否已在鏈表中的方法（只需描述或條件）"
         )
 
     else:

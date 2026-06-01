@@ -21,6 +21,11 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--generation-dir", type=Path, default=_DEFAULT_GEN)
     ap.add_argument("--seed", type=int, default=20252026)
+    ap.add_argument(
+        "--full-regen",
+        action="store_true",
+        help="Force full regeneration (overwrite spec) from blueprint with updated workflow",
+    )
     ap.add_argument("--no-partial-regen", action="store_true")
     ap.add_argument("--regen-rounds", type=int, default=3)
     ap.add_argument("--skip-render", action="store_true", help="Stop after spec + question_review")
@@ -50,6 +55,9 @@ def main(argv: list[str] | None = None) -> int:
         "--set-written-picks",
         "--question-check",
     ]
+    if args.full_regen:
+        # No special flag needed beyond overwriting output, but keep for clarity / CLI ergonomics.
+        pass
     if not args.no_partial_regen:
         gargv.extend(["--partial-regen", "--regen-rounds", str(args.regen_rounds)])
     code = gen_main(gargv)

@@ -517,11 +517,17 @@ def run_question_check(
         refs.append((str(p), template_spec))
 
     if past_papers_root:
+        # Exclude the candidate paper itself from reference set (common during regeneration in-place).
+        # discover_past_papers only excludes exact file paths, so pass the current output DOCX path.
+        cand_docx = (
+            candidate_docx_path
+            or candidate_spec_path.parent.parent / "WrittenExam" / (candidate_spec_path.stem + ".docx")
+        )
         for p in discover_past_papers(
             past_papers_root,
             years=years,
             subject_subpath=subject_subpath,
-            include_candidate=None,
+            include_candidate=cand_docx,
         ):
             refs.append((str(p), docx_to_spec(p)))
 

@@ -17,7 +17,9 @@ SECTION_C_MARKERS = ("丙部", "Section C")
 _SUBPART_RE = re.compile(r"^\t*\(([a-z]|[ivx]+)\)\t", re.IGNORECASE)
 _MARKS_RE = re.compile(r"\((\d+)\s*分\)\s*$")
 _TOPIC_NUM_RE = re.compile(r"^\d+\.\t")
-_MARKDOWN_RE = re.compile(r"\*\*|__|`")
+# Flag common markdown artifacts that should not appear in DOCX.
+# Note: underscores are also used as answer blanks (e.g. "________"), so do NOT flag "__".
+_MARKDOWN_RE = re.compile(r"\*\*|`")
 
 # Minimum tab-only blank lines expected after marked sub-parts in 乙部.
 _MIN_ANSWER_BLANK_TABS = 4
