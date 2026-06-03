@@ -118,12 +118,18 @@ def main() -> None:
         ("playsound", "播放聲音檔", 'playsound("audio.mp3")'),
         ("os", "刪除暫存聲音檔", 'os.remove("output.mp3")'),
         ("OpenCV", "讀取圖片", 'image = cv2.imread("face.jpg")'),
-        ("OpenCV", "開啟影片（或 webcam）", 'cap = cv2.VideoCapture("video.mp4")  /  cv2.VideoCapture(0)'),
+        ("OpenCV", "開啟影片（本卷任務二用）", 'cap = cv2.VideoCapture("tracking_video.mp4")'),
         ("OpenCV", "讀取每一格畫面", "isTrue, frame = cap.read()"),
+        ("OpenCV", "選取 ROI（選取要追蹤的物件）", "bbox = cv2.selectROI(frame)"),
+        ("OpenCV", "初始化 tracker", "ok = tracker.init(frame, bbox)"),
+        ("OpenCV", "更新 tracker", "ok, bbox = tracker.update(frame)"),
         ("OpenCV", "轉灰階", "cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)"),
         ("OpenCV", "畫方框", "cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)"),
+        ("OpenCV", "在畫面顯示文字", "cv2.putText(frame, tracker_type, (10, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,0,255), 2)"),
         ("OpenCV", "顯示畫面", "cv2.imshow('Video', frame)"),
         ("OpenCV", "等待按鍵", "cv2.waitKey(1)"),
+        ("OpenCV", "釋放影片", "cap.release()"),
+        ("OpenCV", "關閉所有視窗", "cv2.destroyAllWindows()"),
     ]
     for lib, fn, ex in rows_b:
         r = table_b.add_row().cells

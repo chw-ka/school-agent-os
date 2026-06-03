@@ -19,13 +19,13 @@ tracker_type = "MIL"
 
 # (c) 根據 tracker_type 初始化追蹤器
 if tracker_type == "BOOSTING":
-    tracker = cv2.
+    tracker = cv2.legacy.TrackerBoosting_create()
 elif tracker_type == "MIL":
-    tracker = cv2.
+    tracker = cv2.legacy.TrackerMIL_create()
 elif tracker_type == "KCF":
-    tracker = cv2.
+    tracker = cv2.legacy.TrackerKCF_create()
 elif tracker_type == "CSRT":
-    tracker = cv2.
+    tracker = cv2.legacy.TrackerCSRT_create()
 else:
     raise ValueError("不支援的 tracker 類型")
 
@@ -44,7 +44,7 @@ if not ok:
 colors = (0, 0, 255)  # BGR red
 
 while True:
-    isTrue, frame = video.read()
+    isTrue, frame = video.
     if not isTrue:
         break
 
@@ -52,13 +52,16 @@ while True:
     ok, bbox = tracker.
     if ok:
         (x, y, w, h) = [int(v) for v in bbox]
-        cv2.rectangle(frame, (x, y), (x + w, y + h), colors, 2)
+        # (g) 畫出矩形框
+        cv2.
 
-    # (g) 顯示 tracker 類型及影像畫面
+    # 顯示 tracker 類型
     cv2.putText(frame, tracker_type, (10, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.8, colors, 2)
+
+    # (h) 顯示影像
     cv2.
 
-    # (h) 按 ESC 退出
+    # 按 ESC 退出
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
