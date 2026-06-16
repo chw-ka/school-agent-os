@@ -1,11 +1,16 @@
 # Administrative
 
-行政區（依功能建立子資料夾，例如 `Student-Records/`, `Procurement/`）。
+行政區（依功能／專案建立子資料夾）。主要原則：**專案互相獨立**、**流程可重用**、**敏感資料不入 git**。
 
 這裡放：
 - 資料流程定義（輸入/輸出 schema）
 - 自動化工具的工作流（runbook）
 - 範本與產出（按私隱規範處理）
+
+## 導航
+
+- 校內（CHW）常用專案集中：`Administrative/CHW/`（見 `Administrative/CHW/README.md`）
+- 科組/數字教育與教學支援：`Administrative/TechEd/`
 
 ## 與科組 S: 的關係
 
