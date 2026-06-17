@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """question_review — spec-only quality check (alias for run_question_spec_check)."""
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ from post_check import run_question_review  # noqa: E402
 
 _DEFAULT_SPEC = (
     _REPO
-    / "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"
+    / "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"
 )
 _DEFAULT_TEMPLATE = (
     _REPO

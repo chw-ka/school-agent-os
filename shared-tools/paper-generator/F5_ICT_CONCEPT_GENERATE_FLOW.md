@@ -1,4 +1,4 @@
-# F5 ICT 出卷：Concept → Generate → Review（目標流程）
+﻿# F5 ICT 出卷：Concept → Generate → Review（目標流程）
 
 > **狀態：目標架構（2026-05）** — skill 主文檔：`.cursor/skills/generate-f5-ict-exam/SKILL.md`  
 > **過渡實作：** `regenerate_exam02.py`（bank pick + transform）仍可用，但唔再擴充；見文末 Legacy。
@@ -107,7 +107,7 @@ flowchart TD
 
 ### Step 1 — `exam_blueprint.json`
 
-放 `Subjects/S5-ICT/past-papers/{學年}/Term {NN}/_generation/`。
+放 `Subjects/S5-ICT/assessments/{學年}/Term {NN}/_generation/`。
 
 - 卷面：甲 30 / 乙 30 / 丙 40（7 題，無 c-04）；MCQ Core A→B→D block order
 - 每 slot：`id`, `section`, `marks`, `concepts[]`, `question_type`, `core`（MCQ）
@@ -120,7 +120,7 @@ flowchart TD
 # → exam_blueprint.json + exam_blueprint.concept_review.json
 
 .venv/bin/python shared-tools/paper-generator/concept_review.py \
-  --blueprint "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/exam_blueprint.json" \
+  --blueprint "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/exam_blueprint.json" \
   --json "…/exam_blueprint.concept_review.json"
 ```
 
@@ -274,5 +274,5 @@ Bank pick + transform；`PICK_TIME_BANK_SIM_GATE=1`、seed 進度每 5 次。
 | iClass depth (Core D 校準) | `Subjects/DSE-ICT/iclass-hk/` → `iclass_hk_depth.py`；spec 每題 `depth_references` |
 | Curriculum (flat) | `.../curriculum_concepts.json` |
 | Template | `Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx` |
-| Spec / generation | `Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/` |
+| Spec / generation | `Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/` |
 | Spec↔DOCX | `EXAM_SPEC_AND_DOCX.md` |

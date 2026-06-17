@@ -48,7 +48,7 @@ Repo uses category subfolders (match by filename when pulling):
 | `*Exam*`, `*Written*` | `Term {01\|02}/WrittenExam/` |
 | `*Practical_Assessment*`, `*PracticalAssessment*` | `Term {01\|02}/PracticalAssessment/` |
 | `*Practical_Mock*`, `*PracticalMock*` | `Term {01\|02}/PracticalMock/` |
-| Images, task data, misc | `Term {01\|02}/_assets/` |
+| Images, task data, misc | `assessments/{year}/Term {01\|02}/_assets/`（工作檔；不入 past-papers） |
 
 Use `scripts/pull-from-panel.ps1` for this mapping.
 
@@ -63,18 +63,23 @@ Use `scripts/pull-from-panel.ps1` for this mapping.
 | `S5ICT` | `S5-ICT` |
 | `S6ICT` | `S6-ICT` |
 
-## Repo `past-papers` layout
+## Repo layout (`assessments` + `past-papers`)
 
 ```
-Subjects/S3-CMP/past-papers/
-└── {YYYY-YYYY}/
-    └── Term {01|02}/
+Subjects/S3-CMP/
+├── assessments/                    # working drafts — git only, never publish to S:
+│   ├── exam-input/
+│   └── {YYYY-YYYY}/Term {01|02}/
+│       ├── _generation/            # specs, agent output
+│       ├── _reference/
+│       ├── _assets/
+│       └── …                       # answer scripts, student submissions workspace
+└── past-papers/                    # finals only — may publish to S:
+    └── {YYYY-YYYY}/Term {01|02}/
         ├── WrittenExam/
         ├── PracticalAssessment/
         ├── PracticalMock/
-        ├── PracticalExam/          # if used
-        ├── _assets/                # task images, data files
-        └── _generation/            # specs, agent output — git only, never publish to S:
+        └── PracticalExam/          # if used
 ```
 
 ## Publish targets (finals only, with user permission)

@@ -1,0 +1,352 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "25-26 S3 CMP Term 2 Written Exam",
+    "subject": "S3 CMP",
+    "level": "中三級",
+    "total_marks": 50,
+    "academic_year": "2025-2026",
+    "source_docx": "C:/Users/localadmin/Projects/school-agent-os/Subjects/S3-CMP/assessments/2025-2026/Term 02/WrittenExam/25_26_S3_CMP_Term02_Exam.docx",
+    "mcq_answers": null,
+    "mcq_answers_pending": true,
+    "matching_answers": [
+      "BACDE",
+      "DEBAC"
+    ],
+    "tf_answers": "TFTFF",
+    "fill_answers": [
+      [
+        "gTTS",
+        "playsound",
+        "password.json",
+        "yue",
+        "SpeechRecognition"
+      ],
+      [
+        "opencv-python",
+        "xml",
+        "cvtColor",
+        "tkinter",
+        "quiz_data.json"
+      ]
+    ],
+    "fill_word_banks": [
+      [
+        "playsound",
+        "gTTS",
+        "SpeechRecognition",
+        "yue",
+        "password.json"
+      ],
+      [
+        "quiz_data.json",
+        "tkinter",
+        "xml",
+        "cvtColor",
+        "opencv-python"
+      ]
+    ],
+    "sa_rubric": [
+      {
+        "part": "(a)",
+        "rubric": "(每項 1 分，共 2 分)學習效能：學生失去鍛鍊獨立思考、邏輯組織及語文表達能力的機會。道德操守：這屬於抄襲（Plagiarism）或作弊行為，嚴重違反學術誠信。",
+        "marks": 2
+      },
+      {
+        "part": "(b)",
+        "rubric": "(答中核心原因得 1 分)這類工作屬高度重複性且基於既定規則（Rule-based），而 AI 處理文字和數據的速度與準確度均遠超人類。",
+        "marks": 1
+      },
+      {
+        "part": "(c)",
+        "rubric": "(任答兩項，每項 1 分，共 2 分)教師能提供情感支援（Empathy）和心理輔導，這是缺乏同理心的 AI 無法做到的。教師能根據學生的即時反應（如表情、情緒）靈活調整教學策略，AI 難以進行複雜的人際互動。教育包含品格培養（身教），這需要真實人類作為榜樣。",
+        "marks": 2
+      }
+    ],
+    "footer": {
+      "academic_year": "2025-2026",
+      "level": "中三級",
+      "term_exam": "下學期考試",
+      "subject": "電腦認知"
+    }
+  },
+  "items": [
+    {
+      "id": "mcq-01",
+      "section": "mcq",
+      "text": "MCQ 1",
+      "marks": 1,
+      "answer": "D"
+    },
+    {
+      "id": "mcq-02",
+      "section": "mcq",
+      "text": "MCQ 2",
+      "marks": 1,
+      "answer": "A"
+    },
+    {
+      "id": "mcq-03",
+      "section": "mcq",
+      "text": "MCQ 3",
+      "marks": 1,
+      "answer": "C"
+    },
+    {
+      "id": "mcq-04",
+      "section": "mcq",
+      "text": "MCQ 4",
+      "marks": 1,
+      "answer": "D"
+    },
+    {
+      "id": "mcq-05",
+      "section": "mcq",
+      "text": "MCQ 5",
+      "marks": 1,
+      "answer": "B"
+    },
+    {
+      "id": "mcq-06",
+      "section": "mcq",
+      "text": "MCQ 6",
+      "marks": 1,
+      "answer": "B"
+    },
+    {
+      "id": "mcq-07",
+      "section": "mcq",
+      "text": "MCQ 7",
+      "marks": 1,
+      "answer": "A"
+    },
+    {
+      "id": "mcq-08",
+      "section": "mcq",
+      "text": "MCQ 8",
+      "marks": 1,
+      "answer": "C"
+    },
+    {
+      "id": "mcq-09",
+      "section": "mcq",
+      "text": "MCQ 9",
+      "marks": 1,
+      "answer": "B"
+    },
+    {
+      "id": "mcq-10",
+      "section": "mcq",
+      "text": "MCQ 10",
+      "marks": 1,
+      "answer": "B"
+    },
+    {
+      "id": "mcq-11",
+      "section": "mcq",
+      "text": "MCQ 11",
+      "marks": 1,
+      "answer": "D"
+    },
+    {
+      "id": "mcq-12",
+      "section": "mcq",
+      "text": "MCQ 12",
+      "marks": 1,
+      "answer": "A"
+    },
+    {
+      "id": "mcq-13",
+      "section": "mcq",
+      "text": "MCQ 13",
+      "marks": 1,
+      "answer": "B"
+    },
+    {
+      "id": "mcq-14",
+      "section": "mcq",
+      "text": "MCQ 14",
+      "marks": 1,
+      "answer": "A"
+    },
+    {
+      "id": "mcq-15",
+      "section": "mcq",
+      "text": "MCQ 15",
+      "marks": 1,
+      "answer": "C"
+    },
+    {
+      "id": "mcq-16",
+      "section": "mcq",
+      "text": "MCQ 16",
+      "marks": 1,
+      "answer": "D"
+    },
+    {
+      "id": "mcq-17",
+      "section": "mcq",
+      "text": "MCQ 17",
+      "marks": 1,
+      "answer": "C"
+    },
+    {
+      "id": "mcq-18",
+      "section": "mcq",
+      "text": "MCQ 18",
+      "marks": 1,
+      "answer": "A"
+    },
+    {
+      "id": "mcq-19",
+      "section": "mcq",
+      "text": "MCQ 19",
+      "marks": 1,
+      "answer": "D"
+    },
+    {
+      "id": "mcq-20",
+      "section": "mcq",
+      "text": "MCQ 20",
+      "marks": 1,
+      "answer": "C"
+    },
+    {
+      "id": "b-match-1",
+      "section": "section_b",
+      "text": "乙部配對題 1",
+      "marks": 5,
+      "answer": "BACDE"
+    },
+    {
+      "id": "b-match-2",
+      "section": "section_b",
+      "text": "乙部配對題 2",
+      "marks": 5,
+      "answer": "DEBAC"
+    },
+    {
+      "id": "c-tf-01",
+      "section": "section_c",
+      "text": "丙部是非 1",
+      "marks": 1,
+      "answer": "T"
+    },
+    {
+      "id": "c-tf-02",
+      "section": "section_c",
+      "text": "丙部是非 2",
+      "marks": 1,
+      "answer": "F"
+    },
+    {
+      "id": "c-tf-03",
+      "section": "section_c",
+      "text": "丙部是非 3",
+      "marks": 1,
+      "answer": "T"
+    },
+    {
+      "id": "c-tf-04",
+      "section": "section_c",
+      "text": "丙部是非 4",
+      "marks": 1,
+      "answer": "F"
+    },
+    {
+      "id": "c-tf-05",
+      "section": "section_c",
+      "text": "丙部是非 5",
+      "marks": 1,
+      "answer": "F"
+    },
+    {
+      "id": "d-fill-1-01",
+      "section": "section_d",
+      "text": "丁部填充 1((a))",
+      "marks": 1,
+      "answer": "gTTS"
+    },
+    {
+      "id": "d-fill-1-02",
+      "section": "section_d",
+      "text": "丁部填充 1((b))",
+      "marks": 1,
+      "answer": "playsound"
+    },
+    {
+      "id": "d-fill-1-03",
+      "section": "section_d",
+      "text": "丁部填充 1((c))",
+      "marks": 1,
+      "answer": "password.json"
+    },
+    {
+      "id": "d-fill-1-04",
+      "section": "section_d",
+      "text": "丁部填充 1((d))",
+      "marks": 1,
+      "answer": "yue"
+    },
+    {
+      "id": "d-fill-1-05",
+      "section": "section_d",
+      "text": "丁部填充 1((e))",
+      "marks": 1,
+      "answer": "SpeechRecognition"
+    },
+    {
+      "id": "d-fill-2-01",
+      "section": "section_d",
+      "text": "丁部填充 2((a))",
+      "marks": 1,
+      "answer": "opencv-python"
+    },
+    {
+      "id": "d-fill-2-02",
+      "section": "section_d",
+      "text": "丁部填充 2((b))",
+      "marks": 1,
+      "answer": "xml"
+    },
+    {
+      "id": "d-fill-2-03",
+      "section": "section_d",
+      "text": "丁部填充 2((c))",
+      "marks": 1,
+      "answer": "cvtColor"
+    },
+    {
+      "id": "d-fill-2-04",
+      "section": "section_d",
+      "text": "丁部填充 2((d))",
+      "marks": 1,
+      "answer": "tkinter"
+    },
+    {
+      "id": "d-fill-2-05",
+      "section": "section_d",
+      "text": "丁部填充 2((e))",
+      "marks": 1,
+      "answer": "quiz_data.json"
+    },
+    {
+      "id": "e-sa-a",
+      "section": "section_e",
+      "text": "(每項 1 分，共 2 分)學習效能：學生失去鍛鍊獨立思考、邏輯組織及語文表達能力的機會。道德操守：這屬於抄襲（Plagiarism）或作弊行為，嚴重違反學術誠信。",
+      "marks": 2
+    },
+    {
+      "id": "e-sa-b",
+      "section": "section_e",
+      "text": "(答中核心原因得 1 分)這類工作屬高度重複性且基於既定規則（Rule-based），而 AI 處理文字和數據的速度與準確度均遠超人類。",
+      "marks": 1
+    },
+    {
+      "id": "e-sa-c",
+      "section": "section_e",
+      "text": "(任答兩項，每項 1 分，共 2 分)教師能提供情感支援（Empathy）和心理輔導，這是缺乏同理心的 AI 無法做到的。教師能根據學生的即時反應（如表情、情緒）靈活調整教學策略，AI 難以進行複雜的人際互動。教育包含品格培養（身教），這需要真實人類作為榜樣。",
+      "marks": 2
+    }
+  ]
+}

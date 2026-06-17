@@ -1,0 +1,43 @@
+{
+  "exam_id": "25_26_S3_CMP_Term02",
+  "pages_per_student": 2,
+  "page_roles": ["answer_p1", "answer_p2"],
+  "alignment": {
+    "page1": "zipgrade_corner_markers + morphological_table_lines",
+    "page2": "fill_line_detection_fallback_norm_boxes",
+    "note": "Page 1: MC fiducials define search band; 乙/丙 tables found by horizontal line clusters (per-page drift tolerant). Page 2: answer lines detected on scan."
+  },
+  "regions": {
+    "answer_p1": {
+      "match_block": {
+        "box": [0.35, 0.688, 0.98, 0.778],
+        "rows": 2,
+        "cols": 5
+      },
+      "tf_block": {
+        "box": [0.35, 0.798, 0.98, 0.848],
+        "rows": 1,
+        "cols": 5
+      }
+    },
+    "answer_p2": {
+      "fill_lines": [
+        {"id": "fill_q1_a", "box": [0.12, 0.168, 0.95, 0.198]},
+        {"id": "fill_q1_b", "box": [0.12, 0.206, 0.95, 0.236]},
+        {"id": "fill_q1_c", "box": [0.12, 0.244, 0.95, 0.274]},
+        {"id": "fill_q1_d", "box": [0.12, 0.282, 0.95, 0.312]},
+        {"id": "fill_q1_e", "box": [0.12, 0.320, 0.95, 0.350]},
+        {"id": "fill_q2_a", "box": [0.12, 0.365, 0.95, 0.395]},
+        {"id": "fill_q2_b", "box": [0.12, 0.403, 0.95, 0.433]},
+        {"id": "fill_q2_c", "box": [0.12, 0.441, 0.95, 0.471]},
+        {"id": "fill_q2_d", "box": [0.12, 0.479, 0.95, 0.509]},
+        {"id": "fill_q2_e", "box": [0.12, 0.517, 0.95, 0.547]}
+      ],
+      "sa_blocks": [
+        {"id": "sa_q1_a", "box": [0.08, 0.555, 0.95, 0.640]},
+        {"id": "sa_q1_b", "box": [0.08, 0.655, 0.95, 0.740]},
+        {"id": "sa_q1_c", "box": [0.08, 0.765, 0.95, 0.900]}
+      ]
+    }
+  }
+}

@@ -16,7 +16,7 @@ disable-model-invocation: true
 
 ## Inputs / Outputs
 
-- **Input**: `Subjects/S5-ICT/past-papers/<YYYY-YYYY>/Term 02/_generation/exam_blueprint.json`
+- **Input**: `Subjects/S5-ICT/assessments/<YYYY-YYYY>/Term 02/_generation/exam_blueprint.json`
 - **Output**: `.../_generation/<YY>_<YY>_S5_ICT_Exam02.spec.json`（只更新 `mcq-*` items）
 - **Optional**: `.../_generation/<...>.partial_regen.json`（slot-level regen report）
 

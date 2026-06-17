@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Canonical F5 ICT Exam02 pipeline (blueprint generate → partial regen → render).
 
 Replaces bank pick-transform via regenerate_exam02.py (use --legacy-pick there only).
@@ -14,7 +14,7 @@ _PG = Path(__file__).resolve().parent
 if str(_PG) not in sys.path:
     sys.path.insert(0, str(_PG))
 
-_DEFAULT_GEN = _REPO / "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation"
+_DEFAULT_GEN = _REPO / "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation"
 
 
 def main(argv: list[str] | None = None) -> int:

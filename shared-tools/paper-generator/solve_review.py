@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """solve_review — LLM student-style answer check (Phases 1–4)."""
 from __future__ import annotations
 
@@ -29,11 +29,11 @@ from solve_tables import sync_item_tables_in_spec  # noqa: E402
 
 _DEFAULT_SPEC = (
     _REPO
-    / "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"
+    / "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"
 )
 _DEFAULT_OUT = (
     _REPO
-    / "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.solve_review.json"
+    / "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.solve_review.json"
 )
 _DEFAULT_DOCX = (
     _REPO

@@ -25,3 +25,10 @@ Subjects/S3-CMP/notes/Python & AI/Lesson 5/_archive/
 *.apk
 *.aia
 *.zip
+
+# Local tool output (transcripts, drafts) — do not commit
+output/
+
+# Student submissions / PII — never commit
+**/_student_submissions/
+**/_student_submissions/**

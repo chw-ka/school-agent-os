@@ -66,7 +66,8 @@ if (-not $panelExam) {
     Write-Error "Panel exam folder not found for $Subject / $Year under $PanelRoot"
 }
 
-$repoBase = Join-Path $RepoRoot "Subjects\$Subject\past-papers\$Year"
+$repoPastPapers = Join-Path $RepoRoot "Subjects\$Subject\past-papers\$Year"
+$repoAssessments = Join-Path $RepoRoot "Subjects\$Subject\assessments\$Year"
 
 $termFolders = @()
 if ($Term) {
@@ -77,7 +78,8 @@ if ($Term) {
 }
 
 Write-Host "Source: $panelExam"
-Write-Host "Repo:   $repoBase"
+Write-Host "Repo (finals):   $repoPastPapers"
+Write-Host "Repo (assets):   $repoAssessments"
 Write-Host "Mode:   $(if ($WhatIf) { 'WhatIf (no copies)' } else { 'COPY' })"
 Write-Host ''
 
@@ -88,6 +90,7 @@ foreach ($tf in $termFolders) {
 
     Get-ChildItem -LiteralPath $srcTerm -File -Force | ForEach-Object {
         $cat = Get-RepoCategory $_.Name
+        $repoBase = if ($cat -eq '_assets') { $repoAssessments } else { $repoPastPapers }
         $dest = Join-Path $repoBase (Join-Path $tf.Repo $cat)
         $target = Join-Path $dest $_.Name
 

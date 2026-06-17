@@ -1,4 +1,4 @@
----
+﻿---
 name: generate-f5-ict-exam
 description: >-
   End-to-end workflow to build an S5 ICT school exam: concept blueprint,
@@ -103,7 +103,7 @@ import sys
 sys.path.insert(0, 'shared-tools/paper-generator')
 from post_check import run_question_review
 raise SystemExit(run_question_review(
-    candidate_spec=Path('Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json'),
+    candidate_spec=Path('Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json'),
     template=Path('Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx'),
     subject_subpath='S5-ICT',
 ))
@@ -142,7 +142,7 @@ raise SystemExit(run_question_review(
 
 ```bash
 .venv/bin/python shared-tools/paper-generator/build_exam_blueprint.py --out \
-  "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/exam_blueprint.json"
+  "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/exam_blueprint.json"
 ```
 
 - 甲 30（Core A×10 → B×10 → D×10）、乙 6、丙 7（無 c-04）；由 `mcq_core_plan` + `WRITTEN_SLOT_PLAN` 自動生成。

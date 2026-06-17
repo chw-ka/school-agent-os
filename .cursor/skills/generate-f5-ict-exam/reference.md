@@ -1,4 +1,4 @@
-# generate-f5-ict-exam — reference
+﻿# generate-f5-ict-exam — reference
 
 ## Target pipeline（目標）
 
@@ -23,7 +23,7 @@ side products (concept_map + style_patterns)
 
 | Role | Path |
 |------|------|
-| Regenerate (legacy) | `Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/regenerate_exam02.py` |
+| Regenerate (legacy) | `Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/regenerate_exam02.py` |
 | Output DOCX | `.../WrittenExam/25_26_S5_ICT_Exam02.docx` |
 | Spec | `.../_generation/25_26_S5_ICT_Exam02.spec.json` |
 | Exam blueprint | `.../_generation/exam_blueprint.json` |
@@ -45,7 +45,7 @@ import sys
 sys.path.insert(0, 'shared-tools/paper-generator')
 from post_check import run_question_spec_check
 raise SystemExit(run_question_spec_check(
-    candidate_spec=Path('Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json'),
+    candidate_spec=Path('Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json'),
     template=Path('Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx'),
     subject_subpath='S5-ICT',
 ))
@@ -58,7 +58,7 @@ import sys
 sys.path.insert(0, 'shared-tools/paper-generator')
 from post_check import run_post_render_check
 raise SystemExit(run_post_render_check(
-    candidate_spec=Path('Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json'),
+    candidate_spec=Path('Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json'),
     candidate_docx=Path('Subjects/S5-ICT/past-papers/2025-2026/Term 02/WrittenExam/25_26_S5_ICT_Exam02.docx'),
     template=Path('Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx'),
 ))
@@ -69,7 +69,7 @@ CLI:
 
 ```bash
 .venv/bin/python shared-tools/question-quality-check/check_spec_cli.py \
-  --candidate "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json" \
+  --candidate "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json" \
   --template "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx"
 ```
 
@@ -134,7 +134,7 @@ CLI:
 ```bash
 .venv/bin/python shared-tools/paper-generator/build_exam_blueprint.py --review
 .venv/bin/python shared-tools/paper-generator/concept_review.py \
-  --blueprint "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/exam_blueprint.json"
+  --blueprint "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/exam_blueprint.json"
 ```
 | 4 generate → spec | ✅ |
 
@@ -172,7 +172,7 @@ CLI:
 ```bash
 .venv/bin/python shared-tools/paper-generator/f5_ict_blueprint_db_web.py \
   --output "Subjects/S5-ICT/past-papers/2025-2026/Term 02/WrittenExam/25_26_S5_ICT_Exam02.docx" \
-  --spec "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"
+  --spec "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"
 ```
 
 Spec must exist before render; run question_review first.

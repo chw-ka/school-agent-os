@@ -1,4 +1,4 @@
-# Exam spec 與 DOCX（spec ↔ docx）
+﻿# Exam spec 與 DOCX（spec ↔ docx）
 
 > **出卷主流程：** [`.cursor/skills/generate-f5-ict-exam/SKILL.md`](../../.cursor/skills/generate-f5-ict-exam/SKILL.md)  
 > **目標架構（concept → generate → review）：** [`F5_ICT_CONCEPT_GENERATE_FLOW.md`](F5_ICT_CONCEPT_GENERATE_FLOW.md)  
@@ -154,7 +154,7 @@ sys.path.insert(0, "shared-tools/paper-formatter")
 from exam_spec import load_spec
 from written_spec_docx_check import check_written_spec_docx, format_written_spec_docx_report
 
-spec = load_spec(Path("Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"))
+spec = load_spec(Path("Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"))
 docx = Path("Subjects/S5-ICT/past-papers/2025-2026/Term 02/WrittenExam/25_26_S5_ICT_Exam02.docx")
 print(format_written_spec_docx_report(check_written_spec_docx(spec, docx)))
 PY

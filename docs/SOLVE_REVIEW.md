@@ -1,4 +1,4 @@
-# Solve review（解題審查）— Phases 1–4
+﻿# Solve review（解題審查）— Phases 1–4
 
 用 LLM（**DeepSeek** / Gemini / OpenAI-compatible）模擬中五學生逐題作答，找出「答唔到」的題目，並把修復建議餵返 partial regen。
 
@@ -36,7 +36,7 @@ DSE_ICT_LLM_PROVIDER=gemini
 ```bash
 .venv/bin/python shared-tools/paper-generator/solve_review.py \
   --provider deepseek \
-  --spec "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json" \
+  --spec "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json" \
   --sync-tables --save-spec \
   --merge-rules
 ```

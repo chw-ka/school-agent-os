@@ -1,0 +1,146 @@
+﻿{
+  "version": 1,
+  "blueprint": "/Users/warren_chan/Projects/school-agent-os/Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/exam_blueprint.json",
+  "concept_map": "/Users/warren_chan/Projects/school-agent-os/Subjects/DSE-ICT/question-bank/concept_map.json",
+  "ok": true,
+  "issues": [
+    {
+      "severity": "warn",
+      "kind": "unknown_concept",
+      "message": "Concept «IF» not in concept_map.concept_index",
+      "slot_id": "b-01"
+    },
+    {
+      "severity": "warn",
+      "kind": "unknown_concept",
+      "message": "Concept «資料類型» not in concept_map.concept_index",
+      "slot_id": "b-06"
+    },
+    {
+      "severity": "warn",
+      "kind": "unknown_concept",
+      "message": "Concept «UNION» not in concept_map.concept_index",
+      "slot_id": "c-03"
+    },
+    {
+      "severity": "warn",
+      "kind": "unknown_concept",
+      "message": "Concept «MINUS» not in concept_map.concept_index",
+      "slot_id": "c-05"
+    },
+    {
+      "severity": "warn",
+      "kind": "unknown_concept",
+      "message": "Concept «JOIN» not in concept_map.concept_index",
+      "slot_id": "c-06"
+    },
+    {
+      "severity": "warn",
+      "kind": "unknown_concept",
+      "message": "Concept «GROUP BY» not in concept_map.concept_index",
+      "slot_id": "c-06"
+    },
+    {
+      "severity": "warn",
+      "kind": "unknown_concept",
+      "message": "Concept «COMMIT» not in concept_map.concept_index",
+      "slot_id": "c-07"
+    },
+    {
+      "severity": "warn",
+      "kind": "unknown_concept",
+      "message": "Concept «ROLLBACK» not in concept_map.concept_index",
+      "slot_id": "c-07"
+    },
+    {
+      "severity": "warn",
+      "kind": "concept_overlap",
+      "message": "mcq: mcq-11 and mcq-14 share 3 concepts: ['RAM', '快取記憶體', '硬件']",
+      "slot_id": null
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «IF» (marks≥4 slot)",
+      "slot_id": "b-01"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «COUNTIFS» (marks≥4 slot)",
+      "slot_id": "b-01"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «點陣圖» (marks≥4 slot)",
+      "slot_id": "b-03"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «壓縮» (marks≥4 slot)",
+      "slot_id": "b-03"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «陣列» (marks≥4 slot)",
+      "slot_id": "b-04"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «直接存取» (marks≥4 slot)",
+      "slot_id": "b-05"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «順序存取» (marks≥4 slot)",
+      "slot_id": "b-05"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «資料類型» (marks≥4 slot)",
+      "slot_id": "b-06"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «MINUS» (marks≥4 slot)",
+      "slot_id": "c-05"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «JOIN» (marks≥4 slot)",
+      "slot_id": "c-06"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «GROUP BY» (marks≥4 slot)",
+      "slot_id": "c-06"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «COMMIT» (marks≥4 slot)",
+      "slot_id": "c-07"
+    },
+    {
+      "severity": "info",
+      "kind": "common_mistakes",
+      "message": "No common_mistakes recorded in concept_map for «ROLLBACK» (marks≥4 slot)",
+      "slot_id": "c-07"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 9,
+    "info": 13,
+    "slot_count": 43
+  }
+}

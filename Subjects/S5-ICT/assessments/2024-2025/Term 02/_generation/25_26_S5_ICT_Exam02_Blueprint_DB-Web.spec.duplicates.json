@@ -1,0 +1,54 @@
+﻿{
+  "threshold": 0.6,
+  "candidate": "Subjects/S5-ICT/assessments/2024-2025/Term 02/_generation/25_26_S5_ICT_Exam02_Blueprint_DB-Web.spec.json",
+  "has_duplicates": true,
+  "regenerate_ids": [
+    "mcq-29",
+    "mcq-26",
+    "mcq-24",
+    "mcq-28"
+  ],
+  "references_checked": [
+    "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx",
+    "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/23_24_S5_ICT_Exam02.docx"
+  ],
+  "duplicate_count": 4,
+  "duplicates": [
+    {
+      "candidate_id": "mcq-29",
+      "reference": "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx",
+      "reference_id": "mcq-29",
+      "similarity": 0.8888888888888888,
+      "match_type": "mcq",
+      "candidate_text": "在演算法設計中使用陣列的主要好處是？\n\n\tA.\t減少記憶體使用量\n\tB.\t適合需要重複運算或儲存多個同類資料\n\tC.\t可儲存不同資料類型\n\tD.\t可提高運算速度",
+      "reference_text": "在演算法設計中使用陣列的好處是？\nA.\t減少記憶體使用量\nB.\t適合需要重複運算的處理\nC.\t可儲存不同資料類型\nD.\t可提高運算速度"
+    },
+    {
+      "candidate_id": "mcq-26",
+      "reference": "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx",
+      "reference_id": "mcq-26",
+      "similarity": 0.8292682926829268,
+      "match_type": "mcq",
+      "candidate_text": "下列兩段程式碼同樣搜尋陣列，但哪一段通常執行時間較短？（P1：線性搜尋；P2：已排序陣列的二分搜尋）\n\n\n\tA.\tP1 較快\n\tB.\tP2 較快\n\tC.\t兩者相若\n\tD.\t無法比較",
+      "reference_text": "下列兩段程式碼同樣搜尋陣列，但哪一段通常執行時間較短？\nA.\tP1 較快\nB.\tP2 較快\nC.\t兩者相若\nD.\t無法比較"
+    },
+    {
+      "candidate_id": "mcq-24",
+      "reference": "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx",
+      "reference_id": "mcq-24",
+      "similarity": 0.773109243697479,
+      "match_type": "mcq",
+      "candidate_text": "下列演算法的輸出是？\n\n\tX ← 2  \n\tY ← 0  \n\tWHILE X < 20 DO  \n\t\tY ← Y + X  \n\t\tX ← X * 2  \n\tOUTPUT Y  \n\n\tA.\t6\n\tB.\t14\n\tC.\t22\n\tD.\t30",
+      "reference_text": "下列演算法的輸出是？\nX ← 5\nY ← 0\nWHILE X ≤ 10 DO\nY ← Y + 2\nX ← X + Y\nOUTPUT X\nA.\t11\nB.\t13\nC.\t15\nD.\t17"
+    },
+    {
+      "candidate_id": "mcq-28",
+      "reference": "Subjects/S5-ICT/past-papers/2024-2025/Term 02/WrittenExam/24_25_S5_ICT_Exam02.docx",
+      "reference_id": "mcq-28",
+      "similarity": 0.7565543071161048,
+      "match_type": "mcq",
+      "candidate_text": "某班要為下列分段評級程式設計測試數據，以覆蓋所有分支：\n\n\t\tINPUT score\n\t\tIF score > 80 THEN OUTPUT \"A\"\n\t\tELSE IF score >= 50 THEN OUTPUT \"B\"\n\t\tELSE OUTPUT \"F\"\n\n\t哪一組輸入分數最適合？\n\n\n\tA.\t45, 60, 90\n\tB.\t40, 85\n\tC.\t50, 81\n\tD.\t30, 75, 80",
+      "reference_text": "下列演算法中，輸入哪一組數據最能測試所有邏輯分支？\nINPUT A\nIF A > 80 THEN\nOUTPUT \"A\"\nELSE IF A >= 50 THEN\nOUTPUT \"B\"\nELSE\nOUTPUT \"F\"\nA.\t45, 60, 90\nB.\t40, 85\nC.\t50, 81\nD.\t30, 75, 80"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """CLI: write exam_blueprint.json for F5 ICT Exam02."""
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ from f5_ict_exam_blueprint import build_f5_exam02_blueprint, save_blueprint
 _REPO = Path(__file__).resolve().parents[2]
 _DEFAULT_OUT = (
     _REPO
-    / "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/exam_blueprint.json"
+    / "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/exam_blueprint.json"
 )
 
 

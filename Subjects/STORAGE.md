@@ -28,10 +28,12 @@
 
 ### 應 commit 入 repo（家中要用）
 
-- 近 1–2 年 `past-papers/`（校內試卷、實作評估）
+- 近 1–2 年 `past-papers/`（**教師定稿**校內試卷、實作評估 — 人手修改後版本）
 - 本學期正在用的 `notes/`
 - `DSE-ICT/` 官方卷、EDB 文件、題庫 JSON
-- 出卷用 `exam-input/`、`source/`、`_generation/`（**只留 git，不發佈去 S:**）
+- 出卷工作區 `assessments/`（含 `exam-input/`、`source/`、`_generation/`、`**/*.spec.json` — **只留 git，不發佈去 S:**）
+
+**重要：** `paper-generator` / `paper-formatter` 產出嘅 DOCX 係 **generated draft**，預設放 `assessments/…/_generation/`。**唔好**當作 `past-papers/` 終稿；只有教師人手定稿後先移至 `past-papers/`。
 
 ### 只留 S:（不要 bulk 入 git）
 
@@ -62,14 +64,22 @@ Panel 根目錄：`S:\02_Teaching and Learning\03_Key Learning Areas\Technology\
 
 ```
 Subjects/
-├── S2-CMP/          past-papers/, notes/, exam-input/
+├── S2-CMP/          assessments/, past-papers/, notes/, resources/
 ├── S3-CMP/
 ├── S5-ICT/
 ├── S6-ICT/
+├── TechEd/          booklist-material-planning/ 等科組行政
 └── DSE-ICT/         past-papers/, edb/, question-bank/  ← F4–F6 共用
 ```
 
-`past-papers` 建議：
+`assessments/`（工作區，只留 git）：
+
+```
+{YYYY-YYYY}/Term {01|02}/_generation|_reference|_assets|WrittenExam|PracticalAssessment|…
+exam-input/
+```
+
+`past-papers/`（終稿庫，可發佈至 S:）：
 
 ```
 {YYYY-YYYY}/Term {01|02}/WrittenExam|PracticalAssessment|PracticalMock/

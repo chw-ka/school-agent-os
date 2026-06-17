@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Phase 4: generate exam spec from blueprint + style_patterns (no bank copy)."""
 from __future__ import annotations
 
@@ -24,12 +24,12 @@ from f5_ict_written_from_dse import set_active_written_picks  # noqa: E402
 
 _DEFAULT_BP = (
     _REPO
-    / "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/exam_blueprint.json"
+    / "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/exam_blueprint.json"
 )
 _DEFAULT_STYLE = _REPO / "Subjects/DSE-ICT/question-bank/style_patterns.json"
 _DEFAULT_SPEC = (
     _REPO
-    / "Subjects/S5-ICT/past-papers/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"
+    / "Subjects/S5-ICT/assessments/2025-2026/Term 02/_generation/25_26_S5_ICT_Exam02.spec.json"
 )
 _DEFAULT_TEMPLATE = (
     _REPO

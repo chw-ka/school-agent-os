@@ -20,6 +20,7 @@
 - **STEAM（初中）**: 建議整合至 `Subjects/STEAM-JS/`（如尚未建立）
 - **CMP（初中）**: `Subjects/S2-CMP/`, `Subjects/S3-CMP/`（可按需要增設 `S1-CMP/`）
 - **ICT（高中）**: `Subjects/S5-ICT/`, `Subjects/S6-ICT/`, `Subjects/DSE-ICT/`（共用參考庫）
+- **科組教學行政（選書等）**: `Subjects/TechEd/`
 
 ### 可共用工具（共建）
 

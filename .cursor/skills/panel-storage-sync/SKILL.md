@@ -36,7 +36,7 @@ Pin in repo (commit + push) when you need access at home:
 - Current + recent past papers (`past-papers/{YYYY-YYYY}/`)
 - Active teaching notes (`notes/`)
 - DSE / EDB references (`DSE-ICT/`)
-- Exam specs and tool inputs (`exam-input/`, `source/`)
+- Exam specs and tool inputs (`assessments/exam-input/`, `assessments/.../_generation/`, `source/`)
 
 Keep **S: only** (do not bulk-import):
 

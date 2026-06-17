@@ -6,9 +6,9 @@
 
 - `.cursorrules`: 根目錄憲法（工作原則、格式規範、隱私）
 - `.cursor/rules/`: Agent 持久規則（例如 panel 共用資料夾同步）
-- `.cursor/skills/`: 專案 Agent 技能（例如 `panel-storage-sync`）
+- `.cursor/skills/`: 專案 Agent 技能（例如 `panel-storage-sync`、`tidy-up`）
 - `shared-tools/`: 可重用 Python 工具（Skills）
-- `Subjects/`: 教學區（依科目/級別分資料與流程）— 見 [Subjects/STORAGE.md](Subjects/STORAGE.md)
+- `Subjects/`: 教學區（依科目/級別分資料與流程）— 見 [Subjects/STORAGE.md](Subjects/STORAGE.md)、[NAV.md](NAV.md)
 - `Administrative/`: 行政區（依功能分資料與流程）
 - `templates/`: 學校標準 Word/PDF 範本
 

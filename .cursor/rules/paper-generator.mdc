@@ -1,6 +1,6 @@
 ---
 description: School exam paper generation — concept-generate-review pipeline and MCQ concept ordering
-globs: shared-tools/paper-generator/**,Subjects/**/past-papers/**/_generation/**
+globs: shared-tools/paper-generator/**,Subjects/**/assessments/**/_generation/**
 alwaysApply: false
 ---
 
