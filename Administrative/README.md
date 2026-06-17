@@ -11,6 +11,7 @@
 
 - 校內（CHW）常用專案集中：`Administrative/CHW/`（見 `Administrative/CHW/README.md`）
 - 科組/數字教育與教學支援：`Administrative/TechEd/`
+- 藝術科會議紀錄：`Administrative/ART/`（generated → `_generation/`）
 
 ## 與科組 S: 的關係
 

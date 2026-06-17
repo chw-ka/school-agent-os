@@ -39,8 +39,18 @@ description: >-
 ### Step 1：讀取輸入
 
 必讀：
-- **逐字稿** — `.txt` / `.md` 或 `output/transcript-from-audio.txt`
+- **逐字稿** — `.txt` / `.md`（放該會議 `_generation/*.transcript.txt`）
 - **議程** — `議程_視藝科組會_20260528.docx` 或同等檔案
+
+**輸出路徑（唔用 repo 根 `output/` 作長期存放）：**
+
+```
+Administrative/{科組}/…/Meeting {NN}/
+├── 會議紀錄_*.docx          ← 覆核後終稿
+└── _generation/             ← 逐字稿、.md 草稿、AI .docx（generated）
+```
+
+例：藝術科 → `Administrative/ART/2025-2026/Meeting 02/_generation/`
 
 格式來源（按用戶指示二選一）：
 - **通用範本** — `templates/minutes-template.md`（第二步）
@@ -67,17 +77,17 @@ description: >-
 
 **老師日常用 Word（`.docx`）；`.md` 排版文字保留喺 Cursor 內修改同學習。**
 
-| 階段 | 排版文字（.md，Cursor 內） | 正式交付（.docx，用 Word 開） |
-|------|---------------------------|------------------------------|
-| 第二步 | `output/meeting-minutes-draft.md` | `output/會議紀錄_草稿.docx` |
-| 第三步 | `output/meeting-minutes-final.md` | `output/會議紀錄_視藝科組_20260528.docx` |
+| 階段 | 排版文字（.md，Cursor 內） | AI 草稿（.docx，`_generation/`） | 覆核後（上層目錄） |
+|------|---------------------------|----------------------------------|-------------------|
+| 第二步 | `…/_generation/meeting-minutes-draft.md` | `…/_generation/會議紀錄_草稿.docx` | — |
+| 第三步 | `…/_generation/meeting-minutes-final.md` | `…/_generation/會議紀錄_視藝科組_20260528.docx` | `…/會議紀錄_視藝科組_20260528.docx` |
 
 撰寫流程：
 1. 先完成 `.md` 草稿（內容完整、可預覽）
 2. 用 `python-docx` 或同等方法轉為 `.docx`，字型建議 **微軟正黑體** 12pt
 3. `.docx` 版面應跟格式來源（通用範本或上學年紀錄）一致
 
-向用戶說明：「中間 `.md` 喺 Cursor 改；交俾校內／同事用 `.docx`。」
+向用戶說明：「`_generation/` 內為 generated（逐字稿、草稿）；覆核後 `.docx` 移至會議目錄上層。中間 `.md` 喺 Cursor 改。」
 
 ## 品質要求
 
@@ -97,7 +107,7 @@ description: >-
 ```
 @.cursor/skills/meeting-minutes/SKILL.md
 請讀 @sample-meeting-transcript.txt、@議程_視藝科組會_20260528.docx、@templates/minutes-template.md，
-撰寫會議紀錄：先存 output/meeting-minutes-draft.md，再轉 output/會議紀錄_草稿.docx
+撰寫會議紀錄：先存 Administrative/ART/…/Meeting 02/_generation/meeting-minutes-draft.md，再轉同目錄 會議紀錄_草稿.docx
 ```
 
 **第三步：**
@@ -105,7 +115,7 @@ description: >-
 @.cursor/skills/meeting-minutes/SKILL.md
 請讀 @sample-meeting-transcript.txt、@議程_視藝科組會_20260528.docx、
 @會議紀錄_視藝科組_20250522_上學年.docx（格式參考），
-撰寫今年會議紀錄：先存 output/meeting-minutes-final.md，再轉 output/會議紀錄_視藝科組_20260528.docx
+撰寫今年會議紀錄：先存 …/_generation/meeting-minutes-final.md，再轉 …/_generation/會議紀錄_視藝科組_20260528.docx；覆核後移至 Meeting 目錄上層
 ```
 
 結尾加註：「本紀錄由 AI 輔助起草，請記錄人覆核後方作正式版本。」

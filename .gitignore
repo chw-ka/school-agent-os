@@ -17,6 +17,9 @@ __pycache__/
 ~WRL*.tmp
 **/~WRL*.tmp
 
+# Student submission archives — local only (see Subjects/STORAGE.md)
+Subjects/S3-CMP/notes/Python & AI/Lesson 5/_archive/
+
 # Large teaching media — keep locally, not in git
 *.mp4
 *.apk
