@@ -3,12 +3,29 @@
   "pages_per_student": 2,
   "page_roles": ["answer_p1", "answer_p2"],
   "alignment": {
-    "page1": "zipgrade_corner_markers + morphological_table_lines",
-    "page2": "fill_line_detection_fallback_norm_boxes",
-    "note": "Page 1: MC fiducials define search band; 乙/丙 tables found by horizontal line clusters (per-page drift tolerant). Page 2: answer lines detected on scan."
+    "page1": "calibrated_norm_boxes | zipgrade_corner_markers",
+    "page2": "orb_template_warp | fill_line_detection | layout_norm_boxes",
+    "orb_fallback": true,
+    "orb_preferred_roles": ["answer_p2"],
+    "template": {
+      "pdf": "Subjects/S3-CMP/assessments/2025-2026/Term 02/WrittenExam/25_26_S3_CMP_Term02_Exam.pdf",
+      "pages": {"answer_p1": 8, "answer_p2": 9},
+      "note": "Blank 答題紙：PDF 倒數第4、倒數第3頁（1-based）"
+    },
+    "note": "Page 1: calibrated norm boxes. Page 2: ORB warp to blank template when no ZipGrade markers."
   },
   "regions": {
     "answer_p1": {
+      "calibrated": {
+        "enabled": true,
+        "reference": "SKM_C750i26061513350_reordered.pdf student 0 @ render scale 2",
+        "note": "5 equal columns per row; table width ~71% page. Re-run calibrate_bc_layout.py --dump to refresh from detection.",
+        "rows": [
+          {"id": "match_q1", "box": [0.168, 0.691, 0.882, 0.733], "cols": 5},
+          {"id": "match_q2", "box": [0.168, 0.733, 0.882, 0.774], "cols": 5},
+          {"id": "tf_q1", "box": [0.168, 0.856, 0.882, 0.897], "cols": 5}
+        ]
+      },
       "match_block": {
         "box": [0.35, 0.688, 0.98, 0.778],
         "rows": 2,
@@ -34,9 +51,9 @@
         {"id": "fill_q2_e", "box": [0.12, 0.517, 0.95, 0.547]}
       ],
       "sa_blocks": [
-        {"id": "sa_q1_a", "box": [0.08, 0.555, 0.95, 0.640]},
-        {"id": "sa_q1_b", "box": [0.08, 0.655, 0.95, 0.740]},
-        {"id": "sa_q1_c", "box": [0.08, 0.765, 0.95, 0.900]}
+        {"id": "sa_q1_a", "box": [0.08, 0.466, 0.95, 0.546], "use_box": true},
+        {"id": "sa_q1_b", "box": [0.08, 0.655, 0.95, 0.74]},
+        {"id": "sa_q1_c", "box": [0.08, 0.639, 0.95, 0.763], "use_box": true}
       ]
     }
   }

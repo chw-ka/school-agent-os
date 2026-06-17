@@ -10,11 +10,12 @@ import fitz
 
 from answer_sheet_align import (
     crop_rgb,
-    detect_fill_line_rois,
-    detect_table_cells,
-    find_bc_table_regions,
+    detect_page2_regions,
+    load_exam_templates,
+    prepare_aligned_page,
+    resolve_bc_regions,
+    resolve_page2_regions,
     find_markers,
-    page_affine,
     render_page,
     warp_norm_box,
 )
@@ -30,6 +31,7 @@ def main() -> int:
     args = ap.parse_args()
 
     layout = json.loads(_LAYOUT.read_text(encoding="utf-8"))
+    templates = load_exam_templates(layout, layout_path=_LAYOUT)
     doc = fitz.open(args.pdf)
     si = args.student
     p1 = doc[si * 2]
@@ -38,15 +40,15 @@ def main() -> int:
 
     for label, page, role in (("p1", p1, "answer_p1"), ("p2", p2, "answer_p2")):
         img = render_page(page)
+        img, affine, align_method = prepare_aligned_page(img, role, layout, templates=templates)
         vis = img.rgb.copy()
         markers = find_markers(img.gray)
         if markers is not None:
             for x, y in markers:
                 cv2.circle(vis, (int(x), int(y)), 8, (0, 255, 0), 2)
-        affine = page_affine(img)
         spec = layout["regions"][role]
         if role == "answer_p1":
-            regions = find_bc_table_regions(img, markers)
+            regions = resolve_bc_regions(img, spec, markers)
             if regions:
                 for ri, box in enumerate(regions.match_rows, start=1):
                     x0, y0, x1, y1 = box
@@ -55,8 +57,14 @@ def main() -> int:
                         str(args.output_dir / f"student{si:03d}_match_q{ri}.png"),
                         cv2.cvtColor(crop_rgb(img, box), cv2.COLOR_RGB2BGR),
                     )
+                    if regions.match_cell_boxes and ri - 1 < len(regions.match_cell_boxes):
+                        for ci, cbox in enumerate(regions.match_cell_boxes[ri - 1]):
+                            cv2.rectangle(vis, cbox[:2], cbox[2:], (255, 128, 0), 1)
                 x0, y0, x1, y1 = regions.tf_row
                 cv2.rectangle(vis, (x0, y0), (x1, y1), (0, 0, 255), 2)
+                if regions.tf_cell_boxes:
+                    for cbox in regions.tf_cell_boxes:
+                        cv2.rectangle(vis, cbox[:2], cbox[2:], (128, 0, 255), 1)
                 cv2.imwrite(
                     str(args.output_dir / f"student{si:03d}_tf_block.png"),
                     cv2.cvtColor(crop_rgb(img, regions.tf_block), cv2.COLOR_RGB2BGR),
@@ -67,20 +75,21 @@ def main() -> int:
                     px = warp_norm_box(tuple(block["box"]), img, affine)
                     cv2.rectangle(vis, px[:2], px[2:], (255, 128, 0), 2)
         else:
-            for item in spec.get("fill_lines", []):
-                px = warp_norm_box(tuple(item["box"]), img, affine)
-                x0, y0, x1, y1 = px
-                cv2.rectangle(vis, (x0, y0), (x1, y1), (0, 0, 255), 1)
-            auto = detect_fill_line_rois(img.rgb)
-            if auto:
-                for px in auto:
-                    x0, y0, x1, y1 = px
-                    cv2.rectangle(vis, (x0, y0), (x1, y1), (0, 255, 255), 1)
+            p2 = resolve_page2_regions(img, spec)
+            if p2:
+                for box in p2.fill_boxes:
+                    cv2.rectangle(vis, box[:2], box[2:], (0, 255, 255), 1)
+                for box in p2.sa_boxes:
+                    cv2.rectangle(vis, box[:2], box[2:], (255, 0, 255), 2)
+            else:
+                for item in spec.get("fill_lines", []):
+                    px = warp_norm_box(tuple(item["box"]), img, affine)
+                    cv2.rectangle(vis, px[:2], px[2:], (0, 0, 255), 1)
         cv2.imwrite(
             str(args.output_dir / f"student{si:03d}_{label}_overlay.png"),
             cv2.cvtColor(vis, cv2.COLOR_RGB2BGR),
         )
-        print(f"{label}: markers={'yes' if markers is not None else 'NO'}, affine={'yes' if affine is not None else 'NO'}")
+        print(f"{label}: align={align_method}, markers={'yes' if markers is not None else 'NO'}")
 
     doc.close()
     print(f"Wrote previews → {args.output_dir}")

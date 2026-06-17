@@ -24,7 +24,20 @@ python shared-tools/exam-marking/extract_s3_cmp_spec_from_docx.py \
 pip install -r requirements-ocr.txt
 ```
 
-座標：**唔使人手逐版 crop**。每頁用 ZipGrade 四角黑格做基準，再喺 MC 底邊以下自動搵乙/丙表格橫線（`find_bc_table_regions`），適應掃描走位。
+座標：**乙/丙人手校準一次**（`answer_p1.calibrated`）；**第 2 頁**用考試 PDF 空白答題紙（page 8–9）ORB + homography 對齊（`alignment.template`）。
+
+**對齊策略：** 第 1 頁 ZipGrade 角格；第 2 頁優先 ORB（無角格）。工具：`calibrate_bc_layout.py`。
+
+**第 1 頁（乙、丙）** — `calibrated.rows`：3 行 × 5 欄 norm box（配對×2 + 是非×1）；表格闊度約 **17%–88% 頁寬**（參考卷已 tune）。  
+**第 2 頁（丁、戊）** — 幼 kernel 搵 10 條填空底線；左邊 (a)–(e) label cluster 定位戊部 (a)(b)(c) 答題區。
+
+```bash
+# 從參考卷 dump 建議座標（貼入 layout JSON 再微調）
+python shared-tools/exam-marking/calibrate_bc_layout.py ref.pdf --dump --table-x 0.168 0.882
+
+# 預覽 calibrated crops
+python shared-tools/exam-marking/calibrate_bc_layout.py ref.pdf -o ./_cal_preview --student 0
+```
 
 ```bash
 # 對照 overlay（紅框=乙部兩行，藍框=丙部）
