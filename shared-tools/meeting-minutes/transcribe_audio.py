@@ -59,6 +59,12 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Transcribe audio files using faster-whisper.")
     ap.add_argument("audio", nargs="+", type=Path, help="Audio file path(s) (m4a/wav/mp3/...)")
     ap.add_argument("--model", default="small", help="Whisper model size: tiny/base/small/medium/large-v3")
+    ap.add_argument(
+        "--model-path",
+        type=Path,
+        default=None,
+        help="Optional local path to a cached faster-whisper model (ctranslate2). If not set, will try to auto-detect from HF cache.",
+    )
     ap.add_argument("--device", default="cpu", help="Device: cpu/cuda")
     ap.add_argument("--compute-type", default="int8", help="Compute type, e.g. int8/int8_float16/float16")
     ap.add_argument("--language", default="zh", help="Language code, e.g. zh/en; use 'auto' to detect")
@@ -66,11 +72,28 @@ def main() -> int:
     args = ap.parse_args()
 
     language = None if args.language == "auto" else args.language
-    model = WhisperModel(args.model, device=args.device, compute_type=args.compute_type)
+    model_src: str | Path = args.model
+    if args.model_path is not None:
+        model_src = args.model_path
+    else:
+        # Try to avoid network by using the local HF cache if present.
+        # Example: %USERPROFILE%\.cache\huggingface\hub\models--Systran--faster-whisper-large-v3\snapshots\<hash>\
+        cache_root = Path.home() / ".cache" / "huggingface" / "hub"
+        model_dir = cache_root / f"models--Systran--faster-whisper-{args.model}"
+        snapshots = model_dir / "snapshots"
+        if snapshots.exists():
+            snap_candidates = sorted([p for p in snapshots.iterdir() if p.is_dir()], key=lambda p: p.name, reverse=True)
+            if snap_candidates:
+                model_src = snap_candidates[0]
+    print(f"Loading model from: {model_src}", flush=True)
+    model = WhisperModel(str(model_src), device=args.device, compute_type=args.compute_type)
 
     for a in args.audio:
         out = args.out_dir / f"{a.stem}.transcript.txt"
-        print(f"Starting: {a} -> {out} (model={args.model}, lang={args.language})")
+        print(
+            f"Starting: {a} -> {out} (model={args.model}, lang={args.language}, device={args.device}, compute={args.compute_type})",
+            flush=True,
+        )
         out.parent.mkdir(parents=True, exist_ok=True)
         # Stream to the final output path (avoid losing hours of work).
         tmp_audio_path = out.with_suffix("").with_suffix(a.suffix)
@@ -92,10 +115,10 @@ def main() -> int:
                 n_written += 1
                 if n_written % 50 == 0:
                     f.flush()
-                    print(f"{a.name}: wrote {n_written} segments...")
+                    print(f"{a.name}: wrote {n_written} segments...", flush=True)
             f.write("\n")
             f.flush()
-        print(f"Done: {a.name} ({n_written} segments)")
+        print(f"Done: {a.name} ({n_written} segments)", flush=True)
 
     return 0
 
