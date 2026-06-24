@@ -20,6 +20,8 @@
   - 對應原專案 `chw-sports-day`
 - **Digital education**: `digital-education/`
   - 數字教育推廣、資源整合、校內流程
+- **QEF e-Learning Grant**: `qef-elearning-grant/`
+  - 對應原專案 `chw-workflows`；優質教育基金電子學習撥款計劃（流動電腦裝置及上網支援）
 
 ### 共用工具（放 `shared-tools/`）
 

@@ -12,6 +12,7 @@
 - **Student report**: `Administrative/CHW/student-report/`
 - **Sportsday**: `Administrative/CHW/sportsday/`
 - **數字教育（校內政策/資源整合/推廣）**: `Administrative/CHW/digital-education/`
+- **QEF 電子學習撥款計劃（流動電腦裝置及上網支援）**: `Administrative/CHW/qef-elearning-grant/`（workflow skill: `.cursor/skills/qef-elearning-grant/`）
 
 ### 教學（出卷／批改／功課／資源）
 
@@ -27,4 +28,5 @@
 - **文件/試卷模板**: `templates/`
 - **可重用自動化工具（CLI）**: `shared-tools/`
 - **輸出暫存（不建議長期保存大量檔案）**: `output/`
+- **同事共建構想（platform + personal repo，設計備忘）**: `docs/PLATFORM-COLLABORATION.md`
 
