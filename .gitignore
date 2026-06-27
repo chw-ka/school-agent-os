@@ -36,3 +36,11 @@ Administrative/CHW/student-report/export/*.xlsx
 # Student submissions / PII — never commit
 **/_student_submissions/
 **/_student_submissions/**
+
+# Local API / OAuth secrets (commit only *.example.* templates — see configs/README.md)
+configs/*.json
+!configs/*.example.json
+configs/.env
+configs/.env.local
+configs/client_secret*
+configs/google-forms-oauth-token.json
