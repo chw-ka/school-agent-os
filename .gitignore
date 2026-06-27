@@ -25,6 +25,7 @@ Subjects/S3-CMP/notes/Python & AI/Lesson 5/_archive/
 *.apk
 *.aia
 *.zip
+*.pptx
 
 # Local tool output (transcripts, drafts) — do not commit
 output/

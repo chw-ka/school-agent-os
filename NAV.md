@@ -23,6 +23,13 @@
 - **ICT（高中）**: `Subjects/S5-ICT/`, `Subjects/S6-ICT/`, `Subjects/DSE-ICT/`（共用參考庫）
 - **科組教學行政（選書等）**: `Subjects/TechEd/`
 
+### 教師培訓 / 數字教育推廣（Training/）
+
+與教學課程無直接關係，屬「數字教育」職責範疇：對外分享、教師 PD、學生體驗活動等。
+
+- **M5StickS3 教師 PD 分享（2026-06-22 惠州學校）**: `Training/primary-staff-training/`
+- **M5StickS3 小五 STEAM 體驗課**: `Training/primary-steam-tasting-p5/`
+
 ### 可共用工具（共建）
 
 - **文件/試卷模板**: `templates/`
