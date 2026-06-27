@@ -32,3 +32,16 @@ output/
 # Student submissions / PII — never commit
 **/_student_submissions/
 **/_student_submissions/**
+
+# marking/ runtime data — never commit (downloads, extracted aias, results)
+**/marking/attachments/
+**/marking/aias/
+**/marking/marksheets/
+**/marking/marksheets/**
+**/marking/screenshots/
+**/marking/.cache/
+**/marking/results.csv
+**/marking/manual_marking/
+**/marking/records/
+**/marking/student_data/
+**/marking/task_info/

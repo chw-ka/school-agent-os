@@ -3,3 +3,13 @@ pypdf>=4.0.0
 pymupdf>=1.24.0
 python-dotenv>=1.0.0
 
+# shared-tools/marking
+msgraph-sdk>=1.0.0
+azure-identity>=1.15.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+xmltodict>=0.13.0
+
+# shared-tools/code-marking
+google-genai>=1.0.0
+

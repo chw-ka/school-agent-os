@@ -12,7 +12,6 @@
 - **Student report**: `Administrative/CHW/student-report/`
 - **Sportsday**: `Administrative/CHW/sportsday/`
 - **數字教育（校內政策/資源整合/推廣）**: `Administrative/CHW/digital-education/`
-- **QEF 電子學習撥款計劃（流動電腦裝置及上網支援）**: `Administrative/CHW/qef-elearning-grant/`（workflow skill: `.cursor/skills/qef-elearning-grant/`）
 
 ### 教學（出卷／批改／功課／資源）
 
@@ -28,5 +27,17 @@
 - **文件/試卷模板**: `templates/`
 - **可重用自動化工具（CLI）**: `shared-tools/`
 - **輸出暫存（不建議長期保存大量檔案）**: `output/`
-- **同事共建構想（platform + personal repo，設計備忘）**: `docs/PLATFORM-COLLABORATION.md`
+
+#### shared-tools 索引
+
+| 工具 | 路徑 | 用途 |
+|------|------|------|
+| marking | `shared-tools/marking/` | 自動批改作業（下載→評分→提交）；Teams connector 已完成，Classroom 待開發 |
+| aia-tools | `shared-tools/aia-tools/` | MIT App Inventor .aia 解壓、Blockly 樹查詢、組件樹檢查 |
+| code-marking | `shared-tools/code-marking/` | Python exec、Arduino 讀檔、EV3 批改、AI 使用偵測、MS Forms 評分 |
+| paper-generator | `shared-tools/paper-generator/` | 試卷藍圖 → spec JSON |
+| paper-formatter | `shared-tools/paper-formatter/` | spec JSON → DOCX |
+| question-quality-check | `shared-tools/question-quality-check/` | 題目去重、概念覆蓋檢查 |
+| paper-quality-check | `shared-tools/paper-quality-check/` | DOCX 格式審查 |
+| exam-marking | `shared-tools/exam-marking/` | 掃描答題紙 OCR 批改（實驗性）|
 
