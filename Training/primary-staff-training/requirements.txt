@@ -1,0 +1,7 @@
+google-genai
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+qrcode[pil]
+python-dotenv
+python-pptx
