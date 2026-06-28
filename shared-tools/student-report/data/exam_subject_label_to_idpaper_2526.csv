@@ -1,0 +1,54 @@
+exam_label,form_min,form_max,idPaper,notes
+中文口試,1,5,CH4,
+中文4 (說話),1,5,CH4,
+中文4(說話),1,5,CH4,
+(1A) 中文4(說話),1,5,CH4,strip class prefix in script
+(2B) 中文4(說話),1,5,CH4,
+(3D)普通話(口試),1,5,PTH,
+(1A) 普通話(口試),1,5,PTH,
+(2B) 普通話(口試),1,5,PTH,
+普通話(口試),1,5,PTH,
+普通話(筆試),1,5,PTH,
+中文1 (閱讀),1,5,CH1,
+中文1(閱讀)及中文3(聆聽),1,5,CH1|CH3,multi-paper split by |
+中文2 (寫作),1,5,CH2,
+中國語文 - 寫作(TSA),1,5,CH2,
+中國語文 - 聆聽(TSA),1,5,CH3,
+Eng 1 (GE),1,5,EG1,S1-3 label; S4-5 also use as EG1 alias
+Eng 1 (Reading),4,5,EG1,S4-5 Reading
+Eng 2 (Writing),1,5,EG2,
+English - Writing(TSA),1,5,EG2,
+Eng 3 (Listening),1,5,EG3,
+English -Reading(TSA),1,5,EG1,
+Listening(TSA),1,5,EG3,
+Eng 4 (Oral),1,5,EG4,
+(S5) Eng 4 (Oral),5,5,EG4,
+Math,1,5,MTH,
+Math(CP) 1,4,5,MTH,
+Math(CP) 2,4,5,MTH,
+Math(EP)-M2,4,5,MTH,
+數學(TSA),1,5,MTH,
+科學,1,2,SCI,S1-2 Science
+世界歷史,1,5,HST,
+地理,1,5,GEO,
+生活與社會,1,3,IAS,S1-3
+公民與社會發展,4,5,CSD,
+公民、經濟與社會,1,3,IAS,S1-3 生活與社會（缺席表闊欄沿用舊標籤）
+公民、經濟與社會,4,5,CES,
+化學,4,5,CHM,
+生物,4,5,BIO,
+生物 ,4,5,BIO,trailing space variant
+物理,4,5,PHY,
+經濟,4,5,ECO,
+中國歷史,1,5,CHT,
+中國歷史1,1,5,CHT,
+中國歷史2,1,5,CHT,
+歷史1,1,5,HST,
+歷史 1,1,5,HST,
+電腦(筆試),1,5,ICT,
+資訊及通訊科技,1,5,ICT,
+英文口試,1,5,EG4,paired with 中文口試 in col8
+歷史2,1,5,HST,
+歷史 2,1,5,HST,
+歷史2,4,5,HST,
+中國文學 1(8:15-10:15),5,5,LAS,

@@ -18,3 +18,5 @@ This folder stores reusable “workflows as Skills” so they’re easy to follo
 - **Examples**: 1–2 concrete examples.
 
 Administrative project folders live under `Administrative/CHW/{project}/` for runbooks, schemas, and reference snapshots (no named student lists in git).
+
+Current skills include `student-report-guides`, `mssql-mcp-legacy-execute`, `qef-elearning-grant`, `panel-storage-sync`, `tidy-up`, and subject-specific exam generators.

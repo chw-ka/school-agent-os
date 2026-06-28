@@ -1,0 +1,26 @@
+{
+  "_comment": "Cursor Settings → Models 參考設定（Gemini + DeepSeek，不用 OpenAI）",
+  "gemini": {
+    "googleApiKey": "AIzaSy_xxxxxxxxxxxxxxxx",
+    "models": [
+      {
+        "name": "gemini-2.0-flash",
+        "enabled": true,
+        "useFor": ["課後 MARP 延伸（插圖，可選）"]
+      }
+    ]
+  },
+  "deepseek": {
+    "_note": "DeepSeek 經 OpenAI 兼容接口接入，填 DeepSeek Key 而非 OpenAI Key",
+    "openAIApiKey": "sk-xxxxxxxxxxxxxxxx",
+    "overrideOpenAIBaseURL": true,
+    "openAIBaseURL": "https://api.deepseek.com",
+    "models": [
+      {
+        "name": "deepseek-chat",
+        "enabled": true,
+        "useFor": ["活動一 Phase 1 寫 code", "活動一 Phase 2–3", "活動二（主力）", "活動三 靜態網站"]
+      }
+    ]
+  }
+}
