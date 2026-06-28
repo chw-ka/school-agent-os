@@ -15,7 +15,7 @@
 - **SLP**: `slp/`
   - 對應原專案 `chw-slp-temp`
 - **Student report**: `student-report/`
-  - 對應原專案 `chw-student-report-old`
+  - 對應原專案 `chw-student-report-old`（已併入；歷年檔案見校內 `T:\`）
 - **Sportsday**: `sportsday/`
   - 對應原專案 `chw-sports-day`
 - **Digital education**: `digital-education/`
