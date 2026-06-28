@@ -1,0 +1,82 @@
+{
+    "assignments": [
+        {
+            "display_name": "【Python與人工智能】第六章　加入遊戲設計的心理陷阱，完成 \"最受歡迎的遊戲\"",
+            "tester": "pai_L6_T1",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第五章　任務三",
+            "tester": "pai_L5_T3",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第五章　任務二",
+            "tester": "pai_L5_T2",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第五章　任務一",
+            "tester": "pai_L5_T1",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第四章　任務二",
+            "tester": "pai_L4_T2",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第四章　任務一",
+            "tester": "pai_L4_T1",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第三章　任務二",
+            "tester": "pai_L3_T3",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第三章　任務一",
+            "tester": "pai_L3_T2",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第三章　挑戰站",
+            "tester": "pai_L3_T1",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第二章　挑戰站",
+            "tester": "pai_L2_T3",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第二章　任務二",
+            "tester": "pai_L2_T2",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第二章　任務一",
+            "tester": "pai_L2_T1",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第一章　挑戰站",
+            "tester": "pai_L1_T3",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第一章　任務二",
+            "tester": "pai_L1_T2",
+            "total_marks": 10
+        },
+        {
+            "display_name": "【Python與人工智能】第一章　任務一",
+            "tester": "pai_L1_T1",
+            "total_marks": 10
+        }
+    ],
+    "report_settings": {
+        "show_code_column": false
+    }
+}

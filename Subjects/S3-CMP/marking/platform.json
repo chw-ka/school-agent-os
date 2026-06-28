@@ -1,0 +1,21 @@
+{
+    "platform": "teams",
+    "courses": [
+        {
+            "id": "a3890c01-31d2-47d6-9f75-127f630a5972",
+            "display_name": "3C CMP 25-26"
+        },
+        {
+            "id": "a5bedbd0-bc7d-407b-adfe-8e45daca3cbc",
+            "display_name": "3B CMP 25-26"
+        },
+        {
+            "id": "c8778847-0d36-41f9-b0b2-05f9fdbef87c",
+            "display_name": "3D CMP 25-26"
+        },
+        {
+            "id": "fc6a76ef-8bcb-4e0e-966a-46238c643e2f",
+            "display_name": "3A CMP 25-26"
+        }
+    ]
+}

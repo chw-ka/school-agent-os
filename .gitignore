@@ -37,6 +37,18 @@ Administrative/CHW/student-report/export/*.xlsx
 **/_student_submissions/
 **/_student_submissions/**
 
+# marking/ runtime data — never commit (downloads, extracted aias, results)
+**/marking/attachments/
+**/marking/aias/
+**/marking/marksheets/
+**/marking/marksheets/**
+**/marking/screenshots/
+**/marking/.cache/
+**/marking/results.csv
+**/marking/manual_marking/
+**/marking/records/
+**/marking/student_data/
+**/marking/task_info/
 # Local API / OAuth secrets (commit only *.example.* templates — see configs/README.md)
 configs/*.json
 !configs/*.example.json
