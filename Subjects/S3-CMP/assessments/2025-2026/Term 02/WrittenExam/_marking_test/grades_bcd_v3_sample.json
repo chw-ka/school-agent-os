@@ -1,0 +1,958 @@
+{
+  "students": [
+    {
+      "student_index": 0,
+      "scan_pages": [
+        0,
+        1
+      ],
+      "aligned": {
+        "answer_p1": "markers",
+        "answer_p2": "orb"
+      },
+      "extracted": {
+        "match_q1": "DABCE",
+        "match_q2": "DEBAC",
+        "tf_q1": "TFFFF",
+        "fill_q1_a": "Passand",
+        "fill_q1_b": "asswora.ison",
+        "fill_q1_c": "peechReroshition",
+        "fill_q1_d": "yue",
+        "fill_q1_e": "PJTS",
+        "fill_q2_a": "Pency-python",
+        "fill_q2_b": "xm",
+        "fill_q2_c": "tColor .",
+        "fill_q2_d": "kinter",
+        "fill_q2_e": "iiz-data.son",
+        "sa_q1_a": "愛散效能生成整論作大後提大，學生不動從中學型到作大平的替讀學數能伯 道便操風：浸相通德.不應利用I代替自蒸戶刻功課",
+        "sa_q1_b": "在這工作內多力面肚能擔任得由人類媒很多A工解做叛率比人預向.向且 b 不盲元出",
+        "sa_q1_c": "提使其艦相用的智識點，能一先步教金貨"
+      },
+      "scores": {
+        "section_b": 7,
+        "section_c": 4,
+        "section_d": 6,
+        "section_e": null,
+        "sa_manual": true,
+        "details": {
+          "match_q1": {
+            "expected": "BACDE",
+            "got": "DABCE"
+          },
+          "match_q2": {
+            "expected": "DEBAC",
+            "got": "DEBAC"
+          },
+          "tf_q1": {
+            "expected": "TFTFF",
+            "got": "TFFFF"
+          },
+          "fill_q1": {
+            "expected": [
+              "gTTS",
+              "playsound",
+              "password.json",
+              "yue",
+              "SpeechRecognition"
+            ],
+            "got": [
+              "passand",
+              "asswora.ison",
+              "peechreroshition",
+              "yue",
+              "pjts"
+            ],
+            "resolved": [
+              "passand",
+              "password.json",
+              "SpeechRecognition",
+              "yue",
+              "pjts"
+            ],
+            "cells": [
+              {
+                "id": "fill_q1_a",
+                "expected": "gTTS",
+                "ocr": "Passand",
+                "resolved": null,
+                "similarity": 62.5,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_b",
+                "expected": "playsound",
+                "ocr": "asswora.ison",
+                "resolved": "password.json",
+                "similarity": 80.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_c",
+                "expected": "password.json",
+                "ocr": "peechReroshition",
+                "resolved": "SpeechRecognition",
+                "similarity": 78.78787878787878,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_d",
+                "expected": "yue",
+                "ocr": "yue",
+                "resolved": "yue",
+                "similarity": 100,
+                "correct": true
+              },
+              {
+                "id": "fill_q1_e",
+                "expected": "SpeechRecognition",
+                "ocr": "PJTS",
+                "resolved": null,
+                "similarity": 50.0,
+                "correct": false
+              }
+            ]
+          },
+          "fill_q2": {
+            "expected": [
+              "opencv-python",
+              "xml",
+              "cvtColor",
+              "tkinter",
+              "quiz_data.json"
+            ],
+            "got": [
+              "pency-python",
+              "xm",
+              "tcolor.",
+              "kinter",
+              "iiz-data.son"
+            ],
+            "resolved": [
+              "opencv-python",
+              "xml",
+              "cvtColor",
+              "tkinter",
+              "quiz_data.json"
+            ],
+            "cells": [
+              {
+                "id": "fill_q2_a",
+                "expected": "opencv-python",
+                "ocr": "Pency-python",
+                "resolved": "opencv-python",
+                "similarity": 88.0,
+                "correct": true
+              },
+              {
+                "id": "fill_q2_b",
+                "expected": "xml",
+                "ocr": "xm",
+                "resolved": "xml",
+                "similarity": 80.0,
+                "correct": true
+              },
+              {
+                "id": "fill_q2_c",
+                "expected": "cvtColor",
+                "ocr": "tColor .",
+                "resolved": "cvtColor",
+                "similarity": 80.0,
+                "correct": true
+              },
+              {
+                "id": "fill_q2_d",
+                "expected": "tkinter",
+                "ocr": "kinter",
+                "resolved": "tkinter",
+                "similarity": 92.3076923076923,
+                "correct": true
+              },
+              {
+                "id": "fill_q2_e",
+                "expected": "quiz_data.json",
+                "ocr": "iiz-data.son",
+                "resolved": "quiz_data.json",
+                "similarity": 76.92307692307692,
+                "correct": true
+              }
+            ]
+          },
+          "section_e": {
+            "manual_only": true,
+            "note": "戊部為長答；OCR 不可靠，請人手批改。",
+            "extracted": {
+              "sa_q1_a": "愛散效能生成整論作大後提大，學生不動從中學型到作大平的替讀學數能伯 道便操風：浸相通德.不應利用I代替自蒸戶刻功課",
+              "sa_q1_b": "在這工作內多力面肚能擔任得由人類媒很多A工解做叛率比人預向.向且 b 不盲元出",
+              "sa_q1_c": "提使其艦相用的智識點，能一先步教金貨"
+            }
+          }
+        },
+        "total_auto": 17
+      }
+    },
+    {
+      "student_index": 1,
+      "scan_pages": [
+        2,
+        3
+      ],
+      "aligned": {
+        "answer_p1": "markers",
+        "answer_p2": "orb"
+      },
+      "extracted": {
+        "match_q1": "ACDE",
+        "match_q2": "EBCA",
+        "tf_q1": "TFTFF",
+        "fill_q1_a": "9I7S",
+        "fill_q1_b": "laysouna",
+        "fill_q1_c": "asswordl. ison",
+        "fill_q1_d": "ywe",
+        "fill_q1_e": "hecognition",
+        "fill_q2_a": "",
+        "fill_q2_b": "tkinter",
+        "fill_q2_c": "dor",
+        "fill_q2_d": "tml",
+        "fill_q2_e": "12-data.json",
+        "sa_q1_a": "在道德面學生用程習作刊低言碼信或位",
+        "sa_q1_b": "資料輸山及核數務產現金A尼綜定成的工作若AI技使進行A準魯勝 6 倫L作",
+        "sa_q1_c": "動小立7能之主赫3解學生不明的酮年，人敏以托據學生孩局 格來給間頭的能次2孩"
+      },
+      "scores": {
+        "section_b": 1,
+        "section_c": 5,
+        "section_d": 3,
+        "section_e": null,
+        "sa_manual": true,
+        "details": {
+          "match_q1": {
+            "expected": "BACDE",
+            "got": "ACDE"
+          },
+          "match_q2": {
+            "expected": "DEBAC",
+            "got": "EBCA"
+          },
+          "tf_q1": {
+            "expected": "TFTFF",
+            "got": "TFTFF"
+          },
+          "fill_q1": {
+            "expected": [
+              "gTTS",
+              "playsound",
+              "password.json",
+              "yue",
+              "SpeechRecognition"
+            ],
+            "got": [
+              "9i7s",
+              "laysouna",
+              "asswordl.ison",
+              "ywe",
+              "hecognition"
+            ],
+            "resolved": [
+              "9i7s",
+              "playsound",
+              "password.json",
+              "ywe",
+              "SpeechRecognition"
+            ],
+            "cells": [
+              {
+                "id": "fill_q1_a",
+                "expected": "gTTS",
+                "ocr": "9I7S",
+                "resolved": null,
+                "similarity": 25.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_b",
+                "expected": "playsound",
+                "ocr": "laysouna",
+                "resolved": "playsound",
+                "similarity": 82.35294117647058,
+                "correct": true
+              },
+              {
+                "id": "fill_q1_c",
+                "expected": "password.json",
+                "ocr": "asswordl. ison",
+                "resolved": "password.json",
+                "similarity": 84.61538461538461,
+                "correct": true
+              },
+              {
+                "id": "fill_q1_d",
+                "expected": "yue",
+                "ocr": "ywe",
+                "resolved": null,
+                "similarity": 66.66666666666667,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_e",
+                "expected": "SpeechRecognition",
+                "ocr": "hecognition",
+                "resolved": "SpeechRecognition",
+                "similarity": 78.57142857142857,
+                "correct": true
+              }
+            ]
+          },
+          "fill_q2": {
+            "expected": [
+              "opencv-python",
+              "xml",
+              "cvtColor",
+              "tkinter",
+              "quiz_data.json"
+            ],
+            "got": [
+              "",
+              "tkinter",
+              "dor",
+              "tml",
+              "12-data.json"
+            ],
+            "resolved": [
+              "",
+              "tkinter",
+              "dor",
+              "tml",
+              "12-data.json"
+            ],
+            "cells": [
+              {
+                "id": "fill_q2_a",
+                "expected": "opencv-python",
+                "ocr": "",
+                "resolved": null,
+                "similarity": 0,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_b",
+                "expected": "xml",
+                "ocr": "tkinter",
+                "resolved": "tkinter",
+                "similarity": 100,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_c",
+                "expected": "cvtColor",
+                "ocr": "dor",
+                "resolved": null,
+                "similarity": 36.36363636363637,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_d",
+                "expected": "tkinter",
+                "ocr": "tml",
+                "resolved": null,
+                "similarity": 66.66666666666667,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_e",
+                "expected": "quiz_data.json",
+                "ocr": "12-data.json",
+                "resolved": null,
+                "similarity": 69.23076923076923,
+                "correct": false
+              }
+            ]
+          },
+          "section_e": {
+            "manual_only": true,
+            "note": "戊部為長答；OCR 不可靠，請人手批改。",
+            "extracted": {
+              "sa_q1_a": "在道德面學生用程習作刊低言碼信或位",
+              "sa_q1_b": "資料輸山及核數務產現金A尼綜定成的工作若AI技使進行A準魯勝 6 倫L作",
+              "sa_q1_c": "動小立7能之主赫3解學生不明的酮年，人敏以托據學生孩局 格來給間頭的能次2孩"
+            }
+          }
+        },
+        "total_auto": 9
+      }
+    },
+    {
+      "student_index": 2,
+      "scan_pages": [
+        4,
+        5
+      ],
+      "aligned": {
+        "answer_p1": "markers",
+        "answer_p2": "orb"
+      },
+      "extracted": {
+        "match_q1": "ACBE",
+        "match_q2": "A",
+        "tf_q1": "TF",
+        "fill_q1_a": "",
+        "fill_q1_b": "1",
+        "fill_q1_c": "",
+        "fill_q1_d": "",
+        "fill_q1_e": "",
+        "fill_q2_a": "echReoqnfion",
+        "fill_q2_b": "9ITs",
+        "fill_q2_c": "asswordson",
+        "fill_q2_d": "yue",
+        "fill_q2_e": "asound",
+        "sa_q1_a": "到效能方面學生票法快學到使武軍用出來.道德操宇功這果本應由門是自主定成作 胭A生成整篇作不獻是騙張",
+        "sa_q1_b": "A會人工更堆確比軟不客為出餅 b",
+        "sa_q1_c": "A心一教師是需要心需要感情而州的國替常常都很畫面也會過放深奧 堅性不-定看脂懂聽集權"
+      },
+      "scores": {
+        "section_b": 0,
+        "section_c": 2,
+        "section_d": 0,
+        "section_e": null,
+        "sa_manual": true,
+        "details": {
+          "match_q1": {
+            "expected": "BACDE",
+            "got": "ACBE"
+          },
+          "match_q2": {
+            "expected": "DEBAC",
+            "got": "A"
+          },
+          "tf_q1": {
+            "expected": "TFTFF",
+            "got": "TF"
+          },
+          "fill_q1": {
+            "expected": [
+              "gTTS",
+              "playsound",
+              "password.json",
+              "yue",
+              "SpeechRecognition"
+            ],
+            "got": [
+              "",
+              "1",
+              "",
+              "",
+              ""
+            ],
+            "resolved": [
+              "",
+              "1",
+              "",
+              "",
+              ""
+            ],
+            "cells": [
+              {
+                "id": "fill_q1_a",
+                "expected": "gTTS",
+                "ocr": "",
+                "resolved": null,
+                "similarity": 0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_b",
+                "expected": "playsound",
+                "ocr": "1",
+                "resolved": null,
+                "similarity": 0.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_c",
+                "expected": "password.json",
+                "ocr": "",
+                "resolved": null,
+                "similarity": 0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_d",
+                "expected": "yue",
+                "ocr": "",
+                "resolved": null,
+                "similarity": 0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_e",
+                "expected": "SpeechRecognition",
+                "ocr": "",
+                "resolved": null,
+                "similarity": 0,
+                "correct": false
+              }
+            ]
+          },
+          "fill_q2": {
+            "expected": [
+              "opencv-python",
+              "xml",
+              "cvtColor",
+              "tkinter",
+              "quiz_data.json"
+            ],
+            "got": [
+              "echreoqnfion",
+              "9its",
+              "asswordson",
+              "yue",
+              "asound"
+            ],
+            "resolved": [
+              "echreoqnfion",
+              "9its",
+              "asswordson",
+              "yue",
+              "asound"
+            ],
+            "cells": [
+              {
+                "id": "fill_q2_a",
+                "expected": "opencv-python",
+                "ocr": "echReoqnfion",
+                "resolved": null,
+                "similarity": 40.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_b",
+                "expected": "xml",
+                "ocr": "9ITs",
+                "resolved": null,
+                "similarity": 36.36363636363637,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_c",
+                "expected": "cvtColor",
+                "ocr": "asswordson",
+                "resolved": null,
+                "similarity": 33.333333333333336,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_d",
+                "expected": "tkinter",
+                "ocr": "yue",
+                "resolved": null,
+                "similarity": 19.999999999999996,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_e",
+                "expected": "quiz_data.json",
+                "ocr": "asound",
+                "resolved": null,
+                "similarity": 40.0,
+                "correct": false
+              }
+            ]
+          },
+          "section_e": {
+            "manual_only": true,
+            "note": "戊部為長答；OCR 不可靠，請人手批改。",
+            "extracted": {
+              "sa_q1_a": "到效能方面學生票法快學到使武軍用出來.道德操宇功這果本應由門是自主定成作 胭A生成整篇作不獻是騙張",
+              "sa_q1_b": "A會人工更堆確比軟不客為出餅 b",
+              "sa_q1_c": "A心一教師是需要心需要感情而州的國替常常都很畫面也會過放深奧 堅性不-定看脂懂聽集權"
+            }
+          }
+        },
+        "total_auto": 2
+      }
+    },
+    {
+      "student_index": 3,
+      "scan_pages": [
+        6,
+        7
+      ],
+      "aligned": {
+        "answer_p1": "markers",
+        "answer_p2": "orb"
+      },
+      "extracted": {
+        "match_q1": "EED",
+        "match_q2": "EEAD",
+        "tf_q1": "TFFTF",
+        "fill_q1_a": "",
+        "fill_q1_b": "Dlaysouno",
+        "fill_q1_c": "Csurol.json",
+        "fill_q1_d": "",
+        "fill_q1_e": "echreontor",
+        "fill_q2_a": "Dutlon",
+        "fill_q2_b": "KUe",
+        "fill_q2_c": "I OY",
+        "fill_q2_d": "",
+        "fill_q2_e": "XW",
+        "sa_q1_a": "上人六含矢書創作想僑7 溫友人康雄信他約成秋是集紀得的",
+        "sa_q1_b": "F力AL的輸入IX及核建能力都比 人夫",
+        "sa_q1_c": "像老邱支蓮的人才入 /他的"
+      },
+      "scores": {
+        "section_b": 1,
+        "section_c": 3,
+        "section_d": 1,
+        "section_e": null,
+        "sa_manual": true,
+        "details": {
+          "match_q1": {
+            "expected": "BACDE",
+            "got": "EED"
+          },
+          "match_q2": {
+            "expected": "DEBAC",
+            "got": "EEAD"
+          },
+          "tf_q1": {
+            "expected": "TFTFF",
+            "got": "TFFTF"
+          },
+          "fill_q1": {
+            "expected": [
+              "gTTS",
+              "playsound",
+              "password.json",
+              "yue",
+              "SpeechRecognition"
+            ],
+            "got": [
+              "",
+              "dlaysouno",
+              "csurol.json",
+              "",
+              "echreontor"
+            ],
+            "resolved": [
+              "",
+              "playsound",
+              "csurol.json",
+              "",
+              "echreontor"
+            ],
+            "cells": [
+              {
+                "id": "fill_q1_a",
+                "expected": "gTTS",
+                "ocr": "",
+                "resolved": null,
+                "similarity": 0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_b",
+                "expected": "playsound",
+                "ocr": "Dlaysouno",
+                "resolved": "playsound",
+                "similarity": 77.77777777777779,
+                "correct": true
+              },
+              {
+                "id": "fill_q1_c",
+                "expected": "password.json",
+                "ocr": "Csurol.json",
+                "resolved": null,
+                "similarity": 58.33333333333333,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_d",
+                "expected": "yue",
+                "ocr": "",
+                "resolved": null,
+                "similarity": 0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_e",
+                "expected": "SpeechRecognition",
+                "ocr": "echreontor",
+                "resolved": null,
+                "similarity": 66.66666666666667,
+                "correct": false
+              }
+            ]
+          },
+          "fill_q2": {
+            "expected": [
+              "opencv-python",
+              "xml",
+              "cvtColor",
+              "tkinter",
+              "quiz_data.json"
+            ],
+            "got": [
+              "dutlon",
+              "kue",
+              "ioy",
+              "",
+              "xw"
+            ],
+            "resolved": [
+              "dutlon",
+              "kue",
+              "ioy",
+              "",
+              "xw"
+            ],
+            "cells": [
+              {
+                "id": "fill_q2_a",
+                "expected": "opencv-python",
+                "ocr": "Dutlon",
+                "resolved": null,
+                "similarity": 42.85714285714286,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_b",
+                "expected": "xml",
+                "ocr": "KUe",
+                "resolved": null,
+                "similarity": 40.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_c",
+                "expected": "cvtColor",
+                "ocr": "I OY",
+                "resolved": null,
+                "similarity": 25.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_d",
+                "expected": "tkinter",
+                "ocr": "",
+                "resolved": null,
+                "similarity": 0,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_e",
+                "expected": "quiz_data.json",
+                "ocr": "XW",
+                "resolved": null,
+                "similarity": 40.0,
+                "correct": false
+              }
+            ]
+          },
+          "section_e": {
+            "manual_only": true,
+            "note": "戊部為長答；OCR 不可靠，請人手批改。",
+            "extracted": {
+              "sa_q1_a": "上人六含矢書創作想僑7 溫友人康雄信他約成秋是集紀得的",
+              "sa_q1_b": "F力AL的輸入IX及核建能力都比 人夫",
+              "sa_q1_c": "像老邱支蓮的人才入 /他的"
+            }
+          }
+        },
+        "total_auto": 5
+      }
+    },
+    {
+      "student_index": 4,
+      "scan_pages": [
+        8,
+        9
+      ],
+      "aligned": {
+        "answer_p1": "markers",
+        "answer_p2": "orb"
+      },
+      "extracted": {
+        "match_q1": "EACE",
+        "match_q2": "CEAC",
+        "tf_q1": "TFTTF",
+        "fill_q1_a": "S",
+        "fill_q1_b": "avcnund",
+        "fill_q1_c": "yue",
+        "fill_q1_d": "Spoechlecognifion",
+        "fill_q1_e": "encv- py-thon",
+        "fill_q2_a": "X",
+        "fill_q2_b": "tkinter",
+        "fill_q2_c": "i7~dalJson",
+        "fill_q2_d": "5",
+        "fill_q2_e": "",
+        "sa_q1_a": "崇習效能信隨低：單生鍵了負我所思考 能力註遙你極A功課思老龍力隆",
+        "sa_q1_b": "F 風上月 1力V及 到所能出廣快速月致犁 片人工租桃更莎屋做急項2師",
+        "sa_q1_c": "向情魔"
+      },
+      "scores": {
+        "section_b": 3,
+        "section_c": 4,
+        "section_d": 0,
+        "section_e": null,
+        "sa_manual": true,
+        "details": {
+          "match_q1": {
+            "expected": "BACDE",
+            "got": "EACE"
+          },
+          "match_q2": {
+            "expected": "DEBAC",
+            "got": "CEAC"
+          },
+          "tf_q1": {
+            "expected": "TFTFF",
+            "got": "TFTTF"
+          },
+          "fill_q1": {
+            "expected": [
+              "gTTS",
+              "playsound",
+              "password.json",
+              "yue",
+              "SpeechRecognition"
+            ],
+            "got": [
+              "s",
+              "avcnund",
+              "yue",
+              "spoechlecognifion",
+              "encv-py-thon"
+            ],
+            "resolved": [
+              "s",
+              "avcnund",
+              "yue",
+              "SpeechRecognition",
+              "encv-py-thon"
+            ],
+            "cells": [
+              {
+                "id": "fill_q1_a",
+                "expected": "gTTS",
+                "ocr": "S",
+                "resolved": null,
+                "similarity": 40.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_b",
+                "expected": "playsound",
+                "ocr": "avcnund",
+                "resolved": null,
+                "similarity": 50.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_c",
+                "expected": "password.json",
+                "ocr": "yue",
+                "resolved": "yue",
+                "similarity": 100,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_d",
+                "expected": "yue",
+                "ocr": "Spoechlecognifion",
+                "resolved": "SpeechRecognition",
+                "similarity": 82.35294117647058,
+                "correct": false
+              },
+              {
+                "id": "fill_q1_e",
+                "expected": "SpeechRecognition",
+                "ocr": "encv- py-thon",
+                "resolved": null,
+                "similarity": 38.095238095238095,
+                "correct": false
+              }
+            ]
+          },
+          "fill_q2": {
+            "expected": [
+              "opencv-python",
+              "xml",
+              "cvtColor",
+              "tkinter",
+              "quiz_data.json"
+            ],
+            "got": [
+              "x",
+              "tkinter",
+              "i7~daljson",
+              "5",
+              ""
+            ],
+            "resolved": [
+              "x",
+              "tkinter",
+              "i7~daljson",
+              "5",
+              ""
+            ],
+            "cells": [
+              {
+                "id": "fill_q2_a",
+                "expected": "opencv-python",
+                "ocr": "X",
+                "resolved": null,
+                "similarity": 50.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_b",
+                "expected": "xml",
+                "ocr": "tkinter",
+                "resolved": "tkinter",
+                "similarity": 100,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_c",
+                "expected": "cvtColor",
+                "ocr": "i7~dalJson",
+                "resolved": null,
+                "similarity": 58.33333333333333,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_d",
+                "expected": "tkinter",
+                "ocr": "5",
+                "resolved": null,
+                "similarity": 0.0,
+                "correct": false
+              },
+              {
+                "id": "fill_q2_e",
+                "expected": "quiz_data.json",
+                "ocr": "",
+                "resolved": null,
+                "similarity": 0,
+                "correct": false
+              }
+            ]
+          },
+          "section_e": {
+            "manual_only": true,
+            "note": "戊部為長答；OCR 不可靠，請人手批改。",
+            "extracted": {
+              "sa_q1_a": "崇習效能信隨低：單生鍵了負我所思考 能力註遙你極A功課思老龍力隆",
+              "sa_q1_b": "F 風上月 1力V及 到所能出廣快速月致犁 片人工租桃更莎屋做急項2師",
+              "sa_q1_c": "向情魔"
+            }
+          }
+        },
+        "total_auto": 7
+      }
+    }
+  ],
+  "count": 5,
+  "ocr_engine": "paddleocr-2.7+cell_letter+fuzzy_fill",
+  "alignment": "zipgrade_markers+orb_template",
+  "sa_grading": "manual_only"
+}

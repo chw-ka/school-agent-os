@@ -1,0 +1,88 @@
+{
+  "students": [
+    {
+      "student_index": 0,
+      "scan_pages": [
+        0,
+        1
+      ],
+      "aligned": {
+        "answer_p1": true,
+        "answer_p2": true
+      },
+      "extracted": {
+        "match_q1": "ACCE",
+        "match_q2": "CDC",
+        "tf_q1": "CFE",
+        "fill_q1_a": "a) pasang",
+        "fill_q1_b": "b) passtora.ison",
+        "fill_q1_c": "c) SpeechKecosnition",
+        "fill_q1_d": "d) yue",
+        "fill_q1_e": "e) PTS",
+        "fill_q2_a": "a) opency-thon",
+        "fill_q2_b": "Xml",
+        "fill_q2_c": "c) cytColor",
+        "fill_q2_d": "d) tkinter",
+        "fill_q2_e": "e) quiz-data.json",
+        "sa_q1_a": "變散效能生成整作大後提友，學生不從中學型到作大車的替續一學藝雄低 道使探私風：液督道德.不匯利用代替自.戶交功薪",
+        "sa_q1_b": "一在這工作內多力面肚能推任得比人預媒很多A工射政報率氏人種向向日 b 不至新出鑄",
+        "sa_q1_c": "提使其道相用的智識點、能一先或鼓會貨生"
+      },
+      "scores": {
+        "section_b": 1,
+        "section_c": 1,
+        "section_d": 1,
+        "details": {
+          "match_q1": {
+            "expected": "BACDE",
+            "got": "ACCE"
+          },
+          "match_q2": {
+            "expected": "DEBAC",
+            "got": "CDC"
+          },
+          "tf_q1": {
+            "expected": "TFTFF",
+            "got": "CFE"
+          },
+          "fill_q1": {
+            "expected": [
+              "gTTS",
+              "playsound",
+              "password.json",
+              "yue",
+              "SpeechRecognition"
+            ],
+            "got": [
+              "a)pasang",
+              "b)passtora.ison",
+              "c)speechkecosnition",
+              "d)yue",
+              "e)pts"
+            ]
+          },
+          "fill_q2": {
+            "expected": [
+              "opencv-python",
+              "xml",
+              "cvtColor",
+              "tkinter",
+              "quiz_data.json"
+            ],
+            "got": [
+              "a)opency-thon",
+              "xml",
+              "c)cytcolor",
+              "d)tkinter",
+              "e)quiz-data.json"
+            ]
+          }
+        },
+        "total_auto": 3
+      }
+    }
+  ],
+  "count": 1,
+  "ocr_engine": "paddleocr-2.7",
+  "alignment": "zipgrade_markers+table_lines"
+}

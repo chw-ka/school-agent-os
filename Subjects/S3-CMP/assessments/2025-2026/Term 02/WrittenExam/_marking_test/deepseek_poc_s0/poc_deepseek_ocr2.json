@@ -1,0 +1,52 @@
+{
+  "backend": "hf",
+  "student_index": 0,
+  "hf_space": "merterbak/DeepSeek-OCR-Demo",
+  "pages": [
+    {
+      "role": "answer_p1",
+      "image": "Subjects/S3-CMP/assessments/2025-2026/Term 02/WrittenExam/_marking_test/deepseek_poc_s0/page_answer_p1.png",
+      "ocr": {
+        "text": "No text detected",
+        "markdown": "",
+        "raw": ""
+      }
+    },
+    {
+      "role": "answer_p2",
+      "image": "Subjects/S3-CMP/assessments/2025-2026/Term 02/WrittenExam/_marking_test/deepseek_poc_s0/page_answer_p2.png",
+      "ocr": {
+        "text": "## 工部－填充题 (10 分)\n從字庫中選擇最合適的詞語填在橫線上。\n1. (a) Speedtest 解析 and\n(b) password.json\n(c) speechRecognition\n(d) ___ yue\n(e) ___ 9115\n2. (a) opencv-python\n(b) ___ XML\n(c) cvt(color\n(d) tkinter\n(e) quiz_data.json\n## 皮部 - 問答题 (5 分)\n1. (a) 功能：生成整作大後提交，學生不會從中學習到作大中的智試，學生提交能作，道德：深入方面：没有道德，不想：利用工作替自己，交功果\n(b) 在造工作内容方面工程能推任得比人類多很多，工人的低效率比人类高很多，而且不营易出错\n(c) 只能提供解题过程和答案，不能提供其他有用的资料。而人类能创造“提供其他有用的智慧点，能一步步教导学生\n全卷完",
+        "markdown": "## 工部－填充题 (10 分)\n從字庫中選擇最合適的詞語填在橫線上。\n1. (a) Speedtest 解析 and\n(b) password.json\n(c) speechRecognition\n(d) ___ yue\n(e) ___ 9115\n2. (a) opencv-python\n(b) ___ XML\n(c) cvt(color\n(d) tkinter\n(e) quiz_data.json\n## 皮部 - 問答题 (5 分)\n1. (a) 功能：生成整作大後提交，學生不會從中學習到作大中的智試，學生提交能作，道德：深入方面：没有道德，不想：利用工作替自己，交功果\n(b) 在造工作内容方面工程能推任得比人類多很多，工人的低效率比人类高很多，而且不营易出错\n(c) 只能提供解题过程和答案，不能提供其他有用的资料。而人类能创造“提供其他有用的智慧点，能一步步教导学生\n全卷完",
+        "raw": "<|ref|>sub_title<|/ref|><|det|>[[67, 33, 280, 52]]<|/det|>\n## 工部－填充题 (10 分)\n<|ref|>text<|/ref|><|det|>[[66, 55, 430, 74]]<|/det|>\n從字庫中選擇最合適的詞語填在橫線上。\n<|ref|>text<|/ref|><|det|>[[68, 101, 415, 131]]<|/det|>\n1. (a) Speedtest 解析 and\n<|ref|>text<|/ref|><|det|>[[107, 135, 416, 161]]<|/det|>\n(b) password.json\n<|ref|>text<|/ref|><|det|>[[108, 165, 416, 193]]<|/det|>\n(c) speechRecognition\n<|ref|>text<|/ref|><|det|>[[108, 198, 416, 224]]<|/det|>\n(d) ___ yue\n<|ref|>text<|/ref|><|det|>[[108, 230, 416, 258]]<|/det|>\n(e) ___ 9115\n<|ref|>text<|/ref|><|det|>[[66, 263, 415, 289]]<|/det|>\n2. (a) opencv-python\n<|ref|>text<|/ref|><|det|>[[108, 294, 415, 319]]<|/det|>\n(b) ___ XML\n<|ref|>text<|/ref|><|det|>[[108, 327, 415, 351]]<|/det|>\n(c) cvt(color\n<|ref|>text<|/ref|><|det|>[[108, 358, 415, 383]]<|/det|>\n(d) tkinter\n<|ref|>text<|/ref|><|det|>[[108, 391, 415, 417]]<|/det|>\n(e) quiz_data.json\n<|ref|>sub_title<|/ref|><|det|>[[67, 439, 269, 458]]<|/det|>\n## 皮部 - 問答题 (5 分)\n<|ref|>text<|/ref|><|det|>[[68, 471, 923, 570]]<|/det|>\n1. (a) 功能：生成整作大後提交，學生不會從中學習到作大中的智試，學生提交能作，道德：深入方面：没有道德，不想：利用工作替自己，交功果\n<|ref|>text<|/ref|><|det|>[[102, 578, 933, 655]]<|/det|>\n(b) 在造工作内容方面工程能推任得比人類多很多，工人的低效率比人类高很多，而且不营易出错\n<|ref|>text<|/ref|><|det|>[[102, 671, 923, 760]]<|/det|>\n(c) 只能提供解题过程和答案，不能提供其他有用的资料。而人类能创造“提供其他有用的智慧点，能一步步教导学生\n<|ref|>text<|/ref|><|det|>[[460, 802, 535, 821]]<|/det|>\n全卷完"
+      }
+    }
+  ],
+  "cells": [],
+  "summary": {
+    "match_got": [
+      "",
+      ""
+    ],
+    "match_key": [
+      "BACDE",
+      "DEBAC"
+    ],
+    "tf_got": "",
+    "tf_key": "TFTFF",
+    "fill_got": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "fill_key_q1": [
+      "gTTS",
+      "playsound",
+      "password.json",
+      "yue",
+      "SpeechRecognition"
+    ]
+  }
+}

@@ -56,3 +56,14 @@ configs/.env
 configs/.env.local
 configs/client_secret*
 configs/google-forms-oauth-token.json
+
+# OAuth / GCP / service-account secrets anywhere in the tree
+**/config/client_secret*.json
+**/config/gcp-oauth*.json
+**/config/*-oauth-token.json
+**/config/*-[0-9]*[0-9].json
+
+# Device partition dumps containing credentials (WiFi in NVS, crash data in coredump)
+**/backups/partitions/nvs__*.bin
+**/backups/partitions/coredump__*.bin
+**/xiaozhi/nvs_xiaozhi.bin
