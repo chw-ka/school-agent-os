@@ -46,3 +46,10 @@ Dry-run pull from panel share into repo:
 ```
 
 Remove `-WhatIf` to copy; then commit and push.
+
+## CHW API（學校資料 MCP）
+
+學生、班別、教師等資料由獨立 repo **[chw-api](https://github.com/chw-ka/chw-api)** 提供（`https://api.chw.edu.hk`），本 repo 透過 MCP 或 REST 取用，不併入 chw-api 程式碼。
+
+- 設定 Cursor MCP：複製 `.cursor/mcp.json.example`，填入 `X-API-Key`
+- 工具清單與開發說明：[docs/chw-api.md](docs/chw-api.md)

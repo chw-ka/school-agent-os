@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "chw-api-remote": {
+      "url": "https://api.chw.edu.hk/mcp",
+      "headers": {
+        "X-API-Key": "chw_REPLACE_WITH_YOUR_KEY"
+      }
+    }
+  }
+}
