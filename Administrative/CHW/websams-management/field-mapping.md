@@ -162,17 +162,70 @@ Source: STU (學生資料) manual §2.9 (Registration, p.89–105) and §2.7 (Su
 
 ---
 
+## Live session findings (2026-07-06, Cursor browser)
+
+### Enrollment — confirmed ✅
+
+Path: 學生資料 → 學生概況 → 搜尋學生 (no filters, 現學年 2025).
+
+- **~15 pages × 50 rows/page** (pagination control shows 頁 共 15; default display 50/page).
+- **All forms S1–S6** present in class filter (1A–1D … 6A–6D).
+- Students show **在學** status — continuing roster is fully populated; no bulk 註冊檔案上載 needed for current year.
+
+### Assessment scheme — still blocked ❌
+
+Path: 學生成績 → 設定 → 確定綱要 → 確定考績綱要設定 (2025-26).
+
+Same validation failure as 2026-07-05 — **nothing locked**. Missing 科目滿分及比重 for:
+
+| Level | Subject | Periods affected |
+|-------|---------|------------------|
+| S1, S2 | 公民、經濟與社會 (中文(粵語)) | T1A1, T1A2, T1, T2A1, T2A2, T2, 年終 |
+| S3 | 普通電腦科 (中文(粵語)) | all periods above |
+
+Subjects **appear** in 科目滿分及比重 search (26 rows for S1/T1A1) but period weighting records are incomplete — must be filled before scheme can be confirmed.
+
+**Downstream effect**: 數據輸入 → 匯出資料 still returns **E-46202** (匯出 button disabled). No ASR template export possible until fixed.
+
+**2026-27**: still not in 學年 dropdown — needs 策劃新學年 first (separate decision).
+
+### Overall comments (整體評語) — likely single field ⚠️
+
+Path: 學生成績 → 數據輸入 → 匯出資料.
+
+Under **其他考績** export mode, checkboxes are separate categories:
+
+- 獎懲資料 / 缺席紀錄 / **整體評語** / 操行 / 其他考績
+
+**整體評語 is one export category**, not four. Under **積分與等級** mode there is a separate toggle **匯出整體評語代碼表** (yes/no).
+
+**Legacy** (`tblStudentComment`): four slots per term — `comment_1_*` … `comment_4_*` plus matching `custom_*_*`.
+
+**Working assumption for Phase 1**: map legacy 4 slots → **concatenate or pick one** into CloudSAMS's single 整體評語 field (700-char limit). Confirm exact import column name once first ASR export succeeds.
+
+### ATT templates — downloaded locally ✅
+
+Path: 學生出席資料 → 輸入資料 → 輸入.
+
+Live download links verified; copies saved (blank template only, no student data):
+
+| File | Local path |
+|------|------------|
+| 下載輸入出席資料範本 (`sample.zip` → `sample.xls`) | `cloudsams-templates/att/att-input-sample.zip` |
+| 下載輸入出席資料規格表 (`InterfaceFileSpec.doc`) | `cloudsams-templates/att/att-interface-spec.doc` |
+
+ATT remains the **most migration-ready** P0 module (no export-first / batch-number requirement).
+
+---
+
 ## Open items for next session
 
-- [ ] Confirm assessment scheme (確定綱要) for 2026-27 Term 1 — **needs your go-ahead, this changes CloudSAMS settings**
-- [x] Read ANP (獎懲資料/Awards) AUM manual — no bulk import exists, see above
-- [x] Read ATT (學生出席資料/Attendance) AUM manual — direct template download exists, see above
-- [x] Read STA (課外活動/ECA) AUM manual — export/import exists, similar to ASR, see above
-- [x] Find where conduct (操行) data entry lives — confirmed it's ANP's point system, copied into ASR via a button, not independently importable
-- [x] Comments — subject comments are grid-UI-only (no bulk import); overall/class-teacher comments ride the same bulk pipeline as scores
-- [x] Enrollment — new S1/P1 intake is auto-fed from EDB central allocation; continuing students have a real bulk-upload fallback (註冊檔案上載, <100 rows/file) if not already present
-- [ ] **Live check needed (session expired mid-session, 2026-07-05 ~20:49)**: log back into CloudSAMS and check 學生資料 → 學生概況 → 搜尋學生 to see whether the full current S1–S6 roster is already present, or needs bulk-uploading
-- [ ] **Live check needed**: whether 整體評語 (Overall Comment) supports the legacy "4 slots per term" structure or is a single field
-- [ ] Once a term's scheme is confirmed, do one real export (empty/current data, non-committed, local only) to capture the actual column schema for `export_scores.py`
-- [ ] Escalate the conduct-model gap to CM/ES/PY for a Phase 1 decision (see options above) — this is a real modeling mismatch, not just a missing field
-- [ ] Decide migration approach for Awards/Discipline given no bulk import (curate a subset vs. browser-automate the batch UI vs. ask EDB support about an API)
+- [ ] **Unblock ASR**: fill 科目滿分及比重 for 公民、經濟與社會 (S1/S2) and 普通電腦科 (S3) — values should match legacy `tblFormPaperWeight` / `tblFormPaperScore` (needs CM sign-off)
+- [ ] Confirm assessment scheme (確定綱要) for **2025-26** first (test migration target), then plan 策劃新學年 for 2026-27
+- [ ] Once scheme confirmed: one ASR export (local only, never commit) to capture column schema for scores + 整體評語
+- [ ] Escalate conduct-model gap to CM/ES/PY (ANP point system vs legacy 5 dimensions)
+- [ ] Decide awards/discipline migration approach (curate vs browser-automate ANP batch UI vs EDB API)
+- [x] Read ANP / ATT / STA AUM manuals — see sections above
+- [x] Enrollment live check — full S1–S6 roster present (2026-07-06)
+- [x] 整體評語 UI check — single export category; 4-slot legacy mapping TBD after template export
+- [x] ATT blank template + spec downloaded locally

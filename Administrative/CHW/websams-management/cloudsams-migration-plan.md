@@ -47,7 +47,7 @@
   - Whether bulk import is supported (Excel/CSV template? API?) — **confirmed for ASR: Excel/ZIP, see `field-mapping.md` for the batch-number/filename mechanism**
   - What format the import template uses
 - [ ] Download all available import templates from EDB/CloudSAMS — **blocked: 2026-27 school year doesn't exist in CloudSAMS yet (needs 策劃新學年 first — separate, bigger decision). Attempted confirming the CURRENT year's (2025-26) scheme instead (2026-07-05, with go-ahead) — validation failed: 科目滿分及比重 missing for 公民經濟與社會 (S1/S2) and 普通電腦科 (S3) across all periods. Real setup gap, see `field-mapping.md`. Nothing was locked.**
-- [ ] Check whether student enrollment and subject enrollment are already present in CloudSAMS (from EDB feeds)
+- [x] Check whether student enrollment and subject enrollment are already present in CloudSAMS (from EDB feeds) — **confirmed 2026-07-06**: full S1–S6 roster (~15×50) in 學生概況, all 在學; no bulk upload needed for current year
 - [ ] Clarify with EDB support: what migration path exists for schools moving from WebSAMS?
 
 **Output**: Completed `field-mapping.md` (see Section 4 below) with CloudSAMS column filled in. **Live findings now in `field-mapping.md` — see that file for the ASR import/export mechanism, which changes the Phase 2 approach (see note there).**
@@ -197,10 +197,13 @@ Fill in the TBD columns after Phase 0.
 
 ## 6. Immediate Next Steps (This Week)
 
-1. **Get CloudSAMS admin access** — confirm login credentials work
-2. **Explore CloudSAMS** — spend 2–3 hours clicking through all academic/conduct/ECA modules
-3. **Start `field-mapping.md`** — document what fields exist in CloudSAMS for each P0 category
-4. **Contact EDB** — ask for CloudSAMS migration guide and import templates for WebSAMS schools
+1. ~~**Get CloudSAMS admin access**~~ — done (CLO same-tab workaround in Cursor browser)
+2. ~~**Explore CloudSAMS**~~ — Phase 0 discovery ongoing; see `field-mapping.md` (2026-07-06 session)
+3. **Unblock ASR export** — fill 科目滿分及比重 for 公民、經濟與社會 (S1/S2) + 普通電腦科 (S3), then 確定考績綱要 (2025-26)
+4. **Capture ASR import template** — one encrypted export locally (never commit); unblocks Phase 2 script design
+5. **Phase 1 decisions** — conduct model (5 dimensions → ANP?), overall comment (4 slots → 1 field?), awards migration scope
+6. **Start ATT export script** — blank template already in `cloudsams-templates/att/`; can prototype against legacy `tblStudentDiscipline` without waiting for ASR
+7. **Contact EDB** — migration guide for WebSAMS schools; API for ANP bulk data (optional)
 
 ---
 
