@@ -7,7 +7,7 @@
 - **Migration（資料/系統搬遷）**: `Administrative/CHW/migration/`
 - **Homework Diligence Award（Google Drive 流程）**: `Administrative/CHW/homework-diligence-award/`
 - **Conduct mark（discipline yellow form）**: `Administrative/CHW/conduct-mark/`
-- **CloudSAMS / WebSAMS management**: `Administrative/CHW/websams-management/`
+- **CloudSAMS / WebSAMS management**: `Administrative/CHW/websams-management/` — migration plan: `cloudsams-migration-plan.md` (target: Term 1 2026–27)
 - **SLP**: `Administrative/CHW/slp/`
 - **Student report**: `Administrative/CHW/student-report/`
 - **Sportsday**: `Administrative/CHW/sportsday/`

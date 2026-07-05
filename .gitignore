@@ -30,6 +30,9 @@ Subjects/S3-CMP/notes/Python & AI/Lesson 5/_archive/
 # Local tool output (transcripts, drafts) — do not commit
 output/
 
+# CloudSAMS official EDB manuals — large (1.3GB), public downloads, re-fetchable from cdrcloudsams.edb.gov.hk
+Administrative/CHW/websams-management/cloudsams-manuals/
+
 # Student report — ephemeral working data on T: drive only (not in git)
 Administrative/CHW/student-report/_local/
 Administrative/CHW/student-report/export/*.xlsx
