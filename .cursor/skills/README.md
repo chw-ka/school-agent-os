@@ -1,22 +1,19 @@
 ## Cursor Skills (daily workflows)
 
-This folder stores reusable “workflows as Skills” so they’re easy to follow and reuse in future years.
+Skills in **`.cursor/skills/`** fall into two layers:
 
-### How to add a new workflow
+- **Platform** (from `_platform/` submodule): `meeting-minutes`, `tidy-up`, `_template` — symlinked after `./scripts/link-platform.sh`
+- **Personal** (this repo only): `panel-storage-sync`, `generate-f5-ict-*`, `qef-elearning-grant`, etc.
 
-1. Create a new folder under `./.cursor/skills/` with a short kebab-case name.
-2. Add `SKILL.md` in that folder.
-3. Keep `SKILL.md` concise (prefer under 200 lines; hard limit: 500).
+### Add a personal workflow
 
-### Recommended `SKILL.md` sections
+1. Create `./.cursor/skills/{kebab-name}/SKILL.md`
+2. Use `.cursor/skills/_template` (platform) as a starting point
+3. Keep subject-specific paths out of platform skills
 
-- **When to use**: trigger phrases and situations.
-- **Inputs**: required info/files/links.
-- **Steps**: a checklist-style workflow.
-- **Outputs**: what “done” looks like.
-- **Templates**: copy/paste snippets (email, message, report structure).
-- **Examples**: 1–2 concrete examples.
+### Add a shared (platform) workflow
 
-Administrative project folders live under `Administrative/CHW/{project}/` for runbooks, schemas, and reference snapshots (no named student lists in git).
+1. Edit in `_platform/.cursor/skills/` and commit in **school-agent-os-platform** repo
+2. Bump submodule in this repo, or open a PR to platform
 
-Current skills include `student-report-guides`, `mssql-mcp-legacy-execute`, `qef-elearning-grant`, `panel-storage-sync`, `tidy-up`, and subject-specific exam generators.
+See [docs/PLATFORM-SETUP.md](../../docs/PLATFORM-SETUP.md).

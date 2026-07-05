@@ -1,6 +1,6 @@
 # Platform + Personal：同事共建 school-agent-os
 
-> **狀態：** 設計備忘（2026-06-24）— **尚未實施**，現有 repo 結構不變。  
+> **狀態：** Phase 2 進行中 — `_platform/` submodule 已接入（2026-07-05）；platform repo 待 push 至 GitHub。  
 > **目的：** 記錄如何與教不同科目、做不同行政工作的同事共建，而唔需要所有人共用同一個 monolithic repo。
 
 ## 問題
@@ -87,17 +87,19 @@
 
 ## 個人 repo 點樣「接」platform（將來揀一種）
 
-### 1. Git submodule（推薦畀識 git 的同事）
+### 1. Git submodule（已採用）
 
 ```
-personal-repo/
-├── _platform/              ← submodule → platform repo
-├── .cursor/skills/         ← 自己專用
+school-agent-os/              ← personal repo（你而家嘅 repo）
+├── _platform/                ← submodule → school-agent-os-platform
+├── shared-tools/             ← symlink → _platform/shared-tools
+├── templates/                ← symlink → _platform/templates
+├── .cursor/skills/           ← 個人 skills + platform skills（symlink）
 ├── Subjects/
 └── Administrative/
 ```
 
-`.cursorrules` 註明工具路徑優先查 `_platform/shared-tools/`。
+設定步驟：[PLATFORM-SETUP.md](PLATFORM-SETUP.md)
 
 ### 2. Git subtree
 
@@ -122,9 +124,9 @@ personal-repo/
 
 | 階段 | 做咩 | 現狀 |
 |------|------|------|
-| **Phase 1** | 單 repo 內分清「平台區」vs「個人區」；新同事只加自己 `Administrative/{科組}/`、`Subjects/{科目}/` | **而家** |
-| **Phase 2** | 抽出 `school-agent-os-platform` repo；本 repo 做第一個 consumer（submodule） | 未做 |
-| **Phase 3** | GitHub org + template personal repo；`CONTRIBUTING.md` 說明貢獻路徑 | 未做 |
+| **Phase 1** | 單 repo 內分清「平台區」vs「個人區」 | **完成** |
+| **Phase 2** | 抽出 `school-agent-os-platform` repo；本 repo 以 `_platform/` submodule + symlink 接入 | **進行中**（本機 platform repo 已建；待 push GitHub） |
+| **Phase 3** | GitHub org + template personal repo；`CONTRIBUTING.md` | 未做 |
 
 ## 例子：藝術科同事
 

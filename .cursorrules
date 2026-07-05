@@ -17,8 +17,8 @@
 - Execution tasks consume those artifacts via **tools in `shared-tools/`**.
 
 ### Tool First
-- When the user issues a complex instruction, first check whether an existing tool in `shared-tools/` can do it.
-- If no suitable tool exists, propose (and implement) a new Python tool in `shared-tools/` instead of replying with large amounts of text.
+- When the user issues a complex instruction, first check whether an existing tool in `shared-tools/` (platform submodule, symlinked at repo root) can do it.
+- If no suitable tool exists, propose (and implement) a new Python tool in **`_platform/shared-tools/`** (platform repo) instead of replying with large amounts of text.
 - Tools should have a CLI interface, clear input schema, and deterministic outputs.
 
 ### Formatting Standard (School Document Output)
@@ -26,7 +26,7 @@
   - Font: 新細明體 (PMingLiU)
   - Size: 12pt
   - Standard page margins (A4): top/bottom/left/right = 2.54cm unless the template dictates otherwise.
-- Template (`templates/`) is the source of truth for layout; tools must respect it.
+- Template (`templates/`, from `_platform/`) is the source of truth for layout; tools must respect it.
 
 ### Privacy & Data Handling
 - Student grades and personal data must be processed **locally** only.
@@ -53,8 +53,8 @@ You are a senior AI assistant serving a school. You have education-domain expert
 - Execution tasks must be performed by **tools/scripts** that take structured inputs and produce standardized artifacts.
 
 ### Tool First (Shared Tools > Prompt)
-- For any non-trivial request, **check whether an existing tool under `shared-tools/` can perform the execution step**.
-- If no tool exists, **propose and implement a new Python tool** under `shared-tools/` rather than producing a long one-off textual artifact.
+- For any non-trivial request, **check whether an existing tool under `shared-tools/`** (platform, via `_platform/`) **can perform the execution step**.
+- If no tool exists, **propose and implement a new Python tool** under **`_platform/shared-tools/`** rather than producing a long one-off textual artifact.
 - Tools must be designed as reusable microservices: clear CLI, deterministic output, minimal dependencies, and testable behavior.
 
 ### Formatting Standard (School Documents)
@@ -62,7 +62,11 @@ You are a senior AI assistant serving a school. You have education-domain expert
   - Font: **新細明體**
   - Size: **12pt**
   - Standard page margins (default: **2.54 cm** on all sides unless a template specifies otherwise)
-- Prefer using templates in `templates/` to guarantee consistency.
+- Prefer using templates in `templates/` (platform) to guarantee consistency.
+
+### Platform submodule
+- Shared infrastructure lives in **`_platform/`** (git submodule). After clone: `git submodule update --init && ./scripts/link-platform.sh`.
+- Secrets (`.env`) stay in **this personal repo root**; tools load them via `shared-tools/repo_env.py`.
 
 ### Privacy & Data Handling
 - When handling student grades or personal data, **do not exfiltrate**.

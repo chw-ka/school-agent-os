@@ -1,5 +1,7 @@
 # How to set up `GOOGLE_API_KEY` (`.env`)
 
+> Canonical copy also in `_platform/docs/GOOGLE_API_KEY.md` (platform submodule).
+
 Store your Gemini API key in a **repo-root `.env` file**. Python tools load it automatically when they need LLM credentials.
 
 ## Quick setup

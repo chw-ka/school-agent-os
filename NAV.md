@@ -17,7 +17,7 @@
 
 教學素材統一存放於 `Subjects/`，並按 **級別＋科目** 建立工作區：
 
-- **STEAM（初中）**: 建議整合至 `Subjects/STEAM-JS/`（如尚未建立）
+- **STEAM（初中）**: `Subjects/STEAM/`（例：`tasting-course/`）
 - **CMP（初中）**: `Subjects/S2-CMP/`, `Subjects/S3-CMP/`（可按需要增設 `S1-CMP/`）
 - **ICT（高中）**: `Subjects/S5-ICT/`, `Subjects/S6-ICT/`, `Subjects/DSE-ICT/`（共用參考庫）
 - **科組教學行政（選書等）**: `Subjects/TechEd/`
@@ -29,10 +29,12 @@
 - **M5StickS3 教師 PD 分享（2026-06-22 惠州學校）**: `Training/primary-staff-training/`
 - **M5StickS3 小五 STEAM 體驗課**: `Training/primary-steam-tasting-p5/`
 
-### 可共用工具（共建）
+### 可共用工具（共建 platform submodule）
 
-- **文件/試卷模板**: `templates/`
-- **可重用自動化工具（CLI）**: `shared-tools/`
+- **Platform submodule**: `_platform/` → [school-agent-os-platform](https://github.com/chw-ka/school-agent-os-platform)
+- **文件/試卷模板**: `templates/`（symlink → `_platform/templates/`）
+- **可重用自動化工具（CLI）**: `shared-tools/`（symlink → `_platform/shared-tools/`）
+- **設定**: [docs/PLATFORM-SETUP.md](docs/PLATFORM-SETUP.md)
 - **輸出暫存（不建議長期保存大量檔案）**: `output/`
 
 #### shared-tools 索引
