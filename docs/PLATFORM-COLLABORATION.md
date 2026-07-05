@@ -1,6 +1,6 @@
 # Platform + Personal：同事共建 school-agent-os
 
-> **狀態：** Phase 2 進行中 — `_platform/` submodule 已接入（2026-07-05）；platform repo 待 push 至 GitHub。  
+> **狀態：** Phase 2 完成（2026-07-05）— `_platform/` submodule 已接入；`CLAUDE.md` + platform `.cursor/rules/privacy.mdc` 已就位；platform repo 待 push 至 GitHub。  
 > **目的：** 記錄如何與教不同科目、做不同行政工作的同事共建，而唔需要所有人共用同一個 monolithic repo。
 
 ## 問題
@@ -125,7 +125,7 @@ school-agent-os/              ← personal repo（你而家嘅 repo）
 | 階段 | 做咩 | 現狀 |
 |------|------|------|
 | **Phase 1** | 單 repo 內分清「平台區」vs「個人區」 | **完成** |
-| **Phase 2** | 抽出 `school-agent-os-platform` repo；本 repo 以 `_platform/` submodule + symlink 接入 | **進行中**（本機 platform repo 已建；待 push GitHub） |
+| **Phase 2** | 抽出 `school-agent-os-platform` repo；本 repo 以 `_platform/` submodule + symlink 接入；`CLAUDE.md` + Claude Code 整合；`privacy.mdc` Cursor rule | **完成**（待 push platform repo 至 GitHub） |
 | **Phase 3** | GitHub org + template personal repo；`CONTRIBUTING.md` | 未做 |
 
 ## 例子：藝術科同事

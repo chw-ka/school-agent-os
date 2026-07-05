@@ -63,6 +63,8 @@ git push -u origin main          # 首次需 gh repo create / 手動建 repo
 | Platform `_platform/` | Personal（本 repo） |
 |-----------------------|---------------------|
 | `shared-tools/`, `templates/` | `Subjects/`, `Administrative/` |
+| `CLAUDE.md` (generic rules, via `@_platform/CLAUDE.md`) | `CLAUDE.md` (personal additions: panel path, subjects) |
+| `.cursor/rules/privacy.mdc` (symlinked) | `.cursor/rules/panel-storage-sync.mdc`, `subjects-workspace.mdc`, `paper-generator.mdc` |
 | `meeting-minutes`, `tidy-up`, `_template` skills | `generate-f5-ict-*`, `panel-storage-sync`, … |
 | Tool API docs in `_platform/docs/` | `NAV.md`, `Subjects/STORAGE.md` |
 

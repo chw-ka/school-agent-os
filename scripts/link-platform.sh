@@ -21,8 +21,15 @@ link() {
 
 link "_platform/shared-tools" "shared-tools"
 link "_platform/templates" "templates"
+
+# Cursor skills
 link "../../_platform/.cursor/skills/meeting-minutes" ".cursor/skills/meeting-minutes"
 link "../../_platform/.cursor/skills/_template" ".cursor/skills/_template"
 link "../../_platform/.cursor/skills/tidy-up" ".cursor/skills/tidy-up"
 
+# Cursor rules (platform-level, always-apply)
+mkdir -p .cursor/rules
+link "../../_platform/.cursor/rules/privacy.mdc" ".cursor/rules/privacy.mdc"
+
 echo "Platform symlinks OK."
+echo "Note: CLAUDE.md already imports _platform/CLAUDE.md via @_platform/CLAUDE.md — no symlink needed."
