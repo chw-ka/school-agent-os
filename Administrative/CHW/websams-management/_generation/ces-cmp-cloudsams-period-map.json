@@ -1,0 +1,199 @@
+{
+
+  "period_map": {
+
+    "1101": {"label": "T1A1", "legacy": "term1_regular"},
+
+    "1102": {"label": "T1A2", "legacy": "term1_exam"},
+
+    "1100": {"label": "T1", "legacy": "term1_total"},
+
+    "1201": {"label": "T2A1", "legacy": "term2_regular"},
+
+    "1202": {"label": "T2A2", "legacy": "term2_exam"},
+
+    "1200": {"label": "T2", "legacy": "term2_total"},
+
+    "1000": {"label": "Annual", "legacy": "annual"}
+
+  },
+
+  "assessment_archetypes": {
+
+    "term_total_only": {
+
+      "description": "Report shows one term score only (no 平時/考試 columns). CloudSAMS: 考核 N on T1A1/T1A2/T2A1/T2A2; 考核 Y on T1/T2 with 滿分 100.",
+
+      "subjects": ["CMP 普通電腦科", "BBS 聖經", "ART 視覺藝術", "MUS 音樂", "PED 體育"],
+
+      "sub_periods": {"assessed": "N", "max": "", "subjWt": 0},
+
+      "term_periods": {"assessed": "Y", "max": 100, "wt_from": "legacy weight"},
+
+      "annual": {"assessed": "Y", "max": 100, "wt_from": "legacy weight"}
+
+    },
+
+    "regular_exam_split": {
+
+      "description": "Report shows 平時分 + 考試分 (e.g. CES). No 分卷 — only 中文/英文 have paper components. Subject Full Score: 滿分 100 + 科目比重 50 on every assessed period. The T1A1:T1A2 regular:exam ratio (legacy 30:70) is set in 學期及考績 as 3:7, NOT in Subject Full Score.",
+
+      "subjects": ["Most numeric subjects", "CES 公民經濟與社會 (S1/S2)"],
+
+      "term_assess_weight": {"T1": 1, "T2": 1, "T1A1": 3, "T1A2": 7, "T2A1": 3, "T2A2": 7}
+
+    },
+
+    "term_exclusive_history": {
+
+      "description": "CHT in T1 only; History (HST) in T2 only — each with 平時+考試 in its active term.",
+
+      "S3": {
+
+        "CHT": {
+
+          "1101": {"max": 30, "wt": 30, "assessed": "Y"},
+
+          "1102": {"max": 50, "wt": 70, "assessed": "Y"},
+
+          "1100": {"max": 100, "wt": 200, "assessed": "Y"},
+
+          "1201": {"assessed": "N", "max": "", "wt": 0},
+
+          "1202": {"assessed": "N", "max": "", "wt": 0},
+
+          "1200": {"assessed": "N", "max": "", "wt": 0}
+
+        },
+
+        "HST": {
+
+          "1101": {"assessed": "N", "max": "", "wt": 0},
+
+          "1102": {"assessed": "N", "max": "", "wt": 0},
+
+          "1100": {"assessed": "N", "max": "", "wt": 0},
+
+          "1201": {"max": 30, "wt": 30, "assessed": "Y"},
+
+          "1202": {"max": 50, "wt": 70, "assessed": "Y"},
+
+          "1200": {"max": 100, "wt": 200, "assessed": "Y"}
+
+        }
+
+      }
+
+    }
+
+  },
+
+  "forms": {
+
+    "S1": {
+
+      "CES": {
+
+        "1101": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1102": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1100": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1201": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1202": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1200": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1000": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38", "print": 31}
+
+      },
+
+      "CMP": {
+
+        "1101": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1102": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1100": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1201": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1202": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1200": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1000": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38", "print": 90}
+
+      }
+
+    },
+
+    "S2": {
+
+      "CES": {
+
+        "1101": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1102": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1100": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1201": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1202": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1200": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1000": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38", "print": 31}
+
+      },
+
+      "CMP": {
+
+        "1101": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1102": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1100": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1201": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1202": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1200": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1000": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38", "print": 90}
+
+      }
+
+    },
+
+    "S3": {
+
+      "CMP": {
+
+        "1101": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1102": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1100": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1201": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1202": {"max": "", "subjWt": 0, "assessed": "N", "grade": "38"},
+
+        "1200": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38"},
+
+        "1000": {"max": 100, "subjWt": 50, "assessed": "Y", "grade": "38", "print": 90}
+
+      }
+
+    }
+
+  }
+
+}
+
+
