@@ -21,7 +21,7 @@
 
 Platform skills (via symlinks in `.cursor/skills/`): `meeting-minutes`, `tidy-up`, `_template`
 
-Personal skills (`.cursor/skills/`): `generate-f5-ict-exam`, `generate-f5-ict-long`, `generate-f5-ict-mcq`, `generate-f5-ict-short`, `panel-storage-sync`, `qef-elearning-grant`, `school-activity-form`, `student-report-guides`, `mssql-mcp-legacy-execute`
+Personal skills (`.cursor/skills/`): `cloudsams-browser-login`, `generate-f5-ict-exam`, `generate-f5-ict-long`, `generate-f5-ict-mcq`, `generate-f5-ict-short`, `panel-storage-sync`, `qef-elearning-grant`, `school-activity-form`, `student-report-guides`, `mssql-mcp-legacy-execute`
 
 ## CHW API
 

@@ -1,0 +1,31 @@
+{
+  "file": "c:\\Users\\localadmin\\Projects\\school-agent-os\\Administrative\\CHW\\websams-management\\cloudsams-templates\\asr\\_local\\scores-fill-work\\DE_52457320260707_124_3_3_S1_1A.xls",
+  "sheets": {
+    "Sheet 1": {
+      "columns": [
+        "*School ID",
+        "*School Year",
+        "*School Level",
+        "*School Session",
+        "*Class Level",
+        "*Class",
+        "*Class Number",
+        "*Student Name",
+        "*Reg. No.",
+        "T1A1_075_中史_C_Score_01233210075",
+        "T1A1_080_中文_C_Score_01233210080",
+        "T1A1_093_公經社_C_Score_01233210093",
+        "T1A1_110_普腦_C_Score_01233210110",
+        "T1A1_165_英文_E_Score_01233210165",
+        "T1A1_185_倫宗_C_Grade_01233210185",
+        "T1A1_210_地理_C_Score_01233210210",
+        "T1A1_260_科初_C_Score_01233210260",
+        "T1A1_280_數學_E_Score_01233210280",
+        "T1A1_350_普話_P_Score_01233210350",
+        "DE_52457320260707_124_3_3_S1_1A"
+      ],
+      "preview_rows": 5,
+      "col_count": 20
+    }
+  }
+}

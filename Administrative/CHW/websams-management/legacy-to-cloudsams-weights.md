@@ -63,6 +63,28 @@ Configure from **what the report card shows**, not by blindly copying legacy MSS
 
 Only Chinese and English subjects have **分卷** rows in Subject Full Score. CES does **not**.
 
+**⚠️ 中文分卷比重 — MSSQL 不可全信（2026-07-07）**
+
+Legacy `tblFormPaperWeight.weight` stores **one** component ratio per form. Staff manually changed MSSQL to **下學期** values before Term 2; current DB does **not** reflect 上學期 component ratios. **Only 中文** has term-varying component weighting; all other subjects are fine.
+
+**Authoritative source:** 考試事宜 §2.8.1 成績表比重 (user table, 2026-07-07). Map to CloudSAMS Subject Full Score **分卷比重** rows (CH1=閱讀, CH2=寫作, CH3=聆聽, CH4=說話).
+
+| Form | Period | CH1 閱讀 | CH2 寫作 | CH3 聆聽 | CH4 說話 | Notes |
+|------|--------|----------|----------|----------|----------|-------|
+| S1–S3 | **T1** (上學期) | **50** | **50** | — | — | No listening/speaking in T1 |
+| S1–S2 | **T2** (下學期) | 40 | 40 | 10 | 10 | |
+| S3 | **T2** (下學期) | **40** | **40** | **10** | **10** | Was 38/38/12/12; corrected 25-26. **卷五視訊資訊 cancelled** |
+| S4 | 全年 | 55 | 45 | — | — | |
+| S5–S6 | 全年 | 50 | 50 | — | — | |
+
+CloudSAMS allows only **one** 分卷比重 set per subject in Subject Full Score — **cannot** mirror T1 vs T2 split in setup. For migration: enter **T1 values** for 上學期 import/consolidation; change to **T2 values** manually before 下學期 (same as legacy workaround).
+
+| Action | Rule |
+|--------|------|
+| Migration scripts | **Do not** read CH1/CH2 `weight` from MSSQL |
+| CloudSAMS fill | Use table above, not MSSQL |
+| Other subjects | ENG etc. — MSSQL OK |
+
 ### D. Term-exclusive history (S3)
 
 | Subject | T1 (1101/1102/1100) | T2 (1201/1202/1200) |
@@ -110,11 +132,51 @@ Reference (passing validation): 數學 MTH → 滿分 100 and 科目比重 = leg
 
 Grid columns T1, T2, T1A1, T1A2, T2A1, T2A2 → enter **`1, 1, 3, 7, 3, 7`**.
 
-**All 7 periods** must be filled per class on Subject Full Score. **Do not use 複製紀錄** across forms.
+**All 7 periods** must be filled per class on Subject Full Score.
 
-## Save gotcha
+## 確定綱要 (Confirm) — red error workflow
 
-**儲存 opens PrimeFaces confirm dialog** (`確定儲存紀錄?`). Must click **Confirm** and see **“Record saved successfully.”** — red `E-46xxx` banner means nothing persisted.
+When **確定考績綱要** shows red lines like:
+
+> 級別：中三 在 T2A1 的 倫理/宗教教育 … 在**科目滿分及比重** 未完成
+
+| Step | Action |
+|------|--------|
+| 1 | Read **級別** + **考績/學期** + **科目** + which screen (**科目滿分及比重** vs **學期及考績**) from the red line |
+| 2 | Go to that screen → search that **class + period** → fix **that subject row** manually |
+| 3 | **儲存** → **確定** (save confirm dialog) → must see **「Record saved successfully.」** / 紀錄已成功儲存 |
+| 4 | **Reload** (返回 → 再搜尋同一級別/考績) and verify values persisted — screen can look filled but DB still has old values if save confirm was skipped |
+| 5 | Re-run **確定考績綱要** only after reload check passes |
+
+**Do not** treat clicking 確定 on the Confirm page as “fixed” — that button only **validates**; fixes happen on Subject Full Score / Term & Assessment screens.
+
+## ⛔ Do NOT use Copy / 複製 (mandatory)
+
+**Never use any Copy feature** when filling 科目滿分及比重 or 學期及考績 for this migration. User confirmed Copy **漏嘢** (misses fields / leaves periods incomplete).
+
+| Feature | Location | Rule |
+|---------|----------|------|
+| **複製紀錄** tab | Search page — cross year / cross form | **禁止** |
+| **Copy [n]** button | Edit grid — copy selected rows to other periods | **禁止** |
+| **分配 (Assign)** batch copy | Edit grid popup | **禁止** unless user explicitly asks |
+
+**Correct method:** one **級別 × 考績/學期 × 科目** at a time; enter every field; save with confirm; reload to verify. Same form T1→T2 must be filled separately (e.g. S3 T1A1 Ethics done ≠ S3 T2A1 done).
+
+## Save gotcha (儲存 ≠ 已儲存)
+
+**儲存 opens PrimeFaces confirm dialog** (`確定儲存紀錄?` / Are you sure to save record(s)?).
+
+| Step | Meaning |
+|------|---------|
+| Click **儲存** | Not saved yet |
+| Click **確定** on save dialog (`confirmDialogGeneral:j_idt281` — ID varies by session) | Submits save |
+| Green **「Record saved successfully.」** | Saved |
+| Red **E-46xxx** banner | **Rejected** — nothing persisted |
+| Skip save **確定** | Most common agent mistake — UI shows edits but 確定綱要 still fails |
+
+After save, if a **warning** dialog appears (e.g. grade table reset), click **確定** on that first, then the save confirm.
+
+**Verify:** 返回前頁 → re-search same 級別/考績 → confirm field values (e.g. 考核 Y/N) match what you intended. Example: T2A1 Ethics showed 考核 **N** after reload even though save reported success when 考核 was toggled N→Y incorrectly.
 
 ## SQL to re-query legacy weights
 

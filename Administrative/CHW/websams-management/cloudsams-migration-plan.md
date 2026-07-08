@@ -4,6 +4,8 @@
 **Current system**: Legacy MS SQL Server (`db25_26`) + custom WebSAMS intranet
 **Target system**: CloudSAMS (EDB cloud platform)
 
+**School calendar (CHW):** 上學期考績 (T1/T1A1/T1A2) covers **S1–S6**. **下學期 (T2/T2A1/T2A2)** covers **S1–S5 only** — **中六已畢業** before Term 2; do not export/import T2 Others or scores for S6.
+
 ---
 
 ## 1. What Is Moving

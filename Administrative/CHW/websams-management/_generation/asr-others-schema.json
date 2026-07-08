@@ -1,0 +1,27 @@
+{
+  "file": "c:\\Users\\localadmin\\Projects\\school-agent-os\\Administrative\\CHW\\websams-management\\cloudsams-templates\\asr\\_local\\others-extracted\\3_3_S1_1A_CONDUCT_AND_OVERALL_COMMENT.xls",
+  "sheets": {
+    "Sheet 1": {
+      "columns": [
+        "*School ID",
+        "*School Year",
+        "*School Level",
+        "*School Session",
+        "*Class Level",
+        "*Reg. No.",
+        "*Class",
+        "*Class Number",
+        "*Student Name",
+        "操行",
+        "紀律",
+        "禮貌",
+        "責任",
+        "合群",
+        "評語 (中文)",
+        "CONDUCT_AND_OVERALL_COMMENT_689_C_2024_3_3_S1_1A_1100"
+      ],
+      "preview_rows": 5,
+      "col_count": 16
+    }
+  }
+}

@@ -37,6 +37,12 @@ Administrative/CHW/websams-management/cloudsams-manuals/
 Administrative/CHW/student-report/_local/
 Administrative/CHW/student-report/export/*.xlsx
 
+# CloudSAMS ASR exports — contain student reg nos + batch numbers; never commit
+Administrative/CHW/websams-management/cloudsams-templates/asr/_local/
+Administrative/CHW/websams-management/cloudsams-templates/asr/**/*.xlsx
+Administrative/CHW/websams-management/cloudsams-templates/asr/**/*.xls
+Administrative/CHW/websams-management/cloudsams-templates/asr/**/*.zip
+
 # Student submissions / PII — never commit
 **/_student_submissions/
 **/_student_submissions/**
