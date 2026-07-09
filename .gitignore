@@ -43,6 +43,9 @@ Administrative/CHW/websams-management/cloudsams-templates/asr/**/*.xlsx
 Administrative/CHW/websams-management/cloudsams-templates/asr/**/*.xls
 Administrative/CHW/websams-management/cloudsams-templates/asr/**/*.zip
 
+# Library overdue notices — raw exports contain student names + overdue records; never commit
+Administrative/CHW/library-overdue-notices/_local/
+
 # Student submissions / PII — never commit
 **/_student_submissions/
 **/_student_submissions/**
