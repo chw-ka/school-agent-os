@@ -24,6 +24,7 @@ pip install -r _platform/requirements.txt
 ## 根目錄索引
 
 - `.cursorrules` — 憲法（工作原則、格式、隱私）
+- `KIMI.md` — Kimi Code CLI 專案指令
 - `.cursor/rules/` — 持久規則（panel sync、科目 workspace）
 - `.cursor/skills/` — Agent 技能（platform 通用 + 個人專用）
 - `NAV.md` — 工作項目索引
