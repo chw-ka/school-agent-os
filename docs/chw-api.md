@@ -17,6 +17,20 @@ cp .cursor/mcp.json.example ~/.cursor/mcp.json
 
 Or merge the `chw-api-remote` block into your workspace `.cursor/mcp.json`. Restart MCP in Cursor after changes.
 
+## Kimi Code CLI MCP setup
+
+Copy `.kimi-code/mcp.json.example` to the user or project config location:
+
+```bash
+# User-level (shared across repos)
+cp .kimi-code/mcp.json.example ~/.kimi-code/mcp.json
+# Or project-level (only this repo)
+cp .kimi-code/mcp.json.example .kimi-code/mcp.json
+# Edit X-API-Key: chw_your-key-here
+```
+
+In the Kimi TUI, run `/mcp` to check connection status or `/mcp-config` to manage servers interactively. MCP tools surface as `mcp__chw-api-remote__<tool>`.
+
 ## MCP tools (`chw-api-remote`)
 
 | Tool | Use for |
@@ -55,7 +69,7 @@ cd ../chw-api && python mcp_server.py
 
 ## Security
 
-- Never commit API keys. Use `.cursor/mcp.json.example` as a template only.
+- Never commit API keys. Use `.cursor/mcp.json.example` and `.kimi-code/mcp.json.example` as templates only.
 - Prefer per-user keys in MCP `headers` (client-side), not a shared key on the MCP server.
 
 See chw-api `DEPLOYMENT.md` for production MCP deployment.

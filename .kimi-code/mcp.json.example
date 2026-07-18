@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "chw-api-remote": {
+      "url": "https://api.chw.edu.hk/mcp",
+      "headers": {
+        "X-API-Key": "chw_REPLACE_WITH_YOUR_KEY"
+      }
+    },
+    "mssql-legacy": {
+      "command": "python",
+      "args": ["-m", "mssql_mcp_server.server"],
+      "enabled": false
+    }
+  }
+}
