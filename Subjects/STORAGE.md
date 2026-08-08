@@ -58,7 +58,7 @@ Panel 根目錄：`S:\02_Teaching and Learning\03_Key Learning Areas\Technology\
 | `_4_HKEAA_Paper/ICT/` | `Subjects/DSE-ICT/past-papers/` |
 | `_1_EDB_Documents/` | `Subjects/DSE-ICT/edb/` |
 
-完整對照表：`.cursor/skills/panel-storage-sync/mapping.md`
+完整對照表：`.qoder/skills/panel-storage-sync/mapping.md`
 
 ## 科目工作區結構
 

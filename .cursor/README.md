@@ -1,4 +1,7 @@
-# Cursor project config
+# Cursor project config (legacy — migrated to Qoder)
+
+> **注意：** 本 repo 已遷移至 Qoder。主要配置現在位於 `.qoder/` 和 `AGENTS.md`。
+> 此 `.cursor/` 目錄保留以兼容 Claude Code、Kimi Code CLI 等其他工具。
 
 Agent rules and skills for this **personal** repo. Shared platform skills/tools live in `_platform/` (submodule).
 
@@ -11,7 +14,16 @@ Agent rules and skills for this **personal** repo. Shared platform skills/tools 
 | Personal skills | `.cursor/skills/` (non-symlink folders) |
 | Personal rules | `.cursor/rules/` |
 
-Setup: [docs/PLATFORM-SETUP.md](../docs/PLATFORM-SETUP.md)
+## Migration to Qoder
+
+| Item | Old (Cursor) | New (Qoder) |
+|------|-------------|------------|
+| Rules | `.cursor/rules/*.mdc` | `.qoder/rules/*.md` |
+| Skills | `.cursor/skills/` | `.qoder/skills/` |
+| Project instructions | `CLAUDE.md` | `AGENTS.md` |
+| Constitution | `.cursorrules` | `AGENTS.md` |
+
+See [docs/PLATFORM-SETUP.md](../docs/PLATFORM-SETUP.md#qoder-遷移) for details.
 
 ## Rules (`.cursor/rules/`)
 

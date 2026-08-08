@@ -8,7 +8,7 @@
 |------|------|------|
 | **Platform（共建 submodule）** | `_platform/` | [school-agent-os-platform](https://github.com/chw-ka/school-agent-os-platform) — tools、templates、通用 skills |
 | **Personal（本 repo）** | `Subjects/`, `Administrative/`, `Training/` | 你的教學／行政素材 |
-| **Personal skills** | `.cursor/skills/`（非 symlink 者） | 科目／校務專用 workflow |
+| **Personal skills** | `.qoder/skills/`（非 symlink 者） | 科目／校務專用 workflow |
 | **Compat symlinks** | `shared-tools/`, `templates/` | → `_platform/…`（現有 CLI 路徑不變） |
 
 首次 clone 或更新 submodule 後：
@@ -26,7 +26,7 @@ pip install -r _platform/requirements.txt
 - `.cursorrules` — 憲法（工作原則、格式、隱私）
 - `KIMI.md` — Kimi Code CLI 專案指令
 - `.cursor/rules/` — 持久規則（panel sync、科目 workspace）
-- `.cursor/skills/` — Agent 技能（platform 通用 + 個人專用）
+- `.qoder/skills/` — Agent 技能（platform 通用 + 個人專用）
 - `NAV.md` — 工作項目索引
 - `Subjects/` — 教學區 — [STORAGE.md](Subjects/STORAGE.md)
 - `Administrative/` — 行政區
@@ -53,7 +53,7 @@ pip install -r _platform/requirements.txt
 ## Panel sync helper (school only)
 
 ```powershell
-.cursor/skills/panel-storage-sync/scripts/pull-from-panel.ps1 -Subject S2-CMP -Year 2024-2025 -WhatIf
+.qoder/skills/panel-storage-sync/scripts/pull-from-panel.ps1 -Subject S2-CMP -Year 2024-2025 -WhatIf
 ```
 
 ## CHW API（學校資料 MCP）

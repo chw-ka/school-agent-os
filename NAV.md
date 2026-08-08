@@ -12,6 +12,7 @@
 - **Student report**: `Administrative/CHW/student-report/`
 - **Sportsday**: `Administrative/CHW/sportsday/`
 - **數字教育（校內政策/資源整合/推廣）**: `Administrative/CHW/digital-education/`
+- **QEF「我的行動承諾」加強版撥款計劃**: `Administrative/CHW/my-action-promise-enhanced/`
 
 ### 教學（出卷／批改／功課／資源）
 

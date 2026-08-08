@@ -1,11 +1,8 @@
-# School-Agent-OS — Kimi Code CLI Project Rules
+# School-Agent-OS — Project Rules (Qoder)
 
-> Project-level instructions for Kimi Code CLI sessions working in this repo.
-> Mirrors the constitution in `.cursorrules` and the personal workspace rules in `AGENTS.md`.
-> Shared platform rules live in `_platform/CLAUDE.md` (git submodule).
->
-> **Note:** This repo has been migrated to Qoder. Primary config is now in `.qoder/` and `AGENTS.md`.
-> This `KIMI.md` is kept for Kimi Code CLI compatibility.
+> Project-level instructions for Qoder sessions working in this repo.
+> Migrated from `.cursorrules` + `CLAUDE.md` + `_platform/CLAUDE.md`.
+> Shared platform rules live in `_platform/` (git submodule).
 
 ## Identity
 

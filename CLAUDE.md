@@ -2,6 +2,9 @@
 
 # Personal Workspace Rules (Warren / CHW Tech Panel)
 
+> **Note:** This repo has been migrated to Qoder. Primary config is now in `.qoder/` and `AGENTS.md`.
+> This `CLAUDE.md` is kept for Claude Code compatibility.
+
 ## Panel Share & Git (Teaching Materials)
 
 - **Git repo** = portable copy for home (no `S:` off-campus). Commit + push materials needed at home.
@@ -15,13 +18,13 @@
 - Workspaces: `Subjects/S2-CMP/`, `S3-CMP/`, `S5-ICT/`, `S6-ICT/`, `DSE-ICT/`
 - `assessments/{YYYY-YYYY}/Term {01|02}/` — exam generation workspace (`_generation/`, `*.spec.json`, review artifacts, marking scripts)
 - `past-papers/{YYYY-YYYY}/Term {01|02}/` — final deliverables only (no `_generation/` content)
-- See `.cursor/rules/subjects-workspace.mdc` for full naming and tier conventions.
+- See `.qoder/rules/subjects-workspace.md` for full naming and tier conventions.
 
 ## Personal Skills
 
-Platform skills (via symlinks in `.cursor/skills/`): `meeting-minutes`, `tidy-up`, `_template`
+Platform skills (via symlinks in `.qoder/skills/`): `meeting-minutes`, `tidy-up`, `_template`
 
-Personal skills (`.cursor/skills/`): `cloudsams-browser-login`, `generate-f5-ict-exam`, `generate-f5-ict-long`, `generate-f5-ict-mcq`, `generate-f5-ict-short`, `panel-storage-sync`, `qef-elearning-grant`, `school-activity-form`, `student-report-guides`, `mssql-mcp-legacy-execute`
+Personal skills (`.qoder/skills/`): `cloudsams-browser-login`, `generate-f5-ict-exam`, `generate-f5-ict-long`, `generate-f5-ict-mcq`, `generate-f5-ict-short`, `panel-storage-sync`, `qef-elearning-grant`, `school-activity-form`, `student-report-guides`, `mssql-mcp-legacy-execute`
 
 ## CHW API
 

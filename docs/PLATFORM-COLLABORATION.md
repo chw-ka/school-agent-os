@@ -19,8 +19,8 @@
 ┌─────────────────────────────────────┐
 │  school-agent-os-platform (共建)     │
 │  shared-tools/  templates/          │
-│  .cursor/skills/ (通用)             │
-│  .cursor/rules/ (通用)              │
+│  .qoder/skills/ (通用)             │
+│  .qoder/rules/ (通用)              │
 │  .cursorrules (憲法)                │
 └──────────────┬──────────────────────┘
                │ submodule / subtree / sync
@@ -44,12 +44,12 @@
 | `templates/` | 學校格式 DOCX 範本 |
 | 通用 skills | `meeting-minutes`、`_template`、`tidy-up`（通用版） |
 | 通用 rules | 私隱、Tool First、文件格式（新細明體 12pt） |
-| `.cursorrules` | 「憲法」— 唔涉及具體科目路徑或個人 S: 路徑 |
+| `AGENTS.md` | 「憲法」— 唔涉及具體科目路徑或個人 S: 路徑 |
 
 **入 platform 門檻：**
 
 - 工具有 CLI + README；輸入輸出明確（JSON／檔案路徑）
-- Skill 跟 `.cursor/skills/_template/` 結構
+- Skill 跟 `.qoder/skills/_template/` 結構
 - 唔好放學生資料、成績、或綁死單一科組路徑
 - 用 tag 版本（如 `v0.2.0`），方便個人 repo pin 版本
 
@@ -60,9 +60,9 @@
 | `Subjects/` | 自己教的科、級別 |
 | `Administrative/` | 自己負責的行政專案 |
 | 專用 skills | `generate-f5-ict-exam`、`qef-elearning-grant` |
-| 專用 rules | `subjects-workspace.mdc`（科目命名、資料夾慣例） |
+| 專用 rules | `subjects-workspace.md`（科目命名、資料夾慣例） |
 | `NAV.md` | 自己的工作索引 |
-| Agent 指令 | `CLAUDE.md`（Claude Code）、`KIMI.md`（Kimi Code CLI） |
+| Agent 指令 | `AGENTS.md`（Qoder）、`CLAUDE.md`（Claude Code）、`KIMI.md`（Kimi Code CLI） |
 | 本地設定 | S: panel 路徑、`.env`、學校 API（見 `.env.example`） |
 
 **唔 share：** 成績表、具名學生作業、bulk 提交、科組專用行政草稿（除非同事主動提煉成通用 skill）。
@@ -95,7 +95,7 @@ school-agent-os/              ← personal repo（你而家嘅 repo）
 ├── _platform/                ← submodule → school-agent-os-platform
 ├── shared-tools/             ← symlink → _platform/shared-tools
 ├── templates/                ← symlink → _platform/templates
-├── .cursor/skills/           ← 個人 skills + platform skills（symlink）
+├── .qoder/skills/           ← 個人 skills + platform skills（symlink）
 ├── Subjects/
 └── Administrative/
 ```
@@ -141,7 +141,9 @@ school-agent-os/              ← personal repo（你而家嘅 repo）
 
 ## 相關文件
 
-- [.cursorrules](../.cursorrules) — Infrastructure > Prompt、Tool First
+- [.qoder/rules/](../.qoder/rules/) — Qoder 規則
+- [AGENTS.md](../AGENTS.md) — Qoder 專案指令
+- [.cursorrules](../.cursorrules) — Infrastructure > Prompt、Tool First（舊，保留兼容）
 - [KIMI.md](../KIMI.md) — Kimi Code CLI 專案指令
 - [.cursor/README.md](../.cursor/README.md) — rules / skills 索引
 - [shared-tools/README.md](../shared-tools/README.md) — 可共用 CLI

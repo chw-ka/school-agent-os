@@ -6,7 +6,7 @@
 
 本 repo 為 **可攜工作副本**（家中無法連線至 `S:` 校內網絡磁碟，需以 `git push/pull` 同步）。科組共用資料夾 `S:\...\08_Others` 僅供校內網絡使用，用於發佈與歷史檔案庫保存。
 
-詳見 **[STORAGE.md](STORAGE.md)**。相關技能：`.cursor/skills/panel-storage-sync/`、`.cursor/skills/tidy-up/`（結構整理）。
+詳見 **[STORAGE.md](STORAGE.md)**。相關技能：`.qoder/skills/panel-storage-sync/`、`.qoder/skills/tidy-up/`（結構整理）。
 
 ## 每科目建議結構
 

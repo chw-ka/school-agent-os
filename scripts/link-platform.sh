@@ -22,7 +22,7 @@ link() {
 link "_platform/shared-tools" "shared-tools"
 link "_platform/templates" "templates"
 
-# Cursor skills
+# Cursor skills (legacy — kept for backward compat)
 link "../../_platform/.cursor/skills/meeting-minutes" ".cursor/skills/meeting-minutes"
 link "../../_platform/.cursor/skills/_template" ".cursor/skills/_template"
 link "../../_platform/.cursor/skills/tidy-up" ".cursor/skills/tidy-up"
@@ -31,5 +31,13 @@ link "../../_platform/.cursor/skills/tidy-up" ".cursor/skills/tidy-up"
 mkdir -p .cursor/rules
 link "../../_platform/.cursor/rules/privacy.mdc" ".cursor/rules/privacy.mdc"
 
+# Qoder skills
+link "../../_platform/.cursor/skills/meeting-minutes" ".qoder/skills/meeting-minutes"
+link "../../_platform/.cursor/skills/_template" ".qoder/skills/_template"
+link "../../_platform/.cursor/skills/tidy-up" ".qoder/skills/tidy-up"
+
+# Qoder rules (platform-level, always-apply)
+mkdir -p .qoder/rules
+
 echo "Platform symlinks OK."
-echo "Note: CLAUDE.md already imports _platform/CLAUDE.md via @_platform/CLAUDE.md — no symlink needed."
+echo "Note: AGENTS.md contains project-level rules — no symlink needed for _platform/CLAUDE.md."

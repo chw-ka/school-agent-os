@@ -41,7 +41,7 @@ git add _platform && git commit -m "Pin platform v0.1.0"
 |---------|------|
 | `shared-tools/` | `_platform/shared-tools/` |
 | `templates/` | `_platform/templates/` |
-| `.cursor/skills/meeting-minutes` 等 | `_platform/.cursor/skills/…` |
+| `.qoder/skills/meeting-minutes` 等 | `_platform/.cursor/skills/…`（symlink；platform 仍用 `.cursor/` 以兼容多工具） |
 
 現有文件與 CLI 仍可用 `python shared-tools/...`；毋須改路徑。
 
@@ -64,8 +64,21 @@ git push -u origin main          # 首次需 gh repo create / 手動建 repo
 |-----------------------|---------------------|
 | `shared-tools/`, `templates/` | `Subjects/`, `Administrative/` |
 | `CLAUDE.md` (generic rules, via `@_platform/CLAUDE.md`) | `CLAUDE.md` (Claude Code personal additions); `KIMI.md` (Kimi Code CLI) |
-| `.cursor/rules/privacy.mdc` (symlinked) | `.cursor/rules/panel-storage-sync.mdc`, `subjects-workspace.mdc`, `paper-generator.mdc` |
+| `.qoder/rules/privacy.md` (symlinked) | `.qoder/rules/panel-storage-sync.md`, `subjects-workspace.md`, `paper-generator.md` |
 | `meeting-minutes`, `tidy-up`, `_template` skills | `generate-f5-ict-*`, `panel-storage-sync`, … |
 | Tool API docs in `_platform/docs/` | `NAV.md`, `Subjects/STORAGE.md` |
 
 見 [PLATFORM-COLLABORATION.md](PLATFORM-COLLABORATION.md)。
+
+## Qoder 遷移
+
+本 repo 已遷移至 Qoder（從 Cursor 遷移）。主要變更：
+
+| 項目 | Cursor（舊） | Qoder（新） |
+|------|-------------|------------|
+| 規則 | `.cursor/rules/*.mdc` | `.qoder/rules/*.md` |
+| Skills | `.cursor/skills/` | `.qoder/skills/` |
+| 專案指令 | `CLAUDE.md` | `AGENTS.md` |
+| 憲法 | `.cursorrules` | `AGENTS.md` |
+
+`.cursor/` 目錄保留以兼容其他工具（Claude Code、Kimi Code CLI）。`link-platform.sh` 會同時建立 `.cursor/` 和 `.qoder/` 的 symlink。

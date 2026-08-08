@@ -1,0 +1,81 @@
+---
+trigger: glob
+glob: shared-tools/paper-generator/**,Subjects/**/assessments/**/_generation/**
+---
+
+# Paper generator rules
+
+**S5 ICT 出卷主流程：** `.qoder/skills/generate-f5-ict-exam/SKILL.md`  
+**目標流程技術文檔：** `shared-tools/paper-generator/F5_ICT_CONCEPT_GENERATE_FLOW.md`
+
+## Target pipeline（mandatory direction）
+
+**Bank 唔抄題** — `question-bank` 只供 `concept_map` + `style_patterns`；題目由 blueprint **generate**，similarity 喺 **question_review** 驗證。
+
+1. Side products：`concept_map.json`（tree, C&A Guide）+ `style_patterns.json`（問法／語法／專有名詞）
+2. `exam_blueprint.json` — 考核比例 + slots
+3. **concept_review** — concept 重覆、對 C&A map、common mistakes
+4. **generate** → `*.spec.json`（agent 或 tool；唔貼 bank stem）
+5. **question_review** — duplicates、bank similarity、coherence、answers（過渡：`run_question_spec_check`）
+6. Fail → **只 regen 失敗 slot**，每 slot **≤10 次**；仍 fail → report，**唔成卷 loop**
+7. **render DOCX** — question_review pass 後先 render
+8. **paper_review** — footer、cover、乙丙；spec↔DOCX ≥92%
+
+**Do not** bulk-edit question text in DOCX; fix **spec** then re-render.  
+**Do not** use `--skip-check` for final exams unless draft-only.
+
+## Canonical entry (Phase 7)
+
+`build_f5_exam02.py` — blueprint generate → partial regen → render.  
+`question_review.py` / `paper_review.py` — review CLIs (`post_check` aliases).
+
+## Legacy（勿擴充）
+
+`regenerate_exam02.py` 預設轉發 `build_f5_exam02.py`。`--legacy-pick`：bank pick（`PICK_TIME_BANK_SIM_GATE=1`）。Pick-time ≤60% gate **預設關**（`f5_ict_pipeline_flags.py`）；相似度喺 question_review 處理。
+
+## Spec-first（不變）
+
+| 產物 | 用途 |
+|------|------|
+| `*.spec.json` | 內容 source of truth |
+| `WrittenExam/*.docx` | 交付；render 後 paper_review |
+
+## MCQ concept ordering (Core A → B → D blocks)
+
+S5 ICT Term2 MCQ (30): **Core A ×10 → Core B ×10 → Core D ×10**（EDB C&A Guide 順序）
+
+- Core A = 資訊處理；Core B = 電腦系統；Core D = 計算思維
+- **EC elective**（堆疊、鏈表…）= 丙部 — **not** 甲部 MCQ
+
+Implementation: `mcq_core_plan.py` + `curriculum_concepts.json`（→ `concept_map.json`）；validated in `concept_check.py`.
+
+Combo MCQ: `\t\t(1)\t…`, `\t\t(2)\t…`, `\t\t(3)\t…` in span ≥10 slots only.
+
+## Similarity（question_review，唔再 pick gate）
+
+| 部分 | Threshold |
+|------|-----------|
+| 甲部 MCQ stem vs bank/past | ≤ 60% |
+| 乙丙 whole slot vs bank | ≤ 60% |
+| 乙丙 subpart vs bank part | ≤ 85% |
+| spec ↔ DOCX（paper_review） | ≥ 92% |
+
+Constants: `f5_ict_from_dse.py`, `quality_lib.py`.
+
+## Template tables (DOCX render)
+
+1. **Clear** non-cover tables
+2. **Populate** `apply_f5_ict_table_content`
+3. **Delete** unused tables (`F5_ICT_REQUIRED_TABLES`)
+
+乙丙全文：`written_picks_render`（方案 A）；spec 用 `pick_slot_spec_text()` 同一套文字。
+
+## Exam structure (F5 ICT Term 2)
+
+| Section | Format |
+|---------|--------|
+| 甲部 | MCQ Core A/B/D |
+| 乙部 | Structured, no MCQ |
+| 丙部 | DB elective structured, no MCQ |
+
+MCQ bank slug: `Paper1_MultipleChoice` only.
