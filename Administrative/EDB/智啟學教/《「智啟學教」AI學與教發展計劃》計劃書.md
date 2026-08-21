@@ -1,5 +1,5 @@
 # 《「智啟學教」AI 學與教發展計劃》
-迦密愛主中學（Carmel Holy Word Secondary School）
+迦密聖道中學（Carmel Holy Word Secondary School）
 
 ---
 

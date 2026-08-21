@@ -22,8 +22,13 @@
   - 數字教育推廣、資源整合、校內流程
 - **QEF e-Learning Grant**: `qef-elearning-grant/`
   - 對應原專案 `chw-workflows`；優質教育基金電子學習撥款計劃（流動電腦裝置及上網支援）
+<<<<<<< Updated upstream
 - **QEF「我的行動承諾」加強版**: `my-action-promise-enhanced/`
   - 優質教育基金「我的行動承諾」加強版撥款計劃（國民教育、國安教育、媒體素養；第二階段含身心健康）
+=======
+- **QEF「我的行動承諾」加強版 — 聖道小記者**: `qef-my-commitment-junior-reporters/`
+  - 「我的行動承諾」加強版撥款計劃（編號 42）；「聖道小記者」計劃申請書（草稿階段，死線 2026-08-31）
+>>>>>>> Stashed changes
 
 ### 共用工具（放 `shared-tools/`）
 

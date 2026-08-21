@@ -12,7 +12,11 @@
 - **Student report**: `Administrative/CHW/student-report/`
 - **Sportsday**: `Administrative/CHW/sportsday/`
 - **數字教育（校內政策/資源整合/推廣）**: `Administrative/CHW/digital-education/`
+<<<<<<< Updated upstream
 - **QEF「我的行動承諾」加強版撥款計劃**: `Administrative/CHW/my-action-promise-enhanced/`
+=======
+- **QEF「我的行動承諾」加強版 — 聖道小記者**: `Administrative/CHW/qef-my-commitment-junior-reporters/`（草稿階段，死線 2026-08-31）
+>>>>>>> Stashed changes
 
 ### 教學（出卷／批改／功課／資源）
 
