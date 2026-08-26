@@ -22,13 +22,40 @@
   - 數字教育推廣、資源整合、校內流程
 - **QEF e-Learning Grant**: `qef-elearning-grant/`
   - 對應原專案 `chw-workflows`；優質教育基金電子學習撥款計劃（流動電腦裝置及上網支援）
-<<<<<<< Updated upstream
-- **QEF「我的行動承諾」加強版**: `my-action-promise-enhanced/`
-  - 優質教育基金「我的行動承諾」加強版撥款計劃（國民教育、國安教育、媒體素養；第二階段含身心健康）
-=======
 - **QEF「我的行動承諾」加強版 — 聖道小記者**: `qef-my-commitment-junior-reporters/`
   - 「我的行動承諾」加強版撥款計劃（編號 42）；「聖道小記者」計劃申請書（草稿階段，死線 2026-08-31）
->>>>>>> Stashed changes
+
+### 原始資料（不入 git）
+
+- **_raw/**: 從校內收到的原始 Excel/CSV 匯出檔（含學生姓名，已加入 `.gitignore`）
+
+### 選修科目資料更新流程（Elective Data Update）
+
+每年收到 MC 的 `S4-6 Name List for Electives_*.xlsx` 後，按以下步驟更新：
+
+1. **複製原始檔** → `Administrative/CHW/_raw/`
+2. **執行腳本** → `python scripts/update-elective-basedata.py`
+   - 自動讀取 `_raw/` 中最新的 xlsx
+   - 處理 S4、S5、S6 分頁（跳過 APL 及「總數」）
+   - 處理底部修正列（row > 130）
+   - 輸出至 `chw-api/basedata/student_elective_data.csv`
+3. **上傳 Google Sheet** → 在 `chw-api/` 目錄執行：
+   ```python
+   # 強制更新「學生選修資料」分頁
+   import gspread, time, pandas as pd
+   from google.oauth2.service_account import Credentials
+   creds = Credentials.from_service_account_file('credentials.json',
+       scopes=['https://www.googleapis.com/auth/spreadsheets','https://www.googleapis.com/auth/drive'])
+   gc = gspread.authorize(creds)
+   ss = gc.open_by_key('1jb8TYfVk20ZdRKAE9i5ka9lYY9NPifSRtNFYqMqUeqI')
+   ws = ss.worksheet('學生選修資料')
+   ws.clear()
+   df = pd.read_csv('basedata/student_elective_data.csv')
+   ws.update([df.columns.tolist()] + df.fillna('').values.tolist(), 'A1')
+   ```
+4. **重新整理 API**（可選）→ `POST https://api.chw.edu.hk/refresh-data`（需 API key）
+
+**憑證檔案**: `chw-api/credentials.json`（GCP service account，不入 git）
 
 ### 共用工具（放 `shared-tools/`）
 
