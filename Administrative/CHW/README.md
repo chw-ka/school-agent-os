@@ -24,6 +24,10 @@
   - 對應原專案 `chw-workflows`；優質教育基金電子學習撥款計劃（流動電腦裝置及上網支援）
 - **QEF「我的行動承諾」加強版 — 聖道小記者**: `qef-my-commitment-junior-reporters/`
   - 「我的行動承諾」加強版撥款計劃（編號 42）；「聖道小記者」計劃申請書（草稿階段，死線 2026-08-31）
+- **Purchasing / Procurement**: `purchasing/`
+  - 學校採購程序指南及表格（$5,000以下、$5,001-$50,000）
+  - School purchasing procedures manual and forms (≤$5,000, $5,001-$50,000)
+  - See [`purchasing/README.md`](purchasing/README.md) for comprehensive guide
 
 ### 原始資料（不入 git）
 
