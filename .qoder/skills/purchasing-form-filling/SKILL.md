@@ -25,6 +25,69 @@ Invoke this skill when the user:
 
 ---
 
+## 26-27 Digital Education Automated Workflow
+
+For the Digital Education Group 26/27 purchases, use the automated form-filling tool.
+
+### Tool: `output/fill_purchase_form.py`
+
+Fills `.docx` purchase forms from a JSON input file.
+
+**Usage:**
+```bash
+.\.venv\Scripts\python.exe output\fill_purchase_form.py <input.json>
+```
+
+**Output:** Filled `.docx` saved to `S:\02_Teaching and Learning\04_digital_education\04_Others\Purchase\26-27\<folder_name>\`
+
+### JSON Input Schema
+
+```json
+{
+  "tier": "below_5k | oral_quotation",
+  "purchase_name": "e.g. Cursor_Pro",
+  "folder_name": "01_Cursor",
+  "applicant_name": "Warren",
+  "department": "數字教育組",
+  "date": "2026/09/15",
+  "items": [
+    {"description": "Item name", "qty": 1, "supplier": "Supplier Co", "unit_price": 3000, "total": 3000}
+  ],
+  "quotations": [
+    {"supplier_name": "Supplier A", "qty": 1, "price": 3000, "total": 3000, "date": "2026/09/10", "contact": "Tel: 1234", "method": "email", "remark": ""}
+  ],
+  "recommendation": {"supplier_index": 0, "reason": "Lowest conforming quote"}
+}
+```
+
+### Per-Purchase Agent Workflow
+
+When the user provides a quotation (PDF or manual details):
+
+1. **Extract data** from the quotation (supplier name, items, prices, dates)
+2. **Confirm** extracted data with user
+3. **Write JSON** to `output/purchase_<name>.json`
+4. **Run** `fill_purchase_form.py` with the JSON
+5. **Verify** the output .docx was created on S: drive
+6. **Tell user** to print, get signatures, and file
+
+### Templates
+
+- Below $5K: `Administrative/CHW/purchasing/templates/26-27_CHW_below$5000.docx`
+- $5K-$50K: `Administrative/CHW/purchasing/templates/26-27_CHW_Oral Quotation Chi & Eng_$5000-50000.docx`
+
+### S: Drive Folder Structure
+
+```
+S:\02_Teaching and Learning\04_digital_education\04_Others\Purchase\26-27\
+  01_SupplierName\
+    26-27_CHW_<form_type>_<name>.docx   ← filled form
+    <quotation_from_supplier>.pdf        ← supplier's quotation
+    <invoice>.pdf                        ← invoice/receipt
+```
+
+---
+
 ## Core Workflow
 
 ### Step 1: Determine Purchase Amount Tier
